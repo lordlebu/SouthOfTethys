@@ -1,0 +1,6 @@
+services:
+  southoftethys:
+    image: southoftethys
+    build:
+      context: .
+      dockerfile: ./Dockerfile

@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Elder Moss",
+    "born": "Pre-Fire",
+    "died": null,
+    "children": ["Leafkin"]
+  },
+  {
+    "name": "Leafkin",
+    "born": "Act 1, Scene 3",
+    "parents": ["Elder Moss"],
+    "children": []
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "species": "Beedu Ray",
+    "origin": "Aquatic gliders in Saraswati delta",
+    "evolution": [
+      {
+        "stage": "Juvenile",
+        "traits": ["Buoyant glands", "Counter-shaded"]
+      },
+      {
+        "stage": "Adult",
+        "traits": ["Stealth flier", "Predator", "Desert adapted"]
+      }
+    ],
+    "current_habitat": "Gedrosian Desert",
+    "artifacts": ["sketch_beedu_01.jpg"]
+  }
+]
