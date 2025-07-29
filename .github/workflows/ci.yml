@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  push:
+    paths:
+      - 'utils/*.py'
+      - 'timeline/timeline.json'
+  pull_request:
+    paths:
+      - 'utils/*.py'
+      - 'timeline/timeline.json'
+
+jobs:
+  lint-and-validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install flake8
+
+      - name: Lint Python scripts
+        run: flake8 utils/
+
+      - name: Validate timeline.json
+        run: python utils/generate_timeline.py
