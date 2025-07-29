@@ -2,13 +2,21 @@ name: CI
 
 on:
   push:
+    branches:
+      - main
+      - feature/*
     paths:
       - 'utils/*.py'
       - 'timeline/timeline.json'
+      - 'Dockerfile'
   pull_request:
+    branches:
+      - main
+      - feature/*
     paths:
       - 'utils/*.py'
       - 'timeline/timeline.json'
+      - 'Dockerfile'
 
 jobs:
   lint-and-validate:
@@ -17,17 +25,19 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Set up Python
+      - name: Build Docker image
+        run: docker build -t southoftethys .
+
+      - name: Run timeline validation in Docker
+        run: docker run --rm southoftethys
+
+      - name: Set up Python (for linting)
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
-      - name: Install dependencies
-        run: |
-          pip install flake8
+      - name: Install flake8
+        run: pip install flake8
 
       - name: Lint Python scripts
         run: flake8 utils/
-
-      - name: Validate timeline.json
-        run: python utils/generate_timeline.py
