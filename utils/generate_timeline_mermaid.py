@@ -33,7 +33,7 @@ def generate_mermaid(events):
     return "\n".join(lines)
 
 if __name__ == "__main__":
-    timeline_path = "../timeline/timeline.json"  # Adjust path as needed
+    timeline_path = "../app/timeline.json"  # Adjust path as needed
     timeline = load_timeline(timeline_path)
     # Handle both list and dict formats
     if isinstance(timeline, dict) and "events" in timeline:
