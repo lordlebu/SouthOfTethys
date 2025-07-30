@@ -30,7 +30,8 @@ def build_timeline(events):
 def summarize_timeline(timeline):
     for event in timeline:
         print(
-            f"{event.get('date', '')}: {event.get('title', '')} - {event.get('summary', '')}"
+            f"{event.get('date', '')}: {event.get('title', '')} - "
+            f"{event.get('summary', '')}"
         )
 
 
