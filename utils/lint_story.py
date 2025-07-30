@@ -53,6 +53,12 @@ def main():
                 print(f"❌ Unknown character '{char}' in event {event['id']}")
                 return 1
 
+        # Check species references
+        for species in event.get("species", []):
+            if species not in known_species:
+                print(f"❌ Unknown species '{species}' in event {event['id']}")
+                return 1
+
     print("✅ Lint passed: All events are valid.")
     return 0
 
