@@ -2,9 +2,10 @@ import json
 import re
 from pathlib import Path
 
-TIMELINE_PATH = Path("timeline/timeline.json")
-CHARACTER_DIR = Path("characters/")
-FLORA_PATH = Path("flora_fauna/species_tree.json")
+BASE_DIR = Path(__file__).parent.parent
+TIMELINE_PATH = BASE_DIR / "timeline" / "timeline.json"
+CHARACTER_DIR = BASE_DIR / "characters"
+FLORA_PATH = BASE_DIR / "flora_fauna" / "species_tree.json"
 
 
 def validate_date_format(date):
@@ -19,13 +20,18 @@ def load_json(path):
 def main():
     timeline = load_json(TIMELINE_PATH)
     species_data = load_json(FLORA_PATH)
-    # known_species = {s['species'] for s in species_data}  # Not used
+    known_species = {s['species'] for s in species_data}  # Not used
 
     known_characters = set()
     for file in CHARACTER_DIR.glob("*.json"):
         with open(file) as f:
             c = json.load(f)
-            known_characters.add(c["name"])
+            if isinstance(c, dict) and "name" in c:
+                known_characters.add(c["name"])
+            elif isinstance(c, list):
+                for entry in c:
+                    if isinstance(entry, dict) and "name" in entry:
+                        known_characters.add(entry["name"])
 
     ids = set()
 
