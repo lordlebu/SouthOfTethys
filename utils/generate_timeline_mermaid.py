@@ -1,5 +1,5 @@
 """
-Generates a Mermaid graph from timeline.json for pictorial timeline visualization.
+Generate a Mermaid graph from timeline.json for pictorial timeline visualization.
 """
 
 import json
@@ -28,7 +28,9 @@ def generate_mermaid(events):
     prev_id = None
     for idx, event in enumerate(events):
         node_id = f"E{idx}"
-        label = f"{event.get('date', '')}: {event.get('title', '')}"
+        label = (
+            f"{event.get('date', '')}: {event.get('title', '')}"
+        )
         lines.append(f'    {node_id}["{label}"]')
         if prev_id is not None:
             lines.append(f"    {prev_id} --> {node_id}")
