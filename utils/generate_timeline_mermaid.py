@@ -1,5 +1,6 @@
 """
-Generate a Mermaid graph from timeline.json for pictorial timeline visualization.
+Generate a Mermaid graph from timeline.json
+for pictorial timeline visualization.
 """
 
 import json
