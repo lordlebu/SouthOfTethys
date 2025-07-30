@@ -9,6 +9,7 @@ on:
       - 'utils/*.py'
       - 'timeline/timeline.json'
       - 'Dockerfile'
+      - 'cartography/overworld.json'
   pull_request:
     branches:
       - main
@@ -17,6 +18,7 @@ on:
       - 'utils/*.py'
       - 'timeline/timeline.json'
       - 'Dockerfile'
+      - 'cartography/overworld.json'
 
 jobs:
   lint-and-validate:
@@ -41,3 +43,29 @@ jobs:
 
       - name: Lint Python scripts
         run: flake8 utils/
+
+  publish-artifacts:
+    runs-on: ubuntu-latest
+    needs: lint-and-validate
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Generate timeline visualization
+        run: python utils/generate_timeline_mermaid.py > timeline_mermaid.md
+
+      - name: Publish timeline graph as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: timeline-graph
+          path: timeline_mermaid.md
+
+      - name: Publish overworld map as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: overworld-map
+          path: cartography/overworld.json
+
+      # Optionally, run world progression scripts here
+      # - name: Progress worldbuilding
+      #   run: python utils/progress_world.py

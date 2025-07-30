@@ -1,0 +1,11 @@
+{
+  "regions": [
+    {
+      "name": "Saltbluff Plateau",
+      "terrain": "semi-arid mesa",
+      "dominant_species": ["Suncrawler Beetle", "Sandhorn Goat"],
+      "landmarks": ["Old Beacon Spire", "River Aen"],
+      "connected_to": ["Verdant Hollow"]
+    }
+  ]
+}
