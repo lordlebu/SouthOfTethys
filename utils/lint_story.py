@@ -6,17 +6,20 @@ TIMELINE_PATH = Path("timeline/timeline.json")
 CHARACTER_DIR = Path("characters/")
 FLORA_PATH = Path("flora_fauna/species_tree.json")
 
+
 def validate_date_format(date):
-    return bool(re.match(r"Act \\d+, Scene \\d+", date))
+    return bool(re.match(r"Act \d+, Scene \d+", date))
+
 
 def load_json(path):
     with open(path) as f:
         return json.load(f)
 
+
 def main():
     timeline = load_json(TIMELINE_PATH)
     species_data = load_json(FLORA_PATH)
-    known_species = {s['species'] for s in species_data}
+    # known_species = {s['species'] for s in species_data}  # Not used
 
     known_characters = set()
     for file in CHARACTER_DIR.glob("*.json"):
@@ -24,7 +27,6 @@ def main():
             c = json.load(f)
             known_characters.add(c["name"])
 
-    dates = set()
     ids = set()
 
     for event in timeline:
@@ -47,6 +49,7 @@ def main():
 
     print("✅ Lint passed: All events are valid.")
     return 0
+
 
 if __name__ == "__main__":
     exit(main())

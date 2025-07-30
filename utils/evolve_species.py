@@ -1,5 +1,6 @@
 import json
 
+
 def evolve_species(species_data, event):
     if event == "Climate Shift: Saraswati dries up":
         species_data["current_habitat"] = "Desert"
@@ -8,6 +9,7 @@ def evolve_species(species_data, event):
             "traits": ["Dune camouflage", "Thermal glide"]
         })
     return species_data
+
 
 # Example usage
 with open("../flora_fauna/species_tree.json") as f:

@@ -5,6 +5,7 @@ Generates a Mermaid graph from timeline.json for pictorial timeline visualizatio
 import json
 import re
 
+
 def fantasy_date_key(date_str):
     # Parses "Act X, Scene Y" into sortable tuple (X, Y)
     match = re.match(r"Act (\d+), Scene (\d+)", date_str)
@@ -12,12 +13,15 @@ def fantasy_date_key(date_str):
         return (int(match.group(1)), int(match.group(2)))
     return (9999, 9999)  # fallback for unsortable dates
 
+
 def load_timeline(path):
     with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
 
+
 def sort_events(events):
     return sorted(events, key=lambda e: fantasy_date_key(e.get("date", "")))
+
 
 def generate_mermaid(events):
     lines = ["```mermaid", "graph TD"]
@@ -31,6 +35,7 @@ def generate_mermaid(events):
         prev_id = node_id
     lines.append("```")
     return "\n".join(lines)
+
 
 if __name__ == "__main__":
     timeline_path = "timeline/timeline.json"  # Correct path for Docker/CI
