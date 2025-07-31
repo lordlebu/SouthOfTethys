@@ -1,13 +1,17 @@
 from ollama import Client
-import json, os
+import json
+import os
 
 ollama_client = Client()
 MODEL = "gemma3n"  # Or llama3, phi3, etc.
 
+
 def prompt_llm(snippet: str, instruction: str) -> str:
     prompt = f"{instruction.strip()}\n\nSnippet: {snippet.strip()}"
-    response = ollama_client.chat(model=MODEL, messages=[{"role": "user", "content": prompt}])
+    response = ollama_client.chat(
+        model=MODEL, messages=[{"role": "user", "content": prompt}])
     return response['message']['content']
+
 
 def extract_and_save(snippet_path: str):
     with open(snippet_path, 'r') as f:
@@ -44,6 +48,7 @@ def extract_and_save(snippet_path: str):
         json.dump(evt_obj, f, indent=2)
 
     print("✅ Snippet processed and saved.")
+
 
 if __name__ == "__main__":
     extract_and_save("snippets/inbox/queen_envoy.txt")
