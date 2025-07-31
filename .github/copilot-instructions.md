@@ -44,10 +44,24 @@
 - To process a story snippet: run `snippet_processor.py` (requires Ollama running locally).
 
 ## Key Files & Directories
-- `timeline/timeline.json`, `characters/`, `flora_fauna/`, `cartography/overworld.json`, `utils/`, `.github/workflows/`, `.vscode/`, `Dockerfile`, `compose.yaml`, `CONTEXT.md`
-
+- `timeline/timeline.json`
+- `characters/`
+- `flora_fauna/`
+- `cartography/overworld.json`
+- `utils/`
+- `.github/workflows/`
+- `.vscode/`
+- `Dockerfile`
+- `compose.yaml`
+- `CONTEXT.md`
 ---
 **For AI agents:**
 - Always validate cross-references and formats using provided scripts before committing or merging.
 - Prefer updating or generating Markdown summaries for documentation.
 - Use the fantasy date format and maintain consistency across all world data.
+
+name: Upload merged timeline artifact
+uses: actions/upload-artifact@v4
+with:
+  name: full_timeline
+  path: timeline/timeline.json
