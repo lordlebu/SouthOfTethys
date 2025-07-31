@@ -30,7 +30,7 @@ jobs:
         run: python utils/generate_timeline.py
 
       - name: Upload merged timeline artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: full_timeline
           path: timeline/timeline.json
