@@ -62,7 +62,7 @@ def main():
         ids.add(event['id'])
 
         # Check date format
-        if not validate_date_format(event['date'])):
+        if not validate_date_format(event['date']):
             print(f"❌ Invalid date format: {event['date']}")
             return 1
 
