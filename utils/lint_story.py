@@ -49,9 +49,8 @@ def main():
                 }
 
     known_characters = set()
-    for file in CHARACTER_DIR.glob("*.json")
-    known_species = {s['species'] for s in species_data}  # Not used
-
+    for file in CHARACTER_DIR.glob("*.json"):
+        species = {s['species'] for s in species_data}  # Not used
     ids = set()
 
     for event in timeline:
@@ -68,8 +67,8 @@ def main():
 
         # Initialize character and species references
         characters = event.get("characters", {})
-        species = event.get("species", {})
-
+        species_data_entry = species_data.get(list(characters.keys())[0], {})
+        species = {k: v for k, v in species_data_entry.items() if k in event}
         for char_name in character_info:
             if isinstance(character_info[char_name], dict):
                 char_info[char_name]["species"] = species_data.get(char_name, {}).get("species")
@@ -87,6 +86,7 @@ def main():
 
     print("✅ Lint passed: All events are valid.")
     return 0
+
 
 if __name__ == "__main__":
     exit(main())
