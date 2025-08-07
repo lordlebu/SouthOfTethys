@@ -6,19 +6,24 @@ on:
       - main
       - feature/*
     paths:
-      - 'utils/*.py'
-      - 'timeline/timeline.json'
+      - '.github/workflows/ci.yml'
+      - '.gitignore'
+      - 'utils/snippet_processor.py'
       - 'Dockerfile'
       - 'cartography/overworld.json'
+      - 'CONTEXT.md'
+
   pull_request:
     branches:
       - main
       - feature/*
     paths:
-      - 'utils/*.py'
-      - 'timeline/timeline.json'
+      - '.github/workflows/ci.yml'
+      - '.gitignore'
+      - 'utils/snippet_processor.py'
       - 'Dockerfile'
       - 'cartography/overworld.json'
+      - 'CONTEXT.md'
 
 jobs:
   lint-and-validate:
@@ -30,13 +35,8 @@ jobs:
       - name: Build Docker image
         run: docker build -t southoftethys .
 
-      - name: Run timeline validation in Docker
-        run: docker run --rm southoftethys
-
-      - name: Set up Python (for linting)
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
+      # - name: Run snippet_processor.py to process new snippets
+      #   run: python utils/snippet_processor.py > processed_snippets.txt
 
       - name: Install flake8
         run: pip install flake8
@@ -51,8 +51,17 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Generate timeline visualization
-        run: python utils/generate_timeline_mermaid.py > timeline_mermaid.md
+      - name: Generate timeline visualization and run world progression scripts here
+        run: |
+            python utils/generate_timeline_mermaid.py > timeline_mermaid.md
+            docker run --rm southoftethys
+            python utils/lint_story.py
+
+      - name: Publish processed snippets to the World (ignore this folder)
+        uses: actions/upload-artifact@v4
+        with:
+          name: processed-snippets
+          path: 'processed_snippets.txt'
 
       - name: Publish timeline graph as artifact
         uses: actions/upload-artifact@v4
@@ -66,6 +75,3 @@ jobs:
           name: overworld-map
           path: cartography/overworld.json
 
-      # Optionally, run world progression scripts here
-      # - name: Progress worldbuilding
-      #   run: python utils/progress_world.py
