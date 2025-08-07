@@ -62,6 +62,5 @@ def main():
     print("✅ Lint passed: All events are valid.")
     return 0
 
-
 if __name__ == "__main__":
     exit(main())

@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-      - feature/*
+      - feature/**
     paths:
       - '.github/workflows/ci.yml'
       - '.gitignore'
@@ -16,7 +16,7 @@ on:
   pull_request:
     branches:
       - main
-      - feature/*
+      - feature/**
     paths:
       - '.github/workflows/ci.yml'
       - '.gitignore'
@@ -50,11 +50,13 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Generate timeline visualization and publish as artifact
-        run: |
-          python utils/generate_timeline_mermaid.py > timeline_mermaid.md
-          docker run --rm southoftethys
-          python utils/lint_story.py
+      - name: Run world progression scripts here
+        uses: run
+        with:
+          command: |
+            python utils/generate_timeline_mermaid.py > timeline_mermaid.md
+            docker run --rm southoftethys
+            python utils/lint_story.py
 
       - name: Publish processed snippets to Nexus (ignore this folder)
         uses: actions/upload-artifact@v4
@@ -72,5 +74,3 @@ jobs:
         with:
           name: overworld-map
           path: cartography/overworld.json
-
-      # Optionally, run world progression scripts here
