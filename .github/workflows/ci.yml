@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-      - feature/**
+      - feature/*
     paths:
       - '.github/workflows/ci.yml'
       - '.gitignore'
@@ -16,7 +16,7 @@ on:
   pull_request:
     branches:
       - main
-      - feature/**
+      - feature/*
     paths:
       - '.github/workflows/ci.yml'
       - '.gitignore'
@@ -37,6 +37,7 @@ jobs:
 
       - name: Run snippet_processor.py to process new snippets
         run: python utils/snippet_processor.py > processed_snippets.txt
+
       - name: Install flake8
         run: pip install flake8
 
@@ -50,10 +51,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Run world progression scripts here
-        uses: run
-        with:
-          command: |
+      - name: Generate timeline visualization and run world progression scripts here
+        run: |
             python utils/generate_timeline_mermaid.py > timeline_mermaid.md
             docker run --rm southoftethys
             python utils/lint_story.py
@@ -63,6 +62,7 @@ jobs:
         with:
           name: processed-snippets
           path: 'processed_snippets.txt'
+
       - name: Publish timeline graph as artifact
         uses: actions/upload-artifact@v4
         with:
@@ -74,3 +74,4 @@ jobs:
         with:
           name: overworld-map
           path: cartography/overworld.json
+
