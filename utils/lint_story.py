@@ -49,12 +49,7 @@ def main():
                 }
 
     known_characters = set()
-    for file in CHARACTER_DIR.glob("*.json"):
-        with open(file) as f:
-            c = json.load(f)
-            if isinstance(c, dict):
-                known_characters.add(c.get("name", ""))
-
+    for file in CHARACTER_DIR.glob("*.json")
     known_species = {s['species'] for s in species_data}  # Not used
 
     ids = set()
@@ -67,7 +62,7 @@ def main():
         ids.add(event['id'])
 
         # Check date format
-        if not validate_date_format(event['date']):
+        if not validate_date_format(event['date'])):
             print(f"❌ Invalid date format: {event['date']}")
             return 1
 
@@ -75,20 +70,19 @@ def main():
         characters = event.get("characters", {})
         species = event.get("species", {})
 
-        # Populate character references
-        for char_name, char_info in characters.items():
-            if char_name in known_characters:
-                char_info["species"] = species_data[char_name]["species"]
-                char_info["role"] = location_data[char_name].get("regions", [])[0]
+        for char_name in character_info:
+            if isinstance(character_info[char_name], dict):
+                char_info[char_name]["species"] = species_data.get(char_name, {}).get("species")
+                char_info[char_name]["role"] = location_data.get(char_name, {}).get("regions", [])[0]
         # Populate species references
-        for spec_name, spec_info in species.items():
+        for spec_name in species:
             if spec_name in known_species:
-                spec_info["evolution_chain"] = species_data[spec_name]["evolution_chain"]
+                species[spec_name]["evolution_chain"] = species_data[spec_name].get("evolution_chain")
 
         # Check character and species references
-        for entry in character_info.values():
-            if "species" not in entry or "role" not in entry:
-                print(f"❌ Missing character information: {entry['name']}")
+        for char_info in character_info.values():
+            if "species" not in char_info or "role" not in char_info:
+                print(f"❌ Missing character information: {char_info['name']}")
                 return 1
 
     print("✅ Lint passed: All events are valid.")
@@ -96,3 +90,4 @@ def main():
 
 if __name__ == "__main__":
     exit(main())
+
