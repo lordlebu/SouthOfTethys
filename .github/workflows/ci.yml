@@ -54,7 +54,6 @@ jobs:
       - name: Generate timeline visualization and run world progression scripts here
         run: |
             python utils/generate_timeline_mermaid.py > timeline_mermaid.md
-            docker run --rm southoftethys
             python utils/lint_story.py
 
       - name: Publish processed snippets to the World (ignore this folder)
