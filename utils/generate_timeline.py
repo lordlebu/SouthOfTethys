@@ -1,7 +1,7 @@
-import json
-from pathlib import Path
+import pandas as pd
 import re
-
+import json
+import os
 
 def fantasy_date_key(date_str):
     # Parses "Act X, Scene Y" into sortable tuple (X, Y)
@@ -10,9 +10,8 @@ def fantasy_date_key(date_str):
         return (int(match.group(1)), int(match.group(2)))
     return (9999, 9999)  # fallback for unsortable dates
 
-
 def load_events(path):
-    with open(path, encoding="utf-8") as f:
+    with open(str(path), encoding="utf-8") as f:
         data = json.load(f)
         # Support both list and dict formats
         if isinstance(data, dict) and "events" in data:
@@ -22,10 +21,8 @@ def load_events(path):
         else:
             raise ValueError("timeline.json format not recognized")
 
-
 def build_timeline(events):
     return sorted(events, key=lambda e: fantasy_date_key(e.get("date", "")))
-
 
 def summarize_timeline(timeline):
     for event in timeline:
@@ -34,10 +31,16 @@ def summarize_timeline(timeline):
             f"{event.get('summary', '')}"
         )
 
-
 if __name__ == "__main__":
-    # Build path relative to this script's location
-    timeline_path = Path(__file__).parent.parent / "timeline" / "timeline.json"
-    data = load_events(str(timeline_path))
-    ordered = build_timeline(data)
-    summarize_timeline(ordered)
+    # Load the timeline data from JSON
+    timeline_path = os.path.join(os.path.dirname(__file__), "utils/generate-timeline.py", "timeline/timeline.json")
+    timeline_data = load_events(timeline_path)
+
+    # Analyze the timeline data using pandas
+    summary_stats = timeline_data.groupby(["date", "summary"]).mean()
+
+    print(summary_stats)
+
+
+
+

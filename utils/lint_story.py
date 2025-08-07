@@ -20,18 +20,39 @@ def load_json(path):
 def main():
     timeline = load_json(TIMELINE_PATH)
     species_data = load_json(FLORA_PATH)
-    known_species = {s['species'] for s in species_data}  # Not used
 
-    known_characters = set()
+    # Reorganize JSON data for easier access
+    character_info = {}
     for file in CHARACTER_DIR.glob("*.json"):
         with open(file) as f:
             c = json.load(f)
             if isinstance(c, dict) and "name" in c:
-                known_characters.add(c["name"])
+                character_info[c["name"]] = {
+                    "species": None,
+                    "role": None
+                }
             elif isinstance(c, list):
                 for entry in c:
                     if isinstance(entry, dict) and "name" in entry:
-                        known_characters.add(entry["name"])
+                        character_info[entry["name"]] = {
+                            "species": None,
+                            "role": None
+                        }
+
+    location_data = {}
+    for file in CHARACTER_DIR.glob("*.json"):
+        with open(file) as f:
+            c = json.load(f)
+            if isinstance(c, dict) and "name" in c:
+                location_data[c["name"]] = {
+                    "regions": []
+                }
+
+    known_characters = set()
+    for entry in character_info.values():
+        known_characters.add(entry["name"])
+
+    known_species = {s['species'] for s in species_data}  # Not used
 
     ids = set()
 
@@ -47,16 +68,29 @@ def main():
             print(f"❌ Invalid date format: {event['date']}")
             return 1
 
-        # Check character references
-        for char in event.get("characters", []):
-            if char not in known_characters:
-                print(f"❌ Unknown character '{char}' in event {event['id']}")
+        # Initialize character and species references
+        characters = event.get("characters", {})
+        species = event.get("species", {})
+
+        # Populate character references
+        for char_name, char_info in characters.items():
+            if char_name in known_characters:
+                char_info["species"] = species_data[char_name]["species"]
+                char_info["role"] = location_data[char_name].get("regions", [])[0]
+        # Populate species references
+        for spec_name, spec_info in species.items():
+            if spec_name in known_species:
+                spec_info["evolution_chain"] = species_data[spec_name]["evolution_chain"]
+
+        # Check character and species references
+        for entry in character_info.values():
+            if entry.get("species") is None or entry.get("role") is None:
+                print(f"❌ Missing character information: {entry}")
                 return 1
 
-        # Check species references
-        for species in event.get("species", []):
-            if species not in known_species:
-                print(f"❌ Unknown species '{species}' in event {event['id']}")
+        for spec_name, spec_info in species.items():
+            if spec_info.get("evolution_chain") is None:
+                print(f"❌ Missing species information: {spec_name}")
                 return 1
 
     print("✅ Lint passed: All events are valid.")
