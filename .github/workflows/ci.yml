@@ -35,8 +35,8 @@ jobs:
       - name: Build Docker image
         run: docker build -t southoftethys .
 
-      - name: Run snippet_processor.py to process new snippets
-        run: python utils/snippet_processor.py > processed_snippets.txt
+      # - name: Run snippet_processor.py to process new snippets
+      #   run: python utils/snippet_processor.py > processed_snippets.txt
 
       - name: Install flake8
         run: pip install flake8
