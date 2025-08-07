@@ -57,7 +57,7 @@ jobs:
             docker run --rm southoftethys
             python utils/lint_story.py
 
-      - name: Publish processed snippets to Nexus (ignore this folder)
+      - name: Publish processed snippets to the World (ignore this folder)
         uses: actions/upload-artifact@v4
         with:
           name: processed-snippets
