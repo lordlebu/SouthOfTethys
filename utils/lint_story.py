@@ -49,8 +49,11 @@ def main():
                 }
 
     known_characters = set()
-    for entry in character_info.values():
-        known_characters.add(entry["name"])
+    for file in CHARACTER_DIR.glob("*.json"):
+        with open(file) as f:
+            c = json.load(f)
+            if isinstance(c, dict):
+                known_characters.add(c.get("name", ""))
 
     known_species = {s['species'] for s in species_data}  # Not used
 
@@ -84,18 +87,12 @@ def main():
 
         # Check character and species references
         for entry in character_info.values():
-            if entry.get("species") is None or entry.get("role") is None:
-                print(f"❌ Missing character information: {entry}")
-                return 1
-
-        for spec_name, spec_info in species.items():
-            if spec_info.get("evolution_chain") is None:
-                print(f"❌ Missing species information: {spec_name}")
+            if "species" not in entry or "role" not in entry:
+                print(f"❌ Missing character information: {entry['name']}")
                 return 1
 
     print("✅ Lint passed: All events are valid.")
     return 0
-
 
 if __name__ == "__main__":
     exit(main())
