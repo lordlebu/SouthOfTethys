@@ -24,8 +24,6 @@ def sort_events(events):
     return sorted(events, key=lambda e: fantasy_date_key(e.get("date", "")))
 
 
-import subprocess
-
 def generate_mermaid(events):
     lines = ["```mermaid", "graph TD"]
     prev_id = None
