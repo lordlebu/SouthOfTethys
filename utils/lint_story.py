@@ -14,13 +14,13 @@ def load_json(path):
     with open(path) as f:
         return json.load(f)
 
-def main():
-    timeline = load_json(TIMELINE_PATH)
-    species_data = load_json(FLORA_PATH)
+def generate_timeline_data(timeline_path, character_dir, flora_path):
+    timeline_data = load_json(timeline_path)
+    species_data = load_json(flora_path)
 
     # Reorganize JSON data for easier access
     character_info = {}
-    for file in CHARACTER_DIR.glob("*.json"):
+    for file in character_dir.glob("*.json"):
         with open(file) as f:
             c = json.load(f)
             if isinstance(c, dict) and "name" in c:
@@ -37,7 +37,7 @@ def main():
                         }
 
     location_data = {}
-    for file in CHARACTER_DIR.glob("*.json"):
+    for file in character_dir.glob("*.json"):
         with open(file) as f:
             c = json.load(f)
             if isinstance(c, dict) and "name" in c:
@@ -48,7 +48,7 @@ def main():
     known_characters = set()
     ids = set()
 
-    for event in timeline:
+    for event in timeline_data:
         # Check for ID duplicates
         if event['id'] in ids:
             print(f"❌ Duplicate event ID: {event['id']}")
@@ -88,4 +88,4 @@ def main():
     return 0
 
 if __name__ == "__main__":
-    exit(main())
+    exit(generate_timeline_data(TIMELINE_PATH, CHARACTER_DIR, FLORA_PATH))
