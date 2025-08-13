@@ -6,6 +6,86 @@
 ## **🌍 World Overview**  
 A land of **rival city-states**, **forgotten relics**, and **mythic beasts**, where the **Saraswati River** flows from the **Narmada Valley** to the **Tethys Sea**.  
 
+**Chronology of Human Settlement in Jambudweepa**  
+*(Mytho-Historical Timeline)*  
+
+---
+
+### **1. Pre-Human Epoch (c. 70,000–50,000 BCE)**  
+- **Primordial Inhabitants:**  
+  - **Vanaras** (proto-primates) dominate forests, practicing rudimentary sorcery.  
+  - **Silvanus Birds** rule skies with fire-taming intelligence.  
+- **Climate Shift:** Antarctic glaciation forces avian migrations northward to Kumari Kandam (Lemuria).  
+
+---
+
+### **2. First Humans: The Coastal Wanderers (c. 50,000–12,000 BCE)**  
+- **Migration Path:**  
+  Out of Africa → Arabian coast → **Gedrosia** (Persian Gulf land bridge).  
+- **Key Groups:**  
+  - **Jharwa:** Hunter-gatherers settling Sindhu delta. Worship **Ammonite Man** (aquatic sage).  
+  - **Vedda Clans:** Split into **Surya** (sun-worshippers), **Chandra** (moon-tribes), **Naga** (serpent-kin).  
+- **Legacy:** Petroglyphs in Bhimbetka caves; oral histories of "star-walkers."  
+
+---
+
+### **3. Neolithic Revolution (c. 12,000–4000 BCE)**  
+- **Agricultural Dawn:**  
+  - **Ganga-Yamuna Doab:** Wild rice/barley cultivation.  
+  - **Narmada Valley:** Earliest Yaksha megalith-builders.  
+- **Conflict:**  
+  Human-Vanara wars erupt. Humans drive birds to extinction with poisoned arrows.  
+
+---
+
+### **4. Bronze Age: River Kingdoms (c. 4000–2000 BCE)**  
+| **Period**       | **Event**                                                                 |  
+|------------------|---------------------------------------------------------------------------|  
+| **Saraswati Zenith** | City-states (**Lothal**, **Dwarka**, **Kalibangan**) flourish along the "Great River." |  
+| **Harappan Golden Age** | Urban planning, dockyards, **Mask of Harappa** forged in Mohenjo-Daro. |  
+| **First Decline**   | Saraswati River dries; famine triggers migration to Ganga plains.          |  
+
+---
+
+### **5. Iron Age: Clans & Conquest (c. 2000–500 BCE)**  
+- **New Powers:**  
+  - **Shwetavahanas:** Silver-trading dynasty (Varna’s ancestors).  
+  - **Kia Tribes:** Vedda-Naga hybrids, masters of marsh warfare.  
+- **Cultural Shifts:**  
+  - Yaksha megaliths repurposed as forts.  
+  - **"Memory-Seed Magic"** taught by Narmada Man fossil-sages.  
+
+---
+
+### **6. Age of Strife (c. 500 BCE–200 CE)**  
+- **Key Events:**  
+  - **Dwarkan Hegemony:** Naval empire enslaves Silvanus birds for warfare.  
+  - **Lothal’s Resurgence:** Kavik Mask rebuilds port; Tower of Whispers erected.  
+  - **Tendua Plague:** Asura-corrupted beasts ravage Deccan villages.  
+- **Human Dominance:**  
+  Vanaras retreat to jungles; humans control 90% of arable land.  
+
+---
+
+### **7. Present Era (c. 200 CE– )**  
+- **Political Landscape:**  
+  - **Lothal:** Mask/Kia rivalry fueled by mask relics.  
+  - **Dwarka:** Naval superpower demanding tribute.  
+  - **Wild Zones:** Narmada forests (last Silvanus refuge), Nilgiris (Vanara strongholds).  
+- **Unresolved Mysteries:**  
+  - Where did the **Ammonite Man** retreat?  
+  - Will the **Saraswati** ever flow again?  
+
+> *"We carved our kingdoms atop bird-bones and Vanara blood. But the land remembers."*  
+> ― Yaksha inscription, Lothal Granary  
+
+---  
+**🕰️ Timeline Key**  
+- **Bold** = Human arrival milestones  
+- *Italics* = Ecological/cultural turning points  
+
+Would you like expansions on **migration routes**, **tool technologies**, or **mythical hybrids**?
+
 ### **🗺️ Key Regions**  
 | **Region**       | **Description** |  
 |----------------|-------------|  
