@@ -12,8 +12,8 @@ A land of **rival city-states**, **forgotten relics**, and **mythic beasts**, wh
 | **Lothal** | A thriving port city ruled by the Mask family, home to a sacred **22-story tower**. |  
 | **Dwarka** | A fortified island at the Saraswati’s mouth, controlled by Dwarakan warlords. |  
 | **Dholavira** | A ruined Harappan city where the **first mask** was hidden. |  
-| **Gedrosian Desert** | A wasteland patrolled by **Beedu**, flying manta-like hunters. |  
-| **Narmada Valley** | A mystical land of **Yaksha ruins** and the **Bhuta-Kāna tree**. |  
+| **Gedrosian Desert** | A wasteland patrolled by various creatures, shapeshifters and demon hunters. |  
+| **Narmada Valley** | A mystical lands the hold the key to the origin of magical events in Jambudweep. |  
 
 ---
 
