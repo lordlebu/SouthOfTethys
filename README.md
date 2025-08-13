@@ -1,162 +1,99 @@
-# **Lothal & The Masks**  
-*An Epic of Ancient Jambudweepa*  
+# Chronology of Jambudweepa  
+*From Primordial Seas to City-States*  
 
 ---
 
-## **🌍 World Overview**  
-A land of **rival city-states**, **forgotten relics**, and **mythic beasts**, where the **Saraswati River** flows from the **Narmada Valley** to the **Tethys Sea**.  
-
-**Chronology of Human Settlement in Jambudweepa**  
-*(Mytho-Historical Timeline)*  
-
----
-
-### **1. Pre-Human Epoch (c. 70,000–50,000 BCE)**  
-- **Primordial Inhabitants:**  
-  - **Vanaras** (proto-primates) dominate forests, practicing rudimentary sorcery.  
-  - **Silvanus Birds** rule skies with fire-taming intelligence.  
-- **Climate Shift:** Antarctic glaciation forces avian migrations northward to Kumari Kandam (Lemuria).  
+## ⏳ **Prehistoric Foundations**  
+### (c. 500–250 Million Years Ago)  
+- **Invertebrate Dominion**:  
+  Ammonoids rule shallow seas. The **Ammonite Man** emerges as first spiritual entity - a cephalopod sage whispering through coral reefs.  
+- **Avian-Synapsid Epoch**:  
+  Flightless therapod birds and sail-backed synapsids dominate landmasses. **Owlman** appears as nocturnal guardian of forests.  
 
 ---
 
-### **2. First Humans: The Coastal Wanderers (c. 50,000–12,000 BCE)**  
-- **Migration Path:**  
-  Out of Africa → Arabian coast → **Gedrosia** (Persian Gulf land bridge).  
-- **Key Groups:**  
-  - **Jharwa:** Hunter-gatherers settling Sindhu delta. Worship **Ammonite Man** (aquatic sage).  
-  - **Vedda Clans:** Split into **Surya** (sun-worshippers), **Chandra** (moon-tribes), **Naga** (serpent-kin).  
-- **Legacy:** Petroglyphs in Bhimbetka caves; oral histories of "star-walkers."  
+## 🐒 **Age of Vanaras**  
+### (c. 50–5 Million Years Ago)  
+1. **Vanara Zenith**:  
+   - Proto-primates develop tool use and fire mastery in **Gondwana forests**  
+   - Build tree-cities in the **Nilgiri Canopy** (southern Jambudweepa)  
+2. **Great Devolvement**:  
+   - Climate shifts fracture civilization  
+   - Descendants regress to modern monkeys  
+   - **Lionman** appears as sun-spirit guiding scattered tribes  
 
 ---
 
-### **3. Neolithic Revolution (c. 12,000–4000 BCE)**  
-- **Agricultural Dawn:**  
-  - **Ganga-Yamuna Doab:** Wild rice/barley cultivation.  
-  - **Narmada Valley:** Earliest Yaksha megalith-builders.  
-- **Conflict:**  
-  Human-Vanara wars erupt. Humans drive birds to extinction with poisoned arrows.  
+## 🚶 **Human Migrations**  
+*(Wave Settlement Pattern: Northwest → East/South)*  
+
+| **Era**         | **Group**       | **Origin**          | **Settlement**          | **Key Traits**                  |  
+|-----------------|-----------------|---------------------|-------------------------|---------------------------------|  
+| c. 50,000 BCE | **Jharwa**      | Zagros Mountains    | Saraswati Delta         | Cave painters, shell worshippers |  
+| c. 10,000 BCE | **Vedda**       | Caspian Steppes     | Ganges Plain            | Horse tamers, fire ritualists    |  
+| c. 5,000 BCE  | **Naga**        | Indus Valley        | Deccan Plateau          | Serpent cults, metalworkers      |  
+| c. 3,000 BCE  | **Outliers**    | Hybrid populations  | Fringe regions          | Vanara-human mixes, bird-speakers |  
 
 ---
 
-### **4. Bronze Age: River Kingdoms (c. 4000–2000 BCE)**  
-| **Period**       | **Event**                                                                 |  
-|------------------|---------------------------------------------------------------------------|  
-| **Saraswati Zenith** | City-states (**Lothal**, **Dwarka**, **Kalibangan**) flourish along the "Great River." |  
-| **Harappan Golden Age** | Urban planning, dockyards, **Mask of Harappa** forged in Mohenjo-Daro. |  
-| **First Decline**   | Saraswati River dries; famine triggers migration to Ganga plains.          |  
+## 🌀 **Spiritual Beings & Gates**  
+### (Timeless Entities)  
+| **Being**         | **Manifestation**                     | **Domain**               |  
+|-------------------|---------------------------------------|--------------------------|  
+| **Ammonite Man**  | Spiraling nautilus-shell form         | Tethys Sea depths        |  
+| **Owlman**        | Feathered humanoid with 360° neck     | Deciduous forests        |  
+| **Lionman**       | Maned solar deity with obsidian claws | Deserts/Savannas         |  
+| **Gatekeepers**   | Shape-shifting stone sentinels        | Dwarka portals           |  
+
+### 🔮 **Interdimensional Gates**  
+- **Dwarka Mechanism**:  
+  Stone arches pulsating with blue energy, appearing at cosmic alignments  
+  - **Function**: Bridges physical realm with **Asura Loka** (demon dimension)  
+  - **Current Status**: Dormant beneath Dwarka city's foundations  
+- **Other Portals**:  
+  - **Yaksha Gates**: Hidden in Narmada Valley monoliths  
+  - **Rakshasha Vortices**: Swirling sand pits in Gedrosian Desert  
 
 ---
 
-### **5. Iron Age: Clans & Conquest (c. 2000–500 BCE)**  
-- **New Powers:**  
-  - **Shwetavahanas:** Silver-trading dynasty (Varna’s ancestors).  
-  - **Kia Tribes:** Vedda-Naga hybrids, masters of marsh warfare.  
-- **Cultural Shifts:**  
-  - Yaksha megaliths repurposed as forts.  
-  - **"Memory-Seed Magic"** taught by Narmada Man fossil-sages.  
+## 🏺 **Civilization Dawn**  
+### (c. 3000–500 BCE)  
+1. **Harappan Emergence** (NW Origin):  
+   - Cities rise along Saraswati River (Lothal, Dholavira)  
+   - Trade with **Naga serpent-kingdoms** in Deccan  
+2. **Eastern Expansion**:  
+   - Vedda clans migrate to Ganges Delta  
+   - Found **Magadha** kingdom with Yaksha aid  
+3. **Southern Hybrids**:  
+   - Jharwa-Vanara tribes build **tree-temples** in Western Ghats  
+   - Worship Owlman as night guardian  
 
 ---
 
-### **6. Age of Strife (c. 500 BCE–200 CE)**  
-- **Key Events:**  
-  - **Dwarkan Hegemony:** Naval empire enslaves Silvanus birds for warfare.  
-  - **Lothal’s Resurgence:** Kavik Mask rebuilds port; Tower of Whispers erected.  
-  - **Tendua Plague:** Asura-corrupted beasts ravage Deccan villages.  
-- **Human Dominance:**  
-  Vanaras retreat to jungles; humans control 90% of arable land.  
+## 👁️‍🗨️ **Current Era** (c. 500 BCE–Present)  
+| **Realm**         | **Inhabitants**                       | **Status**               |  
+|-------------------|---------------------------------------|--------------------------|  
+| **City-States**   | Humans (Vedda/Naga dominant)          | Flourishing              |  
+| **Forest Fringes**| Vanara remnants, hybrid tribes        | Declining                |  
+| **Mountain Holds**| Yaksha stone-smiths                   | Isolationist             |  
+| **Desert Wastes** | Rakshasha nomad clans                 | Increasingly visible     |  
+
+> *"The gates remember what mortals forget. When stars align, shadows walk."*  
+> ― Yaksha inscription, Narmada monolith  
 
 ---
 
-### **7. Present Era (c. 200 CE– )**  
-- **Political Landscape:**  
-  - **Lothal:** Mask/Kia rivalry fueled by mask relics.  
-  - **Dwarka:** Naval superpower demanding tribute.  
-  - **Wild Zones:** Narmada forests (last Silvanus refuge), Nilgiris (Vanara strongholds).  
-- **Unresolved Mysteries:**  
-  - Where did the **Ammonite Man** retreat?  
-  - Will the **Saraswati** ever flow again?  
+**Chronological Anchors**  
+- 🌋 **KT Extinction**: Allowed avian-therapod dominance  
+- ❄️ **Pleistocene Glaciation**: Triggered Vanara collapse  
+- ⛵ **Saraswati Drying**: Forced human eastward migration  
 
-> *"We carved our kingdoms atop bird-bones and Vanara blood. But the land remembers."*  
-> ― Yaksha inscription, Lothal Granary  
+**Unresolved Mysteries**  
+- Where did Owlman retreat during the Vedda conquest?  
+- Why do Dwarka gates activate during solar eclipses?  
+- Are Ammonite Man and Lionman opposing forces?  
 
 ---  
 **🕰️ Timeline Key**  
-- **Bold** = Human arrival milestones  
-- *Italics* = Ecological/cultural turning points  
-
-Would you like expansions on **migration routes**, **tool technologies**, or **mythical hybrids**?
-
-### **🗺️ Key Regions**  
-| **Region**       | **Description** |  
-|----------------|-------------|  
-| **Lothal** | A thriving port city ruled by the Mask family, home to a sacred **22-story tower**. |  
-| **Dwarka** | A fortified island at the Saraswati’s mouth, controlled by Dwarakan warlords. |  
-| **Dholavira** | A ruined Harappan city where the **first mask** was hidden. |  
-| **Gedrosian Desert** | A wasteland patrolled by various creatures, shapeshifters and demon hunters. |  
-| **Narmada Valley** | A mystical lands the hold the key to the origin of magical events in Jambudweep. |  
-
----
-
-## **👑 Major Houses & Characters**  
-
-### **🏛️ The Mask Dynasty**  
-| **Character** | **Role** |  
-|-------------|--------|  
-| **Kavik "Stoneheart" Mask** | Patriarch of Lothal, slain by the **Tendua**. |  
-| **Mehme "Stormblade" Mask** | His heir, tasked with reclaiming the **three masks**. |  
-| **Iknaya "Scrollkeeper" Mask** | Wise strategist who co-rules Lothal. |  
-| **Shaashak "Silversong" Mask** | Pregnant widow of Khadi, flees after Kavik’s death. |  
-
-### **⚔️ The Kia & Other Factions**  
-| **Character** | **Role** |  
-|-------------|--------|  
-| **Khadi "Serpent-Tongue"** | Shaashak’s husband, escapes with her. |  
-| **Nila "Veil of Shadows"** | Khadi’s first wife, possessed by an **Asura**. |  
-| **Varna "Starmapper"** | Mehme’s wife, a former slave turned navigator. |  
-
----
-
-## **📜 The Three Masks & The Tendua’s Wrath**  
-
-### **🎭 The Masks of Destiny**  
-1. **The Lohita Mukha (Crimson Mask)** – Hidden in **Dholavira**, channeling storm magic.  
-2. **The Surya Mukha (Sun Mask)** – Lost in **Harappa**, said to control fire.  
-3. **The Nila Mukha (Moon Mask)** – Last seen in **Tamralinga**, tied to tides.  
-
-### **🐆 The Tendua’s Curse**  
-- When **Nila defiles the Lohita Mukha**, she summons the **Tendua**, a leopard-manticore with a human face.  
-- Kavik dies fighting it, triggering a **civil war** in Lothal.  
-- Mehme must **recover the masks** before the Asura’s influence spreads.  
-
----
-
-## **🐺 Creatures of Legend**  
-| **Beast** | **Description** |  
-|----------|-------------|  
-| **Tendua** | A shapeshifting predator, omen of doom. |  
-| **Beedu** | Flying desert rays, silent hunters of Gedrosia. |  
-| **Flightless Birds** | Once-intelligent, now **tamed as mounts**. |  
-| **Giant Salamanders** | Poisonous marsh-dwellers farmed by the Kia. |  
-
----
-
-## **🎭 Themes**  
-- **🔄 Legacy vs. Progress** – Will Lothal fall or evolve?  
-- **🔥 Betrayal & Redemption** – Nila’s possession, Varna’s rise from slavery.  
-- **⚔️ Power & Survival** – Mehme’s quest to reunite the masks.  
-- **🌊 Cultural Memory** – The lost glory of Harappa vs. Lothal’s future.  
-
----
-
-## **🚀 Where the Story Goes Next**  
-- Mehme sails **west to Harappa** for the Surya Mukha.  
-- **Khadi and Shaashak** hide in the Narmada Valley.  
-- **Iknaya** holds Lothal, but **Dwarka’s fleet looms**.  
-
-> *"The masks remember what kings forget."*  
-
----  
-**📌 Version:** *1.0 (Draft)*  
-**🔄 Last Updated:** *Today*  
-
-Would you like any refinements? More lore on the **Beedu** or **flightless birds' history**?
+- **Bold** = Evolutionary turning points  
+- *Italics* = Spiritual manifestations
