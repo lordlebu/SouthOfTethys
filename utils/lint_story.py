@@ -62,7 +62,12 @@ def main():
 
         # Initialize character and species references
         characters = event.get("characters", {})
-        species_data_entry = species_data.get(list(characters.keys())[0], {})
+        if characters:
+            species_data_entry = species_data.get(characters[0], {})
+        else:
+            print("❌ Missing character data: Characters list is empty")
+            return 1
+
         species = {k: v for k, v in species_data_entry.items() if k in event}
         for char_name in character_info:
             if isinstance(character_info[char_name], dict):
