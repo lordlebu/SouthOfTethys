@@ -42,14 +42,20 @@ def summarize_timeline(timeline):
         )
 
 if __name__ == "__main__":
-    # Load the timeline data from JSON
-    timeline_path = os.path.join(os.path.dirname(__file__), "utils/generate-timeline.py", "timeline/timeline.json")
+    # Find project base directory and timeline path
+    base_dir = os.path.dirname(os.path.dirname(__file__))
+    timeline_path = os.path.join(base_dir, "timeline", "timeline.json")
     timeline_data = load_events(timeline_path)
 
     # Analyze the timeline data using pandas
     print("Before adding new character:")
-    summary_stats = timeline_data.groupby(["date", "summary"]).mean()
-    print(summary_stats)
+    # Only use pandas if timeline_data is a DataFrame
+    try:
+        df = pd.DataFrame(timeline_data)
+        summary_stats = df.groupby(["date", "summary"]).mean(numeric_only=True)
+        print(summary_stats)
+    except Exception as e:
+        print(f"⚠️ Warning: Could not summarize timeline with pandas: {e}")
 
     updated_timeline = build_timeline(timeline_data)
     summarize_timeline(updated_timeline)
