@@ -14,14 +14,18 @@ def load_json(path):
     with open(path) as f:
         return json.load(f)
 
+def file_glob_search(pattern):
+    for file in BASE_DIR.glob(pattern):
+        yield file
+
 def generate_timeline_data(timeline_path, character_dir, flora_path):
     timeline_data = load_json(timeline_path)
     species_data = load_json(flora_path)
 
     # Reorganize JSON data for easier access
     character_info = {}
-    for file in character_dir.glob("*.json"):
-        with open(file) as f:
+    for char_file in file_glob_search("characters/*.json"):
+        with open(char_file) as f:
             c = json.load(f)
             if isinstance(c, dict) and "name" in c:
                 character_info[c["name"]] = {
@@ -37,8 +41,8 @@ def generate_timeline_data(timeline_path, character_dir, flora_path):
                         }
 
     location_data = {}
-    for file in character_dir.glob("*.json"):
-        with open(file) as f:
+    for char_file in file_glob_search("characters/*.json"):
+        with open(char_file) as f:
             c = json.load(f)
             if isinstance(c, dict) and "name" in c:
                 location_data[c["name"]] = {
