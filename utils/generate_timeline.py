@@ -22,6 +22,16 @@ def load_events(path):
             raise ValueError("timeline.json format not recognized")
 
 def build_timeline(events):
+    character_data = {
+        "name": "NewCharacter",
+        "age": 20,
+        "lineage": "HouseNew",
+        "role": "NewRole",
+        "traits": ["new_trait1", "new_trait2"]
+    }
+
+    events.append(character_data)
+
     return sorted(events, key=lambda e: fantasy_date_key(e.get("date", "")))
 
 def summarize_timeline(timeline):
@@ -37,10 +47,11 @@ if __name__ == "__main__":
     timeline_data = load_events(timeline_path)
 
     # Analyze the timeline data using pandas
+    print("Before adding new character:")
     summary_stats = timeline_data.groupby(["date", "summary"]).mean()
-
     print(summary_stats)
 
-
+    updated_timeline = build_timeline(timeline_data)
+    summarize_timeline(updated_timeline)
 
 
