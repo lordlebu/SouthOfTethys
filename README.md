@@ -1,3 +1,28 @@
+
+## 🛡️ Pre-commit Integration Steps
+
+1. **Place your `.pre-commit-config.yaml` in the project root.**
+2. **Add tool-specific configs** (`.flake8`, `pyproject.toml`, `mypy.ini`, `.bandit.yml`) as described in the repo or documentation.
+3. **Run `pre-commit install`** to activate hooks for all contributors:
+   ```bash
+   pip install pre-commit
+   pre-commit install
+   ```
+4. **Run manually (optional):**
+   ```bash
+   pre-commit run --all-files
+   ```
+
+### Recommended Minimal Setup
+For most Python projects, start with:
+
+- `black` (formatting)
+- `isort` (imports)
+- `flake8` (linting)
+- `pre-commit-hooks` (basic hygiene)
+
+Add `mypy`, `bandit`, and others as your codebase grows or if you need stricter checks.
+
 # Chronology of Jambudweepa  
 *From Primordial Seas to City-States*  
 
