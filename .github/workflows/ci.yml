@@ -39,8 +39,8 @@ on:
       publish_book:
         description: 'Publish complete book artifacts'
         required: false
-        default: 'false'
         type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -222,6 +222,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-        with:
-          enablement: true
 
