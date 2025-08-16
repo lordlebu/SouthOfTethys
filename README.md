@@ -15,14 +15,14 @@
    ```
 
 ### Manual Code Quality Commands
-You can also run the following commands to auto-correct and lint your codebase:
+You can also run the following commands to auto-correct and lint your codebase (recommended: run on the `./utils` directory):
 
 ```bash
-python -m black . --line-length 88
-python -m isort . --profile black
-python -m autoflake --in-place --remove-unused-variables --remove-all-unused-imports --ignore-init-module-imports .
-python -m pyupgrade --py39-plus **/*.py
-python -m flake8 .
+python -m black ./utils --line-length 88
+python -m isort ./utils --profile black
+python -m autoflake --in-place --remove-unused-variables --remove-all-unused-imports --ignore-init-module-imports ./utils/*.py
+python -m pyupgrade --py39-plus ./utils/*.py
+python -m flake8 ./utils
 ```
 
 ### Recommended Minimal Setup
