@@ -2,3 +2,8 @@
 pandas
 dash
 plotly
+black
+isort
+autoflake
+pyupgrade
+flake8
