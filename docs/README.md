@@ -24,12 +24,20 @@ A procedurally evolving storytelling engine inspired by world simulation games l
 4. **Manual publication**: Use GitHub Actions → "CI" → "Run workflow"
 
 **Manual Code Quality Commands:**
+Before running the following commands, make sure all tools are installed:
 ```bash
-python -m black ./utils --line-length 88
-python -m isort ./utils --profile black
+pip install -r requirements.txt
+```
+
+You can then run the following commands to auto-correct and lint your codebase (recommended: run on the `./utils` directory):
+
+```bash
+python -m black ./utils/*.py --line-length 88
+python -m isort ./utils/*.py --profile black
 python -m autoflake --in-place --remove-unused-variables --remove-all-unused-imports --ignore-init-module-imports ./utils/*.py
 python -m pyupgrade --py39-plus ./utils/*.py
 python -m flake8 ./utils/*.py
+ruff check ./utils/*.py --fix
 ```
 
 **Run Utility Scripts:**
