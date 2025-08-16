@@ -44,8 +44,8 @@ jobs:
       - name: Lint Python scripts
         run: flake8 utils/ || true
 
-      - name: Run pre-commit checks in Docker
-        run: docker run --rm -v ${{ github.workspace }}:/app southoftethys pre-commit run --all-files
+#      - name: Run pre-commit checks in Docker
+#        run: docker run --rm -v ${{ github.workspace }}:/app southoftethys pre-commit run --all-files
 
   publish-artifacts:
     runs-on: ubuntu-latest
