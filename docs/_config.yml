@@ -1,0 +1,38 @@
+title: "South of Tethys - Digital Book"
+description: "A procedurally evolving fantasy world created through collaborative storytelling"
+baseurl: "/SouthOfTethys"
+url: "https://lordlebu.github.io"
+
+# Theme
+remote_theme: pages-themes/minimal@v0.2.0
+plugins:
+- jekyll-remote-theme
+
+# Navigation
+header_pages:
+  - index.md
+  - timeline_mermaid.md
+  - interactive_map.html
+
+# Markdown processing
+markdown: kramdown
+highlighter: rouge
+
+# SEO
+author: "South of Tethys Contributors"
+social:
+  github: lordlebu/SouthOfTethys
+
+# Collections
+collections:
+  docs:
+    output: true
+    permalink: /:collection/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"

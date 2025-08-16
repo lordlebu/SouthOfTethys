@@ -44,6 +44,29 @@ This project is a procedurally evolving storytelling engine inspired by world si
 - `generate_timeline.py` → Loads `timeline.json`, sorts by scene, prints summary
 - `lineage_tracker.py` → Builds a family tree from `genealogy.json`
 - `evolve_species.py` → Adds mutation stages to species based on events
+- `generate_timeline_mermaid.py` → Creates visual timeline diagrams and summaries
+- `generate_map.py` → Creates interactive HTML maps from geographic data
+- `lint_story.py` → Validates story consistency and cross-references
+
+## Publishing & Artifacts
+
+The repository automatically generates and publishes "book" artifacts through GitHub Actions:
+
+- **Timeline visualizations** (Mermaid diagrams, summaries)
+- **Interactive maps** (HTML with geographic overlays)
+- **Character and species data** (structured genealogy and evolution)
+- **GitHub Pages deployment** for public viewing
+
+### Manual Publication
+- Use GitHub Actions manual trigger for immediate publishing
+- All artifacts published to `https://lordlebu.github.io/SouthOfTethys/`
+- Artifacts also available as downloadable files from workflow runs
+
+### Development Workflow
+1. Make changes to world data (timeline, characters, species, locations)
+2. Run `utils/lint_story.py` to validate consistency
+3. Commit and push - triggers automatic artifact generation
+4. Merge to `main` branch for full publication
 
 ---
 

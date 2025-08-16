@@ -20,9 +20,15 @@ RUN python -m pip install pre-commit
 # Set working directory
 WORKDIR /app
 
-# Copy only the utils and timeline folders (adjust if needed)
+# Copy all necessary project files
 COPY utils/ utils/
 COPY timeline/ timeline/
+COPY cartography/ cartography/
+COPY characters/ characters/
+COPY flora_fauna/ flora_fauna/
+COPY docs/ docs/
+COPY CONTEXT.md .
+COPY README.md .
 
 # Creates a non-root user with an explicit UID and adds permission to access the /app folder
 # For more info, please refer to https://aka.ms/vscode-docker-python-configure-containers

@@ -1,12 +1,42 @@
-Jambhudweepa
-Dwarka
-Himalayas
-Lemuria
-Narmada
-Gedrosia
-Harkynia
-Venga
-Vengi
-Vindhya
-Nirigilis
-Kailasha
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Jambhudweepa",
+        "description": "The ancient continent"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [70, 30], [90, 30], [90, 10], [70, 10], [70, 30]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dwarka",
+        "description": "Coastal city with ancient gates"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [69.5, 22.5]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Himalayas",
+        "description": "Mountain range to the north"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [75, 28], [85, 28], [85, 32], [75, 32], [75, 28]
+        ]]
+      }
+    }
+  ]
+}

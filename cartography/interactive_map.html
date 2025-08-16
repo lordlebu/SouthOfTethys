@@ -17,7 +17,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_762a93db39803d7ed450977790efead8 {
+                #map_de64aeb3140886a64c835921d18fc62a {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -54,14 +54,14 @@
 <body>
     
     
-            <div class="folium-map" id="map_762a93db39803d7ed450977790efead8" ></div>
+            <div class="folium-map" id="map_de64aeb3140886a64c835921d18fc62a" ></div>
         
 </body>
 <script>
     
     
-            var map_762a93db39803d7ed450977790efead8 = L.map(
-                "map_762a93db39803d7ed450977790efead8",
+            var map_de64aeb3140886a64c835921d18fc62a = L.map(
+                "map_de64aeb3140886a64c835921d18fc62a",
                 {
                     center: [0.0, 0.0],
                     crs: L.CRS.EPSG3857,
@@ -78,7 +78,7 @@
 
         
     
-            var tile_layer_e23036112410f704f289e55f224fc5f6 = L.tileLayer(
+            var tile_layer_1bb6e2f54dcb28b7b2ae09d87f42b720 = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {
   "minZoom": 0,
@@ -95,7 +95,32 @@
             );
         
     
-            tile_layer_e23036112410f704f289e55f224fc5f6.addTo(map_762a93db39803d7ed450977790efead8);
+            tile_layer_1bb6e2f54dcb28b7b2ae09d87f42b720.addTo(map_de64aeb3140886a64c835921d18fc62a);
+        
+    
+
+        function geo_json_ddbe53d3484e36cd0f9f7d3839133fd1_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_ddbe53d3484e36cd0f9f7d3839133fd1 = L.geoJson(null, {
+                onEachFeature: geo_json_ddbe53d3484e36cd0f9f7d3839133fd1_onEachFeature,
+            
+            ...{
+}
+        });
+
+        function geo_json_ddbe53d3484e36cd0f9f7d3839133fd1_add (data) {
+            geo_json_ddbe53d3484e36cd0f9f7d3839133fd1
+                .addData(data);
+        }
+            geo_json_ddbe53d3484e36cd0f9f7d3839133fd1_add({"features": [{"geometry": {"coordinates": [[[70, 30], [90, 30], [90, 10], [70, 10], [70, 30]]], "type": "Polygon"}, "properties": {"description": "The ancient continent", "name": "Jambhudweepa"}, "type": "Feature"}, {"geometry": {"coordinates": [69.5, 22.5], "type": "Point"}, "properties": {"description": "Coastal city with ancient gates", "name": "Dwarka"}, "type": "Feature"}, {"geometry": {"coordinates": [[[75, 28], [85, 28], [85, 32], [75, 32], [75, 28]]], "type": "Polygon"}, "properties": {"description": "Mountain range to the north", "name": "Himalayas"}, "type": "Feature"}], "type": "FeatureCollection"});
+        geo_json_ddbe53d3484e36cd0f9f7d3839133fd1.setStyle(function(feature) {return feature.properties.style;});
+
+        
+    
+            geo_json_ddbe53d3484e36cd0f9f7d3839133fd1.addTo(map_de64aeb3140886a64c835921d18fc62a);
         
 </script>
 </html>
