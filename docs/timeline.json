@@ -1,0 +1,18 @@
+[
+  {
+    "id": "event001",
+    "title": "The Grove Fire",
+    "date": "Act 1, Scene 1",
+    "summary": "A mysterious fire engulfs Mossvale Grove.",
+    "characters": [],
+    "location": "Mossvale Grove"
+  },
+  {
+    "id": "event002",
+    "title": "Arrival of Leafkin",
+    "date": "Act 1, Scene 3",
+    "summary": "Leafkin awakens and vows to protect the Grove.",
+    "characters": ["Leafkin"],
+    "location": "Mossvale Grove"
+  }
+]
