@@ -20,14 +20,20 @@ RUN python -m pip install pre-commit
 # Set working directory
 WORKDIR /app
 
-# Copy only the utils and timeline folders (adjust if needed)
+# Copy all necessary project files
 COPY utils/ utils/
 COPY timeline/ timeline/
+COPY cartography/ cartography/
+COPY characters/ characters/
+COPY flora_fauna/ flora_fauna/
+COPY docs/ docs/
+COPY CONTEXT.md .
+COPY README.md .
 
 # Creates a non-root user with an explicit UID and adds permission to access the /app folder
 # For more info, please refer to https://aka.ms/vscode-docker-python-configure-containers
 RUN adduser -u 5678 --disabled-password --gecos "" appuser && chown -R appuser /app
 USER appuser
 
-# Set default command to run the script
-CMD ["python", "utils/generate_timeline_mermaid.py"]
+# Set default command to run all utility scripts for artifact generation
+CMD ["sh", "-c", "python utils/lint_story.py && python utils/generate_timeline_mermaid.py && python utils/generate_timeline.py && python utils/generate_map.py && python utils/evolve_species.py # && python utils/snippet_processor.py # && python utils/hometown.py"]

@@ -5,13 +5,18 @@ on:
     branches:
       - main
       - feature/*
+      - book-publish
     paths:
       - '.github/workflows/ci.yml'
       - '.gitignore'
-      - 'utils/snippet_processor.py'
+      - 'utils/**'
       - 'Dockerfile'
-      - 'cartography/overworld.json'
+      - 'cartography/**'
+      - 'timeline/**'
+      - 'characters/**'
+      - 'flora_fauna/**'
       - 'CONTEXT.md'
+      - 'requirements.txt'
 
   pull_request:
     branches:
@@ -20,13 +25,27 @@ on:
     paths:
       - '.github/workflows/ci.yml'
       - '.gitignore'
-      - 'utils/snippet_processor.py'
+      - 'utils/**'
       - 'Dockerfile'
-      - 'cartography/overworld.json'
+      - 'cartography/**'
+      - 'timeline/**'
+      - 'characters/**'
+      - 'flora_fauna/**'
       - 'CONTEXT.md'
+      - 'requirements.txt'
+
+  workflow_dispatch:
+    inputs:
+      publish_book:
+        description: 'Publish complete book artifacts'
+        required: false
+        default: 'false'
+        type: boolean
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 jobs:
   lint-and-validate:
@@ -35,30 +54,64 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.11
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
       - name: Build Docker image
         run: docker build -t southoftethys .
 
-      # - name: Run snippet_processor.py to process new snippets
-      #   run: python utils/snippet_processor.py > processed_snippets.txt
+      - name: Run all utility scripts for validation and artifact generation
+        run: |
+          python utils/lint_story.py
+          python utils/generate_timeline_mermaid.py
+          python utils/generate_timeline.py
+          python utils/generate_map.py
+          python utils/evolve_species.py
+          # python utils/snippet_processor.py
+          # python utils/hometown.py
+          flake8 utils/ || true
 
-      - name: Install flake8
-        run: pip install flake8
-
-      - name: Lint Python scripts
-        run: flake8 utils/ || true
-
-#      - name: Run pre-commit checks in Docker
-#        run: docker run --rm -v ${{ github.workspace }}:/app southoftethys pre-commit run --all-files
-
-  publish-artifacts:
+  generate-artifacts:
     runs-on: ubuntu-latest
     needs: lint-and-validate
+    outputs:
+      artifacts-generated: ${{ steps.check-artifacts.outputs.generated }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Generate timeline visualizations
-        run: python utils/generate_timeline_mermaid.py
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.11
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run all utility scripts for artifact generation
+        run: |
+          python utils/generate_timeline_mermaid.py
+          python utils/generate_timeline.py
+          python utils/generate_map.py
+          python utils/evolve_species.py
+          # python utils/snippet_processor.py
+          # python utils/hometown.py
+
+      - name: Check artifacts generated
+        id: check-artifacts
+        run: |
+          echo "generated=true" >> $GITHUB_OUTPUT
+          ls -la timeline/
+          ls -la cartography/
 
       - name: Upload timeline summary artifact
         uses: actions/upload-artifact@v4
@@ -72,40 +125,101 @@ jobs:
           name: timeline_mermaid
           path: timeline/timeline_mermaid.md
 
-      - name: Publish processed snippets to the World (ignore this folder)
+      - name: Upload full timeline artifact
         uses: actions/upload-artifact@v4
         with:
-          name: processed-snippets
-          path: 'processed_snippets.txt'
+          name: full_timeline
+          path: timeline/timeline.json
 
-      - name: Publish timeline graph as artifact
+      - name: Upload interactive map artifact
         uses: actions/upload-artifact@v4
         with:
-          name: timeline-graph
-          path: timeline_mermaid.md
+          name: interactive_map
+          path: cartography/interactive_map.html
 
-      - name: Publish overworld map as artifact
+      - name: Upload overworld map artifact
         uses: actions/upload-artifact@v4
         with:
-          name: overworld-map
+          name: overworld_map
           path: cartography/overworld.json
 
-  deploy:
+      - name: Upload regions geojson artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: regions_geojson
+          path: cartography/regions.geojson
+
+  deploy-docs:
     runs-on: ubuntu-latest
-    needs: publish-artifacts
+    needs: generate-artifacts
+    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/book-publish' || github.event.inputs.publish_book == 'true'
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Copy timeline visualizations to docs
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.11
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Generate all artifacts for docs
+        run: |
+          python utils/generate_timeline_mermaid.py
+          python utils/generate_timeline.py
+          python utils/generate_map.py
+
+      - name: Prepare docs directory
         run: |
           mkdir -p docs
           cp timeline/timeline_summary.md docs/index.md
           cp timeline/timeline_mermaid.md docs/timeline_mermaid.md
+          cp cartography/interactive_map.html docs/interactive_map.html
+          cp cartography/overworld.json docs/overworld.json
+          cp cartography/regions.geojson docs/regions.geojson
+          cp timeline/timeline.json docs/timeline.json
+
+      - name: Create docs README
+        run: |
+          cat > docs/README.md << 'EOF'
+          # South of Tethys - Published Book Artifacts
+
+          This directory contains the automatically generated artifacts from the South of Tethys storytelling engine.
+
+          ## Available Files
+
+          - **[index.md](index.md)** - Complete timeline summary (also available as main page)
+          - **[timeline_mermaid.md](timeline_mermaid.md)** - Timeline as Mermaid diagram
+          - **[interactive_map.html](interactive_map.html)** - Interactive world map
+          - **[timeline.json](timeline.json)** - Raw timeline data
+          - **[overworld.json](overworld.json)** - World region data
+          - **[regions.geojson](regions.geojson)** - Geographic data for mapping
+
+          ## About South of Tethys
+
+          South of Tethys is a procedurally evolving storytelling engine inspired by world simulation games. 
+          All world data is stored in JSON and Markdown files, version-controlled in Git, with Python scripts 
+          automating worldbuilding, event tracking, genealogy, and species evolution.
+
+          Generated on: $(date)
+          EOF
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload to GitHub Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: docs
+        id: deployment
+        uses: actions/deploy-pages@v4
 

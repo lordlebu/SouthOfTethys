@@ -1,4 +1,27 @@
 
+# South of Tethys - Procedural Storytelling Engine
+
+A procedurally evolving storytelling engine inspired by world simulation games like **Dwarf Fortress**. This project manages story events, character genealogy, and evolving flora/fauna in a version-controlled Git repository.
+
+## 📖 Published Book & Artifacts
+
+The complete "book" of South of Tethys is automatically published with each update:
+
+- **📚 [View Published Book](https://lordlebu.github.io/SouthOfTethys/)** - Complete timeline, maps, and world data
+- **🗺️ [Interactive World Map](https://lordlebu.github.io/SouthOfTethys/interactive_map.html)** - Explore the world geography
+- **📊 [Visual Timeline](https://lordlebu.github.io/SouthOfTethys/timeline_mermaid.html)** - Event progression flowchart
+
+### 🚀 Publishing Your Changes
+
+1. **Make changes** to timeline, characters, or world data
+2. **Test locally**: `python utils/lint_story.py`
+3. **Commit and push** to trigger automatic publication
+4. **Manual publication**: Use [GitHub Actions](../../actions) → "CI" → "Run workflow"
+
+See **[📋 Publishing Workflow Guide](docs/PUBLISHING.md)** for complete instructions.
+
+---
+
 ## 🛡️ Pre-commit Integration Steps
 
 1. **Place your `.pre-commit-config.yaml` in the project root.**
@@ -15,14 +38,21 @@
    ```
 
 ### Manual Code Quality Commands
-You can also run the following commands to auto-correct and lint your codebase (recommended: run on the `./utils` directory):
+
+Before running the following commands, make sure all tools are installed:
+```bash
+pip install -r requirements.txt
+```
+
+You can then run the following commands to auto-correct and lint your codebase (recommended: run on the `./utils` directory):
 
 ```bash
-python -m black ./utils --line-length 88
-python -m isort ./utils --profile black
+python -m black ./utils/*.py --line-length 88
+python -m isort ./utils/*.py --profile black
 python -m autoflake --in-place --remove-unused-variables --remove-all-unused-imports --ignore-init-module-imports ./utils/*.py
 python -m pyupgrade --py39-plus ./utils/*.py
-python -m flake8 ./utils
+python -m flake8 ./utils/*.py
+ruff check ./utils/*.py --fix
 ```
 
 ### Recommended Minimal Setup

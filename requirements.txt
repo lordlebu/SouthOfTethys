@@ -2,8 +2,10 @@
 pandas
 dash
 plotly
+folium
 black
 isort
 autoflake
 pyupgrade
 flake8
+ruff

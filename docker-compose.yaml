@@ -5,4 +5,4 @@ services:
       context: .
       dockerfile: Dockerfile
     image: southoftethys
-    command: python utils/generate_timeline.py
+  command: sh -c "python utils/lint_story.py && python utils/generate_timeline_mermaid.py && python utils/generate_timeline.py && python utils/generate_map.py && python utils/evolve_species.py # && python utils/snippet_processor.py # && python utils/hometown.py"

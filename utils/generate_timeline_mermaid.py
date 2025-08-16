@@ -48,7 +48,7 @@ def generate_markdown_summary(events):
         if chars:
             lines.append(f"**Characters:** {', '.join(chars)}")
         else:
-            lines.append(f"**Characters:** _None_")
+            lines.append("**Characters:** _None_")
         loc = event.get("location", None)
         if loc:
             lines.append(f"**Location:** {loc}")
