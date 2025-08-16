@@ -11,6 +11,9 @@ ENV PYTHONUNBUFFERED=1
 COPY requirements.txt .
 RUN python -m pip install -r requirements.txt
 
+# Install git for pre-commit compatibility in CI/CD
+RUN apt-get update && apt-get install -y git && rm -rf /var/lib/apt/lists/*
+
 # Install pre-commit for code quality hooks
 RUN python -m pip install pre-commit
 
