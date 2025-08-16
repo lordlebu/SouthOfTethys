@@ -6,6 +6,20 @@
       "dominant_species": ["Suncrawler Beetle", "Sandhorn Goat"],
       "landmarks": ["Old Beacon Spire", "River Aen"],
       "connected_to": ["Verdant Hollow"]
-    }
+    },
+    {
+      "name": "Verdant Hollow",
+      "terrain": "lush forest",
+      "dominant_species": ["Forest Elk", "Glowwing Butterfly"],
+      "landmarks": ["Crystal Spring", "Ancient Oak Grove"],
+      "connected_to": ["Saltbluff Plateau", "Misty Glade"]
+    },
+    {
+      "name": "Misty Glade",
+      "terrain": "foggy wetlands",
+      "dominant_species": ["Marsh Frog", "Willow Wisp"],
+      "landmarks": ["Foggy Marshlands", "Whispering Willow Tree"],
+      "connected_to": ["Verdant Hollow"]
+    } 
   ]
 }

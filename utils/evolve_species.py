@@ -4,10 +4,12 @@ import json
 def evolve_species(species_data, event):
     if event == "Climate Shift: Saraswati dries up":
         species_data["current_habitat"] = "Desert"
-        species_data["evolution"].append({
-            "stage": "Desert Morph",
-            "traits": ["Dune camouflage", "Thermal glide"]
-        })
+        species_data["evolution"].append(
+            {
+                "stage": "Desert Morph",
+                "traits": ["Dune camouflage", "Thermal glide"],
+            }
+        )
     return species_data
 
 
