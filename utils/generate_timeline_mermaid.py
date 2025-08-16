@@ -16,7 +16,7 @@ def fantasy_date_key(date_str):
 
 
 def load_timeline(path):
-    with open(path, "r", encoding="utf-8") as f:
+    with open(path, encoding="utf-8") as f:
         return json.load(f)
 
 
@@ -29,9 +29,7 @@ def generate_mermaid(events):
     prev_id = None
     for idx, event in enumerate(events):
         node_id = f"E{idx}"
-        label = (
-            f"{event.get('date', '')}: {event.get('title', '')}"
-        )
+        label = f"{event.get('date', '')}: {event.get('title', '')}"
         lines.append(f'    {node_id}["{label}"]')
         if prev_id is not None:
             lines.append(f"    {prev_id} --> {node_id}")
@@ -40,17 +38,18 @@ def generate_mermaid(events):
     mermaid_text = "\n".join(lines)
     return mermaid_text
 
+
 def generate_markdown_summary(events):
     lines = ["# Timeline Summary\n"]
     for event in events:
         lines.append(f"## {event.get('date', '')}: {event.get('title', '')}")
         lines.append(f"**Summary:** {event.get('summary', '')}")
-        chars = event.get('characters', [])
+        chars = event.get("characters", [])
         if chars:
             lines.append(f"**Characters:** {', '.join(chars)}")
         else:
             lines.append(f"**Characters:** _None_")
-        loc = event.get('location', None)
+        loc = event.get("location", None)
         if loc:
             lines.append(f"**Location:** {loc}")
         lines.append("")

@@ -1,7 +1,9 @@
-import pandas as pd
-import re
 import json
 import os
+import re
+
+import pandas as pd
+
 
 def fantasy_date_key(date_str):
     # Parses "Act X, Scene Y" into sortable tuple (X, Y)
@@ -9,6 +11,7 @@ def fantasy_date_key(date_str):
     if match:
         return (int(match.group(1)), int(match.group(2)))
     return (9999, 9999)  # fallback for unsortable dates
+
 
 def load_events(path):
     with open(str(path), encoding="utf-8") as f:
@@ -21,18 +24,20 @@ def load_events(path):
         else:
             raise ValueError("timeline.json format not recognized")
 
+
 def build_timeline(events):
     character_data = {
         "name": "NewCharacter",
         "age": 20,
         "lineage": "HouseNew",
         "role": "NewRole",
-        "traits": ["new_trait1", "new_trait2"]
+        "traits": ["new_trait1", "new_trait2"],
     }
 
     events.append(character_data)
 
     return sorted(events, key=lambda e: fantasy_date_key(e.get("date", "")))
+
 
 def summarize_timeline(timeline):
     for event in timeline:
@@ -40,6 +45,7 @@ def summarize_timeline(timeline):
             f"{event.get('date', '')}: {event.get('title', '')} - "
             f"{event.get('summary', '')}"
         )
+
 
 if __name__ == "__main__":
     # Find project base directory and timeline path
@@ -59,5 +65,3 @@ if __name__ == "__main__":
 
     updated_timeline = build_timeline(timeline_data)
     summarize_timeline(updated_timeline)
-
-

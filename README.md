@@ -8,10 +8,22 @@
    pip install pre-commit
    pre-commit install
    ```
+
 4. **Run manually (optional):**
    ```bash
    pre-commit run --all-files
    ```
+
+### Manual Code Quality Commands
+You can also run the following commands to auto-correct and lint your codebase:
+
+```bash
+python -m black . --line-length 88
+python -m isort . --profile black
+python -m autoflake --in-place --remove-unused-variables --remove-all-unused-imports --ignore-init-module-imports .
+python -m pyupgrade --py39-plus **/*.py
+python -m flake8 .
+```
 
 ### Recommended Minimal Setup
 For most Python projects, start with:
