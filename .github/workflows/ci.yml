@@ -25,6 +25,9 @@ on:
       - 'cartography/overworld.json'
       - 'CONTEXT.md'
 
+permissions:
+  contents: write
+
 jobs:
   lint-and-validate:
     runs-on: ubuntu-latest
