@@ -1,7 +1,7 @@
 # utils/hometown.py
 import dash
-from dash import dcc, html
 import pandas as pd
+from dash import dcc, html
 
 # Load the timeline data from JSON
 timeline_data = pd.read_json("timeline/timeline.json")

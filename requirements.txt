@@ -8,3 +8,4 @@ isort
 autoflake
 pyupgrade
 flake8
+ruff
