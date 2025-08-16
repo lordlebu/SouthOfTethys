@@ -5,14 +5,30 @@
     "evolution": [
       {
         "stage": "Juvenile",
-        "traits": ["Buoyant glands", "Counter-shaded"]
+        "traits": [
+          "Buoyant glands",
+          "Counter-shaded"
+        ]
       },
       {
         "stage": "Adult",
-        "traits": ["Stealth flier", "Predator", "Desert adapted"]
+        "traits": [
+          "Stealth flier",
+          "Predator",
+          "Desert adapted"
+        ]
+      },
+      {
+        "stage": "Desert Morph",
+        "traits": [
+          "Dune camouflage",
+          "Thermal glide"
+        ]
       }
     ],
-    "current_habitat": "Gedrosian Desert",
-    "artifacts": ["sketch_beedu_01.jpg"]
+    "current_habitat": "Desert",
+    "artifacts": [
+      "sketch_beedu_01.jpg"
+    ]
   }
 ]

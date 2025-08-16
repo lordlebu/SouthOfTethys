@@ -1,7 +1,6 @@
 # utils/hometown.py
 import dash
-import dash_core_components as dcc
-import dash_html_components as html
+from dash import dcc, html
 import pandas as pd
 
 # Load the timeline data from JSON
@@ -33,4 +32,4 @@ def update_graph(graph):
 
 # Run the app
 if __name__ == "__main__":
-    app.run_server(debug=True)
+    app.run(debug=True)

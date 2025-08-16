@@ -67,11 +67,16 @@ jobs:
       - name: Build Docker image
         run: docker build -t southoftethys .
 
-      - name: Run story validation and linting
-        run: python utils/lint_story.py
-
-      - name: Lint Python scripts
-        run: flake8 utils/ || true
+      - name: Run all utility scripts for validation and artifact generation
+        run: |
+          python utils/lint_story.py
+          python utils/generate_timeline_mermaid.py
+          python utils/generate_timeline.py
+          python utils/generate_map.py
+          python utils/evolve_species.py
+          # python utils/snippet_processor.py
+          # python utils/hometown.py
+          flake8 utils/ || true
 
   generate-artifacts:
     runs-on: ubuntu-latest
@@ -92,14 +97,14 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Generate timeline visualizations
-        run: python utils/generate_timeline_mermaid.py
-
-      - name: Generate timeline data
-        run: python utils/generate_timeline.py
-
-      - name: Generate interactive maps
-        run: python utils/generate_map.py
+      - name: Run all utility scripts for artifact generation
+        run: |
+          python utils/generate_timeline_mermaid.py
+          python utils/generate_timeline.py
+          python utils/generate_map.py
+          python utils/evolve_species.py
+          # python utils/snippet_processor.py
+          # python utils/hometown.py
 
       - name: Check artifacts generated
         id: check-artifacts
