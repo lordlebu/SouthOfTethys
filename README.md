@@ -52,7 +52,7 @@ python -m isort ./utils/*.py --profile black
 python -m autoflake --in-place --remove-unused-variables --remove-all-unused-imports --ignore-init-module-imports ./utils/*.py
 python -m pyupgrade --py39-plus ./utils/*.py
 python -m flake8 ./utils/*.py
-ruff check ./utils/*.py --fix
+python -m ruff check ./utils/*.py --fix
 ```
 
 ### Recommended Minimal Setup

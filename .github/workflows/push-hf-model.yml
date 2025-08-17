@@ -1,0 +1,29 @@
+name: Push Model to Hugging Face
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'model/**'
+      - '.github/workflows/push-hf-model.yml'
+
+jobs:
+  push-hf-model:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Hugging Face Hub Python API
+        run: pip install huggingface_hub
+
+      - name: Push model to Hugging Face (Python API)
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          python -c "import os; from huggingface_hub import HfApi; api = HfApi(token=os.getenv('HF_TOKEN')); api.upload_folder(folder_path='model', repo_id='lordlebu/4000BCSaraswaty', repo_type='model')"
