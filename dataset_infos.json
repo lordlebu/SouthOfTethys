@@ -1,0 +1,41 @@
+{
+  "SouthOfTethys": {
+    "description": "Procedurally evolving fantasy world dataset: characters, timeline, flora/fauna, geography, and story snippets.",
+    "citation": "@dataset{lordlebu_southoftethys_2025, title={SouthOfTethys: A Procedural Fantasy World Dataset}, author={lordlebu}, year={2025}, url={https://huggingface.co/datasets/lordlebu/SouthOfTethys}}",
+    "features": {
+      "characters": {
+        "type": "json",
+        "description": "Character profiles and genealogy."
+      },
+      "timeline": {
+        "type": "json",
+        "description": "Chronological world events, fantasy date format."
+      },
+      "flora_fauna": {
+        "type": "json",
+        "description": "Species profiles and evolutionary chains."
+      },
+      "geography": {
+        "type": "json",
+        "description": "World regions, locations, and connections."
+      },
+      "snippets": {
+        "type": "json",
+        "description": "Story chunks with metadata."
+      }
+    },
+    "license": "Specify your license here (e.g., MIT, CC-BY-4.0)",
+    "splits": {
+      "train": {
+        "name": "train",
+        "num_examples": 0
+      },
+      "test": {
+        "name": "test",
+        "num_examples": 0
+      }
+    },
+    "homepage": "https://huggingface.co/datasets/lordlebu/SouthOfTethys",
+    "version": "1.0.0"
+  }
+}
