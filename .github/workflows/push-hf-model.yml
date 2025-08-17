@@ -19,13 +19,11 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Install Hugging Face CLI
-        run: pip install -U "huggingface_hub[cli]"
+      - name: Install Hugging Face Hub Python API
+        run: pip install huggingface_hub
 
-      - name: Authenticate with Hugging Face
+      - name: Push model to Hugging Face (Python API)
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: hf auth login --token $HF_TOKEN
-
-      - name: Upload model to Hugging Face
-        run: hf upload lordlebu/4000BCSaraswaty ./model
+        run: |
+          python -c "import os; from huggingface_hub import HfApi; api = HfApi(token=os.getenv('HF_TOKEN')); api.upload_folder(folder_path='model', repo_id='lordlebu/4000BCSaraswaty', repo_type='model')"

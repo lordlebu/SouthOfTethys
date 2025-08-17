@@ -1,22 +1,21 @@
+
 import os
-import subprocess
-import shutil
+from huggingface_hub import HfApi
 
 def push_model_to_hf(local_folder, repo_id):
     token = os.getenv("HF_TOKEN")
     if not token:
         raise RuntimeError("HF_TOKEN environment variable not set.")
-    cli_path = shutil.which("huggingface-cli")
-    if not cli_path:
-        raise RuntimeError("Hugging Face CLI 'huggingface-cli' not found in PATH. Install with: pip install -U 'huggingface_hub[cli]' and ensure your Python Scripts directory is in your PATH.")
-    # Authenticate with Hugging Face CLI
-    subprocess.run([cli_path, "auth", "login", "--token", token], check=True)
-    # Upload model using CLI
-    result = subprocess.run([cli_path, "upload", repo_id, local_folder], capture_output=True, text=True)
-    print(result.stdout)
-    if result.returncode != 0:
-        print(result.stderr)
-        raise RuntimeError("Hugging Face CLI upload failed.")
+    api = HfApi(token=token)
+    try:
+        api.upload_folder(
+            folder_path=local_folder,
+            repo_id=repo_id,
+            repo_type="model",
+        )
+        print(f"Successfully pushed {local_folder} to {repo_id}")
+    except Exception as e:
+        print(f"Error: {e}")
 
 if __name__ == "__main__":
     local_folder = os.path.join(os.path.dirname(os.path.dirname(__file__)), "model")
