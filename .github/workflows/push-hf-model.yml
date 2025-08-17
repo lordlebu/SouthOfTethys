@@ -30,29 +30,5 @@ jobs:
             echo "Error: HF_TOKEN secret is not set. Please add it in your repository settings under Secrets > Actions."
             exit 1
           fi
-          python <<EOF
-          import os
-          from huggingface_hub import HfApi, HfHubHTTPError
-
-          def push_model_to_hf(local_folder, repo_id, repo_type="model"):
-              token = os.getenv("HF_TOKEN")
-              if not token:
-                  raise RuntimeError("HF_TOKEN environment variable not set. Get your token from https://huggingface.co/settings/tokens")
-              api = HfApi(token=token)
-              try:
-                  api.upload_folder(
-                      folder_path=local_folder,
-                      repo_id=repo_id,
-                      repo_type=repo_type,
-                  )
-                  print(f"Successfully pushed {local_folder} to {repo_id}")
-              except HfHubHTTPError as e:
-                  print(f"HTTP error: {e}")
-              except Exception as e:
-                  print(f"Unexpected error: {e}")
-
-          if __name__ == "__main__":
-              local_folder = "model"
-              repo_id = "lordlebu/4000BCSaraswaty"
-              push_model_to_hf(local_folder, repo_id)
-          EOF
+          echo "import os\nfrom huggingface_hub import HfApi, HfHubHTTPError\n\ndef push_model_to_hf(local_folder, repo_id, repo_type='model'):\n    token = os.getenv('HF_TOKEN')\n    if not token:\n        raise RuntimeError('HF_TOKEN environment variable not set. Get your token from https://huggingface.co/settings/tokens')\n    api = HfApi(token=token)\n    try:\n        api.upload_folder(folder_path=local_folder, repo_id=repo_id, repo_type=repo_type)\n        print(f'Successfully pushed {local_folder} to {repo_id}')\n    except HfHubHTTPError as e:\n        print(f'HTTP error: {e}')\n    except Exception as e:\n        print(f'Unexpected error: {e}')\n\nif __name__ == '__main__':\n    local_folder = 'model'\n    repo_id = 'lordlebu/4000BCSaraswaty'\n    push_model_to_hf(local_folder, repo_id)" > push_to_hf.py
+          python push_to_hf.py

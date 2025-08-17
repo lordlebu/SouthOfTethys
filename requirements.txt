@@ -9,3 +9,4 @@ autoflake
 pyupgrade
 flake8
 ruff
+huggingface_hub
