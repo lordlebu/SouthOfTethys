@@ -19,16 +19,13 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Install dependencies
-        run: pip install huggingface_hub
+      - name: Install Hugging Face CLI
+        run: pip install -U "huggingface_hub[cli]"
 
-      - name: Push model to Hugging Face
+      - name: Authenticate with Hugging Face
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: |
-          if [ -z "$HF_TOKEN" ]; then
-            echo "Error: HF_TOKEN secret is not set. Please add it in your repository settings under Secrets > Actions."
-            exit 1
-          fi
-          echo "import os\nfrom huggingface_hub import HfApi, HfHubHTTPError\n\ndef push_model_to_hf(local_folder, repo_id, repo_type='model'):\n    token = os.getenv('HF_TOKEN')\n    if not token:\n        raise RuntimeError('HF_TOKEN environment variable not set. Get your token from https://huggingface.co/settings/tokens')\n    api = HfApi(token=token)\n    try:\n        api.upload_folder(folder_path=local_folder, repo_id=repo_id, repo_type=repo_type)\n        print(f'Successfully pushed {local_folder} to {repo_id}')\n    except HfHubHTTPError as e:\n        print(f'HTTP error: {e}')\n    except Exception as e:\n        print(f'Unexpected error: {e}')\n\nif __name__ == '__main__':\n    local_folder = 'model'\n    repo_id = 'lordlebu/4000BCSaraswaty'\n    push_model_to_hf(local_folder, repo_id)" > push_to_hf.py
-          python push_to_hf.py
+        run: hf auth login --token $HF_TOKEN
+
+      - name: Upload model to Hugging Face
+        run: hf upload lordlebu/4000BCSaraswaty ./model
