@@ -31,8 +31,8 @@ def main():
             character_json = prompt_llm(snippet, character_instruction)
             event_json = prompt_llm(snippet, event_instruction)
             try:
-                char_obj = json.loads(character_json)
-                evt_obj = json.loads(event_json)
+                char_obj = json.loads(extract_json(character_json))
+                evt_obj = json.loads(extract_json(event_json))
                 st.subheader("Character Data")
                 st.json(char_obj)
                 st.subheader("Event Data")
