@@ -35,13 +35,13 @@
 - **Modular Python**: Scripts are organized for single-responsibility and composability.
 
 ## Integration Points
-- **Ollama LLM**: `snippet_processor.py` connects to a local Ollama server to extract structured data from text snippets.
+- **AI Model (Hugging Face)**: `snippet_processor.py` uses our own Hugging Face model to extract structured data from story snippets.
 - **Artifacts**: Timeline visualizations and world maps are published as build artifacts in CI.
 
 ## Examples
 - To add a new event: update `timeline/timeline.json` and run `generate_timeline.py` and `lint_story.py`.
 - To add a new character: create a `.json` in `characters/`, update genealogy if needed, and validate with `lint_story.py`.
-- To process a story snippet: run `snippet_processor.py` (requires Ollama running locally).
+- To process a story snippet: run `snippet_processor.py` (uses our Hugging Face AI model).
 
 ## Key Files & Directories
 - `timeline/timeline.json`

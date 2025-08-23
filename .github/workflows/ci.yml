@@ -74,7 +74,7 @@ jobs:
           python utils/generate_timeline.py
           python utils/generate_map.py
           python utils/evolve_species.py
-          # python utils/snippet_processor.py
+          # python utils/snippet_processor.py  # Masked: Ollama not available in CI
           # python utils/hometown.py
           flake8 utils/ || true
 
@@ -103,7 +103,7 @@ jobs:
           python utils/generate_timeline.py
           python utils/generate_map.py
           python utils/evolve_species.py
-          # python utils/snippet_processor.py
+          # python utils/snippet_processor.py  # Masked: Ollama not available in CI
           # python utils/hometown.py
 
       - name: Check artifacts generated

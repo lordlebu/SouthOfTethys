@@ -1,0 +1,30 @@
+name: Vidur Portal CI
+
+on:
+  push:
+    paths:
+      - 'vidur_portal/**'
+  pull_request:
+    paths:
+      - 'vidur_portal/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: pip install -r vidur_portal/requirements.txt
+      - name: Lint app
+        run: python -m flake8 vidur_portal/app.py || true
+      # Optional: Run Streamlit app for smoke test
+      - name: Streamlit smoke test
+        run: |
+          streamlit run vidur_portal/app.py &
+          sleep 10
+          pkill streamlit
+      # Add deploy steps here if needed
