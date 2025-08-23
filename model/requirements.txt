@@ -1,0 +1,2 @@
+# Model-specific dependencies
+# Add packages required for training, evaluation, and inference

@@ -1,7 +1,7 @@
 
 # South of Tethys - Procedural Storytelling Engine
 
-A procedurally evolving storytelling engine inspired by world simulation games like **Dwarf Fortress**. This project manages story events, character genealogy, and evolving flora/fauna in a version-controlled Git repository.
+A procedurally evolving storytelling engine inspired by world simulation games like **Dwarf Fortress**. This project manages story events, character genealogy, and evolving flora/fauna in a version-controlled Git repository. Story snippets are now processed using our own Hugging Face AI model for structured extraction.
 
 ## 📖 Published Book & Artifacts
 

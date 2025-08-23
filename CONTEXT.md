@@ -28,25 +28,27 @@ This project is a procedurally evolving storytelling engine inspired by world si
 
 ## 🧠 Copilot Behavior Guidelines
 
-- Assist in creating helper scripts to:
+Assist in creating helper scripts to:
   - Parse and sort timeline entries
   - Link characters to events and genealogy trees
   - Simulate evolution of creatures over time
   - Detect lore inconsistencies or time shifts
-- Use comments and structured metadata to inform decisions
-- Favor clean, modular Python functions
-- Encourage Markdown summary generation (for auto documentation)
+  - Process story snippets using our own Hugging Face AI model (not Ollama)
+Use comments and structured metadata to inform decisions
+Favor clean, modular Python functions
+Encourage Markdown summary generation (for auto documentation)
 
 ---
 
 ## Example Tasks
 
-- `generate_timeline.py` → Loads `timeline.json`, sorts by scene, prints summary
-- `lineage_tracker.py` → Builds a family tree from `genealogy.json`
-- `evolve_species.py` → Adds mutation stages to species based on events
-- `generate_timeline_mermaid.py` → Creates visual timeline diagrams and summaries
-- `generate_map.py` → Creates interactive HTML maps from geographic data
-- `lint_story.py` → Validates story consistency and cross-references
+`generate_timeline.py` → Loads `timeline.json`, sorts by scene, prints summary
+`lineage_tracker.py` → Builds a family tree from `genealogy.json`
+`evolve_species.py` → Adds mutation stages to species based on events
+`generate_timeline_mermaid.py` → Creates visual timeline diagrams and summaries
+`generate_map.py` → Creates interactive HTML maps from geographic data
+`lint_story.py` → Validates story consistency and cross-references
+`snippet_processor.py` → Uses our own Hugging Face AI model to extract structured data from story snippets
 
 ## Publishing & Artifacts
 
