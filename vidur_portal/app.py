@@ -1,10 +1,14 @@
-import streamlit as st
 import json
+
+import streamlit as st
 from snippet_processor import prompt_llm
+
 
 def main():
     st.title("Vidur Portal: Story Snippet Processor")
-    st.write("Paste a story snippet below. The AI will extract structured character and event data.")
+    st.write(
+        "Paste a story snippet below. The AI will extract structured character and event data."
+    )
 
     snippet = st.text_area("Story Snippet", "", height=200)
     process = st.button("Process Snippet")
@@ -39,6 +43,7 @@ def main():
                 st.code(character_json)
                 st.text("Raw event output:")
                 st.code(event_json)
+
 
 if __name__ == "__main__":
     main()

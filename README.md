@@ -47,12 +47,12 @@ pip install -r requirements.txt
 You can then run the following commands to auto-correct and lint your codebase (recommended: run on the `./utils` directory):
 
 ```bash
-python -m black ./utils/*.py --line-length 88
-python -m isort ./utils/*.py --profile black
-python -m autoflake --in-place --remove-unused-variables --remove-all-unused-imports --ignore-init-module-imports ./utils/*.py
-python -m pyupgrade --py39-plus ./utils/*.py
-python -m flake8 ./utils/*.py
-python -m ruff check ./utils/*.py --fix
+python -m black ./**/*.py --line-length 88
+python -m isort ./**/*.py --profile black
+python -m autoflake --in-place --remove-unused-variables --remove-all-unused-imports --ignore-init-module-imports ./**/*.py
+python -m pyupgrade --py39-plus ./**/*.py
+python -m flake8 ./**/*.py
+python -m ruff check ./**/*.py --fix
 ```
 
 ### Recommended Minimal Setup

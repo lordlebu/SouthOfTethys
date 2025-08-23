@@ -1,11 +1,11 @@
-import json
-from transformers import pipeline, AutoTokenizer, AutoModelForCausalLM
+from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
 
 # Use your Hugging Face model
 MODEL = "lordlebu/4000BCSaraswaty"
 tokenizer = AutoTokenizer.from_pretrained(MODEL)
 model = AutoModelForCausalLM.from_pretrained(MODEL)
 hf_pipeline = pipeline("text-generation", model=model, tokenizer=tokenizer)
+
 
 def prompt_llm(snippet: str, instruction: str) -> str:
     prompt = f"{instruction.strip()}\n\nSnippet: {snippet.strip()}"
