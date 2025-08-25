@@ -1,3 +1,11 @@
+# Ignore large model files
+pytorch_model.bin
+*.safetensors
+*.h5
+*.ckpt
+*.onnx
+*.pb
+*.tflite
 # Ignore Hugging Face token files
 hf_token.txt
 HF_TOKEN

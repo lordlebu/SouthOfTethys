@@ -21,6 +21,15 @@ def push_model_to_hf(local_folder, repo_id):
 
 
 if __name__ == "__main__":
-    local_folder = os.path.join(os.path.dirname(os.path.dirname(__file__)), "model")
+    # Step 1: Export a valid model and tokenizer to the model/ directory
+    from transformers import AutoModelForCausalLM, AutoTokenizer
+    model_name = "gpt2"  # Replace with your fine-tuned model if you have one
+    tokenizer = AutoTokenizer.from_pretrained(model_name)
+    model = AutoModelForCausalLM.from_pretrained(model_name)
+    output_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), "model")
+    tokenizer.save_pretrained(output_dir)
+    model.save_pretrained(output_dir)
+
+    # Step 2: Push the model folder to Hugging Face Hub
     repo_id = "lordlebu/4000BCSaraswaty"
-    push_model_to_hf(local_folder, repo_id)
+    push_model_to_hf(output_dir, repo_id)
