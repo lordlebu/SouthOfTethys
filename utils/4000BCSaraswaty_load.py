@@ -1,4 +1,4 @@
-from transformers import AutoTokenizer, AutoModelForCausalLM
+from transformers import AutoModelForCausalLM, AutoTokenizer
 
 model_id = "lordlebu/4000BCSaraswaty"  # or local path to your model folder
 
