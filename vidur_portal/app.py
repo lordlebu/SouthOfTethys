@@ -5,44 +5,34 @@ from snippet_processor import prompt_llm
 
 
 def main():
+    st.set_page_config(page_title="Vidur Portal: Story Snippet Processor", layout="wide")
     st.title("Vidur Portal: Story Snippet Processor")
-    st.write(
-        "Paste a story snippet below. The AI will extract structured character and event data."
+    st.markdown(
+        """
+    Welcome to Vidur Portal! Paste your story snippet below and process it using our Hugging Face AI model.
+    The extracted structured data will be shown for review and can be integrated into the SouthOfTethys world.
+    """
     )
 
-    snippet = st.text_area("Story Snippet", "", height=200)
-    process = st.button("Process Snippet")
+    snippet = st.text_area("Paste your story snippet here:", height=200)
+    if st.button("Process Snippet"):
+        if snippet.strip():
+            with st.spinner("Processing snippet..."):
+                result = prompt_llm(snippet)
+            st.subheader("Extracted Structured Data")
+            st.json(result)
+        else:
+            st.warning("Please enter a story snippet to process.")
 
-    if process and snippet.strip():
-        with st.spinner("Processing with Hugging Face model..."):
-            character_instruction = """
-            Analyze this snippet and output JSON for `characters/`:
-            - Name, faction, action, location
-            - Link to existing characters (e.g., 'ally of King Thrain')
-            - Add `traits` if they’re implied (e.g., brave, secretive)
-            Output JSON only.
-            """
-            event_instruction = """
-            Convert this event to timeline JSON:
-            - Year, event_type (war/alliance/discovery/etc), participants
-            - Label the file as `timeline/year_*.json`
-            Output JSON only.
-            """
-            character_json = prompt_llm(snippet, character_instruction)
-            event_json = prompt_llm(snippet, event_instruction)
-            try:
-                char_obj = json.loads(extract_json(character_json))
-                evt_obj = json.loads(extract_json(event_json))
-                st.subheader("Character Data")
-                st.json(char_obj)
-                st.subheader("Event Data")
-                st.json(evt_obj)
-            except Exception as e:
-                st.error(f"Error parsing model output: {e}")
-                st.text("Raw character output:")
-                st.code(character_json)
-                st.text("Raw event output:")
-                st.code(event_json)
+    st.markdown("---")
+    st.markdown("#### How it works")
+    st.markdown(
+        """
+    - The snippet processor uses our custom Hugging Face model to extract characters, events, and timeline data.
+    - All outputs follow the SouthOfTethys world conventions (fantasy date format, cross-referenced entities).
+    - For more details, see the [project README](../README.md).
+    """
+    )
 
 
 if __name__ == "__main__":

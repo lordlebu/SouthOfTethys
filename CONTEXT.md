@@ -50,6 +50,10 @@ Encourage Markdown summary generation (for auto documentation)
 `lint_story.py` → Validates story consistency and cross-references
 `snippet_processor.py` → Uses our own Hugging Face AI model to extract structured data from story snippets
 
+## Integration Points
+
+- **AI Model (Hugging Face)**: `snippet_processor.py` now uses our own Hugging Face model (`lordlebu/4000BCSaraswaty`) to extract structured data from story snippets, integrated via the Vidur Portal web app.
+
 ## Publishing & Artifacts
 
 The repository automatically generates and publishes "book" artifacts through GitHub Actions:
@@ -69,6 +73,7 @@ The repository automatically generates and publishes "book" artifacts through Gi
 2. Run `utils/lint_story.py` to validate consistency
 3. Commit and push - triggers automatic artifact generation
 4. Merge to `main` branch for full publication
+5. For story snippet processing, use the Vidur Portal web app to extract and validate structured data before integration.
 
 ---
 
