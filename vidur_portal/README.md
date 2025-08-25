@@ -15,6 +15,13 @@ Vidur is a wise seer from Indian mythology, renowned for his remote vision and i
 1. Install requirements: `pip install -r requirements.txt`
 2. Run the app: `streamlit run app.py`
 
+## Model Management & Integration Strategy
+
+- The Vidur Portal uses the Hugging Face model (`lordlebu/4000BCSaraswaty`) for extracting structured data from story snippets.
+- Model pushes and updates are performed manually/local only; CI/CD does not push models or expose credentials.
+- Always validate your model locally before pushing to Hugging Face (see `utils/test_hf_push.py` in the main repo).
+- The portal is designed to be modular and can be integrated with SouthOfTethys or used independently for worldbuilding tasks.
+
 ## Trivia
 - **Mimir (Norse):** Keeper of the Well of Wisdom, advisor to gods, his severed head continued to offer counsel.
 - **Vidur (Indian):** Sage and advisor in the Mahabharata, famed for his impartiality and foresight.
