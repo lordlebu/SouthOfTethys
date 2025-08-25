@@ -1,3 +1,22 @@
+## Hugging Face Model Management
+
+Model pushes to Hugging Face Hub are performed locally using `utils/test_hf_push.py`.
+This ensures large files and credentials are managed securely and are not exposed in CI/CD pipelines.
+The CI pipeline does not push models to Hugging Face.
+**🔗 Direct Links:**
+- Streamlit Portal: [southoftethys.streamlit.app](https://southoftethys.streamlit.app)
+- Hugging Face Model: [huggingface.co/lordlebu/4000BCSaraswaty](https://huggingface.co/lordlebu/4000BCSaraswaty)
+
+# Vision: Expanding SouthOfTethys
+
+SouthOfTethys aims to be a living, evolving worldbuilding engine that blends procedural generation, AI-powered narrative extraction, and collaborative storytelling. Our vision is to:
+- Enable seamless integration of human creativity and AI-driven structure
+- Support dynamic timelines, genealogies, and species evolution
+- Provide tools for both writers and developers to build, validate, and visualize complex worlds
+- Foster a community of worldbuilders who contribute lore, art, and code
+- Make all data and artifacts accessible, explorable, and reusable via open standards
+
+With the Vidur Portal and Hugging Face model, we empower users to extract structured data from stories, automate world consistency, and publish interactive artifacts for everyone to explore.
 # South of Tethys - Procedural Storytelling Engine
 
 A procedurally evolving storytelling engine inspired by world simulation games like **Dwarf Fortress**. This project manages story events, character genealogy, and evolving flora/fauna in a version-controlled Git repository. Story snippets are now processed using our own Hugging Face AI model for structured extraction.
