@@ -1,11 +1,11 @@
-import json
-
 import streamlit as st
 from snippet_processor import prompt_llm
 
 
 def main():
-    st.set_page_config(page_title="Vidur Portal: Story Snippet Processor", layout="wide")
+    st.set_page_config(
+        page_title="Vidur Portal: Story Snippet Processor", layout="wide"
+    )
     st.title("Vidur Portal: Story Snippet Processor")
     st.markdown(
         """
