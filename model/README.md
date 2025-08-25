@@ -1,6 +1,16 @@
-# Sample SouthOfTethys Model
+---
+language: en
+license: apache-2.0
+tags:
+  - text-generation
+  - storytelling
+model_type: causal_lm
+pipeline_tag: text-generation
+---
 
-This is a placeholder model for demonstration purposes.
+# 4000BCSaraswaty
+
+A custom causal language model for SouthOfTethys worldbuilding.
 
 ---
 tags:

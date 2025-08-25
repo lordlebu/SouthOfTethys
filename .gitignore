@@ -1,3 +1,6 @@
+# Ignore Hugging Face token files
+hf_token.txt
+HF_TOKEN
 # Python
 __pycache__/
 *.py[cod]
