@@ -237,14 +237,10 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install black isort autoflake pyupgrade flake8 ruff
+          pip install flake8 ruff
 
-      - name: Run code quality tools
+      - name: Run code quality checks
         run: |
-          python -m black ./**/*.py --line-length 88
-          python -m isort ./**/*.py --profile black
-          python -m autoflake --in-place --remove-unused-variables --remove-all-unused-imports --ignore-init-module-imports ./**/*.py
-          python -m pyupgrade --py39-plus ./**/*.py
           python -m flake8 ./**/*.py
-          python -m ruff check ./**/*.py --fix
+          python -m ruff check ./**/*.py
 

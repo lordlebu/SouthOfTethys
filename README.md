@@ -30,11 +30,23 @@ See **[📋 Publishing Workflow Guide](docs/PUBLISHING.md)** for complete instru
    pip install pre-commit
    pre-commit install
    ```
-
 4. **Run manually (optional):**
    ```bash
    pre-commit run --all-files
    ```
+
+#### Local Auto-formatting with `.git/hooks/pre-commit`
+
+For additional local enforcement, you can use a custom pre-commit hook script in `.git/hooks/pre-commit` to automatically run code formatters and linters before each commit.  
+This script will run tools like `black`, `isort`, `autoflake`, `pyupgrade`, `ruff`, and `flake8` on all Python files in the project.
+
+**Sample usage:**
+```bash
+cp .git/hooks/pre-commit.sample .git/hooks/pre-commit
+chmod +x .git/hooks/pre-commit
+```
+This ensures code quality and formatting are enforced locally before changes are committed.  
+**Note:** The CI pipeline only runs lint checks and does not auto-fix or format code.
 
 ### Manual Code Quality Commands
 
