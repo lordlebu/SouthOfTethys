@@ -1,4 +1,3 @@
-
 # South of Tethys - Procedural Storytelling Engine
 
 A procedurally evolving storytelling engine inspired by world simulation games like **Dwarf Fortress**. This project manages story events, character genealogy, and evolving flora/fauna in a version-controlled Git repository. Story snippets are now processed using our own Hugging Face AI model for structured extraction.
@@ -31,11 +30,23 @@ See **[📋 Publishing Workflow Guide](docs/PUBLISHING.md)** for complete instru
    pip install pre-commit
    pre-commit install
    ```
-
 4. **Run manually (optional):**
    ```bash
    pre-commit run --all-files
    ```
+
+#### Local Auto-formatting with `.git/hooks/pre-commit`
+
+For additional local enforcement, you can use a custom pre-commit hook script in `.git/hooks/pre-commit` to automatically run code formatters and linters before each commit.  
+This script will run tools like `black`, `isort`, `autoflake`, `pyupgrade`, `ruff`, and `flake8` on all Python files in the project.
+
+**Sample usage:**
+```bash
+cp .git/hooks/pre-commit.sample .git/hooks/pre-commit
+chmod +x .git/hooks/pre-commit
+```
+This ensures code quality and formatting are enforced locally before changes are committed.  
+**Note:** The CI pipeline only runs lint checks and does not auto-fix or format code.
 
 ### Manual Code Quality Commands
 
@@ -44,15 +55,15 @@ Before running the following commands, make sure all tools are installed:
 pip install -r requirements.txt
 ```
 
-You can then run the following commands to auto-correct and lint your codebase (recommended: run on the `./utils` directory):
+You can then run the following commands to auto-correct and lint your codebase (recommended: run on the entire project):
 
 ```bash
-python -m black **/*.py --line-length 88
-python -m isort **/*.py --profile black
-python -m autoflake --in-place --remove-unused-variables --remove-all-unused-imports --ignore-init-module-imports **/*.py
-python -m pyupgrade --py39-plus **/*.py
-python -m flake8 **/*.py
-python -m ruff check **/*.py --fix
+python -m black ./**/*.py --line-length 88
+python -m isort ./**/*.py --profile black
+python -m autoflake --in-place --remove-unused-variables --remove-all-unused-imports --ignore-init-module-imports ./**/*.py
+python -m pyupgrade --py39-plus ./**/*.py
+python -m flake8 ./**/*.py
+python -m ruff check ./**/*.py --fix
 ```
 
 ### Recommended Minimal Setup
@@ -164,3 +175,11 @@ Add `mypy`, `bandit`, and others as your codebase grows or if you need stricter 
 **🕰️ Timeline Key**  
 - **Bold** = Evolutionary turning points  
 - *Italics* = Spiritual manifestations
+
+## Story Snippet Processing
+
+Story snippets are now processed using our custom Hugging Face AI model via the [Vidur Portal](vidur_portal/README.md), an independent web application. This replaces the previous Ollama-based workflow and provides a user-friendly interface for extracting structured data from narrative text.
+
+To process a snippet:
+- Use the [Vidur Portal](vidur_portal/README.md) web app, which leverages our Hugging Face model for extraction.
+- The extracted data can be integrated into the SouthOfTethys world using the standard Python scripts.

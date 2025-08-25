@@ -7,7 +7,7 @@ Vidur is a wise seer from Indian mythology, renowned for his remote vision and i
 
 ## Features
 - Paste or upload story snippets
-- AI-powered extraction of character and event data
+- AI-powered extraction of character and event data using our Hugging Face model (`lordlebu/4000BCSaraswaty`)
 - Modular, standalone architecture
 - Can be integrated with SouthOfTethys or used independently
 
@@ -21,3 +21,19 @@ Vidur is a wise seer from Indian mythology, renowned for his remote vision and i
 
 ---
 This portal is designed for creative worldbuilders and storytellers seeking structured insights from their narratives.
+
+## How to use
+
+- Paste your story snippet into the portal and click "Process Snippet".
+- The portal uses our Hugging Face model to extract structured data (characters, events, timeline).
+- Review and export the results for integration into SouthOfTethys.
+
+To test Vidur Portal locally:
+
+Open a terminal and navigate to the vidur_portal directory.
+Install dependencies:
+pip install -r requirements.txt
+Run the Streamlit app:
+python -m streamlit run app.py
+Open the provided local URL in your browser (usually http://localhost:8501).
+Paste a story snippet and click "Process Snippet" to test the Hugging Face model integration.

@@ -1,8 +1,10 @@
 from functools import lru_cache
+
 from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
 
 # Use your Hugging Face model
 MODEL = "lordlebu/4000BCSaraswaty"
+
 
 @lru_cache(maxsize=1)
 def get_hf_pipeline():

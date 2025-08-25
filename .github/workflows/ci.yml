@@ -223,3 +223,24 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 
+  code-quality:
+    name: Code Quality Checks
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install flake8 ruff
+
+      - name: Run code quality checks
+        run: |
+          python -m flake8 ./**/*.py || true
+          python -m ruff check ./**/*.py
+
