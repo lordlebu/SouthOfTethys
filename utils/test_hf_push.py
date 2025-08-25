@@ -23,6 +23,7 @@ def push_model_to_hf(local_folder, repo_id):
 if __name__ == "__main__":
     # Step 1: Export a valid model and tokenizer to the model/ directory
     from transformers import AutoModelForCausalLM, AutoTokenizer
+
     model_name = "gpt2"  # Replace with your fine-tuned model if you have one
     tokenizer = AutoTokenizer.from_pretrained(model_name)
     model = AutoModelForCausalLM.from_pretrained(model_name)
