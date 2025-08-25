@@ -1,3 +1,8 @@
+## Hugging Face Model Management
+
+Model pushes to Hugging Face Hub are performed locally using `utils/test_hf_push.py`.
+This ensures large files and credentials are managed securely and are not exposed in CI/CD pipelines.
+The CI pipeline does not push models to Hugging Face.
 # South of Tethys - Procedural Storytelling Engine
 
 A procedurally evolving storytelling engine inspired by world simulation games like **Dwarf Fortress**. This project manages story events, character genealogy, and evolving flora/fauna in a version-controlled Git repository. Story snippets are now processed using our own Hugging Face AI model for structured extraction.
