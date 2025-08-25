@@ -1,0 +1,3 @@
+from transformers import AutoTokenizer, AutoModelForCausalLM
+tokenizer = AutoTokenizer.from_pretrained("path/to/model")
+model = AutoModelForCausalLM.from_pretrained("path/to/model")

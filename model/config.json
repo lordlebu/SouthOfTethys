@@ -1,4 +1,9 @@
 {
-  "model_type": "dummy",
+  "architectures": ["GPT2LMHeadModel"],
+  "model_type": "gpt2",
+  "vocab_size": 50257,
+  "n_positions": 1024,
+  "n_ctx": 1024,
+  "n_embd": 768,
   "description": "Sample config for SouthOfTethys Hugging Face model."
 }
