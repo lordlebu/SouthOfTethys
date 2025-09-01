@@ -10,22 +10,24 @@ Run locally:
 
 Note: This script is intentionally minimal and expects the user to adapt chunking and metadata to their needs.
 """
+
 import os
 from pathlib import Path
-from typing import List
 
 try:
     import chromadb
     from chromadb.config import Settings
     from sentence_transformers import SentenceTransformer
-except Exception as e:
-    raise SystemExit("Required packages missing. Install chromadb and sentence-transformers.")
+except Exception:
+    raise SystemExit(
+        "Required packages missing. Install chromadb and sentence-transformers."
+    )
 
 CHROMA_PERSIST_DIR = os.environ.get("CHROMA_PERSIST_DIR", "storage/chroma")
 EMBEDDING_MODEL = os.environ.get("EMBEDDING_MODEL", "all-MiniLM-L6-v2")
 
 
-def gather_text_files() -> List[Path]:
+def gather_text_files() -> list[Path]:
     base = Path.cwd()
     candidates = []
     for folder in [base / "timeline", base / "characters", base / "snippets" / "inbox"]:
@@ -37,16 +39,18 @@ def gather_text_files() -> List[Path]:
     return candidates
 
 
-def chunk_text(text: str, chunk_size: int = 512) -> List[str]:
+def chunk_text(text: str, chunk_size: int = 512) -> list[str]:
     words = text.split()
     chunks = []
     for i in range(0, len(words), chunk_size):
-        chunks.append(" ".join(words[i:i+chunk_size]))
+        chunks.append(" ".join(words[i : i + chunk_size]))
     return chunks
 
 
 def main():
-    client = chromadb.Client(Settings(chroma_db_impl="duckdb+parquet", persist_directory=CHROMA_PERSIST_DIR))
+    client = chromadb.Client(
+        Settings(chroma_db_impl="duckdb+parquet", persist_directory=CHROMA_PERSIST_DIR)
+    )
     collection_name = "southoftethys"
     try:
         collection = client.get_collection(collection_name)
@@ -56,7 +60,7 @@ def main():
     except Exception:
         collection = client.create_collection(collection_name)
 
-    embedder = SentenceTransformer(EMBEDDING_MODEL)
+    SentenceTransformer(EMBEDDING_MODEL)
     files = gather_text_files()
     ids, docs, metadatas = [], [], []
     idx = 0
