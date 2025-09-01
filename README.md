@@ -33,6 +33,29 @@ CHROMA_PERSIST_DIR=storage/chroma python utils/index_chroma.py
 
 CI: Run only smoke tests that verify the portal can read a persisted index; do not build or store vectors in CI.
 
+## Schema validation (Chroma)
+
+We validate vector metadata payloads against JSON Schemas before inserting into Chroma. A set of example fixtures lives under `services/chroma/schemas/fixtures/` and can be validated locally.
+
+Manual validation command (PowerShell / Bash):
+```powershell
+python services/chroma/schemas/validate_metadata.py events services/chroma/schemas/fixtures/event_fixture.json
+python services/chroma/schemas/validate_metadata.py characters services/chroma/schemas/fixtures/character_fixture.json
+python services/chroma/schemas/validate_metadata.py snippets services/chroma/schemas/fixtures/snippet_fixture.json
+python services/chroma/schemas/validate_metadata.py documents services/chroma/schemas/fixtures/document_fixture.json
+```
+
+Pre-commit hook:
+- The repository includes a local `.git/hooks/pre-commit` script that runs code formatters, linters, and the Chroma schema validation checks against the fixtures.
+- The hook will fail commits if any fixture validation fails. The Hugging Face push test in the hook runs only when `HF_TOKEN` is set in your environment (do not store the token in git).
+
+To enable the local Git hook (if not already present):
+```bash
+cp .git/hooks/pre-commit.sample .git/hooks/pre-commit
+chmod +x .git/hooks/pre-commit
+```
+
+
 ## Docker local stack (Vidur Portal + Chroma indexer)
 
 You can build and run a local Docker stack that populates a persistent Chroma index and runs the Vidur Portal.

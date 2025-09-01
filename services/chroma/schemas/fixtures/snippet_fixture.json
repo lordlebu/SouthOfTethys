@@ -1,0 +1,14 @@
+{
+  "id": "snippet_queen_envoy_0",
+  "text": "An envoy from the northern queen delivered a sealed scroll.",
+  "metadata": {
+    "source": "snippets/inbox/queen_envoy.txt",
+    "snippet_id": "queen_envoy",
+    "author": "unknown",
+    "ingested_at": "2025-09-01T12:00:00Z",
+    "language": "en",
+    "tags": ["envoy", "diplomacy"],
+    "chunk_index": 0,
+    "repo_commit": null
+  }
+}

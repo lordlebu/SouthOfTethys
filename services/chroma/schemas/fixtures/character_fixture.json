@@ -1,0 +1,17 @@
+{
+  "id": "char_EliaAkaran_0",
+  "text": "Elia Akaran, a young healer from the Grove, known for her steadfast calm.",
+  "metadata": {
+    "source": "characters/EliaAkaran.json",
+    "character_id": "EliaAkaran",
+    "name": "Elia Akaran",
+    "aliases": ["Elia"],
+    "role": "npc",
+    "birth_date": null,
+    "lineage": "Gaia",
+    "traits": ["healer", "calm"],
+    "appearances": ["event001"],
+    "chunk_index": 0,
+    "repo_commit": null
+  }
+}

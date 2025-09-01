@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "DocumentVector",
+  "type": "object",
+  "required": ["id", "text", "metadata"],
+  "properties": {
+    "id": { "type": "string", "description": "Unique vector id (e.g. doc_manual_0)" },
+    "text": { "type": "string", "description": "Chunk text from a document" },
+    "metadata": {
+      "type": "object",
+      "required": ["source", "doc_id", "title"],
+      "properties": {
+        "source": { "type": "string", "description": "file path or URI" },
+        "doc_id": { "type": "string" },
+        "title": { "type": "string" },
+        "author": { "type": ["string", "null"] },
+        "published_at": { "type": ["string", "null"], "format": "date-time" },
+        "language": { "type": "string", "default": "en" },
+        "chunk_index": { "type": "integer" },
+        "offset_chars": { "type": ["integer", "null"] },
+        "repo_commit": { "type": ["string", "null"] }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

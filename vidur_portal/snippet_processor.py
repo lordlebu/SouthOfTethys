@@ -1,6 +1,6 @@
 import os
 from functools import lru_cache
-from typing import Optional
+from typing import Optional, List, Dict
 
 from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
 
@@ -48,18 +48,26 @@ def get_hf_pipeline():
         return pipeline("text-generation", model=model, tokenizer=tokenizer)
 
 
-def _retrieve_with_chroma(query: str, k: int = 5) -> list[dict]:
+def _retrieve_with_chroma(query: str, k: int = 5) -> List[Dict]:
     """Return a list of metadata + text for top-k hits from Chroma."""
     if not CHROMA_ENABLED:
         return []
-    client = chromadb.Client(
-        Settings(chroma_db_impl="duckdb+parquet", persist_directory=CHROMA_PERSIST_DIR)
-    )
+    cloud_key = os.environ.get("CHROMA_CLOUD_API_KEY")
     collection = None
-    try:
-        collection = client.get_collection("southoftethys")
-    except Exception:
-        return []
+    if cloud_key:
+        tenant = os.environ.get("CHROMA_TENANT")
+        database = os.environ.get("CHROMA_DATABASE")
+        client = chromadb.CloudClient(api_key=cloud_key, tenant=tenant, database=database)
+        try:
+            collection = client.get_collection("southoftethys")
+        except Exception:
+            return []
+    else:
+        client = chromadb.Client(Settings(chroma_db_impl="duckdb+parquet", persist_directory=CHROMA_PERSIST_DIR))
+        try:
+            collection = client.get_collection("southoftethys")
+        except Exception:
+            return []
 
     # Use a small embedding model for retrieval
     embedder = SentenceTransformer(

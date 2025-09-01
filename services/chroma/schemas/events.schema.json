@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "EventVector",
+  "type": "object",
+  "required": ["id", "text", "metadata"],
+  "properties": {
+    "id": { "type": "string", "description": "Unique vector id (e.g. event001_0)" },
+    "text": { "type": "string", "description": "Chunk text for embedding / retrieval" },
+    "metadata": {
+      "type": "object",
+      "required": ["source", "event_id", "title", "date", "chunk_index"],
+      "properties": {
+        "source": { "type": "string", "description": "file path e.g. timeline/timeline.json" },
+        "event_id": { "type": "string" },
+        "title": { "type": "string" },
+        "date": { "type": "string", "description": "raw fantasy date e.g. 'Act 1, Scene 1'" },
+        "act": { "type": ["integer", "null"], "description": "parsed act if available" },
+        "scene": { "type": ["integer", "null"], "description": "parsed scene if available" },
+        "location": { "type": ["string", "null"] },
+        "tags": { "type": "array", "items": { "type": "string" } },
+        "chunk_index": { "type": "integer" },
+        "offset_chars": { "type": ["integer", "null"] },
+        "repo_commit": { "type": ["string", "null"], "description": "optional commit hash" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
