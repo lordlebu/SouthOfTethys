@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CharacterVector",
+  "type": "object",
+  "required": ["id", "text", "metadata"],
+  "properties": {
+    "id": { "type": "string", "description": "Unique vector id (e.g. char_EliaAkaran_0)" },
+    "text": { "type": "string", "description": "Chunk text from character file" },
+    "metadata": {
+      "type": "object",
+      "required": ["source", "character_id", "name", "role"],
+      "properties": {
+        "source": { "type": "string", "description": "file path e.g. characters/EliaAkaran.json" },
+        "character_id": { "type": "string" },
+        "name": { "type": "string" },
+        "aliases": { "type": "array", "items": { "type": "string" } },
+        "role": { "type": "string", "description": "narrative role e.g. protagonist, npc" },
+        "birth_date": { "type": ["string", "null"] },
+        "lineage": { "type": ["string", "null"] },
+        "traits": { "type": "array", "items": { "type": "string" } },
+        "appearances": { "type": "array", "items": { "type": "string" }, "description": "list of event ids where the character appears" },
+        "chunk_index": { "type": "integer" },
+        "repo_commit": { "type": ["string", "null"] }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SnippetVector",
+  "type": "object",
+  "required": ["id", "text", "metadata"],
+  "properties": {
+    "id": { "type": "string", "description": "Unique vector id (e.g. snippet_queen_envoy_0)" },
+    "text": { "type": "string", "description": "Raw snippet text" },
+    "metadata": {
+      "type": "object",
+      "required": ["source", "snippet_id", "author"],
+      "properties": {
+        "source": { "type": "string", "description": "file path e.g. snippets/inbox/queen_envoy.txt" },
+        "snippet_id": { "type": "string" },
+        "author": { "type": ["string", "null"] },
+        "ingested_at": { "type": ["string", "null"], "format": "date-time" },
+        "language": { "type": "string", "default": "en" },
+        "tags": { "type": "array", "items": { "type": "string" } },
+        "chunk_index": { "type": "integer" },
+        "repo_commit": { "type": ["string", "null"] }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

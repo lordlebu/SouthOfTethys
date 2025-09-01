@@ -1,0 +1,15 @@
+{
+  "id": "doc_manual_0",
+  "text": "Project manual describing lore generation rules and formats.",
+  "metadata": {
+    "source": "docs/manual.md",
+    "doc_id": "manual",
+    "title": "Lore Generation Manual",
+    "author": "project_team",
+    "published_at": "2025-01-01T00:00:00Z",
+    "language": "en",
+    "chunk_index": 0,
+    "offset_chars": 0,
+    "repo_commit": null
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "event001_0",
+  "text": "A mysterious fire engulfs Mossvale Grove.",
+  "metadata": {
+    "source": "timeline/timeline.json",
+    "event_id": "event001",
+    "title": "The Grove Fire",
+    "date": "Act 1, Scene 1",
+    "act": 1,
+    "scene": 1,
+    "location": "Mossvale Grove",
+    "tags": ["fire", "disaster"],
+    "chunk_index": 0,
+    "offset_chars": 0,
+    "repo_commit": null
+  }
+}

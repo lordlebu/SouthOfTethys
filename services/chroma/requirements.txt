@@ -1,5 +1,3 @@
-streamlit
-transformers
-flake8
 chromadb
 sentence-transformers
+jsonschema

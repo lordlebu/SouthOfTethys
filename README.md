@@ -17,6 +17,63 @@ SouthOfTethys aims to be a living, evolving worldbuilding engine that blends pro
 - Make all data and artifacts accessible, explorable, and reusable via open standards
 
 With the Vidur Portal and Hugging Face model, we empower users to extract structured data from stories, automate world consistency, and publish interactive artifacts for everyone to explore.
+
+## Developer checklist: Chroma index
+
+1. Install dependencies:
+```bash
+pip install chromadb sentence-transformers
+```
+2. Build index locally:
+```bash
+CHROMA_PERSIST_DIR=storage/chroma python utils/index_chroma.py
+```
+3. Configure the portal (optional env vars):
+4. Add `storage/chroma/` to `.gitignore` (already added).
+
+CI: Run only smoke tests that verify the portal can read a persisted index; do not build or store vectors in CI.
+
+## Schema validation (Chroma)
+
+We validate vector metadata payloads against JSON Schemas before inserting into Chroma. A set of example fixtures lives under `services/chroma/schemas/fixtures/` and can be validated locally.
+
+Manual validation command (PowerShell / Bash):
+```powershell
+python services/chroma/schemas/validate_metadata.py events services/chroma/schemas/fixtures/event_fixture.json
+python services/chroma/schemas/validate_metadata.py characters services/chroma/schemas/fixtures/character_fixture.json
+python services/chroma/schemas/validate_metadata.py snippets services/chroma/schemas/fixtures/snippet_fixture.json
+python services/chroma/schemas/validate_metadata.py documents services/chroma/schemas/fixtures/document_fixture.json
+```
+
+Pre-commit hook:
+- The repository includes a local `.git/hooks/pre-commit` script that runs code formatters, linters, and the Chroma schema validation checks against the fixtures.
+- The hook will fail commits if any fixture validation fails. The Hugging Face push test in the hook runs only when `HF_TOKEN` is set in your environment (do not store the token in git).
+
+To enable the local Git hook (if not already present):
+```bash
+cp .git/hooks/pre-commit.sample .git/hooks/pre-commit
+chmod +x .git/hooks/pre-commit
+```
+
+
+## Docker local stack (Vidur Portal + Chroma indexer)
+
+You can build and run a local Docker stack that populates a persistent Chroma index and runs the Vidur Portal.
+
+Build and run the portal and indexer:
+```powershell
+docker compose -f docker-compose.chroma.yml up --build
+```
+
+This will:
+- Build the `vidur` service (Streamlit app).
+- Run the `indexer` one-shot service which creates the Chroma index in the `chroma_data` volume.
+- Expose Streamlit on http://localhost:8501
+
+To rebuild the index, re-run the indexer service only:
+```powershell
+docker compose -f docker-compose.chroma.yml run --rm indexer
+```
 # South of Tethys - Procedural Storytelling Engine
 
 A procedurally evolving storytelling engine inspired by world simulation games like **Dwarf Fortress**. This project manages story events, character genealogy, and evolving flora/fauna in a version-controlled Git repository. Story snippets are now processed using our own Hugging Face AI model for structured extraction.
