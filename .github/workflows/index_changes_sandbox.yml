@@ -1,0 +1,55 @@
+name: Chroma Incremental Sandbox
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'Run mode: fixtures or git-range'
+        required: true
+        default: 'fixtures'
+        type: string
+      git_range:
+        description: 'Git range to index (only used when mode=git-range)'
+        required: false
+        type: string
+
+jobs:
+  run-sandbox:
+    name: Run incremental indexer in sandbox
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies (chromadb + sentence-transformers)
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f services/chroma/requirements.txt ]; then python -m pip install -r services/chroma/requirements.txt; fi
+
+      - name: Run index_changes in sandbox (fixtures)
+        if: ${{ github.event.inputs.mode == 'fixtures' }}
+        env:
+          CHROMA_PERSIST_DIR: ${{ github.workspace }}/.chroma_sandbox
+        run: |
+          mkdir -p $CHROMA_PERSIST_DIR
+          python scripts/index_changes.py --files services/chroma/schemas/fixtures/event_fixture.json services/chroma/schemas/fixtures/character_fixture.json services/chroma/schemas/fixtures/snippet_fixture.json services/chroma/schemas/fixtures/document_fixture.json --repo-dir . --persist-dir $CHROMA_PERSIST_DIR
+
+      - name: Run index_changes in sandbox (git-range)
+        if: ${{ github.event.inputs.mode == 'git-range' }}
+        env:
+          CHROMA_PERSIST_DIR: ${{ github.workspace }}/.chroma_sandbox
+        run: |
+          if [ -z "${{ github.event.inputs.git_range }}" ]; then echo "git_range input required when mode=git-range"; exit 1; fi
+          mkdir -p $CHROMA_PERSIST_DIR
+          python scripts/index_changes.py --git-range "${{ github.event.inputs.git_range }}" --repo-dir . --persist-dir $CHROMA_PERSIST_DIR
+
+      - name: List sandbox files
+        if: always()
+        run: |
+          echo "Sandbox persist directory contents:"
+          ls -la ${{ github.workspace }}/.chroma_sandbox || true
