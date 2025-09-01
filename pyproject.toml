@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "SouthOfTethys"
+version = "0.1.0"
+description = "The Story of Jambhudweepa"
+authors = [
+    {name = "Lord Lebu"}
+]
+dependencies = []
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["utils*"]
+exclude = ["*.tests*", "tests*"]
