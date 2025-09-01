@@ -1,0 +1,31 @@
+version: '3.8'
+services:
+  vidur:
+    build:
+      context: .
+      dockerfile: vidur_portal/Dockerfile
+    volumes:
+      - ./:/app:cached
+      - chroma_data:/app/storage/chroma
+    ports:
+      - "8501:8501"
+    environment:
+      - CHROMA_PERSIST_DIR=/app/storage/chroma
+      - EMBEDDING_MODEL=all-MiniLM-L6-v2
+
+  chroma-service:
+    build:
+      context: ./services/chroma
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/app/repo:cached
+      - chroma_data:/data/chroma
+    environment:
+      - REPO_DIR=/app/repo
+      - CHROMA_PERSIST_DIR=/data/chroma
+      - EMBEDDING_MODEL=all-MiniLM-L6-v2
+    command: ["python", "index_chroma_service.py"]
+
+volumes:
+  chroma_data:
+    driver: local

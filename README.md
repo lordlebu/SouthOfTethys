@@ -29,11 +29,28 @@ pip install chromadb sentence-transformers
 CHROMA_PERSIST_DIR=storage/chroma python utils/index_chroma.py
 ```
 3. Configure the portal (optional env vars):
-- `CHROMA_PERSIST_DIR` — path where Chroma persists data (default: `storage/chroma`).
-- `EMBEDDING_MODEL` — sentence-transformers model to use (default: `all-MiniLM-L6-v2`).
 4. Add `storage/chroma/` to `.gitignore` (already added).
 
 CI: Run only smoke tests that verify the portal can read a persisted index; do not build or store vectors in CI.
+
+## Docker local stack (Vidur Portal + Chroma indexer)
+
+You can build and run a local Docker stack that populates a persistent Chroma index and runs the Vidur Portal.
+
+Build and run the portal and indexer:
+```powershell
+docker compose -f docker-compose.chroma.yml up --build
+```
+
+This will:
+- Build the `vidur` service (Streamlit app).
+- Run the `indexer` one-shot service which creates the Chroma index in the `chroma_data` volume.
+- Expose Streamlit on http://localhost:8501
+
+To rebuild the index, re-run the indexer service only:
+```powershell
+docker compose -f docker-compose.chroma.yml run --rm indexer
+```
 # South of Tethys - Procedural Storytelling Engine
 
 A procedurally evolving storytelling engine inspired by world simulation games like **Dwarf Fortress**. This project manages story events, character genealogy, and evolving flora/fauna in a version-controlled Git repository. Story snippets are now processed using our own Hugging Face AI model for structured extraction.
