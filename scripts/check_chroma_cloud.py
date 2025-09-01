@@ -9,14 +9,15 @@ Usage:
 This prints available collections and for the configured collection (southoftethys) prints a small sample count.
 """
 from __future__ import annotations
+
 import os
-import sys
-import json
 
 try:
     import chromadb
 except Exception:
-    print("chromadb package not found. Install services/chroma/requirements.txt or pip install chromadb")
+    print(
+        "chromadb package not found. Install services/chroma/requirements.txt or pip install chromadb"
+    )
     raise SystemExit(2)
 
 
@@ -68,7 +69,9 @@ def main():
         try:
             res = coll.get(limit=5)
             ids = res.get("ids") if isinstance(res, dict) else None
-            print(f"Collection '{collection_name}' sample size: {len(ids) if ids is not None else 'unknown'}")
+            print(
+                f"Collection '{collection_name}' sample size: {len(ids) if ids is not None else 'unknown'}"
+            )
         except Exception as e:
             print(f"Unable to call get() on collection: {e}")
     except Exception as e:
