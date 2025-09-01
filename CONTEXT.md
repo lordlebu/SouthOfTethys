@@ -53,6 +53,7 @@ Encourage Markdown summary generation (for auto documentation)
 ## Integration Points
 
 - **AI Model (Hugging Face)**: `snippet_processor.py` now uses our own Hugging Face model (`lordlebu/4000BCSaraswaty`) to extract structured data from story snippets, integrated via the Vidur Portal web app.
+- **Retrieval Layer (Chroma)**: We use Chroma as a local vector DB to store embeddings for story chunks. At inference, Vidur Portal retrieves top-k chunks from the Chroma index and uses them as context for the Hugging Face model (RAG-style). Embeddings are generated from canonical JSON/MD files and indexed with metadata (file path, event id, act/scene).
 
 ## Publishing & Artifacts
 

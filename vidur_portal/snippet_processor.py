@@ -1,7 +1,20 @@
 import os
 from functools import lru_cache
+from typing import List, Dict, Optional
 
 from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
+
+# Optional Chroma imports (lazy)
+CHROMA_ENABLED = False
+CHROMA_PERSIST_DIR = os.environ.get("CHROMA_PERSIST_DIR", "../storage/chroma")
+try:
+    import chromadb
+    from chromadb.config import Settings
+    from sentence_transformers import SentenceTransformer
+
+    CHROMA_ENABLED = True
+except Exception:
+    CHROMA_ENABLED = False
 
 # Local model paths
 LOCAL_CONFIG = os.path.join(
@@ -35,8 +48,39 @@ def get_hf_pipeline():
         return pipeline("text-generation", model=model, tokenizer=tokenizer)
 
 
-def prompt_llm(snippet: str, instruction: str) -> str:
-    prompt = f"{instruction.strip()}\n\nSnippet: {snippet.strip()}"
+def _retrieve_with_chroma(query: str, k: int = 5) -> List[Dict]:
+    """Return a list of metadata + text for top-k hits from Chroma. """
+    if not CHROMA_ENABLED:
+        return []
+    client = chromadb.Client(Settings(chroma_db_impl="duckdb+parquet", persist_directory=CHROMA_PERSIST_DIR))
+    collection = None
+    try:
+        collection = client.get_collection("southoftethys")
+    except Exception:
+        return []
+
+    # Use a small embedding model for retrieval
+    embedder = SentenceTransformer(os.environ.get("EMBEDDING_MODEL", "all-MiniLM-L6-v2"))
+    q_emb = embedder.encode([query])[0]
+    results = collection.query(vector=q_emb, n_results=k, include=['metadatas', 'documents'])
+    hits = []
+    for doc, meta in zip(results.get('documents', []), results.get('metadatas', [])):
+        hits.append({"text": doc, "meta": meta})
+    return hits
+
+
+def prompt_llm(snippet: str, instruction: str, use_retrieval: Optional[bool] = True) -> str:
+    prompt_prefix = instruction.strip()
+    retrieved = []
+    if use_retrieval and CHROMA_ENABLED:
+        retrieved = _retrieve_with_chroma(snippet, k=5)
+    # build context
+    context = "\n\n".join([r.get("text", "") for r in retrieved])
+    if context:
+        prompt = f"{prompt_prefix}\n\nContext:\n{context}\n\nSnippet: {snippet.strip()}"
+    else:
+        prompt = f"{prompt_prefix}\n\nSnippet: {snippet.strip()}"
+
     hf_pipeline = get_hf_pipeline()
     response = hf_pipeline(prompt, max_new_tokens=512)
     return response[0]["generated_text"]

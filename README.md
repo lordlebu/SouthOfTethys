@@ -17,6 +17,23 @@ SouthOfTethys aims to be a living, evolving worldbuilding engine that blends pro
 - Make all data and artifacts accessible, explorable, and reusable via open standards
 
 With the Vidur Portal and Hugging Face model, we empower users to extract structured data from stories, automate world consistency, and publish interactive artifacts for everyone to explore.
+
+## Developer checklist: Chroma index
+
+1. Install dependencies:
+```bash
+pip install chromadb sentence-transformers
+```
+2. Build index locally:
+```bash
+CHROMA_PERSIST_DIR=storage/chroma python utils/index_chroma.py
+```
+3. Configure the portal (optional env vars):
+- `CHROMA_PERSIST_DIR` — path where Chroma persists data (default: `storage/chroma`).
+- `EMBEDDING_MODEL` — sentence-transformers model to use (default: `all-MiniLM-L6-v2`).
+4. Add `storage/chroma/` to `.gitignore` (already added).
+
+CI: Run only smoke tests that verify the portal can read a persisted index; do not build or store vectors in CI.
 # South of Tethys - Procedural Storytelling Engine
 
 A procedurally evolving storytelling engine inspired by world simulation games like **Dwarf Fortress**. This project manages story events, character genealogy, and evolving flora/fauna in a version-controlled Git repository. Story snippets are now processed using our own Hugging Face AI model for structured extraction.
