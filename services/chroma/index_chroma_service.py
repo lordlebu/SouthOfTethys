@@ -57,7 +57,7 @@ def main():
 
     # Support Chroma Cloud if API key provided, otherwise use local DuckDB+Parquet persistence
     cloud_key = os.environ.get("CHROMA_CLOUD_API_KEY")
-    collection_name = "southoftethys"
+    collection_name = os.environ.get("CHROMA_COLLECTION_NAME", "southoftethys")
     if cloud_key:
         # Use CloudClient for remote Chroma; tenant and database may be provider specific
         tenant = os.environ.get("CHROMA_TENANT")
@@ -131,7 +131,12 @@ def main():
 
     if docs:
         collection.add(ids=ids, documents=docs, metadatas=metadatas)
-        client.persist()
+        # persist only for local clients that support it
+        if hasattr(client, "persist"):
+            try:
+                client.persist()
+            except Exception:
+                pass
         print(f"Indexed {len(docs)} chunks into Chroma at {CHROMA_PERSIST_DIR}")
     else:
         print("No documents found to index.")

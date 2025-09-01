@@ -34,7 +34,7 @@ Example (docker compose override):
       - CHROMA_TENANT=${CHROMA_TENANT}
       - CHROMA_DATABASE=${CHROMA_DATABASE}
 ```
-  api_key='ck-3XH4nLsfNauyyYX2DJHuM8rLudPKqz1gv6Gt6pTcQrue',
+  api_key='ck-******',
   tenant='8241b0e6-7d0b-41dd-946a-b8954d50714e',
   database='Lemuria'
  ``` 

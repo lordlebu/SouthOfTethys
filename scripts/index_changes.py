@@ -126,7 +126,7 @@ def main():
 
     # Connect to Chroma (cloud if API key available)
     cloud_key = os.environ.get("CHROMA_CLOUD_API_KEY")
-    collection_name = "southoftethys"
+    collection_name = os.environ.get("CHROMA_COLLECTION_NAME", "southoftethys")
     if cloud_key:
         tenant = os.environ.get("CHROMA_TENANT")
         database = os.environ.get("CHROMA_DATABASE")
