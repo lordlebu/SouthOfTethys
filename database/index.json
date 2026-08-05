@@ -1,10 +1,10 @@
 {
-  "version": "0.3.0",
+  "version": "0.3.2",
   "description": "SouthOfTethys canonical entity index",
   "counts": {
-    "characters": 20,
+    "characters": 21,
     "events": 5,
-    "fauna": 7,
+    "fauna": 8,
     "settlements": 2,
     "regions": 4,
     "artifacts": 1,
@@ -32,7 +32,8 @@
       "character_jarek",
       "character_ruvan",
       "character_sira",
-      "character_thren"
+      "character_thren",
+      "character_lira"
     ],
     "events": [
       "event_founding_lothal",
@@ -43,6 +44,7 @@
     ],
     "fauna": [
       "fauna_tendua",
+      "fauna_tendua_manticore",
       "fauna_lothal_marsh_lurker",
       "fauna_vrkshasmara",
       "fauna_spotted_marsh_tendua",
