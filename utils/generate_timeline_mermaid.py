@@ -1,86 +1,71 @@
-"""
-Generate a Mermaid graph from timeline.json
-for pictorial timeline visualization.
-"""
+"""Generate Mermaid graph from database/events."""
 
 import json
-import re
+from pathlib import Path
+
+BASE = Path(__file__).resolve().parent.parent
+EVENTS_DIR = BASE / "database" / "events"
+OUT_DIR = BASE / "timeline"
+OUT_MD = OUT_DIR / "timeline_mermaid.md"
 
 
-def fantasy_date_key(date_str):
-    # Parses "Act X, Scene Y" into sortable tuple (X, Y)
-    match = re.match(r"Act (\d+), Scene (\d+)", date_str)
-    if match:
-        return (int(match.group(1)), int(match.group(2)))
-    return (9999, 9999)  # fallback for unsortable dates
+def load_events():
+    events = []
+    if not EVENTS_DIR.exists():
+        return events
+    for path in sorted(EVENTS_DIR.glob("*.json")):
+        with open(path, encoding="utf-8") as f:
+            events.append(json.load(f))
+    return events
 
 
-def load_timeline(path):
-    with open(path, encoding="utf-8") as f:
-        return json.load(f)
-
-
-def sort_events(events):
-    return sorted(events, key=lambda e: fantasy_date_key(e.get("date", "")))
+def sort_key(ev):
+    epoch_order = {
+        "deep_antiquity": 0,
+        "age_of_vanaras": 1,
+        "migrations": 2,
+        "civilization_dawn": 3,
+        "current": 4,
+        "post_cataclysm": 5,
+    }
+    return (epoch_order.get(ev.get("epoch") or "", 99), ev.get("id", ""))
 
 
 def generate_mermaid(events):
     lines = ["```mermaid", "graph TD"]
-    prev_id = None
-    for idx, event in enumerate(events):
-        node_id = f"E{idx}"
-        label = f"{event.get('date', '')}: {event.get('title', '')}"
-        lines.append(f'    {node_id}["{label}"]')
-        if prev_id is not None:
-            lines.append(f"    {prev_id} --> {node_id}")
-        prev_id = node_id
+    id_to_node = {}
+    for idx, ev in enumerate(events):
+        node = f"E{idx}"
+        id_to_node[ev.get("id")] = node
+        label = (ev.get("title") or ev.get("id") or "event").replace('"', "'")
+        lines.append(f'    {node}["{label}"]')
+
+    # Prefer explicit successor edges; fall back to sequential
+    edged = set()
+    for ev in events:
+        src = id_to_node.get(ev.get("id"))
+        for succ in ev.get("successors") or []:
+            dst = id_to_node.get(succ)
+            if src and dst:
+                lines.append(f"    {src} --> {dst}")
+                edged.add((src, dst))
+
+    if not edged and len(events) > 1:
+        for i in range(len(events) - 1):
+            lines.append(f"    E{i} --> E{i + 1}")
+
     lines.append("```")
-    mermaid_text = "\n".join(lines)
-    return mermaid_text
-
-
-def generate_markdown_summary(events):
-    lines = ["# Timeline Summary\n"]
-    for event in events:
-        lines.append(f"## {event.get('date', '')}: {event.get('title', '')}")
-        lines.append(f"**Summary:** {event.get('summary', '')}")
-        chars = event.get("characters", [])
-        if chars:
-            lines.append(f"**Characters:** {', '.join(chars)}")
-        else:
-            lines.append("**Characters:** _None_")
-        loc = event.get("location", None)
-        if loc:
-            lines.append(f"**Location:** {loc}")
-        lines.append("")
     return "\n".join(lines)
 
 
+def main():
+    OUT_DIR.mkdir(parents=True, exist_ok=True)
+    events = sorted(load_events(), key=sort_key)
+    mermaid = generate_mermaid(events)
+    OUT_MD.write_text(mermaid + "\n", encoding="utf-8")
+    print(f"✅ Mermaid → {OUT_MD.relative_to(BASE)} ({len(events)} events)")
+    print(mermaid)
+
+
 if __name__ == "__main__":
-    timeline_path = "timeline/timeline.json"  # Correct path for Docker/CI
-    mermaid_out_path = "timeline/timeline_mermaid.md"
-    summary_out_path = "timeline/timeline_summary.md"
-    timeline = load_timeline(timeline_path)
-    # Handle both list and dict formats
-    if isinstance(timeline, dict) and "events" in timeline:
-        events = sort_events(timeline["events"])
-    elif isinstance(timeline, list):
-        events = sort_events(timeline)
-    else:
-        raise ValueError("timeline.json format not recognized")
-    mermaid_graph = generate_mermaid(events)
-    markdown_summary = generate_markdown_summary(events)
-
-    # Write Mermaid diagram to file
-    with open(mermaid_out_path, "w", encoding="utf-8") as f:
-        f.write(mermaid_graph)
-
-    # Write Markdown summary to file
-    with open(summary_out_path, "w", encoding="utf-8") as f:
-        f.write(markdown_summary)
-
-    # Also print both to stdout for CI logs
-    print("\n--- Mermaid Diagram ---\n")
-    print(mermaid_graph)
-    print("\n--- Timeline Summary ---\n")
-    print(markdown_summary)
+    main()
