@@ -1,0 +1,13 @@
+{
+  "id": "character_digha_jani",
+  "type": "character",
+  "name": "Digha Jani",
+  "culture": "narmada_scholar",
+  "species": "human",
+  "status": "alive",
+  "epoch": "current",
+  "roles": ["field_historian", "researcher"],
+  "notes": "Rugged, sharp-featured historian and field researcher exploring anomalous zones, space-time anomalies, Asura planets, and fossilized magic.",
+  "canon": "primary",
+  "sources": ["AI_CONTEXT.md"]
+}

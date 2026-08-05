@@ -1,0 +1,12 @@
+{
+  "id": "fauna_vajraptor",
+  "type": "fauna",
+  "name": "Vajraptor",
+  "scientific": "Vajraptor territorialis",
+  "diet": "Carnivore",
+  "habitats": ["canopy", "region_saraswati_delta"],
+  "behaviour": ["social", "territorial", "problem_solving"],
+  "notes": "Intelligent theropod bird with colorful plumage. Builds hidden canopy nests.",
+  "canon": "primary",
+  "sources": ["SouthOfTethys.txt"]
+}

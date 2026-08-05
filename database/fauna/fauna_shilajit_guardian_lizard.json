@@ -1,0 +1,12 @@
+{
+  "id": "fauna_shilajit_guardian_lizard",
+  "type": "fauna",
+  "name": "Shilajit Guardian Lizard",
+  "scientific": "Agama shilajit",
+  "diet": "Omnivore",
+  "habitats": ["region_narmada_plateau"],
+  "behaviour": ["fire_spitting", "territorial"],
+  "notes": "Fire-spitting cliff lizard that ingests raw sulfur and flint to strike defensive sparks. Guards natural mineral deposits.",
+  "canon": "primary",
+  "sources": ["SouthOfTethys.txt"]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "fauna_garudasaur_eagle",
+  "type": "fauna",
+  "name": "Garudasaur Eagle",
+  "scientific": "Aquila garudae",
+  "diet": "Carnivore",
+  "habitats": ["region_narmada_plateau"],
+  "behaviour": ["aerial_predator", "cliff_nester"],
+  "notes": "Colossal mountain eagle with obsidian-tipped feathers. Carries small goats and primates to high volcanic ledges.",
+  "canon": "primary",
+  "sources": ["SouthOfTethys.txt"]
+}

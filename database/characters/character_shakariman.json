@@ -1,0 +1,14 @@
+{
+  "id": "character_shakariman",
+  "type": "character",
+  "name": "Shakariman",
+  "epithets": ["The Shikari"],
+  "culture": "narmada_scholar",
+  "species": "human",
+  "status": "alive",
+  "epoch": "current",
+  "roles": ["forest_ranger", "field_surveyor"],
+  "notes": "Seasoned forest ranger and practical field surveyor. Discovers the arboreal octopus (Vṛkṣaśmara).",
+  "canon": "primary",
+  "sources": ["AI_CONTEXT.md"]
+}

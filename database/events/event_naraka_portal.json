@@ -1,0 +1,15 @@
+{
+  "id": "event_naraka_portal",
+  "type": "event",
+  "title": "Opening of the Naraka Lok Portal",
+  "epoch": "migrations",
+  "participants": ["character_guyuk", "character_nirigili"],
+  "location": "hyrkanian_steppe",
+  "predecessors": [],
+  "successors": [],
+  "causes": ["forbidden_tome", "possessed_mountain_goat_guidance"],
+  "outcomes": ["crimson_portal_to_naraka", "beast_spill", "loss_of_nirigili_mount", "guyuk_bloodline_alteration"],
+  "summary": "Guyuk, guided by a possessed mountain goat, recites incantations from an ancient tome and tears open a colossal glowing red portal to Naraka Lok. Horrific beasts spill forth; Nirigili loses his Elephantbird to a Megalosaurus.",
+  "canon": "primary",
+  "sources": ["AI_CONTEXT.md"]
+}

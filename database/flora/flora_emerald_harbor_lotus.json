@@ -1,0 +1,11 @@
+{
+  "id": "flora_emerald_harbor_lotus",
+  "type": "flora",
+  "name": "Emerald Harbor Lotus",
+  "scientific": "Nelumbo smaragdina",
+  "habitats": ["region_saraswati_delta", "settlement_lothal"],
+  "uses": ["ornamental", "mineral_filter"],
+  "notes": "Massive aquatic lotus with bright green petals. Blooms in Lothal estuaries, drawing mineral-rich runoff.",
+  "canon": "primary",
+  "sources": ["SouthOfTethys.txt"]
+}

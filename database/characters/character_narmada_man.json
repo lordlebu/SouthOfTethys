@@ -1,0 +1,14 @@
+{
+  "id": "character_narmada_man",
+  "type": "character",
+  "name": "Narmada Man",
+  "epithets": ["First of the Riverbone People", "Primeval King"],
+  "culture": "primordial",
+  "species": "riverbone",
+  "status": "mythic",
+  "epoch": "deep_antiquity",
+  "roles": ["king", "ancestor", "blessing_giver"],
+  "notes": "Primeval King of Jambhudweepa and first of the riverbone people. Source of the spiral scar blessing on Aasha’s palm. Linked to Apsara union legend and Asura-tainted egg.",
+  "canon": "primary",
+  "sources": ["AI_CONTEXT.md"]
+}

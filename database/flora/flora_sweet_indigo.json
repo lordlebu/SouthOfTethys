@@ -1,0 +1,11 @@
+{
+  "id": "flora_sweet_indigo",
+  "type": "flora",
+  "name": "Sweet Indigo",
+  "scientific": "Indigofera dulcis",
+  "habitats": ["region_saraswati_delta"],
+  "uses": ["dye", "decorative"],
+  "notes": "Domesticated decorative vine bred by Harappan settlers. Vibrant purple flowers yield sweet-scented blue dye.",
+  "canon": "primary",
+  "sources": ["SouthOfTethys.txt"]
+}

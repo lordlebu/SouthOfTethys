@@ -1,0 +1,14 @@
+{
+  "id": "event_dragon_spine",
+  "type": "event",
+  "title": "Forging of the Dragon’s Spine",
+  "epoch": "deep_antiquity",
+  "participants": ["character_honan"],
+  "location": "ironfang_mountains",
+  "predecessors": [],
+  "successors": [],
+  "outcomes": ["petrification_of_gorvaxx", "formation_of_mountain_pass"],
+  "summary": "Honan battles the deep-time dragon Gorvaxx. The beast is petrified rather than slain, forming the treacherous mountain pass known as the Dragon’s Spine.",
+  "canon": "primary",
+  "sources": ["AI_CONTEXT.md"]
+}
