@@ -1,0 +1,26 @@
+{
+  "id": "character_asha",
+  "type": "character",
+  "name": "Aasha",
+  "aliases": ["Asha"],
+  "epithets": ["Dreamseer", "Vaidyahridaya"],
+  "culture": "harappan",
+  "species": "human",
+  "status": "alive",
+  "epoch": "civilization_dawn",
+  "roles": ["lorekeeper", "co-ruler", "younger_daughter"],
+  "relations": {
+    "parents": ["character_kavik"],
+    "siblings": ["character_shaashak", "character_mehme"]
+  },
+  "physical": {
+    "height": "5'6\"",
+    "eyes": "brown",
+    "hair": "dark brown",
+    "skin": "warm tan",
+    "mark": "spiral scar on right palm (Blessing of Narmada Man)"
+  },
+  "notes": "Oral historian and mystical younger daughter. Co-ruler of Lothal after exile of Shaashak.",
+  "canon": "primary",
+  "sources": ["SouthOfTethys_Lothal_profiles.pdf", "AI_CONTEXT.md"]
+}

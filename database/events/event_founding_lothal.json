@@ -1,0 +1,17 @@
+{
+  "id": "event_founding_lothal",
+  "type": "event",
+  "title": "Founding of Lothal",
+  "epoch": "civilization_dawn",
+  "date_approx": "c. 3000 BCE",
+  "participants": ["character_kavik"],
+  "location": "settlement_lothal",
+  "artifacts": [],
+  "predecessors": [],
+  "successors": ["event_stone_pact", "event_tendua_crisis"],
+  "causes": ["migration_from_mohenjo_daro", "grief_over_wife_death"],
+  "outcomes": ["construction_of_22_story_tower", "harappan_dominance_in_delta"],
+  "summary": "Kavik leads Mask Family across Tethys Sea, performs Chandra Grahan ritual, declares himself Raij, and begins construction of the red sandstone tower.",
+  "canon": "primary",
+  "sources": ["AI_CONTEXT.md"]
+}

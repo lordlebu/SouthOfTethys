@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Fauna",
+  "type": "object",
+  "required": ["id", "type", "name"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^fauna_[a-z0-9_]+$" },
+    "type": { "const": "fauna" },
+    "name": { "type": "string" },
+    "scientific": { "type": ["string", "null"] },
+    "taxonomy": { "type": "object" },
+    "diet": { "type": ["string", "null"] },
+    "habitats": { "type": "array", "items": { "type": "string" } },
+    "behaviour": { "type": "array", "items": { "type": "string" } },
+    "related_species": { "type": "array", "items": { "type": "string" } },
+    "notes": { "type": "string" },
+    "canon": { "type": "string", "enum": ["primary", "secondary", "draft"], "default": "primary" },
+    "sources": { "type": "array", "items": { "type": "string" } }
+  },
+  "additionalProperties": true
+}

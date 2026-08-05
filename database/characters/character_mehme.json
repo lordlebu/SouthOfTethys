@@ -1,0 +1,19 @@
+{
+  "id": "character_mehme",
+  "type": "character",
+  "name": "Mehme",
+  "epithets": ["Ironstorm", "Steelaklad"],
+  "culture": "harappan",
+  "species": "human",
+  "status": "alive",
+  "epoch": "civilization_dawn",
+  "roles": ["scout", "military_captain", "son"],
+  "relations": {
+    "parents": ["character_kavik"],
+    "siblings": ["character_shaashak", "character_asha"],
+    "spouse": ["character_varna", "character_arin", "character_mira"]
+  },
+  "notes": "Hotheaded son. Wields double-headed axe. Marries Varna, Arin and Mira. Takes military command after Kavik's death.",
+  "canon": "primary",
+  "sources": ["SouthOfTethys_Lothal_profiles.pdf", "AI_CONTEXT.md"]
+}

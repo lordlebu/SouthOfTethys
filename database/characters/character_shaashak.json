@@ -1,0 +1,20 @@
+{
+  "id": "character_shaashak",
+  "type": "character",
+  "name": "Shaashak",
+  "epithets": ["Silversong", "Mask-Ambanee"],
+  "culture": "harappan",
+  "species": "human",
+  "status": "alive",
+  "epoch": "civilization_dawn",
+  "roles": ["prophetess", "elder_daughter", "bride_of_the_stone_pact"],
+  "relations": {
+    "parents": ["character_kavik"],
+    "siblings": ["character_asha", "character_mehme"],
+    "spouse": "character_khadi",
+    "children": ["character_sarita"]
+  },
+  "notes": "Diplomatic elder daughter. Married Khadi under Stone Pact. Fled Lothal after Kavik's death. Mother of Sarita Silversong.",
+  "canon": "primary",
+  "sources": ["SouthOfTethys_Lothal_profiles.pdf", "AI_CONTEXT.md"]
+}

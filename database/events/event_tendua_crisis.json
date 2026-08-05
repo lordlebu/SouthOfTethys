@@ -1,0 +1,16 @@
+{
+  "id": "event_tendua_crisis",
+  "type": "event",
+  "title": "Tendua Crisis and Assassination of Kavik",
+  "epoch": "civilization_dawn",
+  "participants": ["character_nila", "character_kavik", "character_shaashak", "character_khadi", "character_mehme", "character_asha"],
+  "location": "settlement_lothal",
+  "artifacts": [],
+  "predecessors": ["event_stone_pact"],
+  "successors": ["event_exile_of_shaashak"],
+  "causes": ["nila_resentment", "asura_mantras_on_tower"],
+  "outcomes": ["birth_of_tendua_manticore", "death_of_kavik", "matriarchal_council", "exile"],
+  "summary": "Nila desecrates tower with Asura mantras, birthing Tendua Manticore. During the attack, Asura-possessed Nila assassinates Kavik. Leads to exile of Shaashak and Khadi and rise of matriarchal co-rulership.",
+  "canon": "primary",
+  "sources": ["AI_CONTEXT.md"]
+}
