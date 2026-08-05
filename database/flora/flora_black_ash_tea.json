@@ -1,0 +1,11 @@
+{
+  "id": "flora_black_ash_tea",
+  "type": "flora",
+  "name": "Black Ash-Tea",
+  "scientific": "Camellia vulcanica",
+  "habitats": ["region_narmada_plateau"],
+  "uses": ["stimulant", "beverage"],
+  "notes": "Hardy wild tea adapted to acidic, sulfur-rich volcanic soils. Produces dark, highly caffeinated leaves.",
+  "canon": "primary",
+  "sources": ["SouthOfTethys.txt"]
+}

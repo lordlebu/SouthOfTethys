@@ -1,0 +1,12 @@
+{
+  "id": "fauna_golden_honey_goliath",
+  "type": "fauna",
+  "name": "Golden Honey-Goliath",
+  "scientific": "Megapis aurea",
+  "diet": "Herbivore",
+  "habitats": ["region_narmada_plateau"],
+  "behaviour": ["colonial", "defensive"],
+  "notes": "Colossal bee of the Narmada cliffs. Harvested for medicinal honey; also used as weapons in local siege engines.",
+  "canon": "primary",
+  "sources": ["SouthOfTethys.txt"]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "fauna_tethys_river_dolphin",
+  "type": "fauna",
+  "name": "Tethys River Dolphin",
+  "scientific": "Platanista tethys",
+  "diet": "Carnivore",
+  "habitats": ["region_saraswati_delta"],
+  "behaviour": ["acoustic_navigation", "blind"],
+  "notes": "Pale blind cetacean navigating muddy delta waters via sophisticated acoustic clicks. Hunted by Kia for meat and skin.",
+  "canon": "primary",
+  "sources": ["SouthOfTethys.txt"]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "flora_bonewood_mangrove",
+  "type": "flora",
+  "name": "Bonewood Mangrove",
+  "scientific": "Rhizophora osteoxyla",
+  "habitats": ["coastal", "region_saraswati_delta"],
+  "uses": ["timber", "construction"],
+  "notes": "Mangrove absorbing calcium and basalt. Yields naturally curved, bone-hard timber used for construction.",
+  "canon": "primary",
+  "sources": ["SouthOfTethys.txt"]
+}

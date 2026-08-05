@@ -1,10 +1,11 @@
 {
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "SouthOfTethys canonical entity index",
   "counts": {
     "characters": 30,
     "events": 11,
-    "fauna": 14,
+    "fauna": 19,
+    "flora": 6,
     "settlements": 2,
     "regions": 4,
     "artifacts": 1,
@@ -71,7 +72,20 @@
       "fauna_baurusuchus",
       "fauna_cognitavi",
       "fauna_shilajit_guardian_lizard",
-      "fauna_garudasaur_eagle"
+      "fauna_garudasaur_eagle",
+      "fauna_vajraptor",
+      "fauna_tethys_river_dolphin",
+      "fauna_woolly_bactrian_croc",
+      "fauna_giant_riding_ostrich",
+      "fauna_golden_honey_goliath"
+    ],
+    "flora": [
+      "flora_sweet_indigo",
+      "flora_emerald_harbor_lotus",
+      "flora_blood_red_asura_lotus",
+      "flora_bonewood_mangrove",
+      "flora_silver_leaved_oracle_fig",
+      "flora_black_ash_tea"
     ],
     "settlements": ["settlement_lothal", "settlement_dwarka"],
     "regions": [
