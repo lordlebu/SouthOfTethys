@@ -1,0 +1,12 @@
+{
+  "id": "fauna_baurusuchus",
+  "type": "fauna",
+  "name": "Baurusuchus",
+  "scientific": "Baurusuchus palustris",
+  "diet": "Carnivore",
+  "habitats": ["region_saraswati_delta"],
+  "behaviour": ["ambush", "quadrupedal"],
+  "notes": "Heavy land crocodile specializing in ambush in shallow reed marshes. Subspecies include Striped Reed Stalker and Mud-Armored Ambusher.",
+  "canon": "primary",
+  "sources": ["SouthOfTethys.txt"]
+}

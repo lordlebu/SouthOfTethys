@@ -1,10 +1,10 @@
 {
-  "version": "0.4.1",
+  "version": "0.5.0",
   "description": "SouthOfTethys canonical entity index",
   "counts": {
-    "characters": 26,
+    "characters": 30,
     "events": 11,
-    "fauna": 9,
+    "fauna": 14,
     "settlements": 2,
     "regions": 4,
     "artifacts": 1,
@@ -38,7 +38,11 @@
       "character_nirigili",
       "character_asura_tainted_princess",
       "character_honan",
-      "character_varunesh"
+      "character_varunesh",
+      "character_manjalaya",
+      "character_onko",
+      "character_digha_jani",
+      "character_shakariman"
     ],
     "events": [
       "event_dragon_spine",
@@ -62,7 +66,12 @@
       "fauna_black_barked_canopy_tendua",
       "fauna_indus_unicorn",
       "fauna_beedu",
-      "fauna_megalosaurus"
+      "fauna_megalosaurus",
+      "fauna_nagaraptor",
+      "fauna_baurusuchus",
+      "fauna_cognitavi",
+      "fauna_shilajit_guardian_lizard",
+      "fauna_garudasaur_eagle"
     ],
     "settlements": ["settlement_lothal", "settlement_dwarka"],
     "regions": [
