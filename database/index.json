@@ -1,8 +1,8 @@
 {
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "SouthOfTethys canonical entity index",
   "counts": {
-    "characters": 20,
+    "characters": 21,
     "events": 5,
     "fauna": 7,
     "settlements": 2,
@@ -32,7 +32,8 @@
       "character_jarek",
       "character_ruvan",
       "character_sira",
-      "character_thren"
+      "character_thren",
+      "character_lira"
     ],
     "events": [
       "event_founding_lothal",
