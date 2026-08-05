@@ -1,86 +1,32 @@
-# Project Context for GitHub Copilot
+# SouthOfTethys Context
 
-This project is a procedurally evolving storytelling engine inspired by world simulation games like **Dwarf Fortress**. It manages story events, character genealogy, and evolving flora/fauna in a version-controlled Git repository. All data is stored in JSON and Markdown files. The system must support:
+## Canon Location
 
----
+Structured lore lives in **`database/`** (v0.7.0+).
+See `database/README.md` and `DESIGN.md` for conventions and roadmap.
 
-## ✨ Objectives
+## Key Paths
 
-- Maintain a **timeline** of world events (`timeline/timeline.json`)
-- Track **characters** with structured metadata and genealogy (`characters/`)
-- Record **species evolution** and traits (`flora_fauna/`)
-- Connect each entity to **locations**, **art**, and **story arcs**
-- Enable Python scripts to build, repair, and extend the world dynamically
+| Path              | Role                                      |
+|-------------------|-------------------------------------------|
+| `database/`       | Canonical entities, events, bestiary      |
+| `AI_CONTEXT.md`   | Large narrative / extraction source       |
+| `services/chroma` | Vector index + schemas                    |
+| `vidur_portal/`   | Streamlit extraction & query UI           |
+| `docs/`           | Published book / GitHub Pages             |
+| `cartography/`    | Maps                                      |
+| `timeline/`       | Transitional; prefer `database/events/`   |
 
----
+## Deprecated
 
-## 🗂️ Folder Structure (Expected)
+- `characters/` (old placeholders) — removed
+- `flora_fauna/` (old placeholders) — removed
 
-- `/timeline/` – Contains `timeline.json` with all world events sorted by Act/Scene
-- `/characters/` – Character files (`.md` or `.json`) + a `genealogy.json` file
-- `/flora_fauna/` – Species profiles and evolution chains
-- `/locations/` – Descriptions of places in the world
-- `/art/` – Physical or AI-transformed art references (sketches, paintings)
-- `/utils/` – Python tools for timeline generation, genealogy tracking, species mutation
-- `story_index.json` – High-level index of all characters, species, and events
+Do not reintroduce parallel entity stores.
 
----
+## Engine Stack
 
-## 🧠 Copilot Behavior Guidelines
-
-Assist in creating helper scripts to:
-  - Parse and sort timeline entries
-  - Link characters to events and genealogy trees
-  - Simulate evolution of creatures over time
-  - Detect lore inconsistencies or time shifts
-  - Process story snippets using our own Hugging Face AI model (not Ollama)
-Use comments and structured metadata to inform decisions
-Favor clean, modular Python functions
-Encourage Markdown summary generation (for auto documentation)
-
----
-
-## Example Tasks
-
-`generate_timeline.py` → Loads `timeline.json`, sorts by scene, prints summary
-`lineage_tracker.py` → Builds a family tree from `genealogy.json`
-`evolve_species.py` → Adds mutation stages to species based on events
-`generate_timeline_mermaid.py` → Creates visual timeline diagrams and summaries
-`generate_map.py` → Creates interactive HTML maps from geographic data
-`lint_story.py` → Validates story consistency and cross-references
-`snippet_processor.py` → Uses our own Hugging Face AI model to extract structured data from story snippets
-
-## Integration Points
-
-- **AI Model (Hugging Face)**: `snippet_processor.py` now uses our own Hugging Face model (`lordlebu/4000BCSaraswaty`) to extract structured data from story snippets, integrated via the Vidur Portal web app.
-- **Retrieval Layer (Chroma)**: We use Chroma as a local vector DB to store embeddings for story chunks. At inference, Vidur Portal retrieves top-k chunks from the Chroma index and uses them as context for the Hugging Face model (RAG-style). Embeddings are generated from canonical JSON/MD files and indexed with metadata (file path, event id, act/scene).
-
-## Publishing & Artifacts
-
-The repository automatically generates and publishes "book" artifacts through GitHub Actions:
-
-- **Timeline visualizations** (Mermaid diagrams, summaries)
-- **Interactive maps** (HTML with geographic overlays)
-- **Character and species data** (structured genealogy and evolution)
-- **GitHub Pages deployment** for public viewing
-
-### Manual Publication
-- Use GitHub Actions manual trigger for immediate publishing
-- All artifacts published to `https://lordlebu.github.io/SouthOfTethys/`
-- Artifacts also available as downloadable files from workflow runs
-
-### Development Workflow
-1. Make changes to world data (timeline, characters, species, locations)
-2. Run `utils/lint_story.py` to validate consistency
-3. Commit and push - triggers automatic artifact generation
-4. Merge to `main` branch for full publication
-5. For story snippet processing, use the Vidur Portal web app to extract and validate structured data before integration.
-
----
-
-## Special Notes
-
-- Dates are in fantasy format: "Act 1, Scene 2" or optionally a fictional calendar
-- All updates should maintain consistency across the world
-- Metadata keys are case-sensitive
-- Art is linked by filename only, not embedded
+- Chroma + sentence-transformers for retrieval
+- Hugging Face model for snippet extraction
+- CI publishes timeline, maps, and docs to GitHub Pages
+- Docker Compose for local portal + indexer
