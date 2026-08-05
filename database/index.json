@@ -1,15 +1,15 @@
 {
-  "version": "0.3.2",
+  "version": "0.4.0",
   "description": "SouthOfTethys canonical entity index",
   "counts": {
-    "characters": 21,
-    "events": 5,
-    "fauna": 8,
+    "characters": 26,
+    "events": 7,
+    "fauna": 9,
     "settlements": 2,
     "regions": 4,
     "artifacts": 1,
     "factions": 3,
-    "mythology": 2
+    "mythology": 3
   },
   "entities": {
     "characters": [
@@ -33,14 +33,21 @@
       "character_ruvan",
       "character_sira",
       "character_thren",
-      "character_lira"
+      "character_lira",
+      "character_guyuk",
+      "character_nirigili",
+      "character_asura_tainted_princess",
+      "character_honan",
+      "character_varunesh"
     ],
     "events": [
       "event_founding_lothal",
       "event_stone_pact",
       "event_tendua_crisis",
       "event_exile_of_shaashak",
-      "event_black_lotus_siege"
+      "event_black_lotus_siege",
+      "event_naraka_portal",
+      "event_dragon_spine"
     ],
     "fauna": [
       "fauna_tendua",
@@ -50,7 +57,8 @@
       "fauna_spotted_marsh_tendua",
       "fauna_black_barked_canopy_tendua",
       "fauna_indus_unicorn",
-      "fauna_beedu"
+      "fauna_beedu",
+      "fauna_megalosaurus"
     ],
     "settlements": ["settlement_lothal", "settlement_dwarka"],
     "regions": [
@@ -65,6 +73,10 @@
       "faction_kia_clan",
       "faction_silvershore"
     ],
-    "mythology": ["mythology_varuna", "mythology_ammonite_man"]
+    "mythology": [
+      "mythology_varuna",
+      "mythology_ammonite_man",
+      "mythology_gorvaxx"
+    ]
   }
 }

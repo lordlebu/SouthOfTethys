@@ -1,0 +1,14 @@
+{
+  "id": "character_asura_tainted_princess",
+  "type": "character",
+  "name": "Asura-Tainted Princess",
+  "epithets": [],
+  "culture": "asura_hybrid",
+  "species": "asura_tainted",
+  "status": "alive",
+  "epoch": "deep_antiquity",
+  "roles": ["isolated_royal", "dream_prophet"],
+  "notes": "Immortal offspring of Prince Varunesh and Asura princess Manjalaya/Vishaili. Heavy curled ram horns, violet gemstones. Marked by Aryaman with golden constellations in dreams. Lives in eternal isolation on a rocky plateau.",
+  "canon": "primary",
+  "sources": ["AI_CONTEXT.md"]
+}
