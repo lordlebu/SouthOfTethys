@@ -1,24 +1,20 @@
 # Validation Report — feature/database-normalization
 
-**Date**: 2026-08-05
+**Date**: 2026-08-05 (updated)
 
-## Passes
-- All entity files use stable ID prefixes (`character_`, `event_`, `fauna_`, etc.)
-- Core Mask Family, Kia, Silvershore, and key events present
-- Cross-references among primary characters largely consistent
-- Epochs timeline present
+## Status: Known issues resolved
 
-## Issues Fixed This Pass
-- Added missing `character_lira` (referenced by Torin & Varna)
+### Fixed
+- Created `fauna_tendua_manticore`
+- Updated `fauna_tendua.related_species` to valid IDs only
+- Index bumped to v0.3.2 (8 fauna)
 
-## Remaining / Deferred
-- `fauna_tendua` related_species includes `fauna_tendua_manticore` (not yet created)
-- Some spouse fields use arrays (Mehme) vs single string (schema allows flexibility)
-- No automated JSON-Schema validator run yet against `database/schemas/`
-- Black Lotus / Tendua event graph is linear; full predecessor/successor density still sparse
-- Guyuk / Nirigili / Narmada scholar arcs not yet extracted
+### Still deferred (non-blocking)
+- Automated JSON-Schema validator against `database/schemas/` not yet implemented
+- Spouse field sometimes array / sometimes string (schema remains permissive)
+- Later story arcs (Guyuk–Nirigili, Narmada scholars, Asura-Tainted Princess, full Black Lotus depth) still unextracted
+- Event graph remains relatively sparse
 
-## Recommended Next
-1. Create `fauna_tendua_manticore`
-2. Add simple Python validation script under `utils/` or `database/`
-3. Extract remaining outliers (Guyuk, Nirigili, Ruvan expansion, Asura-Tainted Princess)
+### Ready for
+- PR into main when approved
+- Next extraction pass on same feature branch
