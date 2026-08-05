@@ -15,12 +15,12 @@ See `database/README.md` and `DESIGN.md` for conventions and roadmap.
 | `vidur_portal/`   | Streamlit extraction & query UI           |
 | `docs/`           | Published book / GitHub Pages             |
 | `cartography/`    | Maps                                      |
-| `timeline/`       | Transitional; prefer `database/events/`   |
 
-## Deprecated
+## Deprecated / Removed
 
 - `characters/` (old placeholders) — removed
 - `flora_fauna/` (old placeholders) — removed
+- `timeline/` (old placeholder events) — removed; use `database/events/`
 
 Do not reintroduce parallel entity stores.
 
