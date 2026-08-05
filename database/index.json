@@ -1,9 +1,9 @@
 {
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "SouthOfTethys canonical entity index",
   "counts": {
     "characters": 26,
-    "events": 7,
+    "events": 11,
     "fauna": 9,
     "settlements": 2,
     "regions": 4,
@@ -41,13 +41,17 @@
       "character_varunesh"
     ],
     "events": [
+      "event_dragon_spine",
+      "event_shadow_pact",
+      "event_silvershore_war",
       "event_founding_lothal",
+      "event_black_lotus_siege",
       "event_stone_pact",
       "event_tendua_crisis",
+      "event_mask_retrieval",
       "event_exile_of_shaashak",
-      "event_black_lotus_siege",
-      "event_naraka_portal",
-      "event_dragon_spine"
+      "event_birth_of_sarita",
+      "event_naraka_portal"
     ],
     "fauna": [
       "fauna_tendua",

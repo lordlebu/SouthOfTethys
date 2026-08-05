@@ -1,0 +1,16 @@
+{
+  "id": "event_mask_retrieval",
+  "type": "event",
+  "title": "Retrieval of the Mask of Harappa",
+  "epoch": "civilization_dawn",
+  "participants": ["character_asha", "character_iknaya", "character_varna"],
+  "location": "settlement_lothal",
+  "artifacts": ["artifact_mask_of_harappa"],
+  "predecessors": ["event_tendua_crisis"],
+  "successors": ["event_exile_of_shaashak"],
+  "causes": ["tainted_mask_stolen_by_nila", "need_to_repel_tenduas"],
+  "outcomes": ["mask_recovered_from_tower_foundation", "tenduas_scattered"],
+  "summary": "Asha, iKnaya and Varna recover the bronze raven-and-waves Mask of Harappa from a hidden chamber beneath the tower. Used with other stone masks to drive remaining Tenduas back into the marsh.",
+  "canon": "primary",
+  "sources": ["AI_CONTEXT.md"]
+}

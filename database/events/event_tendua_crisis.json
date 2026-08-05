@@ -7,10 +7,10 @@
   "location": "settlement_lothal",
   "artifacts": [],
   "predecessors": ["event_stone_pact"],
-  "successors": ["event_exile_of_shaashak"],
+  "successors": ["event_mask_retrieval", "event_exile_of_shaashak"],
   "causes": ["nila_resentment", "asura_mantras_on_tower"],
-  "outcomes": ["birth_of_tendua_manticore", "death_of_kavik", "matriarchal_council", "exile"],
-  "summary": "Nila desecrates tower with Asura mantras, birthing Tendua Manticore. During the attack, Asura-possessed Nila assassinates Kavik. Leads to exile of Shaashak and Khadi and rise of matriarchal co-rulership.",
+  "outcomes": ["birth_of_tendua_manticore", "death_of_kavik", "matriarchal_council"],
+  "summary": "Nila desecrates tower with Asura mantras, birthing Tendua Manticore. During the attack, Asura-possessed Nila assassinates Kavik.",
   "canon": "primary",
   "sources": ["AI_CONTEXT.md"]
 }

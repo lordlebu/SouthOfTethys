@@ -1,0 +1,15 @@
+{
+  "id": "event_shadow_pact",
+  "type": "event",
+  "title": "Shadow Pact of Saraswati",
+  "epoch": "deep_antiquity",
+  "participants": ["character_varunesh", "character_asura_tainted_princess"],
+  "location": "ancient_courts",
+  "predecessors": [],
+  "successors": [],
+  "causes": ["dark_tantra", "unicorn_sacrifice", "dwarka_gate"],
+  "outcomes": ["summoning_of_manjalaya", "birth_of_asura_tainted_princess", "curse_on_ancient_courts"],
+  "summary": "Prince Varunesh slits an Indus unicorn and uses dark tantra through a Dwarka Gate to summon the Asura princess Manjalaya. Their union produces the immortal Asura-Tainted Princess.",
+  "canon": "primary",
+  "sources": ["AI_CONTEXT.md"]
+}
