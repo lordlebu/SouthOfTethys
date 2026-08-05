@@ -1,0 +1,14 @@
+{
+  "id": "event_exile_of_shaashak",
+  "type": "event",
+  "title": "Exile of Shaashak and Khadi",
+  "epoch": "civilization_dawn",
+  "participants": ["character_shaashak", "character_khadi"],
+  "location": "settlement_lothal",
+  "predecessors": ["event_tendua_crisis"],
+  "successors": [],
+  "outcomes": ["birth_of_sarita", "matriarchal_council_asha_iknaya_varna"],
+  "summary": "Grief-stricken Shaashak and Khadi depart upriver on a river skiff to raise their child far from Lothal's tainted legacy. Asha, iKnaya and Varna form ruling council.",
+  "canon": "primary",
+  "sources": ["AI_CONTEXT.md"]
+}

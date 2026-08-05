@@ -1,0 +1,36 @@
+{
+  "version": "0.1.0",
+  "description": "SouthOfTethys canonical entity index",
+  "counts": {
+    "characters": 8,
+    "events": 4,
+    "fauna": 1,
+    "settlements": 1,
+    "regions": 2,
+    "artifacts": 1,
+    "factions": 2
+  },
+  "entities": {
+    "characters": [
+      "character_kavik",
+      "character_shaashak",
+      "character_asha",
+      "character_mehme",
+      "character_khadi",
+      "character_nila",
+      "character_varna",
+      "character_iknaya"
+    ],
+    "events": [
+      "event_founding_lothal",
+      "event_stone_pact",
+      "event_tendua_crisis",
+      "event_exile_of_shaashak"
+    ],
+    "fauna": ["fauna_tendua"],
+    "settlements": ["settlement_lothal"],
+    "regions": ["region_saraswati_delta", "region_narmada_plateau"],
+    "artifacts": ["artifact_mask_of_harappa"],
+    "factions": ["faction_mask_family", "faction_kia_clan"]
+  }
+}
