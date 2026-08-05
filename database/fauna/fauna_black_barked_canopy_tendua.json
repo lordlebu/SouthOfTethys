@@ -1,0 +1,13 @@
+{
+  "id": "fauna_black_barked_canopy_tendua",
+  "type": "fauna",
+  "name": "Black-Barked Canopy Tendua",
+  "scientific": "Panthera simiana arborea",
+  "diet": "Carnivore",
+  "habitats": ["region_godavari_delta"],
+  "behaviour": ["arboreal", "melanistic"],
+  "related_species": ["fauna_tendua"],
+  "notes": "Melanistic subspecies hunting in mangrove canopies.",
+  "canon": "primary",
+  "sources": ["SouthOfTethys.txt"]
+}

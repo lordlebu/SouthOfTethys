@@ -1,14 +1,15 @@
 {
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "SouthOfTethys canonical entity index",
   "counts": {
-    "characters": 8,
-    "events": 4,
-    "fauna": 1,
+    "characters": 15,
+    "events": 5,
+    "fauna": 6,
     "settlements": 1,
     "regions": 2,
     "artifacts": 1,
-    "factions": 2
+    "factions": 2,
+    "mythology": 2
   },
   "entities": {
     "characters": [
@@ -19,18 +20,35 @@
       "character_khadi",
       "character_nila",
       "character_varna",
-      "character_iknaya"
+      "character_iknaya",
+      "character_arin",
+      "character_mira",
+      "character_sarita",
+      "character_vara_ma",
+      "character_orek",
+      "character_rathak",
+      "character_naga_raja"
     ],
     "events": [
       "event_founding_lothal",
       "event_stone_pact",
       "event_tendua_crisis",
-      "event_exile_of_shaashak"
+      "event_exile_of_shaashak",
+      "event_black_lotus_siege"
     ],
-    "fauna": ["fauna_tendua"],
+    "fauna": [
+      "fauna_tendua",
+      "fauna_lothal_marsh_lurker",
+      "fauna_vrkshasmara",
+      "fauna_spotted_marsh_tendua",
+      "fauna_black_barked_canopy_tendua",
+      "fauna_indus_unicorn",
+      "fauna_beedu"
+    ],
     "settlements": ["settlement_lothal"],
     "regions": ["region_saraswati_delta", "region_narmada_plateau"],
     "artifacts": ["artifact_mask_of_harappa"],
-    "factions": ["faction_mask_family", "faction_kia_clan"]
+    "factions": ["faction_mask_family", "faction_kia_clan"],
+    "mythology": ["mythology_varuna", "mythology_ammonite_man"]
   }
 }

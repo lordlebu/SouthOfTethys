@@ -1,0 +1,17 @@
+{
+  "id": "character_sarita",
+  "type": "character",
+  "name": "Sarita",
+  "epithets": ["Silversong", "Mask-Ambanee"],
+  "culture": "harappan_kia",
+  "species": "human",
+  "status": "alive",
+  "epoch": "civilization_dawn",
+  "roles": ["heir", "cancer_child"],
+  "relations": {
+    "parents": ["character_shaashak", "character_khadi"]
+  },
+  "notes": "Daughter of Shaashak and Khadi, born in exile. Represents healing of Harappan-Kia divide. Mentored later by Ruvan.",
+  "canon": "primary",
+  "sources": ["AI_CONTEXT.md"]
+}

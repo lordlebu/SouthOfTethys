@@ -1,0 +1,12 @@
+{
+  "id": "fauna_indus_unicorn",
+  "type": "fauna",
+  "name": "Indus Unicorn",
+  "scientific": "Monocerus indicus",
+  "diet": "Herbivore",
+  "habitats": ["region_saraswati_delta"],
+  "behaviour": ["swift", "revered"],
+  "notes": "Legendary single-horned ungulate. Historically sacrificed in dark portal rites (Varunesh myth).",
+  "canon": "primary",
+  "sources": ["SouthOfTethys.txt"]
+}

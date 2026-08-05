@@ -1,0 +1,13 @@
+{
+  "id": "character_naga_raja",
+  "type": "character",
+  "name": "Naga-Raja",
+  "culture": "polynesian_khmer",
+  "species": "human",
+  "status": "alive",
+  "epoch": "civilization_dawn",
+  "roles": ["pirate_king", "black_lotus_leader"],
+  "notes": "Brutal Polynesian-Khmer pirate king of Black Lotus Camp. Captured Varna and Rathak.",
+  "canon": "primary",
+  "sources": ["AI_CONTEXT.md"]
+}

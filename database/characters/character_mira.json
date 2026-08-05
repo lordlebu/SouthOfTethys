@@ -1,0 +1,19 @@
+{
+  "id": "character_mira",
+  "type": "character",
+  "name": "Mira",
+  "epithets": ["Starchild", "Kia-Yaksha"],
+  "culture": "kia",
+  "species": "human",
+  "status": "alive",
+  "epoch": "civilization_dawn",
+  "roles": ["prophetic", "daughter"],
+  "relations": {
+    "parents": ["character_khadi"],
+    "siblings": ["character_arin"],
+    "spouse": "character_mehme"
+  },
+  "notes": "Ethereal prophetic daughter of Khadi. Marries Mehme.",
+  "canon": "primary",
+  "sources": ["AI_CONTEXT.md"]
+}

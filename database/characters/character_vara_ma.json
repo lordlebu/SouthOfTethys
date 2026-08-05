@@ -1,0 +1,18 @@
+{
+  "id": "character_vara_ma",
+  "type": "character",
+  "name": "Vara-Ma",
+  "epithets": ["Mask-Binder"],
+  "culture": "harappan",
+  "species": "human",
+  "status": "deceased",
+  "epoch": "migrations",
+  "roles": ["mask_binder", "ancestor"],
+  "relations": {
+    "spouse": "character_orek",
+    "children": ["character_kavik", "character_sira", "character_thren", "character_iknaya"]
+  },
+  "notes": "Mother of Kavik. Hid dangerous masks with Orek and Thren in Aravali sanctuary.",
+  "canon": "primary",
+  "sources": ["AI_CONTEXT.md"]
+}

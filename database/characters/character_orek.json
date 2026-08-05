@@ -1,0 +1,18 @@
+{
+  "id": "character_orek",
+  "type": "character",
+  "name": "Orek",
+  "epithets": ["Face Without a Mask"],
+  "culture": "harappan",
+  "species": "human",
+  "status": "deceased",
+  "epoch": "migrations",
+  "roles": ["ancestor"],
+  "relations": {
+    "spouse": "character_vara_ma",
+    "children": ["character_kavik", "character_sira", "character_thren", "character_iknaya"]
+  },
+  "notes": "Father of Kavik. Took immune son Thren into wilderness to protect masks.",
+  "canon": "primary",
+  "sources": ["AI_CONTEXT.md"]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "fauna_spotted_marsh_tendua",
+  "type": "fauna",
+  "name": "Spotted Marsh Tendua",
+  "scientific": "Panthera simiana maculata",
+  "diet": "Carnivore",
+  "habitats": ["region_saraswati_delta"],
+  "behaviour": ["ambush", "ocular_mimicry", "intelligent"],
+  "related_species": ["fauna_tendua"],
+  "notes": "Wetland leopard-like feline with human-like eye placement.",
+  "canon": "primary",
+  "sources": ["SouthOfTethys.txt"]
+}

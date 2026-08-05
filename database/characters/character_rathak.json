@@ -1,0 +1,13 @@
+{
+  "id": "character_rathak",
+  "type": "character",
+  "name": "Rathak",
+  "culture": "trader",
+  "species": "human",
+  "status": "alive",
+  "epoch": "civilization_dawn",
+  "roles": ["trader", "whale_blimp_commander"],
+  "notes": "Sturdy trader commanding whale blimps with lapis lazuli. Captured with Varna by Naga-Raja; rescued by Kavik.",
+  "canon": "primary",
+  "sources": ["AI_CONTEXT.md"]
+}
