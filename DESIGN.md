@@ -15,8 +15,9 @@ database/   ← canonical JSON entities + event graph
 Chroma index / Vidur Portal / CI publishing / maps
 ```
 
-Legacy placeholder directories (`characters/`, `flora_fauna/`) have been removed.
-The top-level `timeline/` folder remains transitional for existing CI/map scripts; new event data lives under `database/events/` and `database/timeline/`.
+Legacy placeholder directories (`characters/`, `flora_fauna/`, top-level `timeline/`) have been removed.
+Event data lives under `database/events/` and epoch definitions under `database/timeline/`.
+CI/map scripts that previously read `timeline/` should be pointed at `database/`.
 
 ## Original Plan → Current Mapping
 
