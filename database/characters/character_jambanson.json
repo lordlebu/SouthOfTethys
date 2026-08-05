@@ -1,0 +1,14 @@
+{
+  "id": "character_jambanson",
+  "type": "character",
+  "name": "Jambanson",
+  "epithets": ["Seedbearer of the South"],
+  "culture": "vanara",
+  "species": "vanara",
+  "status": "mythic",
+  "epoch": "age_of_vanaras",
+  "roles": ["mystic", "seedbearer"],
+  "notes": "Half-man/half-simian Vanara mystic. Seedbearer of the South during the Vanara Zenith before the Great Devolvement.",
+  "canon": "primary",
+  "sources": ["AI_CONTEXT.md"]
+}

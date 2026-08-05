@@ -1,0 +1,14 @@
+{
+  "id": "character_vijaya",
+  "type": "character",
+  "name": "Vijaya",
+  "epithets": ["Prince"],
+  "culture": "tamralinga",
+  "species": "human",
+  "status": "alive",
+  "epoch": "civilization_dawn",
+  "roles": ["prince", "diplomat", "mask_bearer"],
+  "notes": "Prince from Tamralinga. Arrives during Tendua/Devourer crisis offering the Mask of Tethys to Khadi in exchange for allegiance, seeking to make Lothal a vassal state. Linked to Yaksharaj Kubera.",
+  "canon": "primary",
+  "sources": ["AI_CONTEXT.md"]
+}
