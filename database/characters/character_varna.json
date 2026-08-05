@@ -1,0 +1,19 @@
+{
+  "id": "character_varna",
+  "type": "character",
+  "name": "Varna",
+  "epithets": ["Emberheart", "Shwetavahana", "Steelaklad"],
+  "culture": "silvershore",
+  "species": "human",
+  "status": "alive",
+  "epoch": "civilization_dawn",
+  "roles": ["cartographer", "survivor", "co-ruler"],
+  "relations": {
+    "parents": ["character_torin", "character_lira"],
+    "siblings": ["character_jarek"],
+    "spouse": "character_mehme"
+  },
+  "notes": "Silvershore princess and cartographer. Captured by Naga-Raja, rescued by Kavik. Married Mehme. Co-ruler of Lothal after crisis.",
+  "canon": "primary",
+  "sources": ["AI_CONTEXT.md"]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "character_khadi",
+  "type": "character",
+  "name": "Khadi",
+  "epithets": ["Serpent's Tongue", "Naga-Ambanee"],
+  "culture": "kia",
+  "species": "human",
+  "status": "alive",
+  "epoch": "civilization_dawn",
+  "roles": ["chieftain", "kia_clan_leader"],
+  "relations": {
+    "spouse": ["character_nila", "character_shaashak"],
+    "children": ["character_arin", "character_mira", "character_sarita"]
+  },
+  "notes": "Charismatic Kia chieftain. Married Shaashak in Stone Pact. Fled with her after Kavik's death.",
+  "canon": "primary",
+  "sources": ["AI_CONTEXT.md"]
+}

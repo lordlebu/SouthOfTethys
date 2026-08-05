@@ -1,0 +1,13 @@
+{
+  "id": "artifact_mask_of_harappa",
+  "type": "artifact",
+  "name": "Mask of Harappa",
+  "material": ["bronze", "raven-and-waves motif"],
+  "power": "preserves memories and primal instincts of previous bearers",
+  "risk": "identity overwrite on prolonged wear",
+  "related_characters": ["character_kavik", "character_khadi", "character_asha"],
+  "events": ["event_stone_pact", "event_tendua_crisis"],
+  "notes": "Ancestral mask of the Mask Family. Pledged as dowry in Stone Pact. Later retrieved from hidden chamber beneath tower.",
+  "canon": "primary",
+  "sources": ["AI_CONTEXT.md"]
+}

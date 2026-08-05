@@ -1,0 +1,17 @@
+{
+  "id": "character_nila",
+  "type": "character",
+  "name": "Nila",
+  "epithets": ["Veil of Shadows", "Ambanee"],
+  "culture": "kia",
+  "species": "human",
+  "status": "unknown",
+  "epoch": "civilization_dawn",
+  "roles": ["first_wife", "asura_vessel"],
+  "relations": {
+    "spouse": "character_khadi"
+  },
+  "notes": "Jealous first wife of Khadi. Desecrated Kavik's tower with Asura mantras, birthing Tendua Manticore. Fully possessed, assassinated Kavik.",
+  "canon": "primary",
+  "sources": ["AI_CONTEXT.md"]
+}

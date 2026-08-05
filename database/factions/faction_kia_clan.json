@@ -1,0 +1,12 @@
+{
+  "id": "faction_kia_clan",
+  "type": "faction",
+  "name": "Kia Clan",
+  "aliases": ["Naga-Ambanee"],
+  "culture": "kia",
+  "origin": "vedda_naga_hybrid",
+  "members": ["character_khadi", "character_nila", "character_arin", "character_mira"],
+  "notes": "Indigenous marsh-dwelling population of the delta. Fluid, oral-tradition bound. Formed fragile co-rulership with Harappans after Stone Pact.",
+  "canon": "primary",
+  "sources": ["AI_CONTEXT.md"]
+}

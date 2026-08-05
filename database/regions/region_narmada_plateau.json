@@ -1,0 +1,10 @@
+{
+  "id": "region_narmada_plateau",
+  "type": "region",
+  "name": "Narmada Plateau",
+  "continent": "jambhudweepa",
+  "landmarks": ["Narmada University"],
+  "notes": "Volcanic highlands. Site of academic culture in later eras and source of Narmada Man blessing.",
+  "canon": "primary",
+  "sources": ["map", "AI_CONTEXT.md"]
+}

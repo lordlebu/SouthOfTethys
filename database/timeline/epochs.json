@@ -1,0 +1,37 @@
+{
+  "id": "timeline_epochs",
+  "type": "timeline",
+  "epochs": [
+    {
+      "id": "epoch_prehistoric",
+      "name": "Prehistoric Foundations & Age of Vanaras",
+      "range": "500 MYA – 5 MYA",
+      "notes": "Invertebrate Dominion, Avian-Synapsid Epoch, Vanara Zenith and Devolvement"
+    },
+    {
+      "id": "epoch_migrations",
+      "name": "Era of Human Migrations",
+      "range": "50K – 5K years ago",
+      "notes": "Jharwa, Vedda, Naga, Outliers waves"
+    },
+    {
+      "id": "epoch_civilization_dawn",
+      "name": "Civilization Dawn (Lothal Era)",
+      "range": "c. 3000 – 500 BCE",
+      "notes": "Harappan city-states, Mask Family, Kia alliance, Tendua Crisis"
+    },
+    {
+      "id": "epoch_current",
+      "name": "Current Era (Age of Machinery)",
+      "range": "~1920s equivalent",
+      "notes": "Narmada University, dieselpunk exploration"
+    },
+    {
+      "id": "epoch_post_cataclysm",
+      "name": "Post-Cataclysmic Era (Possible Future)",
+      "range": "prophetic",
+      "notes": "Survival Train of Varuna and Mitra. Not hard-locked."
+    }
+  ],
+  "canon": "primary"
+}
