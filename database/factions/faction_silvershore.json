@@ -1,0 +1,11 @@
+{
+  "id": "faction_silvershore",
+  "type": "faction",
+  "name": "Silvershore Dynasty",
+  "aliases": ["Shwetavahana"],
+  "culture": "silvershore",
+  "members": ["character_torin", "character_lira", "character_varna", "character_jarek"],
+  "notes": "Ruthless river lords ruling via silver, debt, and floating palaces. Clashed with Mask Family.",
+  "canon": "primary",
+  "sources": ["AI_CONTEXT.md"]
+}

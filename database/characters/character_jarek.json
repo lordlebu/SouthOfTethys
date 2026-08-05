@@ -1,0 +1,18 @@
+{
+  "id": "character_jarek",
+  "type": "character",
+  "name": "Jarek",
+  "epithets": ["Shwetavahana"],
+  "culture": "silvershore",
+  "species": "human",
+  "status": "deceased",
+  "epoch": "civilization_dawn",
+  "roles": ["warrior"],
+  "relations": {
+    "parents": ["character_torin", "character_lira"],
+    "siblings": ["character_varna"]
+  },
+  "notes": "Fierce brother of Varna. Killed alongside Torin by Kavik.",
+  "canon": "primary",
+  "sources": ["AI_CONTEXT.md"]
+}

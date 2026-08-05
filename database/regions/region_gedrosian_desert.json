@@ -1,0 +1,9 @@
+{
+  "id": "region_gedrosian_desert",
+  "type": "region",
+  "name": "Gedrosian Desert",
+  "continent": "jambhudweepa",
+  "notes": "Arid frontier. Home to Beedu desert rays and northern steppe approaches.",
+  "canon": "primary",
+  "sources": ["map"]
+}

@@ -1,0 +1,9 @@
+{
+  "id": "region_aravali",
+  "type": "region",
+  "name": "Aravali Ranges",
+  "continent": "jambhudweepa",
+  "notes": "Stony ranges. Site of Mask Family schism, Jharwa massacre, and hidden sanctuary of Vara-Ma/Orek/Thren.",
+  "canon": "primary",
+  "sources": ["AI_CONTEXT.md", "map"]
+}

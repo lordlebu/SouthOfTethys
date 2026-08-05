@@ -1,0 +1,18 @@
+{
+  "id": "character_thren",
+  "type": "character",
+  "name": "Thren",
+  "epithets": ["The Unmarked"],
+  "culture": "harappan",
+  "species": "human",
+  "status": "unknown",
+  "epoch": "migrations",
+  "roles": ["immune", "ancestor"],
+  "relations": {
+    "parents": ["character_orek", "character_vara_ma"],
+    "siblings": ["character_kavik", "character_sira", "character_iknaya"]
+  },
+  "notes": "Immune son hidden in Aravali sanctuary with most dangerous masks.",
+  "canon": "primary",
+  "sources": ["AI_CONTEXT.md"]
+}

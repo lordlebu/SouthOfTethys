@@ -1,0 +1,9 @@
+{
+  "id": "settlement_dwarka",
+  "type": "settlement",
+  "name": "Dwarka",
+  "region": "region_saraswati_delta",
+  "notes": "Coastal city. Site of Dwarka Gate anomaly and celestial festivals.",
+  "canon": "primary",
+  "sources": ["map", "AI_CONTEXT.md"]
+}

@@ -1,14 +1,14 @@
 {
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "SouthOfTethys canonical entity index",
   "counts": {
-    "characters": 15,
+    "characters": 20,
     "events": 5,
-    "fauna": 6,
-    "settlements": 1,
-    "regions": 2,
+    "fauna": 7,
+    "settlements": 2,
+    "regions": 4,
     "artifacts": 1,
-    "factions": 2,
+    "factions": 3,
     "mythology": 2
   },
   "entities": {
@@ -27,7 +27,12 @@
       "character_vara_ma",
       "character_orek",
       "character_rathak",
-      "character_naga_raja"
+      "character_naga_raja",
+      "character_torin",
+      "character_jarek",
+      "character_ruvan",
+      "character_sira",
+      "character_thren"
     ],
     "events": [
       "event_founding_lothal",
@@ -45,10 +50,19 @@
       "fauna_indus_unicorn",
       "fauna_beedu"
     ],
-    "settlements": ["settlement_lothal"],
-    "regions": ["region_saraswati_delta", "region_narmada_plateau"],
+    "settlements": ["settlement_lothal", "settlement_dwarka"],
+    "regions": [
+      "region_saraswati_delta",
+      "region_narmada_plateau",
+      "region_gedrosian_desert",
+      "region_aravali"
+    ],
     "artifacts": ["artifact_mask_of_harappa"],
-    "factions": ["faction_mask_family", "faction_kia_clan"],
+    "factions": [
+      "faction_mask_family",
+      "faction_kia_clan",
+      "faction_silvershore"
+    ],
     "mythology": ["mythology_varuna", "mythology_ammonite_man"]
   }
 }
