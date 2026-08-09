@@ -1,0 +1,13 @@
+{
+  "id": "artifact_mask_of_tethys",
+  "type": "artifact",
+  "name": "Mask of Tethys",
+  "material": ["sea-bronze", "wave motif"],
+  "power": "maritime dominion and allegiance binding",
+  "risk": "vassalage of the bearer’s polity",
+  "related_characters": ["character_vijaya", "character_khadi"],
+  "events": [],
+  "notes": "Offered by Prince Vijaya of Tamralinga during the Tendua/Devourer crisis in exchange for Lothal’s allegiance as a vassal state. Linked to Yaksharaj Kubera traditions.",
+  "canon": "primary",
+  "sources": ["AI_CONTEXT.md"]
+}
