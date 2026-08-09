@@ -20,14 +20,13 @@ RUN python -m pip install pre-commit
 # Set working directory
 WORKDIR /app
 
-# Copy all necessary project files
+# Copy project files (canon lives in database/)
 COPY utils/ utils/
-COPY timeline/ timeline/
+COPY database/ database/
 COPY cartography/ cartography/
-COPY characters/ characters/
-COPY flora_fauna/ flora_fauna/
 COPY docs/ docs/
 COPY CONTEXT.md .
+COPY DESIGN.md .
 COPY README.md .
 
 # Creates a non-root user with an explicit UID and adds permission to access the /app folder
@@ -36,4 +35,4 @@ RUN adduser -u 5678 --disabled-password --gecos "" appuser && chown -R appuser /
 USER appuser
 
 # Set default command to run all utility scripts for artifact generation
-CMD ["sh", "-c", "python utils/lint_story.py && python utils/generate_timeline_mermaid.py && python utils/generate_timeline.py && python utils/generate_map.py && python utils/evolve_species.py # && python utils/snippet_processor.py # && python utils/hometown.py"]
+CMD ["sh", "-c", "python utils/lint_story.py && python utils/generate_timeline_mermaid.py && python utils/generate_timeline.py && python utils/generate_map.py && python utils/evolve_species.py"]
