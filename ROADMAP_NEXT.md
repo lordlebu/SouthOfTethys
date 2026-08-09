@@ -1,24 +1,28 @@
 # Next Work Package
 
-Branch: `feature/next-work-validation-chroma`
-
 ## Status
 
-### 1. Canon cleanup + CI retarget — DONE (this PR)
-- [x] Remove `characters/` placeholders
-- [x] Remove `flora_fauna/` placeholders
-- [x] Remove legacy `timeline/` placeholders
-- [x] Add `DESIGN.md` + update `CONTEXT.md` / `database/README.md`
-- [x] Retarget `utils/*` and CI workflows to `database/`
+### 1. Canon cleanup + CI retarget — DONE (PR #21)
 
-### 2. Validation hardening — next
-- [ ] Harden lint (schema checks)
-- [ ] CI hard-fail on lint errors
+### 2. Validation hardening — partial
+- [x] `utils/lint_story.py` validates `database/index.json` + files + cross-refs
+- [x] Story validation CI hard-fails on lint errors
+- [ ] Optional JSON Schema validation against `database/schemas/`
 
-### 3. Chroma wiring — next
-- [ ] Index `database/**/*.json`
-- [ ] Portal smoke-test against real canon
+### 3. Chroma wiring — DONE (this branch)
+- [x] Indexer reads `database/**/*.json`
+- [x] Metadata carries `entity_id`, `entity_type`, `name`/`title`, `epoch`, `culture`
+- [x] Incremental script prefers `database/` paths
+- [ ] Portal smoke-test against live Chroma (manual / local)
 
-### 4. Selective expansion
-- [ ] P0: Mask of Tethys, Mask of Sunlit Stone
-- [ ] P1: Narmada University, Narmada scholars faction
+### 4. Selective expansion — in progress
+- [x] P0: `artifact_mask_of_tethys`
+- [x] P0: `artifact_mask_of_sunlit_stone`
+- [ ] P1: `settlement_narmada_university`
+- [ ] P1: `faction_narmada_scholars`
+- [ ] Event: Vijaya / Mask of Tethys offer
+
+### 5. Still open
+- Event graph: Vijaya arrival node
+- More flora as needed
+- Style debt pass (ruff BLE001/E501) when convenient

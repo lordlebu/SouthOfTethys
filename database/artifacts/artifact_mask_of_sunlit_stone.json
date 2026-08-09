@@ -1,0 +1,13 @@
+{
+  "id": "artifact_mask_of_sunlit_stone",
+  "type": "artifact",
+  "name": "Mask of Sunlit Stone",
+  "material": ["sandstone", "solar inlay"],
+  "power": "steadies will under Asura pressure; amplifies stone-pact oaths",
+  "risk": "rigidity of purpose; refusal to yield even when wise",
+  "related_characters": ["character_kavik", "character_asha", "character_iknaya"],
+  "events": ["event_mask_retrieval"],
+  "notes": "Remaining Mask Family relic used alongside the Mask of Harappa during the Tendua repulsion. Associated with red-sandstone tower rites.",
+  "canon": "primary",
+  "sources": ["AI_CONTEXT.md"]
+}

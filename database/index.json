@@ -1,5 +1,5 @@
 {
-  "version": "0.7.0",
+  "version": "0.8.0",
   "description": "SouthOfTethys canonical entity index",
   "counts": {
     "characters": 36,
@@ -8,7 +8,7 @@
     "flora": 6,
     "settlements": 2,
     "regions": 4,
-    "artifacts": 1,
+    "artifacts": 3,
     "factions": 3,
     "mythology": 3
   },
@@ -101,7 +101,11 @@
       "region_gedrosian_desert",
       "region_aravali"
     ],
-    "artifacts": ["artifact_mask_of_harappa"],
+    "artifacts": [
+      "artifact_mask_of_harappa",
+      "artifact_mask_of_tethys",
+      "artifact_mask_of_sunlit_stone"
+    ],
     "factions": [
       "faction_mask_family",
       "faction_kia_clan",
