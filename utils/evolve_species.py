@@ -1,23 +1,21 @@
-import json
+"""Placeholder species evolution helper.
+
+Reads from database/fauna when available. No-op if empty.
+"""
+
+from pathlib import Path
+
+BASE = Path(__file__).resolve().parent.parent
+FAUNA_DIR = BASE / "database" / "fauna"
 
 
-def evolve_species(species_data, event):
-    if event == "Climate Shift: Saraswati dries up":
-        species_data["current_habitat"] = "Desert"
-        species_data["evolution"].append(
-            {
-                "stage": "Desert Morph",
-                "traits": ["Dune camouflage", "Thermal glide"],
-            }
-        )
-    return species_data
+def main():
+    if not FAUNA_DIR.exists():
+        print("⚠️  No database/fauna directory; skipping evolution step.")
+        return
+    files = list(FAUNA_DIR.glob("*.json"))
+    print(f"✅ Found {len(files)} fauna entities under database/fauna (no mutation applied).")
 
 
-# Example usage
-with open("flora_fauna/species_tree.json") as f:
-    species = json.load(f)
-
-updated = evolve_species(species[0], "Climate Shift: Saraswati dries up")
-
-with open("flora_fauna/species_tree.json", "w") as f:
-    json.dump([updated], f, indent=2)
+if __name__ == "__main__":
+    main()
