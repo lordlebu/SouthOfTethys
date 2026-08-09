@@ -13,7 +13,9 @@
 - [x] Indexer reads `database/**/*.json`
 - [x] Metadata carries `entity_id`, `entity_type`, `name`/`title`, `epoch`, `culture`
 - [x] Incremental script prefers `database/` paths
-- [ ] Portal smoke-test against live Chroma (manual / local)
+- [x] Ported every call site off the removed pre-0.4 `chroma_db_impl` Settings API
+- [x] Portal smoke-test against live Chroma (manual / local) — "Ask the canon" panel;
+      headless equivalent is `scripts/query_chroma.py --expect`
 
 ### 4. Selective expansion — in progress
 - [x] P0: `artifact_mask_of_tethys`

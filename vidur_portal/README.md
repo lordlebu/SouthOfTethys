@@ -24,16 +24,22 @@ Vidur is a wise seer from Indian mythology, renowned for his remote vision and i
 
 ## Chroma (Local Retrieval)
 
-Vidur Portal supports a retrieval-augmented workflow using Chroma. When a Chroma index is available, the portal will retrieve relevant story chunks and include them as context for the Hugging Face model to reduce hallucination.
+Vidur Portal supports a retrieval-augmented workflow using Chroma. The **Ask the canon** panel
+searches the index directly and cites the `database/` file behind each result. Snippet processing
+can also use those chunks as context for the Hugging Face model to reduce hallucination.
 
 Setup summary:
 - Install Chroma and sentence-transformers:
 	```bash
-	pip install chromadb sentence-transformers
+	pip install -r ../services/chroma/requirements.txt
 	```
-- Build the index locally with `utils/index_chroma.py` and persist to `storage/chroma/` (or set `CHROMA_PERSIST_DIR`).
-- Add `CHROMA_PERSIST_DIR` and `EMBEDDING_MODEL` env vars as needed.
+- Build the index with `services/chroma/index_chroma_service.py`, which reads `database/**/*.json`
+  and persists to `storage/chroma/` (or set `CHROMA_PERSIST_DIR`).
+- Add `CHROMA_PERSIST_DIR` and `EMBEDDING_MODEL` env vars as needed. They must match the values
+  used at index time — the portal embeds queries with the same model.
 - Ensure `storage/chroma/` is in `.gitignore`.
+
+Retrieval works with no language model loaded; model generation is opt-in via a checkbox.
 
 ## Trivia
 - **Mimir (Norse):** Keeper of the Well of Wisdom, advisor to gods, his severed head continued to offer counsel.

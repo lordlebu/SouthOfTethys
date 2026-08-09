@@ -1,16 +1,30 @@
+from __future__ import annotations
+
 import os
 from functools import lru_cache
-from typing import Optional
+from pathlib import Path
 
-from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
+REPO_ROOT = Path(__file__).resolve().parent.parent
 
-# Optional Chroma imports (lazy)
+# Anchored to the repo root so `streamlit run` works from either the repo root
+# or vidur_portal/, rather than resolving against the current working directory.
+CHROMA_PERSIST_DIR = os.environ.get(
+    "CHROMA_PERSIST_DIR", str(REPO_ROOT / "storage" / "chroma")
+)
+EMBEDDING_MODEL = os.environ.get("EMBEDDING_MODEL", "all-MiniLM-L6-v2")
+COLLECTION_NAME = "southoftethys"
+
+DEFAULT_INSTRUCTION = (
+    "Extract the characters, events, and timeline entries from the snippet below. "
+    "Follow SouthOfTethys conventions and return structured data."
+)
+
+# Optional Chroma imports (retrieval works with no HF model loaded)
 CHROMA_ENABLED = False
-CHROMA_PERSIST_DIR = os.environ.get("CHROMA_PERSIST_DIR", "../storage/chroma")
 try:
     import chromadb
     from chromadb.config import Settings
-    from sentence_transformers import SentenceTransformer
+    from chromadb.utils import embedding_functions
 
     CHROMA_ENABLED = True
 except Exception:
@@ -29,6 +43,10 @@ FALLBACK_MODEL = "gpt2"  # Use a public model for fallback
 
 @lru_cache(maxsize=1)
 def get_hf_pipeline():
+    # Imported lazily: loading transformers pulls torch and can trigger a model
+    # download, and retrieval must stay usable without either.
+    from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
+
     try:
         if os.path.exists(LOCAL_CONFIG) and os.path.exists(LOCAL_CHECKPOINT):
             tokenizer = AutoTokenizer.from_pretrained(os.path.dirname(LOCAL_CONFIG))
@@ -48,54 +66,67 @@ def get_hf_pipeline():
         return pipeline("text-generation", model=model, tokenizer=tokenizer)
 
 
-def _retrieve_with_chroma(query: str, k: int = 5) -> list[dict]:
-    """Return a list of metadata + text for top-k hits from Chroma."""
+@lru_cache(maxsize=1)
+def _get_collection():
+    """Return the canon collection, or None when no index has been built yet."""
     if not CHROMA_ENABLED:
-        return []
+        return None
     cloud_key = os.environ.get("CHROMA_CLOUD_API_KEY")
-    collection = None
     if cloud_key:
-        tenant = os.environ.get("CHROMA_TENANT")
-        database = os.environ.get("CHROMA_DATABASE")
         client = chromadb.CloudClient(
-            api_key=cloud_key, tenant=tenant, database=database
+            api_key=cloud_key,
+            tenant=os.environ.get("CHROMA_TENANT"),
+            database=os.environ.get("CHROMA_DATABASE"),
         )
-        try:
-            collection = client.get_collection("southoftethys")
-        except Exception:
-            return []
     else:
-        client = chromadb.Client(
-            Settings(
-                chroma_db_impl="duckdb+parquet", persist_directory=CHROMA_PERSIST_DIR
-            )
+        client = chromadb.PersistentClient(
+            path=CHROMA_PERSIST_DIR,
+            settings=Settings(anonymized_telemetry=False),
         )
-        try:
-            collection = client.get_collection("southoftethys")
-        except Exception:
-            return []
+    # Same embedding function the indexer used, so queries land in that vector space.
+    ef = embedding_functions.SentenceTransformerEmbeddingFunction(
+        model_name=EMBEDDING_MODEL
+    )
+    try:
+        return client.get_collection(COLLECTION_NAME, embedding_function=ef)
+    except Exception:
+        return None
 
-    # Use a small embedding model for retrieval
-    embedder = SentenceTransformer(
-        os.environ.get("EMBEDDING_MODEL", "all-MiniLM-L6-v2")
-    )
-    q_emb = embedder.encode([query])[0]
+
+def retrieve(query: str, k: int = 5) -> list[dict]:
+    """Top-k canon chunks for a query, each with its source metadata.
+
+    Returns [] when Chroma is unavailable or the collection has not been indexed.
+    """
+    collection = _get_collection()
+    if collection is None or not query.strip():
+        return []
+
     results = collection.query(
-        vector=q_emb, n_results=k, include=["metadatas", "documents"]
+        query_texts=[query],
+        n_results=k,
+        include=["metadatas", "documents", "distances"],
     )
-    hits = []
-    for doc, meta in zip(results.get("documents", []), results.get("metadatas", [])):
-        hits.append({"text": doc, "meta": meta})
-    return hits
+    # Chroma nests one list per query; we only ever send one.
+    documents = (results.get("documents") or [[]])[0]
+    metadatas = (results.get("metadatas") or [[]])[0]
+    distances = (results.get("distances") or [[]])[0]
+
+    return [
+        {"text": doc, "meta": meta or {}, "distance": dist}
+        for doc, meta, dist in zip(documents, metadatas, distances)
+    ]
 
 
 def prompt_llm(
-    snippet: str, instruction: str, use_retrieval: Optional[bool] = True
+    snippet: str,
+    instruction: str = DEFAULT_INSTRUCTION,
+    use_retrieval: bool = True,
 ) -> str:
     prompt_prefix = instruction.strip()
     retrieved = []
     if use_retrieval and CHROMA_ENABLED:
-        retrieved = _retrieve_with_chroma(snippet, k=5)
+        retrieved = retrieve(snippet, k=5)
     # build context
     context = "\n\n".join([r.get("text", "") for r in retrieved])
     if context:

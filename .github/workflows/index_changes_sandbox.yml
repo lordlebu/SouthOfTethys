@@ -31,13 +31,24 @@ jobs:
           python -m pip install --upgrade pip
           if [ -f services/chroma/requirements.txt ]; then python -m pip install -r services/chroma/requirements.txt; fi
 
-      - name: Run index_changes in sandbox (fixtures)
+      # Indexes real database/ entities. The previous fixture paths under
+      # services/chroma/schemas/ were filtered out by index_changes.py (it only
+      # accepts database/ and snippets/ paths), so the job exited 0 without ever
+      # constructing a Chroma client and never exercised what it was guarding.
+      - name: Run index_changes in sandbox (canon entities)
         if: ${{ github.event.inputs.mode == 'fixtures' }}
         env:
           CHROMA_PERSIST_DIR: ${{ github.workspace }}/.chroma_sandbox
         run: |
           mkdir -p $CHROMA_PERSIST_DIR
-          python scripts/index_changes.py --files services/chroma/schemas/fixtures/event_fixture.json services/chroma/schemas/fixtures/character_fixture.json services/chroma/schemas/fixtures/snippet_fixture.json services/chroma/schemas/fixtures/document_fixture.json --repo-dir . --persist-dir $CHROMA_PERSIST_DIR
+          python scripts/index_changes.py --files database/characters/character_kavik.json database/events/event_tendua_crisis.json database/artifacts/artifact_mask_of_tethys.json --repo-dir . --persist-dir $CHROMA_PERSIST_DIR
+
+      - name: Verify retrieval returns canon sources
+        if: ${{ github.event.inputs.mode == 'fixtures' }}
+        env:
+          CHROMA_PERSIST_DIR: ${{ github.workspace }}/.chroma_sandbox
+        run: |
+          python scripts/query_chroma.py "Who is Kavik Stoneheart?" --k 3 --expect character_kavik
 
       - name: Run index_changes in sandbox (git-range)
         if: ${{ github.event.inputs.mode == 'git-range' }}

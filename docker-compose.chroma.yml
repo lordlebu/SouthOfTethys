@@ -1,4 +1,3 @@
-version: '3.8'
 services:
   vidur:
     build:
@@ -12,6 +11,10 @@ services:
     environment:
       - CHROMA_PERSIST_DIR=/app/storage/chroma
       - EMBEDDING_MODEL=all-MiniLM-L6-v2
+    # Wait for indexing to finish, otherwise the portal opens on an empty volume.
+    depends_on:
+      chroma-service:
+        condition: service_completed_successfully
 
   chroma-service:
     build:
