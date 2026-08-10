@@ -144,7 +144,7 @@
     "sentient": {
       "type": "boolean",
       "default": false,
-      "description": "True for the avian-dinosaurid and other sapient peoples (Cognitavi, Nagaraptor, Silvanus, Sylvians, Kuktush). They are sovereign cultures, not wildlife; see AI_CONTEXT.md:998-1006. A sentient species should carry a matching faction entity and should not sit in the encounter table untagged."
+      "description": "Taxonomic marker for the avian-dinosaurid and other sapient lineages (Cognitavi, Nagaraptor, Vajraptor, Silvanus, Sylvians, Kuktush). It records that a species is intelligent and socially organised -- see AI_CONTEXT.md:998-1006 -- and nothing more. It is NOT a placement rule: in-world the Harappans regard these as animals, so a sentient species sitting in the encounter table is correct, not an oversight."
     },
     "epochs": {
       "type": "array",

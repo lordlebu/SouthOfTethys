@@ -7,7 +7,7 @@
   "biomes": [
     "mountains"
   ],
-  "placement": "lore",
+  "placement": "encounter",
   "rarity": "mythic",
   "journal_prompt": "A faster, sleek sail-backed synapsid used by Asura scouts to navigate the rugged, volcanic frontiers.",
   "canon": "primary",

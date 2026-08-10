@@ -4,8 +4,11 @@
   "name": "Lunar-Reflection Wraith",
   "scientific": "Māyā-born spectral",
   "region": "asura-conjurations",
-  "biomes": [],
-  "placement": "lore",
+  "biomes": [
+    "desert",
+    "coast"
+  ],
+  "placement": "encounter",
   "rarity": "mythic",
   "journal_prompt": "An incorporeal, tactile illusion manifested by lunar radiation refracting on the Great Bath's water, haunting lonely travelers.",
   "canon": "primary",

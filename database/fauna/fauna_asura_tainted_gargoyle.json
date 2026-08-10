@@ -13,5 +13,6 @@
     "docs/bestiary.md"
   ],
   "mood": "uncanny",
-  "source_index": 216
+  "source_index": 216,
+  "placement_note": "Held with the sky set rather than the Asura set. It lives on the undersides of the floating islands, so it has no ground biome; it is reserved for a future sky mode. Empty `biomes` here is a decision."
 }

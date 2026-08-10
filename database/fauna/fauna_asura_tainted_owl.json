@@ -4,8 +4,11 @@
   "name": "Asura-Tainted Owl",
   "scientific": "Bubo asuricus",
   "region": "asura-conjurations",
-  "biomes": [],
-  "placement": "lore",
+  "biomes": [
+    "forest",
+    "hills"
+  ],
+  "placement": "encounter",
   "rarity": "mythic",
   "journal_prompt": "A giant owl with four eyes that has mutated near portals, hunting night-stalkers and small primates.",
   "canon": "primary",

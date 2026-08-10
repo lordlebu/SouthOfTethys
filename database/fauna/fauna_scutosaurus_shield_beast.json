@@ -4,8 +4,11 @@
   "name": "Scutosaurus Shield-Beast",
   "scientific": "Scutosaurus asuricus",
   "region": "asura-conjurations",
-  "biomes": [],
-  "placement": "lore",
+  "biomes": [
+    "plains",
+    "hills"
+  ],
+  "placement": "encounter",
   "rarity": "mythic",
   "journal_prompt": "A massive armored herbivore genetically engineered with iron-hard skin plates, utilized as mobile shield barriers in battles.",
   "canon": "primary",

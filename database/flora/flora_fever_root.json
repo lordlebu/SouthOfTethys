@@ -4,8 +4,11 @@
   "name": "Fever-Root",
   "scientific": "Curcuma asurica",
   "region": "asura-conjurations",
-  "biomes": [],
-  "placement": "lore",
+  "biomes": [
+    "wetland",
+    "forest"
+  ],
+  "placement": "flavour",
   "rarity": "mythic",
   "journal_prompt": "A mutated turmeric plant that grows near underworld rifts, its toxic, black rhizomes causing intense hallucinations when touched.",
   "canon": "primary",

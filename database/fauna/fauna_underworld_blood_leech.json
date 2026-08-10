@@ -7,7 +7,7 @@
   "biomes": [
     "river"
   ],
-  "placement": "lore",
+  "placement": "encounter",
   "rarity": "mythic",
   "journal_prompt": "A giant aquatic parasite of the Naraka rivers that grows up to 3 feet, draining the vitality of anything that falls into the sulfurous waters.",
   "canon": "primary",

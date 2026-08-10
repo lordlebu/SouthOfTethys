@@ -7,7 +7,7 @@
   "biomes": [
     "settlement"
   ],
-  "placement": "lore",
+  "placement": "encounter",
   "rarity": "mythic",
   "journal_prompt": "A semi-anthropomorphic serpent warrior that guards the sacred temples of Takshak, wielding bronze and stone spears.",
   "canon": "primary",

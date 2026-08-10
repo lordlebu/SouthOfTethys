@@ -7,7 +7,7 @@
   "biomes": [
     "settlement"
   ],
-  "placement": "lore",
+  "placement": "encounter",
   "rarity": "mythic",
   "journal_prompt": "A malevolent, clay-born construct that slips through the dark streets of Harappa, seeking to drain the warmth of the living.",
   "canon": "primary",

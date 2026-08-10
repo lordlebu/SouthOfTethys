@@ -7,7 +7,7 @@
   "biomes": [
     "river"
   ],
-  "placement": "lore",
+  "placement": "encounter",
   "rarity": "mythic",
   "journal_prompt": "A shadow-lover variant that dwells in deep stepwells, wrapping around victims and pulling them into the dark waters.",
   "canon": "primary",

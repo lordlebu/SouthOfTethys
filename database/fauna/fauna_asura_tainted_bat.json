@@ -4,8 +4,11 @@
   "name": "Asura-Tainted Bat",
   "scientific": "Vespertilio asuricus minor",
   "region": "asura-conjurations",
-  "biomes": [],
-  "placement": "lore",
+  "biomes": [
+    "forest",
+    "mountains"
+  ],
+  "placement": "encounter",
   "rarity": "mythic",
   "journal_prompt": "A small, red-eyed bat that has mutated under the influence of Asura planets, feeding on blood and glowing insects.",
   "canon": "primary",

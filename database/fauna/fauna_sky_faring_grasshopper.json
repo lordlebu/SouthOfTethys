@@ -13,5 +13,6 @@
     "docs/bestiary.md"
   ],
   "mood": "graceful",
-  "source_index": 55
+  "source_index": 55,
+  "placement_note": "Held with the sky set. Filed under Section 1 in the bestiary but the prose describes migration between floating islands -- one of the Section 1 strays the import notes. Reserved for a future sky mode; empty `biomes` is a decision."
 }

@@ -4,8 +4,11 @@
   "name": "Gorgonopsid War-Beast",
   "scientific": "Gorgonops asuricus",
   "region": "asura-conjurations",
-  "biomes": [],
-  "placement": "lore",
+  "biomes": [
+    "plains",
+    "hills"
+  ],
+  "placement": "encounter",
   "rarity": "mythic",
   "journal_prompt": "A shaggy-haired Permian predator selectively bred and genetically corrupted by Asuras to serve as heavy shock cavalry.",
   "canon": "primary",

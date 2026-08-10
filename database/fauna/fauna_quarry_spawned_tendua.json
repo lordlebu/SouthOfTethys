@@ -4,8 +4,10 @@
   "name": "Quarry-Spawned Tendua",
   "scientific": "Manticora quarry",
   "region": "asura-conjurations",
-  "biomes": [],
-  "placement": "lore",
+  "biomes": [
+    "hills"
+  ],
+  "placement": "encounter",
   "rarity": "mythic",
   "journal_prompt": "A manticore variant that haunts ancient stone quarries, its stone-hard fur blending into the weathered rock walls.",
   "canon": "primary",

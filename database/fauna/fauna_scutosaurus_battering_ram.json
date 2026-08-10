@@ -4,8 +4,10 @@
   "name": "Scutosaurus Battering-Ram",
   "scientific": "Scutosaurus titan",
   "region": "asura-conjurations",
-  "biomes": [],
-  "placement": "lore",
+  "biomes": [
+    "plains"
+  ],
+  "placement": "encounter",
   "rarity": "mythic",
   "journal_prompt": "A massive scutosaur mutated with an bone-hard forehead plate, used to break down defensive palisades.",
   "canon": "primary",
