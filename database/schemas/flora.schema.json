@@ -129,6 +129,10 @@
       "type": "integer",
       "minimum": 0,
       "description": "Position in the authored bestiary sequence (prototype starters first for fauna). Array order decides which species pickFor lands on for a tile, so this is part of the seed contract, not presentation."
+    },
+    "placement_note": {
+      "type": "string",
+      "description": "Why this species is placed as it is, when the answer is not obvious. Required reading before 'fixing' an entity with empty `biomes`: an empty list can mean untagged, or it can mean deliberately held out of play. If this field is present, the emptiness is a decision."
     }
   },
   "additionalProperties": true

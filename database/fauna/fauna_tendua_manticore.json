@@ -26,5 +26,6 @@
     "AI_CONTEXT.md"
   ],
   "biomes": [],
-  "placement": "lore"
+  "placement": "lore",
+  "placement_note": "Held out of play deliberately. Asura-born horror, birthed when Nila desecrated Kavik's tower. The cozy-tone question -- whether the Asura-tainted set is encounterable, journal-only, or gated behind a later mode -- is still open (docs/bestiary.md, Open Questions #4). Empty `biomes` here is a decision, not an untagged entity."
 }
