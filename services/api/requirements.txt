@@ -1,0 +1,9 @@
+# The HTTP seam between canon and the game. Retrieval and generation themselves come
+# from vidur_portal/snippet_processor.py, so the floors below must stay in step with
+# vidur_portal/requirements.txt and services/chroma/requirements.txt.
+fastapi>=0.115
+uvicorn[standard]>=0.30
+pydantic>=2.7
+chromadb>=0.5.0
+sentence-transformers>=2.2.0
+transformers
