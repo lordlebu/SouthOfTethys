@@ -1,0 +1,18 @@
+{
+  "id": "fauna_ash_plains_cricket",
+  "type": "fauna",
+  "name": "Ash-Plains Cricket",
+  "scientific": "Gryllus cinereus",
+  "region": "ganges-lava-sea",
+  "biomes": [
+    "mountains"
+  ],
+  "placement": "encounter",
+  "rarity": "rare",
+  "journal_prompt": "An insect with a soot-colored body, feeding on tough, ash-tolerant grasses along the basalt fields.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

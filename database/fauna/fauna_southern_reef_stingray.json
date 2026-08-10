@@ -1,0 +1,18 @@
+{
+  "id": "fauna_southern_reef_stingray",
+  "type": "fauna",
+  "name": "Southern Reef-Stingray",
+  "scientific": "Dasyatis meridionalis",
+  "region": "shattered-sea-mappa-mundi",
+  "biomes": [
+    "sea"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A flat, sand-colored fish that lies buried on the reef floor, armed with a venomous tail spine.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "fearsome"
+}

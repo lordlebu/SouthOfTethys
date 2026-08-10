@@ -1,0 +1,17 @@
+{
+  "id": "flora_giant_bird_nest_fern",
+  "type": "flora",
+  "name": "Giant Bird-Nest Fern",
+  "scientific": "Asplenium maximus",
+  "region": "shattered-sea-mappa-mundi",
+  "biomes": [
+    "forest"
+  ],
+  "placement": "flavour",
+  "rarity": "rare",
+  "journal_prompt": "A massive epiphyte that grows in the forks of giant ancient trees, catching rainwater and debris to create mini-ecosystems.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ]
+}

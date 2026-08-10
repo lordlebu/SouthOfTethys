@@ -1,0 +1,18 @@
+{
+  "id": "fauna_vindhya_langur",
+  "type": "fauna",
+  "name": "Vindhya Langur",
+  "scientific": "Presbytis vindhyensis",
+  "region": "narmada-vindhya",
+  "biomes": [
+    "forest"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A grey-furred, black-faced monkey that climbs the highest canopy of the Narmada Valley, feeding on sweet mahua flowers.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

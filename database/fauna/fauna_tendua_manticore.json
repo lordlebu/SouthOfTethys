@@ -7,10 +7,24 @@
     "notes": "Asura-tainted aberration; winged leopard with human face"
   },
   "diet": "Carnivore",
-  "habitats": ["settlement_lothal", "region_saraswati_delta"],
-  "behaviour": ["predatory", "infant_hunter", "asura_born"],
-  "related_species": ["fauna_tendua", "fauna_spotted_marsh_tendua"],
+  "habitats": [
+    "settlement_lothal",
+    "region_saraswati_delta"
+  ],
+  "behaviour": [
+    "predatory",
+    "infant_hunter",
+    "asura_born"
+  ],
+  "related_species": [
+    "fauna_tendua",
+    "fauna_spotted_marsh_tendua"
+  ],
   "notes": "Birthed when Nila desecrated Kavik's tower with forbidden Asura mantras. Six-foot winged leopard with human face that hunted Lothal's infants. Central to Tendua Crisis.",
   "canon": "primary",
-  "sources": ["AI_CONTEXT.md"]
+  "sources": [
+    "AI_CONTEXT.md"
+  ],
+  "biomes": [],
+  "placement": "lore"
 }

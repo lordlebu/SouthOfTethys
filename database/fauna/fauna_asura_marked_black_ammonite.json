@@ -1,0 +1,18 @@
+{
+  "id": "fauna_asura_marked_black_ammonite",
+  "type": "fauna",
+  "name": "Asura-Marked Black Ammonite",
+  "scientific": "Ammonites asuricus",
+  "region": "ganges-lava-sea",
+  "biomes": [
+    "mountains"
+  ],
+  "placement": "encounter",
+  "rarity": "rare",
+  "journal_prompt": "A dark, basalt-grey giant ammonite with glowing, sulfur-colored veins along its ridges, native to the volcanic ocean vents.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "uncanny"
+}

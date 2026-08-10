@@ -1,0 +1,18 @@
+{
+  "id": "fauna_ash_glider_squirrel",
+  "type": "fauna",
+  "name": "Ash-Glider Squirrel",
+  "scientific": "Petaurista cinereus",
+  "region": "narmada-vindhya",
+  "biomes": [
+    "forest"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A nocturnal rodent with a wide skin fold that glides between tall mahua trees, its fur colored like grey ash.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "graceful"
+}

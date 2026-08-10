@@ -1,0 +1,19 @@
+{
+  "id": "fauna_basalt_cliff_hornbill",
+  "type": "fauna",
+  "name": "Basalt-Cliff Hornbill",
+  "scientific": "Ocyceros basalticus",
+  "region": "narmada-vindhya",
+  "biomes": [
+    "hills",
+    "mountains"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A large bird with a heavy, curved bill that nests in high rock crevices, feeding on wild figs and geckos.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

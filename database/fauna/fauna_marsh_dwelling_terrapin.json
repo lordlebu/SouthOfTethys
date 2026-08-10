@@ -1,0 +1,18 @@
+{
+  "id": "fauna_marsh_dwelling_terrapin",
+  "type": "fauna",
+  "name": "Marsh-dwelling Terrapin",
+  "scientific": "Clemmys lothalensis",
+  "region": "saraswati-godavari-deltas",
+  "biomes": [
+    "wetland"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A stem turtle lineage whose osteoderm shell is covered in green moss, providing perfect camouflage in swampy pools.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "patient"
+}

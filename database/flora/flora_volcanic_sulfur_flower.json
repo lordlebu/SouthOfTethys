@@ -1,0 +1,17 @@
+{
+  "id": "flora_volcanic_sulfur_flower",
+  "type": "flora",
+  "name": "Volcanic Sulfur-Flower",
+  "scientific": "Sulfuraria lutea",
+  "region": "ganges-lava-sea",
+  "biomes": [
+    "mountains"
+  ],
+  "placement": "flavour",
+  "rarity": "rare",
+  "journal_prompt": "A low, bright-yellow wildflower that grows near active sulfur vents, utilizing chemical-heavy soil to produce pungent nectar.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ]
+}

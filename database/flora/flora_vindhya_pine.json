@@ -1,0 +1,18 @@
+{
+  "id": "flora_vindhya_pine",
+  "type": "flora",
+  "name": "Vindhya Pine",
+  "scientific": "Pinus vindhyensis",
+  "region": "narmada-vindhya",
+  "biomes": [
+    "hills",
+    "mountains"
+  ],
+  "placement": "flavour",
+  "rarity": "common",
+  "journal_prompt": "A towering, high-altitude conifer with resinous needles that withstands extreme temperature shifts and acidic ash rain.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ]
+}

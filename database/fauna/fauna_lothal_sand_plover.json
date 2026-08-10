@@ -1,0 +1,18 @@
+{
+  "id": "fauna_lothal_sand_plover",
+  "type": "fauna",
+  "name": "Lothal Sand-Plover",
+  "scientific": "Charadrius lothalensis",
+  "region": "saraswati-godavari-deltas",
+  "biomes": [
+    "river"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A small, pale shorebird that nests in the sandy riverbanks, distracting predators with elaborate broken-wing displays.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "fearsome"
+}

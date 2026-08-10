@@ -4,10 +4,29 @@
   "name": "Spotted Marsh Tendua",
   "scientific": "Panthera simiana maculata",
   "diet": "Carnivore",
-  "habitats": ["region_saraswati_delta"],
-  "behaviour": ["ambush", "ocular_mimicry", "intelligent"],
-  "related_species": ["fauna_tendua"],
+  "habitats": [
+    "region_saraswati_delta"
+  ],
+  "behaviour": [
+    "ambush",
+    "ocular_mimicry",
+    "intelligent"
+  ],
+  "related_species": [
+    "fauna_tendua"
+  ],
   "notes": "Wetland leopard-like feline with human-like eye placement.",
   "canon": "primary",
-  "sources": ["SouthOfTethys.txt"]
+  "sources": [
+    "SouthOfTethys.txt",
+    "docs/bestiary.md"
+  ],
+  "region": "saraswati-godavari-deltas",
+  "biomes": [
+    "wetland"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A highly intelligent, leopard-like feline of the wetlands that has evolved human-like eye placement and ocular mimicry to stalk its prey.",
+  "mood": "clever"
 }

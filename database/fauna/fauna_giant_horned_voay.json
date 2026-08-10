@@ -1,0 +1,19 @@
+{
+  "id": "fauna_giant_horned_voay",
+  "type": "fauna",
+  "name": "Giant Horned Voay",
+  "scientific": "Voay maximus",
+  "region": "shattered-sea-mappa-mundi",
+  "biomes": [
+    "sea",
+    "forest"
+  ],
+  "placement": "encounter",
+  "rarity": "mythic",
+  "journal_prompt": "A colossal, fully terrestrial galloping crocodile with thick hide and brow-horns, serving as the apex predator of the dry scrub.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "fearsome"
+}

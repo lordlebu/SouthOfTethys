@@ -9,8 +9,15 @@
     "notes": "Human-like eye placement and ocular mimicry"
   },
   "diet": "Carnivore",
-  "habitats": ["region_saraswati_delta", "region_godavari_delta"],
-  "behaviour": ["ambush", "intelligent", "ocular_mimicry"],
+  "habitats": [
+    "region_saraswati_delta",
+    "region_godavari_delta"
+  ],
+  "behaviour": [
+    "ambush",
+    "intelligent",
+    "ocular_mimicry"
+  ],
   "related_species": [
     "fauna_tendua_manticore",
     "fauna_black_barked_canopy_tendua",
@@ -18,5 +25,9 @@
   ],
   "notes": "Highly intelligent leopard-like feline of the wetlands. The Tendua Manticore variant (winged, human-faced) was born from Asura desecration of Lothal tower.",
   "canon": "primary",
-  "sources": ["SouthOfTethys.txt"]
+  "sources": [
+    "SouthOfTethys.txt"
+  ],
+  "biomes": [],
+  "placement": "lore"
 }

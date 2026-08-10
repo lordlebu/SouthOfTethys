@@ -1,0 +1,18 @@
+{
+  "id": "fauna_hammerhead_reef_shark",
+  "type": "fauna",
+  "name": "Hammerhead Reef-Shark",
+  "scientific": "Sphyrna reef",
+  "region": "shattered-sea-mappa-mundi",
+  "biomes": [
+    "sea"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A sleek, coastal shark with a broad, sensory-rich skull designed to detect prey hidden beneath the sandy reef floors.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

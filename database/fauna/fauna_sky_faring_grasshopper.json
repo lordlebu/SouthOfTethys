@@ -1,0 +1,16 @@
+{
+  "id": "fauna_sky_faring_grasshopper",
+  "type": "fauna",
+  "name": "Sky-Faring Grasshopper",
+  "scientific": "Melanoplus caelius",
+  "region": "saraswati-godavari-deltas",
+  "biomes": [],
+  "placement": "lore",
+  "rarity": "common",
+  "journal_prompt": "A lightweight, gas-buoyant grasshopper that migrates between floating islands, feeding on sky-bramble leaves.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "graceful"
+}

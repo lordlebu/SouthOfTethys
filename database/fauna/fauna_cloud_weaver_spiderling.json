@@ -1,0 +1,16 @@
+{
+  "id": "fauna_cloud_weaver_spiderling",
+  "type": "fauna",
+  "name": "Cloud-Weaver Spiderling",
+  "scientific": "Aranea nubis minor",
+  "region": "tethys-sky-routes",
+  "biomes": [],
+  "placement": "lore",
+  "rarity": "rare",
+  "journal_prompt": "A young spider that uses long silk threads to balloon through the air, traveling between distant floating islands.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "graceful"
+}

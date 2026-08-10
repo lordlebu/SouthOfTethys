@@ -1,0 +1,18 @@
+{
+  "id": "fauna_crested_marsh_runner",
+  "type": "fauna",
+  "name": "Crested Marsh-Runner",
+  "scientific": "Gallinula cristata",
+  "region": "saraswati-godavari-deltas",
+  "biomes": [
+    "wetland"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A flightless bird of the delta marshes that sprints over floating lotus leaves using elongated, spread-out toes.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "graceful"
+}

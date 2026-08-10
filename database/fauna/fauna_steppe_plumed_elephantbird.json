@@ -1,0 +1,19 @@
+{
+  "id": "fauna_steppe_plumed_elephantbird",
+  "type": "fauna",
+  "name": "Steppe-Plumed Elephantbird",
+  "scientific": "Aepyornis stephensis",
+  "region": "shattered-sea-mappa-mundi",
+  "biomes": [
+    "coast",
+    "plains"
+  ],
+  "placement": "encounter",
+  "rarity": "rare",
+  "journal_prompt": "A massive, shaggy-feathered ratite tamed by traveling merchants to serve as heavy beasts of burden on coastal routes.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

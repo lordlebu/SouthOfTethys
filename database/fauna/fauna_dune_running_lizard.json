@@ -1,0 +1,18 @@
+{
+  "id": "fauna_dune_running_lizard",
+  "type": "fauna",
+  "name": "Dune-Running Lizard",
+  "scientific": "Agama deserti",
+  "region": "gedrosian-taklamakan",
+  "biomes": [
+    "desert"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A lizard that runs across hot sand on its hind legs, lifting its feet alternately to keep them cool.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

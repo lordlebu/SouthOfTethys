@@ -1,0 +1,18 @@
+{
+  "id": "fauna_lava_pool_shrimp",
+  "type": "fauna",
+  "name": "Lava-Pool Shrimp",
+  "scientific": "Palaemon vulcanus",
+  "region": "ganges-lava-sea",
+  "biomes": [
+    "mountains"
+  ],
+  "placement": "encounter",
+  "rarity": "rare",
+  "journal_prompt": "A tiny, transparent crustacean that swims in the scalding rock pools, feeding on specialized thermophilic bacteria.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

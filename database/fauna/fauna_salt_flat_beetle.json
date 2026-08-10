@@ -1,0 +1,18 @@
+{
+  "id": "fauna_salt_flat_beetle",
+  "type": "fauna",
+  "name": "Salt-Flat Beetle",
+  "scientific": "Carabus salinus",
+  "region": "gedrosian-taklamakan",
+  "biomes": [
+    "desert"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A dark, highly reflective beetle that feeds on decaying organic matter along the margins of the blinding salt plains.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

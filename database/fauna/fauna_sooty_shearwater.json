@@ -1,0 +1,18 @@
+{
+  "id": "fauna_sooty_shearwater",
+  "type": "fauna",
+  "name": "Sooty Shearwater",
+  "scientific": "Puffinus cinereus",
+  "region": "ganges-lava-sea",
+  "biomes": [
+    "hills"
+  ],
+  "placement": "encounter",
+  "rarity": "rare",
+  "journal_prompt": "A seabird with charcoal-colored feathers, nesting in the high cliffs overlooking the boiling bays.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

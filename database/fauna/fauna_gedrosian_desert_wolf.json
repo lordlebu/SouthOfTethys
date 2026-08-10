@@ -1,0 +1,18 @@
+{
+  "id": "fauna_gedrosian_desert_wolf",
+  "type": "fauna",
+  "name": "Gedrosian Desert Wolf",
+  "scientific": "Canis lupus gedrosiae",
+  "region": "gedrosian-taklamakan",
+  "biomes": [
+    "desert"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A lean, light-colored wolf that hunts in small packs, preying on wild ibex and stray cattle.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "fearsome"
+}

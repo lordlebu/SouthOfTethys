@@ -4,9 +4,18 @@
   "name": "Sand Skink",
   "scientific": "Scincus gedrosianus",
   "diet": "Insectivore",
-  "habitats": ["region_gedrosian_desert"],
-  "behaviour": ["sand_swimmer", "nocturnal"],
+  "habitats": [
+    "region_gedrosian_desert"
+  ],
+  "behaviour": [
+    "sand_swimmer",
+    "nocturnal"
+  ],
   "notes": "Desert lizard that ‘swims’ under dune surfaces. Used by northern nomads as a live weather-vane: emergence patterns track overnight wind shifts.",
   "canon": "primary",
-  "sources": ["SouthOfTethys.txt"]
+  "sources": [
+    "SouthOfTethys.txt"
+  ],
+  "biomes": [],
+  "placement": "lore"
 }

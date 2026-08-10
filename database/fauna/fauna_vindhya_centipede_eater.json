@@ -1,0 +1,18 @@
+{
+  "id": "fauna_vindhya_centipede_eater",
+  "type": "fauna",
+  "name": "Vindhya Centipede-Eater",
+  "scientific": "Herpestes centipeda",
+  "region": "narmada-vindhya",
+  "biomes": [
+    "hills"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A small mongoose species with thick, leathery hide that protects it from the venomous stings of cliff centipedes.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "fearsome"
+}

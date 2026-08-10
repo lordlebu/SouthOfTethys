@@ -1,0 +1,17 @@
+{
+  "id": "flora_spiny_acacia",
+  "type": "flora",
+  "name": "Spiny Acacia",
+  "scientific": "Acacia spinosa",
+  "region": "gedrosian-taklamakan",
+  "biomes": [
+    "desert"
+  ],
+  "placement": "flavour",
+  "rarity": "common",
+  "journal_prompt": "A hardy, deep-rooted desert tree with long, needle-sharp thorns and yellow blossoms that draw honey-goliaths.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ]
+}

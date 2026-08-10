@@ -1,0 +1,18 @@
+{
+  "id": "fauna_naga_kin_sentry",
+  "type": "fauna",
+  "name": "Naga-Kin Sentry",
+  "scientific": "Serpens guard",
+  "region": "asura-conjurations",
+  "biomes": [
+    "settlement"
+  ],
+  "placement": "lore",
+  "rarity": "mythic",
+  "journal_prompt": "A semi-anthropomorphic serpent warrior that guards the sacred temples of Takshak, wielding bronze and stone spears.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

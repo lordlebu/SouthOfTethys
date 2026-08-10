@@ -1,0 +1,17 @@
+{
+  "id": "flora_soot_grass",
+  "type": "flora",
+  "name": "Soot-Grass",
+  "scientific": "Agrostis cinerea",
+  "region": "ganges-lava-sea",
+  "biomes": [
+    "mountains"
+  ],
+  "placement": "flavour",
+  "rarity": "rare",
+  "journal_prompt": "A tough, ash-tolerant grass that grows in tufts along the cooled basalt plains, providing forage for heat-tolerant fauna.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "fauna_shell_turtle",
+  "type": "fauna",
+  "name": "Shell Turtle",
+  "scientific": null,
+  "region": "prototype-starters",
+  "biomes": [
+    "coast",
+    "river"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A turtle rests where river sand meets the tide, carrying a map of scratches on its shell.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "patient"
+}

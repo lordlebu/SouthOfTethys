@@ -4,10 +4,30 @@
   "name": "Abyssal Storm-Watcher",
   "scientific": "Cognitavi abyssalis",
   "diet": "Omnivore",
-  "habitats": ["coastal", "tethys"],
-  "behaviour": ["weather_reader", "solitary"],
-  "related_species": ["fauna_cognitavi"],
+  "habitats": [
+    "coastal",
+    "tethys"
+  ],
+  "behaviour": [
+    "weather_reader",
+    "solitary"
+  ],
+  "related_species": [
+    "fauna_cognitavi"
+  ],
   "notes": "Dark-winged Cognitavi that rides pressure fronts ahead of monsoon squalls. Sailors read its high circling as a storm warning.",
   "canon": "primary",
-  "sources": ["SouthOfTethys.txt"]
+  "sources": [
+    "SouthOfTethys.txt",
+    "docs/bestiary.md"
+  ],
+  "region": "saraswati-godavari-deltas",
+  "biomes": [
+    "sea"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A Cognitavi navigator bird subspecies that specializes in reading weather patterns, guiding wisdom-seekers and ships safely through the Tethys monsoons.",
+  "mood": "clever",
+  "sentient": true
 }

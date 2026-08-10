@@ -1,0 +1,19 @@
+{
+  "id": "fauna_mountain_forest_boar",
+  "type": "fauna",
+  "name": "Mountain Forest Boar",
+  "scientific": "Sus sylvanus",
+  "region": "narmada-vindhya",
+  "biomes": [
+    "hills",
+    "mountains"
+  ],
+  "placement": "encounter",
+  "rarity": "rare",
+  "journal_prompt": "A tusked, rugged omnivore that digs up volcanic tubers and rare roots, its thick hide protecting it from cliff lizards.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

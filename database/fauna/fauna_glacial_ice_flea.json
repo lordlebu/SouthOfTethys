@@ -1,0 +1,18 @@
+{
+  "id": "fauna_glacial_ice_flea",
+  "type": "fauna",
+  "name": "Glacial Ice-Flea",
+  "scientific": "Isotoma glacialis",
+  "region": "ganges-lava-sea",
+  "biomes": [
+    "mountains"
+  ],
+  "placement": "encounter",
+  "rarity": "rare",
+  "journal_prompt": "A tiny, specialized insect that feeds on pollen and debris deposited on the surface of glaciers near the ice wall.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

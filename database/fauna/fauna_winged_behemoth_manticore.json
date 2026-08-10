@@ -1,0 +1,16 @@
+{
+  "id": "fauna_winged_behemoth_manticore",
+  "type": "fauna",
+  "name": "Winged Behemoth Manticore",
+  "scientific": "Manticora titan",
+  "region": "asura-conjurations",
+  "biomes": [],
+  "placement": "lore",
+  "rarity": "mythic",
+  "journal_prompt": "An unnatural winged leopard with a human face, forged purely from brick-dust, shadow, and corrupted Asura mantras.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "uncanny"
+}

@@ -2,13 +2,27 @@
   "id": "fauna_vrkshasmara",
   "type": "fauna",
   "name": "Vṛkṣaśmara",
-  "aliases": ["Grey Bark-Mimic", "Arboreal Forest Octopus"],
+  "aliases": [
+    "Grey Bark-Mimic",
+    "Arboreal Forest Octopus"
+  ],
   "scientific": "Vrkshasmara griseus",
-  "taxonomy": { "notes": "Arboreal octopus with keratin-rimmed suction cups" },
+  "taxonomy": {
+    "notes": "Arboreal octopus with keratin-rimmed suction cups"
+  },
   "diet": "Omnivore",
-  "habitats": ["region_narmada_plateau"],
-  "behaviour": ["camouflage", "arboreal"],
+  "habitats": [
+    "region_narmada_plateau"
+  ],
+  "behaviour": [
+    "camouflage",
+    "arboreal"
+  ],
   "notes": "Evolved for tree canopies of Narmada Valley. Bioluminescent moss-dweller variant exists.",
   "canon": "primary",
-  "sources": ["SouthOfTethys.txt"]
+  "sources": [
+    "SouthOfTethys.txt"
+  ],
+  "biomes": [],
+  "placement": "lore"
 }

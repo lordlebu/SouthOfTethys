@@ -1,0 +1,18 @@
+{
+  "id": "fauna_golden_plumed_racer",
+  "type": "fauna",
+  "name": "Golden-Plumed Racer",
+  "scientific": "Struthio camelus auratus",
+  "region": "gedrosian-taklamakan",
+  "biomes": [
+    "desert"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A sleek, highly prized breed of desert ostrich bred specifically for speed and long-distance scout expeditions.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

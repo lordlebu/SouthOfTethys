@@ -1,0 +1,17 @@
+{
+  "id": "flora_hourglass_cactus",
+  "type": "flora",
+  "name": "Hourglass Cactus",
+  "scientific": "Cereus arenarius",
+  "region": "gedrosian-taklamakan",
+  "biomes": [
+    "desert"
+  ],
+  "placement": "flavour",
+  "rarity": "common",
+  "journal_prompt": "A ribbed, columnar cactus whose spine patterns cast shifting shadows resembling hourglasses, storing water for months.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ]
+}

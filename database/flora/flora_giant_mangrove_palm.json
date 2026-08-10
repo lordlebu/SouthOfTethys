@@ -1,0 +1,17 @@
+{
+  "id": "flora_giant_mangrove_palm",
+  "type": "flora",
+  "name": "Giant Mangrove-Palm",
+  "scientific": "Nypa gigas",
+  "region": "shattered-sea-mappa-mundi",
+  "biomes": [
+    "coast"
+  ],
+  "placement": "flavour",
+  "rarity": "rare",
+  "journal_prompt": "A unique, trunkless palm that grows directly in brackish delta waters, its robust fruit clusters floating on the tides.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ]
+}

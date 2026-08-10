@@ -3,9 +3,25 @@
   "type": "flora",
   "name": "Silver-Leaved Oracle Fig",
   "scientific": "Ficus bhutakana",
-  "habitats": ["region_narmada_plateau"],
-  "uses": ["memory_archive", "ritual"],
+  "habitats": [
+    "region_narmada_plateau"
+  ],
+  "uses": [
+    "memory_archive",
+    "ritual"
+  ],
   "notes": "Massive fig grown from a magical moon-seed. Roots act as biological archive tree whispering memories in the wind.",
   "canon": "primary",
-  "sources": ["SouthOfTethys.txt"]
+  "sources": [
+    "SouthOfTethys.txt",
+    "docs/bestiary.md"
+  ],
+  "region": "narmada-vindhya",
+  "biomes": [
+    "forest",
+    "landmark"
+  ],
+  "placement": "flavour",
+  "rarity": "rare",
+  "journal_prompt": "A massive fig tree grown from a magical moon-seed, its roots acting as a biological archive tree whispering memories in the wind."
 }

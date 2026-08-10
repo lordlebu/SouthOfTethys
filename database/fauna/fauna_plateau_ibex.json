@@ -4,9 +4,19 @@
   "name": "Plateau Ibex",
   "scientific": "Capra narmadae",
   "diet": "Herbivore",
-  "habitats": ["region_narmada_plateau", "region_aravali"],
-  "behaviour": ["cliff_grazer", "herd"],
+  "habitats": [
+    "region_narmada_plateau",
+    "region_aravali"
+  ],
+  "behaviour": [
+    "cliff_grazer",
+    "herd"
+  ],
   "notes": "Sure-footed highland goat preyed upon by Garudasaur Eagles. Horn and hide traded downriver to Lothal markets.",
   "canon": "primary",
-  "sources": ["SouthOfTethys.txt"]
+  "sources": [
+    "SouthOfTethys.txt"
+  ],
+  "biomes": [],
+  "placement": "lore"
 }

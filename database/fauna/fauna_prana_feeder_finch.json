@@ -1,0 +1,16 @@
+{
+  "id": "fauna_prana_feeder_finch",
+  "type": "fauna",
+  "name": "Prana-Feeder Finch",
+  "scientific": "Fringilla prana",
+  "region": "tethys-sky-routes",
+  "biomes": [],
+  "placement": "lore",
+  "rarity": "rare",
+  "journal_prompt": "A small, brightly colored bird that absorbs atmospheric life-force, its song bringing a sense of calm to travelers.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

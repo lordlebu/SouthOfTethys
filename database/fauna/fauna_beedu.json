@@ -4,9 +4,19 @@
   "name": "Beedu",
   "scientific": "Sarasvatimanta gedrosii",
   "diet": "Carnivore",
-  "habitats": ["region_gedrosian_desert"],
-  "behaviour": ["gliding", "thermal_currents", "camouflage"],
+  "habitats": [
+    "region_gedrosian_desert"
+  ],
+  "behaviour": [
+    "gliding",
+    "thermal_currents",
+    "camouflage"
+  ],
   "notes": "Desert manta ray with gas-filled bladders for silent gliding over dunes.",
   "canon": "primary",
-  "sources": ["SouthOfTethys.txt"]
+  "sources": [
+    "SouthOfTethys.txt"
+  ],
+  "biomes": [],
+  "placement": "lore"
 }

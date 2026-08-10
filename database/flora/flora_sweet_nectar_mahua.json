@@ -1,0 +1,17 @@
+{
+  "id": "flora_sweet_nectar_mahua",
+  "type": "flora",
+  "name": "Sweet-Nectar Mahua",
+  "scientific": "Madhuca narmadensis",
+  "region": "narmada-vindhya",
+  "biomes": [
+    "forest"
+  ],
+  "placement": "flavour",
+  "rarity": "common",
+  "journal_prompt": "An indigenous tree producing sweet, fermentable cream-colored flowers that are central to the local tribal ecology and brewing traditions.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ]
+}

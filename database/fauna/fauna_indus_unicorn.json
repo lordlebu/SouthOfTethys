@@ -4,9 +4,26 @@
   "name": "Indus Unicorn",
   "scientific": "Monocerus indicus",
   "diet": "Herbivore",
-  "habitats": ["region_saraswati_delta"],
-  "behaviour": ["swift", "revered"],
+  "habitats": [
+    "region_saraswati_delta"
+  ],
+  "behaviour": [
+    "swift",
+    "revered"
+  ],
   "notes": "Legendary single-horned ungulate. Historically sacrificed in dark portal rites (Varunesh myth).",
   "canon": "primary",
-  "sources": ["SouthOfTethys.txt"]
+  "sources": [
+    "SouthOfTethys.txt",
+    "docs/bestiary.md"
+  ],
+  "region": "saraswati-godavari-deltas",
+  "biomes": [
+    "river",
+    "landmark"
+  ],
+  "placement": "encounter",
+  "rarity": "mythic",
+  "journal_prompt": "A legendary, swift-footed single-horned ungulate of the river valleys, highly revered and historically sacrificed in dark portals.",
+  "mood": "watchful"
 }

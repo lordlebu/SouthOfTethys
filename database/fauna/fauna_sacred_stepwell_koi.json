@@ -1,0 +1,18 @@
+{
+  "id": "fauna_sacred_stepwell_koi",
+  "type": "fauna",
+  "name": "Sacred Stepwell Koi",
+  "scientific": "Cyprinus devotus",
+  "region": "saraswati-godavari-deltas",
+  "biomes": [
+    "river"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "Bronze-scaled river fish bred in the sacred stepwells of Dwarka, featuring thick, armored scales to resist delta predators.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "fearsome"
+}

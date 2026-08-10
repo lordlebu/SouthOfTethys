@@ -1,0 +1,18 @@
+{
+  "id": "flora_mappa_mundi_banyan",
+  "type": "flora",
+  "name": "Mappa Mundi Banyan",
+  "scientific": "Ficus mappa",
+  "region": "shattered-sea-mappa-mundi",
+  "biomes": [
+    "forest",
+    "landmark"
+  ],
+  "placement": "flavour",
+  "rarity": "mythic",
+  "journal_prompt": "A colossal, ancient tree whose aerial roots drop down to form a forest-like grove from a single trunk, housing thousands of canopy birds.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ]
+}

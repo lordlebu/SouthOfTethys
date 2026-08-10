@@ -1,0 +1,20 @@
+{
+  "id": "fauna_lothal_heron_raptor",
+  "type": "fauna",
+  "name": "Lothal Heron-Raptor",
+  "scientific": "Sylvianus minor",
+  "region": "saraswati-godavari-deltas",
+  "biomes": [
+    "wetland",
+    "river"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A small, wading theropod bird that uses its long neck and serrated beak to spear mud-lurkers.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful",
+  "sentient": true
+}

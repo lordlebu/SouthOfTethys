@@ -1,0 +1,15 @@
+{
+  "id": "flora_toxic_crimson_root",
+  "type": "flora",
+  "name": "Toxic Crimson Root",
+  "scientific": "Nirnroot rubra",
+  "region": "tethys-sky-routes",
+  "biomes": [],
+  "placement": "lore",
+  "rarity": "rare",
+  "journal_prompt": "A rare, red-glowing variant of nirnroot whose roots exude a highly toxic sap used by assassins and sky-pirates.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ]
+}

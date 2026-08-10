@@ -1,0 +1,18 @@
+{
+  "id": "flora_healing_silver_root",
+  "type": "flora",
+  "name": "Healing Silver-root",
+  "scientific": "Sarasvatia argentum",
+  "region": "saraswati-godavari-deltas",
+  "biomes": [
+    "wetland",
+    "river"
+  ],
+  "placement": "flavour",
+  "rarity": "common",
+  "journal_prompt": "An endemic medicinal tuber harvested along the Godavari, known for its rapid wound-healing properties when ground into salve.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ]
+}

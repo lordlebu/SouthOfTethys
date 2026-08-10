@@ -1,0 +1,18 @@
+{
+  "id": "fauna_volcanic_ash_moth",
+  "type": "fauna",
+  "name": "Volcanic Ash-Moth",
+  "scientific": "Lymantria vulcanica",
+  "region": "ganges-lava-sea",
+  "biomes": [
+    "mountains"
+  ],
+  "placement": "encounter",
+  "rarity": "rare",
+  "journal_prompt": "A moth with dusty grey wings, its larvae feeding on the tough leaves of ash-banyan trees.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

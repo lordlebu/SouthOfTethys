@@ -1,0 +1,18 @@
+{
+  "id": "flora_golden_sun_barley",
+  "type": "flora",
+  "name": "Golden Sun-Barley",
+  "scientific": "Hordeum aureum",
+  "region": "gedrosian-taklamakan",
+  "biomes": [
+    "desert",
+    "plains"
+  ],
+  "placement": "flavour",
+  "rarity": "common",
+  "journal_prompt": "A drought-resistant, long-headed grain cultivated by oasis settlers, producing sweet, nutrient-dense kernels.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ]
+}

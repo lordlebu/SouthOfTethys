@@ -1,0 +1,18 @@
+{
+  "id": "fauna_reef_dwelling_octopus",
+  "type": "fauna",
+  "name": "Reef-dwelling Octopus",
+  "scientific": "Octopus reef",
+  "region": "shattered-sea-mappa-mundi",
+  "biomes": [
+    "sea"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "An octopus with highly textured skin that mimics coral, hunting small crabs and fish in shallow waters.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "fearsome"
+}

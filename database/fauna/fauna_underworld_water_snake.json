@@ -1,0 +1,18 @@
+{
+  "id": "fauna_underworld_water_snake",
+  "type": "fauna",
+  "name": "Underworld Water-Snake",
+  "scientific": "Serpens asuricus",
+  "region": "asura-conjurations",
+  "biomes": [
+    "river"
+  ],
+  "placement": "lore",
+  "rarity": "mythic",
+  "journal_prompt": "A highly venomous, dark-scaled snake that swims in the sulfuric rivers of Naraka, its bite causing immediate paralysis.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "fearsome"
+}

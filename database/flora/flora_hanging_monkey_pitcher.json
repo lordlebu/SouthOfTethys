@@ -1,0 +1,17 @@
+{
+  "id": "flora_hanging_monkey_pitcher",
+  "type": "flora",
+  "name": "Hanging Monkey-Pitcher",
+  "scientific": "Nepenthes vanara",
+  "region": "shattered-sea-mappa-mundi",
+  "biomes": [
+    "forest"
+  ],
+  "placement": "flavour",
+  "rarity": "common",
+  "journal_prompt": "A large carnivorous vine of the Mappa Mundi canopy, secreting a sweet, narcotic liquid that traps large insects and small frogs.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ]
+}

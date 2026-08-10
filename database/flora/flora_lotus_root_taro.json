@@ -3,9 +3,18 @@
   "type": "flora",
   "name": "Lotus-Root Taro",
   "scientific": "Colocasia nelumbo-affinis",
-  "habitats": ["region_saraswati_delta"],
-  "uses": ["staple_food", "flood_crop"],
+  "habitats": [
+    "region_saraswati_delta"
+  ],
+  "uses": [
+    "staple_food",
+    "flood_crop"
+  ],
   "notes": "Starchy corm grown in flooded lotus ponds. Complements Red Delta Rice in Kia and Harappan kitchens.",
   "canon": "primary",
-  "sources": ["SouthOfTethys.txt"]
+  "sources": [
+    "SouthOfTethys.txt"
+  ],
+  "biomes": [],
+  "placement": "lore"
 }

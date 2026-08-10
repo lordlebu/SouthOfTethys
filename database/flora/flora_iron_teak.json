@@ -3,9 +3,19 @@
   "type": "flora",
   "name": "Iron-Teak",
   "scientific": "Tectona ferrea",
-  "habitats": ["region_narmada_plateau", "region_aravali"],
-  "uses": ["ship_timber", "tower_beams"],
+  "habitats": [
+    "region_narmada_plateau",
+    "region_aravali"
+  ],
+  "uses": [
+    "ship_timber",
+    "tower_beams"
+  ],
   "notes": "Dense highland teak preferred for river craft and the red-sandstone tower’s internal beams. Slow-grown; felling is tightly controlled by plateau clans.",
   "canon": "primary",
-  "sources": ["SouthOfTethys.txt"]
+  "sources": [
+    "SouthOfTethys.txt"
+  ],
+  "biomes": [],
+  "placement": "lore"
 }

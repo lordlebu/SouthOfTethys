@@ -1,0 +1,17 @@
+{
+  "id": "flora_desert_saltbush",
+  "type": "flora",
+  "name": "Desert Saltbush",
+  "scientific": "Atriplex gedrosia",
+  "region": "gedrosian-taklamakan",
+  "biomes": [
+    "desert"
+  ],
+  "placement": "flavour",
+  "rarity": "common",
+  "journal_prompt": "A low, grey-green shrub whose leaves are covered in salty, moisture-retaining crystals, a key forage for camelosuchus.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ]
+}

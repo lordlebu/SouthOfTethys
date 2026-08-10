@@ -1,0 +1,18 @@
+{
+  "id": "fauna_vindhya_hill_parakeet",
+  "type": "fauna",
+  "name": "Vindhya Hill-Parakeet",
+  "scientific": "Psittacula vindhyensis",
+  "region": "narmada-vindhya",
+  "biomes": [
+    "hills"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A colorful, highly vocal bird that travels in large flocks, feeding on wild fruits and nesting in hollow trees.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

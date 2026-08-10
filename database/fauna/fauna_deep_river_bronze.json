@@ -1,0 +1,18 @@
+{
+  "id": "fauna_deep_river_bronze",
+  "type": "fauna",
+  "name": "Deep-River Bronze",
+  "scientific": "Cyprinus chalceus",
+  "region": "saraswati-godavari-deltas",
+  "biomes": [
+    "river"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A wild relative of the stepwell koi, navigating Tethyan estuaries with heavy, protective, metallic-looking bronze scales.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "flora_iron_root_mangrove",
+  "type": "flora",
+  "name": "Iron-Root Mangrove",
+  "scientific": "Rhizophora ferrea",
+  "region": "saraswati-godavari-deltas",
+  "biomes": [
+    "coast"
+  ],
+  "placement": "flavour",
+  "rarity": "common",
+  "journal_prompt": "A heavy, dark-wooded mangrove whose roots lock into the rocky coastline, forming impassable natural barriers.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ]
+}

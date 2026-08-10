@@ -1,0 +1,18 @@
+{
+  "id": "fauna_antarctic_petrel",
+  "type": "fauna",
+  "name": "Antarctic Petrel",
+  "scientific": "Thalassoica antarctica",
+  "region": "ganges-lava-sea",
+  "biomes": [
+    "mountains"
+  ],
+  "placement": "encounter",
+  "rarity": "rare",
+  "journal_prompt": "A dark-winged bird that flies along the immense glacial cliffs of the deep south, nesting in rocky crevices.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

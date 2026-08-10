@@ -1,0 +1,18 @@
+{
+  "id": "fauna_vanga_marsh_cat",
+  "type": "fauna",
+  "name": "Vanga Marsh-Cat",
+  "scientific": "Felis chaus vanga",
+  "region": "saraswati-godavari-deltas",
+  "biomes": [
+    "wetland"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A small, agile cat with tufted ears that hunts marsh-runners and frogs in the Godavari delta.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "fearsome"
+}

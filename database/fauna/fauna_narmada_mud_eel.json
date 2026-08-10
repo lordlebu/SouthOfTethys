@@ -1,0 +1,18 @@
+{
+  "id": "fauna_narmada_mud_eel",
+  "type": "fauna",
+  "name": "Narmada Mud-Eel",
+  "scientific": "Monopterus narmadensis",
+  "region": "saraswati-godavari-deltas",
+  "biomes": [
+    "river"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A slender, scale-less fish that burrows into the volcanic mud of riverbeds, breathing atmospheric air during dry spells.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "patient"
+}

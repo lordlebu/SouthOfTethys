@@ -1,0 +1,18 @@
+{
+  "id": "flora_poison_barb_indigo",
+  "type": "flora",
+  "name": "Poison-barb Indigo",
+  "scientific": "Indigofera spicata",
+  "region": "saraswati-godavari-deltas",
+  "biomes": [
+    "wetland",
+    "river"
+  ],
+  "placement": "flavour",
+  "rarity": "common",
+  "journal_prompt": "A wild relative of sweet indigo, possessing small, sharp thorns along its stems that inject a skin-irritating toxin.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ]
+}

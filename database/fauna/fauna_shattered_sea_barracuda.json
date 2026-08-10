@@ -1,0 +1,18 @@
+{
+  "id": "fauna_shattered_sea_barracuda",
+  "type": "fauna",
+  "name": "Shattered Sea Barracuda",
+  "scientific": "Sphyraena shattered",
+  "region": "shattered-sea-mappa-mundi",
+  "biomes": [
+    "sea"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A sleek, silver predator with sharp teeth, hunting smaller schooling fish near the coral reefs.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "fearsome"
+}

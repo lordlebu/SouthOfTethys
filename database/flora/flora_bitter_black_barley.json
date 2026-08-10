@@ -1,0 +1,17 @@
+{
+  "id": "flora_bitter_black_barley",
+  "type": "flora",
+  "name": "Bitter Black Barley",
+  "scientific": "Hordeum niger",
+  "region": "gedrosian-taklamakan",
+  "biomes": [
+    "desert"
+  ],
+  "placement": "flavour",
+  "rarity": "common",
+  "journal_prompt": "A dark, hardy barley variant that grows in highly saline, parched desert soils, used primarily for brewing heavy travel ales.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ]
+}

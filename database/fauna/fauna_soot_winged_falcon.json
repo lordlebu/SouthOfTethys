@@ -1,0 +1,18 @@
+{
+  "id": "fauna_soot_winged_falcon",
+  "type": "fauna",
+  "name": "Soot-Winged Falcon",
+  "scientific": "Falco cinereus",
+  "region": "ganges-lava-sea",
+  "biomes": [
+    "mountains"
+  ],
+  "placement": "encounter",
+  "rarity": "rare",
+  "journal_prompt": "A predatory bird of the ash valleys, its plumage colored like charcoal to remain hidden against the dark volcanic sky.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "fearsome"
+}

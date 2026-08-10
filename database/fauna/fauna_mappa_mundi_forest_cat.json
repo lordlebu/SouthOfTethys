@@ -1,0 +1,18 @@
+{
+  "id": "fauna_mappa_mundi_forest_cat",
+  "type": "fauna",
+  "name": "Mappa Mundi Forest-Cat",
+  "scientific": "Prionailurus sylvanus",
+  "region": "shattered-sea-mappa-mundi",
+  "biomes": [
+    "forest"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A spotted wildcat with a long, balancing tail, hunting squirrels and frogs in the deep jungle canopy.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "fearsome"
+}

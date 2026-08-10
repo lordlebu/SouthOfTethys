@@ -1,0 +1,18 @@
+{
+  "id": "fauna_giant_steel_shelled_snail",
+  "type": "fauna",
+  "name": "Giant Steel-Shelled Snail",
+  "scientific": "Chrysomallon ferreus",
+  "region": "ganges-lava-sea",
+  "biomes": [
+    "mountains"
+  ],
+  "placement": "encounter",
+  "rarity": "rare",
+  "journal_prompt": "A massive iron snail whose shell consists of layered iron-ash and basalt, reflecting the glowing fire of the lava lake.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "luminous"
+}

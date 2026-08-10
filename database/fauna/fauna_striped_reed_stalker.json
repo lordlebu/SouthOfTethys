@@ -4,10 +4,28 @@
   "name": "Striped Reed Stalker",
   "scientific": "Baurusuchus striatus",
   "diet": "Carnivore",
-  "habitats": ["region_saraswati_delta"],
-  "behaviour": ["ambush", "reed_camouflage"],
-  "related_species": ["fauna_baurusuchus"],
+  "habitats": [
+    "region_saraswati_delta"
+  ],
+  "behaviour": [
+    "ambush",
+    "reed_camouflage"
+  ],
+  "related_species": [
+    "fauna_baurusuchus"
+  ],
   "notes": "Baurusuchus subspecies banded for reed-marsh camouflage. Lies motionless among Saltreed stands until prey crosses the mudline.",
   "canon": "primary",
-  "sources": ["SouthOfTethys.txt"]
+  "sources": [
+    "SouthOfTethys.txt",
+    "docs/bestiary.md"
+  ],
+  "region": "saraswati-godavari-deltas",
+  "biomes": [
+    "wetland"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A camouflaged subspecies of Baurusuchus with vertical stripes, blending into the marsh grass of the Saraswati delta.",
+  "mood": "patient"
 }

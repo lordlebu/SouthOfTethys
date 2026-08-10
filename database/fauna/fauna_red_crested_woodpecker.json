@@ -1,0 +1,18 @@
+{
+  "id": "fauna_red_crested_woodpecker",
+  "type": "fauna",
+  "name": "Red-Crested Woodpecker",
+  "scientific": "Picus phoeniceus",
+  "region": "narmada-vindhya",
+  "biomes": [
+    "forest"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A large bird that drills into hollow bonewood trees to extract boring beetles, its tapping echoing like stone-age drums.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

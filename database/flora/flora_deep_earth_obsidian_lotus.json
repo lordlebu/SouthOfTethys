@@ -1,0 +1,17 @@
+{
+  "id": "flora_deep_earth_obsidian_lotus",
+  "type": "flora",
+  "name": "Deep-Earth Obsidian Lotus",
+  "scientific": "Nymphaea obsidiana",
+  "region": "ganges-lava-sea",
+  "biomes": [
+    "wetland"
+  ],
+  "placement": "flavour",
+  "rarity": "rare",
+  "journal_prompt": "A rare lotus variety with glossy, black glass-like petals that pulse softly with the earth's magmatic heat.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ]
+}

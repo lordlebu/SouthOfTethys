@@ -1,0 +1,18 @@
+{
+  "id": "fauna_gedrosian_sand_grouse",
+  "type": "fauna",
+  "name": "Gedrosian Sand-Grouse",
+  "scientific": "Pterocles gedrosius",
+  "region": "gedrosian-taklamakan",
+  "biomes": [
+    "desert"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A bird that flies miles to find water, absorbing moisture in its breast feathers to carry back to its chicks.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

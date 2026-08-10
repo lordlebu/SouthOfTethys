@@ -1,0 +1,17 @@
+{
+  "id": "flora_highland_bitter_mahua",
+  "type": "flora",
+  "name": "Highland Bitter Mahua",
+  "scientific": "Madhuca montana",
+  "region": "narmada-vindhya",
+  "biomes": [
+    "mountains"
+  ],
+  "placement": "flavour",
+  "rarity": "common",
+  "journal_prompt": "A rugged, slow-growing mahua variant whose seeds yield a thick, bitter oil used for lamps and traditional healing ointments.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ]
+}

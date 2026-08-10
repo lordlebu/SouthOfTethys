@@ -3,9 +3,20 @@
   "type": "flora",
   "name": "Neem",
   "scientific": "Azadirachta indica",
-  "habitats": ["region_saraswati_delta", "region_narmada_plateau"],
-  "uses": ["medicine", "insect_repellent", "shade"],
+  "habitats": [
+    "region_saraswati_delta",
+    "region_narmada_plateau"
+  ],
+  "uses": [
+    "medicine",
+    "insect_repellent",
+    "shade"
+  ],
   "notes": "Bitter medicinal tree of villages and field edges. Leaves and oil used against pests and fever.",
   "canon": "primary",
-  "sources": ["SouthOfTethys.txt"]
+  "sources": [
+    "SouthOfTethys.txt"
+  ],
+  "biomes": [],
+  "placement": "lore"
 }

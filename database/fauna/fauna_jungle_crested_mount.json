@@ -1,0 +1,18 @@
+{
+  "id": "fauna_jungle_crested_mount",
+  "type": "fauna",
+  "name": "Jungle-Crested Mount",
+  "scientific": "Aepyornis crested",
+  "region": "shattered-sea-mappa-mundi",
+  "biomes": [
+    "forest"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A vibrantly colored elephantbird subspecies adapted to humid rainforest floors, capable of breaking through dense thickets.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

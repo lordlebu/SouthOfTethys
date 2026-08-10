@@ -1,0 +1,19 @@
+{
+  "id": "fauna_banded_scavenger_voay",
+  "type": "fauna",
+  "name": "Banded Scavenger Voay",
+  "scientific": "Voay lineatus",
+  "region": "shattered-sea-mappa-mundi",
+  "biomes": [
+    "sea",
+    "forest"
+  ],
+  "placement": "encounter",
+  "rarity": "rare",
+  "journal_prompt": "A smaller, striped terrestrial crocodile that follows larger predators to feed on the remains of giant avian prey.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "fearsome"
+}

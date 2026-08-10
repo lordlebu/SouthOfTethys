@@ -1,0 +1,18 @@
+{
+  "id": "fauna_shattered_sea_oyster",
+  "type": "fauna",
+  "name": "Shattered Sea Oyster",
+  "scientific": "Ostrea shattered",
+  "region": "shattered-sea-mappa-mundi",
+  "biomes": [
+    "sea"
+  ],
+  "placement": "encounter",
+  "rarity": "rare",
+  "journal_prompt": "A massive bivalve that produces iridescent black pearls, highly coveted by Vanga maritime merchants.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "luminous"
+}

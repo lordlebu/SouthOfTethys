@@ -1,0 +1,17 @@
+{
+  "id": "flora_crimson_leaved_ash_banyan",
+  "type": "flora",
+  "name": "Crimson-Leaved Ash-Banyan",
+  "scientific": "Ficus ash-banyana",
+  "region": "ganges-lava-sea",
+  "biomes": [
+    "mountains"
+  ],
+  "placement": "flavour",
+  "rarity": "rare",
+  "journal_prompt": "A resilient tree capable of rooting directly into cooled basalt flows, feeding on mineral-rich volcanic ash.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ]
+}

@@ -4,10 +4,29 @@
   "name": "Black-Barked Canopy Tendua",
   "scientific": "Panthera simiana arborea",
   "diet": "Carnivore",
-  "habitats": ["region_godavari_delta"],
-  "behaviour": ["arboreal", "melanistic"],
-  "related_species": ["fauna_tendua"],
+  "habitats": [
+    "region_godavari_delta"
+  ],
+  "behaviour": [
+    "arboreal",
+    "melanistic"
+  ],
+  "related_species": [
+    "fauna_tendua"
+  ],
   "notes": "Melanistic subspecies hunting in mangrove canopies.",
   "canon": "primary",
-  "sources": ["SouthOfTethys.txt"]
+  "sources": [
+    "SouthOfTethys.txt",
+    "docs/bestiary.md"
+  ],
+  "region": "saraswati-godavari-deltas",
+  "biomes": [
+    "coast",
+    "forest"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A melanistic, dark-coated subspecies of Tendua that hunts within the dense mangrove canopies of the Godavari delta.",
+  "mood": "fearsome"
 }

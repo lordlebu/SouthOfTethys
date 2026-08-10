@@ -1,0 +1,19 @@
+{
+  "id": "fauna_obsidian_cliff_eagle",
+  "type": "fauna",
+  "name": "Obsidian-Cliff Eagle",
+  "scientific": "Aquila obsidiana",
+  "region": "narmada-vindhya",
+  "biomes": [
+    "hills",
+    "mountains"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A large bird of prey that nests on the highest peaks, its sharp eyes detecting movement in the valleys below.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

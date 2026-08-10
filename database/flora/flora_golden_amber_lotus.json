@@ -1,0 +1,17 @@
+{
+  "id": "flora_golden_amber_lotus",
+  "type": "flora",
+  "name": "Golden Amber Lotus",
+  "scientific": "Nymphaea succinea",
+  "region": "ganges-lava-sea",
+  "biomes": [
+    "wetland"
+  ],
+  "placement": "flavour",
+  "rarity": "rare",
+  "journal_prompt": "A primordial, mineral-absorbing plant that grows in thermal pools, its translucent petals glowing like polished amber.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ]
+}

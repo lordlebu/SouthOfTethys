@@ -1,0 +1,18 @@
+{
+  "id": "fauna_jungle_web_spinner",
+  "type": "fauna",
+  "name": "Jungle Web-Spinner",
+  "scientific": "Nephila sylvanica",
+  "region": "saraswati-godavari-deltas",
+  "biomes": [
+    "forest"
+  ],
+  "placement": "encounter",
+  "rarity": "rare",
+  "journal_prompt": "A giant spider of Mappa Mundi that weaves massive, golden webs capable of catching small birds and bats.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

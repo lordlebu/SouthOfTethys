@@ -1,0 +1,18 @@
+{
+  "id": "fauna_dune_lurking_spider",
+  "type": "fauna",
+  "name": "Dune-Lurking Spider",
+  "scientific": "Sparassus arenarius",
+  "region": "gedrosian-taklamakan",
+  "biomes": [
+    "desert"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A large, pale spider that burrows into the sand, constructing a silk-lined trapdoor to ambush insects.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "fearsome"
+}

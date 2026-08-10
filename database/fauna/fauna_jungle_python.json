@@ -1,0 +1,18 @@
+{
+  "id": "fauna_jungle_python",
+  "type": "fauna",
+  "name": "Jungle python",
+  "scientific": "Python sylvanus",
+  "region": "shattered-sea-mappa-mundi",
+  "biomes": [
+    "forest"
+  ],
+  "placement": "encounter",
+  "rarity": "rare",
+  "journal_prompt": "A massive arboreal snake with emerald-green scales, blending into the hanging vines to drop onto terrestrial prey.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

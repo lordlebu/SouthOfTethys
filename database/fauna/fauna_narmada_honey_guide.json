@@ -1,0 +1,19 @@
+{
+  "id": "fauna_narmada_honey_guide",
+  "type": "fauna",
+  "name": "Narmada Honey-Guide",
+  "scientific": "Indicator narmadensis",
+  "region": "narmada-vindhya",
+  "biomes": [
+    "hills",
+    "mountains"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A small bird that has a symbiotic relationship with humans, leading them to honey-goliath nests in exchange for wax.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "clever"
+}

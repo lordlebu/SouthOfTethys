@@ -1,0 +1,19 @@
+{
+  "id": "fauna_stealth_patterned_theropod",
+  "type": "fauna",
+  "name": "Stealth-Patterned Theropod",
+  "scientific": "Sylvianus occultus",
+  "region": "shattered-sea-mappa-mundi",
+  "biomes": [
+    "forest"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A color-changing subspecies of Sylvian that mimics the jungle foliage, allowing silent ambush in the dense canopy.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "fearsome",
+  "sentient": true
+}

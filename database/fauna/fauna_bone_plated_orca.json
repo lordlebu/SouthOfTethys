@@ -1,0 +1,18 @@
+{
+  "id": "fauna_bone_plated_orca",
+  "type": "fauna",
+  "name": "Bone-Plated Orca",
+  "scientific": "Orcinus osteoplax",
+  "region": "shattered-sea-mappa-mundi",
+  "biomes": [
+    "sea"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A highly aggressive, predatory Tethyan toothed whale with thick bony armor plates protecting its skull and dorsal ridge.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "fearsome"
+}

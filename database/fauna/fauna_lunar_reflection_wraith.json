@@ -1,0 +1,16 @@
+{
+  "id": "fauna_lunar_reflection_wraith",
+  "type": "fauna",
+  "name": "Lunar-Reflection Wraith",
+  "scientific": "Māyā-born spectral",
+  "region": "asura-conjurations",
+  "biomes": [],
+  "placement": "lore",
+  "rarity": "mythic",
+  "journal_prompt": "An incorporeal, tactile illusion manifested by lunar radiation refracting on the Great Bath's water, haunting lonely travelers.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "uncanny"
+}

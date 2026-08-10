@@ -1,0 +1,18 @@
+{
+  "id": "fauna_hourglass_centipede",
+  "type": "fauna",
+  "name": "Hourglass Centipede",
+  "scientific": "Scolopendra arenaria",
+  "region": "gedrosian-taklamakan",
+  "biomes": [
+    "desert"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A multi-legged, predatory invertebrate with yellow and brown bands, hunting spiders and small lizards in sand crevices.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "fearsome"
+}

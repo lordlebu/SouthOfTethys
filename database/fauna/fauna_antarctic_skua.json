@@ -1,0 +1,18 @@
+{
+  "id": "fauna_antarctic_skua",
+  "type": "fauna",
+  "name": "Antarctic Skua",
+  "scientific": "Catharacta antarctica",
+  "region": "ganges-lava-sea",
+  "biomes": [
+    "mountains"
+  ],
+  "placement": "encounter",
+  "rarity": "rare",
+  "journal_prompt": "A fierce, scavenging seabird that nests near the glacial bays, stealing fish from seals and other birds.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

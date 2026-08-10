@@ -1,0 +1,18 @@
+{
+  "id": "fauna_shambala_ice_pike",
+  "type": "fauna",
+  "name": "Shambala Ice-Pike",
+  "scientific": "Esox shambala",
+  "region": "ganges-lava-sea",
+  "biomes": [
+    "mountains"
+  ],
+  "placement": "encounter",
+  "rarity": "rare",
+  "journal_prompt": "A predatory, crystal-scaled fish of the frozen mountain lakes, specializing in hunting frost-whisker carp near glacier edges.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "fearsome"
+}

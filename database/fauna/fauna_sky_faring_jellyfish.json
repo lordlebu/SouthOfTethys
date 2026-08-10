@@ -1,0 +1,16 @@
+{
+  "id": "fauna_sky_faring_jellyfish",
+  "type": "fauna",
+  "name": "Sky-Faring Jellyfish",
+  "scientific": "Aurelia caelia",
+  "region": "tethys-sky-routes",
+  "biomes": [],
+  "placement": "lore",
+  "rarity": "rare",
+  "journal_prompt": "An airborne, translucent organism that drifts on wind currents, filtering high-altitude plankton with stinging tentacles.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "graceful"
+}

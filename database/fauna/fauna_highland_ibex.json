@@ -1,0 +1,18 @@
+{
+  "id": "fauna_highland_ibex",
+  "type": "fauna",
+  "name": "Highland Ibex",
+  "scientific": "Capra ibex gedrosia",
+  "region": "gedrosian-taklamakan",
+  "biomes": [
+    "desert"
+  ],
+  "placement": "encounter",
+  "rarity": "rare",
+  "journal_prompt": "A wild mountain goat with massive, curved horns that navigates the rocky desert crags bordering the Taklamakan.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

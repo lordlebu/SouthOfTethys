@@ -1,0 +1,16 @@
+{
+  "id": "fauna_ember_scattering_sprite",
+  "type": "fauna",
+  "name": "Ember-Scattering Sprite",
+  "scientific": "Māyā-born scintilla minor",
+  "region": "asura-conjurations",
+  "biomes": [],
+  "placement": "lore",
+  "rarity": "mythic",
+  "journal_prompt": "A small, fleeting spirit born from ritual embers that floats through the air, causing minor fires when displeased.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "graceful"
+}

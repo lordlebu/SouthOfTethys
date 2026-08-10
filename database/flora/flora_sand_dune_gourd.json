@@ -1,0 +1,17 @@
+{
+  "id": "flora_sand_dune_gourd",
+  "type": "flora",
+  "name": "Sand-Dune Gourd",
+  "scientific": "Citrullus arenarius",
+  "region": "gedrosian-taklamakan",
+  "biomes": [
+    "desert"
+  ],
+  "placement": "flavour",
+  "rarity": "common",
+  "journal_prompt": "A trailing vine with thick, waxy leaves and water-filled, hollow gourds that thrive in the deepest desert sands.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ]
+}

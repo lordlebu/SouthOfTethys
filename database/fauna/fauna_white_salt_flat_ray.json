@@ -1,0 +1,18 @@
+{
+  "id": "fauna_white_salt_flat_ray",
+  "type": "fauna",
+  "name": "White Salt-Flat Ray",
+  "scientific": "Sarasvatimanta alba",
+  "region": "gedrosian-taklamakan",
+  "biomes": [
+    "desert"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A pale, chalk-white subspecies of Beedu that hunts over the blinding salt flats, reflecting the desert glare to remain invisible.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "fearsome"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "fauna_sea_scorpion_queen",
+  "type": "fauna",
+  "name": "Sea Scorpion Queen",
+  "scientific": "Shrīmā mimetica",
+  "region": "shattered-sea-mappa-mundi",
+  "biomes": [
+    "sea"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A predatory Eurypterid of the southern lagoons that has undergone mimetic-devolvement, resembling human women to lure prey.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "fearsome"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "fauna_gedrosian_desert_fox",
+  "type": "fauna",
+  "name": "Gedrosian Desert Fox",
+  "scientific": "Vulpes gedrosiana",
+  "region": "gedrosian-taklamakan",
+  "biomes": [
+    "desert"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A small fox with oversized ears that dissipate heat, hunting jerboa-rats in the cool desert nights.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "fearsome"
+}

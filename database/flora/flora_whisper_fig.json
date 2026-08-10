@@ -3,9 +3,19 @@
   "type": "flora",
   "name": "Whisper-Fig",
   "scientific": "Ficus susurrans",
-  "habitats": ["region_saraswati_delta", "canopy"],
-  "uses": ["shade", "omen_reading"],
+  "habitats": [
+    "region_saraswati_delta",
+    "canopy"
+  ],
+  "uses": [
+    "shade",
+    "omen_reading"
+  ],
   "notes": "Broad-leafed fig whose hollow trunks carry wind as a low murmur. Delta dwellers treat unusual patterns of sound as weather or spirit omens.",
   "canon": "primary",
-  "sources": ["SouthOfTethys.txt"]
+  "sources": [
+    "SouthOfTethys.txt"
+  ],
+  "biomes": [],
+  "placement": "lore"
 }

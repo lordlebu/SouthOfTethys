@@ -1,0 +1,18 @@
+{
+  "id": "fauna_tethys_pelican",
+  "type": "fauna",
+  "name": "Tethys Pelican",
+  "scientific": "Pelecanus tethys",
+  "region": "saraswati-godavari-deltas",
+  "biomes": [
+    "coast"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A large-billed bird with a throat pouch used to scoop up schooling fish from the coastal shallows.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

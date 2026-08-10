@@ -1,0 +1,18 @@
+{
+  "id": "fauna_lothal_shell_cracker",
+  "type": "fauna",
+  "name": "Lothal Shell-Cracker",
+  "scientific": "Carcinus lothalensis",
+  "region": "saraswati-godavari-deltas",
+  "biomes": [
+    "coast"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A crab with one oversized, stone-hard claw used to crush estuary mollusks, highly prized by local fishers.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

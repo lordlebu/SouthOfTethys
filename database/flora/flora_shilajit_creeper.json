@@ -3,9 +3,25 @@
   "type": "flora",
   "name": "Shilajit Creeper",
   "scientific": "Cissus shilajita",
-  "habitats": ["region_narmada_plateau"],
-  "uses": ["tonic", "mineral_binder"],
+  "habitats": [
+    "region_narmada_plateau"
+  ],
+  "uses": [
+    "tonic",
+    "mineral_binder"
+  ],
   "notes": "Rock-clinging vine that concentrates bituminous minerals from cliff seeps. Pressed sap mixed into fortifying tonics; also used to seal pottery.",
   "canon": "primary",
-  "sources": ["SouthOfTethys.txt"]
+  "sources": [
+    "SouthOfTethys.txt",
+    "docs/bestiary.md"
+  ],
+  "region": "narmada-vindhya",
+  "biomes": [
+    "hills",
+    "mountains"
+  ],
+  "placement": "flavour",
+  "rarity": "common",
+  "journal_prompt": "A trailing, primitive moss-like plant that grows near mineral fissures, absorbing pure bitumen and organic compounds from the rock."
 }

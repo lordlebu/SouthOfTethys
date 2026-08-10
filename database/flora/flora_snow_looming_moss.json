@@ -1,0 +1,17 @@
+{
+  "id": "flora_snow_looming_moss",
+  "type": "flora",
+  "name": "Snow-Looming Moss",
+  "scientific": "Bryum glaciale",
+  "region": "ganges-lava-sea",
+  "biomes": [
+    "mountains"
+  ],
+  "placement": "flavour",
+  "rarity": "rare",
+  "journal_prompt": "A dense, cushioning moss that thrives on glacier-bound stones, providing insulation for snow-hare nests.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ]
+}

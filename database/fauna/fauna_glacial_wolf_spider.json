@@ -1,0 +1,18 @@
+{
+  "id": "fauna_glacial_wolf_spider",
+  "type": "fauna",
+  "name": "Glacial Wolf-Spider",
+  "scientific": "Lycosa glacialis",
+  "region": "ganges-lava-sea",
+  "biomes": [
+    "mountains"
+  ],
+  "placement": "encounter",
+  "rarity": "rare",
+  "journal_prompt": "A large, furry spider that hunts snow-hares and small rodents near the ice wall, its body containing high sugar-antifreeze.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "fearsome"
+}

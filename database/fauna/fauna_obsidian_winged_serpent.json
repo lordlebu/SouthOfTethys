@@ -1,0 +1,18 @@
+{
+  "id": "fauna_obsidian_winged_serpent",
+  "type": "fauna",
+  "name": "Obsidian-Winged Serpent",
+  "scientific": "Serpens obsidianus",
+  "region": "asura-conjurations",
+  "biomes": [
+    "mountains"
+  ],
+  "placement": "lore",
+  "rarity": "mythic",
+  "journal_prompt": "A giant shape-shifting stone serpent with razor-sharp wings of volcanic glass, serving as the progenitor of the Naga clan.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "fearsome"
+}

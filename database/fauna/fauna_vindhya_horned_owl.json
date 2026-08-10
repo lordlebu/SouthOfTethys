@@ -1,0 +1,18 @@
+{
+  "id": "fauna_vindhya_horned_owl",
+  "type": "fauna",
+  "name": "Vindhya Horned Owl",
+  "scientific": "Bubo vindhyensis",
+  "region": "narmada-vindhya",
+  "biomes": [
+    "forest"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A nocturnal predator with tufted feathers resembling horns, hunting tree-octopuses and small rodents in the canopy.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "fearsome"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "fauna_glass_scaled_viper",
+  "type": "fauna",
+  "name": "Glass-Scaled Viper",
+  "scientific": "Vipera vitrea",
+  "region": "gedrosian-taklamakan",
+  "biomes": [
+    "desert"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "An Hourglass Desert serpent whose scales mimic the shimmering, temporal-fractured sands, delivering a painful, dehydrating bite.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "luminous"
+}

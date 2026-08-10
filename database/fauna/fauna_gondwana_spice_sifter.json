@@ -1,0 +1,18 @@
+{
+  "id": "fauna_gondwana_spice_sifter",
+  "type": "fauna",
+  "name": "Gondwana Spice-Sifter",
+  "scientific": "Peneus gondwanensis",
+  "region": "narmada-vindhya",
+  "biomes": [
+    "mountains"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A freshwater mountain crustacean that lives in the mineral-rich volcanic streams, sifting through golden spice-sand for organic matter.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

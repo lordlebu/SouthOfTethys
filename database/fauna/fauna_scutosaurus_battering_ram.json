@@ -1,0 +1,16 @@
+{
+  "id": "fauna_scutosaurus_battering_ram",
+  "type": "fauna",
+  "name": "Scutosaurus Battering-Ram",
+  "scientific": "Scutosaurus titan",
+  "region": "asura-conjurations",
+  "biomes": [],
+  "placement": "lore",
+  "rarity": "mythic",
+  "journal_prompt": "A massive scutosaur mutated with an bone-hard forehead plate, used to break down defensive palisades.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "uncanny"
+}

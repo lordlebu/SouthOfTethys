@@ -1,0 +1,18 @@
+{
+  "id": "fauna_saraswati_horned_frog",
+  "type": "fauna",
+  "name": "Saraswati Horned Frog",
+  "scientific": "Ceratophrys sarasvati",
+  "region": "saraswati-godavari-deltas",
+  "biomes": [
+    "forest"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A large-mouthed, sit-and-wait predator that burrows into leaf litter, its horns mimicking fallen twigs.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "fearsome"
+}

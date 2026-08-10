@@ -1,0 +1,19 @@
+{
+  "id": "fauna_painted_deer",
+  "type": "fauna",
+  "name": "Painted Deer",
+  "scientific": null,
+  "region": "prototype-starters",
+  "biomes": [
+    "plains",
+    "forest"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A small deer watches from the grass, its coat patterned like fallen petals.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "gentle"
+}

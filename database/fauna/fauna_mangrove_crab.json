@@ -4,9 +4,19 @@
   "name": "Mangrove Crab",
   "scientific": "Scylla bonewoodi",
   "diet": "Omnivore",
-  "habitats": ["region_saraswati_delta", "coastal"],
-  "behaviour": ["burrower", "nocturnal"],
+  "habitats": [
+    "region_saraswati_delta",
+    "coastal"
+  ],
+  "behaviour": [
+    "burrower",
+    "nocturnal"
+  ],
   "notes": "Heavy crab among Bonewood and Ghost Mangrove roots. Staple protein for marsh camps; shells used as scoops and charms.",
   "canon": "primary",
-  "sources": ["SouthOfTethys.txt"]
+  "sources": [
+    "SouthOfTethys.txt"
+  ],
+  "biomes": [],
+  "placement": "lore"
 }

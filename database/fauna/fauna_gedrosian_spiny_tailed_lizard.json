@@ -1,0 +1,18 @@
+{
+  "id": "fauna_gedrosian_spiny_tailed_lizard",
+  "type": "fauna",
+  "name": "Gedrosian Spiny-tailed Lizard",
+  "scientific": "Saara gedrosia",
+  "region": "saraswati-godavari-deltas",
+  "biomes": [
+    "desert"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A vegetarian lizard that forms large colonies in the sand, using its hard, spiked tail to block burrow entrances.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "patient"
+}

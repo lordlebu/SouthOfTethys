@@ -4,9 +4,18 @@
   "name": "Desert Fox",
   "scientific": "Vulpes gedrosiana",
   "diet": "Omnivore",
-  "habitats": ["region_gedrosian_desert"],
-  "behaviour": ["nocturnal", "scavenger"],
+  "habitats": [
+    "region_gedrosian_desert"
+  ],
+  "behaviour": [
+    "nocturnal",
+    "scavenger"
+  ],
   "notes": "Large-eared fox of the Gedrosian night. Follows caravans for scraps; omen animal in Tushara camp lore.",
   "canon": "primary",
-  "sources": ["SouthOfTethys.txt"]
+  "sources": [
+    "SouthOfTethys.txt"
+  ],
+  "biomes": [],
+  "placement": "lore"
 }

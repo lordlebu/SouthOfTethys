@@ -1,0 +1,19 @@
+{
+  "id": "fauna_delta_fiddler_crab",
+  "type": "fauna",
+  "name": "Delta Fiddler-Crab",
+  "scientific": "Uca sarasvati",
+  "region": "saraswati-godavari-deltas",
+  "biomes": [
+    "wetland",
+    "river"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A small mud-crab with a brilliant blue shell, the males waving an oversized white claw to attract mates.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

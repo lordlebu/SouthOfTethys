@@ -1,0 +1,17 @@
+{
+  "id": "flora_crimson_spice_root",
+  "type": "flora",
+  "name": "Crimson Spice-Root",
+  "scientific": "Curcuma rubra",
+  "region": "gedrosian-taklamakan",
+  "biomes": [
+    "desert"
+  ],
+  "placement": "flavour",
+  "rarity": "common",
+  "journal_prompt": "A wild turmeric variant with bright red roots that has mutated under heavy mineral runoff, used as a warming spice and dye.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ]
+}

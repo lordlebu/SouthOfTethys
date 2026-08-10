@@ -1,0 +1,18 @@
+{
+  "id": "fauna_glacial_snow_hare",
+  "type": "fauna",
+  "name": "Glacial Snow-Hare",
+  "scientific": "Lepus glacialis",
+  "region": "ganges-lava-sea",
+  "biomes": [
+    "mountains"
+  ],
+  "placement": "encounter",
+  "rarity": "rare",
+  "journal_prompt": "A pure white, thick-furred hare that lives near the Antarctic ice wall, its feet padded like snowshoes to move over glaciers.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

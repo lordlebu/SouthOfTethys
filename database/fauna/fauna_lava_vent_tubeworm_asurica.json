@@ -1,0 +1,18 @@
+{
+  "id": "fauna_lava_vent_tubeworm_asurica",
+  "type": "fauna",
+  "name": "Lava-Vent Tubeworm",
+  "scientific": "Riftia asurica",
+  "region": "ganges-lava-sea",
+  "biomes": [
+    "mountains"
+  ],
+  "placement": "encounter",
+  "rarity": "rare",
+  "journal_prompt": "A giant worm species that grows near active underwater vents, forming dense crimson-tipped clusters.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

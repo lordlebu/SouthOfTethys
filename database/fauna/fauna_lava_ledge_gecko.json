@@ -1,0 +1,19 @@
+{
+  "id": "fauna_lava_ledge_gecko",
+  "type": "fauna",
+  "name": "Lava-Ledge Gecko",
+  "scientific": "Gekko vulcanus",
+  "region": "narmada-vindhya",
+  "biomes": [
+    "hills",
+    "mountains"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A large gecko with sticky, heat-resistant pads that enable it to crawl directly over hot, cooled-down basalt flows.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

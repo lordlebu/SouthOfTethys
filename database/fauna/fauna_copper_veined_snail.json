@@ -1,0 +1,18 @@
+{
+  "id": "fauna_copper_veined_snail",
+  "type": "fauna",
+  "name": "Copper-Veined Snail",
+  "scientific": "Chrysomallon chalceus",
+  "region": "ganges-lava-sea",
+  "biomes": [
+    "mountains"
+  ],
+  "placement": "encounter",
+  "rarity": "rare",
+  "journal_prompt": "An extremophile gastropod of the lava lake, fusing copper and volcanic ore into a heavy, metallic shell.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

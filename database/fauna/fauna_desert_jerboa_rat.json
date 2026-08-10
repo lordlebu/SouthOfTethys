@@ -1,0 +1,18 @@
+{
+  "id": "fauna_desert_jerboa_rat",
+  "type": "fauna",
+  "name": "Desert Jerboa-Rat",
+  "scientific": "Dipodomys deserti",
+  "region": "gedrosian-taklamakan",
+  "biomes": [
+    "desert"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A tiny, jumping rodent with long hind legs that avoids the searing day heat by burrowing deep beneath the sand dunes.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "patient"
+}

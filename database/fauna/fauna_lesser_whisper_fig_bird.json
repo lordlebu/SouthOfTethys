@@ -1,0 +1,18 @@
+{
+  "id": "fauna_lesser_whisper_fig_bird",
+  "type": "fauna",
+  "name": "Lesser Whisper-Fig Bird",
+  "scientific": "Ficusophila minor",
+  "region": "narmada-vindhya",
+  "biomes": [
+    "forest"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A small, dull-colored bird that feeds exclusively on the fruit of the Bhuta-Kāna fig, nesting deep within its silver canopy.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

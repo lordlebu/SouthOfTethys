@@ -1,0 +1,18 @@
+{
+  "id": "fauna_scythian_wild_ass",
+  "type": "fauna",
+  "name": "Scythian Wild Ass",
+  "scientific": "Equus hemionus scythicus",
+  "region": "saraswati-godavari-deltas",
+  "biomes": [
+    "plains"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A fast, resilient wild equine of the northern steppe deserts, highly valued by nomads for its stamina.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "flora_whispering_blood_orchid",
+  "type": "flora",
+  "name": "Whispering Blood-Orchid",
+  "scientific": "Orchis asurica",
+  "region": "asura-conjurations",
+  "biomes": [],
+  "placement": "lore",
+  "rarity": "mythic",
+  "journal_prompt": "A beautiful but unsettling orchid with fleshy, lip-like petals that whisper soft, mimicry-chime sounds to lure insects.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ]
+}

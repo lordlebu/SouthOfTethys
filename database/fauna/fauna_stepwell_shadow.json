@@ -1,0 +1,18 @@
+{
+  "id": "fauna_stepwell_shadow",
+  "type": "fauna",
+  "name": "Stepwell Shadow",
+  "scientific": "Māyā-born umbra",
+  "region": "asura-conjurations",
+  "biomes": [
+    "river"
+  ],
+  "placement": "lore",
+  "rarity": "mythic",
+  "journal_prompt": "A shadow-lover variant that dwells in deep stepwells, wrapping around victims and pulling them into the dark waters.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "uncanny"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "fauna_silver_banded_sea_snake",
+  "type": "fauna",
+  "name": "Silver-Banded Sea-Snake",
+  "scientific": "Hydrophis argentum",
+  "region": "saraswati-godavari-deltas",
+  "biomes": [
+    "river"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A highly venomous sea snake with black and silver bands, hunting stepwell koi near coastal lagoons.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "fearsome"
+}

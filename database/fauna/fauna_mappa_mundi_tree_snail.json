@@ -1,0 +1,18 @@
+{
+  "id": "fauna_mappa_mundi_tree_snail",
+  "type": "fauna",
+  "name": "Mappa Mundi Tree-Snail",
+  "scientific": "Helix sylvanica",
+  "region": "shattered-sea-mappa-mundi",
+  "biomes": [
+    "forest"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A colorful land snail with a spiraled shell, feeding on moss and lichens growing on jungle trunks.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "fauna_abyssal_blue_leviathan",
+  "type": "fauna",
+  "name": "Abyssal Blue Leviathan",
+  "scientific": "Balaenoptera abyssalis",
+  "region": "shattered-sea-mappa-mundi",
+  "biomes": [
+    "sea"
+  ],
+  "placement": "encounter",
+  "rarity": "mythic",
+  "journal_prompt": "A colossal baleen whale of the deep Tethys Sea, whose thick hide and bone plate are harvested for engineering maritime vessels.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

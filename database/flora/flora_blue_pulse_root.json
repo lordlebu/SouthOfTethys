@@ -1,0 +1,15 @@
+{
+  "id": "flora_blue_pulse_root",
+  "type": "flora",
+  "name": "Blue Pulse-Root",
+  "scientific": "Nirnroot caerulea",
+  "region": "tethys-sky-routes",
+  "biomes": [],
+  "placement": "lore",
+  "rarity": "rare",
+  "journal_prompt": "A glowing plant species that absorbs bioluminescent trace minerals from the airborne soil, emitting a soft blue light.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ]
+}

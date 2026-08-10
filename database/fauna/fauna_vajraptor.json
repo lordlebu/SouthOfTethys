@@ -4,9 +4,28 @@
   "name": "Vajraptor",
   "scientific": "Vajraptor territorialis",
   "diet": "Carnivore",
-  "habitats": ["canopy", "region_saraswati_delta"],
-  "behaviour": ["social", "territorial", "problem_solving"],
+  "habitats": [
+    "canopy",
+    "region_saraswati_delta"
+  ],
+  "behaviour": [
+    "social",
+    "territorial",
+    "problem_solving"
+  ],
   "notes": "Intelligent theropod bird with colorful plumage. Builds hidden canopy nests.",
   "canon": "primary",
-  "sources": ["SouthOfTethys.txt"]
+  "sources": [
+    "SouthOfTethys.txt",
+    "docs/bestiary.md"
+  ],
+  "region": "saraswati-godavari-deltas",
+  "biomes": [
+    "forest"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "An intelligent, social, and territorial theropod bird with colorful plumage and excellent problem-solving skills, building hidden canopy nests.",
+  "mood": "clever",
+  "sentient": true
 }

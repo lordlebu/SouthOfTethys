@@ -1,0 +1,18 @@
+{
+  "id": "fauna_serene_brown_ammonite",
+  "type": "fauna",
+  "name": "Serene Brown Ammonite",
+  "scientific": "Ammonites pacificus",
+  "region": "ganges-lava-sea",
+  "biomes": [
+    "mountains"
+  ],
+  "placement": "encounter",
+  "rarity": "rare",
+  "journal_prompt": "A giant, peaceful nautiloid with an earthy, wood-patterned shell that drifts calmly through the steaming, boiling water zones.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "graceful"
+}

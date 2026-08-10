@@ -1,0 +1,19 @@
+{
+  "id": "fauna_iridescent_lothal_silvanus",
+  "type": "fauna",
+  "name": "Iridescent Lothal Silvanus",
+  "scientific": "Silvanus pictus",
+  "region": "saraswati-godavari-deltas",
+  "biomes": [
+    "wetland"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A winged, bird-like dinosaurid with shimmering plumage that nests in the tall reed beds outside the Sylvian Gate of Lothal.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "luminous",
+  "sentient": true
+}

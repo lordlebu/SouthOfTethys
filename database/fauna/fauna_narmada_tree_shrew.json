@@ -1,0 +1,18 @@
+{
+  "id": "fauna_narmada_tree_shrew",
+  "type": "fauna",
+  "name": "Narmada Tree-Shrew",
+  "scientific": "Anathana narmadensis",
+  "region": "narmada-vindhya",
+  "biomes": [
+    "forest"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "An agile, insectivorous mammal that climbs the lower branches of ash-banyan trees, active during daylight.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "playful"
+}

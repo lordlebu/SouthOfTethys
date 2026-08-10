@@ -1,0 +1,18 @@
+{
+  "id": "fauna_tethys_leviathan_calf",
+  "type": "fauna",
+  "name": "Tethys Leviathan Calf",
+  "scientific": "Balaenoptera minor",
+  "region": "shattered-sea-mappa-mundi",
+  "biomes": [
+    "sea"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A young, playful whale that travels in the warm coastal shallows, protected by the pod's bone-plated matriarchs.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "playful"
+}

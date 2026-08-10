@@ -1,0 +1,18 @@
+{
+  "id": "fauna_flying_fish_of_the_tethys",
+  "type": "fauna",
+  "name": "Flying-Fish of the Tethys",
+  "scientific": "Exocoetus tethys",
+  "region": "shattered-sea-mappa-mundi",
+  "biomes": [
+    "sea"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A small, schooling fish that uses enlarged pectoral fins to glide over the ocean waves, escaping predatory toothed whales.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "fearsome"
+}

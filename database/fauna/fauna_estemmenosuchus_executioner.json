@@ -1,0 +1,16 @@
+{
+  "id": "fauna_estemmenosuchus_executioner",
+  "type": "fauna",
+  "name": "Estemmenosuchus Executioner",
+  "scientific": "Estemmenosuchus asuricus",
+  "region": "asura-conjurations",
+  "biomes": [],
+  "placement": "lore",
+  "rarity": "mythic",
+  "journal_prompt": "A massive, armored floodplain omnivore mutated with double jaw-strength, used for public execution rituals in Naraka.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "uncanny"
+}
