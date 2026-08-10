@@ -17,14 +17,20 @@ REPO_DIR=. CHROMA_PERSIST_DIR=storage/chroma python services/chroma/index_chroma
 pip install -r services/api/requirements.txt
 CHROMA_PERSIST_DIR=storage/chroma uvicorn services.api.main:app --port 8000
 
-# 3. the game
+# 3. the game — point it at the service, which is off by default
 cd ../4000BCESaraswathy
-npm run dev        # http://localhost:4173/?seed=lothal
+cp .env.example .env.local     # then uncomment VITE_CANON_API
+npm run dev                    # http://localhost:4173/?seed=lothal
 ```
 
 Walk a few tiles. An **Ask the canon** panel appears in the sidebar; it retrieves the canon
-entities for the tile you are standing on. Without the service, the panel does not render
-at all.
+entities for the tile you are standing on.
+
+`VITE_CANON_API` is what switches this on, and it is deliberately unset by default: without
+it the game makes no network calls at all and the panel never renders. That is not only the
+shipping default but the one CI runs — an earlier version defaulted to `localhost:8000` and
+probed on every page load, and the refused request wrote a console error that failed two
+browser specs.
 
 ## Endpoints
 
