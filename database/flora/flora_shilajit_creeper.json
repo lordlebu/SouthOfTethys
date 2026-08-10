@@ -23,5 +23,6 @@
   ],
   "placement": "flavour",
   "rarity": "common",
-  "journal_prompt": "A trailing, primitive moss-like plant that grows near mineral fissures, absorbing pure bitumen and organic compounds from the rock."
+  "journal_prompt": "A trailing, primitive moss-like plant that grows near mineral fissures, absorbing pure bitumen and organic compounds from the rock.",
+  "source_index": 18
 }

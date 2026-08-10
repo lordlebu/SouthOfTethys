@@ -25,5 +25,6 @@
   "placement": "encounter",
   "rarity": "mythic",
   "journal_prompt": "A colossal mountain eagle with obsidian-tipped feathers, carrying small goats and primates to its nest on the high volcanic ledges.",
-  "mood": "watchful"
+  "mood": "watchful",
+  "source_index": 67
 }

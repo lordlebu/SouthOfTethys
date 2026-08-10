@@ -28,5 +28,6 @@
   "placement": "encounter",
   "rarity": "common",
   "journal_prompt": "A highly intelligent, leopard-like feline of the wetlands that has evolved human-like eye placement and ocular mimicry to stalk its prey.",
-  "mood": "clever"
+  "mood": "clever",
+  "source_index": 10
 }

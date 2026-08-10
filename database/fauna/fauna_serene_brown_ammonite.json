@@ -14,5 +14,6 @@
   "sources": [
     "docs/bestiary.md"
   ],
-  "mood": "graceful"
+  "mood": "graceful",
+  "source_index": 150
 }

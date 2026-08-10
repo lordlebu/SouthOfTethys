@@ -29,5 +29,6 @@
   "rarity": "common",
   "journal_prompt": "A Cognitavi navigator bird subspecies that specializes in reading weather patterns, guiding wisdom-seekers and ships safely through the Tethys monsoons.",
   "mood": "clever",
-  "sentient": true
+  "sentient": true,
+  "source_index": 16
 }

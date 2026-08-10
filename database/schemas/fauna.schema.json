@@ -2,21 +2,73 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Fauna",
   "type": "object",
-  "required": ["id", "type", "name"],
+  "required": [
+    "id",
+    "type",
+    "name"
+  ],
   "properties": {
-    "id": { "type": "string", "pattern": "^fauna_[a-z0-9_]+$" },
-    "type": { "const": "fauna" },
-    "name": { "type": "string" },
-    "scientific": { "type": ["string", "null"] },
-    "taxonomy": { "type": "object" },
-    "diet": { "type": ["string", "null"] },
-    "habitats": { "type": "array", "items": { "type": "string" } },
-    "behaviour": { "type": "array", "items": { "type": "string" } },
-    "related_species": { "type": "array", "items": { "type": "string" } },
-    "notes": { "type": "string" },
-    "canon": { "type": "string", "enum": ["primary", "secondary", "draft"], "default": "primary" },
-    "sources": { "type": "array", "items": { "type": "string" } },
-
+    "id": {
+      "type": "string",
+      "pattern": "^fauna_[a-z0-9_]+$"
+    },
+    "type": {
+      "const": "fauna"
+    },
+    "name": {
+      "type": "string"
+    },
+    "scientific": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "taxonomy": {
+      "type": "object"
+    },
+    "diet": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "habitats": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "behaviour": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "related_species": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "notes": {
+      "type": "string"
+    },
+    "canon": {
+      "type": "string",
+      "enum": [
+        "primary",
+        "secondary",
+        "draft"
+      ],
+      "default": "primary"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
     "journal_prompt": {
       "type": "string",
       "description": "Player-facing prose read in the travel journal. Distinct from `notes`: `notes` is a reference fact for the canon reader, `journal_prompt` is the sentence the player sees. Exported as `journalPrompt`."
@@ -40,18 +92,53 @@
       "description": "Tile biomes this species may be placed in. Empty means it is never placed.",
       "items": {
         "type": "string",
-        "enum": ["sea", "coast", "plains", "forest", "wetland", "hills", "mountains", "desert", "river", "settlement", "landmark"]
+        "enum": [
+          "sea",
+          "coast",
+          "plains",
+          "forest",
+          "wetland",
+          "hills",
+          "mountains",
+          "desert",
+          "river",
+          "settlement",
+          "landmark"
+        ]
       }
     },
     "placement": {
       "type": "string",
-      "enum": ["encounter", "flavour", "lore"],
+      "enum": [
+        "encounter",
+        "flavour",
+        "lore"
+      ],
       "description": "`encounter` is met in play; `lore` is authored but never placed. Untagged imports default to `lore` so nothing reaches the encounter table unreviewed."
     },
-    "rarity": { "type": "string", "enum": ["common", "rare", "mythic"] },
+    "rarity": {
+      "type": "string",
+      "enum": [
+        "common",
+        "rare",
+        "mythic"
+      ]
+    },
     "mood": {
       "type": "string",
-      "enum": ["clever", "curious", "fearsome", "gentle", "graceful", "luminous", "mythic", "patient", "playful", "uncanny", "watchful"],
+      "enum": [
+        "clever",
+        "curious",
+        "fearsome",
+        "gentle",
+        "graceful",
+        "luminous",
+        "mythic",
+        "patient",
+        "playful",
+        "uncanny",
+        "watchful"
+      ],
       "description": "Drives journal tone. Fauna only."
     },
     "sentient": {
@@ -61,8 +148,15 @@
     },
     "epochs": {
       "type": "array",
-      "items": { "type": "string" },
+      "items": {
+        "type": "string"
+      },
       "description": "Epoch ids from database/timeline/epochs.json. Absent means present in all epochs."
+    },
+    "source_index": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Position in the authored bestiary sequence (prototype starters first for fauna). Array order decides which species pickFor lands on for a tile, so this is part of the seed contract, not presentation."
     }
   },
   "additionalProperties": true

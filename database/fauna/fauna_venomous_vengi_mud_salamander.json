@@ -14,5 +14,6 @@
   "sources": [
     "docs/bestiary.md"
   ],
-  "mood": "fearsome"
+  "mood": "fearsome",
+  "source_index": 7
 }

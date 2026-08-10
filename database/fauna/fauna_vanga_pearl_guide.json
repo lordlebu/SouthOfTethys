@@ -30,5 +30,6 @@
   "rarity": "rare",
   "journal_prompt": "An elite subspecies of the hyper-intelligent Cognitavi navigator birds that aids Tuli seafarers in locating deep-sea oyster beds.",
   "mood": "clever",
-  "sentient": true
+  "sentient": true,
+  "source_index": 15
 }

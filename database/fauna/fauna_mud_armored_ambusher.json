@@ -27,5 +27,6 @@
   "placement": "encounter",
   "rarity": "common",
   "journal_prompt": "A baurusuchid that cakes itself in river mud, keeping its body temperature low and hiding from terrestrial prey.",
-  "mood": "fearsome"
+  "mood": "fearsome",
+  "source_index": 20
 }

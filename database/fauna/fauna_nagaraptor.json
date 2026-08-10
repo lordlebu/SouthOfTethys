@@ -27,5 +27,6 @@
   "rarity": "common",
   "journal_prompt": "Feathered velociraptor clans that have formed a complex diapsid scale-based civilization, using earthworks and moats to defend their nests.",
   "mood": "clever",
-  "sentient": true
+  "sentient": true,
+  "source_index": 12
 }

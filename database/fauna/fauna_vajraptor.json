@@ -27,5 +27,6 @@
   "rarity": "common",
   "journal_prompt": "An intelligent, social, and territorial theropod bird with colorful plumage and excellent problem-solving skills, building hidden canopy nests.",
   "mood": "clever",
-  "sentient": true
+  "sentient": true,
+  "source_index": 14
 }

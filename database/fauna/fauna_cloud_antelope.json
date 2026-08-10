@@ -16,5 +16,6 @@
   "sources": [
     "docs/bestiary.md"
   ],
-  "mood": "mythic"
+  "mood": "mythic",
+  "source_index": 5
 }
