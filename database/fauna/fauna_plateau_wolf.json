@@ -17,6 +17,13 @@
   "sources": [
     "SouthOfTethys.txt"
   ],
-  "biomes": [],
-  "placement": "lore"
+  "biomes": [
+    "hills",
+    "mountains",
+    "plains"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A lean wolf crosses the open ground at a trot. It is not hunting you; it is following a line its clan has walked for generations.",
+  "mood": "watchful"
 }

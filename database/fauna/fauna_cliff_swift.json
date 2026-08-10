@@ -16,6 +16,13 @@
   "sources": [
     "SouthOfTethys.txt"
   ],
-  "biomes": [],
-  "placement": "lore"
+  "biomes": [
+    "hills",
+    "mountains",
+    "plains"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "Swifts cut the air above the grass in long scything arcs, too fast to count.",
+  "mood": "watchful"
 }

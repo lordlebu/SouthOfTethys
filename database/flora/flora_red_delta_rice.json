@@ -15,6 +15,11 @@
   "sources": [
     "SouthOfTethys.txt"
   ],
-  "biomes": [],
-  "placement": "lore"
+  "biomes": [
+    "wetland",
+    "settlement"
+  ],
+  "placement": "flavour",
+  "rarity": "common",
+  "journal_prompt": "Red rice stands in flooded squares, the water between the stalks holding the whole sky."
 }

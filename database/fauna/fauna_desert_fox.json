@@ -16,6 +16,13 @@
   "sources": [
     "SouthOfTethys.txt"
   ],
-  "biomes": [],
-  "placement": "lore"
+  "biomes": [
+    "desert",
+    "plains",
+    "settlement"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A fox with enormous ears watches the road from a low dune, waiting to see whether anything falls off the caravan.",
+  "mood": "watchful"
 }

@@ -16,6 +16,13 @@
   "sources": [
     "SouthOfTethys.txt"
   ],
-  "biomes": [],
-  "placement": "lore"
+  "biomes": [
+    "desert",
+    "plains",
+    "settlement"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A single-humped camel chews sideways and regards you with the patience of an animal that has walked further than you have.",
+  "mood": "watchful"
 }

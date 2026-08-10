@@ -16,6 +16,13 @@
   "sources": [
     "SouthOfTethys.txt"
   ],
-  "biomes": [],
-  "placement": "lore"
+  "biomes": [
+    "wetland",
+    "river",
+    "coast"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A white egret stands in the shallows, folded like a closed umbrella, then slowly straightens.",
+  "mood": "watchful"
 }

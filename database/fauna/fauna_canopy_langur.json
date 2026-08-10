@@ -17,6 +17,12 @@
   "sources": [
     "SouthOfTethys.txt"
   ],
-  "biomes": [],
-  "placement": "lore"
+  "biomes": [
+    "forest",
+    "hills"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "Grey langurs move through the branches overhead, pausing to look down with long-tailed disapproval.",
+  "mood": "watchful"
 }

@@ -15,6 +15,11 @@
   "sources": [
     "SouthOfTethys.txt"
   ],
-  "biomes": [],
-  "placement": "lore"
+  "biomes": [
+    "plains",
+    "hills"
+  ],
+  "placement": "flavour",
+  "rarity": "common",
+  "journal_prompt": "Wild indigo, harsher than the garden kind, still good enough for dyers who cannot pay Lothal prices."
 }

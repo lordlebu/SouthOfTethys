@@ -16,6 +16,11 @@
   "sources": [
     "SouthOfTethys.txt"
   ],
-  "biomes": [],
-  "placement": "lore"
+  "biomes": [
+    "desert"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A skink pours itself into the dune and is gone, swimming under the surface like a fish.",
+  "mood": "watchful"
 }

@@ -17,6 +17,11 @@
   "sources": [
     "SouthOfTethys.txt"
   ],
-  "biomes": [],
-  "placement": "lore"
+  "biomes": [
+    "plains",
+    "hills"
+  ],
+  "placement": "flavour",
+  "rarity": "common",
+  "journal_prompt": "Mahua flowers drop through the night and are gathered before the sun gets to them."
 }

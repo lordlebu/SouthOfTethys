@@ -16,6 +16,13 @@
   "sources": [
     "SouthOfTethys.txt"
   ],
-  "biomes": [],
-  "placement": "lore"
+  "biomes": [
+    "wetland",
+    "coast",
+    "settlement"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A long monitor lizard noses along the fish-drying racks, unhurried, entirely certain nobody will stop it.",
+  "mood": "watchful"
 }

@@ -17,6 +17,13 @@
   "sources": [
     "SouthOfTethys.txt"
   ],
-  "biomes": [],
-  "placement": "lore"
+  "biomes": [
+    "coast",
+    "wetland",
+    "settlement"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A heavy crab sidles between the mangrove roots, one claw raised like a man carrying something awkward.",
+  "mood": "watchful"
 }

@@ -19,5 +19,6 @@
     "SouthOfTethys.txt"
   ],
   "biomes": [],
-  "placement": "lore"
+  "placement": "lore",
+  "sentient": true
 }

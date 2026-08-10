@@ -16,6 +16,11 @@
   "sources": [
     "SouthOfTethys.txt"
   ],
-  "biomes": [],
-  "placement": "lore"
+  "biomes": [
+    "desert"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A sidewinding track crosses the sand ahead of you, fresh, and ends where the snake buried itself.",
+  "mood": "watchful"
 }
