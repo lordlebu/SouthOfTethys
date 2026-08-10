@@ -7,7 +7,7 @@
     "fauna": 256,
     "flora": 90,
     "settlements": 2,
-    "regions": 4,
+    "regions": 7,
     "artifacts": 3,
     "factions": 3,
     "mythology": 3
@@ -426,9 +426,12 @@
     ],
     "regions": [
       "region_aravali",
+      "region_ganges_lava_sea",
       "region_gedrosian_desert",
       "region_narmada_plateau",
-      "region_saraswati_delta"
+      "region_saraswati_delta",
+      "region_shattered_sea",
+      "region_tethys_sky_routes"
     ],
     "artifacts": [
       "artifact_mask_of_harappa",

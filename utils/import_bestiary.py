@@ -58,7 +58,10 @@ REGIONS = {
 }
 
 # Where a region's species land when nothing more specific is detected in the prose.
-REGION_BIOMES = {
+# This table used to live in tools/build-species-data.js. It is canon now: each region
+# entity carries `bestiary_region` and `biomes`, and this is read from them. The literal
+# below is only the bootstrap fallback for a checkout whose regions predate Phase 1.3.
+_REGION_BIOMES_FALLBACK = {
     "saraswati-godavari-deltas": ["wetland", "river"],
     "narmada-vindhya": ["hills", "mountains"],
     "gedrosian-taklamakan": ["desert"],
@@ -67,6 +70,22 @@ REGION_BIOMES = {
     "tethys-sky-routes": [],
     "asura-conjurations": [],
 }
+
+
+def load_region_biomes() -> dict[str, list[str]]:
+    mapping = {}
+    for f in sorted((REPO / "database" / "regions").glob("*.json")):
+        payload = json.loads(f.read_text(encoding="utf-8"))
+        if "bestiary_region" in payload:
+            mapping[payload["bestiary_region"]] = payload.get("biomes", [])
+    if not mapping:
+        return dict(_REGION_BIOMES_FALLBACK)
+    # Asura conjurations are a taxonomy tag, not a place, so they have no region entity.
+    mapping.setdefault("asura-conjurations", [])
+    return mapping
+
+
+REGION_BIOMES = load_region_biomes()
 
 # Read biome first from the prose, which is more reliable than the region heading:
 # Section 1 alone carries eight species that describe other regions entirely.
@@ -248,14 +267,32 @@ def parse_bestiary(path: Path, kind: str) -> list[dict]:
 # --- canon side -------------------------------------------------------------------
 
 
-def load_canon(kind: str) -> dict[str, tuple[Path, dict]]:
-    """Existing entities keyed by normalised name."""
-    out = {}
+def load_canon(kind: str) -> dict[str, list[tuple[Path, dict]]]:
+    """Existing entities grouped by normalised name.
+
+    A list rather than a single entry because names are not unique: the bestiary
+    carries two Lava-Vent Tubeworms, separated only by binomial (Riftia vulcanica and
+    Riftia asurica). Keying by name alone let one silently shadow the other, so a
+    re-run merged the second record's fields into the first entity.
+    """
+    out: dict[str, list[tuple[Path, dict]]] = {}
     folder = REPO / "database" / kind
     for f in sorted(folder.glob("*.json")):
         payload = json.loads(f.read_text(encoding="utf-8"))
-        out[payload["name"].strip().lower()] = (f, payload)
+        out.setdefault(payload["name"].strip().lower(), []).append((f, payload))
     return out
+
+
+def match_canon(candidates: list[tuple[Path, dict]], rec: dict, consumed: set[str]) -> tuple[Path, dict] | None:
+    """Pick the entity a bestiary record refers to, preferring an agreeing binomial."""
+    free = [c for c in candidates if c[1]["id"] not in consumed]
+    if not free:
+        return None
+    if rec.get("binomial"):
+        for path, payload in free:
+            if payload.get("scientific") == rec["binomial"]:
+                return path, payload
+    return free[0]
 
 
 def entity_id(kind: str, name: str, taken: set[str], binomial: str | None) -> str:
@@ -369,7 +406,7 @@ def main() -> int:
 
     for kind in ("fauna", "flora"):
         canon = load_canon(kind)
-        taken = {p["id"] for _, p in canon.values()}
+        taken = {p["id"] for entries in canon.values() for _, p in entries}
         records = parse_bestiary(bestiary, kind)
         if kind == "fauna":
             records += [
@@ -379,10 +416,13 @@ def main() -> int:
             ]
 
         touched: dict[str, dict] = {}
+        consumed: set[str] = set()
         for rec in records:
             key = rec["name"].strip().lower()
-            if key in canon:
-                path, payload = canon[key]
+            hit = match_canon(canon[key], rec, consumed) if key in canon else None
+            if hit:
+                path, payload = hit
+                consumed.add(payload["id"])
                 payload, kept = merge_into(payload, rec, kind)
                 retained.extend(f"{payload['id']}: {k}" for k in kept)
                 touched[str(path)] = payload
@@ -398,15 +438,15 @@ def main() -> int:
 
         # Canon-only entities: authored here, absent from the bestiary. Leave the prose
         # alone but keep them out of the encounter table until tagged by hand.
-        seen = {r["name"].strip().lower() for r in records}
-        for key, (path, payload) in canon.items():
-            if key in seen:
-                continue
-            if not payload.get("biomes"):
-                payload.setdefault("biomes", [])
-                payload.setdefault("placement", "lore")
-                touched[str(path)] = payload
-            all_entities[kind].append(payload)
+        for entries in canon.values():
+            for path, payload in entries:
+                if payload["id"] in consumed:
+                    continue
+                if not payload.get("biomes"):
+                    payload.setdefault("biomes", [])
+                    payload.setdefault("placement", "lore")
+                    touched[str(path)] = payload
+                all_entities[kind].append(payload)
 
         fallbacks = CREATURE_BIOME_FALLBACK if kind == "fauna" else FLORA_BIOME_FALLBACK
         fill_gaps(kind, all_entities[kind], fallbacks, walkable, log)

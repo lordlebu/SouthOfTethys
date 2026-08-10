@@ -1,0 +1,14 @@
+{
+  "id": "region_tethys_sky_routes",
+  "type": "region",
+  "name": "Tethys Sky Routes & Floating Islands",
+  "continent": "tethys",
+  "bestiary_region": "tethys-sky-routes",
+  "biomes": [],
+  "habitats": ["floating islands", "sky-oases", "low gravity"],
+  "landmarks": ["Cognitavi cloud-monasteries", "inverted waterfalls"],
+  "notes": "Sky-oases above the Tethys Sea. The islands are held up by lodestone cores of hyper-magnetised, Permian-irradiated ore that repels the Earth's field into localised anti-gravity bubbles, a legacy of the shattering of Gondwana; warped gravity on the undersides sends rainwater overflowing upward as inverted waterfalls. Home to the bark-skinned Vyom-Yakshis, the Cognitavi Cloud-Hermits and their monasteries, and traded by orca-blimp mariners.",
+  "biomes_note": "Deliberately empty. Sky species have no equivalent among the ten ground biomes, so everything filed here is held as lore and never placed on a tile.",
+  "canon": "primary",
+  "sources": ["AI_CONTEXT.md", "docs/bestiary.md"]
+}

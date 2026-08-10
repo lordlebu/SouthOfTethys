@@ -3,9 +3,24 @@
   "type": "region",
   "name": "Saraswati Delta",
   "continent": "jambhudweepa",
-  "settlements": ["settlement_lothal", "settlement_dwarka"],
-  "habitats": ["wetlands", "marshes", "mangroves"],
+  "bestiary_region": "saraswati-godavari-deltas",
+  "biomes": [
+    "wetland",
+    "river"
+  ],
+  "settlements": [
+    "settlement_lothal",
+    "settlement_dwarka"
+  ],
+  "habitats": [
+    "wetlands",
+    "marshes",
+    "mangroves"
+  ],
   "notes": "Primary setting of Civilization Dawn / Lothal Era. Home to Harappan settlers and Kia clan.",
   "canon": "primary",
-  "sources": ["map", "AI_CONTEXT.md"]
+  "sources": [
+    "map",
+    "AI_CONTEXT.md"
+  ]
 }
