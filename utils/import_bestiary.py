@@ -27,6 +27,24 @@ would be deleted outright when that script is retired: five prototype starter
 creatures, and the fillGaps biome assignments that keep plains/settlement/landmark
 from being empty.
 
+Placement rules, as settled (see database/README.md for the full statement):
+
+  Asura-tainted   placed like anything else, at mythic rarity. They are met
+                  occasionally and are meant to unsettle. The game weights picks
+                  by rarity, which is what keeps "occasionally" true -- without
+                  that weighting, uniform picking put a horror in every second
+                  village.
+  Sky species     never placed. The floating islands are a planned mode and these
+                  are its content, held in reserve. They carry a placement_note
+                  saying so, because an empty `biomes` list otherwise reads as an
+                  untagged entity and invites someone to spend them on ground.
+  sentient        taxonomy only, not a placement rule. In-world the Harappans
+                  regard these lineages as animals, so a sentient species in the
+                  encounter table is correct.
+  everything else biomes from prose keywords, preferring agreement with the
+                  species' own region; anything that matches nothing lands as
+                  lore and needs tagging by hand.
+
 Dry run by default. Pass --apply to write.
 
     python utils/import_bestiary.py
@@ -114,7 +132,22 @@ MOOD_HINTS = [
 
 # Sky species have no equivalent among the ten ground biomes, and their prose mentions
 # terrain they only fly over ("aero-mangrove", "sky coral"), which would mis-file them.
-SKY_MARKER = r"\b(floating island\w*|sky[- ]\w+|aero[- ]\w+|prana|low[- ]gravity|lodestone|airborne|cloud[- ]weaver)\b"
+# The marker also catches strays: the Sky-Faring Grasshopper is filed under Section 1 but
+# migrates between floating islands.
+# "airborne" was in this list and was too loose: the Toxic Red Spore-Moss "releases airborne
+# spores" and was pulled into the sky reserve, a plateau moss labelled as content for a mode
+# it has nothing to do with. Every genuine sky species is caught by its region; the marker
+# only has to catch strays filed under the wrong section.
+SKY_MARKER = r"\b(floating island\w*|sky[- ]\w+|aero[- ]\w+|prana|low[- ]gravity|lodestone|cloud[- ]weaver)\b"
+
+# Sky species are a reserve, not a backlog. The floating islands are a planned mode and
+# these are its content, waiting -- so each says so on itself, or the next pass over empty
+# `biomes` reads them as untagged and spends them on ground biomes.
+SKY_RESERVE_NOTE = (
+    "Reserved for a future sky mode. The floating islands have no equivalent among the ten "
+    "ground biomes, so this species is authored and published but never placed on a tile. "
+    "Empty `biomes` here is a decision, not an untagged entity."
+)
 
 ENTRY_RE = re.compile(r"^\d+\.\s+\*\*(.+?)\*\*\s+—\s+(.+)$")
 NAMED_RE = re.compile(r"^(.*?)\s*\(\*(.+?)\*\)\s*$")
@@ -143,13 +176,14 @@ def place_for(text: str, region: str) -> tuple[list[str], str]:
     # -- that is what re-files the Section 1 strays.
     home = [b for b in REGION_BIOMES.get(region, []) if b in detected]
     if home:
-        return home, ("lore" if region == "asura-conjurations" else "encounter")
+        return home, "encounter"
 
-    # Asura conjurations keep their detected habitat but stay out of the encounter
-    # tables until the tone question in docs/bestiary.md is settled.
-    if region == "asura-conjurations":
-        return detected, "lore"
-
+    # Asura conjurations are placed like anything else. They used to be forced to "lore"
+    # here pending the cozy-tone question in docs/bestiary.md; that is settled -- they are
+    # met occasionally and are meant to unsettle. `rarity_for` gives them mythic, and the
+    # game weights picks by rarity, which is what keeps "occasionally" true. Their region
+    # contributes no fallback biomes, so one whose prose matches nothing still lands as
+    # lore and needs tagging by hand.
     biomes = detected or list(REGION_BIOMES.get(region, []))
     return biomes, ("encounter" if biomes else "lore")
 
@@ -252,6 +286,7 @@ def parse_bestiary(path: Path, kind: str) -> list[dict]:
             "name": heading,
             "binomial": binomial,
             "region": region,
+            "sky": region == "tethys-sky-routes" or bool(re.search(SKY_MARKER, text, re.IGNORECASE)),
             "biomes": biomes,
             # Creatures are met; plants are simply there.
             "placement": "flavour" if placement == "encounter" and kind == "flora" else placement,
@@ -327,6 +362,10 @@ def build_new(kind: str, rec: dict, ident: str) -> dict:
         "canon": "primary",
         "sources": ["docs/bestiary.md"],
     }
+    # Only the sky set is a reserve. A ground species whose prose matched no biome keyword
+    # is genuinely untagged and must not be labelled as a deliberate hold.
+    if rec.get("sky"):
+        payload["placement_note"] = SKY_RESERVE_NOTE
     if kind == "fauna":
         payload["mood"] = rec["mood"]
         if is_sentient(rec["name"], rec["binomial"]):
