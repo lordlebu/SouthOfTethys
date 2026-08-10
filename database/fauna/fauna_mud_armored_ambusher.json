@@ -4,10 +4,28 @@
   "name": "Mud-Armored Ambusher",
   "scientific": "Baurusuchus lutarius",
   "diet": "Carnivore",
-  "habitats": ["region_saraswati_delta"],
-  "behaviour": ["ambush", "mud_coating"],
-  "related_species": ["fauna_baurusuchus"],
+  "habitats": [
+    "region_saraswati_delta"
+  ],
+  "behaviour": [
+    "ambush",
+    "mud_coating"
+  ],
+  "related_species": [
+    "fauna_baurusuchus"
+  ],
   "notes": "Baurusuchus subspecies that cakes itself in dried silt for armor and scent-masking. Favours silted oxbows near Lothal’s outer channels.",
   "canon": "primary",
-  "sources": ["SouthOfTethys.txt"]
+  "sources": [
+    "SouthOfTethys.txt",
+    "docs/bestiary.md"
+  ],
+  "region": "saraswati-godavari-deltas",
+  "biomes": [
+    "river"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A baurusuchid that cakes itself in river mud, keeping its body temperature low and hiding from terrestrial prey.",
+  "mood": "fearsome"
 }

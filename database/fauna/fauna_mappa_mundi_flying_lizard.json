@@ -1,0 +1,18 @@
+{
+  "id": "fauna_mappa_mundi_flying_lizard",
+  "type": "fauna",
+  "name": "Mappa Mundi Flying-Lizard",
+  "scientific": "Draco sylvanus",
+  "region": "shattered-sea-mappa-mundi",
+  "biomes": [
+    "forest"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A small, colorful lizard with skin membranes that let it glide between tall jungle trees to escape tree-snakes.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "graceful"
+}

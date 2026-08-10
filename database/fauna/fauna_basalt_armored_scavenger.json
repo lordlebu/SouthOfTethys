@@ -1,0 +1,18 @@
+{
+  "id": "fauna_basalt_armored_scavenger",
+  "type": "fauna",
+  "name": "Basalt-Armored Scavenger",
+  "scientific": "Gecarcinus basalticus",
+  "region": "ganges-lava-sea",
+  "biomes": [
+    "mountains"
+  ],
+  "placement": "encounter",
+  "rarity": "rare",
+  "journal_prompt": "A lava crab variant that feeds on mineral deposits along the cooled basalt shores, its claws strong enough to crush rock.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

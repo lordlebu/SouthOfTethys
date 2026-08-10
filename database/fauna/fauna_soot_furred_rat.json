@@ -1,0 +1,18 @@
+{
+  "id": "fauna_soot_furred_rat",
+  "type": "fauna",
+  "name": "Soot-Furred Rat",
+  "scientific": "Rattus cinereus",
+  "region": "ganges-lava-sea",
+  "biomes": [
+    "mountains"
+  ],
+  "placement": "encounter",
+  "rarity": "rare",
+  "journal_prompt": "A small, highly resilient rodent with heat-resistant, ash-colored fur, nesting in the stone ruins near the lava lake.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

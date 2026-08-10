@@ -1,0 +1,19 @@
+{
+  "id": "fauna_saltwater_gator_turtle",
+  "type": "fauna",
+  "name": "Saltwater Gator-Turtle",
+  "scientific": "Macrochelys tethyan",
+  "region": "saraswati-godavari-deltas",
+  "biomes": [
+    "coast",
+    "hills"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "An ancient, armored turtle with a ridged shell resembling a crocodile's hide, lurking in brackish delta canals.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

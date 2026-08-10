@@ -1,0 +1,16 @@
+{
+  "id": "fauna_mist_valley_thrush",
+  "type": "fauna",
+  "name": "Mist-Valley Thrush",
+  "scientific": "Turdus caelius",
+  "region": "tethys-sky-routes",
+  "biomes": [],
+  "placement": "lore",
+  "rarity": "rare",
+  "journal_prompt": "A bird with a sweet, echoing song that nests in the high, misty valleys, feeding on sky-bramble berries.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

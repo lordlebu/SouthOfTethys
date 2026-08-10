@@ -1,0 +1,18 @@
+{
+  "id": "fauna_vindhya_bark_gecko",
+  "type": "fauna",
+  "name": "Vindhya Bark-Gecko",
+  "scientific": "Hemidactylus vindhyensis",
+  "region": "narmada-vindhya",
+  "biomes": [
+    "forest"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A master of camouflage, its skin texture perfectly matching the rough wood of old mahua trees.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "patient"
+}

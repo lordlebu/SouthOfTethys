@@ -1,0 +1,18 @@
+{
+  "id": "fauna_mangrove_snapping_turtle",
+  "type": "fauna",
+  "name": "Mangrove Snapping-Turtle",
+  "scientific": "Chelydra mangrovi",
+  "region": "saraswati-godavari-deltas",
+  "biomes": [
+    "coast"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A turtle with a razor-sharp beak that lies buried in the brackish mud, ambushing small crabs and fish.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "fearsome"
+}

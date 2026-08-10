@@ -1,0 +1,18 @@
+{
+  "id": "fauna_ash_field_ground_beetle",
+  "type": "fauna",
+  "name": "Ash-Field Ground-Beetle",
+  "scientific": "Carabus cinereus",
+  "region": "ganges-lava-sea",
+  "biomes": [
+    "mountains"
+  ],
+  "placement": "encounter",
+  "rarity": "rare",
+  "journal_prompt": "A large, heat-resistant insect that tunnels through soft volcanic ash, feeding on organic debris carried down by streams.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

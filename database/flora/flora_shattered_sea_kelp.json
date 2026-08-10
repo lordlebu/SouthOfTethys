@@ -1,0 +1,17 @@
+{
+  "id": "flora_shattered_sea_kelp",
+  "type": "flora",
+  "name": "Shattered Sea Kelp",
+  "scientific": "Macrocystis tethyan",
+  "region": "shattered-sea-mappa-mundi",
+  "biomes": [
+    "sea"
+  ],
+  "placement": "flavour",
+  "rarity": "mythic",
+  "journal_prompt": "A colossal marine alga that forms dense underwater forests, providing shelter and forage for juvenile cetaceans and rays.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ]
+}

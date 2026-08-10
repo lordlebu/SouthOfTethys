@@ -3,9 +3,20 @@
   "type": "flora",
   "name": "River Bamboo",
   "scientific": "Bambusa saraswati",
-  "habitats": ["region_saraswati_delta", "region_narmada_plateau"],
-  "uses": ["scaffolding", "rafts", "tools"],
+  "habitats": [
+    "region_saraswati_delta",
+    "region_narmada_plateau"
+  ],
+  "uses": [
+    "scaffolding",
+    "rafts",
+    "tools"
+  ],
   "notes": "Fast-growing bamboo of river banks. Primary material for scaffolding, fish traps, and light rafts.",
   "canon": "primary",
-  "sources": ["SouthOfTethys.txt"]
+  "sources": [
+    "SouthOfTethys.txt"
+  ],
+  "biomes": [],
+  "placement": "lore"
 }

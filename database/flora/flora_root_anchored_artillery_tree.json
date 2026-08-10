@@ -1,0 +1,18 @@
+{
+  "id": "flora_root_anchored_artillery_tree",
+  "type": "flora",
+  "name": "Root-Anchored Artillery Tree",
+  "scientific": "Rakshasa-Vriksha ferrea",
+  "region": "asura-conjurations",
+  "biomes": [
+    "forest",
+    "settlement"
+  ],
+  "placement": "lore",
+  "rarity": "mythic",
+  "journal_prompt": "A siege tree variant designed for defense, anchoring its stone-like roots deep into fortress walls to fling burning pitch.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ]
+}

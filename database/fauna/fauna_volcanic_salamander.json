@@ -1,0 +1,18 @@
+{
+  "id": "fauna_volcanic_salamander",
+  "type": "fauna",
+  "name": "Volcanic Salamander",
+  "scientific": "Salamandra vulcanica",
+  "region": "ganges-lava-sea",
+  "biomes": [
+    "mountains"
+  ],
+  "placement": "encounter",
+  "rarity": "rare",
+  "journal_prompt": "An amphibian with fire-resistant skin that lives in the warm mud pools near the caldera edges, feeding on small ash-beetles.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

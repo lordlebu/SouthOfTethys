@@ -1,0 +1,20 @@
+{
+  "id": "fauna_monsoon_crane",
+  "type": "fauna",
+  "name": "Monsoon Crane",
+  "scientific": null,
+  "region": "prototype-starters",
+  "biomes": [
+    "wetland",
+    "river",
+    "coast"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "Tall white birds step between reeds as if reading the rain.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "graceful"
+}

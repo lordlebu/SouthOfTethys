@@ -1,0 +1,18 @@
+{
+  "id": "fauna_southern_sea_turtle",
+  "type": "fauna",
+  "name": "Southern Sea-Turtle",
+  "scientific": "Chelonia meridionalis",
+  "region": "shattered-sea-mappa-mundi",
+  "biomes": [
+    "sea"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A large turtle that migrates thousands of miles across the Tethys, nesting on isolated volcanic beaches.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

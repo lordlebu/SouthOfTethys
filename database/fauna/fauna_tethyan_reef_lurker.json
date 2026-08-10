@@ -1,0 +1,18 @@
+{
+  "id": "fauna_tethyan_reef_lurker",
+  "type": "fauna",
+  "name": "Tethyan Reef-Lurker",
+  "scientific": "Murex tethys",
+  "region": "shattered-sea-mappa-mundi",
+  "biomes": [
+    "sea"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A venomous, spiny mollusk that hides in coral crevices, preying on small fish with a rapid, toxic sting.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "fearsome"
+}

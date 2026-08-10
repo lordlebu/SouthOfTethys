@@ -3,9 +3,27 @@
   "type": "flora",
   "name": "Bonewood Mangrove",
   "scientific": "Rhizophora osteoxyla",
-  "habitats": ["coastal", "region_saraswati_delta"],
-  "uses": ["timber", "construction"],
+  "habitats": [
+    "coastal",
+    "region_saraswati_delta"
+  ],
+  "uses": [
+    "timber",
+    "construction"
+  ],
   "notes": "Mangrove absorbing calcium and basalt. Yields naturally curved, bone-hard timber used for construction.",
   "canon": "primary",
-  "sources": ["SouthOfTethys.txt"]
+  "sources": [
+    "SouthOfTethys.txt",
+    "docs/bestiary.md"
+  ],
+  "region": "saraswati-godavari-deltas",
+  "biomes": [
+    "coast",
+    "forest",
+    "mountains"
+  ],
+  "placement": "flavour",
+  "rarity": "common",
+  "journal_prompt": "Mangrove trees that absorb calcium and basalt from the volcanic coast, yielding a naturally curved, bone-hard timber used for construction."
 }

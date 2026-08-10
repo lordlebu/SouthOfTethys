@@ -4,10 +4,31 @@
   "name": "Vanga Pearl-Guide",
   "scientific": "Cognitavi vanga",
   "diet": "Omnivore",
-  "habitats": ["coastal", "tethys"],
-  "behaviour": ["navigator", "flock_guide"],
-  "related_species": ["fauna_cognitavi"],
+  "habitats": [
+    "coastal",
+    "tethys"
+  ],
+  "behaviour": [
+    "navigator",
+    "flock_guide"
+  ],
+  "related_species": [
+    "fauna_cognitavi"
+  ],
   "notes": "Cognitavi subspecies that leads fishing fleets toward pearl banks by patterned flight. Harappan pilots treat a circling flock as a chart mark.",
   "canon": "primary",
-  "sources": ["SouthOfTethys.txt"]
+  "sources": [
+    "SouthOfTethys.txt",
+    "docs/bestiary.md"
+  ],
+  "region": "saraswati-godavari-deltas",
+  "biomes": [
+    "sea",
+    "landmark"
+  ],
+  "placement": "encounter",
+  "rarity": "rare",
+  "journal_prompt": "An elite subspecies of the hyper-intelligent Cognitavi navigator birds that aids Tuli seafarers in locating deep-sea oyster beds.",
+  "mood": "clever",
+  "sentient": true
 }

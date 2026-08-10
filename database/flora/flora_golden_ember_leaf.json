@@ -1,0 +1,18 @@
+{
+  "id": "flora_golden_ember_leaf",
+  "type": "flora",
+  "name": "Golden Ember-Leaf",
+  "scientific": "Camellia aurata",
+  "region": "narmada-vindhya",
+  "biomes": [
+    "hills",
+    "mountains"
+  ],
+  "placement": "flavour",
+  "rarity": "rare",
+  "journal_prompt": "An elite wild tea variety whose leaves feature glowing, amber-colored veins, highly valued by Narmada scholars for its flavor and stimulating effects.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ]
+}

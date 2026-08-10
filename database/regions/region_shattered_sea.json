@@ -1,0 +1,13 @@
+{
+  "id": "region_shattered_sea",
+  "type": "region",
+  "name": "Shattered Sea & Mappa Mundi",
+  "continent": "jambhudweepa",
+  "bestiary_region": "shattered-sea-mappa-mundi",
+  "biomes": ["sea", "forest"],
+  "habitats": ["reefs", "islands", "deep rainforest"],
+  "landmarks": ["Tamralinga Port", "Cognitavi bird-fortresses", "Mappa Mundi rainforests"],
+  "notes": "Marine and island belt east of the delta, grouped in the bestiary with the deep rainforests of Mappa Mundi. The Cognitavi claim the volatile sea and build their own bird-fortresses here, holding integrated nests on the coral docks of Tamralinga Port; Tuli seafarers of the Vanga Maritime League work the pearl routes under Cognitavi guidance. The Mappa Mundi rainforests are the refuge of the displaced Silvanus and Sylvian lineages after the Vanara cataclysm.",
+  "canon": "primary",
+  "sources": ["AI_CONTEXT.md", "docs/bestiary.md"]
+}

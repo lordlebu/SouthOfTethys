@@ -1,0 +1,18 @@
+{
+  "id": "fauna_sleek_dromedary_croc",
+  "type": "fauna",
+  "name": "Sleek Dromedary-Croc",
+  "scientific": "Camelosuchus dromedarius",
+  "region": "gedrosian-taklamakan",
+  "biomes": [
+    "desert"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A faster, single-humped variant of Camelosuchus adapted to sandy dunes, capable of sustaining high speeds across the wastes.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

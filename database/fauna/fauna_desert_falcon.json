@@ -1,0 +1,18 @@
+{
+  "id": "fauna_desert_falcon",
+  "type": "fauna",
+  "name": "Desert Falcon",
+  "scientific": "Falco gedrosianus",
+  "region": "gedrosian-taklamakan",
+  "biomes": [
+    "desert"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A swift bird of prey that sweeps over the desert ridges to hunt young ostriches and desert rodents.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "fearsome"
+}

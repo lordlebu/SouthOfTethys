@@ -1,0 +1,18 @@
+{
+  "id": "fauna_bioluminescent_moss_dweller",
+  "type": "fauna",
+  "name": "Bioluminescent Moss-Dweller",
+  "scientific": "Vrkshasmara phosphorea",
+  "region": "narmada-vindhya",
+  "biomes": [
+    "forest"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "An arboreal octopus variant that feeds on glowing moss, causing its tentacles to emit a soft, pulsing green light at night.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "luminous"
+}

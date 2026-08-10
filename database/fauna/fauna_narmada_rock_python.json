@@ -1,0 +1,18 @@
+{
+  "id": "fauna_narmada_rock_python",
+  "type": "fauna",
+  "name": "Narmada Rock-Python",
+  "scientific": "Python narmadensis",
+  "region": "narmada-vindhya",
+  "biomes": [
+    "mountains"
+  ],
+  "placement": "encounter",
+  "rarity": "rare",
+  "journal_prompt": "A massive constrictor snake that camouflages as a volcanic root, waiting patiently near watering holes to seize prey.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "patient"
+}

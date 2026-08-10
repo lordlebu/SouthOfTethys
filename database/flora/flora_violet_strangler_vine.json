@@ -1,0 +1,17 @@
+{
+  "id": "flora_violet_strangler_vine",
+  "type": "flora",
+  "name": "Violet Strangler-Vine",
+  "scientific": "Vitis violacea",
+  "region": "asura-conjurations",
+  "biomes": [
+    "forest"
+  ],
+  "placement": "lore",
+  "rarity": "mythic",
+  "journal_prompt": "A thick, muscular vine that strangulates native trees, its violet-veined leaves exuding a sweet, sleep-inducing perfume.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ]
+}

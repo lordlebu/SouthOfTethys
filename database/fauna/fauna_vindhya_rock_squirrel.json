@@ -1,0 +1,18 @@
+{
+  "id": "fauna_vindhya_rock_squirrel",
+  "type": "fauna",
+  "name": "Vindhya Rock-Squirrel",
+  "scientific": "Ratufa vindhyensis",
+  "region": "narmada-vindhya",
+  "biomes": [
+    "hills"
+  ],
+  "placement": "encounter",
+  "rarity": "rare",
+  "journal_prompt": "A giant, colorful squirrel that nests in high cliff cavities, feeding on wild pine nuts and fig seeds.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

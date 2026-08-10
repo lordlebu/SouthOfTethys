@@ -1,0 +1,17 @@
+{
+  "id": "flora_volcanic_beach_creeper",
+  "type": "flora",
+  "name": "Volcanic Beach Creeper",
+  "scientific": "Ipomoea vulcanica",
+  "region": "shattered-sea-mappa-mundi",
+  "biomes": [
+    "forest"
+  ],
+  "placement": "flavour",
+  "rarity": "common",
+  "journal_prompt": "A hardy, salt-tolerant vine with purple bell-shaped flowers, binding the black volcanic sands along the island's shores.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ]
+}

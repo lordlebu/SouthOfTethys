@@ -1,0 +1,18 @@
+{
+  "id": "fauna_lava_basalt_centipede",
+  "type": "fauna",
+  "name": "Lava-Basalt Centipede",
+  "scientific": "Scolopendra vulcanica",
+  "region": "ganges-lava-sea",
+  "biomes": [
+    "mountains"
+  ],
+  "placement": "encounter",
+  "rarity": "rare",
+  "journal_prompt": "A multi-legged, fire-resistant invertebrate that hunts small lizards and insects in cooled basalt cracks.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "fearsome"
+}

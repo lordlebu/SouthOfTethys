@@ -4,9 +4,25 @@
   "name": "Woolly Bactrian-Croc",
   "scientific": "Camelosuchus bactrianus",
   "diet": "Omnivore",
-  "habitats": ["region_gedrosian_desert"],
-  "behaviour": ["endurance", "water_retention"],
+  "habitats": [
+    "region_gedrosian_desert"
+  ],
+  "behaviour": [
+    "endurance",
+    "water_retention"
+  ],
   "notes": "Heavy crocodile-mammal hybrid with two water-retention humps. Used by northern nomads to cross highland deserts.",
   "canon": "primary",
-  "sources": ["SouthOfTethys.txt"]
+  "sources": [
+    "SouthOfTethys.txt",
+    "docs/bestiary.md"
+  ],
+  "region": "gedrosian-taklamakan",
+  "biomes": [
+    "mountains"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A heavy, rugged crocodile-mammal hybrid with two water-retention humps, used by northern nomads to cross the highland deserts.",
+  "mood": "watchful"
 }

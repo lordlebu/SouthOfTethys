@@ -1,0 +1,17 @@
+{
+  "id": "flora_shattered_seaweed_silk",
+  "type": "flora",
+  "name": "Shattered Seaweed-Silk",
+  "scientific": "Zostera marina",
+  "region": "shattered-sea-mappa-mundi",
+  "biomes": [
+    "sea"
+  ],
+  "placement": "flavour",
+  "rarity": "common",
+  "journal_prompt": "A marine flowering plant that forms extensive meadows in the shallows, harvested to weave fine, water-resistant cordage.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ]
+}

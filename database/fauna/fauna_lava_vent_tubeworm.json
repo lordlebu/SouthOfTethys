@@ -1,0 +1,18 @@
+{
+  "id": "fauna_lava_vent_tubeworm",
+  "type": "fauna",
+  "name": "Lava-Vent Tubeworm",
+  "scientific": "Riftia vulcanica",
+  "region": "ganges-lava-sea",
+  "biomes": [
+    "mountains"
+  ],
+  "placement": "encounter",
+  "rarity": "rare",
+  "journal_prompt": "A giant worm species that grows in dense colonies around underwater magma vents, absorbing mineral nutrients directly from the water.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

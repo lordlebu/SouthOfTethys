@@ -1,0 +1,18 @@
+{
+  "id": "fauna_ash_valley_scorpion",
+  "type": "fauna",
+  "name": "Ash-Valley Scorpion",
+  "scientific": "Buthus cinereus",
+  "region": "ganges-lava-sea",
+  "biomes": [
+    "mountains"
+  ],
+  "placement": "encounter",
+  "rarity": "rare",
+  "journal_prompt": "A dark grey scorpion that blends into volcanic ash, active during the cooler night hours.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

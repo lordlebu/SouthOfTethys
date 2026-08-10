@@ -1,0 +1,16 @@
+{
+  "id": "fauna_asura_tainted_gargoyle",
+  "type": "fauna",
+  "name": "Asura-Tainted Gargoyle",
+  "scientific": "Tuli calcified",
+  "region": "asura-conjurations",
+  "biomes": [],
+  "placement": "lore",
+  "rarity": "mythic",
+  "journal_prompt": "A devolved offshoot of humanity whose skin has calcified into a stone-like hide, animating only at night to hunt.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "uncanny"
+}

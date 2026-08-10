@@ -1,0 +1,18 @@
+{
+  "id": "flora_ivory_coastal_bonewood",
+  "type": "flora",
+  "name": "Ivory Coastal Bonewood",
+  "scientific": "Rhizophora eburnea",
+  "region": "saraswati-godavari-deltas",
+  "biomes": [
+    "sea",
+    "coast"
+  ],
+  "placement": "flavour",
+  "rarity": "rare",
+  "journal_prompt": "A rare bonewood subspecies with smooth, cream-colored bark that resists waterrot and marine boring worms.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ]
+}

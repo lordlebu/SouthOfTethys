@@ -1,0 +1,17 @@
+{
+  "id": "flora_red_blood_coral",
+  "type": "flora",
+  "name": "Red Blood-Coral",
+  "scientific": "Tethysolithus rubra",
+  "region": "shattered-sea-mappa-mundi",
+  "biomes": [
+    "sea"
+  ],
+  "placement": "flavour",
+  "rarity": "common",
+  "journal_prompt": "An aggressive, fast-growing coral polyp that builds fossilized ridges and reclaims ancient stone aqueducts in the marshes.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ]
+}

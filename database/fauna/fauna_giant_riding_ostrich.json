@@ -4,9 +4,26 @@
   "name": "Giant Riding Ostrich",
   "scientific": "Struthio camelus maximus",
   "diet": "Herbivore",
-  "habitats": ["hyrkanian_steppe", "region_gedrosian_desert"],
-  "behaviour": ["riding", "cargo"],
+  "habitats": [
+    "hyrkanian_steppe",
+    "region_gedrosian_desert"
+  ],
+  "behaviour": [
+    "riding",
+    "cargo"
+  ],
   "notes": "Massive flightless bird trained by Tushara nomads for cargo and scouts.",
   "canon": "primary",
-  "sources": ["SouthOfTethys.txt"]
+  "sources": [
+    "SouthOfTethys.txt",
+    "docs/bestiary.md"
+  ],
+  "region": "gedrosian-taklamakan",
+  "biomes": [
+    "desert"
+  ],
+  "placement": "encounter",
+  "rarity": "rare",
+  "journal_prompt": "A massive, flightless bird trained by the Tushara nomads to carry heavy cargo and scouts across the arid frontiers.",
+  "mood": "watchful"
 }

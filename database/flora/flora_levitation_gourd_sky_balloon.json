@@ -1,0 +1,15 @@
+{
+  "id": "flora_levitation_gourd_sky_balloon",
+  "type": "flora",
+  "name": "Levitation Gourd / Sky-Balloon",
+  "scientific": "Cucurbita levitata",
+  "region": "tethys-sky-routes",
+  "biomes": [],
+  "placement": "lore",
+  "rarity": "rare",
+  "journal_prompt": "A trailing vine producing massive, hollow gourds that trap lighter-than-air volcanic gases, used by mariners to patch blimps.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ]
+}

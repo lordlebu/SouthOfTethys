@@ -1,0 +1,18 @@
+{
+  "id": "fauna_swamp_wallaby",
+  "type": "fauna",
+  "name": "Swamp-Wallaby",
+  "scientific": "Wallabia sylvanus",
+  "region": "saraswati-godavari-deltas",
+  "biomes": [
+    "wetland"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A marsupial-like herbivore that grazes on the delta's edge, capable of swimming short distances between mangrove islets.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

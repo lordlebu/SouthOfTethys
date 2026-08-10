@@ -4,9 +4,28 @@
   "name": "Nagaraptor",
   "scientific": "Proto-Jambhu Dromaeosaur",
   "diet": "Carnivore",
-  "habitats": ["region_saraswati_delta"],
-  "behaviour": ["social", "nest_defense", "earthworks"],
+  "habitats": [
+    "region_saraswati_delta"
+  ],
+  "behaviour": [
+    "social",
+    "nest_defense",
+    "earthworks"
+  ],
   "notes": "Feathered velociraptor clans forming complex diapsid scale-based civilization. Use earthworks and moats to defend nests. Symbiotic with Burrowing Tortoise.",
   "canon": "primary",
-  "sources": ["SouthOfTethys.txt"]
+  "sources": [
+    "SouthOfTethys.txt",
+    "docs/bestiary.md"
+  ],
+  "region": "saraswati-godavari-deltas",
+  "biomes": [
+    "wetland",
+    "river"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "Feathered velociraptor clans that have formed a complex diapsid scale-based civilization, using earthworks and moats to defend their nests.",
+  "mood": "clever",
+  "sentient": true
 }

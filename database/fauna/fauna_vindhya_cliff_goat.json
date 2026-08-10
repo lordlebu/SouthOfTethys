@@ -1,0 +1,19 @@
+{
+  "id": "fauna_vindhya_cliff_goat",
+  "type": "fauna",
+  "name": "Vindhya Cliff-Goat",
+  "scientific": "Capra vindhyensis",
+  "region": "narmada-vindhya",
+  "biomes": [
+    "hills",
+    "mountains"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A sure-footed, woolly mountain goat that grazes on steep volcanic ledges, often acting as a host or guide for anomalous entities.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

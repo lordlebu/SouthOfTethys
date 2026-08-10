@@ -1,0 +1,18 @@
+{
+  "id": "fauna_delta_reed_python",
+  "type": "fauna",
+  "name": "Delta Reed-Python",
+  "scientific": "Python sylvanus minor",
+  "region": "saraswati-godavari-deltas",
+  "biomes": [
+    "wetland"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A small, non-venomous constrictor snake that mimics the color of dried reeds, preying on nesting birds.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "fearsome"
+}

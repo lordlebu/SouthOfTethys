@@ -1,0 +1,15 @@
+{
+  "id": "flora_aero_mangrove_vayu_vriksha",
+  "type": "flora",
+  "name": "Aero-Mangrove / Vayu-Vriksha",
+  "scientific": "Rhizophora caelia",
+  "region": "tethys-sky-routes",
+  "biomes": [],
+  "placement": "lore",
+  "rarity": "rare",
+  "journal_prompt": "Trees growing on the absolute edges of floating islands, plunging their roots downward into the open sky to harvest cloud-moisture.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ]
+}

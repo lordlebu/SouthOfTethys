@@ -1,0 +1,18 @@
+{
+  "id": "fauna_southern_sea_eagle",
+  "type": "fauna",
+  "name": "Southern Sea-Eagle",
+  "scientific": "Haliaeetus meridionalis",
+  "region": "shattered-sea-mappa-mundi",
+  "biomes": [
+    "sea"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A large bird of prey with a white head and chest, nesting on high cliff edges and swooping down to seize marine fish.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

@@ -4,10 +4,29 @@
   "name": "Burrowing Tortoise",
   "scientific": "Geochelone fossor",
   "diet": "Herbivore",
-  "habitats": ["region_saraswati_delta"],
-  "behaviour": ["fossorial", "symbiotic"],
-  "related_species": ["fauna_nagaraptor"],
+  "habitats": [
+    "region_saraswati_delta"
+  ],
+  "behaviour": [
+    "fossorial",
+    "symbiotic"
+  ],
+  "related_species": [
+    "fauna_nagaraptor"
+  ],
   "notes": "Heavy delta tortoise that digs deep tunnels. Nagaraptor clans use the burrows as nest foundations; the tortoise gains predator warning in return.",
   "canon": "primary",
-  "sources": ["SouthOfTethys.txt"]
+  "sources": [
+    "SouthOfTethys.txt",
+    "docs/bestiary.md"
+  ],
+  "region": "saraswati-godavari-deltas",
+  "biomes": [
+    "wetland",
+    "river"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A large, long-lived tortoise (living 80-120 years) that digs spiral tunnels in a symbiotic relationship with the Nagaraptors, forming the underground foundations of the Taj Nest-Homes.",
+  "mood": "patient"
 }

@@ -1,0 +1,16 @@
+{
+  "id": "fauna_floating_island_shrew",
+  "type": "fauna",
+  "name": "Floating-Island Shrew",
+  "scientific": "Sorex levitatus",
+  "region": "tethys-sky-routes",
+  "biomes": [],
+  "placement": "lore",
+  "rarity": "rare",
+  "journal_prompt": "A tiny rodent with hollow bones and webbed toes, gliding between moss-covered floating rocks to forage for insects.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "graceful"
+}

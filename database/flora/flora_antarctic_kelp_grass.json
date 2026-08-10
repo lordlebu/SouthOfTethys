@@ -1,0 +1,17 @@
+{
+  "id": "flora_antarctic_kelp_grass",
+  "type": "flora",
+  "name": "Antarctic Kelp-Grass",
+  "scientific": "Zostera antarctica",
+  "region": "ganges-lava-sea",
+  "biomes": [
+    "mountains"
+  ],
+  "placement": "flavour",
+  "rarity": "rare",
+  "journal_prompt": "A tough, cold-tolerant sea-grass that forms dense beds along the glacial shores, feeding seals and small fish.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ]
+}

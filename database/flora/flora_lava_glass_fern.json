@@ -1,0 +1,17 @@
+{
+  "id": "flora_lava_glass_fern",
+  "type": "flora",
+  "name": "Lava-Glass Fern",
+  "scientific": "Pteris vulcanica",
+  "region": "ganges-lava-sea",
+  "biomes": [
+    "mountains"
+  ],
+  "placement": "flavour",
+  "rarity": "rare",
+  "journal_prompt": "A primitive fern with semi-translucent, silica-rich leaves that shimmer like glass, growing in damp volcanic crevices.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ]
+}

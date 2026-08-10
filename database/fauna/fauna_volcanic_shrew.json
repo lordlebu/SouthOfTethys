@@ -1,0 +1,18 @@
+{
+  "id": "fauna_volcanic_shrew",
+  "type": "fauna",
+  "name": "Volcanic Shrew",
+  "scientific": "Sorex vulcanus",
+  "region": "narmada-vindhya",
+  "biomes": [
+    "mountains"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A tiny, hyperactive mammal with a metallic coat that searches leaf litter for sulfur-beetles and insect larvae.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

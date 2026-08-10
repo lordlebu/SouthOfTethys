@@ -1,0 +1,18 @@
+{
+  "id": "fauna_tethyan_flying_squid",
+  "type": "fauna",
+  "name": "Tethyan Flying-Squid",
+  "scientific": "Todarodes tethys",
+  "region": "saraswati-godavari-deltas",
+  "biomes": [
+    "sea"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A marine mollusk that shoots itself out of the water to escape predators, gliding over waves with lateral fins.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "fearsome"
+}

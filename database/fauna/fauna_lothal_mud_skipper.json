@@ -1,0 +1,18 @@
+{
+  "id": "fauna_lothal_mud_skipper",
+  "type": "fauna",
+  "name": "Lothal Mud-Skipper",
+  "scientific": "Periophthalmus gigas",
+  "region": "saraswati-godavari-deltas",
+  "biomes": [
+    "coast"
+  ],
+  "placement": "encounter",
+  "rarity": "rare",
+  "journal_prompt": "A giant amphibious fish that climbs mangrove roots and breathes through its skin, highly prized for its tender, salty meat.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "fauna_tethyan_blue_crayfish",
+  "type": "fauna",
+  "name": "Tethyan Blue-Crayfish",
+  "scientific": "Astacus caeruleus",
+  "region": "saraswati-godavari-deltas",
+  "biomes": [
+    "river"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A large freshwater crustacean with vibrant blue claws that feeds on decaying organic matter in the Saraswati tributaries.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

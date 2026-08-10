@@ -1,0 +1,18 @@
+{
+  "id": "fauna_shambala_snow_partridge",
+  "type": "fauna",
+  "name": "Shambala Snow-Partridge",
+  "scientific": "Lerwa shambala",
+  "region": "ganges-lava-sea",
+  "biomes": [
+    "mountains"
+  ],
+  "placement": "encounter",
+  "rarity": "rare",
+  "journal_prompt": "A thick-feathered bird with camouflaged plumage, nesting in the rocky scree of the frozen mountain peaks.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "patient"
+}

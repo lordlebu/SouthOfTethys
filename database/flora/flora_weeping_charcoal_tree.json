@@ -1,0 +1,17 @@
+{
+  "id": "flora_weeping_charcoal_tree",
+  "type": "flora",
+  "name": "Weeping Charcoal Tree",
+  "scientific": "Ficus cinereus",
+  "region": "ganges-lava-sea",
+  "biomes": [
+    "forest"
+  ],
+  "placement": "flavour",
+  "rarity": "rare",
+  "journal_prompt": "An ash-banyan subspecies with dark, charcoal-like bark and weeping branches that secrete a non-flammable, waxy resin.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ]
+}

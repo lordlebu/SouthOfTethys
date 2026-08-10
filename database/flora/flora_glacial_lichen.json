@@ -1,0 +1,17 @@
+{
+  "id": "flora_glacial_lichen",
+  "type": "flora",
+  "name": "Glacial Lichen",
+  "scientific": "Lichen glacialis",
+  "region": "ganges-lava-sea",
+  "biomes": [
+    "mountains"
+  ],
+  "placement": "flavour",
+  "rarity": "rare",
+  "journal_prompt": "A slow-growing, pale blue lichen that covers the stone ruins near the ice wall, absorbing moisture directly from the frost.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ]
+}

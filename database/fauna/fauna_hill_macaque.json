@@ -1,0 +1,20 @@
+{
+  "id": "fauna_hill_macaque",
+  "type": "fauna",
+  "name": "Hill Macaque",
+  "scientific": null,
+  "region": "prototype-starters",
+  "biomes": [
+    "hills",
+    "forest",
+    "settlement"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A macaque studies your satchel, then pretends it was only admiring the view.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "curious"
+}

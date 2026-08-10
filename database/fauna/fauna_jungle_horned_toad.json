@@ -1,0 +1,18 @@
+{
+  "id": "fauna_jungle_horned_toad",
+  "type": "fauna",
+  "name": "Jungle Horned Toad",
+  "scientific": "Megophrys sylvanica",
+  "region": "shattered-sea-mappa-mundi",
+  "biomes": [
+    "forest"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A leaf-mimicking toad with pointed flaps over its eyes, hiding in the leaf litter of Mappa Mundi.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

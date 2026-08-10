@@ -1,0 +1,19 @@
+{
+  "id": "fauna_ash_valley_field_mouse",
+  "type": "fauna",
+  "name": "Ash-Valley Field-Mouse",
+  "scientific": "Mus cinereus",
+  "region": "narmada-vindhya",
+  "biomes": [
+    "hills",
+    "mountains"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A small, nocturnal rodent that feeds on wild tea seeds, its burrow insulated with toxic red spore-moss.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "fearsome"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "flora_plunging_fire_siege_tree",
+  "type": "flora",
+  "name": "Plunging-Fire Siege Tree",
+  "scientific": "Rakshasa-Vriksha",
+  "region": "asura-conjurations",
+  "biomes": [
+    "forest"
+  ],
+  "placement": "lore",
+  "rarity": "mythic",
+  "journal_prompt": "A living tree magically and botanically tortured over decades, its trunk bent and reinforced with bronze to serve as a biomechanical catapult.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ]
+}

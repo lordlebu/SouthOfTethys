@@ -1,0 +1,16 @@
+{
+  "id": "fauna_white_ash_bride",
+  "type": "fauna",
+  "name": "White-Ash Bride",
+  "scientific": "Māyā-born ignis",
+  "region": "asura-conjurations",
+  "biomes": [],
+  "placement": "lore",
+  "rarity": "mythic",
+  "journal_prompt": "A short-lived, sentient female form that coalesces from ritual altar sparks, passionately violent and intensely hot to touch.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "fauna_dimetrodon_scout_mount",
+  "type": "fauna",
+  "name": "Dimetrodon Scout-Mount",
+  "scientific": "Dimetrodon minor",
+  "region": "asura-conjurations",
+  "biomes": [
+    "mountains"
+  ],
+  "placement": "lore",
+  "rarity": "mythic",
+  "journal_prompt": "A faster, sleek sail-backed synapsid used by Asura scouts to navigate the rugged, volcanic frontiers.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "uncanny"
+}

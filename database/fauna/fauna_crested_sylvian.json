@@ -1,0 +1,19 @@
+{
+  "id": "fauna_crested_sylvian",
+  "type": "fauna",
+  "name": "Crested Sylvian",
+  "scientific": "Sylvianus cristatus",
+  "region": "shattered-sea-mappa-mundi",
+  "biomes": [
+    "forest"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A terrestrial, flightless theropod dromaeosaur of Mappa Mundi that rules the jungle floor, using pack coordination to hunt.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "fearsome",
+  "sentient": true
+}

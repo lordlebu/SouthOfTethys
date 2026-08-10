@@ -1,0 +1,18 @@
+{
+  "id": "fauna_saraswati_reed_warbler",
+  "type": "fauna",
+  "name": "Saraswati Reed-Warbler",
+  "scientific": "Acrocephalus sylvanus",
+  "region": "saraswati-godavari-deltas",
+  "biomes": [
+    "wetland"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A small, plain bird that weaves complex hanging nests in the tall delta reeds, mimicking the clicks of local dinosaurids.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "clever"
+}

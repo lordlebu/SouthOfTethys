@@ -1,0 +1,18 @@
+{
+  "id": "fauna_coral_dwelling_moray",
+  "type": "fauna",
+  "name": "Coral-dwelling Moray",
+  "scientific": "Muraena coralina",
+  "region": "shattered-sea-mappa-mundi",
+  "biomes": [
+    "sea"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A long, serpentine fish with a brightly patterned skin that mimics the red blood-coral of the Shattered Sea reefs.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "fauna_muria_river_otter",
+  "type": "fauna",
+  "name": "Muria River-Otter",
+  "scientific": "Lutra muria",
+  "region": "saraswati-godavari-deltas",
+  "biomes": [
+    "river"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "An agile, semi-aquatic mammal with dense, oil-slicked fur that hunts stepwell koi along the eastern coast of the island.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "fearsome"
+}

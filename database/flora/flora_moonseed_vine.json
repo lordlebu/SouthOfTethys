@@ -3,9 +3,19 @@
   "type": "flora",
   "name": "Moonseed Vine",
   "scientific": "Menispermum tethys",
-  "habitats": ["region_aravali", "region_narmada_plateau"],
-  "uses": ["ritual", "memory_archive_graft"],
+  "habitats": [
+    "region_aravali",
+    "region_narmada_plateau"
+  ],
+  "uses": [
+    "ritual",
+    "memory_archive_graft"
+  ],
   "notes": "Pale climbing vine grafted onto Oracle Figs in sanctuary groves. Associated with moon-seed legends and the Silver-Leaved Oracle Fig lineage.",
   "canon": "primary",
-  "sources": ["SouthOfTethys.txt"]
+  "sources": [
+    "SouthOfTethys.txt"
+  ],
+  "biomes": [],
+  "placement": "lore"
 }

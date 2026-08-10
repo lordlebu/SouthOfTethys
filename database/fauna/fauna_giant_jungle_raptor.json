@@ -1,0 +1,19 @@
+{
+  "id": "fauna_giant_jungle_raptor",
+  "type": "fauna",
+  "name": "Giant Jungle Raptor",
+  "scientific": "Silvanus gigas",
+  "region": "shattered-sea-mappa-mundi",
+  "biomes": [
+    "forest"
+  ],
+  "placement": "encounter",
+  "rarity": "rare",
+  "journal_prompt": "A winged, predatory dinosaurid (pterosaur-avian link) with a massive beak, nesting in the highest forest canopies of the southern islands.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "fearsome",
+  "sentient": true
+}

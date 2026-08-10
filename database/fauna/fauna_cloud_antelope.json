@@ -1,0 +1,20 @@
+{
+  "id": "fauna_cloud_antelope",
+  "type": "fauna",
+  "name": "Cloud Antelope",
+  "scientific": null,
+  "region": "prototype-starters",
+  "biomes": [
+    "mountains",
+    "hills",
+    "landmark"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "For a breath, an antelope-shaped cloud stands on a ridge before dissolving into mist.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "mythic"
+}

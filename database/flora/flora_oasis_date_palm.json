@@ -1,0 +1,17 @@
+{
+  "id": "flora_oasis_date_palm",
+  "type": "flora",
+  "name": "Oasis Date Palm",
+  "scientific": "Phoenix dactylifera oasis",
+  "region": "gedrosian-taklamakan",
+  "biomes": [
+    "desert"
+  ],
+  "placement": "flavour",
+  "rarity": "common",
+  "journal_prompt": "A majestic palm tree that provides shelter, wood, and sweet, high-energy fruit in the hidden desert springs.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ]
+}

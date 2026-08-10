@@ -1,0 +1,18 @@
+{
+  "id": "fauna_naga_infiltrator",
+  "type": "fauna",
+  "name": "Naga Infiltrator",
+  "scientific": "Serpens anthropomorphic",
+  "region": "asura-conjurations",
+  "biomes": [
+    "settlement"
+  ],
+  "placement": "lore",
+  "rarity": "mythic",
+  "journal_prompt": "A secretive, shape-shifting serpent-human hybrid that slips into royal courts, carrying out the will of Takshak.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

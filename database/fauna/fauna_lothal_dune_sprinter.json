@@ -1,0 +1,18 @@
+{
+  "id": "fauna_lothal_dune_sprinter",
+  "type": "fauna",
+  "name": "Lothal Dune-Sprinter",
+  "scientific": "Acanthodactylus lothalensis",
+  "region": "saraswati-godavari-deltas",
+  "biomes": [
+    "wetland"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A fast-moving, sand-colored lizard of the salt marshes that feeds on delta insects and crabs.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "playful"
+}

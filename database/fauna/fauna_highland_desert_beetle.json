@@ -1,0 +1,18 @@
+{
+  "id": "fauna_highland_desert_beetle",
+  "type": "fauna",
+  "name": "Highland Desert Beetle",
+  "scientific": "Carabus montanus",
+  "region": "gedrosian-taklamakan",
+  "biomes": [
+    "desert"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A tough-shelled beetle that feeds on cactus pulp, active during the cool, early morning hours.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "flora_blue_scholar_s_moss",
+  "type": "flora",
+  "name": "Blue Scholar's Moss",
+  "scientific": "Dictyonema caeruleum",
+  "region": "narmada-vindhya",
+  "biomes": [
+    "hills",
+    "mountains"
+  ],
+  "placement": "flavour",
+  "rarity": "common",
+  "journal_prompt": "A bioluminescent fungal-algal symbiont that grows on the fossilized marrow of ancient Garudasaurs, illuminating the Stone Age University's archives.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "fauna_underworld_blood_leech",
+  "type": "fauna",
+  "name": "Underworld Blood-Leech",
+  "scientific": "Hirudo asurica",
+  "region": "asura-conjurations",
+  "biomes": [
+    "river"
+  ],
+  "placement": "lore",
+  "rarity": "mythic",
+  "journal_prompt": "A giant aquatic parasite of the Naraka rivers that grows up to 3 feet, draining the vitality of anything that falls into the sulfurous waters.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

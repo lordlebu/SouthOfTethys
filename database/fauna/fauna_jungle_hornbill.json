@@ -1,0 +1,18 @@
+{
+  "id": "fauna_jungle_hornbill",
+  "type": "fauna",
+  "name": "Jungle Hornbill",
+  "scientific": "Buceros sylvanus",
+  "region": "shattered-sea-mappa-mundi",
+  "biomes": [
+    "forest"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A magnificent bird with a double-pointed casque, nesting in old hollow trees and feeding on wild figs.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "fauna_venomous_vengi_mud_salamander",
+  "type": "fauna",
+  "name": "Venomous Vengi Mud-Salamander",
+  "scientific": "Megalobatrachus toxicus",
+  "region": "saraswati-godavari-deltas",
+  "biomes": [
+    "wetland"
+  ],
+  "placement": "encounter",
+  "rarity": "rare",
+  "journal_prompt": "A swamp-dwelling giant salamander variant whose skin exudes a paralyzing neurotoxin when threatened.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "fearsome"
+}

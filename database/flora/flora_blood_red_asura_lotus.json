@@ -3,9 +3,23 @@
   "type": "flora",
   "name": "Blood-red Asura Lotus",
   "scientific": "Nelumbo asurica",
-  "habitats": ["corrupted_zones"],
-  "uses": ["dream_inducer"],
+  "habitats": [
+    "corrupted_zones"
+  ],
+  "uses": [
+    "dream_inducer"
+  ],
   "notes": "Invasive deep-crimson lotus thriving in areas of past magical corruption. Pollen induces vivid, restless dreams.",
   "canon": "primary",
-  "sources": ["SouthOfTethys.txt"]
+  "sources": [
+    "SouthOfTethys.txt",
+    "docs/bestiary.md"
+  ],
+  "region": "saraswati-godavari-deltas",
+  "biomes": [
+    "wetland"
+  ],
+  "placement": "flavour",
+  "rarity": "common",
+  "journal_prompt": "An invasive, deep-crimson lotus that thrives in areas of past magical corruption, its pollen inducing vivid, restless dreams."
 }

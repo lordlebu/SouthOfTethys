@@ -1,0 +1,18 @@
+{
+  "id": "fauna_scythian_war_camel",
+  "type": "fauna",
+  "name": "Scythian War-Camel",
+  "scientific": "Camelus scythicus",
+  "region": "gedrosian-taklamakan",
+  "biomes": [
+    "desert"
+  ],
+  "placement": "encounter",
+  "rarity": "rare",
+  "journal_prompt": "A massive, shaggy-haired desert ungulate bred for its high endurance and resistance to the bitter desert wind.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

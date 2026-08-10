@@ -1,0 +1,19 @@
+{
+  "id": "fauna_vindhya_leopard",
+  "type": "fauna",
+  "name": "Vindhya Leopard",
+  "scientific": "Panthera pardus vindhyensis",
+  "region": "narmada-vindhya",
+  "biomes": [
+    "hills",
+    "mountains"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A lean, long-limbed mountain predator with a coat patterned like fractured volcanic ash, specializing in hunting cliff-goats.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "fearsome"
+}

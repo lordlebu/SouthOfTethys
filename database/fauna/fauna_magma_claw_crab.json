@@ -1,0 +1,18 @@
+{
+  "id": "fauna_magma_claw_crab",
+  "type": "fauna",
+  "name": "Magma-Claw Crab",
+  "scientific": "Gecarcinus magma",
+  "region": "ganges-lava-sea",
+  "biomes": [
+    "mountains"
+  ],
+  "placement": "encounter",
+  "rarity": "rare",
+  "journal_prompt": "A deep-sea vent crustacean that has adapted to direct magma exposure, possessing a heavy, obsidian-black carapace.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

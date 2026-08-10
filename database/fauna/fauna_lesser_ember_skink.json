@@ -1,0 +1,18 @@
+{
+  "id": "fauna_lesser_ember_skink",
+  "type": "fauna",
+  "name": "Lesser Ember-Skink",
+  "scientific": "Agama scintillans",
+  "region": "narmada-vindhya",
+  "biomes": [
+    "mountains"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A small, agile lizard of the volcanic vents, possessing fire-resistant scales and a tail that glows like a hot coal when excited.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "luminous"
+}

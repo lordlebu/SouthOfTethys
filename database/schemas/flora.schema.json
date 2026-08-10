@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Flora",
+  "type": "object",
+  "required": ["id", "type", "name"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^flora_[a-z0-9_]+$" },
+    "type": { "const": "flora" },
+    "name": { "type": "string" },
+    "scientific": { "type": ["string", "null"] },
+    "taxonomy": { "type": "object" },
+    "habitats": { "type": "array", "items": { "type": "string" } },
+    "uses": { "type": "array", "items": { "type": "string" } },
+    "related_species": { "type": "array", "items": { "type": "string" } },
+    "notes": { "type": "string" },
+    "canon": { "type": "string", "enum": ["primary", "secondary", "draft"], "default": "primary" },
+    "sources": { "type": "array", "items": { "type": "string" } },
+
+    "journal_prompt": {
+      "type": "string",
+      "description": "Player-facing prose read in the travel journal. Distinct from `notes`: `notes` is a reference fact for the canon reader, `journal_prompt` is the sentence the player sees. Exported as `journalPrompt`."
+    },
+    "region": {
+      "type": "string",
+      "enum": [
+        "saraswati-godavari-deltas",
+        "narmada-vindhya",
+        "gedrosian-taklamakan",
+        "shattered-sea-mappa-mundi",
+        "ganges-lava-sea",
+        "tethys-sky-routes",
+        "asura-conjurations",
+        "prototype-starters"
+      ],
+      "description": "Bestiary region of origin, kept for provenance."
+    },
+    "biomes": {
+      "type": "array",
+      "description": "Tile biomes this species may be placed in. Empty means it is never placed.",
+      "items": {
+        "type": "string",
+        "enum": ["sea", "coast", "plains", "forest", "wetland", "hills", "mountains", "desert", "river", "settlement", "landmark"]
+      }
+    },
+    "placement": {
+      "type": "string",
+      "enum": ["encounter", "flavour", "lore"],
+      "description": "Plants placed in play are `flavour`; `lore` is authored but never placed. Untagged imports default to `lore`."
+    },
+    "rarity": { "type": "string", "enum": ["common", "rare", "mythic"] },
+    "epochs": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Epoch ids from database/timeline/epochs.json. Absent means present in all epochs."
+    }
+  },
+  "additionalProperties": true
+}

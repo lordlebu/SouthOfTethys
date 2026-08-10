@@ -1,0 +1,17 @@
+{
+  "id": "flora_saraswati_reed",
+  "type": "flora",
+  "name": "Saraswati Reed",
+  "scientific": "Calamus sarasvaticus",
+  "region": "saraswati-godavari-deltas",
+  "biomes": [
+    "wetland"
+  ],
+  "placement": "flavour",
+  "rarity": "common",
+  "journal_prompt": "A tall, hollow, fibrous reed used by the Kia clan for weaving baskets, roofs, and lightweight outrigger hulls.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "fauna_lethal_cave_spectre",
+  "type": "fauna",
+  "name": "Lethal Cave-Spectre",
+  "scientific": "Asura spectral",
+  "region": "asura-conjurations",
+  "biomes": [
+    "mountains"
+  ],
+  "placement": "lore",
+  "rarity": "mythic",
+  "journal_prompt": "A dark, floating entity born from the blood-spills of the first Asura invasion, guarding forgotten mountain tombs.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "uncanny"
+}

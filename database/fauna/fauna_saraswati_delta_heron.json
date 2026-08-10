@@ -1,0 +1,18 @@
+{
+  "id": "fauna_saraswati_delta_heron",
+  "type": "fauna",
+  "name": "Saraswati Delta Heron",
+  "scientific": "Ardea sarasvati",
+  "region": "saraswati-godavari-deltas",
+  "biomes": [
+    "coast"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A long-legged wading bird with pale silver feathers that filters small bronze fish from the delta's estuaries.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

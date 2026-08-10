@@ -1,0 +1,17 @@
+{
+  "id": "flora_lapis_lazuli_reef_builder",
+  "type": "flora",
+  "name": "Lapis-Lazuli Reef-Builder",
+  "scientific": "Tethysolithus lapis",
+  "region": "shattered-sea-mappa-mundi",
+  "biomes": [
+    "sea"
+  ],
+  "placement": "flavour",
+  "rarity": "common",
+  "journal_prompt": "A coral species with a dense, brilliant-blue calcified structure, highly prized for jewelry and architectural inlay.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ]
+}

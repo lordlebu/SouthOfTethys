@@ -1,0 +1,17 @@
+{
+  "id": "flora_lesser_whisper_fig",
+  "type": "flora",
+  "name": "Lesser Whisper-Fig",
+  "scientific": "Ficus murmurans",
+  "region": "narmada-vindhya",
+  "biomes": [
+    "hills"
+  ],
+  "placement": "flavour",
+  "rarity": "common",
+  "journal_prompt": "A smaller, shrub-like relative of the Bhuta-Kāna fig, growing on cliffs and whispering soft, ambient forest sounds during high winds.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ]
+}

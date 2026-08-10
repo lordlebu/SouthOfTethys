@@ -1,0 +1,19 @@
+{
+  "id": "fauna_tethyan_mud_snipe",
+  "type": "fauna",
+  "name": "Tethyan Mud-Snipe",
+  "scientific": "Gallinago tethys",
+  "region": "saraswati-godavari-deltas",
+  "biomes": [
+    "sea",
+    "coast"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A long-billed bird that probes the estuarial mud for marine worms, its call sounding like rhythmic clicking.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

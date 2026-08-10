@@ -1,0 +1,18 @@
+{
+  "id": "fauna_basalt_cave_lurker",
+  "type": "fauna",
+  "name": "Basalt Cave-Lurker",
+  "scientific": "Agama basaltica",
+  "region": "ganges-lava-sea",
+  "biomes": [
+    "mountains"
+  ],
+  "placement": "encounter",
+  "rarity": "rare",
+  "journal_prompt": "A dark, stone-skinned lizard that lives in the deep fissures of cooled lava plains, feeding on iron snails and magma-crabs.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

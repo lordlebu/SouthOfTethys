@@ -1,0 +1,20 @@
+{
+  "id": "fauna_ash_skinned_courtesan",
+  "type": "fauna",
+  "name": "Ash-Skinned Courtesan",
+  "scientific": "Māyā-born",
+  "region": "asura-conjurations",
+  "biomes": [
+    "river",
+    "wetland",
+    "settlement"
+  ],
+  "placement": "lore",
+  "rarity": "mythic",
+  "journal_prompt": "An artificial, female humanoid sculpted from river mud and lotus pollen, which later mutated into a flesh-hungry night-stalker.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "uncanny"
+}

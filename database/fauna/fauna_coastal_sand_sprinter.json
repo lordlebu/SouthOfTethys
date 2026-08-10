@@ -1,0 +1,18 @@
+{
+  "id": "fauna_coastal_sand_sprinter",
+  "type": "fauna",
+  "name": "Coastal Sand-Sprinter",
+  "scientific": "Postosuchus bipedalis",
+  "region": "gedrosian-taklamakan",
+  "biomes": [
+    "desert"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A predatory, bipedal crocodyliform that re-evolved an upright, bipedal sprinting gait to chase down prey on sandy shores.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "fearsome"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "fauna_sand_resurrected_behemoth",
+  "type": "fauna",
+  "name": "Sand-Resurrected Behemoth",
+  "scientific": "Sauropodoligator arenarius",
+  "region": "asura-conjurations",
+  "biomes": [
+    "desert"
+  ],
+  "placement": "lore",
+  "rarity": "mythic",
+  "journal_prompt": "A smaller, desert-bound variant of the Devourer, emerging from the sands of the Gedrosian wastes to hunt nomads.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "uncanny"
+}

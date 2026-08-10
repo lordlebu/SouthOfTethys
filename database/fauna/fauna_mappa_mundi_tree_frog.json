@@ -1,0 +1,18 @@
+{
+  "id": "fauna_mappa_mundi_tree_frog",
+  "type": "fauna",
+  "name": "Mappa Mundi Tree-Frog",
+  "scientific": "Hyla sylvanica",
+  "region": "shattered-sea-mappa-mundi",
+  "biomes": [
+    "forest"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A tiny, brightly colored amphibian with sticky toes, secreting a mild toxin used by local hunters to coat arrowheads.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

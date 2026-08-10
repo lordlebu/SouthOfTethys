@@ -3,9 +3,18 @@
   "type": "flora",
   "name": "Red Delta Rice",
   "scientific": "Oryza rubra-delta",
-  "habitats": ["region_saraswati_delta"],
-  "uses": ["staple_grain", "trade"],
+  "habitats": [
+    "region_saraswati_delta"
+  ],
+  "uses": [
+    "staple_grain",
+    "trade"
+  ],
   "notes": "Iron-rich short-grain rice of the Saraswati floodplain. Forms the bulk of Lothal granary stores and river trade with upland settlements.",
   "canon": "primary",
-  "sources": ["SouthOfTethys.txt"]
+  "sources": [
+    "SouthOfTethys.txt"
+  ],
+  "biomes": [],
+  "placement": "lore"
 }

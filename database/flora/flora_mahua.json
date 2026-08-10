@@ -3,9 +3,20 @@
   "type": "flora",
   "name": "Mahua",
   "scientific": "Madhuca longifolia",
-  "habitats": ["region_narmada_plateau", "region_aravali"],
-  "uses": ["fermented_drink", "oil", "ritual_offering"],
+  "habitats": [
+    "region_narmada_plateau",
+    "region_aravali"
+  ],
+  "uses": [
+    "fermented_drink",
+    "oil",
+    "ritual_offering"
+  ],
   "notes": "Flowering tree of the dry plateaus. Night-blooming flowers gathered for sweet liquor and lamp oil. Kia and Jharwa use the blossom in seasonal offerings.",
   "canon": "primary",
-  "sources": ["SouthOfTethys.txt"]
+  "sources": [
+    "SouthOfTethys.txt"
+  ],
+  "biomes": [],
+  "placement": "lore"
 }

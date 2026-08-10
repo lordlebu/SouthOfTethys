@@ -1,0 +1,17 @@
+{
+  "id": "flora_obsidian_rose",
+  "type": "flora",
+  "name": "Obsidian Rose",
+  "scientific": "Rosa obsidiana",
+  "region": "asura-conjurations",
+  "biomes": [
+    "settlement"
+  ],
+  "placement": "lore",
+  "rarity": "mythic",
+  "journal_prompt": "A rose bush with razor-sharp black petals that secrete a deadly coagulant, growing in the ruins of desecrated temples.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "fauna_rajasaurus_ambush_drake",
+  "type": "fauna",
+  "name": "Rajasaurus Ambush-Drake",
+  "scientific": "Rajasaurus asuricus",
+  "region": "asura-conjurations",
+  "biomes": [
+    "settlement"
+  ],
+  "placement": "lore",
+  "rarity": "mythic",
+  "journal_prompt": "A colossal, feathered theropod predator genetically altered with Asura venom, serving as the ultimate fortress guardian.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "uncanny"
+}

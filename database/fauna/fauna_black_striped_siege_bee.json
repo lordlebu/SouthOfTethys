@@ -1,0 +1,19 @@
+{
+  "id": "fauna_black_striped_siege_bee",
+  "type": "fauna",
+  "name": "Black-Striped Siege Bee",
+  "scientific": "Megapis obsidiana",
+  "region": "narmada-vindhya",
+  "biomes": [
+    "hills",
+    "mountains"
+  ],
+  "placement": "encounter",
+  "rarity": "rare",
+  "journal_prompt": "A territorial, hyper-aggressive giant bee subspecies whose sting delivers a burning, venomous heat resembling hot ash.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "fearsome"
+}

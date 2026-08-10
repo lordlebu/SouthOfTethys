@@ -1,0 +1,18 @@
+{
+  "id": "flora_tawny_sagebrush",
+  "type": "flora",
+  "name": "Tawny Sagebrush",
+  "scientific": "Artemisia tawny",
+  "region": "gedrosian-taklamakan",
+  "biomes": [
+    "desert",
+    "plains"
+  ],
+  "placement": "flavour",
+  "rarity": "common",
+  "journal_prompt": "A highly fragrant, bitter herb that grows in the sandy plains, used by nomads to ward off desert insects and spirits.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ]
+}

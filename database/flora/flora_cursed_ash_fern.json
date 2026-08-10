@@ -1,0 +1,15 @@
+{
+  "id": "flora_cursed_ash_fern",
+  "type": "flora",
+  "name": "Cursed Ash-Fern",
+  "scientific": "Pteris asurica",
+  "region": "asura-conjurations",
+  "biomes": [],
+  "placement": "lore",
+  "rarity": "mythic",
+  "journal_prompt": "A fern with charcoal-black fronds that grows only in soil scorched by fire-brides, absorbing light and warmth from its surroundings.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ]
+}

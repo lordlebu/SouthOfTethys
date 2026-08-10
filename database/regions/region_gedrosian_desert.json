@@ -3,7 +3,13 @@
   "type": "region",
   "name": "Gedrosian Desert",
   "continent": "jambhudweepa",
+  "bestiary_region": "gedrosian-taklamakan",
+  "biomes": [
+    "desert"
+  ],
   "notes": "Arid frontier. Home to Beedu desert rays and northern steppe approaches.",
   "canon": "primary",
-  "sources": ["map"]
+  "sources": [
+    "map"
+  ]
 }

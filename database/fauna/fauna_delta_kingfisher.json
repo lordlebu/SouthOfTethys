@@ -1,0 +1,19 @@
+{
+  "id": "fauna_delta_kingfisher",
+  "type": "fauna",
+  "name": "Delta Kingfisher",
+  "scientific": "Alcedo vishnu",
+  "region": "saraswati-godavari-deltas",
+  "biomes": [
+    "wetland",
+    "river"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A tiny, brilliant-blue bird that dives with extreme speed to spear bronze fish, its sharp call mimicking wind chimes.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

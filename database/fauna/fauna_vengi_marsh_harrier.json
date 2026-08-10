@@ -1,0 +1,18 @@
+{
+  "id": "fauna_vengi_marsh_harrier",
+  "type": "fauna",
+  "name": "Vengi Marsh Harrier",
+  "scientific": "Circus vengi",
+  "region": "saraswati-godavari-deltas",
+  "biomes": [
+    "wetland"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A low-flying bird of prey that sweeps over the reed beds, hunting young dinosaurids and salamanders.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "fearsome"
+}

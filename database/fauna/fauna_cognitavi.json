@@ -4,9 +4,20 @@
   "name": "Cognitavi",
   "scientific": null,
   "diet": "Omnivore",
-  "habitats": ["coastal", "tethys"],
-  "behaviour": ["navigator", "weather_reader", "intelligent"],
+  "habitats": [
+    "coastal",
+    "tethys"
+  ],
+  "behaviour": [
+    "navigator",
+    "weather_reader",
+    "intelligent"
+  ],
   "notes": "Hyper-intelligent navigator birds. Subspecies include Vanga Pearl-Guide and Abyssal Storm-Watcher that aid seafarers.",
   "canon": "primary",
-  "sources": ["SouthOfTethys.txt"]
+  "sources": [
+    "SouthOfTethys.txt"
+  ],
+  "biomes": [],
+  "placement": "lore"
 }

@@ -1,0 +1,18 @@
+{
+  "id": "fauna_frost_whisker_carp",
+  "type": "fauna",
+  "name": "Frost-Whisker Carp",
+  "scientific": "Cyprinus glacialis",
+  "region": "ganges-lava-sea",
+  "biomes": [
+    "mountains"
+  ],
+  "placement": "encounter",
+  "rarity": "rare",
+  "journal_prompt": "An ancient fish species possessing natural antifreeze glycoproteins, glowing with a pale blue light beneath glacial ice.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "luminous"
+}

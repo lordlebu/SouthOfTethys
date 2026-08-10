@@ -1,0 +1,17 @@
+{
+  "id": "flora_bitter_marsh_root",
+  "type": "flora",
+  "name": "Bitter Marsh-root",
+  "scientific": "Sarasvatia amara",
+  "region": "saraswati-godavari-deltas",
+  "biomes": [
+    "wetland"
+  ],
+  "placement": "flavour",
+  "rarity": "common",
+  "journal_prompt": "A bitter-tasting variety of Saraswati spiceroot that grows in saltwater marshes, used as an antidote to marsh-fever.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ]
+}

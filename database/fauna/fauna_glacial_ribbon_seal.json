@@ -1,0 +1,18 @@
+{
+  "id": "fauna_glacial_ribbon_seal",
+  "type": "fauna",
+  "name": "Glacial Ribbon-Seal",
+  "scientific": "Phoca ribbon",
+  "region": "ganges-lava-sea",
+  "biomes": [
+    "mountains"
+  ],
+  "placement": "encounter",
+  "rarity": "rare",
+  "journal_prompt": "A marine mammal with distinctive white band markings, hunting Sarovar fish beneath the ice shelves.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "fearsome"
+}

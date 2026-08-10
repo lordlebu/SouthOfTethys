@@ -1,0 +1,15 @@
+{
+  "id": "flora_toxic_red_spore_moss",
+  "type": "flora",
+  "name": "Toxic Red Spore-Moss",
+  "scientific": "Dictyonema venenum",
+  "region": "narmada-vindhya",
+  "biomes": [],
+  "placement": "lore",
+  "rarity": "common",
+  "journal_prompt": "A dangerous, rust-colored variant of Garudasaur moss that releases airborne spores causing temporary respiratory paralysis in intruders.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ]
+}

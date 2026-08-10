@@ -1,0 +1,19 @@
+{
+  "id": "fauna_narmada_cave_bear",
+  "type": "fauna",
+  "name": "Narmada Cave Bear",
+  "scientific": "Ursus spelaeus narmadensis",
+  "region": "narmada-vindhya",
+  "biomes": [
+    "hills",
+    "mountains"
+  ],
+  "placement": "encounter",
+  "rarity": "rare",
+  "journal_prompt": "A massive, thick-furred predator of the high caves that climbs cliffs to raid honey-goliath nests, frequently clashing with human gatherers.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "fearsome"
+}

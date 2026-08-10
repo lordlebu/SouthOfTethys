@@ -1,0 +1,18 @@
+{
+  "id": "fauna_clay_born_watcher",
+  "type": "fauna",
+  "name": "Clay-Born Watcher",
+  "scientific": "Māyā-born oculus",
+  "region": "asura-conjurations",
+  "biomes": [
+    "settlement"
+  ],
+  "placement": "lore",
+  "rarity": "mythic",
+  "journal_prompt": "An artificial, clay-sculpted eye construct animated by ancient mantras, used by Harappan lords to spy on their courts.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "uncanny"
+}

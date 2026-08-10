@@ -3,9 +3,18 @@
   "type": "fauna",
   "name": "Megalosaurus",
   "diet": "Carnivore",
-  "habitats": ["hyrkanian_steppe"],
-  "behaviour": ["rampaging", "large_theropod"],
+  "habitats": [
+    "hyrkanian_steppe"
+  ],
+  "behaviour": [
+    "rampaging",
+    "large_theropod"
+  ],
   "notes": "Appeared during the Naraka portal event; killed Nirigili’s Elephantbird mount.",
   "canon": "primary",
-  "sources": ["AI_CONTEXT.md"]
+  "sources": [
+    "AI_CONTEXT.md"
+  ],
+  "biomes": [],
+  "placement": "lore"
 }

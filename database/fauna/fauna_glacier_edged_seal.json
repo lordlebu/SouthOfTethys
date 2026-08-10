@@ -1,0 +1,18 @@
+{
+  "id": "fauna_glacier_edged_seal",
+  "type": "fauna",
+  "name": "Glacier-Edged Seal",
+  "scientific": "Phoca glacialis",
+  "region": "ganges-lava-sea",
+  "biomes": [
+    "mountains"
+  ],
+  "placement": "encounter",
+  "rarity": "rare",
+  "journal_prompt": "A robust marine mammal with a thick layer of blubber, hunting Sarovar fish beneath the ice shelves of the deep south.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "fearsome"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "fauna_tethyan_blue_fin_tuna",
+  "type": "fauna",
+  "name": "Tethyan Blue-Fin Tuna",
+  "scientific": "Thunnus tethys",
+  "region": "shattered-sea-mappa-mundi",
+  "biomes": [
+    "sea"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A fast-swimming, silver-scaled predatory fish that travels in large schools in the open waters of the Shattered Sea.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "fearsome"
+}

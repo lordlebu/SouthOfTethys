@@ -1,0 +1,19 @@
+{
+  "id": "fauna_narmada_cave_crab",
+  "type": "fauna",
+  "name": "Narmada Cave-Crab",
+  "scientific": "Potamon cavea",
+  "region": "narmada-vindhya",
+  "biomes": [
+    "hills",
+    "mountains"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A blind, pale freshwater crab that lives in the dark subterranean streams beneath the plateau.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

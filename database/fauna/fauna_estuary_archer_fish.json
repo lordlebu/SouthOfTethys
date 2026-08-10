@@ -1,0 +1,18 @@
+{
+  "id": "fauna_estuary_archer_fish",
+  "type": "fauna",
+  "name": "Estuary Archer-Fish",
+  "scientific": "Toxotes tethys",
+  "region": "saraswati-godavari-deltas",
+  "biomes": [
+    "coast"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A fish that shoots jets of water from its mouth to knock down insects resting on overhanging mangrove leaves.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

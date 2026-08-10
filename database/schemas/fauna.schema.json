@@ -15,7 +15,55 @@
     "related_species": { "type": "array", "items": { "type": "string" } },
     "notes": { "type": "string" },
     "canon": { "type": "string", "enum": ["primary", "secondary", "draft"], "default": "primary" },
-    "sources": { "type": "array", "items": { "type": "string" } }
+    "sources": { "type": "array", "items": { "type": "string" } },
+
+    "journal_prompt": {
+      "type": "string",
+      "description": "Player-facing prose read in the travel journal. Distinct from `notes`: `notes` is a reference fact for the canon reader, `journal_prompt` is the sentence the player sees. Exported as `journalPrompt`."
+    },
+    "region": {
+      "type": "string",
+      "enum": [
+        "saraswati-godavari-deltas",
+        "narmada-vindhya",
+        "gedrosian-taklamakan",
+        "shattered-sea-mappa-mundi",
+        "ganges-lava-sea",
+        "tethys-sky-routes",
+        "asura-conjurations",
+        "prototype-starters"
+      ],
+      "description": "Bestiary region of origin, kept for provenance."
+    },
+    "biomes": {
+      "type": "array",
+      "description": "Tile biomes this species may be placed in. Empty means it is never placed.",
+      "items": {
+        "type": "string",
+        "enum": ["sea", "coast", "plains", "forest", "wetland", "hills", "mountains", "desert", "river", "settlement", "landmark"]
+      }
+    },
+    "placement": {
+      "type": "string",
+      "enum": ["encounter", "flavour", "lore"],
+      "description": "`encounter` is met in play; `lore` is authored but never placed. Untagged imports default to `lore` so nothing reaches the encounter table unreviewed."
+    },
+    "rarity": { "type": "string", "enum": ["common", "rare", "mythic"] },
+    "mood": {
+      "type": "string",
+      "enum": ["clever", "curious", "fearsome", "gentle", "graceful", "luminous", "mythic", "patient", "playful", "uncanny", "watchful"],
+      "description": "Drives journal tone. Fauna only."
+    },
+    "sentient": {
+      "type": "boolean",
+      "default": false,
+      "description": "True for the avian-dinosaurid and other sapient peoples (Cognitavi, Nagaraptor, Silvanus, Sylvians, Kuktush). They are sovereign cultures, not wildlife; see AI_CONTEXT.md:998-1006. A sentient species should carry a matching faction entity and should not sit in the encounter table untagged."
+    },
+    "epochs": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Epoch ids from database/timeline/epochs.json. Absent means present in all epochs."
+    }
   },
   "additionalProperties": true
 }

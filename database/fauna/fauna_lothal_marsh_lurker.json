@@ -3,11 +3,30 @@
   "type": "fauna",
   "name": "Lothal Marsh-Lurker",
   "scientific": "Megalobatrachus lothalensis",
-  "taxonomy": { "notes": "Giant river salamander, Pleistocene survivor" },
+  "taxonomy": {
+    "notes": "Giant river salamander, Pleistocene survivor"
+  },
   "diet": "Carnivore",
-  "habitats": ["region_saraswati_delta"],
-  "behaviour": ["ambush", "aquatic"],
+  "habitats": [
+    "region_saraswati_delta"
+  ],
+  "behaviour": [
+    "ambush",
+    "aquatic"
+  ],
   "notes": "8-foot giant river salamander waiting in murky delta pools of Lothal.",
   "canon": "primary",
-  "sources": ["SouthOfTethys.txt"]
+  "sources": [
+    "SouthOfTethys.txt",
+    "docs/bestiary.md"
+  ],
+  "region": "saraswati-godavari-deltas",
+  "biomes": [
+    "wetland",
+    "river"
+  ],
+  "placement": "encounter",
+  "rarity": "rare",
+  "journal_prompt": "An 8-foot giant river salamander that has survived since the Pleistocene. It waits in the murky delta pools of Lothal to ambush passing prey.",
+  "mood": "fearsome"
 }

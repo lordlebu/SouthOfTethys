@@ -4,9 +4,25 @@
   "name": "Baurusuchus",
   "scientific": "Baurusuchus palustris",
   "diet": "Carnivore",
-  "habitats": ["region_saraswati_delta"],
-  "behaviour": ["ambush", "quadrupedal"],
+  "habitats": [
+    "region_saraswati_delta"
+  ],
+  "behaviour": [
+    "ambush",
+    "quadrupedal"
+  ],
   "notes": "Heavy land crocodile specializing in ambush in shallow reed marshes. Subspecies include Striped Reed Stalker and Mud-Armored Ambusher.",
   "canon": "primary",
-  "sources": ["SouthOfTethys.txt"]
+  "sources": [
+    "SouthOfTethys.txt",
+    "docs/bestiary.md"
+  ],
+  "region": "saraswati-godavari-deltas",
+  "biomes": [
+    "wetland"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A heavy, quadrupedal land crocodile that prowls the delta, specializing in ambush techniques in shallow reed marshes.",
+  "mood": "fearsome"
 }

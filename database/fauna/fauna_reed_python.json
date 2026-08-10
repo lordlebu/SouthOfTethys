@@ -4,9 +4,18 @@
   "name": "Reed Python",
   "scientific": "Python phragmitis",
   "diet": "Carnivore",
-  "habitats": ["region_saraswati_delta"],
-  "behaviour": ["constrictor", "ambush"],
+  "habitats": [
+    "region_saraswati_delta"
+  ],
+  "behaviour": [
+    "constrictor",
+    "ambush"
+  ],
   "notes": "Heavy python of Saltreed thickets. Takes waterfowl and small monitors; rarely threatens adults.",
   "canon": "primary",
-  "sources": ["SouthOfTethys.txt"]
+  "sources": [
+    "SouthOfTethys.txt"
+  ],
+  "biomes": [],
+  "placement": "lore"
 }

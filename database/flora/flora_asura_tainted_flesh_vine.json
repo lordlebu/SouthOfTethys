@@ -1,0 +1,17 @@
+{
+  "id": "flora_asura_tainted_flesh_vine",
+  "type": "flora",
+  "name": "Asura-Tainted Flesh-Vine",
+  "scientific": "Vitis carnosa",
+  "region": "asura-conjurations",
+  "biomes": [
+    "forest"
+  ],
+  "placement": "lore",
+  "rarity": "mythic",
+  "journal_prompt": "A highly mutated forest climber with animal-like muscle fibers, capable of grasping and constricting small animals.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ]
+}

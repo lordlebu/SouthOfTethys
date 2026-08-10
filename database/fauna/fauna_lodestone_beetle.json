@@ -1,0 +1,16 @@
+{
+  "id": "fauna_lodestone_beetle",
+  "type": "fauna",
+  "name": "Lodestone Beetle",
+  "scientific": "Carabus magneticus",
+  "region": "tethys-sky-routes",
+  "biomes": [],
+  "placement": "lore",
+  "rarity": "rare",
+  "journal_prompt": "An insect with a metallic, magnetic carapace that feeds on mineral deposits along the floating island cores.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "graceful"
+}

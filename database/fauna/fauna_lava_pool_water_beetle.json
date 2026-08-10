@@ -1,0 +1,18 @@
+{
+  "id": "fauna_lava_pool_water_beetle",
+  "type": "fauna",
+  "name": "Lava-Pool Water-Beetle",
+  "scientific": "Dytiscus vulcanus",
+  "region": "saraswati-godavari-deltas",
+  "biomes": [
+    "mountains"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A predatory aquatic beetle that swims in hot mineral springs, feeding on larval vent-shrimps.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "fearsome"
+}

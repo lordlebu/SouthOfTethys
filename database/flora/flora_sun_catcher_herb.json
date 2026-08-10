@@ -1,0 +1,15 @@
+{
+  "id": "flora_sun_catcher_herb",
+  "type": "flora",
+  "name": "Sun-Catcher Herb",
+  "scientific": "Glassa solis",
+  "region": "tethys-sky-routes",
+  "biomes": [],
+  "placement": "lore",
+  "rarity": "rare",
+  "journal_prompt": "A silicate-absorbing plant with leaves that mirror stained glass, concentrating golden sunlight for deep-time healing.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ]
+}

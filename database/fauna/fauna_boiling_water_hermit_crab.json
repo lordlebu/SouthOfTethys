@@ -1,0 +1,18 @@
+{
+  "id": "fauna_boiling_water_hermit_crab",
+  "type": "fauna",
+  "name": "Boiling-Water Hermit-Crab",
+  "scientific": "Pagurus vulcanus",
+  "region": "ganges-lava-sea",
+  "biomes": [
+    "mountains"
+  ],
+  "placement": "encounter",
+  "rarity": "rare",
+  "journal_prompt": "A crab that uses discarded basalt-snail shells, thriving in the scalding rock pools near the lava lake.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

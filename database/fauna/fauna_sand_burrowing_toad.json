@@ -1,0 +1,18 @@
+{
+  "id": "fauna_sand_burrowing_toad",
+  "type": "fauna",
+  "name": "Sand-Burrowing Toad",
+  "scientific": "Bufo arenarius",
+  "region": "gedrosian-taklamakan",
+  "biomes": [
+    "desert"
+  ],
+  "placement": "encounter",
+  "rarity": "rare",
+  "journal_prompt": "An amphibian that remains buried in moist deep sand for months, emerging only during rare, sudden desert rains to breed.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "patient"
+}

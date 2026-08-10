@@ -1,0 +1,18 @@
+{
+  "id": "fauna_vindhya_forest_falcon",
+  "type": "fauna",
+  "name": "Vindhya Forest Falcon",
+  "scientific": "Falco sylvanus",
+  "region": "saraswati-godavari-deltas",
+  "biomes": [
+    "forest"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A quiet, predatory bird that hunts arboreal octopuses and squirrels in the Narmada canopies.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "fearsome"
+}

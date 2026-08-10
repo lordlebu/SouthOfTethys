@@ -1,0 +1,18 @@
+{
+  "id": "fauna_giant_blue_ringed_octopus",
+  "type": "fauna",
+  "name": "Giant Blue-Ringed Octopus",
+  "scientific": "Octopus caeruleus",
+  "region": "shattered-sea-mappa-mundi",
+  "biomes": [
+    "sea"
+  ],
+  "placement": "encounter",
+  "rarity": "rare",
+  "journal_prompt": "A highly intelligent, marine cephalopod of the Shattered Sea that flashes glowing blue bands to distract predators.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "luminous"
+}

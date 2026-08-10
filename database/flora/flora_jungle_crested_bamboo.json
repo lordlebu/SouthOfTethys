@@ -1,0 +1,17 @@
+{
+  "id": "flora_jungle_crested_bamboo",
+  "type": "flora",
+  "name": "Jungle-Crested Bamboo",
+  "scientific": "Bambusa sylvanica",
+  "region": "shattered-sea-mappa-mundi",
+  "biomes": [
+    "forest"
+  ],
+  "placement": "flavour",
+  "rarity": "common",
+  "journal_prompt": "A fast-growing, heavy bamboo with thick walls and high silica content, used for constructing cages and outriggers.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ]
+}

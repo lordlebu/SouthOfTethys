@@ -1,0 +1,18 @@
+{
+  "id": "fauna_taklamakan_sand_viper",
+  "type": "fauna",
+  "name": "Taklamakan Sand-Viper",
+  "scientific": "Vipera sand-dune",
+  "region": "gedrosian-taklamakan",
+  "biomes": [
+    "desert"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A sand-colored viper that moves with a side-winding motion, leaving S-shaped tracks across the deep dunes.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

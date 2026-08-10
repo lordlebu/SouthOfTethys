@@ -1,0 +1,18 @@
+{
+  "id": "fauna_salt_flat_cricket",
+  "type": "fauna",
+  "name": "Salt-Flat Cricket",
+  "scientific": "Gryllus salinus",
+  "region": "gedrosian-taklamakan",
+  "biomes": [
+    "desert"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "An insect with a thick, white carapace that feeds on dried saltbush leaves along the salt plains.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}

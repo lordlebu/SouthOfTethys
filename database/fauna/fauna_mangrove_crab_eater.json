@@ -1,0 +1,18 @@
+{
+  "id": "fauna_mangrove_crab_eater",
+  "type": "fauna",
+  "name": "Mangrove Crab-Eater",
+  "scientific": "Herpestes mangrovus",
+  "region": "saraswati-godavari-deltas",
+  "biomes": [
+    "coast"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A sleek mongoose species that specializes in cracking open hard-shelled delta crustaceans with its robust jaw structure.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "mood": "watchful"
+}
