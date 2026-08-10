@@ -27,6 +27,24 @@ would be deleted outright when that script is retired: five prototype starter
 creatures, and the fillGaps biome assignments that keep plains/settlement/landmark
 from being empty.
 
+Placement rules, as settled (see database/README.md for the full statement):
+
+  Asura-tainted   placed like anything else, at mythic rarity. They are met
+                  occasionally and are meant to unsettle. The game weights picks
+                  by rarity, which is what keeps "occasionally" true -- without
+                  that weighting, uniform picking put a horror in every second
+                  village.
+  Sky species     never placed. The floating islands are a planned mode and these
+                  are its content, held in reserve. They carry a placement_note
+                  saying so, because an empty `biomes` list otherwise reads as an
+                  untagged entity and invites someone to spend them on ground.
+  sentient        taxonomy only, not a placement rule. In-world the Harappans
+                  regard these lineages as animals, so a sentient species in the
+                  encounter table is correct.
+  everything else biomes from prose keywords, preferring agreement with the
+                  species' own region; anything that matches nothing lands as
+                  lore and needs tagging by hand.
+
 Dry run by default. Pass --apply to write.
 
     python utils/import_bestiary.py
@@ -114,7 +132,42 @@ MOOD_HINTS = [
 
 # Sky species have no equivalent among the ten ground biomes, and their prose mentions
 # terrain they only fly over ("aero-mangrove", "sky coral"), which would mis-file them.
-SKY_MARKER = r"\b(floating island\w*|sky[- ]\w+|aero[- ]\w+|prana|low[- ]gravity|lodestone|airborne|cloud[- ]weaver)\b"
+# The marker also catches strays: the Sky-Faring Grasshopper is filed under Section 1 but
+# migrates between floating islands.
+# "airborne" was in this list and was too loose: the Toxic Red Spore-Moss "releases airborne
+# spores" and was pulled into the sky reserve, a plateau moss labelled as content for a mode
+# it has nothing to do with. Every genuine sky species is caught by its region; the marker
+# only has to catch strays filed under the wrong section.
+SKY_MARKER = r"\b(floating island\w*|sky[- ]\w+|aero[- ]\w+|prana|low[- ]gravity|lodestone|cloud[- ]weaver)\b"
+
+# Sky species are a reserve, not a backlog. The floating islands are a planned mode and
+# these are its content, waiting -- so each says so on itself, or the next pass over empty
+# `biomes` reads them as untagged and spends them on ground biomes.
+# Naraka natives. Their water is not the Saraswati's, so they must not be placed in ordinary
+# river and wetland tiles by the biome keywords in their own prose -- "swims in the sulfuric
+# rivers of Naraka" would otherwise land a rift snake in the delta. All six matches in the
+# bestiary are locative ("of the Naraka rivers", "grows near underworld rifts", "rituals in
+# Naraka"), so the plain word is a precise enough marker; "rift" and "portal" are not, and
+# catch lava rifts and the Sylvian Gate.
+NARAKA_MARKER = r"\b(naraka|underworld)\b"
+
+NARAKA_NOTE = (
+    "Native to the Naraka rifts, not to this realm's water or ground. Naraka creatures cross through "
+    "gates: the standing Dwarka Gate (settlement_dwarka, event_shadow_pact) and the portal Guyuk tore "
+    "open over the Hyrkanian steppe, whose outcomes record a beast spill (event_naraka_portal). So one "
+    "met here should be met at a gate and nowhere else. `underworld` is not renderable yet, so the "
+    "export holds this as lore; when a gate exists as a landmark, add that biome."
+)
+
+# The known crossings between Naraka and this realm. Not one gate but a kind of thing:
+# the Dwarka Gate stands, and Guyuk tore another open over the Hyrkanian steppe.
+NARAKA_CROSSING = ["event_naraka_portal", "settlement_dwarka"]
+
+SKY_RESERVE_NOTE = (
+    "Lives on the floating islands. `sky_island` and its neighbours are real canon biomes but are "
+    "not renderable yet, so the export holds this as lore until a sky mode exists. This is a stated "
+    "home, not an untagged entity."
+)
 
 ENTRY_RE = re.compile(r"^\d+\.\s+\*\*(.+?)\*\*\s+—\s+(.+)$")
 NAMED_RE = re.compile(r"^(.*?)\s*\(\*(.+?)\*\)\s*$")
@@ -135,7 +188,20 @@ def place_for(text: str, region: str) -> tuple[list[str], str]:
     detected = list(dict.fromkeys(_hits(BIOME_HINTS, text)))[:3]
 
     if region == "tethys-sky-routes" or re.search(SKY_MARKER, text, re.IGNORECASE):
-        return [], "lore"
+        # A real home, not a blank. `sky_island` and its neighbours are canon biomes that the
+        # game cannot render, so the export turns them into `lore` on its own -- which means
+        # the species can say where it lives without an empty list having to mean two things.
+        sky = ["sky_island"]
+        if re.search(r"underside|attach|cling|adhesive|beneath the island|calcified|roots? plunge|shelter", text, re.I):
+            sky.append("sky_underside")
+        if re.search(r"glid|soar|migrat|drift|balloon|skim|fly|flying|between islands|rudder|hollow bones", text, re.I):
+            sky.append("open_sky")
+        return sky, "lore"
+
+    # Checked before the biome keywords, which would otherwise read "sulfuric rivers of Naraka"
+    # as a river and put a rift snake in the Saraswati.
+    if re.search(NARAKA_MARKER, text, re.IGNORECASE):
+        return ["underworld"], "lore"
 
     # Prose keywords bleed across regions: a volcanic moth mentions "ash-banyan trees"
     # and lands in forest. When the prose agrees with the species' own region, keep only
@@ -143,13 +209,14 @@ def place_for(text: str, region: str) -> tuple[list[str], str]:
     # -- that is what re-files the Section 1 strays.
     home = [b for b in REGION_BIOMES.get(region, []) if b in detected]
     if home:
-        return home, ("lore" if region == "asura-conjurations" else "encounter")
+        return home, "encounter"
 
-    # Asura conjurations keep their detected habitat but stay out of the encounter
-    # tables until the tone question in docs/bestiary.md is settled.
-    if region == "asura-conjurations":
-        return detected, "lore"
-
+    # Asura conjurations are placed like anything else. They used to be forced to "lore"
+    # here pending the cozy-tone question in docs/bestiary.md; that is settled -- they are
+    # met occasionally and are meant to unsettle. `rarity_for` gives them mythic, and the
+    # game weights picks by rarity, which is what keeps "occasionally" true. Their region
+    # contributes no fallback biomes, so one whose prose matches nothing still lands as
+    # lore and needs tagging by hand.
     biomes = detected or list(REGION_BIOMES.get(region, []))
     return biomes, ("encounter" if biomes else "lore")
 
@@ -252,6 +319,8 @@ def parse_bestiary(path: Path, kind: str) -> list[dict]:
             "name": heading,
             "binomial": binomial,
             "region": region,
+            "sky": region == "tethys-sky-routes" or bool(re.search(SKY_MARKER, text, re.IGNORECASE)),
+            "naraka": bool(re.search(NARAKA_MARKER, text, re.IGNORECASE)),
             "biomes": biomes,
             # Creatures are met; plants are simply there.
             "placement": "flavour" if placement == "encounter" and kind == "flora" else placement,
@@ -327,6 +396,13 @@ def build_new(kind: str, rec: dict, ident: str) -> dict:
         "canon": "primary",
         "sources": ["docs/bestiary.md"],
     }
+    # Only the sky and rift sets are deliberate holds. A ground species whose prose matched no
+    # biome keyword is genuinely untagged and must not be labelled as one.
+    if rec.get("naraka"):
+        payload["crosses_at"] = list(NARAKA_CROSSING)
+        payload["placement_note"] = NARAKA_NOTE
+    elif rec.get("sky"):
+        payload["placement_note"] = SKY_RESERVE_NOTE
     if kind == "fauna":
         payload["mood"] = rec["mood"]
         if is_sentient(rec["name"], rec["binomial"]):
@@ -336,7 +412,8 @@ def build_new(kind: str, rec: dict, ident: str) -> dict:
 
 # Fields the bestiary can contribute. Anything already present in canon is left alone --
 # this is what implements canon-wins on the seven disputed binomials.
-MERGEABLE = ("region", "biomes", "placement", "rarity", "journal_prompt", "mood", "source_index")
+MERGEABLE = ("region", "biomes", "placement", "rarity", "journal_prompt", "mood", "source_index",
+             "crosses_at")
 
 
 def merge_into(existing: dict, rec: dict, kind: str) -> tuple[dict, list[str]]:

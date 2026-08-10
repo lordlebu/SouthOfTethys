@@ -4,7 +4,10 @@
   "name": "Asura-Tainted Gargoyle",
   "scientific": "Tuli calcified",
   "region": "asura-conjurations",
-  "biomes": [],
+  "biomes": [
+    "sky_island",
+    "sky_underside"
+  ],
   "placement": "lore",
   "rarity": "mythic",
   "journal_prompt": "A devolved offshoot of humanity whose skin has calcified into a stone-like hide, animating only at night to hunt.",
@@ -13,5 +16,6 @@
     "docs/bestiary.md"
   ],
   "mood": "uncanny",
-  "source_index": 216
+  "source_index": 216,
+  "placement_note": "Lives on the floating islands. `sky_island` and its neighbours are real canon biomes but are not renderable yet, so the export holds this as lore until a sky mode exists. This is a stated home, not an untagged entity."
 }

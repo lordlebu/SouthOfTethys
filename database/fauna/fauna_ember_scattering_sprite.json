@@ -4,8 +4,10 @@
   "name": "Ember-Scattering Sprite",
   "scientific": "Māyā-born scintilla minor",
   "region": "asura-conjurations",
-  "biomes": [],
-  "placement": "lore",
+  "biomes": [
+    "settlement"
+  ],
+  "placement": "encounter",
   "rarity": "mythic",
   "journal_prompt": "A small, fleeting spirit born from ritual embers that floats through the air, causing minor fires when displeased.",
   "canon": "primary",

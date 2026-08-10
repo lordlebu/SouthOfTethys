@@ -4,8 +4,10 @@
   "name": "White-Ash Bride",
   "scientific": "Māyā-born ignis",
   "region": "asura-conjurations",
-  "biomes": [],
-  "placement": "lore",
+  "biomes": [
+    "settlement"
+  ],
+  "placement": "encounter",
   "rarity": "mythic",
   "journal_prompt": "A short-lived, sentient female form that coalesces from ritual altar sparks, passionately violent and intensely hot to touch.",
   "canon": "primary",

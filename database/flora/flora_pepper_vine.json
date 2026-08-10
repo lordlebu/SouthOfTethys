@@ -16,6 +16,11 @@
   "sources": [
     "SouthOfTethys.txt"
   ],
-  "biomes": [],
-  "placement": "lore"
+  "biomes": [
+    "hills",
+    "forest"
+  ],
+  "placement": "flavour",
+  "rarity": "common",
+  "journal_prompt": "Pepper climbs the ravine wall in the wet shade, its berries drying to the black grain that travels downriver."
 }

@@ -17,6 +17,11 @@
   "sources": [
     "SouthOfTethys.txt"
   ],
-  "biomes": [],
-  "placement": "lore"
+  "biomes": [
+    "river",
+    "forest"
+  ],
+  "placement": "flavour",
+  "rarity": "common",
+  "journal_prompt": "Bamboo crowds the riverbank, creaking against itself, already half cut for scaffolding and fish traps."
 }

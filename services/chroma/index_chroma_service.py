@@ -140,6 +140,21 @@ def entity_document(payload: dict[str, Any]) -> str:
         "power",
         "risk",
         "material",
+        # Species fields. `journal_prompt` is the richest prose on a species -- the
+        # sentence the player actually reads -- and was absent here, so 300-odd entities
+        # were indexed on their reference notes alone. `biomes` and `crosses_at` say where
+        # a species lives and how it gets here, which is most of what anyone asks about
+        # one; without them "which creatures live in the Naraka rifts?" could not be
+        # answered from an index that already contained all six of them.
+        "scientific",
+        "journal_prompt",
+        "region",
+        "biomes",
+        "placement",
+        "rarity",
+        "mood",
+        "crosses_at",
+        "placement_note",
     ):
         val = payload.get(key)
         if val is None or val == "" or val == []:
@@ -188,6 +203,17 @@ def build_metadata(repo_root: Path, fpath: Path, payload: dict | None, chunk_ind
             meta["epoch"] = payload["epoch"]
         if payload.get("culture"):
             meta["culture"] = payload["culture"]
+        # Species facets, for filtering rather than matching. Chroma metadata values must
+        # be scalars, so the biome list is joined -- enough to filter on with a substring
+        # check, and the prose carries it properly for semantic matching.
+        if payload.get("placement"):
+            meta["placement"] = payload["placement"]
+        if payload.get("rarity"):
+            meta["rarity"] = payload["rarity"]
+        if payload.get("region"):
+            meta["region"] = payload["region"]
+        if payload.get("biomes"):
+            meta["biomes"] = ", ".join(str(b) for b in payload["biomes"])
     else:
         meta["entity_id"] = fpath.stem
     return meta

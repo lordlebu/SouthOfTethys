@@ -15,6 +15,12 @@
   "sources": [
     "AI_CONTEXT.md"
   ],
-  "biomes": [],
-  "placement": "lore"
+  "biomes": [
+    "underworld"
+  ],
+  "placement": "lore",
+  "placement_note": "Native to Naraka. It entered this realm through the portal Guyuk tore open over the Hyrkanian steppe and killed Nirigili's Elephantbird mount -- the event records both the beast spill and that loss (event_naraka_portal). Not ambient fauna: it is met at that crossing, not across the map.",
+  "crosses_at": [
+    "event_naraka_portal"
+  ]
 }

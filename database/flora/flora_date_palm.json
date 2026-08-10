@@ -16,6 +16,11 @@
   "sources": [
     "SouthOfTethys.txt"
   ],
-  "biomes": [],
-  "placement": "lore"
+  "biomes": [
+    "desert",
+    "settlement"
+  ],
+  "placement": "flavour",
+  "rarity": "common",
+  "journal_prompt": "Date palms mark the waystation from a long way off, which is the point of planting them."
 }

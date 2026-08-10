@@ -4,7 +4,9 @@
   "name": "Aero-Moth",
   "scientific": "Lymantria caelia",
   "region": "tethys-sky-routes",
-  "biomes": [],
+  "biomes": [
+    "sky_island"
+  ],
   "placement": "lore",
   "rarity": "rare",
   "journal_prompt": "A large moth with soft, dusty wings patterned like grey clouds, drawing toward the glow of sky-brambles.",
@@ -13,5 +15,6 @@
     "docs/bestiary.md"
   ],
   "mood": "luminous",
-  "source_index": 191
+  "source_index": 191,
+  "placement_note": "Lives on the floating islands. `sky_island` and its neighbours are real canon biomes but are not renderable yet, so the export holds this as lore until a sky mode exists. This is a stated home, not an untagged entity."
 }

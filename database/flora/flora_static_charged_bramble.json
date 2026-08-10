@@ -4,7 +4,9 @@
   "name": "Static-Charged Bramble",
   "scientific": "Rubus electricus",
   "region": "tethys-sky-routes",
-  "biomes": [],
+  "biomes": [
+    "sky_island"
+  ],
   "placement": "lore",
   "rarity": "rare",
   "journal_prompt": "Thorny bushes that feed on electrical discharges of high-altitude storms, glowing with residual lightning and delivering a shocking sting.",
@@ -12,5 +14,6 @@
   "sources": [
     "docs/bestiary.md"
   ],
-  "source_index": 52
+  "source_index": 52,
+  "placement_note": "Lives on the floating islands. `sky_island` and its neighbours are real canon biomes but are not renderable yet, so the export holds this as lore until a sky mode exists. This is a stated home, not an untagged entity."
 }

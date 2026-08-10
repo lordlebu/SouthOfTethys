@@ -7,7 +7,7 @@
   "biomes": [
     "settlement"
   ],
-  "placement": "lore",
+  "placement": "encounter",
   "rarity": "mythic",
   "journal_prompt": "A secretive, shape-shifting serpent-human hybrid that slips into royal courts, carrying out the will of Takshak.",
   "canon": "primary",

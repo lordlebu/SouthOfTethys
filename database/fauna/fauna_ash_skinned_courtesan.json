@@ -9,7 +9,7 @@
     "wetland",
     "settlement"
   ],
-  "placement": "lore",
+  "placement": "encounter",
   "rarity": "mythic",
   "journal_prompt": "An artificial, female humanoid sculpted from river mud and lotus pollen, which later mutated into a flesh-hungry night-stalker.",
   "canon": "primary",

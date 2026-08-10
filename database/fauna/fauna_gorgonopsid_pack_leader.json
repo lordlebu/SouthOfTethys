@@ -4,8 +4,11 @@
   "name": "Gorgonopsid Pack-Leader",
   "scientific": "Gorgonops titan",
   "region": "asura-conjurations",
-  "biomes": [],
-  "placement": "lore",
+  "biomes": [
+    "plains",
+    "hills"
+  ],
+  "placement": "encounter",
   "rarity": "mythic",
   "journal_prompt": "A larger, hyper-aggressive gorgonopsid bred by Asura generals to lead war-packs in battle.",
   "canon": "primary",

@@ -16,6 +16,11 @@
   "sources": [
     "SouthOfTethys.txt"
   ],
-  "biomes": [],
-  "placement": "lore"
+  "biomes": [
+    "plains",
+    "settlement"
+  ],
+  "placement": "flavour",
+  "rarity": "common",
+  "journal_prompt": "Hooked scrub planted as a living fence. It grows thickest on the old tainted ground, which nobody mentions."
 }

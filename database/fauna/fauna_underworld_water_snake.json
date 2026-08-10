@@ -5,7 +5,7 @@
   "scientific": "Serpens asuricus",
   "region": "asura-conjurations",
   "biomes": [
-    "river"
+    "underworld"
   ],
   "placement": "lore",
   "rarity": "mythic",
@@ -15,5 +15,10 @@
     "docs/bestiary.md"
   ],
   "mood": "fearsome",
-  "source_index": 227
+  "source_index": 227,
+  "crosses_at": [
+    "event_naraka_portal",
+    "settlement_dwarka"
+  ],
+  "placement_note": "Native to the Naraka rifts, not to this realm's water or ground. Naraka creatures cross through gates: the standing Dwarka Gate (settlement_dwarka, event_shadow_pact) and the portal Guyuk tore open over the Hyrkanian steppe, whose outcomes record a beast spill (event_naraka_portal). So one met here should be met at a gate and nowhere else. `underworld` is not renderable yet, so the export holds this as lore; when a gate exists as a landmark, add that biome."
 }

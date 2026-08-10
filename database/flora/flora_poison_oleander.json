@@ -16,6 +16,11 @@
   "sources": [
     "SouthOfTethys.txt"
   ],
-  "biomes": [],
-  "placement": "lore"
+  "biomes": [
+    "plains",
+    "desert"
+  ],
+  "placement": "flavour",
+  "rarity": "common",
+  "journal_prompt": "Oleander flowers pink and cheerful on the dry margin. Nothing grazes it, and there is a reason for that."
 }

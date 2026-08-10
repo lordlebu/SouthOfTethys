@@ -16,6 +16,10 @@
   "sources": [
     "SouthOfTethys.txt"
   ],
-  "biomes": [],
-  "placement": "lore"
+  "biomes": [
+    "desert"
+  ],
+  "placement": "flavour",
+  "rarity": "common",
+  "journal_prompt": "Resin beads on the bark where the scrub has been scored, hardening into the tears burned at rites."
 }

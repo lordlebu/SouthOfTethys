@@ -55,6 +55,18 @@ def game_id(canon_id: str) -> str:
     return canon_id.split("_", 1)[1].replace("_", "-")
 
 
+def renderable_biomes() -> set[str]:
+    """The subset of the canon vocabulary the game can actually draw.
+
+    Canon names places the walk has nowhere to put — the floating islands, the Naraka rifts,
+    the lava sea. Those are real homes, not blanks, so they live in the entities; this is
+    where they get filtered out, and a species left with nothing renderable is exported as
+    `lore` rather than being dropped or forced into an ill-fitting ground biome.
+    """
+    payload = json.loads((REPO / "database" / "biomes.json").read_text(encoding="utf-8"))
+    return {b["id"] for b in payload["biomes"] if b.get("renderable")}
+
+
 def region_lookup() -> dict[str, str]:
     """canon region id -> bestiary region slug, for entities that predate the import."""
     out = {}
@@ -65,7 +77,11 @@ def region_lookup() -> dict[str, str]:
     return out
 
 
-def to_game(entity: dict, kind: str, regions: dict[str, str]) -> dict:
+def to_game(entity: dict, kind: str, regions: dict[str, str], renderable: set[str]) -> dict:
+    biomes = [b for b in (entity.get("biomes") or []) if b in renderable]
+    # Nothing the game can draw: sky, rift and lava dwellers. They stay in the file so the
+    # journal and the book agree on what exists, but they are never placed on a tile.
+    placement = (entity.get("placement") or "lore") if biomes else "lore"
     region = entity.get("region")
     if not region:
         # Authored in canon rather than imported: recover a region from its habitats.
@@ -78,8 +94,8 @@ def to_game(entity: dict, kind: str, regions: dict[str, str]) -> dict:
         "name": entity["name"],
         "binomial": entity.get("scientific") or None,
         "region": region or "canon",
-        "biomes": entity.get("biomes") or [],
-        "placement": entity.get("placement") or "lore",
+        "biomes": biomes,
+        "placement": placement,
         "rarity": entity.get("rarity") or "common",
         # `notes` is the canon reference fact and `journal_prompt` the player-facing
         # prose; they are deliberately separate fields. Entities authored in canon have
@@ -98,7 +114,8 @@ def collect(kind: str, regions: dict[str, str]) -> list[dict]:
         for f in sorted((REPO / "database" / kind).glob("*.json"))
     ]
     entities.sort(key=lambda e: (e.get("source_index", UNINDEXED), e["id"]))
-    return [to_game(e, kind, regions) for e in entities]
+    renderable = renderable_biomes()
+    return [to_game(e, kind, regions, renderable) for e in entities]
 
 
 def render(rows: list[dict]) -> str:

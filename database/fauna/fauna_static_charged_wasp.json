@@ -4,7 +4,10 @@
   "name": "Static-Charged Wasp",
   "scientific": "Vespa electrica",
   "region": "tethys-sky-routes",
-  "biomes": [],
+  "biomes": [
+    "sky_island",
+    "open_sky"
+  ],
   "placement": "lore",
   "rarity": "rare",
   "journal_prompt": "A giant wasp species whose wings generate static electricity as they fly, delivering a shocking sting to defend its nest.",
@@ -13,5 +16,6 @@
     "docs/bestiary.md"
   ],
   "mood": "watchful",
-  "source_index": 184
+  "source_index": 184,
+  "placement_note": "Lives on the floating islands. `sky_island` and its neighbours are real canon biomes but are not renderable yet, so the export holds this as lore until a sky mode exists. This is a stated home, not an untagged entity."
 }

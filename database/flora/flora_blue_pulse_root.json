@@ -4,7 +4,10 @@
   "name": "Blue Pulse-Root",
   "scientific": "Nirnroot caerulea",
   "region": "tethys-sky-routes",
-  "biomes": [],
+  "biomes": [
+    "sky_island",
+    "open_sky"
+  ],
   "placement": "lore",
   "rarity": "rare",
   "journal_prompt": "A glowing plant species that absorbs bioluminescent trace minerals from the airborne soil, emitting a soft blue light.",
@@ -12,5 +15,6 @@
   "sources": [
     "docs/bestiary.md"
   ],
-  "source_index": 53
+  "source_index": 53,
+  "placement_note": "Lives on the floating islands. `sky_island` and its neighbours are real canon biomes but are not renderable yet, so the export holds this as lore until a sky mode exists. This is a stated home, not an untagged entity."
 }

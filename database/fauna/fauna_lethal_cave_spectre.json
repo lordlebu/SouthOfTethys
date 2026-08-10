@@ -7,7 +7,7 @@
   "biomes": [
     "mountains"
   ],
-  "placement": "lore",
+  "placement": "encounter",
   "rarity": "mythic",
   "journal_prompt": "A dark, floating entity born from the blood-spills of the first Asura invasion, guarding forgotten mountain tombs.",
   "canon": "primary",

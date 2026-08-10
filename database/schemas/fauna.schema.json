@@ -89,7 +89,7 @@
     },
     "biomes": {
       "type": "array",
-      "description": "Tile biomes this species may be placed in. Empty means it is never placed.",
+      "description": "Where this species lives, from the canonical vocabulary in database/biomes.json. Wider than the game's biome set on purpose: canon can say 'floating island' or 'Naraka rifts' even though the walk has nowhere to put them. The export keeps only the renderable ones, and a species left with none becomes placement 'lore' automatically. An empty list means nobody has tagged this yet -- say where it lives instead.",
       "items": {
         "type": "string",
         "enum": [
@@ -103,7 +103,12 @@
           "desert",
           "river",
           "settlement",
-          "landmark"
+          "landmark",
+          "sky_island",
+          "sky_underside",
+          "open_sky",
+          "underworld",
+          "lava_field"
         ]
       }
     },
@@ -144,7 +149,7 @@
     "sentient": {
       "type": "boolean",
       "default": false,
-      "description": "True for the avian-dinosaurid and other sapient peoples (Cognitavi, Nagaraptor, Silvanus, Sylvians, Kuktush). They are sovereign cultures, not wildlife; see AI_CONTEXT.md:998-1006. A sentient species should carry a matching faction entity and should not sit in the encounter table untagged."
+      "description": "Taxonomic marker for the avian-dinosaurid and other sapient lineages (Cognitavi, Nagaraptor, Vajraptor, Silvanus, Sylvians, Kuktush). It records that a species is intelligent and socially organised -- see AI_CONTEXT.md:998-1006 -- and nothing more. It is NOT a placement rule: in-world the Harappans regard these as animals, so a sentient species sitting in the encounter table is correct, not an oversight."
     },
     "epochs": {
       "type": "array",
@@ -157,6 +162,17 @@
       "type": "integer",
       "minimum": 0,
       "description": "Position in the authored bestiary sequence (prototype starters first for fauna). Array order decides which species pickFor lands on for a tile, so this is part of the seed contract, not presentation."
+    },
+    "placement_note": {
+      "type": "string",
+      "description": "Why this species is placed as it is, when the answer is not obvious. Required reading before 'fixing' an entity with empty `biomes`: an empty list can mean untagged, or it can mean deliberately held out of play. If this field is present, the emptiness is a decision."
+    },
+    "crosses_at": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Entity ids of the places where a species native to another realm enters this one. Naraka creatures cross at the Dwarka Gate (settlement_dwarka) rather than being native to delta water, so they should be met near a gate and nowhere else."
     }
   },
   "additionalProperties": true

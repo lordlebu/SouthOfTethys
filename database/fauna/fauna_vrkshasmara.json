@@ -23,6 +23,13 @@
   "sources": [
     "SouthOfTethys.txt"
   ],
-  "biomes": [],
-  "placement": "lore"
+  "biomes": [
+    "forest",
+    "hills",
+    "landmark"
+  ],
+  "placement": "encounter",
+  "rarity": "rare",
+  "journal_prompt": "Something grey shifts high in the canopy, too large for a monkey, and the leaves close over it again.",
+  "mood": "watchful"
 }

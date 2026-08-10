@@ -7,7 +7,7 @@
   "biomes": [
     "settlement"
   ],
-  "placement": "lore",
+  "placement": "encounter",
   "rarity": "mythic",
   "journal_prompt": "A colossal, feathered theropod predator genetically altered with Asura venom, serving as the ultimate fortress guardian.",
   "canon": "primary",

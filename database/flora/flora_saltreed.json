@@ -17,6 +17,12 @@
   "sources": [
     "SouthOfTethys.txt"
   ],
-  "biomes": [],
-  "placement": "lore"
+  "biomes": [
+    "wetland",
+    "coast",
+    "river"
+  ],
+  "placement": "flavour",
+  "rarity": "common",
+  "journal_prompt": "Salt-tolerant reeds stand shoulder-high along the brackish flood, the same reeds that roof every hut in the marsh camps."
 }

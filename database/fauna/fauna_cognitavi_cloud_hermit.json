@@ -4,7 +4,9 @@
   "name": "Cognitavi Cloud-Hermit",
   "scientific": "Cognitavi solitarius",
   "region": "tethys-sky-routes",
-  "biomes": [],
+  "biomes": [
+    "sky_island"
+  ],
   "placement": "lore",
   "rarity": "rare",
   "journal_prompt": "A highly advanced, solitary subspecies of navigator bird that establishes isolated monasteries on the highest floating peaks.",
@@ -14,5 +16,6 @@
   ],
   "mood": "graceful",
   "sentient": true,
-  "source_index": 178
+  "source_index": 178,
+  "placement_note": "Lives on the floating islands. `sky_island` and its neighbours are real canon biomes but are not renderable yet, so the export holds this as lore until a sky mode exists. This is a stated home, not an untagged entity."
 }

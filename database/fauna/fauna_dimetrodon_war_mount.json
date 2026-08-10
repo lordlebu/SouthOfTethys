@@ -4,8 +4,11 @@
   "name": "Dimetrodon War-Mount",
   "scientific": "Dimetrodon asuricus",
   "region": "asura-conjurations",
-  "biomes": [],
-  "placement": "lore",
+  "biomes": [
+    "desert",
+    "plains"
+  ],
+  "placement": "encounter",
   "rarity": "mythic",
   "journal_prompt": "A sail-backed synapsid war predator mutated with bio-reactive colors and enhanced aggression for Asura commanders.",
   "canon": "primary",

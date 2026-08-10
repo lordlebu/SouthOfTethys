@@ -15,6 +15,10 @@
   "sources": [
     "SouthOfTethys.txt"
   ],
-  "biomes": [],
-  "placement": "lore"
+  "biomes": [
+    "desert"
+  ],
+  "placement": "flavour",
+  "rarity": "common",
+  "journal_prompt": "A thorn shrub bleeding bitter gum, gathered for field salves and little else."
 }

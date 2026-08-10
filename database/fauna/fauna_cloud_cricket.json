@@ -4,7 +4,9 @@
   "name": "Cloud-Cricket",
   "scientific": "Gryllus nubis",
   "region": "tethys-sky-routes",
-  "biomes": [],
+  "biomes": [
+    "sky_island"
+  ],
   "placement": "lore",
   "rarity": "rare",
   "journal_prompt": "An insect that produces high-frequency, melodic chirps that echo through the thin, cold air of the high altitude routes.",
@@ -13,5 +15,6 @@
     "docs/bestiary.md"
   ],
   "mood": "watchful",
-  "source_index": 187
+  "source_index": 187,
+  "placement_note": "Lives on the floating islands. `sky_island` and its neighbours are real canon biomes but are not renderable yet, so the export holds this as lore until a sky mode exists. This is a stated home, not an untagged entity."
 }

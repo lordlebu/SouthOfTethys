@@ -4,7 +4,10 @@
   "name": "Gargoyle-Bat",
   "scientific": "Vespertilio asuricus",
   "region": "tethys-sky-routes",
-  "biomes": [],
+  "biomes": [
+    "sky_island",
+    "sky_underside"
+  ],
   "placement": "lore",
   "rarity": "rare",
   "journal_prompt": "A dark, stone-skinned bat of the shadowed undersides, feeding on large insects during the night.",
@@ -13,5 +16,6 @@
     "docs/bestiary.md"
   ],
   "mood": "watchful",
-  "source_index": 190
+  "source_index": 190,
+  "placement_note": "Lives on the floating islands. `sky_island` and its neighbours are real canon biomes but are not renderable yet, so the export holds this as lore until a sky mode exists. This is a stated home, not an untagged entity."
 }

@@ -17,6 +17,11 @@
   "sources": [
     "SouthOfTethys.txt"
   ],
-  "biomes": [],
-  "placement": "lore"
+  "biomes": [
+    "desert"
+  ],
+  "placement": "encounter",
+  "rarity": "rare",
+  "journal_prompt": "A pale ray glides above the dune crest, silent, its bladders full of air, casting a shadow the size of a boat.",
+  "mood": "watchful"
 }

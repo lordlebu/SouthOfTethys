@@ -4,8 +4,11 @@
   "name": "Colossal Void-Devourer",
   "scientific": "Sauropodoligator titan",
   "region": "asura-conjurations",
-  "biomes": [],
-  "placement": "lore",
+  "biomes": [
+    "wetland",
+    "river"
+  ],
+  "placement": "encounter",
   "rarity": "mythic",
   "journal_prompt": "An extinct sauropod-crocodile hybrid resurrected from buried bones via dark Asura magic, crowned with a cursed human visage.",
   "canon": "primary",

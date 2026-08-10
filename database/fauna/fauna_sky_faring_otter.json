@@ -4,7 +4,10 @@
   "name": "Sky-Faring Otter",
   "scientific": "Lutra caelia",
   "region": "tethys-sky-routes",
-  "biomes": [],
+  "biomes": [
+    "sky_island",
+    "open_sky"
+  ],
   "placement": "lore",
   "rarity": "rare",
   "journal_prompt": "An agile mammal that glides between floating pools using skin membranes, hunting sky-shrews and beetles.",
@@ -13,5 +16,6 @@
     "docs/bestiary.md"
   ],
   "mood": "fearsome",
-  "source_index": 199
+  "source_index": 199,
+  "placement_note": "Lives on the floating islands. `sky_island` and its neighbours are real canon biomes but are not renderable yet, so the export holds this as lore until a sky mode exists. This is a stated home, not an untagged entity."
 }

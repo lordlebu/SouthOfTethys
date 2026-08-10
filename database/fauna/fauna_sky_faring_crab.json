@@ -4,7 +4,9 @@
   "name": "Sky-Faring Crab",
   "scientific": "Portunus caelius",
   "region": "tethys-sky-routes",
-  "biomes": [],
+  "biomes": [
+    "sky_island"
+  ],
   "placement": "lore",
   "rarity": "rare",
   "journal_prompt": "A light-shelled crab that climbs the aerial roots of sky-mangroves, feeding on moss and small insects.",
@@ -13,5 +15,6 @@
     "docs/bestiary.md"
   ],
   "mood": "watchful",
-  "source_index": 202
+  "source_index": 202,
+  "placement_note": "Lives on the floating islands. `sky_island` and its neighbours are real canon biomes but are not renderable yet, so the export holds this as lore until a sky mode exists. This is a stated home, not an untagged entity."
 }

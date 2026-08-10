@@ -4,8 +4,10 @@
   "name": "Ember-Born Dancer",
   "scientific": "Māyā-born scintilla",
   "region": "asura-conjurations",
-  "biomes": [],
-  "placement": "lore",
+  "biomes": [
+    "settlement"
+  ],
+  "placement": "encounter",
   "rarity": "mythic",
   "journal_prompt": "A fire-bride variant that dances within sacrificial bonfires, throwing sparks that ignite neighboring structures when displeased.",
   "canon": "primary",

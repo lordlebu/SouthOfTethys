@@ -17,6 +17,12 @@
   "sources": [
     "SouthOfTethys.txt"
   ],
-  "biomes": [],
-  "placement": "lore"
+  "biomes": [
+    "coast",
+    "river"
+  ],
+  "placement": "encounter",
+  "rarity": "rare",
+  "journal_prompt": "Something long moves under the brown water, and for a moment the saw of its snout breaks the surface.",
+  "mood": "watchful"
 }

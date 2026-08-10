@@ -17,6 +17,11 @@
   "sources": [
     "SouthOfTethys.txt"
   ],
-  "biomes": [],
-  "placement": "lore"
+  "biomes": [
+    "forest",
+    "landmark"
+  ],
+  "placement": "flavour",
+  "rarity": "rare",
+  "journal_prompt": "Sandalwood, and someone has been here before you: a strip of heartwood cut away clean, the scent still hanging in the air."
 }

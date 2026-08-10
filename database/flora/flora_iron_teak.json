@@ -16,6 +16,12 @@
   "sources": [
     "SouthOfTethys.txt"
   ],
-  "biomes": [],
-  "placement": "lore"
+  "biomes": [
+    "hills",
+    "mountains",
+    "forest"
+  ],
+  "placement": "flavour",
+  "rarity": "common",
+  "journal_prompt": "Teak this dense is cut for river craft and tower beams, and takes a long lifetime to replace."
 }
