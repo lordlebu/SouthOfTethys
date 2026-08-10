@@ -152,14 +152,16 @@ SKY_MARKER = r"\b(floating island\w*|sky[- ]\w+|aero[- ]\w+|prana|low[- ]gravity
 NARAKA_MARKER = r"\b(naraka|underworld)\b"
 
 NARAKA_NOTE = (
-    "Native to the Naraka rifts, not to delta water. It enters this realm through the Dwarka Gate "
-    "(settlement_dwarka; see event_shadow_pact and event_naraka_portal), so it should be met near a "
-    "gate and nowhere else. `underworld` is not renderable yet, so the export holds it as lore; when "
-    "the Dwarka Gate exists as a landmark, add that biome."
+    "Native to the Naraka rifts, not to this realm's water or ground. Naraka creatures cross through "
+    "gates: the standing Dwarka Gate (settlement_dwarka, event_shadow_pact) and the portal Guyuk tore "
+    "open over the Hyrkanian steppe, whose outcomes record a beast spill (event_naraka_portal). So one "
+    "met here should be met at a gate and nowhere else. `underworld` is not renderable yet, so the "
+    "export holds this as lore; when a gate exists as a landmark, add that biome."
 )
 
-# The established crossing between Naraka and this realm.
-NARAKA_CROSSING = ["settlement_dwarka"]
+# The known crossings between Naraka and this realm. Not one gate but a kind of thing:
+# the Dwarka Gate stands, and Guyuk tore another open over the Hyrkanian steppe.
+NARAKA_CROSSING = ["event_naraka_portal", "settlement_dwarka"]
 
 SKY_RESERVE_NOTE = (
     "Lives on the floating islands. `sky_island` and its neighbours are real canon biomes but are "

@@ -16,7 +16,8 @@
   ],
   "source_index": 69,
   "crosses_at": [
+    "event_naraka_portal",
     "settlement_dwarka"
   ],
-  "placement_note": "Native to the Naraka rifts, not to delta water. It enters this realm through the Dwarka Gate (settlement_dwarka; see event_shadow_pact and event_naraka_portal), so it should be met near a gate and nowhere else. `underworld` is not renderable yet, so the export holds it as lore; when the Dwarka Gate exists as a landmark, add that biome."
+  "placement_note": "Native to the Naraka rifts, not to this realm's water or ground. Naraka creatures cross through gates: the standing Dwarka Gate (settlement_dwarka, event_shadow_pact) and the portal Guyuk tore open over the Hyrkanian steppe, whose outcomes record a beast spill (event_naraka_portal). So one met here should be met at a gate and nowhere else. `underworld` is not renderable yet, so the export holds this as lore; when a gate exists as a landmark, add that biome."
 }
