@@ -143,6 +143,24 @@ SKY_MARKER = r"\b(floating island\w*|sky[- ]\w+|aero[- ]\w+|prana|low[- ]gravity
 # Sky species are a reserve, not a backlog. The floating islands are a planned mode and
 # these are its content, waiting -- so each says so on itself, or the next pass over empty
 # `biomes` reads them as untagged and spends them on ground biomes.
+# Naraka natives. Their water is not the Saraswati's, so they must not be placed in ordinary
+# river and wetland tiles by the biome keywords in their own prose -- "swims in the sulfuric
+# rivers of Naraka" would otherwise land a rift snake in the delta. All six matches in the
+# bestiary are locative ("of the Naraka rivers", "grows near underworld rifts", "rituals in
+# Naraka"), so the plain word is a precise enough marker; "rift" and "portal" are not, and
+# catch lava rifts and the Sylvian Gate.
+NARAKA_MARKER = r"\b(naraka|underworld)\b"
+
+NARAKA_NOTE = (
+    "Native to the Naraka rifts, not to delta water. It enters this realm through the Dwarka Gate "
+    "(settlement_dwarka; see event_shadow_pact and event_naraka_portal), so it should be met near a "
+    "gate and nowhere else. `underworld` is not renderable yet, so the export holds it as lore; when "
+    "the Dwarka Gate exists as a landmark, add that biome."
+)
+
+# The established crossing between Naraka and this realm.
+NARAKA_CROSSING = ["settlement_dwarka"]
+
 SKY_RESERVE_NOTE = (
     "Lives on the floating islands. `sky_island` and its neighbours are real canon biomes but are "
     "not renderable yet, so the export holds this as lore until a sky mode exists. This is a stated "
@@ -177,6 +195,11 @@ def place_for(text: str, region: str) -> tuple[list[str], str]:
         if re.search(r"glid|soar|migrat|drift|balloon|skim|fly|flying|between islands|rudder|hollow bones", text, re.I):
             sky.append("open_sky")
         return sky, "lore"
+
+    # Checked before the biome keywords, which would otherwise read "sulfuric rivers of Naraka"
+    # as a river and put a rift snake in the Saraswati.
+    if re.search(NARAKA_MARKER, text, re.IGNORECASE):
+        return ["underworld"], "lore"
 
     # Prose keywords bleed across regions: a volcanic moth mentions "ash-banyan trees"
     # and lands in forest. When the prose agrees with the species' own region, keep only
@@ -295,6 +318,7 @@ def parse_bestiary(path: Path, kind: str) -> list[dict]:
             "binomial": binomial,
             "region": region,
             "sky": region == "tethys-sky-routes" or bool(re.search(SKY_MARKER, text, re.IGNORECASE)),
+            "naraka": bool(re.search(NARAKA_MARKER, text, re.IGNORECASE)),
             "biomes": biomes,
             # Creatures are met; plants are simply there.
             "placement": "flavour" if placement == "encounter" and kind == "flora" else placement,
@@ -370,9 +394,12 @@ def build_new(kind: str, rec: dict, ident: str) -> dict:
         "canon": "primary",
         "sources": ["docs/bestiary.md"],
     }
-    # Only the sky set is a reserve. A ground species whose prose matched no biome keyword
-    # is genuinely untagged and must not be labelled as a deliberate hold.
-    if rec.get("sky"):
+    # Only the sky and rift sets are deliberate holds. A ground species whose prose matched no
+    # biome keyword is genuinely untagged and must not be labelled as one.
+    if rec.get("naraka"):
+        payload["crosses_at"] = list(NARAKA_CROSSING)
+        payload["placement_note"] = NARAKA_NOTE
+    elif rec.get("sky"):
         payload["placement_note"] = SKY_RESERVE_NOTE
     if kind == "fauna":
         payload["mood"] = rec["mood"]
@@ -383,7 +410,8 @@ def build_new(kind: str, rec: dict, ident: str) -> dict:
 
 # Fields the bestiary can contribute. Anything already present in canon is left alone --
 # this is what implements canon-wins on the seven disputed binomials.
-MERGEABLE = ("region", "biomes", "placement", "rarity", "journal_prompt", "mood", "source_index")
+MERGEABLE = ("region", "biomes", "placement", "rarity", "journal_prompt", "mood", "source_index",
+             "crosses_at")
 
 
 def merge_into(existing: dict, rec: dict, kind: str) -> tuple[dict, list[str]]:
