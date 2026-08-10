@@ -1,0 +1,11 @@
+{
+  "id": "flora_pepper_vine",
+  "type": "flora",
+  "name": "Pepper Vine",
+  "scientific": "Piper tethys",
+  "habitats": ["region_narmada_plateau", "canopy"],
+  "uses": ["spice", "trade"],
+  "notes": "Climbing pepper of humid plateau ravines. Dried berries move downriver to Lothal spice stalls.",
+  "canon": "primary",
+  "sources": ["SouthOfTethys.txt"]
+}

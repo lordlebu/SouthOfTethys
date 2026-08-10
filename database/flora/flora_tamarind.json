@@ -1,0 +1,11 @@
+{
+  "id": "flora_tamarind",
+  "type": "flora",
+  "name": "Tamarind",
+  "scientific": "Tamarindus indica",
+  "habitats": ["region_narmada_plateau", "region_aravali"],
+  "uses": ["food", "souring_agent", "shade"],
+  "notes": "Pod-bearing shade tree of roads and courtyards. Pulp seasons stews and preserves fish on river journeys.",
+  "canon": "primary",
+  "sources": ["SouthOfTethys.txt"]
+}

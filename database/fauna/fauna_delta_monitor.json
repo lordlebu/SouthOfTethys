@@ -1,0 +1,12 @@
+{
+  "id": "fauna_delta_monitor",
+  "type": "fauna",
+  "name": "Delta Monitor",
+  "scientific": "Varanus deltae",
+  "diet": "Carnivore",
+  "habitats": ["region_saraswati_delta"],
+  "behaviour": ["scavenger", "tree_climber"],
+  "notes": "Long-bodied monitor lizard of the mangrove fringe. Raids bird nests and fish-drying racks; Kia children learn to clap poles to drive it off.",
+  "canon": "primary",
+  "sources": ["SouthOfTethys.txt"]
+}

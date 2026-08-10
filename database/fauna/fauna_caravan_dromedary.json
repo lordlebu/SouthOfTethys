@@ -1,0 +1,12 @@
+{
+  "id": "fauna_caravan_dromedary",
+  "type": "fauna",
+  "name": "Caravan Dromedary",
+  "scientific": "Camelus dromedarius itineris",
+  "diet": "Herbivore",
+  "habitats": ["region_gedrosian_desert"],
+  "behaviour": ["pack_animal", "endurance"],
+  "notes": "Single-hump desert camel of northern trade strings. Complements Woolly Bactrian-Croc routes on drier hardpan.",
+  "canon": "primary",
+  "sources": ["SouthOfTethys.txt"]
+}

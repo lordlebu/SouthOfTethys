@@ -1,0 +1,11 @@
+{
+  "id": "flora_asura_thorn",
+  "type": "flora",
+  "name": "Asura Thorn",
+  "scientific": "Ziziphus asurica",
+  "habitats": ["corrupted_zones", "region_aravali"],
+  "uses": ["barrier_hedge", "warning_marker"],
+  "notes": "Hooked scrub that thickens near old Dwarka-tainted ground. Planted as living fences; pollen irritates the eyes.",
+  "canon": "primary",
+  "sources": ["SouthOfTethys.txt"]
+}

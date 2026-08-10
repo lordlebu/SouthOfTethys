@@ -1,0 +1,12 @@
+{
+  "id": "fauna_canopy_langur",
+  "type": "fauna",
+  "name": "Canopy Langur",
+  "scientific": "Semnopithecus aranya",
+  "diet": "Herbivore",
+  "habitats": ["region_aravali", "canopy"],
+  "behaviour": ["arboreal", "troop"],
+  "notes": "Grey leaf-monkey of Aravali and canopy edges. Sometimes read as a distant echo of devolved Vanara presence in folk talk.",
+  "canon": "primary",
+  "sources": ["SouthOfTethys.txt"]
+}

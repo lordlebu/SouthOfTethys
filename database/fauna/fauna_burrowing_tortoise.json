@@ -1,0 +1,13 @@
+{
+  "id": "fauna_burrowing_tortoise",
+  "type": "fauna",
+  "name": "Burrowing Tortoise",
+  "scientific": "Geochelone fossor",
+  "diet": "Herbivore",
+  "habitats": ["region_saraswati_delta"],
+  "behaviour": ["fossorial", "symbiotic"],
+  "related_species": ["fauna_nagaraptor"],
+  "notes": "Heavy delta tortoise that digs deep tunnels. Nagaraptor clans use the burrows as nest foundations; the tortoise gains predator warning in return.",
+  "canon": "primary",
+  "sources": ["SouthOfTethys.txt"]
+}

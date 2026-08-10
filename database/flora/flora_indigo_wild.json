@@ -1,0 +1,11 @@
+{
+  "id": "flora_indigo_wild",
+  "type": "flora",
+  "name": "Wild Indigo",
+  "scientific": "Indigofera silvestris",
+  "habitats": ["region_saraswati_delta", "region_aravali"],
+  "uses": ["dye"],
+  "notes": "Undomesticated parent of Sweet Indigo. Harsher blue; still used by upland dyers who cannot afford cultivated stock.",
+  "canon": "primary",
+  "sources": ["SouthOfTethys.txt"]
+}

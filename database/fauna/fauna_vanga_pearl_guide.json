@@ -1,0 +1,13 @@
+{
+  "id": "fauna_vanga_pearl_guide",
+  "type": "fauna",
+  "name": "Vanga Pearl-Guide",
+  "scientific": "Cognitavi vanga",
+  "diet": "Omnivore",
+  "habitats": ["coastal", "tethys"],
+  "behaviour": ["navigator", "flock_guide"],
+  "related_species": ["fauna_cognitavi"],
+  "notes": "Cognitavi subspecies that leads fishing fleets toward pearl banks by patterned flight. Harappan pilots treat a circling flock as a chart mark.",
+  "canon": "primary",
+  "sources": ["SouthOfTethys.txt"]
+}

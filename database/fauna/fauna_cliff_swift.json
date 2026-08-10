@@ -1,0 +1,12 @@
+{
+  "id": "fauna_cliff_swift",
+  "type": "fauna",
+  "name": "Cliff Swift",
+  "scientific": "Apus narmadae",
+  "diet": "Insectivore",
+  "habitats": ["region_narmada_plateau"],
+  "behaviour": ["aerial", "colony"],
+  "notes": "Fast insect-hunter of plateau cliffs. Nest density signals insect bloom years to highland herders.",
+  "canon": "primary",
+  "sources": ["SouthOfTethys.txt"]
+}

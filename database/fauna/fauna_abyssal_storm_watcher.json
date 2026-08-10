@@ -1,0 +1,13 @@
+{
+  "id": "fauna_abyssal_storm_watcher",
+  "type": "fauna",
+  "name": "Abyssal Storm-Watcher",
+  "scientific": "Cognitavi abyssalis",
+  "diet": "Omnivore",
+  "habitats": ["coastal", "tethys"],
+  "behaviour": ["weather_reader", "solitary"],
+  "related_species": ["fauna_cognitavi"],
+  "notes": "Dark-winged Cognitavi that rides pressure fronts ahead of monsoon squalls. Sailors read its high circling as a storm warning.",
+  "canon": "primary",
+  "sources": ["SouthOfTethys.txt"]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "character_kubera",
+  "type": "character",
+  "name": "Kubera",
+  "epithets": ["Yaksharaj", "Lord of Hidden Wealth"],
+  "culture": "yaksha",
+  "species": "yaksha",
+  "status": "mythic",
+  "epoch": "civilization_dawn",
+  "roles": ["patron", "wealth_lord"],
+  "relations": {
+    "linked": ["character_vijaya"]
+  },
+  "notes": "Yaksharaj of the southern maritime periphery. Tradition linked to Prince Vijaya and the Mask of Tethys. Guardian of hoarded wealth and island trade oaths.",
+  "canon": "primary",
+  "sources": ["AI_CONTEXT.md"]
+}

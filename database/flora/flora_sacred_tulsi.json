@@ -1,0 +1,11 @@
+{
+  "id": "flora_sacred_tulsi",
+  "type": "flora",
+  "name": "Sacred Tulsi",
+  "scientific": "Ocimum sanctum",
+  "habitats": ["settlement_lothal", "region_narmada_plateau"],
+  "uses": ["ritual", "household_herb"],
+  "notes": "Household and shrine herb. Planted in courtyards; leaves used in morning rites and mild teas.",
+  "canon": "primary",
+  "sources": ["SouthOfTethys.txt"]
+}

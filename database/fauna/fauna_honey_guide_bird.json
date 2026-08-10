@@ -1,0 +1,12 @@
+{
+  "id": "fauna_honey_guide_bird",
+  "type": "fauna",
+  "name": "Honey-Guide Bird",
+  "scientific": "Indicator narmadae",
+  "diet": "Omnivore",
+  "habitats": ["region_narmada_plateau"],
+  "behaviour": ["guide", "commensal"],
+  "notes": "Leads foragers to Golden Honey-Goliath nests. Plateau people leave a share of comb as custom.",
+  "canon": "primary",
+  "sources": ["SouthOfTethys.txt"]
+}

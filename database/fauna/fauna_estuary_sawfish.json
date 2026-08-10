@@ -1,0 +1,12 @@
+{
+  "id": "fauna_estuary_sawfish",
+  "type": "fauna",
+  "name": "Estuary Sawfish",
+  "scientific": "Pristis tethys",
+  "diet": "Carnivore",
+  "habitats": ["region_saraswati_delta", "coastal"],
+  "behaviour": ["bottom_hunter", "migratory"],
+  "notes": "Large saw-snouted ray of the outer estuary. Kia fishers treat a stranded sawfish as both hazard and omen.",
+  "canon": "primary",
+  "sources": ["SouthOfTethys.txt"]
+}
