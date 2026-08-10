@@ -7,7 +7,7 @@
   "biomes": [
     "underworld"
   ],
-  "placement": "encounter",
+  "placement": "lore",
   "rarity": "mythic",
   "journal_prompt": "A highly venomous, dark-scaled snake that swims in the sulfuric rivers of Naraka, its bite causing immediate paralysis.",
   "canon": "primary",

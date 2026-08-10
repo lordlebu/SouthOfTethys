@@ -7,7 +7,7 @@
   "biomes": [
     "underworld"
   ],
-  "placement": "encounter",
+  "placement": "lore",
   "rarity": "mythic",
   "journal_prompt": "A giant, 6-foot leech of the Naraka rifts that attaches to larger monsters, draining their magical energy.",
   "canon": "primary",
