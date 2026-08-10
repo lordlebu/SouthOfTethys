@@ -4,7 +4,10 @@
   "name": "Sky-Faring Grasshopper",
   "scientific": "Melanoplus caelius",
   "region": "saraswati-godavari-deltas",
-  "biomes": [],
+  "biomes": [
+    "sky_island",
+    "open_sky"
+  ],
   "placement": "lore",
   "rarity": "common",
   "journal_prompt": "A lightweight, gas-buoyant grasshopper that migrates between floating islands, feeding on sky-bramble leaves.",
@@ -14,5 +17,5 @@
   ],
   "mood": "graceful",
   "source_index": 55,
-  "placement_note": "Held with the sky set. Filed under Section 1 in the bestiary but the prose describes migration between floating islands -- one of the Section 1 strays the import notes. Reserved for a future sky mode; empty `biomes` is a decision."
+  "placement_note": "Lives on the floating islands. `sky_island` and its neighbours are real canon biomes but are not renderable yet, so the export holds this as lore until a sky mode exists. This is a stated home, not an untagged entity."
 }

@@ -4,7 +4,10 @@
   "name": "Cloud-Weaver Spiderling",
   "scientific": "Aranea nubis minor",
   "region": "tethys-sky-routes",
-  "biomes": [],
+  "biomes": [
+    "sky_island",
+    "open_sky"
+  ],
   "placement": "lore",
   "rarity": "rare",
   "journal_prompt": "A young spider that uses long silk threads to balloon through the air, traveling between distant floating islands.",
@@ -13,5 +16,6 @@
     "docs/bestiary.md"
   ],
   "mood": "graceful",
-  "source_index": 203
+  "source_index": 203,
+  "placement_note": "Lives on the floating islands. `sky_island` and its neighbours are real canon biomes but are not renderable yet, so the export holds this as lore until a sky mode exists. This is a stated home, not an untagged entity."
 }

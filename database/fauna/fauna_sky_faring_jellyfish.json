@@ -4,7 +4,10 @@
   "name": "Sky-Faring Jellyfish",
   "scientific": "Aurelia caelia",
   "region": "tethys-sky-routes",
-  "biomes": [],
+  "biomes": [
+    "sky_island",
+    "open_sky"
+  ],
   "placement": "lore",
   "rarity": "rare",
   "journal_prompt": "An airborne, translucent organism that drifts on wind currents, filtering high-altitude plankton with stinging tentacles.",
@@ -13,5 +16,6 @@
     "docs/bestiary.md"
   ],
   "mood": "graceful",
-  "source_index": 196
+  "source_index": 196,
+  "placement_note": "Lives on the floating islands. `sky_island` and its neighbours are real canon biomes but are not renderable yet, so the export holds this as lore until a sky mode exists. This is a stated home, not an untagged entity."
 }

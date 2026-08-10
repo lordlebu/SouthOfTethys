@@ -5,7 +5,7 @@
   "scientific": "Serpens asuricus",
   "region": "asura-conjurations",
   "biomes": [
-    "river"
+    "underworld"
   ],
   "placement": "encounter",
   "rarity": "mythic",
@@ -15,5 +15,9 @@
     "docs/bestiary.md"
   ],
   "mood": "fearsome",
-  "source_index": 227
+  "source_index": 227,
+  "crosses_at": [
+    "settlement_dwarka"
+  ],
+  "placement_note": "Native to the Naraka rifts, not to delta water. It enters this realm through the Dwarka Gate (settlement_dwarka; see event_shadow_pact and event_naraka_portal), so it should be met near a gate and nowhere else. `underworld` is not renderable yet, so the export holds it as lore; when the Dwarka Gate exists as a landmark, add that biome."
 }

@@ -4,7 +4,10 @@
   "name": "Levitation Gourd / Sky-Balloon",
   "scientific": "Cucurbita levitata",
   "region": "tethys-sky-routes",
-  "biomes": [],
+  "biomes": [
+    "sky_island",
+    "open_sky"
+  ],
   "placement": "lore",
   "rarity": "rare",
   "journal_prompt": "A trailing vine producing massive, hollow gourds that trap lighter-than-air volcanic gases, used by mariners to patch blimps.",
@@ -12,5 +15,6 @@
   "sources": [
     "docs/bestiary.md"
   ],
-  "source_index": 51
+  "source_index": 51,
+  "placement_note": "Lives on the floating islands. `sky_island` and its neighbours are real canon biomes but are not renderable yet, so the export holds this as lore until a sky mode exists. This is a stated home, not an untagged entity."
 }

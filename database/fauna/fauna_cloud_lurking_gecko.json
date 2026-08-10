@@ -4,7 +4,10 @@
   "name": "Cloud-Lurking Gecko",
   "scientific": "Gekko caelius",
   "region": "tethys-sky-routes",
-  "biomes": [],
+  "biomes": [
+    "sky_island",
+    "sky_underside"
+  ],
   "placement": "lore",
   "rarity": "rare",
   "journal_prompt": "A pale green gecko with large, adhesive pads, hunting moths and wasps on the underside of floating rocks.",
@@ -13,5 +16,6 @@
     "docs/bestiary.md"
   ],
   "mood": "fearsome",
-  "source_index": 198
+  "source_index": 198,
+  "placement_note": "Lives on the floating islands. `sky_island` and its neighbours are real canon biomes but are not renderable yet, so the export holds this as lore until a sky mode exists. This is a stated home, not an untagged entity."
 }

@@ -83,7 +83,7 @@
     },
     "biomes": {
       "type": "array",
-      "description": "Tile biomes this species may be placed in. Empty means it is never placed.",
+      "description": "Where this species lives, from the canonical vocabulary in database/biomes.json. Wider than the game's biome set on purpose: canon can say 'floating island' or 'Naraka rifts' even though the walk has nowhere to put them. The export keeps only the renderable ones, and a species left with none becomes placement 'lore' automatically. An empty list means nobody has tagged this yet -- say where it lives instead.",
       "items": {
         "type": "string",
         "enum": [
@@ -97,7 +97,12 @@
           "desert",
           "river",
           "settlement",
-          "landmark"
+          "landmark",
+          "sky_island",
+          "sky_underside",
+          "open_sky",
+          "underworld",
+          "lava_field"
         ]
       }
     },

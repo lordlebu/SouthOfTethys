@@ -4,7 +4,9 @@
   "name": "Aero-Mangrove / Vayu-Vriksha",
   "scientific": "Rhizophora caelia",
   "region": "tethys-sky-routes",
-  "biomes": [],
+  "biomes": [
+    "sky_island"
+  ],
   "placement": "lore",
   "rarity": "rare",
   "journal_prompt": "Trees growing on the absolute edges of floating islands, plunging their roots downward into the open sky to harvest cloud-moisture.",
@@ -12,5 +14,6 @@
   "sources": [
     "docs/bestiary.md"
   ],
-  "source_index": 50
+  "source_index": 50,
+  "placement_note": "Lives on the floating islands. `sky_island` and its neighbours are real canon biomes but are not renderable yet, so the export holds this as lore until a sky mode exists. This is a stated home, not an untagged entity."
 }

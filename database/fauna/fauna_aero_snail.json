@@ -4,7 +4,10 @@
   "name": "Aero-Snail",
   "scientific": "Helix caelia",
   "region": "tethys-sky-routes",
-  "biomes": [],
+  "biomes": [
+    "sky_island",
+    "open_sky"
+  ],
   "placement": "lore",
   "rarity": "rare",
   "journal_prompt": "A land snail with a thin, lightweight shell that uses a mucus parachute to glide from island to island during high winds.",
@@ -13,5 +16,6 @@
     "docs/bestiary.md"
   ],
   "mood": "graceful",
-  "source_index": 186
+  "source_index": 186,
+  "placement_note": "Lives on the floating islands. `sky_island` and its neighbours are real canon biomes but are not renderable yet, so the export holds this as lore until a sky mode exists. This is a stated home, not an untagged entity."
 }

@@ -4,7 +4,9 @@
   "name": "Sun-Catcher Herb",
   "scientific": "Glassa solis",
   "region": "tethys-sky-routes",
-  "biomes": [],
+  "biomes": [
+    "sky_island"
+  ],
   "placement": "lore",
   "rarity": "rare",
   "journal_prompt": "A silicate-absorbing plant with leaves that mirror stained glass, concentrating golden sunlight for deep-time healing.",
@@ -12,5 +14,6 @@
   "sources": [
     "docs/bestiary.md"
   ],
-  "source_index": 55
+  "source_index": 55,
+  "placement_note": "Lives on the floating islands. `sky_island` and its neighbours are real canon biomes but are not renderable yet, so the export holds this as lore until a sky mode exists. This is a stated home, not an untagged entity."
 }

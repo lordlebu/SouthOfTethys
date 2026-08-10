@@ -4,7 +4,9 @@
   "name": "Lodestone Beetle",
   "scientific": "Carabus magneticus",
   "region": "tethys-sky-routes",
-  "biomes": [],
+  "biomes": [
+    "sky_island"
+  ],
   "placement": "lore",
   "rarity": "rare",
   "journal_prompt": "An insect with a metallic, magnetic carapace that feeds on mineral deposits along the floating island cores.",
@@ -13,5 +15,6 @@
     "docs/bestiary.md"
   ],
   "mood": "graceful",
-  "source_index": 183
+  "source_index": 183,
+  "placement_note": "Lives on the floating islands. `sky_island` and its neighbours are real canon biomes but are not renderable yet, so the export holds this as lore until a sky mode exists. This is a stated home, not an untagged entity."
 }

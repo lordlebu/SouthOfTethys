@@ -4,7 +4,10 @@
   "name": "Sky-Turtle",
   "scientific": "Chelonia caelia",
   "region": "tethys-sky-routes",
-  "biomes": [],
+  "biomes": [
+    "sky_island",
+    "open_sky"
+  ],
   "placement": "lore",
   "rarity": "rare",
   "journal_prompt": "A small, lightweight turtle with a hollow, gas-filled shell, drifting lazily through the clouds between floating oases.",
@@ -13,5 +16,6 @@
     "docs/bestiary.md"
   ],
   "mood": "graceful",
-  "source_index": 185
+  "source_index": 185,
+  "placement_note": "Lives on the floating islands. `sky_island` and its neighbours are real canon biomes but are not renderable yet, so the export holds this as lore until a sky mode exists. This is a stated home, not an untagged entity."
 }

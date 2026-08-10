@@ -89,7 +89,7 @@
     },
     "biomes": {
       "type": "array",
-      "description": "Tile biomes this species may be placed in. Empty means it is never placed.",
+      "description": "Where this species lives, from the canonical vocabulary in database/biomes.json. Wider than the game's biome set on purpose: canon can say 'floating island' or 'Naraka rifts' even though the walk has nowhere to put them. The export keeps only the renderable ones, and a species left with none becomes placement 'lore' automatically. An empty list means nobody has tagged this yet -- say where it lives instead.",
       "items": {
         "type": "string",
         "enum": [
@@ -103,7 +103,12 @@
           "desert",
           "river",
           "settlement",
-          "landmark"
+          "landmark",
+          "sky_island",
+          "sky_underside",
+          "open_sky",
+          "underworld",
+          "lava_field"
         ]
       }
     },
@@ -161,6 +166,13 @@
     "placement_note": {
       "type": "string",
       "description": "Why this species is placed as it is, when the answer is not obvious. Required reading before 'fixing' an entity with empty `biomes`: an empty list can mean untagged, or it can mean deliberately held out of play. If this field is present, the emptiness is a decision."
+    },
+    "crosses_at": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Entity ids of the places where a species native to another realm enters this one. Naraka creatures cross at the Dwarka Gate (settlement_dwarka) rather than being native to delta water, so they should be met near a gate and nowhere else."
     }
   },
   "additionalProperties": true

@@ -4,7 +4,9 @@
   "name": "Sky-Gull",
   "scientific": "Larus caelius",
   "region": "tethys-sky-routes",
-  "biomes": [],
+  "biomes": [
+    "sky_island"
+  ],
   "placement": "lore",
   "rarity": "rare",
   "journal_prompt": "A white shorebird that nests on the lodestone cliffs of the floating islands, riding high-altitude wind currents.",
@@ -13,5 +15,6 @@
     "docs/bestiary.md"
   ],
   "mood": "graceful",
-  "source_index": 181
+  "source_index": 181,
+  "placement_note": "Lives on the floating islands. `sky_island` and its neighbours are real canon biomes but are not renderable yet, so the export holds this as lore until a sky mode exists. This is a stated home, not an untagged entity."
 }

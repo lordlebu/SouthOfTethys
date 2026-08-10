@@ -4,7 +4,10 @@
   "name": "Sky-Snake",
   "scientific": "Chrysopelea caelia",
   "region": "tethys-sky-routes",
-  "biomes": [],
+  "biomes": [
+    "sky_island",
+    "open_sky"
+  ],
   "placement": "lore",
   "rarity": "rare",
   "journal_prompt": "A slender, green serpent that flattens its body to glide between hanging vines of neighboring floating islands.",
@@ -13,5 +16,6 @@
     "docs/bestiary.md"
   ],
   "mood": "graceful",
-  "source_index": 188
+  "source_index": 188,
+  "placement_note": "Lives on the floating islands. `sky_island` and its neighbours are real canon biomes but are not renderable yet, so the export holds this as lore until a sky mode exists. This is a stated home, not an untagged entity."
 }

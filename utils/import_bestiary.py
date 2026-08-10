@@ -144,9 +144,9 @@ SKY_MARKER = r"\b(floating island\w*|sky[- ]\w+|aero[- ]\w+|prana|low[- ]gravity
 # these are its content, waiting -- so each says so on itself, or the next pass over empty
 # `biomes` reads them as untagged and spends them on ground biomes.
 SKY_RESERVE_NOTE = (
-    "Reserved for a future sky mode. The floating islands have no equivalent among the ten "
-    "ground biomes, so this species is authored and published but never placed on a tile. "
-    "Empty `biomes` here is a decision, not an untagged entity."
+    "Lives on the floating islands. `sky_island` and its neighbours are real canon biomes but are "
+    "not renderable yet, so the export holds this as lore until a sky mode exists. This is a stated "
+    "home, not an untagged entity."
 )
 
 ENTRY_RE = re.compile(r"^\d+\.\s+\*\*(.+?)\*\*\s+—\s+(.+)$")
@@ -168,7 +168,15 @@ def place_for(text: str, region: str) -> tuple[list[str], str]:
     detected = list(dict.fromkeys(_hits(BIOME_HINTS, text)))[:3]
 
     if region == "tethys-sky-routes" or re.search(SKY_MARKER, text, re.IGNORECASE):
-        return [], "lore"
+        # A real home, not a blank. `sky_island` and its neighbours are canon biomes that the
+        # game cannot render, so the export turns them into `lore` on its own -- which means
+        # the species can say where it lives without an empty list having to mean two things.
+        sky = ["sky_island"]
+        if re.search(r"underside|attach|cling|adhesive|beneath the island|calcified|roots? plunge|shelter", text, re.I):
+            sky.append("sky_underside")
+        if re.search(r"glid|soar|migrat|drift|balloon|skim|fly|flying|between islands|rudder|hollow bones", text, re.I):
+            sky.append("open_sky")
+        return sky, "lore"
 
     # Prose keywords bleed across regions: a volcanic moth mentions "ash-banyan trees"
     # and lands in forest. When the prose agrees with the species' own region, keep only

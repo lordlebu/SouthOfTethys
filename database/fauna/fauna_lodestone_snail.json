@@ -4,7 +4,9 @@
   "name": "Lodestone Snail",
   "scientific": "Helix magneticus",
   "region": "tethys-sky-routes",
-  "biomes": [],
+  "biomes": [
+    "sky_island"
+  ],
   "placement": "lore",
   "rarity": "rare",
   "journal_prompt": "A snail with an iron-rich shell that climbs the magnetized cliffs of the floating islands, sensing magnetic fields.",
@@ -13,5 +15,6 @@
     "docs/bestiary.md"
   ],
   "mood": "graceful",
-  "source_index": 197
+  "source_index": 197,
+  "placement_note": "Lives on the floating islands. `sky_island` and its neighbours are real canon biomes but are not renderable yet, so the export holds this as lore until a sky mode exists. This is a stated home, not an untagged entity."
 }

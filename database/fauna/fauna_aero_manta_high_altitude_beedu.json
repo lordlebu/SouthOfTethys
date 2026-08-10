@@ -4,7 +4,10 @@
   "name": "Aero-Manta / High-Altitude Beedu",
   "scientific": "Sarasvatimanta sky",
   "region": "tethys-sky-routes",
-  "biomes": [],
+  "biomes": [
+    "sky_island",
+    "sky_underside"
+  ],
   "placement": "lore",
   "rarity": "rare",
   "journal_prompt": "A massive, pale cousin of the desert Beedu that nests on the underside of floating islands, grazing on sky coral.",
@@ -13,5 +16,6 @@
     "docs/bestiary.md"
   ],
   "mood": "graceful",
-  "source_index": 176
+  "source_index": 176,
+  "placement_note": "Lives on the floating islands. `sky_island` and its neighbours are real canon biomes but are not renderable yet, so the export holds this as lore until a sky mode exists. This is a stated home, not an untagged entity."
 }
