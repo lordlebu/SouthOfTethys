@@ -1,0 +1,12 @@
+{
+  "id": "fauna_plateau_wolf",
+  "type": "fauna",
+  "name": "Plateau Wolf",
+  "scientific": "Canis narmadae",
+  "diet": "Carnivore",
+  "habitats": ["region_narmada_plateau", "region_aravali"],
+  "behaviour": ["pack", "crepuscular"],
+  "notes": "Lean highland wolf preying on Plateau Ibex and caravan strays. Howl-lines mark clan hunting ranges.",
+  "canon": "primary",
+  "sources": ["SouthOfTethys.txt"]
+}

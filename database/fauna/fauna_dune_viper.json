@@ -1,0 +1,12 @@
+{
+  "id": "fauna_dune_viper",
+  "type": "fauna",
+  "name": "Dune Viper",
+  "scientific": "Echis gedrosianus",
+  "diet": "Carnivore",
+  "habitats": ["region_gedrosian_desert"],
+  "behaviour": ["ambush", "sidewinder"],
+  "notes": "Sidewinding desert viper. Nomads train dogs to detect its sand signature before night camps.",
+  "canon": "primary",
+  "sources": ["SouthOfTethys.txt"]
+}

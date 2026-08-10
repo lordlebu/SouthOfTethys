@@ -1,0 +1,12 @@
+{
+  "id": "fauna_delta_egret",
+  "type": "fauna",
+  "name": "Delta Egret",
+  "scientific": "Egretta saraswati",
+  "diet": "Carnivore",
+  "habitats": ["region_saraswati_delta"],
+  "behaviour": ["wader", "colony_nester"],
+  "notes": "White wading bird of the reed flats. Nesting colonies mark high ground during flood season.",
+  "canon": "primary",
+  "sources": ["SouthOfTethys.txt"]
+}

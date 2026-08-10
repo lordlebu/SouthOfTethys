@@ -1,0 +1,11 @@
+{
+  "id": "flora_date_palm",
+  "type": "flora",
+  "name": "Date Palm",
+  "scientific": "Phoenix gedrosiana",
+  "habitats": ["region_gedrosian_desert"],
+  "uses": ["fruit", "shade", "fibre"],
+  "notes": "Oasis palm of desert waystations. Fruit dried for caravan rations; fronds woven into mats.",
+  "canon": "primary",
+  "sources": ["SouthOfTethys.txt"]
+}

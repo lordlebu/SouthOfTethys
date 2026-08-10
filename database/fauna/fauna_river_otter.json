@@ -1,0 +1,12 @@
+{
+  "id": "fauna_river_otter",
+  "type": "fauna",
+  "name": "River Otter",
+  "scientific": "Lutra saraswati",
+  "diet": "Carnivore",
+  "habitats": ["region_saraswati_delta"],
+  "behaviour": ["playful", "family_group"],
+  "notes": "Freshwater otter of inner channels. Fishers tolerate them as net-cleaners; children forbidden from approaching dens.",
+  "canon": "primary",
+  "sources": ["SouthOfTethys.txt"]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "flora_sandalwood",
+  "type": "flora",
+  "name": "Sandalwood",
+  "scientific": "Santalum jambhudweepa",
+  "habitats": ["region_narmada_plateau", "region_aravali"],
+  "uses": ["ritual_wood", "perfume", "carving"],
+  "notes": "Fragrant heartwood for masks, beads, and temple smoke. Harvest rights contested between plateau clans and river merchants.",
+  "canon": "primary",
+  "sources": ["SouthOfTethys.txt"]
+}

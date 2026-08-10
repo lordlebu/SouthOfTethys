@@ -1,0 +1,11 @@
+{
+  "id": "flora_poison_oleander",
+  "type": "flora",
+  "name": "Poison Oleander",
+  "scientific": "Nerium oleander",
+  "habitats": ["region_aravali", "region_gedrosian_desert"],
+  "uses": ["poison", "boundary_marker"],
+  "notes": "Toxic flowering shrub of dry margins. Sap and smoke used sparingly in arrow pastes; planted to mark forbidden ground.",
+  "canon": "primary",
+  "sources": ["SouthOfTethys.txt"]
+}

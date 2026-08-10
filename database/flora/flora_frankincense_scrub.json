@@ -1,0 +1,11 @@
+{
+  "id": "flora_frankincense_scrub",
+  "type": "flora",
+  "name": "Frankincense Scrub",
+  "scientific": "Boswellia gedrosiana",
+  "habitats": ["region_gedrosian_desert", "region_aravali"],
+  "uses": ["incense", "trade_resin"],
+  "notes": "Drought resin tree of desert margins. Tears of gum burned in Mask Family and Yaksha rites; major caravan commodity.",
+  "canon": "primary",
+  "sources": ["SouthOfTethys.txt"]
+}
