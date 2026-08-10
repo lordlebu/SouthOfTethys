@@ -28,5 +28,6 @@
   "placement": "encounter",
   "rarity": "common",
   "journal_prompt": "A melanistic, dark-coated subspecies of Tendua that hunts within the dense mangrove canopies of the Godavari delta.",
-  "mood": "fearsome"
+  "mood": "fearsome",
+  "source_index": 11
 }

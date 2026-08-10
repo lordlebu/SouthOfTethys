@@ -26,5 +26,6 @@
   "placement": "encounter",
   "rarity": "common",
   "journal_prompt": "A slick shape rolls through the shallows, leaving rings of silver water behind.",
-  "mood": "playful"
+  "mood": "playful",
+  "source_index": 0
 }

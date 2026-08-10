@@ -323,6 +323,7 @@ def build_new(kind: str, rec: dict, ident: str) -> dict:
         "placement": rec["placement"],
         "rarity": rec["rarity"],
         "journal_prompt": rec["journal_prompt"],
+        "source_index": rec["source_index"],
         "canon": "primary",
         "sources": ["docs/bestiary.md"],
     }
@@ -335,7 +336,7 @@ def build_new(kind: str, rec: dict, ident: str) -> dict:
 
 # Fields the bestiary can contribute. Anything already present in canon is left alone --
 # this is what implements canon-wins on the seven disputed binomials.
-MERGEABLE = ("region", "biomes", "placement", "rarity", "journal_prompt", "mood")
+MERGEABLE = ("region", "biomes", "placement", "rarity", "journal_prompt", "mood", "source_index")
 
 
 def merge_into(existing: dict, rec: dict, kind: str) -> tuple[dict, list[str]]:
@@ -409,11 +410,17 @@ def main() -> int:
         taken = {p["id"] for entries in canon.values() for _, p in entries}
         records = parse_bestiary(bestiary, kind)
         if kind == "fauna":
-            records += [
+            # The game assembles [...STARTERS, ...parseBestiary('fauna')], and array order
+            # decides which species pickFor lands on for a given tile -- it is part of the
+            # seed contract, not presentation. Record it so the export can reproduce it
+            # without re-reading the bestiary.
+            records = [
                 {"name": n, "binomial": None, "region": "prototype-starters", "biomes": list(b),
                  "placement": "encounter", "rarity": "common", "mood": m, "journal_prompt": j}
                 for n, m, b, j in STARTERS
-            ]
+            ] + records
+        for i, rec in enumerate(records):
+            rec["source_index"] = i
 
         touched: dict[str, dict] = {}
         consumed: set[str] = set()

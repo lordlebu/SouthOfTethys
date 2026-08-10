@@ -24,5 +24,6 @@
   "placement": "encounter",
   "rarity": "mythic",
   "journal_prompt": "A colossal bee species of the Narmada cliffs, harvested for its essential-oil-rich medicinal honey. They are used as weapons in local siege engines.",
-  "mood": "watchful"
+  "mood": "watchful",
+  "source_index": 60
 }

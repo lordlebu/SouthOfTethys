@@ -28,5 +28,6 @@
   "placement": "encounter",
   "rarity": "rare",
   "journal_prompt": "An 8-foot giant river salamander that has survived since the Pleistocene. It waits in the murky delta pools of Lothal to ambush passing prey.",
-  "mood": "fearsome"
+  "mood": "fearsome",
+  "source_index": 6
 }

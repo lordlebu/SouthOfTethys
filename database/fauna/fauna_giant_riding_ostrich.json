@@ -25,5 +25,6 @@
   "placement": "encounter",
   "rarity": "rare",
   "journal_prompt": "A massive, flightless bird trained by the Tushara nomads to carry heavy cargo and scouts across the arid frontiers.",
-  "mood": "watchful"
+  "mood": "watchful",
+  "source_index": 90
 }

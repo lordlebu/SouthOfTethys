@@ -24,5 +24,6 @@
   "placement": "encounter",
   "rarity": "common",
   "journal_prompt": "A heavy, quadrupedal land crocodile that prowls the delta, specializing in ambush techniques in shallow reed marshes.",
-  "mood": "fearsome"
+  "mood": "fearsome",
+  "source_index": 18
 }

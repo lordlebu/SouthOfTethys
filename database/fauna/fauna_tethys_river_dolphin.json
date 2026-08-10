@@ -24,5 +24,6 @@
   "placement": "encounter",
   "rarity": "common",
   "journal_prompt": "A pale, blind cetacean that navigates the muddy delta waters using sophisticated acoustic clicks, hunted by Kias for meat and skin.",
-  "mood": "watchful"
+  "mood": "watchful",
+  "source_index": 31
 }

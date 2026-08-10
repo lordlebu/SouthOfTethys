@@ -25,5 +25,6 @@
   "placement": "encounter",
   "rarity": "mythic",
   "journal_prompt": "A legendary, swift-footed single-horned ungulate of the river valleys, highly revered and historically sacrificed in dark portals.",
-  "mood": "watchful"
+  "mood": "watchful",
+  "source_index": 21
 }

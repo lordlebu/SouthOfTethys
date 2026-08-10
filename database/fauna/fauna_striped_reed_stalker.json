@@ -27,5 +27,6 @@
   "placement": "encounter",
   "rarity": "common",
   "journal_prompt": "A camouflaged subspecies of Baurusuchus with vertical stripes, blending into the marsh grass of the Saraswati delta.",
-  "mood": "patient"
+  "mood": "patient",
+  "source_index": 19
 }

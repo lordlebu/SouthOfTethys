@@ -14,5 +14,6 @@
   "sources": [
     "docs/bestiary.md"
   ],
-  "mood": "patient"
+  "mood": "patient",
+  "source_index": 96
 }
