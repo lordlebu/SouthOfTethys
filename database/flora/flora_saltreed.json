@@ -1,0 +1,11 @@
+{
+  "id": "flora_saltreed",
+  "type": "flora",
+  "name": "Saltreed",
+  "scientific": "Phragmites salina",
+  "habitats": ["region_saraswati_delta", "coastal"],
+  "uses": ["thatching", "mat_weaving", "filter_beds"],
+  "notes": "Tall estuary reed tolerant of brackish flood. Primary thatch for Kia marsh huts; planted in lagoon filter beds below Lothal docks.",
+  "canon": "primary",
+  "sources": ["SouthOfTethys.txt"]
+}

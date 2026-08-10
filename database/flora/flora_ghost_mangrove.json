@@ -1,0 +1,11 @@
+{
+  "id": "flora_ghost_mangrove",
+  "type": "flora",
+  "name": "Ghost Mangrove",
+  "scientific": "Avicennia phantasma",
+  "habitats": ["coastal", "region_saraswati_delta"],
+  "uses": ["navigational_landmark", "charcoal"],
+  "notes": "Pale-barked mangrove that appears to glow under moonlight when wet. Marks safe channels through the outer estuary; charcoal prized by mask-casters.",
+  "canon": "primary",
+  "sources": ["SouthOfTethys.txt"]
+}

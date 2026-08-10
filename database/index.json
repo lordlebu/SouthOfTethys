@@ -1,11 +1,11 @@
 {
-  "version": "0.8.0",
+  "version": "0.9.0",
   "description": "SouthOfTethys canonical entity index",
   "counts": {
     "characters": 36,
     "events": 12,
-    "fauna": 19,
-    "flora": 6,
+    "fauna": 27,
+    "flora": 14,
     "settlements": 2,
     "regions": 4,
     "artifacts": 3,
@@ -84,7 +84,15 @@
       "fauna_tethys_river_dolphin",
       "fauna_woolly_bactrian_croc",
       "fauna_giant_riding_ostrich",
-      "fauna_golden_honey_goliath"
+      "fauna_golden_honey_goliath",
+      "fauna_burrowing_tortoise",
+      "fauna_striped_reed_stalker",
+      "fauna_mud_armored_ambusher",
+      "fauna_vanga_pearl_guide",
+      "fauna_abyssal_storm_watcher",
+      "fauna_delta_monitor",
+      "fauna_plateau_ibex",
+      "fauna_sand_skink"
     ],
     "flora": [
       "flora_sweet_indigo",
@@ -92,7 +100,15 @@
       "flora_blood_red_asura_lotus",
       "flora_bonewood_mangrove",
       "flora_silver_leaved_oracle_fig",
-      "flora_black_ash_tea"
+      "flora_black_ash_tea",
+      "flora_mahua",
+      "flora_shilajit_creeper",
+      "flora_whisper_fig",
+      "flora_saltreed",
+      "flora_iron_teak",
+      "flora_moonseed_vine",
+      "flora_red_delta_rice",
+      "flora_ghost_mangrove"
     ],
     "settlements": ["settlement_lothal", "settlement_dwarka"],
     "regions": [
