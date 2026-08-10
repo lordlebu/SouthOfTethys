@@ -15,7 +15,7 @@ from typing import Any
 try:
     import chromadb
     from chromadb.config import Settings
-    from sentence_transformers import SentenceTransformer
+    from chromadb.utils import embedding_functions
 except Exception:
     raise SystemExit(
         "Required packages missing. Install chromadb and sentence-transformers."
@@ -77,9 +77,48 @@ def chunk_text(text: str, chunk_size: int = 200) -> list[str]:
     ]
 
 
+def headline(payload: dict[str, Any]) -> str:
+    """One prose sentence naming the entity.
+
+    The flattened `key: value` lines below embed poorly against natural questions
+    like "Who is Kavik Stoneheart?" — field names dominate and the entity's own
+    name appears once. Leading with a sentence that carries the name, aliases and
+    epithets gives the embedder something question-shaped to match.
+    """
+    name = payload.get("name") or payload.get("title") or payload.get("id")
+    if not name:
+        return ""
+
+    naming = [str(name)]
+    aliases = payload.get("aliases")
+    if aliases:
+        naming.append("also known as " + ", ".join(str(a) for a in aliases))
+    epithets = payload.get("epithets")
+    if epithets:
+        naming.append("called " + ", ".join(str(e) for e in epithets))
+    sentence = "; ".join(naming)
+
+    # e.g. "a harappan human character of the civilization_dawn epoch"
+    descriptors = [
+        str(payload[key])
+        for key in ("culture", "species", "type")
+        if payload.get(key)
+    ]
+    if descriptors:
+        sentence += " is a " + " ".join(descriptors)
+    epoch = payload.get("epoch")
+    if epoch:
+        sentence += f" of the {epoch} epoch"
+
+    return sentence + "."
+
+
 def entity_document(payload: dict[str, Any]) -> str:
     """Flatten entity JSON into searchable prose."""
     parts: list[str] = []
+    lead = headline(payload)
+    if lead:
+        parts.append(lead)
     for key in (
         "id",
         "type",
@@ -134,7 +173,8 @@ def entity_document(payload: dict[str, Any]) -> str:
 
 
 def build_metadata(repo_root: Path, fpath: Path, payload: dict | None, chunk_index: int):
-    rel = str(fpath.relative_to(repo_root))
+    # as_posix() so metadata is identical whether indexed on Windows or in Docker.
+    rel = fpath.relative_to(repo_root).as_posix()
     meta: dict[str, Any] = {"source": rel, "chunk_index": chunk_index}
     if payload and isinstance(payload, dict):
         eid = payload.get("id") or fpath.stem
@@ -160,14 +200,18 @@ def get_client():
         database = os.environ.get("CHROMA_DATABASE")
         return chromadb.CloudClient(
             api_key=cloud_key, tenant=tenant, database=database
-        ), True
-    client = chromadb.Client(
-        Settings(
-            chroma_db_impl="duckdb+parquet",
-            persist_directory=CHROMA_PERSIST_DIR,
         )
+    return chromadb.PersistentClient(
+        path=CHROMA_PERSIST_DIR,
+        settings=Settings(anonymized_telemetry=False),
     )
-    return client, False
+
+
+def get_embedding_function():
+    """Shared with query-time code so index and search use the same vectors."""
+    return embedding_functions.SentenceTransformerEmbeddingFunction(
+        model_name=EMBEDDING_MODEL
+    )
 
 
 def main():
@@ -175,15 +219,14 @@ def main():
     if not repo_root.exists():
         raise SystemExit(f"Repo directory not found: {REPO_DIR}")
 
-    client, is_cloud = get_client()
+    client = get_client()
     try:
         client.delete_collection(COLLECTION_NAME)
     except Exception:
         pass
-    collection = client.create_collection(COLLECTION_NAME)
-
-    # Load embedder so model is warm (chromadb may also embed depending on config)
-    SentenceTransformer(EMBEDDING_MODEL)
+    collection = client.create_collection(
+        COLLECTION_NAME, embedding_function=get_embedding_function()
+    )
 
     files = gather_files(repo_root)
     ids, docs, metadatas = [], [], []
@@ -231,11 +274,6 @@ def main():
 
     if docs:
         collection.add(ids=ids, documents=docs, metadatas=metadatas)
-        if not is_cloud:
-            try:
-                client.persist()
-            except Exception:
-                pass
         print(
             f"Indexed {len(docs)} chunks from {len(files)} files "
             f"into '{COLLECTION_NAME}'"

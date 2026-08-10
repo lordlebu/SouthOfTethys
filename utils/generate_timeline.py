@@ -1,7 +1,11 @@
 """Build a merged timeline from database/events/*.json."""
 
 import json
+import sys
 from pathlib import Path
+
+# Windows consoles default to cp1252, which cannot encode the status glyphs below.
+sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 BASE = Path(__file__).resolve().parent.parent
 EVENTS_DIR = BASE / "database" / "events"

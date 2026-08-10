@@ -13,19 +13,30 @@ import argparse
 import json
 import os
 import subprocess
+import sys
 from pathlib import Path
-from typing import Any
+
+REPO_ROOT = Path(__file__).resolve().parent.parent
+# Reuse the full indexer's text/metadata builders so an incremental upsert
+# produces byte-identical chunks to a full rebuild of the same file.
+sys.path.insert(0, str(REPO_ROOT / "services" / "chroma"))
+from index_chroma_service import (  # noqa: E402  (import follows sys.path setup)
+    build_metadata,
+    chunk_text,
+    entity_document,
+)
 
 try:
     import chromadb
     from chromadb.config import Settings
+    from chromadb.utils import embedding_functions
 except Exception:
     raise SystemExit(
         "chromadb is required. Install services/chroma/requirements.txt"
     )
 
 try:
-    from sentence_transformers import SentenceTransformer
+    import sentence_transformers  # noqa: F401  (backs the embedding function below)
 except Exception:
     raise SystemExit("sentence-transformers is required")
 
@@ -46,49 +57,6 @@ def git_changed_files(range_spec: str) -> list[Path]:
     if not out:
         return []
     return [Path(p) for p in out.splitlines() if p.strip()]
-
-
-def chunk_text(text: str, chunk_size: int = 200) -> list[str]:
-    words = text.split()
-    if not words:
-        return [text] if text.strip() else []
-    return [
-        " ".join(words[i : i + chunk_size]) for i in range(0, len(words), chunk_size)
-    ]
-
-
-def entity_document(payload: dict[str, Any]) -> str:
-    parts: list[str] = []
-    for key, val in payload.items():
-        if val is None or val == "" or val == []:
-            continue
-        if isinstance(val, (dict, list)):
-            parts.append(f"{key}: {json.dumps(val, ensure_ascii=False)}")
-        else:
-            parts.append(f"{key}: {val}")
-    return "\n".join(parts)
-
-
-def build_metadata(repo_root: Path, fpath: Path, chunk_index: int):
-    rel = str(fpath.relative_to(repo_root))
-    meta: dict[str, Any] = {"source": rel, "chunk_index": chunk_index}
-    if fpath.suffix == ".json":
-        try:
-            payload = json.loads(fpath.read_text(encoding="utf-8"))
-            if isinstance(payload, dict):
-                meta["entity_id"] = payload.get("id", fpath.stem)
-                meta["entity_type"] = payload.get("type", fpath.parent.name)
-                if payload.get("name"):
-                    meta["name"] = payload["name"]
-                if payload.get("title"):
-                    meta["title"] = payload["title"]
-                if payload.get("epoch"):
-                    meta["epoch"] = payload["epoch"]
-        except Exception:
-            meta["entity_id"] = fpath.stem
-    else:
-        meta["entity_id"] = fpath.stem
-    return meta
 
 
 def main():
@@ -133,43 +101,38 @@ def main():
             tenant=os.environ.get("CHROMA_TENANT"),
             database=os.environ.get("CHROMA_DATABASE"),
         )
-        try:
-            collection = client.get_collection(COLLECTION_NAME)
-        except Exception:
-            collection = client.create_collection(COLLECTION_NAME)
     else:
-        client = chromadb.Client(
-            Settings(
-                chroma_db_impl="duckdb+parquet",
-                persist_directory=args.persist_dir,
-            )
+        client = chromadb.PersistentClient(
+            path=args.persist_dir,
+            settings=Settings(anonymized_telemetry=False),
         )
-        try:
-            collection = client.get_collection(COLLECTION_NAME)
-        except Exception:
-            collection = client.create_collection(COLLECTION_NAME)
 
-    SentenceTransformer(os.environ.get("EMBEDDING_MODEL", "all-MiniLM-L6-v2"))
+    # Must match the full indexer, or upserted chunks land in a different vector space.
+    ef = embedding_functions.SentenceTransformerEmbeddingFunction(
+        model_name=os.environ.get("EMBEDDING_MODEL", "all-MiniLM-L6-v2")
+    )
+    collection = client.get_or_create_collection(
+        COLLECTION_NAME, embedding_function=ef
+    )
 
     ids, docs, metadatas = [], [], []
     for f in files:
         raw = f.read_text(encoding="utf-8")
+        payload = None
         if f.suffix == ".json":
             try:
                 payload = json.loads(raw)
-                text = (
-                    entity_document(payload)
-                    if isinstance(payload, dict)
-                    else raw
-                )
             except json.JSONDecodeError:
-                text = raw
+                payload = None
+            text = entity_document(payload) if isinstance(payload, dict) else raw
         else:
             text = raw
 
         for ci, chunk in enumerate(chunk_text(text, args.chunk_size)):
             vid = f"{f.stem}_{ci}"
-            meta = build_metadata(repo_root, f, ci)
+            meta = build_metadata(
+                repo_root, f, payload if isinstance(payload, dict) else None, ci
+            )
             if args.validate:
                 if not _HAVE_VALIDATOR:
                     raise SystemExit("Validator unavailable")
@@ -198,11 +161,6 @@ def main():
         except Exception:
             pass
         collection.add(ids=ids, documents=docs, metadatas=metadatas)
-    if not cloud_key:
-        try:
-            client.persist()
-        except Exception:
-            pass
     print("Upsert completed")
 
 

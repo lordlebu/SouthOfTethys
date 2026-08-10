@@ -1,5 +1,7 @@
 streamlit
 transformers
 flake8
-chromadb
-sentence-transformers
+# Must match the floor in services/chroma/requirements.txt: the portal queries the
+# collection that service builds, using the same PersistentClient API.
+chromadb>=0.5.0
+sentence-transformers>=2.2.0

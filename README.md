@@ -22,14 +22,22 @@ With the Vidur Portal and Hugging Face model, we empower users to extract struct
 
 1. Install dependencies:
 ```bash
-pip install chromadb sentence-transformers
+pip install -r services/chroma/requirements.txt
 ```
-2. Build index locally:
+2. Build the index locally from `database/`:
 ```bash
-CHROMA_PERSIST_DIR=storage/chroma python utils/index_chroma.py
+REPO_DIR=$(pwd) CHROMA_PERSIST_DIR=storage/chroma python services/chroma/index_chroma_service.py
 ```
-3. Configure the portal (optional env vars):
-4. Add `storage/chroma/` to `.gitignore` (already added).
+3. Check retrieval without starting the portal:
+```bash
+CHROMA_PERSIST_DIR=storage/chroma python scripts/query_chroma.py "Who is Kavik Stoneheart?"
+```
+4. Update the index after editing a single entity:
+```bash
+python scripts/index_changes.py --files database/characters/character_kavik.json
+```
+5. Configure the portal (optional env vars): `CHROMA_PERSIST_DIR`, `EMBEDDING_MODEL`.
+6. Add `storage/chroma/` to `.gitignore` (already added).
 
 CI: Run only smoke tests that verify the portal can read a persisted index; do not build or store vectors in CI.
 

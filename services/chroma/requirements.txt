@@ -1,3 +1,5 @@
-chromadb
-sentence-transformers
+# chromadb >= 0.4 dropped the duckdb+parquet Settings API this service used to use;
+# the floor keeps the PersistentClient / embedding-function calls below valid.
+chromadb>=0.5.0
+sentence-transformers>=2.2.0
 jsonschema
