@@ -9,8 +9,11 @@ That also keeps the token surface small: the Space contains no `.env`, no notebo
 model weights, and none of the tooling -- just the API, the retrieval module it imports,
 canon, and the prebuilt index.
 
-    REPO_DIR=. CHROMA_PERSIST_DIR=storage/chroma python services/chroma/index_chroma_service.py
     python services/api/build_space.py
+
+The index is built into the bundle, not copied from the working directory -- Chroma leaves a
+dead HNSW segment behind on every rebuild, and a copy would ship whatever state the developer
+happened to leave behind rather than an index that matches this bundle's canon.
 
 Then push `dist-space/` to the Space's git remote. Secrets are set in the Space UI and never
 committed.
@@ -19,8 +22,10 @@ committed.
 from __future__ import annotations
 
 import argparse
-import json
+import os
 import shutil
+import subprocess
+import sys
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[2]
@@ -67,7 +72,6 @@ COPY = [
     ("services/api/Dockerfile", "Dockerfile"),
     ("vidur_portal/snippet_processor.py", "vidur_portal/snippet_processor.py"),
     ("database", "database"),
-    ("storage/chroma", "storage/chroma"),
 ]
 
 # Belt and braces: never let a secret into the assembled directory, whatever else changes.
@@ -78,12 +82,6 @@ def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--out", type=Path, default=REPO / "dist-space")
     args = ap.parse_args()
-
-    index = REPO / "storage" / "chroma"
-    if not index.exists() or not any(index.iterdir()):
-        print("ERROR: storage/chroma is empty. Build the index first:")
-        print("  REPO_DIR=. CHROMA_PERSIST_DIR=storage/chroma python services/chroma/index_chroma_service.py")
-        return 1
 
     out = args.out
     if out.exists():
@@ -97,6 +95,25 @@ def main() -> int:
             shutil.copytree(src, dst, ignore=shutil.ignore_patterns("__pycache__", "*.pyc", *NEVER))
         else:
             shutil.copy2(src, dst)
+
+    # Build the index into the bundle rather than copying the working one.
+    #
+    # Chroma leaves the old HNSW segment behind every time a collection is deleted and
+    # rebuilt, so a long-lived working directory accumulates them: this repo's had five
+    # segment dirs for one live collection, four of them dead. Copying it would ship that.
+    # A fresh directory also guarantees the index matches the canon in this bundle, rather
+    # than whenever the developer last happened to reindex.
+    print("indexing canon into the bundle ...", flush=True)
+    env = {**os.environ, "REPO_DIR": str(out), "CHROMA_PERSIST_DIR": str(out / "storage" / "chroma")}
+    result = subprocess.run(
+        [sys.executable, str(REPO / "services" / "chroma" / "index_chroma_service.py")],
+        env=env, capture_output=True, text=True,
+    )
+    if result.returncode != 0:
+        print("ERROR: indexing failed:")
+        print(result.stdout[-2000:] or result.stderr[-2000:])
+        return 1
+    print("  " + (result.stdout.strip().splitlines() or ["indexed"])[-1])
 
     (out / "README.md").write_text(README, encoding="utf-8", newline="\n")
     # The Space builds from its own root, so nothing above it is available.
