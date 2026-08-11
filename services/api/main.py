@@ -101,6 +101,30 @@ def writable_index_dir() -> str:
 # module-level constant, so setting it afterwards would have no effect.
 os.environ["CHROMA_PERSIST_DIR"] = writable_index_dir()
 
+
+def use_bundled_embedder() -> None:
+    """Point Chroma's ONNX embedder at a model shipped with the bundle.
+
+    Chroma hardcodes its model cache to `Path.home()/".cache"/"chroma"`, downloads 86MB
+    there on first use, and has no setting for it. On a serverless platform HOME is not
+    writable, so the download fails and every retrieval 500s -- which is exactly what the
+    first deployment did.
+
+    `_download_model_if_not_exists` skips the fetch entirely when the six extracted files
+    are already present, so shipping them and repointing the class attribute means no
+    download, no writable HOME, and no cold-start fetch. Absent, this does nothing and the
+    normal download path applies -- which is what happens on a developer's machine.
+    """
+    bundled = REPO / "models" / "onnx_models" / "all-MiniLM-L6-v2"
+    if not (bundled / "onnx" / "model.onnx").exists():
+        return
+    from chromadb.utils.embedding_functions.onnx_mini_lm_l6_v2 import ONNXMiniLM_L6_V2
+
+    ONNXMiniLM_L6_V2.DOWNLOAD_PATH = bundled
+
+
+use_bundled_embedder()
+
 # The retrieval and generation logic already exists and is exercised by the portal.
 # Importing it keeps one implementation rather than a second copy that can drift.
 sys.path.insert(0, str(REPO / "vidur_portal"))

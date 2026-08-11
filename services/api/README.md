@@ -148,7 +148,20 @@ public deployment offers retrieval only. `/health` reports `ask: open | key_requ
 and the panel hides the generate button when it may not use it. Generation stays available
 locally, where the key is in your environment.
 
-### Vercel (recommended)
+### Vercel — live
+
+**https://south-of-tethys-canon.vercel.app**
+
+| | |
+|---|---|
+| `GET /health` | public |
+| `POST /lore` | public, ~2s |
+| `POST /ask` | needs `X-Canon-Key`; 404 without it |
+
+Deployed and verified: `/lore` returns the right entities for a tile, and `/ask` with the key
+returns a Qwen-written passage grounded in them, in under four seconds.
+
+### Vercel (how)
 
 Vercel's Python runtime loads a top-level `app` from `app.py` and installs from
 `requirements.txt`, so the FastAPI app runs unmodified. The free Hobby plan gives 2 GB of
@@ -170,14 +183,32 @@ Set these on the Vercel project (Settings -> Environment Variables), never as `V
 | `CANON_LLM` | `Qwen/Qwen2.5-7B-Instruct` |
 | `CANON_ALLOWED_ORIGINS` | `https://lordlebu.github.io` |
 
-**Serverless needs the index copied before it can be read.** Chroma opens its SQLite
+### Two things serverless broke, both found by deploying
+
+The first deployment returned 200 on `/health` and **500 on every `/lore`**. Two separate
+assumptions, each invisible locally:
+
+**The index cannot be read in place.** Chroma opens its SQLite
 read-write even to answer a query, and fails on a read-only mount with "attempt to write a
 readonly database" -- which is exactly what a Vercel bundle is. `writable_index_dir()`
 detects that and copies the 4 MB index to the one writable directory, once per cold start.
 It probes the database file rather than the directory, because a directory can accept new
 files while the files already in it are read-only, and it restores write permissions on the
 copy, because `copytree` carries the read-only mode bits across and the copy would fail the
-same way.
+same way. In production `/health` now reports `persist_dir: /tmp/canon-chroma`, which is that
+fallback working.
+
+**The embedding model cannot be downloaded.** Chroma hardcodes its model cache to
+`Path.home()/".cache"/"chroma"` with no setting to change it, and downloads 86 MB there on
+first use. Serverless HOME is not writable, so the download failed and every retrieval 500d.
+`_download_model_if_not_exists` skips the fetch when the extracted files are already present,
+so the build ships them and `use_bundled_embedder()` repoints the class attribute. That also
+removes the cold-start download entirely. The bundle goes from 4 MB to 91 MB and the built
+function to 401 MB, still inside the 500 MB limit.
+
+Neither of these can be caught by running the bundle locally, because a developer's
+filesystem is writable and their cache is already warm. They only appear on a read-only
+serverless mount.
 
 ### Hugging Face Spaces (needs PRO)
 

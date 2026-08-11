@@ -136,6 +136,23 @@ def main() -> int:
         return 1
     print("  " + (result.stdout.strip().splitlines() or ["indexed"])[-1])
 
+    # Ship the ONNX embedding model.
+    #
+    # Chroma hardcodes its model cache to Path.home()/".cache" and downloads 86MB there on
+    # first use. Serverless HOME is not writable, so that download fails and every retrieval
+    # 500s -- the first Vercel deployment did precisely that. Chroma skips the fetch when the
+    # extracted files are already present, so they travel with the bundle. The 79MB tarball
+    # beside them in the local cache is not needed and is left behind.
+    cache = Path.home() / ".cache" / "chroma" / "onnx_models" / "all-MiniLM-L6-v2" / "onnx"
+    if not cache.exists():
+        print("ERROR: no local ONNX model to bundle. Warm the cache once:")
+        print("  python -c \"from chromadb.utils.embedding_functions import DefaultEmbeddingFunction as D; D()(['warm'])\"")
+        return 1
+    model_dst = out / "models" / "onnx_models" / "all-MiniLM-L6-v2" / "onnx"
+    shutil.copytree(cache, model_dst)
+    mb = sum(f.stat().st_size for f in model_dst.rglob("*") if f.is_file()) / 1048576
+    print(f"  bundled the ONNX embedder ({mb:.0f} MB) -- no download at cold start")
+
     if args.target == "space":
         (out / "README.md").write_text(README, encoding="utf-8", newline="\n")
     else:
