@@ -34,10 +34,11 @@
     },
     {
       "id": "epoch_post_cataclysm",
-      "name": "Post-Cataclysmic Era (Possible Future)",
-      "range": "prophetic",
-      "notes": "Survival Train of Varuna and Mitra. Setting of Varuna's Field Diary: the era is deliberately unwritten, so it is authored by the game rather than inherited. Previously marked 'not hard-locked'; choosing it means writing it.",
-      "status": "authoring"
+      "name": "Post-Cataclysmic Era (The Great Shattering)",
+      "range": "after the Collapse",
+      "notes": "The Great Shattering. Reckless Narmada excavations in the Age of Machinery met space-time rifts and the pull of sentient Asura planets, and the world fractured under the weight of its own eras -- tectonic and dimensional boundaries collapsing together. Lothal is a half-buried relic with survivors camped in it; Dwarka is drowned and its Gate dormant; Narmada University stands hollow, lit only by Garudasaur moss over ruined scrolls. Varuna and Mitra keep no power worth the name and have turned to preservation: a travelling apothecary and workshop gathering the displaced. The tone is solarpunk, not ruin -- the story ends when the Survival Train stops for good and becomes the centre of a village.",
+      "status": "authoring",
+      "setting_of": "Varuna's Field Diary"
     }
   ],
   "canon": "primary"

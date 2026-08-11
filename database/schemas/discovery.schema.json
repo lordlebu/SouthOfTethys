@@ -3,15 +3,36 @@
   "title": "Discovery",
   "description": "Something the player can come to understand. The unit of progression: the game has no experience points, so a discovery moving up its ladder is what advancement means.\n\nThis is a definition, not a record of play. Canon says what CAN be known and what it takes to know it; whether a particular player has got there lives in their save, never here.",
   "type": "object",
-  "required": ["id", "type", "name", "discipline", "levels"],
+  "required": [
+    "id",
+    "type",
+    "name",
+    "discipline",
+    "levels"
+  ],
   "properties": {
-    "id": { "type": "string", "pattern": "^discovery_[a-z0-9_]+$" },
-    "type": { "const": "discovery" },
-    "name": { "type": "string", "description": "What the completed entry is called. The player will not see this until they have earned it." },
-
+    "id": {
+      "type": "string",
+      "pattern": "^discovery_[a-z0-9_]+$"
+    },
+    "type": {
+      "const": "discovery"
+    },
+    "name": {
+      "type": "string",
+      "description": "What the completed entry is called. The player will not see this until they have earned it."
+    },
     "discipline": {
       "type": "string",
-      "enum": ["zoology", "botany", "archaeology", "geography", "linguistics", "evolution", "anomalies"],
+      "enum": [
+        "zoology",
+        "botany",
+        "archaeology",
+        "geography",
+        "linguistics",
+        "evolution",
+        "anomalies"
+      ],
       "description": "Which section of the diary this files under, and which knowledge track it advances."
     },
     "subject": {
@@ -20,32 +41,70 @@
     },
     "found_at": {
       "type": "array",
-      "items": { "type": "string" },
+      "items": {
+        "type": "string"
+      },
       "description": "point_of_interest ids where this can be encountered. More than one is fine and desirable: meeting the same thing twice in different places is how a pattern becomes visible."
     },
-
     "levels": {
       "type": "array",
       "minItems": 2,
-      "maxItems": 6,
-      "description": "The ladder from noticing to understanding, in order. Index is the level: 0 unknown, 1 observed, 2 identified, 3 explained, 4 connected, 5 significant. Not every discovery needs all six -- a shell may stop at identified, while an ecological relationship earns the full climb. Each rung is what the diary shows once reached, so it is written for the player.",
+      "maxItems": 7,
+      "description": "The ladder from noticing to understanding to doing something about it, in order. Index is the level: 0 unknown, 1 observed, 2 identified, 3 explained, 4 connected, 5 significant, 6 actionable. Not every discovery needs all seven -- a shell may stop at identified. The seventh rung is where the solarpunk turn happens: knowing that the moss feeds on fossil marrow is understanding, and knowing it will therefore grow on a poisoned field is help. Each rung is what the diary shows once reached, so it is written for the player.",
       "items": {
         "type": "object",
-        "required": ["entry"],
+        "required": [
+          "entry"
+        ],
         "properties": {
-          "entry": { "type": "string", "description": "What the diary reads at this level. Varuna's voice, and it should sound less certain at the lower rungs." },
+          "entry": {
+            "type": "string",
+            "description": "What the diary reads at this level. Varuna's voice, and it should sound less certain at the lower rungs."
+          },
           "requires": {
             "type": "array",
-            "items": { "type": "string" },
+            "items": {
+              "type": "string"
+            },
             "description": "What must be true to reach this rung: other discovery ids, vocabulary ids, a tool, an npc consulted. Empty means it follows from the level below."
           },
           "conditions": {
             "type": "object",
             "description": "When this rung can be reached at all, if the world has to cooperate.",
             "properties": {
-              "time_of_day": { "type": "array", "items": { "type": "string", "enum": ["dawn", "morning", "afternoon", "evening", "night"] } },
-              "weather": { "type": "array", "items": { "type": "string", "enum": ["clear", "rain", "storm", "mist", "flood", "full_moon"] } },
-              "season": { "type": "array", "items": { "type": "string" } }
+              "time_of_day": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "dawn",
+                    "morning",
+                    "afternoon",
+                    "evening",
+                    "night"
+                  ]
+                }
+              },
+              "weather": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "clear",
+                    "rain",
+                    "storm",
+                    "mist",
+                    "flood",
+                    "full_moon"
+                  ]
+                }
+              },
+              "season": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
             },
             "additionalProperties": true
           }
@@ -53,23 +112,59 @@
         "additionalProperties": true
       }
     },
-
     "answers": {
       "type": "array",
-      "items": { "type": "string" },
+      "items": {
+        "type": "string"
+      },
       "description": "field_question ids this contributes evidence toward. A question usually needs several."
     },
     "related_discoveries": {
       "type": "array",
-      "items": { "type": "string" },
+      "items": {
+        "type": "string"
+      },
       "description": "Discoveries that become more meaningful once this one is held. The 'connected' rung is built from these."
     },
-
-    "epochs": { "type": "array", "items": { "type": "string" } },
-    "notes": { "type": "string", "description": "Reference fact for the canon reader. Not shown to the player." },
-
-    "canon": { "type": "string", "enum": ["primary", "secondary", "draft"], "default": "primary" },
-    "sources": { "type": "array", "items": { "type": "string" } }
+    "epochs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "notes": {
+      "type": "string",
+      "description": "Reference fact for the canon reader. Not shown to the player."
+    },
+    "canon": {
+      "type": "string",
+      "enum": [
+        "primary",
+        "secondary",
+        "draft"
+      ],
+      "default": "primary"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "helps": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "npc ids whose lives this discovery can mend, once it reaches the actionable rung. This is the whole of the 'help people' system: there is no separate roster, because the people you could gather at the end are exactly those named here by discoveries you finished. Knowledge is how you help, so helping is counted the same way."
+    },
+    "restores": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Entity ids this can put back -- a poisoned field, a collapsed roof, a silted channel. What the endgame settlement is built out of."
+    }
   },
   "additionalProperties": true
 }
