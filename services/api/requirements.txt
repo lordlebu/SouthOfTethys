@@ -7,3 +7,5 @@ pydantic>=2.7
 chromadb>=0.5.0
 sentence-transformers>=2.2.0
 transformers
+# so .env.local is actually read; without it HF_TOKEN must be exported by hand
+python-dotenv>=1.0

@@ -92,8 +92,22 @@ locally. So `/ask` uses hosted inference when it can.
 ```bash
 # in SouthOfTethys/.env.local  — gitignored, never committed
 HF_TOKEN=hf_...
-CANON_LLM=meta-llama/Llama-3.2-3B-Instruct
+CANON_LLM=meta-llama/Llama-3.1-8B-Instruct
 ```
+
+Not every model on the Hub is served by an inference provider, and the error when one is not
+is a flat "not supported by any provider". Two that worked on a free fine-grained token:
+
+| model | passage time |
+|---|---|
+| `meta-llama/Llama-3.1-8B-Instruct` | 1.7-3.4s |
+| `Qwen/Qwen2.5-7B-Instruct` | similar |
+
+`Llama-3.2-3B-Instruct`, `Mistral-7B-Instruct-v0.3`, `zephyr-7b-beta`, `Phi-3.5-mini-instruct`
+and `gemma-2-2b-it` were all refused. Probe before assuming.
+
+`.env.local` is read automatically -- python-dotenv is a dependency for exactly that, because
+the README used to point at a file nothing loaded.
 
 Then start the service with those in the environment. `use_hosted()` is true only when both
 are set; with neither, `/ask` falls back to the local pipeline, and with a token but no model

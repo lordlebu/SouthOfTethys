@@ -35,6 +35,19 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 
 REPO = Path(__file__).resolve().parents[2]
+
+# The README told people to put HF_TOKEN in .env.local, and nothing read it -- the service
+# looked at os.environ only, so a correctly filled file would have been silently ignored and
+# /ask would have quietly stayed on the local model. Load it here, without overriding
+# anything already exported in the shell.
+try:
+    from dotenv import load_dotenv
+
+    load_dotenv(REPO / ".env.local", override=False)
+    load_dotenv(REPO / ".env", override=False)
+except ImportError:  # optional; exporting the vars by hand still works
+    pass
+
 # The retrieval and generation logic already exists and is exercised by the portal.
 # Importing it keeps one implementation rather than a second copy that can drift.
 sys.path.insert(0, str(REPO / "vidur_portal"))
@@ -196,7 +209,10 @@ def health() -> dict:
         "chroma": count is not None,
         "indexed_chunks": count,
         "collection": vidur.COLLECTION_NAME,
-        "model": vidur.MODEL_HF,
+        # The model actually used for /ask, which is not the portal's once CANON_LLM is set.
+        # Reporting vidur.MODEL_HF here said GPT-2 while Llama was doing the writing.
+        "model": CANON_LLM or vidur.MODEL_HF,
+        "generation": "hosted" if use_hosted() else "local",
         "persist_dir": os.environ.get("CHROMA_PERSIST_DIR", vidur.CHROMA_PERSIST_DIR),
     }
 
