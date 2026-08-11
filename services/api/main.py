@@ -49,6 +49,58 @@ try:
 except ImportError:  # optional; exporting the vars by hand still works
     pass
 
+def writable_index_dir() -> str:
+    """Where Chroma should read the index from, given the filesystem it has.
+
+    Chroma opens its SQLite read-write even to answer a query, and fails outright on a
+    read-only mount with "attempt to write a readonly database". Serverless platforms ship
+    the bundle read-only and give you one writable directory, so on those the index has to be
+    copied somewhere writable before it can be opened at all.
+
+    The copy is ~4MB and happens once per cold start. It is skipped entirely when the
+    directory is already writable, which is every local run.
+    """
+    configured = os.environ.get("CHROMA_PERSIST_DIR") or str(REPO / "storage" / "chroma")
+    src = Path(configured)
+    if not src.exists():
+        return configured
+
+    # Probe the database file itself, not the directory. Chroma needs to write to the
+    # existing sqlite even for a read, and a directory can accept new files while the files
+    # already in it are read-only -- so a touch-and-delete probe reports writable and the
+    # first query still fails.
+    db = src / "chroma.sqlite3"
+    try:
+        if db.exists():
+            with open(db, "r+b"):
+                pass
+        else:
+            probe = src / ".write-probe"
+            probe.touch()
+            probe.unlink()
+        return configured
+    except OSError:
+        pass
+
+    import shutil
+    import stat
+    import tempfile
+
+    dst = Path(tempfile.gettempdir()) / "canon-chroma"
+    if not dst.exists():
+        shutil.copytree(src, dst)
+        # copytree carries the mode bits across, so a copy of a read-only bundle is itself
+        # read-only and Chroma fails exactly as it would have in place. Restore write.
+        for path in dst.rglob("*"):
+            if path.is_file():
+                path.chmod(path.stat().st_mode | stat.S_IWUSR)
+    return str(dst)
+
+
+# Must happen before snippet_processor is imported: it reads CHROMA_PERSIST_DIR into a
+# module-level constant, so setting it afterwards would have no effect.
+os.environ["CHROMA_PERSIST_DIR"] = writable_index_dir()
+
 # The retrieval and generation logic already exists and is exercised by the portal.
 # Importing it keeps one implementation rather than a second copy that can drift.
 sys.path.insert(0, str(REPO / "vidur_portal"))

@@ -100,3 +100,4 @@ coverage.xml
 # cartography/interactive_map.html
 storage/chroma/
 dist-space/
+dist-vercel/

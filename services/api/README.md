@@ -148,26 +148,58 @@ public deployment offers retrieval only. `/health` reports `ask: open | key_requ
 and the panel hides the generate button when it may not use it. Generation stays available
 locally, where the key is in your environment.
 
-### Hugging Face Spaces
+### Vercel (recommended)
 
-Create a Space with the **Docker** SDK, then from the repository root:
+Vercel's Python runtime loads a top-level `app` from `app.py` and installs from
+`requirements.txt`, so the FastAPI app runs unmodified. The free Hobby plan gives 2 GB of
+memory, 1 vCPU and a **500 MB** Python bundle -- this bundle is 4.1 MB of code and index,
+about 91 MB of dependencies, and an 86 MB model, so there is room to spare.
 
 ```bash
-# index first -- the image bakes it in
-REPO_DIR=. CHROMA_PERSIST_DIR=storage/chroma python services/chroma/index_chroma_service.py
-docker build -f services/api/Dockerfile -t canon-api .
+python services/api/build_deploy.py --target vercel   # -> dist-vercel/
+cd dist-vercel
+npx vercel deploy --prod
 ```
 
-In the Space's settings:
+Set these on the Vercel project (Settings -> Environment Variables), never as `VITE_*`:
 
-| where | name | value |
-|---|---|---|
-| Secrets | `HF_TOKEN` | your fine-grained token |
-| Secrets | `CANON_API_KEY` | a long random string |
-| Variables | `CANON_LLM` | `Qwen/Qwen2.5-7B-Instruct` |
-| Variables | `CANON_ALLOWED_ORIGINS` | `https://lordlebu.github.io` |
+| name | value |
+|---|---|
+| `HF_TOKEN` | fine-grained token, Inference Providers only |
+| `CANON_API_KEY` | a long random string |
+| `CANON_LLM` | `Qwen/Qwen2.5-7B-Instruct` |
+| `CANON_ALLOWED_ORIGINS` | `https://lordlebu.github.io` |
 
-Then set `VITE_CANON_API` to the Space URL for the game's Pages build.
+**Serverless needs the index copied before it can be read.** Chroma opens its SQLite
+read-write even to answer a query, and fails on a read-only mount with "attempt to write a
+readonly database" -- which is exactly what a Vercel bundle is. `writable_index_dir()`
+detects that and copies the 4 MB index to the one writable directory, once per cold start.
+It probes the database file rather than the directory, because a directory can accept new
+files while the files already in it are read-only, and it restores write permissions on the
+copy, because `copytree` carries the read-only mode bits across and the copy would fail the
+same way.
+
+### Hugging Face Spaces (needs PRO)
+
+Docker Spaces are no longer free -- "hosting Gradio and Docker Spaces on free cpu-basic
+requires a PRO subscription". Only Static Spaces are free, and they cannot run Python. The
+Space target is kept for anyone who has PRO:
+
+```bash
+python services/api/build_deploy.py --target space
+cd dist-space
+git init && git add -A && git commit -m "Canon API"
+git remote add space https://huggingface.co/spaces/<you>/<space>
+git push space main --force
+```
+
+### Why not the others
+
+| platform | verdict |
+|---|---|
+| **Koyeb** | Runs the container unmodified, but the free instance is 512 MB and **0.1 vCPU** -- a tenth of a core for ONNX inference -- and scales to zero after an hour. |
+| **Cloudflare Workers** | Python Workers are Pyodide/PyEmscripten: no arbitrary C extensions, so `onnxruntime` and `chromadb` cannot run. A Cloudflare deployment means rewriting the service in TypeScript against Vectorize and Workers AI. Best architecture, real project. |
+| **Supabase** | Edge Functions are Deno, so the service cannot live there; it would be the vector store only. Free projects **pause after a week of inactivity**, which is worse than a cold start for a demo. Worth revisiting when "the index needs a redeploy" starts to hurt -- that is the problem it solves. |
 
 ### Cold starts
 

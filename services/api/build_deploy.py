@@ -1,4 +1,4 @@
-"""Assemble a deployable Hugging Face Space from this repo.
+"""Assemble a deployable bundle of the canon API from this repo.
 
 A Space is its own git repo and wants two things at its root that this repo cannot give it:
 a `Dockerfile`, and a `README.md` whose YAML frontmatter configures the Space. This repo's
@@ -65,6 +65,26 @@ Built from [lordlebu/SouthOfTethys](https://github.com/lordlebu/SouthOfTethys) �
 `python services/api/build_space.py`.
 """
 
+VERCEL_ENTRYPOINT = """# Vercel entrypoint. It looks for a top-level `app` in app.py.
+#
+# The service itself lives in services/api/main.py; this only re-exports it so the layout
+# matches what the Space build and a local uvicorn run both use.
+from services.api.main import app  # noqa: F401
+"""
+
+# maxDuration covers /ask: generation is seconds, and a cold start pays for the ONNX model
+# load on top. Retrieval never comes close.
+VERCEL_JSON = """{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "functions": {
+    "app.py": {
+      "maxDuration": 60,
+      "excludeFiles": "{**/__pycache__/**,**/*.pyc,**/.env*}"
+    }
+  }
+}
+"""
+
 # Only what main.py touches at runtime.
 COPY = [
     ("services/api/main.py", "services/api/main.py"),
@@ -80,10 +100,11 @@ NEVER = {".env", ".env.local", ".env.production", "hf_token.txt", "secrets.json"
 
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("--out", type=Path, default=REPO / "dist-space")
+    ap.add_argument("--target", choices=("vercel", "space"), default="vercel")
+    ap.add_argument("--out", type=Path, default=None)
     args = ap.parse_args()
 
-    out = args.out
+    out = args.out or (REPO / f"dist-{args.target}")
     if out.exists():
         shutil.rmtree(out)
     out.mkdir(parents=True)
@@ -115,8 +136,17 @@ def main() -> int:
         return 1
     print("  " + (result.stdout.strip().splitlines() or ["indexed"])[-1])
 
-    (out / "README.md").write_text(README, encoding="utf-8", newline="\n")
-    # The Space builds from its own root, so nothing above it is available.
+    if args.target == "space":
+        (out / "README.md").write_text(README, encoding="utf-8", newline="\n")
+    else:
+        # Vercel loads a top-level `app` from app.py and reads requirements.txt from the
+        # project root, not a subdirectory. The Dockerfile is Spaces-only.
+        (out / "app.py").write_text(VERCEL_ENTRYPOINT, encoding="utf-8", newline="\n")
+        shutil.copy2(REPO / "services" / "api" / "requirements.txt", out / "requirements.txt")
+        (out / "vercel.json").write_text(VERCEL_JSON, encoding="utf-8", newline="\n")
+        (out / "Dockerfile").unlink(missing_ok=True)
+
+    # The bundle builds from its own root, so nothing above it is available.
     (out / ".gitignore").write_text("__pycache__/\n*.pyc\n.env\n.env.*\n", encoding="utf-8", newline="\n")
 
     leaked = [p for p in out.rglob("*") if p.name in NEVER]
@@ -139,14 +169,22 @@ def main() -> int:
     print(f"assembled {out.relative_to(REPO) if out.is_relative_to(REPO) else out}")
     print(f"  {len(files)} files, {size:.1f} MB, {chunks} indexed chunks")
     print()
-    print("push it:")
-    print(f"  cd {out}")
-    print("  git init && git add -A && git commit -m 'Canon API'")
-    print("  git remote add space https://huggingface.co/spaces/<you>/<space>")
-    print("  git push space main --force")
-    print()
-    print("then in the Space settings — Secrets: HF_TOKEN, CANON_API_KEY;")
-    print("Variables: CANON_LLM, CANON_ALLOWED_ORIGINS=https://lordlebu.github.io")
+    if args.target == "vercel":
+        print("deploy it:")
+        print(f"  cd {out}")
+        print("  npx vercel deploy --prod")
+        print()
+        print("environment variables to set on the project (never as VITE_*):")
+        print("  HF_TOKEN, CANON_API_KEY, CANON_LLM, CANON_ALLOWED_ORIGINS")
+    else:
+        print("push it:")
+        print(f"  cd {out}")
+        print("  git init && git add -A && git commit -m 'Canon API'")
+        print("  git remote add space https://huggingface.co/spaces/<you>/<space>")
+        print("  git push space main --force")
+        print()
+        print("then in the Space settings — Secrets: HF_TOKEN, CANON_API_KEY;")
+        print("Variables: CANON_LLM, CANON_ALLOWED_ORIGINS")
     return 0
 
 
