@@ -1,9 +1,24 @@
-# The HTTP seam between canon and the game. Retrieval and generation themselves come
-# from vidur_portal/snippet_processor.py, so the floors below must stay in step with
-# vidur_portal/requirements.txt and services/chroma/requirements.txt.
+# Deployment dependencies for the canon API. Everything here is Apache-2.0, MIT or BSD.
+#
+# Deliberately excludes torch, transformers and sentence-transformers. Retrieval uses the
+# embedder chromadb ships with -- the same all-MiniLM-L6-v2, Apache-2.0, 384 dimensions, but
+# on ONNX Runtime -- and generation goes out to an inference provider through
+# huggingface_hub, which is a thin HTTP client. Together that is the difference between a
+# ~1GB image needing paid hosting and a ~200MB one that fits a free tier.
+#
+# Both imports of transformers in this codebase are inside functions, so the local
+# generation fallback simply never fires here. For that, or for the torch embedder
+# (EMBEDDING_BACKEND=sentence-transformers), install services/chroma/requirements.txt too.
+
 fastapi>=0.115
 uvicorn[standard]>=0.30
 pydantic>=2.7
+
+# Brings onnxruntime and tokenizers; no torch.
 chromadb>=0.5.0
-sentence-transformers>=2.2.0
-transformers
+
+# Inference Providers client for /ask. HTTP only -- no model runs in this process.
+huggingface_hub>=0.26
+
+# So .env.local is actually read; without it the vars must be exported by hand.
+python-dotenv>=1.0
