@@ -6,8 +6,15 @@ pytorch_model.bin
 *.onnx
 *.pb
 *.tflite
-# Ignore Hugging Face token files
+# Secrets. `.env` alone was not enough: `.env.local` -- the file anyone would actually
+# create -- was still tracked, and the Hugging Face token belongs in this repo because the
+# canon service is what calls the Inference API.
 hf_token.txt
+.env
+.env.*
+!.env.example
+*.token
+secrets.json
 HF_TOKEN
 # Python
 __pycache__/
