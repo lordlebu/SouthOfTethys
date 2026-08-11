@@ -120,3 +120,58 @@ Vite inlines those into the game's public bundle.
 The style examples in the prompt are read from canon (`utils/export_game_data.py` writes the
 same sentences into the game), so the voice shown to the model cannot drift from the voice
 the player reads.
+
+## Deploying
+
+GitHub Pages is static and cannot run this, so the game and the service live apart: the walk
+stays on Pages, the service goes somewhere that runs Python, and they meet over CORS.
+
+### The part that matters more than hosting
+
+This service holds your inference token. A public `/ask` therefore spends **your** money on
+every call, and CORS is no defence -- it is a browser policy, and `curl` ignores it.
+
+So the two endpoints are treated differently:
+
+| | cost per call | online |
+|---|---|---|
+| `POST /lore` | none. Local retrieval against a local index. | public |
+| `POST /ask` | real, at an inference provider | needs `X-Canon-Key` |
+
+`CANON_API_KEY` sets that key. **It fails closed**: with hosted generation configured and no
+key set, `/ask` returns 503 rather than serving an open, billable endpoint. Forgetting a
+variable should cost a confusing error, not a bill. Without a key an `/ask` request 404s, so
+a stranger learns nothing about what is there.
+
+The game cannot hold that key -- anything the bundle ships is readable by everyone -- so a
+public deployment offers retrieval only. `/health` reports `ask: open | key_required | locked`
+and the panel hides the generate button when it may not use it. Generation stays available
+locally, where the key is in your environment.
+
+### Hugging Face Spaces
+
+Create a Space with the **Docker** SDK, then from the repository root:
+
+```bash
+# index first -- the image bakes it in
+REPO_DIR=. CHROMA_PERSIST_DIR=storage/chroma python services/chroma/index_chroma_service.py
+docker build -f services/api/Dockerfile -t canon-api .
+```
+
+In the Space's settings:
+
+| where | name | value |
+|---|---|---|
+| Secrets | `HF_TOKEN` | your fine-grained token |
+| Secrets | `CANON_API_KEY` | a long random string |
+| Variables | `CANON_LLM` | `meta-llama/Llama-3.1-8B-Instruct` |
+| Variables | `CANON_ALLOWED_ORIGINS` | `https://lordlebu.github.io` |
+
+Then set `VITE_CANON_API` to the Space URL for the game's Pages build.
+
+### Cold starts
+
+A free Space sleeps when idle and takes tens of seconds to wake. The client probes twice for
+exactly this reason -- a fast check so the common case of no service stays responsive, then a
+longer one to give a waking host time to answer. Without the retry the first visitor of the
+day would see no panel at all, and nothing would tell them why.

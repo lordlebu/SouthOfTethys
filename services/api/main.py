@@ -28,9 +28,10 @@ from __future__ import annotations
 import json
 import os
 import sys
+from hmac import compare_digest
 from pathlib import Path
 
-from fastapi import FastAPI
+from fastapi import FastAPI, Header, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 
@@ -54,19 +55,42 @@ sys.path.insert(0, str(REPO / "vidur_portal"))
 
 import snippet_processor as vidur  # noqa: E402
 
-app = FastAPI(title="South of Tethys — canon API", version="1.0.0")
+app = FastAPI(title="South of Tethys — canon API", version="1.1.0")
 
-# The game runs on Vite's dev port; a preview build on 4180. Both are local-only, which
-# is the whole scope of this service today.
+# Vite's dev port and a preview build on 4180. A deployment adds its own origin --
+# CANON_ALLOWED_ORIGINS is comma-separated, e.g. "https://lordlebu.github.io".
+LOCAL_ORIGINS = [
+    "http://localhost:4173", "http://127.0.0.1:4173",
+    "http://localhost:4180", "http://127.0.0.1:4180",
+]
+ALLOWED_ORIGINS = LOCAL_ORIGINS + [
+    o.strip() for o in os.environ.get("CANON_ALLOWED_ORIGINS", "").split(",") if o.strip()
+]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:4173", "http://127.0.0.1:4173",
-        "http://localhost:4180", "http://127.0.0.1:4180",
-    ],
+    allow_origins=ALLOWED_ORIGINS,
     allow_methods=["GET", "POST"],
-    allow_headers=["*"],
+    allow_headers=["*", "X-Canon-Key"],
 )
+
+# /lore is free to serve: local retrieval against a local index, no external call, no
+# per-request cost. /ask spends real money at an inference provider on every call, and CORS
+# is no defence -- it is a browser policy, and curl ignores it entirely. So /ask takes a key.
+#
+# It fails closed on purpose. If hosted generation is switched on and no key is configured,
+# /ask refuses rather than serving an open endpoint that bills the owner: forgetting to set
+# a variable should cost a confusing error, not a bill.
+CANON_API_KEY = os.environ.get("CANON_API_KEY", "").strip()
+
+
+def ask_access() -> str:
+    """`open` locally, `key_required` when a key is set, `locked` when one is needed and absent."""
+    if CANON_API_KEY:
+        return "key_required"
+    if use_hosted():
+        return "locked"
+    return "open"
 
 
 class Place(BaseModel):
@@ -213,6 +237,8 @@ def health() -> dict:
         # Reporting vidur.MODEL_HF here said GPT-2 while Llama was doing the writing.
         "model": CANON_LLM or vidur.MODEL_HF,
         "generation": "hosted" if use_hosted() else "local",
+        # The game reads this to decide whether to offer "Write a passage" at all.
+        "ask": ask_access(),
         "persist_dir": os.environ.get("CHROMA_PERSIST_DIR", vidur.CHROMA_PERSIST_DIR),
     }
 
@@ -226,8 +252,19 @@ def lore(place: Place) -> dict:
 
 
 @app.post("/ask")
-def ask(place: Place) -> dict:
+def ask(place: Place, x_canon_key: str | None = Header(default=None)) -> dict:
     """A written passage about this tile, grounded in the canon that was retrieved."""
+    access = ask_access()
+    if access == "locked":
+        raise HTTPException(
+            status_code=503,
+            detail=("Generation is configured but unprotected, so it is disabled. Set "
+                    "CANON_API_KEY, or unset HF_TOKEN/CANON_LLM to fall back to local generation."),
+        )
+    if access == "key_required" and not compare_digest(x_canon_key or "", CANON_API_KEY):
+        # 404 rather than 401: an unauthenticated caller learns nothing about what is here.
+        raise HTTPException(status_code=404, detail="Not found.")
+
     query = as_query(place)
     hits = vidur.retrieve(query, k=place.k)
     context = "\n\n".join(h["text"] for h in hits)
