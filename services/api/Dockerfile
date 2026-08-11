@@ -28,9 +28,12 @@ COPY services/api/requirements.txt /app/services/api/requirements.txt
 RUN pip install --no-cache-dir -r /app/services/api/requirements.txt
 
 # Bake the embedding model in. Retrieval cannot answer a single query without it, so
-# downloading it lazily just moves ~175MB and a model load into the first request. This adds
-# it to the image once, at build time, where nobody is waiting.
-RUN python -c "from sentence_transformers import SentenceTransformer; SentenceTransformer('all-MiniLM-L6-v2')"
+# downloading it lazily just moves the fetch and the model load into the first request. This
+# does it once, at build time, where nobody is waiting.
+#
+# Chroma's ONNX build of all-MiniLM-L6-v2, not the torch one: same model, same vectors,
+# without pulling 466MB of torch into an image that never trains anything.
+RUN python -c "from chromadb.utils.embedding_functions import DefaultEmbeddingFunction; DefaultEmbeddingFunction()(['warm the cache'])"
 
 # Only what the service actually reads at runtime.
 COPY services/api/       /app/services/api/

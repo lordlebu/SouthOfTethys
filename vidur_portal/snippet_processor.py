@@ -84,9 +84,15 @@ def _get_collection():
             settings=Settings(anonymized_telemetry=False),
         )
     # Same embedding function the indexer used, so queries land in that vector space.
-    ef = embedding_functions.SentenceTransformerEmbeddingFunction(
-        model_name=EMBEDDING_MODEL
-    )
+    # EMBEDDING_BACKEND selects it, and both sides must agree: the index and the query used
+    # different embedders once before, and every result was quietly wrong.
+    if os.environ.get("EMBEDDING_BACKEND", "onnx").lower().startswith("sentence"):
+        ef = embedding_functions.SentenceTransformerEmbeddingFunction(
+            model_name=EMBEDDING_MODEL
+        )
+    else:
+        # ONNX Runtime rather than torch: same all-MiniLM-L6-v2, 466MB less to deploy.
+        ef = embedding_functions.DefaultEmbeddingFunction()
     try:
         return client.get_collection(COLLECTION_NAME, embedding_function=ef)
     except Exception:

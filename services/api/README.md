@@ -92,7 +92,7 @@ locally. So `/ask` uses hosted inference when it can.
 ```bash
 # in SouthOfTethys/.env.local  — gitignored, never committed
 HF_TOKEN=hf_...
-CANON_LLM=meta-llama/Llama-3.1-8B-Instruct
+CANON_LLM=Qwen/Qwen2.5-7B-Instruct
 ```
 
 Not every model on the Hub is served by an inference provider, and the error when one is not
@@ -100,7 +100,7 @@ is a flat "not supported by any provider". Two that worked on a free fine-graine
 
 | model | passage time |
 |---|---|
-| `meta-llama/Llama-3.1-8B-Instruct` | 1.7-3.4s |
+| `Qwen/Qwen2.5-7B-Instruct` | 1.7-3.4s |
 | `Qwen/Qwen2.5-7B-Instruct` | similar |
 
 `Llama-3.2-3B-Instruct`, `Mistral-7B-Instruct-v0.3`, `zephyr-7b-beta`, `Phi-3.5-mini-instruct`
@@ -164,7 +164,7 @@ In the Space's settings:
 |---|---|---|
 | Secrets | `HF_TOKEN` | your fine-grained token |
 | Secrets | `CANON_API_KEY` | a long random string |
-| Variables | `CANON_LLM` | `meta-llama/Llama-3.1-8B-Instruct` |
+| Variables | `CANON_LLM` | `Qwen/Qwen2.5-7B-Instruct` |
 | Variables | `CANON_ALLOWED_ORIGINS` | `https://lordlebu.github.io` |
 
 Then set `VITE_CANON_API` to the Space URL for the game's Pages build.

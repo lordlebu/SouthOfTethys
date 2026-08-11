@@ -234,10 +234,23 @@ def get_client():
 
 
 def get_embedding_function():
-    """Shared with query-time code so index and search use the same vectors."""
-    return embedding_functions.SentenceTransformerEmbeddingFunction(
-        model_name=EMBEDDING_MODEL
-    )
+    """Shared with query-time code so index and search use the same vectors.
+
+    Chroma's default embedder by preference. It is the same model as before --
+    all-MiniLM-L6-v2, Apache-2.0, 384 dimensions -- but it runs on ONNX Runtime instead of
+    torch. That is the difference between a service that needs 694MB of dependencies and one
+    that needs about 80MB, which is the difference between paying to host this and not.
+
+    Set EMBEDDING_BACKEND=sentence-transformers to use the torch path instead. Whatever this
+    returns must be used for both indexing and querying: writing vectors with one embedder
+    and reading with another silently ruins every result, which this repo has already done
+    once.
+    """
+    if os.environ.get("EMBEDDING_BACKEND", "onnx").lower().startswith("sentence"):
+        return embedding_functions.SentenceTransformerEmbeddingFunction(
+            model_name=EMBEDDING_MODEL
+        )
+    return embedding_functions.DefaultEmbeddingFunction()
 
 
 def main():
