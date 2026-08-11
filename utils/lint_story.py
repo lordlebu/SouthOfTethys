@@ -151,11 +151,23 @@ def main() -> int:
     if epochs_path.exists():
         doc = load(epochs_path)
         declared = {e["id"] for e in (doc if isinstance(doc, list) else doc.get("epochs", []))}
+    def epoch_values(payload):
+        """Any field whose name mentions an epoch, not just `epoch` and `epochs`.
+
+        Naming the two fields explicitly is what let `epoch_founded` sit unprefixed and
+        unvalidated -- the same miss as the original bug, one field over.
+        """
+        for k, v in payload.items():
+            if "epoch" not in k:
+                continue
+            for value in (v if isinstance(v, list) else [v]):
+                if isinstance(value, str):
+                    yield k, value
+
     for eid, (path, payload) in entities.items():
-        used = payload.get("epochs") or ([payload["epoch"]] if payload.get("epoch") else [])
-        for e in used:
+        for field, e in epoch_values(payload):
             if declared and e not in declared:
-                errors.append(f"{path.name}: epoch '{e}' is not declared in timeline/epochs.json")
+                errors.append(f"{path.name}: {field} '{e}' is not declared in timeline/epochs.json")
 
     # --- every other reference ---------------------------------------------------
     known = set(entities)

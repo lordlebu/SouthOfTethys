@@ -3,11 +3,21 @@
   "type": "settlement",
   "name": "Lothal",
   "region": "region_saraswati_delta",
-  "epoch_founded": "civilization_dawn",
-  "founders": ["character_kavik"],
-  "factions": ["faction_mask_family", "faction_kia_clan"],
-  "landmarks": ["22-story red sandstone tower"],
+  "epoch_founded": "epoch_civilization_dawn",
+  "founders": [
+    "character_kavik"
+  ],
+  "factions": [
+    "faction_mask_family",
+    "faction_kia_clan"
+  ],
+  "landmarks": [
+    "22-story red sandstone tower"
+  ],
   "notes": "Harappan city-state on the Saraswati delta. Site of Stone Pact and Tendua Crisis.",
   "canon": "primary",
-  "sources": ["AI_CONTEXT.md", "map"]
+  "sources": [
+    "AI_CONTEXT.md",
+    "map"
+  ]
 }
