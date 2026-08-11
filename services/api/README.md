@@ -74,3 +74,35 @@ Local only. CORS allows `localhost:4173` and `:4180` and nothing else, and there
 auth, no rate limiting and no caching beyond what the browser client does per tile.
 Deploying this means a host that runs Python — GitHub Pages cannot — plus swapping local
 `transformers` for a hosted inference endpoint.
+
+## Generation, and why it needs a hosted model
+
+Retrieval works well. Generation was the hard part, and the finding is that it is a model
+problem rather than a prompting one:
+
+| model | speed (CPU, ~90 tokens) | result |
+|---|---|---|
+| `lordlebu/4000BCSaraswaty` (GPT-2 small, 124M) | ~2s | invents things the canon never named |
+| `SmolLM2-360M-Instruct` | 4s measured | grounded, but writes encyclopedia entries; given examples it copies them back verbatim |
+| ~1.5B | ~16s extrapolated | plausibly writes, but too slow for a game about walking |
+
+Small enough to feel responsive is too small to write; large enough to write is too slow
+locally. So `/ask` uses hosted inference when it can.
+
+```bash
+# in SouthOfTethys/.env.local  — gitignored, never committed
+HF_TOKEN=hf_...
+CANON_LLM=meta-llama/Llama-3.2-3B-Instruct
+```
+
+Then start the service with those in the environment. `use_hosted()` is true only when both
+are set; with neither, `/ask` falls back to the local pipeline, and with a token but no model
+it stays local too.
+
+**The token never leaves this service.** It is not returned by `/health`, and `redact()`
+strips it from any error before it reaches a response. Never put it in a `VITE_` variable:
+Vite inlines those into the game's public bundle.
+
+The style examples in the prompt are read from canon (`utils/export_game_data.py` writes the
+same sentences into the game), so the voice shown to the model cannot drift from the voice
+the player reads.

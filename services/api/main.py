@@ -25,6 +25,7 @@ Run it:
 
 from __future__ import annotations
 
+import json
 import os
 import sys
 from pathlib import Path
@@ -79,10 +80,38 @@ class Place(BaseModel):
 # honestly rather than returning nonsense as though it were canon.
 CANON_LLM = os.environ.get("CANON_LLM", "").strip()
 
+# Hosted inference, when a token is available.
+#
+# Local generation turned out to have a ceiling rather than a tuning problem. GPT-2 small
+# invents things; SmolLM2-360M either explains in the third person or, given examples,
+# copies them back verbatim. The next size up would plausibly write, but ~1.5B on CPU is
+# roughly sixteen seconds a passage, which is not a thing to put in a game about walking.
+# So the model that can do this lives somewhere else.
+#
+# HF_TOKEN is read from the environment and never logged, never returned by /health, and
+# never sent to the browser. The game talks to this service; this service talks to Hugging
+# Face. A token that reached the client would be inlined into the public bundle.
+HF_TOKEN = os.environ.get("HF_TOKEN") or os.environ.get("HUGGING_FACE_HUB_TOKEN")
+
 _llm = None
+_client = None
+
+
+def use_hosted() -> bool:
+    return bool(HF_TOKEN and CANON_LLM)
+
+
+def hosted_client():
+    global _client
+    if _client is None:
+        from huggingface_hub import InferenceClient
+
+        _client = InferenceClient(api_key=HF_TOKEN)
+    return _client
 
 
 def load_llm():
+    """Local pipeline, for the no-token path. Kept, but it is not the recommended route."""
     global _llm
     if _llm is None:
         if CANON_LLM:
@@ -92,6 +121,38 @@ def load_llm():
         else:
             _llm = vidur.get_hf_pipeline()
     return _llm
+
+
+def redact(text: str) -> str:
+    """Never let a token reach a response, a log or a browser, even inside an error."""
+    if HF_TOKEN:
+        text = text.replace(HF_TOKEN, "***")
+    return text
+
+
+_shots: str | None = None
+
+
+def journal_examples(n: int = 3) -> str:
+    """Real journal lines from canon, to show the voice rather than describe it.
+
+    Read from the entities rather than hardcoded, so the examples cannot drift from what
+    the game actually prints. The prototype starters are the oldest and most deliberately
+    written of them, which makes them the best sample of the register.
+    """
+    global _shots
+    if _shots is not None:
+        return _shots
+
+    lines: list[str] = []
+    for f in sorted((REPO / "database" / "fauna").glob("*.json")):
+        payload = json.loads(f.read_text(encoding="utf-8"))
+        if payload.get("region") == "prototype-starters" and payload.get("journal_prompt"):
+            lines.append(payload["journal_prompt"])
+        if len(lines) >= n:
+            break
+    _shots = "\n".join(f"- {line}" for line in lines)
+    return _shots
 
 
 def as_query(place: Place) -> str:
@@ -155,19 +216,40 @@ def ask(place: Place) -> dict:
     hits = vidur.retrieve(query, k=place.k)
     context = "\n\n".join(h["text"] for h in hits)
 
-    instruction = (
-        "You are the chronicler of Jambhudweepa, writing a traveller's journal in the "
-        "second person. Using only the canon below, write two or three quiet sentences "
-        "about what the traveller notices here. Do not invent creatures or places that "
-        "are not named in the canon."
+    # The journal's own sentences are the style guide. Describing the voice in prose made
+    # small models write encyclopedia entries; showing them three real lines is shorter and
+    # unambiguous. They come from canon, so the examples cannot drift from the game.
+    shots = journal_examples()
+    system = (
+        "You are the chronicler of Jambhudweepa. Write one or two sentences for a traveller's "
+        "journal: second person, present tense, plain and unhurried. Mention only what the canon "
+        "names -- never invent a creature, plant or place. Do not explain or classify.\n\n"
+        f"Examples of the voice:\n{shots}"
     )
-    prompt = f"{instruction}\n\nCanon:\n{context}\n\nPlace: {query}\n\nJournal:"
+    user = f"Canon:\n{context}\n\nPlace: {query}\n\nWrite the journal line."
 
+    if use_hosted():
+        try:
+            completion = hosted_client().chat_completion(
+                model=CANON_LLM,
+                messages=[{"role": "system", "content": system},
+                          {"role": "user", "content": user}],
+                max_tokens=160,
+                temperature=0.7,
+            )
+            passage = (completion.choices[0].message.content or "").strip()
+            return {"query": query, "passage": passage or None, "sources": sources(hits)}
+        except Exception as exc:
+            # Never dress a failure up as canon: return the sources, say what went wrong.
+            return {"query": query, "passage": None, "error": redact(str(exc))[:200],
+                    "sources": sources(hits)}
+
+    prompt = f"{system}\n\n{user}\n\nJournal:"
     try:
         pipeline = load_llm()
         raw = pipeline(prompt, max_new_tokens=160)[0]["generated_text"]
-    except Exception as exc:  # the model is the fragile part; the sources are not
-        return {"query": query, "passage": None, "error": str(exc)[:200], "sources": sources(hits)}
+    except Exception as exc:
+        return {"query": query, "passage": None, "error": redact(str(exc))[:200], "sources": sources(hits)}
 
     # HF text-generation returns the prompt followed by the continuation. Returning the
     # whole thing would print the instruction and the entire canon context to the player.
