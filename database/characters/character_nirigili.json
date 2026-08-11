@@ -2,13 +2,22 @@
   "id": "character_nirigili",
   "type": "character",
   "name": "Nirigili",
-  "epithets": ["Mahashay", "Niladri Mahashay"],
+  "epithets": [
+    "Mahashay",
+    "Niladri Mahashay"
+  ],
   "culture": "wanderer",
   "species": "human",
   "status": "alive",
-  "epoch": "migrations",
-  "roles": ["circus_master", "elder", "guardian"],
+  "epoch": "epoch_migrations",
+  "roles": [
+    "circus_master",
+    "elder",
+    "guardian"
+  ],
   "notes": "Learned traveling circus master who rides an Elephantbird. Protects Guyuk and hides dangerous artifacts. Loses his mount to a Megalosaurus during the Naraka portal chaos.",
   "canon": "primary",
-  "sources": ["AI_CONTEXT.md"]
+  "sources": [
+    "AI_CONTEXT.md"
+  ]
 }

@@ -9,6 +9,12 @@
       "notes": "Invertebrate Dominion, Avian-Synapsid Epoch, Vanara Zenith and Devolvement"
     },
     {
+      "id": "epoch_deep_antiquity",
+      "name": "Deep Antiquity",
+      "range": "before the migrations",
+      "notes": "Mythic age of Varunesh and Manjalaya, the Shadow Pact and the forging of the Dragon's Spine. Was in use on entities long before it was declared here."
+    },
+    {
       "id": "epoch_migrations",
       "name": "Era of Human Migrations",
       "range": "50K – 5K years ago",
@@ -30,7 +36,8 @@
       "id": "epoch_post_cataclysm",
       "name": "Post-Cataclysmic Era (Possible Future)",
       "range": "prophetic",
-      "notes": "Survival Train of Varuna and Mitra. Not hard-locked."
+      "notes": "Survival Train of Varuna and Mitra. Setting of Varuna's Field Diary: the era is deliberately unwritten, so it is authored by the game rather than inherited. Previously marked 'not hard-locked'; choosing it means writing it.",
+      "status": "authoring"
     }
   ],
   "canon": "primary"

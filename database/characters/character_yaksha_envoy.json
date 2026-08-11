@@ -5,12 +5,17 @@
   "culture": "yaksha",
   "species": "yaksha",
   "status": "alive",
-  "epoch": "civilization_dawn",
-  "roles": ["envoy", "diplomat"],
+  "epoch": "epoch_civilization_dawn",
+  "roles": [
+    "envoy",
+    "diplomat"
+  ],
   "relations": {
     "patron": "character_kubera"
   },
   "notes": "Generic office for Kubera’s maritime messengers who accompany Mask of Tethys negotiations. Individual names rarely recorded.",
   "canon": "draft",
-  "sources": ["AI_CONTEXT.md"]
+  "sources": [
+    "AI_CONTEXT.md"
+  ]
 }

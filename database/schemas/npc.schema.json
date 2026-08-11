@@ -1,0 +1,43 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "NPC",
+  "description": "A person standing somewhere who knows something. Distinct from a character entity, which is biography: canon already holds 41 characters, and this is what makes one of them met rather than merely described.\n\nSettlements are information ecosystems, not quest boards. An NPC gives a lead, a word, an old map or a cup of tea -- never a task list.",
+  "type": "object",
+  "required": ["id", "type", "name"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^npc_[a-z0-9_]+$" },
+    "type": { "const": "npc" },
+    "name": { "type": "string" },
+    "character": { "type": "string", "description": "Optional character entity id, when this is someone canon already knows. Leave empty for a fisherman who exists only to say one useful thing." },
+
+    "found_at": { "type": "array", "items": { "type": "string" }, "description": "point_of_interest ids where they can be met." },
+    "role": { "type": "string", "description": "How they read on meeting -- fisherman, scholar, herder, child. Not a class." },
+    "language": { "type": "string", "description": "vocabulary language id they speak. If Varuna lacks the words, what they say arrives incomplete." },
+
+    "knows": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "discovery or field_question ids they can move along. What they offer is a lead, not an answer."
+    },
+    "lines": {
+      "type": "array",
+      "description": "What they say, and what it takes to hear it.",
+      "items": {
+        "type": "object",
+        "required": ["text"],
+        "properties": {
+          "text": { "type": "string" },
+          "requires": { "type": "array", "items": { "type": "string" }, "description": "discovery or vocabulary ids needed before this is said, or understood." },
+          "gives": { "type": "array", "items": { "type": "string" }, "description": "discovery, vocabulary or field_question ids this opens." }
+        },
+        "additionalProperties": true
+      }
+    },
+
+    "epochs": { "type": "array", "items": { "type": "string" } },
+    "notes": { "type": "string" },
+    "canon": { "type": "string", "enum": ["primary", "secondary", "draft"], "default": "primary" },
+    "sources": { "type": "array", "items": { "type": "string" } }
+  },
+  "additionalProperties": true
+}

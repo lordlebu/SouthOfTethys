@@ -5,12 +5,20 @@
   "culture": "jharwa",
   "species": "human",
   "status": "alive",
-  "epoch": "migrations",
-  "roles": ["survivor", "protector"],
+  "epoch": "epoch_migrations",
+  "roles": [
+    "survivor",
+    "protector"
+  ],
   "relations": {
-    "spouse": ["character_ranu", "character_bela"]
+    "spouse": [
+      "character_ranu",
+      "character_bela"
+    ]
   },
   "notes": "Jharwa chief’s daughter. Sole survivor of village massacre orchestrated by Sira via Vedda brothers Ranu and Bela. Forced into tragic marriage; later aided by Vara-Ma and Orek. Becomes fierce adoptive protector of the Aravali sanctuary.",
   "canon": "primary",
-  "sources": ["AI_CONTEXT.md"]
+  "sources": [
+    "AI_CONTEXT.md"
+  ]
 }

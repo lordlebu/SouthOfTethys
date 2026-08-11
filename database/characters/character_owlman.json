@@ -2,13 +2,20 @@
   "id": "character_owlman",
   "type": "character",
   "name": "Owlman",
-  "epithets": ["Forest Watcher"],
+  "epithets": [
+    "Forest Watcher"
+  ],
   "culture": "primordial",
   "species": "biological_spiritual_hybrid",
   "status": "mythic",
-  "epoch": "deep_antiquity",
-  "roles": ["forest_domain", "watcher"],
+  "epoch": "epoch_deep_antiquity",
+  "roles": [
+    "forest_domain",
+    "watcher"
+  ],
   "notes": "Biological-spiritual hybrid of the forest domain. Counterpart to sea-bound Ammonite Man. Appears in highland and canopy lore as a silent adjudicator of boundary crossings.",
   "canon": "primary",
-  "sources": ["AI_CONTEXT.md"]
+  "sources": [
+    "AI_CONTEXT.md"
+  ]
 }

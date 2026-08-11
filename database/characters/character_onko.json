@@ -2,13 +2,20 @@
   "id": "character_onko",
   "type": "character",
   "name": "Onko",
-  "epithets": ["Professor"],
+  "epithets": [
+    "Professor"
+  ],
   "culture": "narmada_scholar",
   "species": "human",
   "status": "alive",
-  "epoch": "current",
-  "roles": ["academic", "skeptic"],
+  "epoch": "epoch_current",
+  "roles": [
+    "academic",
+    "skeptic"
+  ],
   "notes": "Eccentric, skeptical Bengali academic at Narmada University. Studies anomalous phenomena alongside Digha Jani.",
   "canon": "primary",
-  "sources": ["AI_CONTEXT.md"]
+  "sources": [
+    "AI_CONTEXT.md"
+  ]
 }

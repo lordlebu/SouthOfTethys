@@ -2,14 +2,31 @@
   "id": "event_aravali_massacre",
   "type": "event",
   "title": "Aravali Massacre & Sanctuary",
-  "epoch": "migrations",
-  "participants": ["character_sira", "character_ranu", "character_bela", "character_meera", "character_vara_ma", "character_orek", "character_thren"],
+  "epoch": "epoch_migrations",
+  "participants": [
+    "character_sira",
+    "character_ranu",
+    "character_bela",
+    "character_meera",
+    "character_vara_ma",
+    "character_orek",
+    "character_thren"
+  ],
   "location": "region_aravali",
   "predecessors": [],
   "successors": [],
-  "causes": ["sira_stolen_mask", "dark_manipulation"],
-  "outcomes": ["jharwa_village_destroyed", "meera_forced_marriage", "aravali_sanctuary_established"],
+  "causes": [
+    "sira_stolen_mask",
+    "dark_manipulation"
+  ],
+  "outcomes": [
+    "jharwa_village_destroyed",
+    "meera_forced_marriage",
+    "aravali_sanctuary_established"
+  ],
   "summary": "Sira uses a corrupting mask to manipulate Vedda brothers Ranu and Bela into massacring a Jharwa village. Meera survives and is forced into marriage. Vara-Ma and Orek later help her and hide dangerous masks with Thren in the Aravali sanctuary.",
   "canon": "primary",
-  "sources": ["AI_CONTEXT.md"]
+  "sources": [
+    "AI_CONTEXT.md"
+  ]
 }

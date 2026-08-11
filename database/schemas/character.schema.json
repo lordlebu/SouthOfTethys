@@ -2,31 +2,126 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Character",
   "type": "object",
-  "required": ["id", "type", "name"],
+  "required": [
+    "id",
+    "type",
+    "name"
+  ],
   "properties": {
-    "id": { "type": "string", "pattern": "^character_[a-z0-9_]+$" },
-    "type": { "const": "character" },
-    "name": { "type": "string" },
-    "aliases": { "type": "array", "items": { "type": "string" } },
-    "epithets": { "type": "array", "items": { "type": "string" } },
-    "culture": { "type": ["string", "null"] },
-    "species": { "type": "string", "default": "human" },
-    "status": { "type": "string", "enum": ["alive", "deceased", "unknown", "mythic"] },
-    "epoch": { "type": ["string", "null"] },
-    "roles": { "type": "array", "items": { "type": "string" } },
+    "id": {
+      "type": "string",
+      "pattern": "^character_[a-z0-9_]+$"
+    },
+    "type": {
+      "const": "character"
+    },
+    "name": {
+      "type": "string"
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "epithets": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "culture": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "species": {
+      "type": "string",
+      "default": "human"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "alive",
+        "deceased",
+        "unknown",
+        "mythic"
+      ]
+    },
+    "epoch": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "roles": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
     "relations": {
       "type": "object",
       "properties": {
-        "parents": { "type": "array", "items": { "type": "string" } },
-        "siblings": { "type": "array", "items": { "type": "string" } },
-        "spouse": { "type": ["string", "null"] },
-        "children": { "type": "array", "items": { "type": "string" } }
+        "parents": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "siblings": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "spouse": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            },
+            {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          ],
+          "description": "One spouse, none, or several -- Khadi, Meera and Mehme each have more than one."
+        },
+        "children": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
       }
     },
-    "physical": { "type": "object" },
-    "notes": { "type": "string" },
-    "canon": { "type": "string", "enum": ["primary", "secondary", "draft"], "default": "primary" },
-    "sources": { "type": "array", "items": { "type": "string" } }
+    "physical": {
+      "type": "object"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "canon": {
+      "type": "string",
+      "enum": [
+        "primary",
+        "secondary",
+        "draft"
+      ],
+      "default": "primary"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
   },
   "additionalProperties": true
 }

@@ -2,14 +2,31 @@
   "id": "event_black_lotus_siege",
   "type": "event",
   "title": "Black Lotus Siege",
-  "epoch": "civilization_dawn",
-  "participants": ["character_kavik", "character_varna", "character_rathak", "character_naga_raja"],
+  "epoch": "epoch_civilization_dawn",
+  "participants": [
+    "character_kavik",
+    "character_varna",
+    "character_rathak",
+    "character_naga_raja"
+  ],
   "location": "black_lotus_camp",
-  "predecessors": ["event_silvershore_war"],
-  "successors": ["event_stone_pact"],
-  "causes": ["piracy", "capture_of_varna"],
-  "outcomes": ["rescue_of_varna_and_rathak", "kavik_victory"],
+  "predecessors": [
+    "event_silvershore_war"
+  ],
+  "successors": [
+    "event_stone_pact"
+  ],
+  "causes": [
+    "piracy",
+    "capture_of_varna"
+  ],
+  "outcomes": [
+    "rescue_of_varna_and_rathak",
+    "kavik_victory"
+  ],
   "summary": "Kavik leads nighttime maritime siege on Black Lotus Fort during thunderstorm. Scales basalt cliffs, battles Naga-Raja, liberates Varna and Rathak.",
   "canon": "primary",
-  "sources": ["AI_CONTEXT.md"]
+  "sources": [
+    "AI_CONTEXT.md"
+  ]
 }

@@ -2,13 +2,21 @@
   "id": "character_guyuk",
   "type": "character",
   "name": "Guyuk",
-  "epithets": ["Mongke", "Storm-Bone Khan"],
+  "epithets": [
+    "Mongke",
+    "Storm-Bone Khan"
+  ],
   "culture": "tushara",
   "species": "human",
   "status": "alive",
-  "epoch": "migrations",
-  "roles": ["nomad", "threshold_bearer"],
+  "epoch": "epoch_migrations",
+  "roles": [
+    "nomad",
+    "threshold_bearer"
+  ],
   "notes": "Teenage Tushara nomad girl. Lost royal status after Botai raid. Taken in by Nirigili. Opens crimson portal to Naraka Lok via forbidden tome, permanently altering her bloodline and the steppe.",
   "canon": "primary",
-  "sources": ["AI_CONTEXT.md"]
+  "sources": [
+    "AI_CONTEXT.md"
+  ]
 }

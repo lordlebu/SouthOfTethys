@@ -1,5 +1,5 @@
 {
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "SouthOfTethys canonical entity index",
   "counts": {
     "characters": 41,
@@ -10,7 +10,13 @@
     "regions": 7,
     "artifacts": 3,
     "factions": 3,
-    "mythology": 3
+    "mythology": 3,
+    "field_maps": 0,
+    "points_of_interest": 0,
+    "discoveries": 0,
+    "field_questions": 0,
+    "npcs": 0,
+    "vocabulary": 0
   },
   "entities": {
     "characters": [
@@ -447,6 +453,12 @@
       "mythology_ammonite_man",
       "mythology_gorvaxx",
       "mythology_varuna"
-    ]
+    ],
+    "field_maps": [],
+    "points_of_interest": [],
+    "discoveries": [],
+    "field_questions": [],
+    "npcs": [],
+    "vocabulary": []
   }
 }

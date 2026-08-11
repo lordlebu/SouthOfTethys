@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Field Question",
+  "description": "A question Varuna cannot answer alone. The signature mechanic: he writes down what he does not understand, and the player gathers evidence until the entry can be closed.\n\nA question is deliberately answerable more than one way. `resolutions` lists the readings the evidence can support -- including wrong ones -- because a naturalist who cannot be mistaken is not doing fieldwork.",
+  "type": "object",
+  "required": ["id", "type", "question", "discipline"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^question_[a-z0-9_]+$" },
+    "type": { "const": "field_question" },
+    "question": { "type": "string", "description": "As Varuna writes it, in the diary. First person, and genuinely uncertain." },
+    "discipline": {
+      "type": "string",
+      "enum": ["zoology", "botany", "archaeology", "geography", "linguistics", "evolution", "anomalies"]
+    },
+
+    "raised_at": { "type": "string", "description": "point_of_interest id where the question occurs to him." },
+    "raised_by": { "type": "string", "description": "Optional npc id -- often a question starts as something a local says in passing." },
+
+    "evidence": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "discovery ids that bear on the question. The player does not need all of them; `resolutions` says how many and which."
+    },
+
+    "resolutions": {
+      "type": "array",
+      "minItems": 1,
+      "description": "The readings the evidence can support. More than one may be reachable, and at most one should be marked `sound` -- the others are honest mistakes a careful person could make.",
+      "items": {
+        "type": "object",
+        "required": ["conclusion", "requires"],
+        "properties": {
+          "conclusion": { "type": "string", "description": "What Varuna concludes, in his voice." },
+          "requires": { "type": "array", "items": { "type": "string" }, "description": "discovery ids that must be held to reach this reading." },
+          "sound": { "type": "boolean", "default": false, "description": "Whether this reading survives later evidence. A false one should still feel reasonable when it is chosen." },
+          "revisit": { "type": "string", "description": "What later shows this reading was wrong, if anything does. This is how the diary earns a second look months on." }
+        },
+        "additionalProperties": true
+      }
+    },
+
+    "local_knowledge": { "type": "string", "description": "How the people who live here explain it. Not to be treated as folklore to be corrected -- it is often right, in its own terms." },
+    "academic_hypothesis": { "type": "string", "description": "How a Narmada scholar would explain it. Equally often wrong." },
+
+    "epochs": { "type": "array", "items": { "type": "string" } },
+    "notes": { "type": "string" },
+    "canon": { "type": "string", "enum": ["primary", "secondary", "draft"], "default": "primary" },
+    "sources": { "type": "array", "items": { "type": "string" } }
+  },
+  "additionalProperties": true
+}

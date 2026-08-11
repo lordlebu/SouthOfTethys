@@ -2,14 +2,30 @@
   "id": "event_silvershore_war",
   "type": "event",
   "title": "Silvershore War",
-  "epoch": "civilization_dawn",
-  "participants": ["character_kavik", "character_torin", "character_jarek"],
+  "epoch": "epoch_civilization_dawn",
+  "participants": [
+    "character_kavik",
+    "character_torin",
+    "character_jarek"
+  ],
   "location": "settlement_lothal",
   "predecessors": [],
-  "successors": ["event_black_lotus_siege", "event_founding_lothal"],
-  "causes": ["debt_refusal", "silvershore_raid"],
-  "outcomes": ["death_of_torin", "death_of_jarek", "kavik_dominance"],
+  "successors": [
+    "event_black_lotus_siege",
+    "event_founding_lothal"
+  ],
+  "causes": [
+    "debt_refusal",
+    "silvershore_raid"
+  ],
+  "outcomes": [
+    "death_of_torin",
+    "death_of_jarek",
+    "kavik_dominance"
+  ],
   "summary": "Kavik refuses to honor his father’s debt to the Silvershore Dynasty. When they raid Lothal docks, Kavik personally slays Torin and Jarek.",
   "canon": "primary",
-  "sources": ["AI_CONTEXT.md"]
+  "sources": [
+    "AI_CONTEXT.md"
+  ]
 }

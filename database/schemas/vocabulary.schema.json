@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Vocabulary",
+  "description": "A word Varuna has learned, and what understanding it opens. Language is an exploration mechanic rather than flavour: an inscription, an NPC's aside or a place name can all be unreadable until the word is held.\n\nOne record is one word. A language is the set of words sharing a `language` value, so fluency is emergent rather than a level.",
+  "type": "object",
+  "required": ["id", "type", "word", "language", "gloss"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^word_[a-z0-9_]+$" },
+    "type": { "const": "vocabulary" },
+    "word": { "type": "string", "description": "As spoken or inscribed." },
+    "language": { "type": "string", "description": "Language id -- e.g. kia, harappan, naga. Shared by every word in it." },
+    "gloss": { "type": "string", "description": "What it means, once understood." },
+
+    "learned_from": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "npc, point_of_interest or discovery ids that can teach it."
+    },
+    "unlocks": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "What becomes legible with it: discovery ids, npc lines, sub-locations, other words."
+    },
+    "literal": { "type": "string", "description": "The word taken apart, where that is the interesting bit -- a place name that turns out to describe what happened there." },
+
+    "epochs": { "type": "array", "items": { "type": "string" } },
+    "notes": { "type": "string" },
+    "canon": { "type": "string", "enum": ["primary", "secondary", "draft"], "default": "primary" },
+    "sources": { "type": "array", "items": { "type": "string" } }
+  },
+  "additionalProperties": true
+}

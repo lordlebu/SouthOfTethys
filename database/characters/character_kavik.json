@@ -2,18 +2,39 @@
   "id": "character_kavik",
   "type": "character",
   "name": "Kavik",
-  "aliases": ["Kavek"],
-  "epithets": ["Stoneheart", "Pashaanahridaya"],
+  "aliases": [
+    "Kavek"
+  ],
+  "epithets": [
+    "Stoneheart",
+    "Pashaanahridaya"
+  ],
   "culture": "harappan",
   "species": "human",
   "status": "deceased",
-  "epoch": "civilization_dawn",
-  "roles": ["patriarch", "architect", "merchant-lord", "bearer_in_waiting"],
+  "epoch": "epoch_civilization_dawn",
+  "roles": [
+    "patriarch",
+    "architect",
+    "merchant-lord",
+    "bearer_in_waiting"
+  ],
   "relations": {
-    "parents": ["character_orek", "character_vara_ma"],
-    "siblings": ["character_sira", "character_thren", "character_iknaya"],
+    "parents": [
+      "character_orek",
+      "character_vara_ma"
+    ],
+    "siblings": [
+      "character_sira",
+      "character_thren",
+      "character_iknaya"
+    ],
     "spouse": null,
-    "children": ["character_shaashak", "character_asha", "character_mehme"]
+    "children": [
+      "character_shaashak",
+      "character_asha",
+      "character_mehme"
+    ]
   },
   "physical": {
     "age_approx": 45,
@@ -23,5 +44,8 @@
   },
   "notes": "Architect of Lothal's 22-story red sandstone tower. Bearer-in-Waiting of ancestral masks. Assassinated by Asura-possessed Nila during Tendua crisis.",
   "canon": "primary",
-  "sources": ["AI_CONTEXT.md", "SouthOfTethys.txt"]
+  "sources": [
+    "AI_CONTEXT.md",
+    "SouthOfTethys.txt"
+  ]
 }

@@ -1,0 +1,72 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Point of Interest",
+  "description": "An authored place inside a field map -- a shrine, a fossil cliff, a river house. The generator never invents these; it lays terrain and the adapter places them on it, which is what keeps Garudasaur's Ledge a specific place rather than a random cave.\n\nDeep locations do not get their own entity type. A point of interest that can be entered carries `sub_locations`, so Garudasaur's Ledge is one record listing its cliff, moss cavern, nest and bone field rather than five records and a container.",
+  "type": "object",
+  "required": ["id", "type", "name", "field_map", "kind"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^poi_[a-z0-9_]+$" },
+    "type": { "const": "point_of_interest" },
+    "name": { "type": "string" },
+    "field_map": { "type": "string", "description": "field_map id this sits within." },
+
+    "kind": {
+      "type": "string",
+      "enum": ["settlement", "wilderness", "eco_site", "archaeological_site", "anomaly", "travel_node"],
+      "description": "What sort of place it is. Drives how the diary files what is found here, and which discipline gains from documenting it."
+    },
+    "terrain": {
+      "type": "array",
+      "description": "Which of the field map's biomes this can be placed on. The adapter needs somewhere plausible to put it.",
+      "items": {
+        "type": "string",
+        "enum": ["sea", "coast", "plains", "forest", "wetland", "hills", "mountains", "desert", "river", "settlement", "landmark", "sky_island", "sky_underside", "open_sky", "underworld", "lava_field"]
+      }
+    },
+
+    "sub_locations": {
+      "type": "array",
+      "description": "Named places within this one, for a point of interest deep enough to be entered rather than merely visited. An empty or absent list means it is explored where it stands.",
+      "items": {
+        "type": "object",
+        "required": ["id", "name"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9_]+$" },
+          "name": { "type": "string" },
+          "description": { "type": "string" },
+          "requires": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Discovery or vocabulary ids that must be held before this can be reached. This is how a cave that is 'too dark' opens later."
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+
+    "discoveries": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "discovery ids findable here."
+    },
+    "npcs": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "npc ids who can be met here."
+    },
+    "related_entities": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Any canon ids this place is about -- a settlement, an event, a character, a species. This is what makes a place mean something rather than merely exist."
+    },
+
+    "epochs": { "type": "array", "items": { "type": "string" } },
+    "description": { "type": "string", "description": "What the player sees on approach." },
+    "arrival": { "type": "string", "description": "Longer prose for stepping inside. Player-facing." },
+    "notes": { "type": "string", "description": "Reference fact for the canon reader." },
+
+    "canon": { "type": "string", "enum": ["primary", "secondary", "draft"], "default": "primary" },
+    "sources": { "type": "array", "items": { "type": "string" } }
+  },
+  "additionalProperties": true
+}
