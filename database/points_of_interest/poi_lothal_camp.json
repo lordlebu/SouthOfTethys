@@ -1,0 +1,35 @@
+{
+  "id": "poi_lothal_camp",
+  "type": "point_of_interest",
+  "name": "The Camp in the Kilns",
+  "field_map": "field_map_lothal",
+  "kind": "settlement",
+  "ruin_of": "settlement_lothal",
+  "terrain": [
+    "settlement"
+  ],
+  "npcs": [
+    "npc_thrali",
+    "npc_uma",
+    "npc_bekh"
+  ],
+  "related_entities": [
+    "settlement_lothal",
+    "faction_mask_family",
+    "faction_silvershore"
+  ],
+  "discoveries": [
+    "discovery_saltreed_thatch"
+  ],
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "description": "Smoke, and washing strung between two courses of Harappan brick.",
+  "arrival": "Forty-odd people live in the kiln quarter, because the kilns were built to hold heat and still do. Nobody has repaired anything so much as leaned things against other things until they stopped falling. A child watches you from a doorway that used to be a flue.",
+  "notes": "The living settlement, inside the ruin. Deliberately not a quest hub: people here trade leads, tea and old maps. Mixed survivors -- a Mask Family remnant, a Silvershore straggler, delta fishers -- thrown together by the Collapse rather than by kinship.",
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "type": "discovery",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ],
+  "id": "discovery_ghost_mangrove_channel",
+  "name": "The Pale Mangroves Mark the Channel",
+  "discipline": "botany",
+  "subject": "flora_ghost_mangrove",
+  "found_at": [
+    "poi_marsh_shrine"
+  ],
+  "helps": [
+    "npc_thrali"
+  ],
+  "answers": [
+    "question_silver_water"
+  ],
+  "levels": [
+    {
+      "entry": "Mangroves with bark far paler than the others. They seem to be arranged, though that is surely my eye imposing order."
+    },
+    {
+      "entry": "Ghost mangrove, and they are arranged -- in a rough line, with a second line some thirty feet off."
+    },
+    {
+      "entry": "Not planted. They have grown where the water is deep enough to stand and shallow enough to root, which happens to be either side of the old channel."
+    },
+    {
+      "entry": "The Kia have not marked the safe water. The tree has, and the Kia have been reading the tree. Bekh says her grandmother could walk to the shrine at night.",
+      "requires": [
+        "word_kia_thal"
+      ]
+    },
+    {
+      "entry": "Every pale line in this marsh is a channel that held when the rest silted. They are a map of the delta as it was before the Shattering, drawn by something that did not know it was drawing.",
+      "requires": [
+        "discovery_dockyard_reef"
+      ]
+    },
+    {
+      "entry": "Which means the undercroft of the tower can be reached, if one goes the way the trees go."
+    },
+    {
+      "entry": "Thrali can work the far banks again. It is a morning's walk to show him and it will double the ground his family can fish."
+    }
+  ],
+  "notes": "Canon already said the ghost mangrove marks safe channels; this is that fact turned into gameplay. Gates the tower undercroft, so botany opens archaeology."
+}

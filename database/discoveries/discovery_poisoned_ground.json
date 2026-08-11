@@ -1,0 +1,46 @@
+{
+  "type": "discovery",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ],
+  "id": "discovery_poisoned_ground",
+  "name": "What Came Up in the Eastern Field",
+  "discipline": "geography",
+  "found_at": [
+    "poi_eastern_field"
+  ],
+  "answers": [
+    "question_eastern_field"
+  ],
+  "levels": [
+    {
+      "entry": "Eight acres that will not grow anything. The camp calls it poisoned."
+    },
+    {
+      "entry": "The soil is good, the water is fresh, and the surface crusts white after a dry week."
+    },
+    {
+      "entry": "Salt, and not sea salt -- there is too much of it and it is coming up rather than blowing in."
+    },
+    {
+      "entry": "Something opened below this field during the Shattering and has been weeping brine into it since. Not a wound one can close.",
+      "conditions": {
+        "weather": [
+          "clear"
+        ]
+      }
+    },
+    {
+      "entry": "The same white crust is on the stones at the drowned dockyard, at the same height above the waterline. Whatever opened runs under both.",
+      "requires": [
+        "discovery_dockyard_reef"
+      ]
+    }
+  ],
+  "notes": "The problem half of the field chain. Stops at connected: understanding the salt is not the same as fixing it, and the fix belongs to the rice."
+}

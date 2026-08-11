@@ -1,0 +1,42 @@
+{
+  "id": "question_eastern_field",
+  "type": "field_question",
+  "question": "Eight acres of good silt beside permanent water, and the camp has taken nothing off it in a generation. They call it poisoned. I do not think they mean anything precise by the word, and I do not yet have a better one.",
+  "discipline": "botany",
+  "raised_at": "poi_eastern_field",
+  "raised_by": "npc_bekh",
+  "evidence": [
+    "discovery_poisoned_ground",
+    "discovery_red_rice_survival",
+    "discovery_dockyard_reef"
+  ],
+  "local_knowledge": "The ground was spoiled in the Shattering and will come back when it chooses to.",
+  "academic_hypothesis": "Contamination from below, of the kind the Narmada rift literature describes. Untreatable without instruments nobody has.",
+  "resolutions": [
+    {
+      "conclusion": "The field is spoiled and will not be planted again in our lifetimes.",
+      "requires": [
+        "discovery_poisoned_ground"
+      ],
+      "sound": false,
+      "revisit": "The granary walls are carrying more salt than the field and something is growing out of them."
+    },
+    {
+      "conclusion": "It is salt, weeping up from whatever opened underneath. The soil is not ruined for everything -- only for what they have been planting. The rice on the granary walls has been solving this problem unsupervised for four hundred years.",
+      "requires": [
+        "discovery_poisoned_ground",
+        "discovery_red_rice_survival"
+      ],
+      "sound": true
+    }
+  ],
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "notes": "The slice's proof that knowledge is help. Both readings are reasonable; only one leads to eight acres of crop, and reaching it needs botany and archaeology together.",
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ]
+}

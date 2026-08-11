@@ -1,0 +1,55 @@
+{
+  "id": "npc_bekh",
+  "type": "npc",
+  "name": "Bekh",
+  "role": "keeper of what is left",
+  "found_at": [
+    "poi_lothal_camp",
+    "poi_kavik_tower"
+  ],
+  "language": "kia",
+  "would_settle": false,
+  "knows": [
+    "discovery_mask_niche",
+    "discovery_red_rice_survival",
+    "question_eastern_field"
+  ],
+  "lines": [
+    {
+      "text": "Mask Family, yes. There is no family and there are no masks, so it is mostly a way of saying which brick I sleep under."
+    },
+    {
+      "text": "We plant the eastern field every spring. My mother did. Her mother did. It is not stubbornness, it is that the ground is good and we cannot see what is wrong with it.",
+      "gives": [
+        "question_eastern_field"
+      ]
+    },
+    {
+      "text": "My grandmother walked to the shrine at night and came back dry. I have never known how and I have stopped asking whether it was true.",
+      "requires": [
+        "word_kia_thal"
+      ],
+      "gives": [
+        "discovery_ghost_mangrove_channel"
+      ]
+    },
+    {
+      "text": "The niche in the stair. Something stood in it when my grandmother was small. She would not say what.",
+      "requires": [
+        "discovery_mask_niche"
+      ]
+    }
+  ],
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "notes": "Mask Family remnant with no masks and no family, related to character_kavik far enough back that the line means little to her. Would NOT settle -- she is the one who stays, because somebody has to be here when the rest go. The ending is better for her refusing.",
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ],
+  "descended_from": [
+    "character_kavik"
+  ]
+}

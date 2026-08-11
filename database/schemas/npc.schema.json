@@ -103,6 +103,13 @@
       "type": "boolean",
       "default": false,
       "description": "Whether this person would join the settlement at the end, if you helped them. Not everyone would: some are rooted where they are, and some would rather not be found. The endgame roster is the people who would, crossed with the discoveries that helped them -- nothing separate is tracked."
+    },
+    "descended_from": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Character ids this person comes from, when the line matters and the person is not that character. Bekh is Mask Family by descent from Kavik across enough generations that the name means little to her -- putting `character_kavik` in `character` would have said she IS him. Found while authoring the Lothal slice, which is what the slice was for."
     }
   },
   "additionalProperties": true

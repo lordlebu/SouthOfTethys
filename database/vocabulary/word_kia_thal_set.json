@@ -1,0 +1,24 @@
+{
+  "type": "vocabulary",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ],
+  "id": "word_kia_thal_set",
+  "word": "thal-set",
+  "language": "kia",
+  "gloss": "water holding a path",
+  "literal": "Water that holds a way through it. Said of the marsh between the pale mangroves.",
+  "learned_from": [
+    "npc_bekh",
+    "poi_marsh_shrine"
+  ],
+  "unlocks": [
+    "discovery_ghost_mangrove_channel"
+  ],
+  "notes": "Names the channel before the player can see it, which is the point -- the language encodes the ecology."
+}
