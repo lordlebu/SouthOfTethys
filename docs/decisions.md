@@ -67,24 +67,31 @@ layer could land without editing `App.tsx` and the UI instance can adopt it when
 
 ---
 
+## Resolved
+
+**`utils/check_playability.py` checked reachability, not order** — it asked "is this
+requirement obtainable somewhere?", which passes a cycle: A's last rung needs B, B's last rung
+needs A, both obtainable, neither ever first. That shipped, and the game's finishability test
+caught it instead. Rewritten as a simulation that starts from nothing and does whatever
+becomes possible until nothing more does; the two bogus rung-count constants are gone and the
+summary now counts what actually finished. It is a CI gate in `story-validation.yml`, and it
+duplicates two rules from the game's `src/journey.ts` — a real cost, accepted so canon can be
+checked before export. Change the semantics in one, change them in both.
+
+**Entering a gated sub-location** is now `canEnter` / `blockedFrom` in `src/journey.ts`.
+
 ## Deferred work
 
-**`utils/check_playability.py`** — dropped for now at the user's direction, but three things are
-known wrong:
-- The `reach the last rung` line counts discoveries with ≥ 7 levels. Every discovery reaches its
-  own last rung by definition, so the label describes something the code does not compute.
-- A hardcoded `< 4` encodes "the actionable rung" as a constant, where the game treats it as
-  whatever the ladder's length happens to be.
-- The docstring promises that every rung's requirements can be satisfied *before* that rung.
-  The code only checks set membership, so a cycle between two discoveries — each satisfiable
-  "somewhere", neither ever first — would pass. This is the one real gap, and the only part
-  worth building rather than deleting. Roughly 45 minutes.
-
-**No helper for entering a gated sub-location.** `poi.subLocations[].requires` is authored and
-the UI needs to check it; the brief tells the UI instance to ask for a tested helper in
-`journey.ts` rather than inline the check.
-
 **`origin/feature/canon-cleanup-and-design`** — 13 commits, unmerged, predates this work.
+
+**`world.json` is exported and imported by nothing** — 46 KB of characters, events,
+settlements and factions shipped into the browser bundle for later phases. Correct for now,
+but it is dead weight rather than something quietly in use, and `test/adapterCoverage.test.ts`
+records that deliberately.
+
+**`unlocks` on a vocabulary word is decorative.** `word_kia_uvai` claims it unlocks
+`discovery_silver_water`, but that ladder's rung actually requires `word_kia_thal`. Nothing
+enforces `unlocks`, so it drifts freely. Wire it to something or drop it.
 
 ---
 

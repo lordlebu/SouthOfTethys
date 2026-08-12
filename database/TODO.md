@@ -18,7 +18,8 @@
 See `docs/decisions.md` for the reasoning behind each.
 - [ ] `climate` on field maps — weather weights are hardcoded in the game engine today, so
       every region shares one sky
-- [ ] Decide where `full_moon` lives — it is in the `weather` enum but is a lunar phase, not
+- [x] full_moon / flood: never generated, and check_playability now fails a rung that waits on either
+- [ ] Decide where `full_moon` lives permanently — it is in the `weather` enum but is a lunar phase, not
       weather, and is deliberately never generated
 - [ ] Ladders are meant to run seven rungs; 7 of 9 discoveries run 3–5. Settle the target
       before authoring another region against the shorter shape
