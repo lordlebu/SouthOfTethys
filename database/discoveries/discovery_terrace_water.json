@@ -1,0 +1,44 @@
+{
+  "id": "discovery_terrace_water",
+  "type": "discovery",
+  "name": "What the Terraces Are For",
+  "discipline": "archaeology",
+  "found_at": [
+    "poi_herders_terraces"
+  ],
+  "levels": [
+    {
+      "entry": "Stone terraces above the herders' camp. The survey calls them devotional. I have no reason yet to disagree."
+    },
+    {
+      "entry": "Every course is lower at the outer edge. If they were built to be looked at, that is a strange way to do it."
+    },
+    {
+      "entry": "They are not level and they are not random: the fall is consistent, about a finger in a pace, running along the hill rather than down it."
+    },
+    {
+      "entry": "Water put on the top course would not run off. It would walk sideways across the whole hill and take a day doing it."
+    },
+    {
+      "entry": "Marn's people graze them and have never wondered about them. They know the ground stays wet up here into the dry months and have not connected the two facts, which is fair -- neither had I."
+    },
+    {
+      "entry": "This is irrigation, and it is enormous, and it is a farm rather than a shrine. It is also a farm for a great many more people than live on this plateau now."
+    }
+  ],
+  "answers": [
+    "question_terrace_purpose"
+  ],
+  "restores": [
+    "poi_herders_terraces"
+  ],
+  "notes": "The archaeology through-line. Resolves as engineering without making the herders ignorant -- they have the observation and not the question, which is the commonest way to not know something.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ]
+}

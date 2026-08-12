@@ -1,0 +1,49 @@
+{
+  "id": "question_terrace_purpose",
+  "type": "field_question",
+  "question": "What are the terraces above the herders' camp for?",
+  "discipline": "archaeology",
+  "raised_at": "poi_herders_terraces",
+  "resolutions": [
+    {
+      "conclusion": "A devotional feature, as the University survey records.",
+      "requires": [
+        "discovery_terrace_water"
+      ],
+      "sound": false,
+      "revisit": "discovery_terrace_script"
+    },
+    {
+      "conclusion": "Grazing platforms cut by the herders' own ancestors.",
+      "requires": [
+        "discovery_terrace_water"
+      ],
+      "sound": false,
+      "revisit": "discovery_terrace_water"
+    },
+    {
+      "conclusion": "Contour irrigation on a scale requiring a population the archive has no record of.",
+      "requires": [
+        "discovery_terrace_water",
+        "discovery_terrace_script"
+      ],
+      "sound": true
+    }
+  ],
+  "raised_by": "npc_marn",
+  "evidence": [
+    "discovery_terrace_water",
+    "discovery_terrace_script"
+  ],
+  "local_knowledge": "Marn's people graze them, maintain the odd fallen course out of habit, and have no account of who built them. They will tell you the ground up there stays wet, and offer it as a fact about the ground.",
+  "academic_hypothesis": "The survey of 388 assigns them a devotional function on the grounds of scale and effort, reasoning that no agricultural return could justify the labour. The reasoning is sound and the premise -- that the population was the present population -- is assumed rather than established.",
+  "notes": "Two wrong readings rather than one, and the second is the sympathetic error: crediting the locals is not the same as being right about them.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ]
+}

@@ -27,5 +27,8 @@
   "sources": [
     "Varuna's Field Diary design",
     "AI_CONTEXT.md"
+  ],
+  "neighbours": [
+    "field_map_narmada"
   ]
 }

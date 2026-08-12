@@ -1,0 +1,47 @@
+{
+  "id": "npc_vessa",
+  "type": "npc",
+  "name": "Vessa",
+  "role": "junior archivist",
+  "found_at": [
+    "poi_narmada_university"
+  ],
+  "language": "maru",
+  "would_settle": true,
+  "knows": [
+    "discovery_archive_baseline",
+    "question_moving_spring"
+  ],
+  "lines": [
+    {
+      "text": "You will want the rain series. Everyone wants the rain series. Read the first ten years of it and then come and tell me what you think we are measuring against.",
+      "gives": [
+        "question_moving_spring"
+      ]
+    },
+    {
+      "text": "I have written it three times and withdrawn it three times. Not because they would be angry. Because they would ask what the pre-Shattering figure was, and there isn't one, and that is the end of the conversation.",
+      "requires": [
+        "discovery_archive_baseline"
+      ]
+    },
+    {
+      "text": "My grandmother's people counted years by what happened in them. The halls would call that anecdote. It is also the only record that reaches back past the wound.",
+      "requires": [
+        "discovery_moving_spring"
+      ],
+      "gives": [
+        "word_maru_anu"
+      ]
+    }
+  ],
+  "notes": "The scholar who is already most of the way there and cannot say so in an acceptable form. Would settle -- she has been looking for somewhere the question is allowed.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ]
+}

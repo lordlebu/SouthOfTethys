@@ -1,0 +1,29 @@
+{
+  "id": "poi_walking_spring",
+  "type": "point_of_interest",
+  "name": "The Walking Spring",
+  "field_map": "field_map_narmada",
+  "kind": "eco_site",
+  "terrain": [
+    "hills",
+    "forest"
+  ],
+  "discoveries": [
+    "discovery_moving_spring",
+    "discovery_bitter_millet"
+  ],
+  "npcs": [
+    "npc_marn"
+  ],
+  "description": "A spring the archive records at a fixed point, and a line of dead stonework saying otherwise.",
+  "arrival": "The water comes out of the hillside cold enough to hurt. Forty paces downslope there is a stone basin, dry, well made, and obviously built to catch exactly this. Forty paces further there is another.",
+  "notes": "Geography and botany both. The dry basins are the evidence and they are visible on arrival -- the player can see the answer before they can explain it, which is the right order.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ]
+}

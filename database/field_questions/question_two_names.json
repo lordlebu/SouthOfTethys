@@ -1,0 +1,41 @@
+{
+  "id": "question_two_names",
+  "type": "field_question",
+  "question": "Is the grey scarp-bird one species or two?",
+  "discipline": "zoology",
+  "raised_at": "poi_long_archive",
+  "resolutions": [
+    {
+      "conclusion": "Two closely related species, as the archive's two entries record.",
+      "requires": [
+        "discovery_double_classified"
+      ],
+      "sound": false,
+      "revisit": "discovery_double_classified"
+    },
+    {
+      "conclusion": "One species. The bill grows throughout life, and the two entries are a young bird and an old one, catalogued sixty years apart by observers who never read each other.",
+      "requires": [
+        "discovery_double_classified",
+        "discovery_quarry_sequence"
+      ],
+      "sound": true
+    }
+  ],
+  "raised_by": "npc_okhi",
+  "evidence": [
+    "discovery_double_classified",
+    "discovery_quarry_sequence"
+  ],
+  "local_knowledge": "Marn has one word for the bird and another for an old one, in the way one has a word for a colt and a horse. He is surprised the question is a question.",
+  "academic_hypothesis": "Two species, on the authority of two independent careful descriptions. No mechanism exists in the University for a catalogue entry to be revisited, so the duplication is invisible from inside.",
+  "notes": "The binomial contradiction the two repos actually had, written into the fiction. The sound reading needs the quarry section because it takes seeing graduated forms in the rock to accept a graduated form in the air.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ]
+}

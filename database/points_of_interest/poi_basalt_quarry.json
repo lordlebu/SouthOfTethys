@@ -1,0 +1,25 @@
+{
+  "id": "poi_basalt_quarry",
+  "type": "point_of_interest",
+  "name": "The Stepped Quarry",
+  "field_map": "field_map_narmada",
+  "kind": "archaeological_site",
+  "terrain": [
+    "mountains",
+    "hills"
+  ],
+  "discoveries": [
+    "discovery_quarry_sequence"
+  ],
+  "description": "Cut basalt in courses, and between two of the courses, a bed of something else.",
+  "arrival": "They quarried here for the halls and stopped when they hit a seam that would not dress. The seam is nine inches of pale ash between two floods of black rock, and it is full of small dead things lying in the order they died.",
+  "notes": "The evolution discovery. A quarry rather than a dig, so the section is exposed by accident and read by the player rather than presented by a scholar.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ]
+}

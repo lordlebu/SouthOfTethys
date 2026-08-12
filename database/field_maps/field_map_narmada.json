@@ -1,0 +1,34 @@
+{
+  "id": "field_map_narmada",
+  "type": "field_map",
+  "name": "The Narmada Plateau",
+  "region": "region_narmada_plateau",
+  "seed_biomes": [
+    "hills",
+    "mountains",
+    "forest",
+    "settlement"
+  ],
+  "scale": "large",
+  "points_of_interest": [
+    "poi_narmada_university",
+    "poi_long_archive",
+    "poi_basalt_quarry",
+    "poi_walking_spring",
+    "poi_herders_terraces",
+    "poi_cloud_stair"
+  ],
+  "neighbours": [
+    "field_map_lothal"
+  ],
+  "arrival": "The road up the scarp is the only part of the plateau anyone built. Everything above it was already here: black rock in steps a hundred feet high, holding a flat green country the sea never reached. They will tell you at the top that this is why the University is here. They are right, and it is not the whole reason.",
+  "notes": "Second field map, and the counterweight to Lothal. At Lothal local knowledge was right and the academy was quoted from a distance; here the academy is a room the player stands in. The Long Archive is not foolish -- it is rigorous and its record begins at the Shattering, so it has four hundred years of excellent measurements against a baseline that is itself the wound. Large scale, hills and mountains, so the overworld reads as travel rather than as two versions of the same map.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ]
+}

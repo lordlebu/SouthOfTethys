@@ -1,0 +1,23 @@
+{
+  "type": "vocabulary",
+  "language": "maru",
+  "id": "word_maru_khet",
+  "word": "khet",
+  "gloss": "terrace",
+  "literal": "held water",
+  "learned_from": [
+    "npc_marn"
+  ],
+  "unlocks": [
+    "discovery_terrace_script"
+  ],
+  "notes": "The word that turns two hundred courses of stone from ornament into engineering. The herders kept the meaning inside the noun for long enough that nobody had to remember it.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "discovery_moving_spring",
+  "type": "discovery",
+  "name": "The Spring Does Not Stay",
+  "discipline": "geography",
+  "found_at": [
+    "poi_walking_spring"
+  ],
+  "levels": [
+    {
+      "entry": "The archive gives the spring a fixed position, surveyed, with a date. The spring is not in that position."
+    },
+    {
+      "entry": "There are dry basins downslope of it. Someone built them to catch this water, at three different places, at three different times."
+    },
+    {
+      "entry": "On a cold morning the whole line of them steams -- all three, faintly, not just the live one. The rock under them is still wet.",
+      "conditions": {
+        "weather": [
+          "mist"
+        ]
+      }
+    },
+    {
+      "entry": "The water is not moving because the hill is moving. It is following a crack, and the crack is opening uphill a little at a time."
+    },
+    {
+      "entry": "Marn's grandmother named a year by it. They have a word for the year the water moved, which means it has moved inside living memory and inside the archive's period, and only one of those noticed.",
+      "requires": [
+        "word_maru_anu"
+      ]
+    },
+    {
+      "entry": "Three basins, three moves, and the archive's fixed point is simply the position it happened to hold on the day a surveyor walked past."
+    }
+  ],
+  "answers": [
+    "question_moving_spring"
+  ],
+  "helps": [
+    "npc_marn"
+  ],
+  "notes": "Geography, and the first crack in the archive's authority. The measurement was not wrong -- it was a single measurement of a thing that moves, which is a different and much more forgivable error.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ]
+}

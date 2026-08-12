@@ -1,0 +1,52 @@
+{
+  "id": "poi_long_archive",
+  "type": "point_of_interest",
+  "name": "The Long Archive",
+  "field_map": "field_map_narmada",
+  "kind": "archaeological_site",
+  "terrain": [
+    "settlement",
+    "hills"
+  ],
+  "discoveries": [
+    "discovery_double_classified",
+    "discovery_terrace_script"
+  ],
+  "npcs": [
+    "npc_okhi"
+  ],
+  "sub_locations": [
+    {
+      "id": "reading_floor",
+      "name": "The Reading Floor",
+      "description": "Long tables, north light, and the working copies -- which are copies of copies, and say so on the spine, which is more honest than most places manage."
+    },
+    {
+      "id": "sequence_stacks",
+      "name": "The Sequence Stacks",
+      "description": "Every measurement the University has taken, in the order it was taken. Four hundred years of rainfall, riverflow, birds arriving and birds leaving. It is beautiful and it is the whole problem.",
+      "requires": [
+        "discovery_archive_baseline"
+      ]
+    },
+    {
+      "id": "unread_shelf",
+      "name": "The Unread Shelf",
+      "description": "What came up the scarp already written and has never been transcribed, because nobody here can read it and nobody will admit that in writing.",
+      "requires": [
+        "word_maru_khet"
+      ]
+    }
+  ],
+  "description": "Four hundred and eleven years of measurements, kept perfectly.",
+  "arrival": "The stacks run back further than the lamps reach. Okhi says there are eleven thousand bound volumes and that she has personally copied four hundred of them, and then, without any change of tone, that she has no idea whether the oldest are true, only that they are old.",
+  "notes": "Where the through-line resolves. The sequence stacks gate on discovery_archive_baseline so the player cannot be handed the thesis before earning it; the unread shelf gates on a word, which is the point at which the plateau's own script stops being decoration.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ]
+}

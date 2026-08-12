@@ -1,0 +1,28 @@
+{
+  "id": "poi_herders_terraces",
+  "type": "point_of_interest",
+  "name": "The Herders' Terraces",
+  "field_map": "field_map_narmada",
+  "kind": "wilderness",
+  "terrain": [
+    "hills",
+    "forest"
+  ],
+  "discoveries": [
+    "discovery_terrace_water"
+  ],
+  "npcs": [
+    "npc_marn"
+  ],
+  "description": "Stone steps up a hillside, grazed by goats, described in the archive as ornamental.",
+  "arrival": "Two hundred steps of dry-laid stone, each one a little lower at the outer edge than the inner. Marn's goats are on them. The University's survey calls them a devotional feature and gives them a paragraph.",
+  "notes": "The archaeology discovery and the restore target. A paragraph in the survey against two hundred courses of deliberate engineering is the whole argument of this map in one image.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "id": "discovery_terrace_script",
+  "type": "discovery",
+  "name": "The Cut Marks Are Writing",
+  "discipline": "linguistics",
+  "found_at": [
+    "poi_long_archive",
+    "poi_herders_terraces"
+  ],
+  "levels": [
+    {
+      "entry": "Some terrace stones carry short marks on the inner face, where they would not be seen once laid.",
+      "requires": [
+        "word_maru_khet"
+      ]
+    },
+    {
+      "entry": "The same marks are on the unread shelf in the archive, on material nobody has transcribed."
+    },
+    {
+      "entry": "They are not decoration: the same short group recurs, and it recurs at the ends of courses."
+    },
+    {
+      "entry": "Marn's word for a terrace is khet, and he says it means held water rather than step. The recurring group is two marks, and khet is two sounds."
+    },
+    {
+      "entry": "It is a builder's tally. Course numbers and volumes, cut on the hidden face because it was working notation and was never meant to be read.",
+      "requires": [
+        "discovery_terrace_water"
+      ]
+    },
+    {
+      "entry": "Which makes the unread shelf a set of construction records for something the University has classified as devotional, and Okhi has been dusting them for thirty years."
+    }
+  ],
+  "answers": [
+    "question_terrace_purpose"
+  ],
+  "helps": [
+    "npc_okhi"
+  ],
+  "notes": "Linguistics, the other unused discipline. The script is mundane on purpose -- a works ledger, not a prophecy. The plateau's past is administrative, which is a truer kind of old.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ]
+}

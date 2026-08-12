@@ -1,5 +1,5 @@
 {
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "SouthOfTethys canonical entity index",
   "counts": {
     "characters": 41,
@@ -11,12 +11,12 @@
     "artifacts": 3,
     "factions": 3,
     "mythology": 3,
-    "field_maps": 1,
-    "points_of_interest": 6,
-    "discoveries": 9,
-    "field_questions": 2,
-    "npcs": 3,
-    "vocabulary": 3
+    "field_maps": 2,
+    "points_of_interest": 12,
+    "discoveries": 18,
+    "field_questions": 5,
+    "npcs": 6,
+    "vocabulary": 6
   },
   "entities": {
     "characters": [
@@ -455,40 +455,65 @@
       "mythology_varuna"
     ],
     "field_maps": [
-      "field_map_lothal"
+      "field_map_lothal",
+      "field_map_narmada"
     ],
     "points_of_interest": [
+      "poi_basalt_quarry",
+      "poi_cloud_stair",
       "poi_drowned_dockyard",
       "poi_eastern_field",
+      "poi_herders_terraces",
       "poi_kavik_tower",
+      "poi_long_archive",
       "poi_lothal_camp",
       "poi_marsh_shrine",
-      "poi_silted_granary"
+      "poi_narmada_university",
+      "poi_silted_granary",
+      "poi_walking_spring"
     ],
     "discoveries": [
+      "discovery_archive_baseline",
+      "discovery_bitter_millet",
+      "discovery_cloud_stair",
       "discovery_dockyard_reef",
+      "discovery_double_classified",
+      "discovery_escarpment_wind",
       "discovery_ghost_mangrove_channel",
       "discovery_marsh_lurker_habits",
       "discovery_mask_niche",
+      "discovery_moving_spring",
       "discovery_poisoned_ground",
+      "discovery_quarry_sequence",
       "discovery_red_rice_survival",
       "discovery_saltreed_thatch",
       "discovery_silver_water",
+      "discovery_terrace_script",
+      "discovery_terrace_water",
       "discovery_tower_collapse"
     ],
     "field_questions": [
       "question_eastern_field",
-      "question_silver_water"
+      "question_moving_spring",
+      "question_silver_water",
+      "question_terrace_purpose",
+      "question_two_names"
     ],
     "npcs": [
       "npc_bekh",
+      "npc_marn",
+      "npc_okhi",
       "npc_thrali",
-      "npc_uma"
+      "npc_uma",
+      "npc_vessa"
     ],
     "vocabulary": [
       "word_kia_thal",
       "word_kia_thal_set",
-      "word_kia_uvai"
+      "word_kia_uvai",
+      "word_maru_anu",
+      "word_maru_khet",
+      "word_maru_sev"
     ]
   }
 }

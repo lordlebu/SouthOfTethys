@@ -1,0 +1,23 @@
+{
+  "type": "vocabulary",
+  "language": "maru",
+  "id": "word_maru_sev",
+  "word": "sev / sev-tar",
+  "gloss": "scarp-bird / an old scarp-bird",
+  "literal": "grey / long grey",
+  "learned_from": [
+    "npc_okhi"
+  ],
+  "unlocks": [
+    "discovery_double_classified"
+  ],
+  "notes": "Two words for one animal at two ages, which is a more accurate taxonomy than the archive's two species and was never intended as one.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ]
+}

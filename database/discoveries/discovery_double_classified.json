@@ -1,0 +1,47 @@
+{
+  "id": "discovery_double_classified",
+  "type": "discovery",
+  "name": "One Bird, Two Entries",
+  "discipline": "zoology",
+  "found_at": [
+    "poi_long_archive"
+  ],
+  "levels": [
+    {
+      "entry": "The archive lists a grey scarp-bird twice, under two names, catalogued sixty years apart."
+    },
+    {
+      "entry": "The descriptions differ in exactly one respect: the later one is larger and has a heavier bill."
+    },
+    {
+      "entry": "Both entries are careful. Both are signed. Neither cites the other, which means the second observer did not know the first entry existed."
+    },
+    {
+      "entry": "In the field they are one bird. The heavy-billed ones are the old ones -- the bill keeps growing, and a bird that lives thirty years ends up looking like a different species."
+    },
+    {
+      "entry": "Marn's people have one word for it and a second word for an old one, which is not two species either. They have been more accurate than the archive for as long as the archive has existed.",
+      "requires": [
+        "word_maru_sev"
+      ]
+    },
+    {
+      "entry": "Two entries, one bird, and no mechanism anywhere in the University for noticing. Nobody rereads the stacks. There is no reason to, if you believe the record is a record."
+    }
+  ],
+  "answers": [
+    "question_two_names"
+  ],
+  "helps": [
+    "npc_okhi"
+  ],
+  "notes": "The self-referential one: this is the binomial-contradiction problem the two repos actually had, put in the fiction. Resolves without villainy -- the failure is structural, not personal.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ]
+}

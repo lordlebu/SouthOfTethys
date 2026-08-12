@@ -1,0 +1,40 @@
+{
+  "id": "discovery_escarpment_wind",
+  "type": "discovery",
+  "name": "How the Air Stands",
+  "discipline": "geography",
+  "found_at": [
+    "poi_cloud_stair"
+  ],
+  "levels": [
+    {
+      "entry": "The cloud on the scarp is not weather passing. It sits in one place and the weather goes through it."
+    },
+    {
+      "entry": "Warm air off the plain hits the black rock and is turned straight up. The cloud is where it cools, and the scarp holds it there."
+    },
+    {
+      "entry": "It is strongest in the afternoon and it fails at night, and when it fails the cloud falls down the scarp in one piece.",
+      "conditions": {
+        "time_of_day": [
+          "afternoon"
+        ]
+      }
+    },
+    {
+      "entry": "Standing in it, the lift is enough to take a hat and keep it. Not a metaphor -- I lost one and watched it go up."
+    }
+  ],
+  "related_discoveries": [
+    "discovery_cloud_stair"
+  ],
+  "notes": "The mundane half of the anomaly, and the prerequisite for the interesting half. Establishes real physics on the scarp so that what the stair does cannot be explained by it.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ]
+}
