@@ -2,7 +2,7 @@
   "id": "fauna_naga_kin_sentry",
   "type": "fauna",
   "name": "Naga-Kin Sentry",
-  "scientific": "Serpens guard",
+  "scientific": "Serpens custos",
   "region": "asura-conjurations",
   "biomes": [
     "settlement"
@@ -15,5 +15,8 @@
     "docs/bestiary.md"
   ],
   "mood": "watchful",
-  "source_index": 230
+  "source_index": 230,
+  "taxonomy": {
+    "note": "Was `Serpens guard` -- an English word where the genus's siblings carry Latin: Serpens obsidianus, Serpens asuricus. `custos`, guardian, in apposition."
+  }
 }
