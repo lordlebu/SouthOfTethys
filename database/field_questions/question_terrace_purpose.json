@@ -11,7 +11,8 @@
         "discovery_terrace_water"
       ],
       "sound": false,
-      "revisit": "discovery_terrace_script"
+      "revisit": "The marks are cut on the inner faces, where nothing meant to be seen would put them.",
+      "revisit_after": "discovery_terrace_script"
     },
     {
       "conclusion": "Grazing platforms cut by the herders' own ancestors.",
@@ -19,7 +20,8 @@
         "discovery_terrace_water"
       ],
       "sound": false,
-      "revisit": "discovery_terrace_water"
+      "revisit": "The fall runs along the hill rather than down it. Nobody levels two hundred courses for goats.",
+      "revisit_after": "discovery_terrace_water"
     },
     {
       "conclusion": "Contour irrigation on a scale requiring a population the archive has no record of.",

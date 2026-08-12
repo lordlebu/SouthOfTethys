@@ -19,7 +19,8 @@
         "discovery_poisoned_ground"
       ],
       "sound": false,
-      "revisit": "The granary walls are carrying more salt than the field and something is growing out of them."
+      "revisit": "The granary walls are carrying more salt than the field and something is growing out of them.",
+      "revisit_after": "discovery_red_rice_survival"
     },
     {
       "conclusion": "It is salt, weeping up from whatever opened underneath. The soil is not ruined for everything -- only for what they have been planting. The rice on the granary walls has been solving this problem unsupervised for four hundred years.",
