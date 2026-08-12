@@ -50,10 +50,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v6
         with:
           python-version: 3.11
 
@@ -81,10 +81,10 @@ jobs:
       artifacts-generated: ${{ steps.check-artifacts.outputs.generated }}
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v6
         with:
           python-version: 3.11
 
@@ -108,42 +108,42 @@ jobs:
           ls -la cartography/ || true
 
       - name: Upload timeline summary artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: timeline_summary
           path: timeline/timeline_summary.md
           if-no-files-found: warn
 
       - name: Upload timeline mermaid artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: timeline_mermaid
           path: timeline/timeline_mermaid.md
           if-no-files-found: warn
 
       - name: Upload full timeline artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: full_timeline
           path: timeline/timeline.json
           if-no-files-found: warn
 
       - name: Upload interactive map artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: interactive_map
           path: cartography/interactive_map.html
           if-no-files-found: warn
 
       - name: Upload overworld map artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: overworld_map
           path: cartography/overworld.json
           if-no-files-found: warn
 
       - name: Upload regions geojson artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: regions_geojson
           path: cartography/regions.geojson
@@ -158,10 +158,10 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v6
         with:
           python-version: 3.11
 
@@ -203,10 +203,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.11'
 
