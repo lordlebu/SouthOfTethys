@@ -58,16 +58,39 @@ layer could land without editing `App.tsx` and the UI instance can adopt it when
 
 | Question | Why it is open |
 |---|---|
-| Should `climate` be a field on the field map? | Weather weights are hardcoded in the engine (`clear 58 / mist 18 / rain 18 / storm 6`). A delta and the Gedrosian desert should not share a sky. Moving it to canon is a schema change plus an export change. |
 | Where does `full_moon` belong? | It is in the `weather` enum but is not weather. Probably its own field with a lunar cycle behind it. |
 | How long should a weather spell last? | Currently 3 in-game hours (~7.5 real minutes). Pure playtest question; it is the knob most likely to be wrong. |
 | Ladders are meant to be seven rungs | Only 3 of 18 have seven; the spread is 3–7, clustered at 4–5. Either the target is wrong or the slices are under-authored. Decide before another region is written against the shorter shape. |
-| `lava_field` biome exists and nothing uses it | Author content for it, or drop it. |
 | Which region gets the *third* field map? | Two exist and are joined (Lothal, the Narmada Plateau). A third is the first one with no structural argument behind it — it is a creative call. Candidates already in canon: Dwarka (the gates), the Shattered Sea, the Ganges Lava Sea (which would finally use `lava_field`). |
 
 ---
 
 ## Resolved
+
+**`climate` belongs to canon** (decided 2026-08-12). Weights live on the field map over the
+four weathers the world actually produces; the schema refuses `flood` and `full_moon`. The
+delta keeps the engine's old assumption, the plateau is mistier because the scarp holds cloud.
+The engine's `DELTA_CLIMATE` is now only a fallback for a map that forgot to say.
+
+**`lava_field` was declared and unused, and 40 species were mis-filed because of it.** The
+Ganges Lava Sea is active volcanic rift cooling into jagged black basalt plains, and its fauna
+are armoured, heat-resistant and often fused with volcanic minerals. The region now names
+`lava_field`, and the 36 species that were filed under `mountains` name it too — kept alongside
+`mountains` rather than replacing it, because `lava_field` is **not renderable yet**, and a
+species with no renderable biome becomes `lore` and stops being placed at all. **Drawing it
+needs a tile texture, which is the art instance's call.** Until then canon is accurate and the
+engine simply filters it.
+
+**`world.json` is no longer exported.** 46 KB of characters, events, settlements, factions,
+artifacts, mythology and the epoch table that nothing imported. Vite inlines the bundle into
+the page, so it was weight on every load. It returns when something reads it; a test asserts
+the shipped set is exactly three files.
+
+**The duplicated requirement semantics are accepted.** `holds` and `observed` exist in both
+`src/journey.ts` and `utils/check_playability.py`. **Revisit only if a third consumer of these
+rules appears** — at that point generating one from the other, or moving the check into the
+game repo, starts to pay for itself. Until then the cost is two files to keep in step, and the
+comment at the top of `check_playability.py` names the other one.
 
 **`utils/check_playability.py` checked reachability, not order** — it asked "is this
 requirement obtainable somewhere?", which passes a cycle: A's last rung needs B, B's last rung

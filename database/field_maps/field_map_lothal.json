@@ -30,5 +30,11 @@
   ],
   "neighbours": [
     "field_map_narmada"
-  ]
+  ],
+  "climate": {
+    "clear": 58,
+    "mist": 18,
+    "rain": 18,
+    "storm": 6
+  }
 }

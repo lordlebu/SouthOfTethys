@@ -5,6 +5,7 @@
   "scientific": "Pteris vulcanica",
   "region": "ganges-lava-sea",
   "biomes": [
+    "lava_field",
     "mountains"
   ],
   "placement": "flavour",

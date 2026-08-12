@@ -15,7 +15,6 @@ Four files rather than one, split by what a module needs rather than by entity t
   places.json       regions, field maps, points of interest, the people standing in them,
                     and the biome vocabulary
   knowledge.json    discoveries, field questions, vocabulary
-  world.json        characters, events, settlements, factions, artifacts, mythology, epochs
 
 Plus canon.lock.json, which carries the version and a hash of each so the game's CI can
 tell its committed copy still matches a canon release rather than having been hand-edited.
@@ -43,8 +42,14 @@ BUNDLE = {
     "species.json": ["fauna", "flora"],
     "places.json": ["regions", "field_maps", "points_of_interest", "npcs"],
     "knowledge.json": ["discoveries", "field_questions", "vocabulary"],
-    "world.json": ["characters", "events", "settlements", "factions", "artifacts", "mythology"],
 }
+
+# Not exported: characters, events, settlements, factions, artifacts, mythology and the epoch
+# table. They were 46 KB of the bundle and nothing in the game imported them -- Vite inlines
+# every byte into the page, so an unused collection is weight on every load rather than
+# something quietly available. They come back the day something reads them; the canon book and
+# the retrieval service read `database/` directly and never wanted this file.
+NOT_EXPORTED = ["characters", "events", "settlements", "factions", "artifacts", "mythology"]
 
 # Sorts after every entity that has a source_index, so canon-only additions append.
 UNINDEXED = 10**9
@@ -89,8 +94,6 @@ def main() -> int:
 
     index = json.loads((DB / "index.json").read_text(encoding="utf-8"))
     biomes = json.loads((DB / "biomes.json").read_text(encoding="utf-8"))
-    epochs = json.loads((DB / "timeline" / "epochs.json").read_text(encoding="utf-8"))
-
     files: dict[str, str] = {}
     counts: dict[str, int] = {}
 
@@ -103,8 +106,6 @@ def main() -> int:
         # are drawn from, and the game needs to know which of them it can render.
         if filename == "places.json":
             payload["biomes"] = biomes["biomes"]
-        if filename == "world.json":
-            payload["epochs"] = epochs["epochs"]
         files[filename] = render(payload)
 
     lock = {

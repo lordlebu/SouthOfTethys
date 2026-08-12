@@ -30,5 +30,11 @@
   "sources": [
     "Varuna's Field Diary design",
     "AI_CONTEXT.md"
-  ]
+  ],
+  "climate": {
+    "clear": 52,
+    "mist": 30,
+    "rain": 15,
+    "storm": 3
+  }
 }
