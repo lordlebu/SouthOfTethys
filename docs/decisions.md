@@ -108,6 +108,29 @@ checked before export. Change the semantics in one, change them in both.
 
 **Entering a gated sub-location** is now `canEnter` / `blockedFrom` in `src/journey.ts`.
 
+## Kept deliberately, not maintained
+
+**The Hugging Face model `lordlebu/4000BCSaraswaty` is stock GPT-2 and nothing uses it**
+(decided 2026-08-13: leave it, document it). It has not been updated in a year because the
+approach was abandoned, not neglected — a 124M base model with no instruction tuning cannot
+write to a brief, which is why the service moved to retrieval plus an instruction-tuned model
+chosen by `CANON_LLM`.
+
+Three things follow, and all three are easy to trip over:
+
+- `model/README.md` is the card HF displays, and it used to claim "a custom causal language
+  model for SouthOfTethys worldbuilding". It now says what the weights actually are. Editing
+  anything under `model/` triggers `push-hf-model.yml`, so that correction reaches HF on merge.
+- `vidur_portal/snippet_processor.py` has a path bug: `LOCAL_CONFIG` resolves *two* levels
+  above the repo, so the local copy is never found and it downloads from the Hub instead. It
+  does not matter today — the Hub copy is GPT-2 and the exception fallback is also `gpt2`, so
+  every path ends at the same model — but it will mislead whoever reads it next.
+- The GitHub Actions secret `HF_TOKEN` is a **write** token whose only consumer is that
+  workflow. Nothing else needs write access; the service uses a separate inference-scoped token.
+
+If the HF presence is ever worth something, publishing canon as a **dataset** is the version
+with value in it — `dataset_card.md` and `dataset_infos.json` already exist unused.
+
 ## Deferred work
 
 **`origin/feature/canon-cleanup-and-design`** — 13 commits, unmerged, predates this work.
