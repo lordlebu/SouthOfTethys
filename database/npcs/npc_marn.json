@@ -1,0 +1,49 @@
+{
+  "id": "npc_marn",
+  "type": "npc",
+  "name": "Marn",
+  "role": "herder",
+  "found_at": [
+    "poi_herders_terraces",
+    "poi_walking_spring"
+  ],
+  "language": "maru",
+  "would_settle": true,
+  "knows": [
+    "discovery_terrace_water",
+    "discovery_bitter_millet",
+    "question_terrace_purpose"
+  ],
+  "lines": [
+    {
+      "text": "The steps? The steps have always been the steps. Good grazing, stays green late. You are the first person to walk up them looking at them.",
+      "gives": [
+        "question_terrace_purpose"
+      ]
+    },
+    {
+      "text": "Khet. Not step -- khet. It means the water is held. I do not know why we call them that, we just do.",
+      "requires": [
+        "discovery_terrace_water"
+      ],
+      "gives": [
+        "word_maru_khet"
+      ]
+    },
+    {
+      "text": "We lose one a year to the millet and we have always lost one a year to the millet. If you are telling me that is a choice and not a weather, I will need to sit down.",
+      "requires": [
+        "discovery_bitter_millet"
+      ]
+    }
+  ],
+  "notes": "Holds two of the map's answers inside ordinary vocabulary and has never had a reason to examine either. The counterpart to Thrali, and pointedly not a wise elder -- he is a working herder with a job on.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ]
+}

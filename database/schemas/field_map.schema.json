@@ -3,53 +3,130 @@
   "title": "Field Map",
   "description": "A playable region: the scale at which the player actually walks. Sits under a region and above its points of interest. The terrain is generated from `seed_biomes` by the game's own generator; canon does not describe tiles, only what the place is and what is worth finding in it.",
   "type": "object",
-  "required": ["id", "type", "name", "region", "seed_biomes"],
+  "required": [
+    "id",
+    "type",
+    "name",
+    "region",
+    "seed_biomes"
+  ],
   "properties": {
-    "id": { "type": "string", "pattern": "^field_map_[a-z0-9_]+$" },
-    "type": { "const": "field_map" },
-    "name": { "type": "string" },
-    "region": { "type": "string", "description": "Region entity id this belongs to." },
-
+    "id": {
+      "type": "string",
+      "pattern": "^field_map_[a-z0-9_]+$"
+    },
+    "type": {
+      "const": "field_map"
+    },
+    "name": {
+      "type": "string"
+    },
+    "region": {
+      "type": "string",
+      "description": "Region entity id this belongs to."
+    },
     "seed_biomes": {
       "type": "array",
       "minItems": 1,
       "description": "The biome palette the generator draws terrain from, in rough order of dominance. Ids come from database/biomes.json. This is the only thing canon says about terrain -- layout is the engine's business.",
       "items": {
         "type": "string",
-        "enum": ["sea", "coast", "plains", "forest", "wetland", "hills", "mountains", "desert", "river", "settlement", "landmark", "sky_island", "sky_underside", "open_sky", "underworld", "lava_field"]
+        "enum": [
+          "sea",
+          "coast",
+          "plains",
+          "forest",
+          "wetland",
+          "hills",
+          "mountains",
+          "desert",
+          "river",
+          "settlement",
+          "landmark",
+          "sky_island",
+          "sky_underside",
+          "open_sky",
+          "underworld",
+          "lava_field"
+        ]
       }
     },
     "scale": {
       "type": "string",
-      "enum": ["small", "large"],
+      "enum": [
+        "small",
+        "large"
+      ],
       "default": "small",
       "description": "Small maps carry 5-8 points of interest and are learnable in a session; large ones 10-20 with several ecological zones."
     },
-
     "points_of_interest": {
       "type": "array",
-      "items": { "type": "string" },
+      "items": {
+        "type": "string"
+      },
       "description": "point_of_interest ids placed on this map. The generator lays terrain; the adapter places these onto it."
     },
     "neighbours": {
       "type": "array",
-      "items": { "type": "string" },
+      "items": {
+        "type": "string"
+      },
       "description": "field_map ids reachable from here, forming the overworld's travel graph."
     },
-
     "epochs": {
       "type": "array",
-      "items": { "type": "string" },
+      "items": {
+        "type": "string"
+      },
       "description": "Epoch ids from database/timeline/epochs.json. Absent means the place exists in every era -- but a settlement standing in one epoch may be a ruin in another, so prefer being explicit."
     },
     "arrival": {
       "type": "string",
       "description": "What the player reads on first entering. Player-facing prose, in the journal's voice."
     },
-    "notes": { "type": "string", "description": "Reference fact for the canon reader. Not shown to the player." },
-
-    "canon": { "type": "string", "enum": ["primary", "secondary", "draft"], "default": "primary" },
-    "sources": { "type": "array", "items": { "type": "string" } }
+    "notes": {
+      "type": "string",
+      "description": "Reference fact for the canon reader. Not shown to the player."
+    },
+    "canon": {
+      "type": "string",
+      "enum": [
+        "primary",
+        "secondary",
+        "draft"
+      ],
+      "default": "primary"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "climate": {
+      "type": "object",
+      "description": "Relative likelihood of each weather, per spell. Arbitrary units, not percentages. Only the four the world actually produces are allowed: flood and full_moon are in the weather enum but are a state of the land and a phase of the moon, and nothing generates them -- see docs/decisions.md.",
+      "additionalProperties": false,
+      "properties": {
+        "clear": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "mist": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "rain": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "storm": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    }
   },
   "additionalProperties": true
 }

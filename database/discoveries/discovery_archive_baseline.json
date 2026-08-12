@@ -1,0 +1,52 @@
+{
+  "id": "discovery_archive_baseline",
+  "type": "discovery",
+  "name": "Where the Record Starts",
+  "discipline": "archaeology",
+  "found_at": [
+    "poi_narmada_university",
+    "poi_long_archive"
+  ],
+  "levels": [
+    {
+      "entry": "The archive is four hundred and eleven years old and complete. I have never seen anything like it."
+    },
+    {
+      "entry": "Four hundred and eleven years ago is the Shattering. The record begins the year the world broke."
+    },
+    {
+      "entry": "Which is reasonable -- that is when they started measuring. It is also the one year you would least want as your first."
+    },
+    {
+      "entry": "Every normal in these volumes is a post-Shattering normal. The rainfall they call average, the riverflow they call standard, the coastline they call the coastline."
+    },
+    {
+      "entry": "Vessa knows. She has known for some time and has not been able to say it in a form the halls would accept, because the form the halls accept is a measurement, and you cannot measure a thing you were not there for."
+    },
+    {
+      "entry": "The plateau is covered in evidence from before: the terraces, the quarry section, the marks on the stones, the herders' years. None of it is a measurement, so none of it is in the archive.",
+      "requires": [
+        "discovery_quarry_sequence",
+        "discovery_terrace_water"
+      ]
+    },
+    {
+      "entry": "The archive is not wrong. It is a perfect record of the wound, kept by careful people who mistook it for the body."
+    }
+  ],
+  "answers": [
+    "question_moving_spring"
+  ],
+  "helps": [
+    "npc_vessa"
+  ],
+  "notes": "The thesis. Seven rungs, and gated on two other discoveries so it cannot be reached by walking into the building -- the player has to bring the plateau's evidence in with them. Deliberately sympathetic to the University in the last line.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ]
+}

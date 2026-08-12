@@ -1,0 +1,43 @@
+{
+  "id": "discovery_quarry_sequence",
+  "type": "discovery",
+  "name": "The Nine Inches",
+  "discipline": "evolution",
+  "found_at": [
+    "poi_basalt_quarry"
+  ],
+  "levels": [
+    {
+      "entry": "A pale band in the quarry face, between two courses of basalt. Full of small shells."
+    },
+    {
+      "entry": "The shells are not one kind. Going up through the band they change, and they change in one direction.",
+      "conditions": {
+        "weather": [
+          "clear"
+        ]
+      }
+    },
+    {
+      "entry": "At the bottom they are round and thin. At the top, over nine inches, they are ridged and heavy. In between they are both, and neither, and the intermediate ones are the commonest."
+    },
+    {
+      "entry": "Nine inches of ash is not nine inches of time. This is a long slow record laid down between two very fast events."
+    },
+    {
+      "entry": "I have looked for these in the archive. There are none in it -- not none catalogued, none collected, which is a stranger kind of absence than a gap."
+    }
+  ],
+  "answers": [
+    "question_two_names"
+  ],
+  "notes": "Evolution, and the discipline Lothal never used. The section is read bottom-up by the player rather than explained; the clear-weather gate is literal -- you cannot see the graduation in flat light.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ]
+}

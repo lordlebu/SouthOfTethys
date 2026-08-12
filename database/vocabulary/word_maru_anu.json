@@ -1,0 +1,20 @@
+{
+  "type": "vocabulary",
+  "language": "maru",
+  "id": "word_maru_anu",
+  "word": "anu-shivit",
+  "gloss": "the year the water moved",
+  "literal": "the year it walked",
+  "learned_from": [
+    "npc_vessa"
+  ],
+  "notes": "A year-name rather than a date. Evidence the archive cannot accept, because its form is a story.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ]
+}

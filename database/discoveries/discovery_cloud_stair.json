@@ -1,0 +1,49 @@
+{
+  "id": "discovery_cloud_stair",
+  "type": "discovery",
+  "name": "The Stair Above the Rock",
+  "discipline": "anomalies",
+  "found_at": [
+    "poi_cloud_stair"
+  ],
+  "levels": [
+    {
+      "entry": "A cut stair climbs the scarp. Above the scarp it continues. There is nothing under the upper flights."
+    },
+    {
+      "entry": "It is the same stone and the same cut. Whoever made the lower part made the upper part, or copied it exactly."
+    },
+    {
+      "entry": "The wear is on the middle of the treads, all the way up, including the steps with no rock beneath them. Something used them enough to wear them.",
+      "requires": [
+        "discovery_escarpment_wind"
+      ]
+    },
+    {
+      "entry": "On a clear night you can see how far it goes, and it does not stop where the cloud stops.",
+      "conditions": {
+        "time_of_day": [
+          "night"
+        ],
+        "weather": [
+          "clear"
+        ]
+      }
+    },
+    {
+      "entry": "The lift on the scarp is real and it is nowhere near enough to hold stone. I can describe this exactly and explain none of it, and I have decided that writing it down accurately is the work."
+    }
+  ],
+  "related_discoveries": [
+    "discovery_escarpment_wind"
+  ],
+  "notes": "Deliberately unresolved. The last rung is the diary refusing to guess, which is the discipline the whole game is about; the sky routes are a later map's problem.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ]
+}

@@ -5,6 +5,7 @@
   "scientific": "Lepus glacialis",
   "region": "ganges-lava-sea",
   "biomes": [
+    "lava_field",
     "mountains"
   ],
   "placement": "encounter",

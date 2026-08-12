@@ -26,6 +26,12 @@ jobs:
       - name: Run linting (database/ consistency)
         run: python utils/lint_story.py
 
+      # lint_story proves the references resolve. This proves a player can actually get
+      # there: it starts from nothing and does whatever becomes possible until nothing
+      # more does, so a ladder that depends on itself fails here rather than shipping.
+      - name: Check playability (can the world be played through?)
+        run: python utils/check_playability.py
+
       - name: Regenerate timeline from database/events
         run: python utils/generate_timeline.py
 

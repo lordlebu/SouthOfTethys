@@ -1,0 +1,38 @@
+{
+  "id": "discovery_bitter_millet",
+  "type": "discovery",
+  "name": "The Millet They Say Is Poison",
+  "discipline": "botany",
+  "found_at": [
+    "poi_walking_spring"
+  ],
+  "levels": [
+    {
+      "entry": "A hardy millet grows on the wet ground below the spring. The archive lists it as toxic to stock and to people."
+    },
+    {
+      "entry": "Marn's household eats it. Has always eaten it. Loses an animal to it about once a year and considers this normal."
+    },
+    {
+      "entry": "They soak it two days in running water and throw the first water away. Untreated, it is exactly as toxic as the archive says."
+    },
+    {
+      "entry": "The animals they lose are the ones that get into the standing crop. The archive tested the plant; the herders solved the food. Both of them stopped there."
+    },
+    {
+      "entry": "Soaking works because the thing in it is water-soluble and sits in the husk. Which means threshing first and soaking after wastes a day and half the effect."
+    }
+  ],
+  "helps": [
+    "npc_marn"
+  ],
+  "notes": "Botany, and the one where the player materially improves something rather than merely understanding it. Neither party is wrong here -- both are incompletely right, which is the map's thesis in miniature.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ]
+}

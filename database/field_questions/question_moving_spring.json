@@ -1,0 +1,40 @@
+{
+  "id": "question_moving_spring",
+  "type": "field_question",
+  "question": "Why does the spring not match its surveyed position?",
+  "discipline": "geography",
+  "raised_at": "poi_walking_spring",
+  "resolutions": [
+    {
+      "conclusion": "The original survey was careless.",
+      "requires": [
+        "discovery_moving_spring"
+      ],
+      "sound": false,
+      "revisit": "discovery_moving_spring"
+    },
+    {
+      "conclusion": "The spring migrates along an opening fault, and has done so at least three times within living memory.",
+      "requires": [
+        "discovery_moving_spring",
+        "discovery_archive_baseline"
+      ],
+      "sound": true
+    }
+  ],
+  "raised_by": "npc_vessa",
+  "evidence": [
+    "discovery_moving_spring"
+  ],
+  "local_knowledge": "Marn's grandmother named a year for it. The herders rebuilt the catch basin twice and did not think this remarkable enough to mention to anyone at the University, who did not ask.",
+  "academic_hypothesis": "A fixed spring, surveyed once in 371 and never resurveyed, since springs do not move. The archive is internally consistent and has simply never been checked against the hill.",
+  "notes": "The forgiving reading -- blaming the surveyor -- is the wrong one, and it is wrong in the direction the player will be tempted by after Lothal. Being anti-academy is not the same as being right either.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ]
+}

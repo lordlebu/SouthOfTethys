@@ -14,5 +14,22 @@
 ## Cross-ref hygiene
 - [ ] Audit event `location` fields (free-text vs settlement IDs)
 
+## Field diary — schema gaps
+See `docs/decisions.md` for the reasoning behind each.
+- [x] `climate` on field maps — Lothal and Narmada each have their own sky
+- [x] full_moon / flood: never generated, and check_playability now fails a rung that waits on either
+- [ ] Decide where `full_moon` lives permanently — it is in the `weather` enum but is a lunar phase, not
+      weather, and is deliberately never generated
+- [x] `lava_field` — the Ganges Lava Sea now names it, and so do the 36 species that were
+      filed under `mountains`
+- [ ] Make `lava_field` renderable: it needs a tile texture before anything can stand on it,
+      which is an art call. Species keep `mountains` alongside it until then.
+
+## Field diary — content
+- [x] A second field map — the Narmada Plateau, joined to Lothal by `neighbours`
+- [ ] A third field map; the region is an open creative call (see `docs/decisions.md`)
+
 ## Index
-Current: v0.9.0 — bump on each entity batch.
+Current: v1.3.0 — bump on each entity batch.
+Field diary types: 1 field map, 6 points of interest, 9 discoveries, 2 field questions,
+3 NPCs, 3 vocabulary.

@@ -1,0 +1,48 @@
+{
+  "id": "npc_okhi",
+  "type": "npc",
+  "name": "Okhi",
+  "role": "senior copyist",
+  "found_at": [
+    "poi_long_archive"
+  ],
+  "language": "maru",
+  "would_settle": false,
+  "knows": [
+    "discovery_double_classified",
+    "discovery_terrace_script",
+    "question_two_names"
+  ],
+  "lines": [
+    {
+      "text": "Eleven thousand volumes. I have copied four hundred. I do not know if the oldest are true, only that they are old, and that is not nothing.",
+      "gives": [
+        "question_two_names"
+      ]
+    },
+    {
+      "text": "There is a shelf I dust and cannot read. Thirty years. If you learn what is on it I would like to be told, and I would like it told to me before it is told to the halls.",
+      "requires": [
+        "discovery_quarry_sequence"
+      ],
+      "gives": [
+        "word_maru_sev"
+      ]
+    },
+    {
+      "text": "No. Somebody stays. You have all found the thing that is wrong with this place and you are all leaving with it, and the eleven thousand volumes are still here and still need copying.",
+      "requires": [
+        "discovery_terrace_script"
+      ]
+    }
+  ],
+  "notes": "The one who will not come. Deliberately not a tragedy and not a rebuke -- she is right that somebody has to stay, and the ending should let her be right rather than treating her as a failed recruitment.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ]
+}
