@@ -34,6 +34,9 @@
       "text": "The far banks I cannot work. Water looks the same everywhere out there and it is not the same, and I have a family.",
       "requires": [
         "discovery_ghost_mangrove_channel"
+      ],
+      "gives": [
+        "word_kia_uvai"
       ]
     }
   ],
