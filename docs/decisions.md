@@ -61,9 +61,9 @@ layer could land without editing `App.tsx` and the UI instance can adopt it when
 | Should `climate` be a field on the field map? | Weather weights are hardcoded in the engine (`clear 58 / mist 18 / rain 18 / storm 6`). A delta and the Gedrosian desert should not share a sky. Moving it to canon is a schema change plus an export change. |
 | Where does `full_moon` belong? | It is in the `weather` enum but is not weather. Probably its own field with a lunar cycle behind it. |
 | How long should a weather spell last? | Currently 3 in-game hours (~7.5 real minutes). Pure playtest question; it is the knob most likely to be wrong. |
-| Ladders are meant to be seven rungs | Only 2 of 9 discoveries have seven; the rest run 3–5. Either the target is wrong or the slice is under-authored. Decide before more regions are written against the shorter shape. |
+| Ladders are meant to be seven rungs | Only 3 of 18 have seven; the spread is 3–7, clustered at 4–5. Either the target is wrong or the slices are under-authored. Decide before another region is written against the shorter shape. |
 | `lava_field` biome exists and nothing uses it | Author content for it, or drop it. |
-| Which region gets the second field map? | The overworld has one map, so it has nothing to navigate. This is the first genuinely creative call rather than a structural one. |
+| Which region gets the *third* field map? | Two exist and are joined (Lothal, the Narmada Plateau). A third is the first one with no structural argument behind it — it is a creative call. Candidates already in canon: Dwarka (the gates), the Shattered Sea, the Ganges Lava Sea (which would finally use `lava_field`). |
 
 ---
 

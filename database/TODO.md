@@ -21,13 +21,13 @@ See `docs/decisions.md` for the reasoning behind each.
 - [x] full_moon / flood: never generated, and check_playability now fails a rung that waits on either
 - [ ] Decide where `full_moon` lives permanently — it is in the `weather` enum but is a lunar phase, not
       weather, and is deliberately never generated
-- [ ] Ladders are meant to run seven rungs; 7 of 9 discoveries run 3–5. Settle the target
-      before authoring another region against the shorter shape
+- [ ] Ladders are meant to run seven rungs; only 3 of 18 do, the spread being 3–7. Settle the
+      target before authoring another region against the shorter shape
 - [ ] `lava_field` biome is declared and nothing uses it — author for it or drop it
 
 ## Field diary — content
-- [ ] A second field map. The overworld has one, so it has nothing to navigate.
-- [ ] Region for it is an open creative call (see `docs/decisions.md`)
+- [x] A second field map — the Narmada Plateau, joined to Lothal by `neighbours`
+- [ ] A third field map; the region is an open creative call (see `docs/decisions.md`)
 
 ## Index
 Current: v1.3.0 — bump on each entity batch.
