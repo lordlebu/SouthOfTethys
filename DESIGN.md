@@ -57,9 +57,38 @@ Consequences worth stating, because they are easy to get backwards:
 - The two published sites are halves of one thing: the book at `lordlebu.github.io/SouthOfTethys`
   and the walk at `lordlebu.github.io/4000BCESaraswathy`.
 
+## Rulings — Varuna's Field Diary
+
+Phase 00 of the plan asked for three answers to be recorded here as rulings rather than
+opinions, because content authored against the wrong one has to be rewritten. They were
+settled 2026-08-11 and are binding.
+
+**The era is Epoch 5, the last age** — `epoch_post_cataclysm`. Four hundred and eleven years
+after the Shattering. This decides who is alive, that the Naraka rifts are open and crossed
+through the Dwarka gates, and what Varuna carries. Every field-diary entity authored so far
+declares it.
+
+**Field maps are authored anchors on procedural ground.** Canon names a region, its biome
+palette and its points of interest; `generateWorld` lays the terrain; `world/fieldMap.ts`
+places the anchors. Nobody hand-draws a tilemap, and Garudasaur's Ledge is still a specific
+place rather than a cave the generator invented.
+
+**The game reads canon at build time.** The bundle under `data/canon/` is inlined by Vite, so
+a malformed file is a build failure rather than a blank panel. The retrieval service is for
+cross-referencing and is strictly optional — with `VITE_CANON_API` unset the game makes no
+network call at all.
+
+### Deviations from the plan, and why
+
+**There is no `instance` entity type.** The plan named one as the third scale below region.
+It became `sub_locations` on a point of interest instead: the gated depths of Kavik's Tower
+are the tower, not separate places that happen to sit inside it, and giving them their own
+entity would have meant every one carrying a duplicate of its parent's region, epoch and
+terrain. `requires` on a sub-location does the gating the plan wanted.
+
 ## Contribution Rule
 
 New lore → JSON entity under `database/` with stable ID + update `index.json`.
 Narrative prose stays in source docs; structured facts live here.
-Species reach the game only through `utils/export_game_data.py` — never by editing the
-game's `data/*.json` directly.
+Species reach the game only through `utils/export_canon_bundle.py` — never by editing the
+game's `data/canon/*.json` directly.
