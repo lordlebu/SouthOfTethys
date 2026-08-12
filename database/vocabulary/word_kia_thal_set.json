@@ -17,8 +17,5 @@
     "npc_bekh",
     "poi_marsh_shrine"
   ],
-  "unlocks": [
-    "discovery_ghost_mangrove_channel"
-  ],
   "notes": "Names the channel before the player can see it, which is the point -- the language encodes the ecology."
 }

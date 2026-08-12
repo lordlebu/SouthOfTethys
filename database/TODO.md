@@ -20,8 +20,6 @@ See `docs/decisions.md` for the reasoning behind each.
 - [x] full_moon / flood: never generated, and check_playability now fails a rung that waits on either
 - [ ] Decide where `full_moon` lives permanently — it is in the `weather` enum but is a lunar phase, not
       weather, and is deliberately never generated
-- [ ] Ladders are meant to run seven rungs; only 3 of 18 do, the spread being 3–7. Settle the
-      target before authoring another region against the shorter shape
 - [x] `lava_field` — the Ganges Lava Sea now names it, and so do the 36 species that were
       filed under `mountains`
 - [ ] Make `lava_field` renderable: it needs a tile texture before anything can stand on it,

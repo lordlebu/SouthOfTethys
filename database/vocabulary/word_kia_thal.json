@@ -16,10 +16,5 @@
   "learned_from": [
     "npc_thrali"
   ],
-  "unlocks": [
-    "discovery_ghost_mangrove_channel",
-    "discovery_mask_niche",
-    "word_kia_thal_set"
-  ],
   "notes": "The key that opens the Kia readings. Thrali has half of it; Bekh supplies the rest by using it without explaining."
 }

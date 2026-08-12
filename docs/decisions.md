@@ -60,12 +60,17 @@ layer could land without editing `App.tsx` and the UI instance can adopt it when
 |---|---|
 | Where does `full_moon` belong? | It is in the `weather` enum but is not weather. Probably its own field with a lunar cycle behind it. |
 | How long should a weather spell last? | Currently 3 in-game hours (~7.5 real minutes). Pure playtest question; it is the knob most likely to be wrong. |
-| Ladders are meant to be seven rungs | Only 3 of 18 have seven; the spread is 3–7, clustered at 4–5. Either the target is wrong or the slices are under-authored. Decide before another region is written against the shorter shape. |
 | Which region gets the *third* field map? | Two exist and are joined (Lothal, the Narmada Plateau). A third is the first one with no structural argument behind it — it is a creative call. Candidates already in canon: Dwarka (the gates), the Shattered Sea, the Ganges Lava Sea (which would finally use `lava_field`). |
 
 ---
 
 ## Resolved
+
+**Ladders are as long as they need to be** (decided 2026-08-12). An earlier note treated seven
+rungs as a target and 3-of-18 as a shortfall. It is not one: a rung is one rewrite of a diary
+entry, and a discovery gets as many as the understanding actually takes. The observed spread is
+3–7, clustered at 4–5, and that is the shape, not a gap. Read the height from `lastRung()` and
+never assume a fixed ladder.
 
 **`climate` belongs to canon** (decided 2026-08-12). Weights live on the field map over the
 four weathers the world actually produces; the schema refuses `flood` and `full_moon`. The
