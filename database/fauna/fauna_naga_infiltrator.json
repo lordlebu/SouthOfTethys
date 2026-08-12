@@ -2,7 +2,7 @@
   "id": "fauna_naga_infiltrator",
   "type": "fauna",
   "name": "Naga Infiltrator",
-  "scientific": "Serpens anthropomorphic",
+  "scientific": "Serpens simulans",
   "region": "asura-conjurations",
   "biomes": [
     "settlement"
@@ -15,5 +15,8 @@
     "docs/bestiary.md"
   ],
   "mood": "watchful",
-  "source_index": 219
+  "source_index": 219,
+  "taxonomy": {
+    "note": "Was `Serpens anthropomorphic`, English again. `simulans`, one who imitates, for a shape-shifter that passes as human."
+  }
 }

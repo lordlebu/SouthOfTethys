@@ -2,7 +2,7 @@
   "id": "fauna_nagaraptor",
   "type": "fauna",
   "name": "Nagaraptor",
-  "scientific": "Proto-Jambhu Dromaeosaur",
+  "scientific": "Nagaraptor vallatus",
   "diet": "Carnivore",
   "habitats": [
     "region_saraswati_delta"
@@ -28,5 +28,8 @@
   "journal_prompt": "Feathered velociraptor clans that have formed a complex diapsid scale-based civilization, using earthworks and moats to defend their nests.",
   "mood": "clever",
   "sentient": true,
-  "source_index": 12
+  "source_index": 12,
+  "taxonomy": {
+    "note": "Was `Proto-Jambhu Dromaeosaur` -- a descriptor, not a binomial. `vallatus`, entrenched, for the earthworks and moats they raise around their nests; adjectival to match the genus's siblings, Vajraptor territorialis and Sylvianus occultus."
+  }
 }
