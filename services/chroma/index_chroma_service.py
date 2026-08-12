@@ -45,6 +45,16 @@ DB_FOLDERS = [
     "artifacts",
     "factions",
     "mythology",
+    # The field-diary types. This list is an allowlist, so a folder absent from it is
+    # silently never indexed -- which is what happened: two whole field maps, twelve places,
+    # eighteen discoveries and every word of the two languages were invisible to retrieval,
+    # and the portal answered questions about the Long Archive with nothing at all.
+    "field_maps",
+    "points_of_interest",
+    "discoveries",
+    "field_questions",
+    "npcs",
+    "vocabulary",
 ]
 
 
@@ -155,6 +165,37 @@ def entity_document(payload: dict[str, Any]) -> str:
         "mood",
         "crosses_at",
         "placement_note",
+        # Field-diary fields. Same lesson as `journal_prompt` above: the prose a reader
+        # actually wants lives in these, and a type indexed without them is a name and a
+        # note pretending to be an entity.
+        "discipline",
+        "subject",
+        "found_at",
+        "helps",
+        "restores",
+        "answers",
+        "question",
+        "local_knowledge",
+        "academic_hypothesis",
+        "raised_at",
+        "raised_by",
+        "evidence",
+        "arrival",
+        "description",
+        "kind",
+        "terrain",
+        "ruin_of",
+        "seed_biomes",
+        "scale",
+        "neighbours",
+        "word",
+        "gloss",
+        "literal",
+        "language",
+        "learned_from",
+        "role",
+        "knows",
+        "would_settle",
     ):
         val = payload.get(key)
         if val is None or val == "" or val == []:
