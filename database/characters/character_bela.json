@@ -5,13 +5,20 @@
   "culture": "vedda",
   "species": "human",
   "status": "alive",
-  "epoch": "migrations",
-  "roles": ["brother", "manipulated"],
+  "epoch": "epoch_migrations",
+  "roles": [
+    "brother",
+    "manipulated"
+  ],
   "relations": {
-    "siblings": ["character_ranu"],
+    "siblings": [
+      "character_ranu"
+    ],
     "spouse": "character_meera"
   },
   "notes": "Vedda brother manipulated by Sira into the Aravali Jharwa massacre alongside Ranu.",
   "canon": "primary",
-  "sources": ["AI_CONTEXT.md"]
+  "sources": [
+    "AI_CONTEXT.md"
+  ]
 }

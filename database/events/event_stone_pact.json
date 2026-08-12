@@ -2,15 +2,34 @@
   "id": "event_stone_pact",
   "type": "event",
   "title": "The Stone Pact",
-  "epoch": "civilization_dawn",
-  "participants": ["character_shaashak", "character_khadi", "character_kavik"],
+  "epoch": "epoch_civilization_dawn",
+  "participants": [
+    "character_shaashak",
+    "character_khadi",
+    "character_kavik"
+  ],
   "location": "settlement_lothal",
-  "artifacts": ["artifact_mask_of_harappa"],
-  "predecessors": ["event_founding_lothal", "event_black_lotus_siege"],
-  "successors": ["event_tendua_crisis"],
-  "causes": ["need_for_peace_with_kia"],
-  "outcomes": ["political_marriage", "mask_as_dowry", "resentment_of_nila"],
+  "artifacts": [
+    "artifact_mask_of_harappa"
+  ],
+  "predecessors": [
+    "event_founding_lothal",
+    "event_black_lotus_siege"
+  ],
+  "successors": [
+    "event_tendua_crisis"
+  ],
+  "causes": [
+    "need_for_peace_with_kia"
+  ],
+  "outcomes": [
+    "political_marriage",
+    "mask_as_dowry",
+    "resentment_of_nila"
+  ],
   "summary": "Political marriage of Shaashak to Khadi sealed under crimson sunset at the base of Kavik's tower. Ancestral Mask of Harappa pledged as dowry.",
   "canon": "primary",
-  "sources": ["AI_CONTEXT.md"]
+  "sources": [
+    "AI_CONTEXT.md"
+  ]
 }

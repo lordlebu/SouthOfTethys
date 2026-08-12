@@ -10,8 +10,7 @@
   },
   "diet": "Carnivore",
   "habitats": [
-    "region_saraswati_delta",
-    "region_godavari_delta"
+    "region_saraswati_delta"
   ],
   "behaviour": [
     "ambush",

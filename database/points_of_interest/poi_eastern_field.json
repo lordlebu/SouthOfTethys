@@ -1,0 +1,25 @@
+{
+  "type": "point_of_interest",
+  "field_map": "field_map_lothal",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ],
+  "id": "poi_eastern_field",
+  "name": "The Eastern Field",
+  "kind": "eco_site",
+  "terrain": [
+    "wetland",
+    "settlement"
+  ],
+  "discoveries": [
+    "discovery_poisoned_ground"
+  ],
+  "description": "Good flat ground, well watered, and nothing on it.",
+  "arrival": "Eight acres of level silt beside a channel that never runs dry, and not a stem on any of it. The camp plants here every spring out of stubbornness and takes nothing off it. Something came up out of the ground during the Shattering and has not gone back down.",
+  "notes": "The solarpunk hook, and what the actionable rung acts on: restorable once the player understands both the poison and the rice."
+}

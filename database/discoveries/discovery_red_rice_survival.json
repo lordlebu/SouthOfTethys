@@ -1,0 +1,60 @@
+{
+  "type": "discovery",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ],
+  "id": "discovery_red_rice_survival",
+  "name": "Red Delta Rice, Wild",
+  "discipline": "botany",
+  "subject": "flora_red_delta_rice",
+  "found_at": [
+    "poi_silted_granary"
+  ],
+  "helps": [
+    "npc_bekh"
+  ],
+  "restores": [
+    "poi_eastern_field"
+  ],
+  "answers": [
+    "question_eastern_field"
+  ],
+  "related_discoveries": [
+    "discovery_poisoned_ground"
+  ],
+  "levels": [
+    {
+      "entry": "Something red is growing out of the granary walls. Not planted, I think."
+    },
+    {
+      "entry": "A cereal, thin-stemmed, the grain red rather than pale. It is rooted in the silt that filled the chambers, several feet above the water table."
+    },
+    {
+      "entry": "Red Delta Rice, which the chronicles say filled these very chambers. It did not need to be reintroduced. It simply never entirely left."
+    },
+    {
+      "entry": "It is growing where the silt is deepest, which is to say where the flood put it. The plant tolerates a salinity that would kill the pale varieties, and the granary walls have been wicking salt out of the delta for four hundred years."
+    },
+    {
+      "entry": "If it will grow in salt, it will grow in the eastern field, which the camp has been failing to plant with the wrong crop every spring since the Shattering.",
+      "requires": [
+        "discovery_poisoned_ground"
+      ]
+    },
+    {
+      "entry": "The field was never poisoned in the sense the camp means. It is salt, brought up by whatever opened underneath it, and salt is a thing some plants have already solved."
+    },
+    {
+      "entry": "Eight acres, sown from the granary walls. It will not be a good crop for three years and it will be a crop.",
+      "requires": [
+        "discovery_poisoned_ground"
+      ]
+    }
+  ],
+  "notes": "The slice's central chain, and the clearest case of knowledge being help: five rungs of ordinary botany, then the field. Deliberately requires the poison discovery, so the player cannot act before they understand."
+}

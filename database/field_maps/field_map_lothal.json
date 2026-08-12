@@ -1,0 +1,31 @@
+{
+  "id": "field_map_lothal",
+  "type": "field_map",
+  "name": "Lothal",
+  "region": "region_saraswati_delta",
+  "seed_biomes": [
+    "wetland",
+    "river",
+    "settlement",
+    "coast"
+  ],
+  "scale": "small",
+  "points_of_interest": [
+    "poi_lothal_camp",
+    "poi_kavik_tower",
+    "poi_silted_granary",
+    "poi_drowned_dockyard",
+    "poi_marsh_shrine",
+    "poi_eastern_field"
+  ],
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "arrival": "The delta takes a long time to become a city. Reeds, then reed-and-mud, then mud with brick in it, and then brick cut by someone who expected it to last. The tower is visible from a good way out, or the half of it still standing. Somebody has hung washing across the third storey.",
+  "notes": "Opening field map. Lothal after the Great Shattering: the Harappan city is a half-buried relic and survivors are camped inside it rather than beside it, so the same ground is a settlement and a ruin at once. Kept small and legible -- this is where the player learns how to look.",
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ]
+}

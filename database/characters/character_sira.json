@@ -2,17 +2,31 @@
   "id": "character_sira",
   "type": "character",
   "name": "Sira",
-  "epithets": ["The Wandered Face"],
+  "epithets": [
+    "The Wandered Face"
+  ],
   "culture": "harappan",
   "species": "human",
   "status": "unknown",
-  "epoch": "migrations",
-  "roles": ["mask_thief", "ancestor"],
+  "epoch": "epoch_migrations",
+  "roles": [
+    "mask_thief",
+    "ancestor"
+  ],
   "relations": {
-    "parents": ["character_orek", "character_vara_ma"],
-    "siblings": ["character_kavik", "character_thren", "character_iknaya"]
+    "parents": [
+      "character_orek",
+      "character_vara_ma"
+    ],
+    "siblings": [
+      "character_kavik",
+      "character_thren",
+      "character_iknaya"
+    ]
   },
   "notes": "Stole corrupting mask. Manipulated Vedda brothers into Aravali massacre. Ancestor of Mask Family schism.",
   "canon": "primary",
-  "sources": ["AI_CONTEXT.md"]
+  "sources": [
+    "AI_CONTEXT.md"
+  ]
 }

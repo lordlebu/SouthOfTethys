@@ -1,0 +1,47 @@
+{
+  "type": "discovery",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ],
+  "id": "discovery_silver_water",
+  "name": "When the Channel Runs Silver",
+  "discipline": "anomalies",
+  "found_at": [
+    "poi_drowned_dockyard"
+  ],
+  "answers": [
+    "question_silver_water"
+  ],
+  "levels": [
+    {
+      "entry": "Thrali says the water turns silver and that things come up when it does. I have written it down without knowing what I have written."
+    },
+    {
+      "entry": "It does turn silver, on a still night after rain, and it is not the moon -- it happens under cloud.",
+      "conditions": {
+        "time_of_day": [
+          "night"
+        ],
+        "weather": [
+          "rain",
+          "clear"
+        ]
+      }
+    },
+    {
+      "entry": "The silver is a bloom, not a light. Something microscopic rising in the closed basin when the rain freshens the top of it."
+    },
+    {
+      "entry": "The bloom brings the small fish up, and the small fish bring everything else. Thrali's grandfather knew the whole chain and expressed it in four words.",
+      "requires": [
+        "word_kia_thal"
+      ]
+    }
+  ],
+  "notes": "The opening hook from the design's first thirty minutes. Resolves ecologically without making the local explanation wrong -- the Kia phrase is a compressed version of the same fact."
+}

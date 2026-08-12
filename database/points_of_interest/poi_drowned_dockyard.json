@@ -1,0 +1,29 @@
+{
+  "type": "point_of_interest",
+  "field_map": "field_map_lothal",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ],
+  "id": "poi_drowned_dockyard",
+  "name": "The Drowned Dockyard",
+  "kind": "eco_site",
+  "terrain": [
+    "coast",
+    "river"
+  ],
+  "discoveries": [
+    "discovery_dockyard_reef",
+    "discovery_silver_water"
+  ],
+  "related_entities": [
+    "settlement_lothal"
+  ],
+  "description": "Straight lines under the water, at what used to be a quayside.",
+  "arrival": "The basin was cut square and lined with fired brick, and salt water has been in it long enough that a reef has taken the corners. Fish that have never seen the open sea live in a harbour that no longer reaches it.",
+  "notes": "Lothal's dock. An archaeological site being eaten by an ecological one, which is the tone of the whole era."
+}

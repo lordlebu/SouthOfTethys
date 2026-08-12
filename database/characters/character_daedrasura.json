@@ -2,13 +2,20 @@
   "id": "character_daedrasura",
   "type": "character",
   "name": "Daedrasura",
-  "epithets": ["The Devourer"],
+  "epithets": [
+    "The Devourer"
+  ],
   "culture": "asura",
   "species": "asura",
   "status": "mythic",
-  "epoch": "civilization_dawn",
-  "roles": ["antagonist", "devourer"],
+  "epoch": "epoch_civilization_dawn",
+  "roles": [
+    "antagonist",
+    "devourer"
+  ],
   "notes": "Asura-class threat associated with the Devourer crisis at the maritime periphery. Motives and full form remain poorly attested; treated as a high-stakes cosmic pressure rather than a courtly rival.",
   "canon": "primary",
-  "sources": ["AI_CONTEXT.md"]
+  "sources": [
+    "AI_CONTEXT.md"
+  ]
 }

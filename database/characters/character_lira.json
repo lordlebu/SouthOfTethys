@@ -2,17 +2,26 @@
   "id": "character_lira",
   "type": "character",
   "name": "Lira",
-  "epithets": ["Shwetavahana"],
+  "epithets": [
+    "Shwetavahana"
+  ],
   "culture": "silvershore",
   "species": "human",
   "status": "unknown",
-  "epoch": "civilization_dawn",
-  "roles": ["matriarch"],
+  "epoch": "epoch_civilization_dawn",
+  "roles": [
+    "matriarch"
+  ],
   "relations": {
     "spouse": "character_torin",
-    "children": ["character_varna", "character_jarek"]
+    "children": [
+      "character_varna",
+      "character_jarek"
+    ]
   },
   "notes": "Silvershore matriarch. Wife of Torin, mother of Varna and Jarek.",
   "canon": "primary",
-  "sources": ["AI_CONTEXT.md"]
+  "sources": [
+    "AI_CONTEXT.md"
+  ]
 }

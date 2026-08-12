@@ -1,0 +1,33 @@
+{
+  "type": "discovery",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ],
+  "id": "discovery_mask_niche",
+  "name": "The Empty Niche",
+  "discipline": "archaeology",
+  "found_at": [
+    "poi_kavik_tower"
+  ],
+  "subject": "faction_mask_family",
+  "levels": [
+    {
+      "entry": "A recess cut into the stair core at shoulder height, lined and finished, and empty."
+    },
+    {
+      "entry": "Cut for something specific: the back is shaped, and the shaping is a face."
+    },
+    {
+      "entry": "A mask niche, of the kind the Mask Family kept. Whatever stood here was taken rather than lost -- the dust line is clean.",
+      "requires": [
+        "word_kia_thal"
+      ]
+    }
+  ],
+  "notes": "Left open on purpose. Who took the mask is not answerable in this slice and should stay unanswered for a long time -- the diary needs entries the player cannot finish."
+}

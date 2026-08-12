@@ -5,13 +5,20 @@
   "culture": "vedda",
   "species": "human",
   "status": "alive",
-  "epoch": "migrations",
-  "roles": ["brother", "manipulated"],
+  "epoch": "epoch_migrations",
+  "roles": [
+    "brother",
+    "manipulated"
+  ],
   "relations": {
-    "siblings": ["character_bela"],
+    "siblings": [
+      "character_bela"
+    ],
     "spouse": "character_meera"
   },
   "notes": "Vedda brother manipulated by Sira (The Wandered Face) into massacring a Jharwa village in the Aravalis. Forced marriage to survivor Meera.",
   "canon": "primary",
-  "sources": ["AI_CONTEXT.md"]
+  "sources": [
+    "AI_CONTEXT.md"
+  ]
 }

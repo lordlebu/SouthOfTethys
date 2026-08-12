@@ -2,18 +2,29 @@
   "id": "character_manjalaya",
   "type": "character",
   "name": "Manjalaya",
-  "aliases": ["Vishaili"],
-  "epithets": ["Asura Princess of Shadows"],
+  "aliases": [
+    "Vishaili"
+  ],
+  "epithets": [
+    "Asura Princess of Shadows"
+  ],
   "culture": "asura",
   "species": "asura",
   "status": "mythic",
-  "epoch": "deep_antiquity",
-  "roles": ["summoned_princess", "shadow_entity"],
+  "epoch": "epoch_deep_antiquity",
+  "roles": [
+    "summoned_princess",
+    "shadow_entity"
+  ],
   "relations": {
     "spouse": "character_varunesh",
-    "children": ["character_asura_tainted_princess"]
+    "children": [
+      "character_asura_tainted_princess"
+    ]
   },
   "notes": "Asura princess of shadows summoned by Varunesh through dark tantra and unicorn sacrifice via Dwarka Gate. Skin shifts to radiant violet upon arousal. Mother of the Asura-Tainted Princess.",
   "canon": "primary",
-  "sources": ["AI_CONTEXT.md"]
+  "sources": [
+    "AI_CONTEXT.md"
+  ]
 }

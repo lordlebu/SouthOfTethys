@@ -5,9 +5,14 @@
   "culture": "outlier",
   "species": "human",
   "status": "unknown",
-  "epoch": "current",
-  "roles": ["chronicler", "outsider"],
+  "epoch": "epoch_current",
+  "roles": [
+    "chronicler",
+    "outsider"
+  ],
   "notes": "Outlier chronicler name preserved in fringe notes of the Current Era. Association with Narmada academic circles is conjectural.",
   "canon": "draft",
-  "sources": ["AI_CONTEXT.md"]
+  "sources": [
+    "AI_CONTEXT.md"
+  ]
 }

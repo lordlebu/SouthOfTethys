@@ -1,0 +1,40 @@
+{
+  "type": "discovery",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ],
+  "id": "discovery_saltreed_thatch",
+  "name": "Saltreed, and What It Is For",
+  "discipline": "botany",
+  "subject": "flora_saltreed",
+  "found_at": [
+    "poi_lothal_camp",
+    "poi_marsh_shrine"
+  ],
+  "helps": [
+    "npc_uma"
+  ],
+  "restores": [
+    "poi_lothal_camp"
+  ],
+  "levels": [
+    {
+      "entry": "Reeds, shoulder-high, growing where the water is brackish enough to kill everything else."
+    },
+    {
+      "entry": "Saltreed. The camp roofs with it, badly -- they cut it in spring because that is when they have time."
+    },
+    {
+      "entry": "Cut after the flood rather than before it, the stems are hollow and dry hard. Cut in spring they are full of sap and rot by winter."
+    },
+    {
+      "entry": "Uma has been re-roofing the same three kilns every year of her life for want of somebody telling her when to cut."
+    }
+  ],
+  "notes": "Small, quick, and the first time the player helps anyone. Four rungs, ending in help -- proof that the actionable rung does not require a grand chain."
+}

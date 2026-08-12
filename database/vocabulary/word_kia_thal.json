@@ -1,0 +1,25 @@
+{
+  "type": "vocabulary",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ],
+  "id": "word_kia_thal",
+  "word": "thal-",
+  "language": "kia",
+  "gloss": "water that holds something",
+  "literal": "A prefix rather than a word. Attaches to what the water is holding: thal-uvai, water holding memory; thal-set, water holding a path.",
+  "learned_from": [
+    "npc_thrali"
+  ],
+  "unlocks": [
+    "discovery_ghost_mangrove_channel",
+    "discovery_mask_niche",
+    "word_kia_thal_set"
+  ],
+  "notes": "The key that opens the Kia readings. Thrali has half of it; Bekh supplies the rest by using it without explaining."
+}

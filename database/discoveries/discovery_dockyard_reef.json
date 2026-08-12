@@ -1,0 +1,35 @@
+{
+  "type": "discovery",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ],
+  "id": "discovery_dockyard_reef",
+  "name": "A Reef in a Square Basin",
+  "discipline": "archaeology",
+  "found_at": [
+    "poi_drowned_dockyard"
+  ],
+  "related_discoveries": [
+    "discovery_tower_collapse"
+  ],
+  "levels": [
+    {
+      "entry": "The water here has corners."
+    },
+    {
+      "entry": "A basin, brick-lined, perhaps two hundred feet on a side. Far too regular to be anything but built."
+    },
+    {
+      "entry": "Lothal's dockyard, which the chronicles describe and which nobody has seen dry in living memory."
+    },
+    {
+      "entry": "The sluice is silted shut. It has been a closed pool since the Shattering, and everything in it has been in it that whole time."
+    }
+  ],
+  "notes": "Archaeology that unlocks two other chains. Being a closed system is what makes it evidence for both the salt and the lurker."
+}

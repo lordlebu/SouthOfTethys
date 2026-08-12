@@ -1,0 +1,49 @@
+{
+  "id": "npc_thrali",
+  "type": "npc",
+  "name": "Thrali",
+  "role": "fisher",
+  "found_at": [
+    "poi_lothal_camp",
+    "poi_drowned_dockyard"
+  ],
+  "language": "kia",
+  "would_settle": true,
+  "knows": [
+    "discovery_silver_water",
+    "discovery_ghost_mangrove_channel",
+    "question_silver_water"
+  ],
+  "lines": [
+    {
+      "text": "You will want the basin at night, after rain. The water goes silver and they come up. Ask me why and I will tell you I do not know.",
+      "gives": [
+        "question_silver_water"
+      ]
+    },
+    {
+      "text": "My grandfather had a word for it. Thal-something. He is dead and I have half of it.",
+      "requires": [
+        "discovery_silver_water"
+      ],
+      "gives": [
+        "word_kia_thal"
+      ]
+    },
+    {
+      "text": "The far banks I cannot work. Water looks the same everywhere out there and it is not the same, and I have a family.",
+      "requires": [
+        "discovery_ghost_mangrove_channel"
+      ]
+    }
+  ],
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "notes": "Delta fisher, Kia by descent, half his grandfather's vocabulary lost. Gives the opening hook and is the first person the player can materially help. Would settle -- he has nothing holding him here but the fishing.",
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ]
+}

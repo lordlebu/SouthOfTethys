@@ -2,13 +2,24 @@
   "id": "event_birth_of_sarita",
   "type": "event",
   "title": "Birth of Sarita Silversong",
-  "epoch": "civilization_dawn",
-  "participants": ["character_shaashak", "character_khadi", "character_sarita"],
+  "epoch": "epoch_civilization_dawn",
+  "participants": [
+    "character_shaashak",
+    "character_khadi",
+    "character_sarita"
+  ],
   "location": "upriver_exile_settlement",
-  "predecessors": ["event_exile_of_shaashak"],
+  "predecessors": [
+    "event_exile_of_shaashak"
+  ],
   "successors": [],
-  "outcomes": ["cancer_child_born", "symbol_of_harappan_kia_healing"],
+  "outcomes": [
+    "cancer_child_born",
+    "symbol_of_harappan_kia_healing"
+  ],
   "summary": "In exile, Shaashak gives birth to Sarita. The child’s first cry echoes her mother’s lullaby. Represents future reconciliation of the two bloodlines.",
   "canon": "primary",
-  "sources": ["AI_CONTEXT.md"]
+  "sources": [
+    "AI_CONTEXT.md"
+  ]
 }

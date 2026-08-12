@@ -1,0 +1,46 @@
+{
+  "type": "discovery",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ],
+  "id": "discovery_marsh_lurker_habits",
+  "name": "The Lurker Waits Where the Water Warms",
+  "discipline": "zoology",
+  "subject": "fauna_lothal_marsh_lurker",
+  "found_at": [
+    "poi_marsh_shrine",
+    "poi_drowned_dockyard"
+  ],
+  "levels": [
+    {
+      "entry": "Something large moved in the pool and I did not see it move."
+    },
+    {
+      "entry": "An enormous salamander, perhaps eight feet, entirely still in the shallow water.",
+      "conditions": {
+        "time_of_day": [
+          "morning",
+          "evening"
+        ]
+      }
+    },
+    {
+      "entry": "The Lothal Marsh-Lurker, which the old bestiaries have surviving here since the Pleistocene and which I had assumed was a flourish."
+    },
+    {
+      "entry": "It chooses the pools that warm first -- shallow, dark-bottomed, out of the current. It is not hunting so much as banking heat, and the hunting follows."
+    },
+    {
+      "entry": "The warm pools are the old brick chambers. The city built its own predator a habitat and then left.",
+      "requires": [
+        "discovery_dockyard_reef"
+      ]
+    }
+  ],
+  "notes": "Pure natural history, no help attached. Not every discovery should mend something -- most should just be worth knowing."
+}

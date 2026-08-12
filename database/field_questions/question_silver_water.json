@@ -1,0 +1,42 @@
+{
+  "id": "question_silver_water",
+  "type": "field_question",
+  "question": "The fisher tells me the channel runs silver and that the creatures rise when it does. He offers this as a fact about the world and not as a puzzle. I cannot decide whether the silver brings them or whether both follow from something I have not seen.",
+  "discipline": "anomalies",
+  "raised_at": "poi_drowned_dockyard",
+  "raised_by": "npc_thrali",
+  "evidence": [
+    "discovery_silver_water",
+    "discovery_dockyard_reef",
+    "discovery_ghost_mangrove_channel"
+  ],
+  "local_knowledge": "Thal-uvai: the water remembers. Said of the basin on still nights after rain, and of two or three other things.",
+  "academic_hypothesis": "Lunar tidal influence on a closed basin, per the Narmada literature on coastal anomalies.",
+  "resolutions": [
+    {
+      "conclusion": "The moon draws the water and the water draws the creatures, as the University would have it.",
+      "requires": [
+        "discovery_silver_water"
+      ],
+      "sound": false,
+      "revisit": "It happens under heavy cloud and at every phase. Whatever the moon is doing, it is not this."
+    },
+    {
+      "conclusion": "A bloom rises in the closed basin when rain freshens its surface; the small fish follow the bloom and everything else follows the small fish. The Kia phrase says the same thing in four words and does not pretend to a mechanism.",
+      "requires": [
+        "discovery_silver_water",
+        "discovery_dockyard_reef"
+      ],
+      "sound": true
+    }
+  ],
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "notes": "The opening question. The academic reading is available first and is wrong, which is the point: the player should be able to close the entry early and be mistaken.",
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ]
+}

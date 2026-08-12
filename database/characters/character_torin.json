@@ -2,17 +2,27 @@
   "id": "character_torin",
   "type": "character",
   "name": "Torin",
-  "epithets": ["Shwetavahana"],
+  "epithets": [
+    "Shwetavahana"
+  ],
   "culture": "silvershore",
   "species": "human",
   "status": "deceased",
-  "epoch": "civilization_dawn",
-  "roles": ["river_lord", "patriarch"],
+  "epoch": "epoch_civilization_dawn",
+  "roles": [
+    "river_lord",
+    "patriarch"
+  ],
   "relations": {
     "spouse": "character_lira",
-    "children": ["character_varna", "character_jarek"]
+    "children": [
+      "character_varna",
+      "character_jarek"
+    ]
   },
   "notes": "Ruthless Silvershore patriarch. Slew by Kavik on Lothal docks during debt war.",
   "canon": "primary",
-  "sources": ["AI_CONTEXT.md"]
+  "sources": [
+    "AI_CONTEXT.md"
+  ]
 }

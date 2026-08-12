@@ -1,0 +1,55 @@
+{
+  "id": "poi_kavik_tower",
+  "type": "point_of_interest",
+  "name": "Kavik's Tower",
+  "field_map": "field_map_lothal",
+  "kind": "archaeological_site",
+  "ruin_of": "settlement_lothal",
+  "terrain": [
+    "settlement",
+    "landmark"
+  ],
+  "related_entities": [
+    "character_kavik",
+    "settlement_lothal",
+    "event_stone_pact"
+  ],
+  "discoveries": [
+    "discovery_tower_collapse",
+    "discovery_mask_niche"
+  ],
+  "sub_locations": [
+    {
+      "id": "lower_courses",
+      "name": "The Lower Courses",
+      "description": "Twenty-two storeys of red sandstone, of which four remain standing and the rest lie in roughly the order they fell."
+    },
+    {
+      "id": "stair_shaft",
+      "name": "The Stair Shaft",
+      "description": "The stair survives because it was cut into the core rather than built against it. It goes up into daylight and down into water.",
+      "requires": [
+        "discovery_tower_collapse"
+      ]
+    },
+    {
+      "id": "flooded_undercroft",
+      "name": "The Flooded Undercroft",
+      "description": "Below the waterline the sandstone is cold and the carving is sharper, having been spared four hundred years of weather.",
+      "requires": [
+        "discovery_ghost_mangrove_channel"
+      ]
+    }
+  ],
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "description": "Four storeys of red sandstone where the chronicles promise twenty-two.",
+  "arrival": "It did not topple. It sat down. The upper courses came straight through the lower ones and the whole thing settled into the delta mud like a foot into silt, which is why four storeys are still square and true and everything above them is a slope of dressed stone.",
+  "notes": "Kavik's tower, the landmark settlement_lothal records. Enterable rather than merely visited, and the undercroft gates on knowing the safe channels -- a player who has not done the mangrove work cannot reach the best of it.",
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ]
+}

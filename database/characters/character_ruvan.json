@@ -5,9 +5,15 @@
   "culture": "wanderer",
   "species": "human",
   "status": "alive",
-  "epoch": "civilization_dawn",
-  "roles": ["observer", "bridge", "mentor"],
+  "epoch": "epoch_civilization_dawn",
+  "roles": [
+    "observer",
+    "bridge",
+    "mentor"
+  ],
   "notes": "Culturally fluent wanderer. Bridges Harappan and Kia. Mentors young Sarita in exile. Fights Tendua.",
   "canon": "primary",
-  "sources": ["AI_CONTEXT.md"]
+  "sources": [
+    "AI_CONTEXT.md"
+  ]
 }

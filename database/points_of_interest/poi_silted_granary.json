@@ -1,0 +1,28 @@
+{
+  "type": "point_of_interest",
+  "field_map": "field_map_lothal",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ],
+  "id": "poi_silted_granary",
+  "name": "The Silted Granary",
+  "kind": "archaeological_site",
+  "terrain": [
+    "settlement",
+    "wetland"
+  ],
+  "discoveries": [
+    "discovery_red_rice_survival"
+  ],
+  "related_entities": [
+    "settlement_lothal"
+  ],
+  "description": "A grid of brick chambers filled to the brim with silt, and something growing out of them.",
+  "arrival": "The granary held the city's grain on raised platforms so the flood could not reach it. The flood has since reached it. What is remarkable is not that the chambers filled but that the crop came back on its own, red and thin, growing out of the tops of the walls.",
+  "notes": "Where the rice discovery lives. The ruin is already doing the restoring; Varuna only has to notice."
+}

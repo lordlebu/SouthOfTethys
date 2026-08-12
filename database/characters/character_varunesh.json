@@ -2,13 +2,20 @@
   "id": "character_varunesh",
   "type": "character",
   "name": "Varunesh",
-  "aliases": ["Tukulti-Vishra"],
+  "aliases": [
+    "Tukulti-Vishra"
+  ],
   "culture": "ancient_court",
   "species": "human",
   "status": "deceased",
-  "epoch": "deep_antiquity",
-  "roles": ["prince", "dark_tantrist"],
+  "epoch": "epoch_deep_antiquity",
+  "roles": [
+    "prince",
+    "dark_tantrist"
+  ],
   "notes": "Debauched son of Pashupati Chakravarthy. Used unicorn sacrifice and dark tantra to open Dwarka Gate and summon Asura princess Manjalaya. Father of the Asura-Tainted Princess.",
   "canon": "primary",
-  "sources": ["AI_CONTEXT.md"]
+  "sources": [
+    "AI_CONTEXT.md"
+  ]
 }

@@ -2,16 +2,29 @@
   "id": "character_iknaya",
   "type": "character",
   "name": "iKnaya",
-  "epithets": ["Scrollbearer", "Subayai"],
+  "epithets": [
+    "Scrollbearer",
+    "Subayai"
+  ],
   "culture": "harappan",
   "species": "human",
   "status": "alive",
-  "epoch": "civilization_dawn",
-  "roles": ["ritualist", "aunt", "co-ruler"],
+  "epoch": "epoch_civilization_dawn",
+  "roles": [
+    "ritualist",
+    "aunt",
+    "co-ruler"
+  ],
   "relations": {
-    "siblings": ["character_kavik", "character_sira", "character_thren"]
+    "siblings": [
+      "character_kavik",
+      "character_sira",
+      "character_thren"
+    ]
   },
   "notes": "Wise pragmatic aunt. Hair streaked white from cursed texts. Guards family secrets. Co-ruler with Asha and Varna.",
   "canon": "primary",
-  "sources": ["AI_CONTEXT.md"]
+  "sources": [
+    "AI_CONTEXT.md"
+  ]
 }

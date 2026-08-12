@@ -2,18 +2,30 @@
   "id": "character_arin",
   "type": "character",
   "name": "Arin",
-  "epithets": ["Thornfoot", "Kia-Vanar"],
+  "epithets": [
+    "Thornfoot",
+    "Kia-Vanar"
+  ],
   "culture": "kia",
   "species": "human",
   "status": "alive",
-  "epoch": "civilization_dawn",
-  "roles": ["warrior", "daughter"],
+  "epoch": "epoch_civilization_dawn",
+  "roles": [
+    "warrior",
+    "daughter"
+  ],
   "relations": {
-    "parents": ["character_khadi"],
-    "siblings": ["character_mira"],
+    "parents": [
+      "character_khadi"
+    ],
+    "siblings": [
+      "character_mira"
+    ],
     "spouse": "character_mehme"
   },
   "notes": "Fierce Vanara-trained daughter of Khadi. Marries Mehme.",
   "canon": "primary",
-  "sources": ["AI_CONTEXT.md"]
+  "sources": [
+    "AI_CONTEXT.md"
+  ]
 }

@@ -1,0 +1,33 @@
+{
+  "id": "npc_uma",
+  "type": "npc",
+  "name": "Uma",
+  "role": "roofer",
+  "found_at": [
+    "poi_lothal_camp"
+  ],
+  "would_settle": true,
+  "knows": [
+    "discovery_saltreed_thatch"
+  ],
+  "lines": [
+    {
+      "text": "Three kilns, every year, and every year the same three. I have stopped minding. It is something to do in spring."
+    },
+    {
+      "text": "After the flood? Nobody cuts reed after the flood. -- No, I am listening. Say it again.",
+      "requires": [
+        "discovery_saltreed_thatch"
+      ]
+    }
+  ],
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "notes": "Keeps the camp's roofs on. The smallest possible help, and deliberately the first one available: the player learns that knowing when to cut a reed counts as helping.",
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ]
+}

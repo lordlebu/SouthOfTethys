@@ -1,0 +1,28 @@
+{
+  "type": "point_of_interest",
+  "field_map": "field_map_lothal",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ],
+  "id": "poi_marsh_shrine",
+  "name": "The Marsh Shrine",
+  "kind": "anomaly",
+  "terrain": [
+    "wetland"
+  ],
+  "discoveries": [
+    "discovery_ghost_mangrove_channel",
+    "discovery_marsh_lurker_habits"
+  ],
+  "related_entities": [
+    "faction_kia_clan"
+  ],
+  "description": "Pale mangroves standing in a ring, and something at the centre that is not a tree.",
+  "arrival": "The Kia did not build the shrine so much as agree about it. A ring of ghost mangrove, a stone with a hollow worn into the top, and a great deal of water that is shallower than it looks if you know where to put your feet.",
+  "notes": "Kia rather than Harappan. Where the channel discovery is learned and the marsh-lurker can be watched."
+}

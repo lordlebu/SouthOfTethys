@@ -1,5 +1,5 @@
 {
-  "version": "1.1.0",
+  "version": "1.3.0",
   "description": "SouthOfTethys canonical entity index",
   "counts": {
     "characters": 41,
@@ -10,7 +10,13 @@
     "regions": 7,
     "artifacts": 3,
     "factions": 3,
-    "mythology": 3
+    "mythology": 3,
+    "field_maps": 1,
+    "points_of_interest": 6,
+    "discoveries": 9,
+    "field_questions": 2,
+    "npcs": 3,
+    "vocabulary": 3
   },
   "entities": {
     "characters": [
@@ -447,6 +453,42 @@
       "mythology_ammonite_man",
       "mythology_gorvaxx",
       "mythology_varuna"
+    ],
+    "field_maps": [
+      "field_map_lothal"
+    ],
+    "points_of_interest": [
+      "poi_drowned_dockyard",
+      "poi_eastern_field",
+      "poi_kavik_tower",
+      "poi_lothal_camp",
+      "poi_marsh_shrine",
+      "poi_silted_granary"
+    ],
+    "discoveries": [
+      "discovery_dockyard_reef",
+      "discovery_ghost_mangrove_channel",
+      "discovery_marsh_lurker_habits",
+      "discovery_mask_niche",
+      "discovery_poisoned_ground",
+      "discovery_red_rice_survival",
+      "discovery_saltreed_thatch",
+      "discovery_silver_water",
+      "discovery_tower_collapse"
+    ],
+    "field_questions": [
+      "question_eastern_field",
+      "question_silver_water"
+    ],
+    "npcs": [
+      "npc_bekh",
+      "npc_thrali",
+      "npc_uma"
+    ],
+    "vocabulary": [
+      "word_kia_thal",
+      "word_kia_thal_set",
+      "word_kia_uvai"
     ]
   }
 }
