@@ -11,7 +11,8 @@
         "discovery_double_classified"
       ],
       "sound": false,
-      "revisit": "discovery_double_classified"
+      "revisit": "The heavy-billed ones are all old ones. The bill does not stop growing when the bird does.",
+      "revisit_after": "discovery_double_classified"
     },
     {
       "conclusion": "One species. The bill grows throughout life, and the two entries are a young bird and an old one, catalogued sixty years apart by observers who never read each other.",

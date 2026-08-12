@@ -19,7 +19,8 @@
         "discovery_silver_water"
       ],
       "sound": false,
-      "revisit": "It happens under heavy cloud and at every phase. Whatever the moon is doing, it is not this."
+      "revisit": "It happens under heavy cloud and at every phase. Whatever the moon is doing, it is not this.",
+      "revisit_after": "discovery_dockyard_reef"
     },
     {
       "conclusion": "A bloom rises in the closed basin when rain freshens its surface; the small fish follow the bloom and everything else follows the small fish. The Kia phrase says the same thing in four words and does not pretend to a mechanism.",

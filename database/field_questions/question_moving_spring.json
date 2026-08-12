@@ -11,7 +11,8 @@
         "discovery_moving_spring"
       ],
       "sound": false,
-      "revisit": "discovery_moving_spring"
+      "revisit": "There are three basins, in three places, built at three times. A careless surveyor does not build three.",
+      "revisit_after": "discovery_moving_spring"
     },
     {
       "conclusion": "The spring migrates along an opening fault, and has done so at least three times within living memory.",
