@@ -1,0 +1,38 @@
+{
+  "id": "discovery_road_follows_water",
+  "type": "discovery",
+  "name": "The Road Still Goes the Long Way",
+  "discipline": "archaeology",
+  "found_at": [
+    "poi_caravan_camp"
+  ],
+  "levels": [
+    {
+      "entry": "The caravan road bends north here for no reason I can see, and adds half a day."
+    },
+    {
+      "entry": "Everyone stops at the same ground, which is exposed, far from the well, and inconvenient."
+    },
+    {
+      "entry": "Laid over the fossil channel, the bend is not a bend. The road is following a bank."
+    },
+    {
+      "entry": "The camp is at a crossing. There is nothing to cross, and the caravans still stop where the ford was, because that is where you stop."
+    },
+    {
+      "entry": "Nobody chose to keep doing this. The road is older than any of them and it remembers something none of them do.",
+      "requires": [
+        "discovery_channel_gravel"
+      ]
+    }
+  ],
+  "notes": "The map's quietest discovery and possibly its best: habit outliving the reason for it, with nobody at fault.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ]
+}

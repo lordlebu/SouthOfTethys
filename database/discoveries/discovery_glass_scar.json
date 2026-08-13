@@ -1,0 +1,43 @@
+{
+  "id": "discovery_glass_scar",
+  "type": "discovery",
+  "name": "A Line of Glass",
+  "discipline": "anomalies",
+  "found_at": [
+    "poi_glass_scar"
+  ],
+  "levels": [
+    {
+      "entry": "A seam of green-black glass running straight across open sand. Nothing near it is scorched."
+    },
+    {
+      "entry": "Fused sand, and only at the surface — a hand down it is ordinary. Whatever did this was fast enough that the heat never travelled."
+    },
+    {
+      "entry": "It runs true for as far as I walked it, which was most of a morning, and it does not deviate for a dune or a ridge.",
+      "conditions": {
+        "weather": [
+          "clear"
+        ]
+      }
+    },
+    {
+      "entry": "It crosses the fossil channel without a break, and the channel gravel underneath it is unfused. So it happened after the water went, and not long after.",
+      "requires": [
+        "discovery_channel_gravel"
+      ]
+    },
+    {
+      "entry": "I can date it and describe it and I cannot say what it is. I have written down the bearing, which is the only useful thing I have."
+    }
+  ],
+  "notes": "Deliberately unresolved, like the Cloud Stair. Its job is to date the ending, not to explain it, and the diary says so.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ]
+}

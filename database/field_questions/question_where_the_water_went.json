@@ -1,0 +1,54 @@
+{
+  "id": "question_where_the_water_went",
+  "type": "field_question",
+  "question": "There is a harbour here and no sea, a road that follows a bank that is not there, and forty families lengthening a rope. I would like to know whether this place is dying or whether it already died and this is the noise afterwards.",
+  "discipline": "geography",
+  "raised_at": "poi_mooring_stones",
+  "raised_by": "npc_ravi",
+  "evidence": [
+    "discovery_mooring_rings",
+    "discovery_channel_gravel",
+    "discovery_tariff_boards"
+  ],
+  "resolutions": [
+    {
+      "conclusion": "Aridification, over the age it takes a climate to turn. The harbour is simply very old.",
+      "requires": [
+        "discovery_mooring_rings"
+      ],
+      "sound": false,
+      "revisit": "The iron has pitted and not parted, and the last tariff board was ruled and abandoned in the middle of a morning. Neither of those is an age.",
+      "revisit_after": "discovery_tariff_boards"
+    },
+    {
+      "conclusion": "The sea withdrew and the river followed it out, the way a coast retreats.",
+      "requires": [
+        "discovery_mooring_rings",
+        "discovery_channel_gravel"
+      ],
+      "sound": false,
+      "revisit": "A river leaving slowly cuts a fourth terrace and drops a silt fan at its mouth. There is no fourth terrace and there is no fan.",
+      "revisit_after": "discovery_channel_gravel"
+    },
+    {
+      "conclusion": "It was taken, in about a year, and everything here is what a place does afterwards: the road keeps the old bend, the trees keep the old depth, and the rope gets longer.",
+      "requires": [
+        "discovery_mooring_rings",
+        "discovery_channel_gravel",
+        "discovery_tariff_boards"
+      ],
+      "sound": true
+    }
+  ],
+  "local_knowledge": "Ravi's family kept the customs house through four generations of no customs. He will tell you the water was taken, and he means it plainly and without blame — the way you would say a roof came off.",
+  "academic_hypothesis": "The Narmada position is that the Gedrosian has been arid throughout the archive's period and that the harbour is pre-Shattering, on the grounds that no post-Shattering settlement could have been that wealthy. The reasoning rests entirely on the second clause.",
+  "notes": "The map's question, and the one where the academy's error is snobbery rather than method -- it cannot picture a rich town out here, so it dates the town instead of checking the iron.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ]
+}

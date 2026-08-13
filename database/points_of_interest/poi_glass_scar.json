@@ -1,0 +1,24 @@
+{
+  "type": "point_of_interest",
+  "field_map": "field_map_dry_harbour",
+  "id": "poi_glass_scar",
+  "name": "The Glass Scar",
+  "kind": "anomaly",
+  "terrain": [
+    "desert"
+  ],
+  "discoveries": [
+    "discovery_glass_scar"
+  ],
+  "description": "A seam of fused sand, running straight, where nothing should have been hot enough.",
+  "arrival": "Green-black glass, in a line you could follow at a walk, and under it sand that was never heated at all. Whatever did this did it fast enough that the heat had no time to go downwards.",
+  "notes": "The anomaly, and the map's only unexplained thing. Kept small and undramatic: it is a date stamp more than a mystery.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ]
+}

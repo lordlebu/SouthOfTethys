@@ -5,9 +5,11 @@
   "continent": "jambhudweepa",
   "bestiary_region": "gedrosian-taklamakan",
   "biomes": [
-    "desert"
+    "desert",
+    "plains",
+    "hills"
   ],
-  "notes": "Arid frontier. Home to Beedu desert rays and northern steppe approaches.",
+  "notes": "Arid interior, and young: the harbour, the fossil channel and the caravan road all date the water's departure to within cultural memory rather than to geological time. Forty authored species, all desert-placeable.",
   "canon": "primary",
   "sources": [
     "map"
