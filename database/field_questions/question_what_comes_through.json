@@ -1,0 +1,54 @@
+{
+  "id": "question_what_comes_through",
+  "type": "field_question",
+  "question": "There are animals in this midden that belong to no lineage on this continent, at a city whose people say a door opens in the mist. I have three respectable explanations and I am losing confidence in all of them.",
+  "discipline": "anomalies",
+  "raised_at": "poi_bone_midden",
+  "raised_by": "npc_sura",
+  "evidence": [
+    "discovery_wrong_anatomy",
+    "discovery_midden_layers",
+    "discovery_gate_rhythm"
+  ],
+  "resolutions": [
+    {
+      "conclusion": "Vagrants and escaped stock from a trading city, misremembered into a story about a door.",
+      "requires": [
+        "discovery_wrong_anatomy"
+      ],
+      "sound": false,
+      "revisit": "Nine layers, over four hundred years, of animals that share no ancestor with anything on this coast. Trade does not do that, and it does not do it in clusters.",
+      "revisit_after": "discovery_midden_layers"
+    },
+    {
+      "conclusion": "A relict population from before the Shattering, surviving in the drowned quarter and coming ashore.",
+      "requires": [
+        "discovery_wrong_anatomy",
+        "discovery_midden_layers"
+      ],
+      "sound": false,
+      "revisit": "A relict lineage would still be a lineage. These share no ancestor with anything here, and no two layers share one with each other.",
+      "revisit_after": "discovery_gate_rhythm"
+    },
+    {
+      "conclusion": "They cross. The gate is real, it is not rare, and the people who live beside it have been correct about it for four hundred years while being unable to say why.",
+      "requires": [
+        "discovery_wrong_anatomy",
+        "discovery_midden_layers",
+        "discovery_gate_rhythm"
+      ],
+      "sound": true
+    }
+  ],
+  "local_knowledge": "Sura will tell you the gate opens in mist, that you sweep after, and that the bones go in the midden with everything else. She is not being mystical. She is telling you the procedure, the way you would explain bins.",
+  "academic_hypothesis": "The Narmada position is that Dwarka is a trading port with an old story and poor record-keeping, and that every specimen produced so far has been either a misidentified juvenile or a hoax. No scholar has been to the midden.",
+  "notes": "The map's thesis, and the one question in the game where the local account is simply correct and the academy simply wrong. Both wrong readings are respectable and one of them is what a good naturalist would reach for second.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ]
+}

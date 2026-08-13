@@ -1,0 +1,31 @@
+{
+  "type": "point_of_interest",
+  "field_map": "field_map_dwarka",
+  "id": "poi_tide_market",
+  "name": "The Tide Market",
+  "kind": "settlement",
+  "terrain": [
+    "settlement"
+  ],
+  "related_entities": [
+    "settlement_dwarka"
+  ],
+  "discoveries": [
+    "discovery_market_ledger"
+  ],
+  "npcs": [
+    "npc_sura",
+    "npc_pell"
+  ],
+  "description": "Trading twice a day, around a tide that decides when the floor is a floor.",
+  "arrival": "The market runs on the low water and stops on the high, so the day has two mornings and two evenings and everybody's sense of time is bent around it. Prices are quoted in what the tide will allow rather than in what a thing is worth.",
+  "notes": "Where the people are. Deliberately ordinary: the point of Dwarka is that the extraordinary thing is treated as weather.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ]
+}

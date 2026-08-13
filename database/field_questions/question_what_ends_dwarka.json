@@ -1,0 +1,42 @@
+{
+  "id": "question_what_ends_dwarka",
+  "type": "field_question",
+  "question": "The city is being lost. I would like to be able to say to somebody in authority what is losing it, and I notice I want the answer to be the interesting one.",
+  "discipline": "geography",
+  "raised_at": "poi_drowned_seawall",
+  "raised_by": "npc_pell",
+  "evidence": [
+    "discovery_seawall_courses",
+    "discovery_market_ledger"
+  ],
+  "resolutions": [
+    {
+      "conclusion": "The gate. Whatever comes through is taking the place apart by degrees.",
+      "requires": [
+        "discovery_seawall_courses"
+      ],
+      "sound": false,
+      "revisit": "Three walls, sixty years of toll ledgers, and a hand of sea a century. Nothing that came through the court has moved a single course of stone.",
+      "revisit_after": "discovery_market_ledger"
+    },
+    {
+      "conclusion": "The sea, rising slowly enough that no one person has ever watched it happen, and no more mysterious than that.",
+      "requires": [
+        "discovery_seawall_courses",
+        "discovery_market_ledger"
+      ],
+      "sound": true
+    }
+  ],
+  "local_knowledge": "Pell has rebuilt the inner wall once in his life and expects his son to do it again. He does not connect that to anything; it is simply what the wall is for.",
+  "academic_hypothesis": "The survey of 402 records the Dwarka coastline as stable, on the basis of a single visit and the outermost wall being described as a breakwater.",
+  "notes": "The counterweight question, and the one where the player's own appetite for a good story is the thing being tested. The unsound reading is the one this map has spent the whole time making attractive.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ]
+}

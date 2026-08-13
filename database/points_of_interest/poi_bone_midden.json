@@ -1,0 +1,29 @@
+{
+  "type": "point_of_interest",
+  "field_map": "field_map_dwarka",
+  "id": "poi_bone_midden",
+  "name": "The Bone Midden",
+  "kind": "archaeological_site",
+  "terrain": [
+    "coast",
+    "wetland"
+  ],
+  "discoveries": [
+    "discovery_midden_layers",
+    "discovery_wrong_anatomy"
+  ],
+  "npcs": [
+    "npc_sura"
+  ],
+  "description": "Where the city puts what it cannot eat, cannot burn, and does not want.",
+  "arrival": "Every settlement has a midden and this one has the usual fish spine and oyster shell and broken pot. It also has, at intervals, layers of something else — and the intervals are the interesting part.",
+  "notes": "Evidence rather than encounter. The crossing species stay `lore` and unplaceable; what the player finds is what they left.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ]
+}

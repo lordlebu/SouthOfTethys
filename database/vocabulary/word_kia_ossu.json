@@ -1,0 +1,20 @@
+{
+  "type": "vocabulary",
+  "language": "kia",
+  "id": "word_kia_ossu",
+  "word": "ossu",
+  "gloss": "the thin layer",
+  "literal": "not-ours bone",
+  "learned_from": [
+    "npc_sura"
+  ],
+  "notes": "A stratigraphic term in a language with no word for stratigraphy. The bone-pickers needed to tell each other which layer they meant.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ]
+}
