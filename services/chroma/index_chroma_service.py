@@ -236,8 +236,18 @@ def build_metadata(repo_root: Path, fpath: Path, payload: dict | None, chunk_ind
         eid = payload.get("id") or fpath.stem
         meta["entity_id"] = eid
         meta["entity_type"] = payload.get("type") or fpath.parent.name.rstrip("s")
-        if payload.get("name"):
-            meta["name"] = payload["name"]
+        # Every entity needs something a human can be shown. Vocabulary carries `word` and a
+        # field question carries `question`, and neither has a `name` -- so a search that
+        # matched one returned a result labelled `None`, which is how this was found.
+        label = (
+            payload.get("name")
+            or payload.get("title")
+            or payload.get("word")
+            or payload.get("question")
+        )
+        if label:
+            # A question is a paragraph; a label is not. First sentence, and no longer.
+            meta["name"] = label if len(label) < 90 else label[:87].rsplit(" ", 1)[0] + "..."
         if payload.get("title"):
             meta["title"] = payload["title"]
         if payload.get("epoch"):

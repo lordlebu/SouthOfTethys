@@ -327,6 +327,35 @@ def lore(place: Place) -> dict:
     return {"query": query, "sources": sources(hits)}
 
 
+class Question(BaseModel):
+    """A question in the player's own words, rather than a tile."""
+
+    query: str
+    k: int = 5
+
+
+@app.post("/search")
+def search(question: Question) -> dict:
+    """
+    Retrieval over the whole corpus, for a question nobody wrote a tile for.
+
+    `/lore` answers "what does canon say about where I am standing", which is the shape the
+    game needed first and is useless for "has anything like this been seen before". This takes
+    words instead of coordinates.
+
+    Public and retrieval-only, exactly like `/lore`: it runs no model, spends nothing, and
+    returns which canon entities are nearest rather than prose about them. Generation stays
+    behind `/ask` and its key.
+    """
+    query = (question.query or "").strip()
+    if not query:
+        return {"query": "", "sources": []}
+    # Bounded rather than trusted: k comes from a client and a large one is a cheap way to
+    # make the service do real work on somebody else's behalf.
+    hits = vidur.retrieve(query, k=max(1, min(question.k, 20)))
+    return {"query": query, "sources": sources(hits)}
+
+
 @app.post("/ask")
 def ask(place: Place, x_canon_key: str | None = Header(default=None)) -> dict:
     """A written passage about this tile, grounded in the canon that was retrieved."""
