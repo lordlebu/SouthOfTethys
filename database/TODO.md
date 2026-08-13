@@ -33,6 +33,7 @@ See `docs/decisions.md` for the reasoning behind each.
       same problem and was fixed by recording them)
 
 ## Index
-Current: v1.3.0 — bump on each entity batch.
-Field diary types: 1 field map, 6 points of interest, 9 discoveries, 2 field questions,
-3 NPCs, 3 vocabulary.
+Current: v1.6.0 — bump on each entity batch.
+Field diary types: 4 field maps, 24 points of interest,
+31 discoveries, 8 field questions, 10 NPCs,
+10 vocabulary across three languages.
