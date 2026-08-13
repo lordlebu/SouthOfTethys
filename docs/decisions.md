@@ -108,6 +108,29 @@ checked before export. Change the semantics in one, change them in both.
 
 **Entering a gated sub-location** is now `canEnter` / `blockedFrom` in `src/journey.ts`.
 
+## The retrieval service deploys itself
+
+**Canon changes now rebuild and ship the index** (`.github/workflows/deploy-canon-service.yml`,
+2026-08-13). It had drifted twice: the live service answered from a 420-chunk index for two
+whole field maps while `/health` reported `ok: true` throughout — the index it had was healthy,
+it was simply old, and nothing anywhere compared it to canon.
+
+Three things about it that are easy to get wrong:
+
+- **Production is a file upload from `dist-vercel/`, not a git build.** Vercel's own *Redeploy*
+  button re-ships the stored snapshot, so it picks up changed environment variables and never
+  picks up a new index. That is why the workflow runs the CLI.
+- **The bundle carries no `.vercel` link**, so the project is named by `VERCEL_ORG_ID` and
+  `VERCEL_PROJECT_ID` in the environment. Those are identifiers, not credentials; only
+  `VERCEL_TOKEN` is secret.
+- **The ONNX embedder is warmed before building.** chromadb hardcodes its model cache to the
+  home directory and downloads 86MB on first use, which fails on a serverless filesystem — so
+  the extracted model travels inside the bundle, and `build_deploy.py` refuses to run without
+  a warm cache rather than shipping one that will 500 on its first request.
+
+The last step asks the live `/health` whether its index covers canon, because a green deploy
+with a stale index is precisely the failure this exists to prevent.
+
 ## Kept deliberately, not maintained
 
 **The Hugging Face model `lordlebu/4000BCSaraswaty` is stock GPT-2 and nothing uses it**

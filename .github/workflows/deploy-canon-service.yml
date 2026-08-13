@@ -1,0 +1,85 @@
+# Rebuild the retrieval service and ship it, whenever canon changes.
+#
+# The index is baked into the deployed bundle rather than built at runtime, which is the right
+# call — a serverless function cannot spend a cold start indexing five hundred files — but it
+# means canon and the live service drift apart silently. They had: the service answered from a
+# 420-chunk index for two whole field maps, and nothing anywhere said so. `/health` reported
+# `ok: true` the entire time, because the index it had was healthy; it was just old.
+#
+# Production here is a file upload from `dist-vercel/`, not a git build. Vercel's own "Redeploy"
+# button re-ships the stored snapshot, so it picks up changed environment variables and never
+# picks up a new index. That is why this runs the CLI rather than a deploy hook.
+
+name: Deploy canon service
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'database/**'
+      - 'services/**'
+      - '.github/workflows/deploy-canon-service.yml'
+  workflow_dispatch:
+
+concurrency:
+  # A run per canon change, but only the newest matters — the bundle is rebuilt from scratch
+  # each time, so an older one landing after a newer one would be a downgrade.
+  group: deploy-canon-service
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+          cache: pip
+
+      # Only what the build needs. The repo's requirements.txt is for the notebooks and the
+      # cartography scripts; indexing needs chromadb, which it does not list because the
+      # indexer imports it lazily.
+      - name: Install
+        run: pip install "chromadb>=0.5.0" jsonschema
+
+      # `build_deploy.py` refuses to run without this, and deliberately: chromadb hardcodes its
+      # model cache to the home directory and downloads 86MB on first use, which fails on a
+      # serverless filesystem. Warming it here means the extracted model travels in the bundle.
+      - name: Warm the ONNX embedder
+        run: python -c "from chromadb.utils.embedding_functions import DefaultEmbeddingFunction as D; D()(['warm'])"
+
+      - name: Validate before shipping
+        run: |
+          python utils/lint_story.py
+          python utils/check_playability.py
+
+      - name: Build the bundle
+        run: python services/api/build_deploy.py --target vercel
+
+      # The bundle carries no `.vercel` link, so the CLI is told which project by environment
+      # rather than by a file. These are identifiers, not credentials; only the token is secret.
+      - name: Deploy
+        working-directory: dist-vercel
+        env:
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+        run: npx --yes vercel@latest deploy --prod --yes --token "${{ secrets.VERCEL_TOKEN }}"
+
+      # Proves the thing that was silently wrong before: that what is live matches what was
+      # just built. A green deploy with a stale index is exactly the failure this exists for.
+      - name: Check the live index matches canon
+        run: |
+          built=$(python -c "import json;print(sum(json.load(open('database/index.json'))['counts'].values()))")
+          echo "canon entities: $built"
+          for i in 1 2 3 4 5 6; do
+            live=$(curl -fsS --max-time 30 https://south-of-tethys-canon.vercel.app/health | python -c "import json,sys;print(json.load(sys.stdin)['indexed_chunks'])" || echo 0)
+            echo "attempt $i: live index reports $live chunks"
+            if [ "$live" -gt 0 ] && [ "$live" -ge "$built" ]; then
+              echo "live index covers canon"
+              exit 0
+            fi
+            sleep 20
+          done
+          echo "the deployment is live but its index is smaller than canon — it did not take"
+          exit 1
