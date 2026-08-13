@@ -66,6 +66,36 @@ layer could land without editing `App.tsx` and the UI instance can adopt it when
 
 ## Resolved
 
+**The landmark loop stays** (decided 2026-08-13). The compass bearing to a great banyan and the
+arrival page it ends in predate points of interest, and there are now two notions of arriving
+somewhere. Retiring the older one was offered three times and declined: it is the shape the
+original game had, it still works, and every one of its tests passes. Do not remove it as
+tidying — it goes only if a design reason appears, not a consistency one.
+
+**How much a field map costs, measured rather than guessed.** Across the four authored so far:
+six points of interest each, six to nine discoveries running 31–50 rungs, one to three
+questions, two or three people, and **1,450–2,200 words of prose** — about 1,700 on average,
+plus roughly twenty JSON entities and their wiring.
+
+The typing is not the constraint. Each map needs a *thesis* that is not a repeat of another's:
+Lothal teaches looking, Narmada shows a record that begins at the wound, Dwarka is where the
+locals are right, the Dry Harbour is out of date rather than mysterious. Finding five more of
+those is the real work.
+
+**And nine maps is not currently reachable.** Of the seven regions:
+
+| Region | State |
+|---|---|
+| Saraswati Delta | two maps — Lothal, Dwarka |
+| Narmada Plateau, Gedrosian Desert | one map each |
+| Shattered Sea | **buildable** — `sea` and `forest` both render |
+| Aravali | records no biomes at all; buildable once it does, as Gedrosian was |
+| Ganges Lava Sea | buildable, but the ground renders as `mountains` until the `lava_field` tile exists |
+| Tethys Sky Routes | **blocked** — `sky_island`, `sky_underside` and `open_sky` are not renderable |
+
+So the realistic ceiling without new art is about seven maps, not nine, and one of those seven
+would look wrong.
+
 **Ladders are as long as they need to be** (decided 2026-08-12). An earlier note treated seven
 rungs as a target and 3-of-18 as a shortfall. It is not one: a rung is one rewrite of a diary
 entry, and a discovery gets as many as the understanding actually takes. The observed spread is

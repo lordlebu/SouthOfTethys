@@ -27,9 +27,13 @@ See `docs/decisions.md` for the reasoning behind each.
 
 ## Field diary — content
 - [x] A second field map — the Narmada Plateau, joined to Lothal by `neighbours`
-- [ ] A third field map; the region is an open creative call (see `docs/decisions.md`)
+- [x] Third and fourth field maps — Dwarka and the Dry Harbour
+- [ ] Fifth: the Shattered Sea is the only region buildable today without new art
+- [ ] region_aravali records no biomes, so nothing can be laid out in it (Gedrosian had the
+      same problem and was fixed by recording them)
 
 ## Index
-Current: v1.3.0 — bump on each entity batch.
-Field diary types: 1 field map, 6 points of interest, 9 discoveries, 2 field questions,
-3 NPCs, 3 vocabulary.
+Current: v1.6.0 — bump on each entity batch.
+Field diary types: 4 field maps, 24 points of interest,
+31 discoveries, 8 field questions, 10 NPCs,
+10 vocabulary across three languages.
