@@ -1,0 +1,47 @@
+{
+  "id": "discovery_gate_rhythm",
+  "type": "discovery",
+  "name": "What the Gate Keeps Time With",
+  "discipline": "anomalies",
+  "found_at": [
+    "poi_gate_court",
+    "poi_watch_stair"
+  ],
+  "levels": [
+    {
+      "entry": "There is a doorway in the court that people walk around rather than through. Nobody has told me not to. I have not."
+    },
+    {
+      "entry": "It is not always doing anything. Most of the day it is a doorway in a wall."
+    },
+    {
+      "entry": "In mist it is doing something. The air on the far side is a different air -- warmer, and it smells of stone rather than salt.",
+      "conditions": {
+        "weather": [
+          "mist"
+        ]
+      }
+    },
+    {
+      "entry": "Not the tide, then, and not the hour. I sat the stair for three days with a slate and the only thing that matches is the mist."
+    },
+    {
+      "entry": "Which is backwards. Mist is water in air; it does not open anything. Unless the mist and the opening are both downstream of a third thing, and I have been watching the wrong one."
+    },
+    {
+      "entry": "Pell says the sweeping is done at mist and always has been. Nobody decided that. It is simply when there is something to sweep."
+    }
+  ],
+  "answers": [
+    "question_what_comes_through"
+  ],
+  "notes": "The anomaly, approached as a naturalist would: rule out the tide, rule out the hour, notice the correlation, then notice the correlation is not a cause. Ends honestly short of an explanation.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ]
+}

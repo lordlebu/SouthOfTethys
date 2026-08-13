@@ -1,0 +1,25 @@
+{
+  "type": "point_of_interest",
+  "field_map": "field_map_dwarka",
+  "id": "poi_drowned_seawall",
+  "name": "The Drowned Seawall",
+  "kind": "archaeological_site",
+  "terrain": [
+    "coast",
+    "wetland"
+  ],
+  "discoveries": [
+    "discovery_seawall_courses"
+  ],
+  "description": "Three seawalls, one behind the other, each built when the last stopped working.",
+  "arrival": "You can wade the outermost at low water and stand on the innermost without getting your feet wet, and between them is four hundred years of a city agreeing, twice, that the sea had won that round.",
+  "notes": "The geography discovery and the sober counterweight to the gate: the thing actually destroying Dwarka is the sea, which nobody finds remarkable either.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "discovery_seawall_courses",
+  "type": "discovery",
+  "name": "Three Walls Against One Sea",
+  "discipline": "geography",
+  "found_at": [
+    "poi_drowned_seawall"
+  ],
+  "levels": [
+    {
+      "entry": "There are three seawalls here, not one. I assumed rebuilding. It is not rebuilding -- all three still stand."
+    },
+    {
+      "entry": "Each is founded a little higher than the one seaward of it, and each is built of what was cheap that century."
+    },
+    {
+      "entry": "The outermost is under water at every tide now. It was not built to be.",
+      "conditions": {
+        "time_of_day": [
+          "dawn"
+        ]
+      }
+    },
+    {
+      "entry": "Roughly a hand of sea in a hundred years, if the walls were built dry-footed. Slow enough that no single person ever saw it happen."
+    },
+    {
+      "entry": "The gate gets swept and the sea gets a new wall. Only one of those is going to finish the city, and it is not the interesting one."
+    }
+  ],
+  "answers": [
+    "question_what_ends_dwarka"
+  ],
+  "helps": [
+    "npc_pell"
+  ],
+  "notes": "The sober counterweight. A map about a supernatural door should be clear that the thing actually destroying the place is ordinary sea-level rise.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ]
+}

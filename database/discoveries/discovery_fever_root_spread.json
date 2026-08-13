@@ -1,0 +1,47 @@
+{
+  "id": "discovery_fever_root_spread",
+  "type": "discovery",
+  "name": "Something Is Doing Well Here",
+  "discipline": "botany",
+  "found_at": [
+    "poi_salt_orchard"
+  ],
+  "levels": [
+    {
+      "entry": "The seaward orchard rows are dead of salt. In among them something is thriving that I do not recognise."
+    },
+    {
+      "entry": "Thick leaf, no wax, and it is fruiting in the shade of dead trees in the wrong season."
+    },
+    {
+      "entry": "It is not salt-tolerant, it is salt-indifferent -- the soil chemistry does not appear to be a variable for it at all."
+    },
+    {
+      "entry": "Nothing eats it. Not the goats, not the insects, not the rot. In a delta, that is a stranger fact than the leaf shape."
+    },
+    {
+      "entry": "It is spreading at about a pace a year, along the dead rows, and no farmer here is worried because it grows where nothing grows."
+    },
+    {
+      "entry": "Which is the mistake. It is not filling ground nothing wanted. It is making ground that nothing else can use, and it is doing it slowly enough that nobody has thought to measure.",
+      "requires": [
+        "discovery_midden_layers"
+      ]
+    }
+  ],
+  "helps": [
+    "npc_sura"
+  ],
+  "restores": [
+    "poi_salt_orchard"
+  ],
+  "notes": "An establishment event in progress, which is slower and worse than a monster. The last rung is the only place on this map where the player knows something the locals do not.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ]
+}

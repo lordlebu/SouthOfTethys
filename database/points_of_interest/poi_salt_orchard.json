@@ -1,0 +1,28 @@
+{
+  "type": "point_of_interest",
+  "field_map": "field_map_dwarka",
+  "id": "poi_salt_orchard",
+  "name": "The Salt Orchard",
+  "kind": "eco_site",
+  "terrain": [
+    "wetland",
+    "coast"
+  ],
+  "discoveries": [
+    "discovery_fever_root_spread"
+  ],
+  "npcs": [
+    "npc_sura"
+  ],
+  "description": "Fruit trees dying at one end and something else doing well at the other.",
+  "arrival": "The orchard is half orchard. The seaward rows are salt-killed and standing, and through them, in the shade the dead trees still cast, something with the wrong leaf shape is doing extremely well.",
+  "notes": "The botany discovery. An establishment event in progress, which is a slower and more frightening thing than a monster.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "type": "point_of_interest",
+  "field_map": "field_map_dwarka",
+  "id": "poi_watch_stair",
+  "name": "The Watch Stair",
+  "kind": "wilderness",
+  "terrain": [
+    "coast",
+    "settlement"
+  ],
+  "discoveries": [
+    "discovery_gate_rhythm"
+  ],
+  "description": "Steps up the old wall, kept clear, with a good view of the court.",
+  "arrival": "Somebody keeps these steps clear of weed, and there is a worn patch at the top where people stand. They are not watching the sea from here.",
+  "notes": "The observation post. Exists so the gate can be watched over time rather than visited once, which is what its discovery needs.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ]
+}

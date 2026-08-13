@@ -1,0 +1,38 @@
+{
+  "id": "discovery_market_ledger",
+  "type": "discovery",
+  "name": "Two Mornings a Day",
+  "discipline": "geography",
+  "found_at": [
+    "poi_tide_market"
+  ],
+  "levels": [
+    {
+      "entry": "The market opens twice and closes twice, and everyone knows when without being told."
+    },
+    {
+      "entry": "It is the tide, obviously. What is less obvious is that the tide here is not the tide at Lothal."
+    },
+    {
+      "entry": "A ledger goes back sixty years of opening times. Nobody kept it for the tide; they kept it for the tolls."
+    },
+    {
+      "entry": "Read as a tide record it is better than anything the University has, and it says the high water is arriving later each decade.",
+      "requires": [
+        "discovery_seawall_courses"
+      ]
+    }
+  ],
+  "answers": [
+    "question_what_ends_dwarka"
+  ],
+  "notes": "Local record-keeping outperforming the academy again, and this time entirely by accident -- the ledger was for taxes.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ]
+}

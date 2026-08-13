@@ -1,0 +1,49 @@
+{
+  "id": "npc_pell",
+  "type": "npc",
+  "name": "Pell",
+  "role": "wall-keeper and sweeper",
+  "found_at": [
+    "poi_gate_court",
+    "poi_tide_market"
+  ],
+  "language": "kia",
+  "would_settle": false,
+  "knows": [
+    "discovery_gate_rhythm",
+    "discovery_seawall_courses",
+    "question_what_ends_dwarka"
+  ],
+  "lines": [
+    {
+      "text": "I keep the inner wall and I sweep the court. They are the same job to me: something arrives, and it has to go somewhere.",
+      "gives": [
+        "question_what_ends_dwarka"
+      ]
+    },
+    {
+      "text": "In mist, yes. Not every mist. You will want the stair and three days, and you will be the first person to sit them who was not being paid.",
+      "requires": [
+        "discovery_gate_rhythm"
+      ],
+      "gives": [
+        "word_kia_vaath"
+      ]
+    },
+    {
+      "text": "No. My father rebuilt this wall and I have rebuilt it and my son will. You are asking me to leave a job that is not finished, and it is never going to be finished, and that is not a reason.",
+      "requires": [
+        "discovery_seawall_courses"
+      ]
+    }
+  ],
+  "notes": "The one who will not come, and for the opposite reason to Bekh: not somebody has to stay, but the work does not end and that is not an argument for stopping. Sweeps an interdimensional gate as municipal maintenance.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ]
+}

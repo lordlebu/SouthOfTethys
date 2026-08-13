@@ -1,0 +1,50 @@
+{
+  "id": "npc_sura",
+  "type": "npc",
+  "name": "Sura",
+  "role": "bone-picker",
+  "found_at": [
+    "poi_bone_midden",
+    "poi_salt_orchard",
+    "poi_tide_market"
+  ],
+  "language": "kia",
+  "would_settle": true,
+  "knows": [
+    "discovery_midden_layers",
+    "discovery_wrong_anatomy",
+    "question_what_comes_through"
+  ],
+  "lines": [
+    {
+      "text": "Everything the city cannot use comes to me eventually. Most of it is fish. Some years it is not.",
+      "gives": [
+        "question_what_comes_through"
+      ]
+    },
+    {
+      "text": "You want the thin layers. My mother showed me where they are, and hers showed her, and none of us has ever been asked about them before today.",
+      "requires": [
+        "discovery_wrong_anatomy"
+      ],
+      "gives": [
+        "word_kia_ossu"
+      ]
+    },
+    {
+      "text": "The orchard? The orchard is finished. I would rather you told me something about it that I can do than something about it that is true.",
+      "requires": [
+        "discovery_fever_root_spread"
+      ]
+    }
+  ],
+  "notes": "Holds four hundred years of stratigraphy as a family trade and has never been asked. Would settle -- the midden is a living, not a home.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ]
+}

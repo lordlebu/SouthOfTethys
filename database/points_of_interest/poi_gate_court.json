@@ -1,0 +1,48 @@
+{
+  "type": "point_of_interest",
+  "field_map": "field_map_dwarka",
+  "id": "poi_gate_court",
+  "name": "The Gate Court",
+  "kind": "anomaly",
+  "terrain": [
+    "settlement",
+    "coast"
+  ],
+  "related_entities": [
+    "settlement_dwarka",
+    "event_shadow_pact"
+  ],
+  "discoveries": [
+    "discovery_gate_rhythm",
+    "discovery_wrong_anatomy"
+  ],
+  "npcs": [
+    "npc_pell"
+  ],
+  "sub_locations": [
+    {
+      "id": "outer_court",
+      "name": "The Outer Court",
+      "description": "Paving, a drain, and a low wall someone maintains. It looks like a yard because it is one."
+    },
+    {
+      "id": "the_threshold",
+      "name": "The Threshold",
+      "description": "Where the air stops being the same on both sides. You can stand with one hand in each and feel the difference at the wrist.",
+      "requires": [
+        "discovery_gate_rhythm"
+      ]
+    }
+  ],
+  "description": "A swept courtyard with a doorway in it that does not lead anywhere in this city.",
+  "arrival": "It is swept. That is the first thing, and it undoes most of what you were prepared for: somebody sweeps the gate court, the way somebody sweeps a threshing floor, because things come through and the mess has to go somewhere.",
+  "notes": "The anomaly, presented as municipal infrastructure. The horror of it, if there is any, is entirely in how unremarkable the locals find it.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ]
+}

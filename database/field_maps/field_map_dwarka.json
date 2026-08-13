@@ -1,0 +1,40 @@
+{
+  "id": "field_map_dwarka",
+  "type": "field_map",
+  "name": "Dwarka",
+  "region": "region_saraswati_delta",
+  "seed_biomes": [
+    "coast",
+    "settlement",
+    "wetland",
+    "river"
+  ],
+  "scale": "small",
+  "points_of_interest": [
+    "poi_tide_market",
+    "poi_gate_court",
+    "poi_drowned_seawall",
+    "poi_bone_midden",
+    "poi_salt_orchard",
+    "poi_watch_stair"
+  ],
+  "neighbours": [
+    "field_map_lothal"
+  ],
+  "climate": {
+    "clear": 44,
+    "mist": 30,
+    "rain": 18,
+    "storm": 8
+  },
+  "arrival": "Half of Dwarka is under water and the half that is not has been rebuilt twice on top of itself. Nobody here treats the sea as an enemy or the gate as a wonder. Both are simply conditions, like weather, and the whole city is arranged around living beside them.",
+  "notes": "Third field map. The one where the method is tested: local knowledge is not merely useful here, it is right, and the academy's three tidy explanations are all wrong. Gives `crosses_at` a consumer without making the crossing species placeable -- you find what they left, never the animal.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ]
+}

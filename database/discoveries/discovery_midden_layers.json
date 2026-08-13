@@ -1,0 +1,41 @@
+{
+  "id": "discovery_midden_layers",
+  "type": "discovery",
+  "name": "How Often This Has Happened",
+  "discipline": "archaeology",
+  "found_at": [
+    "poi_bone_midden"
+  ],
+  "levels": [
+    {
+      "entry": "The midden is layered like any midden: fish, shell, pot, ash, fish, shell, pot."
+    },
+    {
+      "entry": "There are other layers. Thin ones, of bone I cannot place, and they are not at the top."
+    },
+    {
+      "entry": "I counted nine. The deepest is under a pottery style Sura says her grandmother's grandmother used."
+    },
+    {
+      "entry": "Nine, in four hundred years, and not evenly spaced -- they cluster. Two of them are close enough to be one bad decade."
+    },
+    {
+      "entry": "This is not an event. It is a climate. Dwarka has been dealing with this the whole time it has existed, and has a word for it, and a place to put the remains."
+    }
+  ],
+  "answers": [
+    "question_what_comes_through"
+  ],
+  "helps": [
+    "npc_sura"
+  ],
+  "notes": "Turns the anomaly from an incident into a condition, which is the map's whole argument. The clustering is left unexplained on purpose.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ]
+}

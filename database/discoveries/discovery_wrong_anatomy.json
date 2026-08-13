@@ -1,0 +1,42 @@
+{
+  "id": "discovery_wrong_anatomy",
+  "type": "discovery",
+  "name": "A Skeleton That Does Not Fit",
+  "discipline": "evolution",
+  "found_at": [
+    "poi_bone_midden",
+    "poi_gate_court"
+  ],
+  "levels": [
+    {
+      "entry": "A partial skeleton in the midden, picked over. Not fish, not bird, not anything I can put a name to."
+    },
+    {
+      "entry": "The limb bones are paired the wrong way. Whatever this was did not share an ancestor with anything I have drawn on this continent."
+    },
+    {
+      "entry": "Not deformity, and not two animals mixed: the joints articulate. It worked. Something walked around inside this."
+    },
+    {
+      "entry": "The teeth are the argument. Replacement runs from the back forward, which nothing here does, and the wear says it lived long enough to be old."
+    },
+    {
+      "entry": "So it did not arrive as a curiosity in somebody's cargo. It arrived, and then it lived, and then it died here and was thrown out with the fish spine.",
+      "requires": [
+        "discovery_midden_layers"
+      ]
+    }
+  ],
+  "answers": [
+    "question_what_comes_through"
+  ],
+  "notes": "The evolution discovery, and the one that makes the academy's answers untenable. Deliberately unglamorous -- the remarkable thing is in a rubbish heap, because that is where the city put it.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ]
+}
