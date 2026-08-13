@@ -1,67 +1,71 @@
-# GitHub Copilot Instructions for SouthOfTethys
+# Working in SouthOfTethys
 
-## Project Overview
-- **SouthOfTethys** is a procedurally evolving storytelling engine inspired by world simulation games (e.g., Dwarf Fortress).
-- All world data is stored in JSON and Markdown files, version-controlled in Git.
-- Python scripts in `utils/` automate worldbuilding, event tracking, genealogy, and species evolution.
+This file was describing a repository that no longer exists — `timeline/timeline.json`,
+`characters/`, `flora_fauna/`, `locations/`, an Ollama extraction step — all of which were
+replaced by `database/` some time ago. Anything it said before this rewrite should be treated
+as wrong.
 
-## Architecture & Data Flow
-- **Timeline**: All events are tracked in `timeline/timeline.json`, sorted by fantasy date (e.g., "Act 1, Scene 2").
-- **Characters**: Each character has a `.json` or `.md` file in `characters/`, with genealogy tracked in `characters/genealogy.json`.
-- **Species**: Flora/fauna profiles and evolution chains are in `flora_fauna/`.
-- **Locations**: World regions and connections are described in `cartography/overworld.json` and `locations/`.
-- **Art**: Referenced by filename only, not embedded.
-- **Scripts**: Key Python tools include:
-  - `generate_timeline.py`: Sorts and summarizes timeline events.
-  - `lint_story.py`: Validates consistency, date formats, and cross-references (characters/species).
-  - `generate_timeline_mermaid.py`: Outputs a pictorial timeline as Mermaid graph.
-  - `evolve_species.py`: Simulates species mutation based on events.
-  - `snippet_processor.py`: Uses LLMs (Ollama) to extract structured data from story snippets.
+## What this repository is
 
-## Developer Workflows
-- **Build & Validate**:
-  - Use Docker (`Dockerfile`, `compose.yaml`) for reproducible builds and script execution.
-  - Run `python utils/lint_story.py` to check for broken or inconsistent story data before commits.
-  - CI/CD pipelines (`.github/workflows/ci.yml`, `story-validation.yml`) run linting, timeline generation, and publish artifacts on push/PR to `main` and `feature/*` branches.
-- **Pre-commit Hook**:
-  - `.git/hooks/pre-commit` runs auto-formatting (autopep8, autoflake) and flake8 linting before allowing commits.
-- **Debugging**:
-  - Use VS Code's Docker debug tasks (`.vscode/launch.json`, `compose.debug.yaml`) for step-through debugging in containers.
+The **canon** half of a two-repository project. It owns what exists and what is true. The other
+repository, `4000BCESaraswathy`, is a browser game that owns what a particular player did and
+how it looks. The split holds because everything canon holds is a *noun* — places, species,
+discoveries, people, words — and everything the game holds is a *verb* or a *view*.
 
-## Project-Specific Conventions
-- **Fantasy Date Format**: All events use "Act X, Scene Y" format; scripts expect this for sorting and validation.
-- **Metadata**: Keys are case-sensitive; art is referenced by filename only.
-- **Consistency**: All updates must maintain world consistency; cross-file references (e.g., character/species in events) are validated by scripts.
-- **Modular Python**: Scripts are organized for single-responsibility and composability.
+Everything canonical lives in `database/` as one JSON file per entity, validated against JSON
+Schema. Index at `database/index.json`, currently **v1.6.0, 504 entities**:
 
-## Integration Points
-- **AI Model (Hugging Face)**: `snippet_processor.py` now uses our own Hugging Face model (`lordlebu/4000BCSaraswaty`) to extract structured data from story snippets, accessible via the Vidur Portal web app.
-- **Artifacts**: Timeline visualizations and world maps are published as build artifacts in CI.
+| | |
+|---|---|
+| **Species** | 256 fauna, 90 flora |
+| **World** | 7 regions, 2 settlements, 41 characters, 12 events, 3 factions, 3 artifacts, 3 mythology |
+| **Field diary** | 4 field maps, 24 points of interest, 31 discoveries, 8 field questions, 10 NPCs, 10 vocabulary |
 
-## Examples
-- To add a new event: update `timeline/timeline.json` and run `generate_timeline.py` and `lint_story.py`.
-- To add a new character: create a `.json` in `characters/`, update genealogy if needed, and validate with `lint_story.py`.
-- To process a story snippet: use the Vidur Portal web app (uses our Hugging Face AI model).
+## The commands that matter
 
-## Key Files & Directories
-- `timeline/timeline.json`
-- `characters/`
-- `flora_fauna/`
-- `cartography/overworld.json`
-- `utils/`
-- `.github/workflows/`
-- `.vscode/`
-- `Dockerfile`
-- `compose.yaml`
-- `CONTEXT.md`
----
-**For AI agents:**
-- Always validate cross-references and formats using provided scripts before committing or merging.
-- Prefer updating or generating Markdown summaries for documentation.
-- Use the fantasy date format and maintain consistency across all world data.
+```bash
+python utils/lint_story.py          # schemas, index counts, every cross-reference resolves
+python utils/check_playability.py   # can a player actually reach it all — see below
+python utils/export_canon_bundle.py --apply   # write the game's data/canon/ bundle
+```
 
-name: Upload merged timeline artifact
-uses: actions/upload-artifact@v4
-with:
-  name: full_timeline
-  path: timeline/timeline.json
+The first two run in CI on every push (`.github/workflows/story-validation.yml`) and must pass
+before anything merges.
+
+**`check_playability.py` is a simulation, not a set check.** It starts from nothing and
+repeatedly does whatever has become possible — climb a rung, hear a line, take a word — until
+nothing more opens. Asking instead whether each requirement is "obtainable somewhere" passes a
+cycle: A's last rung needs B, B's last rung needs A, both obtainable, neither ever first. That
+shipped once. It deliberately duplicates two rules from the game's `src/journey.ts`; if the
+semantics change in one, change them in both.
+
+## Rules that are not negotiable
+
+- **Canon exports canon's own shape.** The game owns adapters that translate it. Do not shape a
+  schema around a TypeScript interface in another repository.
+- **Never edit the game's `data/canon/`.** It is generated. Change the entity here and re-export.
+- **Array order is part of the seed contract.** The game indexes into per-biome lists, so
+  entities carry `source_index` and unindexed ones sort last — additions cannot reshuffle a
+  world somebody already walked.
+- **Work on feature branches.** Never commit to `main`.
+- **Merging canon redeploys the retrieval service** (`deploy-canon-service.yml`), which rebuilds
+  the search index and then checks the live one covers canon.
+
+## Where the reasoning is written down
+
+- `docs/decisions.md` — every call made on the project's behalf and why, plus what is still
+  open. Read this before changing anything structural.
+- `database/TODO.md` — which entities are missing.
+- `DESIGN.md` — the rulings that govern authoring, including the era and how field maps work.
+- `CLAUDE.md` — the same ground as this file, for agents that read that name instead.
+
+## Authoring a field map, if that is the task
+
+Six points of interest, six to nine discoveries of three to seven rungs, one to three field
+questions, two or three people, and roughly 1,700 words of prose. The typing is not the
+constraint — each map needs a *thesis* that is not a repeat of another's, and the four that
+exist have used: learning to look, an archive whose record begins at the wound, a place where
+local knowledge is simply right, and a place that is out of date rather than mysterious.
+
+Only regions whose biomes are `renderable` in `database/biomes.json` can hold a map. The
+Tethys Sky Routes cannot until sky biomes can be drawn.

@@ -29,7 +29,7 @@ database/
 ## Species placement, and what empty `biomes` means
 
 Fauna and flora carry game-facing fields — `biomes`, `placement`, `rarity`, `mood`,
-`journal_prompt` — that `utils/export_game_data.py` projects into the game. `placement`
+`journal_prompt` — that `utils/export_canon_bundle.py` projects into the game. `placement`
 decides whether a species is ever met:
 
 | placement | meaning |
@@ -66,7 +66,7 @@ sapient lineages — Cognitavi, Nagaraptor, Vajraptor, Silvanus, Sylvians, Kuktu
 the Harappans regard them as animals, so a sentient species in the encounter table is
 correct and should not be "fixed".
 
-## Status (v1.1.0)
+## Status (v1.6.0 — 504 entities)
 
 | Category    | Count |
 |-------------|-------|
@@ -85,5 +85,8 @@ against the files. Note that check runs one way only, index → files, so an orp
 file is invisible to it.
 
 Do not recreate parallel entity stores outside this tree. The game's
-`data/creatures.json` and `data/flora.json` are a generated projection of this database,
-not a second store — see `utils/export_game_data.py`.
+The game's `data/canon/` bundle — `species.json`, `places.json`, `knowledge.json` and a lock
+file — is a generated projection of this database, not a second store. See
+`utils/export_canon_bundle.py`. It exports *canon's* shape; the game owns adapters under
+`src/content/` that turn it into engine structures, so a change to the engine's types never
+reaches back into a schema here.

@@ -146,12 +146,12 @@ If you need to publish immediately without waiting for the normal workflow:
 │   ├── ci.yml                 # Main publishing workflow
 │   └── story-validation.yml   # Validation workflow
 ├── docs/                      # Published documentation (auto-generated)
-├── timeline/                  # Timeline data and generated summaries
-├── cartography/              # Maps and geographic data
-├── characters/               # Character profiles and genealogy
-├── flora_fauna/             # Species and evolution data
-├── utils/                   # Publishing and generation scripts
-└── requirements.txt         # Python dependencies
+├── database/                  # ALL canon: one JSON file per entity, plus schemas
+├── timeline/                  # Generated timeline artifacts
+├── cartography/               # Maps and geographic data
+├── services/                  # Retrieval API and the Chroma indexer
+├── utils/                     # Validation, export and generation scripts
+└── requirements.txt           # Python dependencies
 ```
 
 ## Script Reference
@@ -160,4 +160,9 @@ If you need to publish immediately without waiting for the normal workflow:
 - **`utils/generate_timeline_mermaid.py`** - Creates timeline visualizations
 - **`utils/generate_timeline.py`** - Processes and sorts timeline data
 - **`utils/generate_map.py`** - Creates interactive maps
-- **`utils/snippet_processor.py`** - Processes story snippets using LLM
+- **`utils/check_playability.py`** - Simulates a playthrough; fails on content nobody can reach
+- **`utils/export_canon_bundle.py`** - Writes the game's `data/canon/` bundle and its lock
+
+`characters/` and `flora_fauna/` used to appear in this tree. They were placeholder directories,
+removed when everything moved into `database/`, and `utils/snippet_processor.py` went with the
+Ollama workflow it belonged to.

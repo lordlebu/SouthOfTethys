@@ -46,7 +46,8 @@ ruff check ./utils/*.py --fix
 - Generate timeline (JSON): `python utils/generate_timeline.py`
 - Simulate species evolution: `python utils/evolve_species.py`
 - Generate maps: `python utils/generate_map.py`
-- Process story snippets (requires Ollama running locally): `python utils/snippet_processor.py`
+- Process story snippets: see `vidur_portal/README.md`. The Ollama step this used to
+  describe was replaced by the portal, and `utils/snippet_processor.py` no longer exists.
 
 ## 🎭 About This World
 
