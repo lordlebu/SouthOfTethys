@@ -1,0 +1,44 @@
+{
+  "type": "point_of_interest",
+  "field_map": "field_map_dry_harbour",
+  "id": "poi_customs_house",
+  "name": "The Customs House",
+  "kind": "archaeological_site",
+  "terrain": [
+    "settlement",
+    "desert"
+  ],
+  "discoveries": [
+    "discovery_tariff_boards",
+    "discovery_mooring_rings"
+  ],
+  "npcs": [
+    "npc_ravi"
+  ],
+  "sub_locations": [
+    {
+      "id": "weighing_floor",
+      "name": "The Weighing Floor",
+      "description": "Sunk a hand below the doorway so a spilled load could be swept back. The sweep marks are still there, going the same way every time."
+    },
+    {
+      "id": "the_strongroom",
+      "name": "The Strongroom",
+      "description": "Barrel-vaulted, no window, and the door frame is worn at the height of a shoulder rather than a hand — people came out of it carrying.",
+      "requires": [
+        "discovery_tariff_boards"
+      ]
+    }
+  ],
+  "description": "A building for taxing cargo that stopped arriving.",
+  "arrival": "It is the best-built thing for sixty miles, because it was the building that made money, and it is intact because nobody has had any reason to take it apart.",
+  "notes": "Where the archaeology and the linguistics meet. The tariff boards are the map's clock.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "type": "vocabulary",
+  "language": "sarv",
+  "id": "word_sarv_tolu",
+  "word": "tolu",
+  "gloss": "the shallow head of a channel",
+  "literal": "where the keel touches",
+  "learned_from": [
+    "npc_ravi"
+  ],
+  "notes": "A draught rather than a place, which is why it reads as a good on a tariff board until somebody who still uses the word explains it.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ]
+}

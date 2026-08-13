@@ -1,0 +1,44 @@
+{
+  "id": "discovery_channel_gravel",
+  "type": "discovery",
+  "name": "How the Stones Are Lying",
+  "discipline": "geography",
+  "found_at": [
+    "poi_fossil_channel"
+  ],
+  "levels": [
+    {
+      "entry": "A valley shaped like a river. That shape can be made by other things and I should not assume."
+    },
+    {
+      "entry": "The gravel is rounded — carried, not fallen — and it grades from fine at the edges to coarse in the middle."
+    },
+    {
+      "entry": "That grading is a current, and a strong one. Nothing seasonal sorts stones like this."
+    },
+    {
+      "entry": "In low sun the terraces show along both walls: three of them, cut at three levels, so it ran high for a long time and then lower for a long time.",
+      "conditions": {
+        "time_of_day": [
+          "dawn",
+          "evening"
+        ]
+      }
+    },
+    {
+      "entry": "But no fourth terrace, and no delta of silt at the mouth. A river that dries slowly leaves both. This one was running one year and gone the next."
+    }
+  ],
+  "answers": [
+    "question_where_the_water_went"
+  ],
+  "notes": "The geography discovery and the strongest evidence for suddenness -- expressed as an absence, which is the discipline's real skill.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "id": "discovery_mooring_rings",
+  "type": "discovery",
+  "name": "The Rings Are the Right Height",
+  "discipline": "archaeology",
+  "found_at": [
+    "poi_mooring_stones",
+    "poi_customs_house"
+  ],
+  "levels": [
+    {
+      "entry": "Iron rings set into a stone wall in the desert. Somebody's idea of a joke, or a ruin from a wetter age I have no date for."
+    },
+    {
+      "entry": "They are mooring rings. The wear is on the inner face, one side only, the way a rope pulls when a hull rides at anchor."
+    },
+    {
+      "entry": "Set at three heights along the wall, which is a tide, and the spacing between them is about a forearm."
+    },
+    {
+      "entry": "A forearm of tide means this was open water with a sea connection, not a lake. And the rings are sized for a hull I have seen at Dwarka."
+    },
+    {
+      "entry": "The iron has pitted but not parted. Four hundred years in dry air would do about this. Not four thousand.",
+      "requires": [
+        "discovery_tariff_boards"
+      ]
+    }
+  ],
+  "answers": [
+    "question_where_the_water_went"
+  ],
+  "notes": "The map's opening image, argued rather than asserted. The last rung is the first hint that this is recent, which is the whole thesis.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ]
+}

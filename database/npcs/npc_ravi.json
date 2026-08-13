@@ -1,0 +1,49 @@
+{
+  "id": "npc_ravi",
+  "type": "npc",
+  "name": "Ravi",
+  "role": "keeper of the customs house",
+  "found_at": [
+    "poi_customs_house",
+    "poi_last_well"
+  ],
+  "language": "sarv",
+  "would_settle": true,
+  "knows": [
+    "discovery_tariff_boards",
+    "discovery_mooring_rings",
+    "question_where_the_water_went"
+  ],
+  "lines": [
+    {
+      "text": "My family has kept this building for four generations and there has been nothing to keep it for during any of them. You are the first person to ask what the boards say.",
+      "gives": [
+        "question_where_the_water_went"
+      ]
+    },
+    {
+      "text": "Tolu. It is not a good, it is a draught — the shallow water at the head of a channel. Whatever came in on it, we taxed at nine times salt and I do not know what it was.",
+      "requires": [
+        "discovery_mooring_rings"
+      ],
+      "gives": [
+        "word_sarv_tolu"
+      ]
+    },
+    {
+      "text": "The last board is not finished. I have known that since I was a boy and I have never once wondered about it until you stood there wondering out loud.",
+      "requires": [
+        "discovery_tariff_boards"
+      ]
+    }
+  ],
+  "notes": "Four generations of custody with nothing to be custodian of. Would settle -- the building is a duty, not a home, and he has never been asked to do anything else.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ]
+}

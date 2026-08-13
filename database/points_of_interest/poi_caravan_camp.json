@@ -1,0 +1,28 @@
+{
+  "type": "point_of_interest",
+  "field_map": "field_map_dry_harbour",
+  "id": "poi_caravan_camp",
+  "name": "The Caravan Ground",
+  "kind": "travel_node",
+  "terrain": [
+    "desert",
+    "plains"
+  ],
+  "discoveries": [
+    "discovery_road_follows_water"
+  ],
+  "npcs": [
+    "npc_teshk"
+  ],
+  "description": "Where the road stops for the night, and has for longer than the road has made sense.",
+  "arrival": "The camp is on the wrong side of the ridge for shelter and the wrong distance from the well, and every caravan stops here anyway, because this is where you stop.",
+  "notes": "The road is the map's other clock: it still follows a river that is not there.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ]
+}

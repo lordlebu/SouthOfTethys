@@ -1,0 +1,30 @@
+{
+  "type": "point_of_interest",
+  "field_map": "field_map_dry_harbour",
+  "id": "poi_last_well",
+  "name": "The Last Well",
+  "kind": "settlement",
+  "terrain": [
+    "settlement",
+    "desert"
+  ],
+  "discoveries": [
+    "discovery_well_depth",
+    "discovery_thorn_roots"
+  ],
+  "npcs": [
+    "npc_ravi",
+    "npc_teshk"
+  ],
+  "description": "The one well still reaching water, and the reason anybody is still here.",
+  "arrival": "Forty families, one well, and a rope long enough that two people are needed to work it. Nobody has drilled a second. Teshk will tell you why, and the answer is not money.",
+  "notes": "The people. The well is the map's whole economy and its countdown.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design",
+    "AI_CONTEXT.md"
+  ]
+}

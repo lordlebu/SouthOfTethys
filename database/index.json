@@ -1,5 +1,5 @@
 {
-  "version": "1.5.0",
+  "version": "1.6.0",
   "description": "SouthOfTethys canonical entity index",
   "counts": {
     "characters": 41,
@@ -11,12 +11,12 @@
     "artifacts": 3,
     "factions": 3,
     "mythology": 3,
-    "field_maps": 3,
-    "points_of_interest": 18,
-    "discoveries": 24,
-    "field_questions": 7,
-    "npcs": 8,
-    "vocabulary": 8
+    "field_maps": 4,
+    "points_of_interest": 24,
+    "discoveries": 31,
+    "field_questions": 8,
+    "npcs": 10,
+    "vocabulary": 10
   },
   "entities": {
     "characters": [
@@ -455,6 +455,7 @@
       "mythology_varuna"
     ],
     "field_maps": [
+      "field_map_dry_harbour",
       "field_map_dwarka",
       "field_map_lothal",
       "field_map_narmada"
@@ -462,16 +463,22 @@
     "points_of_interest": [
       "poi_basalt_quarry",
       "poi_bone_midden",
+      "poi_caravan_camp",
       "poi_cloud_stair",
+      "poi_customs_house",
       "poi_drowned_dockyard",
       "poi_drowned_seawall",
       "poi_eastern_field",
+      "poi_fossil_channel",
       "poi_gate_court",
+      "poi_glass_scar",
       "poi_herders_terraces",
       "poi_kavik_tower",
+      "poi_last_well",
       "poi_long_archive",
       "poi_lothal_camp",
       "poi_marsh_shrine",
+      "poi_mooring_stones",
       "poi_narmada_university",
       "poi_salt_orchard",
       "poi_silted_granary",
@@ -482,6 +489,7 @@
     "discoveries": [
       "discovery_archive_baseline",
       "discovery_bitter_millet",
+      "discovery_channel_gravel",
       "discovery_cloud_stair",
       "discovery_dockyard_reef",
       "discovery_double_classified",
@@ -489,20 +497,26 @@
       "discovery_fever_root_spread",
       "discovery_gate_rhythm",
       "discovery_ghost_mangrove_channel",
+      "discovery_glass_scar",
       "discovery_market_ledger",
       "discovery_marsh_lurker_habits",
       "discovery_mask_niche",
       "discovery_midden_layers",
+      "discovery_mooring_rings",
       "discovery_moving_spring",
       "discovery_poisoned_ground",
       "discovery_quarry_sequence",
       "discovery_red_rice_survival",
+      "discovery_road_follows_water",
       "discovery_saltreed_thatch",
       "discovery_seawall_courses",
       "discovery_silver_water",
+      "discovery_tariff_boards",
       "discovery_terrace_script",
       "discovery_terrace_water",
+      "discovery_thorn_roots",
       "discovery_tower_collapse",
+      "discovery_well_depth",
       "discovery_wrong_anatomy"
     ],
     "field_questions": [
@@ -512,14 +526,17 @@
       "question_terrace_purpose",
       "question_two_names",
       "question_what_comes_through",
-      "question_what_ends_dwarka"
+      "question_what_ends_dwarka",
+      "question_where_the_water_went"
     ],
     "npcs": [
       "npc_bekh",
       "npc_marn",
       "npc_okhi",
       "npc_pell",
+      "npc_ravi",
       "npc_sura",
+      "npc_teshk",
       "npc_thrali",
       "npc_uma",
       "npc_vessa"
@@ -532,7 +549,9 @@
       "word_kia_vaath",
       "word_maru_anu",
       "word_maru_khet",
-      "word_maru_sev"
+      "word_maru_sev",
+      "word_sarv_khenu",
+      "word_sarv_tolu"
     ]
   }
 }
