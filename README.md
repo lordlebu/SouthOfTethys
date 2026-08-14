@@ -1,22 +1,77 @@
-## Hugging Face Model Management
+# South of Tethys
 
-Model pushes to Hugging Face Hub are performed locally using `utils/test_hf_push.py`.
-This ensures large files and credentials are managed securely and are not exposed in CI/CD pipelines.
-The CI pipeline does not push models to Hugging Face.
-**🔗 Direct Links:**
-- Streamlit Portal: [southoftethys.streamlit.app](https://southoftethys.streamlit.app)
-- Hugging Face Model: [huggingface.co/lordlebu/4000BCSaraswaty](https://huggingface.co/lordlebu/4000BCSaraswaty)
+The **canon** for a shared fictional world, and the tools that keep it honest.
 
-# Vision: Expanding SouthOfTethys
+Everything canonical lives in [`database/`](database/) as one JSON file per entity, validated
+against JSON Schema and checked on every push — currently **v1.6.0, 504 entities**:
 
-SouthOfTethys aims to be a living, evolving worldbuilding engine that blends procedural generation, AI-powered narrative extraction, and collaborative storytelling. Our vision is to:
-- Enable seamless integration of human creativity and AI-driven structure
-- Support dynamic timelines, genealogies, and species evolution
-- Provide tools for both writers and developers to build, validate, and visualize complex worlds
-- Foster a community of worldbuilders who contribute lore, art, and code
-- Make all data and artifacts accessible, explorable, and reusable via open standards
+| | |
+|---|---|
+| **Species** | 256 fauna, 90 flora |
+| **World** | 7 regions, 2 settlements, 41 characters, 12 events, 3 factions, 3 artifacts |
+| **Field diary** | 4 field maps, 24 points of interest, 31 discoveries, 8 field questions, 10 people, 10 words |
 
-With the Vidur Portal and Hugging Face model, we empower users to extract structured data from stories, automate world consistency, and publish interactive artifacts for everyone to explore.
+## Two repositories, one world
+
+This one owns **what exists and what is true**. Its sibling,
+[4000BCESaraswathy](https://github.com/lordlebu/4000BCESaraswathy), is a browser game —
+*Varuna's Field Diary* — that owns **what a particular player did and how it looks**.
+
+The split holds because everything canon holds is a *noun* — places, species, discoveries,
+people, words — and everything the game holds is a *verb* or a *view*. Canon exports its own
+shape and the game owns adapters that translate it, so a change to the game's types never
+reaches back into a schema here.
+
+```
+database/  →  utils/export_canon_bundle.py  →  the game's data/canon/  →  src/content/*.ts
+```
+
+That bundle is generated and must never be hand-edited; a lock file and the game's CI enforce it.
+
+## Start here
+
+```bash
+pip install -r requirements.txt
+
+python utils/lint_story.py          # schemas, index counts, every cross-reference resolves
+python utils/check_playability.py   # can a player actually reach everything authored
+```
+
+Both gate every push. `check_playability.py` is a simulation rather than a set check — it starts
+from nothing and repeatedly does whatever has become possible, because asking instead whether
+each requirement is "obtainable somewhere" passes a dependency cycle, and one shipped.
+
+To publish changes to the game and the live service:
+
+```bash
+python utils/export_canon_bundle.py --apply    # write the game's bundle
+```
+
+Merging to `main` rebuilds and redeploys the retrieval service by itself, then checks the live
+index actually covers canon.
+
+## What is published
+
+- **[The book](https://lordlebu.github.io/SouthOfTethys/)** — timeline, maps and world data
+- **[Interactive world map](https://lordlebu.github.io/SouthOfTethys/interactive_map.html)**
+- **[Visual timeline](https://lordlebu.github.io/SouthOfTethys/timeline_mermaid.html)**
+- **[The game](https://lordlebu.github.io/4000BCESaraswathy/)** — the walk, built from this canon
+- **Retrieval API** — `/lore` for a place, `/search` for a question, `/ask` for a written passage
+
+Publishing is automatic on push. See [docs/PUBLISHING.md](docs/PUBLISHING.md) for the manual route.
+
+## Where the reasoning is written down
+
+| File | What it holds |
+|---|---|
+| [`CLAUDE.md`](CLAUDE.md) | orientation for agents working here |
+| [`docs/decisions.md`](docs/decisions.md) | every call made on the project's behalf, and what is still open |
+| [`DESIGN.md`](DESIGN.md) | the binding rulings: the era, authored anchors, build-time reading |
+| [`database/TODO.md`](database/TODO.md) | which entities are missing |
+
+Read `docs/decisions.md` before changing anything structural.
+
+---
 
 ## Developer checklist: Chroma index
 
@@ -82,26 +137,6 @@ To rebuild the index, re-run the indexer service only:
 ```powershell
 docker compose -f docker-compose.chroma.yml run --rm indexer
 ```
-# South of Tethys - Procedural Storytelling Engine
-
-A procedurally evolving storytelling engine inspired by world simulation games like **Dwarf Fortress**. This project manages story events, character genealogy, and evolving flora/fauna in a version-controlled Git repository. Story snippets are now processed using our own Hugging Face AI model for structured extraction.
-
-## 📖 Published Book & Artifacts
-
-The complete "book" of South of Tethys is automatically published with each update:
-
-- **📚 [View Published Book](https://lordlebu.github.io/SouthOfTethys/)** - Complete timeline, maps, and world data
-- **🗺️ [Interactive World Map](https://lordlebu.github.io/SouthOfTethys/interactive_map.html)** - Explore the world geography
-- **📊 [Visual Timeline](https://lordlebu.github.io/SouthOfTethys/timeline_mermaid.html)** - Event progression flowchart
-
-### 🚀 Publishing Your Changes
-
-1. **Make changes** to timeline, characters, or world data
-2. **Test locally**: `python utils/lint_story.py`
-3. **Commit and push** to trigger automatic publication
-4. **Manual publication**: Use [GitHub Actions](../../actions) → "CI" → "Run workflow"
-
-See **[📋 Publishing Workflow Guide](docs/PUBLISHING.md)** for complete instructions.
 
 ---
 
@@ -160,13 +195,41 @@ For most Python projects, start with:
 
 Add `mypy`, `bandit`, and others as your codebase grows or if you need stricter checks.
 
-# Chronology of Jambudweepa  
+---
+
+## Story snippets
+
+Snippets are processed through the [Vidur Portal](vidur_portal/README.md), a separate web app,
+which replaced an earlier Ollama workflow.
+
+**A correction worth making plainly:** this README used to describe "our own Hugging Face AI
+model". The weights at [lordlebu/4000BCSaraswaty](https://huggingface.co/lordlebu/4000BCSaraswaty)
+are **stock GPT-2, unmodified, and nothing in the project uses them** — a 124M base model with no
+instruction tuning cannot write to a brief, which is why the service moved to retrieval plus an
+instruction-tuned model chosen at runtime by `CANON_LLM`. See [`model/README.md`](model/README.md).
+
+Model pushes are performed locally with `utils/test_hf_push.py`; CI does not push models.
+
+---
+
+## Where this is going
+
+A living worldbuilding engine rather than a finished world — one where structure and prose
+reinforce each other instead of drifting apart:
+
+- Canon that a machine can validate and a person can read, in the same files
+- Dynamic timelines, genealogies and species evolution, all cross-referenced
+- Tools that let writers and developers build, validate and visualise the same world
+- Everything explorable and reusable through open formats and a public retrieval API
+- A game that is *made of* the canon rather than a copy of it
+
+## Chronology of Jambudweepa  
 *From Primordial Seas to City-States*  
 
 ---
 
-## ⏳ **Prehistoric Foundations**  
-### (c. 500–250 Million Years Ago)  
+### ⏳ **Prehistoric Foundations**  
+#### (c. 500–250 Million Years Ago)  
 - **Invertebrate Dominion**:  
   Ammonoids rule shallow seas. The **Ammonite Man** emerges as first spiritual entity - a cephalopod sage whispering through coral reefs.  
 - **Avian-Synapsid Epoch**:  
@@ -174,8 +237,8 @@ Add `mypy`, `bandit`, and others as your codebase grows or if you need stricter 
 
 ---
 
-## 🐒 **Age of Vanaras**  
-### (c. 50–5 Million Years Ago)  
+### 🐒 **Age of Vanaras**  
+#### (c. 50–5 Million Years Ago)  
 1. **Vanara Zenith**:  
    - Proto-primates develop tool use and fire mastery in **Gondwana forests**  
    - Build tree-cities in the **Nilgiri Canopy** (southern Jambudweepa)  
@@ -186,7 +249,7 @@ Add `mypy`, `bandit`, and others as your codebase grows or if you need stricter 
 
 ---
 
-## 🚶 **Human Migrations**  
+### 🚶 **Human Migrations**  
 *(Wave Settlement Pattern: Northwest → East/South)*  
 
 | **Era**         | **Group**       | **Origin**          | **Settlement**          | **Key Traits**                  |  
@@ -198,8 +261,8 @@ Add `mypy`, `bandit`, and others as your codebase grows or if you need stricter 
 
 ---
 
-## 🌀 **Spiritual Beings & Gates**  
-### (Timeless Entities)  
+### 🌀 **Spiritual Beings & Gates**  
+#### (Timeless Entities)  
 | **Being**         | **Manifestation**                     | **Domain**               |  
 |-------------------|---------------------------------------|--------------------------|  
 | **Ammonite Man**  | Spiraling nautilus-shell form         | Tethys Sea depths        |  
@@ -218,8 +281,8 @@ Add `mypy`, `bandit`, and others as your codebase grows or if you need stricter 
 
 ---
 
-## 🏺 **Civilization Dawn**  
-### (c. 3000–500 BCE)  
+### 🏺 **Civilization Dawn**  
+#### (c. 3000–500 BCE)  
 1. **Harappan Emergence** (NW Origin):  
    - Cities rise along Saraswati River (Lothal, Dholavira)  
    - Trade with **Naga serpent-kingdoms** in Deccan  
@@ -232,7 +295,7 @@ Add `mypy`, `bandit`, and others as your codebase grows or if you need stricter 
 
 ---
 
-## 👁️‍🗨️ **Current Era** (c. 500 BCE–Present)  
+### 👁️‍🗨️ **Current Era** (c. 500 BCE–Present)  
 | **Realm**         | **Inhabitants**                       | **Status**               |  
 |-------------------|---------------------------------------|--------------------------|  
 | **City-States**   | Humans (Vedda/Naga dominant)          | Flourishing              |  
@@ -259,11 +322,3 @@ Add `mypy`, `bandit`, and others as your codebase grows or if you need stricter 
 **🕰️ Timeline Key**  
 - **Bold** = Evolutionary turning points  
 - *Italics* = Spiritual manifestations
-
-## Story Snippet Processing
-
-Story snippets are now processed using our custom Hugging Face AI model via the [Vidur Portal](vidur_portal/README.md), an independent web application. This replaces the previous Ollama-based workflow and provides a user-friendly interface for extracting structured data from narrative text.
-
-To process a snippet:
-- Use the [Vidur Portal](vidur_portal/README.md) web app, which leverages our Hugging Face model for extraction.
-- The extracted data can be integrated into the SouthOfTethys world using the standard Python scripts.

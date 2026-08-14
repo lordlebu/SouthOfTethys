@@ -117,7 +117,7 @@ it stays local too.
 strips it from any error before it reaches a response. Never put it in a `VITE_` variable:
 Vite inlines those into the game's public bundle.
 
-The style examples in the prompt are read from canon (`utils/export_game_data.py` writes the
+The style examples in the prompt are read from canon (`utils/export_canon_bundle.py` writes the
 same sentences into the game), so the voice shown to the model cannot drift from the voice
 the player reads.
 
