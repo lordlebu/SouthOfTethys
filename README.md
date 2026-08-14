@@ -1,26 +1,32 @@
-# South of Tethys
+# 🏺 South of Tethys
 
-The **canon** for a shared fictional world, and the tools that keep it honest.
+> *"The gates remember what mortals forget."*
 
-Everything canonical lives in [`database/`](database/) as one JSON file per entity, validated
-against JSON Schema and checked on every push — currently **v1.6.0, 504 entities**:
+**A world built like a database and read like a book.** Every place, species, discovery and
+half-remembered word lives in [`database/`](database/) as one JSON file, validated on every
+push — so the lore cannot quietly contradict itself, and a machine can hand any of it to a
+reader, a game, or a language model.
+
+**v1.6.0 · 504 entities · all cross-references resolving**
 
 | | |
 |---|---|
-| **Species** | 256 fauna, 90 flora |
-| **World** | 7 regions, 2 settlements, 41 characters, 12 events, 3 factions, 3 artifacts |
-| **Field diary** | 4 field maps, 24 points of interest, 31 discoveries, 8 field questions, 10 people, 10 words |
+| 🦎 **Life** | 256 fauna · 90 flora |
+| 🗺️ **World** | 7 regions · 2 settlements · 41 characters · 12 events · 3 factions · 3 artifacts · 3 myths |
+| 🔍 **Field diary** | 4 field maps · 24 points of interest · 31 discoveries · 8 open questions · 10 people · 10 words |
 
-## Two repositories, one world
+---
+
+## 🌍 Two repositories, one world
 
 This one owns **what exists and what is true**. Its sibling,
 [4000BCESaraswathy](https://github.com/lordlebu/4000BCESaraswathy), is a browser game —
 *Varuna's Field Diary* — that owns **what a particular player did and how it looks**.
 
-The split holds because everything canon holds is a *noun* — places, species, discoveries,
-people, words — and everything the game holds is a *verb* or a *view*. Canon exports its own
-shape and the game owns adapters that translate it, so a change to the game's types never
-reaches back into a schema here.
+The split holds because everything canon holds is a **noun** — places, species, discoveries,
+people, words — and everything the game holds is a **verb** or a **view**. Canon exports its own
+shape and the game owns the adapters, so a change to the game's types never reaches back into a
+schema here.
 
 ```
 database/  →  utils/export_canon_bundle.py  →  the game's data/canon/  →  src/content/*.ts
@@ -28,7 +34,29 @@ database/  →  utils/export_canon_bundle.py  →  the game's data/canon/  →  
 
 That bundle is generated and must never be hand-edited; a lock file and the game's CI enforce it.
 
-## Start here
+---
+
+## ✨ What makes this different
+
+**📖 Prose and structure in the same file.** A discovery carries both its machine-checkable
+requirements and the sentence a player reads when they finally understand it. Neither is
+generated from the other, and neither is allowed to drift.
+
+**🪜 Knowledge is a ladder, not a level.** Understanding something takes several rungs, each
+gated on what you already grasp — and the wrong-but-early reading of a question stays reachable,
+because a hypothesis is built from what you have *seen*, not what you have *finished*.
+
+**🔗 Nothing dangles.** `lint_story.py` refuses a push where any cross-reference fails to
+resolve. `check_playability.py` goes further: it *simulates* a player from nothing, repeatedly
+doing whatever has become possible. The obvious alternative — asking whether each requirement is
+obtainable somewhere — passes a dependency cycle, and one shipped before this existed.
+
+**🤖 A corpus a model can actually use.** Every entity is embedded and served through a
+retrieval API, so the world can be asked questions in plain words rather than grepped.
+
+---
+
+## 🚀 Start here
 
 ```bash
 pip install -r requirements.txt
@@ -37,30 +65,42 @@ python utils/lint_story.py          # schemas, index counts, every cross-referen
 python utils/check_playability.py   # can a player actually reach everything authored
 ```
 
-Both gate every push. `check_playability.py` is a simulation rather than a set check — it starts
-from nothing and repeatedly does whatever has become possible, because asking instead whether
-each requirement is "obtainable somewhere" passes a dependency cycle, and one shipped.
-
-To publish changes to the game and the live service:
+Both gate every push.
 
 ```bash
 python utils/export_canon_bundle.py --apply    # write the game's bundle
 ```
 
-Merging to `main` rebuilds and redeploys the retrieval service by itself, then checks the live
-index actually covers canon.
+Merging to `main` rebuilds and redeploys the retrieval service by itself, then asks the live
+`/health` whether its index really covers canon.
 
-## What is published
+---
 
-- **[The book](https://lordlebu.github.io/SouthOfTethys/)** — timeline, maps and world data
-- **[Interactive world map](https://lordlebu.github.io/SouthOfTethys/interactive_map.html)**
-- **[Visual timeline](https://lordlebu.github.io/SouthOfTethys/timeline_mermaid.html)**
-- **[The game](https://lordlebu.github.io/4000BCESaraswathy/)** — the walk, built from this canon
-- **Retrieval API** — `/lore` for a place, `/search` for a question, `/ask` for a written passage
+## 📡 What is published
 
-Publishing is automatic on push. See [docs/PUBLISHING.md](docs/PUBLISHING.md) for the manual route.
+**Live and built from current canon:**
 
-## Where the reasoning is written down
+- 📚 **[The book](https://lordlebu.github.io/SouthOfTethys/)** — the world as a reader meets it
+- 🎮 **[The game](https://lordlebu.github.io/4000BCESaraswathy/)** — the walk, made of this canon
+- 🔎 **Retrieval API** — `/lore` for a place, `/search` for a question, `/ask` for a passage
+
+**Not yet rebuilt — placeholders from before the `database/` migration:**
+
+- 🗺️ *Interactive world map* — `cartography/regions.geojson` names Jambhudweepa, Dwarka and the
+  Himalayas. Canon's seven regions are Aravali, Ganges Lava Sea, Gedrosian Desert, Narmada
+  Plateau, Saraswati Delta, Shattered Sea and Tethys Sky Routes: **no overlap at all**, and
+  `map_config.json` is an empty file. Rebuilding it means choosing real coordinates for seven
+  regions, because canon carries no geography — a decision, not a script.
+- 🕰️ *Visual timeline* — `docs/timeline_mermaid.md` is two nodes, "The Grove Fire" and "Arrival
+  of Leafkin", neither of which is in canon. The real 12-event graph is in `database/`, so this
+  one is a regeneration rather than an authoring problem.
+
+Both are linked from the book and both are wrong. They are listed here rather than quietly left
+in place, because a stale artifact that looks live is worse than a missing one.
+
+---
+
+## 🧭 Where the reasoning is written down
 
 | File | What it holds |
 |---|---|
@@ -73,7 +113,7 @@ Read `docs/decisions.md` before changing anything structural.
 
 ---
 
-## Developer checklist: Chroma index
+## 🧪 Developer checklist: Chroma index
 
 1. Install dependencies:
 ```bash
@@ -96,7 +136,7 @@ python scripts/index_changes.py --files database/characters/character_kavik.json
 
 CI: Run only smoke tests that verify the portal can read a persisted index; do not build or store vectors in CI.
 
-## Schema validation (Chroma)
+## ✅ Schema validation (Chroma)
 
 We validate vector metadata payloads against JSON Schemas before inserting into Chroma. A set of example fixtures lives under `services/chroma/schemas/fixtures/` and can be validated locally.
 
@@ -119,7 +159,7 @@ chmod +x .git/hooks/pre-commit
 ```
 
 
-## Docker local stack (Vidur Portal + Chroma indexer)
+## 🐳 Docker local stack (Vidur Portal + Chroma indexer)
 
 You can build and run a local Docker stack that populates a persistent Chroma index and runs the Vidur Portal.
 
@@ -197,7 +237,7 @@ Add `mypy`, `bandit`, and others as your codebase grows or if you need stricter 
 
 ---
 
-## Story snippets
+## ✍️ Story snippets
 
 Snippets are processed through the [Vidur Portal](vidur_portal/README.md), a separate web app,
 which replaced an earlier Ollama workflow.
@@ -212,7 +252,7 @@ Model pushes are performed locally with `utils/test_hf_push.py`; CI does not pus
 
 ---
 
-## Where this is going
+## 🔭 Where this is going
 
 A living worldbuilding engine rather than a finished world — one where structure and prose
 reinforce each other instead of drifting apart:
@@ -223,7 +263,7 @@ reinforce each other instead of drifting apart:
 - Everything explorable and reusable through open formats and a public retrieval API
 - A game that is *made of* the canon rather than a copy of it
 
-## Chronology of Jambudweepa  
+## 📜 Chronology of Jambudweepa  
 *From Primordial Seas to City-States*  
 
 ---

@@ -186,6 +186,22 @@ with value in it — `dataset_card.md` and `dataset_infos.json` already exist un
 
 ## Deferred work
 
+**The published map and timeline are stale placeholders, and the README now says so.**
+`cartography/regions.geojson` names Jambhudweepa, Dwarka and the Himalayas; canon's seven
+regions share none of those names, and `cartography/map_config.json` is a zero-byte file.
+`docs/timeline_mermaid.md` is a two-node graph -- "The Grove Fire" and "Arrival of Leafkin" --
+neither of which exists in canon's 12-event graph. Both predate the `database/` migration and
+both are still linked from the published book.
+
+Listing them as known-stale rather than deleting the links or quietly leaving them: a reader
+who follows a link to fiction that contradicts canon is worse off than one told the artifact
+is not rebuilt yet.
+
+The two are not equal work. The timeline is a regeneration -- the real event graph is already
+in `database/`. The map is not: `generate_map.py` uses folium and needs real lat/lon, which
+canon does not carry, so rebuilding it means *choosing* coordinates for seven regions. That is
+an authoring decision about where this world sits on a globe, and it has never been made.
+
 **`origin/feature/canon-cleanup-and-design`** — 13 commits, unmerged, predates this work.
 
 **`world.json` is exported and imported by nothing** — 46 KB of characters, events,
