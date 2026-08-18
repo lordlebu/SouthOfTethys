@@ -1,0 +1,39 @@
+{
+  "id": "fauna_shrima",
+  "type": "fauna",
+  "name": "Shrīmā",
+  "aliases": [
+    "Srima",
+    "Lagoon Queens"
+  ],
+  "scientific": "Eurypterus mimeticus",
+  "taxonomy": {
+    "notes": "Giant eurypterid, Merostomata; a deep-time survivor of the Invertebrate Dominion"
+  },
+  "diet": "Carnivore",
+  "habitats": [
+    "region_shattered_sea"
+  ],
+  "behaviour": [
+    "ambush",
+    "camouflage",
+    "aquatic",
+    "ocular_mimicry"
+  ],
+  "notes": "The islanders read them as fallen sky-mystics who chose the shallows; the Narmada reading is that a eurypterid lineage has evolved toward the human silhouette as a lure. Both accounts describe the same animal, and the folklore is the older of the two. Dr. Digha Jani's lecture notes are the source for the second, and she is careful to say the mimicry is of *shape*, not of mind.",
+  "canon": "primary",
+  "sources": [
+    "docs/bestiary.md",
+    "Palm-Leaf Manuscript of iKnaya Subayai"
+  ],
+  "region": "shattered-sea-mappa-mundi",
+  "biomes": [
+    "coast",
+    "sea"
+  ],
+  "placement": "encounter",
+  "rarity": "mythic",
+  "journal_prompt": "Something stands in the shallow lagoon at dusk, draped in seaweed-silk and cowrie shells, swaying as though dancing. The proportions are almost right. The antennae are not.",
+  "mood": "uncanny",
+  "source_index": 236
+}

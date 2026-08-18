@@ -4,7 +4,7 @@
   "counts": {
     "characters": 41,
     "events": 12,
-    "fauna": 256,
+    "fauna": 257,
     "flora": 90,
     "settlements": 2,
     "regions": 7,
@@ -272,6 +272,7 @@
       "fauna_shattered_sea_oyster",
       "fauna_shell_turtle",
       "fauna_shilajit_guardian_lizard",
+      "fauna_shrima",
       "fauna_silver_banded_sea_snake",
       "fauna_sky_dragon_fly",
       "fauna_sky_faring_crab",
