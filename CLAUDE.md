@@ -41,7 +41,20 @@ the game's CI enforce it.
 entities carry `source_index` and anything without one sorts last. Reordering silently changes
 what lives on somebody's tile.
 
-**Feature branches always.** Never commit to `main`.
+**Feature branches always.** Never commit to `main` — and this is now enforced rather than
+trusted. A ruleset on the default branch blocks direct pushes, force pushes and deletions, and
+requires a pull request whose `validate` check has passed. There is **no bypass, for anyone**,
+including the repository owner.
+
+That last part has a consequence worth knowing before it bites: if a required check ever hangs
+or its workflow breaks, `main` cannot be merged to or repaired until the rule is relaxed. The
+recovery is Settings → Rules → Rulesets → *Protect main* → Enforcement: **Disabled**, merge the
+fix, then set it back to Active.
+
+Only `validate`, from `story-validation.yml`, is required. The jobs in `ci.yml` are deliberately
+*not*, because that workflow is path-filtered to `utils/**`, `database/**`, `cartography/**` and
+a few others — requiring one would leave a documentation-only pull request pending forever
+rather than failing, which is the worse outcome of the two.
 
 **Merging redeploys.** A push to `main` touching `database/` or `services/` rebuilds the search
 index, deploys it, and then asks the live `/health` whether its index covers canon. That last
