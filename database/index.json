@@ -1,5 +1,5 @@
 {
-  "version": "1.6.0",
+  "version": "1.7.0",
   "description": "SouthOfTethys canonical entity index",
   "counts": {
     "characters": 41,
@@ -13,7 +13,7 @@
     "mythology": 3,
     "field_maps": 4,
     "points_of_interest": 24,
-    "discoveries": 31,
+    "discoveries": 35,
     "field_questions": 8,
     "npcs": 10,
     "vocabulary": 10
@@ -499,6 +499,8 @@
       "discovery_gate_rhythm",
       "discovery_ghost_mangrove_channel",
       "discovery_glass_scar",
+      "discovery_granary_fall",
+      "discovery_kiln_draught",
       "discovery_market_ledger",
       "discovery_marsh_lurker_habits",
       "discovery_mask_niche",
@@ -509,6 +511,7 @@
       "discovery_quarry_sequence",
       "discovery_red_rice_survival",
       "discovery_road_follows_water",
+      "discovery_salt_glass",
       "discovery_saltreed_thatch",
       "discovery_seawall_courses",
       "discovery_silver_water",
@@ -518,6 +521,7 @@
       "discovery_thorn_roots",
       "discovery_tower_collapse",
       "discovery_well_depth",
+      "discovery_winter_line",
       "discovery_wrong_anatomy"
     ],
     "field_questions": [

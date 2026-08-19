@@ -1,0 +1,53 @@
+{
+  "type": "discovery",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design"
+  ],
+  "id": "discovery_granary_fall",
+  "name": "The Channel Still Falls",
+  "discipline": "archaeology",
+  "subject": "poi_silted_granary",
+  "found_at": [
+    "poi_silted_granary"
+  ],
+  "helps": [
+    "npc_bekh"
+  ],
+  "restores": [
+    "poi_silted_granary"
+  ],
+  "levels": [
+    {
+      "entry": "A stone channel runs into the granary's north wall and stops at a chamber full of silt. It has been dry so long the camp treats it as a wall."
+    },
+    {
+      "entry": "Not dry. There is water in it, moving, under about a foot of silt. It is audible if the marsh is quiet."
+    },
+    {
+      "entry": "The channel drops nearly six feet across the granary's length. That is not drainage -- drainage is laid flat. Something was meant to be turned by it."
+    },
+    {
+      "entry": "The chamber below the drop has a stone floor worn in a circle, and a socket cut in the middle of the circle. Whatever stood in it was taken or rotted."
+    },
+    {
+      "entry": "A mill, and the grain it ground was the red rice from these same chambers. The building is one machine: store, drop, mill, store.",
+      "requires": [
+        "discovery_red_rice_survival"
+      ]
+    },
+    {
+      "entry": "The silt is the whole failure. Six feet of fall is still six feet of fall, and the water never stopped -- it only stopped being able to reach the wheel."
+    },
+    {
+      "entry": "Clear the north chamber and the fall works again. Bekh's people thresh eight acres by hand and the building that would do it for them is standing over their heads.",
+      "requires": [
+        "discovery_red_rice_survival"
+      ]
+    }
+  ],
+  "notes": "The water half. Nothing is invented: the mill was there, the fall never stopped, and the discovery is that a wall is actually a blocked machine. Requires `discovery_red_rice_survival` twice over -- once to know what was ground here, once because threshing eight acres only matters if the eight acres are sown, which is that chain's own last rung."
+}

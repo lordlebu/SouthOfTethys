@@ -1,0 +1,53 @@
+{
+  "type": "discovery",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design"
+  ],
+  "id": "discovery_salt_glass",
+  "name": "What the Field Gives Instead of Grain",
+  "discipline": "geography",
+  "subject": "poi_eastern_field",
+  "found_at": [
+    "poi_eastern_field"
+  ],
+  "helps": [
+    "npc_thrali"
+  ],
+  "restores": [
+    "poi_eastern_field"
+  ],
+  "levels": [
+    {
+      "entry": "The white crust on the eastern field is not all the same white. Some of it has a shine on it."
+    },
+    {
+      "entry": "The shine gathers where the kiln ash was tipped, years ago, at the field's low corner. Nowhere else."
+    },
+    {
+      "entry": "Ash and brine and a hot summer, and the crust there has run together into something between salt and glass. It will hold an edge for a day before it goes cloudy."
+    },
+    {
+      "entry": "The brine is the reason nothing grows and also the reason this happens at all. The field has one thing to give and it is not a crop.",
+      "requires": [
+        "discovery_poisoned_ground"
+      ]
+    },
+    {
+      "entry": "Fired properly rather than left to a hot week, it would not go cloudy. That is a kiln's work, not a summer's."
+    },
+    {
+      "entry": "Thrali sets his nets by feel because he cannot see the channel bed through four feet of silt-water. A pane he could hold under would show him it."
+    },
+    {
+      "entry": "The corner of the field the camp gave up on will glaze the whole delta's worth of them, and it renews every dry week for as long as the brine keeps weeping.",
+      "requires": [
+        "discovery_poisoned_ground"
+      ]
+    }
+  ],
+  "notes": "The glass, sourced on Lothal rather than at the Glass Scar. The plan for this chain wanted the Scar, which is on Narmada -- but all 24 existing prerequisites are within a single map, so requiring it would have been the first cross-map dependency in the game and a design decision rather than an authoring one. The eastern field already weeps brine and already has ash tipped in it, so the material was on the map the whole time. The Scar remains the grander version of the same fact, for whoever wants it later."
+}
