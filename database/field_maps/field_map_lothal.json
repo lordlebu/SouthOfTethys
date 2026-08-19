@@ -10,7 +10,8 @@
     "coast",
     "forest",
     "hills",
-    "sea"
+    "sea",
+    "plains"
   ],
   "scale": "small",
   "points_of_interest": [
@@ -25,7 +26,7 @@
     "epoch_post_cataclysm"
   ],
   "arrival": "The delta takes a long time to become a city. Reeds, then reed-and-mud, then mud with brick in it, and then brick cut by someone who expected it to last. The tower is visible from a good way out, or the half of it still standing. Somebody has hung washing across the third storey.",
-  "notes": "Opening field map. Lothal after the Great Shattering: the Harappan city is a half-buried relic and survivors are camped inside it rather than beside it, so the same ground is a settlement and a ruin at once. Kept small and legible -- this is where the player learns how to look. Forest and hills were added to the palette late: with only wetland, river, settlement and coast, the engine reclassified everything it could not match and the whole map came out 55% coast and 45% wetland -- two biomes, and a delta that read as flat. They are appended, not inserted, because the engine takes the first palette entry as its fallback. Plains was deliberately left out: adding it takes back every reclassified plains tile at once and drops wetland from 45% to 2%, which would stop this being a delta at all. Sits at the centre of what is left, and every other map is reached from here -- which is why it is the opening one. Sea added to the palette. Lothal is a harbour -- it needs water to be a harbour of -- and the generator had always been able to make open water here while `applyPalette` reclassified all of it to coast, so the opening map of a game about a delta port contained no sea at all. It sits last because the first entry is the engine's fallback and wetland must stay dominant.\n\nPlains was tried and reverted: with cheap ground available the low middle became plains across 53% of the map, which fixes the travel-cost curve by destroying the delta. The same trap as the first palette change -- variety must not cost a map its thesis.",
+  "notes": "Opening field map. Lothal after the Great Shattering: the Harappan city is a half-buried relic and survivors are camped inside it rather than beside it, so the same ground is a settlement and a ruin at once. Kept small and legible -- this is where the player learns how to look. Forest and hills were added to the palette late: with only wetland, river, settlement and coast, the engine reclassified everything it could not match and the whole map came out 55% coast and 45% wetland -- two biomes, and a delta that read as flat. They are appended, not inserted, because the engine takes the first palette entry as its fallback. Plains was deliberately left out: adding it takes back every reclassified plains tile at once and drops wetland from 45% to 2%, which would stop this being a delta at all. Sits at the centre of what is left, and every other map is reached from here -- which is why it is the opening one. Sea added to the palette. Lothal is a harbour -- it needs water to be a harbour of -- and the generator had always been able to make open water here while `applyPalette` reclassified all of it to coast, so the opening map of a game about a delta port contained no sea at all. It sits last because the first entry is the engine's fallback and wetland must stay dominant.\n\nPlains was tried and reverted: with cheap ground available the low middle became plains across 53% of the map, which fixes the travel-cost curve by destroying the delta. The same trap as the first palette change -- variety must not cost a map its thesis. Relief is `delta`: Lothal is a harbour on a delta, so its easy ground is the channels and the water's edge rather than any high ground. Plains added once the landform shaping was in: the shapers dry the interior into the classifier's plains window on purpose, because that window is the only cheap non-coastal ground there is, and without `plains` in the palette every one of those tiles was reclassified straight back to wetland. This is not the earlier attempt that flooded the map -- that one added plains while the shaping still made the middle *wetter*, so the fallback swallowed everything. Appended, so wetland stays the first entry and therefore dominant.",
   "canon": "primary",
   "sources": [
     "Varuna's Field Diary design",
@@ -44,5 +45,6 @@
   "coordinates": {
     "x": 28,
     "y": 50
-  }
+  },
+  "relief": "delta"
 }

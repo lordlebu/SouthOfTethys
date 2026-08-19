@@ -14,7 +14,7 @@
       "entry": "Each is founded a little higher than the one seaward of it, and each is built of what was cheap that century."
     },
     {
-      "entry": "The outermost is under water at every tide now. It was not built to be.",
+      "entry": "The outermost stands in dry dust, and it was built to stand in surf. Nothing about it has moved; the sea did.",
       "conditions": {
         "time_of_day": [
           "dawn"
@@ -25,7 +25,7 @@
       "entry": "Roughly a hand of sea in a hundred years, if the walls were built dry-footed. Slow enough that no single person ever saw it happen."
     },
     {
-      "entry": "The gate gets swept and the sea gets a new wall. Only one of those is going to finish the city, and it is not the interesting one."
+      "entry": "The gate still gets swept and the seawalls still get repaired. Neither has anything left to keep out, and only one of those facts is the interesting one."
     }
   ],
   "answers": [
@@ -34,7 +34,7 @@
   "helps": [
     "npc_pell"
   ],
-  "notes": "The sober counterweight. A map about a supernatural door should be clear that the thing actually destroying the place is ordinary sea-level rise.",
+  "notes": "The sober counterweight. A map about a supernatural door should be clear that the thing actually destroying the place is ordinary sea-level rise. Rewritten when Dwarka was dried out: the sea left rather than the land sinking, so a rung that assumed a live tide now reads against its absence. The chain is stronger for it — a city keeping a tide schedule for water that stopped arriving is a better observation than one keeping it for water that is still there.",
   "epochs": [
     "epoch_post_cataclysm"
   ],

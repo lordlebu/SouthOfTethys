@@ -5,8 +5,9 @@
   "name": "The Bone Midden",
   "kind": "archaeological_site",
   "terrain": [
-    "coast",
-    "wetland"
+    "desert",
+    "plains",
+    "coast"
   ],
   "discoveries": [
     "discovery_midden_layers",

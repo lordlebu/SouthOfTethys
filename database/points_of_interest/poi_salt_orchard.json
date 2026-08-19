@@ -5,7 +5,8 @@
   "name": "The Salt Orchard",
   "kind": "eco_site",
   "terrain": [
-    "wetland",
+    "desert",
+    "plains",
     "coast"
   ],
   "discoveries": [
