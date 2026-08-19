@@ -18,7 +18,9 @@
     "poi_drowned_seawall",
     "poi_bone_midden",
     "poi_salt_orchard",
-    "poi_watch_stair"
+    "poi_watch_stair",
+    "poi_glass_scar",
+    "poi_caravan_camp"
   ],
   "neighbours": [
     "field_map_lothal"
@@ -30,7 +32,7 @@
     "storm": 4
   },
   "arrival": "Half of Dwarka is under the dust and the half that is not has been rebuilt twice on top of itself. The sea left inside living memory and nobody here treats that as a disaster or the gate as a wonder. Both are simply conditions, like weather, and the whole city is still arranged around a shoreline that stopped arriving.",
-  "notes": "Third field map, and the one where the method is tested: local knowledge is not merely useful here, it is right, and the academy's three tidy explanations are all wrong. Gives `crosses_at` a consumer without making the crossing species placeable -- you find what they left, never the animal.\n\n**Dried out deliberately.** Dwarka was an island city; the Shattering took the sea away rather than the land, so it is now a cold high desert built around a dead harbour. Almost nothing authored here had to change, because every discovery on this map is about reading what water *did* -- three seawalls each founded higher than the last read better standing in dust than standing in surf, and a salt orchard with no sea to explain the salt is a better question than one with an obvious answer.\n\nThe terrain reason is as real as the lore one: a wetland-dominant palette cannot produce cheap ground, because wetland, forest and hills are all travel cost 2 and the classifier's only cheap non-coastal window is dry. The map read as uniformly slow whatever shaping was applied to it. `coast` and `river` stay in the palette for the old waterline and the one channel that still runs; `sea` is gone, which is the whole point.",
+  "notes": "Third field map, and the one where the method is tested: local knowledge is not merely useful here, it is right, and the academy's three tidy explanations are all wrong. Gives `crosses_at` a consumer without making the crossing species placeable -- you find what they left, never the animal.\n\n**Dried out deliberately.** Dwarka was an island city; the Shattering took the sea away rather than the land, so it is now a cold high desert built around a dead harbour. Almost nothing authored here had to change, because every discovery on this map is about reading what water *did* -- three seawalls each founded higher than the last read better standing in dust than standing in surf, and a salt orchard with no sea to explain the salt is a better question than one with an obvious answer.\n\nThe terrain reason is as real as the lore one: a wetland-dominant palette cannot produce cheap ground, because wetland, forest and hills are all travel cost 2 and the classifier's only cheap non-coastal window is dry. The map read as uniformly slow whatever shaping was applied to it. `coast` and `river` stay in the palette for the old waterline and the one channel that still runs; `sea` is gone, which is the whole point.\n\nGained the Glass Scar and the Caravan Ground when the Dry Harbour was retired. Both are desert-native and this is now the only desert map, so they had nowhere else to go -- and both read better here. Eight points of interest rather than six, which is the first map to exceed the six every field map has carried since the beginning.",
   "epochs": [
     "epoch_post_cataclysm"
   ],

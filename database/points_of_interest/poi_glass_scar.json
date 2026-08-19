@@ -1,6 +1,6 @@
 {
   "type": "point_of_interest",
-  "field_map": "field_map_dry_harbour",
+  "field_map": "field_map_dwarka",
   "id": "poi_glass_scar",
   "name": "The Glass Scar",
   "kind": "anomaly",
@@ -11,8 +11,8 @@
     "discovery_glass_scar"
   ],
   "description": "A seam of fused sand, running straight, where nothing should have been hot enough.",
-  "arrival": "Green-black glass, in a line you could follow at a walk, and under it sand that was never heated at all. Whatever did this did it fast enough that the heat had no time to go downwards.",
-  "notes": "The anomaly, and the map's only unexplained thing. Kept small and undramatic: it is a date stamp more than a mystery.",
+  "arrival": "Green-black glass, in a line you could follow at a walk, and under it sand that was never heated at all. Whatever did this did it fast enough that the heat had no time to go downwards. It runs out of the dry harbour and towards the gate, and nobody in the city will say whether that is a coincidence.",
+  "notes": "The anomaly, and the map's only unexplained thing. Kept small and undramatic: it is a date stamp more than a mystery. Moved from the Dry Harbour when that map was retired. It belongs here better than it did there: a seam of fused sand pointing at a doorway things come through is a question, where the same seam in an empty desert was only a curiosity. Still unresolved, and still meant to stay that way.",
   "epochs": [
     "epoch_post_cataclysm"
   ],

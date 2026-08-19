@@ -22,16 +22,16 @@
       }
     },
     {
-      "entry": "It crosses the fossil channel without a break, and the channel gravel underneath it is unfused. So it happened after the water went, and not long after.",
+      "entry": "It crosses the old harbour floor without a break, and the silt underneath it is unfused. So it happened after the water left, and fast.",
       "requires": [
-        "discovery_channel_gravel"
+        "discovery_seawall_courses"
       ]
     },
     {
-      "entry": "I can date it and describe it and I cannot say what it is. I have written down the bearing, which is the only useful thing I have."
+      "entry": "I can date it and describe it and I cannot say what it is. I have written down the bearing, which points at the gate court, and I am aware that is not an explanation."
     }
   ],
-  "notes": "Deliberately unresolved, like the Cloud Stair. Its job is to date the ending, not to explain it, and the diary says so.",
+  "notes": "Deliberately unresolved, like the Cloud Stair. Its job is to date the ending, not to explain it, and the diary says so. Moved to Dwarka. Rung 3 used to be dated against the fossil channel and is now dated against the harbour floor and the seawalls, which is the same argument with the evidence that survived. The bearing pointing at the gate is new and deliberately unresolved -- its job is still to date the ending, not to explain it.",
   "epochs": [
     "epoch_post_cataclysm"
   ],
