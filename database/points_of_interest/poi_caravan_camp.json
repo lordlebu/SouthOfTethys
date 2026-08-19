@@ -1,6 +1,6 @@
 {
   "type": "point_of_interest",
-  "field_map": "field_map_dry_harbour",
+  "field_map": "field_map_dwarka",
   "id": "poi_caravan_camp",
   "name": "The Caravan Ground",
   "kind": "travel_node",
@@ -11,12 +11,10 @@
   "discoveries": [
     "discovery_road_follows_water"
   ],
-  "npcs": [
-    "npc_teshk"
-  ],
+  "npcs": [],
   "description": "Where the road stops for the night, and has for longer than the road has made sense.",
-  "arrival": "The camp is on the wrong side of the ridge for shelter and the wrong distance from the well, and every caravan stops here anyway, because this is where you stop.",
-  "notes": "The road is the map's other clock: it still follows a river that is not there.",
+  "arrival": "The camp is on the wrong side of the ridge for shelter and the wrong distance from the water that is no longer there, and every caravan still stops here, because this is where you stop.",
+  "notes": "The road is the map's other clock: it still follows a river that is not there. Moved from the Dry Harbour when that map was retired. Teshk did not come with it -- he was a Dry Harbour person -- so this is a camp with nobody in it, which suits a road that outlived its reason.",
   "epochs": [
     "epoch_post_cataclysm"
   ],

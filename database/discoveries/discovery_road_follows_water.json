@@ -14,19 +14,19 @@
       "entry": "Everyone stops at the same ground, which is exposed, far from the well, and inconvenient."
     },
     {
-      "entry": "Laid over the fossil channel, the bend is not a bend. The road is following a bank."
+      "entry": "Laid over the old shoreline, the bend is not a bend. The road is following a bank that has not held water in sixty years."
     },
     {
       "entry": "The camp is at a crossing. There is nothing to cross, and the caravans still stop where the ford was, because that is where you stop."
     },
     {
-      "entry": "Nobody chose to keep doing this. The road is older than any of them and it remembers something none of them do.",
+      "entry": "Nobody chose to keep doing this. The road is older than any of them and it remembers something none of them do -- the same sixty years the outermost seawall counts, from the other side of the argument.",
       "requires": [
-        "discovery_channel_gravel"
+        "discovery_seawall_courses"
       ]
     }
   ],
-  "notes": "The map's quietest discovery and possibly its best: habit outliving the reason for it, with nobody at fault.",
+  "notes": "The map's quietest discovery and possibly its best: habit outliving the reason for it, with nobody at fault. Moved to Dwarka with the Caravan Ground. Its last rung used to require `discovery_channel_gravel`, which retired with the Dry Harbour; it now rests on the seawall chain, which dates the sea's departure from the other direction. The transplant is close to free because the chain was always about a road outliving the water it was laid beside, and that is Dwarka's whole premise now.",
   "epochs": [
     "epoch_post_cataclysm"
   ],
