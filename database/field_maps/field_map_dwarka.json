@@ -4,11 +4,12 @@
   "name": "Dwarka",
   "region": "region_saraswati_delta",
   "seed_biomes": [
-    "coast",
+    "desert",
+    "plains",
     "settlement",
-    "wetland",
-    "river",
-    "hills"
+    "hills",
+    "coast",
+    "river"
   ],
   "scale": "small",
   "points_of_interest": [
@@ -23,13 +24,13 @@
     "field_map_lothal"
   ],
   "climate": {
-    "clear": 44,
-    "mist": 30,
-    "rain": 18,
-    "storm": 8
+    "clear": 62,
+    "mist": 22,
+    "rain": 12,
+    "storm": 4
   },
-  "arrival": "Half of Dwarka is under water and the half that is not has been rebuilt twice on top of itself. Nobody here treats the sea as an enemy or the gate as a wonder. Both are simply conditions, like weather, and the whole city is arranged around living beside them.",
-  "notes": "Third field map. The one where the method is tested: local knowledge is not merely useful here, it is right, and the academy's three tidy explanations are all wrong. Gives `crosses_at` a consumer without making the crossing species placeable -- you find what they left, never the animal. Hills added for the headland the surviving half stands on. Forest was considered and left out: it halves the wetland, and a drowned city arranged around living beside the sea should not read as woodland. Below and west of Lothal, on the coast the sea took half of. The two delta maps are close together because the delta is the part of the world that survived; Dwarka to the Dry Harbour is the widest gulf on the overworld.",
+  "arrival": "Half of Dwarka is under the dust and the half that is not has been rebuilt twice on top of itself. The sea left inside living memory and nobody here treats that as a disaster or the gate as a wonder. Both are simply conditions, like weather, and the whole city is still arranged around a shoreline that stopped arriving.",
+  "notes": "Third field map, and the one where the method is tested: local knowledge is not merely useful here, it is right, and the academy's three tidy explanations are all wrong. Gives `crosses_at` a consumer without making the crossing species placeable -- you find what they left, never the animal.\n\n**Dried out deliberately.** Dwarka was an island city; the Shattering took the sea away rather than the land, so it is now a cold high desert built around a dead harbour. Almost nothing authored here had to change, because every discovery on this map is about reading what water *did* -- three seawalls each founded higher than the last read better standing in dust than standing in surf, and a salt orchard with no sea to explain the salt is a better question than one with an obvious answer.\n\nThe terrain reason is as real as the lore one: a wetland-dominant palette cannot produce cheap ground, because wetland, forest and hills are all travel cost 2 and the classifier's only cheap non-coastal window is dry. The map read as uniformly slow whatever shaping was applied to it. `coast` and `river` stay in the palette for the old waterline and the one channel that still runs; `sea` is gone, which is the whole point.",
   "epochs": [
     "epoch_post_cataclysm"
   ],
@@ -41,5 +42,6 @@
   "coordinates": {
     "x": 16,
     "y": 64
-  }
+  },
+  "relief": "basin"
 }

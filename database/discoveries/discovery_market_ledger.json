@@ -11,10 +11,10 @@
       "entry": "The market opens twice and closes twice, and everyone knows when without being told."
     },
     {
-      "entry": "It is the tide, obviously. What is less obvious is that the tide here is not the tide at Lothal."
+      "entry": "It is the tide, they say, and they are half right: the market still opens on a tide that stopped arriving before most of them were born."
     },
     {
-      "entry": "A ledger goes back sixty years of opening times. Nobody kept it for the tide; they kept it for the tolls."
+      "entry": "A ledger goes back sixty years of opening times. Nobody kept it for the tide; they kept it for the tolls — which is why the times outlived the water."
     },
     {
       "entry": "Read as a tide record it is better than anything the University has, and it says the high water is arriving later each decade.",
@@ -26,7 +26,7 @@
   "answers": [
     "question_what_ends_dwarka"
   ],
-  "notes": "Local record-keeping outperforming the academy again, and this time entirely by accident -- the ledger was for taxes.",
+  "notes": "Local record-keeping outperforming the academy again, and this time entirely by accident -- the ledger was for taxes. Rewritten when Dwarka was dried out: the sea left rather than the land sinking, so a rung that assumed a live tide now reads against its absence. The chain is stronger for it — a city keeping a tide schedule for water that stopped arriving is a better observation than one keeping it for water that is still there.",
   "epochs": [
     "epoch_post_cataclysm"
   ],

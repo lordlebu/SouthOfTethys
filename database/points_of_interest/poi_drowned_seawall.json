@@ -6,7 +6,8 @@
   "kind": "archaeological_site",
   "terrain": [
     "coast",
-    "wetland"
+    "desert",
+    "plains"
   ],
   "discoveries": [
     "discovery_seawall_courses"
