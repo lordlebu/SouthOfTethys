@@ -7,7 +7,9 @@
     "wetland",
     "river",
     "settlement",
-    "coast"
+    "coast",
+    "forest",
+    "hills"
   ],
   "scale": "small",
   "points_of_interest": [
@@ -22,7 +24,7 @@
     "epoch_post_cataclysm"
   ],
   "arrival": "The delta takes a long time to become a city. Reeds, then reed-and-mud, then mud with brick in it, and then brick cut by someone who expected it to last. The tower is visible from a good way out, or the half of it still standing. Somebody has hung washing across the third storey.",
-  "notes": "Opening field map. Lothal after the Great Shattering: the Harappan city is a half-buried relic and survivors are camped inside it rather than beside it, so the same ground is a settlement and a ruin at once. Kept small and legible -- this is where the player learns how to look.",
+  "notes": "Opening field map. Lothal after the Great Shattering: the Harappan city is a half-buried relic and survivors are camped inside it rather than beside it, so the same ground is a settlement and a ruin at once. Kept small and legible -- this is where the player learns how to look. Forest and hills were added to the palette late: with only wetland, river, settlement and coast, the engine reclassified everything it could not match and the whole map came out 55% coast and 45% wetland -- two biomes, and a delta that read as flat. They are appended, not inserted, because the engine takes the first palette entry as its fallback. Plains was deliberately left out: adding it takes back every reclassified plains tile at once and drops wetland from 45% to 2%, which would stop this being a delta at all.",
   "canon": "primary",
   "sources": [
     "Varuna's Field Diary design",
