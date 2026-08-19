@@ -58,7 +58,7 @@ SCHEMA_FOR = {
     "characters": "character", "events": "event", "fauna": "fauna", "flora": "flora",
     "field_maps": "field_map", "points_of_interest": "point_of_interest",
     "discoveries": "discovery", "field_questions": "field_question",
-    "npcs": "npc", "vocabulary": "vocabulary",
+    "npcs": "npc", "vocabulary": "vocabulary", "regions": "region",
 }
 
 # Values that look like ids but are not entity references.

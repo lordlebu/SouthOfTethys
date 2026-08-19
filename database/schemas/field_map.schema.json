@@ -126,6 +126,29 @@
           "minimum": 0
         }
       }
+    },
+    "coordinates": {
+      "type": "object",
+      "description": "Where this map sits on the overworld, in abstract 0-100 units.\n\nDeliberately not latitude and longitude. Real coordinates invite a real basemap, and this is a post-cataclysm continent with a Shattered Sea and a lava sea where the Ganges was -- a map drawn over modern India would be making a claim canon does not make.\n\nThe layout is cataclysm-shaped rather than geographic: the delta maps cluster in the surviving southwest, the Narmada plateau stands high and apart, and the Dry Harbour is far out toward the dead interior. Distance encodes how much of the world was lost, which is what this era is about.",
+      "required": [
+        "x",
+        "y"
+      ],
+      "properties": {
+        "x": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100,
+          "description": "West to east."
+        },
+        "y": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100,
+          "description": "North to south, screen order -- 0 is the top."
+        }
+      },
+      "additionalProperties": false
     }
   },
   "additionalProperties": true

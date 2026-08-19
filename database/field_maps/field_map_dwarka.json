@@ -29,7 +29,7 @@
     "storm": 8
   },
   "arrival": "Half of Dwarka is under water and the half that is not has been rebuilt twice on top of itself. Nobody here treats the sea as an enemy or the gate as a wonder. Both are simply conditions, like weather, and the whole city is arranged around living beside them.",
-  "notes": "Third field map. The one where the method is tested: local knowledge is not merely useful here, it is right, and the academy's three tidy explanations are all wrong. Gives `crosses_at` a consumer without making the crossing species placeable -- you find what they left, never the animal. Hills added for the headland the surviving half stands on. Forest was considered and left out: it halves the wetland, and a drowned city arranged around living beside the sea should not read as woodland.",
+  "notes": "Third field map. The one where the method is tested: local knowledge is not merely useful here, it is right, and the academy's three tidy explanations are all wrong. Gives `crosses_at` a consumer without making the crossing species placeable -- you find what they left, never the animal. Hills added for the headland the surviving half stands on. Forest was considered and left out: it halves the wetland, and a drowned city arranged around living beside the sea should not read as woodland. Below and west of Lothal, on the coast the sea took half of. The two delta maps are close together because the delta is the part of the world that survived; Dwarka to the Dry Harbour is the widest gulf on the overworld.",
   "epochs": [
     "epoch_post_cataclysm"
   ],
@@ -37,5 +37,9 @@
   "sources": [
     "Varuna's Field Diary design",
     "AI_CONTEXT.md"
-  ]
+  ],
+  "coordinates": {
+    "x": 16,
+    "y": 64
+  }
 }

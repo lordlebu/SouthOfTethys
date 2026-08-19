@@ -1,0 +1,99 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Region",
+  "description": "The scale above a field map: a country rather than a walk. A region says what kind of place this is and what lives there; the field maps under it say where the player can actually stand. Regions were entirely unvalidated until the overworld needed them -- seven files, no schema, nothing checking that `continent` or `canon` said anything sensible.",
+  "type": "object",
+  "required": [
+    "id",
+    "type",
+    "name",
+    "continent"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^region_[a-z0-9_]+$"
+    },
+    "type": {
+      "const": "region"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "continent": {
+      "type": "string",
+      "description": "Which landmass. Everything authored so far is on jambhudweepa; the field is here rather than assumed so a second continent does not need a migration.",
+      "minLength": 1
+    },
+    "bestiary_region": {
+      "type": "string",
+      "description": "The key species files use for `region`. Deliberately not the entity id: the bestiary was written first and its own vocabulary is what the fauna and flora carry."
+    },
+    "biomes": {
+      "type": "array",
+      "description": "Which biomes occur here. Advisory rather than binding -- a field map's `seed_biomes` is what the generator actually draws from.",
+      "items": {
+        "type": "string",
+        "enum": [
+          "sea",
+          "coast",
+          "plains",
+          "forest",
+          "wetland",
+          "hills",
+          "mountains",
+          "desert",
+          "river",
+          "settlement",
+          "landmark",
+          "sky_island",
+          "sky_underside",
+          "open_sky",
+          "underworld",
+          "lava_field"
+        ]
+      }
+    },
+    "biomes_note": {
+      "type": "string"
+    },
+    "habitats": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "settlements": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "landmarks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "notes": {
+      "type": "string"
+    },
+    "canon": {
+      "type": "string",
+      "enum": [
+        "primary",
+        "secondary",
+        "inferred"
+      ],
+      "description": "How firmly this is established. `primary` is stated by the source material, `inferred` is a reading canon has committed to."
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}
