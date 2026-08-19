@@ -19,7 +19,9 @@
     "faction_silvershore"
   ],
   "discoveries": [
-    "discovery_saltreed_thatch"
+    "discovery_saltreed_thatch",
+    "discovery_kiln_draught",
+    "discovery_winter_line"
   ],
   "epochs": [
     "epoch_post_cataclysm"

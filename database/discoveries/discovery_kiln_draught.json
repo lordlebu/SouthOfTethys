@@ -1,0 +1,48 @@
+{
+  "type": "discovery",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design"
+  ],
+  "id": "discovery_kiln_draught",
+  "name": "The Wind That Took the Tower Will Fire a Kiln",
+  "discipline": "archaeology",
+  "subject": "settlement_lothal",
+  "found_at": [
+    "poi_lothal_camp",
+    "poi_kavik_tower"
+  ],
+  "helps": [
+    "npc_uma"
+  ],
+  "levels": [
+    {
+      "entry": "The kilns are lit three times a year and never in spring. Uma says spring firings go wrong and nobody knows why."
+    },
+    {
+      "entry": "They do not go wrong. They go cold. A spring firing takes twice the reed and comes out grey."
+    },
+    {
+      "entry": "The wind turns in spring. From the sea eight months of the year, and off the plateau for four -- and the kiln mouths all face the sea."
+    },
+    {
+      "entry": "Kavik knew. The tower's lower courses are pierced on the seaward face and blind on the landward, which is a building arranged around a wind that blows one way."
+    },
+    {
+      "entry": "The same arrangement, and the same mistake. He built for eight months and lost the tower in the fourth. The kilns are losing a firing a year to it.",
+      "requires": [
+        "discovery_tower_collapse"
+      ]
+    },
+    {
+      "entry": "A kiln mouth is a hole in a wall. It can be moved in a morning, and it only has to be moved once."
+    },
+    {
+      "entry": "Turn the spring kiln to face the plateau and it will fire in a day on half the reed. Uma has cut that reed every spring of her life and burnt it for grey brick."
+    }
+  ],
+  "notes": "The wind half of the winter chain, and deliberately the smallest. Nothing is built and nothing is invented -- a kiln mouth is moved, because the tower already recorded which way the wind blows and nobody had read it as advice. Requires `discovery_tower_collapse`, which is the archaeology on the same map: the tower is the evidence, not a separate errand."
+}

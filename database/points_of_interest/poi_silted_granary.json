@@ -17,7 +17,8 @@
     "wetland"
   ],
   "discoveries": [
-    "discovery_red_rice_survival"
+    "discovery_red_rice_survival",
+    "discovery_granary_fall"
   ],
   "related_entities": [
     "settlement_lothal"

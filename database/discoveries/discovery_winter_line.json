@@ -1,0 +1,66 @@
+{
+  "type": "discovery",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design"
+  ],
+  "id": "discovery_winter_line",
+  "name": "The Camp Can Winter Here",
+  "discipline": "archaeology",
+  "subject": "settlement_lothal",
+  "found_at": [
+    "poi_lothal_camp"
+  ],
+  "helps": [
+    "npc_bekh",
+    "npc_thrali",
+    "npc_uma"
+  ],
+  "restores": [
+    "settlement_lothal"
+  ],
+  "related_discoveries": [
+    "discovery_kiln_draught",
+    "discovery_granary_fall",
+    "discovery_salt_glass"
+  ],
+  "levels": [
+    {
+      "entry": "Bekh keeps a count of what the camp has and what it will need, and the two columns have never met. They move every third winter because of the gap."
+    },
+    {
+      "entry": "The gap is not food. It is the four months when nothing can be done -- no firing, no threshing, no fishing worth the walk -- and stores go while nobody is adding to them."
+    },
+    {
+      "entry": "Each of those four months is stopped by a different thing, and I have written down the answer to all three without noticing they were one question.",
+      "requires": [
+        "discovery_kiln_draught",
+        "discovery_granary_fall",
+        "discovery_salt_glass"
+      ]
+    },
+    {
+      "entry": "A spring kiln that fires means the glass gets made. The glass means Thrali fishes the silt-water months. The fall means the rice is threshed while the weather is against them rather than after it."
+    },
+    {
+      "entry": "Nothing here is new. The mill is Harappan, the kiln is the camp's own, the brine has been weeping since the Shattering. All that has changed is that somebody wrote down which end of each thing the work comes out of.",
+      "requires": [
+        "discovery_granary_fall"
+      ]
+    },
+    {
+      "entry": "Bekh went through it twice and then went quiet, and then asked whether I was sure about the kiln. She has moved this camp nine times."
+    },
+    {
+      "entry": "They are not moving in the spring. That is the whole of it, and it is more than I came here to do.",
+      "requires": [
+        "discovery_kiln_draught",
+        "discovery_salt_glass"
+      ]
+    }
+  ],
+  "notes": "The capstone, and deliberately not a machine. The three chains under it were each already useful alone; this is the rung where the player notices they are one system, which is the only thing being 'built'. Requires all three and is required by nothing -- the graph runs one way. Written to stay in the diary's register: the last rung is a camp not moving, not a train arriving."
+}
