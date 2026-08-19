@@ -1,5 +1,5 @@
 {
-  "version": "1.8.0",
+  "version": "1.9.0",
   "description": "SouthOfTethys canonical entity index",
   "counts": {
     "characters": 41,
@@ -13,7 +13,7 @@
     "mythology": 3,
     "field_maps": 3,
     "points_of_interest": 20,
-    "discoveries": 30,
+    "discoveries": 31,
     "field_questions": 7,
     "npcs": 8,
     "vocabulary": 8
@@ -485,6 +485,7 @@
     "discoveries": [
       "discovery_archive_baseline",
       "discovery_bitter_millet",
+      "discovery_chamber_below",
       "discovery_cloud_stair",
       "discovery_dockyard_reef",
       "discovery_double_classified",

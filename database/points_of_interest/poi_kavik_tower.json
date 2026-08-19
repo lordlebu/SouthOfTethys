@@ -17,7 +17,8 @@
   "discoveries": [
     "discovery_tower_collapse",
     "discovery_mask_niche",
-    "discovery_kiln_draught"
+    "discovery_kiln_draught",
+    "discovery_chamber_below"
   ],
   "sub_locations": [
     {
