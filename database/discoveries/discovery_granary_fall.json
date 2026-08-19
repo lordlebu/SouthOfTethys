@@ -10,7 +10,7 @@
   "id": "discovery_granary_fall",
   "name": "The Channel Still Falls",
   "discipline": "archaeology",
-  "subject": "poi_silted_granary",
+  "subject": "settlement_lothal",
   "found_at": [
     "poi_silted_granary"
   ],

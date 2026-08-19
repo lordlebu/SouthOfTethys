@@ -37,7 +37,8 @@
     },
     "subject": {
       "type": "string",
-      "description": "The canon entity this is about -- a species, a settlement, an event, an artifact. A discovery is nearly always a way of coming to understand something that already exists."
+      "description": "The canon entity this is about -- a species, a settlement, an event, an artifact. A discovery is nearly always a way of coming to understand something that already exists.\n\nA species, settlement, faction or artifact -- never a point of interest. `found_at` already says where you stand; `subject` says what the entry is *about*. The pattern is here because the ids are shaped alike and nothing else would catch a `poi_` slipping in: two did, and the game's own test found them rather than this linter.",
+      "pattern": "^(flora|fauna|settlement|faction|artifact|event|character)_[a-z0-9_]+$"
     },
     "found_at": {
       "type": "array",
