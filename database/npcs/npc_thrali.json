@@ -38,6 +38,18 @@
       "gives": [
         "word_kia_uvai"
       ]
+    },
+    {
+      "text": "I can see the bottom. Do you understand what I am telling you -- I have set nets by feel for nineteen years and this morning I looked through a piece of the eastern field and saw the channel bed. The field nobody could plant. It was giving us this the whole time.",
+      "requires": [
+        "discovery_salt_glass"
+      ]
+    },
+    {
+      "text": "Bekh has it written down. Four months a year I could not fish and now I can, and the reason is a kiln and a mill and a piece of glass, none of which is mine. I do not entirely follow it. I am not going to argue with a full net.",
+      "requires": [
+        "discovery_winter_line"
+      ]
     }
   ],
   "epochs": [

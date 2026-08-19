@@ -39,6 +39,24 @@
       "requires": [
         "discovery_mask_niche"
       ]
+    },
+    {
+      "text": "The north chamber is clear. The water was still falling under all that silt -- it never stopped, it only stopped being able to reach anything. We threshed in a morning what takes us four days. My mother would have called that a miracle and been wrong twice.",
+      "requires": [
+        "discovery_granary_fall"
+      ]
+    },
+    {
+      "text": "We are not moving in the spring. I have counted it four times and it keeps coming out the same, which is not something I am used to. Nine times I have moved this camp. My daughter will be the first of us to know what a place looks like in its second year.",
+      "requires": [
+        "discovery_winter_line"
+      ]
+    },
+    {
+      "text": "Eight acres, sown from the granary wall. It will be a poor crop for three years and it will be a crop, which is three years better than a field we plant every spring out of habit. My mother planted it. Her mother planted it. Neither of them ever got anything back.",
+      "requires": [
+        "discovery_red_rice_survival"
+      ]
     }
   ],
   "epochs": [

@@ -176,6 +176,34 @@ def main() -> int:
             if ref not in known:
                 errors.append(f"{path.name}: reference '{ref}' does not exist")
 
+    # --- help nobody mentions ------------------------------------------------------
+    #
+    # `helps` is the whole of the "help people" system: a discovery names somebody whose life it
+    # mends, and reaching the actionable rung is what mends it. But the field is only data. The
+    # first solarpunk chain shipped with four discoveries naming three people and **not one line
+    # from any of them acknowledging it** -- the camp's spring was turned around and nobody
+    # mentioned it, which is why none of it landed when the game was played.
+    #
+    # So a discovery that says it helps somebody must be somebody's business to talk about.
+    helped = {}
+    for eid, (_p, payload) in entities.items():
+        if payload.get("type") != "discovery":
+            continue
+        for who in payload.get("helps") or []:
+            helped.setdefault(who, []).append(eid)
+
+    for who, discoveries in sorted(helped.items()):
+        person = entities.get(who)
+        if person is None:
+            continue
+        prose = json.dumps(person[1].get("lines") or [])
+        for did in discoveries:
+            if did not in prose:
+                errors.append(
+                    f"{who}: {did} says it helps them, but they have no line requiring it -- "
+                    f"help nobody mentions is a field in a file"
+                )
+
     # --- names the player is not meant to reach -----------------------------------
     #
     # A discovery whose own notes say a thing "should stay unanswered" is a promise, and prose is
