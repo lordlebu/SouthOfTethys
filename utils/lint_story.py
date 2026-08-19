@@ -176,6 +176,37 @@ def main() -> int:
             if ref not in known:
                 errors.append(f"{path.name}: reference '{ref}' does not exist")
 
+    # --- names the player is not meant to reach -----------------------------------
+    #
+    # A discovery whose own notes say a thing "should stay unanswered" is a promise, and prose is
+    # the one place nothing else checks. Canon knows who took the mask -- `event_tendua_crisis`
+    # names Nila -- and a rung that says so would quietly close a thread the design wants left
+    # open. This is cheap to break by accident and impossible to notice by reading a schema.
+    #
+    # Only rungs the player reads are checked. `notes` is for the canon reader and is where the
+    # answer belongs.
+    sealed = {
+        eid: payload
+        for eid, (_, payload) in entities.items()
+        if payload.get("type") == "discovery" and "stay unanswered" in (payload.get("notes") or "")
+    }
+    if sealed:
+        cast = set()
+        for _eid, (_p, payload) in entities.items():
+            if payload.get("type") == "character":
+                cast.add(payload.get("name", ""))
+                cast.update(payload.get("aliases") or [])
+        cast = {n for n in cast if len(n) > 3}
+
+        for eid, payload in sealed.items():
+            prose = " ".join(l.get("entry", "") for l in payload.get("levels", []))
+            for name in sorted(cast):
+                if name in prose:
+                    errors.append(
+                        f"{eid}: rung prose names '{name}', but its notes say the answer "
+                        f"should stay unanswered"
+                    )
+
     print(f"  schema     : {schema_note}")
     print(f"  entities   : {len(entities)}")
     print(f"  epochs     : {len(declared)} declared")
