@@ -36,6 +36,12 @@
       "requires": [
         "discovery_fever_root_spread"
       ]
+    },
+    {
+      "text": "Layers, yes. My mother knew where the thin ones were and I know, and neither of us knew why. It is not a thing that happened to Dwarka. It is what Dwarka is, and we already had a word for it and a place to put the bones.",
+      "requires": [
+        "discovery_midden_layers"
+      ]
     }
   ],
   "notes": "Holds four hundred years of stratigraphy as a family trade and has never been asked. Would settle -- the midden is a living, not a home.",

@@ -19,6 +19,18 @@
       "requires": [
         "discovery_saltreed_thatch"
       ]
+    },
+    {
+      "text": "You were right about the wind. We turned the spring kiln to face the plateau and it fired in a day, on half the reed. Half. I have been cutting twice what I needed since I was fourteen and nobody ever stood in the doorway and looked at which way the smoke went.",
+      "requires": [
+        "discovery_kiln_draught"
+      ]
+    },
+    {
+      "text": "Bekh says we are staying. So I am going to put a proper roof on the kiln shed, the kind you build when you expect to be under it. It will take three weeks and there is no reason to hurry, which is the strangest part.",
+      "requires": [
+        "discovery_winter_line"
+      ]
     }
   ],
   "epochs": [
