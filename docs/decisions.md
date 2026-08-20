@@ -52,6 +52,90 @@ layer could land without editing `App.tsx` and the UI instance can adopt it when
 - `Estemmenosuchus Executioner` moved on my reading alone — worth a second opinion.
 - Asura settlement rate sits at 11.1%. That number is my calibration, not canon.
 
+### Second round, after the game was played
+
+Seven phases shipped and then somebody walked the map. Six things were wrong and not one was
+visible to 460 tests, because a suite checks that things work rather than that they are worth
+doing. These are the calls made in response.
+
+**A field map declares its own landform.** Canon gained `relief` — `delta`, `island`, `plateau`,
+`basin` — because one shaping rule cannot produce a harbour, an island and a plateau. It was
+producing a dome on every map: elevation rose toward the centre, high ground classifies as hills
+and forest at travel cost 2, and the average tile went from 1.15 at the rim to 1.98 in the middle.
+Every map was hardest exactly where the walking happens.
+
+Two constants in the engine's shapers are easy to get backwards and both were, at a cost of
+several hours:
+
+- *Raise the interior, never lower the rim.* They look equivalent — the difference is a constant
+  and normalisation runs afterwards — but the sea threshold is a fixed fraction of the normalised
+  range, so subtracting drags the world under water. Land went from 63–86% across twenty
+  procedural seeds to 27–75%.
+- *An easy middle means mid elevation and **low** moisture.* The only window yielding `plains`,
+  the sole cheap non-coastal biome, is elevation 0.36–0.66 with moisture under 0.50. Raising
+  moisture toward the middle — the intuitive way to make a delta feel like a delta — makes it more
+  expensive, not less.
+
+**Reachability is carved after placement, not shaped before it.** "The places are reachable
+however far out they sit" cannot be a function of position, because placement happens later and
+depends on the terrain. The engine eases the ground along the routes between placed points of
+interest instead, so a valley is literally the path between two places rather than a landform one
+happens to sit in. Narmada keeps cliffs in the middle because the line between the University and
+the quarry is walkable through them.
+
+**Dwarka was dried out: the sea left, not the land.** It was an island city; it is now a cold
+desert around a dead harbour, with seawalls standing in dust and a market still opening on a tide
+that stopped arriving. Six passes of engine tuning failed to make a wetland-dominant map walkable,
+because wetland, forest and hills are all travel cost 2 and no shaping can invent cheap ground that
+the palette does not contain. One lore change fixed it: travel cost went from 1.60 rising to 1.97
+across the map, to a flat 1.10 falling to 1.06.
+
+It cost five rewritten rungs across three chains and nothing else, because every discovery there
+already read what water *did* rather than what it does. **When the engine keeps fighting the
+content, the content may be the thing that is wrong.**
+
+**The Dry Harbour was retired.** Four maps became three. It was a fourth variation on reading the
+ground with no story in it, where the other three each carry one: Lothal the Mask Family, Dwarka
+the Asura gate and the wrong-way skeleton, Narmada the University.
+
+Nineteen entities, and checked rather than assumed to be safe — the only reference from anywhere
+else in canon was Narmada listing it as a neighbour. The Glass Scar and Caravan Ground moved to
+Dwarka, which is now the only map with desert in its palette, and both read better there: a seam
+of fused sand pointing at a doorway things come through is a question, where the same seam in an
+empty desert was a curiosity. Two rungs that dated themselves against the retired fossil channel
+now date against the seawalls, which measure the same departure from the other side.
+
+**The traveller carries a kit, not an inventory.** Bedroll, lamp, notebook and staff — fixed from
+the start, never dropped, never spent. Consumables would open lamp oil, rope and dry tinder, which
+is real resource pressure and also a survival game's spine; this one opens "Combat is absent by
+design".
+
+The bedroll answers a measured problem rather than a wanted feature: a full in-game day bought 23
+steps of walking while the furthest tile from any shelter measured 72, so a traveller could be
+three days from a roof through no fault of their own. That is not a hard choice, it is a trap. The
+tile was rescaled so a day buys about eighty steps, and the bedroll covers the corners that are
+still further than a day on rough ground.
+
+Canon owns none of it and has no item concept at all — its only `artifacts` are the three story
+masks. Canon says what exists in the world; the game says what the traveller brought.
+
+**The mask thread reaches the event and never a name.** `discovery_chamber_below` gives Varuna a
+sealed room under the tower, a shelf cut for the shape the stair niche also held, soot in a room
+with no chimney, and mortar that dates it after the collapse. It does not give him a person, and
+the last rung says so: *"I cannot say who, or when, or whether it was the same hands."*
+
+Canon knows the answer — `event_tendua_crisis` names Nila, `event_mask_retrieval` names Asha,
+iKnaya and Varna — and `discovery_mask_niche`'s own note says it *"should stay unanswered for a
+long time; the diary needs entries the player cannot finish."* Rather than trust that,
+`lint_story.py` now checks the rung prose of any discovery whose notes say "stay unanswered"
+against canon's whole cast list. Prose is the one place nothing else looks.
+
+**`helps` must be spoken.** A second new check refuses a discovery that names somebody in `helps`
+when that person has no line requiring it. The first solarpunk chain shipped with four discoveries
+naming three people and not one line acknowledging any of it — the camp's spring was turned around
+and nobody mentioned it, which is exactly why none of it landed when the game was played. The
+check found four more silent helps on its first run, on the other two maps.
+
 ---
 
 ## Open — needs a human call

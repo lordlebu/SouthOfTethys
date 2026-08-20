@@ -14,7 +14,7 @@ That division settles nearly every question that comes up: everything canon hold
 rather than debating it.
 
 Canon is one JSON file per entity under `database/`, validated against JSON Schema in
-`database/schemas/`. `database/index.json` is the manifest — **v1.6.0, 504 entities**.
+`database/schemas/`. `database/index.json` is the manifest — **v1.9.0, 495 entities**.
 
 ## Commands
 
@@ -89,13 +89,23 @@ Hugging Face model is stock GPT-2 that nothing uses.
 
 ## Authoring a field map
 
-Measured across the four that exist: six points of interest, six to nine discoveries running
-three to seven rungs, one to three field questions, two or three people, **~1,700 words of
-prose**, about twenty JSON entities.
+Measured across the three that exist: six to eight points of interest, six to nine discoveries
+running three to seven rungs, one to three field questions, two or three people, **~1,700 words
+of prose**, about twenty JSON entities.
 
 The typing is not the constraint. Each map needs a **thesis** that is not a repeat: Lothal
-teaches looking, Narmada shows a record that begins at the wound, Dwarka is where local
-knowledge is simply right, the Dry Harbour is out of date rather than mysterious.
+teaches looking and carries the Mask Family; Narmada shows a record that begins at the wound;
+Dwarka is where local knowledge is simply right, and is a cold desert around a harbour whose sea
+left inside living memory.
+
+There were four. **The Dry Harbour was retired** because it was a fourth variation on reading the
+ground with no story in it — the other three each carry one. Its Glass Scar and Caravan Ground
+moved to Dwarka, which is now the only map with desert in its palette. See `docs/decisions.md`.
+
+A field map also declares a **`relief`** — `delta`, `island`, `plateau` or `basin` — which is the
+only thing canon says about the *shape* of a map, as distinct from what it is made of. One shaping
+rule cannot produce a harbour, an island and a plateau, and trying made every map a dome that was
+hardest to walk exactly in the middle where the walking happens.
 
 A region can only hold a map if its biomes are `renderable` in `database/biomes.json`. The
 Shattered Sea is the only unbuilt region that qualifies today; the Tethys Sky Routes are blocked
