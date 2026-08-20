@@ -51,6 +51,18 @@ or its workflow breaks, `main` cannot be merged to or repaired until the rule is
 recovery is Settings → Rules → Rulesets → *Protect main* → Enforcement: **Disabled**, merge the
 fix, then set it back to Active.
 
+**Always end with the pull request link.** Whenever work is pushed, the reply must carry the URL —
+the PR if one exists, otherwise the compare link the push prints — so it can be opened directly
+rather than described. `gh` is **not installed on this machine**, so the PR usually cannot be
+opened for you; hand over the link with a title and body ready to paste:
+
+```
+https://github.com/lordlebu/SouthOfTethys/pull/new/<branch>
+```
+
+Push before reporting — a link to an unpushed branch 404s. If the work is not ready to push, say
+so instead of offering a link.
+
 Only `validate`, from `story-validation.yml`, is required. The jobs in `ci.yml` are deliberately
 *not*, because that workflow is path-filtered to `utils/**`, `database/**`, `cartography/**` and
 a few others — requiring one would leave a documentation-only pull request pending forever
