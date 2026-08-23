@@ -23,8 +23,9 @@ It is now a list of what is enforced, which is a thing that can be checked again
 | **the linter's own dependency** | A missing `jsonschema` exits non-zero. It used to print a note and report success. |
 
 Constrained by enum where the data was already consistent: `rarity`, `placement`, `canon`, `diet`.
-`mood` is deliberately left open — eleven values with no near-duplicates, but it is descriptive
-vocabulary rather than a controlled list, and pinning it would make an twelfth a schema edit.
+`mood` was already an enum of eleven values before this pass and was left untouched — an earlier
+draft of this file said it had been "deliberately left open", which was simply wrong about a file
+it was describing. Exactly the failure mode this document exists to avoid.
 
 ## Not enforced — known, and why
 
