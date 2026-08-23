@@ -167,5 +167,5 @@
       "description": "Entity ids this can put back -- a poisoned field, a collapsed roof, a silted channel. What the endgame settlement is built out of."
     }
   },
-  "additionalProperties": true
+  "additionalProperties": false
 }

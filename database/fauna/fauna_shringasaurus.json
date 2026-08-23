@@ -1,0 +1,32 @@
+{
+  "id": "fauna_shringasaurus",
+  "type": "fauna",
+  "name": "Shringasaurus",
+  "scientific": "Shringasaurus indicus",
+  "diet": "Herbivore",
+  "habitats": [
+    "region_narmada_plateau"
+  ],
+  "behaviour": [
+    "browsing",
+    "herd",
+    "diurnal"
+  ],
+  "related_species": [
+    "fauna_frilled_shringasaurus"
+  ],
+  "notes": "Horned archosauromorph of the Denwa ground, not a dinosaur and not a crocodile -- an older diapsid branch that outlasted both here. A pair of forward-curving horns sits above the eyes, on adults only; yearlings are hornless and are often taken for something else entirely. Browses the high branches by rearing onto its hind legs, which is what the neck is for.",
+  "canon": "primary",
+  "sources": [
+    "SouthOfTethys.txt"
+  ],
+  "biomes": [
+    "plains",
+    "forest",
+    "hills"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "Two horns come up out of the scrub before the head does, curved forward like a bull's and set above the eyes rather than on the nose. The animal rears slowly against a tree, takes what it came for, and drops back down.",
+  "mood": "patient"
+}

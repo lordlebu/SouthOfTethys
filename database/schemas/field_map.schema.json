@@ -162,5 +162,5 @@
       "description": "The landform, which decides how the generator shapes this map's ground.\n\nCanon does not describe tiles -- it says what kind of place this is, and the engine draws it. This field exists because one shaping rule cannot produce a harbour, an island and a plateau: every map was being built as a dome, low at the rim and high in the middle, so travel cost climbed from 1.15 at the edge to 1.98 at the centre and the walking was hardest exactly where the walking happens.\n\n* `delta`   -- low, wet, threaded with channels. The easy ground is the water's edge.\n* `island`  -- sea on every side, land in the middle. What is left of somewhere larger.\n* `plateau` -- flat and high, severe at the rim. The scarp is the drama, not the surface.\n* `basin`   -- a bowl. The default, and what a seabed becomes when it loses its sea."
     }
   },
-  "additionalProperties": true
+  "additionalProperties": false
 }

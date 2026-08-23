@@ -1,0 +1,75 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Faction",
+  "description": "A group that acts with one intent -- a guild, a bloodline, an invasion. Distinct from a settlement, which is a place that happens to hold people.",
+  "type": "object",
+  "required": [
+    "id",
+    "type",
+    "name",
+    "culture"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^faction_[a-z0-9_]+$"
+    },
+    "type": {
+      "const": "faction"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "culture": {
+      "type": "string",
+      "minLength": 1
+    },
+    "members": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "`character_` ids."
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Other names this group is known by. Two of the three carry one."
+    },
+    "origin": {
+      "type": "string"
+    },
+    "epithet": {
+      "type": "string"
+    },
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "`artifact_` ids the faction holds or seeks."
+    },
+    "notes": {
+      "type": "string"
+    },
+    "canon": {
+      "type": "string",
+      "enum": [
+        "primary",
+        "secondary",
+        "inferred"
+      ],
+      "description": "How firmly this is established. `primary` is stated by the source material, `inferred` is a reading canon has committed to."
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}

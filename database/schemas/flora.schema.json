@@ -113,7 +113,7 @@
         "flavour",
         "lore"
       ],
-      "description": "Plants placed in play are `flavour`; `lore` is authored but never placed. Untagged imports default to `lore`."
+      "description": "Whether the species can be met (`encounter`), only mentioned in passing (`flavour`), or exists in the record alone (`lore`)."
     },
     "rarity": {
       "type": "string",
@@ -121,7 +121,8 @@
         "common",
         "rare",
         "mythic"
-      ]
+      ],
+      "description": "How often a player meets one. Drives the weighting the game expands biome pools with, so a fourth value silently changes encounter rates."
     },
     "epochs": {
       "type": "array",
@@ -138,7 +139,14 @@
     "placement_note": {
       "type": "string",
       "description": "Why this species is placed as it is, when the answer is not obvious. Required reading before 'fixing' an entity with empty `biomes`: an empty list can mean untagged, or it can mean deliberately held out of play. If this field is present, the emptiness is a decision."
+    },
+    "crosses_at": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Entity ids where this plant's story crosses another's -- an event, a settlement. Resolved by the reference walker rather than here. Typed as a string on the first attempt at this schema, which the two flora carrying it immediately disproved."
     }
   },
-  "additionalProperties": true
+  "additionalProperties": false
 }

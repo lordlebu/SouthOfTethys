@@ -28,10 +28,14 @@
       "type": "object"
     },
     "diet": {
-      "type": [
-        "string",
-        "null"
-      ]
+      "type": "string",
+      "enum": [
+        "Carnivore",
+        "Herbivore",
+        "Omnivore",
+        "Insectivore"
+      ],
+      "description": "Capitalised, because that is how canon writes it. Sparse -- 40 of 347 -- and not required."
     },
     "habitats": {
       "type": "array",
@@ -119,7 +123,7 @@
         "flavour",
         "lore"
       ],
-      "description": "`encounter` is met in play; `lore` is authored but never placed. Untagged imports default to `lore` so nothing reaches the encounter table unreviewed."
+      "description": "Whether the species can be met (`encounter`), only mentioned in passing (`flavour`), or exists in the record alone (`lore`)."
     },
     "rarity": {
       "type": "string",
@@ -127,7 +131,8 @@
         "common",
         "rare",
         "mythic"
-      ]
+      ],
+      "description": "How often a player meets one. Drives the weighting the game expands biome pools with, so a fourth value silently changes encounter rates."
     },
     "mood": {
       "type": "string",
@@ -173,7 +178,14 @@
         "type": "string"
       },
       "description": "Entity ids of the places where a species native to another realm enters this one. Naraka creatures cross at the Dwarka Gate (settlement_dwarka) rather than being native to delta water, so they should be met near a gate and nowhere else."
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Other names this creature is known by. Two fauna carry one, and neither schema nor linter knew until `additionalProperties` was tightened."
     }
   },
-  "additionalProperties": true
+  "additionalProperties": false
 }

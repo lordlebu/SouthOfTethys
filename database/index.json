@@ -1,10 +1,10 @@
 {
-  "version": "1.9.0",
+  "version": "1.10.0",
   "description": "SouthOfTethys canonical entity index",
   "counts": {
     "characters": 41,
     "events": 12,
-    "fauna": 257,
+    "fauna": 259,
     "flora": 90,
     "settlements": 2,
     "regions": 7,
@@ -153,6 +153,7 @@
       "fauna_floating_island_chameleon",
       "fauna_floating_island_shrew",
       "fauna_flying_fish_of_the_tethys",
+      "fauna_frilled_shringasaurus",
       "fauna_frost_whisker_carp",
       "fauna_gargoyle_bat",
       "fauna_garudasaur_eagle",
@@ -273,6 +274,7 @@
       "fauna_shell_turtle",
       "fauna_shilajit_guardian_lizard",
       "fauna_shrima",
+      "fauna_shringasaurus",
       "fauna_silver_banded_sea_snake",
       "fauna_sky_dragon_fly",
       "fauna_sky_faring_crab",

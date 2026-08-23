@@ -1,0 +1,67 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Mythology",
+  "description": "A figure the world believes in, as distinct from one it can meet. Kept apart from `characters` on purpose: whether these are real inside the fiction is a question the fiction declines to answer, and the schema should not answer it either.",
+  "type": "object",
+  "required": [
+    "id",
+    "type",
+    "name",
+    "domain",
+    "aspect"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^mythology_[a-z0-9_]+$"
+    },
+    "type": {
+      "const": "mythology"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "domain": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "What the figure governs. A list because most govern several."
+    },
+    "aspect": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The face this figure shows -- the same power can be a protector or a devourer."
+    },
+    "relations": {
+      "type": "object",
+      "description": "Named ties to other figures, keyed by the nature of the tie. Free-form on purpose: the relationships in a mythology are not a fixed set, and one of the three uses it.",
+      "additionalProperties": {
+        "type": [
+          "string",
+          "array"
+        ]
+      }
+    },
+    "notes": {
+      "type": "string"
+    },
+    "canon": {
+      "type": "string",
+      "enum": [
+        "primary",
+        "secondary",
+        "inferred"
+      ],
+      "description": "How firmly this is established. `primary` is stated by the source material, `inferred` is a reading canon has committed to."
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}

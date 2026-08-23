@@ -10,3 +10,12 @@ pyupgrade
 flake8
 ruff
 huggingface_hub
+
+# Required by utils/lint_story.py, and required means required.
+#
+# It was absent for the whole life of that script, which wrapped its schema check in
+# `except ImportError` and passed. `story-validation.yml` installs this file and nothing else, and
+# it is the only required check on main -- so the most valuable thing the linter does had never run
+# in CI even once. The lint now exits non-zero if this is missing rather than reporting success, so
+# a future removal from this line fails loudly instead of quietly.
+jsonschema

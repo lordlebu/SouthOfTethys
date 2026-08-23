@@ -152,5 +152,5 @@
       "description": "The entity this place used to be, when it is now a wreck of it. Lothal in Epoch 5 is `kind: settlement` with `ruin_of: settlement_lothal` -- survivors camped inside the half-buried relic, so it is a living place and a ruin at once rather than either. Lets the diary say what stood here without duplicating the entity."
     }
   },
-  "additionalProperties": true
+  "additionalProperties": false
 }
