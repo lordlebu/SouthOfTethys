@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Southern Sea-Eagle",
   "scientific": "Haliaeetus meridionalis",
+  "clade": "bird",
   "region": "shattered-sea-mappa-mundi",
   "biomes": [
     "sea"

@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Tendua Manticore",
   "scientific": null,
+  "clade": "spectre",
   "taxonomy": {
     "notes": "Asura-tainted aberration; winged leopard with human face"
   },

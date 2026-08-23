@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Jungle Horned Toad",
   "scientific": "Megophrys sylvanica",
+  "clade": "amphibian",
   "region": "shattered-sea-mappa-mundi",
   "biomes": [
     "forest"

@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Plateau Wolf",
   "scientific": "Canis narmadae",
+  "clade": "mammal",
   "diet": "Carnivore",
   "habitats": [
     "region_narmada_plateau",

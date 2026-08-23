@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Dimetrodon War-Mount",
   "scientific": "Dimetrodon asuricus",
+  "clade": "synapsid",
   "region": "asura-conjurations",
   "biomes": [
     "desert",

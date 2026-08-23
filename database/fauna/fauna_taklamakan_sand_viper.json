@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Taklamakan Sand-Viper",
   "scientific": "Vipera sand-dune",
+  "clade": "reptile",
   "region": "gedrosian-taklamakan",
   "biomes": [
     "desert"

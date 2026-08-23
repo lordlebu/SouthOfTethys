@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Sky-Gull",
   "scientific": "Larus caelius",
+  "clade": "bird",
   "region": "tethys-sky-routes",
   "biomes": [
     "sky_island"

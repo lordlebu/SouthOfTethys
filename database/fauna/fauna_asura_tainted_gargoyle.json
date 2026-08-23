@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Asura-Tainted Gargoyle",
   "scientific": "Tuli calcified",
+  "clade": "mammal",
   "region": "asura-conjurations",
   "biomes": [
     "sky_island",

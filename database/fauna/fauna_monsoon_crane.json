@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Monsoon Crane",
   "scientific": null,
+  "clade": "bird",
   "region": "prototype-starters",
   "biomes": [
     "wetland",

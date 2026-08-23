@@ -1,5 +1,5 @@
 {
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "What kind of animal a creature is, declared once here so that 259 fauna do not each repeat it. Every fauna entity names a group from `clades` below and may name a `subclade` within it; the branch and lineage it sits under are read from this file rather than stored on the entity, because they are a property of the group and not of the animal. Written because the game had been deriving all of this by matching keywords against names and binomials, which is how an Asura-tainted owl came to be drawn as a ghost, a baby crocodile as a mammal, and a feathered dinosaurid as a cricket.",
   "branches": {
     "vertebrate": {
@@ -100,7 +100,8 @@
     "insect": {
       "branch": "invertebrate",
       "lineage": null,
-      "label": "Insect"
+      "label": "Insect",
+      "note": "Insects, and the myriapods with them. Canon's two Scolopendra centipedes are not insects and there is no third arthropod leaf worth adding for two species; this is a grade like `fish` and `worm`, and saying so is better than pretending."
     },
     "arachnid": {
       "branch": "invertebrate",
@@ -117,6 +118,12 @@
       "branch": "invertebrate",
       "lineage": null,
       "label": "Mollusc"
+    },
+    "cnidarian": {
+      "branch": "invertebrate",
+      "lineage": null,
+      "label": "Cnidarian",
+      "note": "Jellyfish, and anything else radially symmetrical and stinging. One species today -- the Sky-Faring Jellyfish -- and it gets its own leaf rather than being filed under `mollusc`, which is what the game's keyword classifier had been doing. A jellyfish is not a snail."
     },
     "worm": {
       "branch": "invertebrate",

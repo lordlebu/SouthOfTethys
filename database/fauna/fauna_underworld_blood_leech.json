@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Underworld Blood-Leech",
   "scientific": "Hirudo asurica",
+  "clade": "worm",
   "region": "asura-conjurations",
   "biomes": [
     "underworld"

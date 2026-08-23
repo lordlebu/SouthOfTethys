@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Shattered Sea Barracuda",
   "scientific": "Sphyraena shattered",
+  "clade": "fish",
   "region": "shattered-sea-mappa-mundi",
   "biomes": [
     "sea"

@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Scythian War-Camel",
   "scientific": "Camelus scythicus",
+  "clade": "mammal",
   "region": "gedrosian-taklamakan",
   "biomes": [
     "desert"

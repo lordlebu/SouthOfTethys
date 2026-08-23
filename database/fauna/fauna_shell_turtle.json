@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Shell Turtle",
   "scientific": null,
+  "clade": "reptile",
   "region": "prototype-starters",
   "biomes": [
     "coast",

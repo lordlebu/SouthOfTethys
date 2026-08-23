@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Cloud Antelope",
   "scientific": null,
+  "clade": "mammal",
   "region": "prototype-starters",
   "biomes": [
     "mountains",

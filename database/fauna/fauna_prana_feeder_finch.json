@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Prana-Feeder Finch",
   "scientific": "Fringilla prana",
+  "clade": "bird",
   "region": "tethys-sky-routes",
   "biomes": [
     "sky_island"

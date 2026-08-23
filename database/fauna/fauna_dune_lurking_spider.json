@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Dune-Lurking Spider",
   "scientific": "Sparassus arenarius",
+  "clade": "arachnid",
   "region": "gedrosian-taklamakan",
   "biomes": [
     "desert"

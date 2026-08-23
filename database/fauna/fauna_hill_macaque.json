@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Hill Macaque",
   "scientific": null,
+  "clade": "mammal",
   "region": "prototype-starters",
   "biomes": [
     "hills",

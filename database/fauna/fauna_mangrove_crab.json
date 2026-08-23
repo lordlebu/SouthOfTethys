@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Mangrove Crab",
   "scientific": "Scylla bonewoodi",
+  "clade": "crustacean",
   "diet": "Omnivore",
   "habitats": [
     "region_saraswati_delta",

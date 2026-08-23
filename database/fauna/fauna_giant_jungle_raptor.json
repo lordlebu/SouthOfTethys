@@ -3,6 +3,8 @@
   "type": "fauna",
   "name": "Giant Jungle Raptor",
   "scientific": "Silvanus gigas",
+  "clade": "bird",
+  "subclade": "avian_dinosaurid",
   "region": "shattered-sea-mappa-mundi",
   "biomes": [
     "forest"

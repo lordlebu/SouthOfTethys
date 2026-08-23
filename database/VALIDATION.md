@@ -20,6 +20,8 @@ It is now a list of what is enforced, which is a thing that can be checked again
 | **index, both ways** | Every id in `index.json` has a file, every file is in `index.json`, and the per-category counts match. |
 | **epochs** | Any field whose *name* mentions an epoch resolves to `timeline/epochs.json` — not just `epoch` and `epochs`, because `epoch_founded` once sat unvalidated one field over. |
 | **references** | Any string matching a known id prefix resolves to an entity that exists, wherever it appears in the tree. |
+| **clade** | Every fauna states one, from the sixteen in `database/clades.json`. Required, so a new species cannot ship without saying what it is. |
+| **subclade** | Where given, it must be a sub-group of *that* clade. A cross-field dependency, so it lives in the linter: JSON Schema checks each field against a flat enum and would let a bird be a dromaeosaurid. |
 | **the linter's own dependency** | A missing `jsonschema` exits non-zero. It used to print a note and report success. |
 
 Constrained by enum where the data was already consistent: `rarity`, `placement`, `canon`, `diet`.
@@ -33,7 +35,8 @@ it was describing. Exactly the failure mode this document exists to avoid.
 |---|---|
 | **Duplicate binomials** | Three pairs share one `scientific`: *Vulpes gedrosiana*, *Sarasvatimanta gedrosii*, *Vrkshasmara griseus*. Each is one hand-authored entity and one bestiary import of the same animal. JSON Schema cannot express uniqueness across sibling files, so this needs a hand-written invariant. See `docs/canon-integrity-plan.md`, Phase 02. |
 | **Missing binomials** | Eight fauna have no `scientific` at all. |
-| **`taxonomy` shape** | Declared as `{"type": "object"}` with no required keys. Populated on 8 of 259 fauna and 0 of 90 flora, keyed `note` in some and `notes` in others. Either constrain it or delete it — Phase 03. |
+| **`taxonomy` shape** | Still `{"type": "object"}` with no required keys, and still an editorial scratchpad. Phase 03 resolved the part that mattered by adding `clade` as a real field rather than constraining this one; what is left here is genuinely notes. |
+| **Flora clades** | Fauna all carry one; the 90 flora do not. `growth_form` is derived from names game-side, the same way body plans used to be. |
 | **Spouse field** | Sometimes an array, sometimes a string. The schema stays permissive; long-standing and non-blocking. |
 
 ## The rule this file exists to enforce on itself

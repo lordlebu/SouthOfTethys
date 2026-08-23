@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Magma-Claw Crab",
   "scientific": "Gecarcinus magma",
+  "clade": "crustacean",
   "region": "ganges-lava-sea",
   "biomes": [
     "lava_field",

@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Camelosuchus Calf",
   "scientific": "Camelosuchus minor",
+  "clade": "crocodilian",
   "region": "gedrosian-taklamakan",
   "biomes": [
     "desert"

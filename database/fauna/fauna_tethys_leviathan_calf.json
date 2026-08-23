@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Tethys Leviathan Calf",
   "scientific": "Balaenoptera minor",
+  "clade": "mammal",
   "region": "shattered-sea-mappa-mundi",
   "biomes": [
     "sea"

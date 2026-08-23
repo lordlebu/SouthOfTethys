@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Sky-Snake",
   "scientific": "Chrysopelea caelia",
+  "clade": "reptile",
   "region": "tethys-sky-routes",
   "biomes": [
     "sky_island",

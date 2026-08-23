@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Glass-Scaled Viper",
   "scientific": "Vipera vitrea",
+  "clade": "reptile",
   "region": "gedrosian-taklamakan",
   "biomes": [
     "desert"

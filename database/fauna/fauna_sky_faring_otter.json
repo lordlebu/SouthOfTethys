@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Sky-Faring Otter",
   "scientific": "Lutra caelia",
+  "clade": "mammal",
   "region": "tethys-sky-routes",
   "biomes": [
     "sky_island",

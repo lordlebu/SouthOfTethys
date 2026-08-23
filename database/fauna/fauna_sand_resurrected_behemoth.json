@@ -3,6 +3,8 @@
   "type": "fauna",
   "name": "Sand-Resurrected Behemoth",
   "scientific": "Sauropodoligator arenarius",
+  "clade": "dinosaur",
+  "subclade": "sauropodomorph",
   "region": "asura-conjurations",
   "biomes": [
     "desert"

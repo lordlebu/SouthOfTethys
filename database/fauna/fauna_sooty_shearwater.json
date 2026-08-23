@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Sooty Shearwater",
   "scientific": "Puffinus cinereus",
+  "clade": "bird",
   "region": "ganges-lava-sea",
   "biomes": [
     "hills"

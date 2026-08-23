@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Asura-Tainted Owl",
   "scientific": "Bubo asuricus",
+  "clade": "bird",
   "region": "asura-conjurations",
   "biomes": [
     "forest",

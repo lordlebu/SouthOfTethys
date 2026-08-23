@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Dune-Running Lizard",
   "scientific": "Agama deserti",
+  "clade": "reptile",
   "region": "gedrosian-taklamakan",
   "biomes": [
     "desert"

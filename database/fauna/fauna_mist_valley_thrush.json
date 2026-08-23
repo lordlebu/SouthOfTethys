@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Mist-Valley Thrush",
   "scientific": "Turdus caelius",
+  "clade": "bird",
   "region": "tethys-sky-routes",
   "biomes": [
     "sky_island"

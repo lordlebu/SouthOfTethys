@@ -3,6 +3,8 @@
   "type": "fauna",
   "name": "Stealth-Patterned Theropod",
   "scientific": "Sylvianus occultus",
+  "clade": "bird",
+  "subclade": "avian_dinosaurid",
   "region": "shattered-sea-mappa-mundi",
   "biomes": [
     "forest"

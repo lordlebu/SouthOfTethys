@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Tethyan Blue-Fin Tuna",
   "scientific": "Thunnus tethys",
+  "clade": "fish",
   "region": "shattered-sea-mappa-mundi",
   "biomes": [
     "sea"

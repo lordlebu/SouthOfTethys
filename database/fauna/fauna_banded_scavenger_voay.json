@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Banded Scavenger Voay",
   "scientific": "Voay lineatus",
+  "clade": "crocodilian",
   "region": "shattered-sea-mappa-mundi",
   "biomes": [
     "sea",

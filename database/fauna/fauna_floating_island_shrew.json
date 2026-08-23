@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Floating-Island Shrew",
   "scientific": "Sorex levitatus",
+  "clade": "mammal",
   "region": "tethys-sky-routes",
   "biomes": [
     "sky_island",

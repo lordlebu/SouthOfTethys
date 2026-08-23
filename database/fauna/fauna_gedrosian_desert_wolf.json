@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Gedrosian Desert Wolf",
   "scientific": "Canis lupus gedrosiae",
+  "clade": "mammal",
   "region": "gedrosian-taklamakan",
   "biomes": [
     "desert"

@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Prana-absorbing Butterfly",
   "scientific": "Danaus caelius",
+  "clade": "insect",
   "region": "tethys-sky-routes",
   "biomes": [
     "sky_island",

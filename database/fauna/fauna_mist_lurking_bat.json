@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Mist-Lurking Bat",
   "scientific": "Myotis nubis",
+  "clade": "mammal",
   "region": "tethys-sky-routes",
   "biomes": [
     "sky_island"

@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Highland Rock-Runner",
   "scientific": "Postosuchus montanus",
+  "clade": "crocodilian",
   "region": "gedrosian-taklamakan",
   "biomes": [
     "desert"

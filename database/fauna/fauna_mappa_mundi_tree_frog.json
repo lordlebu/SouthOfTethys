@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Mappa Mundi Tree-Frog",
   "scientific": "Hyla sylvanica",
+  "clade": "amphibian",
   "region": "shattered-sea-mappa-mundi",
   "biomes": [
     "forest"

@@ -3,6 +3,8 @@
   "type": "fauna",
   "name": "Steppe-Plumed Elephantbird",
   "scientific": "Aepyornis stephensis",
+  "clade": "bird",
+  "subclade": "ratite",
   "region": "shattered-sea-mappa-mundi",
   "biomes": [
     "coast",

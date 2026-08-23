@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Cloud-Lurking Gecko",
   "scientific": "Gekko caelius",
+  "clade": "reptile",
   "region": "tethys-sky-routes",
   "biomes": [
     "sky_island",

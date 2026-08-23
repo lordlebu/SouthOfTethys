@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Floating-Island Chameleon",
   "scientific": "Chamaeleo levitatus",
+  "clade": "reptile",
   "region": "tethys-sky-routes",
   "biomes": [
     "sky_island"

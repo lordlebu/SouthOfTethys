@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Jungle python",
   "scientific": "Python sylvanus",
+  "clade": "reptile",
   "region": "shattered-sea-mappa-mundi",
   "biomes": [
     "forest"

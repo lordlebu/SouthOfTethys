@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Glacial Snow-Hare",
   "scientific": "Lepus glacialis",
+  "clade": "mammal",
   "region": "ganges-lava-sea",
   "biomes": [
     "lava_field",

@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Caravan Dromedary",
   "scientific": "Camelus dromedarius itineris",
+  "clade": "mammal",
   "diet": "Herbivore",
   "habitats": [
     "region_gedrosian_desert"

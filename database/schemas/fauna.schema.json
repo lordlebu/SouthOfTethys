@@ -5,7 +5,8 @@
   "required": [
     "id",
     "type",
-    "name"
+    "name",
+    "clade"
   ],
   "properties": {
     "id": {
@@ -39,11 +40,12 @@
         "arachnid",
         "crustacean",
         "mollusc",
+        "cnidarian",
         "worm",
         "construct",
         "spectre"
       ],
-      "description": "What kind of animal this is. The branch (vertebrate / invertebrate / unliving) and the amniote lineage (Synapsida / Diapsida) are read from database/clades.json rather than stored here, because they are properties of the group and not of the animal."
+      "description": "What kind of animal this is. The branch (vertebrate / invertebrate / unliving) and the amniote lineage (Synapsida / Diapsida) are read from database/clades.json rather than stored here, because they are properties of the group and not of the animal. Required: a species that does not say what it is sends the game back to guessing from its name, which is what this field exists to end."
     },
     "subclade": {
       "type": "string",
