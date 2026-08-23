@@ -1,6 +1,6 @@
 {
-  "version": "1.0.0",
-  "description": "What kind of animal a creature is, declared once here so that 259 fauna do not each repeat it. Every fauna entity names a leaf from `clades` below; the branch and lineage it sits under are read from this file rather than stored on the entity, because they are a property of the group and not of the animal. Written because the game had been deriving all of this by matching keywords against names and binomials, which is how an Asura-tainted owl came to be drawn as a ghost, a baby crocodile as a mammal, and a feathered dinosaurid as a cricket.",
+  "version": "1.2.0",
+  "description": "What kind of animal a creature is, declared once here so that 259 fauna do not each repeat it. Every fauna entity names a group from `clades` below and may name a `subclade` within it; the branch and lineage it sits under are read from this file rather than stored on the entity, because they are a property of the group and not of the animal. Written because the game had been deriving all of this by matching keywords against names and binomials, which is how an Asura-tainted owl came to be drawn as a ghost, a baby crocodile as a mammal, and a feathered dinosaurid as a cricket.",
   "branches": {
     "vertebrate": {
       "label": "Vertebrate",
@@ -26,7 +26,11 @@
     }
   },
   "clades": {
-    "mammal": { "branch": "vertebrate", "lineage": "Synapsida", "label": "Mammal" },
+    "mammal": {
+      "branch": "vertebrate",
+      "lineage": "Synapsida",
+      "label": "Mammal"
+    },
     "synapsid": {
       "branch": "vertebrate",
       "lineage": "Synapsida",
@@ -37,13 +41,37 @@
       "branch": "vertebrate",
       "lineage": "Diapsida",
       "label": "Bird",
-      "note": "Avian dinosaurs. Kept as a sibling of `dinosaur` rather than a child of it, deliberately: canon treats reptiles, non-avian dinosaurs and birds as three things a naturalist tells apart on sight. Canon's Sylvianus are avian dinosaurids and belong here even where their common names say raptor or theropod."
+      "note": "Avian dinosaurs. Kept as a sibling of `dinosaur` rather than a child of it, deliberately: canon treats reptiles, non-avian dinosaurs and birds as three things a naturalist tells apart on sight. Canon's Sylvianus are avian dinosaurids and belong here even where their common names say raptor or theropod.",
+      "subclades": {
+        "avian_dinosaurid": {
+          "label": "Avian dinosaurid",
+          "note": "Canon's Sylvianus: birds that still read as theropods, and are named as though they were."
+        },
+        "ratite": {
+          "label": "Ratite",
+          "note": "Large flightless birds. The elephant birds."
+        },
+        "true_bird": {
+          "label": "True bird",
+          "note": "Everything else with feathers. Assumed where no subclade is given."
+        }
+      }
     },
     "dinosaur": {
       "branch": "vertebrate",
       "lineage": "Diapsida",
       "label": "Non-avian dinosaur",
-      "note": "Only the non-avian ones. See `bird`."
+      "note": "Only the non-avian ones. See `bird`.",
+      "subclades": {
+        "dromaeosaurid": {
+          "label": "Dromaeosaurid",
+          "note": "Feathered, sickle-clawed theropods. Canon's Vajraptor and Nagaraptor."
+        },
+        "sauropodomorph": {
+          "label": "Sauropodomorph",
+          "note": "The long-necked giants. Canon's Sauropodoligator."
+        }
+      }
     },
     "crocodilian": {
       "branch": "vertebrate",
@@ -57,29 +85,54 @@
       "label": "Reptile",
       "note": "Everything diapsid that is not a bird, a non-avian dinosaur or a crocodilian: lizards, snakes, turtles, and the older archosauromorph branches such as Shringasaurus."
     },
-    "amphibian": { "branch": "vertebrate", "lineage": null, "label": "Amphibian" },
+    "amphibian": {
+      "branch": "vertebrate",
+      "lineage": null,
+      "label": "Amphibian",
+      "note": "Frogs, toads, newts and salamanders. No sub-groups: canon has one creature that is arguably something older, and it is written as a thing a reader notices rather than a thing the database asserts."
+    },
     "fish": {
       "branch": "vertebrate",
       "lineage": null,
       "label": "Fish",
       "note": "A grade, not a clade, and knowingly so. Canon's rays, sharks and bony fish are not each other's closest relatives, but a field diary that separated them would be describing a cladogram rather than a river."
     },
-    "insect": { "branch": "invertebrate", "lineage": null, "label": "Insect" },
+    "insect": {
+      "branch": "invertebrate",
+      "lineage": null,
+      "label": "Insect"
+    },
     "arachnid": {
       "branch": "invertebrate",
       "lineage": null,
       "label": "Arachnid",
       "note": "Chelicerates broadly. Canon's Shrīmā is a eurypterid -- a sea scorpion -- which is not strictly an arachnid but is the closest shape a reader has."
     },
-    "crustacean": { "branch": "invertebrate", "lineage": null, "label": "Crustacean" },
-    "mollusc": { "branch": "invertebrate", "lineage": null, "label": "Mollusc" },
+    "crustacean": {
+      "branch": "invertebrate",
+      "lineage": null,
+      "label": "Crustacean"
+    },
+    "mollusc": {
+      "branch": "invertebrate",
+      "lineage": null,
+      "label": "Mollusc"
+    },
     "worm": {
       "branch": "invertebrate",
       "lineage": null,
       "label": "Worm",
       "note": "Annelids and the worm-shaped. Another honest grade."
     },
-    "construct": { "branch": "unliving", "lineage": null, "label": "Construct" },
-    "spectre": { "branch": "unliving", "lineage": null, "label": "Spectre" }
+    "construct": {
+      "branch": "unliving",
+      "lineage": null,
+      "label": "Construct"
+    },
+    "spectre": {
+      "branch": "unliving",
+      "lineage": null,
+      "label": "Spectre"
+    }
   }
 }

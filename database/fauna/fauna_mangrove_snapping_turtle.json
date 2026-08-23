@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Mangrove Snapping-Turtle",
   "scientific": "Chelydra mangrovi",
+  "clade": "reptile",
   "region": "saraswati-godavari-deltas",
   "biomes": [
     "coast"

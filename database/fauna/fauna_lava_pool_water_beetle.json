@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Lava-Pool Water-Beetle",
   "scientific": "Dytiscus vulcanus",
+  "clade": "insect",
   "region": "saraswati-godavari-deltas",
   "biomes": [
     "mountains"

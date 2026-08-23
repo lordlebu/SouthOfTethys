@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Striped Reed Stalker",
   "scientific": "Baurusuchus striatus",
+  "clade": "crocodilian",
   "diet": "Carnivore",
   "habitats": [
     "region_saraswati_delta"

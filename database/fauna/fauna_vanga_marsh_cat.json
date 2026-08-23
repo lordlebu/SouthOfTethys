@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Vanga Marsh-Cat",
   "scientific": "Felis chaus vanga",
+  "clade": "mammal",
   "region": "saraswati-godavari-deltas",
   "biomes": [
     "wetland"

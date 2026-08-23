@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Saraswati Reed-Warbler",
   "scientific": "Acrocephalus sylvanus",
+  "clade": "bird",
   "region": "saraswati-godavari-deltas",
   "biomes": [
     "wetland"

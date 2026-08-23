@@ -3,6 +3,8 @@
   "type": "fauna",
   "name": "Nagaraptor",
   "scientific": "Nagaraptor vallatus",
+  "clade": "dinosaur",
+  "subclade": "dromaeosaurid",
   "diet": "Carnivore",
   "habitats": [
     "region_saraswati_delta"

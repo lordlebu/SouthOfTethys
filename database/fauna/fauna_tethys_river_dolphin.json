@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Tethys River Dolphin",
   "scientific": "Platanista tethys",
+  "clade": "mammal",
   "diet": "Carnivore",
   "habitats": [
     "region_saraswati_delta"

@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Venomous Vengi Mud-Salamander",
   "scientific": "Megalobatrachus toxicus",
+  "clade": "amphibian",
   "region": "saraswati-godavari-deltas",
   "biomes": [
     "wetland"

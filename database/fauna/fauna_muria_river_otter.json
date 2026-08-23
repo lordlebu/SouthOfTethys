@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Muria River-Otter",
   "scientific": "Lutra muria",
+  "clade": "mammal",
   "region": "saraswati-godavari-deltas",
   "biomes": [
     "river"

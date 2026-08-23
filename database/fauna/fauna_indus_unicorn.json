@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Indus Unicorn",
   "scientific": "Monocerus indicus",
+  "clade": "mammal",
   "diet": "Herbivore",
   "habitats": [
     "region_saraswati_delta"

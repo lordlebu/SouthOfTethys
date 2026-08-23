@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Abyssal Storm-Watcher",
   "scientific": "Cognitavi abyssalis",
+  "clade": "bird",
   "diet": "Omnivore",
   "habitats": [
     "coastal",

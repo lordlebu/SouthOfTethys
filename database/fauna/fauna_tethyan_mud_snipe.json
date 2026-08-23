@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Tethyan Mud-Snipe",
   "scientific": "Gallinago tethys",
+  "clade": "bird",
   "region": "saraswati-godavari-deltas",
   "biomes": [
     "sea",

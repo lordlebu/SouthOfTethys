@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Tethyan Blue-Crayfish",
   "scientific": "Astacus caeruleus",
+  "clade": "crustacean",
   "region": "saraswati-godavari-deltas",
   "biomes": [
     "river"

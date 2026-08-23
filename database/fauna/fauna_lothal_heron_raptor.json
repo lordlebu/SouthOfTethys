@@ -3,6 +3,8 @@
   "type": "fauna",
   "name": "Lothal Heron-Raptor",
   "scientific": "Sylvianus minor",
+  "clade": "bird",
+  "subclade": "avian_dinosaurid",
   "region": "saraswati-godavari-deltas",
   "biomes": [
     "wetland",

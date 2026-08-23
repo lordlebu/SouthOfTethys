@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Sacred Stepwell Koi",
   "scientific": "Cyprinus devotus",
+  "clade": "fish",
   "region": "saraswati-godavari-deltas",
   "biomes": [
     "river"

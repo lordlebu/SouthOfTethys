@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Lothal Mud-Skipper",
   "scientific": "Periophthalmus gigas",
+  "clade": "fish",
   "region": "saraswati-godavari-deltas",
   "biomes": [
     "coast"

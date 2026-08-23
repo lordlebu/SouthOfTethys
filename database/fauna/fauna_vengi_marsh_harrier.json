@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Vengi Marsh Harrier",
   "scientific": "Circus vengi",
+  "clade": "bird",
   "region": "saraswati-godavari-deltas",
   "biomes": [
     "wetland"

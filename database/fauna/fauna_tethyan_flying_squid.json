@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Tethyan Flying-Squid",
   "scientific": "Todarodes tethys",
+  "clade": "mollusc",
   "region": "saraswati-godavari-deltas",
   "biomes": [
     "sea"

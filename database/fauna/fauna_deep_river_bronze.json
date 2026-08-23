@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Deep-River Bronze",
   "scientific": "Cyprinus chalceus",
+  "clade": "fish",
   "region": "saraswati-godavari-deltas",
   "biomes": [
     "river"
