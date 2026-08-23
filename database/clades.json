@@ -1,0 +1,85 @@
+{
+  "version": "1.0.0",
+  "description": "What kind of animal a creature is, declared once here so that 259 fauna do not each repeat it. Every fauna entity names a leaf from `clades` below; the branch and lineage it sits under are read from this file rather than stored on the entity, because they are a property of the group and not of the animal. Written because the game had been deriving all of this by matching keywords against names and binomials, which is how an Asura-tainted owl came to be drawn as a ghost, a baby crocodile as a mammal, and a feathered dinosaurid as a cricket.",
+  "branches": {
+    "vertebrate": {
+      "label": "Vertebrate",
+      "note": "Has a backbone. Split below by amniote lineage where the animal is an amniote at all; fish and amphibians are neither synapsid nor diapsid and sit directly on the branch."
+    },
+    "invertebrate": {
+      "label": "Invertebrate",
+      "note": "Does not. A grade rather than a clade -- these groups are not each other's closest relatives -- but it is the division a naturalist in the field actually makes, and this database is a field record before it is a phylogeny."
+    },
+    "unliving": {
+      "label": "Unliving",
+      "note": "Canon's own category, and not zoology. The Māyā-born are sculpted from river mud or coalesced from altar sparks, and the Asura-descended are incorporeal. Filing either as an animal would say something canon does not."
+    }
+  },
+  "lineages": {
+    "Synapsida": {
+      "label": "Synapsid",
+      "note": "The mammal line. One temporal fenestra. Includes the mammals and the stem-mammals that are not mammals -- Dimetrodon, Gorgonops, Estemmenosuchus -- which are commonly and wrongly called reptiles."
+    },
+    "Diapsida": {
+      "label": "Diapsid",
+      "note": "The reptile line, in the broad sense: two temporal fenestrae. Includes the lizards and snakes, the crocodilians, the non-avian dinosaurs and the birds. Turtles are placed here on molecular grounds rather than on skull openings."
+    }
+  },
+  "clades": {
+    "mammal": { "branch": "vertebrate", "lineage": "Synapsida", "label": "Mammal" },
+    "synapsid": {
+      "branch": "vertebrate",
+      "lineage": "Synapsida",
+      "label": "Non-mammalian synapsid",
+      "note": "Stem-mammals. A separate leaf from `mammal` because the difference is visible: a sail-backed Dimetrodon and a wolf are not one silhouette."
+    },
+    "bird": {
+      "branch": "vertebrate",
+      "lineage": "Diapsida",
+      "label": "Bird",
+      "note": "Avian dinosaurs. Kept as a sibling of `dinosaur` rather than a child of it, deliberately: canon treats reptiles, non-avian dinosaurs and birds as three things a naturalist tells apart on sight. Canon's Sylvianus are avian dinosaurids and belong here even where their common names say raptor or theropod."
+    },
+    "dinosaur": {
+      "branch": "vertebrate",
+      "lineage": "Diapsida",
+      "label": "Non-avian dinosaur",
+      "note": "Only the non-avian ones. See `bird`."
+    },
+    "crocodilian": {
+      "branch": "vertebrate",
+      "lineage": "Diapsida",
+      "label": "Crocodilian",
+      "note": "Croc-line archosaurs, including the land-running ones canon is fond of -- Baurusuchus, Postosuchus, Camelosuchus."
+    },
+    "reptile": {
+      "branch": "vertebrate",
+      "lineage": "Diapsida",
+      "label": "Reptile",
+      "note": "Everything diapsid that is not a bird, a non-avian dinosaur or a crocodilian: lizards, snakes, turtles, and the older archosauromorph branches such as Shringasaurus."
+    },
+    "amphibian": { "branch": "vertebrate", "lineage": null, "label": "Amphibian" },
+    "fish": {
+      "branch": "vertebrate",
+      "lineage": null,
+      "label": "Fish",
+      "note": "A grade, not a clade, and knowingly so. Canon's rays, sharks and bony fish are not each other's closest relatives, but a field diary that separated them would be describing a cladogram rather than a river."
+    },
+    "insect": { "branch": "invertebrate", "lineage": null, "label": "Insect" },
+    "arachnid": {
+      "branch": "invertebrate",
+      "lineage": null,
+      "label": "Arachnid",
+      "note": "Chelicerates broadly. Canon's Shrīmā is a eurypterid -- a sea scorpion -- which is not strictly an arachnid but is the closest shape a reader has."
+    },
+    "crustacean": { "branch": "invertebrate", "lineage": null, "label": "Crustacean" },
+    "mollusc": { "branch": "invertebrate", "lineage": null, "label": "Mollusc" },
+    "worm": {
+      "branch": "invertebrate",
+      "lineage": null,
+      "label": "Worm",
+      "note": "Annelids and the worm-shaped. Another honest grade."
+    },
+    "construct": { "branch": "unliving", "lineage": null, "label": "Construct" },
+    "spectre": { "branch": "unliving", "lineage": null, "label": "Spectre" }
+  }
+}

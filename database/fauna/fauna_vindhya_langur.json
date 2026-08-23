@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Vindhya Langur",
   "scientific": "Presbytis vindhyensis",
+  "clade": "mammal",
   "region": "narmada-vindhya",
   "biomes": [
     "forest"

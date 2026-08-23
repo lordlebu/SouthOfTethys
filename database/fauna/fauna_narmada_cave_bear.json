@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Narmada Cave Bear",
   "scientific": "Ursus spelaeus narmadensis",
+  "clade": "mammal",
   "region": "narmada-vindhya",
   "biomes": [
     "hills",

@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Shilajit Guardian Lizard",
   "scientific": "Agama shilajit",
+  "clade": "reptile",
   "diet": "Omnivore",
   "habitats": [
     "region_narmada_plateau"

@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Ash-Glider Squirrel",
   "scientific": "Petaurista cinereus",
+  "clade": "mammal",
   "region": "narmada-vindhya",
   "biomes": [
     "forest"

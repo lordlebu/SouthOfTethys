@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Frilled Shringasaurus",
   "scientific": "Shringasaurus torquatus",
+  "clade": "reptile",
   "diet": "Herbivore",
   "habitats": [
     "region_narmada_plateau",
@@ -29,5 +30,6 @@
   "placement": "encounter",
   "rarity": "rare",
   "journal_prompt": "It does not move aside. The frill turns first, edge-on and then full, thin enough that the low sun comes through it in red, and the horns beneath it are the same shape as the smaller kind's and twice the size.",
-  "mood": "fearsome"
+  "mood": "fearsome",
+  "region": "narmada-vindhya"
 }

@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Black-Striped Siege Bee",
   "scientific": "Megapis obsidiana",
+  "clade": "insect",
   "region": "narmada-vindhya",
   "biomes": [
     "hills",

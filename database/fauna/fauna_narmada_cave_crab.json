@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Narmada Cave-Crab",
   "scientific": "Potamon cavea",
+  "clade": "crustacean",
   "region": "narmada-vindhya",
   "biomes": [
     "hills",

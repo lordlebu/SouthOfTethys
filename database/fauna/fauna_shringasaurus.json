@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Shringasaurus",
   "scientific": "Shringasaurus indicus",
+  "clade": "reptile",
   "diet": "Herbivore",
   "habitats": [
     "region_narmada_plateau"
@@ -28,5 +29,6 @@
   "placement": "encounter",
   "rarity": "common",
   "journal_prompt": "Two horns come up out of the scrub before the head does, curved forward like a bull's and set above the eyes rather than on the nose. The animal rears slowly against a tree, takes what it came for, and drops back down.",
-  "mood": "patient"
+  "mood": "patient",
+  "region": "narmada-vindhya"
 }

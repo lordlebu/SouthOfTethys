@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Red-Crested Woodpecker",
   "scientific": "Picus phoeniceus",
+  "clade": "bird",
   "region": "narmada-vindhya",
   "biomes": [
     "forest"
