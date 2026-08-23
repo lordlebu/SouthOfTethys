@@ -112,5 +112,5 @@
       "description": "Character ids this person comes from, when the line matters and the person is not that character. Bekh is Mask Family by descent from Kavik across enough generations that the name means little to her -- putting `character_kavik` in `character` would have said she IS him. Found while authoring the Lothal slice, which is what the slice was for."
     }
   },
-  "additionalProperties": true
+  "additionalProperties": false
 }

@@ -1,0 +1,76 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Artifact",
+  "description": "A made object canon treats as a character in its own right -- it has a power, and a cost for using it. Written after four folders were found to have no schema at all: the validator looked up a schema by folder name, got `None`, and moved on, so these were silently exempt for as long as they have existed.",
+  "type": "object",
+  "required": [
+    "id",
+    "type",
+    "name",
+    "material",
+    "power",
+    "risk"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^artifact_[a-z0-9_]+$"
+    },
+    "type": {
+      "const": "artifact"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "material": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "What it is made of. A list because the interesting ones are composites."
+    },
+    "power": {
+      "type": "string",
+      "minLength": 1,
+      "description": "What it does."
+    },
+    "risk": {
+      "type": "string",
+      "minLength": 1,
+      "description": "What it costs to use. Every artifact has one; that is the point of the category."
+    },
+    "related_characters": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "`character_` ids. Resolved by the reference walker, not here."
+    },
+    "events": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "notes": {
+      "type": "string"
+    },
+    "canon": {
+      "type": "string",
+      "enum": [
+        "primary",
+        "secondary",
+        "inferred"
+      ],
+      "description": "How firmly this is established. `primary` is stated by the source material, `inferred` is a reading canon has committed to."
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}

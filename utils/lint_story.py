@@ -24,6 +24,7 @@ covered the day it is added, rather than the day someone remembers to update thi
 import json
 import re
 import sys
+from collections import Counter
 from pathlib import Path
 
 # Windows consoles default to cp1252, which cannot encode the status glyphs below.
@@ -59,6 +60,8 @@ SCHEMA_FOR = {
     "field_maps": "field_map", "points_of_interest": "point_of_interest",
     "discoveries": "discovery", "field_questions": "field_question",
     "npcs": "npc", "vocabulary": "vocabulary", "regions": "region",
+    "artifacts": "artifact", "factions": "faction", "mythology": "mythology",
+    "settlements": "settlement",
 }
 
 # Values that look like ids but are not entity references.
@@ -107,26 +110,55 @@ def main() -> int:
     entities = all_entities()
 
     # --- schemas -----------------------------------------------------------------
+    #
+    # A missing library is a failure, not a reason to skip.
+    #
+    # This block used to be wrapped in `except ImportError`, setting the note to
+    # "skipped (jsonschema not installed)" and carrying on to report success. `requirements.txt`
+    # did not list jsonschema, and `story-validation.yml` installs that file and nothing else --
+    # so the only required check on `main` validated no schema, ever, while printing
+    # "Lint passed: schemas, index and references are consistent."
+    #
+    # The lesson is the one the sibling repository keeps relearning: a check that silently
+    # disables itself is worse than no check, because it also removes the pressure to write a
+    # real one. Nobody reads a note in a green job.
+    #
+    # The import is deliberately outside any `try`. Catching ImportError around the whole block
+    # would also swallow one raised by the validation code itself, which is how a narrow guard
+    # becomes a wide one by accident.
     try:
         from jsonschema import Draft7Validator
-
-        validators = {}
-        for folder, stem in SCHEMA_FOR.items():
-            path = SCHEMA_DIR / f"{stem}.schema.json"
-            if path.exists():
-                validators[folder] = Draft7Validator(load(path))
-
-        checked = 0
-        for eid, (path, payload) in entities.items():
-            v = validators.get(path.parent.name)
-            if v is None:
-                continue
-            checked += 1
-            for err in v.iter_errors(payload):
-                errors.append(f"{path.parent.name}/{path.name}: {err.message[:110]}")
-        schema_note = f"{checked} entities against {len(validators)} schemas"
     except ImportError:
-        schema_note = "skipped (jsonschema not installed)"
+        print("Cannot validate schemas: jsonschema is not installed.")
+        print("  pip install -r requirements.txt")
+        print("")
+        print("This is fatal rather than skipped on purpose -- see the comment in this file.")
+        return 1
+
+    validators = {}
+    for folder, stem in SCHEMA_FOR.items():
+        path = SCHEMA_DIR / f"{stem}.schema.json"
+        if path.exists():
+            validators[folder] = Draft7Validator(load(path))
+
+    checked = 0
+    unchecked: list[str] = []
+    for eid, (path, payload) in entities.items():
+        v = validators.get(path.parent.name)
+        if v is None:
+            unchecked.append(path.parent.name)
+            continue
+        checked += 1
+        for err in v.iter_errors(payload):
+            errors.append(f"{path.parent.name}/{path.name}: {err.message[:110]}")
+
+    schema_note = f"{checked} entities against {len(validators)} schemas"
+    if unchecked:
+        # Not an error yet -- five folders have no schema at all, and writing them is its own
+        # phase. But it should be visible in the output rather than inferred from a count that
+        # does not match the entity total.
+        tally = ", ".join(f"{n}\u00d7{f}" for f, n in sorted(Counter(unchecked).items()))
+        schema_note += f" ({len(unchecked)} unchecked: {tally})"
 
     # --- index, both directions --------------------------------------------------
     index = load(INDEX_PATH)

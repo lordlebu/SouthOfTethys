@@ -1,0 +1,72 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Settlement",
+  "description": "A place people live, at the scale between a region and a point of interest. What a player can walk into is a `field_map` or a `poi`; this is the thing those refer back to.",
+  "type": "object",
+  "required": [
+    "id",
+    "type",
+    "name",
+    "region"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^settlement_[a-z0-9_]+$"
+    },
+    "type": {
+      "const": "settlement"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "region": {
+      "type": "string",
+      "minLength": 1,
+      "description": "A `region_` id."
+    },
+    "epoch_founded": {
+      "type": "string",
+      "description": "An epoch id. Checked by the epoch pass, which matches any field whose *name* mentions an epoch -- this one is why that rule is written the way it is."
+    },
+    "founders": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "factions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "`faction_` ids present here."
+    },
+    "landmarks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "notes": {
+      "type": "string"
+    },
+    "canon": {
+      "type": "string",
+      "enum": [
+        "primary",
+        "secondary",
+        "inferred"
+      ],
+      "description": "How firmly this is established. `primary` is stated by the source material, `inferred` is a reading canon has committed to."
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}

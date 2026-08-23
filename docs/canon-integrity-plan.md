@@ -11,6 +11,10 @@ fauna with no scientific name. This is what it would take for it to stop doing t
 Everything below is measured against the repository as it stands on **2026-08-24**: 495 entities,
 `index.json` v1.9.0, lint reporting success.
 
+**Phases 00, 01 and 04 are done.** Lint now validates all 495 entities against 15 strict schemas,
+fails if `jsonschema` is missing, and `database/VALIDATION.md` describes what actually runs. Phase
+02 is next and carries the sequencing trap; Phase 03 is still a decision to make.
+
 ---
 
 ## The headline: the required check has never validated a schema
@@ -102,7 +106,9 @@ removed from the data.
 | factions | 3 |
 | mythology | 3 |
 | settlements | 2 |
-| timeline | 1 |
+
+*(An earlier count said twelve and included `timeline/epochs.json`. It is not an id-prefixed entity,
+so the schema loop never saw it — the epoch pass validates it instead. Eleven is the number.)*
 
 `SCHEMA_FOR` has no entry for these, so `validators.get(...)` returns `None` and the loop
 `continue`s. They are silently exempt.
@@ -126,7 +132,7 @@ Worth writing down so a later pass does not invent work:
   40 blanks are the documented behaviour, not a hole. A uniqueness check is worth adding; a
   completeness check is not.
 - **The enum-ish fields are already clean.** `rarity` is exactly {common, rare, mythic}, `placement`
-  exactly {encounter, flavour, lore}, `canon` is `primary` throughout, and `mood` has nine values
+  exactly {encounter, flavour, lore}, `canon` is `primary` throughout, and `mood` has eleven values
   with no near-duplicates. Constraining them in schema is cheap insurance, not a repair.
 - **`diet` is sparse (40 of 347) and that is fine.** It is not required and nothing reads it as
   mandatory.
@@ -137,7 +143,7 @@ Worth writing down so a later pass does not invent work:
 
 Five, ordered by what unblocks what.
 
-### Phase 00 — make the check real
+### Phase 00 — make the check real ✅ *done*
 
 Add `jsonschema` to `requirements.txt`, and **make the missing-library path fail instead of skip**.
 A linter that quietly downgrades itself when a dependency is absent will do it again on the next
@@ -149,7 +155,7 @@ green and start meaning something.
 **Done when:** `validate` output names a schema count, and removing `jsonschema` from the
 environment makes lint exit non-zero rather than pass.
 
-### Phase 01 — close the schema gaps
+### Phase 01 — close the schema gaps ✅ *done*
 
 - Schemas for `artifacts`, `factions`, `mythology`, `settlements`, `timeline`, and the matching
   `SCHEMA_FOR` entries. Twelve entities is small enough to derive the shapes from the data.
@@ -213,7 +219,7 @@ consistent, so the guessing currently works.
 the eight stray objects, so the schema stops advertising something canon does not do. Leaving an
 unconstrained `taxonomy` in place is the option that costs the most later.
 
-### Phase 04 — say what is checked, where anybody will look
+### Phase 04 — say what is checked, where anybody will look ✅ *done*
 
 `database/VALIDATION.md` is dated 2026-08-05 and still lists "Automated JSON-Schema validator
 against `database/schemas/` not yet implemented" as deferred. It has been implemented for some time;
