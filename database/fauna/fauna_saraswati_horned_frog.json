@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Saraswati Horned Frog",
   "scientific": "Ceratophrys sarasvati",
+  "clade": "amphibian",
   "region": "saraswati-godavari-deltas",
   "biomes": [
     "forest"

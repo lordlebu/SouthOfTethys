@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Silver-Banded Sea-Snake",
   "scientific": "Hydrophis argentum",
+  "clade": "reptile",
   "region": "saraswati-godavari-deltas",
   "biomes": [
     "river"

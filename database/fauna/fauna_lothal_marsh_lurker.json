@@ -3,8 +3,9 @@
   "type": "fauna",
   "name": "Lothal Marsh-Lurker",
   "scientific": "Megalobatrachus lothalensis",
+  "clade": "amphibian",
   "taxonomy": {
-    "notes": "Giant river salamander, Pleistocene survivor"
+    "notes": "Authoring note, not player-facing: this is a temnospondyl rather than a lissamphibian, and the journal prompt is written so a reader who knows the difference can see it -- flat broad skull, sprawling limbs, a size no living amphibian reaches. Canon does not say so anywhere a player can read, and the clade is plain `amphibian` on purpose. An easter egg, in the same spirit as the Tendua's face."
   },
   "diet": "Carnivore",
   "habitats": [
@@ -27,7 +28,7 @@
   ],
   "placement": "encounter",
   "rarity": "rare",
-  "journal_prompt": "An 8-foot giant river salamander that has survived since the Pleistocene. It waits in the murky delta pools of Lothal to ambush passing prey.",
+  "journal_prompt": "An 8-foot giant river salamander that has survived since the Pleistocene. It waits in the murky delta pools of Lothal to ambush passing prey. The skull is flatter and broader than a salamander's has any right to be, and the legs sprawl where they should tuck.",
   "mood": "fearsome",
   "source_index": 6
 }

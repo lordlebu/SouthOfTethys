@@ -201,6 +201,28 @@ def main() -> int:
             if declared and e not in declared:
                 errors.append(f"{path.name}: {field} '{e}' is not declared in timeline/epochs.json")
 
+    # --- clades ------------------------------------------------------------------
+    #
+    # `clade` and `subclade` are two fields on one object whose legal values depend on each other,
+    # and JSON Schema cannot say that: it can check each against a flat enum, which would let a
+    # bird be a `dromaeosaurid`. The dependency lives here instead, with the other checks that need
+    # to see more than one thing at a time.
+    clades_path = DB / "clades.json"
+    if clades_path.exists():
+        tree = load(clades_path)["clades"]
+        for eid, (path, payload) in entities.items():
+            clade = payload.get("clade")
+            sub = payload.get("subclade")
+            if sub and not clade:
+                errors.append(f"{path.name}: subclade '{sub}' without a clade")
+            elif sub:
+                allowed = (tree.get(clade) or {}).get("subclades") or {}
+                if sub not in allowed:
+                    names = ", ".join(sorted(allowed)) or "none"
+                    errors.append(
+                        f"{path.name}: '{sub}' is not a subclade of '{clade}' (allowed: {names})"
+                    )
+
     # --- every other reference ---------------------------------------------------
     known = set(entities)
     for eid, (path, payload) in entities.items():

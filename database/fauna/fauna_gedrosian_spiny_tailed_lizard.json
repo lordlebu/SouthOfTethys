@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Gedrosian Spiny-tailed Lizard",
   "scientific": "Saara gedrosia",
+  "clade": "reptile",
   "region": "saraswati-godavari-deltas",
   "biomes": [
     "desert"

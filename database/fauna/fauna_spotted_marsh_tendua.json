@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Spotted Marsh Tendua",
   "scientific": "Panthera simiana maculata",
+  "clade": "mammal",
   "diet": "Carnivore",
   "habitats": [
     "region_saraswati_delta"

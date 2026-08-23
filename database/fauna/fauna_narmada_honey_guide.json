@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Narmada Honey-Guide",
   "scientific": "Indicator narmadensis",
+  "clade": "bird",
   "region": "narmada-vindhya",
   "biomes": [
     "hills",

@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Ash-Valley Field-Mouse",
   "scientific": "Mus cinereus",
+  "clade": "mammal",
   "region": "narmada-vindhya",
   "biomes": [
     "hills",

@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Sky-Faring Grasshopper",
   "scientific": "Melanoplus caelius",
+  "clade": "insect",
   "region": "saraswati-godavari-deltas",
   "biomes": [
     "sky_island",

@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Mangrove Crab-Eater",
   "scientific": "Herpestes mangrovus",
+  "clade": "mammal",
   "region": "saraswati-godavari-deltas",
   "biomes": [
     "coast"

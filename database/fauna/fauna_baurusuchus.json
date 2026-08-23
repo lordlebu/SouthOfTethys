@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Baurusuchus",
   "scientific": "Baurusuchus palustris",
+  "clade": "crocodilian",
   "diet": "Carnivore",
   "habitats": [
     "region_saraswati_delta"

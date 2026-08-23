@@ -3,6 +3,8 @@
   "type": "fauna",
   "name": "Vajraptor",
   "scientific": "Vajraptor territorialis",
+  "clade": "dinosaur",
+  "subclade": "dromaeosaurid",
   "diet": "Carnivore",
   "habitats": [
     "canopy",

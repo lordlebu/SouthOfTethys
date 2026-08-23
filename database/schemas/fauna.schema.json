@@ -24,6 +24,38 @@
         "null"
       ]
     },
+    "clade": {
+      "type": "string",
+      "enum": [
+        "mammal",
+        "synapsid",
+        "bird",
+        "dinosaur",
+        "crocodilian",
+        "reptile",
+        "amphibian",
+        "fish",
+        "insect",
+        "arachnid",
+        "crustacean",
+        "mollusc",
+        "worm",
+        "construct",
+        "spectre"
+      ],
+      "description": "What kind of animal this is. The branch (vertebrate / invertebrate / unliving) and the amniote lineage (Synapsida / Diapsida) are read from database/clades.json rather than stored here, because they are properties of the group and not of the animal."
+    },
+    "subclade": {
+      "type": "string",
+      "enum": [
+        "avian_dinosaurid",
+        "dromaeosaurid",
+        "ratite",
+        "sauropodomorph",
+        "true_bird"
+      ],
+      "description": "A group within the clade, where canon draws one. Which subclades are legal for which clade is declared in database/clades.json and checked by lint_story.py -- JSON Schema cannot express a dependency between two fields on the same object."
+    },
     "taxonomy": {
       "type": "object"
     },

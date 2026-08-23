@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Jungle Web-Spinner",
   "scientific": "Nephila sylvanica",
+  "clade": "arachnid",
   "region": "saraswati-godavari-deltas",
   "biomes": [
     "forest"

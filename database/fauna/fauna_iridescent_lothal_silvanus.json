@@ -3,6 +3,8 @@
   "type": "fauna",
   "name": "Iridescent Lothal Silvanus",
   "scientific": "Silvanus pictus",
+  "clade": "bird",
+  "subclade": "avian_dinosaurid",
   "region": "saraswati-godavari-deltas",
   "biomes": [
     "wetland"

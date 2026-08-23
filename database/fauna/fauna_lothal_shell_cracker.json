@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Lothal Shell-Cracker",
   "scientific": "Carcinus lothalensis",
+  "clade": "crustacean",
   "region": "saraswati-godavari-deltas",
   "biomes": [
     "coast"
