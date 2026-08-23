@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Gorgonopsid Pack-Leader",
   "scientific": "Gorgonops titan",
+  "clade": "synapsid",
   "region": "asura-conjurations",
   "biomes": [
     "plains",

@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Obsidian-Winged Serpent",
   "scientific": "Serpens obsidianus",
+  "clade": "reptile",
   "region": "asura-conjurations",
   "biomes": [
     "mountains"

@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "White Salt-Flat Ray",
   "scientific": "Sarasvatimanta alba",
+  "clade": "fish",
   "region": "gedrosian-taklamakan",
   "biomes": [
     "desert"

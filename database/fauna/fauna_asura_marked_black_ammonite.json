@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Asura-Marked Black Ammonite",
   "scientific": "Ammonites asuricus",
+  "clade": "mollusc",
   "region": "ganges-lava-sea",
   "biomes": [
     "lava_field",

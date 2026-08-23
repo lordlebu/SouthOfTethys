@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Lava-Vent Tubeworm",
   "scientific": "Riftia asurica",
+  "clade": "worm",
   "region": "ganges-lava-sea",
   "biomes": [
     "lava_field",

@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Tethyan Reef-Lurker",
   "scientific": "Murex tethys",
+  "clade": "mollusc",
   "region": "shattered-sea-mappa-mundi",
   "biomes": [
     "sea"

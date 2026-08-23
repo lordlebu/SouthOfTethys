@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Cloud-Weaver Spider / Gaganjala",
   "scientific": "Aranea nubis",
+  "clade": "arachnid",
   "region": "tethys-sky-routes",
   "biomes": [
     "sky_island",

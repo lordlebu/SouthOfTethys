@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Woolly Bactrian-Croc",
   "scientific": "Camelosuchus bactrianus",
+  "clade": "crocodilian",
   "diet": "Omnivore",
   "habitats": [
     "region_gedrosian_desert"

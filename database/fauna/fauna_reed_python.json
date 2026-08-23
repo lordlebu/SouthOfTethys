@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Reed Python",
   "scientific": "Python phragmitis",
+  "clade": "reptile",
   "diet": "Carnivore",
   "habitats": [
     "region_saraswati_delta"

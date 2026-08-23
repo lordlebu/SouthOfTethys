@@ -3,6 +3,8 @@
   "type": "fauna",
   "name": "Jungle-Crested Mount",
   "scientific": "Aepyornis crested",
+  "clade": "bird",
+  "subclade": "ratite",
   "region": "shattered-sea-mappa-mundi",
   "biomes": [
     "forest"

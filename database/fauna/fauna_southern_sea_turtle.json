@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Southern Sea-Turtle",
   "scientific": "Chelonia meridionalis",
+  "clade": "reptile",
   "region": "shattered-sea-mappa-mundi",
   "biomes": [
     "sea"

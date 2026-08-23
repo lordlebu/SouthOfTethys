@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Cognitavi Cloud-Hermit",
   "scientific": "Cognitavi solitarius",
+  "clade": "bird",
   "region": "tethys-sky-routes",
   "biomes": [
     "sky_island"

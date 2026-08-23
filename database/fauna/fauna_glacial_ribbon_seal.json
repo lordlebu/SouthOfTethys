@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Glacial Ribbon-Seal",
   "scientific": "Phoca ribbon",
+  "clade": "mammal",
   "region": "ganges-lava-sea",
   "biomes": [
     "lava_field",

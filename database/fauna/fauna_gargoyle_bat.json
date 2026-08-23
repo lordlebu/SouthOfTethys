@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Gargoyle-Bat",
   "scientific": "Vespertilio asuricus",
+  "clade": "mammal",
   "region": "tethys-sky-routes",
   "biomes": [
     "sky_island",

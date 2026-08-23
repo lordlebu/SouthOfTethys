@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Cliff Swift",
   "scientific": "Apus narmadae",
+  "clade": "bird",
   "diet": "Insectivore",
   "habitats": [
     "region_narmada_plateau"

@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Dune-Lurking Scorpion",
   "scientific": "Buthus gedrosii",
+  "clade": "arachnid",
   "region": "gedrosian-taklamakan",
   "biomes": [
     "desert"

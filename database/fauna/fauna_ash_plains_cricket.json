@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Ash-Plains Cricket",
   "scientific": "Gryllus cinereus",
+  "clade": "insect",
   "region": "ganges-lava-sea",
   "biomes": [
     "lava_field",

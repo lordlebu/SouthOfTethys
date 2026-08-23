@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Giant Blue-Ringed Octopus",
   "scientific": "Octopus caeruleus",
+  "clade": "mollusc",
   "region": "shattered-sea-mappa-mundi",
   "biomes": [
     "sea"

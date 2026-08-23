@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Aero-Manta / High-Altitude Beedu",
   "scientific": "Sarasvatimanta sky",
+  "clade": "fish",
   "region": "tethys-sky-routes",
   "biomes": [
     "sky_island",

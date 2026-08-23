@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Asura-Tainted Bat",
   "scientific": "Vespertilio asuricus minor",
+  "clade": "mammal",
   "region": "asura-conjurations",
   "biomes": [
     "forest",

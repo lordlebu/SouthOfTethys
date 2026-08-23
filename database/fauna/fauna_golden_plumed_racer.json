@@ -3,6 +3,8 @@
   "type": "fauna",
   "name": "Golden-Plumed Racer",
   "scientific": "Struthio camelus auratus",
+  "clade": "bird",
+  "subclade": "ratite",
   "region": "gedrosian-taklamakan",
   "biomes": [
     "desert"

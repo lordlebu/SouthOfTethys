@@ -3,6 +3,8 @@
   "type": "fauna",
   "name": "Crested Sylvian",
   "scientific": "Sylvianus cristatus",
+  "clade": "bird",
+  "subclade": "avian_dinosaurid",
   "region": "shattered-sea-mappa-mundi",
   "biomes": [
     "forest"

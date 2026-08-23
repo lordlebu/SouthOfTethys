@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Beedu",
   "scientific": "Sarasvatimanta gedrosii",
+  "clade": "fish",
   "diet": "Carnivore",
   "habitats": [
     "region_gedrosian_desert"

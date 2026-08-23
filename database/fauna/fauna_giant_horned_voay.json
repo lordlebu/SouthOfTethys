@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Giant Horned Voay",
   "scientific": "Voay maximus",
+  "clade": "crocodilian",
   "region": "shattered-sea-mappa-mundi",
   "biomes": [
     "sea",

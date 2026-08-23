@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Flying-Fish of the Tethys",
   "scientific": "Exocoetus tethys",
+  "clade": "fish",
   "region": "shattered-sea-mappa-mundi",
   "biomes": [
     "sea"

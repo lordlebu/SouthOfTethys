@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Lethal Cave-Spectre",
   "scientific": "Asura spectral",
+  "clade": "spectre",
   "region": "asura-conjurations",
   "biomes": [
     "mountains"

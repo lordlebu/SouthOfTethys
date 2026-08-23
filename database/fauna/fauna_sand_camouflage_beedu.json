@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Sand-Camouflage Beedu",
   "scientific": "Sarasvatimanta gedrosii",
+  "clade": "fish",
   "region": "gedrosian-taklamakan",
   "biomes": [
     "desert"

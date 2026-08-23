@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Ash-Field Ground-Beetle",
   "scientific": "Carabus cinereus",
+  "clade": "insect",
   "region": "ganges-lava-sea",
   "biomes": [
     "lava_field",

@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Aero-Snail",
   "scientific": "Helix caelia",
+  "clade": "mollusc",
   "region": "tethys-sky-routes",
   "biomes": [
     "sky_island",

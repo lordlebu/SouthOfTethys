@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Salt-Flat Beetle",
   "scientific": "Carabus salinus",
+  "clade": "insect",
   "region": "gedrosian-taklamakan",
   "biomes": [
     "desert"

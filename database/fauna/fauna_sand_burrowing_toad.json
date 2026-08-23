@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Sand-Burrowing Toad",
   "scientific": "Bufo arenarius",
+  "clade": "amphibian",
   "region": "gedrosian-taklamakan",
   "biomes": [
     "desert"

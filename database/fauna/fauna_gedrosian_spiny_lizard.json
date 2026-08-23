@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Gedrosian Spiny Lizard",
   "scientific": "Uromastyx gedrosii",
+  "clade": "reptile",
   "region": "gedrosian-taklamakan",
   "biomes": [
     "desert"

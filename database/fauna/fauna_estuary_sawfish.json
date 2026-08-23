@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Estuary Sawfish",
   "scientific": "Pristis tethys",
+  "clade": "fish",
   "diet": "Carnivore",
   "habitats": [
     "region_saraswati_delta",

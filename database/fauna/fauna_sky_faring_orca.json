@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Sky-Faring Orca",
   "scientific": "Orcinus volans",
+  "clade": "mammal",
   "region": "tethys-sky-routes",
   "biomes": [
     "sky_island",

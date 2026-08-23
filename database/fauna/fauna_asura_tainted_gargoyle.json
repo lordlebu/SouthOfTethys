@@ -2,7 +2,8 @@
   "id": "fauna_asura_tainted_gargoyle",
   "type": "fauna",
   "name": "Asura-Tainted Gargoyle",
-  "scientific": "Tuli calcified",
+  "scientific": "Māyā-born tuli",
+  "clade": "construct",
   "region": "asura-conjurations",
   "biomes": [
     "sky_island",
@@ -10,12 +11,16 @@
   ],
   "placement": "lore",
   "rarity": "mythic",
-  "journal_prompt": "A devolved offshoot of humanity whose skin has calcified into a stone-like hide, animating only at night to hunt.",
+  "journal_prompt": "A Māyā-born thing in the shape of a Tuli, its skin calcified into a stone-like hide. It animates only at night, and hunts.",
   "canon": "primary",
   "sources": [
     "docs/bestiary.md"
   ],
   "mood": "uncanny",
   "source_index": 216,
-  "placement_note": "Lives on the floating islands. `sky_island` and its neighbours are real canon biomes but are not renderable yet, so the export holds this as lore until a sky mode exists. This is a stated home, not an untagged entity."
+  "placement_note": "Lives on the floating islands. `sky_island` and its neighbours are real canon biomes but are not renderable yet, so the export holds this as lore until a sky mode exists. This is a stated home, not an untagged entity.",
+  "taxonomy": {
+    "notes": "Māyā-born, in the shape of a Tuli. The old binomial `Tuli calcified` carried the right subject and the wrong grammar -- Tuli is a people, not a genus, and `calcified` is an English epithet of the kind canon has already replaced twice. Filed as a construct because it is made rather than born, which also settles what had been read as a devolved hominid."
+  },
+  "notes": "Māyā-born construct in Tuli shape, hide calcified to stone. Nocturnal."
 }

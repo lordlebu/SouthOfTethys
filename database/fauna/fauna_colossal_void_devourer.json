@@ -3,6 +3,8 @@
   "type": "fauna",
   "name": "Colossal Void-Devourer",
   "scientific": "Sauropodoligator titan",
+  "clade": "dinosaur",
+  "subclade": "sauropodomorph",
   "region": "asura-conjurations",
   "biomes": [
     "wetland",

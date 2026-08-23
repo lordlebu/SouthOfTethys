@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Gorgonopsid War-Beast",
   "scientific": "Gorgonops asuricus",
+  "clade": "synapsid",
   "region": "asura-conjurations",
   "biomes": [
     "plains",

@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Mappa Mundi Forest-Cat",
   "scientific": "Prionailurus sylvanus",
+  "clade": "mammal",
   "region": "shattered-sea-mappa-mundi",
   "biomes": [
     "forest"

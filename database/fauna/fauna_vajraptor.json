@@ -15,7 +15,7 @@
     "territorial",
     "problem_solving"
   ],
-  "notes": "Intelligent theropod bird with colorful plumage. Builds hidden canopy nests.",
+  "notes": "Intelligent feathered dromaeosaur with colorful plumage. Builds hidden canopy nests.",
   "canon": "primary",
   "sources": [
     "SouthOfTethys.txt",
@@ -27,7 +27,7 @@
   ],
   "placement": "encounter",
   "rarity": "common",
-  "journal_prompt": "An intelligent, social, and territorial theropod bird with colorful plumage and excellent problem-solving skills, building hidden canopy nests.",
+  "journal_prompt": "An intelligent, social and territorial feathered dromaeosaur with colorful plumage and excellent problem-solving skills, building hidden canopy nests. Flightless: the plumage is for display and for warmth.",
   "mood": "clever",
   "sentient": true,
   "source_index": 14

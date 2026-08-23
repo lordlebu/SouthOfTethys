@@ -3,6 +3,8 @@
   "type": "fauna",
   "name": "Giant Riding Ostrich",
   "scientific": "Struthio camelus maximus",
+  "clade": "bird",
+  "subclade": "ratite",
   "diet": "Herbivore",
   "habitats": [
     "hyrkanian_steppe",

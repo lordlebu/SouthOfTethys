@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Soot-Winged Falcon",
   "scientific": "Falco cinereus",
+  "clade": "bird",
   "region": "ganges-lava-sea",
   "biomes": [
     "lava_field",

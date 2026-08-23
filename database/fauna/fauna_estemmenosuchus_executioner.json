@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Estemmenosuchus Executioner",
   "scientific": "Estemmenosuchus asuricus",
+  "clade": "synapsid",
   "region": "asura-conjurations",
   "biomes": [
     "underworld"

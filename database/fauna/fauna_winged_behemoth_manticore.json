@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Winged Behemoth Manticore",
   "scientific": "Manticora titan",
+  "clade": "spectre",
   "region": "asura-conjurations",
   "biomes": [
     "hills"

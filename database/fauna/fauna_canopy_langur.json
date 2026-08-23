@@ -3,6 +3,7 @@
   "type": "fauna",
   "name": "Canopy Langur",
   "scientific": "Semnopithecus aranya",
+  "clade": "mammal",
   "diet": "Herbivore",
   "habitats": [
     "region_aravali",
