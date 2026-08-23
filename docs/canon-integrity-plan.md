@@ -1,5 +1,10 @@
 # Canon integrity — a plan for `lint_story.py`
 
+> **Published, illustrated version:** [The Check That Skipped](https://claude.ai/code/artifact/1b88dbdd-f20c-48b2-8676-e68b652d289f)
+>
+> Same content, laid out to be read. Private artifact — it opens for the repository owner and
+> whoever they share it with; this file is the authoritative copy.
+
 Canon's lint passes green on three species entered twice, one genus spelled two ways, and eight
 fauna with no scientific name. This is what it would take for it to stop doing that.
 
