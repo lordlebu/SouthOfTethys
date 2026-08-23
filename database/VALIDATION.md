@@ -15,7 +15,7 @@ It is now a list of what is enforced, which is a thing that can be checked again
 
 | Check | Covers |
 |---|---|
-| **schema** | All 495 entities against 15 schemas. Every entity folder has one. |
+| **schema** | All 497 entities against 15 schemas. Every entity folder has one. |
 | **strict fields** | `additionalProperties: false` on all 15, so a misspelled `scientifc` fails by name instead of reading as absent. |
 | **index, both ways** | Every id in `index.json` has a file, every file is in `index.json`, and the per-category counts match. |
 | **epochs** | Any field whose *name* mentions an epoch resolves to `timeline/epochs.json` — not just `epoch` and `epochs`, because `epoch_founded` once sat unvalidated one field over. |
@@ -33,7 +33,7 @@ it was describing. Exactly the failure mode this document exists to avoid.
 |---|---|
 | **Duplicate binomials** | Three pairs share one `scientific`: *Vulpes gedrosiana*, *Sarasvatimanta gedrosii*, *Vrkshasmara griseus*. Each is one hand-authored entity and one bestiary import of the same animal. JSON Schema cannot express uniqueness across sibling files, so this needs a hand-written invariant. See `docs/canon-integrity-plan.md`, Phase 02. |
 | **Missing binomials** | Eight fauna have no `scientific` at all. |
-| **`taxonomy` shape** | Declared as `{"type": "object"}` with no required keys. Populated on 8 of 257 fauna and 0 of 90 flora, keyed `note` in some and `notes` in others. Either constrain it or delete it — Phase 03. |
+| **`taxonomy` shape** | Declared as `{"type": "object"}` with no required keys. Populated on 8 of 259 fauna and 0 of 90 flora, keyed `note` in some and `notes` in others. Either constrain it or delete it — Phase 03. |
 | **Spouse field** | Sometimes an array, sometimes a string. The schema stays permissive; long-standing and non-blocking. |
 
 ## The rule this file exists to enforce on itself
