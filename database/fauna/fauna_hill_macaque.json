@@ -2,7 +2,7 @@
   "id": "fauna_hill_macaque",
   "type": "fauna",
   "name": "Hill Macaque",
-  "scientific": null,
+  "scientific": "Macaca vindhyensis",
   "clade": "mammal",
   "region": "prototype-starters",
   "biomes": [

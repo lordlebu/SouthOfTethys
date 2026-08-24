@@ -2,6 +2,9 @@
   "id": "fauna_beedu",
   "type": "fauna",
   "name": "Beedu",
+  "aliases": [
+    "Sand-Camouflage Beedu"
+  ],
   "scientific": "Sarasvatimanta gedrosii",
   "clade": "fish",
   "diet": "Carnivore",
@@ -24,5 +27,7 @@
   "placement": "encounter",
   "rarity": "rare",
   "journal_prompt": "A pale ray glides above the dune crest, silent, its bladders full of air, casting a shadow the size of a boat.",
-  "mood": "watchful"
+  "mood": "watchful",
+  "region": "gedrosian-taklamakan",
+  "source_index": 86
 }

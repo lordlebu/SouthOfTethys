@@ -2,7 +2,7 @@
   "id": "fauna_cognitavi",
   "type": "fauna",
   "name": "Cognitavi",
-  "scientific": null,
+  "scientific": "Cognitavi viator",
   "clade": "bird",
   "diet": "Omnivore",
   "habitats": [

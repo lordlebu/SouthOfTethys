@@ -15,6 +15,12 @@ So it now does three things, and treats all of them as errors:
   schema        every entity validates against its type's schema
   index         index.json and the files on disk agree, in both directions
   references    every id-shaped value resolves to something that exists
+  clades        a subclade is one of *that* clade's sub-groups
+  invariants    binomials, names and source_index are unique; every species has a binomial
+
+The last two are here rather than in a schema because JSON Schema validates one document at a
+time. It cannot say that two files disagree, which is how three species were entered twice and
+two shared a name while lint reported success.
 
 The reference check is deliberately generic: any string matching a known id prefix is
 treated as a reference, wherever it appears. That way a new field carrying entity ids is
@@ -222,6 +228,63 @@ def main() -> int:
                     errors.append(
                         f"{path.name}: '{sub}' is not a subclade of '{clade}' (allowed: {names})"
                     )
+
+    # --- invariants across sibling files -------------------------------------------
+    #
+    # The checks JSON Schema structurally cannot make. It validates one document at a time, so it
+    # can say a `scientific` is a string and never that two files carry the same one -- which is
+    # exactly how three species came to be entered twice and pass a green lint for months.
+    #
+    # This is also the answer to "why not an off-the-shelf validator": every tool in that space
+    # checks a file against a schema. Uniqueness across 256 siblings has to be written wherever it
+    # lives, so it lives here, next to the loading that already happened.
+    def unique(field, folders, label):
+        seen: dict[str, str] = {}
+        for eid, (path, payload) in entities.items():
+            if path.parent.name not in folders:
+                continue
+            value = payload.get(field)
+            if value is None or (isinstance(value, str) and not value.strip()):
+                continue
+            key = value.strip().lower() if isinstance(value, str) else value
+            first = seen.get(f"{path.parent.name}:{key}")
+            if first:
+                errors.append(f"{path.name}: {label} {value!r} is already used by {first}")
+            else:
+                seen[f"{path.parent.name}:{key}"] = path.name
+
+    unique("scientific", {"fauna", "flora"}, "binomial")
+    unique("source_index", {"fauna", "flora"}, "source_index")
+
+    # A name is how a person refers to an entity, in a prompt, a note or a conversation. Two
+    # entities answering to one name is a bug in the fiction before it is a bug in the data --
+    # canon had two creatures both called "Lava-Vent Tubeworm", and the tool that applied clades
+    # silently classified only one of them.
+    #
+    # **Within a folder, not across them.** The first version of this check was global and
+    # immediately failed on `Dwarka` and `Lothal`, which are each a settlement *and* a field map --
+    # the place and the walkable map of it, correctly sharing a name. A rule that forbids that is
+    # describing a different world.
+    names: dict[str, str] = {}
+    for eid, (path, payload) in entities.items():
+        name = (payload.get("name") or "").strip()
+        if not name:
+            continue
+        key = f"{path.parent.name}:{name.lower()}"
+        first = names.get(key)
+        if first:
+            errors.append(f"{path.name}: name {name!r} is already used by {first}")
+        else:
+            names[key] = path.name
+
+    # Every species has to say what it is called in Latin, for the same reason it has to say what
+    # clade it is: the alternative is the game guessing from a common name, and that guessing is
+    # what this whole pass exists to end.
+    for eid, (path, payload) in entities.items():
+        if path.parent.name not in {"fauna", "flora"}:
+            continue
+        if not (payload.get("scientific") or "").strip():
+            errors.append(f"{path.name}: no `scientific`")
 
     # --- every other reference ---------------------------------------------------
     known = set(entities)

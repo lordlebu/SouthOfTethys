@@ -1,7 +1,7 @@
 {
   "id": "fauna_lava_vent_tubeworm_asurica",
   "type": "fauna",
-  "name": "Lava-Vent Tubeworm",
+  "name": "Crimson-Tipped Tubeworm",
   "scientific": "Riftia asurica",
   "clade": "worm",
   "region": "ganges-lava-sea",
@@ -17,5 +17,8 @@
     "docs/bestiary.md"
   ],
   "mood": "watchful",
-  "source_index": 172
+  "source_index": 172,
+  "aliases": [
+    "Asura-Vent Tubeworm"
+  ]
 }

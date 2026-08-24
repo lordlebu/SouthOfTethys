@@ -2,6 +2,7 @@
   "id": "fauna_megalosaurus",
   "type": "fauna",
   "name": "Megalosaurus",
+  "scientific": "Megalosaurus jambhudweepensis",
   "diet": "Carnivore",
   "habitats": [
     "hyrkanian_steppe"

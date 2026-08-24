@@ -15,13 +15,17 @@ It is now a list of what is enforced, which is a thing that can be checked again
 
 | Check | Covers |
 |---|---|
-| **schema** | All 497 entities against 15 schemas. Every entity folder has one. |
+| **schema** | All 494 entities against 15 schemas. Every entity folder has one. |
 | **strict fields** | `additionalProperties: false` on all 15, so a misspelled `scientifc` fails by name instead of reading as absent. |
 | **index, both ways** | Every id in `index.json` has a file, every file is in `index.json`, and the per-category counts match. |
 | **epochs** | Any field whose *name* mentions an epoch resolves to `timeline/epochs.json` — not just `epoch` and `epochs`, because `epoch_founded` once sat unvalidated one field over. |
 | **references** | Any string matching a known id prefix resolves to an entity that exists, wherever it appears in the tree. |
 | **clade** | Every fauna states one, from the sixteen in `database/clades.json`. Required, so a new species cannot ship without saying what it is. |
 | **subclade** | Where given, it must be a sub-group of *that* clade. A cross-field dependency, so it lives in the linter: JSON Schema checks each field against a flat enum and would let a bird be a dromaeosaurid. |
+| **unique binomial** | No two fauna, and no two flora, share a `scientific`. |
+| **unique name** | No two entities *in the same folder* share a `name`. Across folders is allowed and correct: `Dwarka` is both a settlement and the field map of it. |
+| **unique source_index** | Within a folder, where present. Blanks are fine — the documented rule is that anything without one sorts last. |
+| **binomial present** | Every fauna and flora has one. |
 | **the linter's own dependency** | A missing `jsonschema` exits non-zero. It used to print a note and report success. |
 
 Constrained by enum where the data was already consistent: `rarity`, `placement`, `canon`, `diet`.
@@ -33,10 +37,10 @@ it was describing. Exactly the failure mode this document exists to avoid.
 
 | Gap | Status |
 |---|---|
-| **Duplicate binomials** | Three pairs share one `scientific`: *Vulpes gedrosiana*, *Sarasvatimanta gedrosii*, *Vrkshasmara griseus*. Each is one hand-authored entity and one bestiary import of the same animal. JSON Schema cannot express uniqueness across sibling files, so this needs a hand-written invariant. See `docs/canon-integrity-plan.md`, Phase 02. |
-| **Missing binomials** | Eight fauna have no `scientific` at all. |
-| **`taxonomy` shape** | Still `{"type": "object"}` with no required keys, and still an editorial scratchpad. Phase 03 resolved the part that mattered by adding `clade` as a real field rather than constraining this one; what is left here is genuinely notes. |
-| **Flora clades** | Fauna all carry one; the 90 flora do not. `growth_form` is derived from names game-side, the same way body plans used to be. |
+| **Flora clades** | All 256 fauna state their clade; the 90 flora do not. Their growth form is still derived from names game-side, exactly the way body plans were before this. |
+| **`taxonomy` shape** | Still `{"type": "object"}` with no required keys, on 9 of 256 fauna. Left free on purpose: Phase 03 answered the part that mattered with a real `clade` field, and what remains here is genuinely editorial notes. |
+| **Geography beyond field maps** | Field maps carry `coordinates`; the ~15 other places on the lore map are not entities at all. Deliberate, and sequenced — see `docs/canon-integrity-plan.md`. |
+| **Large media placement** | Nothing checks that a big binary sits in the git-ignored `dump/` rather than tracked. A 6.4 MB lore map reached a commit through `git add -A`. The rule is in `CLAUDE.md`; a size check in lint would enforce it and has not earned its place — one accident is not a pattern, and a linter that failed on a file somebody deliberately tracked would be worse than the accident. |
 | **Spouse field** | Sometimes an array, sometimes a string. The schema stays permissive; long-standing and non-blocking. |
 
 ## The rule this file exists to enforce on itself

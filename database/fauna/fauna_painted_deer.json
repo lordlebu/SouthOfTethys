@@ -2,7 +2,7 @@
   "id": "fauna_painted_deer",
   "type": "fauna",
   "name": "Painted Deer",
-  "scientific": null,
+  "scientific": "Axis pictus",
   "clade": "mammal",
   "region": "prototype-starters",
   "biomes": [
