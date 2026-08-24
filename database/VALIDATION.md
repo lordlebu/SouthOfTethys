@@ -37,6 +37,10 @@ it was describing. Exactly the failure mode this document exists to avoid.
 
 | Gap | Status |
 |---|---|
+| **Flora clades** | All 256 fauna state their clade; the 90 flora do not. Their growth form is still derived from names game-side, exactly the way body plans were before this. |
+| **`taxonomy` shape** | Still `{"type": "object"}` with no required keys, on 9 of 256 fauna. Left free on purpose: Phase 03 answered the part that mattered with a real `clade` field, and what remains here is genuinely editorial notes. |
+| **Geography beyond field maps** | Field maps carry `coordinates`; the ~15 other places on the lore map are not entities at all. Deliberate, and sequenced — see `docs/canon-integrity-plan.md`. |
+| **Large media placement** | Nothing checks that a big binary sits in the git-ignored `dump/` rather than tracked. A 6.4 MB lore map reached a commit through `git add -A`. The rule is in `CLAUDE.md`; a size check in lint would enforce it and has not earned its place — one accident is not a pattern, and a linter that failed on a file somebody deliberately tracked would be worse than the accident. |
 | **Spouse field** | Sometimes an array, sometimes a string. The schema stays permissive; long-standing and non-blocking. |
 
 ## The rule this file exists to enforce on itself
