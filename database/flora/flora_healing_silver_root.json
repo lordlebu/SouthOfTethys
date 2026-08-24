@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Healing Silver-root",
   "scientific": "Sarasvatia argentum",
+  "growth_form": "root",
   "region": "saraswati-godavari-deltas",
   "biomes": [
     "wetland",

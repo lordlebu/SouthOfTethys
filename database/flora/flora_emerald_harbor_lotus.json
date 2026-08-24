@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Emerald Harbor Lotus",
   "scientific": "Nelumbo smaragdina",
+  "growth_form": "flower",
   "habitats": [
     "region_saraswati_delta",
     "settlement_lothal"

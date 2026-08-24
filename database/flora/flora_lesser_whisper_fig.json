@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Lesser Whisper-Fig",
   "scientific": "Ficus murmurans",
+  "growth_form": "shrub",
   "region": "narmada-vindhya",
   "biomes": [
     "hills"

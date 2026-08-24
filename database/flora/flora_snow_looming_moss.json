@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Snow-Looming Moss",
   "scientific": "Bryum glaciale",
+  "growth_form": "moss",
   "region": "ganges-lava-sea",
   "biomes": [
     "lava_field",

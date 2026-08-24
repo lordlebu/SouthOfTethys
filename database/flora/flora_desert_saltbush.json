@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Desert Saltbush",
   "scientific": "Atriplex gedrosia",
+  "growth_form": "shrub",
   "region": "gedrosian-taklamakan",
   "biomes": [
     "desert"

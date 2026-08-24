@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Blue Healing Turmeric",
   "scientific": "Curcuma caerulea",
+  "growth_form": "root",
   "region": "gedrosian-taklamakan",
   "biomes": [
     "desert"

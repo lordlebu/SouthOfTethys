@@ -21,6 +21,7 @@ It is now a list of what is enforced, which is a thing that can be checked again
 | **epochs** | Any field whose *name* mentions an epoch resolves to `timeline/epochs.json` — not just `epoch` and `epochs`, because `epoch_founded` once sat unvalidated one field over. |
 | **references** | Any string matching a known id prefix resolves to an entity that exists, wherever it appears in the tree. |
 | **clade** | Every fauna states one, from the sixteen in `database/clades.json`. Required, so a new species cannot ship without saying what it is. |
+| **growth form** | Every flora states one, from the fourteen in `database/growth_forms.json`. Required, and the value is checked against that file as well as the schema — the two can drift apart otherwise. |
 | **subclade** | Where given, it must be a sub-group of *that* clade. A cross-field dependency, so it lives in the linter: JSON Schema checks each field against a flat enum and would let a bird be a dromaeosaurid. |
 | **unique binomial** | No two fauna, and no two flora, share a `scientific`. |
 | **unique name** | No two entities *in the same folder* share a `name`. Across folders is allowed and correct: `Dwarka` is both a settlement and the field map of it. |
@@ -37,10 +38,10 @@ it was describing. Exactly the failure mode this document exists to avoid.
 
 | Gap | Status |
 |---|---|
-| **Flora clades** | All 256 fauna state their clade; the 90 flora do not. Their growth form is still derived from names game-side, exactly the way body plans were before this. |
 | **`taxonomy` shape** | Still `{"type": "object"}` with no required keys, on 9 of 256 fauna. Left free on purpose: Phase 03 answered the part that mattered with a real `clade` field, and what remains here is genuinely editorial notes. |
 | **Geography beyond field maps** | Field maps carry `coordinates`; the ~15 other places on the lore map are not entities at all. Deliberate, and sequenced — see `docs/canon-integrity-plan.md`. |
 | **Large media placement** | Nothing checks that a big binary sits in the git-ignored `dump/` rather than tracked. A 6.4 MB lore map reached a commit through `git add -A`. The rule is in `CLAUDE.md`; a size check in lint would enforce it and has not earned its place — one accident is not a pattern, and a linter that failed on a file somebody deliberately tracked would be worse than the accident. |
+| **Corals filed as flora** | Canon's two *Tethysolithus* reef-builders are cnidarians — animals — and sit in `database/flora/`. They carry `growth_form: coral` so the database stops implying they are plants, but moving them to `fauna` with a `clade` is a canon decision nobody has made. |
 | **Spouse field** | Sometimes an array, sometimes a string. The schema stays permissive; long-standing and non-blocking. |
 
 ## The rule this file exists to enforce on itself

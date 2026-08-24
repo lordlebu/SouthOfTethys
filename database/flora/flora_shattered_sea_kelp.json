@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Shattered Sea Kelp",
   "scientific": "Macrocystis tethyan",
+  "growth_form": "seaweed",
   "region": "shattered-sea-mappa-mundi",
   "biomes": [
     "sea"

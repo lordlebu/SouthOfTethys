@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Blood-red Asura Lotus",
   "scientific": "Nelumbo asurica",
+  "growth_form": "flower",
   "habitats": [
     "corrupted_zones"
   ],

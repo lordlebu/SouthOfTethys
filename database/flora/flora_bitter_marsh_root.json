@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Bitter Marsh-root",
   "scientific": "Sarasvatia amara",
+  "growth_form": "root",
   "region": "saraswati-godavari-deltas",
   "biomes": [
     "wetland"

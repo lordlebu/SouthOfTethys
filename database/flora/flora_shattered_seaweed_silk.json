@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Shattered Seaweed-Silk",
   "scientific": "Zostera marina",
+  "growth_form": "grass",
   "region": "shattered-sea-mappa-mundi",
   "biomes": [
     "sea"

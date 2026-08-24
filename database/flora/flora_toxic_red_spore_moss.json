@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Toxic Red Spore-Moss",
   "scientific": "Dictyonema venenum",
+  "growth_form": "lichen",
   "region": "narmada-vindhya",
   "biomes": [
     "hills",

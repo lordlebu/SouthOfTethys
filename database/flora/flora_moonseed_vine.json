@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Moonseed Vine",
   "scientific": "Menispermum tethys",
+  "growth_form": "vine",
   "habitats": [
     "region_aravali",
     "region_narmada_plateau"

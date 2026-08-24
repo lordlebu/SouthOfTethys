@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Neem",
   "scientific": "Azadirachta indica",
+  "growth_form": "tree",
   "habitats": [
     "region_saraswati_delta",
     "region_narmada_plateau"

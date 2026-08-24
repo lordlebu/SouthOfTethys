@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Antarctic Kelp-Grass",
   "scientific": "Zostera antarctica",
+  "growth_form": "grass",
   "region": "ganges-lava-sea",
   "biomes": [
     "lava_field",

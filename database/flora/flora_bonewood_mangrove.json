@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Bonewood Mangrove",
   "scientific": "Rhizophora osteoxyla",
+  "growth_form": "tree",
   "habitats": [
     "coastal",
     "region_saraswati_delta"

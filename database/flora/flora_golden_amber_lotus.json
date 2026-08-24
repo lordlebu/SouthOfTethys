@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Golden Amber Lotus",
   "scientific": "Nymphaea succinea",
+  "growth_form": "flower",
   "region": "ganges-lava-sea",
   "biomes": [
     "wetland"

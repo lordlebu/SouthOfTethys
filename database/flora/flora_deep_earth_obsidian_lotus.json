@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Deep-Earth Obsidian Lotus",
   "scientific": "Nymphaea obsidiana",
+  "growth_form": "flower",
   "region": "ganges-lava-sea",
   "biomes": [
     "wetland"

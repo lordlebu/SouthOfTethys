@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Asura Thorn",
   "scientific": "Ziziphus asurica",
+  "growth_form": "shrub",
   "habitats": [
     "corrupted_zones",
     "region_aravali"

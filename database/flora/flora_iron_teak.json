@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Iron-Teak",
   "scientific": "Tectona ferrea",
+  "growth_form": "tree",
   "habitats": [
     "region_narmada_plateau",
     "region_aravali"

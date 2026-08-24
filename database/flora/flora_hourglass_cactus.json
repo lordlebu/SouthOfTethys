@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Hourglass Cactus",
   "scientific": "Cereus arenarius",
+  "growth_form": "cactus",
   "region": "gedrosian-taklamakan",
   "biomes": [
     "desert"

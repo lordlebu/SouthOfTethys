@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Poison-barb Indigo",
   "scientific": "Indigofera spicata",
+  "growth_form": "shrub",
   "region": "saraswati-godavari-deltas",
   "biomes": [
     "wetland",
