@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Sandalwood",
   "scientific": "Santalum jambhudweepa",
+  "growth_form": "tree",
   "habitats": [
     "region_narmada_plateau",
     "region_aravali"

@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Fever-Root",
   "scientific": "Curcuma asurica",
+  "growth_form": "root",
   "region": "asura-conjurations",
   "biomes": [
     "underworld"

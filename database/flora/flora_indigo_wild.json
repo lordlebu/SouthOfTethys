@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Wild Indigo",
   "scientific": "Indigofera silvestris",
+  "growth_form": "shrub",
   "habitats": [
     "region_saraswati_delta",
     "region_aravali"

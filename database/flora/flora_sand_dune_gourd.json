@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Sand-Dune Gourd",
   "scientific": "Citrullus arenarius",
+  "growth_form": "vine",
   "region": "gedrosian-taklamakan",
   "biomes": [
     "desert"

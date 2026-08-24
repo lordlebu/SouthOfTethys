@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Soot-Grass",
   "scientific": "Agrostis cinerea",
+  "growth_form": "grass",
   "region": "ganges-lava-sea",
   "biomes": [
     "lava_field",

@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Pepper Vine",
   "scientific": "Piper tethys",
+  "growth_form": "vine",
   "habitats": [
     "region_narmada_plateau",
     "canopy"

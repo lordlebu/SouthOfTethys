@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Myrrh-Thorn",
   "scientific": "Commiphora spinosa",
+  "growth_form": "shrub",
   "habitats": [
     "region_gedrosian_desert"
   ],

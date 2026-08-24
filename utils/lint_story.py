@@ -15,7 +15,7 @@ So it now does three things, and treats all of them as errors:
   schema        every entity validates against its type's schema
   index         index.json and the files on disk agree, in both directions
   references    every id-shaped value resolves to something that exists
-  clades        a subclade is one of *that* clade's sub-groups
+  clades        a subclade is one of *that* clade's sub-groups, and a growth form exists
   invariants    binomials, names and source_index are unique; every species has a binomial
 
 The last two are here rather than in a schema because JSON Schema validates one document at a
@@ -228,6 +228,19 @@ def main() -> int:
                     errors.append(
                         f"{path.name}: '{sub}' is not a subclade of '{clade}' (allowed: {names})"
                     )
+
+    # --- growth forms ---------------------------------------------------------------
+    #
+    # The plant half of the clade check. The schema pins the enum; this pins the *file* -- a form
+    # can be added to growth_forms.json and forgotten in the schema, or the reverse, and then the
+    # two disagree silently about what a plant is allowed to be.
+    forms_path = DB / "growth_forms.json"
+    if forms_path.exists():
+        forms = set(load(forms_path)["forms"])
+        for eid, (path, payload) in entities.items():
+            form = payload.get("growth_form")
+            if form and form not in forms:
+                errors.append(f"{path.name}: '{form}' is not a growth form in growth_forms.json")
 
     # --- invariants across sibling files -------------------------------------------
     #

@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Blue Scholar's Moss",
   "scientific": "Dictyonema caeruleum",
+  "growth_form": "lichen",
   "region": "narmada-vindhya",
   "biomes": [
     "hills",

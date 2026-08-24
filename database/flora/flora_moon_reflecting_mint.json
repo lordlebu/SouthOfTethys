@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Moon-Reflecting Mint",
   "scientific": "Glassa luna",
+  "growth_form": "shrub",
   "region": "tethys-sky-routes",
   "biomes": [
     "sky_island"

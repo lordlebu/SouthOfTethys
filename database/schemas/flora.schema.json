@@ -5,7 +5,8 @@
   "required": [
     "id",
     "type",
-    "name"
+    "name",
+    "growth_form"
   ],
   "properties": {
     "id": {
@@ -23,6 +24,26 @@
         "string",
         "null"
       ]
+    },
+    "growth_form": {
+      "type": "string",
+      "enum": [
+        "tree",
+        "palm",
+        "shrub",
+        "vine",
+        "flower",
+        "grass",
+        "root",
+        "fern",
+        "moss",
+        "lichen",
+        "cactus",
+        "seaweed",
+        "coral",
+        "pitcher"
+      ],
+      "description": "What shape the plant takes, from database/growth_forms.json. The companion to `clade` on fauna, and required for the same reason: a species that does not say what it is sends the game back to guessing from its name, which is how `Saltreed` became a tree."
     },
     "taxonomy": {
       "type": "object"

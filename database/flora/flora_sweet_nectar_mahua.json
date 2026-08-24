@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Sweet-Nectar Mahua",
   "scientific": "Madhuca narmadensis",
+  "growth_form": "tree",
   "region": "narmada-vindhya",
   "biomes": [
     "forest"

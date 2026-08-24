@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Tawny Sagebrush",
   "scientific": "Artemisia tawny",
+  "growth_form": "shrub",
   "region": "gedrosian-taklamakan",
   "biomes": [
     "desert",

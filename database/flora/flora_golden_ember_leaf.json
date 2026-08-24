@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Golden Ember-Leaf",
   "scientific": "Camellia aurata",
+  "growth_form": "shrub",
   "region": "narmada-vindhya",
   "biomes": [
     "hills",

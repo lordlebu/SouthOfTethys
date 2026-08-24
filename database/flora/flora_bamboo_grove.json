@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "River Bamboo",
   "scientific": "Bambusa saraswati",
+  "growth_form": "grass",
   "habitats": [
     "region_saraswati_delta",
     "region_narmada_plateau"

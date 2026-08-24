@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Whispering Blood-Orchid",
   "scientific": "Orchis asurica",
+  "growth_form": "flower",
   "region": "asura-conjurations",
   "biomes": [
     "forest"

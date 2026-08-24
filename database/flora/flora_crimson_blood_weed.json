@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Crimson Blood-Weed",
   "scientific": "Vitis asurica",
+  "growth_form": "vine",
   "region": "asura-conjurations",
   "biomes": [
     "forest"

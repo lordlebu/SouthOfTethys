@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Shilajit Creeper",
   "scientific": "Cissus shilajita",
+  "growth_form": "vine",
   "habitats": [
     "region_narmada_plateau"
   ],

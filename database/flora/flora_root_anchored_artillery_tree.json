@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Root-Anchored Artillery Tree",
   "scientific": "Rakshasa-Vriksha ferrea",
+  "growth_form": "tree",
   "region": "asura-conjurations",
   "biomes": [
     "forest",

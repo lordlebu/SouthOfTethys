@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Asura-Tainted Flesh-Vine",
   "scientific": "Vitis carnosa",
+  "growth_form": "vine",
   "region": "asura-conjurations",
   "biomes": [
     "forest"

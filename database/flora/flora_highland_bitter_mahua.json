@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Highland Bitter Mahua",
   "scientific": "Madhuca montana",
+  "growth_form": "tree",
   "region": "narmada-vindhya",
   "biomes": [
     "mountains"

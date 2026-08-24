@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Ivory Coastal Bonewood",
   "scientific": "Rhizophora eburnea",
+  "growth_form": "tree",
   "region": "saraswati-godavari-deltas",
   "biomes": [
     "sea",

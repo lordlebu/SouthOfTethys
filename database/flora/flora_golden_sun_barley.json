@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Golden Sun-Barley",
   "scientific": "Hordeum aureum",
+  "growth_form": "grass",
   "region": "gedrosian-taklamakan",
   "biomes": [
     "desert",

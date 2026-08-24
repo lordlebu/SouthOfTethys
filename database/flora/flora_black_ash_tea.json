@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Black Ash-Tea",
   "scientific": "Camellia vulcanica",
+  "growth_form": "shrub",
   "habitats": [
     "region_narmada_plateau"
   ],

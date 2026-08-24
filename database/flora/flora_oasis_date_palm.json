@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Oasis Date Palm",
   "scientific": "Phoenix dactylifera oasis",
+  "growth_form": "palm",
   "region": "gedrosian-taklamakan",
   "biomes": [
     "desert"

@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Prana-Lotus",
   "scientific": "Nelumbo prana",
+  "growth_form": "flower",
   "region": "tethys-sky-routes",
   "biomes": [
     "sky_island"

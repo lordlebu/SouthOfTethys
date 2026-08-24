@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Lava-Glass Fern",
   "scientific": "Pteris vulcanica",
+  "growth_form": "fern",
   "region": "ganges-lava-sea",
   "biomes": [
     "lava_field",

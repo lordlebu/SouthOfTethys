@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Plunging-Fire Siege Tree",
   "scientific": "Rakshasa-Vriksha",
+  "growth_form": "tree",
   "region": "asura-conjurations",
   "biomes": [
     "forest"

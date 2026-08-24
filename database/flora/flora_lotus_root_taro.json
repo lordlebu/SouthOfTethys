@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Lotus-Root Taro",
   "scientific": "Colocasia nelumbo-affinis",
+  "growth_form": "root",
   "habitats": [
     "region_saraswati_delta"
   ],

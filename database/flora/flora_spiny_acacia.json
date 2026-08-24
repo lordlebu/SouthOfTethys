@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Spiny Acacia",
   "scientific": "Acacia spinosa",
+  "growth_form": "tree",
   "region": "gedrosian-taklamakan",
   "biomes": [
     "desert"
