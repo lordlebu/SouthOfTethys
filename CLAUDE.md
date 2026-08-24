@@ -51,6 +51,24 @@ or its workflow breaks, `main` cannot be merged to or repaired until the rule is
 recovery is Settings → Rules → Rulesets → *Protect main* → Enforcement: **Disabled**, merge the
 fix, then set it back to Active.
 
+**Large media goes in a git-ignored `dump/`.** The test is what reads the file, not how important
+it is: a schema, a script or a workflow reading it means it is tracked, and nothing reading it
+means it is a picture a person looks at. `dump/Partial_map.png` is the drawn lore map — the one
+this database does not yet model and should — and it sits there at 6.4 MB because no schema, util
+or workflow opens it. It is kept on disk, not deleted.
+
+That is not a ranking of lore below code. **Lore is bigger than the game and does not need the
+game's permission to exist** — but the database is where canon lives, and a picture of the map is a
+picture, not the map. When the geography iteration happens the places on it become entities, and
+the PNG stays what it always was: the thing somebody drew first.
+
+`model/` is the deliberate exception at 4.9 MB. `docs/decisions.md` records it as a keep and
+`push-hf-model.yml` pushes `model/**` to Hugging Face on change, so it is read by a workflow even
+though nothing in the database touches it.
+
+One way this goes wrong: **`git add -A` will sweep up a stray PNG.** That is exactly how the lore
+map reached a commit, as a side effect of staging a linter change.
+
 **Always end with the pull request link.** Whenever work is pushed, the reply must carry the URL —
 the PR if one exists, otherwise the compare link the push prints — so it can be opened directly
 rather than described. `gh` is **not installed on this machine**, so the PR usually cannot be
