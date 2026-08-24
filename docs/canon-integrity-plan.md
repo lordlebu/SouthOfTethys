@@ -11,9 +11,9 @@ fauna with no scientific name. This is what it would take for it to stop doing t
 Everything below is measured against the repository as it stands on **2026-08-24**: 495 entities,
 `index.json` v1.9.0, lint reporting success.
 
-**Phases 00, 01 and 04 are done.** Lint now validates all 495 entities against 15 strict schemas,
-fails if `jsonschema` is missing, and `database/VALIDATION.md` describes what actually runs. Phase
-02 is next and carries the sequencing trap; Phase 03 is still a decision to make.
+**All five phases are done.** This plan is closed; what follows is the record. Lint validates all 494 entities against 15 strict schemas, fails if `jsonschema` is missing,
+enforces four cross-file invariants that JSON Schema cannot express, and
+`database/VALIDATION.md` describes what actually runs.
 
 ---
 
@@ -165,7 +165,7 @@ environment makes lint exit non-zero rather than pass.
 
 **Done when:** every entity in `database/` is validated by a schema, and an invented field fails.
 
-### Phase 02 — invariants, and the data they will condemn
+### Phase 02 — invariants, and the data they condemned ✅ *done*
 
 The checks JSON Schema cannot express, as a new section of `lint_story.py`:
 
@@ -198,7 +198,7 @@ Two consequences to hold in view while merging:
 
 **Done when:** the four invariants are enforced and the data satisfies them.
 
-### Phase 03 — decide what `taxonomy` is for
+### Phase 03 — decide what `taxonomy` is for ✅ *done, a different way*
 
 The open question, and the only phase that is not obviously worth doing.
 
@@ -256,3 +256,105 @@ Phase 00 is worth doing on its own this week whatever happens to the rest.
 - The game repository, except for the adapter if Phase 03 goes the populate route.
 - Canon *content* — no new species, regions or maps. This is about whether what exists is
   internally consistent and whether anything would notice if it were not.
+
+---
+
+## Closed — 2026-08-24
+
+All five phases landed. The linter that passed green on three duplicate species now refuses them,
+and the data it would have condemned is fixed.
+
+| | |
+|---|---|
+| Schemas enforced in CI | 15, covering all **494** entities |
+| Cross-file invariants | binomial, name and `source_index` uniqueness; binomial required |
+| Fauna stating their clade | **256 of 256** |
+| Duplicate species | **0** — three pairs merged |
+| Fauna with no binomial | **0** — was eight |
+
+### What the last phase actually cost
+
+The three merges each kept the hand-authored entity and folded the bestiary import into it,
+carrying `region` and `source_index` across and adding the absorbed name as an alias. The authored
+id survives in every case, which matters beyond tidiness: `fauna_desert_fox` is what the game's
+painted plate is keyed to.
+
+Two consequences worth stating, because they are play-affecting and nobody would see them in a
+diff. The desert and forest encounter pools each lost one entry, since a player could previously
+meet both halves of a pair as separate species. And any save that recorded meeting
+`fauna_gedrosian_desert_fox`, `fauna_sand_camouflage_beedu` or `fauna_grey_bark_mimic` now holds an
+id canon no longer has.
+
+### What the invariants found on their first run
+
+Not data — **tooling.** The binomial-present check failed on seven of the eight species I had just
+given binomials to. The insert helper wrote `scientific` after `name` and then let the loop reach
+the entity's existing `"scientific": null` and put the null straight back. Only Megalosaurus
+survived, because it had no such key at all. A check written in the same hour as the bug it caught.
+
+The name-uniqueness check also failed immediately, and there the *check* was wrong: `Dwarka` and
+`Lothal` are each a settlement and the field map of it, correctly sharing a name. It is now scoped
+per folder.
+
+---
+
+## Not done, and deliberately: geography and the timeline
+
+Canon holds a lore map — `Partial_map.png` — that the database does not model, and it should
+eventually. **Lore is bigger than the game and does not need the game's permission to exist**; the
+argument that "nothing consumes it" is a reason to sequence this work, never a reason to refuse it.
+
+### What canon has today
+
+Field maps carry `coordinates` on a 0–100 continental grid. Lothal sits at (28, 50), and the game's
+travel layer draws from it. Geography exists — at the granularity of the three walkable maps and no
+further.
+
+### What the map has that canon does not
+
+Roughly fifteen named places: Harappa, Mohenjodaro, Sihauli, the Makkan Coast, Hyrcania, Harmada
+University, Vengi, Tamraparni, Tamralinga, Nilgiri, Deccan, Aranta, the Northern Frontier, the
+Southern Ice Sheet, and the Path to Lemuria. Plus relationships the database has no way to state:
+Jambhudweep as a landmass separated from mainland Asia by the Tethys Sea, undersea lava rivers
+branching from the Ganga Lava Lake, a southern boundary of ice.
+
+### Why it is a separate iteration rather than this one
+
+The blocking question is a schema decision, not a typing job: **is an unreachable place a canon
+noun?** Every place entity today is somewhere a player can stand. Harappa is not, and may never be.
+Deciding that wrongly in a hurry would either bloat `field_maps` with things that are not maps, or
+invent a second kind of place that duplicates half of one.
+
+Three further reasons to sequence it rather than squeeze it in:
+
+- Adding Vengi or Tamraparni as **regions** would re-open the `region` enum every fauna carries,
+  days after 256 clades landed on it.
+- Most of the map cannot become playable regardless: only 3 of 7 regions pass the renderable-biome
+  test, and the rest wait on art rather than data.
+- The existing geographic scaffolding is **stale rather than partial**. `docs/overworld.json`
+  contains another project's regions entirely — "Saltbluff Plateau", "Verdant Hollow" — and
+  `docs/regions.geojson` holds three crude shapes. That is a demolition job before it is an
+  authoring one.
+
+### The timeline, which is in better shape than it looks
+
+Worth correcting a claim made earlier in this work: the epoch layer is **not** unused. 108 entities
+carry an epoch — 41 characters, 31 discoveries, 20 points of interest, 12 events, 3 field maps and
+a settlement. Only fauna has none, and that was a deliberate call.
+
+The mermaid timeline is also not unused. `utils/generate_timeline_mermaid.py` runs in CI and emits
+a real twelve-event graph from `database/events/` into a git-ignored `timeline/` — *Founding of
+Lothal → Black Lotus Siege → The Stone Pact*. What is broken is the **published** copy:
+`docs/timeline_mermaid.md` is a hand-written file from a different story entirely, reading "Act 1,
+Scene 1: The Grove Fire" and "Arrival of Leafkin". It sits in the folder that publishes to Pages.
+
+That one is a five-minute fix and belongs in whichever iteration touches this next, alongside
+deciding what `docs/overworld.json` is for.
+
+### A sketch, for whoever picks it up
+
+1. **Decide the noun.** A `place` entity for somewhere named but not walkable, or an extension of
+   `settlement`. This is the whole design decision; everything after is data entry.
+2. **Extend the coordinate grid** to those places, in the 0–100 space that already works.
+3. **Fix the stale artefacts** — the published mermaid, `overworld.json`, `regions.geojson`.
+4. **Only then**, if any of it should be walkable, the renderable-biome problem, which is art.

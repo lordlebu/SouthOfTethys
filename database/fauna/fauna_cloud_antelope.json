@@ -2,7 +2,7 @@
   "id": "fauna_cloud_antelope",
   "type": "fauna",
   "name": "Cloud Antelope",
-  "scientific": null,
+  "scientific": "Naemorhedus nubilus",
   "clade": "mammal",
   "region": "prototype-starters",
   "biomes": [

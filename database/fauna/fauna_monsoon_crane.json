@@ -2,7 +2,7 @@
   "id": "fauna_monsoon_crane",
   "type": "fauna",
   "name": "Monsoon Crane",
-  "scientific": null,
+  "scientific": "Grus pluvialis",
   "clade": "bird",
   "region": "prototype-starters",
   "biomes": [

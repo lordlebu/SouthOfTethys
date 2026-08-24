@@ -2,7 +2,7 @@
   "id": "fauna_shell_turtle",
   "type": "fauna",
   "name": "Shell Turtle",
-  "scientific": null,
+  "scientific": "Conchochelys lothalensis",
   "clade": "reptile",
   "region": "prototype-starters",
   "biomes": [
