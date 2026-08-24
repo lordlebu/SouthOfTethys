@@ -101,3 +101,14 @@ coverage.xml
 storage/chroma/
 dist-space/
 dist-vercel/
+
+# Reference media: pictures we look at, that nothing in the repo reads.
+#
+# `Partial_map.png` is the drawn lore map -- the one this database does not yet model, and should.
+# It is 6.4 MB and no schema, script or workflow opens it. Kept on disk rather than deleted,
+# because it is the reference for the geography iteration recorded in docs/canon-integrity-plan.md.
+#
+# This is not a judgement about lore being less important than code. Lore is bigger than the game
+# and does not need the game's permission to exist -- but the *database* is where canon lives, and
+# a picture of the map is a picture, not the map.
+dump/

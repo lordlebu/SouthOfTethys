@@ -300,7 +300,7 @@ per folder.
 
 ## Not done, and deliberately: geography and the timeline
 
-Canon holds a lore map — `Partial_map.png` — that the database does not model, and it should
+Canon holds a lore map — `dump/Partial_map.png`, kept on disk and git-ignored — that the database does not model, and it should
 eventually. **Lore is bigger than the game and does not need the game's permission to exist**; the
 argument that "nothing consumes it" is a reason to sequence this work, never a reason to refuse it.
 
