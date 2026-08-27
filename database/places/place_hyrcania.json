@@ -2,12 +2,17 @@
   "id": "place_hyrcania",
   "type": "place",
   "name": "Hyrcania",
-  "kind": "unknown",
+  "kind": "plains",
   "continent": "mainland_asia",
-  "description": "Mountain country in the far northeast of Mainland Asia.",
-  "notes": "Marked with a question mark on the render, and kept that way. `event_naraka_portal` places Guyuk and Nirigili on the Hyrkanian steppe, so canon knows the name; the render does not agree with it well enough to call this the same ground.",
-  "canon": "inferred",
+  "aliases": [
+    "The Hyrkanian Steppe",
+    "Hyrkania"
+  ],
+  "description": "Open steppe country in the far northeast of Mainland Asia, rising into mountains. Where Guyuk tore the crimson portal to Naraka Lok.",
+  "notes": "Canon attests this ground twice under two spellings: `event_naraka_portal` puts Guyuk and Nirigili on the Hyrkanian steppe, and the reference map labels the same northeast country `HYRCANIA ?`. The two were first entered separately, because neither source says they are the same and a resemblance is not an identity. Confirmed as one place by the author, 2026-08-27, and merged; the steppe name is kept as an alias because that is the spelling the event uses.",
+  "canon": "primary",
   "sources": [
+    "database/events",
     "dump/Partial_map.png"
   ]
 }

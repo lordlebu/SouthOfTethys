@@ -15,7 +15,7 @@ It is now a list of what is enforced, which is a thing that can be checked again
 
 | Check | Covers |
 |---|---|
-| **schema** | All 518 entities against 16 schemas. Every entity folder has one. |
+| **schema** | All 517 entities against 16 schemas. Every entity folder has one. |
 | **strict fields** | `additionalProperties: false` on all 16, so a misspelled `scientifc` fails by name instead of reading as absent. |
 | **index, both ways** | Every id in `index.json` has a file, every file is in `index.json`, and the per-category counts match. |
 | **epochs** | Any field whose *name* mentions an epoch resolves to `timeline/epochs.json` — not just `epoch` and `epochs`, because `epoch_founded` once sat unvalidated one field over. |
@@ -71,6 +71,7 @@ it was describing. Exactly the failure mode this document exists to avoid.
 | **Large media placement** | Nothing checks that a big binary sits in the git-ignored `dump/` rather than tracked. A 6.4 MB lore map reached a commit through `git add -A`. The rule is in `CLAUDE.md`; a size check in lint would enforce it and has not earned its place — one accident is not a pattern, and a linter that failed on a file somebody deliberately tracked would be worse than the accident. |
 | **Corals filed as flora** | Canon's two *Tethysolithus* reef-builders are cnidarians — animals — and sit in `database/flora/`. They carry `growth_form: coral` so the database stops implying they are plants, but moving them to `fauna` with a `clade` is a canon decision nobody has made. |
 | **`region` on 46 species is not a place** | 40 carry `asura-conjurations` — a real grouping, by what made them rather than where they live, and arguably a faction or a tag rather than a region. 6 carry `prototype-starters`: a cloud antelope, a hill macaque, a monsoon crane, a painted deer and two others, still labelled from development. Those look like leftovers. Both are allowlisted so a *typo* still fails, and neither is changed here, because `region` is exported — moving them edits the game's bundle and is a canon decision, not a lint's. |
+| **`habitats` mixes ids with descriptors** | 99 habitat entries across fauna and flora; 19 of them, in 5 distinct values, are not entities. Two name places (`tethys`, `hyrkanian_steppe`) and three are descriptors that never will be — `coastal` (8), `canopy` (4), `corrupted_zones` (2). Not added to the whereabouts check, because fixing 2 of 19 would be arbitrary and `habitats` is exported: the game falls through to it when a species states no `region`, so changing it edits the bundle. Splitting geography from description is the fix, and it is a canon call. |
 | **`origin` on a faction means two things** | Sometimes a place (`mohenjo_daro`, now `place_mohenjodaro`), sometimes an ancestry (`vedda_naga_hybrid`). Left out of the whereabouts check for that reason. Splitting it into two fields would be the fix. |
 | **Spouse field** | Sometimes an array, sometimes a string. The schema stays permissive; long-standing and non-blocking. |
 
