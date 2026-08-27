@@ -1,0 +1,31 @@
+{
+  "id": "event_jharwa_first_wave_shell_pact",
+  "type": "event",
+  "title": "The Jharwa First-Wave & The Shell Pact",
+  "epoch": "epoch_migrations",
+  "participants": [
+    "character_jharwa_elder_repa",
+    "mythology_ammonite_man"
+  ],
+  "location": "region_saraswati_delta",
+  "predecessors": [
+    "event_great_devolvement_vanaras"
+  ],
+  "successors": [
+    "event_retreat_of_owlman"
+  ],
+  "causes": [
+    "The freezing of the northern steppes during the Pleistocene Glaciation",
+    "The rising waters of the Tethys Sea blocking traditional land paths"
+  ],
+  "outcomes": [
+    "Establishment of the first human settlement in the Saraswati Delta",
+    "The creation of the spiritual Shell Pact protecting human sailors"
+  ],
+  "summary": "During the Pleistocene Glaciation, the Jharwa cave-painters cross the Tethys Sea to Jambhudweepa. Landing in the Saraswati Delta, Elder Repa establishes the Shell Pact with the Ammonite Man, trading spiral conches for safe passage through the deep channels.",
+  "canon": "primary",
+  "sources": [
+    "Jharwa Cave-Paintings of Muria",
+    "iKnaya Subayai Palm-Leaf logs"
+  ]
+}

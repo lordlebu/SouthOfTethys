@@ -1,0 +1,28 @@
+{
+  "id": "event_antarctic_ice_wall_expedition",
+  "type": "event",
+  "title": "The Antarctic Ice Wall Expedition",
+  "epoch": "epoch_current",
+  "participants": [
+    "character_varuna",
+    "character_mitra",
+    "mythology_ammonite_man"
+  ],
+  "location": "place_antarctic_ice_wall",
+  "predecessors": [],
+  "successors": [],
+  "causes": [
+    "The Narmada University mission to chart the southern limits of the Tethys Ocean",
+    "Varuna's obsessive drive to find an orderly, logical pathway through the shifting ice of the deep south"
+  ],
+  "outcomes": [
+    "A deep philosophical standoff between Varuna's drive for active order and the Ammonite Man's preservation of deep-time memory",
+    "The discovery of a hidden, bioluminescent sub-glacial current navigated in near-silence with the trawler's engines cut",
+    "The preservation of the Antarctic Ice Wall as a sacred, undisturbed geological archive"
+  ],
+  "summary": "Bound to mortal bodies, Captain Varuna and his companion Mitra lead a whale-bone trawler into the freezing southern waters of the Tethys. Trapped in a glacial maze, Varuna's drive to ram through the ice wall clashes with the Ammonite Man's drive to preserve it as a memory archive, resolved only when Mitra mediates a silent, drifting passage.",
+  "canon": "primary",
+  "sources": [
+    "Resonant Hearts: Intimate Chronicles Aboard the Kelpfang"
+  ]
+}

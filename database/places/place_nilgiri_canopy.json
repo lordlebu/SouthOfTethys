@@ -1,0 +1,13 @@
+{
+  "id": "place_nilgiri_canopy",
+  "type": "place",
+  "name": "Nilgiri Canopy",
+  "kind": "forest",
+  "continent": "jambhudweepa",
+  "description": "The ancient, dense multi-layered forest canopy of southern Jambhudweepa, once home to the tree-cities of the Vanaras.",
+  "notes": "A legendary jungle that hosted the zenith of Vanara fire-mastery before the climate cooled and fractured its borders. Only reclusive hybrids and standard canopy wildlife remain.",
+  "canon": "primary",
+  "sources": [
+    "The Atlas of Lost Geographies"
+  ]
+}

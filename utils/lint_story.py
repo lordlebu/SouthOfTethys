@@ -382,6 +382,39 @@ def main() -> int:
                 f"{path.name}: region '{value}' is not a `bestiary_region` any region declares"
             )
 
+    # --- two events are not one event ------------------------------------------------
+    #
+    # The unique-name check above reads `name`, and an event carries `title`, so events were
+    # never covered by it. A generated chapter arrived proposing `event_shadow_pact_saraswati`
+    # titled "The Shadow Pact of Saraswati" while canon already held `event_shadow_pact` titled
+    # "Shadow Pact of Saraswati" -- the same happening, the same two participants, a different
+    # id and one extra article. Nothing would have caught it.
+    #
+    # Compared loosely on purpose: leading articles and case are not what makes two events
+    # different.
+    def loose(t: str) -> str:
+        t = t.strip().lower()
+        for article in ("the ", "a ", "an "):
+            if t.startswith(article):
+                t = t[len(article):]
+        return t
+
+    titles: dict[str, str] = {}
+    for eid, (path, payload) in sorted(entities.items()):
+        if payload.get("type") != "event":
+            continue
+        key = loose(payload.get("title") or "")
+        if not key:
+            continue
+        first = titles.get(key)
+        if first:
+            errors.append(
+                f"{path.name}: title {payload['title']!r} is already used by {first} -- two "
+                f"events for one happening is a duplicate, not a cross-reference"
+            )
+        else:
+            titles[key] = path.name
+
     # --- the sample fixture stays isolated -------------------------------------------
     #
     # The Dragon's Spine episode is kept deliberately as a test fixture: four entities across

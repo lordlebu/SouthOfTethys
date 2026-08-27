@@ -13,13 +13,13 @@ Each era below is canon as it stood then. An entity that names no epoch is prese
 | | dated to this era | timeless |
 |---|---:|---:|
 | regions |  | 7 |
-| places |  | 24 |
+| places |  | 27 |
 | settlements |  | 2 |
-| characters | 1 |  |
+| characters | 2 |  |
 | factions |  | 3 |
-| events | 2 |  |
+| events | 3 |  |
 | artifacts |  | 3 |
-| mythology |  | 4 |
+| mythology |  | 6 |
 | fauna |  | 256 |
 | flora |  | 90 |
 
@@ -29,7 +29,9 @@ Each era below is canon as it stood then. An entity that names no epoch is prese
 graph TD
     E0["The Fang vs. Scale Wars"]
     E1["The Asura Gondwana Intervention"]
+    E2["The Great Devolvement"]
     E0 --> E1
+    E1 --> E2
 ```
 
 ### Map
@@ -45,13 +47,13 @@ _No map for this era, deliberately._ The only coordinates canon holds belong to 
 | | dated to this era | timeless |
 |---|---:|---:|
 | regions |  | 7 |
-| places |  | 24 |
+| places |  | 27 |
 | settlements |  | 2 |
 | characters | 6 |  |
 | factions |  | 3 |
 | events | 2 |  |
 | artifacts |  | 3 |
-| mythology |  | 4 |
+| mythology |  | 6 |
 | fauna |  | 256 |
 | flora |  | 90 |
 
@@ -76,13 +78,13 @@ _No map for this era, deliberately._ The only coordinates canon holds belong to 
 | | dated to this era | timeless |
 |---|---:|---:|
 | regions |  | 7 |
-| places |  | 24 |
+| places |  | 27 |
 | settlements |  | 2 |
-| characters | 9 |  |
+| characters | 10 |  |
 | factions |  | 3 |
-| events | 2 |  |
+| events | 4 |  |
 | artifacts |  | 3 |
-| mythology |  | 4 |
+| mythology |  | 6 |
 | fauna |  | 256 |
 | flora |  | 90 |
 
@@ -91,7 +93,10 @@ _No map for this era, deliberately._ The only coordinates canon holds belong to 
 ```mermaid
 graph TD
     E0["Aravali Massacre & Sanctuary"]
-    E1["Opening of the Naraka Lok Portal"]
+    E1["The Jharwa First-Wave & The Shell Pact"]
+    E2["Opening of the Naraka Lok Portal"]
+    E3["The Retreat of Owlman"]
+    E1 --> E3
 ```
 
 ### Map
@@ -107,13 +112,13 @@ _No map for this era, deliberately._ The only coordinates canon holds belong to 
 | | dated to this era | timeless |
 |---|---:|---:|
 | regions |  | 7 |
-| places |  | 24 |
+| places |  | 27 |
 | settlements |  | 2 |
 | characters | 21 |  |
 | factions |  | 3 |
 | events | 8 |  |
 | artifacts |  | 3 |
-| mythology |  | 4 |
+| mythology |  | 6 |
 | fauna |  | 256 |
 | flora |  | 90 |
 
@@ -154,14 +159,22 @@ _No map for this era, deliberately._ The only coordinates canon holds belong to 
 | | dated to this era | timeless |
 |---|---:|---:|
 | regions |  | 7 |
-| places |  | 24 |
+| places |  | 27 |
 | settlements |  | 2 |
-| characters | 4 |  |
+| characters | 6 |  |
 | factions |  | 3 |
+| events | 1 |  |
 | artifacts |  | 3 |
-| mythology |  | 4 |
+| mythology |  | 6 |
 | fauna |  | 256 |
 | flora |  | 90 |
+
+### Events
+
+```mermaid
+graph TD
+    E0["The Antarctic Ice Wall Expedition"]
+```
 
 ### Map
 
@@ -176,14 +189,14 @@ _No map for this era, deliberately._ The only coordinates canon holds belong to 
 | | dated to this era | timeless |
 |---|---:|---:|
 | regions |  | 7 |
-| places |  | 24 |
+| places |  | 27 |
 | settlements |  | 2 |
 | field maps | 3 |  |
 | points of interest | 20 |  |
 | npcs | 8 |  |
 | factions |  | 3 |
 | artifacts |  | 3 |
-| mythology |  | 4 |
+| mythology |  | 6 |
 | discoveries | 31 |  |
 | field questions | 7 |  |
 | vocabulary | 8 |  |

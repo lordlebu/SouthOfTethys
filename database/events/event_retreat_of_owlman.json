@@ -1,0 +1,29 @@
+{
+  "id": "event_retreat_of_owlman",
+  "type": "event",
+  "title": "The Retreat of Owlman",
+  "epoch": "epoch_migrations",
+  "participants": [
+    "character_owlman"
+  ],
+  "location": "place_western_ghats",
+  "predecessors": [
+    "event_jharwa_first_wave_shell_pact"
+  ],
+  "successors": [],
+  "causes": [
+    "The aggressive expansion of the Vedda horse-tamers across the Ganges Plain",
+    "The clearing of the deep deciduous forests by early charcoal-burners"
+  ],
+  "outcomes": [
+    "The withdrawal of the three-hundred-and-sixty-degree forest sentinel deeper into the southern Western Ghats",
+    "The founding of the hidden tree-temples by Jharwa-Vanara outlier populations to shelter Owlman's quiet spirit",
+    "A permanent cultural shift where human-Vanara hybrid descendants became reclusive guardians of the southern canopy"
+  ],
+  "summary": "As the horse-taming Vedda clans clear the central forests for pasture, the ancient avian guardian Owlman retreats deep into the Western Ghats. A reclusive group of Jharwa-Vanara outliers construct the first hidden tree-temples to protect his fading presence.",
+  "canon": "primary",
+  "sources": [
+    "The Stone Scrolls of Dwarka Fortress",
+    "Narmada Historical Surveys"
+  ]
+}

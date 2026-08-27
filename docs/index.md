@@ -12,6 +12,11 @@ _Generated from `database/events/`.
 **Summary:** An unstabilised rift into Asura Loka floods the Gondwana battlefield with mutagenic energy. The diapsids shed the heat as feathers and become the first avian dinosaurids; some synapsid predators degenerate into the shadow-corrupted lineages the Tendua descends from. The rift hardens into the Ganges Lava Sea.
 **Participants:** mythology_ammonite_man, character_owlman
 
+## The Great Devolvement
+**Epoch:** Prehistoric Foundations & Age of Vanaras
+**Summary:** As global climate shifts fracture the southern tree-cities of the Nilgiri Canopy, the hyper-intelligent Vanara civilization begins to collapse and devolve. The sun-spirit Lionman manifests to guide the scattered, regressed tribes safely across the savanna.
+**Participants:** character_lionman
+
 ## Forging of the Dragon’s Spine
 _Sample fixture — kept to exercise the tooling, not part of the story._
 **Epoch:** Deep Antiquity
@@ -28,10 +33,20 @@ _Sample fixture — kept to exercise the tooling, not part of the story._
 **Summary:** Sira uses a corrupting mask to manipulate Vedda brothers Ranu and Bela into massacring a Jharwa village. Meera survives and is forced into marriage. Vara-Ma and Orek later help her and hide dangerous masks with Thren in the Aravali sanctuary.
 **Participants:** character_sira, character_ranu, character_bela, character_meera, character_vara_ma, character_orek, character_thren
 
+## The Jharwa First-Wave & The Shell Pact
+**Epoch:** Era of Human Migrations
+**Summary:** During the Pleistocene Glaciation, the Jharwa cave-painters cross the Tethys Sea to Jambhudweepa. Landing in the Saraswati Delta, Elder Repa establishes the Shell Pact with the Ammonite Man, trading spiral conches for safe passage through the deep channels.
+**Participants:** character_jharwa_elder_repa, mythology_ammonite_man
+
 ## Opening of the Naraka Lok Portal
 **Epoch:** Era of Human Migrations
 **Summary:** Guyuk, guided by a possessed mountain goat, recites incantations from an ancient tome and tears open a colossal glowing red portal to Naraka Lok. Horrific beasts spill forth; Nirigili loses his Elephantbird to a Megalosaurus.
 **Participants:** character_guyuk, character_nirigili
+
+## The Retreat of Owlman
+**Epoch:** Era of Human Migrations
+**Summary:** As the horse-taming Vedda clans clear the central forests for pasture, the ancient avian guardian Owlman retreats deep into the Western Ghats. A reclusive group of Jharwa-Vanara outliers construct the first hidden tree-temples to protect his fading presence.
+**Participants:** character_owlman
 
 ## Silvershore War
 **Epoch:** Civilization Dawn (Lothal Era)
@@ -72,3 +87,8 @@ _Sample fixture — kept to exercise the tooling, not part of the story._
 **Epoch:** Civilization Dawn (Lothal Era)
 **Summary:** In exile, Shaashak gives birth to Sarita. The child’s first cry echoes her mother’s lullaby. Represents future reconciliation of the two bloodlines.
 **Participants:** character_shaashak, character_khadi, character_sarita
+
+## The Antarctic Ice Wall Expedition
+**Epoch:** Current Era (Age of Machinery)
+**Summary:** Bound to mortal bodies, Captain Varuna and his companion Mitra lead a whale-bone trawler into the freezing southern waters of the Tethys. Trapped in a glacial maze, Varuna's drive to ram through the ice wall clashes with the Ammonite Man's drive to preserve it as a memory archive, resolved only when Mitra mediates a silent, drifting passage.
+**Participants:** character_varuna, character_mitra, mythology_ammonite_man

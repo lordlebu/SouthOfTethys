@@ -8,15 +8,15 @@ _Generated from `database/events/` and `database/timeline/epochs.json` by `utils
 timeline
     title South of Tethys — the epochs
     section Prehistoric Foundations & Age of Vanaras
-        500 MYA – 5 MYA : The Fang vs. Scale Wars : The Asura Gondwana Intervention
+        500 MYA – 5 MYA : The Fang vs. Scale Wars : The Asura Gondwana Intervention : The Great Devolvement
     section Deep Antiquity
         before the migrations : Forging of the Dragon’s Spine (sample) : Shadow Pact of Saraswati
     section Era of Human Migrations
-        50K – 5K years ago : Aravali Massacre & Sanctuary : Opening of the Naraka Lok Portal
+        50K – 5K years ago : Aravali Massacre & Sanctuary : The Jharwa First-Wave & The Shell Pact : Opening of the Naraka Lok Portal : The Retreat of Owlman
     section Civilization Dawn (Lothal Era)
         c. 3000 – 500 BCE : Silvershore War : Founding of Lothal : Black Lotus Siege : The Stone Pact : Tendua Crisis and Assassination of Kavik : Retrieval of the Mask of Harappa : Exile of Shaashak and Khadi : Birth of Sarita Silversong
     section Current Era (Age of Machinery)
-        ~1920s equivalent : (no events recorded yet)
+        ~1920s equivalent : The Antarctic Ice Wall Expedition
     section Post-Cataclysmic Era (The Great Shattering)
         after the Collapse : (no events recorded yet)
 ```
@@ -30,39 +30,47 @@ graph TD
     subgraph epoch_prehistoric["Prehistoric Foundations & Age of Vanaras"]
         E0["The Fang vs. Scale Wars"]
         E1["The Asura Gondwana Intervention"]
+        E2["The Great Devolvement"]
     end
     subgraph epoch_deep_antiquity["Deep Antiquity"]
-        E2["Forging of the Dragon’s Spine (sample)"]
-        E3["Shadow Pact of Saraswati"]
+        E3["Forging of the Dragon’s Spine (sample)"]
+        E4["Shadow Pact of Saraswati"]
     end
     subgraph epoch_migrations["Era of Human Migrations"]
-        E4["Aravali Massacre & Sanctuary"]
-        E5["Opening of the Naraka Lok Portal"]
+        E5["Aravali Massacre & Sanctuary"]
+        E6["The Jharwa First-Wave & The Shell Pact"]
+        E7["Opening of the Naraka Lok Portal"]
+        E8["The Retreat of Owlman"]
     end
     subgraph epoch_civilization_dawn["Civilization Dawn (Lothal Era)"]
-        E6["Silvershore War"]
-        E7["Founding of Lothal"]
-        E8["Black Lotus Siege"]
-        E9["The Stone Pact"]
-        E10["Tendua Crisis and Assassination of Kavik"]
-        E11["Retrieval of the Mask of Harappa"]
-        E12["Exile of Shaashak and Khadi"]
-        E13["Birth of Sarita Silversong"]
+        E9["Silvershore War"]
+        E10["Founding of Lothal"]
+        E11["Black Lotus Siege"]
+        E12["The Stone Pact"]
+        E13["Tendua Crisis and Assassination of Kavik"]
+        E14["Retrieval of the Mask of Harappa"]
+        E15["Exile of Shaashak and Khadi"]
+        E16["Birth of Sarita Silversong"]
+    end
+    subgraph epoch_current["Current Era (Age of Machinery)"]
+        E17["The Antarctic Ice Wall Expedition"]
     end
     E0 --> E1
+    E1 --> E2
+    E2 --> E6
     E6 --> E8
-    E6 --> E7
-    E7 --> E9
-    E7 --> E8
-    E8 --> E9
+    E9 --> E11
     E9 --> E10
-    E10 --> E11
     E10 --> E12
+    E10 --> E11
     E11 --> E12
     E12 --> E13
+    E13 --> E14
+    E13 --> E15
+    E14 --> E15
+    E15 --> E16
 ```
 
 ## Epochs with no events yet
 
-- **Current Era (Age of Machinery)** — ~1920s equivalent
 - **Post-Cataclysmic Era (The Great Shattering)** — after the Collapse

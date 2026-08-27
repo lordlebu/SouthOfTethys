@@ -1,0 +1,19 @@
+{
+  "id": "character_mitra",
+  "type": "character",
+  "name": "Mitra",
+  "culture": "explorer",
+  "species": "deity_in_mortal_shell",
+  "status": "alive",
+  "epoch": "epoch_current",
+  "roles": [
+    "Navigator of the Kelpfang",
+    "Keeper of Friendship and Harmony",
+    "Field Historian"
+  ],
+  "notes": "Varuna's sharp-eyed companion and divine partner, manifesting in the Current Era as a quick-witted youth in a red Phrygian cap. He specializes in maintaining social cohesion and peaceful contracts.",
+  "canon": "primary",
+  "sources": [
+    "Resonant Hearts: Intimate Chronicles Aboard the Kelpfang"
+  ]
+}

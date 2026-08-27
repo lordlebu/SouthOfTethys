@@ -1,0 +1,20 @@
+{
+  "id": "character_jharwa_elder_repa",
+  "type": "character",
+  "name": "Elder Repa",
+  "culture": "jharwa",
+  "species": "human",
+  "status": "deceased",
+  "epoch": "epoch_migrations",
+  "roles": [
+    "Jharwa Clan Elder",
+    "Saraswati Pathfinder",
+    "First Shell-Worshipper"
+  ],
+  "notes": "An ancient spiritual pathfinder who led the first-wave Jharwa migrants across the Tethys Sea from the Zagros Mountains. Repa is historically remembered as the mortal who directly negotiated with the Ammonite Man, establishing the sacred Shell Pact to guarantee his people's survival in the delta's deep channels.",
+  "canon": "primary",
+  "sources": [
+    "Muria Cave Chronicles",
+    "Narmada Historical Surveys"
+  ]
+}

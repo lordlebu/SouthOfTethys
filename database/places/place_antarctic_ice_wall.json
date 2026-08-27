@@ -1,0 +1,13 @@
+{
+  "id": "place_antarctic_ice_wall",
+  "type": "place",
+  "name": "Antarctic Ice Wall",
+  "kind": "frontier",
+  "continent": "jambhudweepa",
+  "description": "The monumental, freezing glacial cliffs that form the extreme southern boundary of the Tethys Ocean.",
+  "notes": "A shifting, treacherous wall of pristine ice believed to be a fossilized deep-time memory archive, guarded by the resonant acoustic whispers of the Ammonite Man.",
+  "canon": "primary",
+  "sources": [
+    "Resonant Hearts: Intimate Chronicles Aboard the Kelpfang"
+  ]
+}

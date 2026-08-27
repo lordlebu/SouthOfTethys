@@ -1,0 +1,13 @@
+{
+  "id": "place_western_ghats",
+  "type": "place",
+  "name": "Western Ghats",
+  "kind": "range",
+  "continent": "jambhudweepa",
+  "description": "The sheer, mist-veiled mountain range running along the western coast of Jambhudweepa, characterized by dense evergreen rainforests.",
+  "notes": "An ancient refuge for deep-time entities, outliers, and rare flora, widely famous for its hidden tree-temples and sanctuary groves.",
+  "canon": "primary",
+  "sources": [
+    "The Lost Geography of Jambhudweep"
+  ]
+}
