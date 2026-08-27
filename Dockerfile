@@ -37,4 +37,4 @@ USER appuser
 # The same gate CI runs, in the same order. `check_export_boundary` is here because the
 # question it answers -- can lore reach the game by accident -- is not one you want to find
 # the answer to only on a pull request.
-CMD ["sh", "-c", "python utils/lint_story.py && python utils/check_export_boundary.py && python utils/generate_timeline_mermaid.py && python utils/generate_timeline.py && python utils/evolve_species.py"]
+CMD ["sh", "-c", "python utils/lint_story.py && python utils/check_export_boundary.py && python utils/generate_timeline_mermaid.py && python utils/generate_timeline.py && python utils/generate_atlas.py && python utils/evolve_species.py"]

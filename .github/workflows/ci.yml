@@ -68,6 +68,7 @@ jobs:
           python utils/lint_story.py
           python utils/generate_timeline_mermaid.py
           python utils/generate_timeline.py
+          python utils/generate_atlas.py
           python utils/evolve_species.py
           flake8 utils/ || true
 
@@ -94,6 +95,7 @@ jobs:
         run: |
           python utils/generate_timeline_mermaid.py
           python utils/generate_timeline.py
+          python utils/generate_atlas.py
           python utils/evolve_species.py
 
       - name: Check artifacts generated
@@ -151,6 +153,7 @@ jobs:
         run: |
           python utils/generate_timeline_mermaid.py
           python utils/generate_timeline.py
+          python utils/generate_atlas.py
 
       - name: Setup Pages
         uses: actions/configure-pages@v4

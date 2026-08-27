@@ -137,6 +137,26 @@ drowned gate after the Shattering. Most of several hundred places never change a
 eight-line files. One entity per place per epoch was rejected: it multiplies hundreds by six and
 makes "is this the same place?" unanswerable.
 
+**Only the post-cataclysm era has a map, until the Cataclysm is written.** Settled
+2026-08-27. The three field-map coordinates are the only positions canon holds, and
+`field_map.schema.json` records that their layout is cataclysm-shaped rather than geographic.
+An earlier era therefore has nothing to plot.
+
+The reason not to simply author pre-cataclysm coordinates is not the grid. **The Great
+Shattering has not been written.** Its epoch entry is a paragraph marked `status: authoring`,
+and the events folder holds nothing in it. Deriving a *before* from an *after* that has not
+been described would mean inventing the shape of a catastrophe in order to place cities
+relative to it, and every one of those positions would be a claim the fiction had not made
+yet.
+
+So the atlas draws one era and states on the page why it draws only one. Early eras get a
+timeline, an event graph and a census, which is everything canon actually knows about them.
+The `states.coordinates` field on `place` stays in the schema unused, and it is what the
+Cataclysm will be written into when somebody writes it.
+
+Reversing this is cheap in a way the y-axis ruling was not: nothing has been entered against
+it. That is the whole argument for waiting.
+
 ## Contribution Rule
 
 New lore → JSON entity under `database/` with stable ID + update `index.json`.

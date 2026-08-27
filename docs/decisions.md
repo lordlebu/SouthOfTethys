@@ -231,6 +231,18 @@ after a hundred files exist, and the y-axis in particular cannot be revisited at
 pinned field-map coordinates are load-bearing in the shipped game, so the convention had to be
 fitted to them.
 
+**Early eras get no map, and the atlas says so** (decided 2026-08-27). Five of six eras
+render a timeline, an event graph and a census, and no map at all. The three field maps are the
+only coordinates canon holds and their layout describes the world after the Collapse.
+
+The argument that settled it was not about the grid. **The Cataclysm has not been worded yet** —
+`epoch_post_cataclysm` is a single paragraph marked `status: authoring`, and no event sits in it.
+Authoring pre-cataclysm coordinates would mean inventing the shape of the catastrophe in order to
+place cities relative to it, and shipping nineteen positions that the fiction had never claimed.
+
+Cheap to reverse, precisely because nothing has been entered against it — which is the opposite of
+the y-axis ruling, and the reason this one could wait where that one could not.
+
 **The landmark loop stays** (decided 2026-08-13). The compass bearing to a great banyan and the
 arrival page it ends in predate points of interest, and there are now two notions of arriving
 somewhere. Retiring the older one was offered three times and declined: it is the shape the

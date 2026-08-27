@@ -12,6 +12,7 @@ plugins:
 header_pages:
   - index.md
   - timeline_mermaid.md
+  - atlas.md
 
 # Markdown processing
 markdown: kramdown
