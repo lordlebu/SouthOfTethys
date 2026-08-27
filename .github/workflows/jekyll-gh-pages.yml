@@ -1,4 +1,14 @@
-# Sample workflow for building and deploying a Jekyll site to GitHub Pages
+# The one workflow that publishes the book.
+#
+# `ci.yml` used to deploy Pages as well, and the two raced for the same `github-pages`
+# environment -- but they did not publish the same thing. This one runs a real Jekyll build over
+# `docs/`. That one called `upload-pages-artifact` on the directory with no build at all, so it
+# served raw markdown and ignored `_config.yml`, the nav and `_includes/` entirely. Whichever
+# finished last decided whether the live site was a built site or a folder of `.md` files.
+#
+# That is the deeper half of why the published book stayed stale for months while CI regenerated
+# it on every push. `ci.yml` no longer deploys; `docs/` is tracked, so what is committed is what
+# gets built.
 name: Deploy Jekyll with GitHub Pages dependencies preinstalled
 
 on:

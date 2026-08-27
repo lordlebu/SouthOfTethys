@@ -258,6 +258,22 @@ the whole thing still comes out with a four-file delete on the day it stops bein
 The alternative was a `notes` convention, which nothing enforces. A fixture nobody can distinguish
 from canon is how a test becomes load-bearing by accident.
 
+**One workflow publishes the book, and it builds it** (decided 2026-08-27). `ci.yml` no longer
+deploys Pages. It and `jekyll-gh-pages.yml` had been racing for the same `github-pages`
+environment while publishing *different things*: the Jekyll workflow runs a real build over
+`docs/`, and `ci.yml` called `upload-pages-artifact` on the directory with no build at all,
+serving raw markdown and ignoring `_config.yml`, the nav and `_includes/`.
+
+So the live site was a built site or a folder of `.md` files depending on which job finished
+last. That is the deeper half of why the published book stayed stale while CI regenerated it on
+every push — the earlier finding was that the stale copy sometimes won, and this is why it could
+win at all.
+
+**And Mermaid renders on the site now.** `docs/_includes/head-custom.html` loads it, which is the
+hook `pages-themes/minimal` provides for exactly this. Five diagrams across the timeline and the
+atlas had been publishing as syntax-highlighted source. It degrades to that same source if the
+CDN is unreachable, which is the failure mode worth having.
+
 **The landmark loop stays** (decided 2026-08-13). The compass bearing to a great banyan and the
 arrival page it ends in predate points of interest, and there are now two notions of arriving
 somewhere. Retiring the older one was offered three times and declined: it is the shape the
