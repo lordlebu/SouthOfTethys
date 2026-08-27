@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Giant Bird-Nest Fern",
   "scientific": "Asplenium maximus",
+  "growth_form": "fern",
   "region": "shattered-sea-mappa-mundi",
   "biomes": [
     "forest"

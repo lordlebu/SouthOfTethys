@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Ghost Mangrove",
   "scientific": "Avicennia phantasma",
+  "growth_form": "tree",
   "habitats": [
     "coastal",
     "region_saraswati_delta"

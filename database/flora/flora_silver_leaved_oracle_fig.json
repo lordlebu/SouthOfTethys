@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Silver-Leaved Oracle Fig",
   "scientific": "Ficus bhutakana",
+  "growth_form": "tree",
   "habitats": [
     "region_narmada_plateau"
   ],

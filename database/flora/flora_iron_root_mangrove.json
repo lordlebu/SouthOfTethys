@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Iron-Root Mangrove",
   "scientific": "Rhizophora ferrea",
+  "growth_form": "tree",
   "region": "saraswati-godavari-deltas",
   "biomes": [
     "coast"

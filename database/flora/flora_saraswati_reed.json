@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Saraswati Reed",
   "scientific": "Calamus sarasvaticus",
+  "growth_form": "grass",
   "region": "saraswati-godavari-deltas",
   "biomes": [
     "wetland"

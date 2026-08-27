@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Levitation Gourd / Sky-Balloon",
   "scientific": "Cucurbita levitata",
+  "growth_form": "vine",
   "region": "tethys-sky-routes",
   "biomes": [
     "sky_island",

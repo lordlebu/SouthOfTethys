@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Sweet Indigo",
   "scientific": "Indigofera dulcis",
+  "growth_form": "vine",
   "habitats": [
     "region_saraswati_delta"
   ],

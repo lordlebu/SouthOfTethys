@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Crimson Spice-Root",
   "scientific": "Curcuma rubra",
+  "growth_form": "root",
   "region": "gedrosian-taklamakan",
   "biomes": [
     "desert"

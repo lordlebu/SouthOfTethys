@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Toxic Crimson Root",
   "scientific": "Nirnroot rubra",
+  "growth_form": "root",
   "region": "tethys-sky-routes",
   "biomes": [
     "sky_island"

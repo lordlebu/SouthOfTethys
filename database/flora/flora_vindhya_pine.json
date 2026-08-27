@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Vindhya Pine",
   "scientific": "Pinus vindhyensis",
+  "growth_form": "tree",
   "region": "narmada-vindhya",
   "biomes": [
     "hills",

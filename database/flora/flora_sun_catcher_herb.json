@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Sun-Catcher Herb",
   "scientific": "Glassa solis",
+  "growth_form": "shrub",
   "region": "tethys-sky-routes",
   "biomes": [
     "sky_island"

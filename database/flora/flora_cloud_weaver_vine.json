@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Cloud-Weaver Vine",
   "scientific": "Vitis nubis",
+  "growth_form": "vine",
   "region": "tethys-sky-routes",
   "biomes": [
     "sky_island"

@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Hanging Monkey-Pitcher",
   "scientific": "Nepenthes vanara",
+  "growth_form": "pitcher",
   "region": "shattered-sea-mappa-mundi",
   "biomes": [
     "forest"

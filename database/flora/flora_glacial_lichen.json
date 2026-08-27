@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Glacial Lichen",
   "scientific": "Lichen glacialis",
+  "growth_form": "lichen",
   "region": "ganges-lava-sea",
   "biomes": [
     "lava_field",

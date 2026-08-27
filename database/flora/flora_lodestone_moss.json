@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Lodestone Moss",
   "scientific": "Bryum magneticum",
+  "growth_form": "moss",
   "region": "tethys-sky-routes",
   "biomes": [
     "sky_island"

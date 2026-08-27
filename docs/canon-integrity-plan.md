@@ -11,7 +11,8 @@ fauna with no scientific name. This is what it would take for it to stop doing t
 Everything below is measured against the repository as it stands on **2026-08-24**: 495 entities,
 `index.json` v1.9.0, lint reporting success.
 
-**All five phases are done.** This plan is closed; what follows is the record. Lint validates all 494 entities against 15 strict schemas, fails if `jsonschema` is missing,
+**All five phases are done, including the flora half of Phase 03 that this plan carried as open
+for a while.** Closed; what follows is the record. Lint validates all 494 entities against 15 strict schemas, fails if `jsonschema` is missing,
 enforces four cross-file invariants that JSON Schema cannot express, and
 `database/VALIDATION.md` describes what actually runs.
 
@@ -269,6 +270,7 @@ and the data it would have condemned is fixed.
 | Schemas enforced in CI | 15, covering all **494** entities |
 | Cross-file invariants | binomial, name and `source_index` uniqueness; binomial required |
 | Fauna stating their clade | **256 of 256** |
+| Flora stating their growth form | **90 of 90** |
 | Duplicate species | **0** — three pairs merged |
 | Fauna with no binomial | **0** — was eight |
 

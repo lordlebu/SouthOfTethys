@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Poison Oleander",
   "scientific": "Nerium oleander",
+  "growth_form": "flower",
   "habitats": [
     "region_aravali",
     "region_gedrosian_desert"

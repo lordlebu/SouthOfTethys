@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Red Delta Rice",
   "scientific": "Oryza rubra-delta",
+  "growth_form": "grass",
   "habitats": [
     "region_saraswati_delta"
   ],

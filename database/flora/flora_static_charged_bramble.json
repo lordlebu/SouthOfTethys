@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Static-Charged Bramble",
   "scientific": "Rubus electricus",
+  "growth_form": "shrub",
   "region": "tethys-sky-routes",
   "biomes": [
     "sky_island"

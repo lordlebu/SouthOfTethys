@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Crimson-Leaved Ash-Banyan",
   "scientific": "Ficus ash-banyana",
+  "growth_form": "tree",
   "region": "ganges-lava-sea",
   "biomes": [
     "lava_field",

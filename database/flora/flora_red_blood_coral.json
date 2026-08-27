@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Red Blood-Coral",
   "scientific": "Tethysolithus rubra",
+  "growth_form": "coral",
   "region": "shattered-sea-mappa-mundi",
   "biomes": [
     "sea"

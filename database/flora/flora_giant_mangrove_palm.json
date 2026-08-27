@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Giant Mangrove-Palm",
   "scientific": "Nypa gigas",
+  "growth_form": "palm",
   "region": "shattered-sea-mappa-mundi",
   "biomes": [
     "coast"

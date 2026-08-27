@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Violet Strangler-Vine",
   "scientific": "Vitis violacea",
+  "growth_form": "vine",
   "region": "asura-conjurations",
   "biomes": [
     "forest"

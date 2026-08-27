@@ -1,0 +1,24 @@
+{
+  "version": "1.0.0",
+  "description": "What shape a plant takes, declared once here so that 90 flora do not each repeat it. The companion to clades.json: that file says what an animal is, this one says what a plant is. Written for the same reason — the game had been deriving it by matching keywords against names, which is how `Saltreed` came to be a tree, its own letters containing the word.",
+  "note": "Growth form is morphology, not ancestry, and that is deliberate. `clade` groups animals by descent because a naturalist tells a crocodile from a gecko on sight and the difference is a real branch. A plant is met as a shape — a canopy, a stem, a mat on a rock — and two plants of one genus can genuinely take different shapes when one has been bred and the other has not. So a shared genus does not force a shared form here, where it does force a shared clade there.",
+  "forms": {
+    "tree": { "label": "Tree", "note": "A woody trunk holding a canopy. Includes the mangroves, whose stilt roots are still a tree." },
+    "palm": { "label": "Palm", "note": "Pulled out of `tree` because the silhouette is unmistakable and more useful than the botany." },
+    "shrub": { "label": "Shrub", "note": "Woody, branching from low down, no single trunk. The herbs live here too — tulsi, mint, sagebrush — because at the size a mark is drawn, a herb is a small bush." },
+    "vine": { "label": "Vine", "note": "Climbs or trails rather than standing. What holds it up is somebody else." },
+    "flower": { "label": "Flower", "note": "Named and known for the bloom. A rose and an oleander are woody shrubs botanically and are filed here anyway, because nobody meets a rose and thinks *bush*." },
+    "grass": { "label": "Grass", "note": "Blades from a base, including the reeds, the grains and the bamboos. The seagrasses are here as well: *Zostera* is a flowering plant that went back to the sea, not an alga." },
+    "root": { "label": "Root", "note": "The plant is the part underground — taro, turmeric, the spice-roots. What shows above it is incidental." },
+    "fern": { "label": "Fern", "note": "Fronds, no flowers." },
+    "moss": { "label": "Moss", "note": "Low cushions and mats. True bryophytes; see `lichen` for the things that only look like them." },
+    "lichen": { "label": "Lichen", "note": "Not a plant and not one organism: a fungus farming an alga. Canon has three — *Dictyonema* twice and a *Lichen* — and filing them under `moss` would repeat the mistake the whole exercise is about. They grow like moss and are nothing like it." },
+    "cactus": { "label": "Cactus", "note": "Succulent, ribbed, spined." },
+    "seaweed": { "label": "Seaweed", "note": "Marine algae. *Macrocystis* and its kind — genuinely algae, unlike the seagrasses under `grass`." },
+    "coral": {
+      "label": "Coral",
+      "note": "**An animal.** Canon files its two *Tethysolithus* reef-builders with the flora, and they are cnidarians — closer to the Sky-Faring Jellyfish than to anything else in this file. The form exists so that the database stops implying they are plants while somebody decides whether they should move to `fauna` and take a `clade` instead. That is a canon question, not a vocabulary one."
+    },
+    "pitcher": { "label": "Pitcher plant", "note": "Carnivorous. A plant with a diet is worth its own mark." }
+  }
+}

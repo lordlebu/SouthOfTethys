@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Whisper-Fig",
   "scientific": "Ficus susurrans",
+  "growth_form": "tree",
   "habitats": [
     "region_saraswati_delta",
     "canopy"

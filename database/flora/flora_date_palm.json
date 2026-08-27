@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Date Palm",
   "scientific": "Phoenix gedrosiana",
+  "growth_form": "palm",
   "habitats": [
     "region_gedrosian_desert"
   ],

@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Obsidian Rose",
   "scientific": "Rosa obsidiana",
+  "growth_form": "flower",
   "region": "asura-conjurations",
   "biomes": [
     "settlement"

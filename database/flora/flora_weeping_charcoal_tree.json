@@ -3,6 +3,7 @@
   "type": "flora",
   "name": "Weeping Charcoal Tree",
   "scientific": "Ficus cinereus",
+  "growth_form": "tree",
   "region": "ganges-lava-sea",
   "biomes": [
     "forest"
