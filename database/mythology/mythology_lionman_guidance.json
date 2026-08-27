@@ -1,0 +1,19 @@
+{
+  "id": "mythology_lionman_guidance",
+  "type": "mythology",
+  "name": "The Solar Guidance of Lionman",
+  "domain": [
+    "deep_time",
+    "origin"
+  ],
+  "aspect": "The founding legend of the Jharwa outliers",
+  "relations": {
+    "concerns": "character_lionman",
+    "set_at": "place_nilgiri_canopy"
+  },
+  "notes": "The founding legend of the Jharwa outliers, detailing how the golden-maned solar guardian used his burning obsidian claws to clear brush and strike fire, protecting the regressed Vanara tribes from the horrors of the long shadow-cold. The establishment of fire-keeping shrines dedicated to the sun. The myth of the Solar Claw that carved the first safety circles in the tall savanna grass.",
+  "canon": "primary",
+  "sources": [
+    "Oral Histories of the Jharwa Outliers"
+  ]
+}

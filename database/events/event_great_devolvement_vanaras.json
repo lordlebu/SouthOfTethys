@@ -1,0 +1,30 @@
+{
+  "id": "event_great_devolvement_vanaras",
+  "type": "event",
+  "title": "The Great Devolvement",
+  "epoch": "epoch_prehistoric",
+  "participants": [
+    "character_lionman"
+  ],
+  "location": "place_nilgiri_canopy",
+  "predecessors": [
+    "event_asura_gondwana_intervention"
+  ],
+  "successors": [
+    "event_jharwa_first_wave_shell_pact"
+  ],
+  "causes": [
+    "Severe climate cooling fracturing the ancient deciduous canopy of southern Jambhudweepa",
+    "The drying of the Nilgiri canopy forcing the Vanaras onto the open savanna"
+  ],
+  "outcomes": [
+    "Loss of higher fire-mastery and tool use in the majority of the Vanara populations",
+    "Survival of regressed Vanara descendants as modern monkeys and reclusive outliers",
+    "The migration of the solar-guided tribes to the central plains under Lionman's pathfinding"
+  ],
+  "summary": "As global climate shifts fracture the southern tree-cities of the Nilgiri Canopy, the hyper-intelligent Vanara civilization begins to collapse and devolve. The sun-spirit Lionman manifests to guide the scattered, regressed tribes safely across the savanna.",
+  "canon": "primary",
+  "sources": [
+    "Ancient Palm-Leaf Manuscripts of Narmada University"
+  ]
+}

@@ -1,19 +1,19 @@
 {
-  "version": "1.14.0",
+  "version": "1.15.0",
   "description": "SouthOfTethys canonical entity index",
   "counts": {
     "artifacts": 3,
-    "characters": 41,
+    "characters": 45,
     "discoveries": 31,
-    "events": 14,
+    "events": 18,
     "factions": 3,
     "fauna": 256,
     "field_maps": 3,
     "field_questions": 7,
     "flora": 90,
-    "mythology": 4,
+    "mythology": 6,
     "npcs": 8,
-    "places": 24,
+    "places": 27,
     "points_of_interest": 20,
     "regions": 7,
     "settlements": 2,
@@ -38,14 +38,17 @@
       "character_iknaya",
       "character_jambanson",
       "character_jarek",
+      "character_jharwa_elder_repa",
       "character_kavik",
       "character_khadi",
       "character_kubera",
+      "character_lionman",
       "character_lira",
       "character_manjalaya",
       "character_meera",
       "character_mehme",
       "character_mira",
+      "character_mitra",
       "character_naga_raja",
       "character_narmada_man",
       "character_nila",
@@ -64,6 +67,7 @@
       "character_torin",
       "character_vara_ma",
       "character_varna",
+      "character_varuna",
       "character_varunesh",
       "character_vijaya",
       "character_yaksha_envoy"
@@ -102,6 +106,7 @@
       "discovery_wrong_anatomy"
     ],
     "events": [
+      "event_antarctic_ice_wall_expedition",
       "event_aravali_massacre",
       "event_asura_gondwana_intervention",
       "event_birth_of_sarita",
@@ -110,8 +115,11 @@
       "event_exile_of_shaashak",
       "event_fang_vs_scale_wars",
       "event_founding_lothal",
+      "event_great_devolvement_vanaras",
+      "event_jharwa_first_wave_shell_pact",
       "event_mask_retrieval",
       "event_naraka_portal",
+      "event_retreat_of_owlman",
       "event_shadow_pact",
       "event_silvershore_war",
       "event_stone_pact",
@@ -489,7 +497,9 @@
     "mythology": [
       "mythology_ammonite_man",
       "mythology_gorvaxx",
+      "mythology_lionman_guidance",
       "mythology_primordial_rift",
+      "mythology_the_first_shell_pact",
       "mythology_varuna"
     ],
     "npcs": [
@@ -504,6 +514,7 @@
     ],
     "places": [
       "place_ancient_courts",
+      "place_antarctic_ice_wall",
       "place_aranta",
       "place_black_lotus_fort",
       "place_deccan",
@@ -518,6 +529,7 @@
       "place_makkan_coast",
       "place_mohenjodaro",
       "place_nilgiri",
+      "place_nilgiri_canopy",
       "place_northern_frontier",
       "place_saraswati_river",
       "place_sihauli",
@@ -526,7 +538,8 @@
       "place_tamraparni",
       "place_tethys_sea",
       "place_upriver_exile",
-      "place_vengi"
+      "place_vengi",
+      "place_western_ghats"
     ],
     "points_of_interest": [
       "poi_basalt_quarry",

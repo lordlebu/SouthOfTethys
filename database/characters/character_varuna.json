@@ -1,0 +1,19 @@
+{
+  "id": "character_varuna",
+  "type": "character",
+  "name": "Captain Varuna",
+  "culture": "narmada_scholar",
+  "species": "deity_in_mortal_shell",
+  "status": "alive",
+  "epoch": "epoch_current",
+  "roles": [
+    "Captain of the Kelpfang",
+    "Keeper of Cosmic Order (Ṛta)",
+    "Field Scholar"
+  ],
+  "notes": "The ancient god of the waters, bound during Epoch 5 to a mortal human frame on Jambhudweepa. He operates as the stubborn, silver-bearded captain of the whale-bone trawler Kelpfang.",
+  "canon": "primary",
+  "sources": [
+    "Resonant Hearts: Intimate Chronicles Aboard the Kelpfang"
+  ]
+}

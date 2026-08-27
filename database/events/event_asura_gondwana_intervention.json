@@ -11,7 +11,9 @@
   "predecessors": [
     "event_fang_vs_scale_wars"
   ],
-  "successors": [],
+  "successors": [
+    "event_great_devolvement_vanaras"
+  ],
   "causes": [
     "primordial_rift_opens",
     "asura_loka_radiation_spill"

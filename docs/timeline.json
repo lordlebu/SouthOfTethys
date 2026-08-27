@@ -41,7 +41,9 @@
     "predecessors": [
       "event_fang_vs_scale_wars"
     ],
-    "successors": [],
+    "successors": [
+      "event_great_devolvement_vanaras"
+    ],
     "causes": [
       "primordial_rift_opens",
       "asura_loka_radiation_spill"
@@ -57,6 +59,36 @@
     "sources": [
       "dump/fang-vs-scale-wars.md",
       "AI_CONTEXT.md"
+    ]
+  },
+  {
+    "id": "event_great_devolvement_vanaras",
+    "type": "event",
+    "title": "The Great Devolvement",
+    "epoch": "epoch_prehistoric",
+    "participants": [
+      "character_lionman"
+    ],
+    "location": "place_nilgiri_canopy",
+    "predecessors": [
+      "event_asura_gondwana_intervention"
+    ],
+    "successors": [
+      "event_jharwa_first_wave_shell_pact"
+    ],
+    "causes": [
+      "Severe climate cooling fracturing the ancient deciduous canopy of southern Jambhudweepa",
+      "The drying of the Nilgiri canopy forcing the Vanaras onto the open savanna"
+    ],
+    "outcomes": [
+      "Loss of higher fire-mastery and tool use in the majority of the Vanara populations",
+      "Survival of regressed Vanara descendants as modern monkeys and reclusive outliers",
+      "The migration of the solar-guided tribes to the central plains under Lionman's pathfinding"
+    ],
+    "summary": "As global climate shifts fracture the southern tree-cities of the Nilgiri Canopy, the hyper-intelligent Vanara civilization begins to collapse and devolve. The sun-spirit Lionman manifests to guide the scattered, regressed tribes safely across the savanna.",
+    "canon": "primary",
+    "sources": [
+      "Ancient Palm-Leaf Manuscripts of Narmada University"
     ]
   },
   {
@@ -142,6 +174,37 @@
     ]
   },
   {
+    "id": "event_jharwa_first_wave_shell_pact",
+    "type": "event",
+    "title": "The Jharwa First-Wave & The Shell Pact",
+    "epoch": "epoch_migrations",
+    "participants": [
+      "character_jharwa_elder_repa",
+      "mythology_ammonite_man"
+    ],
+    "location": "region_saraswati_delta",
+    "predecessors": [
+      "event_great_devolvement_vanaras"
+    ],
+    "successors": [
+      "event_retreat_of_owlman"
+    ],
+    "causes": [
+      "The freezing of the northern steppes during the Pleistocene Glaciation",
+      "The rising waters of the Tethys Sea blocking traditional land paths"
+    ],
+    "outcomes": [
+      "Establishment of the first human settlement in the Saraswati Delta",
+      "The creation of the spiritual Shell Pact protecting human sailors"
+    ],
+    "summary": "During the Pleistocene Glaciation, the Jharwa cave-painters cross the Tethys Sea to Jambhudweepa. Landing in the Saraswati Delta, Elder Repa establishes the Shell Pact with the Ammonite Man, trading spiral conches for safe passage through the deep channels.",
+    "canon": "primary",
+    "sources": [
+      "Jharwa Cave-Paintings of Muria",
+      "iKnaya Subayai Palm-Leaf logs"
+    ]
+  },
+  {
     "id": "event_naraka_portal",
     "type": "event",
     "title": "Opening of the Naraka Lok Portal",
@@ -167,6 +230,35 @@
     "canon": "primary",
     "sources": [
       "AI_CONTEXT.md"
+    ]
+  },
+  {
+    "id": "event_retreat_of_owlman",
+    "type": "event",
+    "title": "The Retreat of Owlman",
+    "epoch": "epoch_migrations",
+    "participants": [
+      "character_owlman"
+    ],
+    "location": "place_western_ghats",
+    "predecessors": [
+      "event_jharwa_first_wave_shell_pact"
+    ],
+    "successors": [],
+    "causes": [
+      "The aggressive expansion of the Vedda horse-tamers across the Ganges Plain",
+      "The clearing of the deep deciduous forests by early charcoal-burners"
+    ],
+    "outcomes": [
+      "The withdrawal of the three-hundred-and-sixty-degree forest sentinel deeper into the southern Western Ghats",
+      "The founding of the hidden tree-temples by Jharwa-Vanara outlier populations to shelter Owlman's quiet spirit",
+      "A permanent cultural shift where human-Vanara hybrid descendants became reclusive guardians of the southern canopy"
+    ],
+    "summary": "As the horse-taming Vedda clans clear the central forests for pasture, the ancient avian guardian Owlman retreats deep into the Western Ghats. A reclusive group of Jharwa-Vanara outliers construct the first hidden tree-temples to protect his fading presence.",
+    "canon": "primary",
+    "sources": [
+      "The Stone Scrolls of Dwarka Fortress",
+      "Narmada Historical Surveys"
     ]
   },
   {
@@ -421,6 +513,34 @@
     "canon": "primary",
     "sources": [
       "AI_CONTEXT.md"
+    ]
+  },
+  {
+    "id": "event_antarctic_ice_wall_expedition",
+    "type": "event",
+    "title": "The Antarctic Ice Wall Expedition",
+    "epoch": "epoch_current",
+    "participants": [
+      "character_varuna",
+      "character_mitra",
+      "mythology_ammonite_man"
+    ],
+    "location": "place_antarctic_ice_wall",
+    "predecessors": [],
+    "successors": [],
+    "causes": [
+      "The Narmada University mission to chart the southern limits of the Tethys Ocean",
+      "Varuna's obsessive drive to find an orderly, logical pathway through the shifting ice of the deep south"
+    ],
+    "outcomes": [
+      "A deep philosophical standoff between Varuna's drive for active order and the Ammonite Man's preservation of deep-time memory",
+      "The discovery of a hidden, bioluminescent sub-glacial current navigated in near-silence with the trawler's engines cut",
+      "The preservation of the Antarctic Ice Wall as a sacred, undisturbed geological archive"
+    ],
+    "summary": "Bound to mortal bodies, Captain Varuna and his companion Mitra lead a whale-bone trawler into the freezing southern waters of the Tethys. Trapped in a glacial maze, Varuna's drive to ram through the ice wall clashes with the Ammonite Man's drive to preserve it as a memory archive, resolved only when Mitra mediates a silent, drifting passage.",
+    "canon": "primary",
+    "sources": [
+      "Resonant Hearts: Intimate Chronicles Aboard the Kelpfang"
     ]
   }
 ]

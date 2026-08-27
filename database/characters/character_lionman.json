@@ -1,0 +1,19 @@
+{
+  "id": "character_lionman",
+  "type": "character",
+  "name": "Lionman",
+  "culture": "vanara",
+  "species": "vanara_spirit",
+  "status": "mythic",
+  "epoch": "epoch_prehistoric",
+  "roles": [
+    "Sun-Spirit",
+    "Guardian of the Savanna",
+    "Guide of the Devolved"
+  ],
+  "notes": "A maned solar deity with obsidian claws who manifested as a protective guide for the Vanara tribes during the Great Devolvement.",
+  "canon": "primary",
+  "sources": [
+    "Nilgiri Canopy Cave Records"
+  ]
+}
