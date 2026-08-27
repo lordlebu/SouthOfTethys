@@ -15,8 +15,8 @@ It is now a list of what is enforced, which is a thing that can be checked again
 
 | Check | Covers |
 |---|---|
-| **schema** | All 494 entities against 15 schemas. Every entity folder has one. |
-| **strict fields** | `additionalProperties: false` on all 15, so a misspelled `scientifc` fails by name instead of reading as absent. |
+| **schema** | All 513 entities against 16 schemas. Every entity folder has one. |
+| **strict fields** | `additionalProperties: false` on all 16, so a misspelled `scientifc` fails by name instead of reading as absent. |
 | **index, both ways** | Every id in `index.json` has a file, every file is in `index.json`, and the per-category counts match. |
 | **epochs** | Any field whose *name* mentions an epoch resolves to `timeline/epochs.json` — not just `epoch` and `epochs`, because `epoch_founded` once sat unvalidated one field over. |
 | **references** | Any string matching a known id prefix resolves to an entity that exists, wherever it appears in the tree. |
@@ -44,9 +44,16 @@ consistent; this asks whether canon can reach the game by accident.
 | **bundle fingerprint** | The bundle the exporter *would* write still hashes to `database/export.lock.json`. An intended change is re-pinned with `--update`, deliberately, in the same commit. |
 | **drift against the game** | Reported, never fatal, and skipped in CI where the sibling repository is not checked out. It is what catches a bundle exported from a branch that never merged. |
 
-`canon_version` is not sufficient for any of this. Canon `main` and `feat/flora-growth-forms` both
-declare `1.11.0` and produce a different `species.json`, and it is the branch's copy that is
-committed in the game today. A version nobody bumps identifies nothing; hashes do.
+`canon_version` is not sufficient for any of this, and the case that proved it has since played
+out. `main` and `feat/flora-growth-forms` both declared `1.11.0` while producing a different
+`species.json`, and it was the branch's copy that sat committed in the game. A version nobody bumps
+identifies nothing; hashes do.
+
+That branch has now merged, and the fingerprint did exactly what it exists for: 90 flora gaining a
+`growth_form` moved `species.json`, the check failed with the file named, and the pin was updated
+deliberately rather than drifting unnoticed. **A failure here is usually correct.** It means a lore
+change reached the game's data — re-pin with `--update` when that was the intent, and look harder
+when it was not.
 
 Constrained by enum where the data was already consistent: `rarity`, `placement`, `canon`, `diet`.
 `mood` was already an enum of eleven values before this pass and was left untouched — an earlier
@@ -58,7 +65,7 @@ it was describing. Exactly the failure mode this document exists to avoid.
 | Gap | Status |
 |---|---|
 | **`taxonomy` shape** | Still `{"type": "object"}` with no required keys, on 9 of 256 fauna. Left free on purpose: Phase 03 answered the part that mattered with a real `clade` field, and what remains here is genuinely editorial notes. |
-| **Geography beyond field maps** | Field maps carry `coordinates`; the ~15 other places on the lore map are not entities at all. Deliberate, and sequenced — see `docs/canon-integrity-plan.md`. |
+| **Place coordinates** | The 19 `place` entities are real now, but none carries coordinates. The 0–100 grid is the *post-cataclysm* layout by `field_map.schema.json`'s own account, and the lore map depicts a world before the Collapse, so placing its cities on that grid would mix two eras. Nothing checks that a place is eventually placed, because most never will be. |
 | **Large media placement** | Nothing checks that a big binary sits in the git-ignored `dump/` rather than tracked. A 6.4 MB lore map reached a commit through `git add -A`. The rule is in `CLAUDE.md`; a size check in lint would enforce it and has not earned its place — one accident is not a pattern, and a linter that failed on a file somebody deliberately tracked would be worse than the accident. |
 | **Corals filed as flora** | Canon's two *Tethysolithus* reef-builders are cnidarians — animals — and sit in `database/flora/`. They carry `growth_form: coral` so the database stops implying they are plants, but moving them to `fauna` with a `clade` is a canon decision nobody has made. |
 | **Spouse field** | Sometimes an array, sometimes a string. The schema stays permissive; long-standing and non-blocking. |
