@@ -11,7 +11,8 @@
   ],
   "location": "black_lotus_camp",
   "predecessors": [
-    "event_silvershore_war"
+    "event_silvershore_war",
+    "event_founding_lothal"
   ],
   "successors": [
     "event_stone_pact"
