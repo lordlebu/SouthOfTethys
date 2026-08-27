@@ -14,7 +14,7 @@ That division settles nearly every question that comes up: everything canon hold
 rather than debating it.
 
 Canon is one JSON file per entity under `database/`, validated against JSON Schema in
-`database/schemas/`. `database/index.json` is the manifest — **v1.10.0, 497 entities**.
+`database/schemas/`. `database/index.json` is the manifest — **v1.11.0, 494 entities**.
 
 ## Commands
 

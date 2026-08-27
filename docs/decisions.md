@@ -138,12 +138,85 @@ check found four more silent helps on its first run, on the other two maps.
 
 ---
 
+### Third round, opening the lore layer (2026-08-27)
+
+Canon is about to grow by hundreds of places across six epochs, almost none of which is meant
+to ship. These are the calls that make that safe to do.
+
+**The export boundary is a check now, not a convention.** `utils/check_export_boundary.py`
+requires every folder under `database/` to be named in `BUNDLE` or in `NOT_EXPORTED`. A folder
+in neither is an error, because the natural way to add a `place` type is to create the
+directory and never think about the exporter again. It found one on its first run: `timeline`
+had been withheld by omission rather than by decision -- the exporter's own comment claimed the
+epoch table was excluded while the list did not mention it.
+
+**Hashes, not `canon_version`.** The guard pins what the bundle hashes to, because the version
+cannot do that job: `main` and `feat/flora-growth-forms` both declare `1.11.0` and produce a
+different `species.json`, and it is the branch's copy that is committed in the game. A version
+nobody bumps identifies nothing. Drift against the game repo is *reported and not fatal* --
+canon does not own the game's working tree, and CI does not check it out.
+
+**The three overworld coordinates are pinned in the linter.** `src/content/overworldMap.ts`
+builds that whole screen out of Lothal (28, 50), Dwarka (16, 64) and Narmada (58, 20): node
+positions, distances, the viewBox fitted to their extent, and which way the outermost labels
+lean. Moving one crashes nothing -- it silently rescales the screen, and the geometry tests in
+both repositories check the arithmetic rather than the data it runs on. Canon may place new
+things anywhere; these three are what everything else is placed relative to.
+
+**An event edge must be stated from both ends.** Only `successors` is read when the timeline is
+drawn, so an edge declared on the predecessor side alone exists in canon and never appears in
+the picture -- right to a reader, missing to the renderer. The one asymmetry in canon leaned the
+harmless way and is now symmetric.
+
+**Epoch order comes from the table, read at runtime.** Both generators carried a private copy
+keyed on `"civilization_dawn"` while every event says `"epoch_civilization_dawn"`, so every
+lookup missed, fell through to the `99` default, and alphabetical-by-id was the only sort that
+ever ran. Both copies had also drifted from `epochs.json` in the same direction: each named an
+`age_of_vanaras` that is not declared, and neither knew about `epoch_prehistoric`. Ordering now
+lives once, in `canon_epochs`, because the bug *was* two copies that had drifted apart.
+
+**Kahn's algorithm rather than networkx.** Twelve nodes do not justify a dependency, and the
+cycle detection that would be the real reason to reach for one falls out of the algorithm
+anyway. networkx is installed here only transitively; `story-validation.yml` installs
+`requirements.txt` and nothing else, so using it would have meant adding it there.
+
+**Mermaid for what stays small, SVG for what scales.** Six epochs and twelve events are
+Mermaid's job. Geography is not: hundreds of places make a graph nothing can lay out and nobody
+can read, and no styling fixes it. The map view, when it is built, is generated SVG over the
+existing 0-100 grid -- no projection maths, diffable, dependency-free. Leaflet with
+`CRS.Simple` is the upgrade path if pan and zoom over an illustrated basemap is ever wanted; it
+exists for exactly this non-geographic case. `folium` never did: it wants real lat/lon.
+
+**Generated artifacts are written straight into `docs/`, and `timeline/` is gone.** This one
+had a mechanism nobody had found. CI regenerated the timeline on every push, and `docs/` stayed
+stale anyway, because **`jekyll-gh-pages.yml` builds and deploys `./docs` exactly as committed
+with no generation step**, while `ci.yml`'s `deploy-docs` regenerates first. Both target the
+same `github-pages` environment, so whichever ran last won -- and half the time that was the
+stale committed copy. Regenerating into a directory whose committed contents are also published
+is a race, and it had been losing. One tracked location cannot drift from itself, and both
+workflows now publish identical bytes in either order. `DESIGN.md`'s ruling is amended to match
+rather than quietly contradicted.
+
+**The cartography pipeline is deleted, not labelled.** `generate_map.py`, `cartography/` and
+the published GeoJSON drew Jambhudweepa, the Himalayas, Saltbluff Plateau and Verdant Hollow --
+a world canon does not contain. The previous entry below chose to list them as known-stale
+rather than delete; that was right while a regeneration was plausible, and it is not: canon
+states coordinates for three field maps on an abstract grid, and nothing correct can be
+generated from that. Geography returns as canon entities first. `folium` left
+`requirements.txt` with its only consumer.
+
+---
+
 ## Open — needs a human call
 
 | Question | Why it is open |
 |---|---|
 | Where does `full_moon` belong? | It is in the `weather` enum but is not weather. Probably its own field with a lunar cycle behind it. |
 | How long should a weather spell last? | Currently 3 in-game hours (~7.5 real minutes). Pure playtest question; it is the knob most likely to be wrong. |
+| Which way does `y` run on the 0-100 grid? | Canon has never said. The three pinned field-map coordinates fix those maps in place but imply no convention, and the reference drawing puts Dwarka north-west of Lothal while the grid values put it south-west if `y` increases downward. Settle it before any place is entered: the anchors make a later global flip impossible. |
+| `place` as a new entity type, or a wider `settlement`? | Roughly ten named-but-unwalkable locations sit on the reference map, and the real number across the lore is in the hundreds. Whichever noun wins, its folder goes in `NOT_EXPORTED` in the commit that creates it. `point_of_interest` is the trap: it already carries `epochs` and looks right, and it ships to the game keyed to a walkable map. |
+| What does an entity with no epoch default to? | Every era, or none. 363 of 494 entities carry no epoch, and 346 of those are fauna and flora, deliberately. The answer decides whether a Deep Antiquity atlas is crowded or bare. |
+| How does a place change across epochs? | Recommended: identity and coordinates stated once, `epochs` for presence following the existing point-of-interest convention, and a per-epoch state block only on the few places that genuinely transform -- Dwarka harbour to drowned gate. One entity per place per epoch multiplies hundreds by six and makes "is this the same place?" unanswerable. |
 | Which region gets the *third* field map? | Two exist and are joined (Lothal, the Narmada Plateau). A third is the first one with no structural argument behind it — it is a creative call. Candidates already in canon: Dwarka (the gates), the Shattered Sea, the Ganges Lava Sea (which would finally use `lava_field`). |
 
 ---
@@ -270,21 +343,16 @@ with value in it — `dataset_card.md` and `dataset_infos.json` already exist un
 
 ## Deferred work
 
-**The published map and timeline are stale placeholders, and the README now says so.**
-`cartography/regions.geojson` names Jambhudweepa, Dwarka and the Himalayas; canon's seven
-regions share none of those names, and `cartography/map_config.json` is a zero-byte file.
-`docs/timeline_mermaid.md` is a two-node graph -- "The Grove Fire" and "Arrival of Leafkin" --
-neither of which exists in canon's 12-event graph. Both predate the `database/` migration and
-both are still linked from the published book.
+**The published map and timeline were stale placeholders — settled 2026-08-27.** The timeline
+was regenerated and the map deleted; see the third round above. The judgement recorded here at
+the time — list them as known-stale rather than delete, because a reader who follows a link to
+fiction that contradicts canon is worse off than one told the artifact is not rebuilt yet — is
+what eventually argued for deleting the map outright, once it was clear no regeneration could
+replace it.
 
-Listing them as known-stale rather than deleting the links or quietly leaving them: a reader
-who follows a link to fiction that contradicts canon is worse off than one told the artifact
-is not rebuilt yet.
-
-The two are not equal work. The timeline is a regeneration -- the real event graph is already
-in `database/`. The map is not: `generate_map.py` uses folium and needs real lat/lon, which
-canon does not carry, so rebuilding it means *choosing* coordinates for seven regions. That is
-an authoring decision about where this world sits on a globe, and it has never been made.
+The estimate that the timeline was "a regeneration" was right about the data and wrong about
+the cause. The generator had been producing correct canon on every push for months; a second
+deploy workflow was publishing the committed copy over it.
 
 **`origin/feature/canon-cleanup-and-design`** — 13 commits, unmerged, predates this work.
 

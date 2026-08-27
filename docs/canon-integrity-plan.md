@@ -338,18 +338,27 @@ Three further reasons to sequence it rather than squeeze it in:
 
 ### The timeline, which is in better shape than it looks
 
-Worth correcting a claim made earlier in this work: the epoch layer is **not** unused. 108 entities
-carry an epoch — 41 characters, 31 discoveries, 20 points of interest, 12 events, 3 field maps and
-a settlement. Only fauna has none, and that was a deliberate call.
+Worth correcting a claim made earlier in this work: the epoch layer is **not** unused. **131**
+entities carry an epoch across nine folders — 41 characters, 31 discoveries, 20 points of interest,
+12 events, 8 NPCs, 8 vocabulary words, 7 field questions, 3 field maps and a settlement. An earlier
+count here said 108 and missed the last three folders. Only fauna and flora have none, and that was
+a deliberate call: 346 of the 363 entities without an epoch are species.
 
-The mermaid timeline is also not unused. `utils/generate_timeline_mermaid.py` runs in CI and emits
-a real twelve-event graph from `database/events/` into a git-ignored `timeline/` — *Founding of
-Lothal → Black Lotus Siege → The Stone Pact*. What is broken is the **published** copy:
-`docs/timeline_mermaid.md` is a hand-written file from a different story entirely, reading "Act 1,
-Scene 1: The Grove Fire" and "Arrival of Leafkin". It sits in the folder that publishes to Pages.
+**Done, 2026-08-27.** The mermaid timeline was never unused: the generator had been emitting a real
+twelve-event graph from `database/events/` on every push. What was broken was the **published**
+copy — `docs/timeline_mermaid.md` read "Act 1, Scene 1: The Grove Fire" and "Arrival of Leafkin",
+from a different story entirely.
 
-That one is a five-minute fix and belongs in whichever iteration touches this next, alongside
-deciding what `docs/overworld.json` is for.
+Two things this section got wrong, both worth keeping. `timeline/` was **not** git-ignored: the
+`.gitignore` entries for it were commented out, so it was un-ignored *and* uncommitted, which is
+part of why the drift went unnoticed. And it was not a five-minute fix. The reason the published
+copy survived CI regenerating it was `jekyll-gh-pages.yml`, which builds and deploys `./docs`
+exactly as committed with no generation step, racing `ci.yml`'s `deploy-docs` for the same
+environment. Regenerating into a directory whose committed contents are also published is a race,
+and it had been losing.
+
+The generators now write straight into `docs/`; `timeline/` is gone; `docs/overworld.json` was
+deleted along with the rest of the cartography pipeline. See `docs/decisions.md`, third round.
 
 ### A sketch, for whoever picks it up
 

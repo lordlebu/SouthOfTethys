@@ -1,5 +1,16 @@
 # South of Tethys Book Publish Implementation Summary
 
+> **Historical record. Parts of this are no longer true (noted 2026-08-27).**
+>
+> This describes the state of the publishing workflow when it was built. Since then the map
+> pipeline has been deleted — `generate_map.py`, `cartography/` and the published GeoJSON drew
+> a world canon does not contain — so the interactive map URL below is gone, and the `timeline/`
+> build directory it mentions no longer exists: the generators write straight into `docs/`.
+>
+> It is kept unedited below because it records what the project believed at the time.
+> `docs/decisions.md` is the current account.
+
+
 ## ✅ COMPLETED IMPLEMENTATION
 
 I have successfully implemented the complete "Book Publish" workflow for the South of Tethys repository as requested in the problem statement.

@@ -15,10 +15,23 @@ database/
 ├── artifacts/
 ├── factions/
 ├── mythology/
-├── timeline/
+├── discoveries/
+├── field_maps/
+├── field_questions/
+├── npcs/
+├── points_of_interest/
+├── vocabulary/
+├── timeline/            # the epoch table, not generated output
 ├── schemas/
+├── biomes.json          # the biome vocabulary, and which of them the game can draw
+├── clades.json
+├── export.lock.json     # what canon's exported surface hashes to
 └── index.json
 ```
+
+Every folder here is named in `BUNDLE` or `NOT_EXPORTED` in `utils/export_canon_bundle.py`, and
+`utils/check_export_boundary.py` fails if one is in neither. A new entity type that says nothing
+about which side of the boundary it sits on is how lore reaches the game by accident.
 
 ## Conventions
 
