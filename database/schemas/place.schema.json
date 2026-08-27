@@ -25,6 +25,7 @@
       "type": "string",
       "description": "What sort of thing this is. Coarse on purpose: the distinction that matters is a city from a mountain range, not a city from a town. `plains` was added when the Hyrkanian Steppe needed a home and `frontier` would have described its politics rather than its ground.",
       "enum": [
+        "continent",
         "city",
         "settlement",
         "range",

@@ -26,6 +26,7 @@ do not.
 python utils/lint_story.py                     # schemas, index counts, references resolve
 python utils/check_playability.py              # can a player actually get to it all
 python utils/check_export_boundary.py          # can lore reach the game by accident
+python utils/update_index.py --bump minor      # rebuild index.json ids + counts
 python utils/generate_timeline_mermaid.py      # docs/timeline_mermaid.md, epochs and events
 python utils/generate_atlas.py                 # docs/atlas.md, canon as it stood in each era
 python utils/export_canon_bundle.py --apply    # write the game's data/canon/ bundle

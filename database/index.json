@@ -1,25 +1,30 @@
 {
-  "version": "1.13.0",
+  "version": "1.14.0",
   "description": "SouthOfTethys canonical entity index",
   "counts": {
-    "characters": 41,
-    "events": 12,
-    "fauna": 256,
-    "flora": 90,
-    "settlements": 2,
-    "regions": 7,
     "artifacts": 3,
-    "factions": 3,
-    "mythology": 3,
-    "field_maps": 3,
-    "points_of_interest": 20,
+    "characters": 41,
     "discoveries": 31,
+    "events": 14,
+    "factions": 3,
+    "fauna": 256,
+    "field_maps": 3,
     "field_questions": 7,
+    "flora": 90,
+    "mythology": 4,
     "npcs": 8,
-    "vocabulary": 8,
-    "places": 23
+    "places": 24,
+    "points_of_interest": 20,
+    "regions": 7,
+    "settlements": 2,
+    "vocabulary": 8
   },
   "entities": {
+    "artifacts": [
+      "artifact_mask_of_harappa",
+      "artifact_mask_of_sunlit_stone",
+      "artifact_mask_of_tethys"
+    ],
     "characters": [
       "character_arin",
       "character_asha",
@@ -63,12 +68,47 @@
       "character_vijaya",
       "character_yaksha_envoy"
     ],
+    "discoveries": [
+      "discovery_archive_baseline",
+      "discovery_bitter_millet",
+      "discovery_chamber_below",
+      "discovery_cloud_stair",
+      "discovery_dockyard_reef",
+      "discovery_double_classified",
+      "discovery_escarpment_wind",
+      "discovery_fever_root_spread",
+      "discovery_gate_rhythm",
+      "discovery_ghost_mangrove_channel",
+      "discovery_glass_scar",
+      "discovery_granary_fall",
+      "discovery_kiln_draught",
+      "discovery_market_ledger",
+      "discovery_marsh_lurker_habits",
+      "discovery_mask_niche",
+      "discovery_midden_layers",
+      "discovery_moving_spring",
+      "discovery_poisoned_ground",
+      "discovery_quarry_sequence",
+      "discovery_red_rice_survival",
+      "discovery_road_follows_water",
+      "discovery_salt_glass",
+      "discovery_saltreed_thatch",
+      "discovery_seawall_courses",
+      "discovery_silver_water",
+      "discovery_terrace_script",
+      "discovery_terrace_water",
+      "discovery_tower_collapse",
+      "discovery_winter_line",
+      "discovery_wrong_anatomy"
+    ],
     "events": [
       "event_aravali_massacre",
+      "event_asura_gondwana_intervention",
       "event_birth_of_sarita",
       "event_black_lotus_siege",
       "event_dragon_spine",
       "event_exile_of_shaashak",
+      "event_fang_vs_scale_wars",
       "event_founding_lothal",
       "event_mask_retrieval",
       "event_naraka_portal",
@@ -76,6 +116,11 @@
       "event_silvershore_war",
       "event_stone_pact",
       "event_tendua_crisis"
+    ],
+    "factions": [
+      "faction_kia_clan",
+      "faction_mask_family",
+      "faction_silvershore"
     ],
     "fauna": [
       "fauna_abyssal_blue_leviathan",
@@ -335,6 +380,20 @@
       "fauna_winged_behemoth_manticore",
       "fauna_woolly_bactrian_croc"
     ],
+    "field_maps": [
+      "field_map_dwarka",
+      "field_map_lothal",
+      "field_map_narmada"
+    ],
+    "field_questions": [
+      "question_eastern_field",
+      "question_moving_spring",
+      "question_silver_water",
+      "question_terrace_purpose",
+      "question_two_names",
+      "question_what_comes_through",
+      "question_what_ends_dwarka"
+    ],
     "flora": [
       "flora_aero_mangrove_vayu_vriksha",
       "flora_antarctic_kelp_grass",
@@ -427,38 +486,47 @@
       "flora_whisper_fig",
       "flora_whispering_blood_orchid"
     ],
-    "settlements": [
-      "settlement_dwarka",
-      "settlement_lothal"
-    ],
-    "regions": [
-      "region_aravali",
-      "region_ganges_lava_sea",
-      "region_gedrosian_desert",
-      "region_narmada_plateau",
-      "region_saraswati_delta",
-      "region_shattered_sea",
-      "region_tethys_sky_routes"
-    ],
-    "artifacts": [
-      "artifact_mask_of_harappa",
-      "artifact_mask_of_sunlit_stone",
-      "artifact_mask_of_tethys"
-    ],
-    "factions": [
-      "faction_kia_clan",
-      "faction_mask_family",
-      "faction_silvershore"
-    ],
     "mythology": [
       "mythology_ammonite_man",
       "mythology_gorvaxx",
+      "mythology_primordial_rift",
       "mythology_varuna"
     ],
-    "field_maps": [
-      "field_map_dwarka",
-      "field_map_lothal",
-      "field_map_narmada"
+    "npcs": [
+      "npc_bekh",
+      "npc_marn",
+      "npc_okhi",
+      "npc_pell",
+      "npc_sura",
+      "npc_thrali",
+      "npc_uma",
+      "npc_vessa"
+    ],
+    "places": [
+      "place_ancient_courts",
+      "place_aranta",
+      "place_black_lotus_fort",
+      "place_deccan",
+      "place_gondwana",
+      "place_harappa",
+      "place_hyrcania",
+      "place_ironfang_mountains",
+      "place_jambhudweepa",
+      "place_lemuria",
+      "place_madagascar",
+      "place_mainland_asia",
+      "place_makkan_coast",
+      "place_mohenjodaro",
+      "place_nilgiri",
+      "place_northern_frontier",
+      "place_saraswati_river",
+      "place_sihauli",
+      "place_southern_ice",
+      "place_tamralinga",
+      "place_tamraparni",
+      "place_tethys_sea",
+      "place_upriver_exile",
+      "place_vengi"
     ],
     "points_of_interest": [
       "poi_basalt_quarry",
@@ -482,57 +550,18 @@
       "poi_walking_spring",
       "poi_watch_stair"
     ],
-    "discoveries": [
-      "discovery_archive_baseline",
-      "discovery_bitter_millet",
-      "discovery_chamber_below",
-      "discovery_cloud_stair",
-      "discovery_dockyard_reef",
-      "discovery_double_classified",
-      "discovery_escarpment_wind",
-      "discovery_fever_root_spread",
-      "discovery_gate_rhythm",
-      "discovery_ghost_mangrove_channel",
-      "discovery_glass_scar",
-      "discovery_granary_fall",
-      "discovery_kiln_draught",
-      "discovery_market_ledger",
-      "discovery_marsh_lurker_habits",
-      "discovery_mask_niche",
-      "discovery_midden_layers",
-      "discovery_moving_spring",
-      "discovery_poisoned_ground",
-      "discovery_quarry_sequence",
-      "discovery_red_rice_survival",
-      "discovery_road_follows_water",
-      "discovery_salt_glass",
-      "discovery_saltreed_thatch",
-      "discovery_seawall_courses",
-      "discovery_silver_water",
-      "discovery_terrace_script",
-      "discovery_terrace_water",
-      "discovery_tower_collapse",
-      "discovery_winter_line",
-      "discovery_wrong_anatomy"
+    "regions": [
+      "region_aravali",
+      "region_ganges_lava_sea",
+      "region_gedrosian_desert",
+      "region_narmada_plateau",
+      "region_saraswati_delta",
+      "region_shattered_sea",
+      "region_tethys_sky_routes"
     ],
-    "field_questions": [
-      "question_eastern_field",
-      "question_moving_spring",
-      "question_silver_water",
-      "question_terrace_purpose",
-      "question_two_names",
-      "question_what_comes_through",
-      "question_what_ends_dwarka"
-    ],
-    "npcs": [
-      "npc_bekh",
-      "npc_marn",
-      "npc_okhi",
-      "npc_pell",
-      "npc_sura",
-      "npc_thrali",
-      "npc_uma",
-      "npc_vessa"
+    "settlements": [
+      "settlement_dwarka",
+      "settlement_lothal"
     ],
     "vocabulary": [
       "word_kia_ossu",

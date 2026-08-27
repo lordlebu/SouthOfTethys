@@ -1,0 +1,29 @@
+{
+  "id": "event_fang_vs_scale_wars",
+  "type": "event",
+  "title": "The Fang vs. Scale Wars",
+  "epoch": "epoch_prehistoric",
+  "participants": [
+    "mythology_ammonite_man",
+    "character_owlman"
+  ],
+  "location": "place_gondwana",
+  "predecessors": [],
+  "successors": [
+    "event_asura_gondwana_intervention"
+  ],
+  "causes": [
+    "ecological_competition",
+    "gondwana_tectonic_migration"
+  ],
+  "outcomes": [
+    "synapsid_diapsid_niche_split",
+    "mammalian_reptilian_territories_set"
+  ],
+  "summary": "A deep-time evolutionary conflict on Gondwana: ancestral synapsids, the Fang, against emerging diapsid archosaurs, the Scale, for ecological dominance. The gorgonopsids held the fern forests; the archosaurs took the volcanic highlands and the marshy deltas.",
+  "canon": "primary",
+  "sources": [
+    "dump/fang-vs-scale-wars.md",
+    "AI_CONTEXT.md"
+  ]
+}

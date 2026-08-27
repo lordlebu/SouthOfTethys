@@ -1,0 +1,13 @@
+{
+  "id": "place_gondwana",
+  "type": "place",
+  "name": "Gondwana",
+  "kind": "continent",
+  "description": "The southern supercontinent Jambhudweep was fused to in deep time, before the seas divided it.",
+  "notes": "Named as the setting of the Fang vs Scale wars. Canon had no entity for it, which is why the source document filed that event under `region_shattered_sea` -- a region that exists, and is not where the war happened. A place canon can point at is the fix.",
+  "canon": "primary",
+  "sources": [
+    "dump/fang-vs-scale-wars.md",
+    "AI_CONTEXT.md"
+  ]
+}

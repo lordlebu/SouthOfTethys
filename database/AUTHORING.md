@@ -131,22 +131,19 @@ A place that changes across eras states its identity once and overrides only wha
 
 ## 3. Update the manifest
 
-`index.json` is the count of what exists, and the linter checks it **both ways** — every id in
-it has a file, and every file is in it.
-
 ```bash
-python - <<'PY'
-import json, glob, pathlib
-p = pathlib.Path("database/index.json")
-d = json.loads(p.read_text(encoding="utf-8"))
-for folder in d["counts"]:
-    d["counts"][folder] = len(glob.glob(f"database/{folder}/*.json"))
-d["version"] = "1.15.0"   # bump on each batch
-p.write_text(json.dumps(d, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-PY
+python utils/update_index.py --bump minor
 ```
 
----
+`index.json` holds **two** things per category — a list of ids and a count — and
+`lint_story.py` checks all three ways: every listed id has a file, every file is listed, and the
+count equals the length of the *list*. Rebuild it with the script rather than by hand.
+
+This section used to hand out a snippet that rebuilt `counts` from a glob and left `entities`
+alone, which is the wrong half: the counts came from disk while the id list stayed stale, so the
+two disagreed and the lint blamed the entity you had just written. It also hid a real gap —
+`places` had a count and no id list at all, so the both-directions check never ran on it and 24
+entities went unverified against the manifest.
 
 ## 4. Run the gate
 
