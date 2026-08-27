@@ -21,11 +21,13 @@ Canon is one JSON file per entity under `database/`, validated against JSON Sche
 ```bash
 python utils/lint_story.py                     # schemas, index counts, references resolve
 python utils/check_playability.py              # can a player actually get to it all
+python utils/check_export_boundary.py          # can lore reach the game by accident
+python utils/generate_timeline_mermaid.py      # docs/timeline_mermaid.md, epochs and events
 python utils/export_canon_bundle.py --apply    # write the game's data/canon/ bundle
 python services/api/build_deploy.py --target vercel   # bundle the retrieval service
 ```
 
-The first two gate every push. The exporter is a dry run unless you pass `--apply`.
+The first three gate every push. The exporter is a dry run unless you pass `--apply`.
 
 ## The rules
 
@@ -82,7 +84,7 @@ Push before reporting — a link to an unpushed branch 404s. If the work is not 
 so instead of offering a link.
 
 Only `validate`, from `story-validation.yml`, is required. The jobs in `ci.yml` are deliberately
-*not*, because that workflow is path-filtered to `utils/**`, `database/**`, `cartography/**` and
+*not*, because that workflow is path-filtered to `utils/**`, `database/**` and
 a few others — requiring one would leave a documentation-only pull request pending forever
 rather than failing, which is the worse outcome of the two.
 

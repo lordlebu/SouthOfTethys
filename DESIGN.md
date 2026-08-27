@@ -17,7 +17,16 @@ Chroma index / Vidur Portal / CI publishing / maps
 
 Legacy placeholder directories (`characters/`, `flora_fauna/`, top-level placeholder `timeline/` files) have been removed.
 Event data lives under `database/events/`.
-Generated timeline artifacts are written to `timeline/` by utility scripts.
+
+**Generated timeline artifacts are written straight into `docs/`.** They went to a `timeline/`
+build directory that CI copied across, and the copy is exactly what went stale: `docs/` served
+"Act 1, Scene 1: The Grove Fire" from an unrelated project for months while the generator was
+producing real canon. One tracked location cannot drift from itself, so there is no longer an
+intermediate. `timeline/` is gone.
+
+The cartography pipeline is also gone -- `generate_map.py`, `cartography/` and the published
+GeoJSON. It drew another project's regions, and `folium` needs real lat/lon that canon does not
+have. Geography returns as canon entities first; see `docs/canon-integrity-plan.md`.
 
 ## Original Plan → Current Mapping
 

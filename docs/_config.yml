@@ -12,7 +12,6 @@ plugins:
 header_pages:
   - index.md
   - timeline_mermaid.md
-  - interactive_map.html
 
 # Markdown processing
 markdown: kramdown

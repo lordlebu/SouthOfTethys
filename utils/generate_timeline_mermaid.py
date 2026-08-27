@@ -35,7 +35,9 @@ from canon_events import load_events, ordered
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 BASE = Path(__file__).resolve().parent.parent
-OUT_DIR = BASE / "timeline"
+# See the note in generate_timeline.py: docs/ is the one tracked location, because the
+# intermediate copy is precisely what went stale.
+OUT_DIR = BASE / "docs"
 OUT_MD = OUT_DIR / "timeline_mermaid.md"
 
 

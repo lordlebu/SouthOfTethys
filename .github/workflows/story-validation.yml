@@ -47,5 +47,5 @@ jobs:
         uses: actions/upload-artifact@v7
         with:
           name: full_timeline
-          path: timeline/timeline.json
+          path: docs/timeline.json
           if-no-files-found: warn

@@ -23,13 +23,13 @@ python scripts/index_changes.py --git-range HEAD~1..HEAD
 $env:CHROMA_CLOUD_API_KEY = 'ck-...'
 $env:CHROMA_TENANT = '8241b0e6-7d0b-41dd-946a-b8954d50714e'
 $env:CHROMA_DATABASE = 'Lemuria'
-python scripts/index_changes.py --files timeline/timeline.json
+python scripts/index_changes.py --files docs/timeline.json
 ```
 
 4) Run validation before upsert (requires `jsonschema` and the schema helper):
 
 ```powershell
-python scripts/index_changes.py --files timeline/timeline.json --validate
+python scripts/index_changes.py --files docs/timeline.json --validate
 ```
 
 Connectivity smoke-test

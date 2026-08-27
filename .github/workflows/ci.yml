@@ -11,7 +11,6 @@ on:
       - '.gitignore'
       - 'utils/**'
       - 'Dockerfile'
-      - 'cartography/**'
       - 'database/**'
       - 'CONTEXT.md'
       - 'DESIGN.md'
@@ -26,7 +25,6 @@ on:
       - '.gitignore'
       - 'utils/**'
       - 'Dockerfile'
-      - 'cartography/**'
       - 'database/**'
       - 'CONTEXT.md'
       - 'DESIGN.md'
@@ -70,7 +68,6 @@ jobs:
           python utils/lint_story.py
           python utils/generate_timeline_mermaid.py
           python utils/generate_timeline.py
-          python utils/generate_map.py
           python utils/evolve_species.py
           flake8 utils/ || true
 
@@ -97,56 +94,33 @@ jobs:
         run: |
           python utils/generate_timeline_mermaid.py
           python utils/generate_timeline.py
-          python utils/generate_map.py
           python utils/evolve_species.py
 
       - name: Check artifacts generated
         id: check-artifacts
         run: |
           echo "generated=true" >> $GITHUB_OUTPUT
-          ls -la timeline/ || true
-          ls -la cartography/ || true
+          ls -la docs/ || true
 
       - name: Upload timeline summary artifact
         uses: actions/upload-artifact@v7
         with:
           name: timeline_summary
-          path: timeline/timeline_summary.md
+          path: docs/index.md
           if-no-files-found: warn
 
       - name: Upload timeline mermaid artifact
         uses: actions/upload-artifact@v7
         with:
           name: timeline_mermaid
-          path: timeline/timeline_mermaid.md
+          path: docs/timeline_mermaid.md
           if-no-files-found: warn
 
       - name: Upload full timeline artifact
         uses: actions/upload-artifact@v7
         with:
           name: full_timeline
-          path: timeline/timeline.json
-          if-no-files-found: warn
-
-      - name: Upload interactive map artifact
-        uses: actions/upload-artifact@v7
-        with:
-          name: interactive_map
-          path: cartography/interactive_map.html
-          if-no-files-found: warn
-
-      - name: Upload overworld map artifact
-        uses: actions/upload-artifact@v7
-        with:
-          name: overworld_map
-          path: cartography/overworld.json
-          if-no-files-found: warn
-
-      - name: Upload regions geojson artifact
-        uses: actions/upload-artifact@v7
-        with:
-          name: regions_geojson
-          path: cartography/regions.geojson
+          path: docs/timeline.json
           if-no-files-found: warn
 
   deploy-docs:
@@ -170,21 +144,13 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      # Straight into docs/. There used to be a timeline/ build directory copied across
+      # here, and the copy is what went stale -- docs/ served another project's story for
+      # months while the generator produced real canon. One location cannot drift from itself.
       - name: Generate all artifacts for docs
         run: |
           python utils/generate_timeline_mermaid.py
           python utils/generate_timeline.py
-          python utils/generate_map.py
-
-      - name: Prepare docs directory
-        run: |
-          mkdir -p docs
-          cp timeline/timeline_summary.md docs/index.md || true
-          cp timeline/timeline_mermaid.md docs/timeline_mermaid.md || true
-          cp cartography/interactive_map.html docs/interactive_map.html || true
-          cp cartography/overworld.json docs/overworld.json || true
-          cp cartography/regions.geojson docs/regions.geojson || true
-          cp timeline/timeline.json docs/timeline.json || true
 
       - name: Setup Pages
         uses: actions/configure-pages@v4

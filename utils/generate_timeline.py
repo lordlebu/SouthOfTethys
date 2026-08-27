@@ -18,9 +18,14 @@ from canon_events import load_events, ordered
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 BASE = Path(__file__).resolve().parent.parent
-OUT_DIR = BASE / "timeline"
+# Straight into docs/, which is what gets published and what a reader browsing the
+# repository sees. There used to be a timeline/ build directory that CI copied across,
+# and the copy is what went stale: docs/ held "Act 1, Scene 1: The Grove Fire" from a
+# different project entirely while the generator had been producing real canon for months.
+# One location cannot drift from itself.
+OUT_DIR = BASE / "docs"
 OUT_JSON = OUT_DIR / "timeline.json"
-OUT_SUMMARY = OUT_DIR / "timeline_summary.md"
+OUT_SUMMARY = OUT_DIR / "index.md"
 
 
 def write_summary(events, path: Path):
