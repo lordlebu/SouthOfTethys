@@ -215,7 +215,7 @@ generated from that. Geography returns as canon entities first. `folium` left
 |---|---|
 | Where does `full_moon` belong? | It is in the `weather` enum but is not weather. Probably its own field with a lunar cycle behind it. |
 | How long should a weather spell last? | Currently 3 in-game hours (~7.5 real minutes). Pure playtest question; it is the knob most likely to be wrong. |
-| Which region gets the *third* field map? | Two exist and are joined (Lothal, the Narmada Plateau). A third is the first one with no structural argument behind it — it is a creative call. Candidates already in canon: Dwarka (the gates), the Shattered Sea, the Ganges Lava Sea (which would finally use `lava_field`). |
+| Which region gets the *fourth* field map? | Three exist and are joined — Lothal, the Narmada Plateau and Dwarka, which answered the third. A fourth is a creative call with no structural argument behind it. The Shattered Sea is the only unbuilt region renderable today; the Ganges Lava Sea needs `lava_field` to get a tile first, and the Tethys Sky Routes need sky biomes. This question said *third* for long enough that Dwarka shipped while it still asked. |
 
 ---
 
