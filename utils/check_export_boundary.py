@@ -5,7 +5,7 @@ none of it is meant to ship. The thing standing between "canon grew" and "the ga
 is one allowlist in `export_canon_bundle.py`, and an allowlist only works while somebody
 remembers it exists.
 
-Three checks, all of them cheap:
+Four checks, all of them cheap:
 
   boundary     every folder in database/ is explicitly exported or explicitly not.
                A new folder in neither is an error, so silence is not an option -- which is
@@ -20,10 +20,18 @@ Three checks, all of them cheap:
   drift        if the game repository is sitting next to this one, its committed bundle is
                compared too. Skipped in CI, where it is not checked out.
 
-`canon_version` is not sufficient for any of this, and there is a live example: canon `main`
-and `feat/flora-growth-forms` both declare 1.11.0 and produce different `species.json`, and
-it is the branch's copy that is committed in the game. A version nobody bumps identifies
-nothing. Hashes do.
+  retrieval    every folder is also named in the indexer's DB_FOLDERS, or listed here as
+               deliberately unindexed. Canon has three hardcoded folder allowlists -- BUNDLE,
+               NOT_EXPORTED, and the indexer's -- and a folder missing from one of them fails
+               silently in a different way each time. The indexer's has already cost this
+               project once: its own comment records two field maps, twelve places, eighteen
+               discoveries and both constructed languages sitting invisible to retrieval
+               because nobody updated a list.
+
+`canon_version` is not sufficient for any of this. The case that proved it: `main` and
+`feat/flora-growth-forms` both declared 1.11.0 while producing a different `species.json`,
+and it was the branch's copy that sat committed in the game. A version nobody bumps
+identifies nothing. Hashes do.
 
     python utils/check_export_boundary.py            # verify
     python utils/check_export_boundary.py --update   # re-pin, deliberately
@@ -32,6 +40,7 @@ nothing. Hashes do.
 from __future__ import annotations
 
 import argparse
+import ast
 import hashlib
 import json
 import sys
@@ -50,6 +59,13 @@ FINGERPRINT = DB / "export.lock.json"
 # Directories under database/ that are not canon content and so are not the exporter's
 # business either. `schemas` validates canon rather than being it.
 NOT_CONTENT = {"schemas"}
+
+# Folders the retrieval indexer deliberately skips. `timeline` holds the epoch table, which is
+# a lookup rather than prose -- six rows of name and range that answer no question a person
+# would ask the service. Listed rather than merely absent, which is the whole point.
+NOT_INDEXED = {"timeline"}
+
+INDEXER = BASE / "services" / "chroma" / "index_chroma_service.py"
 
 
 def content_folders() -> list[str]:
@@ -91,6 +107,52 @@ def check_boundary() -> list[str]:
     return errors
 
 
+def indexed_folders() -> list[str] | None:
+    """The indexer's DB_FOLDERS, read without importing it.
+
+    That module raises SystemExit at import when chromadb is absent, and chromadb is not in
+    requirements.txt -- so `story-validation.yml`, which is the check this guard runs in,
+    could never import it. Parsing the assignment is the way to read a list from a module you
+    are deliberately not loading.
+    """
+    if not INDEXER.exists():
+        return None
+    tree = ast.parse(INDEXER.read_text(encoding="utf-8"))
+    for node in tree.body:
+        if isinstance(node, ast.Assign) and any(
+            getattr(t, "id", None) == "DB_FOLDERS" for t in node.targets
+        ):
+            try:
+                return list(ast.literal_eval(node.value))
+            except ValueError:
+                return None
+    return None
+
+
+def check_indexer() -> list[str]:
+    """Every content folder is indexed, or is on the record as deliberately not."""
+    listed = indexed_folders()
+    if listed is None:
+        return [
+            f"could not read DB_FOLDERS from {INDEXER.relative_to(BASE)} -- the retrieval "
+            f"index cannot be checked, which is how it silently went stale before"
+        ]
+
+    errors: list[str] = []
+    known = set(listed) | NOT_INDEXED
+    for folder in content_folders():
+        if folder not in known:
+            errors.append(
+                f"'database/{folder}/' is not in the indexer's DB_FOLDERS and is not listed as "
+                f"deliberately unindexed. It would be invisible to retrieval, and the deploy's "
+                f"live-index check compares chunk count against every entity in index.json -- "
+                f"so this also fails that check on main, permanently"
+            )
+    for folder in sorted(set(listed) - set(content_folders())):
+        errors.append(f"the indexer names 'database/{folder}/', which does not exist")
+    return errors
+
+
 def fingerprint_of(files: dict[str, str]) -> dict[str, str]:
     return {
         name: hashlib.sha256(text.encode("utf-8")).hexdigest()
@@ -109,7 +171,7 @@ def main() -> int:
     )
     args = ap.parse_args()
 
-    errors = check_boundary()
+    errors = check_boundary() + check_indexer()
 
     files, counts = build_bundle()
     current = fingerprint_of(files)
@@ -170,7 +232,10 @@ def main() -> int:
             if committed.replace("\r\n", "\n") != text:
                 drift.append(f"{name}: the game's committed copy differs from this canon")
 
+    listed = indexed_folders() or []
     print(f"  folders    : {len(content_folders())} classified")
+    print(f"  indexed    : {len(set(listed) & set(content_folders()))} of {len(content_folders())}"
+          f" ({len(NOT_INDEXED)} deliberately not)")
     print(f"  entities   : {sum(counts.values())} exported")
     print(f"  fingerprint: {'pinned' if FINGERPRINT.exists() else 'MISSING'}")
     if DEFAULT_OUT.exists():

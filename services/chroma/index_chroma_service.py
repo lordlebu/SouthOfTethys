@@ -55,6 +55,10 @@ DB_FOLDERS = [
     "field_questions",
     "npcs",
     "vocabulary",
+    # The lore layer: named places the player never stands in. Retrieval is the one consumer
+    # that should see all of it -- the game deliberately does not, but a question about Harappa
+    # or the path to Lemuria has to find an answer somewhere.
+    "places",
 ]
 
 
