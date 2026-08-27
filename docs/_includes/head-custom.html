@@ -1,0 +1,40 @@
+<!--
+  Render Mermaid on the published site.
+
+  Auto-rendering a ```mermaid fence is a github.com markdown feature, not a GitHub Pages one.
+  Until now the book served every diagram as a syntax-highlighted code block: the timeline, the
+  event graph and the atlas's per-era graphs all published as source. `pages-themes/minimal`
+  includes `head-custom.html` in its <head>, which is the supported way in without overriding
+  the theme's layout.
+
+  Kramdown turns a fence into `<div class="language-mermaid"><pre><code>…`, which Mermaid does
+  not recognise, so each block is rewritten to `<pre class="mermaid">` before running. Taking
+  `textContent` rather than innerHTML matters: Rouge has no mermaid lexer and falls back to
+  plain text, but if that ever changes, the spans it injects would otherwise reach the parser.
+
+  If the CDN is unreachable the page degrades to exactly what it shows today — the diagram
+  source, readable and wrong-looking rather than blank.
+-->
+<script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+
+  const blocks = document.querySelectorAll("div.language-mermaid");
+  blocks.forEach((block) => {
+    const code = block.querySelector("code");
+    if (!code) return;
+    const pre = document.createElement("pre");
+    pre.className = "mermaid";
+    pre.textContent = code.textContent;
+    block.replaceWith(pre);
+  });
+
+  if (blocks.length) {
+    mermaid.initialize({
+      startOnLoad: false,
+      // The book is a light page; `neutral` sits closer to it than the default.
+      theme: "neutral",
+      securityLevel: "strict",
+    });
+    await mermaid.run();
+  }
+</script>

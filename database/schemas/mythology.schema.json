@@ -56,6 +56,10 @@
       ],
       "description": "How firmly this is established. `primary` is stated by the source material, `inferred` is a reading canon has committed to."
     },
+    "sample": {
+      "type": "boolean",
+      "description": "Marks this entity as a retained test fixture rather than canon.\n\nThe Dragon's Spine episode -- an event, the king who fought it, the dragon, and the range it happened in -- was written to exercise the tooling and kept on purpose, because four entities spread across four folders is a genuinely useful thing to test against. It is not part of the story.\n\nMarked on the entity rather than in a registry, so it is visible to anyone reading the file. `lint_story.py` enforces the isolation that makes it safe to keep: nothing that is not itself a sample may reference a sample, so the fixture cannot quietly become load-bearing."
+    },
     "sources": {
       "type": "array",
       "items": {

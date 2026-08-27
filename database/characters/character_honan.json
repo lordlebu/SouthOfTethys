@@ -12,6 +12,7 @@
   ],
   "notes": "Stone-age king of the Bloodfang Tribe. Battled and petrified the deep-time dragon Gorvaxx, forming the Dragon’s Spine mountain pass. Mythic foundation for later Keepers of Faces.",
   "canon": "primary",
+  "sample": true,
   "sources": [
     "AI_CONTEXT.md"
   ]

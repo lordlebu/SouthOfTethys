@@ -382,6 +382,30 @@ def main() -> int:
                 f"{path.name}: region '{value}' is not a `bestiary_region` any region declares"
             )
 
+    # --- the sample fixture stays isolated -------------------------------------------
+    #
+    # The Dragon's Spine episode is kept deliberately as a test fixture: four entities across
+    # four folders, one orphan event, the only mythology tied to an event. Useful to have, and
+    # dangerous to leave unmarked -- somebody reading `database/` a year from now has no way to
+    # tell a fixture from canon, and building on one quietly makes it load-bearing.
+    #
+    # `sample: true` says what it is. This says it stays that way: a sample may reference a
+    # sample, and nothing else may reference one at all. That is the property that lets the
+    # whole episode be deleted later with a four-file `git rm`, which is exactly what it was
+    # kept for.
+    samples = {
+        eid for eid, (_p, payload) in entities.items() if payload.get("sample") is True
+    }
+    for eid, (path, payload) in sorted(entities.items()):
+        if eid in samples:
+            continue
+        for ref in walk_refs(payload):
+            if ref in samples:
+                errors.append(
+                    f"{path.name}: references '{ref}', which is a sample fixture. Canon must "
+                    f"not depend on one -- the episode is kept so it can be deleted whole"
+                )
+
     # --- events state their edges from both ends ------------------------------------
     #
     # `successors` and `predecessors` are two spellings of one edge, and only `successors` is

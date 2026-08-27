@@ -10,7 +10,7 @@ timeline
     section Prehistoric Foundations & Age of Vanaras
         500 MYA – 5 MYA : (no events recorded yet)
     section Deep Antiquity
-        before the migrations : Forging of the Dragon’s Spine : Shadow Pact of Saraswati
+        before the migrations : Forging of the Dragon’s Spine (sample) : Shadow Pact of Saraswati
     section Era of Human Migrations
         50K – 5K years ago : Aravali Massacre & Sanctuary : Opening of the Naraka Lok Portal
     section Civilization Dawn (Lothal Era)
@@ -28,7 +28,7 @@ Edges are `successors`. Events sit in the epoch they declare; an event with no e
 ```mermaid
 graph TD
     subgraph epoch_deep_antiquity["Deep Antiquity"]
-        E0["Forging of the Dragon’s Spine"]
+        E0["Forging of the Dragon’s Spine (sample)"]
         E1["Shadow Pact of Saraswati"]
     end
     subgraph epoch_migrations["Era of Human Migrations"]

@@ -19,7 +19,7 @@
 				"docker-build"
 			],
 			"python": {
-				"file": "utils\\generate_timeline.py"
+				"file": "utils/generate_timeline.py"
 			}
 		}
 	]

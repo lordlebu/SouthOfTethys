@@ -38,6 +38,11 @@ def write_summary(events, path: Path):
         title = ev.get("title") or ev.get("id")
         epoch = named.get(ev.get("epoch") or "", ev.get("epoch") or "unknown")
         lines.append(f"## {title}")
+        # A retained test fixture, published alongside canon and marked so nobody reads it as
+        # canon. Hiding it would be tidier and would also stop it exercising the generators,
+        # which is the only reason it is kept.
+        if ev.get("sample"):
+            lines.append("_Sample fixture — kept to exercise the tooling, not part of the story._")
         lines.append(f"**Epoch:** {epoch}")
         if ev.get("summary"):
             lines.append(f"**Summary:** {ev['summary']}")

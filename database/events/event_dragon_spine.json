@@ -15,6 +15,7 @@
   ],
   "summary": "Honan battles the deep-time dragon Gorvaxx. The beast is petrified rather than slain, forming the treacherous mountain pass known as the Dragon’s Spine.",
   "canon": "primary",
+  "sample": true,
   "sources": [
     "AI_CONTEXT.md"
   ]

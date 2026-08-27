@@ -3,6 +3,7 @@
 _Generated from `database/events/`.
 
 ## Forging of the Dragon’s Spine
+_Sample fixture — kept to exercise the tooling, not part of the story._
 **Epoch:** Deep Antiquity
 **Summary:** Honan battles the deep-time dragon Gorvaxx. The beast is petrified rather than slain, forming the treacherous mountain pass known as the Dragon’s Spine.
 **Participants:** character_honan

@@ -118,7 +118,10 @@ def event_graph(events: list[dict], epoch_id: str) -> str | None:
     node = {e["id"]: f"E{i}" for i, e in enumerate(here)}
     lines = ["```mermaid", "graph TD"]
     for e in here:
-        lines.append(f'    {node[e["id"]]}["{label(e.get("title") or e["id"])}"]')
+        title = e.get("title") or e["id"]
+        if e.get("sample"):
+            title += " (sample)"
+        lines.append(f'    {node[e["id"]]}["{label(title)}"]')
     for e in here:
         for succ in e.get("successors") or []:
             if succ in node:
