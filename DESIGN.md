@@ -17,7 +17,16 @@ Chroma index / Vidur Portal / CI publishing / maps
 
 Legacy placeholder directories (`characters/`, `flora_fauna/`, top-level placeholder `timeline/` files) have been removed.
 Event data lives under `database/events/`.
-Generated timeline artifacts are written to `timeline/` by utility scripts.
+
+**Generated timeline artifacts are written straight into `docs/`.** They went to a `timeline/`
+build directory that CI copied across, and the copy is exactly what went stale: `docs/` served
+"Act 1, Scene 1: The Grove Fire" from an unrelated project for months while the generator was
+producing real canon. One tracked location cannot drift from itself, so there is no longer an
+intermediate. `timeline/` is gone.
+
+The cartography pipeline is also gone -- `generate_map.py`, `cartography/` and the published
+GeoJSON. It drew another project's regions, and `folium` needs real lat/lon that canon does not
+have. Geography returns as canon entities first; see `docs/canon-integrity-plan.md`.
 
 ## Original Plan → Current Mapping
 
@@ -85,6 +94,48 @@ It became `sub_locations` on a point of interest instead: the gated depths of Ka
 are the tower, not separate places that happen to sit inside it, and giving them their own
 entity would have meant every one carrying a duplicate of its parent's region, epoch and
 terrain. `requires` on a sub-location does the gating the plan wanted.
+
+## Rulings — geography and eras
+
+Settled 2026-08-27, before any place was entered. All four were cheap to decide then and
+expensive afterwards, which is why they were taken first.
+
+**`y` increases southward on the 0-100 grid.** `y = 0` is north. Lothal sits at (28, 50),
+Dwarka at (16, 64) — south and west of it — and the Narmada Plateau at (58, 20), the
+northernmost of the three. This is the screen convention rather than the latitude one, and it
+is chosen because SVG's `y` already grows downward: the game's overworld screen and every atlas
+view render the grid directly, with no flip anywhere.
+
+This ratifies rather than invents. `field_map.schema.json` already said it — *"North to south,
+screen order — 0 is the top"* — where only the three authors of field maps would ever read it.
+The ruling moves it somewhere binding. The reference drawing disagrees:
+`dump/Partial_map.png` puts Dwarka north-west of Lothal.
+The drawing is a NotebookLM render of the lore and is reference, not authority. The three
+coordinates are load-bearing in the shipped game and cannot move; the convention was fitted to
+them rather than the other way round.
+
+**A named place that is not walkable is a `place`, not a `settlement`.** `settlement` keeps its
+narrow meaning: somewhere people live that canon models in detail. There are two, and each has
+a field map. `place` is the fourth tier below region → field map → point of interest, and it is
+where the hundreds of named locations across the lore live. Its folder is in `NOT_EXPORTED`
+from the commit that created it. `point_of_interest` was the trap worth naming: it already
+carries `epochs`, a description and an arrival line, so it looks exactly right — and it is keyed
+to a walkable field map and ships to the game.
+
+**An entity with no epoch exists in every era.** Silence means timeless, not unplaced. This
+also ratifies an existing line rather than inventing one: `field_map.schema.json` says *"Absent
+means the place exists in every era"* on its `epochs` field, and nothing outside that schema
+had ever repeated it. It is what fauna already meant too: 346 of the 363 entities without an epoch are species, and that was a
+deliberate call — a crocodile is not an era-specific thing. The alternative would have required
+dating all 346 before any of them appeared in an atlas at all.
+
+**A place states its identity once and its changes only where they happen.** Coordinates and id
+are stated once, because a city does not move. `epochs` carries presence, following the
+convention points of interest already use. A per-epoch `states` block is optional and exists for
+the few places that genuinely transform — Dwarka is a working harbour in Civilization Dawn and a
+drowned gate after the Shattering. Most of several hundred places never change and stay
+eight-line files. One entity per place per epoch was rejected: it multiplies hundreds by six and
+makes "is this the same place?" unanswerable.
 
 ## Contribution Rule
 

@@ -1,0 +1,20 @@
+{
+  "description": "What canon's exported surface hashes to. Written by utils/check_export_boundary.py --update, and updated deliberately when a lore change is meant to reach the game.",
+  "counts": {
+    "fauna": 256,
+    "flora": 90,
+    "regions": 7,
+    "field_maps": 3,
+    "points_of_interest": 20,
+    "npcs": 8,
+    "discoveries": 31,
+    "field_questions": 7,
+    "vocabulary": 8
+  },
+  "sha256": {
+    "canon.lock.json": "d0aff4a29c012abaf699a1c6e162a1d66dd26e2464e3ded68b78cf74c0a01d24",
+    "knowledge.json": "967fc15d2eb6601d88070ce4cb8c223347433fd7b6ab6b09b641ac6ef59aefd3",
+    "places.json": "ffa767afab413cc883168d04883feae569d4c304d56b90eee461aaece60a9385",
+    "species.json": "7a208027f56d378b3f656d6ccb8c9ec3337a6429a5f3cdfc869a80672006f81b"
+  }
+}

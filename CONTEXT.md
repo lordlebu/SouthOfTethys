@@ -14,7 +14,6 @@ See `database/README.md` and `DESIGN.md` for conventions and roadmap.
 | `services/chroma` | Vector index + schemas                    |
 | `vidur_portal/`   | Streamlit extraction & query UI           |
 | `docs/`           | Published book / GitHub Pages             |
-| `cartography/`    | Maps                                      |
 | `timeline/`       | Generated artifacts only (from database/) |
 
 ## Deprecated / Removed

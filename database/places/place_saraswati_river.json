@@ -1,0 +1,13 @@
+{
+  "id": "place_saraswati_river",
+  "type": "place",
+  "name": "The Saraswati",
+  "kind": "river",
+  "continent": "mainland_asia",
+  "description": "The river the northern valley civilization is built along.",
+  "notes": "The render labels this 'BARASWATH BIEER' and a tributary 'SUERVEIDVARU', both of which are garbled machine text rather than names. Canon's spelling is used: the Saraswati, as in `region_saraswati_delta` and `event_shadow_pact`. Nothing garbled from the render is entered anywhere in this batch.",
+  "canon": "inferred",
+  "sources": [
+    "dump/Partial_map.png"
+  ]
+}

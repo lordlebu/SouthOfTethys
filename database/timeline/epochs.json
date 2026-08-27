@@ -4,36 +4,42 @@
   "epochs": [
     {
       "id": "epoch_prehistoric",
+      "order": 0,
       "name": "Prehistoric Foundations & Age of Vanaras",
       "range": "500 MYA – 5 MYA",
       "notes": "Invertebrate Dominion, Avian-Synapsid Epoch, Vanara Zenith and Devolvement"
     },
     {
       "id": "epoch_deep_antiquity",
+      "order": 1,
       "name": "Deep Antiquity",
       "range": "before the migrations",
       "notes": "Mythic age of Varunesh and Manjalaya, the Shadow Pact and the forging of the Dragon's Spine. Was in use on entities long before it was declared here."
     },
     {
       "id": "epoch_migrations",
+      "order": 2,
       "name": "Era of Human Migrations",
       "range": "50K – 5K years ago",
       "notes": "Jharwa, Vedda, Naga, Outliers waves"
     },
     {
       "id": "epoch_civilization_dawn",
+      "order": 3,
       "name": "Civilization Dawn (Lothal Era)",
       "range": "c. 3000 – 500 BCE",
       "notes": "Harappan city-states, Mask Family, Kia alliance, Tendua Crisis"
     },
     {
       "id": "epoch_current",
+      "order": 4,
       "name": "Current Era (Age of Machinery)",
       "range": "~1920s equivalent",
       "notes": "Narmada University, dieselpunk exploration"
     },
     {
       "id": "epoch_post_cataclysm",
+      "order": 5,
       "name": "Post-Cataclysmic Era (The Great Shattering)",
       "range": "after the Collapse",
       "notes": "The Great Shattering. Reckless Narmada excavations in the Age of Machinery met space-time rifts and the pull of sentient Asura planets, and the world fractured under the weight of its own eras -- tectonic and dimensional boundaries collapsing together. Lothal is a half-buried relic with survivors camped in it; Dwarka is drowned and its Gate dormant; Narmada University stands hollow, lit only by Garudasaur moss over ruined scrolls. Varuna and Mitra keep no power worth the name and have turned to preservation: a travelling apothecary and workshop gathering the displaced. The tone is solarpunk, not ruin -- the story ends when the Survival Train stops for good and becomes the centre of a village.",
@@ -41,5 +47,6 @@
       "setting_of": "Varuna's Field Diary"
     }
   ],
-  "canon": "primary"
+  "canon": "primary",
+  "notes": "`order` is explicit rather than implied by array position. The array has always been chronological, but that was a convention two generators each restated in their own hardcoded map -- and both had drifted from it. An integer nobody can reorder by accident is cheaper than the convention was."
 }

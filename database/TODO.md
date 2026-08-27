@@ -35,7 +35,9 @@ See `docs/decisions.md` for the reasoning behind each.
       same problem and was fixed by recording them)
 
 ## Index
-Current: v1.9.0 — bump on each entity batch.
+Current: v1.11.0 — bump on each entity batch. This line said v1.9.0 for two releases;
+`database/index.json` is the manifest and this is a pointer to it, so when they disagree
+the index is right.
 Field diary types: 3 field maps, 20 points of interest,
 31 discoveries, 7 field questions, 8 NPCs,
 8 vocabulary across three languages.

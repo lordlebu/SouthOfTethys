@@ -1,0 +1,12 @@
+{
+  "id": "place_nilgiri",
+  "type": "place",
+  "name": "Nilgiri",
+  "kind": "range",
+  "continent": "jambhudweepa",
+  "description": "Highland country in the far south of Jambhudweep.",
+  "canon": "inferred",
+  "sources": [
+    "dump/Partial_map.png"
+  ]
+}

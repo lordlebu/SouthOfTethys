@@ -1,0 +1,13 @@
+{
+  "id": "place_aranta",
+  "type": "place",
+  "name": "The Aranta",
+  "kind": "forest",
+  "continent": "jambhudweepa",
+  "description": "The unmapped interior of Jambhudweep: forest wilderness, and people living in it who the coastal civilizations have not reached.",
+  "notes": "The render calls it 'Unknown Aranta' and annotates the interior as wilderness with unexplored territory. The 'Unknown' reads as a cartographer's admission rather than part of the name.",
+  "canon": "inferred",
+  "sources": [
+    "dump/Partial_map.png"
+  ]
+}

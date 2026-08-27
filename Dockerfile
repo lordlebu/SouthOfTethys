@@ -23,7 +23,6 @@ WORKDIR /app
 # Copy project files (canon lives in database/)
 COPY utils/ utils/
 COPY database/ database/
-COPY cartography/ cartography/
 COPY docs/ docs/
 COPY CONTEXT.md .
 COPY DESIGN.md .
@@ -35,4 +34,7 @@ RUN adduser -u 5678 --disabled-password --gecos "" appuser && chown -R appuser /
 USER appuser
 
 # Set default command to run all utility scripts for artifact generation
-CMD ["sh", "-c", "python utils/lint_story.py && python utils/generate_timeline_mermaid.py && python utils/generate_timeline.py && python utils/generate_map.py && python utils/evolve_species.py"]
+# The same gate CI runs, in the same order. `check_export_boundary` is here because the
+# question it answers -- can lore reach the game by accident -- is not one you want to find
+# the answer to only on a pull request.
+CMD ["sh", "-c", "python utils/lint_story.py && python utils/check_export_boundary.py && python utils/generate_timeline_mermaid.py && python utils/generate_timeline.py && python utils/evolve_species.py"]

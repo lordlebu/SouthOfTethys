@@ -1,0 +1,12 @@
+{
+  "id": "place_tethys_sea",
+  "type": "place",
+  "name": "The Tethys Sea",
+  "kind": "sea",
+  "description": "The water between Mainland Asia and Jambhudweep, crossed by the Mask Family to found Lothal.",
+  "notes": "Canon names this sea constantly -- the project is called South of Tethys -- and it had no entity.",
+  "canon": "inferred",
+  "sources": [
+    "dump/Partial_map.png"
+  ]
+}

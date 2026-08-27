@@ -2,7 +2,6 @@
 pandas
 dash
 plotly
-folium
 black
 isort
 autoflake

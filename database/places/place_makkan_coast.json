@@ -1,0 +1,12 @@
+{
+  "id": "place_makkan_coast",
+  "type": "place",
+  "name": "Makkan Coast",
+  "kind": "coast",
+  "continent": "mainland_asia",
+  "description": "The southwestern shore of Mainland Asia, where the valley meets the Tethys.",
+  "canon": "inferred",
+  "sources": [
+    "dump/Partial_map.png"
+  ]
+}

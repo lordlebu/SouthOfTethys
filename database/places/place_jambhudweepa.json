@@ -1,0 +1,16 @@
+{
+  "id": "place_jambhudweepa",
+  "type": "place",
+  "name": "Jambhudweep",
+  "kind": "island",
+  "continent": "jambhudweepa",
+  "aliases": [
+    "Jambhudweepa"
+  ],
+  "description": "The island continent the story stands on, separated from Mainland Asia by the Tethys Sea.",
+  "notes": "The single largest structural claim the reference map makes that canon had not written down: Jambhudweep is an island, not a subcontinent joined to anything. Canon's seven regions all sit on it or around it, and `region.schema.json` already had `continent` defaulting to jambhudweepa for exactly this reason.",
+  "canon": "inferred",
+  "sources": [
+    "dump/Partial_map.png"
+  ]
+}

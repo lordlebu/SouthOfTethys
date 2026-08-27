@@ -5,16 +5,20 @@ A procedurally evolving storytelling engine inspired by world simulation games l
 
 ## � Published Book & Artifacts
 
-- **[View Published Book](https://lordlebu.github.io/SouthOfTethys/)** - Complete timeline, maps, and world data
-- **[📖 Complete Timeline](index.md)** - Full chronological story from prehistoric times to present
-- **[📊 Visual Timeline](timeline_mermaid.md)** - Interactive flowchart of major events
-- **[🗺️ Interactive World Map](interactive_map.html)** - Explore the world geography
-
-## 🌍 World Data
-
-- **[📍 Geographic Data](regions.geojson)** - Detailed regional boundaries and features
-- **[🏰 Locations & Regions](overworld.json)** - Structured data about world locations
+- **[View Published Book](https://lordlebu.github.io/SouthOfTethys/)** - The timeline and world data
+- **[📖 Complete Timeline](index.md)** - Every event, by epoch and then by cause
+- **[📊 Visual Timeline](timeline_mermaid.md)** - The epochs, and the causal graph of events
 - **[⏰ Timeline Data](timeline.json)** - Raw event data in JSON format
+
+## 🗺️ Maps
+
+There is no published map, and the ones that used to be linked here have been removed rather
+than left up. They described another project entirely — "Saltbluff Plateau", "Verdant Hollow",
+a GeoJSON of Jambhudweepa and the Himalayas — none of which canon contains.
+
+Canon states coordinates for its three field maps on an abstract 0–100 grid and nothing more,
+so nothing correct can be generated in their place yet. See `docs/canon-integrity-plan.md` for
+what modelling the geography actually requires.
 
 ## 🚀 Publishing & Local Workflow
 
@@ -45,7 +49,6 @@ ruff check ./utils/*.py --fix
 - Generate timeline summary and Mermaid diagram: `python utils/generate_timeline_mermaid.py`
 - Generate timeline (JSON): `python utils/generate_timeline.py`
 - Simulate species evolution: `python utils/evolve_species.py`
-- Generate maps: `python utils/generate_map.py`
 - Process story snippets: see `vidur_portal/README.md`. The Ollama step this used to
   describe was replaced by the portal, and `utils/snippet_processor.py` no longer exists.
 

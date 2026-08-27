@@ -26,6 +26,14 @@ jobs:
       - name: Run linting (database/ consistency)
         run: python utils/lint_story.py
 
+      # The lore layer is about to grow a great deal and almost none of it is meant to ship.
+      # This proves it cannot reach the game by accident: every folder in database/ is
+      # explicitly exported or explicitly withheld, and the bundle the exporter would write
+      # still hashes to what canon pinned. A lore edit that moves a byte of the game's data
+      # fails here, with the file named, rather than turning up in somebody's save later.
+      - name: Check the export boundary (can lore reach the game?)
+        run: python utils/check_export_boundary.py
+
       # lint_story proves the references resolve. This proves a player can actually get
       # there: it starts from nothing and does whatever becomes possible until nothing
       # more does, so a ladder that depends on itself fails here rather than shipping.
@@ -39,5 +47,5 @@ jobs:
         uses: actions/upload-artifact@v7
         with:
           name: full_timeline
-          path: timeline/timeline.json
+          path: docs/timeline.json
           if-no-files-found: warn

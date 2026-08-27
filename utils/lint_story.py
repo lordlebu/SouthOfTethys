@@ -58,6 +58,7 @@ PREFIX_DIRS = {
     "question_": "field_questions",
     "npc_": "npcs",
     "word_": "vocabulary",
+    "place_": "places",
 }
 
 # folder -> schema stem, where the two differ.
@@ -68,10 +69,27 @@ SCHEMA_FOR = {
     "npcs": "npc", "vocabulary": "vocabulary", "regions": "region",
     "artifacts": "artifact", "factions": "faction", "mythology": "mythology",
     "settlements": "settlement",
+    "places": "place",
 }
 
 # Values that look like ids but are not entity references.
 NOT_REFERENCES = {"sources", "type", "canon", "id"}
+
+# The three field maps the game's overworld screen is composed around.
+#
+# `src/content/overworldMap.ts` builds that entire screen out of these coordinates: where each
+# node sits, the straight-line distances between maps, the viewBox fitted to their extent, and
+# which way the outermost labels lean so they do not run off a phone. Moving one crashes
+# nothing -- it silently rescales and re-lays-out the screen. Neither repository would catch
+# it, because the geometry tests there check the arithmetic and not the data it runs on.
+#
+# So they are pinned here rather than only described in a plan. Canon may place new things
+# anywhere it likes; these three are what everything else is placed relative to.
+OVERWORLD_ANCHORS = {
+    "field_map_lothal": {"x": 28, "y": 50},
+    "field_map_dwarka": {"x": 16, "y": 64},
+    "field_map_narmada": {"x": 58, "y": 20},
+}
 
 ID_SHAPED = re.compile("^(" + "|".join(re.escape(p) for p in PREFIX_DIRS) + ")[a-z0-9_]+$")
 
@@ -298,6 +316,48 @@ def main() -> int:
             continue
         if not (payload.get("scientific") or "").strip():
             errors.append(f"{path.name}: no `scientific`")
+
+    # --- the overworld's anchors ---------------------------------------------------
+    for map_id, expected in sorted(OVERWORLD_ANCHORS.items()):
+        entry = entities.get(map_id)
+        if entry is None:
+            errors.append(f"{map_id}: pinned as an overworld anchor but no longer exists")
+            continue
+        actual = entry[1].get("coordinates")
+        if actual != expected:
+            errors.append(
+                f"{entry[0].name}: coordinates {actual} != the pinned {expected}. The game's "
+                f"overworld screen is laid out from these; changing one silently rescales it. "
+                f"If the move is deliberate, change OVERWORLD_ANCHORS in the same commit"
+            )
+
+    # --- events state their edges from both ends ------------------------------------
+    #
+    # `successors` and `predecessors` are two spellings of one edge, and only `successors` is
+    # read when the timeline is drawn. So an edge declared on the predecessor side alone is
+    # invisible -- it exists in canon and never appears in the picture, which is the worst of
+    # both, because the data looks right to a reader and wrong to the renderer.
+    #
+    # Today the asymmetry runs the harmless way round: `event_founding_lothal` names the Black
+    # Lotus Siege as a successor while the siege does not name it back, so the edge still draws.
+    # Nothing guarantees the next one will lean the same way.
+    for eid, (path, payload) in sorted(entities.items()):
+        if payload.get("type") != "event":
+            continue
+        for succ in payload.get("successors") or []:
+            other = entities.get(succ)
+            if other and eid not in (other[1].get("predecessors") or []):
+                errors.append(
+                    f"{path.name}: names '{succ}' as a successor, but {succ} does not name "
+                    f"'{eid}' as a predecessor"
+                )
+        for pred in payload.get("predecessors") or []:
+            other = entities.get(pred)
+            if other and eid not in (other[1].get("successors") or []):
+                errors.append(
+                    f"{path.name}: names '{pred}' as a predecessor, but {pred} does not name "
+                    f"'{eid}' as a successor -- this edge would not be drawn"
+                )
 
     # --- every other reference ---------------------------------------------------
     known = set(entities)

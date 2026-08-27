@@ -9,14 +9,18 @@ The South of Tethys repository uses GitHub Actions to automatically generate and
 ## Artifacts Generated
 
 ### 1. Timeline Artifacts
-- **Timeline Summary** (`timeline_summary.md`) - Human-readable chronological summary of all events
-- **Timeline Mermaid Diagram** (`timeline_mermaid.md`) - Visual flowchart of event progression
-- **Full Timeline Data** (`timeline.json`) - Complete structured timeline data
 
-### 2. World Map Artifacts  
-- **Interactive Map** (`interactive_map.html`) - Browsable map with clickable regions
-- **Overworld Data** (`overworld.json`) - Structured region and location data
-- **Geographic Data** (`regions.geojson`) - GeoJSON formatted geographic boundaries
+Written straight into `docs/` by the generators. There is no intermediate build directory:
+the copy between the two is what went stale, and served another project's story for months.
+
+- **Timeline Summary** (`docs/index.md`) - Every event, by epoch and then by cause
+- **Timeline Mermaid Diagram** (`docs/timeline_mermaid.md`) - The epochs, and the causal graph
+- **Full Timeline Data** (`docs/timeline.json`) - Complete structured timeline data
+
+### 2. World Map Artifacts
+
+None. The map pipeline was removed: it produced another project's geography, and `folium`
+wants real lat/lon that canon does not have. See `docs/canon-integrity-plan.md`.
 
 ### 3. Character & Species Data
 - Character profiles and genealogy information
@@ -50,7 +54,6 @@ Published documentation is available at: `https://lordlebu.github.io/SouthOfTeth
 Available pages:
 - **Main Timeline**: [index.md](https://lordlebu.github.io/SouthOfTethys/) 
 - **Visual Timeline**: [timeline_mermaid.md](https://lordlebu.github.io/SouthOfTethys/timeline_mermaid.html)
-- **Interactive Map**: [interactive_map.html](https://lordlebu.github.io/SouthOfTethys/interactive_map.html)
 
 ### GitHub Releases
 For each publication, artifacts are also available as downloadable files in the workflow runs:
@@ -72,9 +75,6 @@ For each publication, artifacts are also available as downloadable files in the 
    
    # Generate timeline visualizations
    python utils/generate_timeline_mermaid.py
-   
-   # Generate maps
-   python utils/generate_map.py
    ```
 
 3. **Commit and push** to a feature branch
@@ -103,11 +103,10 @@ If you need to publish immediately without waiting for the normal workflow:
    ```bash
    # Generate all artifacts
    python utils/generate_timeline_mermaid.py
-   python utils/generate_timeline.py  
-   python utils/generate_map.py
-   
+   python utils/generate_timeline.py
+
    # Commit results
-   git add timeline/ cartography/
+   git add docs/
    git commit -m "Manual artifact generation"
    git push
    ```
@@ -130,7 +129,6 @@ If you need to publish immediately without waiting for the normal workflow:
    - Verify Pages is enabled in repository settings
 
 4. **Maps not generating**
-   - Ensure `cartography/regions.geojson` is valid GeoJSON
    - Check that `folium` is installed and working
 
 ### Getting Help
@@ -145,10 +143,8 @@ If you need to publish immediately without waiting for the normal workflow:
 ├── .github/workflows/
 │   ├── ci.yml                 # Main publishing workflow
 │   └── story-validation.yml   # Validation workflow
-├── docs/                      # Published documentation (auto-generated)
+├── docs/                      # Published book, and where the generators write
 ├── database/                  # ALL canon: one JSON file per entity, plus schemas
-├── timeline/                  # Generated timeline artifacts
-├── cartography/               # Maps and geographic data
 ├── services/                  # Retrieval API and the Chroma indexer
 ├── utils/                     # Validation, export and generation scripts
 └── requirements.txt           # Python dependencies
@@ -159,7 +155,6 @@ If you need to publish immediately without waiting for the normal workflow:
 - **`utils/lint_story.py`** - Validates data consistency and references
 - **`utils/generate_timeline_mermaid.py`** - Creates timeline visualizations
 - **`utils/generate_timeline.py`** - Processes and sorts timeline data
-- **`utils/generate_map.py`** - Creates interactive maps
 - **`utils/check_playability.py`** - Simulates a playthrough; fails on content nobody can reach
 - **`utils/export_canon_bundle.py`** - Writes the game's `data/canon/` bundle and its lock
 

@@ -84,19 +84,20 @@ Merging to `main` rebuilds and redeploys the retrieval service by itself, then a
 - 🎮 **[The game](https://lordlebu.github.io/4000BCESaraswathy/)** — the walk, made of this canon
 - 🔎 **Retrieval API** — `/lore` for a place, `/search` for a question, `/ask` for a passage
 
-**Not yet rebuilt — placeholders from before the `database/` migration:**
+**Removed rather than left up:**
 
-- 🗺️ *Interactive world map* — `cartography/regions.geojson` names Jambhudweepa, Dwarka and the
-  Himalayas. Canon's seven regions are Aravali, Ganges Lava Sea, Gedrosian Desert, Narmada
-  Plateau, Saraswati Delta, Shattered Sea and Tethys Sky Routes: **no overlap at all**, and
-  `map_config.json` is an empty file. Rebuilding it means choosing real coordinates for seven
-  regions, because canon carries no geography — a decision, not a script.
-- 🕰️ *Visual timeline* — `docs/timeline_mermaid.md` is two nodes, "The Grove Fire" and "Arrival
-  of Leafkin", neither of which is in canon. The real 12-event graph is in `database/`, so this
-  one is a regeneration rather than an authoring problem.
+- 🗺️ *Interactive world map* — deleted, along with `cartography/` and `generate_map.py`. It
+  named Jambhudweepa, Dwarka and the Himalayas; canon's seven regions are Aravali, Ganges Lava
+  Sea, Gedrosian Desert, Narmada Plateau, Saraswati Delta, Shattered Sea and Tethys Sky Routes —
+  **no overlap at all** — and `map_config.json` was an empty file. Nothing correct can be
+  generated in its place: canon states coordinates for three field maps on an abstract 0–100
+  grid, and `folium` wants real lat/lon. Geography comes back as canon entities first.
+- 🕰️ *Visual timeline* — **rebuilt.** It was two nodes, "The Grove Fire" and "Arrival of
+  Leafkin", from a project this one has nothing to do with. It is now the real twelve-event
+  graph, banded by epoch, beside a timeline of all six epochs including the three still empty.
 
-Both are linked from the book and both are wrong. They are listed here rather than quietly left
-in place, because a stale artifact that looks live is worse than a missing one.
+A stale artifact that looks live is worse than a missing one, which is why the map is gone
+rather than quietly still linked.
 
 ---
 
