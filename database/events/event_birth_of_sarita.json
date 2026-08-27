@@ -8,7 +8,7 @@
     "character_khadi",
     "character_sarita"
   ],
-  "location": "upriver_exile_settlement",
+  "location": "place_upriver_exile",
   "predecessors": [
     "event_exile_of_shaashak"
   ],

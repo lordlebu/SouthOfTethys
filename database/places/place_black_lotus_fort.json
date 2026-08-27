@@ -1,0 +1,12 @@
+{
+  "id": "place_black_lotus_fort",
+  "type": "place",
+  "name": "Black Lotus Fort",
+  "kind": "settlement",
+  "description": "A pirate hold on basalt cliffs, taken by Kavik in a night assault during a thunderstorm.",
+  "notes": "From `event_black_lotus_siege`, which calls it both a camp and a fort. `Fort` is used here because the event describes scaling cliffs into it. Held by the Naga-Raja, and where Varna and Rathak were kept.",
+  "canon": "primary",
+  "sources": [
+    "database/events"
+  ]
+}

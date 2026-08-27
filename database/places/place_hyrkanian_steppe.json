@@ -1,0 +1,12 @@
+{
+  "id": "place_hyrkanian_steppe",
+  "type": "place",
+  "name": "The Hyrkanian Steppe",
+  "kind": "plains",
+  "description": "Open steppe country where Guyuk tore the crimson portal to Naraka Lok.",
+  "notes": "From `event_naraka_portal`. Whether this is the same ground as `place_hyrcania` — read off the reference map, where it is question-marked — canon does not say. Kept separate rather than merged: the event attests this one directly and the render attests the other weakly, and collapsing them would invent an identity neither source claims.",
+  "canon": "primary",
+  "sources": [
+    "database/events"
+  ]
+}

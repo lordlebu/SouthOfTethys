@@ -3,11 +3,21 @@
   "type": "faction",
   "name": "Mask Family",
   "culture": "harappan",
-  "origin": "mohenjo_daro",
+  "origin": "place_mohenjodaro",
   "epithet": "Keepers of Faces",
-  "members": ["character_kavik", "character_shaashak", "character_asha", "character_mehme", "character_iknaya"],
-  "artifacts": ["artifact_mask_of_harappa"],
+  "members": [
+    "character_kavik",
+    "character_shaashak",
+    "character_asha",
+    "character_mehme",
+    "character_iknaya"
+  ],
+  "artifacts": [
+    "artifact_mask_of_harappa"
+  ],
   "notes": "Semi-mythic lineage protecting ancestral masks of bone, resin, coral, volcanic glass. Settled Lothal under Kavik.",
   "canon": "primary",
-  "sources": ["AI_CONTEXT.md"]
+  "sources": [
+    "AI_CONTEXT.md"
+  ]
 }

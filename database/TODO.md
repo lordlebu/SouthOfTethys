@@ -12,7 +12,12 @@
 - [ ] Event: Vijaya / Mask of Tethys offer
 
 ## Cross-ref hygiene
-- [ ] Audit event `location` fields (free-text vs settlement IDs)
+- [x] Audit event `location` fields (free-text vs settlement IDs). Five held bare strings —
+      `ironfang_mountains`, `ancient_courts`, `hyrkanian_steppe`, `black_lotus_camp`,
+      `upriver_exile_settlement` — which are now `place` entities. It was not closable before
+      because there was no noun for somewhere named that a player cannot stand in. The linter
+      now resolves `location` and `field_map` by field *name*, since a bare string is not
+      id-shaped and the generic reference check could never see it.
 
 ## Field diary — schema gaps
 See `docs/decisions.md` for the reasoning behind each.
@@ -35,7 +40,7 @@ See `docs/decisions.md` for the reasoning behind each.
       same problem and was fixed by recording them)
 
 ## Index
-Current: v1.11.0 — bump on each entity batch. This line said v1.9.0 for two releases;
+Current: v1.13.0 — bump on each entity batch. This line said v1.9.0 for two releases;
 `database/index.json` is the manifest and this is a pointer to it, so when they disagree
 the index is right.
 Field diary types: 3 field maps, 20 points of interest,

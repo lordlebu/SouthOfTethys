@@ -331,6 +331,57 @@ def main() -> int:
                 f"If the move is deliberate, change OVERWORLD_ANCHORS in the same commit"
             )
 
+    # --- somewhere-shaped fields point at somewhere ---------------------------------
+    #
+    # The reference check resolves anything matching a known id prefix. That is generic and
+    # good, and it has one blind spot by construction: a bare string like `ironfang_mountains`
+    # is not id-shaped, so `walk_refs` never yields it and nothing ever asks whether it exists.
+    # Five event locations sat in canon that way -- looking exactly like references, invisible
+    # to the check that resolves references, and unfixable until `place` gave them a home.
+    #
+    # So fields whose *name* says they point somewhere are resolved by name rather than by
+    # shape. Two fields are deliberately absent. `origin` on a faction means ancestry as often
+    # as geography -- `vedda_naga_hybrid` is a lineage. And `region` on a species holds a
+    # bestiary slug rather than an id, by the design recorded in region.schema.json: the
+    # bestiary was written first and its vocabulary is what the species carry. That one is
+    # checked below, against the slugs regions actually declare.
+    WHEREABOUTS = {"location", "field_map"}
+    for eid, (path, payload) in sorted(entities.items()):
+        for field in WHEREABOUTS:
+            value = payload.get(field)
+            if isinstance(value, str) and value and value not in entities:
+                errors.append(
+                    f"{path.name}: {field} '{value}' is not an entity. If it is a place canon "
+                    f"has not modelled yet, add it under database/places/"
+                )
+
+    # A species' `region` is a `bestiary_region` slug, not an id. Unvalidated until now, which
+    # is how a species could name a region that no region declares and read as placed.
+    # Two of these are not geography, and are named here so the check catches a typo without
+    # failing on a modelling question it cannot answer:
+    #
+    #   asura-conjurations  40 species grouped by what made them rather than where they live.
+    #                       A coherent category; arguably it should be a faction or a tag
+    #                       rather than a region, and that is a canon call.
+    #   prototype-starters   6 ordinary animals -- a cloud antelope, a hill macaque, a monsoon
+    #                       crane, a painted deer -- still carrying a development-era label.
+    #                       These look like leftovers, but `region` is exported, so moving them
+    #                       changes the game's bundle and is not a lint's decision to make.
+    NON_GEOGRAPHIC = {"asura-conjurations", "prototype-starters"}
+    slugs = {
+        payload["bestiary_region"]
+        for _eid, (_p, payload) in entities.items()
+        if payload.get("type") == "region" and payload.get("bestiary_region")
+    } | {"canon"} | NON_GEOGRAPHIC
+    for eid, (path, payload) in sorted(entities.items()):
+        if path.parent.name not in {"fauna", "flora"}:
+            continue
+        value = payload.get("region")
+        if isinstance(value, str) and value and value not in slugs:
+            errors.append(
+                f"{path.name}: region '{value}' is not a `bestiary_region` any region declares"
+            )
+
     # --- events state their edges from both ends ------------------------------------
     #
     # `successors` and `predecessors` are two spellings of one edge, and only `successors` is
