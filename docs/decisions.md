@@ -273,8 +273,17 @@ win at all.
 
 **And Mermaid renders on the site now.** `docs/_includes/head-custom.html` loads it, which is the
 hook `pages-themes/minimal` provides for exactly this. Five diagrams across the timeline and the
-atlas had been publishing as syntax-highlighted source. It degrades to that same source if the
-CDN is unreachable, which is the failure mode worth having.
+atlas had been publishing as source. It degrades to that same source if the CDN is unreachable,
+which is the failure mode worth having.
+
+It took two goes, and the first failure is the instructive one. The include targeted
+`div.language-mermaid`, on the assumption that kramdown wraps a fence the way Rouge does — and
+Rouge has no mermaid lexer, so kramdown falls through to a bare `<pre><code class="language-...">`
+and emits no wrapper at all. The selector matched nothing, the diagrams kept publishing as code
+blocks, and **from inside the repository that is indistinguishable from success**: the file is
+there, the workflow is green, the page returns 200. Only fetching the built page and counting the
+elements shows it. Both shapes are handled now, and the lesson is the one this project keeps
+relearning — a check that cannot fail is not a check, and neither is a fix nobody looked at.
 
 **The landmark loop stays** (decided 2026-08-13). The compass bearing to a great banyan and the
 arrival page it ends in predate points of interest, and there are now two notions of arriving
