@@ -46,6 +46,12 @@ def label(text: str) -> str:
     return text.replace('"', "'").replace("[", "(").replace("]", ")")
 
 
+def titled(entity: dict) -> str:
+    """An entity's title, saying so when it is a fixture rather than canon."""
+    text = entity.get("title") or entity.get("name") or entity["id"]
+    return f"{text} (sample)" if entity.get("sample") else text
+
+
 def period(text: str) -> str:
     """Mermaid timeline text. A colon separates a period from its entries."""
     return text.replace(":", " --").strip()
@@ -60,7 +66,7 @@ def epoch_timeline(events: list[dict]) -> str:
     lines = ["```mermaid", "timeline", "    title South of Tethys — the epochs"]
     for ep in load_epochs():
         lines.append(f"    section {period(ep.get('name') or ep['id'])}")
-        entries = [period(e.get("title") or e["id"]) for e in in_epoch.get(ep["id"], [])]
+        entries = [period(titled(e)) for e in in_epoch.get(ep["id"], [])]
         rng = period(ep.get("range") or "undated")
         if entries:
             lines.append(f"        {rng} : " + " : ".join(entries))
@@ -89,12 +95,12 @@ def event_graph(events: list[dict]) -> str:
             continue
         lines.append(f'    subgraph {ep["id"]}["{label(ep.get("name") or ep["id"])}"]')
         for e in members:
-            lines.append(f'        {node_of[e["id"]]}["{label(e.get("title") or e["id"])}"]')
+            lines.append(f'        {node_of[e["id"]]}["{label(titled(e))}"]')
         lines.append("    end")
 
     stray = [e for e in events if (e.get("epoch") or "") not in {x["id"] for x in load_epochs()}]
     for e in stray:
-        lines.append(f'    {node_of[e["id"]]}["{label(e.get("title") or e["id"])}"]')
+        lines.append(f'    {node_of[e["id"]]}["{label(titled(e))}"]')
 
     for e in events:
         for succ in e.get("successors") or []:

@@ -6,6 +6,7 @@
   "description": "The range Honan fought Gorvaxx across, and where the petrified dragon became the pass called the Dragon's Spine.",
   "notes": "From `event_dragon_spine`. The Dragon's Spine is a feature of this range rather than a separate place: canon describes the beast petrified rather than slain, so the pass and the dragon are the same rock.",
   "canon": "primary",
+  "sample": true,
   "sources": [
     "database/events"
   ]

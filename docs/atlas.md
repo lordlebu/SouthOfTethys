@@ -30,7 +30,7 @@ _No map for this era, deliberately._ The only coordinates canon holds belong to 
 
 **before the migrations**
 
-> Mythic age of Varunesh and Manjalaya, the Shadow Pact and the forging of the Dragon's Spine. Was in use on entities long before it was declared here.
+> Mythic age of Varunesh and Manjalaya, and the Shadow Pact. Was in use on entities long before it was declared here.
 
 | | dated to this era | timeless |
 |---|---:|---:|
@@ -49,7 +49,7 @@ _No map for this era, deliberately._ The only coordinates canon holds belong to 
 
 ```mermaid
 graph TD
-    E0["Forging of the Dragon’s Spine"]
+    E0["Forging of the Dragon’s Spine (sample)"]
     E1["Shadow Pact of Saraswati"]
 ```
 

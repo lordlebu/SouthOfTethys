@@ -2,9 +2,15 @@
   "id": "mythology_gorvaxx",
   "type": "mythology",
   "name": "Gorvaxx",
-  "domain": ["mountains", "geothermal"],
+  "domain": [
+    "mountains",
+    "geothermal"
+  ],
   "aspect": "Deep-time dragon of the Ironfang Mountains",
   "notes": "Black granite scales; breathed geothermal fire and thunder. Petrified by Honan into the Dragon’s Spine pass.",
   "canon": "primary",
-  "sources": ["AI_CONTEXT.md"]
+  "sample": true,
+  "sources": [
+    "AI_CONTEXT.md"
+  ]
 }

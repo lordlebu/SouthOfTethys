@@ -243,6 +243,21 @@ place cities relative to it, and shipping nineteen positions that the fiction ha
 Cheap to reverse, precisely because nothing has been entered against it — which is the opposite of
 the y-axis ruling, and the reason this one could wait where that one could not.
 
+**The Dragon's Spine episode is kept, and marked** (decided 2026-08-27). Four entities across
+four folders — `event_dragon_spine`, `character_honan`, `mythology_gorvaxx`,
+`place_ironfang_mountains` — were written to exercise the tooling rather than to tell the story.
+They were very nearly deleted and are kept instead, because that spread is a genuinely useful
+thing to test against: an orphan event, the only mythology tied to one, a character in an epoch
+with almost nothing else in it, and a place derived from a bare location string.
+
+Kept means marked. `sample: true` sits on the entity where a reader will see it, the linter
+enforces that nothing outside the episode references it, and every generated view labels it. The
+epoch note for Deep Antiquity, which used to narrate the forging in prose, no longer does — so
+the whole thing still comes out with a four-file delete on the day it stops being useful.
+
+The alternative was a `notes` convention, which nothing enforces. A fixture nobody can distinguish
+from canon is how a test becomes load-bearing by accident.
+
 **The landmark loop stays** (decided 2026-08-13). The compass bearing to a great banyan and the
 arrival page it ends in predate points of interest, and there are now two notions of arriving
 somewhere. Retiring the older one was offered three times and declined: it is the shape the
