@@ -2,30 +2,34 @@
   Render Mermaid on the published site.
 
   Auto-rendering a ```mermaid fence is a github.com markdown feature, not a GitHub Pages one.
-  Until now the book served every diagram as a syntax-highlighted code block: the timeline, the
-  event graph and the atlas's per-era graphs all published as source. `pages-themes/minimal`
-  includes `head-custom.html` in its <head>, which is the supported way in without overriding
-  the theme's layout.
+  Without this the book serves every diagram as source: the epoch timeline, the event graph and
+  the atlas's per-era graphs. `pages-themes/minimal` includes `head-custom.html` in its <head>,
+  which is the way in without overriding the theme's layout.
 
-  Kramdown turns a fence into `<div class="language-mermaid"><pre><code>…`, which Mermaid does
-  not recognise, so each block is rewritten to `<pre class="mermaid">` before running. Taking
-  `textContent` rather than innerHTML matters: Rouge has no mermaid lexer and falls back to
-  plain text, but if that ever changes, the spans it injects would otherwise reach the parser.
+  **The markup to look for is `pre > code.language-mermaid`, with no wrapping div.** The first
+  version of this file targeted `div.language-mermaid`, on the assumption that kramdown wraps a
+  fence the way Rouge does. It does not: Rouge has no mermaid lexer, so kramdown falls through
+  to a plain `<pre><code class="language-...">` and emits no wrapper at all. That selector
+  matched nothing and the diagrams kept publishing as code blocks, which looks exactly like
+  success from the repository. Verified against the live page this time, not assumed.
 
-  If the CDN is unreachable the page degrades to exactly what it shows today — the diagram
-  source, readable and wrong-looking rather than blank.
+  Both shapes are handled anyway, so this keeps working if a mermaid lexer ever ships and Rouge
+  starts wrapping. `textContent` rather than innerHTML for the same reason: the day highlighting
+  turns on, the spans it injects must not reach the parser.
+
+  If the CDN is unreachable the page degrades to what it shows today -- the diagram source,
+  readable and plainly unrendered rather than blank.
 -->
 <script type="module">
   import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
 
-  const blocks = document.querySelectorAll("div.language-mermaid");
-  blocks.forEach((block) => {
-    const code = block.querySelector("code");
-    if (!code) return;
+  const blocks = document.querySelectorAll("code.language-mermaid");
+  blocks.forEach((code) => {
     const pre = document.createElement("pre");
     pre.className = "mermaid";
     pre.textContent = code.textContent;
-    block.replaceWith(pre);
+    // The wrapper if Rouge made one, the <pre> otherwise.
+    (code.closest("div.language-mermaid") || code.closest("pre") || code).replaceWith(pre);
   });
 
   if (blocks.length) {
