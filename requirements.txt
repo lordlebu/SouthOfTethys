@@ -1,7 +1,7 @@
-# To ensure app dependencies are ported from your virtual environment/host machine into your container, run 'pip freeze > requirements.txt' in the terminal to overwrite this file
-pandas
-dash
-plotly
+# Runtime and tooling dependencies. Do NOT regenerate this with `pip freeze` -- the note that
+# used to sit here said to, and that is how `pandas`, `dash` and `plotly` came to be declared
+# for a 35-line Dash prototype that no workflow ran and nothing linked to. Add what is imported,
+# and say why when it is not obvious.
 black
 isort
 autoflake

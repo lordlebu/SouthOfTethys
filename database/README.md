@@ -29,6 +29,8 @@ database/
 └── index.json
 ```
 
+**Adding a story point? `AUTHORING.md` in this folder has the templates and the four steps.**
+
 Every folder here is named in `BUNDLE` or `NOT_EXPORTED` in `utils/export_canon_bundle.py`, and
 `utils/check_export_boundary.py` fails if one is in neither. A new entity type that says nothing
 about which side of the boundary it sits on is how lore reaches the game by accident.

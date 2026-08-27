@@ -20,6 +20,12 @@ Canon states coordinates for its three field maps on an abstract 0–100 grid an
 so nothing correct can be generated in their place yet. See `docs/canon-integrity-plan.md` for
 what modelling the geography actually requires.
 
+## ✍️ Adding to canon
+
+New story points go in `database/`, one JSON file per entity. **[database/AUTHORING.md](../database/AUTHORING.md)**
+has copy-paste templates and the four steps. The one decision that matters is which folder:
+nine reach the game's bundle and eight do not.
+
 ## 🚀 Publishing & Local Workflow
 
 1. **Make changes** to timeline, characters, or world data
@@ -47,6 +53,7 @@ ruff check ./utils/*.py --fix
 **Run Utility Scripts:**
 - Lint and validate story data: `python utils/lint_story.py`
 - Generate timeline summary and Mermaid diagram: `python utils/generate_timeline_mermaid.py`
+- Generate the per-era atlas: `python utils/generate_atlas.py`
 - Generate timeline (JSON): `python utils/generate_timeline.py`
 - Simulate species evolution: `python utils/evolve_species.py`
 - Process story snippets: see `vidur_portal/README.md`. The Ollama step this used to
