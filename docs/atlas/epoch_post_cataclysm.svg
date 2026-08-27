@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-14 -14 128 128" width="720" role="img" aria-label="Map of Post-Cataclysmic Era (The Great Shattering)">
+<style>
+  .bg{fill:#E7EAE6}.grid{stroke:#CBD1CB;stroke-width:.3}.edge{stroke:#AFB8B1;stroke-width:.6}
+  .dot{fill:#2C5C8F}.dot-place{fill:#7E6A2E}
+  .lbl{fill:#17201F;font:3.2px Archivo,sans-serif}
+  .cap{fill:#7D8A86;font:2.6px 'JetBrains Mono',monospace}
+  @media(prefers-color-scheme:dark){
+   .bg{fill:#121817}.grid{stroke:#28322F}.edge{stroke:#3E4C4E}
+   .dot{fill:#74A8DA}.dot-place{fill:#CBAE6A}.lbl{fill:#E2E7E3}.cap{fill:#78857F}}
+</style>
+<rect class="bg" x="-14" y="-14" width="128" height="128"/>
+<line class="grid" x1="0" y1="0" x2="0" y2="100"/>
+<line class="grid" x1="0" y1="0" x2="100" y2="0"/>
+<line class="grid" x1="20" y1="0" x2="20" y2="100"/>
+<line class="grid" x1="0" y1="20" x2="100" y2="20"/>
+<line class="grid" x1="40" y1="0" x2="40" y2="100"/>
+<line class="grid" x1="0" y1="40" x2="100" y2="40"/>
+<line class="grid" x1="60" y1="0" x2="60" y2="100"/>
+<line class="grid" x1="0" y1="60" x2="100" y2="60"/>
+<line class="grid" x1="80" y1="0" x2="80" y2="100"/>
+<line class="grid" x1="0" y1="80" x2="100" y2="80"/>
+<line class="grid" x1="100" y1="0" x2="100" y2="100"/>
+<line class="grid" x1="0" y1="100" x2="100" y2="100"/>
+<line class="edge" x1="16" y1="64" x2="28" y2="50"/>
+<line class="edge" x1="28" y1="50" x2="58" y2="20"/>
+<circle class="dot" cx="16" cy="64" r="1.5"/>
+<text class="lbl" x="18" y="61" text-anchor="start">Dwarka</text>
+<circle class="dot" cx="28" cy="50" r="1.5"/>
+<text class="lbl" x="28" y="47" text-anchor="middle">Lothal</text>
+<circle class="dot" cx="58" cy="20" r="1.5"/>
+<text class="lbl" x="56" y="17" text-anchor="end">The Narmada Plateau</text>
+<text class="cap" x="0" y="108">north is up · 0-100 grid</text>
+</svg>
