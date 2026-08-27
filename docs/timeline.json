@@ -7,7 +7,7 @@
     "participants": [
       "character_honan"
     ],
-    "location": "ironfang_mountains",
+    "location": "place_ironfang_mountains",
     "predecessors": [],
     "successors": [],
     "outcomes": [
@@ -29,7 +29,7 @@
       "character_varunesh",
       "character_asura_tainted_princess"
     ],
-    "location": "ancient_courts",
+    "location": "place_ancient_courts",
     "predecessors": [],
     "successors": [],
     "causes": [
@@ -89,7 +89,7 @@
       "character_guyuk",
       "character_nirigili"
     ],
-    "location": "hyrkanian_steppe",
+    "location": "place_hyrcania",
     "predecessors": [],
     "successors": [],
     "causes": [
@@ -182,7 +182,7 @@
       "character_rathak",
       "character_naga_raja"
     ],
-    "location": "black_lotus_camp",
+    "location": "place_black_lotus_fort",
     "predecessors": [
       "event_silvershore_war",
       "event_founding_lothal"
@@ -347,7 +347,7 @@
       "character_khadi",
       "character_sarita"
     ],
-    "location": "upriver_exile_settlement",
+    "location": "place_upriver_exile",
     "predecessors": [
       "event_exile_of_shaashak"
     ],

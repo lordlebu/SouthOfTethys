@@ -1,5 +1,5 @@
 {
-  "version": "1.12.0",
+  "version": "1.13.0",
   "description": "SouthOfTethys canonical entity index",
   "counts": {
     "characters": 41,
@@ -17,7 +17,7 @@
     "field_questions": 7,
     "npcs": 8,
     "vocabulary": 8,
-    "places": 19
+    "places": 23
   },
   "entities": {
     "characters": [

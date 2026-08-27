@@ -9,7 +9,7 @@
     "character_rathak",
     "character_naga_raja"
   ],
-  "location": "black_lotus_camp",
+  "location": "place_black_lotus_fort",
   "predecessors": [
     "event_silvershore_war",
     "event_founding_lothal"
