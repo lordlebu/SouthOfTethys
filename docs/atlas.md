@@ -24,7 +24,7 @@ Each era below is canon as it stood then. An entity that names no epoch is prese
 
 ### Map
 
-_Nothing in this era carries coordinates._ The only grid canon holds is the one the field maps use, and `field_map.schema.json` records that its layout is cataclysm-shaped — it describes the world after the Collapse. Placing an earlier world on it would be mixing two eras rather than drawing one.
+_No map for this era, deliberately._ The only coordinates canon holds belong to the three field maps, and their layout describes the world *after* the Great Shattering. Earlier eras are not drawn because **the Cataclysm has not been written yet** — deriving a before from an unwritten after would mean inventing the shape of the catastrophe in order to place cities relative to it. The timeline, events and census above are everything canon actually knows about this era. See `DESIGN.md`.
 
 ## Deep Antiquity
 
@@ -55,7 +55,7 @@ graph TD
 
 ### Map
 
-_Nothing in this era carries coordinates._ The only grid canon holds is the one the field maps use, and `field_map.schema.json` records that its layout is cataclysm-shaped — it describes the world after the Collapse. Placing an earlier world on it would be mixing two eras rather than drawing one.
+_No map for this era, deliberately._ The only coordinates canon holds belong to the three field maps, and their layout describes the world *after* the Great Shattering. Earlier eras are not drawn because **the Cataclysm has not been written yet** — deriving a before from an unwritten after would mean inventing the shape of the catastrophe in order to place cities relative to it. The timeline, events and census above are everything canon actually knows about this era. See `DESIGN.md`.
 
 ## Era of Human Migrations
 
@@ -86,7 +86,7 @@ graph TD
 
 ### Map
 
-_Nothing in this era carries coordinates._ The only grid canon holds is the one the field maps use, and `field_map.schema.json` records that its layout is cataclysm-shaped — it describes the world after the Collapse. Placing an earlier world on it would be mixing two eras rather than drawing one.
+_No map for this era, deliberately._ The only coordinates canon holds belong to the three field maps, and their layout describes the world *after* the Great Shattering. Earlier eras are not drawn because **the Cataclysm has not been written yet** — deriving a before from an unwritten after would mean inventing the shape of the catastrophe in order to place cities relative to it. The timeline, events and census above are everything canon actually knows about this era. See `DESIGN.md`.
 
 ## Civilization Dawn (Lothal Era)
 
@@ -133,7 +133,7 @@ graph TD
 
 ### Map
 
-_Nothing in this era carries coordinates._ The only grid canon holds is the one the field maps use, and `field_map.schema.json` records that its layout is cataclysm-shaped — it describes the world after the Collapse. Placing an earlier world on it would be mixing two eras rather than drawing one.
+_No map for this era, deliberately._ The only coordinates canon holds belong to the three field maps, and their layout describes the world *after* the Great Shattering. Earlier eras are not drawn because **the Cataclysm has not been written yet** — deriving a before from an unwritten after would mean inventing the shape of the catastrophe in order to place cities relative to it. The timeline, events and census above are everything canon actually knows about this era. See `DESIGN.md`.
 
 ## Current Era (Age of Machinery)
 
@@ -155,7 +155,7 @@ _Nothing in this era carries coordinates._ The only grid canon holds is the one 
 
 ### Map
 
-_Nothing in this era carries coordinates._ The only grid canon holds is the one the field maps use, and `field_map.schema.json` records that its layout is cataclysm-shaped — it describes the world after the Collapse. Placing an earlier world on it would be mixing two eras rather than drawing one.
+_No map for this era, deliberately._ The only coordinates canon holds belong to the three field maps, and their layout describes the world *after* the Great Shattering. Earlier eras are not drawn because **the Cataclysm has not been written yet** — deriving a before from an unwritten after would mean inventing the shape of the catastrophe in order to place cities relative to it. The timeline, events and census above are everything canon actually knows about this era. See `DESIGN.md`.
 
 ## Post-Cataclysmic Era (The Great Shattering)
 

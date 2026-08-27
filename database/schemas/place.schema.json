@@ -101,7 +101,7 @@
           },
           "coordinates": {
             "type": "object",
-            "description": "Where the place sits in this era, if the Shattering moved it. Rare, and the reason coordinates are allowed to vary at all: a city does not move, but a continent that fractures along tectonic and dimensional boundaries takes its cities with it.",
+            "description": "Where the place sits in this era, if the Shattering moved it.\n\nUnused today, and deliberately: the Great Shattering has not been written. Its epoch is one paragraph marked `status: authoring` with no events in it, so there is nothing to say what moved or how far. This field is where that goes when somebody writes it, and until then no place carries coordinates in any era but the last.\n\nIt is the reason coordinates are allowed to vary at all: a city does not move, but a continent that fractures along tectonic and dimensional boundaries takes its cities with it.",
             "required": [
               "x",
               "y"

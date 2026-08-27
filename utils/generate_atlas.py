@@ -19,10 +19,14 @@ Three views per era, and they deliberately do not share a renderer:
            unreadable and slow to lay out, and no styling fixes it. SVG over the existing
            0-100 grid needs no projection maths and stays diffable.
 
-**Most eras have no map yet, and that is stated rather than hidden.** The only coordinates
-canon holds are the three field maps, and `field_map.schema.json` says plainly that their
-layout is cataclysm-shaped -- it describes the world after the Collapse. So an era before it
-has nothing to plot, and the atlas says so instead of drawing an empty square.
+**Only one era has a map, and the page says why rather than drawing an empty square.** The
+three field maps are the only coordinates canon holds, and their layout is cataclysm-shaped by
+`field_map.schema.json`'s own account -- it describes the world after the Collapse.
+
+The reason not to just author earlier coordinates is that **the Cataclysm has not been
+written**. Its epoch is one paragraph marked `status: authoring` with no events in it, so
+deriving a *before* would mean inventing the shape of the catastrophe in order to place cities
+relative to it. Ruling in DESIGN.md, 2026-08-27.
 
     python utils/generate_atlas.py                          # every era
     python utils/generate_atlas.py --era epoch_post_cataclysm
@@ -251,10 +255,13 @@ def main() -> int:
             doc += [
                 "### Map",
                 "",
-                "_Nothing in this era carries coordinates._ The only grid canon holds is the one "
-                "the field maps use, and `field_map.schema.json` records that its layout is "
-                "cataclysm-shaped — it describes the world after the Collapse. Placing an earlier "
-                "world on it would be mixing two eras rather than drawing one.",
+                "_No map for this era, deliberately._ The only coordinates canon holds belong to "
+                "the three field maps, and their layout describes the world *after* the Great "
+                "Shattering. Earlier eras are not drawn because **the Cataclysm has not been "
+                "written yet** — deriving a before from an unwritten after would mean inventing "
+                "the shape of the catastrophe in order to place cities relative to it. The "
+                "timeline, events and census above are everything canon actually knows about this "
+                "era. See `DESIGN.md`.",
                 "",
             ]
 
