@@ -1,0 +1,167 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Place",
+  "description": "Somewhere named that a player cannot stand in.\n\nThe fourth tier below region -> field map -> point of interest, and the only one of the four that does not reach the game. Canon holds hundreds of named locations across six epochs -- Harappa, the Makkan Coast, the Deccan, the path to Lemuria -- and almost none of them will ever be walkable. They exist because the lore is bigger than the game and does not need the game's permission to exist.\n\n`point_of_interest` was the obvious-looking home and is the wrong one: it is keyed to a walkable `field_map`, it carries an arrival line for standing there, and it ships to the game. `settlement` keeps its narrow meaning -- somewhere people live that canon models in detail, of which there are two, each with a field map under it.\n\nThe `places` folder is in NOT_EXPORTED, and `utils/check_export_boundary.py` fails if that ever stops being true.",
+  "type": "object",
+  "required": [
+    "id",
+    "type",
+    "name",
+    "kind"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^place_[a-z0-9_]+$"
+    },
+    "type": {
+      "const": "place"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "kind": {
+      "type": "string",
+      "description": "What sort of thing this is. Coarse on purpose: the distinction that matters is a city from a mountain range, not a city from a town.",
+      "enum": [
+        "city",
+        "settlement",
+        "range",
+        "plateau",
+        "desert",
+        "coast",
+        "river",
+        "sea",
+        "island",
+        "forest",
+        "wetland",
+        "frontier",
+        "ruin",
+        "route",
+        "unknown"
+      ]
+    },
+    "continent": {
+      "type": "string",
+      "description": "Which landmass. `jambhudweepa` is the island continent this story sits on; `mainland_asia` is across the Tethys Sea from it, and carries Harappa, Mohenjodaro and the Saraswati valley."
+    },
+    "region": {
+      "type": "string",
+      "description": "The canon region this sits in, where one applies. Many named places are outside all seven -- canon's regions cover where the story is walked, not the whole world."
+    },
+    "coordinates": {
+      "type": "object",
+      "description": "Position on the same abstract 0-100 grid the field maps use.\n\nThat grid is not geography. `field_map.schema.json` states it plainly: the layout is cataclysm-shaped, the delta maps cluster in the surviving southwest, and distance encodes how much of the world was lost. It describes the world *after* the Shattering.\n\nSo a coordinate here is a claim about one era, not about where somewhere sits forever. A place whose position is the same before and after the Collapse states it once at the top level. A place the Shattering moved states the later one in `states` -- the world fractured along tectonic and dimensional boundaries at once, and things did not stay put.\n\nAbsent means canon knows the place exists and has not placed it, which is honest and common. Everything read off dump/Partial_map.png is in that position today: the render shows a living Harappa and a standing university, so it depicts a pre-cataclysm world, and the only grid canon has is the post-cataclysm one. An atlas leaves an unplaced place out rather than dropping it at a corner.",
+      "required": [
+        "x",
+        "y"
+      ],
+      "properties": {
+        "x": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100,
+          "description": "West to east."
+        },
+        "y": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100,
+          "description": "North to south, screen order -- 0 is the top. Binding ruling, DESIGN.md."
+        }
+      },
+      "additionalProperties": false
+    },
+    "epochs": {
+      "type": "array",
+      "description": "Epoch ids from database/timeline/epochs.json. Absent means the place exists in every era.",
+      "items": {
+        "type": "string"
+      }
+    },
+    "states": {
+      "type": "array",
+      "description": "What changed, and when, for the few places that genuinely transform.\n\nA place states its identity once and overrides only what moved. Most places carry no states at all and are eight-line files; this exists for the handful like Dwarka, a working harbour in Civilization Dawn and a drowned gate after the Shattering.\n\nUsually what changes is a name or a status, not a position -- a city does not move. The exception is the Shattering itself, which fractured the world along tectonic and dimensional boundaries at once, so `coordinates` may be restated here for somewhere it carried with it.\n\nOne entity per place per epoch was the alternative and was rejected: it multiplies hundreds by six and makes 'is this the same place?' unanswerable.",
+      "items": {
+        "type": "object",
+        "required": [
+          "epoch"
+        ],
+        "properties": {
+          "epoch": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string",
+            "description": "What it is called in this era, if that changed."
+          },
+          "kind": {
+            "type": "string"
+          },
+          "coordinates": {
+            "type": "object",
+            "description": "Where the place sits in this era, if the Shattering moved it. Rare, and the reason coordinates are allowed to vary at all: a city does not move, but a continent that fractures along tectonic and dimensional boundaries takes its cities with it.",
+            "required": [
+              "x",
+              "y"
+            ],
+            "properties": {
+              "x": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 100
+              },
+              "y": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 100
+              }
+            },
+            "additionalProperties": false
+          },
+          "status": {
+            "type": "string",
+            "description": "A short state word -- drowned, ruined, founded, abandoned, buried.",
+            "minLength": 1
+          },
+          "description": {
+            "type": "string"
+          },
+          "notes": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "description": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "canon": {
+      "type": "string",
+      "enum": [
+        "primary",
+        "secondary",
+        "inferred"
+      ],
+      "description": "How firmly this is established. `inferred` covers everything read off dump/Partial_map.png, which is a NotebookLM render of the lore and is reference rather than authority."
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}

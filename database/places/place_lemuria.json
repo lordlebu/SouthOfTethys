@@ -1,0 +1,12 @@
+{
+  "id": "place_lemuria",
+  "type": "place",
+  "name": "Lemuria",
+  "kind": "island",
+  "description": "The legendary land south beyond the Mappa Mundi regions.",
+  "notes": "From the render's one legible southern annotation: 'Directions point south toward Madagascar, the Mappa Mundi regions, and the legendary Lemuria.' The three route arrows themselves carry garbled text and are not entered. Canon already holds the Mappa Mundi as part of `region_shattered_sea`.",
+  "canon": "inferred",
+  "sources": [
+    "dump/Partial_map.png"
+  ]
+}

@@ -213,15 +213,23 @@ generated from that. Geography returns as canon entities first. `folium` left
 |---|---|
 | Where does `full_moon` belong? | It is in the `weather` enum but is not weather. Probably its own field with a lunar cycle behind it. |
 | How long should a weather spell last? | Currently 3 in-game hours (~7.5 real minutes). Pure playtest question; it is the knob most likely to be wrong. |
-| Which way does `y` run on the 0-100 grid? | Canon has never said. The three pinned field-map coordinates fix those maps in place but imply no convention, and the reference drawing puts Dwarka north-west of Lothal while the grid values put it south-west if `y` increases downward. Settle it before any place is entered: the anchors make a later global flip impossible. |
-| `place` as a new entity type, or a wider `settlement`? | Roughly ten named-but-unwalkable locations sit on the reference map, and the real number across the lore is in the hundreds. Whichever noun wins, its folder goes in `NOT_EXPORTED` in the commit that creates it. `point_of_interest` is the trap: it already carries `epochs` and looks right, and it ships to the game keyed to a walkable map. |
-| What does an entity with no epoch default to? | Every era, or none. 363 of 494 entities carry no epoch, and 346 of those are fauna and flora, deliberately. The answer decides whether a Deep Antiquity atlas is crowded or bare. |
-| How does a place change across epochs? | Recommended: identity and coordinates stated once, `epochs` for presence following the existing point-of-interest convention, and a per-epoch state block only on the few places that genuinely transform -- Dwarka harbour to drowned gate. One entity per place per epoch multiplies hundreds by six and makes "is this the same place?" unanswerable. |
 | Which region gets the *third* field map? | Two exist and are joined (Lothal, the Narmada Plateau). A third is the first one with no structural argument behind it — it is a creative call. Candidates already in canon: Dwarka (the gates), the Shattered Sea, the Ganges Lava Sea (which would finally use `lava_field`). |
 
 ---
 
 ## Resolved
+
+**The four geography and era rulings** (decided 2026-08-27). `y` increases southward, so the
+screen convention wins and no renderer needs a flip; a named-but-unwalkable location is a new
+`place` type rather than a stretched `settlement`; an entity with no epoch exists in *every*
+era, because that is what fauna already meant; and a place states identity once with per-epoch
+`states` only where it genuinely transforms. All four are written up in `DESIGN.md` as binding
+rulings, with the reasoning and what each one rejected.
+
+They were taken before a single place was entered. Every one of them is cheap now and expensive
+after a hundred files exist, and the y-axis in particular cannot be revisited at all: the three
+pinned field-map coordinates are load-bearing in the shipped game, so the convention had to be
+fitted to them.
 
 **The landmark loop stays** (decided 2026-08-13). The compass bearing to a great banyan and the
 arrival page it ends in predate points of interest, and there are now two notions of arriving

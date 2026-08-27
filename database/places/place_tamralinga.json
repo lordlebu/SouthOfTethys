@@ -1,0 +1,12 @@
+{
+  "id": "place_tamralinga",
+  "type": "place",
+  "name": "Tamralinga",
+  "kind": "island",
+  "description": "An island east of Jambhudweep, drawn as an outline with nothing inside it.",
+  "notes": "Drawn on the render as a dotted shape containing only a question mark -- the cartographer knowing something is there and not what. Kept as `unknown` territory rather than given content.",
+  "canon": "inferred",
+  "sources": [
+    "dump/Partial_map.png"
+  ]
+}

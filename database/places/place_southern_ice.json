@@ -1,0 +1,11 @@
+{
+  "id": "place_southern_ice",
+  "type": "place",
+  "name": "The Southern Ice",
+  "kind": "coast",
+  "description": "The frozen reaches beyond the Tethys Southern Ocean, the boundary of the known islands.",
+  "canon": "inferred",
+  "sources": [
+    "dump/Partial_map.png"
+  ]
+}

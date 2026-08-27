@@ -54,8 +54,14 @@ BUNDLE = {
 # the list below did not mention it. It was withheld in fact -- nothing added it to BUNDLE --
 # but by omission rather than by decision, which is not a thing to rely on as the lore layer
 # grows. `check_export_boundary.py` now requires every folder to be named on one side.
+#
+# `places` is the lore layer: hundreds of named locations the player will never stand in.
+# It is listed here in the commit that created the folder, which is the rule the boundary
+# check exists to enforce -- a new entity type that says nothing about which side it sits on
+# is how lore reaches the game by accident.
 NOT_EXPORTED = [
     "characters", "events", "settlements", "factions", "artifacts", "mythology", "timeline",
+    "places",
 ]
 
 # Sorts after every entity that has a source_index, so canon-only additions append.

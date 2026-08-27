@@ -58,6 +58,7 @@ PREFIX_DIRS = {
     "question_": "field_questions",
     "npc_": "npcs",
     "word_": "vocabulary",
+    "place_": "places",
 }
 
 # folder -> schema stem, where the two differ.
@@ -68,6 +69,7 @@ SCHEMA_FOR = {
     "npcs": "npc", "vocabulary": "vocabulary", "regions": "region",
     "artifacts": "artifact", "factions": "faction", "mythology": "mythology",
     "settlements": "settlement",
+    "places": "place",
 }
 
 # Values that look like ids but are not entity references.

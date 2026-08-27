@@ -1,0 +1,13 @@
+{
+  "id": "place_hyrcania",
+  "type": "place",
+  "name": "Hyrcania",
+  "kind": "unknown",
+  "continent": "mainland_asia",
+  "description": "Mountain country in the far northeast of Mainland Asia.",
+  "notes": "Marked with a question mark on the render, and kept that way. `event_naraka_portal` places Guyuk and Nirigili on the Hyrkanian steppe, so canon knows the name; the render does not agree with it well enough to call this the same ground.",
+  "canon": "inferred",
+  "sources": [
+    "dump/Partial_map.png"
+  ]
+}

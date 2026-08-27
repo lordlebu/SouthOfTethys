@@ -1,0 +1,13 @@
+{
+  "id": "place_mainland_asia",
+  "type": "place",
+  "name": "Mainland Asia",
+  "kind": "frontier",
+  "continent": "mainland_asia",
+  "description": "The northern landmass across the Tethys Sea, carrying the Saraswati valley cities.",
+  "notes": "Named on the render as a whole rather than divided. Canon models nothing on it yet; the cities below are its only entries.",
+  "canon": "inferred",
+  "sources": [
+    "dump/Partial_map.png"
+  ]
+}

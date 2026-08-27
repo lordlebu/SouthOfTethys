@@ -1,0 +1,12 @@
+{
+  "id": "place_madagascar",
+  "type": "place",
+  "name": "Madagascar",
+  "kind": "island",
+  "description": "Named south along the path to Lemuria.",
+  "notes": "From the same legible annotation. Kept because canon's own southern route names it, not because the real island is meant.",
+  "canon": "inferred",
+  "sources": [
+    "dump/Partial_map.png"
+  ]
+}

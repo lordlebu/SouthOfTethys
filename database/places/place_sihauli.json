@@ -1,0 +1,12 @@
+{
+  "id": "place_sihauli",
+  "type": "place",
+  "name": "Sihauli",
+  "kind": "city",
+  "continent": "mainland_asia",
+  "description": "The easternmost of the three named valley cities, toward the mountains.",
+  "canon": "inferred",
+  "sources": [
+    "dump/Partial_map.png"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "place_tamraparni",
+  "type": "place",
+  "name": "Tamraparni",
+  "kind": "unknown",
+  "continent": "jambhudweepa",
+  "description": "Named at the southern tip of Jambhudweep, grouped with the coastal civilizations.",
+  "notes": "Question-marked on the render.",
+  "canon": "inferred",
+  "sources": [
+    "dump/Partial_map.png"
+  ]
+}
