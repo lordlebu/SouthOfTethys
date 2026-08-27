@@ -193,7 +193,9 @@ stale anyway, because **`jekyll-gh-pages.yml` builds and deploys `./docs` exactl
 with no generation step**, while `ci.yml`'s `deploy-docs` regenerates first. Both target the
 same `github-pages` environment, so whichever ran last won -- and half the time that was the
 stale committed copy. Regenerating into a directory whose committed contents are also published
-is a race, and it had been losing. One tracked location cannot drift from itself, and both
+is a race, and it had been losing. **The rest of that mechanism was found later the same day
+and is recorded below: the two workflows did not merely race, they published different things,
+and `ci.yml` no longer deploys at all.** One tracked location cannot drift from itself, and both
 workflows now publish identical bytes in either order. `DESIGN.md`'s ruling is amended to match
 rather than quietly contradicted.
 

@@ -1,0 +1,214 @@
+# Adding a story point
+
+Everything canon holds is a **noun**. Pick the right one, write one JSON file, update the
+manifest, run the gate. Four steps, and the gate tells you if you got it wrong.
+
+If you only read one thing: **the folder you choose decides whether your writing reaches the
+game.** Nine folders are exported into the browser bundle and eight are not, and putting a
+hundred lore entries in an exported folder is the one mistake here with a cost attached.
+
+---
+
+## 1. Pick the noun
+
+| You want to write | Use | Reaches the game? |
+|---|---|---|
+| Something that happened | `events/` | no |
+| Somewhere named that a player will never stand in | `places/` | no |
+| Somewhere people live, modelled in detail | `settlements/` | no |
+| A walkable map | `field_maps/` | **yes** |
+| A spot inside a walkable map | `points_of_interest/` | **yes** |
+| A person in the history | `characters/` | no |
+| A person the player can talk to | `npcs/` | **yes** |
+| A ladder of understanding the player climbs | `discoveries/` | **yes** |
+| A question the player forms a reading of | `field_questions/` | **yes** |
+| An animal or a plant | `fauna/`, `flora/` | **yes** |
+| A word in a constructed language | `vocabulary/` | **yes** |
+| A god, a monster, a story people tell | `mythology/` | no |
+| A group | `factions/` | no |
+| An object that matters | `artifacts/` | no |
+| A country-sized area | `regions/` | **yes** |
+
+Two distinctions that are easy to get wrong:
+
+**`place` vs `point_of_interest`.** A point of interest is *inside a field map* and the player
+can walk to it — it needs a `field_map` and it ships. A place is anywhere else that has a name:
+Harappa, the Deccan, the path to Lemuria. Hundreds of those are expected. `point_of_interest`
+looks right for them because it already carries `epochs` and a description, and it is the wrong
+answer.
+
+**`character` vs `npc`.** A character is someone canon records. An NPC is someone standing on a
+map with lines to say. Kavik is a character; the people in the Lothal camp are NPCs.
+
+---
+
+## 2. Write the file
+
+One entity per file, named after its id, under the folder you picked. Ids are
+`<prefix>_snake_case` and the prefix has to match the folder — `place_harappa` in `places/`.
+
+### An event
+
+```json
+{
+  "id": "event_the_thing_that_happened",
+  "type": "event",
+  "title": "The Thing That Happened",
+  "epoch": "epoch_civilization_dawn",
+  "participants": ["character_kavik"],
+  "location": "settlement_lothal",
+  "predecessors": ["event_founding_lothal"],
+  "successors": [],
+  "causes": ["a_short_reason"],
+  "outcomes": ["what_changed"],
+  "summary": "One or two sentences. What happened, and to whom.",
+  "canon": "primary",
+  "sources": ["where this came from"]
+}
+```
+
+`location` must be an entity — a settlement, a region, a field map or a place. A bare string
+like `ironfang_mountains` used to be allowed and five of them accumulated; the linter now
+rejects it.
+
+**An edge must be stated from both ends.** If you name a successor, that event names you as a
+predecessor. Only `successors` is read when the timeline is drawn, so an edge declared on one
+side alone exists in canon and never appears in the picture.
+
+### A place
+
+```json
+{
+  "id": "place_somewhere",
+  "type": "place",
+  "name": "Somewhere",
+  "kind": "city",
+  "continent": "jambhudweepa",
+  "description": "A sentence about what it is.",
+  "notes": "What canon knows, what it does not, and where this came from.",
+  "canon": "inferred",
+  "sources": ["dump/Partial_map.png"]
+}
+```
+
+`kind` is one of a fixed list — `city`, `range`, `plains`, `desert`, `coast`, `river`, `sea`,
+`island`, `forest`, `wetland`, `plateau`, `settlement`, `frontier`, `ruin`, `route`, `unknown`.
+Coarse on purpose: the distinction that matters is a city from a mountain range.
+
+**Leave `coordinates` out** unless you know where it sits in the *post-cataclysm* world. The
+0–100 grid describes the world after the Great Shattering, and the Shattering has not been
+written, so an earlier era has no grid to sit on. Absent means "canon knows this exists and has
+not placed it", which is honest and common. See `DESIGN.md`.
+
+A place that changes across eras states its identity once and overrides only what changed:
+
+```json
+  "epochs": ["epoch_civilization_dawn", "epoch_current"],
+  "states": [
+    { "epoch": "epoch_post_cataclysm", "name": "The Drowned Gate", "status": "submerged" }
+  ]
+```
+
+### A character
+
+```json
+{
+  "id": "character_someone",
+  "type": "character",
+  "name": "Someone",
+  "culture": "harappan",
+  "species": "human",
+  "status": "living",
+  "epoch": "epoch_civilization_dawn",
+  "roles": ["what they do"],
+  "notes": "Who they are, in a few sentences.",
+  "canon": "primary",
+  "sources": ["where this came from"]
+}
+```
+
+---
+
+## 3. Update the manifest
+
+`index.json` is the count of what exists, and the linter checks it **both ways** — every id in
+it has a file, and every file is in it.
+
+```bash
+python - <<'PY'
+import json, glob, pathlib
+p = pathlib.Path("database/index.json")
+d = json.loads(p.read_text(encoding="utf-8"))
+for folder in d["counts"]:
+    d["counts"][folder] = len(glob.glob(f"database/{folder}/*.json"))
+d["version"] = "1.15.0"   # bump on each batch
+p.write_text(json.dumps(d, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+PY
+```
+
+---
+
+## 4. Run the gate
+
+```bash
+python utils/lint_story.py             # schemas, the index, every reference
+python utils/check_playability.py      # can a player actually reach it
+python utils/check_export_boundary.py  # can it reach the game by accident
+```
+
+All three run in CI and all three must pass. Then regenerate what reads canon:
+
+```bash
+python utils/generate_timeline.py
+python utils/generate_timeline_mermaid.py
+python utils/generate_atlas.py
+```
+
+`docs/` is tracked, so commit what those write. It is the published book, and tracking it is
+what makes a stale one visible in a diff rather than only on the live site.
+
+---
+
+## Things that will bite
+
+**Bumping the version moves every bundle hash.** `canon_version` is embedded in each exported
+file, so a version bump alone fails `check_export_boundary`. That is correct. Re-pin
+deliberately, in the same commit:
+
+```bash
+python utils/check_export_boundary.py --update
+```
+
+**A failure there is usually right.** It means something you wrote reached the game's data. If
+that was the intent, re-pin. If it was not, you probably put an entity in an exported folder.
+
+**Array order is load-bearing in exported folders.** The game picks species by indexing into
+per-biome lists. `source_index` decides that order and anything without one sorts last. Adding
+a species to `fauna/` or `flora/` shifts what lives on somebody's existing tile — so give new
+species a `source_index`, and never re-sort an exported folder.
+
+**A new folder must be classified.** If you add an entity type, name its folder in `BUNDLE` or
+`NOT_EXPORTED` in `utils/export_canon_bundle.py`, and in `DB_FOLDERS` in
+`services/chroma/index_chroma_service.py`, in the same commit. Three hardcoded lists, all
+checked; a folder in none of them fails the gate on purpose.
+
+**Do not put example JSON in a folder under `database/`.** Anything matching `database/*/*.json`
+is canon as far as the tooling is concerned, and a `templates/` folder would fail the boundary
+check. That is why the templates above are inline in this file.
+
+**No epoch means every era.** Silence reads as timeless, not unplaced. That is deliberate —
+it is what fauna has always meant. Name an epoch only when the thing genuinely belongs to one.
+
+**Writing a fixture rather than a story point?** Mark it `"sample": true`. Nothing that is not
+itself a sample may reference it, so it stays deletable.
+
+---
+
+## Where the reasoning lives
+
+| File | What it holds |
+|---|---|
+| `DESIGN.md` | the binding rulings — the era, the grid, what a place is |
+| `docs/decisions.md` | every call made on the project's behalf, and what is still open |
+| `database/VALIDATION.md` | what the linters check, and what they deliberately do not |
+| `database/TODO.md` | what is missing |

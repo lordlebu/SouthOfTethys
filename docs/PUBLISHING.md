@@ -29,22 +29,29 @@ wants real lat/lon that canon does not have. See `docs/canon-integrity-plan.md`.
 ## Automatic Publishing
 
 ### Triggers
-The publishing workflow runs automatically on:
 
-1. **Push to main branch** - Full publication
-2. **Push to book-publish branch** - Full publication for testing
-3. **Push to feature/* branches** - Artifact generation only (no deployment)
-4. **Pull Requests** - Validation and artifact generation for review
+**One workflow publishes the book: `jekyll-gh-pages.yml`.** It runs a real Jekyll build over
+`docs/` on any push to `main` that touches it.
+
+`ci.yml` validates and generates, and deliberately does **not** deploy. It used to, and the two
+raced for the same `github-pages` environment while publishing different things — `ci.yml`
+uploaded the directory with no build at all, so it served raw markdown and ignored `_config.yml`,
+the nav and `_includes/`. Whichever finished last decided whether the live site was a built site
+or a folder of `.md` files. See `docs/decisions.md`.
+
+`docs/` is tracked, so **what is committed is what gets published**. Regenerate before you
+commit:
+
+```bash
+python utils/generate_timeline.py
+python utils/generate_timeline_mermaid.py
+python utils/generate_atlas.py
+```
 
 ### Manual Publishing
-You can manually trigger a complete publication:
 
-1. Go to the [Actions tab](../../actions) in GitHub
-2. Select "CI" workflow
-3. Click "Run workflow"
-4. Select the branch (usually `main` or `book-publish`)
-5. Check "Publish complete book artifacts" if you want full deployment
-6. Click "Run workflow"
+Go to the [Actions tab](../../actions), select **"Deploy Jekyll with GitHub Pages dependencies
+preinstalled"**, and run it on `main`. It rebuilds from whatever `docs/` currently holds.
 
 ## Accessing Published Content
 

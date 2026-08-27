@@ -14,7 +14,11 @@ That division settles nearly every question that comes up: everything canon hold
 rather than debating it.
 
 Canon is one JSON file per entity under `database/`, validated against JSON Schema in
-`database/schemas/`. `database/index.json` is the manifest — **v1.11.0, 494 entities**.
+`database/schemas/`. `database/index.json` is the manifest — **v1.13.0, 517 entities**.
+
+**Adding anything to canon: read `database/AUTHORING.md` first.** It carries the templates and
+the one decision that matters — which folder, because nine of them reach the game and eight
+do not.
 
 ## Commands
 
@@ -23,6 +27,7 @@ python utils/lint_story.py                     # schemas, index counts, referenc
 python utils/check_playability.py              # can a player actually get to it all
 python utils/check_export_boundary.py          # can lore reach the game by accident
 python utils/generate_timeline_mermaid.py      # docs/timeline_mermaid.md, epochs and events
+python utils/generate_atlas.py                 # docs/atlas.md, canon as it stood in each era
 python utils/export_canon_bundle.py --apply    # write the game's data/canon/ bundle
 python services/api/build_deploy.py --target vercel   # bundle the retrieval service
 ```
