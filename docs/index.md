@@ -2,6 +2,16 @@
 
 _Generated from `database/events/`.
 
+## The Fang vs. Scale Wars
+**Epoch:** Prehistoric Foundations & Age of Vanaras
+**Summary:** A deep-time evolutionary conflict on Gondwana: ancestral synapsids, the Fang, against emerging diapsid archosaurs, the Scale, for ecological dominance. The gorgonopsids held the fern forests; the archosaurs took the volcanic highlands and the marshy deltas.
+**Participants:** mythology_ammonite_man, character_owlman
+
+## The Asura Gondwana Intervention
+**Epoch:** Prehistoric Foundations & Age of Vanaras
+**Summary:** An unstabilised rift into Asura Loka floods the Gondwana battlefield with mutagenic energy. The diapsids shed the heat as feathers and become the first avian dinosaurids; some synapsid predators degenerate into the shadow-corrupted lineages the Tendua descends from. The rift hardens into the Ganges Lava Sea.
+**Participants:** mythology_ammonite_man, character_owlman
+
 ## Forging of the Dragon’s Spine
 _Sample fixture — kept to exercise the tooling, not part of the story._
 **Epoch:** Deep Antiquity

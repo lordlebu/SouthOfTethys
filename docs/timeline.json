@@ -1,5 +1,65 @@
 [
   {
+    "id": "event_fang_vs_scale_wars",
+    "type": "event",
+    "title": "The Fang vs. Scale Wars",
+    "epoch": "epoch_prehistoric",
+    "participants": [
+      "mythology_ammonite_man",
+      "character_owlman"
+    ],
+    "location": "place_gondwana",
+    "predecessors": [],
+    "successors": [
+      "event_asura_gondwana_intervention"
+    ],
+    "causes": [
+      "ecological_competition",
+      "gondwana_tectonic_migration"
+    ],
+    "outcomes": [
+      "synapsid_diapsid_niche_split",
+      "mammalian_reptilian_territories_set"
+    ],
+    "summary": "A deep-time evolutionary conflict on Gondwana: ancestral synapsids, the Fang, against emerging diapsid archosaurs, the Scale, for ecological dominance. The gorgonopsids held the fern forests; the archosaurs took the volcanic highlands and the marshy deltas.",
+    "canon": "primary",
+    "sources": [
+      "dump/fang-vs-scale-wars.md",
+      "AI_CONTEXT.md"
+    ]
+  },
+  {
+    "id": "event_asura_gondwana_intervention",
+    "type": "event",
+    "title": "The Asura Gondwana Intervention",
+    "epoch": "epoch_prehistoric",
+    "participants": [
+      "mythology_ammonite_man",
+      "character_owlman"
+    ],
+    "location": "region_ganges_lava_sea",
+    "predecessors": [
+      "event_fang_vs_scale_wars"
+    ],
+    "successors": [],
+    "causes": [
+      "primordial_rift_opens",
+      "asura_loka_radiation_spill"
+    ],
+    "outcomes": [
+      "feathers_evolve_as_thermal_vents",
+      "avian_dinosaurids_arise",
+      "synapsid_lineages_corrupted",
+      "rift_stabilises_as_ganges_lava_sea"
+    ],
+    "summary": "An unstabilised rift into Asura Loka floods the Gondwana battlefield with mutagenic energy. The diapsids shed the heat as feathers and become the first avian dinosaurids; some synapsid predators degenerate into the shadow-corrupted lineages the Tendua descends from. The rift hardens into the Ganges Lava Sea.",
+    "canon": "primary",
+    "sources": [
+      "dump/fang-vs-scale-wars.md",
+      "AI_CONTEXT.md"
+    ]
+  },
+  {
     "id": "event_dragon_spine",
     "type": "event",
     "title": "Forging of the Dragon\u2019s Spine",

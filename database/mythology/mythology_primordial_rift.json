@@ -1,0 +1,22 @@
+{
+  "id": "mythology_primordial_rift",
+  "type": "mythology",
+  "name": "The War of the Teeth and the Armor",
+  "domain": [
+    "deep_time",
+    "rift",
+    "memory"
+  ],
+  "aspect": "The pre-Brahmi account of the Fang vs Scale wars, read off basalt tablets",
+  "relations": {
+    "sang_the_rifts_quiet": "mythology_ammonite_man",
+    "gathered_the_feathers": "character_owlman",
+    "remembers": "event_asura_gondwana_intervention"
+  },
+  "notes": "Fragments of stone tablets from the deep basalt strata of the Deccan, in an archaic pre-Brahmi script, describe a world split between the Warm-Blooded Ones who walked on fangs and the Sky-Eyed Birds who wore armour of scales. When the world grew too small to hold their fury a tear opened in the high heavens and spilled crimson blood that turned the rivers to boiling rock. The Ammonite Man sang a song of deep-sea silence to soothe the earth; the Owlman gathered the surviving feathers and planted them in the mountain canopies, sealing the rifts under great basalt gates. Shown on the clay seals of Mohenjodaro as a multi-headed beast clashing with a giant bird.",
+  "canon": "primary",
+  "sources": [
+    "dump/fang-vs-scale-wars.md",
+    "AI_CONTEXT.md"
+  ]
+}
