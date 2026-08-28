@@ -47,6 +47,11 @@ map with lines to say. Kavik is a character; the people in the Lothal camp are N
 One entity per file, named after its id, under the folder you picked. Ids are
 `<prefix>_snake_case` and the prefix has to match the folder — `place_harappa` in `places/`.
 
+**Every complete template below is validated against its schema by `lint_story.py`.** It has to
+be: the first version of this file told you to write `"status": "living"`, which is not one of
+the four values a character may have, and that is exactly the mistake it exists to prevent. A
+guide that can drift from the schemas is a guide that will.
+
 ### An event
 
 ```json
@@ -118,7 +123,7 @@ A place that changes across eras states its identity once and overrides only wha
   "name": "Someone",
   "culture": "harappan",
   "species": "human",
-  "status": "living",
+  "status": "alive",
   "epoch": "epoch_civilization_dawn",
   "roles": ["what they do"],
   "notes": "Who they are, in a few sentences.",

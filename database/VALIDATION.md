@@ -15,7 +15,7 @@ It is now a list of what is enforced, which is a thing that can be checked again
 
 | Check | Covers |
 |---|---|
-| **schema** | All 517 entities against 16 schemas. Every entity folder has one. |
+| **schema** | All 534 entities against 16 schemas. Every entity folder has one. |
 | **strict fields** | `additionalProperties: false` on all 16, so a misspelled `scientifc` fails by name instead of reading as absent. |
 | **index, both ways** | Every id in `index.json` has a file, every file is in `index.json`, and the per-category counts match. |
 | **epochs** | Any field whose *name* mentions an epoch resolves to `timeline/epochs.json` — not just `epoch` and `epochs`, because `epoch_founded` once sat unvalidated one field over. |
@@ -31,6 +31,8 @@ It is now a list of what is enforced, which is a thing that can be checked again
 | **overworld anchors** | The three field-map coordinates the game's overworld screen is laid out from — Lothal (28, 50), Dwarka (16, 64), Narmada (58, 20) — match `OVERWORLD_ANCHORS` in the linter. Moving one crashes nothing; it silently rescales that screen, and the geometry tests in both repositories check the arithmetic rather than the data. |
 | **whereabouts resolve** | `location` and `field_map` point at an entity that exists. Resolved by field *name*, not by id shape: the generic reference check only sees strings matching a known prefix, so a bare `ironfang_mountains` was never yielded to it. Five event locations sat in canon that way — looking exactly like references, invisible to the check that resolves references. |
 | **bestiary slug** | A species' `region` is one a region actually declares as its `bestiary_region`. Two non-geographic buckets are named in the linter as known exceptions rather than silently allowed. |
+| **unique event title** | No two events share a title, compared loosely — case, and a leading `the`/`a`/`an`, are not what makes two events different. The uniqueness check above reads `name` and an event carries `title`, so events had never been covered: a generated chapter proposed "The Shadow Pact of Saraswati" while canon held "Shadow Pact of Saraswati", same two participants, and nothing would have caught it. |
+| **guide templates** | Every complete JSON template in `database/AUTHORING.md` validates against its schema. The guide's first version told authors to write `"status": "living"` on a character, which is not one of the four values allowed — the exact mistake it exists to prevent. A document that can drift from the schemas will. |
 | **sample isolation** | An entity marked `sample: true` may be referenced by another sample and by nothing else. The Dragon's Spine episode — an event, the king, the dragon and the range — is kept as a test fixture, and this is what keeps it deletable with a four-file `git rm` instead of quietly becoming load-bearing. |
 | **event edges, both ends** | An edge stated as a `successor` is stated as a `predecessor` too, and vice versa. Only `successors` is read when the timeline is drawn, so an edge declared on the predecessor side alone exists in canon and never appears in the picture. |
 
