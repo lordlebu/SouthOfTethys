@@ -1,0 +1,15 @@
+{
+  "id": "place_kelpfang",
+  "type": "place",
+  "name": "The Kelpfang",
+  "kind": "vessel",
+  "epochs": [
+    "epoch_current"
+  ],
+  "description": "A whale-bone trawler, captained by Varuna and navigated by Mitra.",
+  "notes": "The Current Era counterpart to the Survival Train, and the setting the Varuna and Mitra entries are drawn from. Named in both of their `roles` -- Captain of the Kelpfang, Navigator of the Kelpfang -- while being nowhere in canon as a thing those roles could point at.",
+  "canon": "primary",
+  "sources": [
+    "Resonant Hearts: Intimate Chronicles Aboard the Kelpfang"
+  ]
+}

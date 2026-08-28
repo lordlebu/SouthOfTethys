@@ -1,5 +1,5 @@
 {
-  "version": "1.15.0",
+  "version": "1.15.1",
   "description": "SouthOfTethys canonical entity index",
   "counts": {
     "artifacts": 3,
@@ -13,7 +13,7 @@
     "flora": 90,
     "mythology": 6,
     "npcs": 8,
-    "places": 27,
+    "places": 29,
     "points_of_interest": 20,
     "regions": 7,
     "settlements": 2,
@@ -523,6 +523,7 @@
       "place_hyrcania",
       "place_ironfang_mountains",
       "place_jambhudweepa",
+      "place_kelpfang",
       "place_lemuria",
       "place_madagascar",
       "place_mainland_asia",
@@ -534,6 +535,7 @@
       "place_saraswati_river",
       "place_sihauli",
       "place_southern_ice",
+      "place_survival_train",
       "place_tamralinga",
       "place_tamraparni",
       "place_tethys_sea",

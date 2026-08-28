@@ -23,7 +23,7 @@
     },
     "kind": {
       "type": "string",
-      "description": "What sort of thing this is. Coarse on purpose: the distinction that matters is a city from a mountain range, not a city from a town. `plains` was added when the Hyrkanian Steppe needed a home and `frontier` would have described its politics rather than its ground.",
+      "description": "What sort of thing this is. Coarse on purpose: the distinction that matters is a city from a mountain range, not a city from a town. `plains` was added when the Hyrkanian Steppe needed a home and `frontier` would have described its politics rather than its ground. `vessel` covers a place that moves and is lived in -- the Kelpfang, the Survival Train -- because a vehicle is somewhere people are, and the Train's stated ending is that it stops and becomes a village.",
       "enum": [
         "continent",
         "city",
@@ -41,7 +41,8 @@
         "frontier",
         "ruin",
         "route",
-        "unknown"
+        "unknown",
+        "vessel"
       ]
     },
     "continent": {

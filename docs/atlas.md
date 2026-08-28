@@ -159,7 +159,7 @@ _No map for this era, deliberately._ The only coordinates canon holds belong to 
 | | dated to this era | timeless |
 |---|---:|---:|
 | regions |  | 7 |
-| places |  | 27 |
+| places | 1 | 27 |
 | settlements |  | 2 |
 | characters | 6 |  |
 | factions |  | 3 |
@@ -189,7 +189,7 @@ _No map for this era, deliberately._ The only coordinates canon holds belong to 
 | | dated to this era | timeless |
 |---|---:|---:|
 | regions |  | 7 |
-| places |  | 27 |
+| places | 1 | 27 |
 | settlements |  | 2 |
 | field maps | 3 |  |
 | points of interest | 20 |  |
