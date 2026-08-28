@@ -382,6 +382,39 @@ def main() -> int:
                 f"{path.name}: region '{value}' is not a `bestiary_region` any region declares"
             )
 
+    # --- the authoring guide's templates are real ------------------------------------
+    #
+    # `database/AUTHORING.md` hands out copy-paste JSON, and its first version told authors to
+    # write `"status": "living"` on a character -- not one of the four values the schema
+    # allows, and precisely the mistake the guide exists to prevent. Four payloads in a
+    # generated chapter failed on that same field the week it was written.
+    #
+    # A document that can drift from the schemas will. So the templates are checked against
+    # them, and a template that stops being valid fails the build rather than teaching the
+    # error to the next person. Only complete entities are checked -- the guide also shows
+    # fragments, which have no `id` and are skipped.
+    guide = BASE / "database" / "AUTHORING.md"
+    if guide.exists() and validators:
+        blocks = re.findall(r"```json\s*(\{.*?\})\s*```", guide.read_text(encoding="utf-8"), re.S)
+        checked = 0
+        for raw in blocks:
+            try:
+                payload = json.loads(raw)
+            except json.JSONDecodeError as e:
+                errors.append(f"AUTHORING.md: a template is not valid JSON -- {e}")
+                continue
+            if "id" not in payload or "type" not in payload:
+                continue
+            folder = PREFIX_DIRS.get(payload["id"].split("_")[0] + "_")
+            v = validators.get(folder)
+            if v is None:
+                continue
+            checked += 1
+            for err in sorted(v.iter_errors(payload), key=lambda e: e.path):
+                where = ".".join(str(x) for x in err.path) or "(root)"
+                errors.append(f"AUTHORING.md: the {folder} template is invalid at {where} -- {err.message}")
+        print(f"  templates  : {checked} in AUTHORING.md")
+
     # --- two events are not one event ------------------------------------------------
     #
     # The unique-name check above reads `name`, and an event carries `title`, so events were
