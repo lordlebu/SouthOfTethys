@@ -1,5 +1,5 @@
 {
-  "version": "1.17.0",
+  "version": "1.18.0",
   "description": "SouthOfTethys canonical entity index",
   "counts": {
     "artifacts": 3,
@@ -7,7 +7,7 @@
     "discoveries": 31,
     "events": 23,
     "factions": 3,
-    "fauna": 256,
+    "fauna": 257,
     "field_maps": 3,
     "field_questions": 7,
     "flora": 90,
@@ -243,6 +243,7 @@
       "fauna_gorgonopsid_pack_leader",
       "fauna_gorgonopsid_war_beast",
       "fauna_hammerhead_reef_shark",
+      "fauna_heartwood_warden",
       "fauna_high_altitude_falcon",
       "fauna_highland_desert_beetle",
       "fauna_highland_ibex",

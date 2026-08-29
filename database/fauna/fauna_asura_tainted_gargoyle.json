@@ -22,5 +22,6 @@
   "taxonomy": {
     "notes": "Māyā-born, in the shape of a Tuli. The old binomial `Tuli calcified` carried the right subject and the wrong grammar -- Tuli is a people, not a genus, and `calcified` is an English epithet of the kind canon has already replaced twice. Filed as a construct because it is made rather than born, which also settles what had been read as a devolved hominid."
   },
-  "notes": "Māyā-born construct in Tuli shape, hide calcified to stone. Nocturnal."
+  "notes": "Māyā-born construct in Tuli shape, hide calcified to stone. Nocturnal.",
+  "sentient": true
 }

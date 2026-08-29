@@ -16,5 +16,7 @@
     "docs/bestiary.md"
   ],
   "mood": "graceful",
-  "source_index": 215
+  "source_index": 215,
+  "sentient": true,
+  "subclade": "ember_born"
 }

@@ -134,7 +134,21 @@
     "construct": {
       "branch": "unliving",
       "lineage": null,
-      "label": "Construct"
+      "label": "Construct",
+      "subclades": {
+        "ember_born": {
+          "label": "Ember-born",
+          "note": "Shaped from ritual fire -- bonfire sparks, altar embers, hot ash. Short-lived and bright; the fire-brides and the sprites that scatter from a burning."
+        },
+        "clay_born": {
+          "label": "Clay-born",
+          "note": "Shaped from river mud, silt and what the water leaves. The golem sense of the word: given a body and a task, and animated by mantra rather than by breath."
+        },
+        "forest_born": {
+          "label": "Forest-born",
+          "note": "Shaped from what a forest is made of -- heartwood, leaf-mould, spore and sap. The slowest of the three, and the only one that goes on growing after it is made."
+        }
+      }
     },
     "spectre": {
       "branch": "unliving",

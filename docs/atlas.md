@@ -22,7 +22,7 @@ Each era below is canon as it stood then. An entity that names no epoch is prese
 | events | 3 |  |
 | artifacts |  | 3 |
 | mythology |  | 6 |
-| fauna |  | 256 |
+| fauna |  | 257 |
 | flora |  | 90 |
 
 ### Events
@@ -56,7 +56,7 @@ _No map for this era, deliberately._ The only coordinates canon holds belong to 
 | events | 2 |  |
 | artifacts |  | 3 |
 | mythology |  | 6 |
-| fauna |  | 256 |
+| fauna |  | 257 |
 | flora |  | 90 |
 
 ### Events
@@ -87,7 +87,7 @@ _No map for this era, deliberately._ The only coordinates canon holds belong to 
 | events | 5 |  |
 | artifacts |  | 3 |
 | mythology |  | 6 |
-| fauna |  | 256 |
+| fauna |  | 257 |
 | flora |  | 90 |
 
 ### Events
@@ -123,7 +123,7 @@ _No map for this era, deliberately._ The only coordinates canon holds belong to 
 | events | 11 |  |
 | artifacts |  | 3 |
 | mythology |  | 6 |
-| fauna |  | 256 |
+| fauna |  | 257 |
 | flora |  | 90 |
 
 ### Events
@@ -175,7 +175,7 @@ _No map for this era, deliberately._ The only coordinates canon holds belong to 
 | events | 1 |  |
 | artifacts |  | 3 |
 | mythology |  | 6 |
-| fauna |  | 256 |
+| fauna |  | 257 |
 | flora |  | 90 |
 
 ### Events
@@ -210,7 +210,7 @@ _No map for this era, deliberately._ The only coordinates canon holds belong to 
 | discoveries | 31 |  |
 | field questions | 7 |  |
 | vocabulary | 8 |  |
-| fauna |  | 256 |
+| fauna |  | 257 |
 | flora |  | 90 |
 
 ### Events

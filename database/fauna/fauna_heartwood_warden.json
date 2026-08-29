@@ -1,0 +1,23 @@
+{
+  "id": "fauna_heartwood_warden",
+  "type": "fauna",
+  "name": "Heartwood Warden",
+  "scientific": "Homunculus silvaticus",
+  "clade": "construct",
+  "subclade": "forest_born",
+  "sentient": true,
+  "biomes": [
+    "forest",
+    "wetland"
+  ],
+  "placement": "lore",
+  "rarity": "rare",
+  "mood": "patient",
+  "journal_prompt": "It has not moved since you sat down. You are no longer certain it is a tree.",
+  "notes": "A maya-born shaped from heartwood, leaf-mould, spore and sap rather than from mud or fire. Slower than either, and the only one of the three that keeps growing after it is made -- an old warden is indistinguishable from the wood it stands in until it turns its head. Sentient, like the rest of the maya-born: a person made of forest, not an animal shaped like one.",
+  "canon": "primary",
+  "sources": [
+    "Asura and maya-born rulings, 2026-08-27"
+  ],
+  "placement_note": "Exists in canon and does not spawn. Making it an encounter would add it to the forest and wetland pools, which changes what a player meets on tiles they have already walked -- a game decision rather than a lore one. The Asura-Tainted Gargoyle is filed the same way. Promote it deliberately when the spawn change is wanted."
+}
