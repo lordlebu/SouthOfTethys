@@ -156,6 +156,25 @@ two disagreed and the lint blamed the entity you had just written. It also hid a
 `places` had a count and no id list at all, so the both-directions check never ran on it and 24
 entities went unverified against the manifest.
 
+## Drafting a whole chapter at once
+
+If a chapter arrives as one document -- prose with JSON blocks in it, which is how every
+chapter so far has arrived -- check it before writing anything:
+
+```bash
+python utils/ingest_draft.py dump/my-chapter.md
+python utils/ingest_draft.py dump/my-chapter.md --apply    # writes, if clean
+```
+
+It reads every fenced JSON block and reports per entity: schema errors, id collisions with
+canon, epochs that are not declared, references to things that do not exist, cultures that are
+not declared, event titles that duplicate one canon already has, and successor edges that run
+backwards through time. `--apply` refuses while anything is wrong.
+
+**Every check in it is one that a real chapter got wrong.** Four arrived already structured and
+already broken, and three of the four stated they were schema-compliant with all references
+resolving. The tool exists because reading the claim is not the same as checking it.
+
 ## 4. Run the gate
 
 ```bash
