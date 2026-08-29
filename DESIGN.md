@@ -157,6 +157,26 @@ Cataclysm will be written into when somebody writes it.
 Reversing this is cheap in a way the y-axis ruling was not: nothing has been entered against
 it. That is the whole argument for waiting.
 
+**The Great Shattering has no event, and is not going to get one.** Settled 2026-08-27.
+
+Canon holds the Shattering's *consequences* everywhere — a drowned Dwarka, a half-buried
+Lothal, a hollow university, a lava sea where a river was — and deliberately holds no account
+of the thing itself. It is what the player works out by playing: a slow drip across
+discoveries, which are the ladder of understanding the game is built on, rather than a
+paragraph canon hands over at the start.
+
+This is why `event_the_great_shattering` does not exist. A generated chapter has already
+proposed it once, as a predecessor for the Survival Train story, and an edge to an unwritten
+event is not an edge. **If a document offers to author it, the answer is no.** The mystery is
+load-bearing: the game's whole mechanic is arriving at an understanding, and an era whose
+central catastrophe is stated up front has nothing left to arrive at.
+
+Two things follow. Earlier eras have no map not because somebody has yet to write the
+Shattering, but because the shape of the world before it is part of what is being withheld —
+and the atlas says so rather than promising a map later. And the drip belongs in
+`discoveries/`, which *is* exported, because the player is meant to find it. That is the one
+place this lore is supposed to reach the game.
+
 ## Contribution Rule
 
 New lore → JSON entity under `database/` with stable ID + update `index.json`.

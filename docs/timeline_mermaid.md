@@ -14,11 +14,11 @@ timeline
     section Era of Human Migrations
         50K – 5K years ago : Aravali Massacre & Sanctuary : The Botai Cattle Raid : The Jharwa First-Wave & The Shell Pact : Opening of the Naraka Lok Portal : The Retreat of Owlman
     section Civilization Dawn (Lothal Era)
-        c. 3000 – 500 BCE : The Storm-Bone Khan's Warning at Lothal : The Wandering of the Narmada Seed-Mind : Silvershore War : Founding of Lothal : Black Lotus Siege : The Stone Pact : Tendua Crisis and Assassination of Kavik : Retrieval of the Mask of Harappa : Exile of Shaashak and Khadi : Birth of Sarita Silversong
+        c. 3000 – 500 BCE : The Final Voyage of the Kelpfang : The Storm-Bone Khan's Warning at Lothal : The Wandering of the Narmada Seed-Mind : Silvershore War : Founding of Lothal : Black Lotus Siege : The Stone Pact : Tendua Crisis and Assassination of Kavik : Retrieval of the Mask of Harappa : Exile of Shaashak and Khadi : Birth of Sarita Silversong
     section Current Era (Age of Machinery)
         ~1920s equivalent : The Antarctic Ice Wall Expedition
     section Post-Cataclysmic Era (The Great Shattering)
-        after the Collapse : (no events recorded yet)
+        after the Collapse : The Solarpunk Odyssey of the Ark
 ```
 
 ## The events, by cause
@@ -44,40 +44,40 @@ graph TD
         E9["The Retreat of Owlman"]
     end
     subgraph epoch_civilization_dawn["Civilization Dawn (Lothal Era)"]
-        E10["The Storm-Bone Khan's Warning at Lothal"]
-        E11["The Wandering of the Narmada Seed-Mind"]
-        E12["Silvershore War"]
-        E13["Founding of Lothal"]
-        E14["Black Lotus Siege"]
-        E15["The Stone Pact"]
-        E16["Tendua Crisis and Assassination of Kavik"]
-        E17["Retrieval of the Mask of Harappa"]
-        E18["Exile of Shaashak and Khadi"]
-        E19["Birth of Sarita Silversong"]
+        E10["The Final Voyage of the Kelpfang"]
+        E11["The Storm-Bone Khan's Warning at Lothal"]
+        E12["The Wandering of the Narmada Seed-Mind"]
+        E13["Silvershore War"]
+        E14["Founding of Lothal"]
+        E15["Black Lotus Siege"]
+        E16["The Stone Pact"]
+        E17["Tendua Crisis and Assassination of Kavik"]
+        E18["Retrieval of the Mask of Harappa"]
+        E19["Exile of Shaashak and Khadi"]
+        E20["Birth of Sarita Silversong"]
     end
     subgraph epoch_current["Current Era (Age of Machinery)"]
-        E20["The Antarctic Ice Wall Expedition"]
+        E21["The Antarctic Ice Wall Expedition"]
+    end
+    subgraph epoch_post_cataclysm["Post-Cataclysmic Era (The Great Shattering)"]
+        E22["The Solarpunk Odyssey of the Ark"]
     end
     E0 --> E1
     E1 --> E2
     E2 --> E7
     E6 --> E8
     E7 --> E9
-    E8 --> E10
-    E10 --> E16
-    E10 --> E11
-    E12 --> E14
-    E12 --> E13
+    E8 --> E11
+    E11 --> E17
+    E11 --> E12
     E13 --> E15
     E13 --> E14
+    E14 --> E16
     E14 --> E15
     E15 --> E16
     E16 --> E17
-    E16 --> E18
     E17 --> E18
+    E17 --> E19
     E18 --> E19
+    E19 --> E20
 ```
-
-## Epochs with no events yet
-
-- **Post-Cataclysmic Era (The Great Shattering)** — after the Collapse

@@ -53,6 +53,11 @@ _Sample fixture — kept to exercise the tooling, not part of the story._
 **Summary:** As the horse-taming Vedda clans clear the central forests for pasture, the ancient avian guardian Owlman retreats deep into the Western Ghats. A reclusive group of Jharwa-Vanara outliers construct the first hidden tree-temples to protect his fading presence.
 **Participants:** character_owlman
 
+## The Final Voyage of the Kelpfang
+**Epoch:** Civilization Dawn (Lothal Era)
+**Summary:** The historical chronicle of the living outrigger Kelpfang's final sea voyage. Crewed by the Tamra-Veil Wardens, the ship rescued refugees from the Lundish eruption, weathered a catastrophic stone resonance event, and was eventually dismantled to plant peaceful coastal settlements.
+**Participants:** character_lirael_wavecaller, character_sirael_thorncurrent, character_korran_driftwood_seer, character_the_traveler, character_elara_voss, character_radiant_gentleman
+
 ## The Storm-Bone Khan's Warning at Lothal
 **Epoch:** Civilization Dawn (Lothal Era)
 **Summary:** Working the fringes of the Harappan settlement, Guyuk warns Shaashak of the coming Tendua Manticore days before it strikes, teaches Mehme to read the coastal winds at Dwarka, and cuts a warning about the salt devourer into a boundary tree before going.
@@ -107,3 +112,8 @@ _Sample fixture — kept to exercise the tooling, not part of the story._
 **Epoch:** Current Era (Age of Machinery)
 **Summary:** Bound to mortal bodies, Captain Varuna and his companion Mitra lead a whale-bone trawler into the freezing southern waters of the Tethys. Trapped in a glacial maze, Varuna's drive to ram through the ice wall clashes with the Ammonite Man's drive to preserve it as a memory archive, resolved only when Mitra mediates a silent, drifting passage.
 **Participants:** character_varuna, character_mitra, mythology_ammonite_man
+
+## The Solarpunk Odyssey of the Ark
+**Epoch:** Post-Cataclysmic Era (The Great Shattering)
+**Summary:** Aboard the colossal greenhouse train, Varuna and Mitra guide human survivors across the wild grasslands of post-cataclysmic Jambhudweepa. Moving through scarcity and storms, they gather refugees and eventually halt the train to construct a permanent, restorative solarpunk community.
+**Participants:** character_varuna, character_mitra, character_guyuk

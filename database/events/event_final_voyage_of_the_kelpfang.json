@@ -1,0 +1,32 @@
+{
+  "id": "event_final_voyage_of_the_kelpfang",
+  "type": "event",
+  "title": "The Final Voyage of the Kelpfang",
+  "epoch": "epoch_civilization_dawn",
+  "participants": [
+    "character_lirael_wavecaller",
+    "character_sirael_thorncurrent",
+    "character_korran_driftwood_seer",
+    "character_the_traveler",
+    "character_elara_voss",
+    "character_radiant_gentleman"
+  ],
+  "location": "place_island_of_lund",
+  "predecessors": [],
+  "successors": [],
+  "causes": [
+    "The ongoing threat of the Tamra-Veils fracturing reality in the southern Tethys Sea",
+    "The urgent mission to retrieve a second Voice-Stone from Lund to form a resonant balancing pair"
+  ],
+  "outcomes": [
+    "The successful rescue of the Lundish refugees led by Elara Voss",
+    "The death of Korran and subsequent dissolution of the Radiant Gentleman to ground the double resonance",
+    "The pregnancy of Sirael and Elara, leading to the decision to disband and dismantle the ship",
+    "Repurposing the living coral-and-wood hull of the Kelpfang to construct homes in the southern lagoons"
+  ],
+  "summary": "The historical chronicle of the living outrigger Kelpfang's final sea voyage. Crewed by the Tamra-Veil Wardens, the ship rescued refugees from the Lundish eruption, weathered a catastrophic stone resonance event, and was eventually dismantled to plant peaceful coastal settlements.",
+  "canon": "primary",
+  "sources": [
+    "Resonant Hearts: Intimate Chronicles Aboard the Kelpfang"
+  ]
+}

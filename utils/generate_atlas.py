@@ -23,10 +23,11 @@ Three views per era, and they deliberately do not share a renderer:
 three field maps are the only coordinates canon holds, and their layout is cataclysm-shaped by
 `field_map.schema.json`'s own account -- it describes the world after the Collapse.
 
-The reason not to just author earlier coordinates is that **the Cataclysm has not been
-written**. Its epoch is one paragraph marked `status: authoring` with no events in it, so
-deriving a *before* would mean inventing the shape of the catastrophe in order to place cities
-relative to it. Ruling in DESIGN.md, 2026-08-27.
+Earlier eras are not drawn, and not because anybody is behind on writing. **The Great
+Shattering is withheld on purpose**: canon keeps its consequences and not its account, because
+working it out is what the player is there to do. The shape of the world before it is part of
+what is being withheld, so the map is absent by design rather than pending. Ruling in
+DESIGN.md, 2026-08-27.
 
     python utils/generate_atlas.py                          # every era
     python utils/generate_atlas.py --era epoch_post_cataclysm
@@ -260,11 +261,12 @@ def main() -> int:
                 "",
                 "_No map for this era, deliberately._ The only coordinates canon holds belong to "
                 "the three field maps, and their layout describes the world *after* the Great "
-                "Shattering. Earlier eras are not drawn because **the Cataclysm has not been "
-                "written yet** — deriving a before from an unwritten after would mean inventing "
-                "the shape of the catastrophe in order to place cities relative to it. The "
-                "timeline, events and census above are everything canon actually knows about this "
-                "era. See `DESIGN.md`.",
+                "Shattering. Earlier eras are not drawn because **the Shattering is withheld on "
+                "purpose** — canon keeps its consequences and not its account, since working it "
+                "out is what the player is there to do, and the shape of the world before it is "
+                "part of what is being withheld. Absent by design rather than pending. The "
+                "timeline, events and census above are everything canon states about this era. "
+                "See `DESIGN.md`.",
                 "",
             ]
 

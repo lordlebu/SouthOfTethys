@@ -285,6 +285,19 @@ there, the workflow is green, the page returns 200. Only fetching the built page
 elements shows it. Both shapes are handled now, and the lesson is the one this project keeps
 relearning — a check that cannot fail is not a check, and neither is a fix nobody looked at.
 
+**The Great Shattering stays a mystery** (decided 2026-08-27). No `event_the_great_shattering`,
+now or later. Canon keeps the consequences and withholds the account: the player works it out by
+playing, dripped through `discoveries`, which is the mechanic the whole game is built on.
+
+This reverses the recommendation that had been standing here. Writing the Shattering was being
+called the keystone — the one authoring job that would unblock maps for five eras. It would also
+have spent the central mystery of the era the game is set in, to gain a map. The trade is bad and
+the withholding is the point.
+
+It also settles the atlas ruling properly. Early eras get no map, and the reason is no longer
+"nobody has written the *before* yet" — it is that the *before* is part of what the player is
+meant to piece together. Nothing is pending; the page says so.
+
 **The landmark loop stays** (decided 2026-08-13). The compass bearing to a great banyan and the
 arrival page it ends in predate points of interest, and there are now two notions of arriving
 somewhere. Retiring the older one was offered three times and declined: it is the shape the

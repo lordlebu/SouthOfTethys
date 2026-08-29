@@ -23,7 +23,7 @@
     },
     "kind": {
       "type": "string",
-      "description": "What sort of thing this is. Coarse on purpose: the distinction that matters is a city from a mountain range, not a city from a town. `plains` was added when the Hyrkanian Steppe needed a home and `frontier` would have described its politics rather than its ground.",
+      "description": "What sort of thing this is. Coarse on purpose: the distinction that matters is a city from a mountain range, not a city from a town. `plains` was added when the Hyrkanian Steppe needed a home and `frontier` would have described its politics rather than its ground. `vessel` covers a place that moves and is lived in -- the Kelpfang, the Survival Train -- because a vehicle is somewhere people are, and the Train's stated ending is that it stops and becomes a village.",
       "enum": [
         "continent",
         "city",
@@ -41,7 +41,8 @@
         "frontier",
         "ruin",
         "route",
-        "unknown"
+        "unknown",
+        "vessel"
       ]
     },
     "continent": {
@@ -54,7 +55,7 @@
     },
     "coordinates": {
       "type": "object",
-      "description": "Position on the same abstract 0-100 grid the field maps use.\n\nThat grid is not geography. `field_map.schema.json` states it plainly: the layout is cataclysm-shaped, the delta maps cluster in the surviving southwest, and distance encodes how much of the world was lost. It describes the world *after* the Shattering.\n\nSo a coordinate here is a claim about one era, not about where somewhere sits forever. A place whose position is the same before and after the Collapse states it once at the top level. A place the Shattering moved states the later one in `states` -- the world fractured along tectonic and dimensional boundaries at once, and things did not stay put.\n\nAbsent means canon knows the place exists and has not placed it, which is honest and common. Everything read off dump/Partial_map.png is in that position today: the render shows a living Harappa and a standing university, so it depicts a pre-cataclysm world, and the only grid canon has is the post-cataclysm one. An atlas leaves an unplaced place out rather than dropping it at a corner.",
+      "description": "Position on the same abstract 0-100 grid the field maps use.\n\nThat grid is not geography. `field_map.schema.json` states it plainly: the layout is cataclysm-shaped, the delta maps cluster in the surviving southwest, and distance encodes how much of the world was lost. It describes the world *after* the Shattering.\n\nSo a coordinate here is a claim about one era, not about where somewhere sits forever. A place whose position is the same before and after the Collapse states it once at the top level. A place the Shattering moved states the later one in `states` -- the world fractured along tectonic and dimensional boundaries at once, and things did not stay put.\n\nAbsent means canon knows the place exists and has not placed it, which is honest and common. Everything read off dump/Partial_map.png is in that position today: the render shows a living Harappa and a standing university, so it depicts a pre-cataclysm world, and the only grid canon has is the post-cataclysm one. That gap is deliberate rather than pending -- see the Shattering ruling in DESIGN.md. An atlas leaves an unplaced place out rather than dropping it at a corner.",
       "required": [
         "x",
         "y"
@@ -103,7 +104,7 @@
           },
           "coordinates": {
             "type": "object",
-            "description": "Where the place sits in this era, if the Shattering moved it.\n\nUnused today, and deliberately: the Great Shattering has not been written. Its epoch is one paragraph marked `status: authoring` with no events in it, so there is nothing to say what moved or how far. This field is where that goes when somebody writes it, and until then no place carries coordinates in any era but the last.\n\nIt is the reason coordinates are allowed to vary at all: a city does not move, but a continent that fractures along tectonic and dimensional boundaries takes its cities with it.",
+            "description": "Where the place sits in this era, if the Shattering moved it.\n\nUnused, and likely to stay that way. The Great Shattering is withheld on purpose -- canon keeps its consequences and not its account, because working it out is what the player is there to do. So there is no statement of what moved or how far, and there is not going to be one in `events`.\n\nThe field remains because it is the honest shape: a city does not move, but a continent that fractures takes its cities with it. If the drip through `discoveries` ever establishes where something stood before, this is where that goes.",
             "required": [
               "x",
               "y"

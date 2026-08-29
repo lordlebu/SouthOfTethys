@@ -1,0 +1,28 @@
+{
+  "id": "event_survival_train_solarpunk",
+  "type": "event",
+  "title": "The Solarpunk Odyssey of the Ark",
+  "epoch": "epoch_post_cataclysm",
+  "participants": [
+    "character_varuna",
+    "character_mitra",
+    "character_guyuk"
+  ],
+  "location": "place_grassland_sanctuary",
+  "predecessors": [],
+  "successors": [],
+  "causes": [
+    "The global flooding and geographic fragmentation of Jambhudweepa following the Great Shattering",
+    "The urgent need to gather and protect displaced human survivors across the wild grasslands"
+  ],
+  "outcomes": [
+    "The successful preservation of human crafting, medical, and agricultural knowledge",
+    "The peaceful integration of former rivals (Harappan, Kia, and Steppe Nomads) under a shared survival covenant",
+    "The permanent halt and transformation of the Survival Train into the town center of a flourishing solarpunk village"
+  ],
+  "summary": "Aboard the colossal greenhouse train, Varuna and Mitra guide human survivors across the wild grasslands of post-cataclysmic Jambhudweepa. Moving through scarcity and storms, they gather refugees and eventually halt the train to construct a permanent, restorative solarpunk community.",
+  "canon": "primary",
+  "sources": [
+    "The Ark of Epoch 5: A Solarpunk Odyssey"
+  ]
+}

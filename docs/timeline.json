@@ -297,6 +297,38 @@
     ]
   },
   {
+    "id": "event_final_voyage_of_the_kelpfang",
+    "type": "event",
+    "title": "The Final Voyage of the Kelpfang",
+    "epoch": "epoch_civilization_dawn",
+    "participants": [
+      "character_lirael_wavecaller",
+      "character_sirael_thorncurrent",
+      "character_korran_driftwood_seer",
+      "character_the_traveler",
+      "character_elara_voss",
+      "character_radiant_gentleman"
+    ],
+    "location": "place_island_of_lund",
+    "predecessors": [],
+    "successors": [],
+    "causes": [
+      "The ongoing threat of the Tamra-Veils fracturing reality in the southern Tethys Sea",
+      "The urgent mission to retrieve a second Voice-Stone from Lund to form a resonant balancing pair"
+    ],
+    "outcomes": [
+      "The successful rescue of the Lundish refugees led by Elara Voss",
+      "The death of Korran and subsequent dissolution of the Radiant Gentleman to ground the double resonance",
+      "The pregnancy of Sirael and Elara, leading to the decision to disband and dismantle the ship",
+      "Repurposing the living coral-and-wood hull of the Kelpfang to construct homes in the southern lagoons"
+    ],
+    "summary": "The historical chronicle of the living outrigger Kelpfang's final sea voyage. Crewed by the Tamra-Veil Wardens, the ship rescued refugees from the Lundish eruption, weathered a catastrophic stone resonance event, and was eventually dismantled to plant peaceful coastal settlements.",
+    "canon": "primary",
+    "sources": [
+      "Resonant Hearts: Intimate Chronicles Aboard the Kelpfang"
+    ]
+  },
+  {
     "id": "event_guyuk_lothal_warning",
     "type": "event",
     "title": "The Storm-Bone Khan's Warning at Lothal",
@@ -640,6 +672,34 @@
     "canon": "primary",
     "sources": [
       "Resonant Hearts: Intimate Chronicles Aboard the Kelpfang"
+    ]
+  },
+  {
+    "id": "event_survival_train_solarpunk",
+    "type": "event",
+    "title": "The Solarpunk Odyssey of the Ark",
+    "epoch": "epoch_post_cataclysm",
+    "participants": [
+      "character_varuna",
+      "character_mitra",
+      "character_guyuk"
+    ],
+    "location": "place_grassland_sanctuary",
+    "predecessors": [],
+    "successors": [],
+    "causes": [
+      "The global flooding and geographic fragmentation of Jambhudweepa following the Great Shattering",
+      "The urgent need to gather and protect displaced human survivors across the wild grasslands"
+    ],
+    "outcomes": [
+      "The successful preservation of human crafting, medical, and agricultural knowledge",
+      "The peaceful integration of former rivals (Harappan, Kia, and Steppe Nomads) under a shared survival covenant",
+      "The permanent halt and transformation of the Survival Train into the town center of a flourishing solarpunk village"
+    ],
+    "summary": "Aboard the colossal greenhouse train, Varuna and Mitra guide human survivors across the wild grasslands of post-cataclysmic Jambhudweepa. Moving through scarcity and storms, they gather refugees and eventually halt the train to construct a permanent, restorative solarpunk community.",
+    "canon": "primary",
+    "sources": [
+      "The Ark of Epoch 5: A Solarpunk Odyssey"
     ]
   }
 ]

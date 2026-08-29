@@ -1,0 +1,18 @@
+{
+  "id": "character_korran_driftwood_seer",
+  "type": "character",
+  "name": "Korran Driftwood Seer",
+  "culture": "tuli",
+  "species": "human",
+  "status": "deceased",
+  "epoch": "epoch_civilization_dawn",
+  "roles": [
+    "Elder Mystic of the Tamra-Veil Wardens",
+    "Keeper of the Heart-Stone"
+  ],
+  "notes": "An elderly seer whose spirit was deeply linked to the geothermal memories of the Lingam stones. He accepted his death with peaceful dignity during the double-resonance event of Lund, leaving behind a legacy of perfect cosmic balance.",
+  "canon": "primary",
+  "sources": [
+    "Resonant Hearts: Intimate Chronicles Aboard the Kelpfang"
+  ]
+}

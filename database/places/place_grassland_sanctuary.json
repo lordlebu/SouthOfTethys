@@ -1,0 +1,13 @@
+{
+  "id": "place_grassland_sanctuary",
+  "type": "place",
+  "name": "Grassland Sanctuary",
+  "kind": "settlement",
+  "continent": "jambhudweepa",
+  "description": "The thriving, cozy solarpunk village built around the permanently parked Survival Train.",
+  "notes": "Marks the final destination of the Ark of Civilization. The train carriages serve as a communal town center, surrounded by active grain fields, fruit orchards, and solar-power arrays.",
+  "canon": "primary",
+  "sources": [
+    "The Ark of Epoch 5: A Solarpunk Odyssey"
+  ]
+}

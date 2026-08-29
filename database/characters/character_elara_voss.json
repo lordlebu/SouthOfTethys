@@ -1,0 +1,18 @@
+{
+  "id": "character_elara_voss",
+  "type": "character",
+  "name": "Elara Voss",
+  "culture": "lundish",
+  "species": "human",
+  "status": "alive",
+  "epoch": "epoch_civilization_dawn",
+  "roles": [
+    "Leader of the Lundish Refugees",
+    "Mother of the Bridge-Child"
+  ],
+  "notes": "A resilient survivor who led her people away from the destruction of the island of Lund. To stabilize the catastrophic double resonance of the stones, she and Korran shared a fully clothed, highly focused meditative Yab Yum ritual, resulting in the birth of her marked 'bridge-child.'",
+  "canon": "primary",
+  "sources": [
+    "Resonant Hearts: Intimate Chronicles Aboard the Kelpfang"
+  ]
+}

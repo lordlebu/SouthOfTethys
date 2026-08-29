@@ -101,9 +101,15 @@ side alone exists in canon and never appears in the picture.
 Coarse on purpose: the distinction that matters is a city from a mountain range.
 
 **Leave `coordinates` out** unless you know where it sits in the *post-cataclysm* world. The
-0–100 grid describes the world after the Great Shattering, and the Shattering has not been
-written, so an earlier era has no grid to sit on. Absent means "canon knows this exists and has
-not placed it", which is honest and common. See `DESIGN.md`.
+0–100 grid describes the world after the Great Shattering, and the shape of the world before it
+is deliberately withheld — the player is meant to work the Shattering out by playing. Absent
+means "canon knows this exists and has not placed it", which is honest and common. See
+`DESIGN.md`.
+
+**Do not author `event_the_great_shattering`.** A generated chapter has already offered to, as
+a predecessor for the Survival Train story. Canon keeps the Shattering's consequences and not
+its account, on purpose: it is the mystery the game exists to arrive at, and it reaches the
+player as a slow drip through `discoveries` rather than as a paragraph in `events`.
 
 A place that changes across eras states its identity once and overrides only what changed:
 
