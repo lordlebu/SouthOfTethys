@@ -1,0 +1,23 @@
+{
+  "id": "character_guyuk_reborn",
+  "type": "character",
+  "name": "Guyuk the Seed-Gleaner",
+  "epithets": [
+    "The Seed-Gleaner",
+    "Keeper of Steppe-Seeds"
+  ],
+  "culture": "narmada_survivor",
+  "species": "human",
+  "status": "alive",
+  "epoch": "epoch_post_cataclysm",
+  "reincarnation_of": "character_guyuk",
+  "roles": [
+    "gleaner",
+    "threshold_bearer"
+  ],
+  "notes": "The Storm-Bone Khan reborn aboard the Survival Train, carrying the same seed-mind she carried out of the Konkan hills. She tends the greenhouse saplings and works the blasted savanna soil back into something that grows. She does not remember being a nomad; the seed-mind remembers for her.",
+  "canon": "secondary",
+  "sources": [
+    "dump/guyuk-reincarnation-and-timeline-fix.md"
+  ]
+}

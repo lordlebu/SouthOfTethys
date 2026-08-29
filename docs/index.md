@@ -12,12 +12,12 @@ _Generated from `database/events/`.
 ## The Fang vs. Scale Wars
 **Epoch:** Prehistoric Foundations & Age of Vanaras
 **Summary:** A deep-time evolutionary conflict on Gondwana: ancestral synapsids, the Fang, against emerging diapsid archosaurs, the Scale, for ecological dominance. The gorgonopsids held the fern forests; the archosaurs took the volcanic highlands and the marshy deltas.
-**Participants:** mythology_ammonite_man, character_owlman
+**Participants:** character_ammonite_man, character_owlman
 
 ## The Asura Gondwana Intervention
 **Epoch:** Prehistoric Foundations & Age of Vanaras
 **Summary:** An unstabilised rift into Asura Loka floods the Gondwana battlefield with mutagenic energy. The diapsids shed the heat as feathers and become the first avian dinosaurids; some synapsid predators degenerate into the shadow-corrupted lineages the Tendua descends from. The rift hardens into the Ganges Lava Sea.
-**Participants:** mythology_ammonite_man, character_owlman
+**Participants:** character_ammonite_man, character_owlman
 
 ## The Great Devolvement
 **Epoch:** Prehistoric Foundations & Age of Vanaras
@@ -58,7 +58,7 @@ _Sample fixture — kept to exercise the tooling, not part of the story._
 ## The Jharwa First-Wave & The Shell Pact
 **Epoch:** Era of Human Migrations
 **Summary:** During the Pleistocene Glaciation, the Jharwa cave-painters cross the Tethys Sea to Jambhudweepa. Landing in the Saraswati Delta, Elder Repa establishes the Shell Pact with the Ammonite Man, trading spiral conches for safe passage through the deep channels.
-**Participants:** character_jharwa_elder_repa, mythology_ammonite_man
+**Participants:** character_jharwa_elder_repa, character_ammonite_man
 
 ## Opening of the Naraka Lok Portal
 **Epoch:** Era of Human Migrations
@@ -133,7 +133,7 @@ _Sample fixture — kept to exercise the tooling, not part of the story._
 ## The Antarctic Ice Wall Expedition
 **Epoch:** Current Era (Age of Machinery)
 **Summary:** Bound to mortal bodies, Captain Varuna and his companion Mitra lead a whale-bone trawler into the freezing southern waters of the Tethys. Trapped in a glacial maze, Varuna's drive to ram through the ice wall clashes with the Ammonite Man's drive to preserve it as a memory archive, resolved only when Mitra mediates a silent, drifting passage.
-**Participants:** character_varuna, character_mitra, mythology_ammonite_man
+**Participants:** character_varuna, character_mitra, character_ammonite_man
 
 ## The Narmada Upriver Expedition
 **Epoch:** Current Era (Age of Machinery)
@@ -148,4 +148,4 @@ _Sample fixture — kept to exercise the tooling, not part of the story._
 ## The Solarpunk Odyssey of the Ark
 **Epoch:** Post-Cataclysmic Era (The Great Shattering)
 **Summary:** Aboard the colossal greenhouse train, Varuna and Mitra guide human survivors across the wild grasslands of post-cataclysmic Jambhudweepa. Moving through scarcity and storms, they gather refugees and eventually halt the train to construct a permanent, restorative solarpunk community.
-**Participants:** character_varuna, character_mitra, character_guyuk
+**Participants:** character_varuna, character_mitra, character_guyuk_reborn

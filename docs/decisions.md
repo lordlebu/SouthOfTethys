@@ -248,6 +248,51 @@ happens there and its three participants are dated to the Current era and the Mi
 walking into the era after the Shattering is the game's whole premise. A character is in an era
 if canon dates them to it *or* they are present at something in it.
 
+**The Prehistoric era gets no map** (decided 2026-08-29, by the owner: *"way too old"*).
+`dump/Partial_map.png` shows a living Harappa and a standing university -- it is a picture of the
+Civilization Dawn world, and the 0-100 grid traced off it describes that arrangement. The Age of
+Vanaras predates every landmark the map is built from, so placing anything on it would claim a
+geography canon does not have. The census still lists what the era holds; only the picture is
+withheld. This is a stronger state than the Post-Cataclysm's, which still draws its points
+because the three field-map anchors genuinely are cataclysm-shaped -- that era has lost its
+coastline, not its arrangement.
+
+**Guyuk is two lives** (decided 2026-08-29, by the owner). One character was a participant in
+events four epochs apart: a teenage Tushara nomad in the Migrations, and a passenger on the
+Survival Train after the Shattering. `character_guyuk` keeps the Migrations and Civilization
+Dawn, and `character_guyuk_reborn` -- Guyuk the Seed-Gleaner -- carries the same seed-mind into
+the Post-Cataclysm, linked by a new `reincarnation_of` field.
+
+Deliberately **not** a key under `relations`, which is kinship. A rebirth is not a relative: the
+Seed-Gleaner is not descended from the Storm-Bone Khan, she is her.
+
+The document proposing this stated two reasons that are not true, and they are worth recording so
+they are not re-derived. It said the overlap "fails the project's story-pathway and playability
+compilers" -- `check_playability.py` passed before the change and after it. And it said it had
+removed a forbidden `event_the_great_shattering` from the timeline; that event has never existed
+in canon. The change is worth making on story grounds, which is the reason that survives: canon
+should say whether it means one long life or two.
+
+Only one event actually changed. The document also proposed re-creating three events canon
+already holds -- one of them a duplicate of `event_naraka_portal` an article apart -- and two new
+ids, `character_varuna_guardian` and `character_mitra_guardian`, for the Varuna and Mitra canon
+already has. Varuna is the game's player character. That is the "Professor Onko" duplication a
+second time.
+
+**The Ammonite Man is a character** (decided 2026-08-29). He was `mythology_ammonite_man` and was
+named as a participant in four events, which is not something a domain-and-aspect record does.
+Moved to `character_ammonite_man`, six files repointed. This is the second time -- Owlman was the
+first -- so the gate now refuses any event naming a `mythology_` id among its participants.
+
+Credit where it is due: an outside reader (Gemini) spotted this. Its other two claims were wrong.
+It reported both `event_fang_vs_scale_wars` and `event_asura_gondwana_intervention` as using
+`myth_owlman`; both already used `character_owlman`, and the string `myth_` appears nowhere in
+`database/`. And it asserted that the `mythology/` folder maps to a `myth_` prefix, citing
+`myth_bhuta_kana_origin` as the correct form -- the mapping is `mythology_`, and that citation is
+precisely the draft error corrected when the Jambenson book was ingested. It appears to have been
+reading the drafts in `dump/` as though they were canon. The right conclusion for the wrong
+reason is still worth acting on, but the reasoning did not survive checking.
+
 ---
 
 ## Resolved

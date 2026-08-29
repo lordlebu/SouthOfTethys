@@ -1,9 +1,9 @@
 {
-  "version": "1.20.0",
+  "version": "1.21.0",
   "description": "SouthOfTethys canonical entity index",
   "counts": {
     "artifacts": 3,
-    "characters": 52,
+    "characters": 54,
     "discoveries": 31,
     "events": 29,
     "factions": 3,
@@ -11,7 +11,7 @@
     "field_maps": 3,
     "field_questions": 7,
     "flora": 90,
-    "mythology": 8,
+    "mythology": 7,
     "npcs": 8,
     "places": 38,
     "points_of_interest": 20,
@@ -26,6 +26,7 @@
       "artifact_mask_of_tethys"
     ],
     "characters": [
+      "character_ammonite_man",
       "character_arin",
       "character_asha",
       "character_asura_tainted_princess",
@@ -35,6 +36,7 @@
       "character_digha_jani",
       "character_elara_voss",
       "character_guyuk",
+      "character_guyuk_reborn",
       "character_honan",
       "character_iknaya",
       "character_jambanson",
@@ -514,7 +516,6 @@
       "flora_whispering_blood_orchid"
     ],
     "mythology": [
-      "mythology_ammonite_man",
       "mythology_bhuta_kana_origin",
       "mythology_gorvaxx",
       "mythology_lionman_guidance",

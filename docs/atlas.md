@@ -17,11 +17,11 @@ Each era below is canon as it stood then. An entity that names no epoch is prese
 | regions |  | 7 |
 | places | 11 | 19 |
 | settlements |  | 2 |
-| characters | 2 |  |
+| characters | 3 |  |
 | factions |  | 3 |
 | events | 6 |  |
 | artifacts |  | 3 |
-| mythology |  | 8 |
+| mythology |  | 7 |
 | fauna |  | 257 |
 | flora |  | 90 |
 
@@ -43,9 +43,7 @@ graph TD
 
 ### Map
 
-![Map of Prehistoric Foundations & Age of Vanaras](atlas/epoch_prehistoric.svg)
-
-6 region(s) traced, 8 place(s) plotted. [Open the SVG](atlas/epoch_prehistoric.svg)
+*No map is drawn for this era.* The grid canon uses is traced off `dump/Partial_map.png`, which shows a living Harappa and a standing university -- it is a picture of the Civilization Dawn world. This era predates every landmark that map is built from, so placing anything on it would claim a geography canon does not have. What the era holds is in the census above.
 
 ## Deep Antiquity
 
@@ -62,7 +60,7 @@ graph TD
 | factions |  | 3 |
 | events | 2 |  |
 | artifacts |  | 3 |
-| mythology |  | 8 |
+| mythology |  | 7 |
 | fauna |  | 257 |
 | flora |  | 90 |
 
@@ -95,7 +93,7 @@ graph TD
 | factions |  | 3 |
 | events | 6 |  |
 | artifacts |  | 3 |
-| mythology |  | 8 |
+| mythology |  | 7 |
 | fauna |  | 257 |
 | flora |  | 90 |
 
@@ -134,7 +132,7 @@ graph TD
 | factions |  | 3 |
 | events | 11 |  |
 | artifacts |  | 3 |
-| mythology |  | 8 |
+| mythology |  | 7 |
 | fauna |  | 257 |
 | flora |  | 90 |
 
@@ -188,7 +186,7 @@ graph TD
 | factions |  | 3 |
 | events | 3 |  |
 | artifacts |  | 3 |
-| mythology |  | 8 |
+| mythology |  | 7 |
 | fauna |  | 257 |
 | flora |  | 90 |
 
@@ -221,11 +219,12 @@ graph TD
 | settlements |  | 2 |
 | field maps | 3 |  |
 | points of interest | 20 |  |
+| characters | 1 |  |
 | npcs | 8 |  |
 | factions |  | 3 |
 | events | 1 |  |
 | artifacts |  | 3 |
-| mythology |  | 8 |
+| mythology |  | 7 |
 | discoveries | 31 |  |
 | field questions | 7 |  |
 | vocabulary | 8 |  |
