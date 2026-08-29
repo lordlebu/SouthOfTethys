@@ -10,7 +10,8 @@
   "location": "place_gondwana",
   "predecessors": [],
   "successors": [
-    "event_asura_gondwana_intervention"
+    "event_asura_gondwana_intervention",
+    "event_asura_synapsid_domestication"
   ],
   "causes": [
     "ecological_competition",

@@ -1,0 +1,21 @@
+{
+  "id": "character_kunti",
+  "type": "character",
+  "name": "Kunti",
+  "culture": "celestial",
+  "species": "apsara",
+  "status": "alive",
+  "epoch": "epoch_prehistoric",
+  "roles": [
+    "Tricked Goddess",
+    "Celestial Nymph",
+    "Asuran Pawn",
+    "Instrument of Cosmic Conflict"
+  ],
+  "notes": "A tragic, manipulated celestial nymph in the Land of Myst saga, frequently referenced alongside her companion nymph Dhipti. Bearing the title of the 'tricked goddess,' she lacks personal agency and is directly controlled and weaponized by the deceptive Asura guru Shukradeva and the demonic powerhouse Daedrasura. She is forced into direct, painful conflict with the Vanara mystic Jambanson to disrupt his restorative, ecological, and ancestral memory-seed magic. There is no active 'Kunti cult' or devotional following dedicated to her in the world.",
+  "canon": "primary",
+  "sources": [
+    "Gondwana: The Asura Intervention and the Fang Wars",
+    "The Mythic Legacy and Ritual Order of Jambenson"
+  ]
+}

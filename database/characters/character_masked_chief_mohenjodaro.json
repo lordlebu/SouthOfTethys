@@ -1,0 +1,18 @@
+{
+  "id": "character_masked_chief_mohenjodaro",
+  "type": "character",
+  "name": "The Masked Chief of Mohenjodaro",
+  "culture": "harappan",
+  "species": "human",
+  "status": "deceased",
+  "epoch": "epoch_deep_antiquity",
+  "roles": [
+    "Patriarch of Mohenjodaro Guilds",
+    "First Keeper of the Bone Mask"
+  ],
+  "notes": "The original leader of the ancient Mohenjodaro trading clans whose family bore the mammoth emblem. Following his defeat in the marketplace wars, he passed his sacred bone mask to the Harappan champion, establishing the 'Masked Family' lineage.",
+  "canon": "primary",
+  "sources": [
+    "The Bone Mask – Triglav Apothecary"
+  ]
+}

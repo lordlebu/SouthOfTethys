@@ -1,0 +1,28 @@
+{
+  "id": "event_awakening_mask_of_varkesh",
+  "type": "event",
+  "title": "The Awakening of the Mask of Vaṛkesh",
+  "epoch": "epoch_deep_antiquity",
+  "participants": [
+    "character_shaashak",
+    "character_asha"
+  ],
+  "location": "place_sun_plateau",
+  "predecessors": [
+    "event_shadow_pact"
+  ],
+  "successors": [],
+  "causes": [
+    "Shaasak's expedition to recover the ancient Harappan relic mentioned in her father's stone tablets",
+    "The placement of the wooden mask onto the central temple altar triggering the ancient basalt counterweights"
+  ],
+  "outcomes": [
+    "The awakening of the colossal volcanic stone Golem",
+    "The folding of the Sun Plateau's battlefield into a modern tabletop 'Game of Fate'"
+  ],
+  "summary": "Shaasak and Asha lead an expedition to a volcanic grotto, uncovering the Mask of Vaṛkesh. The relic awakens a giant stone golem, guiding them to a hidden plateau where the physical world folds into a tabletop game of destiny.",
+  "canon": "primary",
+  "sources": [
+    "The Mask of Vaṛkesh: The Shore of Forgotten Temples"
+  ]
+}

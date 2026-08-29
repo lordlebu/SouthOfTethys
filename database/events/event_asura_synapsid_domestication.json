@@ -1,0 +1,30 @@
+{
+  "id": "event_asura_synapsid_domestication",
+  "type": "event",
+  "title": "The Domestication of the Fang Vanguard",
+  "epoch": "epoch_prehistoric",
+  "participants": [
+    "character_commander_vaishura",
+    "character_ammonite_man"
+  ],
+  "location": "region_ganges_lava_sea",
+  "predecessors": [
+    "event_fang_vs_scale_wars"
+  ],
+  "successors": [
+    "event_asura_gondwana_intervention"
+  ],
+  "causes": [
+    "The collapse of advanced synapsids following the Permian-Triassic extinction event",
+    "The Asura need for resilient pack animals and war cavalry capable of carrying heavy armaments"
+  ],
+  "outcomes": [
+    "The selective breeding and genetic corruption of surviving Permian cynodonts and gorgonopsids",
+    "The introduction of 'Fang' draft animals through the Dwarka Gate, intensifying the war against native diapsids"
+  ],
+  "summary": "Fascinated by the ancestral metabolic traits of surviving synapsids, Commander Vaishura selectively breeds and weaponizes these Permian beasts, deploying them through the Dwarka Gate as cavalry against the native diapsids.",
+  "canon": "primary",
+  "sources": [
+    "Gondwana: The Asura Intervention and the Fang Wars"
+  ]
+}

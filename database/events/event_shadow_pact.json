@@ -8,8 +8,12 @@
     "character_asura_tainted_princess"
   ],
   "location": "place_ancient_courts",
-  "predecessors": [],
-  "successors": [],
+  "predecessors": [
+    "event_battle_of_mohenjodaro"
+  ],
+  "successors": [
+    "event_awakening_mask_of_varkesh"
+  ],
   "causes": [
     "dark_tantra",
     "unicorn_sacrifice",

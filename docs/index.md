@@ -14,6 +14,11 @@ _Generated from `database/events/`.
 **Summary:** A deep-time evolutionary conflict on Gondwana: ancestral synapsids, the Fang, against emerging diapsid archosaurs, the Scale, for ecological dominance. The gorgonopsids held the fern forests; the archosaurs took the volcanic highlands and the marshy deltas.
 **Participants:** character_ammonite_man, character_owlman
 
+## The Domestication of the Fang Vanguard
+**Epoch:** Prehistoric Foundations & Age of Vanaras
+**Summary:** Fascinated by the ancestral metabolic traits of surviving synapsids, Commander Vaishura selectively breeds and weaponizes these Permian beasts, deploying them through the Dwarka Gate as cavalry against the native diapsids.
+**Participants:** character_commander_vaishura, character_ammonite_man
+
 ## The Asura Gondwana Intervention
 **Epoch:** Prehistoric Foundations & Age of Vanaras
 **Summary:** An unstabilised rift into Asura Loka floods the Gondwana battlefield with mutagenic energy. The diapsids shed the heat as feathers and become the first avian dinosaurids; some synapsid predators degenerate into the shadow-corrupted lineages the Tendua descends from. The rift hardens into the Ganges Lava Sea.
@@ -34,6 +39,11 @@ _Generated from `database/events/`.
 **Summary:** To protect early human lineages from Asura corruption, Jambanson designs a highly ritualized, male-led womb purification exorcism using sacred resins, stone yonis, and acoustic hymns to purge demonic influence.
 **Participants:** character_jambanson
 
+## The Battle of Mohenjodaro
+**Epoch:** Deep Antiquity
+**Summary:** A devastating war between Sinauli traders and Northern Nagas fractures Mohenjodaro. Following the Harappan defeat, the Masked Chief surrenders his bone mask to a valiant champion, whose family adopts the emblem and flees south.
+**Participants:** character_masked_chief_mohenjodaro
+
 ## Forging of the Dragon’s Spine
 _Sample fixture — kept to exercise the tooling, not part of the story._
 **Epoch:** Deep Antiquity
@@ -44,6 +54,11 @@ _Sample fixture — kept to exercise the tooling, not part of the story._
 **Epoch:** Deep Antiquity
 **Summary:** Prince Varunesh slits an Indus unicorn and uses dark tantra through a Dwarka Gate to summon the Asura princess Manjalaya. Their union produces the immortal Asura-Tainted Princess.
 **Participants:** character_varunesh, character_asura_tainted_princess
+
+## The Awakening of the Mask of Vaṛkesh
+**Epoch:** Deep Antiquity
+**Summary:** Shaasak and Asha lead an expedition to a volcanic grotto, uncovering the Mask of Vaṛkesh. The relic awakens a giant stone golem, guiding them to a hidden plateau where the physical world folds into a tabletop game of destiny.
+**Participants:** character_shaashak, character_asha
 
 ## Aravali Massacre & Sanctuary
 **Epoch:** Era of Human Migrations
@@ -64,6 +79,11 @@ _Sample fixture — kept to exercise the tooling, not part of the story._
 **Epoch:** Era of Human Migrations
 **Summary:** Guyuk, guided by a possessed mountain goat, recites incantations from an ancient tome and tears open a colossal glowing red portal to Naraka Lok. Horrific beasts spill forth; Nirigili loses his Elephantbird to a Megalosaurus.
 **Participants:** character_guyuk, character_nirigili
+
+## The Narmada Apothecary Herb Quest
+**Epoch:** Era of Human Migrations
+**Summary:** Taking leave from the traveling circus, Guyuk Mongke treks up the volcanic cliffs of the Narmada Valley. Welcomed by six ancient Narmada men, she harvests rare medicinal herbs and learns the primeval lore of the land.
+**Participants:** character_guyuk, character_nirigili, character_narmada_man
 
 ## The Retreat of Owlman
 **Epoch:** Era of Human Migrations

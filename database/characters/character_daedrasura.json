@@ -3,7 +3,9 @@
   "type": "character",
   "name": "Daedrasura",
   "epithets": [
-    "The Devourer"
+    "The Devourer",
+    "The Architect of Naraka",
+    "The Corrupter of Magic"
   ],
   "culture": "maya_born",
   "species": "asura",
@@ -13,9 +15,10 @@
     "antagonist",
     "devourer"
   ],
-  "notes": "Asura-class threat associated with the Devourer crisis at the maritime periphery. Motives and full form remain poorly attested; treated as a high-stakes cosmic pressure rather than a courtly rival.",
+  "notes": "Asura-class threat associated with the Devourer crisis at the maritime periphery. Motives and full form remain poorly attested; treated as a high-stakes cosmic pressure rather than a courtly rival. He works out of Naraka, the sulphurous hellscape that was once the mystical island of Muria. Under his tutelage the Varanas took up Jharwa ritual and turned it to dark sorcery, which set them against the Vanaras. He forged the Ambanee Pact with the Kia -- power for blood-touched ancestral masks, delivered on a night of upheaval -- and Nila Ambanee's attempt to revive it desecrated the Lothal tower and killed Kavik. His voice carried from Tamralinga demanding the three masks, and the Devourer came out of his rift; sealing it cost Khadi his life. His cultists still fight the Chandraketugarh apothecaries over the blood of the extinct Garudasaur.",
   "canon": "primary",
   "sources": [
-    "AI_CONTEXT.md"
+    "AI_CONTEXT.md",
+    "dump/daedrasura-and-kunti-lore.md"
   ]
 }
