@@ -9,7 +9,9 @@
     "character_guyuk_reborn"
   ],
   "location": "place_grassland_sanctuary",
-  "predecessors": [],
+  "predecessors": [
+    "event_battered_ekranoplan_ice_wall_voyage"
+  ],
   "successors": [],
   "causes": [
     "The global flooding and geographic fragmentation of Jambhudweepa following the Great Shattering",

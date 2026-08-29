@@ -18,7 +18,7 @@ timeline
     section Civilization Dawn (Lothal Era)
         c. 3000 – 500 BCE : The Final Voyage of the Kelpfang : The Storm-Bone Khan's Warning at Lothal : The Wandering of the Narmada Seed-Mind : Silvershore War : Founding of Lothal : Black Lotus Siege : The Stone Pact : Tendua Crisis and Assassination of Kavik : Retrieval of the Mask of Harappa : Exile of Shaashak and Khadi : The Awakening of the Mask of Vaṛkesh : Birth of Sarita Silversong
     section Current Era (Age of Machinery)
-        ~1920s equivalent : The Antarctic Ice Wall Expedition : The Narmada Upriver Expedition : The Gondwana Spacetime Teleportation
+        ~1920s equivalent : The Antarctic Ice Wall Expedition : The Narmada Upriver Expedition : The Gondwana Spacetime Teleportation : The Battered Ekranoplan's Ice Wall Voyage
     section Post-Cataclysmic Era (The Great Shattering)
         after the Collapse : The Solarpunk Odyssey of the Ark
 ```
@@ -71,9 +71,10 @@ graph TD
         E30["The Antarctic Ice Wall Expedition"]
         E31["The Narmada Upriver Expedition"]
         E32["The Gondwana Spacetime Teleportation"]
+        E33["The Battered Ekranoplan's Ice Wall Voyage"]
     end
     subgraph epoch_post_cataclysm["Post-Cataclysmic Era (The Great Shattering)"]
-        E33["The Solarpunk Odyssey of the Ark"]
+        E34["The Solarpunk Odyssey of the Ark"]
     end
     E0 --> E6
     E1 --> E3
@@ -103,4 +104,6 @@ graph TD
     E27 --> E28
     E27 --> E29
     E31 --> E32
+    E32 --> E33
+    E33 --> E34
 ```

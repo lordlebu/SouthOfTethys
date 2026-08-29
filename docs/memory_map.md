@@ -229,6 +229,9 @@ graph LR
   event_silvershore_war["Silvershore War"]
   event_stone_pact["The Stone Pact"]
   event_tendua_crisis["Tendua Crisis and Assassination of Kavik"]
+  character_arin --> event_mask_retrieval
+  character_arin --> event_stone_pact
+  character_arin --> event_tendua_crisis
   character_asha --> event_awakening_mask_of_varkesh
   character_asha --> event_exile_of_shaashak
   character_asha --> event_mask_retrieval
@@ -251,9 +254,14 @@ graph LR
   character_korran_driftwood_seer --> event_final_voyage_of_the_kelpfang
   character_lirael_wavecaller --> event_final_voyage_of_the_kelpfang
   character_mehme --> event_guyuk_lothal_warning
+  character_mehme --> event_mask_retrieval
   character_mehme --> event_tendua_crisis
+  character_mira --> event_mask_retrieval
+  character_mira --> event_stone_pact
+  character_mira --> event_tendua_crisis
   character_naga_raja --> event_black_lotus_siege
   character_narmada_man --> event_guyuk_konkan_prophecy
+  character_nila --> event_stone_pact
   character_nila --> event_tendua_crisis
   character_radiant_gentleman --> event_final_voyage_of_the_kelpfang
   character_rathak --> event_black_lotus_siege
@@ -274,7 +282,7 @@ graph LR
 
 29 character(s), 12 event(s) they appear in, 16 group(s).
 
-**Present in no event of this era:** Arin, Daedrasura, Kubera, Lira, Mira, Ruvan, Vijaya, Yaksha Envoy.
+**Present in no event of this era:** Daedrasura, Kubera, Lira, Ruvan, Vijaya, Yaksha Envoy.
 
 ## Current Era (Age of Machinery)
 

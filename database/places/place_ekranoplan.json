@@ -1,0 +1,15 @@
+{
+  "id": "place_ekranoplan",
+  "type": "place",
+  "name": "The Battered Ekranoplan",
+  "kind": "vessel",
+  "epochs": [
+    "epoch_current"
+  ],
+  "description": "A rusted ground-effect craft bought cheap off delta salvagers at Vanga, flown a few metres above the Tethys on a cushion of its own noise.",
+  "notes": "Wobbles. Came with a Vengi langur nesting in the cargo hold, which nobody found until it reached the emergency fuel shut-off. `vessel` is the kind canon keeps for somewhere that moves and is lived in -- the Kelpfang and the Survival Train are the others.",
+  "canon": "secondary",
+  "sources": [
+    "dump/event_battered_ekranoplan_ice_wall_voyage-v3.json"
+  ]
+}

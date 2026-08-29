@@ -128,17 +128,17 @@ _Sample fixture — kept to exercise the tooling, not part of the story._
 ## The Stone Pact
 **Epoch:** Civilization Dawn (Lothal Era)
 **Summary:** Political marriage of Shaashak to Khadi sealed under crimson sunset at the base of Kavik's tower. Ancestral Mask of Harappa pledged as dowry.
-**Participants:** character_shaashak, character_khadi, character_kavik
+**Participants:** character_shaashak, character_khadi, character_kavik, character_nila, character_arin, character_mira
 
 ## Tendua Crisis and Assassination of Kavik
 **Epoch:** Civilization Dawn (Lothal Era)
 **Summary:** Nila desecrates tower with Asura mantras, birthing Tendua Manticore. During the attack, Asura-possessed Nila assassinates Kavik.
-**Participants:** character_nila, character_kavik, character_shaashak, character_khadi, character_mehme, character_asha
+**Participants:** character_nila, character_kavik, character_shaashak, character_khadi, character_mehme, character_asha, character_arin, character_mira
 
 ## Retrieval of the Mask of Harappa
 **Epoch:** Civilization Dawn (Lothal Era)
 **Summary:** Asha, iKnaya and Varna recover the bronze raven-and-waves Mask of Harappa from a hidden chamber beneath the tower. Used with other stone masks to drive remaining Tenduas back into the marsh.
-**Participants:** character_asha, character_iknaya, character_varna
+**Participants:** character_asha, character_iknaya, character_varna, character_mehme, character_arin, character_mira
 
 ## Exile of Shaashak and Khadi
 **Epoch:** Civilization Dawn (Lothal Era)
@@ -169,6 +169,10 @@ _Sample fixture — kept to exercise the tooling, not part of the story._
 **Epoch:** Current Era (Age of Machinery)
 **Summary:** During a violent monsoon storm in the Narmada forests, a direct lightning strike leaves Digha Jani unharmed and glowing, before subsequent strikes tear a rift in spacetime. The scholars are teleported through a cosmic wormhole to the floating, weightless Gondwana plateau, where they discover ancient tablets and a basalt boundary stone.
 **Participants:** character_onko, character_digha_jani
+
+## The Battered Ekranoplan's Ice Wall Voyage
+**Epoch:** Current Era (Age of Machinery)
+**Summary:** At high speeds, a rusted, wobbly ground-effect ekranoplan departs the port of Vanga near the Vengi marshes, carrying a nameless crew and a stowaway langur monkey who causes absolute chaos on their journey to the Antarctic Ice Wall.
 
 ## The Solarpunk Odyssey of the Ark
 **Epoch:** Post-Cataclysmic Era (The Great Shattering)

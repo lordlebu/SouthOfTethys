@@ -1,0 +1,27 @@
+{
+  "id": "event_battered_ekranoplan_ice_wall_voyage",
+  "type": "event",
+  "title": "The Battered Ekranoplan's Ice Wall Voyage",
+  "epoch": "epoch_current",
+  "participants": [],
+  "location": "place_antarctic_ice_wall",
+  "predecessors": [
+    "event_gondwana_teleportation"
+  ],
+  "successors": [
+    "event_survival_train_solarpunk"
+  ],
+  "causes": [
+    "The need for fast travel across the swelling Tethys Sea from the pearl-diving port of Vanga to investigate southern magnetic rifts",
+    "Acquiring a cheap, dilapidated ground-effect Soviet-style ekranoplan from local delta salvagers, unaware of a hyperactive Vengi langur stowaway monkey nesting in the cargo hold"
+  ],
+  "outcomes": [
+    "A highly chaotic, humorous, yet near-fatal transit near the colossal southern Ice Wall sparked by the monkey pulling the emergency fuel shut-off lever",
+    "The loss of key equipment overboard during violent, high-speed vibrations and primate panic"
+  ],
+  "summary": "At high speeds, a rusted, wobbly ground-effect ekranoplan departs the port of Vanga near the Vengi marshes, carrying a nameless crew and a stowaway langur monkey who causes absolute chaos on their journey to the Antarctic Ice Wall.",
+  "canon": "secondary",
+  "sources": [
+    "We Took a Broken Ekranoplan Across the Tethys Sea - Blog Logs"
+  ]
+}
