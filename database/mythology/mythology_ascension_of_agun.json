@@ -1,0 +1,16 @@
+{
+  "id": "mythology_ascension_of_agun",
+  "type": "mythology",
+  "name": "The Ascension of Agun",
+  "domain": [
+    "fire",
+    "sacrifice"
+  ],
+  "aspect": "The forgotten fire-bringer, made the messenger who carries offerings",
+  "relations": {},
+  "notes": "The sacred legend of how the forgotten mortal who first brought fire to humankind was transformed by the Thunder-Bearer into Agun, the divine messenger who carries sacrifices to the sky while keeping his share. The transformation of the mortal wanderer into the divine, immortal messenger Agun. The establishment of the sacrificial fire-covenant allowing Agun to consume and keep a portion of all mortal offerings.",
+  "canon": "primary",
+  "sources": [
+    "dump/missed-story-snippets-analysis.md"
+  ]
+}

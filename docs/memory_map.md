@@ -16,10 +16,14 @@ draws, unconnected, rather than being left out.
 
 ```mermaid
 graph LR
-  subgraph grp_no_culture_recorded["no culture recorded (culture)"]
-    character_ammonite_man("Ammonite Man")
+  subgraph grp_celestial["celestial (culture)"]
+    character_kunti("Kunti")
+  end
+  subgraph grp_maya_born["maya_born (culture)"]
+    character_commander_vaishura("Commander Vaishura")
   end
   subgraph grp_primordial["primordial (culture)"]
+    character_ammonite_man("Ammonite Man")
     character_narmada_man("Narmada Man")
     character_owlman("Owlman")
   end
@@ -28,13 +32,16 @@ graph LR
     character_lionman("Lionman")
   end
   event_asura_gondwana_intervention["The Asura Gondwana Intervention"]
+  event_asura_synapsid_domestication["The Domestication of the Fang Vanguard"]
   event_curse_of_the_hollow_trees["The Curse of the Hollow Trees"]
   event_fang_vs_scale_wars["The Fang vs. Scale Wars"]
   event_great_devolvement_vanaras["The Great Devolvement"]
   event_jambanson_moonseed_planting["The Planting of the Moon-Seed"]
   event_ritual_of_jambenson["The Establishment of the Womb Rites"]
   character_ammonite_man --> event_asura_gondwana_intervention
+  character_ammonite_man --> event_asura_synapsid_domestication
   character_ammonite_man --> event_fang_vs_scale_wars
+  character_commander_vaishura --> event_asura_synapsid_domestication
   character_jambanson --> event_curse_of_the_hollow_trees
   character_jambanson --> event_jambanson_moonseed_planting
   character_jambanson --> event_ritual_of_jambenson
@@ -44,7 +51,9 @@ graph LR
   character_owlman --> event_fang_vs_scale_wars
 ```
 
-5 character(s), 6 event(s) they appear in, 3 group(s).
+7 character(s), 7 event(s) they appear in, 4 group(s).
+
+**Present in no event of this era:** Kunti.
 
 ## Deep Antiquity
 
@@ -56,6 +65,9 @@ graph LR
   subgraph grp_asura_hybrid["asura_hybrid (culture)"]
     character_asura_tainted_princess("Asura-Tainted Princess")
   end
+  subgraph grp_harappan["harappan (culture)"]
+    character_masked_chief_mohenjodaro("The Masked Chief of Mohenjodaro")
+  end
   subgraph grp_maya_born["maya_born (culture)"]
     character_manjalaya("Manjalaya")
   end
@@ -63,12 +75,21 @@ graph LR
     character_narmada_man("Narmada Man")
     character_owlman("Owlman")
   end
+  subgraph grp_mask_family["Mask Family"]
+    character_asha("Aasha")
+    character_shaashak("Shaashak")
+  end
+  event_awakening_mask_of_varkesh["The Awakening of the Mask of Vaṛkesh"]
+  event_battle_of_mohenjodaro["The Battle of Mohenjodaro"]
   event_shadow_pact["Shadow Pact of Saraswati"]
+  character_asha --> event_awakening_mask_of_varkesh
   character_asura_tainted_princess --> event_shadow_pact
+  character_masked_chief_mohenjodaro --> event_battle_of_mohenjodaro
+  character_shaashak --> event_awakening_mask_of_varkesh
   character_varunesh --> event_shadow_pact
 ```
 
-5 character(s), 1 event(s) they appear in, 4 group(s).
+8 character(s), 3 event(s) they appear in, 6 group(s).
 
 **Present in no event of this era:** Manjalaya, Narmada Man, Owlman.
 
@@ -89,10 +110,8 @@ graph LR
     character_jharwa_elder_repa("Elder Repa")
     character_meera("Meera")
   end
-  subgraph grp_no_culture_recorded["no culture recorded (culture)"]
-    character_ammonite_man("Ammonite Man")
-  end
   subgraph grp_primordial["primordial (culture)"]
+    character_ammonite_man("Ammonite Man")
     character_narmada_man("Narmada Man")
     character_owlman("Owlman")
   end
@@ -108,6 +127,7 @@ graph LR
   end
   event_aravali_massacre["Aravali Massacre & Sanctuary"]
   event_botai_cattle_raid["The Botai Cattle Raid"]
+  event_guyuk_narmada_apothecary_quest["The Narmada Apothecary Herb Quest"]
   event_jharwa_first_wave_shell_pact["The Jharwa First-Wave & The Shell Pact"]
   event_naraka_portal["Opening of the Naraka Lok Portal"]
   event_retreat_of_owlman["The Retreat of Owlman"]
@@ -115,12 +135,15 @@ graph LR
   character_ammonite_man --> event_jharwa_first_wave_shell_pact
   character_bela --> event_aravali_massacre
   character_guyuk --> event_botai_cattle_raid
+  character_guyuk --> event_guyuk_narmada_apothecary_quest
   character_guyuk --> event_naraka_portal
   character_jharwa_elder_repa --> event_jharwa_first_wave_shell_pact
   character_meditating_apsara --> event_union_narmada_man_apsara
   character_meera --> event_aravali_massacre
+  character_narmada_man --> event_guyuk_narmada_apothecary_quest
   character_narmada_man --> event_union_narmada_man_apsara
   character_nirigili --> event_botai_cattle_raid
+  character_nirigili --> event_guyuk_narmada_apothecary_quest
   character_nirigili --> event_naraka_portal
   character_orek --> event_aravali_massacre
   character_owlman --> event_retreat_of_owlman
@@ -130,7 +153,7 @@ graph LR
   character_vara_ma --> event_aravali_massacre
 ```
 
-14 character(s), 6 event(s) they appear in, 8 group(s).
+14 character(s), 7 event(s) they appear in, 7 group(s).
 
 ## Civilization Dawn (Lothal Era)
 
@@ -263,11 +286,11 @@ graph LR
     character_onko("Onko")
     character_shakariman("Shakariman")
   end
-  subgraph grp_no_culture_recorded["no culture recorded (culture)"]
-    character_ammonite_man("Ammonite Man")
-  end
   subgraph grp_outlier["outlier (culture)"]
     character_aurum_theophanes("Aurum Theophanes")
+  end
+  subgraph grp_primordial["primordial (culture)"]
+    character_ammonite_man("Ammonite Man")
   end
   event_antarctic_ice_wall_expedition["The Antarctic Ice Wall Expedition"]
   event_gondwana_teleportation["The Gondwana Spacetime Teleportation"]

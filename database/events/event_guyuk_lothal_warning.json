@@ -10,7 +10,8 @@
   ],
   "location": "settlement_lothal",
   "predecessors": [
-    "event_naraka_portal"
+    "event_naraka_portal",
+    "event_guyuk_narmada_apothecary_quest"
   ],
   "successors": [
     "event_tendua_crisis",

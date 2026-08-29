@@ -141,6 +141,11 @@ def main() -> int:
     cultures_path = DB / "cultures.json"
     cultures = ({c["id"] for c in json.loads(cultures_path.read_text(encoding="utf-8"))["cultures"]}
                 if cultures_path.exists() else None)
+    # Same check for species, which the linter gained and this did not -- a draft proposing
+    # `nymph` passed here and would have failed the gate one command later.
+    species_path = DB / "species.json"
+    species = ({s["id"] for s in json.loads(species_path.read_text(encoding="utf-8"))["species"]}
+               if species_path.exists() else None)
 
     drafted: list[dict] = []
     problems: list[tuple[str, str]] = []
@@ -198,6 +203,14 @@ def main() -> int:
 
         if cultures is not None and d.get("culture") and d["culture"] not in cultures:
             found.append(f"culture '{d['culture']}' is not declared in cultures.json")
+
+        if species is not None and d.get("species") and d["species"] not in species:
+            found.append(f"species '{d['species']}' is not declared in species.json")
+
+        for field in ("participants", "witnesses", "actors"):
+            for who in d.get(field) or []:
+                if isinstance(who, str) and who.startswith("mythology_"):
+                    found.append(f"names {who} as a {field[:-1]} -- if it acts, it is a character")
 
         if d.get("type") == "event" and d.get("title"):
             twin = titles.get(loose(d["title"]))

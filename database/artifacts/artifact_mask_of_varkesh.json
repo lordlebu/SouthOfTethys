@@ -1,0 +1,16 @@
+{
+  "id": "artifact_mask_of_varkesh",
+  "type": "artifact",
+  "name": "The Mask of Vaṛkesh",
+  "material": [
+    "dark carved wood",
+    "obsidian inlays"
+  ],
+  "notes": "An ancient, pre-migration ceremonial mask that acts as the physical key to the colossal stone guardians of the Sun Plateau. It holds the metaphysical memory of 'The Game,' binding the history of Jambhudweepa to a tabletop board of fate.",
+  "canon": "primary",
+  "sources": [
+    "The Mask of Vaṛkesh: The Shore of Forgotten Temples"
+  ],
+  "power": "Folds a battlefield into a game room and seats those in it across a board from itself.",
+  "risk": "It does not protect the treasure. It protects the Game, and the players become pieces in it."
+}

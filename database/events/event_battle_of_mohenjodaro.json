@@ -1,0 +1,28 @@
+{
+  "id": "event_battle_of_mohenjodaro",
+  "type": "event",
+  "title": "The Battle of Mohenjodaro",
+  "epoch": "epoch_deep_antiquity",
+  "participants": [
+    "character_masked_chief_mohenjodaro"
+  ],
+  "location": "settlement_lothal",
+  "predecessors": [],
+  "successors": [
+    "event_shadow_pact"
+  ],
+  "causes": [
+    "A violent altercation in the Harappan marketplace between Sinauli Vedda traders and Naga Northerners",
+    "The retaliatory massacre of the Masked Chief's kin on the outskirts of Harappa"
+  ],
+  "outcomes": [
+    "The military defeat of the Harappan defenders by the Northern Naga clans",
+    "The bestowing of the bone mask upon the Harappan champion, establishing the Mask Family lineage",
+    "The migration of the new Masked Family from Harappa to the southern deltas"
+  ],
+  "summary": "A devastating war between Sinauli traders and Northern Nagas fractures Mohenjodaro. Following the Harappan defeat, the Masked Chief surrenders his bone mask to a valiant champion, whose family adopts the emblem and flees south.",
+  "canon": "primary",
+  "sources": [
+    "The Bone Mask – Triglav Apothecary"
+  ]
+}

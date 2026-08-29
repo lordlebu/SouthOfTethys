@@ -9,7 +9,8 @@
   ],
   "location": "region_ganges_lava_sea",
   "predecessors": [
-    "event_fang_vs_scale_wars"
+    "event_fang_vs_scale_wars",
+    "event_asura_synapsid_domestication"
   ],
   "successors": [
     "event_great_devolvement_vanaras"

@@ -15,13 +15,13 @@ Each era below is canon as it stood then. An entity that names no epoch is prese
 | | dated to this era | timeless |
 |---|---:|---:|
 | regions |  | 7 |
-| places | 11 | 19 |
+| places | 11 | 20 |
 | settlements |  | 2 |
-| characters | 3 |  |
+| characters | 5 |  |
 | factions |  | 3 |
-| events | 6 |  |
-| artifacts |  | 3 |
-| mythology |  | 7 |
+| events | 7 |  |
+| artifacts |  | 4 |
+| mythology |  | 8 |
 | fauna |  | 257 |
 | flora |  | 90 |
 
@@ -31,14 +31,17 @@ Each era below is canon as it stood then. An entity that names no epoch is prese
 graph TD
     E0["The Curse of the Hollow Trees"]
     E1["The Fang vs. Scale Wars"]
-    E2["The Asura Gondwana Intervention"]
-    E3["The Great Devolvement"]
-    E4["The Planting of the Moon-Seed"]
-    E5["The Establishment of the Womb Rites"]
-    E0 --> E4
+    E2["The Domestication of the Fang Vanguard"]
+    E3["The Asura Gondwana Intervention"]
+    E4["The Great Devolvement"]
+    E5["The Planting of the Moon-Seed"]
+    E6["The Establishment of the Womb Rites"]
+    E0 --> E5
+    E1 --> E3
     E1 --> E2
     E2 --> E3
-    E4 --> E5
+    E3 --> E4
+    E5 --> E6
 ```
 
 ### Map
@@ -54,13 +57,13 @@ graph TD
 | | dated to this era | timeless |
 |---|---:|---:|
 | regions |  | 7 |
-| places | 11 | 19 |
+| places | 11 | 20 |
 | settlements |  | 2 |
-| characters | 6 |  |
+| characters | 7 |  |
 | factions |  | 3 |
-| events | 2 |  |
-| artifacts |  | 3 |
-| mythology |  | 7 |
+| events | 4 |  |
+| artifacts |  | 4 |
+| mythology |  | 8 |
 | fauna |  | 257 |
 | flora |  | 90 |
 
@@ -68,8 +71,12 @@ graph TD
 
 ```mermaid
 graph TD
-    E0["Forging of the Dragon’s Spine (sample)"]
-    E1["Shadow Pact of Saraswati"]
+    E0["The Battle of Mohenjodaro"]
+    E1["Forging of the Dragon’s Spine (sample)"]
+    E2["Shadow Pact of Saraswati"]
+    E3["The Awakening of the Mask of Vaṛkesh"]
+    E0 --> E2
+    E2 --> E3
 ```
 
 ### Map
@@ -87,13 +94,13 @@ graph TD
 | | dated to this era | timeless |
 |---|---:|---:|
 | regions |  | 7 |
-| places | 16 | 19 |
+| places | 16 | 20 |
 | settlements |  | 2 |
 | characters | 11 |  |
 | factions |  | 3 |
-| events | 6 |  |
-| artifacts |  | 3 |
-| mythology |  | 7 |
+| events | 7 |  |
+| artifacts |  | 4 |
+| mythology |  | 8 |
 | fauna |  | 257 |
 | flora |  | 90 |
 
@@ -105,10 +112,12 @@ graph TD
     E1["The Botai Cattle Raid"]
     E2["The Jharwa First-Wave & The Shell Pact"]
     E3["Opening of the Naraka Lok Portal"]
-    E4["The Retreat of Owlman"]
-    E5["The Primordial Union under the Asura Planet"]
+    E4["The Narmada Apothecary Herb Quest"]
+    E5["The Retreat of Owlman"]
+    E6["The Primordial Union under the Asura Planet"]
     E1 --> E3
-    E2 --> E4
+    E2 --> E5
+    E3 --> E4
 ```
 
 ### Map
@@ -126,13 +135,13 @@ graph TD
 | | dated to this era | timeless |
 |---|---:|---:|
 | regions |  | 7 |
-| places | 17 | 19 |
+| places | 17 | 20 |
 | settlements |  | 2 |
 | characters | 27 |  |
 | factions |  | 3 |
 | events | 11 |  |
-| artifacts |  | 3 |
-| mythology |  | 7 |
+| artifacts |  | 4 |
+| mythology |  | 8 |
 | fauna |  | 257 |
 | flora |  | 90 |
 
@@ -180,13 +189,13 @@ graph TD
 | | dated to this era | timeless |
 |---|---:|---:|
 | regions |  | 7 |
-| places | 17 | 19 |
+| places | 17 | 20 |
 | settlements |  | 2 |
 | characters | 6 |  |
 | factions |  | 3 |
 | events | 3 |  |
-| artifacts |  | 3 |
-| mythology |  | 7 |
+| artifacts |  | 4 |
+| mythology |  | 8 |
 | fauna |  | 257 |
 | flora |  | 90 |
 
@@ -215,7 +224,7 @@ graph TD
 | | dated to this era | timeless |
 |---|---:|---:|
 | regions |  | 7 |
-| places | 12 | 19 |
+| places | 12 | 20 |
 | settlements |  | 2 |
 | field maps | 3 |  |
 | points of interest | 20 |  |
@@ -223,8 +232,8 @@ graph TD
 | npcs | 8 |  |
 | factions |  | 3 |
 | events | 1 |  |
-| artifacts |  | 3 |
-| mythology |  | 7 |
+| artifacts |  | 4 |
+| mythology |  | 8 |
 | discoveries | 31 |  |
 | field questions | 7 |  |
 | vocabulary | 8 |  |

@@ -1,0 +1,18 @@
+{
+  "id": "character_commander_vaishura",
+  "type": "character",
+  "name": "Commander Vaishura",
+  "culture": "maya_born",
+  "species": "asura",
+  "status": "deceased",
+  "epoch": "epoch_prehistoric",
+  "roles": [
+    "Commander of the Fang Vanguard",
+    "Master Breeder of the Underworld"
+  ],
+  "notes": "An ancient Asura vanguard commander who led the first crossing through the Dwarka Gate. He engineered the Asuran Agricultural Revolution, selectively breeding Permian synapsids to serve as war mounts and draft animals.",
+  "canon": "primary",
+  "sources": [
+    "Gondwana: The Asura Intervention and the Fang Wars"
+  ]
+}

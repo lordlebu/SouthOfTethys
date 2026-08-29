@@ -12,7 +12,8 @@
     "event_botai_cattle_raid"
   ],
   "successors": [
-    "event_guyuk_lothal_warning"
+    "event_guyuk_lothal_warning",
+    "event_guyuk_narmada_apothecary_quest"
   ],
   "causes": [
     "forbidden_tome",

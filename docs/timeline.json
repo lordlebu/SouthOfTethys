@@ -39,7 +39,8 @@
     "location": "place_gondwana",
     "predecessors": [],
     "successors": [
-      "event_asura_gondwana_intervention"
+      "event_asura_gondwana_intervention",
+      "event_asura_synapsid_domestication"
     ],
     "causes": [
       "ecological_competition",
@@ -57,6 +58,36 @@
     ]
   },
   {
+    "id": "event_asura_synapsid_domestication",
+    "type": "event",
+    "title": "The Domestication of the Fang Vanguard",
+    "epoch": "epoch_prehistoric",
+    "participants": [
+      "character_commander_vaishura",
+      "character_ammonite_man"
+    ],
+    "location": "region_ganges_lava_sea",
+    "predecessors": [
+      "event_fang_vs_scale_wars"
+    ],
+    "successors": [
+      "event_asura_gondwana_intervention"
+    ],
+    "causes": [
+      "The collapse of advanced synapsids following the Permian-Triassic extinction event",
+      "The Asura need for resilient pack animals and war cavalry capable of carrying heavy armaments"
+    ],
+    "outcomes": [
+      "The selective breeding and genetic corruption of surviving Permian cynodonts and gorgonopsids",
+      "The introduction of 'Fang' draft animals through the Dwarka Gate, intensifying the war against native diapsids"
+    ],
+    "summary": "Fascinated by the ancestral metabolic traits of surviving synapsids, Commander Vaishura selectively breeds and weaponizes these Permian beasts, deploying them through the Dwarka Gate as cavalry against the native diapsids.",
+    "canon": "primary",
+    "sources": [
+      "Gondwana: The Asura Intervention and the Fang Wars"
+    ]
+  },
+  {
     "id": "event_asura_gondwana_intervention",
     "type": "event",
     "title": "The Asura Gondwana Intervention",
@@ -67,7 +98,8 @@
     ],
     "location": "region_ganges_lava_sea",
     "predecessors": [
-      "event_fang_vs_scale_wars"
+      "event_fang_vs_scale_wars",
+      "event_asura_synapsid_domestication"
     ],
     "successors": [
       "event_great_devolvement_vanaras"
@@ -177,6 +209,34 @@
     ]
   },
   {
+    "id": "event_battle_of_mohenjodaro",
+    "type": "event",
+    "title": "The Battle of Mohenjodaro",
+    "epoch": "epoch_deep_antiquity",
+    "participants": [
+      "character_masked_chief_mohenjodaro"
+    ],
+    "location": "settlement_lothal",
+    "predecessors": [],
+    "successors": [
+      "event_shadow_pact"
+    ],
+    "causes": [
+      "A violent altercation in the Harappan marketplace between Sinauli Vedda traders and Naga Northerners",
+      "The retaliatory massacre of the Masked Chief's kin on the outskirts of Harappa"
+    ],
+    "outcomes": [
+      "The military defeat of the Harappan defenders by the Northern Naga clans",
+      "The bestowing of the bone mask upon the Harappan champion, establishing the Mask Family lineage",
+      "The migration of the new Masked Family from Harappa to the southern deltas"
+    ],
+    "summary": "A devastating war between Sinauli traders and Northern Nagas fractures Mohenjodaro. Following the Harappan defeat, the Masked Chief surrenders his bone mask to a valiant champion, whose family adopts the emblem and flees south.",
+    "canon": "primary",
+    "sources": [
+      "The Bone Mask \u2013 Triglav Apothecary"
+    ]
+  },
+  {
     "id": "event_dragon_spine",
     "type": "event",
     "title": "Forging of the Dragon\u2019s Spine",
@@ -208,8 +268,12 @@
       "character_asura_tainted_princess"
     ],
     "location": "place_ancient_courts",
-    "predecessors": [],
-    "successors": [],
+    "predecessors": [
+      "event_battle_of_mohenjodaro"
+    ],
+    "successors": [
+      "event_awakening_mask_of_varkesh"
+    ],
     "causes": [
       "dark_tantra",
       "unicorn_sacrifice",
@@ -224,6 +288,34 @@
     "canon": "primary",
     "sources": [
       "AI_CONTEXT.md"
+    ]
+  },
+  {
+    "id": "event_awakening_mask_of_varkesh",
+    "type": "event",
+    "title": "The Awakening of the Mask of Va\u1e5bkesh",
+    "epoch": "epoch_deep_antiquity",
+    "participants": [
+      "character_shaashak",
+      "character_asha"
+    ],
+    "location": "place_sun_plateau",
+    "predecessors": [
+      "event_shadow_pact"
+    ],
+    "successors": [],
+    "causes": [
+      "Shaasak's expedition to recover the ancient Harappan relic mentioned in her father's stone tablets",
+      "The placement of the wooden mask onto the central temple altar triggering the ancient basalt counterweights"
+    ],
+    "outcomes": [
+      "The awakening of the colossal volcanic stone Golem",
+      "The folding of the Sun Plateau's battlefield into a modern tabletop 'Game of Fate'"
+    ],
+    "summary": "Shaasak and Asha lead an expedition to a volcanic grotto, uncovering the Mask of Va\u1e5bkesh. The relic awakens a giant stone golem, guiding them to a hidden plateau where the physical world folds into a tabletop game of destiny.",
+    "canon": "primary",
+    "sources": [
+      "The Mask of Va\u1e5bkesh: The Shore of Forgotten Temples"
     ]
   },
   {
@@ -332,7 +424,8 @@
       "event_botai_cattle_raid"
     ],
     "successors": [
-      "event_guyuk_lothal_warning"
+      "event_guyuk_lothal_warning",
+      "event_guyuk_narmada_apothecary_quest"
     ],
     "causes": [
       "forbidden_tome",
@@ -350,6 +443,37 @@
     "canon": "primary",
     "sources": [
       "AI_CONTEXT.md"
+    ]
+  },
+  {
+    "id": "event_guyuk_narmada_apothecary_quest",
+    "type": "event",
+    "title": "The Narmada Apothecary Herb Quest",
+    "epoch": "epoch_migrations",
+    "participants": [
+      "character_guyuk",
+      "character_nirigili",
+      "character_narmada_man"
+    ],
+    "location": "place_narmada_valley_outpost",
+    "predecessors": [
+      "event_naraka_portal"
+    ],
+    "successors": [
+      "event_guyuk_lothal_warning"
+    ],
+    "causes": [
+      "Guyuk's request for temporary leave from Nirigili Mahashay's traveling circus caravan",
+      "The circus master's condition that she harvest rare, volcanic cliffside herbs for their traveling apothecary"
+    ],
+    "outcomes": [
+      "Guyuk's peaceful encounter with six ancient Narmada men in a secluded highland village",
+      "The successful gathering of rare medicinal flora and her initiation into the primeval bone-lore of the valley"
+    ],
+    "summary": "Taking leave from the traveling circus, Guyuk Mongke treks up the volcanic cliffs of the Narmada Valley. Welcomed by six ancient Narmada men, she harvests rare medicinal herbs and learns the primeval lore of the land.",
+    "canon": "primary",
+    "sources": [
+      "The Narmada Chronicles: Herb \ud83c\udf3f \u2013 Triglav Apothecary"
     ]
   },
   {
@@ -454,7 +578,8 @@
     ],
     "location": "settlement_lothal",
     "predecessors": [
-      "event_naraka_portal"
+      "event_naraka_portal",
+      "event_guyuk_narmada_apothecary_quest"
     ],
     "successors": [
       "event_tendua_crisis",
