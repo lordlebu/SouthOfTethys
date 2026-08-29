@@ -6,6 +6,7 @@
   "clade": "construct",
   "subclade": "forest_born",
   "sentient": true,
+  "region": "asura-conjurations",
   "biomes": [
     "forest",
     "wetland"
