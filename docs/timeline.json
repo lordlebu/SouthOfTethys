@@ -33,7 +33,7 @@
     "title": "The Fang vs. Scale Wars",
     "epoch": "epoch_prehistoric",
     "participants": [
-      "mythology_ammonite_man",
+      "character_ammonite_man",
       "character_owlman"
     ],
     "location": "place_gondwana",
@@ -62,7 +62,7 @@
     "title": "The Asura Gondwana Intervention",
     "epoch": "epoch_prehistoric",
     "participants": [
-      "mythology_ammonite_man",
+      "character_ammonite_man",
       "character_owlman"
     ],
     "location": "region_ganges_lava_sea",
@@ -294,7 +294,7 @@
     "epoch": "epoch_migrations",
     "participants": [
       "character_jharwa_elder_repa",
-      "mythology_ammonite_man"
+      "character_ammonite_man"
     ],
     "location": "region_saraswati_delta",
     "predecessors": [
@@ -768,7 +768,7 @@
     "participants": [
       "character_varuna",
       "character_mitra",
-      "mythology_ammonite_man"
+      "character_ammonite_man"
     ],
     "location": "place_antarctic_ice_wall",
     "predecessors": [],
@@ -858,7 +858,7 @@
     "participants": [
       "character_varuna",
       "character_mitra",
-      "character_guyuk"
+      "character_guyuk_reborn"
     ],
     "location": "place_grassland_sanctuary",
     "predecessors": [],

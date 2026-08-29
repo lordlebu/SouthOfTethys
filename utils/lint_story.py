@@ -487,6 +487,55 @@ def main() -> int:
                     f"{path.name}: species '{value}' is not declared in database/species.json"
                 )
 
+    # The one shared epoch order, from canon_epochs. A local copy here is how the timeline and
+    # the atlas came to disagree about what order the eras were in.
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    from canon_epochs import epoch_rank
+    ranked = epoch_rank()
+
+    # --- a rebirth points backwards, and a myth does not attend things -----------------
+    #
+    # Two checks on the same idea: an entity should be the kind of thing it is being used as.
+    #
+    # `reincarnation_of` must resolve and must point at an *earlier* epoch. A rebirth that
+    # precedes its own life is the same error as an event edge running backwards through time,
+    # which is already checked one function down.
+    #
+    # And a mythology named as an event participant is almost always a character filed in the
+    # wrong folder. Owlman was exactly that and was moved; the Ammonite Man was the same and
+    # was found by an outside reader noticing he "negotiates with early humans", which is not
+    # something a domain-and-aspect record does. A myth can be *about* an event -- that is what
+    # `relations` is for -- but it cannot be present at one.
+    for eid, (path, payload) in sorted(entities.items()):
+        target = payload.get("reincarnation_of")
+        if not target:
+            continue
+        if target not in entities:
+            errors.append(f"{path.name}: reincarnation_of '{target}' does not exist")
+            continue
+        if target == eid:
+            errors.append(f"{path.name}: reincarnation_of points at itself")
+            continue
+        here = ranked.get(payload.get("epoch") or "")
+        there = ranked.get(entities[target][1].get("epoch") or "")
+        if here is not None and there is not None and there >= here:
+            errors.append(
+                f"{path.name}: is a rebirth of {target}, which is not in an earlier epoch -- "
+                f"a second life cannot begin before the first"
+            )
+
+    for eid, (path, payload) in sorted(entities.items()):
+        if payload.get("type") != "event":
+            continue
+        for field in ("participants", "witnesses", "actors"):
+            for who in payload.get(field) or []:
+                if isinstance(who, str) and who.startswith("mythology_"):
+                    errors.append(
+                        f"{path.name}: names {who} as a {field[:-1]}. A mythology entity cannot "
+                        f"be present at an event -- if it acts, it is a character and belongs in "
+                        f"characters/."
+                    )
+
     # --- a derived creature names a real animal ---------------------------------------
     for eid, (path, payload) in sorted(entities.items()):
         base = payload.get("base_species")

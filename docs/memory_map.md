@@ -16,6 +16,9 @@ draws, unconnected, rather than being left out.
 
 ```mermaid
 graph LR
+  subgraph grp_no_culture_recorded["no culture recorded (culture)"]
+    character_ammonite_man("Ammonite Man")
+  end
   subgraph grp_primordial["primordial (culture)"]
     character_narmada_man("Narmada Man")
     character_owlman("Owlman")
@@ -30,6 +33,8 @@ graph LR
   event_great_devolvement_vanaras["The Great Devolvement"]
   event_jambanson_moonseed_planting["The Planting of the Moon-Seed"]
   event_ritual_of_jambenson["The Establishment of the Womb Rites"]
+  character_ammonite_man --> event_asura_gondwana_intervention
+  character_ammonite_man --> event_fang_vs_scale_wars
   character_jambanson --> event_curse_of_the_hollow_trees
   character_jambanson --> event_jambanson_moonseed_planting
   character_jambanson --> event_ritual_of_jambenson
@@ -39,7 +44,7 @@ graph LR
   character_owlman --> event_fang_vs_scale_wars
 ```
 
-4 character(s), 6 event(s) they appear in, 2 group(s).
+5 character(s), 6 event(s) they appear in, 3 group(s).
 
 ## Deep Antiquity
 
@@ -84,6 +89,9 @@ graph LR
     character_jharwa_elder_repa("Elder Repa")
     character_meera("Meera")
   end
+  subgraph grp_no_culture_recorded["no culture recorded (culture)"]
+    character_ammonite_man("Ammonite Man")
+  end
   subgraph grp_primordial["primordial (culture)"]
     character_narmada_man("Narmada Man")
     character_owlman("Owlman")
@@ -104,6 +112,7 @@ graph LR
   event_naraka_portal["Opening of the Naraka Lok Portal"]
   event_retreat_of_owlman["The Retreat of Owlman"]
   event_union_narmada_man_apsara["The Primordial Union under the Asura Planet"]
+  character_ammonite_man --> event_jharwa_first_wave_shell_pact
   character_bela --> event_aravali_massacre
   character_guyuk --> event_botai_cattle_raid
   character_guyuk --> event_naraka_portal
@@ -121,7 +130,7 @@ graph LR
   character_vara_ma --> event_aravali_massacre
 ```
 
-13 character(s), 6 event(s) they appear in, 7 group(s).
+14 character(s), 6 event(s) they appear in, 8 group(s).
 
 ## Civilization Dawn (Lothal Era)
 
@@ -254,12 +263,16 @@ graph LR
     character_onko("Onko")
     character_shakariman("Shakariman")
   end
+  subgraph grp_no_culture_recorded["no culture recorded (culture)"]
+    character_ammonite_man("Ammonite Man")
+  end
   subgraph grp_outlier["outlier (culture)"]
     character_aurum_theophanes("Aurum Theophanes")
   end
   event_antarctic_ice_wall_expedition["The Antarctic Ice Wall Expedition"]
   event_gondwana_teleportation["The Gondwana Spacetime Teleportation"]
   event_narmada_upriver_expedition["The Narmada Upriver Expedition"]
+  character_ammonite_man --> event_antarctic_ice_wall_expedition
   character_digha_jani --> event_gondwana_teleportation
   character_digha_jani --> event_narmada_upriver_expedition
   character_mitra --> event_antarctic_ice_wall_expedition
@@ -268,7 +281,7 @@ graph LR
   character_varuna --> event_antarctic_ice_wall_expedition
 ```
 
-6 character(s), 3 event(s) they appear in, 3 group(s).
+7 character(s), 3 event(s) they appear in, 4 group(s).
 
 **Present in no event of this era:** Aurum Theophanes, Shakariman.
 
@@ -282,11 +295,11 @@ graph LR
   subgraph grp_narmada_scholar["narmada_scholar (culture)"]
     character_varuna("Captain Varuna")
   end
-  subgraph grp_tushara["tushara (culture)"]
-    character_guyuk("Guyuk")
+  subgraph grp_narmada_survivor["narmada_survivor (culture)"]
+    character_guyuk_reborn("Guyuk the Seed-Gleaner")
   end
   event_survival_train_solarpunk["The Solarpunk Odyssey of the Ark"]
-  character_guyuk --> event_survival_train_solarpunk
+  character_guyuk_reborn --> event_survival_train_solarpunk
   character_mitra --> event_survival_train_solarpunk
   character_varuna --> event_survival_train_solarpunk
 ```

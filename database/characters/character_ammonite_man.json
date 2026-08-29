@@ -1,0 +1,22 @@
+{
+  "id": "character_ammonite_man",
+  "type": "character",
+  "name": "Ammonite Man",
+  "epithets": [
+    "Oracle of the Deep Tethys",
+    "First of the Invertebrate Dominion"
+  ],
+  "species": "biological_spiritual_hybrid",
+  "status": "alive",
+  "epoch": "epoch_prehistoric",
+  "roles": [
+    "oracle",
+    "negotiator"
+  ],
+  "notes": "First spiritual entity of the Invertebrate Dominion. GM analogue for deep-time memory. Colossal sentient nautiloid of the deep Tethys. Filed as mythology until he was noticed doing things only a person does -- negotiating with early humans, standing at four events across four eras.",
+  "canon": "primary",
+  "sources": [
+    "AI_CONTEXT.md",
+    "docs/decisions.md"
+  ]
+}

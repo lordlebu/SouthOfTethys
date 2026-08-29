@@ -9,7 +9,7 @@
   "aspect": "The founding legend of the Jharwa spiritualists",
   "relations": {
     "concerns": "character_jharwa_elder_repa",
-    "told_of": "mythology_ammonite_man",
+    "told_of": "character_ammonite_man",
     "set_at": "region_saraswati_delta"
   },
   "notes": "The founding legend of the Jharwa spiritualists, detailing how the cephalopod sage taught Elder Repa the sacred geometry of the spiral shell to quiet the violent waves of the Shattered Sea. Human sailors offering spiral conch shells to the sea before setting sail. The Ammonite Man whispering navigation paths through underwater currents.",

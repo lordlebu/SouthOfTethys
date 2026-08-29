@@ -164,6 +164,20 @@ def ring(points: list[list[float]]) -> str:
 # is not a gap in the atlas; it is the Shattering, drawn.
 UNSHAPED = {"epoch_post_cataclysm"}
 
+# An era whose arrangement canon does not claim to know, which is a stronger statement than
+# UNSHAPED and gets no map at all rather than a map without a coastline.
+#
+# The Prehistoric era is too old for the world `Partial_map.png` draws. That picture shows a
+# living Harappa and a standing university -- it is the Civilization Dawn world, and the grid
+# traced off it describes that arrangement. Putting the Vanaras on it would say canon knows
+# where the Age of Vanaras sat, and canon does not: it predates every landmark the map is
+# built from. The census still lists everything the era holds; only the picture is withheld.
+#
+# UNSHAPED is the weaker case. The Post-Cataclysm still draws its points, because the three
+# field-map anchors *are* cataclysm-shaped and correct for it -- what it has lost is the
+# coastline, not the arrangement.
+UNMAPPED = {"epoch_prehistoric"}
+
 
 def shapes(folders: dict[str, list[dict]], epoch_id: str) -> tuple[list[dict], list[dict]]:
     """Landmasses and regions with a traced outline that exist in this era."""
@@ -343,12 +357,24 @@ def main() -> int:
         if graph:
             doc += ["### Events", "", graph, ""]
 
-        points = placed(folders, eid)
+        points = placed(folders, eid) if eid not in UNMAPPED else []
         land, ground = shapes(folders, eid)
         lines = courses(folders, eid)
         # Ground is enough for a map. An era can have coastline and regions without a single
         # placed settlement, and that is still a picture of somewhere.
-        if points or ground:
+        if eid in UNMAPPED:
+            doc += [
+                "### Map",
+                "",
+                "*No map is drawn for this era.* The grid canon uses is traced off "
+                "`dump/Partial_map.png`, which shows a living Harappa and a standing "
+                "university -- it is a picture of the Civilization Dawn world. This era "
+                "predates every landmark that map is built from, so placing anything on it "
+                "would claim a geography canon does not have. What the era holds is in the "
+                "census above.",
+                "",
+            ]
+        elif points or ground:
             mapped += 1
             svg_path = OUT_MAPS / f"{eid}.svg"
             svg_path.write_text(svg_map(points, name, land, ground, lines) + "\n", encoding="utf-8")

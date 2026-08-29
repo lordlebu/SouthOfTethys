@@ -178,6 +178,18 @@ turn on.
 
 ---
 
+**Does the same person appear four epochs apart?** `epoch` says when someone *first* appears,
+not the only era they may act in, so one character standing in several eras is legal and often
+right -- a guardian outlives an age. But a teenage steppe nomad walking into the era after the
+Shattering is a different claim, and canon should say which it means. Write the later life as its
+own character with `reincarnation_of` naming the earlier one. Two entities and a link says it;
+one entity in five events across four eras does not.
+
+**If it acts, it is a character.** A `mythology_` entity holds a name, a domain and an aspect --
+it is a story told, not somebody who was there. The moment it negotiates, travels or is named a
+participant, it belongs in `characters/`. This has happened twice, to Owlman and to the Ammonite
+Man, and both times an outside reader noticed before the gate did. The gate checks it now.
+
 ## 3. Update the manifest
 
 ```bash
