@@ -24,7 +24,7 @@
 <line class="edge" x1="16" y1="64" x2="28" y2="50"/>
 <line class="edge" x1="28" y1="50" x2="58" y2="20"/>
 <circle class="dot" cx="16" cy="64" r="1.5"/>
-<text class="lbl" x="18" y="61" text-anchor="start">Dwarka</text>
+<text class="lbl" x="18" y="61" text-anchor="start">North Dwarka</text>
 <circle class="dot" cx="28" cy="50" r="1.5"/>
 <text class="lbl" x="28" y="47" text-anchor="middle">Lothal</text>
 <circle class="dot" cx="58" cy="20" r="1.5"/>
