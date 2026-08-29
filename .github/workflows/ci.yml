@@ -69,6 +69,7 @@ jobs:
           python utils/generate_timeline_mermaid.py
           python utils/generate_timeline.py
           python utils/generate_atlas.py
+          python utils/generate_memory_map.py
           python utils/evolve_species.py
           flake8 utils/ || true
 
@@ -96,6 +97,7 @@ jobs:
           python utils/generate_timeline_mermaid.py
           python utils/generate_timeline.py
           python utils/generate_atlas.py
+          python utils/generate_memory_map.py
           python utils/evolve_species.py
 
       - name: Check artifacts generated

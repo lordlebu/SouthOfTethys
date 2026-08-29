@@ -30,6 +30,7 @@ python utils/update_index.py --bump minor      # rebuild index.json ids + counts
 python utils/ingest_draft.py <file.md>         # check a drafted chapter before writing it
 python utils/generate_timeline_mermaid.py      # docs/timeline_mermaid.md, epochs and events
 python utils/generate_atlas.py                 # docs/atlas.md, canon as it stood in each era
+python utils/generate_memory_map.py            # docs/memory_map.md, who was there and with whom
 python utils/export_canon_bundle.py --apply    # write the game's data/canon/ bundle
 python services/api/build_deploy.py --target vercel   # bundle the retrieval service
 ```

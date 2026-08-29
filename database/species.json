@@ -1,0 +1,67 @@
+{
+  "version": "1.0.0",
+  "description": "What a person *is*, declared once so that a species is a value rather than a typo waiting to happen. The companion to cultures.json: that says what a person belongs to, this says what they are. Only characters carry `species` -- fauna and flora say what they are through `clade` and `base_species`, which is a different question with a different answer.",
+  "note": "Four of these come in near-identical pairs -- asura/asura_tainted, vanara/vanara_spirit -- and they are deliberately not merged. Declaring the vocabulary is about catching the thirteenth value someone types by accident, not about flattening twelve real distinctions into eight. If a pair should collapse, that is an authoring decision made on the characters, not a lint rule.",
+  "species": [
+    {
+      "id": "human",
+      "count": 38,
+      "note": "The default, and 38 of 52 characters."
+    },
+    {
+      "id": "asura",
+      "count": 2,
+      "note": "Sentient and person-like rather than beast -- metal humans who behave as people do. The culture of the same name is `maya_born` in cultures.json; the creature sense is a base_species pairing in fauna. Three senses, three homes."
+    },
+    {
+      "id": "deity_in_mortal_shell",
+      "count": 2,
+      "note": "A god wearing a person, which is not the same as a god."
+    },
+    {
+      "id": "yaksha",
+      "count": 2,
+      "note": "Nature spirit given a body."
+    },
+    {
+      "id": "apsara",
+      "count": 1,
+      "note": "Celestial dancer, of the `celestial` culture."
+    },
+    {
+      "id": "asura_tainted",
+      "count": 1,
+      "note": "Touched by asura rather than being one. Kept distinct from `asura` on purpose: the taint is what the story turns on, and collapsing the two would lose it."
+    },
+    {
+      "id": "biological_spiritual_hybrid",
+      "count": 1,
+      "note": "Neither wholly alive nor wholly spirit."
+    },
+    {
+      "id": "deity",
+      "count": 1,
+      "note": "A god as itself."
+    },
+    {
+      "id": "human_hybrid",
+      "count": 1,
+      "note": "Human crossed with something canon has not named."
+    },
+    {
+      "id": "riverbone",
+      "count": 1,
+      "note": "The first people of the Narmada, descended from the Narmada Man. A species, never a culture -- a draft proposed it as one and was refused."
+    },
+    {
+      "id": "vanara",
+      "count": 1,
+      "note": "The simian people of the Prehistoric era."
+    },
+    {
+      "id": "vanara_spirit",
+      "count": 1,
+      "note": "A vanara that is no longer only a vanara. Kept distinct from `vanara` for the same reason as the asura pair."
+    }
+  ]
+}

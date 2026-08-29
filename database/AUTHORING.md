@@ -151,6 +151,13 @@ A place that changes across eras states its identity once and overrides only wha
   ]
 ```
 
+**`species` is a declared vocabulary too.** It answers what a person *is*, where `culture`
+answers what they belong to, and both are checked. The twelve values live in
+`database/species.json` with a gloss each; add one there in the same commit rather than typing a
+thirteenth into a character and hoping. Four come in near-identical pairs on purpose --
+`asura`/`asura_tainted`, `vanara`/`vanara_spirit` -- because the difference is what those stories
+turn on.
+
 ### A character
 
 ```json

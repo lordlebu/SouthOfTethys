@@ -471,6 +471,22 @@ def main() -> int:
                     f"{path.name}: culture '{value}' is not declared in database/cultures.json"
                 )
 
+    # --- and so is species -------------------------------------------------------------
+    #
+    # The same gap `culture` had, one field over: 12 free-text values across 52 characters with
+    # nothing checking any of them, which is how a near-duplicate arrives unnoticed. Only
+    # characters carry it -- fauna and flora answer "what is this" through `clade` and
+    # `base_species` -- so this deliberately does not reach them.
+    species_path = DB / "species.json"
+    if species_path.exists():
+        known_species = {s["id"] for s in load(species_path).get("species", [])}
+        for eid, (path, payload) in sorted(entities.items()):
+            value = payload.get("species")
+            if isinstance(value, str) and value and value not in known_species:
+                errors.append(
+                    f"{path.name}: species '{value}' is not declared in database/species.json"
+                )
+
     # --- a derived creature names a real animal ---------------------------------------
     for eid, (path, payload) in sorted(entities.items()):
         base = payload.get("base_species")
