@@ -55,27 +55,17 @@
 <text class="lbl" x="46" y="49" text-anchor="middle">The Aranta</text>
 <circle class="dot-place" cx="45" cy="62" r="1.5"/>
 <text class="lbl" x="45" y="59" text-anchor="middle">The Deccan</text>
-<circle class="dot-place" cx="29" cy="15" r="1.5"/>
-<text class="lbl" x="29" y="12" text-anchor="middle">Harappa</text>
 <circle class="dot-place" cx="63" cy="8" r="1.5"/>
 <text class="lbl" x="63" y="5" text-anchor="middle">Hyrcania</text>
 <circle class="dot-place" cx="20" cy="24" r="1.5"/>
-<text class="lbl" x="20" y="21" text-anchor="middle">Makkan Coast</text>
-<circle class="dot-place" cx="13" cy="19" r="1.5"/>
-<text class="lbl" x="15" y="16" text-anchor="start">Mohenjodaro</text>
+<text class="lbl" x="22" y="21" text-anchor="start">Makkan Coast</text>
 <circle class="dot-place" cx="47" cy="67" r="1.5"/>
 <text class="lbl" x="47" y="64" text-anchor="middle">Nilgiri</text>
-<circle class="dot-place" cx="30" cy="19" r="1.5"/>
-<text class="lbl" x="30" y="16" text-anchor="middle">The Northern Frontier</text>
-<circle class="dot-place" cx="44" cy="15" r="1.5"/>
-<text class="lbl" x="44" y="12" text-anchor="middle">Sihauli</text>
 <circle class="dot-place" cx="50" cy="95" r="1.5"/>
 <text class="lbl" x="50" y="92" text-anchor="middle">The Southern Ice</text>
 <circle class="dot-place" cx="89" cy="73" r="1.5"/>
 <text class="lbl" x="87" y="70" text-anchor="end">Tamralinga</text>
 <circle class="dot-place" cx="66" cy="72" r="1.5"/>
 <text class="lbl" x="66" y="69" text-anchor="middle">Tamraparni</text>
-<circle class="dot-place" cx="72" cy="52" r="1.5"/>
-<text class="lbl" x="72" y="49" text-anchor="middle">Vengi</text>
 <text class="cap" x="0" y="108">north is up · 0-100 grid</text>
 </svg>

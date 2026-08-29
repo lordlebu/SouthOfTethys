@@ -3,6 +3,14 @@
   "type": "place",
   "name": "Jambhudweep",
   "kind": "island",
+  "epochs": [
+    "epoch_prehistoric",
+    "epoch_deep_antiquity",
+    "epoch_migrations",
+    "epoch_civilization_dawn",
+    "epoch_current",
+    "epoch_post_cataclysm"
+  ],
   "continent": "jambhudweepa",
   "extent": [
     [
@@ -118,7 +126,7 @@
     "Jambhudweepa"
   ],
   "description": "The island continent the story stands on, separated from Mainland Asia by the Tethys Sea.",
-  "notes": "The single largest structural claim the reference map makes that canon had not written down: Jambhudweep is an island, not a subcontinent joined to anything. Canon's seven regions all sit on it or around it, and `region.schema.json` already had `continent` defaulting to jambhudweepa for exactly this reason.",
+  "notes": "The single largest structural claim the reference map makes that canon had not written down: Jambhudweep is an island, not a subcontinent joined to anything. Canon's seven regions all sit on it or around it, and `region.schema.json` already had `continent` defaulting to jambhudweepa for exactly this reason. Ground rather than building: it is here before anyone names it and after they stop. Ground rather than building: it is here before anyone names it and after they stop.",
   "canon": "inferred",
   "sources": [
     "dump/Partial_map.png"

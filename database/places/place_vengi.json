@@ -3,13 +3,18 @@
   "type": "place",
   "name": "Vengi",
   "kind": "unknown",
+  "epochs": [
+    "epoch_migrations",
+    "epoch_civilization_dawn",
+    "epoch_current"
+  ],
   "coordinates": {
     "x": 72,
     "y": 52
   },
   "continent": "jambhudweepa",
   "description": "Named on the eastern coast of Jambhudweep, and nothing more is established.",
-  "notes": "Question-marked on the render. The annotation groups it with the coastal civilizations alongside Dwarka, Lothal and Tamraparni, which is the only claim canon has about it.",
+  "notes": "Question-marked on the render. The annotation groups it with the coastal civilizations alongside Dwarka, Lothal and Tamraparni, which is the only claim canon has about it. Raised by people, so it begins with them. The reference map draws a living city, and the map is a picture of one era rather than of all of them. Raised by people, so it begins with them. The reference map draws a living city, and the map is a picture of one era rather than of all of them.",
   "canon": "inferred",
   "sources": [
     "dump/Partial_map.png"

@@ -225,6 +225,29 @@ def main() -> int:
             if declared and e not in declared:
                 errors.append(f"{path.name}: {field} '{e}' is not declared in timeline/epochs.json")
 
+    # --- a place drawn on the map has to say when ---------------------------------
+    #
+    # `in_era` reads silence as "present in every era", which is right for the 346 species that
+    # rely on it -- a crocodile is not an era-specific thing -- and wrong for a city. The atlas
+    # drew six identical maps because all sixteen placed places were silent, so Harappa stood in
+    # the Prehistoric era next to the Vanaras.
+    #
+    # The rule is narrow on purpose. It asks only of a place that is actually *drawn* -- one with
+    # `coordinates`, an `extent` or a `path` -- because that is the one whose silence produces a
+    # visibly wrong picture rather than a missing line in a census. A place canon has not located
+    # may stay undated; there are 22 of those and dating them is not the price of drawing a map.
+    for eid, (path, payload) in sorted(entities.items()):
+        if path.parent.name != "places" or payload.get("sample"):
+            continue
+        if not (payload.get("coordinates") or payload.get("extent") or payload.get("path")):
+            continue
+        if not payload.get("epochs"):
+            errors.append(
+                f"{path.name}: is drawn on the map but declares no `epochs`, so it appears in "
+                f"every era including ones before it existed. Ground gets all six; something "
+                f"people raised starts when they raised it."
+            )
+
     # --- clades ------------------------------------------------------------------
     #
     # `clade` and `subclade` are two fields on one object whose legal values depend on each other,

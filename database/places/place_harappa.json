@@ -3,13 +3,18 @@
   "type": "place",
   "name": "Harappa",
   "kind": "city",
+  "epochs": [
+    "epoch_migrations",
+    "epoch_civilization_dawn",
+    "epoch_current"
+  ],
   "coordinates": {
     "x": 29,
     "y": 15
   },
   "continent": "mainland_asia",
   "description": "A Saraswati valley city of the northern frontier, upriver of Mohenjodaro.",
-  "notes": "Canon already names Harappa through `artifact_mask_of_harappa` and the Mask Family who carried it across the Tethys to found Lothal. The city itself had never been an entity.",
+  "notes": "Canon already names Harappa through `artifact_mask_of_harappa` and the Mask Family who carried it across the Tethys to found Lothal. The city itself had never been an entity. Raised by people, so it begins with them. The reference map draws a living city, and the map is a picture of one era rather than of all of them.",
   "canon": "inferred",
   "sources": [
     "dump/Partial_map.png"
