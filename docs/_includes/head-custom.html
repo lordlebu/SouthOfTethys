@@ -1,25 +1,169 @@
 <!--
-  Render Mermaid on the published site.
+  Two things the published book needs that the theme does not give it.
 
-  Auto-rendering a ```mermaid fence is a github.com markdown feature, not a GitHub Pages one.
-  Without this the book serves every diagram as source: the epoch timeline, the event graph and
-  the atlas's per-era graphs. `pages-themes/minimal` includes `head-custom.html` in its <head>,
-  which is the way in without overriding the theme's layout.
+  1. Mermaid. Auto-rendering a ```mermaid fence is a github.com markdown feature, not a GitHub
+     Pages one, so without this the diagrams publish as their own source.
 
-  **The markup to look for is `pre > code.language-mermaid`, with no wrapping div.** The first
-  version of this file targeted `div.language-mermaid`, on the assumption that kramdown wraps a
-  fence the way Rouge does. It does not: Rouge has no mermaid lexer, so kramdown falls through
-  to a plain `<pre><code class="language-...">` and emits no wrapper at all. That selector
-  matched nothing and the diagrams kept publishing as code blocks, which looks exactly like
-  success from the repository. Verified against the live page this time, not assumed.
+     **The markup to look for is `pre > code.language-mermaid`, with no wrapping div.** The
+     first version targeted `div.language-mermaid`, assuming kramdown wraps a fence the way
+     Rouge does. It does not: Rouge has no mermaid lexer, so kramdown falls through to a plain
+     `<pre><code class="language-...">` and emits no wrapper. That selector matched nothing and
+     the diagrams kept publishing as code blocks, which looks exactly like success from the
+     repository. Both shapes are handled now so it survives a lexer ever shipping.
 
-  Both shapes are handled anyway, so this keeps working if a mermaid lexer ever ships and Rouge
-  starts wrapping. `textContent` rather than innerHTML for the same reason: the day highlighting
-  turns on, the spans it injects must not reach the parser.
+  2. Paper. `pages-themes/minimal` is a screen theme -- cool greys, a hairline sidebar, a body
+     face meant for READMEs. This is a book, so it is set on paper: a warm ground, a reading
+     serif, generous measure, and rules instead of boxes.
 
-  If the CDN is unreachable the page degrades to what it shows today -- the diagram source,
-  readable and plainly unrendered rather than blank.
+  The nav carries `class="book-nav"`, emitted as raw HTML by `utils/book_nav.py` so there is
+  something to hook. Reaching it as `section > h1 + p` was the first attempt and was wrong:
+  that is every page's opening paragraph, so `decisions.md` and both READMEs would have been
+  set in monospace small caps as well.
 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap">
+
+<style>
+  :root {
+    --paper:   #F5EFE3;
+    --leaf:    #FBF7EF;
+    --ink:     #221F19;
+    --ink-mid: #55503f;
+    --ink-dim: #8a8270;
+    --rule:    #D8CDB6;
+    --rule-hi: #BFB093;
+    --mark:    #7A4B2A;
+    --quiet:   #EDE5D4;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper:   #17150F;
+      --leaf:    #1E1B14;
+      --ink:     #E8E1D0;
+      --ink-mid: #BDB49E;
+      --ink-dim: #8B8371;
+      --rule:    #332E22;
+      --rule-hi: #4A4231;
+      --mark:    #D19A6C;
+      --quiet:   #221E16;
+    }
+  }
+
+  /* The ground. A flat wash plus one very faint diagonal, which reads as stock rather than
+     screen without costing an image request. */
+  body {
+    background-color: var(--paper);
+    background-image:
+      repeating-linear-gradient(122deg,
+        rgba(0,0,0,.014) 0 1px, transparent 1px 7px);
+    color: var(--ink);
+    font-family: Spectral, Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    line-height: 1.68;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrapper { max-width: 62rem; }
+
+  /* ── The masthead ──────────────────────────────────────────────────── */
+  header {
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 1.4rem;
+  }
+  @media (min-width: 961px) {
+    header { border-bottom: 0; border-right: 1px solid var(--rule); padding-right: 1.6rem; }
+  }
+  header h1 {
+    font-family: Spectral, Georgia, serif;
+    font-weight: 600;
+    font-size: 1.9rem;
+    line-height: 1.15;
+    letter-spacing: -0.015em;
+    color: var(--ink);
+  }
+  header p { color: var(--ink-mid); font-size: .95rem; font-style: italic; }
+  header .view, header small { color: var(--ink-dim); font-size: .8rem; }
+
+  /* ── Reading ───────────────────────────────────────────────────────── */
+  section { color: var(--ink); }
+  section h1, section h2, section h3 {
+    font-family: Spectral, Georgia, serif;
+    font-weight: 600;
+    color: var(--ink);
+    letter-spacing: -0.012em;
+    text-wrap: balance;
+  }
+  section h1 { font-size: 2.15rem; margin-bottom: .3rem; }
+  section h2 {
+    font-size: 1.45rem;
+    margin-top: 2.6rem;
+    padding-bottom: .3rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  section h3 { font-size: 1.12rem; margin-top: 1.8rem; }
+  section p, section li { max-width: 68ch; }
+  section strong { font-weight: 600; }
+
+  a { color: var(--mark); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  a:hover { color: var(--ink); }
+
+  hr { border: 0; border-top: 1px solid var(--rule); margin: 2.4rem 0; }
+
+  blockquote {
+    border-left: 2px solid var(--rule-hi);
+    color: var(--ink-mid);
+    font-style: italic;
+    padding-left: 1rem;
+    margin-left: 0;
+  }
+
+  /* ── The nav ───────────────────────────────────────────────────────── */
+  .book-nav {
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-size: .76rem;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: var(--ink-dim);
+    background: var(--quiet);
+    border: 1px solid var(--rule);
+    border-radius: 2px;
+    padding: .6rem .85rem;
+    margin: .9rem 0 2rem;
+    max-width: none;
+  }
+  .book-nav a { color: var(--mark); text-decoration: none; }
+  .book-nav a:hover { text-decoration: underline; }
+  .book-nav strong { color: var(--ink); font-weight: 500; }
+
+  /* ── Tables, code, figures ─────────────────────────────────────────── */
+  table { border-collapse: collapse; font-size: .92rem; width: 100%; }
+  th, td { border: 0; border-bottom: 1px solid var(--rule); padding: .5rem .7rem; text-align: left; }
+  th { border-bottom: 1px solid var(--rule-hi); font-weight: 600; color: var(--ink-mid); }
+
+  code, pre, tt {
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-size: .84em;
+  }
+  code { background: var(--quiet); border: 1px solid var(--rule); border-radius: 2px; padding: .05em .3em; }
+  pre {
+    background: var(--leaf);
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+    padding: .9rem 1rem;
+    overflow-x: auto;
+  }
+  pre code { background: none; border: 0; padding: 0; }
+
+  /* The atlas maps are the one image the book has. Let them breathe. */
+  section img { display: block; margin: 1.4rem auto; max-width: 100%; }
+
+  /* Mermaid draws into this once the script below has run. */
+  pre.mermaid { background: none; border: 0; padding: 0; text-align: center; }
+</style>
+
 <script type="module">
   import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
 
@@ -28,15 +172,14 @@
     const pre = document.createElement("pre");
     pre.className = "mermaid";
     pre.textContent = code.textContent;
-    // The wrapper if Rouge made one, the <pre> otherwise.
     (code.closest("div.language-mermaid") || code.closest("pre") || code).replaceWith(pre);
   });
 
   if (blocks.length) {
+    const dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
     mermaid.initialize({
       startOnLoad: false,
-      // The book is a light page; `neutral` sits closer to it than the default.
-      theme: "neutral",
+      theme: dark ? "dark" : "neutral",
       securityLevel: "strict",
     });
     await mermaid.run();

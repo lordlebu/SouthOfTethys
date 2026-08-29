@@ -1,6 +1,6 @@
 # The Atlas of South of Tethys
 
-[The Timeline](https://lordlebu.github.io/SouthOfTethys/) · [Epochs & Events](https://lordlebu.github.io/SouthOfTethys/timeline_mermaid.html) · **The Atlas**
+<p class="book-nav"><a href="https://lordlebu.github.io/SouthOfTethys/">The Timeline</a> &middot; <a href="https://lordlebu.github.io/SouthOfTethys/timeline_mermaid.html">Epochs &amp; Events</a> &middot; <strong>The Atlas</strong></p>
 
 _Generated from `database/` by `utils/generate_atlas.py`. Do not edit by hand._
 
