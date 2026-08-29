@@ -26,11 +26,22 @@ PAGES = [
 
 
 def nav(current: str) -> str:
-    """A one-line nav for a generated page, with the current one not linked."""
+    """A nav bar for a generated page, with the current one not linked.
+
+    Emitted as raw HTML rather than markdown so the stylesheet has something to hook. A
+    markdown line can only be reached as `section > h1 + p`, which is every page's opening
+    paragraph -- it would have set `decisions.md` and both READMEs in monospace small caps too.
+
+    kramdown passes an HTML block through untouched, so the class survives to GitHub Pages.
+    github.com strips the class but keeps the paragraph and the links, where there is no
+    stylesheet anyway and it reads fine as a line of prose.
+    """
     parts = []
     for filename, page, label in PAGES:
+        # "Epochs & Events" carries an ampersand, and this is HTML now rather than markdown.
+        safe = label.replace("&", "&amp;")
         if filename == current:
-            parts.append(f"**{label}**")
+            parts.append(f"<strong>{safe}</strong>")
         else:
-            parts.append(f"[{label}]({SITE}/{page})")
-    return " · ".join(parts)
+            parts.append(f'<a href="{SITE}/{page}">{safe}</a>')
+    return '<p class="book-nav">' + " &middot; ".join(parts) + "</p>"

@@ -1,6 +1,6 @@
 # Timeline Summary
 
-**The Timeline** · [Epochs & Events](https://lordlebu.github.io/SouthOfTethys/timeline_mermaid.html) · [The Atlas](https://lordlebu.github.io/SouthOfTethys/atlas.html)
+<p class="book-nav"><strong>The Timeline</strong> &middot; <a href="https://lordlebu.github.io/SouthOfTethys/timeline_mermaid.html">Epochs &amp; Events</a> &middot; <a href="https://lordlebu.github.io/SouthOfTethys/atlas.html">The Atlas</a></p>
 
 _Generated from `database/events/`.
 
