@@ -4,6 +4,11 @@
 
 _Generated from `database/events/`.
 
+## The Curse of the Hollow Trees
+**Epoch:** Prehistoric Foundations & Age of Vanaras
+**Summary:** During a cataclysmic ecological collapse in the Godavari rainforests, the Vanara mystic Jambanson sets off on an epic upriver quest to find the Saraswati Spiceroot, gathering dreamspace knowledge and a sacred moon-seed to save his homeland.
+**Participants:** character_jambanson
+
 ## The Fang vs. Scale Wars
 **Epoch:** Prehistoric Foundations & Age of Vanaras
 **Summary:** A deep-time evolutionary conflict on Gondwana: ancestral synapsids, the Fang, against emerging diapsid archosaurs, the Scale, for ecological dominance. The gorgonopsids held the fern forests; the archosaurs took the volcanic highlands and the marshy deltas.
@@ -18,6 +23,16 @@ _Generated from `database/events/`.
 **Epoch:** Prehistoric Foundations & Age of Vanaras
 **Summary:** As global climate shifts fracture the southern tree-cities of the Nilgiri Canopy, the hyper-intelligent Vanara civilization begins to collapse and devolve. The sun-spirit Lionman manifests to guide the scattered, regressed tribes safely across the savanna.
 **Participants:** character_lionman
+
+## The Planting of the Moon-Seed
+**Epoch:** Prehistoric Foundations & Age of Vanaras
+**Summary:** Upon returning to the Godavari rainforests, Jambanson plants the sacred moon-seed received from the Narmada Man. The seed rapidly blossoms into the silver-glowing Bhuta-Kāna Tree, restoring the ecosystem.
+**Participants:** character_jambanson, character_narmada_man
+
+## The Establishment of the Womb Rites
+**Epoch:** Prehistoric Foundations & Age of Vanaras
+**Summary:** To protect early human lineages from Asura corruption, Jambanson designs a highly ritualized, male-led womb purification exorcism using sacred resins, stone yonis, and acoustic hymns to purge demonic influence.
+**Participants:** character_jambanson
 
 ## Forging of the Dragon’s Spine
 _Sample fixture — kept to exercise the tooling, not part of the story._
@@ -54,6 +69,11 @@ _Sample fixture — kept to exercise the tooling, not part of the story._
 **Epoch:** Era of Human Migrations
 **Summary:** As the horse-taming Vedda clans clear the central forests for pasture, the ancient avian guardian Owlman retreats deep into the Western Ghats. A reclusive group of Jharwa-Vanara outliers construct the first hidden tree-temples to protect his fading presence.
 **Participants:** character_owlman
+
+## The Primordial Union under the Asura Planet
+**Epoch:** Era of Human Migrations
+**Summary:** During a cataclysmic flood beneath the glow of an approaching Asura planet, the primeval King Narmada Man encounters and unites with a meditating celestial Apsara. Their union grants him the power to conquer the valley but ends in tragedy when she ascends to the moon, leaving behind an Asura-tainted egg.
+**Participants:** character_narmada_man, character_meditating_apsara
 
 ## The Final Voyage of the Kelpfang
 **Epoch:** Civilization Dawn (Lothal Era)
@@ -114,6 +134,16 @@ _Sample fixture — kept to exercise the tooling, not part of the story._
 **Epoch:** Current Era (Age of Machinery)
 **Summary:** Bound to mortal bodies, Captain Varuna and his companion Mitra lead a whale-bone trawler into the freezing southern waters of the Tethys. Trapped in a glacial maze, Varuna's drive to ram through the ice wall clashes with the Ammonite Man's drive to preserve it as a memory archive, resolved only when Mitra mediates a silent, drifting passage.
 **Participants:** character_varuna, character_mitra, mythology_ammonite_man
+
+## The Narmada Upriver Expedition
+**Epoch:** Current Era (Age of Machinery)
+**Summary:** To investigate sightings of the elusive Asura planet, field historian Digha Jani and the skeptical Professor Onko travel up the Narmada River. Awaiting supplies, they stay with isolated tribes, teaching children to harvest golden spice sand and logging the region's unique cliffside honey-gatherer pacts and tea plantations.
+**Participants:** character_onko, character_digha_jani
+
+## The Gondwana Spacetime Teleportation
+**Epoch:** Current Era (Age of Machinery)
+**Summary:** During a violent monsoon storm in the Narmada forests, a direct lightning strike leaves Digha Jani unharmed and glowing, before subsequent strikes tear a rift in spacetime. The scholars are teleported through a cosmic wormhole to the floating, weightless Gondwana plateau, where they discover ancient tablets and a basalt boundary stone.
+**Participants:** character_onko, character_digha_jani
 
 ## The Solarpunk Odyssey of the Ark
 **Epoch:** Post-Cataclysmic Era (The Great Shattering)

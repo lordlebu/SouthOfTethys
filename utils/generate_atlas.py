@@ -19,15 +19,15 @@ Three views per era, and they deliberately do not share a renderer:
            unreadable and slow to lay out, and no styling fixes it. SVG over the existing
            0-100 grid needs no projection maths and stays diffable.
 
-**Only one era has a map, and the page says why rather than drawing an empty square.** The
-three field maps are the only coordinates canon holds, and their layout is cataclysm-shaped by
-`field_map.schema.json`'s own account -- it describes the world after the Collapse.
+**Five eras draw a world; the sixth draws three points.** The coast, the regions and the
+Saraswati are traced off `dump/Partial_map.png`, which is the only picture canon has of its own
+geography. After the Great Shattering canon knows three field-map coordinates and no ground at
+all, and those coordinates are cataclysm-shaped by `field_map.schema.json`'s own account -- so
+drawing them over the earlier coast put two of the three field maps in open sea.
 
-Earlier eras are not drawn, and not because anybody is behind on writing. **The Great
-Shattering is withheld on purpose**: canon keeps its consequences and not its account, because
-working it out is what the player is there to do. The shape of the world before it is part of
-what is being withheld, so the map is absent by design rather than pending. Ruling in
-DESIGN.md, 2026-08-27.
+That is not a gap in the atlas. The difference between the five maps and the sixth is the only
+picture of the Shattering canon is going to have, since the event itself stays unwritten on
+purpose. Ruling in DESIGN.md.
 
     python utils/generate_atlas.py                          # every era
     python utils/generate_atlas.py --era epoch_post_cataclysm
@@ -174,6 +174,17 @@ def shapes(folders: dict[str, list[dict]], epoch_id: str) -> tuple[list[dict], l
     return land, ground
 
 
+def courses(folders: dict[str, list[dict]], epoch_id: str) -> list[dict]:
+    """Rivers and routes -- anything canon gives a line rather than a ring.
+
+    Held back on the same era as the coastline: a river without its valley is a stripe in the
+    sea.
+    """
+    if epoch_id in UNSHAPED:
+        return []
+    return [e for e in folders.get("places", []) if e.get("path") and in_era(e, epoch_id)]
+
+
 def placed(folders: dict[str, list[dict]], epoch_id: str) -> list[dict]:
     """Everything with coordinates that exists in this era, resolved to its state then."""
     out = []
@@ -189,7 +200,8 @@ def placed(folders: dict[str, list[dict]], epoch_id: str) -> list[dict]:
 
 
 def svg_map(points: list[dict], epoch_name: str,
-            land: list[dict] | None = None, ground: list[dict] | None = None) -> str:
+            land: list[dict] | None = None, ground: list[dict] | None = None,
+            lines: list[dict] | None = None) -> str:
     """The 0-100 grid, drawn directly. y grows downward, which is the ruling and also SVG.
 
     Sea, then the landmasses, then each region washed by its first biome, then whatever canon
@@ -212,12 +224,15 @@ def svg_map(points: list[dict], epoch_name: str,
         f"  .sea{{fill:{SEA[0]}}} .land{{fill:{LAND[0]}}}",
         "  polygon{stroke:#7E8A76;stroke-width:.25}",
         "  .rgn{fill:#39402F;font:2.7px Archivo,sans-serif;font-style:italic;opacity:.9}",
+        "  .course{fill:none;stroke:#5B87A8;stroke-width:.8;stroke-linejoin:round;stroke-linecap:round}",
+        "  .course-lbl{fill:#2F5470;font:2.2px Archivo,sans-serif;font-style:italic}",
         f"  {light}",
         "  @media(prefers-color-scheme:dark){",
         "   .bg{fill:#121817}.grid{stroke:#28322F}.edge{stroke:#3E4C4E}",
         "   .dot{fill:#74A8DA}.dot-place{fill:#CBAE6A}.lbl{fill:#E2E7E3}.cap{fill:#78857F}",
         f"   .sea{{fill:{SEA[1]}}} .land{{fill:{LAND[1]}}}",
         "   polygon{stroke:#3A4436} .rgn{fill:#9FB09A}",
+        "   .course{stroke:#6E9CBD} .course-lbl{fill:#9DBDD4}",
         f"   {dark}",
         "  }",
         "</style>",
@@ -237,6 +252,15 @@ def svg_map(points: list[dict], epoch_name: str,
         ys = [p[1] for p in e["extent"]]
         parts.append(
             f'<text class="rgn" x="{sum(xs) / len(xs):.1f}" y="{sum(ys) / len(ys):.1f}" '
+            f'text-anchor="middle">{xml_text(e["name"])}</text>'
+        )
+
+    # Rivers over the ground they cut through, under everything standing on it.
+    for e in lines or []:
+        parts.append(f'<polyline class="course" points="{ring(e["path"])}"/>')
+        hx, hy = e["path"][len(e["path"]) // 2]
+        parts.append(
+            f'<text class="course-lbl" x="{hx:.1f}" y="{hy - 1.4:.1f}" '
             f'text-anchor="middle">{xml_text(e["name"])}</text>'
         )
 
@@ -321,12 +345,13 @@ def main() -> int:
 
         points = placed(folders, eid)
         land, ground = shapes(folders, eid)
+        lines = courses(folders, eid)
         # Ground is enough for a map. An era can have coastline and regions without a single
         # placed settlement, and that is still a picture of somewhere.
         if points or ground:
             mapped += 1
             svg_path = OUT_MAPS / f"{eid}.svg"
-            svg_path.write_text(svg_map(points, name, land, ground) + "\n", encoding="utf-8")
+            svg_path.write_text(svg_map(points, name, land, ground, lines) + "\n", encoding="utf-8")
             rel = f"atlas/{eid}.svg"
             doc += [
                 "### Map",

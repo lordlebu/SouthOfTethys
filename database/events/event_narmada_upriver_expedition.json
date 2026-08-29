@@ -1,0 +1,31 @@
+{
+  "id": "event_narmada_upriver_expedition",
+  "type": "event",
+  "title": "The Narmada Upriver Expedition",
+  "epoch": "epoch_current",
+  "participants": [
+    "character_onko",
+    "character_digha_jani"
+  ],
+  "location": "place_narmada_university_library",
+  "predecessors": [],
+  "successors": [
+    "event_gondwana_teleportation"
+  ],
+  "causes": [
+    "Dr. Digha Jani's controversial theory on sentient Asura planets and her clash with the skeptical Professor Onko",
+    "Recent reports from isolated river villages of a 'false moon' shifting into a demonic Asura face",
+    "The Narmada scholars' decision to seek answers upriver toward the mouth of Gondwana where celestial anomalies are not detected"
+  ],
+  "outcomes": [
+    "Onko and Digha living among isolated river villages while awaiting delayed supplies",
+    "Teaching local tribal children to sift and gather precious golden 'spice sand' using cloth and a dish",
+    "Mapping of vast natural tea plantations beyond the Shilajit mountain and documenting local cliffside bee-pacts"
+  ],
+  "summary": "To investigate sightings of the elusive Asura planet, field historian Digha Jani and the skeptical Professor Onko travel up the Narmada River. Awaiting supplies, they stay with isolated tribes, teaching children to harvest golden spice sand and logging the region's unique cliffside honey-gatherer pacts and tea plantations.",
+  "canon": "primary",
+  "sources": [
+    "Digha Jani and the Cosmic Secrets of Jambhudweepa",
+    "The Predatory Sentience of Asura Planets"
+  ]
+}

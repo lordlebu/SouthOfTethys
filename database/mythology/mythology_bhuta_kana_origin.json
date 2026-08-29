@@ -1,0 +1,20 @@
+{
+  "id": "mythology_bhuta_kana_origin",
+  "type": "mythology",
+  "name": "The Origin of the Bhuta-Kāna",
+  "domain": [
+    "origin",
+    "ritual"
+  ],
+  "aspect": "The sacred legend of how the Bhuta-Kāna fig tree grew from a celestial moon-seed to become the living record of the anci",
+  "relations": {
+    "concerns": "character_narmada_man",
+    "set_at": "place_godavari_rainforest"
+  },
+  "notes": "The sacred legend of how the Bhuta-Kāna fig tree grew from a celestial moon-seed to become the living record of the ancient world's memories. A silver-leaved oracle fig that whispers the voices of the forest in the evening breeze. The botanical preservation of Jambanson's infallible memory after his physical death.",
+  "canon": "primary",
+  "sources": [
+    "Roots and Whispers: The Legacy of the Bhuta-Kāna Tree",
+    "The Mythic Legacy and Ritual Order of Jambenson"
+  ]
+}

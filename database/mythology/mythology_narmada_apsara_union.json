@@ -1,0 +1,20 @@
+{
+  "id": "mythology_narmada_apsara_union",
+  "type": "mythology",
+  "name": "The Legend of the Lunar Egg and the Riverbone King",
+  "domain": [
+    "origin",
+    "ritual"
+  ],
+  "aspect": "The founding myth of Jambhudweepa's spiritual ecology",
+  "relations": {
+    "concerns": "character_meditating_apsara",
+    "set_at": "place_narmada_valley_outpost"
+  },
+  "notes": "The founding myth of Jambhudweepa's spiritual ecology, describing how the Narmada Man's sorrow over his ascended Apsara partner permanently fused his 'memory-seed' magic into the volcanic bedrock, and how their Asura-tainted egg wove a demonic lineage into the mortal realm. The ritual veneration of the Narmada Man's pulsing, fossilized skull beneath the Crystal Spire north of Lothal. The mythical belief that the moon is an unyielding archive of his ancient grief. The custom of Harappan sages and military leaders bowing to his remains to absorb 'memory-seed' magic before battles.",
+  "canon": "primary",
+  "sources": [
+    "The Narmada Man: Primordial King of the Riverbones",
+    "Narmada Valley: The Primordial Gateway of Jambhudweepa"
+  ]
+}

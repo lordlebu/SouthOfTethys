@@ -3,6 +3,10 @@
   "type": "place",
   "name": "Hyrcania",
   "kind": "plains",
+  "coordinates": {
+    "x": 63,
+    "y": 8
+  },
   "continent": "mainland_asia",
   "aliases": [
     "The Hyrkanian Steppe",

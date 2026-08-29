@@ -3,6 +3,10 @@
   "type": "place",
   "name": "Harappa",
   "kind": "city",
+  "coordinates": {
+    "x": 29,
+    "y": 15
+  },
   "continent": "mainland_asia",
   "description": "A Saraswati valley city of the northern frontier, upriver of Mohenjodaro.",
   "notes": "Canon already names Harappa through `artifact_mask_of_harappa` and the Mask Family who carried it across the Tethys to found Lothal. The city itself had never been an entity.",

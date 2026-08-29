@@ -1,0 +1,20 @@
+{
+  "id": "character_meditating_apsara",
+  "type": "character",
+  "name": "The Meditating Apsara",
+  "culture": "celestial",
+  "species": "apsara",
+  "status": "mythic",
+  "epoch": "epoch_migrations",
+  "roles": [
+    "Celestial Muse",
+    "Anchoring Spirit of the Moon",
+    "Matriarch of the Demonic Lineage"
+  ],
+  "notes": "A radiant celestial nymph who descended to Jambhudweepa's volcanic cliffs for deep meditation. During a cataclysmic flood and under the gaze of a red Asura planet, she united with the Narmada Man, giving him the celestial strength to conquer the wild lands. She later gave birth to a shimmering, Asura-tainted egg before levitating into the lunar light, leaving her mortal partner to dwell forever on the moon.",
+  "canon": "primary",
+  "sources": [
+    "Narmada Valley: The Primordial Gateway of Jambhudweepa",
+    "The Narmada Man: Primordial King of the Riverbones"
+  ]
+}

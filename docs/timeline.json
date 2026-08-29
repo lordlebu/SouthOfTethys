@@ -1,5 +1,33 @@
 [
   {
+    "id": "event_curse_of_the_hollow_trees",
+    "type": "event",
+    "title": "The Curse of the Hollow Trees",
+    "epoch": "epoch_prehistoric",
+    "participants": [
+      "character_jambanson"
+    ],
+    "location": "place_godavari_rainforest",
+    "predecessors": [],
+    "successors": [
+      "event_jambanson_moonseed_planting"
+    ],
+    "causes": [
+      "A devastating ecological collapse of the southern rainforests",
+      "The complete abandonment of hives by the forest bees"
+    ],
+    "outcomes": [
+      "Jambanson's quest upriver to find the Saraswati Spiceroot",
+      "The establishment of an alliance with the western coast Tupi seers",
+      "Jambanson's vision at the volcanic Crystal Spire"
+    ],
+    "summary": "During a cataclysmic ecological collapse in the Godavari rainforests, the Vanara mystic Jambanson sets off on an epic upriver quest to find the Saraswati Spiceroot, gathering dreamspace knowledge and a sacred moon-seed to save his homeland.",
+    "canon": "primary",
+    "sources": [
+      "The Mythic Legacy and Ritual Order of Jambenson"
+    ]
+  },
+  {
     "id": "event_fang_vs_scale_wars",
     "type": "event",
     "title": "The Fang vs. Scale Wars",
@@ -89,6 +117,63 @@
     "canon": "primary",
     "sources": [
       "Ancient Palm-Leaf Manuscripts of Narmada University"
+    ]
+  },
+  {
+    "id": "event_jambanson_moonseed_planting",
+    "type": "event",
+    "title": "The Planting of the Moon-Seed",
+    "epoch": "epoch_prehistoric",
+    "participants": [
+      "character_jambanson",
+      "character_narmada_man"
+    ],
+    "location": "place_godavari_rainforest",
+    "predecessors": [
+      "event_curse_of_the_hollow_trees"
+    ],
+    "successors": [
+      "event_ritual_of_jambenson"
+    ],
+    "causes": [
+      "The gift of the sacred moon-seed from the primordial Narmada Man at the Crystal Spire"
+    ],
+    "outcomes": [
+      "The rapid, brilliant blooming of the massive Bhuta-K\u0101na Tree",
+      "The healing of the Godavari rainforest's ecological blight",
+      "The creation of a living, mycelial archive of ancestral memory"
+    ],
+    "summary": "Upon returning to the Godavari rainforests, Jambanson plants the sacred moon-seed received from the Narmada Man. The seed rapidly blossoms into the silver-glowing Bhuta-K\u0101na Tree, restoring the ecosystem.",
+    "canon": "primary",
+    "sources": [
+      "Roots and Whispers: The Legacy of the Bhuta-K\u0101na Tree"
+    ]
+  },
+  {
+    "id": "event_ritual_of_jambenson",
+    "type": "event",
+    "title": "The Establishment of the Womb Rites",
+    "epoch": "epoch_prehistoric",
+    "participants": [
+      "character_jambanson"
+    ],
+    "location": "place_godavari_rainforest",
+    "predecessors": [
+      "event_jambanson_moonseed_planting"
+    ],
+    "successors": [],
+    "causes": [
+      "The birth of Jharwa fetuses tainted with dark Asura blood",
+      "Jambanson's mastery over protective botanical and acoustic rites"
+    ],
+    "outcomes": [
+      "The creation of the Jharwa womb-purification exorcisms",
+      "The rise of an exclusive, male-led priestly order wielding stone yonis and secret hymns"
+    ],
+    "summary": "To protect early human lineages from Asura corruption, Jambanson designs a highly ritualized, male-led womb purification exorcism using sacred resins, stone yonis, and acoustic hymns to purge demonic influence.",
+    "canon": "primary",
+    "sources": [
+      "The Mythic Legacy and Ritual Order of Jambenson"
     ]
   },
   {
@@ -294,6 +379,35 @@
     "sources": [
       "The Stone Scrolls of Dwarka Fortress",
       "Narmada Historical Surveys"
+    ]
+  },
+  {
+    "id": "event_union_narmada_man_apsara",
+    "type": "event",
+    "title": "The Primordial Union under the Asura Planet",
+    "epoch": "epoch_migrations",
+    "participants": [
+      "character_narmada_man",
+      "character_meditating_apsara"
+    ],
+    "location": "place_narmada_valley_outpost",
+    "predecessors": [],
+    "successors": [],
+    "causes": [
+      "A cataclysmic, world-altering rainfall and rising floodwaters in the Narmada Valley",
+      "The ominous orbital approach of a sentient Asura Planet in the sky"
+    ],
+    "outcomes": [
+      "The union between the primeval Narmada Man and the meditating celestial Apsara",
+      "The conquest of the wild lands of beasts and vanaras using her celestial strength",
+      "The birth of a shimmering, Asura-tainted egg, which introduced a demonic lineage into Jambhudweepa",
+      "The Apsara's ascension to the moon, abandoning the Narmada Man to his mortal grief"
+    ],
+    "summary": "During a cataclysmic flood beneath the glow of an approaching Asura planet, the primeval King Narmada Man encounters and unites with a meditating celestial Apsara. Their union grants him the power to conquer the valley but ends in tragedy when she ascends to the moon, leaving behind an Asura-tainted egg.",
+    "canon": "primary",
+    "sources": [
+      "The Narmada Man: Primordial King of the Riverbones",
+      "Narmada Valley: The Primordial Gateway of Jambhudweepa"
     ]
   },
   {
@@ -672,6 +786,68 @@
     "canon": "primary",
     "sources": [
       "Resonant Hearts: Intimate Chronicles Aboard the Kelpfang"
+    ]
+  },
+  {
+    "id": "event_narmada_upriver_expedition",
+    "type": "event",
+    "title": "The Narmada Upriver Expedition",
+    "epoch": "epoch_current",
+    "participants": [
+      "character_onko",
+      "character_digha_jani"
+    ],
+    "location": "place_narmada_university_library",
+    "predecessors": [],
+    "successors": [
+      "event_gondwana_teleportation"
+    ],
+    "causes": [
+      "Dr. Digha Jani's controversial theory on sentient Asura planets and her clash with the skeptical Professor Onko",
+      "Recent reports from isolated river villages of a 'false moon' shifting into a demonic Asura face",
+      "The Narmada scholars' decision to seek answers upriver toward the mouth of Gondwana where celestial anomalies are not detected"
+    ],
+    "outcomes": [
+      "Onko and Digha living among isolated river villages while awaiting delayed supplies",
+      "Teaching local tribal children to sift and gather precious golden 'spice sand' using cloth and a dish",
+      "Mapping of vast natural tea plantations beyond the Shilajit mountain and documenting local cliffside bee-pacts"
+    ],
+    "summary": "To investigate sightings of the elusive Asura planet, field historian Digha Jani and the skeptical Professor Onko travel up the Narmada River. Awaiting supplies, they stay with isolated tribes, teaching children to harvest golden spice sand and logging the region's unique cliffside honey-gatherer pacts and tea plantations.",
+    "canon": "primary",
+    "sources": [
+      "Digha Jani and the Cosmic Secrets of Jambhudweepa",
+      "The Predatory Sentience of Asura Planets"
+    ]
+  },
+  {
+    "id": "event_gondwana_teleportation",
+    "type": "event",
+    "title": "The Gondwana Spacetime Teleportation",
+    "epoch": "epoch_current",
+    "participants": [
+      "character_onko",
+      "character_digha_jani"
+    ],
+    "location": "place_gondwana_plateau",
+    "predecessors": [
+      "event_narmada_upriver_expedition"
+    ],
+    "successors": [],
+    "causes": [
+      "A torrential monsoon downpour trapping the expedition party under the forest canopy of the Narmada Valley",
+      "A highly anomalous and energetic lightning strike directly hitting Digha Jani",
+      "A succession of blinding lightning strikes fracturing the local fabric of spacetime"
+    ],
+    "outcomes": [
+      "The sudden physical teleportation of Onko and Digha through a library-like cosmic wormhole filled with floating tomes",
+      "Emerging onto the weightless, desolate Gondwana plateau under a skies ruled by a massive, pulsing Asura planet",
+      "The discovery of half-buried stone tablets and a massive, oily volcanic black lingam acting as an ancient co-existence boundary stone"
+    ],
+    "summary": "During a violent monsoon storm in the Narmada forests, a direct lightning strike leaves Digha Jani unharmed and glowing, before subsequent strikes tear a rift in spacetime. The scholars are teleported through a cosmic wormhole to the floating, weightless Gondwana plateau, where they discover ancient tablets and a basalt boundary stone.",
+    "canon": "primary",
+    "sources": [
+      "Digha Jani and the Cosmic Secrets of Jambhudweepa",
+      "The Predatory Sentience of Asura Planets"
     ]
   },
   {

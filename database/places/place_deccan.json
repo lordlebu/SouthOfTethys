@@ -3,6 +3,10 @@
   "type": "place",
   "name": "The Deccan",
   "kind": "plateau",
+  "coordinates": {
+    "x": 45,
+    "y": 62
+  },
   "continent": "jambhudweepa",
   "description": "The high interior south of the Narmada country.",
   "canon": "inferred",

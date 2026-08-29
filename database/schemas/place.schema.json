@@ -91,6 +91,21 @@
         }
       }
     },
+    "path": {
+      "type": "array",
+      "description": "A linear feature -- a river, a route -- as an ordered list of [x, y] points on the 0-100 grid. Read source-first: the Saraswati runs from inner Asia to the Makran coast, and the order says which end is which.\n\nSeparate from `extent` because a ring and a line are different things. A river drawn as a thin polygon has to be drawn twice, once out and once back, and every edit has to keep the two banks in step.",
+      "minItems": 2,
+      "items": {
+        "type": "array",
+        "minItems": 2,
+        "maxItems": 2,
+        "items": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        }
+      }
+    },
     "epochs": {
       "type": "array",
       "description": "Epoch ids from database/timeline/epochs.json. Absent means the place exists in every era.",

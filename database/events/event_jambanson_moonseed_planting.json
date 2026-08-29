@@ -1,0 +1,30 @@
+{
+  "id": "event_jambanson_moonseed_planting",
+  "type": "event",
+  "title": "The Planting of the Moon-Seed",
+  "epoch": "epoch_prehistoric",
+  "participants": [
+    "character_jambanson",
+    "character_narmada_man"
+  ],
+  "location": "place_godavari_rainforest",
+  "predecessors": [
+    "event_curse_of_the_hollow_trees"
+  ],
+  "successors": [
+    "event_ritual_of_jambenson"
+  ],
+  "causes": [
+    "The gift of the sacred moon-seed from the primordial Narmada Man at the Crystal Spire"
+  ],
+  "outcomes": [
+    "The rapid, brilliant blooming of the massive Bhuta-Kāna Tree",
+    "The healing of the Godavari rainforest's ecological blight",
+    "The creation of a living, mycelial archive of ancestral memory"
+  ],
+  "summary": "Upon returning to the Godavari rainforests, Jambanson plants the sacred moon-seed received from the Narmada Man. The seed rapidly blossoms into the silver-glowing Bhuta-Kāna Tree, restoring the ecosystem.",
+  "canon": "primary",
+  "sources": [
+    "Roots and Whispers: The Legacy of the Bhuta-Kāna Tree"
+  ]
+}
