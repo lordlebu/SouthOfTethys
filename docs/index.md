@@ -33,6 +33,11 @@ _Sample fixture — kept to exercise the tooling, not part of the story._
 **Summary:** Sira uses a corrupting mask to manipulate Vedda brothers Ranu and Bela into massacring a Jharwa village. Meera survives and is forced into marriage. Vara-Ma and Orek later help her and hide dangerous masks with Thren in the Aravali sanctuary.
 **Participants:** character_sira, character_ranu, character_bela, character_meera, character_vara_ma, character_orek, character_thren
 
+## The Botai Cattle Raid
+**Epoch:** Era of Human Migrations
+**Summary:** A Botai raid on the Tushara herds strips Guyuk Mongke of her royal standing and leaves her with nothing. Nirigili Mahashay takes her into his caravan.
+**Participants:** character_guyuk, character_nirigili
+
 ## The Jharwa First-Wave & The Shell Pact
 **Epoch:** Era of Human Migrations
 **Summary:** During the Pleistocene Glaciation, the Jharwa cave-painters cross the Tethys Sea to Jambhudweepa. Landing in the Saraswati Delta, Elder Repa establishes the Shell Pact with the Ammonite Man, trading spiral conches for safe passage through the deep channels.
@@ -47,6 +52,16 @@ _Sample fixture — kept to exercise the tooling, not part of the story._
 **Epoch:** Era of Human Migrations
 **Summary:** As the horse-taming Vedda clans clear the central forests for pasture, the ancient avian guardian Owlman retreats deep into the Western Ghats. A reclusive group of Jharwa-Vanara outliers construct the first hidden tree-temples to protect his fading presence.
 **Participants:** character_owlman
+
+## The Storm-Bone Khan's Warning at Lothal
+**Epoch:** Civilization Dawn (Lothal Era)
+**Summary:** Working the fringes of the Harappan settlement, Guyuk warns Shaashak of the coming Tendua Manticore days before it strikes, teaches Mehme to read the coastal winds at Dwarka, and cuts a warning about the salt devourer into a boundary tree before going.
+**Participants:** character_guyuk, character_shaashak, character_mehme
+
+## The Wandering of the Narmada Seed-Mind
+**Epoch:** Civilization Dawn (Lothal Era)
+**Summary:** Guyuk leaves the record. She goes to the Konkan hills carrying the reincarnated seed-mind of the Narmada Man, teaching the deep-time songs to blind bards so the oldest history survives in mouths rather than tablets.
+**Participants:** character_guyuk, character_narmada_man
 
 ## Silvershore War
 **Epoch:** Civilization Dawn (Lothal Era)

@@ -174,6 +174,35 @@
     ]
   },
   {
+    "id": "event_botai_cattle_raid",
+    "type": "event",
+    "title": "The Botai Cattle Raid",
+    "epoch": "epoch_migrations",
+    "participants": [
+      "character_guyuk",
+      "character_nirigili"
+    ],
+    "location": "place_hyrcania",
+    "predecessors": [],
+    "successors": [
+      "event_naraka_portal"
+    ],
+    "causes": [
+      "botai_raid_on_tushara_herds"
+    ],
+    "outcomes": [
+      "guyuk_loses_royal_status",
+      "guyuk_taken_in_by_nirigili"
+    ],
+    "summary": "A Botai raid on the Tushara herds strips Guyuk Mongke of her royal standing and leaves her with nothing. Nirigili Mahashay takes her into his caravan.",
+    "canon": "primary",
+    "sources": [
+      "Steppe Oral Traditions",
+      "The Nomad's Ledger",
+      "AI_CONTEXT.md"
+    ]
+  },
+  {
     "id": "event_jharwa_first_wave_shell_pact",
     "type": "event",
     "title": "The Jharwa First-Wave & The Shell Pact",
@@ -214,17 +243,23 @@
       "character_nirigili"
     ],
     "location": "place_hyrcania",
-    "predecessors": [],
-    "successors": [],
+    "predecessors": [
+      "event_botai_cattle_raid"
+    ],
+    "successors": [
+      "event_guyuk_lothal_warning"
+    ],
     "causes": [
       "forbidden_tome",
-      "possessed_mountain_goat_guidance"
+      "possessed_mountain_goat_guidance",
+      "guyuk_acquires_tome_with_nirigili_caravan"
     ],
     "outcomes": [
       "crimson_portal_to_naraka",
       "beast_spill",
       "loss_of_nirigili_mount",
-      "guyuk_bloodline_alteration"
+      "guyuk_bloodline_alteration",
+      "guyuk_becomes_threshold_bearer"
     ],
     "summary": "Guyuk, guided by a possessed mountain goat, recites incantations from an ancient tome and tears open a colossal glowing red portal to Naraka Lok. Horrific beasts spill forth; Nirigili loses his Elephantbird to a Megalosaurus.",
     "canon": "primary",
@@ -258,6 +293,69 @@
     "canon": "primary",
     "sources": [
       "The Stone Scrolls of Dwarka Fortress",
+      "Narmada Historical Surveys"
+    ]
+  },
+  {
+    "id": "event_guyuk_lothal_warning",
+    "type": "event",
+    "title": "The Storm-Bone Khan's Warning at Lothal",
+    "epoch": "epoch_civilization_dawn",
+    "participants": [
+      "character_guyuk",
+      "character_shaashak",
+      "character_mehme"
+    ],
+    "location": "settlement_lothal",
+    "predecessors": [
+      "event_naraka_portal"
+    ],
+    "successors": [
+      "event_tendua_crisis",
+      "event_guyuk_konkan_prophecy"
+    ],
+    "causes": [
+      "guyuk_foresight",
+      "tendua_manticore_threat"
+    ],
+    "outcomes": [
+      "shaashak_forewarned_of_the_beast",
+      "mehme_taught_coastal_wind_signals",
+      "salt_devourer_carving_left_on_a_boundary_tree"
+    ],
+    "summary": "Working the fringes of the Harappan settlement, Guyuk warns Shaashak of the coming Tendua Manticore days before it strikes, teaches Mehme to read the coastal winds at Dwarka, and cuts a warning about the salt devourer into a boundary tree before going.",
+    "canon": "primary",
+    "sources": [
+      "Lothal Merchant Almanac",
+      "iKnaya Subayai Palm-Leaf logs"
+    ]
+  },
+  {
+    "id": "event_guyuk_konkan_prophecy",
+    "type": "event",
+    "title": "The Wandering of the Narmada Seed-Mind",
+    "epoch": "epoch_civilization_dawn",
+    "participants": [
+      "character_guyuk",
+      "character_narmada_man"
+    ],
+    "location": "place_konkan_hills",
+    "predecessors": [
+      "event_guyuk_lothal_warning"
+    ],
+    "successors": [],
+    "causes": [
+      "guyuk_leaves_the_settled_country",
+      "walker_between_bones"
+    ],
+    "outcomes": [
+      "deep_time_songs_taught_to_blind_bards",
+      "saplings_traded_for_wild_honey_in_the_aravalis"
+    ],
+    "summary": "Guyuk leaves the record. She goes to the Konkan hills carrying the reincarnated seed-mind of the Narmada Man, teaching the deep-time songs to blind bards so the oldest history survives in mouths rather than tablets.",
+    "canon": "primary",
+    "sources": [
+      "Oral Traditions of the Blind Bards",
       "Narmada Historical Surveys"
     ]
   },
@@ -408,7 +506,8 @@
     "location": "settlement_lothal",
     "artifacts": [],
     "predecessors": [
-      "event_stone_pact"
+      "event_stone_pact",
+      "event_guyuk_lothal_warning"
     ],
     "successors": [
       "event_mask_retrieval",

@@ -13,7 +13,7 @@ Each era below is canon as it stood then. An entity that names no epoch is prese
 | | dated to this era | timeless |
 |---|---:|---:|
 | regions |  | 7 |
-| places |  | 27 |
+| places |  | 28 |
 | settlements |  | 2 |
 | characters | 2 |  |
 | factions |  | 3 |
@@ -47,7 +47,7 @@ _No map for this era, deliberately._ The only coordinates canon holds belong to 
 | | dated to this era | timeless |
 |---|---:|---:|
 | regions |  | 7 |
-| places |  | 27 |
+| places |  | 28 |
 | settlements |  | 2 |
 | characters | 6 |  |
 | factions |  | 3 |
@@ -78,11 +78,11 @@ _No map for this era, deliberately._ The only coordinates canon holds belong to 
 | | dated to this era | timeless |
 |---|---:|---:|
 | regions |  | 7 |
-| places |  | 27 |
+| places |  | 28 |
 | settlements |  | 2 |
 | characters | 10 |  |
 | factions |  | 3 |
-| events | 4 |  |
+| events | 5 |  |
 | artifacts |  | 3 |
 | mythology |  | 6 |
 | fauna |  | 256 |
@@ -93,10 +93,12 @@ _No map for this era, deliberately._ The only coordinates canon holds belong to 
 ```mermaid
 graph TD
     E0["Aravali Massacre & Sanctuary"]
-    E1["The Jharwa First-Wave & The Shell Pact"]
-    E2["Opening of the Naraka Lok Portal"]
-    E3["The Retreat of Owlman"]
+    E1["The Botai Cattle Raid"]
+    E2["The Jharwa First-Wave & The Shell Pact"]
+    E3["Opening of the Naraka Lok Portal"]
+    E4["The Retreat of Owlman"]
     E1 --> E3
+    E2 --> E4
 ```
 
 ### Map
@@ -112,11 +114,11 @@ _No map for this era, deliberately._ The only coordinates canon holds belong to 
 | | dated to this era | timeless |
 |---|---:|---:|
 | regions |  | 7 |
-| places |  | 27 |
+| places |  | 28 |
 | settlements |  | 2 |
 | characters | 21 |  |
 | factions |  | 3 |
-| events | 8 |  |
+| events | 10 |  |
 | artifacts |  | 3 |
 | mythology |  | 6 |
 | fauna |  | 256 |
@@ -126,24 +128,28 @@ _No map for this era, deliberately._ The only coordinates canon holds belong to 
 
 ```mermaid
 graph TD
-    E0["Silvershore War"]
-    E1["Founding of Lothal"]
-    E2["Black Lotus Siege"]
-    E3["The Stone Pact"]
-    E4["Tendua Crisis and Assassination of Kavik"]
-    E5["Retrieval of the Mask of Harappa"]
-    E6["Exile of Shaashak and Khadi"]
-    E7["Birth of Sarita Silversong"]
-    E0 --> E2
+    E0["The Storm-Bone Khan's Warning at Lothal"]
+    E1["The Wandering of the Narmada Seed-Mind"]
+    E2["Silvershore War"]
+    E3["Founding of Lothal"]
+    E4["Black Lotus Siege"]
+    E5["The Stone Pact"]
+    E6["Tendua Crisis and Assassination of Kavik"]
+    E7["Retrieval of the Mask of Harappa"]
+    E8["Exile of Shaashak and Khadi"]
+    E9["Birth of Sarita Silversong"]
+    E0 --> E6
     E0 --> E1
-    E1 --> E3
-    E1 --> E2
+    E2 --> E4
     E2 --> E3
+    E3 --> E5
     E3 --> E4
     E4 --> E5
-    E4 --> E6
     E5 --> E6
     E6 --> E7
+    E6 --> E8
+    E7 --> E8
+    E8 --> E9
 ```
 
 ### Map
@@ -159,7 +165,7 @@ _No map for this era, deliberately._ The only coordinates canon holds belong to 
 | | dated to this era | timeless |
 |---|---:|---:|
 | regions |  | 7 |
-| places |  | 27 |
+| places |  | 28 |
 | settlements |  | 2 |
 | characters | 6 |  |
 | factions |  | 3 |
@@ -189,7 +195,7 @@ _No map for this era, deliberately._ The only coordinates canon holds belong to 
 | | dated to this era | timeless |
 |---|---:|---:|
 | regions |  | 7 |
-| places |  | 27 |
+| places |  | 28 |
 | settlements |  | 2 |
 | field maps | 3 |  |
 | points of interest | 20 |  |
