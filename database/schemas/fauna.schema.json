@@ -89,6 +89,10 @@
         "type": "string"
       }
     },
+    "base_species": {
+      "type": "string",
+      "description": "The animal this one was made from, where canon says so.\n\nDirectional, which is why it is not `related_species`: that field is a flat list of kin and says nothing about which came first. A wolf and an asura wolf are two species, and the asura wolf is the derived one. This records that.\n\nOnly for creatures canon states were taken from something. A maya-born construct has no base -- it was made rather than altered."
+    },
     "notes": {
       "type": "string"
     },

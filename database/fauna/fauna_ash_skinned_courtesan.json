@@ -18,5 +18,6 @@
     "docs/bestiary.md"
   ],
   "mood": "uncanny",
-  "source_index": 210
+  "source_index": 210,
+  "sentient": true
 }

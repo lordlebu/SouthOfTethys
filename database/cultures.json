@@ -1,0 +1,107 @@
+{
+  "version": "1.0.0",
+  "description": "The peoples canon recognises, declared once so that a culture is a value rather than a typo waiting to happen. The companion to clades.json and growth_forms.json: those say what an animal and a plant are, this says what a person belongs to.",
+  "note": "`asura` is deliberately absent. It had been doing three jobs at once -- a culture on characters, a species on characters, and a prefix on thirty-one creatures -- and the three are different things. The culture is `maya_born`, the maya-born humanoids who are people rather than beasts. The species sense stays on `species`. And an asura creature is its own species paired with a base animal: a wolf and an asura wolf are two species, not one animal with a flag.",
+  "cultures": [
+    {
+      "id": "harappan",
+      "count": 10
+    },
+    {
+      "id": "kia",
+      "count": 5
+    },
+    {
+      "id": "silvershore",
+      "count": 5
+    },
+    {
+      "id": "narmada_scholar",
+      "count": 4
+    },
+    {
+      "id": "tuli",
+      "count": 3
+    },
+    {
+      "id": "jharwa",
+      "count": 2
+    },
+    {
+      "id": "maya_born",
+      "count": 2
+    },
+    {
+      "id": "primordial",
+      "count": 2
+    },
+    {
+      "id": "vanara",
+      "count": 2
+    },
+    {
+      "id": "vedda",
+      "count": 2
+    },
+    {
+      "id": "wanderer",
+      "count": 2
+    },
+    {
+      "id": "yaksha",
+      "count": 2
+    },
+    {
+      "id": "ancient_court",
+      "count": 1
+    },
+    {
+      "id": "asura_hybrid",
+      "count": 1
+    },
+    {
+      "id": "bloodfang",
+      "count": 1
+    },
+    {
+      "id": "cosmic",
+      "count": 1
+    },
+    {
+      "id": "explorer",
+      "count": 1
+    },
+    {
+      "id": "harappan_kia",
+      "count": 1
+    },
+    {
+      "id": "lundish",
+      "count": 1
+    },
+    {
+      "id": "outlier",
+      "count": 1
+    },
+    {
+      "id": "polynesian_khmer",
+      "count": 1
+    },
+    {
+      "id": "tamralinga",
+      "count": 1
+    },
+    {
+      "id": "trader",
+      "count": 1
+    },
+    {
+      "id": "tushara",
+      "count": 1
+    },
+    {
+      "id": "unknown",
+      "count": 1
+    }
+  ]
+}

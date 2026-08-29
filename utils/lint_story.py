@@ -415,6 +415,31 @@ def main() -> int:
                 errors.append(f"AUTHORING.md: the {folder} template is invalid at {where} -- {err.message}")
         print(f"  templates  : {checked} in AUTHORING.md")
 
+    # --- cultures are declared, not typed twice ---------------------------------------
+    #
+    # `culture` was 25 free-text values across 51 characters with nothing checking any of
+    # them, which is how `asura` came to mean a culture, a species and a creature prefix at
+    # once. Declared in `database/cultures.json` now, the way clades and growth forms are.
+    cultures_path = DB / "cultures.json"
+    if cultures_path.exists():
+        known_cultures = {c["id"] for c in load(cultures_path).get("cultures", [])}
+        for eid, (path, payload) in sorted(entities.items()):
+            value = payload.get("culture")
+            if isinstance(value, str) and value and value not in known_cultures:
+                errors.append(
+                    f"{path.name}: culture '{value}' is not declared in database/cultures.json"
+                )
+
+    # --- a derived creature names a real animal ---------------------------------------
+    for eid, (path, payload) in sorted(entities.items()):
+        base = payload.get("base_species")
+        if not base:
+            continue
+        if base == eid:
+            errors.append(f"{path.name}: base_species points at itself")
+        elif base not in entities:
+            errors.append(f"{path.name}: base_species '{base}' does not exist")
+
     # --- two events are not one event ------------------------------------------------
     #
     # The unique-name check above reads `name`, and an event carries `title`, so events were
