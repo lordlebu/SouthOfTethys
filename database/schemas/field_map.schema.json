@@ -21,6 +21,13 @@
     "name": {
       "type": "string"
     },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Other names this has been known by. Added when `Dwarka` became `North Dwarka`: canon held one Dwarka and then held several, and a rename that drops the old name breaks every reference written before it."
+    },
     "region": {
       "type": "string",
       "description": "Region entity id this belongs to."
