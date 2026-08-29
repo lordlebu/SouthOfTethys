@@ -132,6 +132,48 @@ def event_graph(events: list[dict], epoch_id: str) -> str | None:
     return "\n".join(lines)
 
 
+# What a region's ground looks like. Presentation, so it lives here rather than in canon:
+# `database/biomes.json` says which biomes exist and which the game can draw, and deliberately
+# has no opinion on colour. The region's first biome wins -- a region is one wash, not a survey.
+TERRAIN = {
+    "desert":     ("#D9C89A", "#3B3524"),
+    "plains":     ("#A8BE84", "#2A3520"),
+    "forest":     ("#7EA46E", "#20301E"),
+    "wetland":    ("#8FAD9E", "#1E2E2A"),
+    "hills":      ("#B3B183", "#302E20"),
+    "mountains":  ("#A9A79C", "#2C2B26"),
+    "river":      ("#8FB3C4", "#1D2E36"),
+    "coast":      ("#D8CBA0", "#393322"),
+    "sea":        ("#7FA6C0", "#1B2C36"),
+    "lava_field": ("#C4735A", "#3A1C15"),
+}
+LAND = ("#C8CBA8", "#2A3026")
+SEA = ("#93B4CB", "#18242E")
+
+
+def ring(points: list[list[float]]) -> str:
+    return " ".join(f"{x},{y}" for x, y in points)
+
+
+# The traced coastline is the world *before* the Great Shattering, and after it canon knows
+# three points and no ground at all. Drawing both together puts two of the three field maps in
+# open sea -- their coordinates are cataclysm-shaped by `field_map.schema.json`'s own account,
+# and the map they would sit on no longer exists.
+#
+# So the last era gets the three points on bare grid, and the five before it get the world. That
+# is not a gap in the atlas; it is the Shattering, drawn.
+UNSHAPED = {"epoch_post_cataclysm"}
+
+
+def shapes(folders: dict[str, list[dict]], epoch_id: str) -> tuple[list[dict], list[dict]]:
+    """Landmasses and regions with a traced outline that exist in this era."""
+    if epoch_id in UNSHAPED:
+        return [], []
+    land = [e for e in folders.get("places", []) if e.get("extent") and in_era(e, epoch_id)]
+    ground = [e for e in folders.get("regions", []) if e.get("extent") and in_era(e, epoch_id)]
+    return land, ground
+
+
 def placed(folders: dict[str, list[dict]], epoch_id: str) -> list[dict]:
     """Everything with coordinates that exists in this era, resolved to its state then."""
     out = []
@@ -146,10 +188,19 @@ def placed(folders: dict[str, list[dict]], epoch_id: str) -> list[dict]:
     return out
 
 
-def svg_map(points: list[dict], epoch_name: str) -> str:
-    """The 0-100 grid, drawn directly. y grows downward, which is the ruling and also SVG."""
+def svg_map(points: list[dict], epoch_name: str,
+            land: list[dict] | None = None, ground: list[dict] | None = None) -> str:
+    """The 0-100 grid, drawn directly. y grows downward, which is the ruling and also SVG.
+
+    Sea, then the landmasses, then each region washed by its first biome, then whatever canon
+    has actually placed -- in that order, because that is the order the world is in.
+    """
+    land = land or []
+    ground = ground or []
     W = H = 100
     pad = 14
+    light = "".join(f".t-{b}{{fill:{c[0]}}}" for b, c in TERRAIN.items())
+    dark = "".join(f".t-{b}{{fill:{c[1]}}}" for b, c in TERRAIN.items())
     parts = [
         f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="{-pad} {-pad} {W + pad * 2} {H + pad * 2}" '
         f'width="720" role="img" aria-label="Map of {xml_text(epoch_name)}">',
@@ -158,12 +209,37 @@ def svg_map(points: list[dict], epoch_name: str) -> str:
         "  .dot{fill:#2C5C8F}.dot-place{fill:#7E6A2E}",
         "  .lbl{fill:#17201F;font:3.2px Archivo,sans-serif}",
         "  .cap{fill:#7D8A86;font:2.6px 'JetBrains Mono',monospace}",
+        f"  .sea{{fill:{SEA[0]}}} .land{{fill:{LAND[0]}}}",
+        "  polygon{stroke:#7E8A76;stroke-width:.25}",
+        "  .rgn{fill:#39402F;font:2.7px Archivo,sans-serif;font-style:italic;opacity:.9}",
+        f"  {light}",
         "  @media(prefers-color-scheme:dark){",
         "   .bg{fill:#121817}.grid{stroke:#28322F}.edge{stroke:#3E4C4E}",
-        "   .dot{fill:#74A8DA}.dot-place{fill:#CBAE6A}.lbl{fill:#E2E7E3}.cap{fill:#78857F}}",
+        "   .dot{fill:#74A8DA}.dot-place{fill:#CBAE6A}.lbl{fill:#E2E7E3}.cap{fill:#78857F}",
+        f"   .sea{{fill:{SEA[1]}}} .land{{fill:{LAND[1]}}}",
+        "   polygon{stroke:#3A4436} .rgn{fill:#9FB09A}",
+        f"   {dark}",
+        "  }",
         "</style>",
         f'<rect class="bg" x="{-pad}" y="{-pad}" width="{W + pad * 2}" height="{H + pad * 2}"/>',
     ]
+
+    # Sea only where the world is; beyond the grid stays paper.
+    if land or ground:
+        parts.append(f'<rect class="sea" x="0" y="0" width="{W}" height="{H}"/>')
+    for e in land:
+        parts.append(f'<polygon class="land" points="{ring(e["extent"])}"/>')
+    for e in ground:
+        biome = (e.get("biomes") or ["plains"])[0]
+        cls = f"t-{biome}" if biome in TERRAIN else "t-plains"
+        parts.append(f'<polygon class="{cls}" points="{ring(e["extent"])}"/>')
+        xs = [p[0] for p in e["extent"]]
+        ys = [p[1] for p in e["extent"]]
+        parts.append(
+            f'<text class="rgn" x="{sum(xs) / len(xs):.1f}" y="{sum(ys) / len(ys):.1f}" '
+            f'text-anchor="middle">{xml_text(e["name"])}</text>'
+        )
+
     for g in range(0, 101, 20):
         parts.append(f'<line class="grid" x1="{g}" y1="0" x2="{g}" y2="{H}"/>')
         parts.append(f'<line class="grid" x1="0" y1="{g}" x2="{W}" y2="{g}"/>')
@@ -244,17 +320,20 @@ def main() -> int:
             doc += ["### Events", "", graph, ""]
 
         points = placed(folders, eid)
-        if points:
+        land, ground = shapes(folders, eid)
+        # Ground is enough for a map. An era can have coastline and regions without a single
+        # placed settlement, and that is still a picture of somewhere.
+        if points or ground:
             mapped += 1
             svg_path = OUT_MAPS / f"{eid}.svg"
-            svg_path.write_text(svg_map(points, name) + "\n", encoding="utf-8")
+            svg_path.write_text(svg_map(points, name, land, ground) + "\n", encoding="utf-8")
             rel = f"atlas/{eid}.svg"
             doc += [
                 "### Map",
                 "",
                 f"![Map of {name}]({rel})",
                 "",
-                f"{len(points)} placed. "
+                f"{len(ground)} region(s) traced, {len(points)} place(s) plotted. "
                 f"[Open the SVG]({rel})",
                 "",
             ]

@@ -4,6 +4,56 @@
   "name": "Mainland Asia",
   "kind": "frontier",
   "continent": "mainland_asia",
+  "extent": [
+    [
+      0,
+      0
+    ],
+    [
+      100,
+      0
+    ],
+    [
+      100,
+      10
+    ],
+    [
+      88,
+      12
+    ],
+    [
+      75,
+      16
+    ],
+    [
+      62,
+      14
+    ],
+    [
+      52,
+      16
+    ],
+    [
+      40,
+      18
+    ],
+    [
+      28,
+      22
+    ],
+    [
+      20,
+      24
+    ],
+    [
+      12,
+      20
+    ],
+    [
+      0,
+      22
+    ]
+  ],
   "description": "The northern landmass across the Tethys Sea, carrying the Saraswati valley cities.",
   "notes": "Named on the render as a whole rather than divided. Canon models nothing on it yet; the cities below are its only entries.",
   "canon": "inferred",

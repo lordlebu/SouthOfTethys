@@ -38,7 +38,9 @@ graph TD
 
 ### Map
 
-_No map for this era, deliberately._ The only coordinates canon holds belong to the three field maps, and their layout describes the world *after* the Great Shattering. Earlier eras are not drawn because **the Shattering is withheld on purpose** — canon keeps its consequences and not its account, since working it out is what the player is there to do, and the shape of the world before it is part of what is being withheld. Absent by design rather than pending. The timeline, events and census above are everything canon states about this era. See `DESIGN.md`.
+![Map of Prehistoric Foundations & Age of Vanaras](atlas/epoch_prehistoric.svg)
+
+6 region(s) traced, 0 place(s) plotted. [Open the SVG](atlas/epoch_prehistoric.svg)
 
 ## Deep Antiquity
 
@@ -69,7 +71,9 @@ graph TD
 
 ### Map
 
-_No map for this era, deliberately._ The only coordinates canon holds belong to the three field maps, and their layout describes the world *after* the Great Shattering. Earlier eras are not drawn because **the Shattering is withheld on purpose** — canon keeps its consequences and not its account, since working it out is what the player is there to do, and the shape of the world before it is part of what is being withheld. Absent by design rather than pending. The timeline, events and census above are everything canon states about this era. See `DESIGN.md`.
+![Map of Deep Antiquity](atlas/epoch_deep_antiquity.svg)
+
+6 region(s) traced, 0 place(s) plotted. [Open the SVG](atlas/epoch_deep_antiquity.svg)
 
 ## Era of Human Migrations
 
@@ -105,7 +109,9 @@ graph TD
 
 ### Map
 
-_No map for this era, deliberately._ The only coordinates canon holds belong to the three field maps, and their layout describes the world *after* the Great Shattering. Earlier eras are not drawn because **the Shattering is withheld on purpose** — canon keeps its consequences and not its account, since working it out is what the player is there to do, and the shape of the world before it is part of what is being withheld. Absent by design rather than pending. The timeline, events and census above are everything canon states about this era. See `DESIGN.md`.
+![Map of Era of Human Migrations](atlas/epoch_migrations.svg)
+
+6 region(s) traced, 0 place(s) plotted. [Open the SVG](atlas/epoch_migrations.svg)
 
 ## Civilization Dawn (Lothal Era)
 
@@ -157,7 +163,9 @@ graph TD
 
 ### Map
 
-_No map for this era, deliberately._ The only coordinates canon holds belong to the three field maps, and their layout describes the world *after* the Great Shattering. Earlier eras are not drawn because **the Shattering is withheld on purpose** — canon keeps its consequences and not its account, since working it out is what the player is there to do, and the shape of the world before it is part of what is being withheld. Absent by design rather than pending. The timeline, events and census above are everything canon states about this era. See `DESIGN.md`.
+![Map of Civilization Dawn (Lothal Era)](atlas/epoch_civilization_dawn.svg)
+
+6 region(s) traced, 0 place(s) plotted. [Open the SVG](atlas/epoch_civilization_dawn.svg)
 
 ## Current Era (Age of Machinery)
 
@@ -187,7 +195,9 @@ graph TD
 
 ### Map
 
-_No map for this era, deliberately._ The only coordinates canon holds belong to the three field maps, and their layout describes the world *after* the Great Shattering. Earlier eras are not drawn because **the Shattering is withheld on purpose** — canon keeps its consequences and not its account, since working it out is what the player is there to do, and the shape of the world before it is part of what is being withheld. Absent by design rather than pending. The timeline, events and census above are everything canon states about this era. See `DESIGN.md`.
+![Map of Current Era (Age of Machinery)](atlas/epoch_current.svg)
+
+6 region(s) traced, 0 place(s) plotted. [Open the SVG](atlas/epoch_current.svg)
 
 ## Post-Cataclysmic Era (The Great Shattering)
 
@@ -224,4 +234,4 @@ graph TD
 
 ![Map of Post-Cataclysmic Era (The Great Shattering)](atlas/epoch_post_cataclysm.svg)
 
-3 placed. [Open the SVG](atlas/epoch_post_cataclysm.svg)
+0 region(s) traced, 3 place(s) plotted. [Open the SVG](atlas/epoch_post_cataclysm.svg)
