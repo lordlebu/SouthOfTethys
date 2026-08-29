@@ -11,6 +11,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
+from book_nav import nav
 from canon_epochs import load_epochs
 from canon_events import load_events, ordered
 
@@ -33,7 +34,8 @@ def write_summary(events, path: Path):
     # people, and `epoch_civilization_dawn` is a key, not a era anybody calls it.
     named = {e["id"]: e.get("name") or e["id"] for e in load_epochs() if "id" in e}
 
-    lines = ["# Timeline Summary\n", "_Generated from `database/events/`.\n"]
+    lines = ["# Timeline Summary\n", nav("index.md") + "\n",
+             "_Generated from `database/events/`.\n"]
     for ev in events:
         title = ev.get("title") or ev.get("id")
         epoch = named.get(ev.get("epoch") or "", ev.get("epoch") or "unknown")

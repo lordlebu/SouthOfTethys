@@ -1,5 +1,7 @@
 # Timeline Summary
 
+**The Timeline** · [Epochs & Events](https://lordlebu.github.io/SouthOfTethys/timeline_mermaid.html) · [The Atlas](https://lordlebu.github.io/SouthOfTethys/atlas.html)
+
 _Generated from `database/events/`.
 
 ## The Fang vs. Scale Wars

@@ -8,6 +8,7 @@ A procedurally evolving storytelling engine inspired by world simulation games l
 - **[View Published Book](https://lordlebu.github.io/SouthOfTethys/)** - The timeline and world data
 - **[📖 Complete Timeline](index.md)** - Every event, by epoch and then by cause
 - **[📊 Visual Timeline](timeline_mermaid.md)** - The epochs, and the causal graph of events
+- **[🗺️ The Atlas](atlas.md)** - Canon as it stood in each era: a census, its events, and a map where one exists
 - **[⏰ Timeline Data](timeline.json)** - Raw event data in JSON format
 
 ## 🗺️ Maps

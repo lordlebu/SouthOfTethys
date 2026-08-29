@@ -1,5 +1,7 @@
 # The Timeline of South of Tethys
 
+[The Timeline](https://lordlebu.github.io/SouthOfTethys/) · **Epochs & Events** · [The Atlas](https://lordlebu.github.io/SouthOfTethys/atlas.html)
+
 _Generated from `database/events/` and `database/timeline/epochs.json` by `utils/generate_timeline_mermaid.py`. Do not edit by hand._
 
 ## The epochs

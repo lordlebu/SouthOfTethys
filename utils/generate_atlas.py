@@ -42,6 +42,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
+from book_nav import nav
 from canon_epochs import in_era, load_epochs, state_in_era
 from canon_events import load_events, ordered
 
@@ -214,6 +215,8 @@ def main() -> int:
 
     doc = [
         "# The Atlas of South of Tethys",
+        "",
+        nav("atlas.md"),
         "",
         "_Generated from `database/` by `utils/generate_atlas.py`. Do not edit by hand._",
         "",
