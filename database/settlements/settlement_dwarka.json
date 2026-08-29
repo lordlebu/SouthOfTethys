@@ -1,9 +1,15 @@
 {
   "id": "settlement_dwarka",
   "type": "settlement",
-  "name": "Dwarka",
+  "name": "North Dwarka",
+  "aliases": [
+    "Dwarka"
+  ],
   "region": "region_saraswati_delta",
-  "notes": "Coastal city. Site of Dwarka Gate anomaly and celestial festivals.",
+  "notes": "Coastal city. Site of Dwarka Gate anomaly and celestial festivals.\n\nOne of several Dwarkas on Jambhudweep. This is the northern one -- the harbour with the Gate, and the one the game walks. The name was bare `Dwarka` while canon held only one, which stopped being true; `Dwarka` is kept as an alias so older references still read.",
   "canon": "primary",
-  "sources": ["map", "AI_CONTEXT.md"]
+  "sources": [
+    "map",
+    "AI_CONTEXT.md"
+  ]
 }
