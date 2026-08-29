@@ -11,7 +11,9 @@
   "predecessors": [
     "event_narmada_upriver_expedition"
   ],
-  "successors": [],
+  "successors": [
+    "event_battered_ekranoplan_ice_wall_voyage"
+  ],
   "causes": [
     "A torrential monsoon downpour trapping the expedition party under the forest canopy of the Narmada Valley",
     "A highly anomalous and energetic lightning strike directly hitting Digha Jani",

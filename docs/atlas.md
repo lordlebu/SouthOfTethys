@@ -191,11 +191,11 @@ graph TD
 | | dated to this era | timeless |
 |---|---:|---:|
 | regions |  | 7 |
-| places | 17 | 20 |
+| places | 18 | 20 |
 | settlements |  | 2 |
 | characters | 6 |  |
 | factions |  | 3 |
-| events | 3 |  |
+| events | 4 |  |
 | artifacts |  | 4 |
 | mythology |  | 8 |
 | fauna |  | 257 |
@@ -208,7 +208,9 @@ graph TD
     E0["The Antarctic Ice Wall Expedition"]
     E1["The Narmada Upriver Expedition"]
     E2["The Gondwana Spacetime Teleportation"]
+    E3["The Battered Ekranoplan's Ice Wall Voyage"]
     E1 --> E2
+    E2 --> E3
 ```
 
 ### Map

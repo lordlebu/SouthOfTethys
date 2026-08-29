@@ -309,6 +309,32 @@ Moon-Seed planting.
 Worth recording: that document cites "The Mythic Legacy and Ritual Order of Jambenson" as a
 source for her, and that book contains no mention of Kunti. Hers is a single-document character.
 
+**Arin and Mira were never written into anything** (fixed 2026-08-29). Khadi's two daughters
+carried kinship and a faction seat and appeared in no event, so the memory map drew them isolated.
+They are in three of canon's events by its own prose: Arin clashes with Mehme in the market square
+and Mira answers with prophecy, Arin questions Mehme's right to lead, Mira sails on the mask
+expedition and stands at the tower summit holding the Mask of Tethys. Added to `event_stone_pact`,
+`event_tendua_crisis` and `event_mask_retrieval`. Nila was missing from the Stone Pact for the same
+reason and went in with them.
+
+**Mira and Meera were already distinct** (checked 2026-08-29). Mira Starchild is Kia, Civilization
+Dawn, Khadi's daughter; Meera of the Aravalis is Jharwa, the Migrations, sole survivor of the
+massacre. They share no event, no culture and no epoch, and the document asking for the separation
+proposed an Aravali event whose id was new and whose title, epoch and seven-person cast --
+Vara-Ma, Orek and Thren included -- are what `event_aravali_massacre` already holds. Nothing to
+separate; it was separate.
+
+**The ekranoplan is canon, and has no crew** (added 2026-08-29). A rusted ground-effect craft
+bought off delta salvagers at Vanga, flown at the Antarctic Ice Wall with a Vengi langur in the
+cargo hold that finds the emergency fuel shut-off. Current era, between the Gondwana teleportation
+and the Survival Train.
+
+It is the **first event in canon with nobody in its cast**, and deliberately so: its source says a
+nameless crew, and inventing three names to make a graph tidier is the wrong trade. It draws in the
+timeline and not in the memory map, which is the honest outcome. The craft itself is
+`place_ekranoplan`, `kind: vessel` -- the kind canon already keeps for the Kelpfang and the
+Survival Train, somewhere that moves and is lived in.
+
 ---
 
 ## Resolved
