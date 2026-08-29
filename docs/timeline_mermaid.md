@@ -10,13 +10,13 @@ _Generated from `database/events/` and `database/timeline/epochs.json` by `utils
 timeline
     title South of Tethys — the epochs
     section Prehistoric Foundations & Age of Vanaras
-        500 MYA – 5 MYA : The Curse of the Hollow Trees : The Fang vs. Scale Wars : The Domestication of the Fang Vanguard : The Asura Gondwana Intervention : The Great Devolvement : The Planting of the Moon-Seed : The Establishment of the Womb Rites
+        500 MYA – 5 MYA : The Curse of the Hollow Trees : The Fang vs. Scale Wars : The Domestication of the Fang Vanguard : The Asura Gondwana Intervention : The Great Devolvement : The Turning of Kunti Against the Seedbearer : The Planting of the Moon-Seed : The Establishment of the Womb Rites
     section Deep Antiquity
-        before the migrations : The Battle of Mohenjodaro : Forging of the Dragon’s Spine (sample) : Shadow Pact of Saraswati : The Awakening of the Mask of Vaṛkesh
+        before the migrations : The Battle of Mohenjodaro : Forging of the Dragon’s Spine (sample) : Shadow Pact of Saraswati
     section Era of Human Migrations
         50K – 5K years ago : Aravali Massacre & Sanctuary : The Botai Cattle Raid : The Jharwa First-Wave & The Shell Pact : Opening of the Naraka Lok Portal : The Narmada Apothecary Herb Quest : The Retreat of Owlman : The Primordial Union under the Asura Planet
     section Civilization Dawn (Lothal Era)
-        c. 3000 – 500 BCE : The Final Voyage of the Kelpfang : The Storm-Bone Khan's Warning at Lothal : The Wandering of the Narmada Seed-Mind : Silvershore War : Founding of Lothal : Black Lotus Siege : The Stone Pact : Tendua Crisis and Assassination of Kavik : Retrieval of the Mask of Harappa : Exile of Shaashak and Khadi : Birth of Sarita Silversong
+        c. 3000 – 500 BCE : The Final Voyage of the Kelpfang : The Storm-Bone Khan's Warning at Lothal : The Wandering of the Narmada Seed-Mind : Silvershore War : Founding of Lothal : Black Lotus Siege : The Stone Pact : Tendua Crisis and Assassination of Kavik : Retrieval of the Mask of Harappa : Exile of Shaashak and Khadi : The Awakening of the Mask of Vaṛkesh : Birth of Sarita Silversong
     section Current Era (Age of Machinery)
         ~1920s equivalent : The Antarctic Ice Wall Expedition : The Narmada Upriver Expedition : The Gondwana Spacetime Teleportation
     section Post-Cataclysmic Era (The Great Shattering)
@@ -35,14 +35,14 @@ graph TD
         E2["The Domestication of the Fang Vanguard"]
         E3["The Asura Gondwana Intervention"]
         E4["The Great Devolvement"]
-        E5["The Planting of the Moon-Seed"]
-        E6["The Establishment of the Womb Rites"]
+        E5["The Turning of Kunti Against the Seedbearer"]
+        E6["The Planting of the Moon-Seed"]
+        E7["The Establishment of the Womb Rites"]
     end
     subgraph epoch_deep_antiquity["Deep Antiquity"]
-        E7["The Battle of Mohenjodaro"]
-        E8["Forging of the Dragon’s Spine (sample)"]
-        E9["Shadow Pact of Saraswati"]
-        E10["The Awakening of the Mask of Vaṛkesh"]
+        E8["The Battle of Mohenjodaro"]
+        E9["Forging of the Dragon’s Spine (sample)"]
+        E10["Shadow Pact of Saraswati"]
     end
     subgraph epoch_migrations["Era of Human Migrations"]
         E11["Aravali Massacre & Sanctuary"]
@@ -64,25 +64,26 @@ graph TD
         E25["Tendua Crisis and Assassination of Kavik"]
         E26["Retrieval of the Mask of Harappa"]
         E27["Exile of Shaashak and Khadi"]
-        E28["Birth of Sarita Silversong"]
+        E28["The Awakening of the Mask of Vaṛkesh"]
+        E29["Birth of Sarita Silversong"]
     end
     subgraph epoch_current["Current Era (Age of Machinery)"]
-        E29["The Antarctic Ice Wall Expedition"]
-        E30["The Narmada Upriver Expedition"]
-        E31["The Gondwana Spacetime Teleportation"]
+        E30["The Antarctic Ice Wall Expedition"]
+        E31["The Narmada Upriver Expedition"]
+        E32["The Gondwana Spacetime Teleportation"]
     end
     subgraph epoch_post_cataclysm["Post-Cataclysmic Era (The Great Shattering)"]
-        E32["The Solarpunk Odyssey of the Ark"]
+        E33["The Solarpunk Odyssey of the Ark"]
     end
-    E0 --> E5
+    E0 --> E6
     E1 --> E3
     E1 --> E2
     E2 --> E3
     E3 --> E4
     E4 --> E13
     E5 --> E6
-    E7 --> E9
-    E9 --> E10
+    E6 --> E7
+    E8 --> E10
     E12 --> E14
     E13 --> E16
     E14 --> E19
@@ -100,5 +101,6 @@ graph TD
     E25 --> E27
     E26 --> E27
     E27 --> E28
-    E30 --> E31
+    E27 --> E29
+    E31 --> E32
 ```

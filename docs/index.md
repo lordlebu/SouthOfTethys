@@ -29,6 +29,11 @@ _Generated from `database/events/`.
 **Summary:** As global climate shifts fracture the southern tree-cities of the Nilgiri Canopy, the hyper-intelligent Vanara civilization begins to collapse and devolve. The sun-spirit Lionman manifests to guide the scattered, regressed tribes safely across the savanna.
 **Participants:** character_lionman
 
+## The Turning of Kunti Against the Seedbearer
+**Epoch:** Prehistoric Foundations & Age of Vanaras
+**Summary:** Weaponised by the Asura guru Shukradeva and by Daedrasura, the celestial nymph Kunti is turned against Jambanson and made to disrupt his ecological and ancestral memory-seed magic. She is the instrument and not the author of it, which is the whole of her tragedy: the Land of Myst remembers her as the tricked goddess.
+**Participants:** character_kunti, character_jambanson, character_daedrasura
+
 ## The Planting of the Moon-Seed
 **Epoch:** Prehistoric Foundations & Age of Vanaras
 **Summary:** Upon returning to the Godavari rainforests, Jambanson plants the sacred moon-seed received from the Narmada Man. The seed rapidly blossoms into the silver-glowing Bhuta-Kāna Tree, restoring the ecosystem.
@@ -53,12 +58,7 @@ _Sample fixture — kept to exercise the tooling, not part of the story._
 ## Shadow Pact of Saraswati
 **Epoch:** Deep Antiquity
 **Summary:** Prince Varunesh slits an Indus unicorn and uses dark tantra through a Dwarka Gate to summon the Asura princess Manjalaya. Their union produces the immortal Asura-Tainted Princess.
-**Participants:** character_varunesh, character_asura_tainted_princess
-
-## The Awakening of the Mask of Vaṛkesh
-**Epoch:** Deep Antiquity
-**Summary:** Shaasak and Asha lead an expedition to a volcanic grotto, uncovering the Mask of Vaṛkesh. The relic awakens a giant stone golem, guiding them to a hidden plateau where the physical world folds into a tabletop game of destiny.
-**Participants:** character_shaashak, character_asha
+**Participants:** character_varunesh, character_asura_tainted_princess, character_manjalaya
 
 ## Aravali Massacre & Sanctuary
 **Epoch:** Era of Human Migrations
@@ -143,7 +143,12 @@ _Sample fixture — kept to exercise the tooling, not part of the story._
 ## Exile of Shaashak and Khadi
 **Epoch:** Civilization Dawn (Lothal Era)
 **Summary:** Grief-stricken Shaashak and Khadi depart upriver on a river skiff to raise their child far from Lothal's tainted legacy. Asha, iKnaya and Varna form ruling council.
-**Participants:** character_shaashak, character_khadi
+**Participants:** character_asha, character_iknaya, character_khadi, character_shaashak, character_varna
+
+## The Awakening of the Mask of Vaṛkesh
+**Epoch:** Civilization Dawn (Lothal Era)
+**Summary:** Shaasak and Asha lead an expedition to a volcanic grotto, uncovering the Mask of Vaṛkesh. The relic awakens a giant stone golem, guiding them to a hidden plateau where the physical world folds into a tabletop game of destiny.
+**Participants:** character_shaashak, character_asha
 
 ## Birth of Sarita Silversong
 **Epoch:** Civilization Dawn (Lothal Era)

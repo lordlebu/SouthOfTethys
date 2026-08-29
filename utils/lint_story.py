@@ -493,6 +493,52 @@ def main() -> int:
     from canon_epochs import epoch_rank
     ranked = epoch_rank()
 
+    # --- somebody the event's own prose names is somebody who was there -----------------
+    #
+    # `event_shadow_pact` said in its summary that Prince Varunesh summons "the Asura princess
+    # Manjalaya" and then listed two participants, neither of them Manjalaya. She was the only
+    # character in canon present at nothing, so the memory map drew her as an isolated node --
+    # correctly, from data that was wrong. `event_exile_of_shaashak` had three more: its summary
+    # names Aasha, iKnaya and Varna forming the ruling council, and listed none of them.
+    #
+    # Aliases matter here and were what made the first pass miss one: canon records her as
+    # `Aasha` and the prose calls her `Asha`. Names shorter than four characters are skipped --
+    # they turn up inside ordinary words and the false positives are not worth the two names
+    # they would find.
+    #
+    # This is a heuristic and it is deliberately loud rather than clever. A name in the summary
+    # that is not in the cast is either a missing participant or a mention of somebody absent,
+    # and the second is rare enough to be worth writing out of the summary when it happens.
+    people = {}
+    for eid, (path, payload) in entities.items():
+        if path.parent.name != "characters" or payload.get("sample"):
+            continue
+        for name in [payload.get("name")] + list(payload.get("aliases") or []):
+            if isinstance(name, str) and len(name) >= 4:
+                people.setdefault(name, eid)
+
+    for eid, (path, payload) in sorted(entities.items()):
+        if payload.get("type") != "event" or payload.get("sample"):
+            continue
+        cast = set()
+        for field in ("participants", "witnesses", "actors"):
+            cast |= {x for x in (payload.get(field) or []) if isinstance(x, str)}
+        # Title and summary only. `causes` and `outcomes` were in the first version and should
+        # not be: a cause names what led here, which is routinely somebody absent or dead. The
+        # Mask of Varkesh is caused by "her father Kavik's assassination" and Kavik is very
+        # much not at the Sun Plateau. A summary describes the scene, so a name in it is a
+        # claim that the person was in it.
+        prose = " ".join(str(payload.get(k) or "") for k in ("title", "summary"))
+        for name, who in sorted(people.items()):
+            if who in cast:
+                continue
+            if re.search(rf"\b{re.escape(name)}\b", prose):
+                errors.append(
+                    f"{path.name}: the summary names {name!r} ({who}) but does not list them as "
+                    f"a participant. Somebody the prose says was there should be in the cast, or "
+                    f"the prose should not say it."
+                )
+
     # --- a rebirth points backwards, and a myth does not attend things -----------------
     #
     # Two checks on the same idea: an entity should be the kind of thing it is being used as.

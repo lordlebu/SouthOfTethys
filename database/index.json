@@ -1,11 +1,11 @@
 {
-  "version": "1.22.0",
+  "version": "1.23.0",
   "description": "SouthOfTethys canonical entity index",
   "counts": {
     "artifacts": 4,
     "characters": 57,
     "discoveries": 31,
-    "events": 33,
+    "events": 34,
     "factions": 3,
     "fauna": 257,
     "field_maps": 3,
@@ -141,6 +141,7 @@
       "event_guyuk_narmada_apothecary_quest",
       "event_jambanson_moonseed_planting",
       "event_jharwa_first_wave_shell_pact",
+      "event_kunti_against_jambanson",
       "event_mask_retrieval",
       "event_naraka_portal",
       "event_narmada_upriver_expedition",

@@ -1,0 +1,28 @@
+{
+  "id": "event_kunti_against_jambanson",
+  "type": "event",
+  "title": "The Turning of Kunti Against the Seedbearer",
+  "epoch": "epoch_prehistoric",
+  "participants": [
+    "character_kunti",
+    "character_jambanson",
+    "character_daedrasura"
+  ],
+  "predecessors": [],
+  "successors": [
+    "event_jambanson_moonseed_planting"
+  ],
+  "causes": [
+    "Shukradeva and Daedrasura's hold over Kunti, who has no agency of her own",
+    "Jambanson's memory-seed work spreading faster than the Asuras could unmake it"
+  ],
+  "outcomes": [
+    "Kunti is set against the Seedbearer of the South and made to unpick his restorative work",
+    "The conflict is remembered as the tricked goddess's, though none of it was her doing"
+  ],
+  "summary": "Weaponised by the Asura guru Shukradeva and by Daedrasura, the celestial nymph Kunti is turned against Jambanson and made to disrupt his ecological and ancestral memory-seed magic. She is the instrument and not the author of it, which is the whole of her tragedy: the Land of Myst remembers her as the tricked goddess.",
+  "canon": "secondary",
+  "sources": [
+    "dump/daedrasura-and-kunti-lore.md"
+  ]
+}

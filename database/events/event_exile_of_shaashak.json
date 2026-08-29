@@ -4,8 +4,11 @@
   "title": "Exile of Shaashak and Khadi",
   "epoch": "epoch_civilization_dawn",
   "participants": [
+    "character_asha",
+    "character_iknaya",
+    "character_khadi",
     "character_shaashak",
-    "character_khadi"
+    "character_varna"
   ],
   "location": "settlement_lothal",
   "predecessors": [
@@ -13,6 +16,7 @@
     "event_mask_retrieval"
   ],
   "successors": [
+    "event_awakening_mask_of_varkesh",
     "event_birth_of_sarita"
   ],
   "outcomes": [

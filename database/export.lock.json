@@ -12,9 +12,9 @@
     "vocabulary": 8
   },
   "sha256": {
-    "canon.lock.json": "ddde6a3c858554ffed618cfecfdf822796aa850253f89ab8fe2126fe5b3e58d9",
-    "knowledge.json": "280b7d0969e52d51206adc2d187cf74d9e9ece3561455a62ce393d7eb3325d87",
-    "places.json": "0bba4d416cb4776b072da64fe5589a95a640c753db5bd46e33708bb53a6a7f0d",
-    "species.json": "9fd606663782878dd61873f6d43f80e3ee1f9f80057eefcd7723b409f5f0370a"
+    "canon.lock.json": "f2043beaab22dc54b2440da3872dc2450d23b338054c8f395034e29d87e7c67e",
+    "knowledge.json": "f1229653381812a3306777034a8d4ce767897f173b73802a2b014ccd8eb27be4",
+    "places.json": "dfff3a27eb6b5aaabf04ef74ae0e84af3c44c78060b39285f51daa16e4241f94",
+    "species.json": "6ff4149797af1ac06b9487108f43609ad0f9739f6cb983a9b0667a8dd85b605a"
   }
 }

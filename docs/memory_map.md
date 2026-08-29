@@ -21,6 +21,7 @@ graph LR
   end
   subgraph grp_maya_born["maya_born (culture)"]
     character_commander_vaishura("Commander Vaishura")
+    character_daedrasura("Daedrasura")
   end
   subgraph grp_primordial["primordial (culture)"]
     character_ammonite_man("Ammonite Man")
@@ -37,23 +38,25 @@ graph LR
   event_fang_vs_scale_wars["The Fang vs. Scale Wars"]
   event_great_devolvement_vanaras["The Great Devolvement"]
   event_jambanson_moonseed_planting["The Planting of the Moon-Seed"]
+  event_kunti_against_jambanson["The Turning of Kunti Against the Seedbearer"]
   event_ritual_of_jambenson["The Establishment of the Womb Rites"]
   character_ammonite_man --> event_asura_gondwana_intervention
   character_ammonite_man --> event_asura_synapsid_domestication
   character_ammonite_man --> event_fang_vs_scale_wars
   character_commander_vaishura --> event_asura_synapsid_domestication
+  character_daedrasura --> event_kunti_against_jambanson
   character_jambanson --> event_curse_of_the_hollow_trees
   character_jambanson --> event_jambanson_moonseed_planting
+  character_jambanson --> event_kunti_against_jambanson
   character_jambanson --> event_ritual_of_jambenson
+  character_kunti --> event_kunti_against_jambanson
   character_lionman --> event_great_devolvement_vanaras
   character_narmada_man --> event_jambanson_moonseed_planting
   character_owlman --> event_asura_gondwana_intervention
   character_owlman --> event_fang_vs_scale_wars
 ```
 
-7 character(s), 7 event(s) they appear in, 4 group(s).
-
-**Present in no event of this era:** Kunti.
+8 character(s), 8 event(s) they appear in, 4 group(s).
 
 ## Deep Antiquity
 
@@ -75,23 +78,17 @@ graph LR
     character_narmada_man("Narmada Man")
     character_owlman("Owlman")
   end
-  subgraph grp_mask_family["Mask Family"]
-    character_asha("Aasha")
-    character_shaashak("Shaashak")
-  end
-  event_awakening_mask_of_varkesh["The Awakening of the Mask of Vaṛkesh"]
   event_battle_of_mohenjodaro["The Battle of Mohenjodaro"]
   event_shadow_pact["Shadow Pact of Saraswati"]
-  character_asha --> event_awakening_mask_of_varkesh
   character_asura_tainted_princess --> event_shadow_pact
+  character_manjalaya --> event_shadow_pact
   character_masked_chief_mohenjodaro --> event_battle_of_mohenjodaro
-  character_shaashak --> event_awakening_mask_of_varkesh
   character_varunesh --> event_shadow_pact
 ```
 
-8 character(s), 3 event(s) they appear in, 6 group(s).
+6 character(s), 2 event(s) they appear in, 5 group(s).
 
-**Present in no event of this era:** Manjalaya, Narmada Man, Owlman.
+**Present in no event of this era:** Narmada Man, Owlman.
 
 ## Era of Human Migrations
 
@@ -220,6 +217,7 @@ graph LR
     character_torin("Torin")
     character_varna("Varna")
   end
+  event_awakening_mask_of_varkesh["The Awakening of the Mask of Vaṛkesh"]
   event_birth_of_sarita["Birth of Sarita Silversong"]
   event_black_lotus_siege["Black Lotus Siege"]
   event_exile_of_shaashak["Exile of Shaashak and Khadi"]
@@ -231,11 +229,14 @@ graph LR
   event_silvershore_war["Silvershore War"]
   event_stone_pact["The Stone Pact"]
   event_tendua_crisis["Tendua Crisis and Assassination of Kavik"]
+  character_asha --> event_awakening_mask_of_varkesh
+  character_asha --> event_exile_of_shaashak
   character_asha --> event_mask_retrieval
   character_asha --> event_tendua_crisis
   character_elara_voss --> event_final_voyage_of_the_kelpfang
   character_guyuk --> event_guyuk_konkan_prophecy
   character_guyuk --> event_guyuk_lothal_warning
+  character_iknaya --> event_exile_of_shaashak
   character_iknaya --> event_mask_retrieval
   character_jarek --> event_silvershore_war
   character_kavik --> event_black_lotus_siege
@@ -257,6 +258,7 @@ graph LR
   character_radiant_gentleman --> event_final_voyage_of_the_kelpfang
   character_rathak --> event_black_lotus_siege
   character_sarita --> event_birth_of_sarita
+  character_shaashak --> event_awakening_mask_of_varkesh
   character_shaashak --> event_birth_of_sarita
   character_shaashak --> event_exile_of_shaashak
   character_shaashak --> event_guyuk_lothal_warning
@@ -266,10 +268,11 @@ graph LR
   character_the_traveler --> event_final_voyage_of_the_kelpfang
   character_torin --> event_silvershore_war
   character_varna --> event_black_lotus_siege
+  character_varna --> event_exile_of_shaashak
   character_varna --> event_mask_retrieval
 ```
 
-29 character(s), 11 event(s) they appear in, 16 group(s).
+29 character(s), 12 event(s) they appear in, 16 group(s).
 
 **Present in no event of this era:** Arin, Daedrasura, Kubera, Lira, Mira, Ruvan, Vijaya, Yaksha Envoy.
 
