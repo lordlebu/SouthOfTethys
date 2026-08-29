@@ -177,6 +177,25 @@ and the atlas says so rather than promising a map later. And the drip belongs in
 `discoveries/`, which *is* exported, because the player is meant to find it. That is the one
 place this lore is supposed to reach the game.
 
+**The world has a shape, and it is the shape before the Shattering.** Settled 2026-08-27.
+
+`dump/Partial_map.png` is the only picture canon has of its own geography, so it is traced:
+Jambhudweep as an island with coast north and south, Mainland Asia across the Tethys, and six of
+the seven regions as rings of points on the 0-100 grid. Approximate to about three units, which
+is what a schematic is for.
+
+It does not agree with the three field-map coordinates, and it is not supposed to. The render
+puts Dwarka and the Narmada country at nearly one latitude; the grid spreads them from y=64 to
+y=20. `field_map.schema.json` already said why — that layout is cataclysm-shaped and encodes how
+much of the world was lost. **The traced coast is the world before; the three anchors are what
+was left after.**
+
+So the atlas draws five eras of a world and one era of three surviving points, and the change
+between them is the only picture of the Shattering canon will ever have. Drawing both at once
+put two field maps in open sea, which is how the conflict was noticed.
+
+`region_tethys_sky_routes` has no extent, deliberately: it is not ground.
+
 ## Contribution Rule
 
 New lore → JSON entity under `database/` with stable ID + update `index.json`.

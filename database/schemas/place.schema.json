@@ -76,6 +76,21 @@
       },
       "additionalProperties": false
     },
+    "extent": {
+      "type": "array",
+      "description": "The ground this covers, as a closed ring of [x, y] points on the same abstract 0-100 grid the field maps use.\n\nTraced off `dump/Partial_map.png`, which is the only picture canon has of its own geography. Approximate on purpose: it is a schematic of where things are relative to each other, not a survey, and it is read to about three units.\n\n**This is the world before the Great Shattering.** The three field-map coordinates are not on it and are not meant to be -- `field_map.schema.json` records that their layout is cataclysm-shaped, and the map's own arrangement disagrees with them: it puts Dwarka and the Narmada country at nearly one latitude where the grid spreads them from y=64 to y=20. That is the Shattering having happened in between, not an error in either.",
+      "minItems": 3,
+      "items": {
+        "type": "array",
+        "minItems": 2,
+        "maxItems": 2,
+        "items": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        }
+      }
+    },
     "epochs": {
       "type": "array",
       "description": "Epoch ids from database/timeline/epochs.json. Absent means the place exists in every era.",

@@ -8,6 +8,36 @@
     "wetland",
     "river"
   ],
+  "extent": [
+    [
+      16,
+      41
+    ],
+    [
+      22,
+      38
+    ],
+    [
+      30,
+      42
+    ],
+    [
+      32,
+      48
+    ],
+    [
+      30,
+      52
+    ],
+    [
+      24,
+      51
+    ],
+    [
+      18,
+      46
+    ]
+  ],
   "settlements": [
     "settlement_lothal",
     "settlement_dwarka"

@@ -9,6 +9,32 @@
     "plains",
     "hills"
   ],
+  "extent": [
+    [
+      0,
+      13
+    ],
+    [
+      11,
+      14
+    ],
+    [
+      13,
+      19
+    ],
+    [
+      10,
+      23
+    ],
+    [
+      2,
+      22
+    ],
+    [
+      0,
+      19
+    ]
+  ],
   "notes": "Arid interior, and young: the harbour, the fossil channel and the caravan road all date the water's departure to within cultural memory rather than to geological time. Forty authored species, all desert-placeable.",
   "canon": "primary",
   "sources": [

@@ -5,5 +5,38 @@
   "continent": "jambhudweepa",
   "notes": "Stony ranges. Site of Mask Family schism, Jharwa massacre, and hidden sanctuary of Vara-Ma/Orek/Thren.",
   "canon": "primary",
-  "sources": ["AI_CONTEXT.md", "map"]
+  "sources": [
+    "AI_CONTEXT.md",
+    "map"
+  ],
+  "extent": [
+    [
+      33,
+      34
+    ],
+    [
+      38,
+      29
+    ],
+    [
+      46,
+      27
+    ],
+    [
+      53,
+      30
+    ],
+    [
+      51,
+      37
+    ],
+    [
+      44,
+      39
+    ],
+    [
+      37,
+      39
+    ]
+  ]
 }
