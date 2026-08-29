@@ -28,6 +28,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
+from book_nav import nav
 from canon_epochs import load_epochs
 from canon_events import load_events, ordered
 
@@ -122,6 +123,8 @@ def main() -> int:
 
     doc = [
         "# The Timeline of South of Tethys",
+        "",
+        nav("timeline_mermaid.md"),
         "",
         "_Generated from `database/events/` and `database/timeline/epochs.json` by"
         " `utils/generate_timeline_mermaid.py`. Do not edit by hand._",

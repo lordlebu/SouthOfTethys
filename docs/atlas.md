@@ -1,5 +1,7 @@
 # The Atlas of South of Tethys
 
+[The Timeline](https://lordlebu.github.io/SouthOfTethys/) · [Epochs & Events](https://lordlebu.github.io/SouthOfTethys/timeline_mermaid.html) · **The Atlas**
+
 _Generated from `database/` by `utils/generate_atlas.py`. Do not edit by hand._
 
 Each era below is canon as it stood then. An entity that names no epoch is present in every era — silence means timeless, not unplaced, which is the ruling in `DESIGN.md` and what fauna has always meant.

@@ -81,6 +81,8 @@ Merging to `main` rebuilds and redeploys the retrieval service by itself, then a
 **Live and built from current canon:**
 
 - 📚 **[The book](https://lordlebu.github.io/SouthOfTethys/)** — the world as a reader meets it
+- 🗺️ **[The atlas](https://lordlebu.github.io/SouthOfTethys/atlas.html)** — canon as it stood in each of the six eras
+- 🕰️ **[The timeline](https://lordlebu.github.io/SouthOfTethys/timeline_mermaid.html)** — the epochs, and every event by cause
 - 🎮 **[The game](https://lordlebu.github.io/4000BCESaraswathy/)** — the walk, made of this canon
 - 🔎 **Retrieval API** — `/lore` for a place, `/search` for a question, `/ask` for a passage
 
