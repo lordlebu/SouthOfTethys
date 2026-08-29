@@ -3,6 +3,14 @@
   "type": "place",
   "name": "Mainland Asia",
   "kind": "frontier",
+  "epochs": [
+    "epoch_prehistoric",
+    "epoch_deep_antiquity",
+    "epoch_migrations",
+    "epoch_civilization_dawn",
+    "epoch_current",
+    "epoch_post_cataclysm"
+  ],
   "continent": "mainland_asia",
   "extent": [
     [
@@ -55,7 +63,7 @@
     ]
   ],
   "description": "The northern landmass across the Tethys Sea, carrying the Saraswati valley cities.",
-  "notes": "Named on the render as a whole rather than divided. Canon models nothing on it yet; the cities below are its only entries.",
+  "notes": "Named on the render as a whole rather than divided. Canon models nothing on it yet; the cities below are its only entries. Ground rather than building: it is here before anyone names it and after they stop. Ground rather than building: it is here before anyone names it and after they stop.",
   "canon": "inferred",
   "sources": [
     "dump/Partial_map.png"

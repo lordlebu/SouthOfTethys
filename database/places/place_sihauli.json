@@ -3,6 +3,11 @@
   "type": "place",
   "name": "Sihauli",
   "kind": "city",
+  "epochs": [
+    "epoch_migrations",
+    "epoch_civilization_dawn",
+    "epoch_current"
+  ],
   "coordinates": {
     "x": 44,
     "y": 15
@@ -12,5 +17,6 @@
   "canon": "inferred",
   "sources": [
     "dump/Partial_map.png"
-  ]
+  ],
+  "notes": "Raised by people, so it begins with them. The reference map draws a living city, and the map is a picture of one era rather than of all of them. Raised by people, so it begins with them. The reference map draws a living city, and the map is a picture of one era rather than of all of them."
 }

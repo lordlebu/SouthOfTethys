@@ -15,7 +15,7 @@ Each era below is canon as it stood then. An entity that names no epoch is prese
 | | dated to this era | timeless |
 |---|---:|---:|
 | regions |  | 7 |
-| places |  | 35 |
+| places | 11 | 19 |
 | settlements |  | 2 |
 | characters | 2 |  |
 | factions |  | 3 |
@@ -45,7 +45,7 @@ graph TD
 
 ![Map of Prehistoric Foundations & Age of Vanaras](atlas/epoch_prehistoric.svg)
 
-6 region(s) traced, 13 place(s) plotted. [Open the SVG](atlas/epoch_prehistoric.svg)
+6 region(s) traced, 8 place(s) plotted. [Open the SVG](atlas/epoch_prehistoric.svg)
 
 ## Deep Antiquity
 
@@ -56,7 +56,7 @@ graph TD
 | | dated to this era | timeless |
 |---|---:|---:|
 | regions |  | 7 |
-| places |  | 35 |
+| places | 11 | 19 |
 | settlements |  | 2 |
 | characters | 6 |  |
 | factions |  | 3 |
@@ -78,7 +78,7 @@ graph TD
 
 ![Map of Deep Antiquity](atlas/epoch_deep_antiquity.svg)
 
-6 region(s) traced, 13 place(s) plotted. [Open the SVG](atlas/epoch_deep_antiquity.svg)
+6 region(s) traced, 8 place(s) plotted. [Open the SVG](atlas/epoch_deep_antiquity.svg)
 
 ## Era of Human Migrations
 
@@ -89,7 +89,7 @@ graph TD
 | | dated to this era | timeless |
 |---|---:|---:|
 | regions |  | 7 |
-| places |  | 35 |
+| places | 16 | 19 |
 | settlements |  | 2 |
 | characters | 11 |  |
 | factions |  | 3 |
@@ -128,7 +128,7 @@ graph TD
 | | dated to this era | timeless |
 |---|---:|---:|
 | regions |  | 7 |
-| places | 1 | 35 |
+| places | 17 | 19 |
 | settlements |  | 2 |
 | characters | 27 |  |
 | factions |  | 3 |
@@ -182,7 +182,7 @@ graph TD
 | | dated to this era | timeless |
 |---|---:|---:|
 | regions |  | 7 |
-| places | 1 | 35 |
+| places | 17 | 19 |
 | settlements |  | 2 |
 | characters | 6 |  |
 | factions |  | 3 |
@@ -217,7 +217,7 @@ graph TD
 | | dated to this era | timeless |
 |---|---:|---:|
 | regions |  | 7 |
-| places | 1 | 35 |
+| places | 12 | 19 |
 | settlements |  | 2 |
 | field maps | 3 |  |
 | points of interest | 20 |  |
@@ -243,4 +243,4 @@ graph TD
 
 ![Map of Post-Cataclysmic Era (The Great Shattering)](atlas/epoch_post_cataclysm.svg)
 
-0 region(s) traced, 16 place(s) plotted. [Open the SVG](atlas/epoch_post_cataclysm.svg)
+0 region(s) traced, 11 place(s) plotted. [Open the SVG](atlas/epoch_post_cataclysm.svg)

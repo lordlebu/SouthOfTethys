@@ -3,6 +3,14 @@
   "type": "place",
   "name": "The Saraswati",
   "kind": "river",
+  "epochs": [
+    "epoch_prehistoric",
+    "epoch_deep_antiquity",
+    "epoch_migrations",
+    "epoch_civilization_dawn",
+    "epoch_current",
+    "epoch_post_cataclysm"
+  ],
   "path": [
     [
       52,
@@ -35,7 +43,7 @@
   ],
   "continent": "mainland_asia",
   "description": "The river the northern valley civilization is built along, running out of inner Asia and west to the Makran coast.",
-  "notes": "The render labels this 'BARASWATH BIEER' and a tributary 'SUERVEIDVARU', both of which are garbled machine text rather than names. Canon's spelling is used: the Saraswati, as in `region_saraswati_delta` and `event_shadow_pact`. Nothing garbled from the render is entered anywhere in this batch.",
+  "notes": "The render labels this 'BARASWATH BIEER' and a tributary 'SUERVEIDVARU', both of which are garbled machine text rather than names. Canon's spelling is used: the Saraswati, as in `region_saraswati_delta` and `event_shadow_pact`. Nothing garbled from the render is entered anywhere in this batch. Ground rather than building: it is here before anyone names it and after they stop. Ground rather than building: it is here before anyone names it and after they stop.",
   "canon": "inferred",
   "sources": [
     "dump/Partial_map.png"

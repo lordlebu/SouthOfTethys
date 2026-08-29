@@ -3,6 +3,14 @@
   "type": "place",
   "name": "Hyrcania",
   "kind": "plains",
+  "epochs": [
+    "epoch_prehistoric",
+    "epoch_deep_antiquity",
+    "epoch_migrations",
+    "epoch_civilization_dawn",
+    "epoch_current",
+    "epoch_post_cataclysm"
+  ],
   "coordinates": {
     "x": 63,
     "y": 8
@@ -13,7 +21,7 @@
     "Hyrkania"
   ],
   "description": "Open steppe country in the far northeast of Mainland Asia, rising into mountains. Where Guyuk tore the crimson portal to Naraka Lok.",
-  "notes": "Canon attests this ground twice under two spellings: `event_naraka_portal` puts Guyuk and Nirigili on the Hyrkanian steppe, and the reference map labels the same northeast country `HYRCANIA ?`. The two were first entered separately, because neither source says they are the same and a resemblance is not an identity. Confirmed as one place by the author, 2026-08-27, and merged; the steppe name is kept as an alias because that is the spelling the event uses.",
+  "notes": "Canon attests this ground twice under two spellings: `event_naraka_portal` puts Guyuk and Nirigili on the Hyrkanian steppe, and the reference map labels the same northeast country `HYRCANIA ?`. The two were first entered separately, because neither source says they are the same and a resemblance is not an identity. Confirmed as one place by the author, 2026-08-27, and merged; the steppe name is kept as an alias because that is the spelling the event uses. Ground rather than building: it is here before anyone names it and after they stop. Ground rather than building: it is here before anyone names it and after they stop.",
   "canon": "primary",
   "sources": [
     "database/events",

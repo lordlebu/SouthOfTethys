@@ -82,13 +82,26 @@ side alone exists in canon and never appears in the picture.
 
 ### A place
 
+A place is answered in four factors, and **the atlas needs all four**. Three of them were
+optional until six eras drew the same map, with Harappa standing among the Vanaras because
+nothing in the file said when it was built.
+
+| Factor | Field | What happens if you leave it out |
+|---|---|---|
+| **What** it is | `kind` | Required already. |
+| **Where** it is | `coordinates`, `extent` or `path` | It exists in the census but is never drawn. Honest and common — canon has not located everything. |
+| **When** it is | `epochs` | *If you drew it:* it appears in all six eras, including ones before it existed. **This is now a lint failure.** |
+| **How firmly** | `canon`, `sources` | It reads as established fact when it was traced off a picture. |
+
 ```json
 {
   "id": "place_somewhere",
   "type": "place",
   "name": "Somewhere",
   "kind": "city",
-  "continent": "jambhudweepa",
+  "epochs": ["epoch_migrations", "epoch_civilization_dawn", "epoch_current"],
+  "continent": "mainland_asia",
+  "coordinates": { "x": 29, "y": 15 },
   "description": "A sentence about what it is.",
   "notes": "What canon knows, what it does not, and where this came from.",
   "canon": "inferred",
@@ -96,15 +109,33 @@ side alone exists in canon and never appears in the picture.
 }
 ```
 
-`kind` is one of a fixed list — `city`, `range`, `plains`, `desert`, `coast`, `river`, `sea`,
-`island`, `forest`, `wetland`, `plateau`, `settlement`, `frontier`, `ruin`, `route`, `unknown`.
-Coarse on purpose: the distinction that matters is a city from a mountain range.
+**`kind` is one of a fixed list** — `continent`, `city`, `settlement`, `range`, `plateau`,
+`plains`, `desert`, `coast`, `river`, `sea`, `island`, `forest`, `wetland`, `frontier`, `ruin`,
+`route`, `vessel`, `unknown`. Coarse on purpose: the distinction that matters is a city from a
+mountain range, not a city from a town.
 
-**Leave `coordinates` out** unless you know where it sits in the *post-cataclysm* world. The
-0–100 grid describes the world after the Great Shattering, and the shape of the world before it
-is deliberately withheld — the player is meant to work the Shattering out by playing. Absent
-means "canon knows this exists and has not placed it", which is honest and common. See
-`DESIGN.md`.
+**`kind` also answers `epochs`, nearly always.** Ground was here before anyone named it and is
+here after they stop, so it takes all six eras: `continent`, `range`, `plateau`, `plains`,
+`desert`, `coast`, `river`, `sea`, `island`, `forest`, `wetland`. Something people raised begins
+when they raised it: `city`, `settlement`, `ruin`, `route`, `frontier`, `vessel`. That is why
+Harappa, Mohenjodaro, Sihauli, the Northern Frontier and Vengi start at
+`epoch_migrations` — people had to arrive before there was a city — while the Deccan and the
+Nilgiri are on every map in the book.
+
+Where canon *dates* a place, canon wins over the rule of thumb. Hyrcania is ground and gets all
+six, but the two events that happen there sit in the Migrations, and if the steppe had been
+named only in that era it would carry only that era.
+
+**Three ways to say where.** A point is `coordinates`; an area is `extent`, a closed ring of
+`[x, y]`; a river or a road is `path`, an ordered line read source-first. A line is not a thin
+ring — drawn as a ring it has to be traced out and back, and every edit has to keep both banks
+in step.
+
+**The grid is one world at one time.** `dump/Partial_map.png` shows a living Harappa and a
+standing university, so it draws the world *before* the Great Shattering, and everything traced
+off it is `"canon": "inferred"`. The three field-map anchors are not on that arrangement and are
+not meant to be — they are cataclysm-shaped, which is the Shattering having happened in between
+rather than an error in either. Do not reconcile them.
 
 **Do not author `event_the_great_shattering`.** A generated chapter has already offered to, as
 a predecessor for the Survival Train story. Canon keeps the Shattering's consequences and not
@@ -223,8 +254,12 @@ checked; a folder in none of them fails the gate on purpose.
 is canon as far as the tooling is concerned, and a `templates/` folder would fail the boundary
 check. That is why the templates above are inline in this file.
 
-**No epoch means every era.** Silence reads as timeless, not unplaced. That is deliberate —
-it is what fauna has always meant. Name an epoch only when the thing genuinely belongs to one.
+**No epoch means every era — and for a place you drew, that is now an error.** Silence reads
+as timeless rather than unplaced, which is deliberate and is what fauna has always meant: a
+crocodile does not belong to an era. It is wrong for a city. So the rule is split. A place
+carrying `coordinates`, an `extent` or a `path` **must** name its `epochs`; everything else may
+stay silent. That narrowness is the point — canon has 22 places it has not located, and dating
+them is not the price of drawing a map.
 
 **Writing a fixture rather than a story point?** Mark it `"sample": true`. Nothing that is not
 itself a sample may reference it, so it stays deletable.
