@@ -50,7 +50,17 @@ the game's CI enforce it.
 entities carry `source_index` and anything without one sorts last. Reordering silently changes
 what lives on somebody's tile.
 
-**Feature branches always.** Never commit to `main` — and this is now enforced rather than
+**One branch at a time, and never `main`.** Work stays on a single feature branch until it
+merges. A new piece of work does not get a new branch because it feels separate — it goes on the
+branch already open, and the whole lot is reviewed as one pull request. Cut the next branch only
+once the previous one has merged.
+
+This is a working rule rather than an enforced one, and it was written after three branches were
+left in flight at once — `ingest-draft`, `region-extents` and `north-dwarka` — which made it
+impossible to tell what had merged, what was waiting, and which change had caused which failure.
+The tidiness of one-change-one-branch is not worth that.
+
+Never commit to `main` — and this is enforced rather than
 trusted. A ruleset on the default branch blocks direct pushes, force pushes and deletions, and
 requires a pull request whose `validate` check has passed. There is **no bypass, for anyone**,
 including the repository owner.
