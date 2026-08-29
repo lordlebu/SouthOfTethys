@@ -40,7 +40,7 @@ graph TD
 
 ![Map of Prehistoric Foundations & Age of Vanaras](atlas/epoch_prehistoric.svg)
 
-6 region(s) traced, 0 place(s) plotted. [Open the SVG](atlas/epoch_prehistoric.svg)
+6 region(s) traced, 13 place(s) plotted. [Open the SVG](atlas/epoch_prehistoric.svg)
 
 ## Deep Antiquity
 
@@ -73,7 +73,7 @@ graph TD
 
 ![Map of Deep Antiquity](atlas/epoch_deep_antiquity.svg)
 
-6 region(s) traced, 0 place(s) plotted. [Open the SVG](atlas/epoch_deep_antiquity.svg)
+6 region(s) traced, 13 place(s) plotted. [Open the SVG](atlas/epoch_deep_antiquity.svg)
 
 ## Era of Human Migrations
 
@@ -111,7 +111,7 @@ graph TD
 
 ![Map of Era of Human Migrations](atlas/epoch_migrations.svg)
 
-6 region(s) traced, 0 place(s) plotted. [Open the SVG](atlas/epoch_migrations.svg)
+6 region(s) traced, 13 place(s) plotted. [Open the SVG](atlas/epoch_migrations.svg)
 
 ## Civilization Dawn (Lothal Era)
 
@@ -165,7 +165,7 @@ graph TD
 
 ![Map of Civilization Dawn (Lothal Era)](atlas/epoch_civilization_dawn.svg)
 
-6 region(s) traced, 0 place(s) plotted. [Open the SVG](atlas/epoch_civilization_dawn.svg)
+6 region(s) traced, 13 place(s) plotted. [Open the SVG](atlas/epoch_civilization_dawn.svg)
 
 ## Current Era (Age of Machinery)
 
@@ -197,7 +197,7 @@ graph TD
 
 ![Map of Current Era (Age of Machinery)](atlas/epoch_current.svg)
 
-6 region(s) traced, 0 place(s) plotted. [Open the SVG](atlas/epoch_current.svg)
+6 region(s) traced, 13 place(s) plotted. [Open the SVG](atlas/epoch_current.svg)
 
 ## Post-Cataclysmic Era (The Great Shattering)
 
@@ -234,4 +234,4 @@ graph TD
 
 ![Map of Post-Cataclysmic Era (The Great Shattering)](atlas/epoch_post_cataclysm.svg)
 
-0 region(s) traced, 3 place(s) plotted. [Open the SVG](atlas/epoch_post_cataclysm.svg)
+0 region(s) traced, 16 place(s) plotted. [Open the SVG](atlas/epoch_post_cataclysm.svg)

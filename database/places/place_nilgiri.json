@@ -3,6 +3,10 @@
   "type": "place",
   "name": "Nilgiri",
   "kind": "range",
+  "coordinates": {
+    "x": 47,
+    "y": 67
+  },
   "continent": "jambhudweepa",
   "description": "Highland country in the far south of Jambhudweep.",
   "canon": "inferred",

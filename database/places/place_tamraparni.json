@@ -2,12 +2,38 @@
   "id": "place_tamraparni",
   "type": "place",
   "name": "Tamraparni",
-  "kind": "unknown",
+  "kind": "island",
+  "coordinates": {
+    "x": 66,
+    "y": 72
+  },
   "continent": "jambhudweepa",
   "description": "Named at the southern tip of Jambhudweep, grouped with the coastal civilizations.",
   "notes": "Question-marked on the render.",
   "canon": "inferred",
   "sources": [
     "dump/Partial_map.png"
+  ],
+  "extent": [
+    [
+      63,
+      69
+    ],
+    [
+      67,
+      70
+    ],
+    [
+      69,
+      74
+    ],
+    [
+      66,
+      77
+    ],
+    [
+      63,
+      75
+    ]
   ]
 }

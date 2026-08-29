@@ -3,6 +3,10 @@
   "type": "place",
   "name": "The Southern Ice",
   "kind": "coast",
+  "coordinates": {
+    "x": 50,
+    "y": 95
+  },
   "description": "The frozen reaches beyond the Tethys Southern Ocean, the boundary of the known islands.",
   "canon": "inferred",
   "sources": [

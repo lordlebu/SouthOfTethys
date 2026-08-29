@@ -3,6 +3,10 @@
   "type": "place",
   "name": "The Northern Frontier",
   "kind": "frontier",
+  "coordinates": {
+    "x": 30,
+    "y": 19
+  },
   "continent": "mainland_asia",
   "description": "The valley country supporting the Saraswathi Valley Civilization.",
   "notes": "An annotation on the render rather than a settlement: it names the whole supporting hinterland of the valley cities.",

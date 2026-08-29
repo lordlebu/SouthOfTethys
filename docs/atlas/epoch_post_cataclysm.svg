@@ -7,12 +7,15 @@
   .sea{fill:#93B4CB} .land{fill:#C8CBA8}
   polygon{stroke:#7E8A76;stroke-width:.25}
   .rgn{fill:#39402F;font:2.7px Archivo,sans-serif;font-style:italic;opacity:.9}
+  .course{fill:none;stroke:#5B87A8;stroke-width:.8;stroke-linejoin:round;stroke-linecap:round}
+  .course-lbl{fill:#2F5470;font:2.2px Archivo,sans-serif;font-style:italic}
   .t-desert{fill:#D9C89A}.t-plains{fill:#A8BE84}.t-forest{fill:#7EA46E}.t-wetland{fill:#8FAD9E}.t-hills{fill:#B3B183}.t-mountains{fill:#A9A79C}.t-river{fill:#8FB3C4}.t-coast{fill:#D8CBA0}.t-sea{fill:#7FA6C0}.t-lava_field{fill:#C4735A}
   @media(prefers-color-scheme:dark){
    .bg{fill:#121817}.grid{stroke:#28322F}.edge{stroke:#3E4C4E}
    .dot{fill:#74A8DA}.dot-place{fill:#CBAE6A}.lbl{fill:#E2E7E3}.cap{fill:#78857F}
    .sea{fill:#18242E} .land{fill:#2A3026}
    polygon{stroke:#3A4436} .rgn{fill:#9FB09A}
+   .course{stroke:#6E9CBD} .course-lbl{fill:#9DBDD4}
    .t-desert{fill:#3B3524}.t-plains{fill:#2A3520}.t-forest{fill:#20301E}.t-wetland{fill:#1E2E2A}.t-hills{fill:#302E20}.t-mountains{fill:#2C2B26}.t-river{fill:#1D2E36}.t-coast{fill:#393322}.t-sea{fill:#1B2C36}.t-lava_field{fill:#3A1C15}
   }
 </style>
@@ -32,10 +35,36 @@
 <line class="edge" x1="16" y1="64" x2="28" y2="50"/>
 <line class="edge" x1="28" y1="50" x2="58" y2="20"/>
 <circle class="dot" cx="16" cy="64" r="1.5"/>
-<text class="lbl" x="18" y="61" text-anchor="start">North Dwarka</text>
+<text class="lbl" x="16" y="61" text-anchor="middle">North Dwarka</text>
 <circle class="dot" cx="28" cy="50" r="1.5"/>
 <text class="lbl" x="28" y="47" text-anchor="middle">Lothal</text>
 <circle class="dot" cx="58" cy="20" r="1.5"/>
-<text class="lbl" x="56" y="17" text-anchor="end">The Narmada Plateau</text>
+<text class="lbl" x="58" y="17" text-anchor="middle">The Narmada Plateau</text>
+<circle class="dot-place" cx="46" cy="52" r="1.5"/>
+<text class="lbl" x="46" y="49" text-anchor="middle">The Aranta</text>
+<circle class="dot-place" cx="45" cy="62" r="1.5"/>
+<text class="lbl" x="45" y="59" text-anchor="middle">The Deccan</text>
+<circle class="dot-place" cx="29" cy="15" r="1.5"/>
+<text class="lbl" x="29" y="12" text-anchor="middle">Harappa</text>
+<circle class="dot-place" cx="63" cy="8" r="1.5"/>
+<text class="lbl" x="63" y="5" text-anchor="middle">Hyrcania</text>
+<circle class="dot-place" cx="20" cy="24" r="1.5"/>
+<text class="lbl" x="20" y="21" text-anchor="middle">Makkan Coast</text>
+<circle class="dot-place" cx="13" cy="19" r="1.5"/>
+<text class="lbl" x="15" y="16" text-anchor="start">Mohenjodaro</text>
+<circle class="dot-place" cx="47" cy="67" r="1.5"/>
+<text class="lbl" x="47" y="64" text-anchor="middle">Nilgiri</text>
+<circle class="dot-place" cx="30" cy="19" r="1.5"/>
+<text class="lbl" x="30" y="16" text-anchor="middle">The Northern Frontier</text>
+<circle class="dot-place" cx="44" cy="15" r="1.5"/>
+<text class="lbl" x="44" y="12" text-anchor="middle">Sihauli</text>
+<circle class="dot-place" cx="50" cy="95" r="1.5"/>
+<text class="lbl" x="50" y="92" text-anchor="middle">The Southern Ice</text>
+<circle class="dot-place" cx="89" cy="73" r="1.5"/>
+<text class="lbl" x="87" y="70" text-anchor="end">Tamralinga</text>
+<circle class="dot-place" cx="66" cy="72" r="1.5"/>
+<text class="lbl" x="66" y="69" text-anchor="middle">Tamraparni</text>
+<circle class="dot-place" cx="72" cy="52" r="1.5"/>
+<text class="lbl" x="72" y="49" text-anchor="middle">Vengi</text>
 <text class="cap" x="0" y="108">north is up · 0-100 grid</text>
 </svg>

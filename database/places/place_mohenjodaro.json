@@ -3,6 +3,10 @@
   "type": "place",
   "name": "Mohenjodaro",
   "kind": "city",
+  "coordinates": {
+    "x": 13,
+    "y": 19
+  },
   "continent": "mainland_asia",
   "description": "A Saraswati valley city at the desert's edge, downriver of Harappa.",
   "notes": "`event_founding_lothal` records the Mask Family's migration from Mohenjodaro as a cause. The origin was in canon; the place was not.",

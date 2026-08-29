@@ -3,6 +3,10 @@
   "type": "place",
   "name": "Vengi",
   "kind": "unknown",
+  "coordinates": {
+    "x": 72,
+    "y": 52
+  },
   "continent": "jambhudweepa",
   "description": "Named on the eastern coast of Jambhudweep, and nothing more is established.",
   "notes": "Question-marked on the render. The annotation groups it with the coastal civilizations alongside Dwarka, Lothal and Tamraparni, which is the only claim canon has about it.",
