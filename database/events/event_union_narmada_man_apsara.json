@@ -1,0 +1,29 @@
+{
+  "id": "event_union_narmada_man_apsara",
+  "type": "event",
+  "title": "The Primordial Union under the Asura Planet",
+  "epoch": "epoch_migrations",
+  "participants": [
+    "character_narmada_man",
+    "character_meditating_apsara"
+  ],
+  "location": "place_narmada_valley_outpost",
+  "predecessors": [],
+  "successors": [],
+  "causes": [
+    "A cataclysmic, world-altering rainfall and rising floodwaters in the Narmada Valley",
+    "The ominous orbital approach of a sentient Asura Planet in the sky"
+  ],
+  "outcomes": [
+    "The union between the primeval Narmada Man and the meditating celestial Apsara",
+    "The conquest of the wild lands of beasts and vanaras using her celestial strength",
+    "The birth of a shimmering, Asura-tainted egg, which introduced a demonic lineage into Jambhudweepa",
+    "The Apsara's ascension to the moon, abandoning the Narmada Man to his mortal grief"
+  ],
+  "summary": "During a cataclysmic flood beneath the glow of an approaching Asura planet, the primeval King Narmada Man encounters and unites with a meditating celestial Apsara. Their union grants him the power to conquer the valley but ends in tragedy when she ascends to the moon, leaving behind an Asura-tainted egg.",
+  "canon": "primary",
+  "sources": [
+    "The Narmada Man: Primordial King of the Riverbones",
+    "Narmada Valley: The Primordial Gateway of Jambhudweepa"
+  ]
+}

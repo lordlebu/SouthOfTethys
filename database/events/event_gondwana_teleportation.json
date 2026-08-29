@@ -1,0 +1,31 @@
+{
+  "id": "event_gondwana_teleportation",
+  "type": "event",
+  "title": "The Gondwana Spacetime Teleportation",
+  "epoch": "epoch_current",
+  "participants": [
+    "character_onko",
+    "character_digha_jani"
+  ],
+  "location": "place_gondwana_plateau",
+  "predecessors": [
+    "event_narmada_upriver_expedition"
+  ],
+  "successors": [],
+  "causes": [
+    "A torrential monsoon downpour trapping the expedition party under the forest canopy of the Narmada Valley",
+    "A highly anomalous and energetic lightning strike directly hitting Digha Jani",
+    "A succession of blinding lightning strikes fracturing the local fabric of spacetime"
+  ],
+  "outcomes": [
+    "The sudden physical teleportation of Onko and Digha through a library-like cosmic wormhole filled with floating tomes",
+    "Emerging onto the weightless, desolate Gondwana plateau under a skies ruled by a massive, pulsing Asura planet",
+    "The discovery of half-buried stone tablets and a massive, oily volcanic black lingam acting as an ancient co-existence boundary stone"
+  ],
+  "summary": "During a violent monsoon storm in the Narmada forests, a direct lightning strike leaves Digha Jani unharmed and glowing, before subsequent strikes tear a rift in spacetime. The scholars are teleported through a cosmic wormhole to the floating, weightless Gondwana plateau, where they discover ancient tablets and a basalt boundary stone.",
+  "canon": "primary",
+  "sources": [
+    "Digha Jani and the Cosmic Secrets of Jambhudweepa",
+    "The Predatory Sentience of Asura Planets"
+  ]
+}

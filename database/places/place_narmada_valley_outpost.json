@@ -1,0 +1,13 @@
+{
+  "id": "place_narmada_valley_outpost",
+  "type": "place",
+  "name": "First Narmada Outpost",
+  "kind": "frontier",
+  "continent": "jambhudweepa",
+  "description": "The primordial human settlement established by the Narmada Man on the far side of the Narmada Valley.",
+  "notes": "The oldest documented human settlement on Jambhudweepa, built near the volcanic fissures of the central plateau. It was the site of the catastrophic Pleistocene floods and the primordial union between the Narmada Man and the Meditating Apsara.",
+  "canon": "primary",
+  "sources": [
+    "The Narmada Man: Primordial King of the Riverbones"
+  ]
+}

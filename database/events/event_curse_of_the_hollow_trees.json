@@ -1,0 +1,28 @@
+{
+  "id": "event_curse_of_the_hollow_trees",
+  "type": "event",
+  "title": "The Curse of the Hollow Trees",
+  "epoch": "epoch_prehistoric",
+  "participants": [
+    "character_jambanson"
+  ],
+  "location": "place_godavari_rainforest",
+  "predecessors": [],
+  "successors": [
+    "event_jambanson_moonseed_planting"
+  ],
+  "causes": [
+    "A devastating ecological collapse of the southern rainforests",
+    "The complete abandonment of hives by the forest bees"
+  ],
+  "outcomes": [
+    "Jambanson's quest upriver to find the Saraswati Spiceroot",
+    "The establishment of an alliance with the western coast Tupi seers",
+    "Jambanson's vision at the volcanic Crystal Spire"
+  ],
+  "summary": "During a cataclysmic ecological collapse in the Godavari rainforests, the Vanara mystic Jambanson sets off on an epic upriver quest to find the Saraswati Spiceroot, gathering dreamspace knowledge and a sacred moon-seed to save his homeland.",
+  "canon": "primary",
+  "sources": [
+    "The Mythic Legacy and Ritual Order of Jambenson"
+  ]
+}

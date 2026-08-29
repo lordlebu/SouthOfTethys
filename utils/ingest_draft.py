@@ -77,6 +77,25 @@ def refs(node, key=None):
         yield node
 
 
+# Titles a draft adds to a name that canon records bare. "Professor Onko" is `character_onko`
+# with a job in front of it, and no id check can see that -- the draft proposed
+# `character_professor_onko`, which collides with nothing.
+HONORIFICS = ("professor ", "prof ", "prof. ", "dr ", "dr. ", "doctor ", "captain ", "capt ",
+              "elder ", "lady ", "lord ", "the ", "a ", "an ")
+
+
+def bare(name: str) -> str:
+    """A name with any honorific and leading article stripped, for comparing people."""
+    n = (name or "").strip().lower().rstrip(".")
+    changed = True
+    while changed:
+        changed = False
+        for h in HONORIFICS:
+            if n.startswith(h):
+                n, changed = n[len(h):], True
+    return n
+
+
 def loose(title: str) -> str:
     """Two events are not different because one has an article in front of it."""
     t = (title or "").strip().lower()
@@ -115,6 +134,10 @@ def main() -> int:
     rank = epoch_rank()
     titles = {loose(p["title"]): eid for eid, p in known.items()
               if p.get("type") == "event" and p.get("title")}
+    people = {}
+    for eid, payload in known.items():
+        if payload.get("name"):
+            people.setdefault(folder_for(eid) or "", {}).setdefault(bare(payload["name"]), eid)
     cultures_path = DB / "cultures.json"
     cultures = ({c["id"] for c in json.loads(cultures_path.read_text(encoding="utf-8"))["cultures"]}
                 if cultures_path.exists() else None)
@@ -164,6 +187,14 @@ def main() -> int:
         for r in sorted(set(refs(d))):
             if r not in known and r not in incoming:
                 found.append(f"references '{r}', which does not exist and is not in this draft")
+
+        if folder and d.get("name"):
+            twin = people.get(folder, {}).get(bare(d["name"]))
+            if twin and twin != eid:
+                found.append(
+                    f"name {d['name']!r} is {twin} with an honorific or article in front of it "
+                    f"-- one person, not two"
+                )
 
         if cultures is not None and d.get("culture") and d["culture"] not in cultures:
             found.append(f"culture '{d['culture']}' is not declared in cultures.json")

@@ -1,0 +1,27 @@
+{
+  "id": "event_ritual_of_jambenson",
+  "type": "event",
+  "title": "The Establishment of the Womb Rites",
+  "epoch": "epoch_prehistoric",
+  "participants": [
+    "character_jambanson"
+  ],
+  "location": "place_godavari_rainforest",
+  "predecessors": [
+    "event_jambanson_moonseed_planting"
+  ],
+  "successors": [],
+  "causes": [
+    "The birth of Jharwa fetuses tainted with dark Asura blood",
+    "Jambanson's mastery over protective botanical and acoustic rites"
+  ],
+  "outcomes": [
+    "The creation of the Jharwa womb-purification exorcisms",
+    "The rise of an exclusive, male-led priestly order wielding stone yonis and secret hymns"
+  ],
+  "summary": "To protect early human lineages from Asura corruption, Jambanson designs a highly ritualized, male-led womb purification exorcism using sacred resins, stone yonis, and acoustic hymns to purge demonic influence.",
+  "canon": "primary",
+  "sources": [
+    "The Mythic Legacy and Ritual Order of Jambenson"
+  ]
+}

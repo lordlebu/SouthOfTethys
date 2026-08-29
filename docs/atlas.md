@@ -15,13 +15,13 @@ Each era below is canon as it stood then. An entity that names no epoch is prese
 | | dated to this era | timeless |
 |---|---:|---:|
 | regions |  | 7 |
-| places |  | 31 |
+| places |  | 35 |
 | settlements |  | 2 |
 | characters | 2 |  |
 | factions |  | 3 |
-| events | 3 |  |
+| events | 6 |  |
 | artifacts |  | 3 |
-| mythology |  | 6 |
+| mythology |  | 8 |
 | fauna |  | 257 |
 | flora |  | 90 |
 
@@ -29,11 +29,16 @@ Each era below is canon as it stood then. An entity that names no epoch is prese
 
 ```mermaid
 graph TD
-    E0["The Fang vs. Scale Wars"]
-    E1["The Asura Gondwana Intervention"]
-    E2["The Great Devolvement"]
-    E0 --> E1
+    E0["The Curse of the Hollow Trees"]
+    E1["The Fang vs. Scale Wars"]
+    E2["The Asura Gondwana Intervention"]
+    E3["The Great Devolvement"]
+    E4["The Planting of the Moon-Seed"]
+    E5["The Establishment of the Womb Rites"]
+    E0 --> E4
     E1 --> E2
+    E2 --> E3
+    E4 --> E5
 ```
 
 ### Map
@@ -51,13 +56,13 @@ graph TD
 | | dated to this era | timeless |
 |---|---:|---:|
 | regions |  | 7 |
-| places |  | 31 |
+| places |  | 35 |
 | settlements |  | 2 |
 | characters | 6 |  |
 | factions |  | 3 |
 | events | 2 |  |
 | artifacts |  | 3 |
-| mythology |  | 6 |
+| mythology |  | 8 |
 | fauna |  | 257 |
 | flora |  | 90 |
 
@@ -84,13 +89,13 @@ graph TD
 | | dated to this era | timeless |
 |---|---:|---:|
 | regions |  | 7 |
-| places |  | 31 |
+| places |  | 35 |
 | settlements |  | 2 |
-| characters | 10 |  |
+| characters | 11 |  |
 | factions |  | 3 |
-| events | 5 |  |
+| events | 6 |  |
 | artifacts |  | 3 |
-| mythology |  | 6 |
+| mythology |  | 8 |
 | fauna |  | 257 |
 | flora |  | 90 |
 
@@ -103,6 +108,7 @@ graph TD
     E2["The Jharwa First-Wave & The Shell Pact"]
     E3["Opening of the Naraka Lok Portal"]
     E4["The Retreat of Owlman"]
+    E5["The Primordial Union under the Asura Planet"]
     E1 --> E3
     E2 --> E4
 ```
@@ -122,13 +128,13 @@ graph TD
 | | dated to this era | timeless |
 |---|---:|---:|
 | regions |  | 7 |
-| places | 1 | 31 |
+| places | 1 | 35 |
 | settlements |  | 2 |
 | characters | 27 |  |
 | factions |  | 3 |
 | events | 11 |  |
 | artifacts |  | 3 |
-| mythology |  | 6 |
+| mythology |  | 8 |
 | fauna |  | 257 |
 | flora |  | 90 |
 
@@ -176,13 +182,13 @@ graph TD
 | | dated to this era | timeless |
 |---|---:|---:|
 | regions |  | 7 |
-| places | 1 | 31 |
+| places | 1 | 35 |
 | settlements |  | 2 |
 | characters | 6 |  |
 | factions |  | 3 |
-| events | 1 |  |
+| events | 3 |  |
 | artifacts |  | 3 |
-| mythology |  | 6 |
+| mythology |  | 8 |
 | fauna |  | 257 |
 | flora |  | 90 |
 
@@ -191,6 +197,9 @@ graph TD
 ```mermaid
 graph TD
     E0["The Antarctic Ice Wall Expedition"]
+    E1["The Narmada Upriver Expedition"]
+    E2["The Gondwana Spacetime Teleportation"]
+    E1 --> E2
 ```
 
 ### Map
@@ -208,7 +217,7 @@ graph TD
 | | dated to this era | timeless |
 |---|---:|---:|
 | regions |  | 7 |
-| places | 1 | 31 |
+| places | 1 | 35 |
 | settlements |  | 2 |
 | field maps | 3 |  |
 | points of interest | 20 |  |
@@ -216,7 +225,7 @@ graph TD
 | factions |  | 3 |
 | events | 1 |  |
 | artifacts |  | 3 |
-| mythology |  | 6 |
+| mythology |  | 8 |
 | discoveries | 31 |  |
 | field questions | 7 |  |
 | vocabulary | 8 |  |
