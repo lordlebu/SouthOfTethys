@@ -15,7 +15,7 @@ It is now a list of what is enforced, which is a thing that can be checked again
 
 | Check | Covers |
 |---|---|
-| **schema** | All 534 entities against 16 schemas. Every entity folder has one. |
+| **schema** | All 552 entities against 16 schemas. Every entity folder has one. |
 | **strict fields** | `additionalProperties: false` on all 16, so a misspelled `scientifc` fails by name instead of reading as absent. |
 | **index, both ways** | Every id in `index.json` has a file, every file is in `index.json`, and the per-category counts match. |
 | **epochs** | Any field whose *name* mentions an epoch resolves to `timeline/epochs.json` — not just `epoch` and `epochs`, because `epoch_founded` once sat unvalidated one field over. |
@@ -70,7 +70,7 @@ it was describing. Exactly the failure mode this document exists to avoid.
 | Gap | Status |
 |---|---|
 | **`taxonomy` shape** | Still `{"type": "object"}` with no required keys, on 9 of 256 fauna. Left free on purpose: Phase 03 answered the part that mattered with a real `clade` field, and what remains here is genuinely editorial notes. |
-| **Place coordinates** | None of the 19 `place` entities carries any, and the atlas draws a map for one era out of six. Not a gap: the only grid canon holds describes the world after the Great Shattering, and the Shattering has not been written — deriving a *before* from an unwritten *after* would mean inventing the shape of the catastrophe to place cities against it. Ruling in `DESIGN.md`, 2026-08-27. Nothing checks that a place is eventually placed, because most never will be. |
+| **Place coordinates** | No `place` carries any, and the atlas draws a map for one era out of six. Not a gap and not pending: the only grid canon holds describes the world after the Great Shattering, and the Shattering is **withheld on purpose** — canon keeps its consequences and not its account, because arriving at it is what the player is there to do. Ruling in `DESIGN.md`. Nothing checks that a place is eventually placed, because most never will be. |
 | **Large media placement** | Nothing checks that a big binary sits in the git-ignored `dump/` rather than tracked. A 6.4 MB lore map reached a commit through `git add -A`. The rule is in `CLAUDE.md`; a size check in lint would enforce it and has not earned its place — one accident is not a pattern, and a linter that failed on a file somebody deliberately tracked would be worse than the accident. |
 | **Corals filed as flora** | Canon's two *Tethysolithus* reef-builders are cnidarians — animals — and sit in `database/flora/`. They carry `growth_form: coral` so the database stops implying they are plants, but moving them to `fauna` with a `clade` is a canon decision nobody has made. |
 | **`region` on 46 species is not a place** | 40 carry `asura-conjurations` — a real grouping, by what made them rather than where they live, and arguably a faction or a tag rather than a region. 6 carry `prototype-starters`: a cloud antelope, a hill macaque, a monsoon crane, a painted deer and two others, still labelled from development. Those look like leftovers. Both are allowlisted so a *typo* still fails, and neither is changed here, because `region` is exported — moving them edits the game's bundle and is a canon decision, not a lint's. |

@@ -36,7 +36,7 @@ graph TD
 
 ### Map
 
-_No map for this era, deliberately._ The only coordinates canon holds belong to the three field maps, and their layout describes the world *after* the Great Shattering. Earlier eras are not drawn because **the Cataclysm has not been written yet** — deriving a before from an unwritten after would mean inventing the shape of the catastrophe in order to place cities relative to it. The timeline, events and census above are everything canon actually knows about this era. See `DESIGN.md`.
+_No map for this era, deliberately._ The only coordinates canon holds belong to the three field maps, and their layout describes the world *after* the Great Shattering. Earlier eras are not drawn because **the Shattering is withheld on purpose** — canon keeps its consequences and not its account, since working it out is what the player is there to do, and the shape of the world before it is part of what is being withheld. Absent by design rather than pending. The timeline, events and census above are everything canon states about this era. See `DESIGN.md`.
 
 ## Deep Antiquity
 
@@ -67,7 +67,7 @@ graph TD
 
 ### Map
 
-_No map for this era, deliberately._ The only coordinates canon holds belong to the three field maps, and their layout describes the world *after* the Great Shattering. Earlier eras are not drawn because **the Cataclysm has not been written yet** — deriving a before from an unwritten after would mean inventing the shape of the catastrophe in order to place cities relative to it. The timeline, events and census above are everything canon actually knows about this era. See `DESIGN.md`.
+_No map for this era, deliberately._ The only coordinates canon holds belong to the three field maps, and their layout describes the world *after* the Great Shattering. Earlier eras are not drawn because **the Shattering is withheld on purpose** — canon keeps its consequences and not its account, since working it out is what the player is there to do, and the shape of the world before it is part of what is being withheld. Absent by design rather than pending. The timeline, events and census above are everything canon states about this era. See `DESIGN.md`.
 
 ## Era of Human Migrations
 
@@ -103,7 +103,7 @@ graph TD
 
 ### Map
 
-_No map for this era, deliberately._ The only coordinates canon holds belong to the three field maps, and their layout describes the world *after* the Great Shattering. Earlier eras are not drawn because **the Cataclysm has not been written yet** — deriving a before from an unwritten after would mean inventing the shape of the catastrophe in order to place cities relative to it. The timeline, events and census above are everything canon actually knows about this era. See `DESIGN.md`.
+_No map for this era, deliberately._ The only coordinates canon holds belong to the three field maps, and their layout describes the world *after* the Great Shattering. Earlier eras are not drawn because **the Shattering is withheld on purpose** — canon keeps its consequences and not its account, since working it out is what the player is there to do, and the shape of the world before it is part of what is being withheld. Absent by design rather than pending. The timeline, events and census above are everything canon states about this era. See `DESIGN.md`.
 
 ## Civilization Dawn (Lothal Era)
 
@@ -155,7 +155,7 @@ graph TD
 
 ### Map
 
-_No map for this era, deliberately._ The only coordinates canon holds belong to the three field maps, and their layout describes the world *after* the Great Shattering. Earlier eras are not drawn because **the Cataclysm has not been written yet** — deriving a before from an unwritten after would mean inventing the shape of the catastrophe in order to place cities relative to it. The timeline, events and census above are everything canon actually knows about this era. See `DESIGN.md`.
+_No map for this era, deliberately._ The only coordinates canon holds belong to the three field maps, and their layout describes the world *after* the Great Shattering. Earlier eras are not drawn because **the Shattering is withheld on purpose** — canon keeps its consequences and not its account, since working it out is what the player is there to do, and the shape of the world before it is part of what is being withheld. Absent by design rather than pending. The timeline, events and census above are everything canon states about this era. See `DESIGN.md`.
 
 ## Current Era (Age of Machinery)
 
@@ -185,7 +185,7 @@ graph TD
 
 ### Map
 
-_No map for this era, deliberately._ The only coordinates canon holds belong to the three field maps, and their layout describes the world *after* the Great Shattering. Earlier eras are not drawn because **the Cataclysm has not been written yet** — deriving a before from an unwritten after would mean inventing the shape of the catastrophe in order to place cities relative to it. The timeline, events and census above are everything canon actually knows about this era. See `DESIGN.md`.
+_No map for this era, deliberately._ The only coordinates canon holds belong to the three field maps, and their layout describes the world *after* the Great Shattering. Earlier eras are not drawn because **the Shattering is withheld on purpose** — canon keeps its consequences and not its account, since working it out is what the player is there to do, and the shape of the world before it is part of what is being withheld. Absent by design rather than pending. The timeline, events and census above are everything canon states about this era. See `DESIGN.md`.
 
 ## Post-Cataclysmic Era (The Great Shattering)
 

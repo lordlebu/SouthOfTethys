@@ -7,7 +7,7 @@
     "epoch_post_cataclysm"
   ],
   "description": "A travelling apothecary and workshop, gathering the displaced across the broken country after the Shattering.",
-  "notes": "Named twice in canon and never modelled until now. `epoch_post_cataclysm` calls it what Varuna and Mitra turned to once they kept no power worth the name, and `mythology_varuna` puts an older Varuna at the head of it.\n\nCanon also states its ending: the story finishes when the Train stops for good and becomes the centre of a village. That is recorded here rather than as a `states` block, because it is the last thing that happens rather than a second era -- and the event of it stopping is unwritten, like the rest of the Shattering.",
+  "notes": "Named twice in canon and never modelled until now. `epoch_post_cataclysm` calls it what Varuna and Mitra turned to once they kept no power worth the name, and `mythology_varuna` puts an older Varuna at the head of it.\n\nCanon also states its ending: the story finishes when the Train stops for good and becomes the centre of a village. That is recorded here rather than as a `states` block, because it is the last thing that happens rather than a second era. The event of the Train stopping is unwritten, like the Shattering that set it moving -- and for the same reason: the player is meant to arrive at it.",
   "canon": "primary",
   "sources": [
     "database/timeline/epochs.json",
