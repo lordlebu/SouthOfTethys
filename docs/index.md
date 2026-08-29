@@ -1,6 +1,6 @@
 # Timeline Summary
 
-<p class="book-nav"><strong>The Timeline</strong> &middot; <a href="https://lordlebu.github.io/SouthOfTethys/timeline_mermaid.html">Epochs &amp; Events</a> &middot; <a href="https://lordlebu.github.io/SouthOfTethys/atlas.html">The Atlas</a></p>
+<p class="book-nav"><strong>The Timeline</strong> &middot; <a href="https://lordlebu.github.io/SouthOfTethys/timeline_mermaid.html">Epochs &amp; Events</a> &middot; <a href="https://lordlebu.github.io/SouthOfTethys/atlas.html">The Atlas</a> &middot; <a href="https://lordlebu.github.io/SouthOfTethys/memory_map.html">The Memory Map</a></p>
 
 _Generated from `database/events/`.
 

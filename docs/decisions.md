@@ -217,6 +217,37 @@ generated from that. Geography returns as canon entities first. `folium` left
 | How long should a weather spell last? | Currently 3 in-game hours (~7.5 real minutes). Pure playtest question; it is the knob most likely to be wrong. |
 | Which region gets the *fourth* field map? | Three exist and are joined — Lothal, the Narmada Plateau and Dwarka, which answered the third. A fourth is a creative call with no structural argument behind it. The Shattered Sea is the only unbuilt region renderable today; the Ganges Lava Sea needs `lava_field` to get a tile first, and the Tethys Sky Routes need sky biomes. This question said *third* for long enough that Dwarka shipped while it still asked. |
 
+**`species` is a declared vocabulary** (decided 2026-08-29, by the owner). Twelve values in
+`database/species.json`, checked by lint, the same treatment `culture` got. Characters only:
+fauna and flora answer "what is this" through `clade` and `base_species`, which is a different
+question. The near-identical pairs -- `asura`/`asura_tainted`, `vanara`/`vanara_spirit` -- were
+deliberately **not** merged. Declaring a vocabulary is about catching the thirteenth value typed
+by accident, not about flattening twelve real distinctions into eight; collapsing a pair is an
+authoring decision made on the characters.
+
+**A drawn place must name its epochs** (decided 2026-08-29). `in_era` reads silence as "present
+in every era", which is right for the 346 species relying on it and wrong for a city. All sixteen
+placed places were silent, so all six atlas eras drew the same map with Harappa standing among
+the Vanaras. `kind` now answers the question: ground takes all six eras, something people raised
+begins when they raised it, and where canon dates a place canon wins over the rule of thumb. The
+check asks only of a place actually drawn -- 22 places canon has not located may stay undated.
+
+**The memory map is sliced per era, and a character may act outside their own** (decided
+2026-08-29). It draws characters, the events of that era they were present at, and the factions
+and cultures holding them; grouping is by faction where there is one and culture otherwise,
+because Mermaid subgraphs cannot overlap and a person has both.
+
+Two things came out of building it. **Membership is one-directional on purpose**: the faction
+owns `members` and a character does not name one back, so the two cannot drift -- unlike the
+event edges, which have no natural owner and therefore are mirrored. The plan had called the
+missing reverse field a blocker; it is not one.
+
+And **`epoch` on a character is when they first appear, not the only era they may act in.**
+Filtering the map by dating alone drew the Post-Cataclysm as empty, while the Survival Train
+happens there and its three participants are dated to the Current era and the Migrations. Varuna
+walking into the era after the Shattering is the game's whole premise. A character is in an era
+if canon dates them to it *or* they are present at something in it.
+
 ---
 
 ## Resolved

@@ -22,6 +22,7 @@ PAGES = [
     ("index.md", "", "The Timeline"),
     ("timeline_mermaid.md", "timeline_mermaid.html", "Epochs & Events"),
     ("atlas.md", "atlas.html", "The Atlas"),
+    ("memory_map.md", "memory_map.html", "The Memory Map"),
 ]
 
 
