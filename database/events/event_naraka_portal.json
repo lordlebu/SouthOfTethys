@@ -8,17 +8,23 @@
     "character_nirigili"
   ],
   "location": "place_hyrcania",
-  "predecessors": [],
-  "successors": [],
+  "predecessors": [
+    "event_botai_cattle_raid"
+  ],
+  "successors": [
+    "event_guyuk_lothal_warning"
+  ],
   "causes": [
     "forbidden_tome",
-    "possessed_mountain_goat_guidance"
+    "possessed_mountain_goat_guidance",
+    "guyuk_acquires_tome_with_nirigili_caravan"
   ],
   "outcomes": [
     "crimson_portal_to_naraka",
     "beast_spill",
     "loss_of_nirigili_mount",
-    "guyuk_bloodline_alteration"
+    "guyuk_bloodline_alteration",
+    "guyuk_becomes_threshold_bearer"
   ],
   "summary": "Guyuk, guided by a possessed mountain goat, recites incantations from an ancient tome and tears open a colossal glowing red portal to Naraka Lok. Horrific beasts spill forth; Nirigili loses his Elephantbird to a Megalosaurus.",
   "canon": "primary",
