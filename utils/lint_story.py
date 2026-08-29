@@ -247,6 +247,24 @@ def main() -> int:
                         f"{path.name}: '{sub}' is not a subclade of '{clade}' (allowed: {names})"
                     )
 
+        # The schema's `subclade` enum is flat and lives in a different file from the tree it
+        # is meant to mirror. They drifted the moment `construct` gained sub-groups: the tree
+        # allowed `ember_born` and the schema rejected it, which reads as the entity being
+        # wrong rather than the two lists disagreeing.
+        sub_schema = SCHEMA_DIR / "fauna.schema.json"
+        if sub_schema.exists():
+            listed = set(load(sub_schema)["properties"].get("subclade", {}).get("enum") or [])
+            declared_subs = {s for c in tree.values() for s in (c.get("subclades") or {})}
+            for missing in sorted(declared_subs - listed):
+                errors.append(
+                    f"clades.json declares subclade '{missing}' that fauna.schema.json's enum "
+                    f"does not allow"
+                )
+            for extra in sorted(listed - declared_subs):
+                errors.append(
+                    f"fauna.schema.json allows subclade '{extra}' that no clade declares"
+                )
+
     # --- growth forms ---------------------------------------------------------------
     #
     # The plant half of the clade check. The schema pins the enum; this pins the *file* -- a form

@@ -51,12 +51,15 @@
       "type": "string",
       "enum": [
         "avian_dinosaurid",
+        "clay_born",
         "dromaeosaurid",
+        "ember_born",
+        "forest_born",
         "ratite",
         "sauropodomorph",
         "true_bird"
       ],
-      "description": "A group within the clade, where canon draws one. Which subclades are legal for which clade is declared in database/clades.json and checked by lint_story.py -- JSON Schema cannot express a dependency between two fields on the same object."
+      "description": "A sub-group of the entity's own clade. The enum here is flat -- every subclade any clade declares -- because JSON Schema cannot express a dependency between two fields and would let a bird be a dromaeosaurid. `lint_story.py` adds the check that the subclade belongs to *that* clade, and that this list still matches what `clades.json` declares. The two live in different files and drifted the first time a clade gained sub-groups."
     },
     "taxonomy": {
       "type": "object"
