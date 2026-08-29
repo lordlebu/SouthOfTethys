@@ -19,7 +19,7 @@ Each era below is canon as it stood then. An entity that names no epoch is prese
 | settlements |  | 2 |
 | characters | 5 |  |
 | factions |  | 3 |
-| events | 7 |  |
+| events | 8 |  |
 | artifacts |  | 4 |
 | mythology |  | 8 |
 | fauna |  | 257 |
@@ -34,14 +34,16 @@ graph TD
     E2["The Domestication of the Fang Vanguard"]
     E3["The Asura Gondwana Intervention"]
     E4["The Great Devolvement"]
-    E5["The Planting of the Moon-Seed"]
-    E6["The Establishment of the Womb Rites"]
-    E0 --> E5
+    E5["The Turning of Kunti Against the Seedbearer"]
+    E6["The Planting of the Moon-Seed"]
+    E7["The Establishment of the Womb Rites"]
+    E0 --> E6
     E1 --> E3
     E1 --> E2
     E2 --> E3
     E3 --> E4
     E5 --> E6
+    E6 --> E7
 ```
 
 ### Map
@@ -61,7 +63,7 @@ graph TD
 | settlements |  | 2 |
 | characters | 7 |  |
 | factions |  | 3 |
-| events | 4 |  |
+| events | 3 |  |
 | artifacts |  | 4 |
 | mythology |  | 8 |
 | fauna |  | 257 |
@@ -74,9 +76,7 @@ graph TD
     E0["The Battle of Mohenjodaro"]
     E1["Forging of the Dragon’s Spine (sample)"]
     E2["Shadow Pact of Saraswati"]
-    E3["The Awakening of the Mask of Vaṛkesh"]
     E0 --> E2
-    E2 --> E3
 ```
 
 ### Map
@@ -139,7 +139,7 @@ graph TD
 | settlements |  | 2 |
 | characters | 27 |  |
 | factions |  | 3 |
-| events | 11 |  |
+| events | 12 |  |
 | artifacts |  | 4 |
 | mythology |  | 8 |
 | fauna |  | 257 |
@@ -159,7 +159,8 @@ graph TD
     E7["Tendua Crisis and Assassination of Kavik"]
     E8["Retrieval of the Mask of Harappa"]
     E9["Exile of Shaashak and Khadi"]
-    E10["Birth of Sarita Silversong"]
+    E10["The Awakening of the Mask of Vaṛkesh"]
+    E11["Birth of Sarita Silversong"]
     E1 --> E7
     E1 --> E2
     E3 --> E5
@@ -172,6 +173,7 @@ graph TD
     E7 --> E9
     E8 --> E9
     E9 --> E10
+    E9 --> E11
 ```
 
 ### Map

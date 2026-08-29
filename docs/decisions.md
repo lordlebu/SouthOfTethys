@@ -293,6 +293,22 @@ precisely the draft error corrected when the Jambenson book was ingested. It app
 reading the drafts in `dump/` as though they were canon. The right conclusion for the wrong
 reason is still worth acting on, but the reasoning did not survive checking.
 
+**The Mask of Varkesh happens after Kavik dies** (decided 2026-08-29, by the owner). It was
+ingested into Deep Antiquity off the draft, following the Shadow Pact. It belongs in Civilization
+Dawn after `event_exile_of_shaashak`, which is what its own text was already saying: the
+expedition reads the relic out of Kavik's stone tablets, and Shaashak only has those once he is
+assassinated and she is exiled. The draft dated it and canon's own chronology disagreed; canon
+was right.
+
+**Kunti and Jambanson** (decided 2026-08-29). The conflict is real and is stated once, in
+`dump/daedrasura-and-kunti-lore.md`: Shukradeva and Daedrasura weaponise her against the
+Seedbearer to unpick his memory-seed work. It was captured as prose in her `notes`, which cannot
+draw an edge, so she rendered orphaned. Now `event_kunti_against_jambanson`, running into the
+Moon-Seed planting.
+
+Worth recording: that document cites "The Mythic Legacy and Ritual Order of Jambenson" as a
+source for her, and that book contains no mention of Kunti. Hers is a single-document character.
+
 ---
 
 ## Resolved

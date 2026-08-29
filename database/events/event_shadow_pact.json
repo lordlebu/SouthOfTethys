@@ -5,15 +5,14 @@
   "epoch": "epoch_deep_antiquity",
   "participants": [
     "character_varunesh",
-    "character_asura_tainted_princess"
+    "character_asura_tainted_princess",
+    "character_manjalaya"
   ],
   "location": "place_ancient_courts",
   "predecessors": [
     "event_battle_of_mohenjodaro"
   ],
-  "successors": [
-    "event_awakening_mask_of_varkesh"
-  ],
+  "successors": [],
   "causes": [
     "dark_tantra",
     "unicorn_sacrifice",

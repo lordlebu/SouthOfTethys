@@ -9,7 +9,8 @@
   ],
   "location": "place_godavari_rainforest",
   "predecessors": [
-    "event_curse_of_the_hollow_trees"
+    "event_curse_of_the_hollow_trees",
+    "event_kunti_against_jambanson"
   ],
   "successors": [
     "event_ritual_of_jambenson"
