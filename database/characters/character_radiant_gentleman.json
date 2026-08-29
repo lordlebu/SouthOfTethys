@@ -1,0 +1,18 @@
+{
+  "id": "character_radiant_gentleman",
+  "type": "character",
+  "name": "The Radiant Gentleman",
+  "culture": "cosmic",
+  "species": "deity",
+  "status": "mythic",
+  "epoch": "epoch_civilization_dawn",
+  "roles": [
+    "Balancer of the Tide",
+    "Cosmic Sentinel"
+  ],
+  "notes": "An enigmatic, glowing humanoid entity of intense pure light who materialized during Korran's sea burial. He willingly sacrificed his physical form, dissolving into the subterranean currents of the Tethys to restore the massive energetic deficit left by the Lund disaster.",
+  "canon": "primary",
+  "sources": [
+    "Resonant Hearts: Intimate Chronicles Aboard the Kelpfang"
+  ]
+}

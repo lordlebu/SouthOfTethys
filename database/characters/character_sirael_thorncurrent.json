@@ -1,0 +1,18 @@
+{
+  "id": "character_sirael_thorncurrent",
+  "type": "character",
+  "name": "Sirael Thorncurrent",
+  "culture": "tuli",
+  "species": "human",
+  "status": "alive",
+  "epoch": "epoch_civilization_dawn",
+  "roles": [
+    "Pearl-Diver of the Tamra-Veil Wardens",
+    "Sentinel of the Southern Atolls"
+  ],
+  "notes": "An exceptionally agile diver whose body was naturally attuned to the energetic ripples of the Tamra-Veils. She discovered her pregnancy near the end of the final voyage, which catalyzed the emotional decision of the crew to dismantle the ship and settle down.",
+  "canon": "primary",
+  "sources": [
+    "Resonant Hearts: Intimate Chronicles Aboard the Kelpfang"
+  ]
+}

@@ -12,5 +12,8 @@
   "sources": [
     "database/timeline/epochs.json",
     "AI_CONTEXT.md"
+  ],
+  "aliases": [
+    "The Ark of Civilization"
   ]
 }

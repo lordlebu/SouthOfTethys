@@ -1,0 +1,29 @@
+{
+  "id": "event_guyuk_konkan_prophecy",
+  "type": "event",
+  "title": "The Wandering of the Narmada Seed-Mind",
+  "epoch": "epoch_civilization_dawn",
+  "participants": [
+    "character_guyuk",
+    "character_narmada_man"
+  ],
+  "location": "place_konkan_hills",
+  "predecessors": [
+    "event_guyuk_lothal_warning"
+  ],
+  "successors": [],
+  "causes": [
+    "guyuk_leaves_the_settled_country",
+    "walker_between_bones"
+  ],
+  "outcomes": [
+    "deep_time_songs_taught_to_blind_bards",
+    "saplings_traded_for_wild_honey_in_the_aravalis"
+  ],
+  "summary": "Guyuk leaves the record. She goes to the Konkan hills carrying the reincarnated seed-mind of the Narmada Man, teaching the deep-time songs to blind bards so the oldest history survives in mouths rather than tablets.",
+  "canon": "primary",
+  "sources": [
+    "Oral Traditions of the Blind Bards",
+    "Narmada Historical Surveys"
+  ]
+}

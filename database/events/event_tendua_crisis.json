@@ -14,7 +14,8 @@
   "location": "settlement_lothal",
   "artifacts": [],
   "predecessors": [
-    "event_stone_pact"
+    "event_stone_pact",
+    "event_guyuk_lothal_warning"
   ],
   "successors": [
     "event_mask_retrieval",

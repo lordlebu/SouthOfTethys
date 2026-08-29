@@ -1,0 +1,18 @@
+{
+  "id": "character_lirael_wavecaller",
+  "type": "character",
+  "name": "Lirael Wavecaller",
+  "culture": "tuli",
+  "species": "human",
+  "status": "alive",
+  "epoch": "epoch_civilization_dawn",
+  "roles": [
+    "Pearl-Shamaness of the Tamra-Veil Wardens",
+    "Navigator of the Kelpfang"
+  ],
+  "notes": "A highly intuitive pearl-shamaness who served aboard the Kelpfang. She carries a light-sensitive, faint violet gill-line along her jaw, allowing her to sense pressure changes and undersea currents. Her deep emotional connection to the Traveler anchored the crew through the chaotic resonance of the double stones.",
+  "canon": "primary",
+  "sources": [
+    "Resonant Hearts: Intimate Chronicles Aboard the Kelpfang"
+  ]
+}

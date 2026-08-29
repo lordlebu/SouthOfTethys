@@ -1,0 +1,29 @@
+{
+  "id": "event_botai_cattle_raid",
+  "type": "event",
+  "title": "The Botai Cattle Raid",
+  "epoch": "epoch_migrations",
+  "participants": [
+    "character_guyuk",
+    "character_nirigili"
+  ],
+  "location": "place_hyrcania",
+  "predecessors": [],
+  "successors": [
+    "event_naraka_portal"
+  ],
+  "causes": [
+    "botai_raid_on_tushara_herds"
+  ],
+  "outcomes": [
+    "guyuk_loses_royal_status",
+    "guyuk_taken_in_by_nirigili"
+  ],
+  "summary": "A Botai raid on the Tushara herds strips Guyuk Mongke of her royal standing and leaves her with nothing. Nirigili Mahashay takes her into his caravan.",
+  "canon": "primary",
+  "sources": [
+    "Steppe Oral Traditions",
+    "The Nomad's Ledger",
+    "AI_CONTEXT.md"
+  ]
+}

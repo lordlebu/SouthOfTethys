@@ -1,0 +1,18 @@
+{
+  "id": "character_the_traveler",
+  "type": "character",
+  "name": "The Traveler",
+  "culture": "unknown",
+  "species": "human_hybrid",
+  "status": "alive",
+  "epoch": "epoch_civilization_dawn",
+  "roles": [
+    "Helmsman of the Kelpfang",
+    "Chronicler of the Southern Seas"
+  ],
+  "notes": "A mysterious companion whose facial features subtly shift with the phases of the moon and the echoes of strangers he has encountered. He operated the living blackwood helm of the Kelpfang and was the intimate partner of Lirael Wavecaller.",
+  "canon": "primary",
+  "sources": [
+    "Resonant Hearts: Intimate Chronicles Aboard the Kelpfang"
+  ]
+}

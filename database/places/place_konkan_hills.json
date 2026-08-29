@@ -1,0 +1,13 @@
+{
+  "id": "place_konkan_hills",
+  "type": "place",
+  "name": "The Konkan Hills",
+  "kind": "range",
+  "continent": "jambhudweepa",
+  "description": "Hill country south of the delta, where blind bards keep songs no settlement writes down.",
+  "notes": "Named as where Guyuk went after Lothal. Canon had no entity for it.",
+  "canon": "primary",
+  "sources": [
+    "Oral Traditions of the Blind Bards"
+  ]
+}

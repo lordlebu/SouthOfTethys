@@ -1,0 +1,13 @@
+{
+  "id": "place_tamra_lagoon_hut",
+  "type": "place",
+  "name": "Tamra Lagoon Hut",
+  "kind": "settlement",
+  "continent": "jambhudweepa",
+  "description": "A quiet, secluded sanctuary built from the repurposed timbers of the dismantled Kelpfang.",
+  "notes": "Located in a peaceful southern lagoon. It houses the two active, humming Lingam stones (Heart and Voice), which are kept in a state of eternal balance to protect the surrounding coastal waters.",
+  "canon": "primary",
+  "sources": [
+    "Resonant Hearts: Intimate Chronicles Aboard the Kelpfang"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "event_guyuk_lothal_warning",
+  "type": "event",
+  "title": "The Storm-Bone Khan's Warning at Lothal",
+  "epoch": "epoch_civilization_dawn",
+  "participants": [
+    "character_guyuk",
+    "character_shaashak",
+    "character_mehme"
+  ],
+  "location": "settlement_lothal",
+  "predecessors": [
+    "event_naraka_portal"
+  ],
+  "successors": [
+    "event_tendua_crisis",
+    "event_guyuk_konkan_prophecy"
+  ],
+  "causes": [
+    "guyuk_foresight",
+    "tendua_manticore_threat"
+  ],
+  "outcomes": [
+    "shaashak_forewarned_of_the_beast",
+    "mehme_taught_coastal_wind_signals",
+    "salt_devourer_carving_left_on_a_boundary_tree"
+  ],
+  "summary": "Working the fringes of the Harappan settlement, Guyuk warns Shaashak of the coming Tendua Manticore days before it strikes, teaches Mehme to read the coastal winds at Dwarka, and cuts a warning about the salt devourer into a boundary tree before going.",
+  "canon": "primary",
+  "sources": [
+    "Lothal Merchant Almanac",
+    "iKnaya Subayai Palm-Leaf logs"
+  ]
+}

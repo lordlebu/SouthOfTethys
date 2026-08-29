@@ -1,0 +1,13 @@
+{
+  "id": "place_island_of_lund",
+  "type": "place",
+  "name": "Island of Lund",
+  "kind": "island",
+  "continent": "jambhudweepa",
+  "description": "A remote, geothermally active volcanic island in the southern reaches of the Tethys Sea.",
+  "notes": "The birthplace of the Voice-Stone. It was completely devastated by a magmatic eruption during the late stage of Civilization Dawn, forcing its population to flee as refugees.",
+  "canon": "primary",
+  "sources": [
+    "Resonant Hearts: Intimate Chronicles Aboard the Kelpfang"
+  ]
+}

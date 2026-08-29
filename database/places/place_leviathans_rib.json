@@ -1,0 +1,15 @@
+{
+  "id": "place_leviathans_rib",
+  "type": "place",
+  "name": "The Leviathan's Rib",
+  "kind": "vessel",
+  "epochs": [
+    "epoch_current"
+  ],
+  "description": "A diesel research trawler framed in whale bone, captained by Varuna and navigated by Mitra into the southern ice.",
+  "notes": "The vessel the Antarctic expedition is mounted from. Named in the lore and absent from canon, while both of its crew carried roles pointing at the wrong ship.",
+  "canon": "primary",
+  "sources": [
+    "dump/kelpfang-and-ark-lore.md"
+  ]
+}

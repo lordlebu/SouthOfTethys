@@ -4,12 +4,12 @@
   "name": "The Kelpfang",
   "kind": "vessel",
   "epochs": [
-    "epoch_current"
+    "epoch_civilization_dawn"
   ],
-  "description": "A whale-bone trawler, captained by Varuna and navigated by Mitra.",
-  "notes": "The Current Era counterpart to the Survival Train, and the setting the Varuna and Mitra entries are drawn from. Named in both of their `roles` -- Captain of the Kelpfang, Navigator of the Kelpfang -- while being nowhere in canon as a thing those roles could point at.",
+  "description": "A living outrigger grown from Tamra-Blackwood and coral, built by the Tamra-Veil Wardens to find and seal the tears in reality that open over the southern magma rivers.",
+  "notes": "Its heart was a basalt Lingam stone carrying geothermal memory-seeds. Dismantled after the final voyage, its timbers becoming houses on the coast and its stones going to a lagoon hut.\n\nThis entry first said the Kelpfang was a whale-bone trawler captained by Varuna. That was wrong on both counts and came from an earlier document conflating this ship with the `place_leviathans_rib` of the Age of Machinery. The Kelpfang belongs to a spinoff with an entirely separate crew.",
   "canon": "primary",
   "sources": [
-    "Resonant Hearts: Intimate Chronicles Aboard the Kelpfang"
+    "dump/kelpfang-and-ark-lore.md"
   ]
 }
