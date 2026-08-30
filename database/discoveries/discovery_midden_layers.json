@@ -14,7 +14,10 @@
       "entry": "There are other layers. Thin ones, of bone I cannot place, and they are not at the top."
     },
     {
-      "entry": "I counted nine. The deepest is under a pottery style Sura says her grandmother's grandmother used."
+      "entry": "I counted nine. The deepest is under a pottery style Sura says her grandmother's grandmother used.",
+      "needs_tool": [
+        "cut"
+      ]
     },
     {
       "entry": "Nine, in four hundred years, and not evenly spaced -- they cluster. Two of them are close enough to be one bad decade."

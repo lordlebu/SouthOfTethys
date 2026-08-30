@@ -27,5 +27,8 @@
   "sources": [
     "inferred from canon geography"
   ],
-  "source_index": 22
+  "source_index": 22,
+  "taught_by": [
+    "npc_sura"
+  ]
 }

@@ -36,7 +36,10 @@
       ]
     },
     {
-      "entry": "Fired properly rather than left to a hot week, it would not go cloudy. That is a kiln's work, not a summer's."
+      "entry": "Fired properly rather than left to a hot week, it would not go cloudy. That is a kiln's work, not a summer's.",
+      "needs_tool": [
+        "contain"
+      ]
     },
     {
       "entry": "Thrali sets his nets by feel because he cannot see the channel bed through four feet of silt-water. A pane he could hold under would show him it."

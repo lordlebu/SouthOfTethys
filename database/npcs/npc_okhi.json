@@ -21,6 +21,15 @@
       ]
     },
     {
+      "text": "Soot, gum, and the patience to let it dry properly. Everyone wants to write with it wet. -- The leaf takes a scored line better than it takes ink, which is why the old books are cut and not painted. Eleven thousand volumes and I know how every one of them was made.",
+      "requires": [],
+      "gives": [
+        "recipe_ink_cake",
+        "recipe_palm_leaf_sheet",
+        "recipe_field_diary"
+      ]
+    },
+    {
       "text": "There is a shelf I dust and cannot read. Thirty years. If you learn what is on it I would like to be told, and I would like it told to me before it is told to the halls.",
       "requires": [
         "discovery_quarry_sequence"

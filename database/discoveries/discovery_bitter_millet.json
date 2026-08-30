@@ -14,7 +14,10 @@
       "entry": "Marn's household eats it. Has always eaten it. Loses an animal to it about once a year and considers this normal."
     },
     {
-      "entry": "They soak it two days in running water and throw the first water away. Untreated, it is exactly as toxic as the archive says."
+      "entry": "They soak it two days in running water and throw the first water away. Untreated, it is exactly as toxic as the archive says.",
+      "needs_tool": [
+        "contain"
+      ]
     },
     {
       "entry": "The animals they lose are the ones that get into the standing crop. The archive tested the plant; the herders solved the food. Both of them stopped there."

@@ -15,6 +15,14 @@
       "text": "Three kilns, every year, and every year the same three. I have stopped minding. It is something to do in spring."
     },
     {
+      "text": "You are sleeping on the ground, I can see it from here. Sit. -- No, like that, butt the reeds against the frame, do not weave the ends in. The ends are where a mat goes first. Three of those and you have a floor. Six and you have a wall.",
+      "requires": [],
+      "gives": [
+        "recipe_reed_mat",
+        "recipe_grain_bin"
+      ]
+    },
+    {
       "text": "After the flood? Nobody cuts reed after the flood. -- No, I am listening. Say it again.",
       "requires": [
         "discovery_saltreed_thatch"
@@ -30,6 +38,14 @@
       "text": "Bekh says we are staying. So I am going to put a proper roof on the kiln shed, the kind you build when you expect to be under it. It will take three weeks and there is no reason to hurry, which is the strangest part.",
       "requires": [
         "discovery_winter_line"
+      ]
+    },
+    {
+      "text": "Is that one of mine? -- It is one of yours. Good. Then stop sleeping on the bare ground: oiled cloth over the mat, rolled and strapped, and it does not matter what the night does. I made my first one at eleven and I have been dry ever since.",
+      "requires": [],
+      "costs": "item_reed_mat",
+      "gives": [
+        "recipe_bedroll"
       ]
     }
   ],

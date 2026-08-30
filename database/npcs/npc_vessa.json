@@ -20,6 +20,14 @@
       ]
     },
     {
+      "text": "Nobody teaches this because everybody assumes you know. Cut the reed at a slant, recut it every few lines, and do not mourn it -- a stylus is a thing you lose. The tally is different. Notch it, split it, and neither of you can lie afterwards.",
+      "requires": [],
+      "gives": [
+        "recipe_reed_stylus",
+        "recipe_tally_stick"
+      ]
+    },
+    {
       "text": "I have written it three times and withdrawn it three times. Not because they would be angry. Because they would ask what the pre-Shattering figure was, and there isn't one, and that is the end of the conversation.",
       "requires": [
         "discovery_archive_baseline"

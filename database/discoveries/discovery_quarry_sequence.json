@@ -19,7 +19,10 @@
       }
     },
     {
-      "entry": "At the bottom they are round and thin. At the top, over nine inches, they are ridged and heavy. In between they are both, and neither, and the intermediate ones are the commonest."
+      "entry": "At the bottom they are round and thin. At the top, over nine inches, they are ridged and heavy. In between they are both, and neither, and the intermediate ones are the commonest.",
+      "needs_tool": [
+        "cut"
+      ]
     },
     {
       "entry": "Nine inches of ash is not nine inches of time. This is a long slow record laid down between two very fast events."

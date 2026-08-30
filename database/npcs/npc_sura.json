@@ -23,6 +23,15 @@
       ]
     },
     {
+      "text": "Everyone thinks I am looking for something. I am looking at *how things break*. Bone breaks along the grain and shell does not, so bone makes a point and shell makes a bead. Here -- drill it wet, and go slower than you want to.",
+      "requires": [],
+      "gives": [
+        "recipe_bone_awl",
+        "recipe_shell_bead",
+        "recipe_ammonite_pendant"
+      ]
+    },
+    {
       "text": "You want the thin layers. My mother showed me where they are, and hers showed her, and none of us has ever been asked about them before today.",
       "requires": [
         "discovery_wrong_anatomy"

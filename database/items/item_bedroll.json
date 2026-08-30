@@ -4,15 +4,14 @@
   "name": "Bedroll",
   "kind": "shelter",
   "affords": [
-    "shelter",
-    "carry"
+    "shelter"
   ],
   "materials": [
     "material_reed_fibre",
     "material_goat_hide",
     "material_tree_pitch"
   ],
-  "notes": "Oiled cloth over a reed mat, rolled and strapped under the satchel. It has been rained on. **The game has carried this from its first step.**",
+  "notes": "Oiled cloth over a reed mat, rolled and strapped under the satchel. It has been rained on. **The game has carried this from its first step.** Affords shelter and nothing else: a bedroll strapped under a satchel is a thing being carried, not a thing that carries.",
   "canon": "inferred",
   "sources": [
     "inferred from canon geography"

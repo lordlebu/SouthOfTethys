@@ -27,5 +27,8 @@
   "sources": [
     "inferred from canon geography"
   ],
-  "source_index": 36
+  "source_index": 36,
+  "taught_by": [
+    "npc_uma"
+  ]
 }

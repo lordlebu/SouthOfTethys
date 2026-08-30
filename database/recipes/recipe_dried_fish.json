@@ -23,5 +23,8 @@
   "sources": [
     "inferred from canon geography"
   ],
-  "source_index": 62
+  "source_index": 62,
+  "taught_by": [
+    "npc_thrali"
+  ]
 }

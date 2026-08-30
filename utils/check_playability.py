@@ -131,8 +131,19 @@ def observed(w: World, s: State, req: str) -> bool:
     return s.rung_of(req) >= 1
 
 
-def play(w: World, here: set[str]) -> State:
-    """Start from nothing and do whatever becomes possible, until nothing more does."""
+def play(w: World, here: set[str], tools: set[str] | None = None,
+         gettable: set[str] | None = None) -> State:
+    """Start from nothing and do whatever becomes possible, until nothing more does.
+
+    `tools` is the affordances the traveller can have by then, and `gettable` the items --
+    both from the craft closure, because a rung that wants something which cuts is asking a
+    question about the making layer and not about the ladder. Passing None means "assume
+    anything", which is what a caller checking the ladders alone wants.
+
+    **Canon does not model the starting kit.** That is the game's fact -- canon says what
+    exists in the world, the game says what the traveller brought. It costs nothing here:
+    all four kit pieces have recipes, so the closure reaches them like anything else.
+    """
     s = State()
     people = {n for p in here for n in (w.pois[p].get("npcs") or [])}
     findable = {d for d, doc in w.discoveries.items() if here & set(doc.get("found_at") or [])}
@@ -307,6 +318,52 @@ def making(w: World, problems: list[str]) -> None:
             f"{mid} exists but is found in no map's biomes and no recipe produces it"
         )
 
+    # A rung that wants a tool nothing can supply is unclimbable, and reads as a content bug
+    # rather than a gap in the making layer unless it is named here.
+    afforded = {a for i in held_i for a in w.affords(i)}
+    for did, doc in sorted(w.discoveries.items()):
+        for i, lvl in enumerate(doc.get("levels") or []):
+            for need in lvl.get("needs_tool") or []:
+                if need not in afforded:
+                    problems.append(
+                        f"{did} rung {i} needs something that {need}s, and nothing obtainable does"
+                    )
+
+    # `taught_by` is a claim about a person, and the person has to actually say it.
+    #
+    # Both directions, because unlike faction `members` -- which is one-directional precisely so
+    # it cannot drift -- this edge genuinely has two ends that are authored separately: the
+    # recipe names the teacher, and a line of theirs gives the recipe. Either half alone is a
+    # bug, and they are opposite bugs. A recipe naming a teacher who never says it is
+    # unlearnable. A line giving a recipe that names no teacher teaches nothing, because a
+    # recipe without `taught_by` is common knowledge from the first step.
+    for rid, r in sorted(w.recipes.items()):
+        for who in r.get("taught_by") or []:
+            if who not in w.npcs:
+                problems.append(f"{rid} is taught by {who}, who does not exist")
+                continue
+            if not any(rid in (ln.get("gives") or []) for ln in w.npcs[who].get("lines") or []):
+                problems.append(
+                    f"{rid} says {who} teaches it, and no line of theirs gives it -- "
+                    f"the recipe would be unlearnable"
+                )
+        givers = sorted({
+            n for n, d in w.npcs.items()
+            for ln in (d.get("lines") or []) if rid in (ln.get("gives") or [])
+        })
+        if givers and not r.get("taught_by"):
+            problems.append(
+                f"{rid} is given by {', '.join(givers)} but names no taught_by, so it is "
+                f"already common knowledge and the line teaches nothing"
+            )
+
+    # A price nobody can pay.
+    for nid, doc in sorted(w.npcs.items()):
+        for i, line in enumerate(doc.get("lines") or []):
+            price = line.get("costs")
+            if price and price not in held_i:
+                problems.append(f"{nid} line {i} costs {price}, which nothing gathers or makes")
+
 
 def why_stuck(w: World, s: State, did: str) -> str:
     """The requirement that never arrived, for a message worth reading."""
@@ -383,7 +440,16 @@ def main() -> int:
     everywhere = set(w.pois)
     if only:
         everywhere = {p for p, d in w.pois.items() if d.get("field_map") == only}
-    end = play(w, everywhere)
+
+    # What the making layer can supply, handed to the walk. Without this a rung gated on a
+    # tool would be judged reachable because the ladder allows it, which is exactly the kind of
+    # "obtainable somewhere" answer this file exists to refuse.
+    biomes = {b for fm in w.maps.values() for b in (fm.get("seed_biomes") or [])}
+    kinds = {d.get("kind") for d in w.pois.values() if d.get("kind")}
+    _materials, gettable = make(w, biomes, kinds)
+    tools = {a for i in gettable for a in w.affords(i)}
+
+    end = play(w, everywhere, tools, gettable)
 
     for did in sorted(w.discoveries):
         if not (set(w.discoveries[did].get("found_at") or []) & everywhere):
@@ -424,7 +490,7 @@ def main() -> int:
         if only and map_id != only:
             continue
         here = {p for p, d in w.pois.items() if d.get("field_map") == map_id}
-        local = play(w, here)
+        local = play(w, here, tools, gettable)
         claimed = {d for d, doc in w.discoveries.items() if here & set(doc.get("found_at") or [])}
         finished = [d for d in claimed if local.rung_of(d) >= w.last_rung(d)]
         print(f"  {map_id}")
