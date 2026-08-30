@@ -22,6 +22,15 @@
       ]
     },
     {
+      "text": "Comb it, do not cut it. The winter coat comes away in your hand in spring and the animal is happier for it. It spins rough and it stays warm wet, which up here is the only question anybody is actually asking about cloth.",
+      "requires": [],
+      "gives": [
+        "recipe_goat_hair_blanket",
+        "recipe_hunting_sling",
+        "recipe_tan_goat_hide"
+      ]
+    },
+    {
       "text": "Khet. Not step -- khet. It means the water is held. I do not know why we call them that, we just do.",
       "requires": [
         "discovery_terrace_water"
@@ -40,15 +49,6 @@
       "text": "So the spring moved and the archive did not. I have been grazing off the old mark my whole life and telling myself the water was unreliable. The water is fine. It is the mark that is wrong, and a mark is a thing a person put there.",
       "requires": [
         "discovery_moving_spring"
-      ]
-    },
-    {
-      "text": "Comb it, do not cut it. The winter coat comes away in your hand in spring and the animal is happier for it. It spins rough and it stays warm wet, which up here is the only question anybody is actually asking about cloth.",
-      "requires": [],
-      "gives": [
-        "recipe_goat_hair_blanket",
-        "recipe_hunting_sling",
-        "recipe_tan_goat_hide"
       ]
     }
   ],

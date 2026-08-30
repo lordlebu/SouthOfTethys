@@ -22,6 +22,15 @@
       ]
     },
     {
+      "text": "A weir is a fence that does the fishing while you are asleep. Cane, set slant to the current, and a rope through the tops so the whole run comes up together. What it catches it catches -- you do not get to choose, and that is why I never say I caught anything in particular.",
+      "requires": [],
+      "gives": [
+        "recipe_fish_weir",
+        "recipe_dried_fish",
+        "recipe_bone_harpoon"
+      ]
+    },
+    {
       "text": "My grandfather had a word for it. Thal-something. He is dead and I have half of it.",
       "requires": [
         "discovery_silver_water"
@@ -49,15 +58,6 @@
       "text": "Bekh has it written down. Four months a year I could not fish and now I can, and the reason is a kiln and a mill and a piece of glass, none of which is mine. I do not entirely follow it. I am not going to argue with a full net.",
       "requires": [
         "discovery_winter_line"
-      ]
-    },
-    {
-      "text": "A weir is a fence that does the fishing while you are asleep. Cane, set slant to the current, and a rope through the tops so the whole run comes up together. What it catches it catches -- you do not get to choose, and that is why I never say I caught anything in particular.",
-      "requires": [],
-      "gives": [
-        "recipe_fish_weir",
-        "recipe_dried_fish",
-        "recipe_bone_harpoon"
       ]
     }
   ],

@@ -22,6 +22,13 @@
       ]
     },
     {
+      "text": "Husk, not reed. Reed rope on a wall by the sea is a rope you replace twice a year and eventually you are not mending the wall, you are mending the rope. Lay it in three strands against the twist and it will still be there when I am not.",
+      "requires": [],
+      "gives": [
+        "recipe_husk_hawser"
+      ]
+    },
+    {
       "text": "In mist, yes. Not every mist. You will want the stair and three days, and you will be the first person to sit them who was not being paid.",
       "requires": [
         "discovery_gate_rhythm"
@@ -37,16 +44,9 @@
       ]
     },
     {
-      "text": "Husk, not reed. Reed rope on a wall by the sea is a rope you replace twice a year and eventually you are not mending the wall, you are mending the rope. Lay it in three strands against the twist and it will still be there when I am not.",
+      "text": "Three strands, and you laid them against the twist. -- Then I can get to the outer course alone, and I have wanted to get to the outer course alone for eleven years. Sit down. A span is two anchors and a line you are willing to hang from, and the third part is the only one that takes any nerve.",
       "requires": [],
-      "gives": [
-        "recipe_husk_hawser"
-      ]
-    },
-    {
-      "text": "You made one. -- Then I can get to the outer course alone, and I have wanted to get to the outer course alone for eleven years. Take the north stair. It is the one my father cut and nobody has walked it since he did.",
-      "requires": [],
-      "costs": "item_rope_span",
+      "costs": "item_husk_hawser",
       "gives": [
         "recipe_rope_span"
       ]
