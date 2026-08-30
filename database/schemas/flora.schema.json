@@ -57,8 +57,32 @@
     "uses": {
       "type": "array",
       "items": {
-        "type": "string"
-      }
+        "type": "string",
+        "enum": [
+          "food",
+          "seasoning",
+          "drink",
+          "psychoactive",
+          "physic",
+          "poison",
+          "timber",
+          "craftwork",
+          "fibre",
+          "fuel",
+          "oil",
+          "dye",
+          "fragrance",
+          "trade",
+          "ritual",
+          "memory",
+          "shade",
+          "ornament",
+          "boundary",
+          "landmark",
+          "filtration"
+        ]
+      },
+      "description": "What people do with this plant, from database/plant_uses.json. **Not what it is made of** -- a material class says what you can carry away and a use says what the plant is for, and more than half of these are not substances: nobody carries away shade, a boundary, or a tree they steer by. See material_classes.json for the other question.\n\nDeclared late. It ran to 51 free-text values across 27 plants, 44 of them used exactly once, which is what an undeclared vocabulary looks like from the inside."
     },
     "related_species": {
       "type": "array",

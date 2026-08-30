@@ -9,9 +9,9 @@
     "region_aravali"
   ],
   "uses": [
-    "ritual_wood",
-    "perfume",
-    "carving"
+    "ritual",
+    "fragrance",
+    "craftwork"
   ],
   "notes": "Fragrant heartwood for masks, beads, and temple smoke. Harvest rights contested between plateau clans and river merchants.",
   "canon": "primary",

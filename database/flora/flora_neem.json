@@ -9,11 +9,10 @@
     "region_narmada_plateau"
   ],
   "uses": [
-    "medicine",
-    "insect_repellent",
+    "physic",
     "shade"
   ],
-  "notes": "Bitter medicinal tree of villages and field edges. Leaves and oil used against pests and fever.",
+  "notes": "Bitter medicinal tree of villages and field edges. Leaves and oil used against pests and fever. Also burnt or hung as an insect repellent.",
   "canon": "primary",
   "sources": [
     "SouthOfTethys.txt"

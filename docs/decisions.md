@@ -274,6 +274,32 @@ ingredients, and neither can ever be first. That cycle was real in the first dra
 
 ---
 
+### `uses` on a plant is declared (2026-08-31)
+
+The last free-text vocabulary in canon, and it had reached 51 distinct values across 27 plants
+with 44 of them used exactly once -- `ritual`, `ritual_offering` and `ritual_wood` for one idea,
+and five separate words for food. Twenty-one values now, in `database/plant_uses.json`, pinned
+against the schema enum in both directions the way clades and growth forms already were.
+
+**Not folded into `material_classes.json`, and that is the whole reason it survived the making
+layer.** A material class says what you can carry away; a use says what the plant is *for*, and
+more than half of these are not substances -- shade, boundary, landmark. The making layer left
+`uses` alone on exactly this argument and recorded that it was reasonable to declare later on its
+own terms. This is that.
+
+Distinctions were kept where they are real, on the ruling `species.json` already carries.
+`memory` stays apart from `ritual` because canon means the oracle fig literally; `psychoactive`
+stays apart from `physic` because filing a dream-inducer under medicine would have canon claiming
+it is a treatment. Where a declared word lost a fact -- a flood crop, a ship timber, a wound
+salve -- the fact moved into the plant's `notes` rather than being dropped.
+
+**`region_aravali` gained biomes** in the same pass, from the species canon already places there.
+It was the last region with an `extent` on the atlas and no biomes, which meant nothing could be
+laid out in it; `region_gedrosian_desert` had the same gap and was closed the same way. Both were
+on `database/TODO.md`.
+
+---
+
 ## Open — needs a human call
 
 | Question | Why it is open |

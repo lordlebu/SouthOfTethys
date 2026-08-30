@@ -26,7 +26,7 @@
 <polygon class="land" points="0,0 100,0 100,10 88,12 75,16 62,14 52,16 40,18 28,22 20,24 12,20 0,22"/>
 <polygon class="land" points="85,70 92,69 95,73 92,77 86,76"/>
 <polygon class="land" points="63,69 67,70 69,74 66,77 63,75"/>
-<polygon class="t-plains" points="33,34 38,29 46,27 53,30 51,37 44,39 37,39"/>
+<polygon class="t-hills" points="33,34 38,29 46,27 53,30 51,37 44,39 37,39"/>
 <text class="rgn" x="43.1" y="33.6" text-anchor="middle">Aravali Ranges</text>
 <polygon class="t-lava_field" points="77,12 90,9 100,11 100,24 90,27 80,22 76,17"/>
 <text class="rgn" x="87.6" y="17.4" text-anchor="middle">Ganges Lava Sea</text>

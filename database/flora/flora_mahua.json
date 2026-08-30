@@ -9,9 +9,9 @@
     "region_aravali"
   ],
   "uses": [
-    "fermented_drink",
+    "drink",
     "oil",
-    "ritual_offering"
+    "ritual"
   ],
   "notes": "Flowering tree of the dry plateaus. Night-blooming flowers gathered for sweet liquor and lamp oil. Kia and Jharwa use the blossom in seasonal offerings.",
   "canon": "primary",

@@ -9,11 +9,10 @@
     "region_narmada_plateau"
   ],
   "uses": [
-    "scaffolding",
-    "rafts",
-    "tools"
+    "timber",
+    "craftwork"
   ],
-  "notes": "Fast-growing bamboo of river banks. Primary material for scaffolding, fish traps, and light rafts.",
+  "notes": "Fast-growing bamboo of river banks. Primary material for scaffolding, fish traps, and light rafts. Used for scaffolding. Used for rafts.",
   "canon": "primary",
   "sources": [
     "SouthOfTethys.txt"

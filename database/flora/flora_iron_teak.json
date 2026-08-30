@@ -9,10 +9,9 @@
     "region_aravali"
   ],
   "uses": [
-    "ship_timber",
-    "tower_beams"
+    "timber"
   ],
-  "notes": "Dense highland teak preferred for river craft and the red-sandstone tower’s internal beams. Slow-grown; felling is tightly controlled by plateau clans.",
+  "notes": "Dense highland teak preferred for river craft and the red-sandstone tower’s internal beams. Slow-grown; felling is tightly controlled by plateau clans. Canon records it specifically for ship timber. Canon records it specifically for tower beams.",
   "canon": "primary",
   "sources": [
     "SouthOfTethys.txt"

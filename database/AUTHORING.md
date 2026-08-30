@@ -167,6 +167,12 @@ A place that changes across eras states its identity once and overrides only wha
   ]
 ```
 
+**So is `uses` on a plant.** Twenty-one values in `database/plant_uses.json`, and the thing to
+get right is which question you are answering: a **material class** says what you can carry away
+and a **use** says what the plant is for. More than half the uses are not substances at all --
+nobody carries away shade, a boundary, or a tree they steer by. It was declared last, after it had
+reached 51 free-text values across 27 plants with 44 of them used exactly once.
+
 **`species` is a declared vocabulary too.** It answers what a person *is*, where `culture`
 answers what they belong to, and both are checked. The twelve values live in
 `database/species.json` with a gloss each; add one there in the same commit rather than typing a

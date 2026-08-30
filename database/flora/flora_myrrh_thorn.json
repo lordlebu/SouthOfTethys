@@ -8,10 +8,10 @@
     "region_gedrosian_desert"
   ],
   "uses": [
-    "incense",
-    "wound_salve"
+    "fragrance",
+    "physic"
   ],
-  "notes": "Thorny desert shrub yielding bitter resin. Mixed with Shilajit Creeper sap for field salves.",
+  "notes": "Thorny desert shrub yielding bitter resin. Mixed with Shilajit Creeper sap for field salves. Prepared as a wound salve.",
   "canon": "primary",
   "sources": [
     "SouthOfTethys.txt"

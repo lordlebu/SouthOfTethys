@@ -10,7 +10,7 @@
   ],
   "uses": [
     "food",
-    "souring_agent",
+    "seasoning",
     "shade"
   ],
   "notes": "Pod-bearing shade tree of roads and courtyards. Pulp seasons stews and preserves fish on river journeys.",

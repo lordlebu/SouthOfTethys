@@ -8,7 +8,7 @@
     "region_narmada_plateau"
   ],
   "uses": [
-    "memory_archive",
+    "memory",
     "ritual"
   ],
   "notes": "Massive fig grown from a magical moon-seed. Roots act as biological archive tree whispering memories in the wind.",

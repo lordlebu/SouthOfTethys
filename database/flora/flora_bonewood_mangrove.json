@@ -9,8 +9,7 @@
     "region_saraswati_delta"
   ],
   "uses": [
-    "timber",
-    "construction"
+    "timber"
   ],
   "notes": "Mangrove absorbing calcium and basalt. Yields naturally curved, bone-hard timber used for construction.",
   "canon": "primary",
