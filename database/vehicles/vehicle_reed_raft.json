@@ -1,0 +1,22 @@
+{
+  "id": "vehicle_reed_raft",
+  "type": "vehicle",
+  "name": "Reed raft",
+  "kind": "raft",
+  "crosses": [
+    "river",
+    "wetland"
+  ],
+  "capacity": 2,
+  "materials": [
+    "material_reed_fibre",
+    "material_bamboo_cane"
+  ],
+  "built_by": "process_boatbuilding",
+  "notes": "Bundled reed lashed to a cane frame. Rots in a season and is rebuilt in a morning, which is the correct trade for something that only has to cross a channel.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 0
+}

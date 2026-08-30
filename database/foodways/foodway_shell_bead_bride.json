@@ -1,0 +1,14 @@
+{
+  "id": "foodway_shell_bead_bride",
+  "type": "foodway",
+  "name": "The counted string",
+  "culture": "harappan",
+  "dish": "item_shell_bead",
+  "occasion": "Strung one bead a season from a child's birth, given at their marriage.",
+  "meaning": "Worth measured in patience rather than in quantity. A string bought whole fools nobody, because the beads do not match.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 9
+}

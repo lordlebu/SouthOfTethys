@@ -1,0 +1,22 @@
+{
+  "id": "vehicle_hide_coracle",
+  "type": "vehicle",
+  "name": "Coracle",
+  "kind": "boat",
+  "crosses": [
+    "river"
+  ],
+  "capacity": 2,
+  "materials": [
+    "material_croc_hide",
+    "material_bamboo_cane",
+    "material_tree_pitch"
+  ],
+  "built_by": "process_boatbuilding",
+  "notes": "A basket with a skin over it. Spins constantly, carries far more than it should, and one person can walk home with it on their back.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 2
+}

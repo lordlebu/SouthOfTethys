@@ -1,0 +1,14 @@
+{
+  "id": "foodway_date_block_parting",
+  "type": "foodway",
+  "name": "The parting block",
+  "culture": "trader",
+  "dish": "item_date_block",
+  "occasion": "Pressed into the hands of someone leaving on a crossing.",
+  "meaning": "You are expected back. Refusing one is how you say you are not coming.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 2
+}

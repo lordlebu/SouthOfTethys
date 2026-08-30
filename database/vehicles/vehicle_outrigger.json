@@ -1,0 +1,25 @@
+{
+  "id": "vehicle_outrigger",
+  "type": "vehicle",
+  "name": "Outrigger",
+  "kind": "ship",
+  "crosses": [
+    "sea",
+    "coast"
+  ],
+  "capacity": 6,
+  "materials": [
+    "material_teak_timber",
+    "material_palm_husk"
+  ],
+  "built_by": "process_boatbuilding",
+  "exemplars": [
+    "place_kelpfang"
+  ],
+  "notes": "A hull too narrow to stand up on its own, and a float that makes it the steadiest thing on open water. The Kelpfang is one of these, grown rather than built.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 5
+}

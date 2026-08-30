@@ -1,0 +1,14 @@
+{
+  "id": "foodway_travel_cake_wake",
+  "type": "foodway",
+  "name": "The last cake",
+  "culture": "wanderer",
+  "dish": "item_travel_cake",
+  "occasion": "Eaten by those who stayed, when someone does not come back.",
+  "meaning": "The promise the vigil cake made, finished by the wrong people. Nothing is said while it is eaten.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 14
+}

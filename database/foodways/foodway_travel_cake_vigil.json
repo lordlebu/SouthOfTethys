@@ -1,0 +1,14 @@
+{
+  "id": "foodway_travel_cake_vigil",
+  "type": "foodway",
+  "name": "Vigil cake",
+  "culture": "wanderer",
+  "dish": "item_travel_cake",
+  "occasion": "Baked before a journey nobody expects to be short.",
+  "meaning": "It keeps badly as food and perfectly as a promise: the person who baked it expects to eat the last of it somewhere else.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 5
+}

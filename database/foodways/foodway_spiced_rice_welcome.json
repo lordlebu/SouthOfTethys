@@ -1,0 +1,17 @@
+{
+  "id": "foodway_spiced_rice_welcome",
+  "type": "foodway",
+  "name": "The set place",
+  "culture": "harappan",
+  "dish": "item_spiced_rice",
+  "occasion": "Laid for a traveller before they are asked their business.",
+  "meaning": "That hospitality is not a judgement. The question comes after the meal, and asking it first is the insult.",
+  "places": [
+    "settlement_lothal"
+  ],
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 6
+}

@@ -1,0 +1,29 @@
+{
+  "id": "vehicle_bone_framed_trawler",
+  "type": "vehicle",
+  "name": "Bone-framed trawler",
+  "kind": "ship",
+  "crosses": [
+    "sea",
+    "coast"
+  ],
+  "capacity": 20,
+  "materials": [
+    "material_leviathan_bone",
+    "material_teak_timber",
+    "material_bronze"
+  ],
+  "built_by": "process_boatbuilding",
+  "exemplars": [
+    "place_leviathans_rib"
+  ],
+  "epochs": [
+    "epoch_current"
+  ],
+  "notes": "Canon states the Abyssal Blue's bone plate is harvested for building maritime vessels. This is that claim made into a ship: a single rib is a keel, and the Leviathan's Rib is the one canon names.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 8
+}

@@ -1,0 +1,17 @@
+{
+  "id": "foodway_dried_fish_toll",
+  "type": "foodway",
+  "name": "The weir's share",
+  "culture": "harappan",
+  "dish": "item_dried_fish",
+  "occasion": "Whenever a weir is lifted, before anything is counted.",
+  "meaning": "The first rack goes to whoever did not fish that day. A weir catches without effort, so the catch is treated as luck rather than as work.",
+  "places": [
+    "settlement_lothal"
+  ],
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 1
+}

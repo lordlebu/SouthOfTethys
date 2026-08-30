@@ -1,5 +1,5 @@
 {
-  "version": "1.29.0",
+  "version": "2.0.0",
   "description": "SouthOfTethys canonical entity index",
   "counts": {
     "artifacts": 5,
@@ -11,6 +11,7 @@
     "field_maps": 3,
     "field_questions": 7,
     "flora": 90,
+    "foodways": 15,
     "items": 66,
     "materials": 46,
     "mythology": 9,
@@ -21,6 +22,7 @@
     "recipes": 72,
     "regions": 7,
     "settlements": 2,
+    "vehicles": 11,
     "vocabulary": 8
   },
   "entities": {
@@ -535,6 +537,23 @@
       "flora_whisper_fig",
       "flora_whispering_blood_orchid"
     ],
+    "foodways": [
+      "foodway_date_block_offering",
+      "foodway_date_block_parting",
+      "foodway_dried_fish_crossing",
+      "foodway_dried_fish_toll",
+      "foodway_flood_bread_famine",
+      "foodway_flood_bread_rising",
+      "foodway_mahua_liquor_bargain",
+      "foodway_mahua_liquor_grief",
+      "foodway_neem_salve_naming",
+      "foodway_salt_fish_stew_common",
+      "foodway_shell_bead_bride",
+      "foodway_spiced_rice_welcome",
+      "foodway_tamarind_paste_summer",
+      "foodway_travel_cake_vigil",
+      "foodway_travel_cake_wake"
+    ],
     "items": [
       "item_ammonite_pendant",
       "item_antler_pick",
@@ -841,6 +860,19 @@
     "settlements": [
       "settlement_dwarka",
       "settlement_lothal"
+    ],
+    "vehicles": [
+      "vehicle_bone_framed_trawler",
+      "vehicle_coastal_dhow",
+      "vehicle_delta_barge",
+      "vehicle_ground_effect_craft",
+      "vehicle_hide_coracle",
+      "vehicle_log_dugout",
+      "vehicle_outrigger",
+      "vehicle_ox_cart",
+      "vehicle_reed_raft",
+      "vehicle_salt_sled",
+      "vehicle_workshop_train"
     ],
     "vocabulary": [
       "word_kia_ossu",

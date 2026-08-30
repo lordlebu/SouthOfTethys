@@ -42,7 +42,7 @@ BUNDLE = {
     "species.json": ["fauna", "flora"],
     "places.json": ["regions", "field_maps", "points_of_interest", "npcs"],
     "knowledge.json": ["discoveries", "field_questions", "vocabulary"],
-    "crafting.json": ["materials", "items", "processes", "recipes"],
+    "crafting.json": ["materials", "items", "processes", "recipes", "vehicles"],
 }
 
 # Not exported: characters, events, settlements, factions, artifacts, mythology and the epoch
@@ -63,6 +63,11 @@ BUNDLE = {
 NOT_EXPORTED = [
     "characters", "events", "settlements", "factions", "artifacts", "mythology", "timeline",
     "places",
+    # `foodways` is the cultural half of food -- whose a dish is, when it is eaten, what it
+    # marks. The edible half is an `item` and ships; this does not, on the same split that
+    # keeps `mythology` out. The one link across the boundary is `foodway.dish`, which names
+    # an item that does ship.
+    "foodways",
 ]
 
 # Sorts after every entity that has a source_index, so canon-only additions append.

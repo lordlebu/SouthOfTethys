@@ -13,13 +13,14 @@
     "materials": 46,
     "items": 66,
     "processes": 16,
-    "recipes": 72
+    "recipes": 72,
+    "vehicles": 11
   },
   "sha256": {
-    "canon.lock.json": "cf3d7e27e9ae823b538ebca3f89f2ace2a1f91176b14849814986a71e0962932",
-    "crafting.json": "27e573ff065bb714d3231f9e9d7beb55f66ddc3fc3ea4c5fa75bd5ca9c1db23d",
-    "knowledge.json": "52b2f0d77fdcab7c39daef573f6b2a742de59acdbd243e78334b3976bbc54758",
-    "places.json": "96a3f7af21a6df4dfa5c0c94bd4317bd4f600a7eec98fa232f953854d3ee8691",
-    "species.json": "367570f7e43a2c88f408d1dc64ed519cb0d611aa48ddbd78d90f98b45bf59c9b"
+    "canon.lock.json": "212d9e4dd1fbed366a8d5ba9c736f61ea243f72a61cc5ea7b93cd79f481b3650",
+    "crafting.json": "82b7b3e0ca0ae93af4134bd07b050817420c11006a4965bf3a9de85b718f298a",
+    "knowledge.json": "3b8d4ff76137c7cc6ceecda664774d08cfea5b3f04efd4eb580c0a097cdac472",
+    "places.json": "2d109049945f6a0e055ccd273ef2b639a3f096a5e9d3f0abdf59d4f51b696c6a",
+    "species.json": "ee3d38a5f810ceb3bc0f6d3a70571f7344150fbf3fc42b05fc85b734e5d55c8e"
   }
 }

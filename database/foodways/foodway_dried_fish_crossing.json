@@ -1,0 +1,14 @@
+{
+  "id": "foodway_dried_fish_crossing",
+  "type": "foodway",
+  "name": "The desert ration",
+  "culture": "trader",
+  "dish": "item_dried_fish",
+  "occasion": "Counted out by the day before a caravan leaves Dwarka.",
+  "meaning": "A crossing is arithmetic. Counting the fish in front of everybody is how a caravan agrees it is possible before it commits.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 10
+}

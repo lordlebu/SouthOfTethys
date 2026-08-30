@@ -1,0 +1,21 @@
+{
+  "id": "vehicle_salt_sled",
+  "type": "vehicle",
+  "name": "Salt sled",
+  "kind": "sled",
+  "crosses": [
+    "desert",
+    "coast"
+  ],
+  "capacity": 2,
+  "materials": [
+    "material_bamboo_cane",
+    "material_palm_husk"
+  ],
+  "notes": "Dragged over a salt pan where a wheel would cut through the crust and stop. Dwarka's answer to ground that is neither water nor road.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 7
+}

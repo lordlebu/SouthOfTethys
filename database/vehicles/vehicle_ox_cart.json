@@ -1,0 +1,23 @@
+{
+  "id": "vehicle_ox_cart",
+  "type": "vehicle",
+  "name": "Ox cart",
+  "kind": "cart",
+  "crosses": [
+    "plains",
+    "settlement",
+    "desert",
+    "hills"
+  ],
+  "capacity": 4,
+  "materials": [
+    "material_teak_timber",
+    "material_sinew"
+  ],
+  "notes": "Solid wheels, no springs, and a pace nobody hurries. Carries what a barge cannot reach.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 6
+}

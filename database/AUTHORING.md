@@ -31,6 +31,8 @@ hundred lore entries in an exported folder is the one mistake here with a cost a
 | An object a person can hold | `items/` | **yes** |
 | A way of making | `processes/` | **yes** |
 | What becomes what | `recipes/` | **yes** |
+| Something you board | `vehicles/` | **yes** |
+| What a dish means | `foodways/` | no |
 | A country-sized area | `regions/` | **yes** |
 
 Two distinctions that are easy to get wrong:
@@ -308,6 +310,58 @@ already have -- the faction owns `members` and a character does not name one bac
 cannot drift. An earlier plan for this layer had a `yields` field on all 347 species; it was
 dropped on exactly that precedent, and because the alternative was deriving yields from prose,
 which is the mistake that made an owl a ghost and a mongoose a crab.
+
+### A vehicle, and a foodway
+
+Both are small types with one interesting rule each.
+
+A **vehicle** is a *kind* of craft, repeatable the way an item is. Canon already holds four
+named vessels -- the Battered Ekranoplan, the Kelpfang, the Leviathan's Rib and the Survival
+Train -- as `place` entities with `kind: vessel`, and those stay where they are. It is the same
+split items and artifacts have: a reed raft is a vehicle and there are hundreds; the Kelpfang is
+one, and it has a story. A vehicle may name its named craft in `exemplars`, and **the vessel
+does not name the vehicle back** -- one-directional, so the two cannot drift.
+
+```json
+{
+  "id": "vehicle_outrigger",
+  "type": "vehicle",
+  "name": "Outrigger",
+  "kind": "ship",
+  "crosses": ["sea", "coast"],
+  "capacity": 6,
+  "materials": ["material_teak_timber", "material_palm_husk"],
+  "built_by": "process_boatbuilding",
+  "exemplars": ["place_kelpfang"],
+  "canon": "inferred",
+  "sources": ["inferred from canon geography"],
+  "source_index": 5
+}
+```
+
+**Date the machines.** `epochs` absent means every epoch, which is right for a raft and badly
+wrong for a ground-effect craft.
+
+A **foodway** is what a dish *means* -- whose it is, when it is eaten, what it marks -- and it
+is **not exported**. The edible half is an `item` and ships; this is a fact about the Harappans
+and sits beside mythology. `occasion` is the load-bearing field: a dish with no occasion is a
+recipe, and recipes are already a type.
+
+```json
+{
+  "id": "foodway_flood_bread_rising",
+  "type": "foodway",
+  "name": "The rising loaf",
+  "culture": "harappan",
+  "dish": "item_flood_bread",
+  "occasion": "The first day the river comes over the bank.",
+  "meaning": "That the flood is a harvest and not a disaster.",
+  "places": ["settlement_lothal"],
+  "canon": "inferred",
+  "sources": ["inferred from canon geography"],
+  "source_index": 0
+}
+```
 
 ### A character
 
