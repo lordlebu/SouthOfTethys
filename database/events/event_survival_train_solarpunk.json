@@ -10,6 +10,7 @@
   ],
   "location": "place_grassland_sanctuary",
   "predecessors": [
+    "event_antarctic_ice_wall_expedition",
     "event_battered_ekranoplan_ice_wall_voyage"
   ],
   "successors": [],

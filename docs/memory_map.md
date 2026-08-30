@@ -279,6 +279,7 @@ graph LR
   character_nila --> event_tendua_crisis
   character_radiant_gentleman --> event_final_voyage_of_the_kelpfang
   character_rathak --> event_black_lotus_siege
+  character_ruvan --> event_tendua_crisis
   character_sarita --> event_birth_of_sarita
   character_shaashak --> event_awakening_mask_of_varkesh
   character_shaashak --> event_birth_of_sarita
@@ -292,11 +293,13 @@ graph LR
   character_varna --> event_black_lotus_siege
   character_varna --> event_exile_of_shaashak
   character_varna --> event_mask_retrieval
+  character_vijaya --> event_tendua_crisis
+  character_yaksha_envoy --> event_tendua_crisis
 ```
 
 29 character(s), 12 event(s) they appear in, 14 group(s).
 
-**Present in no event of this era:** Daedrasura, Kubera, Lira, Ruvan, Vijaya, Yaksha Envoy.
+**Present in no event of this era:** Daedrasura, Kubera, Lira.
 
 ## Current Era (Age of Machinery)
 

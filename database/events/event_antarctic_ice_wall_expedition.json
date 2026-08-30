@@ -10,7 +10,9 @@
   ],
   "location": "place_antarctic_ice_wall",
   "predecessors": [],
-  "successors": [],
+  "successors": [
+    "event_survival_train_solarpunk"
+  ],
   "causes": [
     "The Narmada University mission to chart the southern limits of the Tethys Ocean",
     "Varuna's obsessive drive to find an orderly, logical pathway through the shifting ice of the deep south"

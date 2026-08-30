@@ -138,7 +138,7 @@ _Sample fixture — kept to exercise the tooling, not part of the story._
 ## Tendua Crisis and Assassination of Kavik
 **Epoch:** Civilization Dawn (Lothal Era)
 **Summary:** Nila desecrates tower with Asura mantras, birthing Tendua Manticore. During the attack, Asura-possessed Nila assassinates Kavik.
-**Participants:** character_nila, character_kavik, character_shaashak, character_khadi, character_mehme, character_asha, character_arin, character_mira
+**Participants:** character_nila, character_kavik, character_shaashak, character_khadi, character_mehme, character_asha, character_arin, character_mira, character_vijaya, character_yaksha_envoy, character_ruvan
 
 ## Retrieval of the Mask of Harappa
 **Epoch:** Civilization Dawn (Lothal Era)
