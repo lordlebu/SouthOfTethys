@@ -42,7 +42,7 @@ BUNDLE = {
     "species.json": ["fauna", "flora"],
     "places.json": ["regions", "field_maps", "points_of_interest", "npcs"],
     "knowledge.json": ["discoveries", "field_questions", "vocabulary"],
-    "crafting.json": ["materials"],
+    "crafting.json": ["materials", "items", "processes"],
 }
 
 # Not exported: characters, events, settlements, factions, artifacts, mythology and the epoch

@@ -1,0 +1,20 @@
+{
+  "id": "item_date_block",
+  "type": "item",
+  "name": "Date block",
+  "base_item": "item_prepared_food",
+  "kind": "food",
+  "affords": [
+    "eat",
+    "carry"
+  ],
+  "materials": [
+    "material_date_fruit"
+  ],
+  "notes": "Pressed into a brick and wrapped in leaf. Sweet, heavy, and the reason a desert crossing is arithmetic rather than a gamble.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 49
+}

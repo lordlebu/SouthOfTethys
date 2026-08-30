@@ -1,0 +1,18 @@
+{
+  "id": "process_casting",
+  "type": "process",
+  "name": "Casting",
+  "performed_at": [
+    "settlement"
+  ],
+  "needs": [
+    "burn",
+    "contain"
+  ],
+  "notes": "Molten metal into a mould. Held apart from smelting because the skills are different and the failures are different.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 9
+}

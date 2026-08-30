@@ -1,0 +1,15 @@
+{
+  "id": "item_hafted_tool",
+  "type": "item",
+  "name": "Hafted tool",
+  "kind": "tool",
+  "affords": [
+    "cut"
+  ],
+  "notes": "A head bound to a handle. The base for adze, pick and chisel: what they share is the binding, which is why cordage is a prerequisite of half the toolkit.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 3
+}

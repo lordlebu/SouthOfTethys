@@ -1,0 +1,19 @@
+{
+  "id": "item_myrrh_poultice",
+  "type": "item",
+  "name": "Myrrh poultice",
+  "kind": "physic",
+  "affords": [
+    "heal"
+  ],
+  "materials": [
+    "material_myrrh_gum",
+    "material_bark_bast"
+  ],
+  "notes": "The wound salve canon names on the myrrh-thorn, softened in oil and spread on bast.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 56
+}

@@ -1,0 +1,14 @@
+{
+  "id": "process_weaving",
+  "type": "process",
+  "name": "Weaving",
+  "needs": [
+    "work"
+  ],
+  "notes": "Mat, basket, sail and cloth are one process at four scales. Needs a loom or a frame, which is a thing that works rather than a place that does.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 4
+}

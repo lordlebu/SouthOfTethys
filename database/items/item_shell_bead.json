@@ -1,0 +1,18 @@
+{
+  "id": "item_shell_bead",
+  "type": "item",
+  "name": "Shell bead",
+  "kind": "ornament",
+  "affords": [
+    "trade"
+  ],
+  "materials": [
+    "material_oyster_shell"
+  ],
+  "notes": "Drilled, strung, and the smallest unit of worth anybody agrees on.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 63
+}

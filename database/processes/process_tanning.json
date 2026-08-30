@@ -1,0 +1,17 @@
+{
+  "id": "process_tanning",
+  "type": "process",
+  "name": "Tanning",
+  "performed_at": [
+    "settlement"
+  ],
+  "needs": [
+    "contain"
+  ],
+  "notes": "Turning hide into leather with bark liquor and time. Sited at a settlement because it needs vats and because nobody will let you do it upwind of them.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 6
+}

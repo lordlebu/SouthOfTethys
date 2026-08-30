@@ -31,6 +31,10 @@
       "label": "Crosses",
       "note": "Gets a person over ground they could not otherwise walk. A raft, a plank, a rope span, a pair of mud-shoes. The affordance vehicles are built out of."
     },
+    "work": {
+      "label": "Works",
+      "note": "Shapes, grinds or presses other material without cutting it. A quern, a loom, a press, an anvil, a bow-drill. Added when the first quern was written and had nothing honest to say for itself -- `cut` was the nearest word and it was wrong, and the point of a declared vocabulary is that the near-miss fails rather than quietly becoming the record."
+    },
     "mark": {
       "label": "Marks",
       "note": "Leaves a record. A stylus, a tally, ochre on a wall, a seal. In a game whose progression system is a diary, this is not a minor category."

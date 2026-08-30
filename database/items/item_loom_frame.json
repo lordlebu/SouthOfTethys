@@ -1,0 +1,19 @@
+{
+  "id": "item_loom_frame",
+  "type": "item",
+  "name": "Loom frame",
+  "kind": "tool",
+  "affords": [
+    "work"
+  ],
+  "materials": [
+    "material_bamboo_cane",
+    "material_reed_fibre"
+  ],
+  "notes": "Upright, weighted, and taken apart to travel. Weaving needs a thing that works rather than a place that does, and this is that thing.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 24
+}

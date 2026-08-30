@@ -1,0 +1,22 @@
+{
+  "id": "item_travel_cake",
+  "type": "item",
+  "name": "Travel cake",
+  "base_item": "item_prepared_food",
+  "kind": "food",
+  "affords": [
+    "eat",
+    "carry"
+  ],
+  "materials": [
+    "material_delta_rice",
+    "material_mahua_oil",
+    "material_date_fruit"
+  ],
+  "notes": "Rice flour, oil and fruit, baked hard. Made to be carried rather than to be enjoyed, and it tastes like it.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 53
+}

@@ -1,0 +1,20 @@
+{
+  "id": "item_sail_cloth",
+  "type": "item",
+  "name": "Sail cloth",
+  "base_item": "item_woven_ware",
+  "kind": "textile",
+  "affords": [
+    "cross"
+  ],
+  "materials": [
+    "material_palm_husk",
+    "material_bark_bast"
+  ],
+  "notes": "Coarse, heavy, and the difference between a boat that drifts and a boat that goes.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 14
+}

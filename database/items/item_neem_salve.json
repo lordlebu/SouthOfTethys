@@ -1,0 +1,19 @@
+{
+  "id": "item_neem_salve",
+  "type": "item",
+  "name": "Neem salve",
+  "kind": "physic",
+  "affords": [
+    "heal"
+  ],
+  "materials": [
+    "material_neem_bark",
+    "material_mahua_oil"
+  ],
+  "notes": "Bitter, oily, and keeps a wound clean. Canon has the tree for medicine already.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 55
+}

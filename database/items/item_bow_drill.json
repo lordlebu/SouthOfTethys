@@ -1,0 +1,20 @@
+{
+  "id": "item_bow_drill",
+  "type": "item",
+  "name": "Bow drill",
+  "kind": "tool",
+  "affords": [
+    "work",
+    "burn"
+  ],
+  "materials": [
+    "material_bamboo_cane",
+    "material_sinew"
+  ],
+  "notes": "Makes holes and makes fire, which is the same motion done with different patience.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 23
+}

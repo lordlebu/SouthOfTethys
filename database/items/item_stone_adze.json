@@ -1,0 +1,21 @@
+{
+  "id": "item_stone_adze",
+  "type": "item",
+  "name": "Stone adze",
+  "base_item": "item_hafted_tool",
+  "kind": "tool",
+  "affords": [
+    "cut",
+    "work"
+  ],
+  "materials": [
+    "material_basalt",
+    "material_sinew"
+  ],
+  "notes": "For dressing timber. The blade is set across the haft rather than along it, which is the whole difference between an adze and an axe and matters enormously to a boat.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 18
+}

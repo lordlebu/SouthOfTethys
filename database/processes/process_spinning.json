@@ -1,0 +1,14 @@
+{
+  "id": "process_spinning",
+  "type": "process",
+  "name": "Spinning and twisting",
+  "needs": [
+    "work"
+  ],
+  "notes": "Drawing fibre into thread, and thread into rope. The whorl is the tool and the tool is almost always somebody's spare moment.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 3
+}

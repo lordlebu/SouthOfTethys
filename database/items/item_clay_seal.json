@@ -1,0 +1,20 @@
+{
+  "id": "item_clay_seal",
+  "type": "item",
+  "name": "Clay seal",
+  "kind": "record",
+  "affords": [
+    "mark",
+    "trade"
+  ],
+  "materials": [
+    "material_river_clay",
+    "material_oyster_shell"
+  ],
+  "notes": "Pressed into the clay closing a jar or a bale. Says who packed it and that nobody has opened it since.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 46
+}

@@ -1,0 +1,18 @@
+{
+  "id": "item_ammonite_pendant",
+  "type": "item",
+  "name": "Ammonite pendant",
+  "kind": "ornament",
+  "affords": [
+    "trade"
+  ],
+  "materials": [
+    "material_ammonite_shell"
+  ],
+  "notes": "A spiral somebody found already made. The brown ones are worn; the Asura-marked black ones are not worn by anybody sensible.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 64
+}

@@ -1,0 +1,20 @@
+{
+  "id": "item_reed_mat",
+  "type": "item",
+  "name": "Reed mat",
+  "base_item": "item_woven_ware",
+  "kind": "textile",
+  "affords": [
+    "shelter",
+    "carry"
+  ],
+  "materials": [
+    "material_reed_fibre"
+  ],
+  "notes": "A floor, a wall, a roof or a bed depending on which way it is put down.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 9
+}

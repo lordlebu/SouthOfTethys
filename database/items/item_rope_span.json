@@ -1,0 +1,20 @@
+{
+  "id": "item_rope_span",
+  "type": "item",
+  "name": "Rope span",
+  "kind": "tool",
+  "affords": [
+    "cross",
+    "bind"
+  ],
+  "materials": [
+    "material_palm_husk",
+    "material_teak_timber"
+  ],
+  "notes": "A line fixed both banks, and a loop to hang from. Wants two people, which is why Teshk will not leave -- the rope needs two and there are not two to spare.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 62
+}

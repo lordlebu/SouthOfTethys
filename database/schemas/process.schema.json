@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Process",
+  "description": "A way of making. Answers what a recipe has to be performed *at* and what the maker has to be holding, so that a recipe can say 'fired' without restating what a kiln is every time. The vocabulary a workshop is built out of.",
+  "type": "object",
+  "required": ["id", "type", "name"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^process_[a-z0-9_]+$"
+    },
+    "type": {
+      "const": "process"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "performed_at": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "settlement", "wilderness", "eco_site", "archaeological_site",
+          "anomaly", "travel_node"
+        ]
+      },
+      "description": "Kinds of point of interest where this can be done, from point_of_interest.schema.json's own `kind` enum. **Absent means anywhere, including standing in a field**, which is the honest default for the hand processes -- a person splitting reeds needs a river bank and not a building. Only name kinds where the process genuinely needs the site."
+    },
+    "needs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "cut", "bind", "carry", "contain", "burn", "deter", "cross",
+          "work", "mark", "trade", "eat", "heal", "shelter"
+        ]
+      },
+      "description": "Affordances the maker must have to hand, from database/affordances.json. **An affordance rather than a named tool, deliberately** -- firing needs something that burns, and canon should not have to decide whether that is a hearth, a brazier or a pit. Any item affording it will do, which is the same argument tag ingredients make on the material side."
+    },
+    "notes": {
+      "type": "string"
+    },
+    "canon": {
+      "type": "string",
+      "enum": ["primary", "secondary", "inferred"]
+    },
+    "sources": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "source_index": {
+      "type": "integer",
+      "minimum": 0
+    }
+  },
+  "additionalProperties": false
+}

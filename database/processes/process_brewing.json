@@ -1,0 +1,17 @@
+{
+  "id": "process_brewing",
+  "type": "process",
+  "name": "Brewing",
+  "performed_at": [
+    "settlement"
+  ],
+  "needs": [
+    "contain"
+  ],
+  "notes": "Fermenting. Canon already records the mahua for a fermented drink, so this process is describing something in the record rather than proposing an industry.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 14
+}

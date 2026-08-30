@@ -1,0 +1,14 @@
+{
+  "id": "process_grinding",
+  "type": "process",
+  "name": "Grinding",
+  "needs": [
+    "work"
+  ],
+  "notes": "Grain to flour, ochre to pigment, bark to powder. One quern does all three and the household that owns it does not lend it.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 11
+}

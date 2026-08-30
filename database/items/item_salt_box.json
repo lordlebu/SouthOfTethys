@@ -1,0 +1,19 @@
+{
+  "id": "item_salt_box",
+  "type": "item",
+  "name": "Salt box",
+  "base_item": "item_vessel_ware",
+  "kind": "container",
+  "affords": [
+    "contain"
+  ],
+  "materials": [
+    "material_sandalwood_billet"
+  ],
+  "notes": "Wood rather than clay, because salt draws water and a fired jar sweats.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 34
+}

@@ -1,0 +1,19 @@
+{
+  "id": "item_goat_hair_blanket",
+  "type": "item",
+  "name": "Goat-hair blanket",
+  "base_item": "item_woven_ware",
+  "kind": "textile",
+  "affords": [
+    "shelter"
+  ],
+  "materials": [
+    "material_goat_hair"
+  ],
+  "notes": "Stays warm wet. On the Vindhya that is the only property anybody asks about.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 12
+}

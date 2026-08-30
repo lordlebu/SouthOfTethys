@@ -1,0 +1,15 @@
+{
+  "id": "process_pressing",
+  "type": "process",
+  "name": "Pressing",
+  "needs": [
+    "work",
+    "contain"
+  ],
+  "notes": "Oil out of seed, under a beam or a stone. Wants a vessel to catch what comes out, which is the whole reason `contain` is a needed affordance and not a nicety.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 10
+}

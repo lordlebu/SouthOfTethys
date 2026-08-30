@@ -1,0 +1,18 @@
+{
+  "id": "item_reed_stylus",
+  "type": "item",
+  "name": "Reed stylus",
+  "kind": "record",
+  "affords": [
+    "mark"
+  ],
+  "materials": [
+    "material_reed_fibre"
+  ],
+  "notes": "Cut to a point and recut every few lines. Costs nothing and is lost constantly.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 41
+}

@@ -1,0 +1,15 @@
+{
+  "id": "item_vessel_ware",
+  "type": "item",
+  "name": "Vessel",
+  "kind": "container",
+  "affords": [
+    "contain"
+  ],
+  "notes": "The prototype for anything that keeps something in. Distinct from `woven_ware`, whose job is to move a load rather than to hold one.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 4
+}

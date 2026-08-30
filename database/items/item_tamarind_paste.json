@@ -1,0 +1,20 @@
+{
+  "id": "item_tamarind_paste",
+  "type": "item",
+  "name": "Tamarind paste",
+  "base_item": "item_prepared_food",
+  "kind": "food",
+  "affords": [
+    "eat"
+  ],
+  "materials": [
+    "material_tamarind_pulp",
+    "material_salt_crust"
+  ],
+  "notes": "Sour enough to make bad water drinkable and worse food interesting.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 50
+}

@@ -60,6 +60,8 @@ PREFIX_DIRS = {
     "word_": "vocabulary",
     "place_": "places",
     "material_": "materials",
+    "item_": "items",
+    "process_": "processes",
 }
 
 # folder -> schema stem, where the two differ.
@@ -72,6 +74,8 @@ SCHEMA_FOR = {
     "settlements": "settlement",
     "places": "place",
     "materials": "material",
+    "items": "item",
+    "processes": "process",
 }
 
 # Values that look like ids but are not entity references.
@@ -360,6 +364,28 @@ def main() -> int:
                     errors.append(
                         f"{path.name}: '{a}' is not an affordance in affordances.json"
                     )
+
+    # --- base_item chains -------------------------------------------------------------
+    #
+    # Inherit-then-override, the shape Factorio's prototypes take. Canon already does this twice
+    # under other names -- `fauna.base_species` and `character.reincarnation_of` -- and neither
+    # of those can loop, because both are checked. This one has to be too: a chain that eats its
+    # own tail resolves forever, and the export is where it would be discovered.
+    #
+    # The reference walker already proves the target exists; this only proves the chain ends.
+    for eid, (path, payload) in entities.items():
+        base = payload.get("base_item")
+        if not base:
+            continue
+        seen_chain, cursor = [eid], base
+        while cursor:
+            if cursor in seen_chain:
+                loop = " -> ".join(seen_chain + [cursor])
+                errors.append(f"{path.name}: base_item chain loops ({loop})")
+                break
+            seen_chain.append(cursor)
+            nxt = entities.get(cursor)
+            cursor = nxt[1].get("base_item") if nxt else None
 
     # --- invariants across sibling files -------------------------------------------
     #

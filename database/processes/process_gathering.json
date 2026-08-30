@@ -1,0 +1,11 @@
+{
+  "id": "process_gathering",
+  "type": "process",
+  "name": "Gathering",
+  "notes": "Picking a thing up. Named as a process rather than left implicit because every recipe chain has to start somewhere, and a layer whose raw materials arrive by magic cannot be checked for reachability.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 0
+}

@@ -1,0 +1,20 @@
+{
+  "id": "item_grain_bin",
+  "type": "item",
+  "name": "Grain bin",
+  "base_item": "item_vessel_ware",
+  "kind": "container",
+  "affords": [
+    "contain"
+  ],
+  "materials": [
+    "material_river_clay",
+    "material_reed_fibre"
+  ],
+  "notes": "Mud-plastered basketwork, taller than a person. Does not move once filled, which makes it the first object here that only a settlement can own.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 36
+}

@@ -1,0 +1,18 @@
+{
+  "id": "item_tally_stick",
+  "type": "item",
+  "name": "Tally stick",
+  "kind": "record",
+  "affords": [
+    "mark"
+  ],
+  "materials": [
+    "material_bamboo_cane"
+  ],
+  "notes": "Notched and split, so both parties hold half and neither can add a notch alone. A contract that cannot be argued with.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 45
+}

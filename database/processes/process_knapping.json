@@ -1,0 +1,11 @@
+{
+  "id": "process_knapping",
+  "type": "process",
+  "name": "Knapping",
+  "notes": "Striking flakes off stone or glass to leave an edge. Wants nothing but a hammerstone and somewhere to sit, which is why it has no site and no needs.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 1
+}

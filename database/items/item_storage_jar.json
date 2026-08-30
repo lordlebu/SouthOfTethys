@@ -1,0 +1,20 @@
+{
+  "id": "item_storage_jar",
+  "type": "item",
+  "name": "Storage jar",
+  "base_item": "item_vessel_ware",
+  "kind": "container",
+  "affords": [
+    "contain"
+  ],
+  "materials": [
+    "material_river_clay",
+    "material_potters_grog"
+  ],
+  "notes": "Fired, lidded, and half-buried to stay cool. A grain surplus is not a harvest, it is one of these.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 31
+}

@@ -1,0 +1,81 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Item",
+  "description": "A made or gathered object a person can hold. Distinct from an `artifact`, which is a named thing canon treats as a character in its own right and which has a power and a cost -- an item is ordinary, repeatable, and describes a category of object rather than one famous one. The Mask of Tethys is an artifact. A reed rope is an item, and there are thousands of them.",
+  "type": "object",
+  "required": ["id", "type", "name", "kind", "affords"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^item_[a-z0-9_]+$"
+    },
+    "type": {
+      "const": "item"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "base_item": {
+      "type": "string",
+      "pattern": "^item_[a-z0-9_]+$",
+      "description": "Another item this one is a variety of. Inherit, then override -- the shape Factorio's prototypes take, and one canon already uses twice under other names (`fauna.base_species`, `character.reincarnation_of`). A bone harpoon states what makes it a harpoon and lets `item_hafted_tool` say the rest. Cycles are a lint failure; the chain must terminate."
+    },
+    "kind": {
+      "type": "string",
+      "enum": [
+        "tool", "weapon", "container", "textile", "food", "physic",
+        "light", "record", "ornament", "shelter"
+      ],
+      "description": "Coarse category, for grouping rather than for rules. `weapon` exists as a category because refusing to name the category would not make the spears go away -- what canon lacks is a vocabulary for *damage*, not for the noun. See affordances.json."
+    },
+    "affords": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "enum": [
+          "cut", "bind", "carry", "contain", "burn", "deter", "cross",
+          "work", "mark", "trade", "eat", "heal", "shelter"
+        ]
+      },
+      "description": "What this lets a person do, from database/affordances.json. At least one: an object that affords nothing is scenery, and scenery belongs in a point of interest's description rather than in a satchel. Pinned against the vocabulary file by lint in both directions."
+    },
+    "materials": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "`material_` ids this is made of. Descriptive rather than a recipe -- it says what the thing is, where a recipe says what it takes to get one. The two can honestly differ: a recipe may allow any `#fibre` where the canonical object is reed."
+    },
+    "made_by": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "`culture_`-free by design: this names `character_` or `faction_` ids where canon records a particular maker. Which cultures know a thing is a property of the recipe, not the object."
+    },
+    "wielded_by": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "`character_` ids canon records carrying one."
+    },
+    "epochs": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Epoch ids. Absent means every epoch -- right for a rope, wrong for anything bronze, so date the metal."
+    },
+    "notes": {
+      "type": "string"
+    },
+    "canon": {
+      "type": "string",
+      "enum": ["primary", "secondary", "inferred"]
+    },
+    "sources": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "source_index": {
+      "type": "integer",
+      "minimum": 0
+    }
+  },
+  "additionalProperties": false
+}

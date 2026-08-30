@@ -1,0 +1,24 @@
+{
+  "id": "item_bronze_knife",
+  "type": "item",
+  "name": "Bronze knife",
+  "base_item": "item_blade",
+  "kind": "tool",
+  "affords": [
+    "cut",
+    "trade"
+  ],
+  "materials": [
+    "material_bronze"
+  ],
+  "epochs": [
+    "epoch_civilization_dawn",
+    "epoch_current"
+  ],
+  "notes": "Holds an edge, takes a new one, and is worth more than the person carrying it usually is.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 17
+}

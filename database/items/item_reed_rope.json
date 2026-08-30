@@ -1,0 +1,19 @@
+{
+  "id": "item_reed_rope",
+  "type": "item",
+  "name": "Reed rope",
+  "base_item": "item_cordage",
+  "kind": "tool",
+  "affords": [
+    "bind"
+  ],
+  "materials": [
+    "material_reed_fibre"
+  ],
+  "notes": "Light, cheap and rots. The house rope: everything that does not have to hold a boat.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 6
+}

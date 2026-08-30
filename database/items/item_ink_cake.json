@@ -1,0 +1,19 @@
+{
+  "id": "item_ink_cake",
+  "type": "item",
+  "name": "Ink cake",
+  "kind": "record",
+  "affords": [
+    "mark"
+  ],
+  "materials": [
+    "material_lamp_black",
+    "material_frankincense"
+  ],
+  "notes": "Soot bound with gum, dried into a block, wetted on a stone. The substance Varuna's diary is actually written in.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 42
+}

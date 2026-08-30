@@ -1,0 +1,17 @@
+{
+  "id": "process_firing",
+  "type": "process",
+  "name": "Firing",
+  "performed_at": [
+    "settlement"
+  ],
+  "needs": [
+    "burn"
+  ],
+  "notes": "Clay to pottery in a kiln. The first process in this list that a person cannot do alone in a field, and the reason a settlement is worth walking back to.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 7
+}

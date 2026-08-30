@@ -28,6 +28,8 @@ hundred lore entries in an exported folder is the one mistake here with a cost a
 | A group | `factions/` | no |
 | An object that matters | `artifacts/` | no |
 | A substance you can carry away | `materials/` | **yes** |
+| An object a person can hold | `items/` | **yes** |
+| A way of making | `processes/` | **yes** |
 | A country-sized area | `regions/` | **yes** |
 
 Two distinctions that are easy to get wrong:
@@ -203,6 +205,67 @@ reference in canon it names entities, and the walker checks them.
 **This is not `flora.uses`.** That field stays where it is and answers a different question --
 what people *do* with a plant, including `shade` and `navigational_landmark`, which are not
 substances and cannot be carried. A material class says what you can take away.
+
+### An item
+
+An item is ordinary and repeatable. An `artifact` is a named thing canon treats as a character
+in its own right, with a power and a cost -- the Mask of Tethys is an artifact, a reed rope is
+an item, and there are thousands of the second.
+
+```json
+{
+  "id": "item_reed_rope",
+  "type": "item",
+  "name": "Reed rope",
+  "base_item": "item_cordage",
+  "kind": "tool",
+  "affords": ["bind"],
+  "materials": ["material_reed_fibre"],
+  "notes": "Light, cheap and rots. Everything that does not have to hold a boat.",
+  "canon": "inferred",
+  "sources": ["inferred from canon geography"],
+  "source_index": 6
+}
+```
+
+**`affords` is required and must have one entry.** An object that affords nothing is scenery,
+and scenery belongs in a point of interest's description. The values are declared in
+`database/affordances.json` and there is deliberately **no word for damage** -- a weapon `cut`s
+and `deter`s. If combat is ever wanted it arrives by editing that file and recording the call in
+`docs/decisions.md`, not by an item claiming it.
+
+**`base_item` is inherit-then-override.** State what makes this one different and let the base
+say the rest. The chain must terminate; a loop is a lint failure that names the path.
+
+**Date anything bronze.** `epochs` absent means every epoch, which is right for a rope and
+wrong for metal -- canon is a bronze world with iron as a rumour.
+
+### A process
+
+A process answers what a recipe has to be performed *at*, so a recipe can say "fired" without
+restating what a kiln is.
+
+```json
+{
+  "id": "process_firing",
+  "type": "process",
+  "name": "Firing",
+  "performed_at": ["settlement"],
+  "needs": ["burn"],
+  "notes": "Clay to pottery in a kiln.",
+  "canon": "inferred",
+  "sources": ["inferred from canon geography"],
+  "source_index": 7
+}
+```
+
+**`performed_at` absent means anywhere, including standing in a field.** That is the honest
+default -- somebody splitting reeds needs a river bank, not a building. Only name kinds where
+the process genuinely needs the site.
+
+**`needs` names an affordance, not a tool.** Firing needs something that burns, and canon should
+not have to decide whether that is a hearth, a brazier or a pit. Any item affording it will do,
+which is the same argument tag ingredients make about materials.
 
 ### A character
 

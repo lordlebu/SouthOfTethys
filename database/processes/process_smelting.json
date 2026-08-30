@@ -1,0 +1,18 @@
+{
+  "id": "process_smelting",
+  "type": "process",
+  "name": "Smelting",
+  "performed_at": [
+    "settlement"
+  ],
+  "needs": [
+    "burn",
+    "contain"
+  ],
+  "notes": "Ore to metal. Needs a furnace, charcoal and somebody who has done it before. Canon is a bronze world, so this is near the edge of what anybody can do at all.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 8
+}

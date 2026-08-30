@@ -1,0 +1,19 @@
+{
+  "id": "process_boatbuilding",
+  "type": "process",
+  "name": "Boatbuilding",
+  "performed_at": [
+    "settlement",
+    "travel_node"
+  ],
+  "needs": [
+    "cut",
+    "bind"
+  ],
+  "notes": "Hull, frame, lashing and pitch. Sited at settlements and travel nodes because those are the two kinds of place in canon that sit on water and have people.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 15
+}

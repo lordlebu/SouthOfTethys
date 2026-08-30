@@ -1,0 +1,20 @@
+{
+  "id": "item_fish_weir",
+  "type": "item",
+  "name": "Fish weir",
+  "base_item": "item_woven_ware",
+  "kind": "textile",
+  "affords": [
+    "carry"
+  ],
+  "materials": [
+    "material_bamboo_cane",
+    "material_reed_fibre"
+  ],
+  "notes": "A fence in the water that lets the river do the catching. Does not sort what it takes, which is why canon's fish material is named for the river and not for a species.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 11
+}

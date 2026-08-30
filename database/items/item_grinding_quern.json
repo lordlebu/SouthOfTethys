@@ -1,0 +1,18 @@
+{
+  "id": "item_grinding_quern",
+  "type": "item",
+  "name": "Quern",
+  "kind": "tool",
+  "affords": [
+    "work"
+  ],
+  "materials": [
+    "material_basalt"
+  ],
+  "notes": "Grain to flour, ochre to pigment, bark to powder. The first object written here that had nothing honest to say for itself under the old vocabulary -- which is how `work` came to exist.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 22
+}

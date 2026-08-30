@@ -1,0 +1,24 @@
+{
+  "id": "item_bronze_spearhead",
+  "type": "item",
+  "name": "Bronze spearhead",
+  "kind": "weapon",
+  "affords": [
+    "cut",
+    "deter",
+    "trade"
+  ],
+  "materials": [
+    "material_bronze"
+  ],
+  "epochs": [
+    "epoch_civilization_dawn",
+    "epoch_current"
+  ],
+  "notes": "Socketed, so it outlives its shaft. Traded far past where anybody can make one.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 28
+}
