@@ -7,13 +7,13 @@ half-remembered word lives in [`database/`](database/) as one JSON file, validat
 push — so the lore cannot quietly contradict itself, and a machine can hand any of it to a
 reader, a game, or a language model.
 
-**v1.6.0 · 504 entities · all cross-references resolving**
+**v1.26.0 · 588 entities · all cross-references resolving**
 
 | | |
 |---|---|
-| 🦎 **Life** | 256 fauna · 90 flora |
-| 🗺️ **World** | 7 regions · 2 settlements · 41 characters · 12 events · 3 factions · 3 artifacts · 3 myths |
-| 🔍 **Field diary** | 4 field maps · 24 points of interest · 31 discoveries · 8 open questions · 10 people · 10 words |
+| 🦎 **Life** | 257 fauna · 90 flora |
+| 🗺️ **World** | 7 regions · 41 places · 2 settlements · 61 characters · 36 events · 3 factions · 5 artifacts · 9 myths |
+| 🔍 **Field diary** | 3 field maps · 20 points of interest · 31 discoveries · 7 open questions · 8 people · 8 words |
 
 ---
 
@@ -83,6 +83,7 @@ Merging to `main` rebuilds and redeploys the retrieval service by itself, then a
 - 📚 **[The book](https://lordlebu.github.io/SouthOfTethys/)** — the world as a reader meets it
 - 🗺️ **[The atlas](https://lordlebu.github.io/SouthOfTethys/atlas.html)** — canon as it stood in each of the six eras
 - 🕰️ **[The timeline](https://lordlebu.github.io/SouthOfTethys/timeline_mermaid.html)** — the epochs, and every event by cause
+- 👥 **[The memory map](https://lordlebu.github.io/SouthOfTethys/memory_map.html)** — who was there, and with whom
 - 🎮 **[The game](https://lordlebu.github.io/4000BCESaraswathy/)** — the walk, made of this canon
 - 🔎 **Retrieval API** — `/lore` for a place, `/search` for a question, `/ask` for a passage
 

@@ -543,6 +543,31 @@ def main() -> int:
                     f"the prose should not say it."
                 )
 
+    # --- the front doors still say what canon actually holds ----------------------------
+    #
+    # `README.md` said v1.6.0 and 504 entities while the manifest said v1.26.0 and 588. CLAUDE.md
+    # said v1.13.0 and 517. Both are the first thing a person or a model reads about this
+    # repository, and both had been wrong for weeks -- nothing updates a number written in prose,
+    # and nobody notices a stale one because it looks like a fact.
+    #
+    # Cheap to keep honest, so it is kept honest here rather than remembered.
+    manifest = load(DB / "index.json")
+    total = sum(manifest.get("counts", {}).values())
+    version = manifest.get("version")
+    for name, pattern in (("README.md", r"\*\*v([\d.]+) . (\d+) entities"),
+                          ("CLAUDE.md", r"\*\*v([\d.]+), (\d+) entities\*\*")):
+        doc = BASE / name
+        if not doc.exists():
+            continue
+        m = re.search(pattern, doc.read_text(encoding="utf-8"))
+        if not m:
+            errors.append(f"{name}: no version/entity-count line to check -- has its wording changed?")
+        elif m.group(1) != version or int(m.group(2)) != total:
+            errors.append(
+                f"{name}: says v{m.group(1)} and {m.group(2)} entities; the manifest says "
+                f"v{version} and {total}. Update it in the same commit."
+            )
+
     # --- a rebirth points backwards, and a myth does not attend things -----------------
     #
     # Two checks on the same idea: an entity should be the kind of thing it is being used as.
