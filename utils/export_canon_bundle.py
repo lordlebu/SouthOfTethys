@@ -96,6 +96,39 @@ UNINDEXED = 10**9
 WITHHELD_FROM_CRAFTING = ("canon", "sources")
 
 
+def resolved_affordances(items: list[dict]) -> dict[str, list[str]]:
+    """What each item affords, with `base_item` followed to the end of the chain.
+
+    Emitted so the game can check its answer against canon's rather than merely agreeing by
+    convention. This rule genuinely lives in two languages -- `World.affords` here and
+    `affordsOf` in `src/content/making.ts` -- because canon has to prove a recipe performable
+    before it exports, and the comment on both has always said "change one, change both".
+
+    A comment is not a guard. This is: `test/makingMatters.test.ts` asserts its own resolution
+    equals this map for every item, so the two implementations fail together instead of
+    drifting apart quietly. About 2 KB, which is a cheap price for the one rule in this layer
+    that is written down twice.
+
+    An item that states `affords` **replaces** its base's rather than adding to it, which is
+    how Factorio's override works and is what the TypeScript does.
+    """
+    by_id = {i["id"]: i for i in items}
+    out: dict[str, list[str]] = {}
+    for item in items:
+        seen: set[str] = set()
+        cursor = item["id"]
+        found: list[str] = []
+        while cursor and cursor not in seen:
+            seen.add(cursor)
+            doc = by_id.get(cursor) or {}
+            if doc.get("affords"):
+                found = list(doc["affords"])
+                break
+            cursor = doc.get("base_item")
+        out[item["id"]] = found
+    return out
+
+
 def load_folder(folder: str) -> list[dict]:
     d = DB / folder
     if not d.exists():
@@ -154,6 +187,9 @@ def build_bundle() -> tuple[dict[str, str], dict[str, int]]:
         # are drawn from, and the game needs to know which of them it can render.
         if filename == "places.json":
             payload["biomes"] = biomes["biomes"]
+        # Canon's own answer to the one rule the game reimplements. See `resolved_affordances`.
+        if filename == "crafting.json":
+            payload["conformance"] = {"affords": resolved_affordances(payload["items"])}
         files[filename] = render(payload)
 
     lock = {
