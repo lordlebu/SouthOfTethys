@@ -335,6 +335,46 @@ timeline and not in the memory map, which is the honest outcome. The craft itsel
 `place_ekranoplan`, `kind: vessel` -- the kind canon already keeps for the Kelpfang and the
 Survival Train, somewhere that moves and is lived in.
 
+**A place can inherit its position** (decided 2026-08-30). Canon names far more places than it
+has ever surveyed: seventeen were named by events and drawn on no map, because only what was
+legible on `Partial_map.png` ever got coordinates and everything authored since had none. Each
+era's chapter mentioned ground its own map did not show.
+
+`within` names what contains a place and the atlas resolves a position from the parent --
+coordinates, or the middle of an outline -- **drawn hollow rather than filled**, so the map never
+claims a precision canon does not have. One hop only: a chain would let an unplaced place borrow
+from another unplaced place and land somewhere nobody chose.
+
+Thirteen were given a parent canon actually supports. Five were not, and stay unplaced on purpose
+-- `place_ancient_courts`, `place_gondwana`, `place_grassland_sanctuary`,
+`place_ironfang_mountains` and `place_island_of_lund`. Guessing a container for those is
+authoring geography, which is not the tooling's to do.
+
+Switching inheritance on immediately reproduced the bug that produced the epochs rule: the Narmada
+University Library appeared in Deep Antiquity, because `within` makes a place drawn and an undated
+drawn place is in every era. The check now counts `within`, and reaches settlements as well as
+places.
+
+**Varuna is one being in two vessels** (decided 2026-08-30). Incorporating the Chess of Fate needed
+the god to act, and `character_varuna` is species `deity_in_mortal_shell` -- "the ancient god of the
+waters, bound during Epoch 5 to a mortal human frame". The captain *is* Varuṇa. So
+`character_varuna_of_the_deep` holds the Prehistoric god and Captain Varuna carries
+`reincarnation_of` back to him, exactly as Guyuk does.
+
+`mythology_varuna` stays where it is. A mythology entity is the story told about someone, which is
+what that folder is for; what it cannot be is a participant, and the gate refuses that now. The
+myth points at the character instead.
+
+**The explorer culture** (decided 2026-08-30, by the owner). Varuna, Rathak, Ruvan, Mitra and both
+Guyuks. It is the one culture in canon that is not a people: every other entry names a lineage you
+are born into, and this one names a way of moving through the world, which is why the same word
+fits a Tushara nomad girl, a whale-blimp commander and a god in a mortal frame. Six holders across
+four eras, the largest culture after `harappan`.
+
+`narmada_survivor` was dropped -- invented for exactly one character who no longer holds it.
+`tushara` and `trader` are kept with zero holders and a note each: they are real peoples named
+across the prose, and a declaration is not a headcount.
+
 ---
 
 ## Resolved

@@ -15,13 +15,13 @@ Each era below is canon as it stood then. An entity that names no epoch is prese
 | | dated to this era | timeless |
 |---|---:|---:|
 | regions |  | 7 |
-| places | 11 | 20 |
-| settlements |  | 2 |
-| characters | 5 |  |
+| places | 19 | 9 |
+| settlements |  | 1 |
+| characters | 8 |  |
 | factions |  | 3 |
 | events | 8 |  |
-| artifacts |  | 4 |
-| mythology |  | 8 |
+| artifacts |  | 5 |
+| mythology |  | 9 |
 | fauna |  | 257 |
 | flora |  | 90 |
 
@@ -30,18 +30,18 @@ Each era below is canon as it stood then. An entity that names no epoch is prese
 ```mermaid
 graph TD
     E0["The Curse of the Hollow Trees"]
-    E1["The Fang vs. Scale Wars"]
-    E2["The Domestication of the Fang Vanguard"]
-    E3["The Asura Gondwana Intervention"]
-    E4["The Great Devolvement"]
-    E5["The Turning of Kunti Against the Seedbearer"]
-    E6["The Planting of the Moon-Seed"]
-    E7["The Establishment of the Womb Rites"]
-    E0 --> E6
-    E1 --> E3
+    E1["The Turning of Kunti Against the Seedbearer"]
+    E2["The Planting of the Moon-Seed"]
+    E3["The Establishment of the Womb Rites"]
+    E4["The First Move of the Chess of Fate"]
+    E5["The Fang vs. Scale Wars"]
+    E6["The Domestication of the Fang Vanguard"]
+    E7["The Asura Gondwana Intervention"]
+    E0 --> E2
     E1 --> E2
     E2 --> E3
-    E3 --> E4
+    E4 --> E5
+    E5 --> E7
     E5 --> E6
     E6 --> E7
 ```
@@ -59,13 +59,13 @@ graph TD
 | | dated to this era | timeless |
 |---|---:|---:|
 | regions |  | 7 |
-| places | 11 | 20 |
-| settlements |  | 2 |
+| places | 20 | 9 |
+| settlements |  | 1 |
 | characters | 7 |  |
 | factions |  | 3 |
-| events | 3 |  |
-| artifacts |  | 4 |
-| mythology |  | 8 |
+| events | 5 |  |
+| artifacts |  | 5 |
+| mythology |  | 9 |
 | fauna |  | 257 |
 | flora |  | 90 |
 
@@ -75,15 +75,17 @@ graph TD
 graph TD
     E0["The Battle of Mohenjodaro"]
     E1["Forging of the Dragon’s Spine (sample)"]
-    E2["Shadow Pact of Saraswati"]
-    E0 --> E2
+    E2["The Great Devolvement"]
+    E3["Shadow Pact of Saraswati"]
+    E4["The Primordial Union under the Asura Planet"]
+    E0 --> E3
 ```
 
 ### Map
 
 ![Map of Deep Antiquity](atlas/epoch_deep_antiquity.svg)
 
-6 region(s) traced, 8 place(s) plotted. [Open the SVG](atlas/epoch_deep_antiquity.svg)
+6 region(s) traced, 17 place(s) plotted. [Open the SVG](atlas/epoch_deep_antiquity.svg)
 
 ## Era of Human Migrations
 
@@ -94,13 +96,13 @@ graph TD
 | | dated to this era | timeless |
 |---|---:|---:|
 | regions |  | 7 |
-| places | 16 | 20 |
-| settlements |  | 2 |
+| places | 25 | 9 |
+| settlements |  | 1 |
 | characters | 11 |  |
 | factions |  | 3 |
-| events | 7 |  |
-| artifacts |  | 4 |
-| mythology |  | 8 |
+| events | 6 |  |
+| artifacts |  | 5 |
+| mythology |  | 9 |
 | fauna |  | 257 |
 | flora |  | 90 |
 
@@ -114,7 +116,6 @@ graph TD
     E3["Opening of the Naraka Lok Portal"]
     E4["The Narmada Apothecary Herb Quest"]
     E5["The Retreat of Owlman"]
-    E6["The Primordial Union under the Asura Planet"]
     E1 --> E3
     E2 --> E5
     E3 --> E4
@@ -124,7 +125,7 @@ graph TD
 
 ![Map of Era of Human Migrations](atlas/epoch_migrations.svg)
 
-6 region(s) traced, 13 place(s) plotted. [Open the SVG](atlas/epoch_migrations.svg)
+6 region(s) traced, 22 place(s) plotted. [Open the SVG](atlas/epoch_migrations.svg)
 
 ## Civilization Dawn (Lothal Era)
 
@@ -135,13 +136,13 @@ graph TD
 | | dated to this era | timeless |
 |---|---:|---:|
 | regions |  | 7 |
-| places | 17 | 20 |
-| settlements |  | 2 |
+| places | 28 | 9 |
+| settlements | 1 | 1 |
 | characters | 27 |  |
 | factions |  | 3 |
 | events | 12 |  |
-| artifacts |  | 4 |
-| mythology |  | 8 |
+| artifacts |  | 5 |
+| mythology |  | 9 |
 | fauna |  | 257 |
 | flora |  | 90 |
 
@@ -180,7 +181,7 @@ graph TD
 
 ![Map of Civilization Dawn (Lothal Era)](atlas/epoch_civilization_dawn.svg)
 
-6 region(s) traced, 13 place(s) plotted. [Open the SVG](atlas/epoch_civilization_dawn.svg)
+6 region(s) traced, 25 place(s) plotted. [Open the SVG](atlas/epoch_civilization_dawn.svg)
 
 ## Current Era (Age of Machinery)
 
@@ -191,13 +192,13 @@ graph TD
 | | dated to this era | timeless |
 |---|---:|---:|
 | regions |  | 7 |
-| places | 18 | 20 |
-| settlements |  | 2 |
+| places | 30 | 9 |
+| settlements | 1 | 1 |
 | characters | 6 |  |
 | factions |  | 3 |
 | events | 4 |  |
-| artifacts |  | 4 |
-| mythology |  | 8 |
+| artifacts |  | 5 |
+| mythology |  | 9 |
 | fauna |  | 257 |
 | flora |  | 90 |
 
@@ -217,7 +218,7 @@ graph TD
 
 ![Map of Current Era (Age of Machinery)](atlas/epoch_current.svg)
 
-6 region(s) traced, 13 place(s) plotted. [Open the SVG](atlas/epoch_current.svg)
+6 region(s) traced, 26 place(s) plotted. [Open the SVG](atlas/epoch_current.svg)
 
 ## Post-Cataclysmic Era (The Great Shattering)
 
@@ -228,16 +229,16 @@ graph TD
 | | dated to this era | timeless |
 |---|---:|---:|
 | regions |  | 7 |
-| places | 12 | 20 |
-| settlements |  | 2 |
+| places | 23 | 9 |
+| settlements | 1 | 1 |
 | field maps | 3 |  |
 | points of interest | 20 |  |
 | characters | 1 |  |
 | npcs | 8 |  |
 | factions |  | 3 |
 | events | 1 |  |
-| artifacts |  | 4 |
-| mythology |  | 8 |
+| artifacts |  | 5 |
+| mythology |  | 9 |
 | discoveries | 31 |  |
 | field questions | 7 |  |
 | vocabulary | 8 |  |
@@ -255,4 +256,4 @@ graph TD
 
 ![Map of Post-Cataclysmic Era (The Great Shattering)](atlas/epoch_post_cataclysm.svg)
 
-0 region(s) traced, 11 place(s) plotted. [Open the SVG](atlas/epoch_post_cataclysm.svg)
+0 region(s) traced, 23 place(s) plotted. [Open the SVG](atlas/epoch_post_cataclysm.svg)

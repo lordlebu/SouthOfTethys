@@ -3,6 +3,15 @@
   "type": "place",
   "name": "Godavari Rainforests",
   "kind": "frontier",
+  "epochs": [
+    "epoch_prehistoric",
+    "epoch_deep_antiquity",
+    "epoch_migrations",
+    "epoch_civilization_dawn",
+    "epoch_current",
+    "epoch_post_cataclysm"
+  ],
+  "within": "place_deccan",
   "continent": "jambhudweepa",
   "description": "The dense, ancient tropical wetlands surrounding the mouth of the Godavari River in southern Jambhudweepa.",
   "notes": "A pristine rainforest domain filled with spice-root, wild yam-beasts, and crocodile spirits. It was the ancestral seat of the Vanaric clans and the birthplace of the sacred Bhuta-Kāna tree.",

@@ -1,0 +1,21 @@
+{
+  "id": "character_dyaus_pitar",
+  "type": "character",
+  "name": "Dyauṣ Pitar",
+  "epithets": [
+    "The Sky Father",
+    "The Arbiter"
+  ],
+  "culture": "celestial",
+  "species": "deity",
+  "status": "mythic",
+  "epoch": "epoch_prehistoric",
+  "roles": [
+    "arbiter"
+  ],
+  "notes": "The storm-washed firmament, who stopped the other two from boiling the atmosphere away by binding their quarrel to a board. He traced sixty-four celestial coordinates across the face of the world and ruled that neither could strike directly again -- every action a move, every move a trade.",
+  "canon": "primary",
+  "sources": [
+    "dump/the-chess-of-fate-mythology.md"
+  ]
+}

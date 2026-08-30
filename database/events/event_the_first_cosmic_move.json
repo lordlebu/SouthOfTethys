@@ -1,0 +1,30 @@
+{
+  "id": "event_the_first_cosmic_move",
+  "type": "event",
+  "title": "The First Move of the Chess of Fate",
+  "epoch": "epoch_prehistoric",
+  "participants": [
+    "character_varuna_of_the_deep",
+    "character_indra",
+    "character_dyaus_pitar"
+  ],
+  "location": "place_shattered_sea_skyways",
+  "predecessors": [],
+  "successors": [
+    "event_fang_vs_scale_wars"
+  ],
+  "causes": [
+    "Indra's strike with his copper-lotus spear to shatter the continuous frozen sheet of the earth and release subterranean riverbeds",
+    "Varuṇa's counter-flooding of the tectonic rifts with lightning-charged, sub-zero waters to protect cosmic Ṛta"
+  ],
+  "outcomes": [
+    "The official opening of the Tethys Sea and the division of the landmass into the isolated continent of Jambhudweepa",
+    "The intervention of Dyauṣ Pitar to bound their raw, chaotic forces into the rules of the sixty-four coordinate board"
+  ],
+  "summary": "Indra strikes the first tectonic blow to fracture Gondwana, which Varuṇa quickly floods with the abyssal Tethys waters. This first clash is bounded by Dyauṣ Pitar into the sixty-four coordinate game board.",
+  "canon": "primary",
+  "sources": [
+    "Vedic Mythology and Version Controlled Tectonic Drift",
+    "Compendium of Celestial Beings and Primordial Entities"
+  ]
+}

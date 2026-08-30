@@ -17,7 +17,10 @@ draws, unconnected, rather than being left out.
 ```mermaid
 graph LR
   subgraph grp_celestial["celestial (culture)"]
+    character_dyaus_pitar("Dyauṣ Pitar")
+    character_indra("Indra")
     character_kunti("Kunti")
+    character_varuna_of_the_deep("Varuṇa of the Deep")
   end
   subgraph grp_maya_born["maya_born (culture)"]
     character_commander_vaishura("Commander Vaishura")
@@ -36,27 +39,31 @@ graph LR
   event_asura_synapsid_domestication["The Domestication of the Fang Vanguard"]
   event_curse_of_the_hollow_trees["The Curse of the Hollow Trees"]
   event_fang_vs_scale_wars["The Fang vs. Scale Wars"]
-  event_great_devolvement_vanaras["The Great Devolvement"]
   event_jambanson_moonseed_planting["The Planting of the Moon-Seed"]
   event_kunti_against_jambanson["The Turning of Kunti Against the Seedbearer"]
   event_ritual_of_jambenson["The Establishment of the Womb Rites"]
+  event_the_first_cosmic_move["The First Move of the Chess of Fate"]
   character_ammonite_man --> event_asura_gondwana_intervention
   character_ammonite_man --> event_asura_synapsid_domestication
   character_ammonite_man --> event_fang_vs_scale_wars
   character_commander_vaishura --> event_asura_synapsid_domestication
   character_daedrasura --> event_kunti_against_jambanson
+  character_dyaus_pitar --> event_the_first_cosmic_move
+  character_indra --> event_the_first_cosmic_move
   character_jambanson --> event_curse_of_the_hollow_trees
   character_jambanson --> event_jambanson_moonseed_planting
   character_jambanson --> event_kunti_against_jambanson
   character_jambanson --> event_ritual_of_jambenson
   character_kunti --> event_kunti_against_jambanson
-  character_lionman --> event_great_devolvement_vanaras
   character_narmada_man --> event_jambanson_moonseed_planting
   character_owlman --> event_asura_gondwana_intervention
   character_owlman --> event_fang_vs_scale_wars
+  character_varuna_of_the_deep --> event_the_first_cosmic_move
 ```
 
-8 character(s), 8 event(s) they appear in, 4 group(s).
+11 character(s), 8 event(s) they appear in, 4 group(s).
+
+**Present in no event of this era:** Lionman.
 
 ## Deep Antiquity
 
@@ -68,6 +75,9 @@ graph LR
   subgraph grp_asura_hybrid["asura_hybrid (culture)"]
     character_asura_tainted_princess("Asura-Tainted Princess")
   end
+  subgraph grp_celestial["celestial (culture)"]
+    character_meditating_apsara("The Meditating Apsara")
+  end
   subgraph grp_harappan["harappan (culture)"]
     character_masked_chief_mohenjodaro("The Masked Chief of Mohenjodaro")
   end
@@ -78,17 +88,25 @@ graph LR
     character_narmada_man("Narmada Man")
     character_owlman("Owlman")
   end
+  subgraph grp_vanara["vanara (culture)"]
+    character_lionman("Lionman")
+  end
   event_battle_of_mohenjodaro["The Battle of Mohenjodaro"]
+  event_great_devolvement_vanaras["The Great Devolvement"]
   event_shadow_pact["Shadow Pact of Saraswati"]
+  event_union_narmada_man_apsara["The Primordial Union under the Asura Planet"]
   character_asura_tainted_princess --> event_shadow_pact
+  character_lionman --> event_great_devolvement_vanaras
   character_manjalaya --> event_shadow_pact
   character_masked_chief_mohenjodaro --> event_battle_of_mohenjodaro
+  character_meditating_apsara --> event_union_narmada_man_apsara
+  character_narmada_man --> event_union_narmada_man_apsara
   character_varunesh --> event_shadow_pact
 ```
 
-6 character(s), 2 event(s) they appear in, 5 group(s).
+8 character(s), 4 event(s) they appear in, 7 group(s).
 
-**Present in no event of this era:** Narmada Man, Owlman.
+**Present in no event of this era:** Owlman.
 
 ## Era of Human Migrations
 
@@ -96,6 +114,9 @@ graph LR
 graph LR
   subgraph grp_celestial["celestial (culture)"]
     character_meditating_apsara("The Meditating Apsara")
+  end
+  subgraph grp_explorer["explorer (culture)"]
+    character_guyuk("Guyuk")
   end
   subgraph grp_harappan["harappan (culture)"]
     character_orek("Orek")
@@ -112,9 +133,6 @@ graph LR
     character_narmada_man("Narmada Man")
     character_owlman("Owlman")
   end
-  subgraph grp_tushara["tushara (culture)"]
-    character_guyuk("Guyuk")
-  end
   subgraph grp_vedda["vedda (culture)"]
     character_bela("Bela")
     character_ranu("Ranu")
@@ -128,17 +146,14 @@ graph LR
   event_jharwa_first_wave_shell_pact["The Jharwa First-Wave & The Shell Pact"]
   event_naraka_portal["Opening of the Naraka Lok Portal"]
   event_retreat_of_owlman["The Retreat of Owlman"]
-  event_union_narmada_man_apsara["The Primordial Union under the Asura Planet"]
   character_ammonite_man --> event_jharwa_first_wave_shell_pact
   character_bela --> event_aravali_massacre
   character_guyuk --> event_botai_cattle_raid
   character_guyuk --> event_guyuk_narmada_apothecary_quest
   character_guyuk --> event_naraka_portal
   character_jharwa_elder_repa --> event_jharwa_first_wave_shell_pact
-  character_meditating_apsara --> event_union_narmada_man_apsara
   character_meera --> event_aravali_massacre
   character_narmada_man --> event_guyuk_narmada_apothecary_quest
-  character_narmada_man --> event_union_narmada_man_apsara
   character_nirigili --> event_botai_cattle_raid
   character_nirigili --> event_guyuk_narmada_apothecary_quest
   character_nirigili --> event_naraka_portal
@@ -150,7 +165,9 @@ graph LR
   character_vara_ma --> event_aravali_massacre
 ```
 
-14 character(s), 7 event(s) they appear in, 7 group(s).
+14 character(s), 6 event(s) they appear in, 7 group(s).
+
+**Present in no event of this era:** The Meditating Apsara.
 
 ## Civilization Dawn (Lothal Era)
 
@@ -158,6 +175,11 @@ graph LR
 graph LR
   subgraph grp_cosmic["cosmic (culture)"]
     character_radiant_gentleman("The Radiant Gentleman")
+  end
+  subgraph grp_explorer["explorer (culture)"]
+    character_guyuk("Guyuk")
+    character_rathak("Rathak")
+    character_ruvan("Ruvan")
   end
   subgraph grp_harappan_kia["harappan_kia (culture)"]
     character_sarita("Sarita")
@@ -177,22 +199,13 @@ graph LR
   subgraph grp_tamralinga["tamralinga (culture)"]
     character_vijaya("Vijaya")
   end
-  subgraph grp_trader["trader (culture)"]
-    character_rathak("Rathak")
-  end
   subgraph grp_tuli["tuli (culture)"]
     character_korran_driftwood_seer("Korran Driftwood Seer")
     character_lirael_wavecaller("Lirael Wavecaller")
     character_sirael_thorncurrent("Sirael Thorncurrent")
   end
-  subgraph grp_tushara["tushara (culture)"]
-    character_guyuk("Guyuk")
-  end
   subgraph grp_unknown["unknown (culture)"]
     character_the_traveler("The Traveler")
-  end
-  subgraph grp_wanderer["wanderer (culture)"]
-    character_ruvan("Ruvan")
   end
   subgraph grp_yaksha["yaksha (culture)"]
     character_kubera("Kubera")
@@ -280,7 +293,7 @@ graph LR
   character_varna --> event_mask_retrieval
 ```
 
-29 character(s), 12 event(s) they appear in, 16 group(s).
+29 character(s), 12 event(s) they appear in, 14 group(s).
 
 **Present in no event of this era:** Daedrasura, Kubera, Lira, Ruvan, Vijaya, Yaksha Envoy.
 
@@ -289,10 +302,10 @@ graph LR
 ```mermaid
 graph LR
   subgraph grp_explorer["explorer (culture)"]
+    character_varuna("Captain Varuna")
     character_mitra("Mitra")
   end
   subgraph grp_narmada_scholar["narmada_scholar (culture)"]
-    character_varuna("Captain Varuna")
     character_digha_jani("Digha Jani")
     character_onko("Onko")
     character_shakariman("Shakariman")
@@ -324,13 +337,9 @@ graph LR
 ```mermaid
 graph LR
   subgraph grp_explorer["explorer (culture)"]
-    character_mitra("Mitra")
-  end
-  subgraph grp_narmada_scholar["narmada_scholar (culture)"]
     character_varuna("Captain Varuna")
-  end
-  subgraph grp_narmada_survivor["narmada_survivor (culture)"]
     character_guyuk_reborn("Guyuk the Seed-Gleaner")
+    character_mitra("Mitra")
   end
   event_survival_train_solarpunk["The Solarpunk Odyssey of the Ark"]
   character_guyuk_reborn --> event_survival_train_solarpunk
@@ -338,4 +347,4 @@ graph LR
   character_varuna --> event_survival_train_solarpunk
 ```
 
-3 character(s), 1 event(s) they appear in, 3 group(s).
+3 character(s), 1 event(s) they appear in, 1 group(s).

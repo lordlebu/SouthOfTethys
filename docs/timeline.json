@@ -28,130 +28,6 @@
     ]
   },
   {
-    "id": "event_fang_vs_scale_wars",
-    "type": "event",
-    "title": "The Fang vs. Scale Wars",
-    "epoch": "epoch_prehistoric",
-    "participants": [
-      "character_ammonite_man",
-      "character_owlman"
-    ],
-    "location": "place_gondwana",
-    "predecessors": [],
-    "successors": [
-      "event_asura_gondwana_intervention",
-      "event_asura_synapsid_domestication"
-    ],
-    "causes": [
-      "ecological_competition",
-      "gondwana_tectonic_migration"
-    ],
-    "outcomes": [
-      "synapsid_diapsid_niche_split",
-      "mammalian_reptilian_territories_set"
-    ],
-    "summary": "A deep-time evolutionary conflict on Gondwana: ancestral synapsids, the Fang, against emerging diapsid archosaurs, the Scale, for ecological dominance. The gorgonopsids held the fern forests; the archosaurs took the volcanic highlands and the marshy deltas.",
-    "canon": "primary",
-    "sources": [
-      "dump/fang-vs-scale-wars.md",
-      "AI_CONTEXT.md"
-    ]
-  },
-  {
-    "id": "event_asura_synapsid_domestication",
-    "type": "event",
-    "title": "The Domestication of the Fang Vanguard",
-    "epoch": "epoch_prehistoric",
-    "participants": [
-      "character_commander_vaishura",
-      "character_ammonite_man"
-    ],
-    "location": "region_ganges_lava_sea",
-    "predecessors": [
-      "event_fang_vs_scale_wars"
-    ],
-    "successors": [
-      "event_asura_gondwana_intervention"
-    ],
-    "causes": [
-      "The collapse of advanced synapsids following the Permian-Triassic extinction event",
-      "The Asura need for resilient pack animals and war cavalry capable of carrying heavy armaments"
-    ],
-    "outcomes": [
-      "The selective breeding and genetic corruption of surviving Permian cynodonts and gorgonopsids",
-      "The introduction of 'Fang' draft animals through the Dwarka Gate, intensifying the war against native diapsids"
-    ],
-    "summary": "Fascinated by the ancestral metabolic traits of surviving synapsids, Commander Vaishura selectively breeds and weaponizes these Permian beasts, deploying them through the Dwarka Gate as cavalry against the native diapsids.",
-    "canon": "primary",
-    "sources": [
-      "Gondwana: The Asura Intervention and the Fang Wars"
-    ]
-  },
-  {
-    "id": "event_asura_gondwana_intervention",
-    "type": "event",
-    "title": "The Asura Gondwana Intervention",
-    "epoch": "epoch_prehistoric",
-    "participants": [
-      "character_ammonite_man",
-      "character_owlman"
-    ],
-    "location": "region_ganges_lava_sea",
-    "predecessors": [
-      "event_fang_vs_scale_wars",
-      "event_asura_synapsid_domestication"
-    ],
-    "successors": [
-      "event_great_devolvement_vanaras"
-    ],
-    "causes": [
-      "primordial_rift_opens",
-      "asura_loka_radiation_spill"
-    ],
-    "outcomes": [
-      "feathers_evolve_as_thermal_vents",
-      "avian_dinosaurids_arise",
-      "synapsid_lineages_corrupted",
-      "rift_stabilises_as_ganges_lava_sea"
-    ],
-    "summary": "An unstabilised rift into Asura Loka floods the Gondwana battlefield with mutagenic energy. The diapsids shed the heat as feathers and become the first avian dinosaurids; some synapsid predators degenerate into the shadow-corrupted lineages the Tendua descends from. The rift hardens into the Ganges Lava Sea.",
-    "canon": "primary",
-    "sources": [
-      "dump/fang-vs-scale-wars.md",
-      "AI_CONTEXT.md"
-    ]
-  },
-  {
-    "id": "event_great_devolvement_vanaras",
-    "type": "event",
-    "title": "The Great Devolvement",
-    "epoch": "epoch_prehistoric",
-    "participants": [
-      "character_lionman"
-    ],
-    "location": "place_nilgiri_canopy",
-    "predecessors": [
-      "event_asura_gondwana_intervention"
-    ],
-    "successors": [
-      "event_jharwa_first_wave_shell_pact"
-    ],
-    "causes": [
-      "Severe climate cooling fracturing the ancient deciduous canopy of southern Jambhudweepa",
-      "The drying of the Nilgiri canopy forcing the Vanaras onto the open savanna"
-    ],
-    "outcomes": [
-      "Loss of higher fire-mastery and tool use in the majority of the Vanara populations",
-      "Survival of regressed Vanara descendants as modern monkeys and reclusive outliers",
-      "The migration of the solar-guided tribes to the central plains under Lionman's pathfinding"
-    ],
-    "summary": "As global climate shifts fracture the southern tree-cities of the Nilgiri Canopy, the hyper-intelligent Vanara civilization begins to collapse and devolve. The sun-spirit Lionman manifests to guide the scattered, regressed tribes safely across the savanna.",
-    "canon": "primary",
-    "sources": [
-      "Ancient Palm-Leaf Manuscripts of Narmada University"
-    ]
-  },
-  {
     "id": "event_kunti_against_jambanson",
     "type": "event",
     "title": "The Turning of Kunti Against the Seedbearer",
@@ -238,6 +114,132 @@
     ]
   },
   {
+    "id": "event_the_first_cosmic_move",
+    "type": "event",
+    "title": "The First Move of the Chess of Fate",
+    "epoch": "epoch_prehistoric",
+    "participants": [
+      "character_varuna_of_the_deep",
+      "character_indra",
+      "character_dyaus_pitar"
+    ],
+    "location": "place_shattered_sea_skyways",
+    "predecessors": [],
+    "successors": [
+      "event_fang_vs_scale_wars"
+    ],
+    "causes": [
+      "Indra's strike with his copper-lotus spear to shatter the continuous frozen sheet of the earth and release subterranean riverbeds",
+      "Varu\u1e47a's counter-flooding of the tectonic rifts with lightning-charged, sub-zero waters to protect cosmic \u1e5ata"
+    ],
+    "outcomes": [
+      "The official opening of the Tethys Sea and the division of the landmass into the isolated continent of Jambhudweepa",
+      "The intervention of Dyau\u1e63 Pitar to bound their raw, chaotic forces into the rules of the sixty-four coordinate board"
+    ],
+    "summary": "Indra strikes the first tectonic blow to fracture Gondwana, which Varu\u1e47a quickly floods with the abyssal Tethys waters. This first clash is bounded by Dyau\u1e63 Pitar into the sixty-four coordinate game board.",
+    "canon": "primary",
+    "sources": [
+      "Vedic Mythology and Version Controlled Tectonic Drift",
+      "Compendium of Celestial Beings and Primordial Entities"
+    ]
+  },
+  {
+    "id": "event_fang_vs_scale_wars",
+    "type": "event",
+    "title": "The Fang vs. Scale Wars",
+    "epoch": "epoch_prehistoric",
+    "participants": [
+      "character_ammonite_man",
+      "character_owlman"
+    ],
+    "location": "place_gondwana",
+    "predecessors": [
+      "event_the_first_cosmic_move"
+    ],
+    "successors": [
+      "event_asura_gondwana_intervention",
+      "event_asura_synapsid_domestication"
+    ],
+    "causes": [
+      "ecological_competition",
+      "gondwana_tectonic_migration"
+    ],
+    "outcomes": [
+      "synapsid_diapsid_niche_split",
+      "mammalian_reptilian_territories_set"
+    ],
+    "summary": "A deep-time evolutionary conflict on Gondwana: ancestral synapsids, the Fang, against emerging diapsid archosaurs, the Scale, for ecological dominance. The gorgonopsids held the fern forests; the archosaurs took the volcanic highlands and the marshy deltas.",
+    "canon": "primary",
+    "sources": [
+      "dump/fang-vs-scale-wars.md",
+      "AI_CONTEXT.md"
+    ]
+  },
+  {
+    "id": "event_asura_synapsid_domestication",
+    "type": "event",
+    "title": "The Domestication of the Fang Vanguard",
+    "epoch": "epoch_prehistoric",
+    "participants": [
+      "character_commander_vaishura",
+      "character_ammonite_man"
+    ],
+    "location": "region_ganges_lava_sea",
+    "predecessors": [
+      "event_fang_vs_scale_wars"
+    ],
+    "successors": [
+      "event_asura_gondwana_intervention"
+    ],
+    "causes": [
+      "The collapse of advanced synapsids following the Permian-Triassic extinction event",
+      "The Asura need for resilient pack animals and war cavalry capable of carrying heavy armaments"
+    ],
+    "outcomes": [
+      "The selective breeding and genetic corruption of surviving Permian cynodonts and gorgonopsids",
+      "The introduction of 'Fang' draft animals through the Dwarka Gate, intensifying the war against native diapsids"
+    ],
+    "summary": "Fascinated by the ancestral metabolic traits of surviving synapsids, Commander Vaishura selectively breeds and weaponizes these Permian beasts, deploying them through the Dwarka Gate as cavalry against the native diapsids.",
+    "canon": "primary",
+    "sources": [
+      "Gondwana: The Asura Intervention and the Fang Wars"
+    ]
+  },
+  {
+    "id": "event_asura_gondwana_intervention",
+    "type": "event",
+    "title": "The Asura Gondwana Intervention",
+    "epoch": "epoch_prehistoric",
+    "participants": [
+      "character_ammonite_man",
+      "character_owlman"
+    ],
+    "location": "region_ganges_lava_sea",
+    "predecessors": [
+      "event_fang_vs_scale_wars",
+      "event_asura_synapsid_domestication"
+    ],
+    "successors": [
+      "event_great_devolvement_vanaras"
+    ],
+    "causes": [
+      "primordial_rift_opens",
+      "asura_loka_radiation_spill"
+    ],
+    "outcomes": [
+      "feathers_evolve_as_thermal_vents",
+      "avian_dinosaurids_arise",
+      "synapsid_lineages_corrupted",
+      "rift_stabilises_as_ganges_lava_sea"
+    ],
+    "summary": "An unstabilised rift into Asura Loka floods the Gondwana battlefield with mutagenic energy. The diapsids shed the heat as feathers and become the first avian dinosaurids; some synapsid predators degenerate into the shadow-corrupted lineages the Tendua descends from. The rift hardens into the Ganges Lava Sea.",
+    "canon": "primary",
+    "sources": [
+      "dump/fang-vs-scale-wars.md",
+      "AI_CONTEXT.md"
+    ]
+  },
+  {
     "id": "event_battle_of_mohenjodaro",
     "type": "event",
     "title": "The Battle of Mohenjodaro",
@@ -288,6 +290,36 @@
     ]
   },
   {
+    "id": "event_great_devolvement_vanaras",
+    "type": "event",
+    "title": "The Great Devolvement",
+    "epoch": "epoch_deep_antiquity",
+    "participants": [
+      "character_lionman"
+    ],
+    "location": "place_nilgiri_canopy",
+    "predecessors": [
+      "event_asura_gondwana_intervention"
+    ],
+    "successors": [
+      "event_jharwa_first_wave_shell_pact"
+    ],
+    "causes": [
+      "Severe climate cooling fracturing the ancient deciduous canopy of southern Jambhudweepa",
+      "The drying of the Nilgiri canopy forcing the Vanaras onto the open savanna"
+    ],
+    "outcomes": [
+      "Loss of higher fire-mastery and tool use in the majority of the Vanara populations",
+      "Survival of regressed Vanara descendants as modern monkeys and reclusive outliers",
+      "The migration of the solar-guided tribes to the central plains under Lionman's pathfinding"
+    ],
+    "summary": "As global climate shifts fracture the southern tree-cities of the Nilgiri Canopy, the hyper-intelligent Vanara civilization begins to collapse and devolve. The sun-spirit Lionman manifests to guide the scattered, regressed tribes safely across the savanna.",
+    "canon": "primary",
+    "sources": [
+      "Ancient Palm-Leaf Manuscripts of Narmada University"
+    ]
+  },
+  {
     "id": "event_shadow_pact",
     "type": "event",
     "title": "Shadow Pact of Saraswati",
@@ -316,6 +348,35 @@
     "canon": "primary",
     "sources": [
       "AI_CONTEXT.md"
+    ]
+  },
+  {
+    "id": "event_union_narmada_man_apsara",
+    "type": "event",
+    "title": "The Primordial Union under the Asura Planet",
+    "epoch": "epoch_deep_antiquity",
+    "participants": [
+      "character_narmada_man",
+      "character_meditating_apsara"
+    ],
+    "location": "place_narmada_valley_outpost",
+    "predecessors": [],
+    "successors": [],
+    "causes": [
+      "A cataclysmic, world-altering rainfall and rising floodwaters in the Narmada Valley",
+      "The ominous orbital approach of a sentient Asura Planet in the sky"
+    ],
+    "outcomes": [
+      "The union between the primeval Narmada Man and the meditating celestial Apsara",
+      "The conquest of the wild lands of beasts and vanaras using her celestial strength",
+      "The birth of a shimmering, Asura-tainted egg, which introduced a demonic lineage into Jambhudweepa",
+      "The Apsara's ascension to the moon, abandoning the Narmada Man to his mortal grief"
+    ],
+    "summary": "During a cataclysmic flood beneath the glow of an approaching Asura planet, the primeval King Narmada Man encounters and unites with a meditating celestial Apsara. Their union grants him the power to conquer the valley but ends in tragedy when she ascends to the moon, leaving behind an Asura-tainted egg.",
+    "canon": "primary",
+    "sources": [
+      "The Narmada Man: Primordial King of the Riverbones",
+      "Narmada Valley: The Primordial Gateway of Jambhudweepa"
     ]
   },
   {
@@ -503,35 +564,6 @@
     "sources": [
       "The Stone Scrolls of Dwarka Fortress",
       "Narmada Historical Surveys"
-    ]
-  },
-  {
-    "id": "event_union_narmada_man_apsara",
-    "type": "event",
-    "title": "The Primordial Union under the Asura Planet",
-    "epoch": "epoch_migrations",
-    "participants": [
-      "character_narmada_man",
-      "character_meditating_apsara"
-    ],
-    "location": "place_narmada_valley_outpost",
-    "predecessors": [],
-    "successors": [],
-    "causes": [
-      "A cataclysmic, world-altering rainfall and rising floodwaters in the Narmada Valley",
-      "The ominous orbital approach of a sentient Asura Planet in the sky"
-    ],
-    "outcomes": [
-      "The union between the primeval Narmada Man and the meditating celestial Apsara",
-      "The conquest of the wild lands of beasts and vanaras using her celestial strength",
-      "The birth of a shimmering, Asura-tainted egg, which introduced a demonic lineage into Jambhudweepa",
-      "The Apsara's ascension to the moon, abandoning the Narmada Man to his mortal grief"
-    ],
-    "summary": "During a cataclysmic flood beneath the glow of an approaching Asura planet, the primeval King Narmada Man encounters and unites with a meditating celestial Apsara. Their union grants him the power to conquer the valley but ends in tragedy when she ascends to the moon, leaving behind an Asura-tainted egg.",
-    "canon": "primary",
-    "sources": [
-      "The Narmada Man: Primordial King of the Riverbones",
-      "Narmada Valley: The Primordial Gateway of Jambhudweepa"
     ]
   },
   {

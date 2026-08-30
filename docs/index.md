@@ -9,26 +9,6 @@ _Generated from `database/events/`.
 **Summary:** During a cataclysmic ecological collapse in the Godavari rainforests, the Vanara mystic Jambanson sets off on an epic upriver quest to find the Saraswati Spiceroot, gathering dreamspace knowledge and a sacred moon-seed to save his homeland.
 **Participants:** character_jambanson
 
-## The Fang vs. Scale Wars
-**Epoch:** Prehistoric Foundations & Age of Vanaras
-**Summary:** A deep-time evolutionary conflict on Gondwana: ancestral synapsids, the Fang, against emerging diapsid archosaurs, the Scale, for ecological dominance. The gorgonopsids held the fern forests; the archosaurs took the volcanic highlands and the marshy deltas.
-**Participants:** character_ammonite_man, character_owlman
-
-## The Domestication of the Fang Vanguard
-**Epoch:** Prehistoric Foundations & Age of Vanaras
-**Summary:** Fascinated by the ancestral metabolic traits of surviving synapsids, Commander Vaishura selectively breeds and weaponizes these Permian beasts, deploying them through the Dwarka Gate as cavalry against the native diapsids.
-**Participants:** character_commander_vaishura, character_ammonite_man
-
-## The Asura Gondwana Intervention
-**Epoch:** Prehistoric Foundations & Age of Vanaras
-**Summary:** An unstabilised rift into Asura Loka floods the Gondwana battlefield with mutagenic energy. The diapsids shed the heat as feathers and become the first avian dinosaurids; some synapsid predators degenerate into the shadow-corrupted lineages the Tendua descends from. The rift hardens into the Ganges Lava Sea.
-**Participants:** character_ammonite_man, character_owlman
-
-## The Great Devolvement
-**Epoch:** Prehistoric Foundations & Age of Vanaras
-**Summary:** As global climate shifts fracture the southern tree-cities of the Nilgiri Canopy, the hyper-intelligent Vanara civilization begins to collapse and devolve. The sun-spirit Lionman manifests to guide the scattered, regressed tribes safely across the savanna.
-**Participants:** character_lionman
-
 ## The Turning of Kunti Against the Seedbearer
 **Epoch:** Prehistoric Foundations & Age of Vanaras
 **Summary:** Weaponised by the Asura guru Shukradeva and by Daedrasura, the celestial nymph Kunti is turned against Jambanson and made to disrupt his ecological and ancestral memory-seed magic. She is the instrument and not the author of it, which is the whole of her tragedy: the Land of Myst remembers her as the tricked goddess.
@@ -44,6 +24,26 @@ _Generated from `database/events/`.
 **Summary:** To protect early human lineages from Asura corruption, Jambanson designs a highly ritualized, male-led womb purification exorcism using sacred resins, stone yonis, and acoustic hymns to purge demonic influence.
 **Participants:** character_jambanson
 
+## The First Move of the Chess of Fate
+**Epoch:** Prehistoric Foundations & Age of Vanaras
+**Summary:** Indra strikes the first tectonic blow to fracture Gondwana, which Varuṇa quickly floods with the abyssal Tethys waters. This first clash is bounded by Dyauṣ Pitar into the sixty-four coordinate game board.
+**Participants:** character_varuna_of_the_deep, character_indra, character_dyaus_pitar
+
+## The Fang vs. Scale Wars
+**Epoch:** Prehistoric Foundations & Age of Vanaras
+**Summary:** A deep-time evolutionary conflict on Gondwana: ancestral synapsids, the Fang, against emerging diapsid archosaurs, the Scale, for ecological dominance. The gorgonopsids held the fern forests; the archosaurs took the volcanic highlands and the marshy deltas.
+**Participants:** character_ammonite_man, character_owlman
+
+## The Domestication of the Fang Vanguard
+**Epoch:** Prehistoric Foundations & Age of Vanaras
+**Summary:** Fascinated by the ancestral metabolic traits of surviving synapsids, Commander Vaishura selectively breeds and weaponizes these Permian beasts, deploying them through the Dwarka Gate as cavalry against the native diapsids.
+**Participants:** character_commander_vaishura, character_ammonite_man
+
+## The Asura Gondwana Intervention
+**Epoch:** Prehistoric Foundations & Age of Vanaras
+**Summary:** An unstabilised rift into Asura Loka floods the Gondwana battlefield with mutagenic energy. The diapsids shed the heat as feathers and become the first avian dinosaurids; some synapsid predators degenerate into the shadow-corrupted lineages the Tendua descends from. The rift hardens into the Ganges Lava Sea.
+**Participants:** character_ammonite_man, character_owlman
+
 ## The Battle of Mohenjodaro
 **Epoch:** Deep Antiquity
 **Summary:** A devastating war between Sinauli traders and Northern Nagas fractures Mohenjodaro. Following the Harappan defeat, the Masked Chief surrenders his bone mask to a valiant champion, whose family adopts the emblem and flees south.
@@ -55,10 +55,20 @@ _Sample fixture — kept to exercise the tooling, not part of the story._
 **Summary:** Honan battles the deep-time dragon Gorvaxx. The beast is petrified rather than slain, forming the treacherous mountain pass known as the Dragon’s Spine.
 **Participants:** character_honan
 
+## The Great Devolvement
+**Epoch:** Deep Antiquity
+**Summary:** As global climate shifts fracture the southern tree-cities of the Nilgiri Canopy, the hyper-intelligent Vanara civilization begins to collapse and devolve. The sun-spirit Lionman manifests to guide the scattered, regressed tribes safely across the savanna.
+**Participants:** character_lionman
+
 ## Shadow Pact of Saraswati
 **Epoch:** Deep Antiquity
 **Summary:** Prince Varunesh slits an Indus unicorn and uses dark tantra through a Dwarka Gate to summon the Asura princess Manjalaya. Their union produces the immortal Asura-Tainted Princess.
 **Participants:** character_varunesh, character_asura_tainted_princess, character_manjalaya
+
+## The Primordial Union under the Asura Planet
+**Epoch:** Deep Antiquity
+**Summary:** During a cataclysmic flood beneath the glow of an approaching Asura planet, the primeval King Narmada Man encounters and unites with a meditating celestial Apsara. Their union grants him the power to conquer the valley but ends in tragedy when she ascends to the moon, leaving behind an Asura-tainted egg.
+**Participants:** character_narmada_man, character_meditating_apsara
 
 ## Aravali Massacre & Sanctuary
 **Epoch:** Era of Human Migrations
@@ -89,11 +99,6 @@ _Sample fixture — kept to exercise the tooling, not part of the story._
 **Epoch:** Era of Human Migrations
 **Summary:** As the horse-taming Vedda clans clear the central forests for pasture, the ancient avian guardian Owlman retreats deep into the Western Ghats. A reclusive group of Jharwa-Vanara outliers construct the first hidden tree-temples to protect his fading presence.
 **Participants:** character_owlman
-
-## The Primordial Union under the Asura Planet
-**Epoch:** Era of Human Migrations
-**Summary:** During a cataclysmic flood beneath the glow of an approaching Asura planet, the primeval King Narmada Man encounters and unites with a meditating celestial Apsara. Their union grants him the power to conquer the valley but ends in tragedy when she ascends to the moon, leaving behind an Asura-tainted egg.
-**Participants:** character_narmada_man, character_meditating_apsara
 
 ## The Final Voyage of the Kelpfang
 **Epoch:** Civilization Dawn (Lothal Era)

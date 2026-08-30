@@ -1,0 +1,21 @@
+{
+  "id": "character_indra",
+  "type": "character",
+  "name": "Indra",
+  "epithets": [
+    "The Thunder-Bearer",
+    "Wielder of the Copper-Lotus Spear"
+  ],
+  "culture": "celestial",
+  "species": "deity",
+  "status": "mythic",
+  "epoch": "epoch_prehistoric",
+  "roles": [
+    "player"
+  ],
+  "notes": "Storm god of thunder and tectonic upheaval, and the player who moves first. He struck the frozen sheet of the early world to release the subterranean rivers and let warm, kinetic life in, opening the magma rifts of the Ganges Lava Sea in the process. He also gave a nameless wanderer the secret of keeping fire, and later made him Agun.",
+  "canon": "primary",
+  "sources": [
+    "dump/the-chess-of-fate-mythology.md"
+  ]
+}
