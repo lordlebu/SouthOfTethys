@@ -1,0 +1,24 @@
+{
+  "id": "material_indigo_dye",
+  "type": "material",
+  "name": "Indigo",
+  "classes": [
+    "pigment"
+  ],
+  "won_from": [
+    "flora_indigo_wild",
+    "flora_sweet_indigo"
+  ],
+  "found_in": [
+    "plains",
+    "wetland",
+    "settlement"
+  ],
+  "rarity": "rare",
+  "notes": "Fermented in a vat until it stinks, then oxidised in the air. The cloth comes out green and turns blue while you watch, which is why it is worth what it is worth.",
+  "canon": "inferred",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "source_index": 33
+}

@@ -1,0 +1,20 @@
+{
+  "id": "material_dung_cake",
+  "type": "material",
+  "name": "Dung cake",
+  "classes": [
+    "fuel"
+  ],
+  "found_in": [
+    "plains",
+    "settlement",
+    "desert"
+  ],
+  "rarity": "common",
+  "notes": "Patted flat and dried on a wall. Unglamorous, universal, and what almost every meal in this world is actually cooked over.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 43
+}

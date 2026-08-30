@@ -1,0 +1,24 @@
+{
+  "id": "material_reed_fibre",
+  "type": "material",
+  "name": "Reed fibre",
+  "classes": [
+    "fibre"
+  ],
+  "won_from": [
+    "flora_saraswati_reed",
+    "flora_saltreed"
+  ],
+  "found_in": [
+    "wetland",
+    "river",
+    "coast"
+  ],
+  "rarity": "common",
+  "notes": "Retted in standing water until the pith rots away, then combed out and dried. The whole delta runs on it -- matting, basketry, and every rope that does not need to hold a boat.",
+  "canon": "inferred",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "source_index": 0
+}

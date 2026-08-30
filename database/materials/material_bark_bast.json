@@ -1,0 +1,23 @@
+{
+  "id": "material_bark_bast",
+  "type": "material",
+  "name": "Bast",
+  "classes": [
+    "fibre"
+  ],
+  "won_from": [
+    "flora_neem",
+    "flora_tamarind"
+  ],
+  "found_in": [
+    "forest",
+    "plains"
+  ],
+  "rarity": "common",
+  "notes": "The inner bark, stripped in long ribbons and beaten soft. Taken from a tree the taker intends to keep, so it is cut in bands and never a ring.",
+  "canon": "inferred",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "source_index": 3
+}

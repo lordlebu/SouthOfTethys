@@ -1,0 +1,20 @@
+{
+  "id": "material_basalt",
+  "type": "material",
+  "name": "Basalt",
+  "classes": [
+    "stone"
+  ],
+  "found_in": [
+    "mountains",
+    "lava_field",
+    "hills"
+  ],
+  "rarity": "common",
+  "notes": "The Deccan is made of it. Too tough to knap and perfect for anything that must grind -- querns, mortars, and the Board of the Chess of Fate.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 24
+}

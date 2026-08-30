@@ -1,0 +1,23 @@
+{
+  "id": "material_leviathan_bone",
+  "type": "material",
+  "name": "Leviathan bone",
+  "classes": [
+    "bone"
+  ],
+  "won_from": [
+    "fauna_abyssal_blue_leviathan",
+    "fauna_tethys_leviathan_calf"
+  ],
+  "found_in": [
+    "sea",
+    "coast"
+  ],
+  "rarity": "mythic",
+  "notes": "Canon states outright that the hide and bone plate of the Abyssal Blue are harvested for building maritime vessels. A single rib is a keel. Nobody takes one alone, and nobody takes one often.",
+  "canon": "inferred",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "source_index": 8
+}

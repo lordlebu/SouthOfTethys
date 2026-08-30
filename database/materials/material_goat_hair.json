@@ -1,0 +1,22 @@
+{
+  "id": "material_goat_hair",
+  "type": "material",
+  "name": "Cliff-goat hair",
+  "classes": [
+    "fibre"
+  ],
+  "won_from": [
+    "fauna_vindhya_cliff_goat"
+  ],
+  "found_in": [
+    "hills",
+    "mountains"
+  ],
+  "rarity": "common",
+  "notes": "Combed from the winter coat rather than shorn. Spins into a yarn that stays warm wet, which matters more on the Vindhya than anything else about it.",
+  "canon": "inferred",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "source_index": 2
+}

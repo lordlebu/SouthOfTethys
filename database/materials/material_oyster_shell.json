@@ -1,0 +1,22 @@
+{
+  "id": "material_oyster_shell",
+  "type": "material",
+  "name": "Oyster shell",
+  "classes": [
+    "shell"
+  ],
+  "won_from": [
+    "fauna_shattered_sea_oyster"
+  ],
+  "found_in": [
+    "coast",
+    "sea"
+  ],
+  "rarity": "common",
+  "notes": "Burnt for lime, ground for temper, or cut for inlay. The middens outside Dwarka are made of the ones nobody bothered with.",
+  "canon": "inferred",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "source_index": 15
+}

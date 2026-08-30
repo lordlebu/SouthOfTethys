@@ -1,0 +1,25 @@
+{
+  "id": "material_bamboo_cane",
+  "type": "material",
+  "name": "Bamboo cane",
+  "classes": [
+    "timber",
+    "fibre"
+  ],
+  "won_from": [
+    "flora_bamboo_grove",
+    "flora_jungle_crested_bamboo"
+  ],
+  "found_in": [
+    "river",
+    "forest",
+    "wetland"
+  ],
+  "rarity": "common",
+  "notes": "Two classes, honestly. A whole cane is a scaffold pole; a split one is a strap. Canon records the grove for scaffolding, rafts and tools, which is all three uses of one plant.",
+  "canon": "inferred",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "source_index": 6
+}

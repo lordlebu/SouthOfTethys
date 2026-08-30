@@ -1,0 +1,22 @@
+{
+  "id": "material_taro_root",
+  "type": "material",
+  "name": "Lotus-root taro",
+  "classes": [
+    "produce"
+  ],
+  "won_from": [
+    "flora_lotus_root_taro"
+  ],
+  "found_in": [
+    "wetland",
+    "river"
+  ],
+  "rarity": "common",
+  "notes": "A flood crop in canon's own words -- it wants the water the rice cannot take, so the two together mean a bad year is survivable.",
+  "canon": "inferred",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "source_index": 37
+}

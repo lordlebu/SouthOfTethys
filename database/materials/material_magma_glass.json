@@ -1,0 +1,19 @@
+{
+  "id": "material_magma_glass",
+  "type": "material",
+  "name": "Magma-glass",
+  "classes": [
+    "glass"
+  ],
+  "found_in": [
+    "lava_field",
+    "mountains"
+  ],
+  "rarity": "rare",
+  "notes": "Volcanic glass, and canon's Chess of Fate has its squares inlaid with it. Takes an edge sharper than bronze and loses it to a hard look.",
+  "canon": "inferred",
+  "sources": [
+    "Vedic Mythology and Version Controlled Tectonic Drift"
+  ],
+  "source_index": 26
+}

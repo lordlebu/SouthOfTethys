@@ -1,0 +1,24 @@
+{
+  "id": "material_delta_rice",
+  "type": "material",
+  "name": "Red delta rice",
+  "classes": [
+    "grain",
+    "produce"
+  ],
+  "won_from": [
+    "flora_red_delta_rice"
+  ],
+  "found_in": [
+    "wetland",
+    "river",
+    "plains"
+  ],
+  "rarity": "common",
+  "notes": "Canon records it as a staple grain and a trade good. Stores through a season, which is the whole difference between a camp and a settlement.",
+  "canon": "inferred",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "source_index": 36
+}

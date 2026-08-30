@@ -27,6 +27,7 @@ hundred lore entries in an exported folder is the one mistake here with a cost a
 | A god, a monster, a story people tell | `mythology/` | no |
 | A group | `factions/` | no |
 | An object that matters | `artifacts/` | no |
+| A substance you can carry away | `materials/` | **yes** |
 | A country-sized area | `regions/` | **yes** |
 
 Two distinctions that are easy to get wrong:
@@ -167,6 +168,41 @@ answers what they belong to, and both are checked. The twelve values live in
 thirteenth into a character and hoping. Four come in near-identical pairs on purpose --
 `asura`/`asura_tainted`, `vanara`/`vanara_spirit` -- because the difference is what those stories
 turn on.
+
+### A material
+
+A material answers what stuff *is* and where it comes from. It never answers how much of it
+there is -- that is a question about one particular player, and it belongs to the game.
+
+```json
+{
+  "id": "material_reed_fibre",
+  "type": "material",
+  "name": "Reed fibre",
+  "classes": ["fibre"],
+  "won_from": ["flora_saraswati_reed"],
+  "found_in": ["wetland", "river"],
+  "rarity": "common",
+  "notes": "Retted in standing water until the pith rots away, then combed out.",
+  "canon": "inferred",
+  "sources": ["docs/bestiary.md"],
+  "source_index": 0
+}
+```
+
+**`classes` is a declared vocabulary**, in `database/material_classes.json`, and it is the
+thing recipes actually name. A recipe asks for `#fibre` rather than for a list of species, so
+canon can gain a new reed in ten years and every cordage recipe written today accepts it
+without an edit. Give a material two classes where it honestly has two -- mahua seed is `oil`
+and `produce` -- rather than picking the more important one.
+
+**`won_from` may be absent.** Canon knows salt-crust is salt without owing anyone an account
+of which pan it was scraped from. What it may *not* be is a bare string: like every other
+reference in canon it names entities, and the walker checks them.
+
+**This is not `flora.uses`.** That field stays where it is and answers a different question --
+what people *do* with a plant, including `shade` and `navigational_landmark`, which are not
+substances and cannot be carried. A material class says what you can take away.
 
 ### A character
 

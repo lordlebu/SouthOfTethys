@@ -1,0 +1,18 @@
+{
+  "id": "material_potters_grog",
+  "type": "material",
+  "name": "Grog",
+  "classes": [
+    "clay"
+  ],
+  "found_in": [
+    "settlement"
+  ],
+  "rarity": "common",
+  "notes": "Old fired pots, crushed and put back into new clay so the new one survives the kiln. The only material in this file that can only be made from itself.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 22
+}

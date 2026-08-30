@@ -1,0 +1,22 @@
+{
+  "id": "material_crayfish_carapace",
+  "type": "material",
+  "name": "Crayfish carapace",
+  "classes": [
+    "shell"
+  ],
+  "won_from": [
+    "fauna_tethyan_blue_crayfish"
+  ],
+  "found_in": [
+    "river",
+    "coast"
+  ],
+  "rarity": "common",
+  "notes": "Thin, blue, and worth keeping only for the colour. Ground into a pigment more often than it is worked whole.",
+  "canon": "inferred",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "source_index": 17
+}

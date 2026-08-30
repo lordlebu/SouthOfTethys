@@ -1,0 +1,22 @@
+{
+  "id": "material_teak_timber",
+  "type": "material",
+  "name": "Iron-teak timber",
+  "classes": [
+    "timber"
+  ],
+  "won_from": [
+    "flora_iron_teak"
+  ],
+  "found_in": [
+    "forest",
+    "hills"
+  ],
+  "rarity": "rare",
+  "notes": "Canon already records this tree for ship timber and tower beams, which is a strong claim about a wood: it means the grain holds under a load that would split anything else growing near it.",
+  "canon": "inferred",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "source_index": 4
+}

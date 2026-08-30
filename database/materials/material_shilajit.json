@@ -1,0 +1,22 @@
+{
+  "id": "material_shilajit",
+  "type": "material",
+  "name": "Shilajit",
+  "classes": [
+    "physic"
+  ],
+  "won_from": [
+    "flora_shilajit_creeper"
+  ],
+  "found_in": [
+    "mountains",
+    "hills"
+  ],
+  "rarity": "rare",
+  "notes": "The tonic canon names on the creeper -- a mineral exudate scraped from high rock. Filed as physic rather than salt because of what it is for, not what it is made of.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 45
+}

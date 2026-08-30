@@ -1,0 +1,23 @@
+{
+  "id": "material_deer_antler",
+  "type": "material",
+  "name": "Antler",
+  "classes": [
+    "bone"
+  ],
+  "won_from": [
+    "fauna_painted_deer"
+  ],
+  "found_in": [
+    "forest",
+    "plains",
+    "hills"
+  ],
+  "rarity": "common",
+  "notes": "Shed each year and gathered off the ground, which makes it the one bone in this list that costs nothing but the walking.",
+  "canon": "inferred",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "source_index": 9
+}

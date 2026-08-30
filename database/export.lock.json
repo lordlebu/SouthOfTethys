@@ -9,12 +9,14 @@
     "npcs": 8,
     "discoveries": 31,
     "field_questions": 7,
-    "vocabulary": 8
+    "vocabulary": 8,
+    "materials": 46
   },
   "sha256": {
-    "canon.lock.json": "0467ed4da5e13200190cebce6484a077b7d9732bc6e4e072250926c7f068308e",
-    "knowledge.json": "c2a5501051a11770417df348deab7d37c28127debc85fe31174edbe85ba45265",
-    "places.json": "6374f2a3d236a8d22f9e3d80c398e1b3e7fd2eda7e450a695982fed21dabd88e",
-    "species.json": "5a5cf7bb2edd31e694c00f166c42ce8d933819c5988ddfbecb1f5fbcc6ae74e7"
+    "canon.lock.json": "bfc52c8efdc41dbf16f57b85dae08c75ebd9c621134e56224da7639da13dbb68",
+    "crafting.json": "c480a20f4ebeec566351eaa7d55e1658ffa34147970c04ea92a2e6057fe89489",
+    "knowledge.json": "88214bd24f103faf3622014ae0797a8cb821648c4bed3fc42e176427855afe2d",
+    "places.json": "55b7d3057ebc569017f0a3e1ea5c241b4eb7fe681f8fe9b5c9c9b1e8e2d0570d",
+    "species.json": "6fbb6592cc744595431142174eea93767c1c67f7a11b403d9afb8a456e111faf"
   }
 }

@@ -1,0 +1,23 @@
+{
+  "id": "material_charcoal",
+  "type": "material",
+  "name": "Charcoal",
+  "classes": [
+    "fuel"
+  ],
+  "won_from": [
+    "flora_ghost_mangrove"
+  ],
+  "found_in": [
+    "forest",
+    "wetland",
+    "settlement"
+  ],
+  "rarity": "common",
+  "notes": "Canon names the ghost mangrove for charcoal specifically. Burnt slow under turf, and the only fuel in this list hot enough to melt anything.",
+  "canon": "inferred",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "source_index": 42
+}

@@ -59,6 +59,7 @@ PREFIX_DIRS = {
     "npc_": "npcs",
     "word_": "vocabulary",
     "place_": "places",
+    "material_": "materials",
 }
 
 # folder -> schema stem, where the two differ.
@@ -70,6 +71,7 @@ SCHEMA_FOR = {
     "artifacts": "artifact", "factions": "faction", "mythology": "mythology",
     "settlements": "settlement",
     "places": "place",
+    "materials": "material",
 }
 
 # Values that look like ids but are not entity references.
@@ -189,6 +191,19 @@ def main() -> int:
     listed = index.get("entities", {})
     counts = index.get("counts", {})
 
+    # A whole folder the manifest has never heard of is invisible to the loop below, because
+    # the loop walks the manifest. That is the same shape as the bug `update_index.py` records
+    # -- `places` carried a count and no id list, so the both-directions check never ran on it
+    # and 24 entities went unverified -- one level up: there, a list was missing from a
+    # category; here, the category is missing entirely. Found while adding `materials/`, whose
+    # 46 files passed a green lint before this check existed.
+    for folder in sorted(set(PREFIX_DIRS.values())):
+        if (DB / folder).exists() and folder not in listed:
+            errors.append(
+                f"database/{folder}/ has entities but no category in index.json -- run "
+                f"utils/update_index.py"
+            )
+
     for category, ids in listed.items():
         folder = DB / category
         if not folder.exists():
@@ -304,6 +319,47 @@ def main() -> int:
             form = payload.get("growth_form")
             if form and form not in forms:
                 errors.append(f"{path.name}: '{form}' is not a growth form in growth_forms.json")
+
+    # --- material classes -----------------------------------------------------------
+    #
+    # The third of these pins, and written the same way as the growth-form one for the same
+    # reason. The schema holds the enum and `material_classes.json` holds the glosses, and the
+    # two live in different files -- so a class can be added to one and forgotten in the other,
+    # after which a material is rejected for carrying a class canon has documented. Checked in
+    # both directions, because both directions have happened to the clade pair.
+    classes_path = DB / "material_classes.json"
+    mat_schema = SCHEMA_DIR / "material.schema.json"
+    if classes_path.exists() and mat_schema.exists():
+        declared = set(load(classes_path)["classes"])
+        listed = set(
+            load(mat_schema)["properties"]["classes"]["items"].get("enum") or []
+        )
+        for missing in sorted(declared - listed):
+            errors.append(
+                f"material_classes.json declares '{missing}' that material.schema.json's "
+                f"enum does not allow"
+            )
+        for extra in sorted(listed - declared):
+            errors.append(
+                f"material.schema.json allows class '{extra}' that material_classes.json "
+                f"does not declare"
+            )
+
+    # --- affordances ------------------------------------------------------------------
+    #
+    # Nothing carries `affords` yet -- items land on day 2 -- but the file is written and the
+    # pin goes in with it rather than after it. An undeclared vocabulary is exactly what this
+    # layer exists to avoid repeating: `flora.uses` accumulated 30 free-text values before
+    # anybody noticed it was a vocabulary at all.
+    aff_path = DB / "affordances.json"
+    if aff_path.exists():
+        affordances = set(load(aff_path)["affordances"])
+        for eid, (path, payload) in entities.items():
+            for a in payload.get("affords") or []:
+                if a not in affordances:
+                    errors.append(
+                        f"{path.name}: '{a}' is not an affordance in affordances.json"
+                    )
 
     # --- invariants across sibling files -------------------------------------------
     #

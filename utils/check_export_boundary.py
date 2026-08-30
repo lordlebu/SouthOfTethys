@@ -67,6 +67,23 @@ NOT_INDEXED = {"timeline"}
 
 INDEXER = BASE / "services" / "chroma" / "index_chroma_service.py"
 
+# What the browser bundle is allowed to weigh, in kilobytes.
+#
+# Vite inlines every byte of `data/canon/` into the page, so an exported collection is weight
+# on every load rather than something quietly available -- which is the argument that kept
+# characters, events and 41 places out of the bundle in the first place. Before this constant
+# the size was a thing somebody noticed in a dry run and then forgot; now it fails.
+#
+# 560 was set when the bundle measured 444 KB here and the making layer was one folder of six.
+# Measure against *this* number rather than the exporter's dry run, which prints 404 KB for the
+# same bundle -- the dry run sizes the raw payload and this sizes what `render` actually writes,
+# and picking a budget off the smaller of the two is how a limit ends up 40 KB tighter than
+# whoever set it believed. Materials cost about 28 KB for 46 entities, which leaves the five
+# remaining types roughly 115 KB at that density. If they do not fit, the answer is a lore/play
+# split *inside* the new types -- the same call that withholds hundreds of places today -- and
+# not a bigger number here. Raising it makes the game slower to load, so raise it deliberately.
+BUNDLE_BUDGET_KB = 560
+
 
 def content_folders() -> list[str]:
     """Every directory under database/ that holds canon, in sorted order."""
@@ -160,6 +177,18 @@ def fingerprint_of(files: dict[str, str]) -> dict[str, str]:
     }
 
 
+def check_budget(files: dict) -> list[str]:
+    """The bundle stays inside its weight, because the browser pays for every byte."""
+    total = sum(len(render(body).encode("utf-8")) for body in files.values()) / 1024
+    if total > BUNDLE_BUDGET_KB:
+        return [
+            f"the bundle is {total:.1f} KB, over the {BUNDLE_BUDGET_KB} KB budget. Either "
+            f"withhold a collection from BUNDLE, or raise BUNDLE_BUDGET_KB deliberately and "
+            f"say in the commit that the game got heavier."
+        ]
+    return []
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(
         description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
@@ -174,6 +203,7 @@ def main() -> int:
     errors = check_boundary() + check_indexer()
 
     files, counts = build_bundle()
+    errors += check_budget(files)
     current = fingerprint_of(files)
 
     if args.update:

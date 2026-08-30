@@ -1,0 +1,25 @@
+{
+  "id": "material_sinew",
+  "type": "material",
+  "name": "Sinew",
+  "classes": [
+    "hide",
+    "fibre"
+  ],
+  "won_from": [
+    "fauna_painted_deer",
+    "fauna_mountain_forest_boar"
+  ],
+  "found_in": [
+    "forest",
+    "hills",
+    "plains"
+  ],
+  "rarity": "common",
+  "notes": "Filed under hide as well as fibre because of how it is got: skinning, not retting. Dries to a lashing that tightens as it goes, which no plant fibre does.",
+  "canon": "inferred",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "source_index": 14
+}

@@ -1,0 +1,24 @@
+{
+  "id": "material_palm_husk",
+  "type": "material",
+  "name": "Palm husk",
+  "classes": [
+    "fibre"
+  ],
+  "won_from": [
+    "flora_date_palm",
+    "flora_oasis_date_palm"
+  ],
+  "found_in": [
+    "desert",
+    "coast",
+    "settlement"
+  ],
+  "rarity": "common",
+  "notes": "The coarse mat of fibre at the base of a frond. Harsher than reed and far more patient of salt water, which is why the harbour rope is husk and the house rope is reed.",
+  "canon": "inferred",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "source_index": 1
+}

@@ -1,0 +1,18 @@
+{
+  "id": "material_natron",
+  "type": "material",
+  "name": "Natron",
+  "classes": [
+    "salt"
+  ],
+  "found_in": [
+    "desert"
+  ],
+  "rarity": "rare",
+  "notes": "The bitter salt from a dry lake bed. Cleans, cures hide, and makes glass possible.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 32
+}

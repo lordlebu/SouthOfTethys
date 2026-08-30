@@ -1,0 +1,20 @@
+{
+  "id": "material_red_ochre",
+  "type": "material",
+  "name": "Red ochre",
+  "classes": [
+    "pigment"
+  ],
+  "found_in": [
+    "hills",
+    "desert",
+    "plains"
+  ],
+  "rarity": "common",
+  "notes": "Iron-stained earth, ground and washed. The oldest pigment anybody has, and the one every mark in this world is made in until somebody wants blue.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 34
+}

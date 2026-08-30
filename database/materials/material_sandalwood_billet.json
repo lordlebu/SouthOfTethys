@@ -1,0 +1,23 @@
+{
+  "id": "material_sandalwood_billet",
+  "type": "material",
+  "name": "Sandalwood billet",
+  "classes": [
+    "timber",
+    "physic"
+  ],
+  "won_from": [
+    "flora_sandalwood"
+  ],
+  "found_in": [
+    "forest",
+    "hills"
+  ],
+  "rarity": "rare",
+  "notes": "Heartwood only; the sapwood is scentless and worth nothing. Carved, burnt or ground, and canon has it doing all three.",
+  "canon": "inferred",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "source_index": 7
+}
