@@ -300,6 +300,34 @@ on `database/TODO.md`.
 
 ---
 
+### Counts are ignored on purpose, and the game holds the other end (2026-08-31)
+
+`check_playability.py` decides a recipe is reachable by asking whether its ingredient *classes*
+can be obtained at all, and ignores every `count` in every recipe. Canon could not answer the
+other question if it wanted to: `found_in` says which biomes hold a material, and nothing
+anywhere says how much of it there is, because canon does not model a world's stock.
+
+**It is sound only because the game's `gather` does not use a tile up.** Walking back gives the
+same reeds again, so there is no quantity a patient walker cannot reach and "obtainable" and
+"obtainable four times" are one question. That is two design decisions leaning on each other
+across a repository boundary with nothing written down, which is how a gate starts lying: the day
+gathering depletes, this closure keeps passing recipes nobody can afford and says nothing.
+
+Both ends are now stated, and the game's end is pinned by a test rather than a comment.
+
+**The one rule written down twice is checked rather than trusted.** `World.affords` here and
+`affordsOf` in the game resolve the same `base_item` chain in two languages, because canon has to
+prove a recipe performable before it exports. Both carried a "change one, change both" comment,
+which is a convention. The exporter now emits canon's own resolution in `crafting.json`, and the
+game asserts its answer equals it for all 66 items -- so the two fail together instead of drifting
+apart. About 2 KB, and it was verified to fire by breaking the override rule on the game's side.
+
+This does not close the duplication of `holds`, `observed` and the craft closure itself, which
+remain conventions. It closes the one that is a pure function of exported data, which is the only
+one a fixture can reach.
+
+---
+
 ## Open — needs a human call
 
 | Question | Why it is open |

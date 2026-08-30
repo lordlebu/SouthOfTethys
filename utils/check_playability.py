@@ -235,6 +235,19 @@ def make(w: World, biomes: set[str], kinds: set[str]) -> tuple[set[str], set[str
             if not set(proc.get("needs") or []) <= have_affords:
                 continue
 
+            # **Counts are ignored, deliberately, and it is a bargain with the game.**
+            #
+            # This asks whether an ingredient class can be obtained *at all*, never whether four
+            # of it can. Canon could not answer the second question if it wanted to: `found_in`
+            # says which biomes hold a material and nothing anywhere says how much of it there
+            # is, because canon does not model a world's stock.
+            #
+            # It is sound only because the game's `gather` does not use a tile up -- walking
+            # back gives the same reeds again, so there is no quantity a patient walker cannot
+            # reach and "obtainable" and "obtainable four times" are one question. The day that
+            # changes, this loop starts passing recipes nobody can afford and says nothing.
+            # `test/makingMatters.test.ts` over there pins the no-depletion half so the
+            # assumption cannot quietly stop being true.
             ok = True
             for need in r.get("ingredients") or []:
                 if "tag" in need and need["tag"].lstrip("#") not in have_classes:
