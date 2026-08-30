@@ -1,0 +1,28 @@
+{
+  "id": "recipe_grind_flour",
+  "type": "recipe",
+  "name": "Grinding flour",
+  "process": "process_grinding",
+  "ingredients": [
+    {
+      "tag": "#grain",
+      "count": 2
+    },
+    {
+      "item": "item_grinding_quern",
+      "kept": true
+    }
+  ],
+  "outputs": [
+    {
+      "material": "material_delta_rice",
+      "count": 3
+    }
+  ],
+  "notes": "Any grain. The quern does not care and neither does the recipe.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 60
+}

@@ -1,0 +1,26 @@
+{
+  "id": "recipe_tamarind_paste",
+  "type": "recipe",
+  "name": "Making tamarind paste",
+  "process": "process_cooking",
+  "ingredients": [
+    {
+      "material": "material_tamarind_pulp",
+      "count": 2
+    },
+    {
+      "tag": "#salt"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_tamarind_paste"
+    }
+  ],
+  "notes": "Sour enough to make bad water drinkable and worse food interesting.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 64
+}

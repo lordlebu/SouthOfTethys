@@ -1,0 +1,30 @@
+{
+  "id": "recipe_mahua_liquor",
+  "type": "recipe",
+  "name": "Brewing mahua",
+  "process": "process_brewing",
+  "ingredients": [
+    {
+      "material": "material_mahua_oil",
+      "count": 3
+    },
+    {
+      "item": "item_storage_jar",
+      "kept": true
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_mahua_liquor"
+    }
+  ],
+  "known_by": [
+    "jharwa"
+  ],
+  "notes": "Fermented, not distilled. Strong enough.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 68
+}

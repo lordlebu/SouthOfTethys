@@ -1,0 +1,28 @@
+{
+  "id": "recipe_press_mahua_oil",
+  "type": "recipe",
+  "name": "Pressing mahua oil",
+  "process": "process_pressing",
+  "ingredients": [
+    {
+      "material": "material_mahua_oil",
+      "count": 2
+    },
+    {
+      "item": "item_cooking_pot",
+      "kept": true
+    }
+  ],
+  "outputs": [
+    {
+      "material": "material_mahua_oil",
+      "count": 3
+    }
+  ],
+  "notes": "Under a beam or a stone, with something underneath to catch it.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 59
+}

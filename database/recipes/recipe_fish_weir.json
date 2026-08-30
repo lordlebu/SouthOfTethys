@@ -1,0 +1,26 @@
+{
+  "id": "recipe_fish_weir",
+  "type": "recipe",
+  "name": "Setting a fish weir",
+  "process": "process_weaving",
+  "ingredients": [
+    {
+      "material": "material_bamboo_cane",
+      "count": 6
+    },
+    {
+      "item": "item_reed_rope"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_fish_weir"
+    }
+  ],
+  "notes": "Built in the water and left. What it catches is not sorted, which is why the fish it gives is named for the river.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 6
+}

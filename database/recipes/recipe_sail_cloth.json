@@ -1,0 +1,31 @@
+{
+  "id": "recipe_sail_cloth",
+  "type": "recipe",
+  "name": "Weaving sail cloth",
+  "process": "process_weaving",
+  "ingredients": [
+    {
+      "material": "material_palm_husk",
+      "count": 6
+    },
+    {
+      "material": "material_bark_bast",
+      "count": 4
+    },
+    {
+      "item": "item_loom_frame",
+      "kept": true
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_sail_cloth"
+    }
+  ],
+  "notes": "Coarse and heavy. The difference between a boat that drifts and a boat that goes.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 9
+}

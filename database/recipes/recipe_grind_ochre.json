@@ -1,0 +1,28 @@
+{
+  "id": "recipe_grind_ochre",
+  "type": "recipe",
+  "name": "Grinding ochre",
+  "process": "process_grinding",
+  "ingredients": [
+    {
+      "material": "material_red_ochre",
+      "count": 2
+    },
+    {
+      "item": "item_grinding_quern",
+      "kept": true
+    }
+  ],
+  "outputs": [
+    {
+      "material": "material_red_ochre",
+      "count": 3
+    }
+  ],
+  "notes": "Ground and washed. The oldest pigment anybody has.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 52
+}

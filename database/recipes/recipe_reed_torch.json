@@ -1,0 +1,27 @@
+{
+  "id": "recipe_reed_torch",
+  "type": "recipe",
+  "name": "Making a torch",
+  "process": "process_carving",
+  "ingredients": [
+    {
+      "material": "material_reed_fibre",
+      "count": 2
+    },
+    {
+      "material": "material_tree_pitch"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_reed_torch",
+      "count": 2
+    }
+  ],
+  "notes": "Bright, brief, and gone in the rain.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 39
+}

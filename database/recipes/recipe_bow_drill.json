@@ -1,0 +1,29 @@
+{
+  "id": "recipe_bow_drill",
+  "type": "recipe",
+  "name": "Making a bow drill",
+  "process": "process_carving",
+  "ingredients": [
+    {
+      "material": "material_bamboo_cane"
+    },
+    {
+      "material": "material_sinew"
+    },
+    {
+      "item": "item_flint_knife",
+      "kept": true
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_bow_drill"
+    }
+  ],
+  "notes": "Holes and fire, the same motion at different patience.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 15
+}

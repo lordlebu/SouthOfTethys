@@ -39,6 +39,7 @@ DB_FOLDERS = [
     "materials",
     "items",
     "processes",
+    "recipes",
     "characters",
     "events",
     "fauna",

@@ -1,0 +1,29 @@
+{
+  "id": "recipe_clay_seal",
+  "type": "recipe",
+  "name": "Cutting a seal",
+  "process": "process_carving",
+  "ingredients": [
+    {
+      "material": "material_river_clay"
+    },
+    {
+      "item": "item_bone_awl",
+      "kept": true
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_clay_seal"
+    }
+  ],
+  "known_by": [
+    "harappan"
+  ],
+  "notes": "Says who packed it and that nobody has opened it since.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 34
+}

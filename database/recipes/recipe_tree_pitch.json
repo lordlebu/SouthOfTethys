@@ -1,0 +1,31 @@
+{
+  "id": "recipe_tree_pitch",
+  "type": "recipe",
+  "name": "Boiling pitch",
+  "process": "process_firing",
+  "ingredients": [
+    {
+      "tag": "#timber",
+      "count": 2
+    },
+    {
+      "tag": "#fuel"
+    },
+    {
+      "item": "item_cooking_pot",
+      "kept": true
+    }
+  ],
+  "outputs": [
+    {
+      "material": "material_tree_pitch",
+      "count": 2
+    }
+  ],
+  "notes": "In a covered pit. Nothing floats without it.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 38
+}

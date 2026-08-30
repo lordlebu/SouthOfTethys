@@ -1,0 +1,38 @@
+{
+  "id": "recipe_cast_bronze",
+  "type": "recipe",
+  "name": "Casting bronze",
+  "process": "process_casting",
+  "ingredients": [
+    {
+      "material": "material_native_copper",
+      "count": 3
+    },
+    {
+      "material": "material_tin_ore"
+    },
+    {
+      "material": "material_charcoal",
+      "count": 3
+    }
+  ],
+  "outputs": [
+    {
+      "material": "material_bronze",
+      "count": 2
+    }
+  ],
+  "known_by": [
+    "harappan"
+  ],
+  "epochs": [
+    "epoch_civilization_dawn",
+    "epoch_current"
+  ],
+  "notes": "Copper and tin. Worth more than the person carrying it usually is.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 48
+}

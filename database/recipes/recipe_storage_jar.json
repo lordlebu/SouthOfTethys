@@ -1,0 +1,27 @@
+{
+  "id": "recipe_storage_jar",
+  "type": "recipe",
+  "name": "Firing a storage jar",
+  "process": "process_firing",
+  "ingredients": [
+    {
+      "material": "material_river_clay",
+      "count": 3
+    },
+    {
+      "tag": "#fuel",
+      "count": 2
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_storage_jar"
+    }
+  ],
+  "notes": "A grain surplus is not a harvest. It is one of these.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 30
+}

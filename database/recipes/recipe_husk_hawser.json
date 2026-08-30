@@ -1,0 +1,23 @@
+{
+  "id": "recipe_husk_hawser",
+  "type": "recipe",
+  "name": "Laying a husk hawser",
+  "process": "process_spinning",
+  "ingredients": [
+    {
+      "material": "material_palm_husk",
+      "count": 6
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_husk_hawser"
+    }
+  ],
+  "notes": "Heavier and slower than reed, and it will still be there next season.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 2
+}

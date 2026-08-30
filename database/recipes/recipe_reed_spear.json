@@ -1,0 +1,28 @@
+{
+  "id": "recipe_reed_spear",
+  "type": "recipe",
+  "name": "Binding a reed spear",
+  "process": "process_carving",
+  "ingredients": [
+    {
+      "material": "material_bamboo_cane"
+    },
+    {
+      "material": "material_flint"
+    },
+    {
+      "item": "item_reed_rope"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_reed_spear"
+    }
+  ],
+  "notes": "Held level, it moves a herd. That is its recorded use.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 25
+}

@@ -5,11 +5,8 @@
   "classes": [
     "metal"
   ],
-  "found_in": [
-    "settlement"
-  ],
   "rarity": "rare",
-  "notes": "Copper and tin, and the era's outer edge. Canon is a bronze world with iron as a rumour; nothing here should let a recipe quietly invent a smelted iron industry.",
+  "notes": "Copper and tin, and the era's outer edge. Canon is a bronze world with iron as a rumour; nothing here should let a recipe quietly invent a smelted iron industry. Cast, never found. Copper and tin and a furnace -- see recipe_cast_bronze.",
   "canon": "inferred",
   "sources": [
     "inferred from canon geography"

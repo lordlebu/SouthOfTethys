@@ -1,0 +1,27 @@
+{
+  "id": "recipe_grinding_quern",
+  "type": "recipe",
+  "name": "Dressing a quern",
+  "process": "process_carving",
+  "ingredients": [
+    {
+      "material": "material_basalt",
+      "count": 2
+    },
+    {
+      "item": "item_stone_adze",
+      "kept": true
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_grinding_quern"
+    }
+  ],
+  "notes": "Two stones, dressed to sit true. The household that owns one does not lend it.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 17
+}

@@ -1,0 +1,30 @@
+{
+  "id": "recipe_field_diary",
+  "type": "recipe",
+  "name": "Binding a field diary",
+  "process": "process_carving",
+  "ingredients": [
+    {
+      "item": "item_palm_leaf_sheet",
+      "count": 4
+    },
+    {
+      "item": "item_reed_rope"
+    },
+    {
+      "item": "item_bone_awl",
+      "kept": true
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_field_diary"
+    }
+  ],
+  "notes": "The crossings-out are the useful part. A first guess is worth keeping once it is wrong.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 58
+}

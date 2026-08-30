@@ -1,0 +1,30 @@
+{
+  "id": "recipe_cooking_pot",
+  "type": "recipe",
+  "name": "Firing a cooking pot",
+  "process": "process_firing",
+  "ingredients": [
+    {
+      "material": "material_river_clay",
+      "count": 2
+    },
+    {
+      "material": "material_potters_grog"
+    },
+    {
+      "tag": "#fuel",
+      "count": 2
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_cooking_pot"
+    }
+  ],
+  "notes": "Coarse-tempered so it survives the fire it is made for.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 31
+}

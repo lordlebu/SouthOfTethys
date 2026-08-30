@@ -1,0 +1,33 @@
+{
+  "id": "recipe_hide_tent",
+  "type": "recipe",
+  "name": "Raising a hide tent",
+  "process": "process_carving",
+  "ingredients": [
+    {
+      "material": "material_goat_hide",
+      "count": 4
+    },
+    {
+      "material": "material_bamboo_cane",
+      "count": 3
+    },
+    {
+      "item": "item_husk_hawser"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_hide_tent"
+    }
+  ],
+  "known_by": [
+    "tushara"
+  ],
+  "notes": "Two people to raise and one to strike.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 44
+}

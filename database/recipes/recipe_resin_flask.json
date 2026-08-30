@@ -1,0 +1,28 @@
+{
+  "id": "recipe_resin_flask",
+  "type": "recipe",
+  "name": "Firing a resin flask",
+  "process": "process_firing",
+  "ingredients": [
+    {
+      "material": "material_river_clay"
+    },
+    {
+      "tag": "#resin"
+    },
+    {
+      "tag": "#fuel"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_resin_flask"
+    }
+  ],
+  "notes": "Small, stoppered, worth more full than the room it sits in.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 35
+}

@@ -1,0 +1,23 @@
+{
+  "id": "recipe_ret_reed_fibre",
+  "type": "recipe",
+  "name": "Retting reed",
+  "process": "process_retting",
+  "ingredients": [
+    {
+      "material": "material_reed_fibre"
+    }
+  ],
+  "outputs": [
+    {
+      "material": "material_reed_fibre",
+      "count": 2
+    }
+  ],
+  "notes": "Nine days in standing water, then combed. The one recipe here that turns a thing into more of itself, because retting is what makes gathered reed into usable fibre at all.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 0
+}

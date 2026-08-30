@@ -1,0 +1,28 @@
+{
+  "id": "recipe_bone_harpoon",
+  "type": "recipe",
+  "name": "Binding a bone harpoon",
+  "process": "process_carving",
+  "ingredients": [
+    {
+      "material": "material_fish_bone"
+    },
+    {
+      "material": "material_bamboo_cane"
+    },
+    {
+      "item": "item_sinew_lashing"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_bone_harpoon"
+    }
+  ],
+  "notes": "The rostral tooth arrives barbed. Very little is done to it.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 24
+}

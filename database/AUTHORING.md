@@ -30,6 +30,7 @@ hundred lore entries in an exported folder is the one mistake here with a cost a
 | A substance you can carry away | `materials/` | **yes** |
 | An object a person can hold | `items/` | **yes** |
 | A way of making | `processes/` | **yes** |
+| What becomes what | `recipes/` | **yes** |
 | A country-sized area | `regions/` | **yes** |
 
 Two distinctions that are easy to get wrong:
@@ -266,6 +267,47 @@ the process genuinely needs the site.
 **`needs` names an affordance, not a tool.** Firing needs something that burns, and canon should
 not have to decide whether that is a hearth, a brazier or a pit. Any item affording it will do,
 which is the same argument tag ingredients make about materials.
+
+### A recipe
+
+The only entity type here that is a relation rather than a thing, and it is still a noun: a
+recipe is a stated fact about the world. Whether a particular player has four handfuls of reed
+is not canon's business.
+
+```json
+{
+  "id": "recipe_reed_mat",
+  "type": "recipe",
+  "name": "Weaving a reed mat",
+  "process": "process_weaving",
+  "ingredients": [
+    { "tag": "#fibre", "count": 6 },
+    { "item": "item_loom_frame", "kept": true }
+  ],
+  "outputs": [{ "item": "item_reed_mat" }],
+  "known_by": ["harappan"],
+  "canon": "inferred",
+  "sources": ["inferred from canon geography"],
+  "source_index": 4
+}
+```
+
+**Prefer a `#tag` to a named material.** A recipe asking for `#fibre` accepts a reed canon has
+not written yet; one naming four species is edited every time the bestiary grows. Name an exact
+`material` only where the specific stuff is the point -- pitch, not any resin.
+
+**Set `kept` on a tool.** Absent means consumed, and forgetting it is how a recipe layer
+quietly eats every knife in the world.
+
+**An output may be a material.** Pressing gives oil, smelting gives metal. That is what keeps a
+chain going instead of bottoming out at the first made object.
+
+**Where materials come from is stated once, on the material.** `material.won_from` names the
+species, and nothing on the species names the material back. This is the ruling factions
+already have -- the faction owns `members` and a character does not name one back, so the two
+cannot drift. An earlier plan for this layer had a `yields` field on all 347 species; it was
+dropped on exactly that precedent, and because the alternative was deriving yields from prose,
+which is the mistake that made an owl a ghost and a mongoose a crab.
 
 ### A character
 

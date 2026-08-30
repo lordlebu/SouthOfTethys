@@ -1,0 +1,26 @@
+{
+  "id": "recipe_salt_box",
+  "type": "recipe",
+  "name": "Carving a salt box",
+  "process": "process_carving",
+  "ingredients": [
+    {
+      "material": "material_sandalwood_billet"
+    },
+    {
+      "item": "item_flint_knife",
+      "kept": true
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_salt_box"
+    }
+  ],
+  "notes": "Wood rather than clay, because salt draws water and a fired jar sweats.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 46
+}

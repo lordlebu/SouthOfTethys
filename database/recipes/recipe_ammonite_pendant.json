@@ -1,0 +1,26 @@
+{
+  "id": "recipe_ammonite_pendant",
+  "type": "recipe",
+  "name": "Drilling an ammonite",
+  "process": "process_carving",
+  "ingredients": [
+    {
+      "material": "material_ammonite_shell"
+    },
+    {
+      "item": "item_bow_drill",
+      "kept": true
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_ammonite_pendant"
+    }
+  ],
+  "notes": "A spiral somebody found already made.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 23
+}

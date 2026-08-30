@@ -1,0 +1,26 @@
+{
+  "id": "recipe_sandalwood_comb",
+  "type": "recipe",
+  "name": "Carving a comb",
+  "process": "process_carving",
+  "ingredients": [
+    {
+      "material": "material_sandalwood_billet"
+    },
+    {
+      "item": "item_flint_knife",
+      "kept": true
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_sandalwood_comb"
+    }
+  ],
+  "notes": "Keeps its scent for a lifetime, which is most of why anyone carries one.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 21
+}

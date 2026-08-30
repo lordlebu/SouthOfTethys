@@ -1,0 +1,30 @@
+{
+  "id": "recipe_flood_bread",
+  "type": "recipe",
+  "name": "Baking flood bread",
+  "process": "process_cooking",
+  "ingredients": [
+    {
+      "material": "material_delta_rice",
+      "count": 2
+    },
+    {
+      "material": "material_taro_root"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_flood_bread",
+      "count": 2
+    }
+  ],
+  "known_by": [
+    "harappan"
+  ],
+  "notes": "What you eat in a year the rice did badly and the flood did well.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 61
+}

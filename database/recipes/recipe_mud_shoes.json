@@ -1,0 +1,26 @@
+{
+  "id": "recipe_mud_shoes",
+  "type": "recipe",
+  "name": "Lashing mud shoes",
+  "process": "process_carving",
+  "ingredients": [
+    {
+      "material": "material_bamboo_cane",
+      "count": 2
+    },
+    {
+      "item": "item_reed_rope"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_mud_shoes"
+    }
+  ],
+  "notes": "Splayed frames under the foot. A salt flat becomes ground you can cross.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 19
+}

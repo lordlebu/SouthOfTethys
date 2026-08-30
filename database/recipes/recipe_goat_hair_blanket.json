@@ -1,0 +1,30 @@
+{
+  "id": "recipe_goat_hair_blanket",
+  "type": "recipe",
+  "name": "Weaving a blanket",
+  "process": "process_weaving",
+  "ingredients": [
+    {
+      "material": "material_goat_hair",
+      "count": 5
+    },
+    {
+      "item": "item_loom_frame",
+      "kept": true
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_goat_hair_blanket"
+    }
+  ],
+  "known_by": [
+    "tushara"
+  ],
+  "notes": "Known on the steppe and in the hills, where staying warm wet is the only question.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 7
+}

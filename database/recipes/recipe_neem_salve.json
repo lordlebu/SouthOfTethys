@@ -1,0 +1,26 @@
+{
+  "id": "recipe_neem_salve",
+  "type": "recipe",
+  "name": "Making neem salve",
+  "process": "process_cooking",
+  "ingredients": [
+    {
+      "material": "material_neem_bark",
+      "count": 2
+    },
+    {
+      "tag": "#oil"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_neem_salve"
+    }
+  ],
+  "notes": "Bitter, oily, keeps a wound clean.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 69
+}

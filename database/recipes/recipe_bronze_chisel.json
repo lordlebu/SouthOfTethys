@@ -1,0 +1,36 @@
+{
+  "id": "recipe_bronze_chisel",
+  "type": "recipe",
+  "name": "Casting a chisel",
+  "process": "process_casting",
+  "ingredients": [
+    {
+      "material": "material_bronze"
+    },
+    {
+      "material": "material_charcoal",
+      "count": 2
+    },
+    {
+      "tag": "#timber"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_bronze_chisel"
+    }
+  ],
+  "known_by": [
+    "harappan"
+  ],
+  "epochs": [
+    "epoch_civilization_dawn",
+    "epoch_current"
+  ],
+  "notes": "What dressed sandstone is dressed with. A settlement with these has a mason.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 50
+}

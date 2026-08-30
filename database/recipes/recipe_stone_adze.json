@@ -1,0 +1,28 @@
+{
+  "id": "recipe_stone_adze",
+  "type": "recipe",
+  "name": "Hafting a stone adze",
+  "process": "process_carving",
+  "ingredients": [
+    {
+      "material": "material_basalt"
+    },
+    {
+      "item": "item_sinew_lashing"
+    },
+    {
+      "tag": "#timber"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_stone_adze"
+    }
+  ],
+  "notes": "The blade set across the haft, not along it. That difference matters enormously to a boat.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 12
+}

@@ -1,0 +1,27 @@
+{
+  "id": "recipe_dried_fish",
+  "type": "recipe",
+  "name": "Drying fish",
+  "process": "process_drying",
+  "ingredients": [
+    {
+      "tag": "#flesh",
+      "count": 2
+    },
+    {
+      "tag": "#salt"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_dried_fish",
+      "count": 2
+    }
+  ],
+  "notes": "Split, salted, racked. Keeps a season and travels anywhere.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 62
+}

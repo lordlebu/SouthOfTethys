@@ -1,0 +1,28 @@
+{
+  "id": "recipe_boar_spear",
+  "type": "recipe",
+  "name": "Binding a boar spear",
+  "process": "process_carving",
+  "ingredients": [
+    {
+      "material": "material_teak_timber"
+    },
+    {
+      "material": "material_boar_tusk"
+    },
+    {
+      "item": "item_sinew_lashing"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_boar_spear"
+    }
+  ],
+  "notes": "Cross-barred below the head, so that what it stops does not walk up it.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 26
+}

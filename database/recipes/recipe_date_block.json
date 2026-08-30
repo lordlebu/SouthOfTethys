@@ -1,0 +1,23 @@
+{
+  "id": "recipe_date_block",
+  "type": "recipe",
+  "name": "Pressing a date block",
+  "process": "process_pressing",
+  "ingredients": [
+    {
+      "material": "material_date_fruit",
+      "count": 4
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_date_block"
+    }
+  ],
+  "notes": "Wrapped in leaf. Why a desert crossing is arithmetic rather than a gamble.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 63
+}

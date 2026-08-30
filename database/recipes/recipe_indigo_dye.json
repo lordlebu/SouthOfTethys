@@ -1,0 +1,31 @@
+{
+  "id": "recipe_indigo_dye",
+  "type": "recipe",
+  "name": "Fermenting indigo",
+  "process": "process_brewing",
+  "ingredients": [
+    {
+      "material": "material_indigo_dye",
+      "count": 2
+    },
+    {
+      "item": "item_storage_jar",
+      "kept": true
+    }
+  ],
+  "outputs": [
+    {
+      "material": "material_indigo_dye",
+      "count": 4
+    }
+  ],
+  "known_by": [
+    "harappan"
+  ],
+  "notes": "Stinks for a fortnight. Then it is worth what it is worth.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 54
+}

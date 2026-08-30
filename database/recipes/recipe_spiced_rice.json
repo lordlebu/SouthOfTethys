@@ -1,0 +1,26 @@
+{
+  "id": "recipe_spiced_rice",
+  "type": "recipe",
+  "name": "Cooking spiced rice",
+  "process": "process_cooking",
+  "ingredients": [
+    {
+      "material": "material_delta_rice",
+      "count": 2
+    },
+    {
+      "tag": "#salt"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_spiced_rice"
+    }
+  ],
+  "notes": "What a settlement eats when there is nothing to mark.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 66
+}

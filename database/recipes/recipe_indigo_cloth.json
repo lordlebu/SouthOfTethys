@@ -1,0 +1,34 @@
+{
+  "id": "recipe_indigo_cloth",
+  "type": "recipe",
+  "name": "Dyeing indigo cloth",
+  "process": "process_weaving",
+  "ingredients": [
+    {
+      "material": "material_bark_bast",
+      "count": 4
+    },
+    {
+      "material": "material_indigo_dye",
+      "count": 2
+    },
+    {
+      "item": "item_loom_frame",
+      "kept": true
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_indigo_cloth"
+    }
+  ],
+  "known_by": [
+    "harappan"
+  ],
+  "notes": "Green out of the vat, blue in the air. Half its worth is that everyone has watched it happen.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 8
+}

@@ -1,0 +1,31 @@
+{
+  "id": "recipe_grain_bin",
+  "type": "recipe",
+  "name": "Raising a grain bin",
+  "process": "process_weaving",
+  "ingredients": [
+    {
+      "material": "material_bamboo_cane",
+      "count": 6
+    },
+    {
+      "material": "material_river_clay",
+      "count": 4
+    },
+    {
+      "tag": "#fibre",
+      "count": 4
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_grain_bin"
+    }
+  ],
+  "notes": "Mud-plastered basketwork, taller than a person. Does not move once filled -- the first object here only a settlement can own.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 36
+}

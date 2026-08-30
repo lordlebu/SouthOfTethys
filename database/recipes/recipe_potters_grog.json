@@ -1,0 +1,27 @@
+{
+  "id": "recipe_potters_grog",
+  "type": "recipe",
+  "name": "Crushing grog",
+  "process": "process_grinding",
+  "ingredients": [
+    {
+      "item": "item_storage_jar"
+    },
+    {
+      "item": "item_grinding_quern",
+      "kept": true
+    }
+  ],
+  "outputs": [
+    {
+      "material": "material_potters_grog",
+      "count": 3
+    }
+  ],
+  "notes": "Old fired pots, crushed back into new clay so the new one survives the kiln. The only material in canon that can only be made out of itself.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 29
+}

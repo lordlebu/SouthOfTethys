@@ -1,0 +1,25 @@
+{
+  "id": "recipe_oil_lamp",
+  "type": "recipe",
+  "name": "Firing an oil lamp",
+  "process": "process_firing",
+  "ingredients": [
+    {
+      "material": "material_river_clay"
+    },
+    {
+      "tag": "#fuel"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_oil_lamp"
+    }
+  ],
+  "notes": "A closed lamp with a shielded wick, the kind that survives being carried.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 32
+}

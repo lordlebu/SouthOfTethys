@@ -1,0 +1,39 @@
+{
+  "id": "recipe_smelt_copper",
+  "type": "recipe",
+  "name": "Smelting copper",
+  "process": "process_smelting",
+  "ingredients": [
+    {
+      "material": "material_native_copper",
+      "count": 2
+    },
+    {
+      "material": "material_charcoal",
+      "count": 3
+    },
+    {
+      "item": "item_charcoal_brazier",
+      "kept": true
+    }
+  ],
+  "outputs": [
+    {
+      "material": "material_native_copper",
+      "count": 3
+    }
+  ],
+  "known_by": [
+    "harappan"
+  ],
+  "epochs": [
+    "epoch_civilization_dawn",
+    "epoch_current"
+  ],
+  "notes": "Canon is a bronze world with iron as a rumour. Nothing above this line goes further.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 47
+}

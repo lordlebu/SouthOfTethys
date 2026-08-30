@@ -12,13 +12,14 @@
     "vocabulary": 8,
     "materials": 46,
     "items": 66,
-    "processes": 16
+    "processes": 16,
+    "recipes": 72
   },
   "sha256": {
-    "canon.lock.json": "937d49ddfc77bae44ccb787e46defcc9d729c3ac2b63fbe8606c1c53ad88ccb5",
-    "crafting.json": "c09eea486030cf2acfe77e103bd42842e24ede55b56212498817d36193213125",
-    "knowledge.json": "c076aef8b579f172b69cf4eb29aef891a0ccd3feac49ed351b5db9df1ca14107",
-    "places.json": "f837c6688074ee85ffa9992573d195074b525b4fd704008e7150841e685f045b",
-    "species.json": "b5a565e670abb94039db1a61a574098bed310116a3299a8a0cc5ac5ea836b52e"
+    "canon.lock.json": "cf3d7e27e9ae823b538ebca3f89f2ace2a1f91176b14849814986a71e0962932",
+    "crafting.json": "27e573ff065bb714d3231f9e9d7beb55f66ddc3fc3ea4c5fa75bd5ca9c1db23d",
+    "knowledge.json": "52b2f0d77fdcab7c39daef573f6b2a742de59acdbd243e78334b3976bbc54758",
+    "places.json": "96a3f7af21a6df4dfa5c0c94bd4317bd4f600a7eec98fa232f953854d3ee8691",
+    "species.json": "367570f7e43a2c88f408d1dc64ed519cb0d611aa48ddbd78d90f98b45bf59c9b"
   }
 }

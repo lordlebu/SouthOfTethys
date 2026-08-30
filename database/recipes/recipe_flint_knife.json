@@ -1,0 +1,23 @@
+{
+  "id": "recipe_flint_knife",
+  "type": "recipe",
+  "name": "Knapping a flint knife",
+  "process": "process_knapping",
+  "ingredients": [
+    {
+      "material": "material_flint",
+      "count": 2
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_flint_knife"
+    }
+  ],
+  "notes": "An afternoon's work, sharp for a week, replaced without ceremony.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 10
+}

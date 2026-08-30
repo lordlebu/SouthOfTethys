@@ -1,0 +1,27 @@
+{
+  "id": "recipe_reed_stylus",
+  "type": "recipe",
+  "name": "Cutting a stylus",
+  "process": "process_carving",
+  "ingredients": [
+    {
+      "material": "material_reed_fibre"
+    },
+    {
+      "item": "item_flint_knife",
+      "kept": true
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_reed_stylus",
+      "count": 2
+    }
+  ],
+  "notes": "Recut every few lines, and lost constantly.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 56
+}

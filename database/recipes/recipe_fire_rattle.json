@@ -1,0 +1,26 @@
+{
+  "id": "recipe_fire_rattle",
+  "type": "recipe",
+  "name": "Stringing a fire rattle",
+  "process": "process_carving",
+  "ingredients": [
+    {
+      "tag": "#shell",
+      "count": 4
+    },
+    {
+      "item": "item_reed_rope"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_fire_rattle"
+    }
+  ],
+  "notes": "Shells on a line. The clearest case in canon that a weapon is not about harm.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 28
+}

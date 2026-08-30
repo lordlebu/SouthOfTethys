@@ -1,0 +1,24 @@
+{
+  "id": "recipe_charcoal",
+  "type": "recipe",
+  "name": "Burning charcoal",
+  "process": "process_firing",
+  "ingredients": [
+    {
+      "tag": "#timber",
+      "count": 3
+    }
+  ],
+  "outputs": [
+    {
+      "material": "material_charcoal",
+      "count": 2
+    }
+  ],
+  "notes": "Burnt slow under turf. The only fuel hot enough to melt anything.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 37
+}

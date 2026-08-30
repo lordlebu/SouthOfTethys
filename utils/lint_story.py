@@ -62,6 +62,7 @@ PREFIX_DIRS = {
     "material_": "materials",
     "item_": "items",
     "process_": "processes",
+    "recipe_": "recipes",
 }
 
 # folder -> schema stem, where the two differ.
@@ -76,6 +77,7 @@ SCHEMA_FOR = {
     "materials": "material",
     "items": "item",
     "processes": "process",
+    "recipes": "recipe",
 }
 
 # Values that look like ids but are not entity references.
@@ -365,6 +367,29 @@ def main() -> int:
                         f"{path.name}: '{a}' is not an affordance in affordances.json"
                     )
 
+    # --- recipe tags are the declared classes, with a hash ----------------------------
+    #
+    # The fourth pin, and the one with a twist: the recipe schema's tag enum is the material
+    # class vocabulary with `#` in front, so the two can drift in a way that reads as a typo in
+    # the recipe rather than as two files disagreeing. Checked both ways, like the others.
+    recipe_schema = SCHEMA_DIR / "recipe.schema.json"
+    if classes_path.exists() and recipe_schema.exists():
+        declared = {f"#{c}" for c in load(classes_path)["classes"]}
+        tag_enum = set(
+            load(recipe_schema)["properties"]["ingredients"]["items"]["properties"]["tag"]
+            .get("enum") or []
+        )
+        for missing in sorted(declared - tag_enum):
+            errors.append(
+                f"material_classes.json declares '{missing[1:]}' that recipe.schema.json's "
+                f"tag enum does not allow as '{missing}'"
+            )
+        for extra in sorted(tag_enum - declared):
+            errors.append(
+                f"recipe.schema.json allows tag '{extra}' that material_classes.json does "
+                f"not declare"
+            )
+
     # --- base_item chains -------------------------------------------------------------
     #
     # Inherit-then-override, the shape Factorio's prototypes take. Canon already does this twice
@@ -556,6 +581,14 @@ def main() -> int:
                 errors.append(
                     f"{path.name}: culture '{value}' is not declared in database/cultures.json"
                 )
+            # A recipe says which cultures hold the knowledge, in the same vocabulary. Absent
+            # means everybody, so only a stated value is checked.
+            for who in payload.get("known_by") or []:
+                if who not in known_cultures:
+                    errors.append(
+                        f"{path.name}: known_by '{who}' is not declared in "
+                        f"database/cultures.json"
+                    )
 
     # --- and so is species -------------------------------------------------------------
     #
