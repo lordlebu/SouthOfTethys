@@ -41,6 +41,15 @@
       "requires": [
         "discovery_moving_spring"
       ]
+    },
+    {
+      "text": "Comb it, do not cut it. The winter coat comes away in your hand in spring and the animal is happier for it. It spins rough and it stays warm wet, which up here is the only question anybody is actually asking about cloth.",
+      "requires": [],
+      "gives": [
+        "recipe_goat_hair_blanket",
+        "recipe_hunting_sling",
+        "recipe_tan_goat_hide"
+      ]
     }
   ],
   "notes": "Holds two of the map's answers inside ordinary vocabulary and has never had a reason to examine either. The counterpart to Thrali, and pointedly not a wise elder -- he is a working herder with a job on.",

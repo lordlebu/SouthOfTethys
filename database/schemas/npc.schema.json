@@ -69,7 +69,12 @@
             "items": {
               "type": "string"
             },
-            "description": "discovery, vocabulary or field_question ids this opens."
+            "description": "discovery, vocabulary, field_question or recipe ids this opens. A `recipe_` id here is somebody showing you how, which is the only way a recipe carrying `taught_by` is ever got."
+          },
+          "costs": {
+            "type": "string",
+            "pattern": "^item_[a-z0-9_]+$",
+            "description": "An item handed over to hear this. The gift loop, built out of the line machinery that was already there rather than a `wants` structure beside it -- a person who needs a rope and tells you something once they have one is exactly a line with a price.\n\n**Not a currency and not a trade.** There is no price table in canon and there should not be; this is one named object one person wants, and what they say after is the whole return. A line with a cost is spent when its gifts are held, on the same rule as every other line."
           }
         },
         "additionalProperties": true

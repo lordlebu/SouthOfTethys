@@ -33,6 +33,14 @@
       "gives": [
         "word_maru_anu"
       ]
+    },
+    {
+      "text": "Nobody teaches this because everybody assumes you know. Cut the reed at a slant, recut it every few lines, and do not mourn it -- a stylus is a thing you lose. The tally is different. Notch it, split it, and neither of you can lie afterwards.",
+      "requires": [],
+      "gives": [
+        "recipe_reed_stylus",
+        "recipe_tally_stick"
+      ]
     }
   ],
   "notes": "The scholar who is already most of the way there and cannot say so in an acceptable form. Would settle -- she has been looking for somewhere the question is allowed.",

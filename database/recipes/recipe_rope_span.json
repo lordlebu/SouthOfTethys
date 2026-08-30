@@ -23,5 +23,8 @@
   "sources": [
     "inferred from canon geography"
   ],
-  "source_index": 45
+  "source_index": 45,
+  "taught_by": [
+    "npc_pell"
+  ]
 }

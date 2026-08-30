@@ -35,6 +35,21 @@
       "requires": [
         "discovery_seawall_courses"
       ]
+    },
+    {
+      "text": "Husk, not reed. Reed rope on a wall by the sea is a rope you replace twice a year and eventually you are not mending the wall, you are mending the rope. Lay it in three strands against the twist and it will still be there when I am not.",
+      "requires": [],
+      "gives": [
+        "recipe_husk_hawser"
+      ]
+    },
+    {
+      "text": "You made one. -- Then I can get to the outer course alone, and I have wanted to get to the outer course alone for eleven years. Take the north stair. It is the one my father cut and nobody has walked it since he did.",
+      "requires": [],
+      "costs": "item_rope_span",
+      "gives": [
+        "recipe_rope_span"
+      ]
     }
   ],
   "notes": "The one who will not come, and for the opposite reason to Bekh: not somebody has to stay, but the work does not end and that is not an argument for stopping. Sweeps an interdimensional gate as municipal maintenance.",

@@ -57,6 +57,14 @@
       "requires": [
         "discovery_red_rice_survival"
       ]
+    },
+    {
+      "text": "Everything I keep, I keep in something. That is the whole of the job. Clay for grain, because clay breathes a little and grain wants that. Wood for salt, because a fired jar sweats and salt draws the water straight out of the air to spite you.",
+      "requires": [],
+      "gives": [
+        "recipe_storage_jar",
+        "recipe_salt_box"
+      ]
     }
   ],
   "epochs": [

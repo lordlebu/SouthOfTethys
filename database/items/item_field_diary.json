@@ -4,15 +4,14 @@
   "name": "Field diary",
   "kind": "record",
   "affords": [
-    "mark",
-    "carry"
+    "mark"
   ],
   "materials": [
     "material_palm_husk",
     "material_bark_bast",
     "material_lamp_black"
   ],
-  "notes": "Bound, and about a third full. **The game's whole progression system**: the crossings-out are the useful part, because a first guess is worth keeping once it is wrong.",
+  "notes": "Bound, and about a third full. **The game's whole progression system**: the crossings-out are the useful part, because a first guess is worth keeping once it is wrong. Affords marking alone. It holds writing, which is not what `contain` or `carry` mean.",
   "canon": "inferred",
   "sources": [
     "inferred from canon geography"

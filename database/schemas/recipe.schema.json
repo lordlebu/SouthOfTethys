@@ -3,7 +3,14 @@
   "title": "Recipe",
   "description": "What becomes what. The only entity type here that is a relation rather than a thing, and it is still a noun: a recipe is a stated fact about the world, where the *doing* of it belongs to the game. Canon says reed fibre and a comb make cordage; whether a particular player has four of the one and one of the other is not canon's business.",
   "type": "object",
-  "required": ["id", "type", "name", "process", "ingredients", "outputs"],
+  "required": [
+    "id",
+    "type",
+    "name",
+    "process",
+    "ingredients",
+    "outputs"
+  ],
   "properties": {
     "id": {
       "type": "string",
@@ -27,17 +34,44 @@
       "items": {
         "type": "object",
         "oneOf": [
-          { "required": ["tag"] },
-          { "required": ["material"] },
-          { "required": ["item"] }
+          {
+            "required": [
+              "tag"
+            ]
+          },
+          {
+            "required": [
+              "material"
+            ]
+          },
+          {
+            "required": [
+              "item"
+            ]
+          }
         ],
         "properties": {
           "tag": {
             "type": "string",
             "enum": [
-              "#fibre", "#timber", "#bone", "#hide", "#shell", "#resin", "#clay",
-              "#stone", "#glass", "#metal", "#salt", "#pigment", "#grain",
-              "#produce", "#flesh", "#oil", "#fuel", "#physic"
+              "#fibre",
+              "#timber",
+              "#bone",
+              "#hide",
+              "#shell",
+              "#resin",
+              "#clay",
+              "#stone",
+              "#glass",
+              "#metal",
+              "#salt",
+              "#pigment",
+              "#grain",
+              "#produce",
+              "#flesh",
+              "#oil",
+              "#fuel",
+              "#physic"
             ],
             "description": "Any material carrying this class satisfies the ingredient. **The reason this layer is maintainable**: a recipe naming `#fibre` accepts a reed canon has not written yet, where a recipe naming four species has to be edited every time the bestiary grows. Hash-prefixed so a tag is never mistaken for an id. Pinned against material_classes.json by lint."
           },
@@ -70,13 +104,30 @@
       "items": {
         "type": "object",
         "oneOf": [
-          { "required": ["item"] },
-          { "required": ["material"] }
+          {
+            "required": [
+              "item"
+            ]
+          },
+          {
+            "required": [
+              "material"
+            ]
+          }
         ],
         "properties": {
-          "item": { "type": "string", "pattern": "^item_[a-z0-9_]+$" },
-          "material": { "type": "string", "pattern": "^material_[a-z0-9_]+$" },
-          "count": { "type": "integer", "minimum": 1 }
+          "item": {
+            "type": "string",
+            "pattern": "^item_[a-z0-9_]+$"
+          },
+          "material": {
+            "type": "string",
+            "pattern": "^material_[a-z0-9_]+$"
+          },
+          "count": {
+            "type": "integer",
+            "minimum": 1
+          }
         },
         "additionalProperties": false
       },
@@ -84,26 +135,45 @@
     },
     "known_by": {
       "type": "array",
-      "items": { "type": "string" },
+      "items": {
+        "type": "string"
+      },
       "description": "Culture ids from database/cultures.json that hold this knowledge. Absent means everybody. Checked by lint against that file, the way `culture` on a character is."
     },
     "epochs": {
       "type": "array",
-      "items": { "type": "string" },
+      "items": {
+        "type": "string"
+      },
       "description": "Epoch ids. Absent means every epoch. Date anything involving metal."
     },
-    "notes": { "type": "string" },
+    "notes": {
+      "type": "string"
+    },
     "canon": {
       "type": "string",
-      "enum": ["primary", "secondary", "inferred"]
+      "enum": [
+        "primary",
+        "secondary",
+        "inferred"
+      ]
     },
     "sources": {
       "type": "array",
-      "items": { "type": "string" }
+      "items": {
+        "type": "string"
+      }
     },
     "source_index": {
       "type": "integer",
       "minimum": 0
+    },
+    "taught_by": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "`npc_` ids who can show a traveller how. **A recipe with this field must be learned; a recipe without it is common knowledge and is known from the first step.** That rule is the whole of the gating, and it is stated this way round on purpose: 72 recipes offered at once is a wall, and re-authoring all 72 to say `common: true` to fix it would be a worse wall. Silence keeps meaning what it has always meant here -- canon has not said otherwise."
     }
   },
   "additionalProperties": false

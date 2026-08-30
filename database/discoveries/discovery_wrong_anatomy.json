@@ -15,7 +15,10 @@
       "entry": "The limb bones are paired the wrong way. Whatever this was did not share an ancestor with anything I have drawn on this continent."
     },
     {
-      "entry": "Not deformity, and not two animals mixed: the joints articulate. It worked. Something walked around inside this."
+      "entry": "Not deformity, and not two animals mixed: the joints articulate. It worked. Something walked around inside this.",
+      "needs_tool": [
+        "carry"
+      ]
     },
     {
       "entry": "The teeth are the argument. Replacement runs from the back forward, which nothing here does, and the wear says it lived long enough to be old."

@@ -28,5 +28,8 @@
   "sources": [
     "inferred from canon geography"
   ],
-  "source_index": 41
+  "source_index": 41,
+  "taught_by": [
+    "npc_marn"
+  ]
 }

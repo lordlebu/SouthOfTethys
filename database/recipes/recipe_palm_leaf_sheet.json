@@ -24,5 +24,8 @@
   "sources": [
     "inferred from canon geography"
   ],
-  "source_index": 57
+  "source_index": 57,
+  "taught_by": [
+    "npc_okhi"
+  ]
 }

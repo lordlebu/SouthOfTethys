@@ -25,6 +25,9 @@
       "entry": "It crosses the old harbour floor without a break, and the silt underneath it is unfused. So it happened after the water left, and fast.",
       "requires": [
         "discovery_seawall_courses"
+      ],
+      "needs_tool": [
+        "cut"
       ]
     },
     {

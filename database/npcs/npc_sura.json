@@ -42,6 +42,15 @@
       "requires": [
         "discovery_midden_layers"
       ]
+    },
+    {
+      "text": "Everyone thinks I am looking for something. I am looking at *how things break*. Bone breaks along the grain and shell does not, so bone makes a point and shell makes a bead. Here -- drill it wet, and go slower than you want to.",
+      "requires": [],
+      "gives": [
+        "recipe_bone_awl",
+        "recipe_shell_bead",
+        "recipe_ammonite_pendant"
+      ]
     }
   ],
   "notes": "Holds four hundred years of stratigraphy as a family trade and has never been asked. Would settle -- the midden is a living, not a home.",

@@ -23,5 +23,8 @@
   "sources": [
     "inferred from canon geography"
   ],
-  "source_index": 30
+  "source_index": 30,
+  "taught_by": [
+    "npc_bekh"
+  ]
 }

@@ -31,6 +31,20 @@
       "requires": [
         "discovery_winter_line"
       ]
+    },
+    {
+      "text": "You are sleeping on the ground, I can see it from here. Sit. -- No, like that, butt the reeds against the frame, do not weave the ends in. The ends are where a mat goes first. Three of those and you have a floor. Six and you have a wall.",
+      "requires": [],
+      "gives": [
+        "recipe_reed_mat",
+        "recipe_grain_bin"
+      ]
+    },
+    {
+      "text": "Is that one of mine? -- It is one of yours. Good. Put it on the shed and I will tell you the thing nobody tells outsiders: the reed below the spring is the wrong reed. It looks right and it rots in a season. Cut yours from the channel.",
+      "requires": [],
+      "costs": "item_reed_mat",
+      "gives": []
     }
   ],
   "epochs": [
