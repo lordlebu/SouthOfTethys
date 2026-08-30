@@ -330,6 +330,31 @@ def main() -> int:
             if form and form not in forms:
                 errors.append(f"{path.name}: '{form}' is not a growth form in growth_forms.json")
 
+    # --- plant uses -------------------------------------------------------------------
+    #
+    # The last of the free-text vocabularies, and the one that shows why these pins are worth
+    # writing: it reached 51 distinct values across 27 plants with 44 used exactly once before
+    # anybody looked. Pinned in both directions like the rest -- the schema holds the enum and
+    # `plant_uses.json` holds the glosses, and either can gain a value the other has not.
+    uses_path = DB / "plant_uses.json"
+    flora_schema = SCHEMA_DIR / "flora.schema.json"
+    if uses_path.exists() and flora_schema.exists():
+        declared_uses = set(load(uses_path)["uses"])
+        listed_uses = set(load(flora_schema)["properties"]["uses"]["items"].get("enum") or [])
+        for missing in sorted(declared_uses - listed_uses):
+            errors.append(
+                f"plant_uses.json declares '{missing}' that flora.schema.json's enum does not allow"
+            )
+        for extra in sorted(listed_uses - declared_uses):
+            errors.append(
+                f"flora.schema.json allows use '{extra}' that plant_uses.json does not declare"
+            )
+        # And a declared use nothing uses is a value somebody invented and never needed. Not an
+        # error -- canon may name a use before a plant has it -- but worth saying out loud.
+        in_use = {u for _, (_, doc) in entities.items() for u in (doc.get("uses") or [])}
+        for idle in sorted(declared_uses - in_use):
+            print(f"  note       : plant use '{idle}' is declared and unused")
+
     # --- material classes -----------------------------------------------------------
     #
     # The third of these pins, and written the same way as the growth-form one for the same

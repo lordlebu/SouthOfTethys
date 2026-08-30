@@ -9,11 +9,10 @@
     "coastal"
   ],
   "uses": [
-    "thatching",
-    "mat_weaving",
-    "filter_beds"
+    "fibre",
+    "filtration"
   ],
-  "notes": "Tall estuary reed tolerant of brackish flood. Primary thatch for Kia marsh huts; planted in lagoon filter beds below Lothal docks.",
+  "notes": "Tall estuary reed tolerant of brackish flood. Primary thatch for Kia marsh huts; planted in lagoon filter beds below Lothal docks. Cut for thatching. Woven into mats. Planted in filter beds.",
   "canon": "primary",
   "sources": [
     "SouthOfTethys.txt"

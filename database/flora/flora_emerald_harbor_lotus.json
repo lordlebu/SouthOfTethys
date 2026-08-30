@@ -9,8 +9,8 @@
     "settlement_lothal"
   ],
   "uses": [
-    "ornamental",
-    "mineral_filter"
+    "ornament",
+    "filtration"
   ],
   "notes": "Massive aquatic lotus with bright green petals. Blooms in Lothal estuaries, drawing mineral-rich runoff.",
   "canon": "primary",

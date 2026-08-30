@@ -9,7 +9,7 @@
     "canopy"
   ],
   "uses": [
-    "spice",
+    "seasoning",
     "trade"
   ],
   "notes": "Climbing pepper of humid plateau ravines. Dried berries move downriver to Lothal spice stalls.",

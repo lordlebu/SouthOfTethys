@@ -8,10 +8,9 @@
     "region_saraswati_delta"
   ],
   "uses": [
-    "staple_food",
-    "flood_crop"
+    "food"
   ],
-  "notes": "Starchy corm grown in flooded lotus ponds. Complements Red Delta Rice in Kia and Harappan kitchens.",
+  "notes": "Starchy corm grown in flooded lotus ponds. Complements Red Delta Rice in Kia and Harappan kitchens. A staple food. Grown as a flood crop: it wants the water the rice cannot take.",
   "canon": "primary",
   "sources": [
     "SouthOfTethys.txt"

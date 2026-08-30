@@ -8,7 +8,7 @@
     "region_gedrosian_desert"
   ],
   "uses": [
-    "fruit",
+    "food",
     "shade",
     "fibre"
   ],

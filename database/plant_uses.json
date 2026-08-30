@@ -1,0 +1,91 @@
+{
+  "version": "1.0.0",
+  "description": "What people *do* with a plant, declared once so that a use is a value rather than whatever the author typed that afternoon. The last free-text vocabulary in canon: `culture`, `species`, `clade`, `growth_form`, `material_class` and `affordance` were all declared before it, and `uses` was left because the making layer had a better reason to leave it than to fold it in.",
+  "note": "**This is not `material_classes.json`, and the difference is why it survived that work.** A material class says what you can carry away -- fibre, timber, resin. A use says what the plant is *for*, and more than half of these are not substances at all: you cannot carry away shade, or a boundary, or a tree you steer by. Folding the two together would have destroyed a distinction rather than declared one, so `uses` stayed where it was and is declared here on its own terms.\n\nThe numbers are what an undeclared vocabulary looks like: 51 distinct values across 59 uses on 27 plants, and 44 of the 51 appeared exactly once. `ritual`, `ritual_offering` and `ritual_wood` were three values for one idea; `food`, `fruit`, `staple_food`, `staple_grain` and `flood_crop` were five. Nothing was wrong with any of them individually, which is exactly how this happens.\n\nDistinctions are kept where they are real, on the ruling `species.json` already carries: declaring a vocabulary is about catching the twenty-second value typed by accident, not about flattening twenty-one real ideas into eight. `memory` stays apart from `ritual` because canon's oracle fig genuinely stores a record, and `shade` stays apart from everything because a tree you sit under is doing something no substance does.",
+  "uses": {
+    "food": {
+      "label": "Food",
+      "note": "Eaten as a staple or grown as a crop. Absorbed `fruit`, `staple_food`, `staple_grain` and `flood_crop` -- the last of which is a fact about *when* it is grown and belongs in the plant's notes, not in a use."
+    },
+    "seasoning": {
+      "label": "Seasoning",
+      "note": "Changes the taste of other food rather than being the meal. Pepper and tamarind. Held apart from `food` because a delta that has one and not the other is in real trouble in a way the word `food` hides."
+    },
+    "drink": {
+      "label": "Drink",
+      "note": "Brewed, steeped or fermented. Canon's mahua and its black ash-tea."
+    },
+    "psychoactive": {
+      "label": "Psychoactive",
+      "note": "Changes the mind. A stimulant and a dream-inducer are the same category read at two strengths, and neither is medicine -- filing them under `physic` would have canon claiming the Blood-red Asura Lotus is a treatment."
+    },
+    "physic": {
+      "label": "Physic",
+      "note": "Treats a hurt or a sickness. Absorbed `medicine`, `wound_salve`, `tonic`, `insect_repellent` and `household_herb` -- the last because a herb kept by the door is kept to be used."
+    },
+    "poison": {
+      "label": "Poison",
+      "note": "Harms, and is known to. Its own value rather than a negative `physic`, because a culture that plants oleander on a boundary is using the harm on purpose."
+    },
+    "timber": {
+      "label": "Timber",
+      "note": "Wood cut for structure. Absorbed `construction`, `ship_timber`, `tower_beams`, `scaffolding` and `rafts`, which are five things one plank does."
+    },
+    "craftwork": {
+      "label": "Craftwork",
+      "note": "Worked into small objects rather than into a building. A sandalwood comb is not timber, and canon lists `carving` and `tools` separately for exactly that reason."
+    },
+    "fibre": {
+      "label": "Fibre",
+      "note": "Spun, woven or thatched. Absorbed `thatching` and `mat_weaving`, which are one fibre at two scales."
+    },
+    "fuel": {
+      "label": "Fuel",
+      "note": "Burnt for heat. Canon has one -- the ghost mangrove, for charcoal."
+    },
+    "oil": {
+      "label": "Oil",
+      "note": "Pressed from seed or nut."
+    },
+    "dye": {
+      "label": "Dye",
+      "note": "Colours cloth. Both indigos."
+    },
+    "fragrance": {
+      "label": "Fragrance",
+      "note": "Burnt or worn for its scent. Absorbed `incense` and `perfume`, which differ in how they are used and not in what the plant is for."
+    },
+    "trade": {
+      "label": "Trade",
+      "note": "Carried and sold beyond where it grows. Says a plant has worth without canon committing to a price, exactly as the `trade` affordance does for objects. Absorbed `trade_resin`, which said the same thing twice."
+    },
+    "ritual": {
+      "label": "Ritual",
+      "note": "Used in observance. Absorbed `ritual_offering`, `ritual_wood` and `omen_reading` -- three values for the same idea, which is what an undeclared vocabulary produces."
+    },
+    "memory": {
+      "label": "Memory",
+      "note": "The plant holds a record. Kept apart from `ritual` because canon means it literally: the Silver-Leaved Oracle Fig is an archive and the moonseed vine is grafted onto one. If that ever turns out to be metaphor, this is the value that should go."
+    },
+    "shade": {
+      "label": "Shade",
+      "note": "Stood or sat under. The most common use in canon and the one that proves this file is not `material_classes.json` -- there is nothing here to carry away."
+    },
+    "ornament": {
+      "label": "Ornament",
+      "note": "Grown to be looked at. Absorbed `decorative`."
+    },
+    "boundary": {
+      "label": "Boundary",
+      "note": "Marks or bars a line. Absorbed `barrier_hedge`, `boundary_marker` and `warning_marker`: a hedge that stops you and a hedge that warns you are the same hedge doing its job at two distances."
+    },
+    "landmark": {
+      "label": "Landmark",
+      "note": "Steered by. The ghost mangrove marks a channel, which is a use even though nobody touches the tree."
+    },
+    "filtration": {
+      "label": "Filtration",
+      "note": "Cleans water or binds what is dissolved in it. Absorbed `mineral_filter`, `filter_beds` and `mineral_binder`. The emerald harbour lotus and the saltreed both do it, at opposite ends of the delta."
+    }
+  }
+}

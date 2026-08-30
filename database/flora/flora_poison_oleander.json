@@ -10,7 +10,7 @@
   ],
   "uses": [
     "poison",
-    "boundary_marker"
+    "boundary"
   ],
   "notes": "Toxic flowering shrub of dry margins. Sap and smoke used sparingly in arrow pastes; planted to mark forbidden ground.",
   "canon": "primary",

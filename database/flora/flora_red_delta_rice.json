@@ -8,10 +8,10 @@
     "region_saraswati_delta"
   ],
   "uses": [
-    "staple_grain",
+    "food",
     "trade"
   ],
-  "notes": "Iron-rich short-grain rice of the Saraswati floodplain. Forms the bulk of Lothal granary stores and river trade with upland settlements.",
+  "notes": "Iron-rich short-grain rice of the Saraswati floodplain. Forms the bulk of Lothal granary stores and river trade with upland settlements. A staple grain.",
   "canon": "primary",
   "sources": [
     "SouthOfTethys.txt"

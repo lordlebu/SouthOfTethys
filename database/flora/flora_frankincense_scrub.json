@@ -9,10 +9,10 @@
     "region_aravali"
   ],
   "uses": [
-    "incense",
-    "trade_resin"
+    "fragrance",
+    "trade"
   ],
-  "notes": "Drought resin tree of desert margins. Tears of gum burned in Mask Family and Yaksha rites; major caravan commodity.",
+  "notes": "Drought resin tree of desert margins. Tears of gum burned in Mask Family and Yaksha rites; major caravan commodity. The resin is the traded part.",
   "canon": "primary",
   "sources": [
     "SouthOfTethys.txt"
