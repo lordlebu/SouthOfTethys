@@ -20,6 +20,7 @@ graph LR
     character_dyaus_pitar("Dyauṣ Pitar")
     character_indra("Indra")
     character_kunti("Kunti")
+    character_mitra_of_the_oath("Mitra of the Oath")
     character_varuna_of_the_deep("Varuṇa of the Deep")
   end
   subgraph grp_maya_born["maya_born (culture)"]
@@ -61,9 +62,9 @@ graph LR
   character_varuna_of_the_deep --> event_the_first_cosmic_move
 ```
 
-11 character(s), 8 event(s) they appear in, 4 group(s).
+12 character(s), 8 event(s) they appear in, 4 group(s).
 
-**Present in no event of this era:** Lionman.
+**Present in no event of this era:** Lionman, Mitra of the Oath.
 
 ## Deep Antiquity
 

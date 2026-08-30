@@ -365,6 +365,17 @@ waters, bound during Epoch 5 to a mortal human frame". The captain *is* Varuṇa
 what that folder is for; what it cannot be is a participant, and the gate refuses that now. The
 myth points at the character instead.
 
+**And so is Mitra** (2026-08-30). Giving Varuna a deity left Mitra half-modelled: also
+`deity_in_mortal_shell`, also dated to the era the game is played in, and with no deity to be the
+shell of. His own notes already called him "Varuna's divine partner". `character_mitra_of_the_oath`
+holds that half -- Varuṇa keeps Ṛta by cold water and pressure, Mitra keeps it by agreement, which
+is the same job done the opposite way.
+
+The field's name is now doing two jobs and the schema says so. Guyuk the Seed-Gleaner is genuinely
+reborn; Varuna and Mitra are **bound**, which is not the same thing. `deity_in_mortal_shell` is the
+species that says a god is wearing a frame, and `reincarnation_of` is what says which god. Two of
+the three uses are bindings, so reading the field name too literally would mislead.
+
 **The explorer culture** (decided 2026-08-30, by the owner). Varuna, Rathak, Ruvan, Mitra and both
 Guyuks. It is the one culture in canon that is not a people: every other entry names a lineage you
 are born into, and this one names a way of moving through the world, which is why the same word

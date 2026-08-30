@@ -1,9 +1,9 @@
 {
-  "version": "1.25.0",
+  "version": "1.26.0",
   "description": "SouthOfTethys canonical entity index",
   "counts": {
     "artifacts": 5,
-    "characters": 60,
+    "characters": 61,
     "discoveries": 31,
     "events": 36,
     "factions": 3,
@@ -62,6 +62,7 @@
       "character_mehme",
       "character_mira",
       "character_mitra",
+      "character_mitra_of_the_oath",
       "character_naga_raja",
       "character_narmada_man",
       "character_nila",

@@ -1,0 +1,23 @@
+{
+  "id": "character_mitra_of_the_oath",
+  "type": "character",
+  "name": "Mitra of the Oath",
+  "epithets": [
+    "Keeper of Friendship and Harmony",
+    "Witness to Contracts"
+  ],
+  "culture": "celestial",
+  "species": "deity",
+  "status": "mythic",
+  "epoch": "epoch_prehistoric",
+  "roles": [
+    "witness",
+    "binder_of_oaths"
+  ],
+  "notes": "Varuṇa's divine partner and his opposite in method. Where Varuṇa keeps Ṛta by cold water and pressure, Mitra keeps it by agreement -- an oath witnessed holds because both parties know he heard it. He does not play the cosmic game; he is the reason its players stay bound to the board once Dyauṣ Pitar set the rules.",
+  "canon": "secondary",
+  "sources": [
+    "dump/the-chess-of-fate-mythology.md",
+    "docs/decisions.md"
+  ]
+}

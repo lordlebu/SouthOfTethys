@@ -17,7 +17,7 @@ Each era below is canon as it stood then. An entity that names no epoch is prese
 | regions |  | 7 |
 | places | 19 | 9 |
 | settlements |  | 1 |
-| characters | 8 |  |
+| characters | 9 |  |
 | factions |  | 3 |
 | events | 8 |  |
 | artifacts |  | 5 |
