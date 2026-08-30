@@ -1,0 +1,27 @@
+{
+  "id": "recipe_rope_span",
+  "type": "recipe",
+  "name": "Fixing a rope span",
+  "process": "process_boatbuilding",
+  "ingredients": [
+    {
+      "item": "item_husk_hawser",
+      "count": 2
+    },
+    {
+      "tag": "#timber",
+      "count": 2
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_rope_span"
+    }
+  ],
+  "notes": "A line fixed both banks and a loop to hang from. Wants two people, which is why Teshk will not leave.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 45
+}

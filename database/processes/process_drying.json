@@ -1,0 +1,11 @@
+{
+  "id": "process_drying",
+  "type": "process",
+  "name": "Drying and salting",
+  "notes": "Preserving by taking the water out. Needs sun, air and patience, none of which canon models, so it needs nothing.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 13
+}

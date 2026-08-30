@@ -1,0 +1,29 @@
+{
+  "id": "recipe_salt_fish_stew",
+  "type": "recipe",
+  "name": "Cooking salt-fish stew",
+  "process": "process_cooking",
+  "ingredients": [
+    {
+      "item": "item_dried_fish"
+    },
+    {
+      "material": "material_taro_root",
+      "count": 2
+    },
+    {
+      "material": "material_tamarind_pulp"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_salt_fish_stew"
+    }
+  ],
+  "notes": "The pot everything ends up in. Nobody writes it down and everybody makes it.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 65
+}

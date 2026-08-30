@@ -1,0 +1,23 @@
+{
+  "id": "vehicle_log_dugout",
+  "type": "vehicle",
+  "name": "Dugout",
+  "kind": "boat",
+  "crosses": [
+    "river",
+    "wetland",
+    "coast"
+  ],
+  "capacity": 3,
+  "materials": [
+    "material_teak_timber",
+    "material_tree_pitch"
+  ],
+  "built_by": "process_boatbuilding",
+  "notes": "One trunk, burnt and adzed hollow. The adze blade set across the haft rather than along it is the whole reason this is possible.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 1
+}

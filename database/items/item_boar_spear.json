@@ -1,0 +1,21 @@
+{
+  "id": "item_boar_spear",
+  "type": "item",
+  "name": "Boar spear",
+  "base_item": "item_hafted_tool",
+  "kind": "weapon",
+  "affords": [
+    "cut",
+    "deter"
+  ],
+  "materials": [
+    "material_teak_timber",
+    "material_boar_tusk"
+  ],
+  "notes": "Cross-barred below the head so that what it stops does not walk up it. A defensive object described defensively, which is what canon has.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 27
+}

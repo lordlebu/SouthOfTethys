@@ -1,0 +1,23 @@
+{
+  "id": "vehicle_coastal_dhow",
+  "type": "vehicle",
+  "name": "Coastal dhow",
+  "kind": "ship",
+  "crosses": [
+    "coast",
+    "sea"
+  ],
+  "capacity": 12,
+  "materials": [
+    "material_teak_timber",
+    "material_palm_husk",
+    "material_tree_pitch"
+  ],
+  "built_by": "process_boatbuilding",
+  "notes": "Sewn rather than nailed -- husk cordage through drilled planks, and the whole hull flexes. Canon records iron-teak for ship timber, and this is what it is for.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 4
+}

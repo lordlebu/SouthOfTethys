@@ -1,0 +1,17 @@
+{
+  "id": "foodway_flood_bread_rising",
+  "type": "foodway",
+  "name": "The rising loaf",
+  "culture": "harappan",
+  "dish": "item_flood_bread",
+  "occasion": "The first day the river comes over the bank.",
+  "meaning": "That the flood is a harvest and not a disaster. Taro is the crop that wants the water the rice cannot take, so a loaf stretched with taro is the year saying it will be all right.",
+  "places": [
+    "settlement_lothal"
+  ],
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 0
+}

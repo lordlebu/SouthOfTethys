@@ -1,0 +1,20 @@
+{
+  "id": "item_cooking_pot",
+  "type": "item",
+  "name": "Cooking pot",
+  "base_item": "item_vessel_ware",
+  "kind": "container",
+  "affords": [
+    "contain"
+  ],
+  "materials": [
+    "material_river_clay",
+    "material_potters_grog"
+  ],
+  "notes": "Coarse-tempered so it survives the fire. Every cooked thing in canon passes through one.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 32
+}

@@ -1,0 +1,32 @@
+{
+  "id": "recipe_tan_goat_hide",
+  "type": "recipe",
+  "name": "Tanning hide",
+  "process": "process_tanning",
+  "ingredients": [
+    {
+      "tag": "#hide",
+      "count": 2
+    },
+    {
+      "material": "material_bark_bast",
+      "count": 2
+    },
+    {
+      "item": "item_storage_jar",
+      "kept": true
+    }
+  ],
+  "outputs": [
+    {
+      "material": "material_goat_hide",
+      "count": 2
+    }
+  ],
+  "notes": "Bark liquor and time. Nobody will let you do it upwind of them.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 41
+}

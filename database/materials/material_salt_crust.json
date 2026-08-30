@@ -1,0 +1,22 @@
+{
+  "id": "material_salt_crust",
+  "type": "material",
+  "name": "Salt crust",
+  "classes": [
+    "salt"
+  ],
+  "won_from": [
+    "flora_desert_saltbush"
+  ],
+  "found_in": [
+    "desert",
+    "coast"
+  ],
+  "rarity": "common",
+  "notes": "Scraped off a pan in sheets. It is preservative, currency and the ground Dwarka stands on, which is why it is its own class and not a footnote under stone.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 31
+}

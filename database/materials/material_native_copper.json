@@ -1,0 +1,20 @@
+{
+  "id": "material_native_copper",
+  "type": "material",
+  "name": "Native copper",
+  "classes": [
+    "metal"
+  ],
+  "found_in": [
+    "hills",
+    "mountains",
+    "desert"
+  ],
+  "rarity": "rare",
+  "notes": "Found as metal rather than smelted from ore -- green-crusted lumps in a dry watercourse. Cold-worked, annealed, worked again.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 28
+}

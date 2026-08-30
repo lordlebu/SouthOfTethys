@@ -1,0 +1,21 @@
+{
+  "id": "item_reed_spear",
+  "type": "item",
+  "name": "Reed spear",
+  "base_item": "item_hafted_tool",
+  "kind": "weapon",
+  "affords": [
+    "cut",
+    "deter"
+  ],
+  "materials": [
+    "material_bamboo_cane",
+    "material_flint"
+  ],
+  "notes": "Held level, it moves a herd. That is the whole of its recorded use.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 26
+}

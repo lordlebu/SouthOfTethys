@@ -1,0 +1,19 @@
+{
+  "id": "item_sinew_lashing",
+  "type": "item",
+  "name": "Sinew lashing",
+  "base_item": "item_cordage",
+  "kind": "tool",
+  "affords": [
+    "bind"
+  ],
+  "materials": [
+    "material_sinew"
+  ],
+  "notes": "Dries tight rather than merely holding, which is why every hafted tool wants it and no plant fibre will substitute.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 8
+}

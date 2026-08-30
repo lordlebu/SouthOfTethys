@@ -1,0 +1,20 @@
+{
+  "id": "item_mahua_liquor",
+  "type": "item",
+  "name": "Mahua liquor",
+  "base_item": "item_prepared_food",
+  "kind": "food",
+  "affords": [
+    "eat",
+    "trade"
+  ],
+  "materials": [
+    "material_mahua_oil"
+  ],
+  "notes": "Canon already records the tree for a fermented drink. Distilled nowhere -- this is the fermented thing itself, and strong enough.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 54
+}

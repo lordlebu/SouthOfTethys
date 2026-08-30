@@ -1,0 +1,16 @@
+{
+  "id": "material_tree_pitch",
+  "type": "material",
+  "name": "Pitch",
+  "classes": [
+    "resin",
+    "fuel"
+  ],
+  "rarity": "common",
+  "notes": "Boiled down from resinous heartwood in a covered pit. Nothing floats without it -- every hull in canon is a hull somebody paid this attention. Boiled out of resinous heartwood in a covered pit.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 20
+}

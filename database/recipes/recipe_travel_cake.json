@@ -1,0 +1,30 @@
+{
+  "id": "recipe_travel_cake",
+  "type": "recipe",
+  "name": "Baking travel cake",
+  "process": "process_cooking",
+  "ingredients": [
+    {
+      "material": "material_delta_rice",
+      "count": 2
+    },
+    {
+      "tag": "#oil"
+    },
+    {
+      "material": "material_date_fruit"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_travel_cake",
+      "count": 2
+    }
+  ],
+  "notes": "Baked hard. Made to be carried rather than enjoyed, and it tastes like it.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 67
+}

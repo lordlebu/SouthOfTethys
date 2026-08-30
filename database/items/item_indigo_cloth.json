@@ -1,0 +1,21 @@
+{
+  "id": "item_indigo_cloth",
+  "type": "item",
+  "name": "Indigo cloth",
+  "base_item": "item_woven_ware",
+  "kind": "textile",
+  "affords": [
+    "trade",
+    "shelter"
+  ],
+  "materials": [
+    "material_indigo_dye",
+    "material_bark_bast"
+  ],
+  "notes": "Comes out of the vat green and turns blue in the air while you watch. Half its worth is the colour and half is that everyone has seen it happen.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 13
+}

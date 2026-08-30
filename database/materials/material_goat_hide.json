@@ -1,0 +1,22 @@
+{
+  "id": "material_goat_hide",
+  "type": "material",
+  "name": "Goat hide",
+  "classes": [
+    "hide"
+  ],
+  "won_from": [
+    "fauna_vindhya_cliff_goat"
+  ],
+  "found_in": [
+    "hills",
+    "mountains"
+  ],
+  "rarity": "common",
+  "notes": "Tanned with bark liquor. Becomes a water-skin, a drum head, or the seat of a saddle, in roughly that order of frequency.",
+  "canon": "inferred",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "source_index": 12
+}

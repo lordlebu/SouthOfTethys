@@ -1,0 +1,19 @@
+{
+  "id": "item_hunting_sling",
+  "type": "item",
+  "name": "Sling",
+  "kind": "weapon",
+  "affords": [
+    "deter"
+  ],
+  "materials": [
+    "material_goat_hair",
+    "material_goat_hide"
+  ],
+  "notes": "Two cords and a pouch. Affords only `deter`: canon records slings keeping birds off a crop far more often than it records them doing anything else.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 29
+}

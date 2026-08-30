@@ -1,0 +1,28 @@
+{
+  "id": "recipe_palm_leaf_sheet",
+  "type": "recipe",
+  "name": "Preparing palm leaf",
+  "process": "process_drying",
+  "ingredients": [
+    {
+      "material": "material_palm_husk",
+      "count": 2
+    },
+    {
+      "item": "item_cooking_pot",
+      "kept": true
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_palm_leaf_sheet",
+      "count": 3
+    }
+  ],
+  "notes": "Cut, boiled, dried, smoothed. Takes a scored line better than it takes ink.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 57
+}

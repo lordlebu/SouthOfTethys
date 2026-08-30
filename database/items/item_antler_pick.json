@@ -1,0 +1,20 @@
+{
+  "id": "item_antler_pick",
+  "type": "item",
+  "name": "Antler pick",
+  "base_item": "item_hafted_tool",
+  "kind": "tool",
+  "affords": [
+    "cut",
+    "work"
+  ],
+  "materials": [
+    "material_deer_antler"
+  ],
+  "notes": "For clay, chalk and soft rock. Free, in the sense that the deer left it lying there.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 19
+}

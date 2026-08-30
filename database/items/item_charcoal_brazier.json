@@ -1,0 +1,20 @@
+{
+  "id": "item_charcoal_brazier",
+  "type": "item",
+  "name": "Brazier",
+  "kind": "light",
+  "affords": [
+    "burn",
+    "contain"
+  ],
+  "materials": [
+    "material_river_clay",
+    "material_charcoal"
+  ],
+  "notes": "Portable fire. Lets a process that needs heat happen somewhere that has none.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 40
+}

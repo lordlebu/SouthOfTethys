@@ -1,0 +1,19 @@
+{
+  "id": "item_bone_awl",
+  "type": "item",
+  "name": "Bone awl",
+  "kind": "tool",
+  "affords": [
+    "cut",
+    "mark"
+  ],
+  "materials": [
+    "material_deer_antler"
+  ],
+  "notes": "Bores a hole and scores a line. Filed under both cutting and marking because a tally is scratched with the same point that makes a stitch-hole.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 21
+}

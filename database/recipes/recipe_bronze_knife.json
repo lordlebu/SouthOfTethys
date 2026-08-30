@@ -1,0 +1,33 @@
+{
+  "id": "recipe_bronze_knife",
+  "type": "recipe",
+  "name": "Casting a bronze knife",
+  "process": "process_casting",
+  "ingredients": [
+    {
+      "material": "material_bronze"
+    },
+    {
+      "material": "material_charcoal",
+      "count": 2
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_bronze_knife"
+    }
+  ],
+  "known_by": [
+    "harappan"
+  ],
+  "epochs": [
+    "epoch_civilization_dawn",
+    "epoch_current"
+  ],
+  "notes": "Holds an edge and takes a new one.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 49
+}

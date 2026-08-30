@@ -1,0 +1,20 @@
+{
+  "id": "item_hide_tent",
+  "type": "item",
+  "name": "Hide tent",
+  "kind": "shelter",
+  "affords": [
+    "shelter"
+  ],
+  "materials": [
+    "material_goat_hide",
+    "material_bamboo_cane",
+    "material_palm_husk"
+  ],
+  "notes": "Two people to raise and one to strike. What a caravan sleeps under when there is no travel node within a day.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 59
+}

@@ -1,0 +1,25 @@
+{
+  "id": "material_mahua_oil",
+  "type": "material",
+  "name": "Mahua oil",
+  "classes": [
+    "oil",
+    "produce"
+  ],
+  "won_from": [
+    "flora_mahua",
+    "flora_sweet_nectar_mahua"
+  ],
+  "found_in": [
+    "forest",
+    "plains",
+    "hills"
+  ],
+  "rarity": "common",
+  "notes": "Pressed from the seed. Canon already has the tree down for oil, a fermented drink and a ritual offering, and this is only the first of the three.",
+  "canon": "inferred",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "source_index": 41
+}

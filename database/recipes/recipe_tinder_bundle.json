@@ -1,0 +1,26 @@
+{
+  "id": "recipe_tinder_bundle",
+  "type": "recipe",
+  "name": "Making tinder",
+  "process": "process_drying",
+  "ingredients": [
+    {
+      "material": "material_bark_bast"
+    },
+    {
+      "material": "material_charcoal"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_tinder_bundle",
+      "count": 2
+    }
+  ],
+  "notes": "Kept dry against the body. Usually the difference between a cold night and a warm one.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 40
+}

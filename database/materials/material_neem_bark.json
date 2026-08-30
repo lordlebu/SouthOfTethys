@@ -1,0 +1,23 @@
+{
+  "id": "material_neem_bark",
+  "type": "material",
+  "name": "Neem bark",
+  "classes": [
+    "physic"
+  ],
+  "won_from": [
+    "flora_neem"
+  ],
+  "found_in": [
+    "forest",
+    "plains",
+    "settlement"
+  ],
+  "rarity": "common",
+  "notes": "Canon has the tree for medicine and insect repellent. Bitter enough that nobody takes it for pleasure and reliable enough that everybody has some.",
+  "canon": "inferred",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "source_index": 44
+}

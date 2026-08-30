@@ -1,0 +1,14 @@
+{
+  "id": "foodway_mahua_liquor_bargain",
+  "type": "foodway",
+  "name": "The struck cup",
+  "culture": "tushara",
+  "dish": "item_mahua_liquor",
+  "occasion": "At the closing of a trade, poured by the seller.",
+  "meaning": "A bargain is not done when the goods move; it is done when both have drunk. The tally stick records it and the cup finishes it.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 12
+}

@@ -1,0 +1,24 @@
+{
+  "id": "vehicle_delta_barge",
+  "type": "vehicle",
+  "name": "Delta barge",
+  "kind": "boat",
+  "crosses": [
+    "river",
+    "wetland",
+    "coast"
+  ],
+  "capacity": 8,
+  "materials": [
+    "material_teak_timber",
+    "material_palm_husk",
+    "material_tree_pitch"
+  ],
+  "built_by": "process_boatbuilding",
+  "notes": "Flat-bottomed and poled. What actually moves a grain surplus, and therefore what a settlement is downstream of in every sense.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 3
+}

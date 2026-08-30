@@ -36,6 +36,12 @@ COLLECTION_NAME = "southoftethys"
 
 # Canon folders under database/
 DB_FOLDERS = [
+    "materials",
+    "items",
+    "processes",
+    "recipes",
+    "vehicles",
+    "foodways",
     "characters",
     "events",
     "fauna",
@@ -154,6 +160,19 @@ def entity_document(payload: dict[str, Any]) -> str:
         "power",
         "risk",
         "material",
+        # Material fields -- `classes` is the whole of what a material is for.
+        "classes",
+        "won_from",
+        "found_in",
+        # Item and process fields.
+        "affords",
+        "kind",
+        "performed_at",
+        "needs",
+        # Vehicle and foodway fields.
+        "crosses",
+        "occasion",
+        "meaning",
         # Species fields. `journal_prompt` is the richest prose on a species -- the
         # sentence the player actually reads -- and was absent here, so 300-odd entities
         # were indexed on their reference notes alone. `biomes` and `crosses_at` say where

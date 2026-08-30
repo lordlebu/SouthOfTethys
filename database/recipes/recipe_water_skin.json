@@ -1,0 +1,29 @@
+{
+  "id": "recipe_water_skin",
+  "type": "recipe",
+  "name": "Pitching a water skin",
+  "process": "process_carving",
+  "ingredients": [
+    {
+      "material": "material_goat_hide"
+    },
+    {
+      "material": "material_tree_pitch"
+    },
+    {
+      "item": "item_bone_awl",
+      "kept": true
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_water_skin"
+    }
+  ],
+  "notes": "Tastes of the pitch. Everyone stopped noticing generations ago.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 42
+}

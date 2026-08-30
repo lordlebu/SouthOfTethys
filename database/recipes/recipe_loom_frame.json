@@ -1,0 +1,30 @@
+{
+  "id": "recipe_loom_frame",
+  "type": "recipe",
+  "name": "Building a loom frame",
+  "process": "process_carving",
+  "ingredients": [
+    {
+      "material": "material_bamboo_cane",
+      "count": 4
+    },
+    {
+      "item": "item_reed_rope"
+    },
+    {
+      "item": "item_flint_knife",
+      "kept": true
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_loom_frame"
+    }
+  ],
+  "notes": "Upright, weighted, taken apart to travel. Every woven thing waits on this one.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 16
+}

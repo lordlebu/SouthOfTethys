@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Vehicle",
+  "description": "A kind of craft a person can board, and the ground it crosses. Repeatable, the way an `item` is repeatable: canon already holds four *named* vessels -- the Battered Ekranoplan, the Kelpfang, the Leviathan's Rib and the Survival Train -- as `place` entities with `kind: vessel`, and those stay where they are. The split is the one items and artifacts already have. A reed raft is a vehicle and there are hundreds; the Kelpfang is one, and it has a story.",
+  "type": "object",
+  "required": ["id", "type", "name", "kind", "crosses"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^vehicle_[a-z0-9_]+$" },
+    "type": { "const": "vehicle" },
+    "name": { "type": "string", "minLength": 1 },
+    "kind": {
+      "type": "string",
+      "enum": ["raft", "boat", "ship", "cart", "sled", "machine"],
+      "description": "Coarse on purpose, like `place.kind`. The distinction that matters is a raft from a ship, not a dhow from a ketch."
+    },
+    "crosses": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "enum": [
+          "sea", "coast", "plains", "forest", "wetland", "hills", "mountains",
+          "desert", "river", "settlement", "landmark", "sky_island",
+          "sky_underside", "open_sky", "underworld", "lava_field"
+        ]
+      },
+      "description": "Biomes this can travel over. The whole mechanical point of a vehicle: it makes ground passable that walking cannot cross, which is what `affords: [\"cross\"]` says about an item and this says at the scale of a journey."
+    },
+    "capacity": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "People it carries, crew included. A number canon is often guessing at, which is why it is optional."
+    },
+    "materials": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "`material_` ids it is built from."
+    },
+    "built_by": {
+      "type": "string",
+      "pattern": "^process_[a-z0-9_]+$",
+      "description": "The process that makes one. Almost always `process_boatbuilding`; a cart is not."
+    },
+    "exemplars": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "`place_` ids of named craft of this kind. **One-directional on purpose** -- the vehicle names the vessel and the vessel does not name the vehicle back, so the two cannot drift. This is the ruling factions already have with `members`, applied again."
+    },
+    "epochs": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Epoch ids. Absent means every epoch, which is right for a raft and badly wrong for a ground-effect craft."
+    },
+    "notes": { "type": "string" },
+    "canon": { "type": "string", "enum": ["primary", "secondary", "inferred"] },
+    "sources": { "type": "array", "items": { "type": "string" } },
+    "source_index": { "type": "integer", "minimum": 0 }
+  },
+  "additionalProperties": false
+}

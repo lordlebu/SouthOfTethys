@@ -1,0 +1,30 @@
+{
+  "id": "recipe_ink_cake",
+  "type": "recipe",
+  "name": "Pressing an ink cake",
+  "process": "process_pressing",
+  "ingredients": [
+    {
+      "material": "material_lamp_black",
+      "count": 2
+    },
+    {
+      "tag": "#resin"
+    },
+    {
+      "item": "item_cooking_pot",
+      "kept": true
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_ink_cake"
+    }
+  ],
+  "notes": "Soot bound with gum and dried into a block. What Varuna's diary is written in.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 55
+}

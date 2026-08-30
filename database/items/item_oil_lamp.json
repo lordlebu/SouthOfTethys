@@ -1,0 +1,19 @@
+{
+  "id": "item_oil_lamp",
+  "type": "item",
+  "name": "Oil lamp",
+  "kind": "light",
+  "affords": [
+    "burn"
+  ],
+  "materials": [
+    "material_river_clay",
+    "material_mahua_oil"
+  ],
+  "notes": "A closed clay lamp with a shielded wick, the kind that survives being carried. Throws about an arm of light. **Varuna has carried one since the game's first step** -- canon is recording the kit rather than inventing it.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 37
+}

@@ -1,0 +1,25 @@
+{
+  "id": "recipe_antler_pick",
+  "type": "recipe",
+  "name": "Hafting an antler pick",
+  "process": "process_carving",
+  "ingredients": [
+    {
+      "material": "material_deer_antler"
+    },
+    {
+      "item": "item_reed_rope"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_antler_pick"
+    }
+  ],
+  "notes": "Free, in the sense that the deer left it lying there.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 13
+}

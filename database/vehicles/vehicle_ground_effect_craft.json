@@ -1,0 +1,27 @@
+{
+  "id": "vehicle_ground_effect_craft",
+  "type": "vehicle",
+  "name": "Ground-effect craft",
+  "kind": "machine",
+  "crosses": [
+    "sea",
+    "coast",
+    "desert"
+  ],
+  "capacity": 30,
+  "materials": [
+    "material_bronze"
+  ],
+  "exemplars": [
+    "place_ekranoplan"
+  ],
+  "epochs": [
+    "epoch_current"
+  ],
+  "notes": "Flies a few metres above the water and cannot go higher, which makes it neither a boat nor an aircraft and useless anywhere but the open Tethys. The Battered Ekranoplan is the one canon has, bought cheap off delta salvagers.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 9
+}

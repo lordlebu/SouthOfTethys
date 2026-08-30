@@ -1,0 +1,27 @@
+{
+  "id": "recipe_reed_mat",
+  "type": "recipe",
+  "name": "Weaving a reed mat",
+  "process": "process_weaving",
+  "ingredients": [
+    {
+      "tag": "#fibre",
+      "count": 6
+    },
+    {
+      "item": "item_loom_frame",
+      "kept": true
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_reed_mat"
+    }
+  ],
+  "notes": "Any fibre will do, which is what a tag ingredient is for -- reed in the delta, husk on the coast, and the recipe does not have to know which.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 4
+}

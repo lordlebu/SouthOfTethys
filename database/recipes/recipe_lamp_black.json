@@ -1,0 +1,27 @@
+{
+  "id": "recipe_lamp_black",
+  "type": "recipe",
+  "name": "Catching lamp black",
+  "process": "process_firing",
+  "ingredients": [
+    {
+      "tag": "#oil"
+    },
+    {
+      "item": "item_oil_lamp",
+      "kept": true
+    }
+  ],
+  "outputs": [
+    {
+      "material": "material_lamp_black",
+      "count": 2
+    }
+  ],
+  "notes": "Soot on a cold plate held over a flame.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 53
+}

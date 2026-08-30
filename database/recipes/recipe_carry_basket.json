@@ -1,0 +1,27 @@
+{
+  "id": "recipe_carry_basket",
+  "type": "recipe",
+  "name": "Weaving a carry basket",
+  "process": "process_weaving",
+  "ingredients": [
+    {
+      "material": "material_bamboo_cane",
+      "count": 2
+    },
+    {
+      "tag": "#fibre",
+      "count": 4
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_carry_basket"
+    }
+  ],
+  "notes": "Split cane ribs, then any fibre for the weft.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 5
+}

@@ -1,0 +1,29 @@
+{
+  "id": "vehicle_workshop_train",
+  "type": "vehicle",
+  "name": "Workshop train",
+  "kind": "machine",
+  "crosses": [
+    "plains",
+    "hills",
+    "desert",
+    "settlement"
+  ],
+  "capacity": 60,
+  "materials": [
+    "material_bronze",
+    "material_teak_timber"
+  ],
+  "exemplars": [
+    "place_survival_train"
+  ],
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "notes": "A travelling apothecary and workshop rather than transport. The Survival Train gathers the displaced across the broken country, which is a use for a vehicle that has nothing to do with getting anywhere.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 10
+}

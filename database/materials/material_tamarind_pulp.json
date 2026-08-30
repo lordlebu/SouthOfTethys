@@ -1,0 +1,23 @@
+{
+  "id": "material_tamarind_pulp",
+  "type": "material",
+  "name": "Tamarind pulp",
+  "classes": [
+    "produce"
+  ],
+  "won_from": [
+    "flora_tamarind"
+  ],
+  "found_in": [
+    "forest",
+    "plains",
+    "settlement"
+  ],
+  "rarity": "common",
+  "notes": "Canon files the tree under food, souring agent and shade. This is the first two; the third is not a thing you can carry.",
+  "canon": "inferred",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "source_index": 39
+}

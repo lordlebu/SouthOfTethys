@@ -1,0 +1,19 @@
+{
+  "id": "item_mud_shoes",
+  "type": "item",
+  "name": "Mud shoes",
+  "kind": "tool",
+  "affords": [
+    "cross"
+  ],
+  "materials": [
+    "material_bamboo_cane",
+    "material_reed_fibre"
+  ],
+  "notes": "Splayed frames lashed under the foot. Cross a salt flat or a tidal mud that would otherwise take you to the knee.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 61
+}

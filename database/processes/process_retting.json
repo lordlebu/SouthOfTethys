@@ -1,0 +1,11 @@
+{
+  "id": "process_retting",
+  "type": "process",
+  "name": "Retting",
+  "notes": "Rotting the soft parts off a stem in standing water until only fibre is left. Takes days and smells; done at the water's edge and never indoors.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 2
+}

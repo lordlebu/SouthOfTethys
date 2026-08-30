@@ -59,6 +59,12 @@ PREFIX_DIRS = {
     "npc_": "npcs",
     "word_": "vocabulary",
     "place_": "places",
+    "material_": "materials",
+    "item_": "items",
+    "process_": "processes",
+    "recipe_": "recipes",
+    "vehicle_": "vehicles",
+    "foodway_": "foodways",
 }
 
 # folder -> schema stem, where the two differ.
@@ -70,6 +76,12 @@ SCHEMA_FOR = {
     "artifacts": "artifact", "factions": "faction", "mythology": "mythology",
     "settlements": "settlement",
     "places": "place",
+    "materials": "material",
+    "items": "item",
+    "processes": "process",
+    "recipes": "recipe",
+    "vehicles": "vehicle",
+    "foodways": "foodway",
 }
 
 # Values that look like ids but are not entity references.
@@ -189,6 +201,19 @@ def main() -> int:
     listed = index.get("entities", {})
     counts = index.get("counts", {})
 
+    # A whole folder the manifest has never heard of is invisible to the loop below, because
+    # the loop walks the manifest. That is the same shape as the bug `update_index.py` records
+    # -- `places` carried a count and no id list, so the both-directions check never ran on it
+    # and 24 entities went unverified -- one level up: there, a list was missing from a
+    # category; here, the category is missing entirely. Found while adding `materials/`, whose
+    # 46 files passed a green lint before this check existed.
+    for folder in sorted(set(PREFIX_DIRS.values())):
+        if (DB / folder).exists() and folder not in listed:
+            errors.append(
+                f"database/{folder}/ has entities but no category in index.json -- run "
+                f"utils/update_index.py"
+            )
+
     for category, ids in listed.items():
         folder = DB / category
         if not folder.exists():
@@ -304,6 +329,92 @@ def main() -> int:
             form = payload.get("growth_form")
             if form and form not in forms:
                 errors.append(f"{path.name}: '{form}' is not a growth form in growth_forms.json")
+
+    # --- material classes -----------------------------------------------------------
+    #
+    # The third of these pins, and written the same way as the growth-form one for the same
+    # reason. The schema holds the enum and `material_classes.json` holds the glosses, and the
+    # two live in different files -- so a class can be added to one and forgotten in the other,
+    # after which a material is rejected for carrying a class canon has documented. Checked in
+    # both directions, because both directions have happened to the clade pair.
+    classes_path = DB / "material_classes.json"
+    mat_schema = SCHEMA_DIR / "material.schema.json"
+    if classes_path.exists() and mat_schema.exists():
+        declared = set(load(classes_path)["classes"])
+        listed = set(
+            load(mat_schema)["properties"]["classes"]["items"].get("enum") or []
+        )
+        for missing in sorted(declared - listed):
+            errors.append(
+                f"material_classes.json declares '{missing}' that material.schema.json's "
+                f"enum does not allow"
+            )
+        for extra in sorted(listed - declared):
+            errors.append(
+                f"material.schema.json allows class '{extra}' that material_classes.json "
+                f"does not declare"
+            )
+
+    # --- affordances ------------------------------------------------------------------
+    #
+    # Nothing carries `affords` yet -- items land on day 2 -- but the file is written and the
+    # pin goes in with it rather than after it. An undeclared vocabulary is exactly what this
+    # layer exists to avoid repeating: `flora.uses` accumulated 30 free-text values before
+    # anybody noticed it was a vocabulary at all.
+    aff_path = DB / "affordances.json"
+    if aff_path.exists():
+        affordances = set(load(aff_path)["affordances"])
+        for eid, (path, payload) in entities.items():
+            for a in payload.get("affords") or []:
+                if a not in affordances:
+                    errors.append(
+                        f"{path.name}: '{a}' is not an affordance in affordances.json"
+                    )
+
+    # --- recipe tags are the declared classes, with a hash ----------------------------
+    #
+    # The fourth pin, and the one with a twist: the recipe schema's tag enum is the material
+    # class vocabulary with `#` in front, so the two can drift in a way that reads as a typo in
+    # the recipe rather than as two files disagreeing. Checked both ways, like the others.
+    recipe_schema = SCHEMA_DIR / "recipe.schema.json"
+    if classes_path.exists() and recipe_schema.exists():
+        declared = {f"#{c}" for c in load(classes_path)["classes"]}
+        tag_enum = set(
+            load(recipe_schema)["properties"]["ingredients"]["items"]["properties"]["tag"]
+            .get("enum") or []
+        )
+        for missing in sorted(declared - tag_enum):
+            errors.append(
+                f"material_classes.json declares '{missing[1:]}' that recipe.schema.json's "
+                f"tag enum does not allow as '{missing}'"
+            )
+        for extra in sorted(tag_enum - declared):
+            errors.append(
+                f"recipe.schema.json allows tag '{extra}' that material_classes.json does "
+                f"not declare"
+            )
+
+    # --- base_item chains -------------------------------------------------------------
+    #
+    # Inherit-then-override, the shape Factorio's prototypes take. Canon already does this twice
+    # under other names -- `fauna.base_species` and `character.reincarnation_of` -- and neither
+    # of those can loop, because both are checked. This one has to be too: a chain that eats its
+    # own tail resolves forever, and the export is where it would be discovered.
+    #
+    # The reference walker already proves the target exists; this only proves the chain ends.
+    for eid, (path, payload) in entities.items():
+        base = payload.get("base_item")
+        if not base:
+            continue
+        seen_chain, cursor = [eid], base
+        while cursor:
+            if cursor in seen_chain:
+                loop = " -> ".join(seen_chain + [cursor])
+                errors.append(f"{path.name}: base_item chain loops ({loop})")
+                break
+            seen_chain.append(cursor)
+            nxt = entities.get(cursor)
+            cursor = nxt[1].get("base_item") if nxt else None
 
     # --- invariants across sibling files -------------------------------------------
     #
@@ -474,6 +585,14 @@ def main() -> int:
                 errors.append(
                     f"{path.name}: culture '{value}' is not declared in database/cultures.json"
                 )
+            # A recipe says which cultures hold the knowledge, in the same vocabulary. Absent
+            # means everybody, so only a stated value is checked.
+            for who in payload.get("known_by") or []:
+                if who not in known_cultures:
+                    errors.append(
+                        f"{path.name}: known_by '{who}' is not declared in "
+                        f"database/cultures.json"
+                    )
 
     # --- and so is species -------------------------------------------------------------
     #

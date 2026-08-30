@@ -1,0 +1,28 @@
+{
+  "id": "recipe_bedroll",
+  "type": "recipe",
+  "name": "Making a bedroll",
+  "process": "process_weaving",
+  "ingredients": [
+    {
+      "item": "item_reed_mat"
+    },
+    {
+      "material": "material_goat_hide"
+    },
+    {
+      "material": "material_tree_pitch"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_bedroll"
+    }
+  ],
+  "notes": "Oiled cloth over a reed mat. It has been rained on.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 43
+}

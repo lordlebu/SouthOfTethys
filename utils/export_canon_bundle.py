@@ -42,6 +42,7 @@ BUNDLE = {
     "species.json": ["fauna", "flora"],
     "places.json": ["regions", "field_maps", "points_of_interest", "npcs"],
     "knowledge.json": ["discoveries", "field_questions", "vocabulary"],
+    "crafting.json": ["materials", "items", "processes", "recipes", "vehicles"],
 }
 
 # Not exported: characters, events, settlements, factions, artifacts, mythology and the epoch
@@ -62,10 +63,37 @@ BUNDLE = {
 NOT_EXPORTED = [
     "characters", "events", "settlements", "factions", "artifacts", "mythology", "timeline",
     "places",
+    # `foodways` is the cultural half of food -- whose a dish is, when it is eaten, what it
+    # marks. The edible half is an `item` and ships; this does not, on the same split that
+    # keeps `mythology` out. The one link across the boundary is `foodway.dish`, which names
+    # an item that does ship.
+    "foodways",
 ]
 
 # Sorts after every entity that has a source_index, so canon-only additions append.
 UNINDEXED = 10**9
+
+# Provenance fields withheld from the making-layer collections.
+#
+# `canon` and `sources` say how firmly canon believes a thing and where it came from. They are
+# for the canon book and the retrieval service, both of which read `database/` directly, and
+# nothing in the game has ever read either -- `src/content/canon.ts` touches `notes` only as a
+# fallback for `journal_prompt`, and the `sources` the UI renders come from the retrieval
+# service, not from the bundle.
+#
+# This is a boundary decision rather than a shape one, which is the distinction the "canon
+# exports canon's own shape" rule turns on: that rule exists to stop canon tracking the game's
+# *data model* -- it is why the exporter no longer emits `Creature` records. Choosing which
+# canon facts cross the boundary at all is what the exporter already does per folder with
+# NOT_EXPORTED, and per value when it keeps only renderable biomes. This is the same kind of
+# call one level finer.
+#
+# 18 KB on a 540 KB budget, which is what made it worth doing now rather than later.
+#
+# **Deliberately not applied to species, places or knowledge yet.** The same argument holds for
+# all three and would save more, but those three already feed a game with 460 passing tests and
+# a committed lock file, so that change belongs in a commit where those tests are being run.
+WITHHELD_FROM_CRAFTING = ("canon", "sources")
 
 
 def load_folder(folder: str) -> list[dict]:
@@ -114,7 +142,13 @@ def build_bundle() -> tuple[dict[str, str], dict[str, int]]:
     for filename, folders in BUNDLE.items():
         payload: dict = {"canon_version": index["version"]}
         for folder in folders:
-            payload[folder] = load_folder(folder)
+            entities = load_folder(folder)
+            if filename == "crafting.json":
+                entities = [
+                    {k: v for k, v in e.items() if k not in WITHHELD_FROM_CRAFTING}
+                    for e in entities
+                ]
+            payload[folder] = entities
             counts[folder] = len(payload[folder])
         # The biome vocabulary belongs with places: it is what `seed_biomes` and `terrain`
         # are drawn from, and the game needs to know which of them it can render.

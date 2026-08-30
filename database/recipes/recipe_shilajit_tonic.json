@@ -1,0 +1,26 @@
+{
+  "id": "recipe_shilajit_tonic",
+  "type": "recipe",
+  "name": "Preparing shilajit",
+  "process": "process_grinding",
+  "ingredients": [
+    {
+      "material": "material_shilajit"
+    },
+    {
+      "item": "item_grinding_quern",
+      "kept": true
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_shilajit_tonic"
+    }
+  ],
+  "notes": "Scraped from high rock and taken in water.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 71
+}

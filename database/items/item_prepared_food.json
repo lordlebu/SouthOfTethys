@@ -1,0 +1,15 @@
+{
+  "id": "item_prepared_food",
+  "type": "item",
+  "name": "Prepared food",
+  "kind": "food",
+  "affords": [
+    "eat"
+  ],
+  "notes": "The prototype for anything cooked, dried or pressed into a form somebody meant to eat later. A raw tuber and a baked one are different objects and only one is dinner.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 5
+}

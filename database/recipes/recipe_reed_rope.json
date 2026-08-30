@@ -1,0 +1,23 @@
+{
+  "id": "recipe_reed_rope",
+  "type": "recipe",
+  "name": "Twisting reed rope",
+  "process": "process_spinning",
+  "ingredients": [
+    {
+      "material": "material_reed_fibre",
+      "count": 4
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_reed_rope"
+    }
+  ],
+  "notes": "Four handfuls to a working length. Wants a whorl, which is any item that works.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 1
+}

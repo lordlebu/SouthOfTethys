@@ -1,0 +1,19 @@
+{
+  "id": "item_glass_lancet",
+  "type": "item",
+  "name": "Glass lancet",
+  "base_item": "item_blade",
+  "kind": "tool",
+  "affords": [
+    "cut"
+  ],
+  "materials": [
+    "material_magma_glass"
+  ],
+  "notes": "Sharper than bronze and loses the edge to a hard look. Used where the cut matters more than the tool lasting -- surgery, and the finest carving.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 16
+}

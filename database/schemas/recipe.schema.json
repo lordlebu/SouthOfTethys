@@ -1,0 +1,110 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Recipe",
+  "description": "What becomes what. The only entity type here that is a relation rather than a thing, and it is still a noun: a recipe is a stated fact about the world, where the *doing* of it belongs to the game. Canon says reed fibre and a comb make cordage; whether a particular player has four of the one and one of the other is not canon's business.",
+  "type": "object",
+  "required": ["id", "type", "name", "process", "ingredients", "outputs"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^recipe_[a-z0-9_]+$"
+    },
+    "type": {
+      "const": "recipe"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "process": {
+      "type": "string",
+      "pattern": "^process_[a-z0-9_]+$",
+      "description": "How it is done. The process carries where it must happen and what the maker must be holding, so a recipe never restates a kiln."
+    },
+    "ingredients": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "oneOf": [
+          { "required": ["tag"] },
+          { "required": ["material"] },
+          { "required": ["item"] }
+        ],
+        "properties": {
+          "tag": {
+            "type": "string",
+            "enum": [
+              "#fibre", "#timber", "#bone", "#hide", "#shell", "#resin", "#clay",
+              "#stone", "#glass", "#metal", "#salt", "#pigment", "#grain",
+              "#produce", "#flesh", "#oil", "#fuel", "#physic"
+            ],
+            "description": "Any material carrying this class satisfies the ingredient. **The reason this layer is maintainable**: a recipe naming `#fibre` accepts a reed canon has not written yet, where a recipe naming four species has to be edited every time the bestiary grows. Hash-prefixed so a tag is never mistaken for an id. Pinned against material_classes.json by lint."
+          },
+          "material": {
+            "type": "string",
+            "pattern": "^material_[a-z0-9_]+$",
+            "description": "This exact material and no substitute. Use where the specific stuff is the point -- pitch, not any resin."
+          },
+          "item": {
+            "type": "string",
+            "pattern": "^item_[a-z0-9_]+$",
+            "description": "A made object as an input. Usually a tool, in which case set `kept`."
+          },
+          "count": {
+            "type": "integer",
+            "minimum": 1,
+            "description": "How many. Absent means one."
+          },
+          "kept": {
+            "type": "boolean",
+            "description": "True for a tool: needed to do the work and still there afterwards. Absent means consumed. Getting this wrong is how a recipe layer quietly eats every knife in the world."
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "outputs": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "oneOf": [
+          { "required": ["item"] },
+          { "required": ["material"] }
+        ],
+        "properties": {
+          "item": { "type": "string", "pattern": "^item_[a-z0-9_]+$" },
+          "material": { "type": "string", "pattern": "^material_[a-z0-9_]+$" },
+          "count": { "type": "integer", "minimum": 1 }
+        },
+        "additionalProperties": false
+      },
+      "description": "A recipe may output a material as well as an item -- pressing gives oil, smelting gives metal. That is what keeps the chain going rather than bottoming out at the first made object."
+    },
+    "known_by": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Culture ids from database/cultures.json that hold this knowledge. Absent means everybody. Checked by lint against that file, the way `culture` on a character is."
+    },
+    "epochs": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Epoch ids. Absent means every epoch. Date anything involving metal."
+    },
+    "notes": { "type": "string" },
+    "canon": {
+      "type": "string",
+      "enum": ["primary", "secondary", "inferred"]
+    },
+    "sources": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "source_index": {
+      "type": "integer",
+      "minimum": 0
+    }
+  },
+  "additionalProperties": false
+}

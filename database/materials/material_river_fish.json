@@ -1,0 +1,24 @@
+{
+  "id": "material_river_fish",
+  "type": "material",
+  "name": "River fish",
+  "classes": [
+    "flesh"
+  ],
+  "won_from": [
+    "fauna_estuary_archer_fish",
+    "fauna_beedu"
+  ],
+  "found_in": [
+    "river",
+    "coast",
+    "wetland"
+  ],
+  "rarity": "common",
+  "notes": "Split, salted and dried on a rack. Named for what it is rather than for a species, because a weir does not sort its catch.",
+  "canon": "inferred",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "source_index": 40
+}

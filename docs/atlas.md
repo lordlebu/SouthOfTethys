@@ -24,6 +24,12 @@ Each era below is canon as it stood then. An entity that names no epoch is prese
 | mythology |  | 9 |
 | fauna |  | 257 |
 | flora |  | 90 |
+| foodways |  | 15 |
+| items |  | 63 |
+| materials |  | 46 |
+| processes |  | 16 |
+| recipes |  | 67 |
+| vehicles |  | 8 |
 
 ### Events
 
@@ -68,6 +74,12 @@ graph TD
 | mythology |  | 9 |
 | fauna |  | 257 |
 | flora |  | 90 |
+| foodways |  | 15 |
+| items |  | 63 |
+| materials |  | 46 |
+| processes |  | 16 |
+| recipes |  | 67 |
+| vehicles |  | 8 |
 
 ### Events
 
@@ -105,6 +117,12 @@ graph TD
 | mythology |  | 9 |
 | fauna |  | 257 |
 | flora |  | 90 |
+| foodways |  | 15 |
+| items |  | 63 |
+| materials |  | 46 |
+| processes |  | 16 |
+| recipes |  | 67 |
+| vehicles |  | 8 |
 
 ### Events
 
@@ -145,6 +163,12 @@ graph TD
 | mythology |  | 9 |
 | fauna |  | 257 |
 | flora |  | 90 |
+| foodways |  | 15 |
+| items | 3 | 63 |
+| materials |  | 46 |
+| processes |  | 16 |
+| recipes | 5 | 67 |
+| vehicles |  | 8 |
 
 ### Events
 
@@ -201,6 +225,12 @@ graph TD
 | mythology |  | 9 |
 | fauna |  | 257 |
 | flora |  | 90 |
+| foodways |  | 15 |
+| items | 3 | 63 |
+| materials |  | 46 |
+| processes |  | 16 |
+| recipes | 5 | 67 |
+| vehicles | 2 | 8 |
 
 ### Events
 
@@ -244,6 +274,12 @@ graph TD
 | vocabulary | 8 |  |
 | fauna |  | 257 |
 | flora |  | 90 |
+| foodways |  | 15 |
+| items |  | 63 |
+| materials |  | 46 |
+| processes |  | 16 |
+| recipes |  | 67 |
+| vehicles | 1 | 8 |
 
 ### Events
 

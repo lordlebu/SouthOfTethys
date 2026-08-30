@@ -1,0 +1,26 @@
+{
+  "id": "recipe_tally_stick",
+  "type": "recipe",
+  "name": "Notching a tally",
+  "process": "process_carving",
+  "ingredients": [
+    {
+      "material": "material_bamboo_cane"
+    },
+    {
+      "item": "item_bone_awl",
+      "kept": true
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_tally_stick"
+    }
+  ],
+  "notes": "Notched and split so both halves must agree. A contract nobody can argue with.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 20
+}

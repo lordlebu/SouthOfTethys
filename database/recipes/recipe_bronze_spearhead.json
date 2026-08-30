@@ -1,0 +1,33 @@
+{
+  "id": "recipe_bronze_spearhead",
+  "type": "recipe",
+  "name": "Casting a spearhead",
+  "process": "process_casting",
+  "ingredients": [
+    {
+      "material": "material_bronze"
+    },
+    {
+      "material": "material_charcoal",
+      "count": 2
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_bronze_spearhead"
+    }
+  ],
+  "known_by": [
+    "harappan"
+  ],
+  "epochs": [
+    "epoch_civilization_dawn",
+    "epoch_current"
+  ],
+  "notes": "Socketed, so it outlives its shaft. Traded far past where anyone can make one.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 51
+}

@@ -1,0 +1,26 @@
+{
+  "id": "recipe_hunting_sling",
+  "type": "recipe",
+  "name": "Braiding a sling",
+  "process": "process_spinning",
+  "ingredients": [
+    {
+      "material": "material_goat_hair",
+      "count": 2
+    },
+    {
+      "material": "material_goat_hide"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_hunting_sling"
+    }
+  ],
+  "notes": "Two cords and a pouch. Keeps birds off a crop far more often than anything else.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 27
+}

@@ -1,0 +1,23 @@
+{
+  "id": "recipe_sinew_lashing",
+  "type": "recipe",
+  "name": "Drying sinew lashing",
+  "process": "process_drying",
+  "ingredients": [
+    {
+      "material": "material_sinew",
+      "count": 2
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_sinew_lashing"
+    }
+  ],
+  "notes": "Split, wetted and wound on while damp. Tightens as it dries, which is the whole point.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 3
+}

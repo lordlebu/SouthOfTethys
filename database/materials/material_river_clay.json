@@ -1,0 +1,20 @@
+{
+  "id": "material_river_clay",
+  "type": "material",
+  "name": "River clay",
+  "classes": [
+    "clay"
+  ],
+  "found_in": [
+    "river",
+    "wetland",
+    "coast"
+  ],
+  "rarity": "common",
+  "notes": "Dug from the cut bank where the water has already done the sorting. The Saraswati's is grey wet and buff fired.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 21
+}

@@ -1,0 +1,24 @@
+{
+  "id": "item_bronze_chisel",
+  "type": "item",
+  "name": "Bronze chisel",
+  "base_item": "item_hafted_tool",
+  "kind": "tool",
+  "affords": [
+    "cut",
+    "work"
+  ],
+  "materials": [
+    "material_bronze"
+  ],
+  "epochs": [
+    "epoch_civilization_dawn",
+    "epoch_current"
+  ],
+  "notes": "What dressed sandstone is dressed with. A settlement that has these has a mason.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 20
+}

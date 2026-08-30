@@ -209,6 +209,71 @@ generated from that. Geography returns as canon entities first. `folium` left
 
 ---
 
+### Fourth round, the making layer (2026-08-30)
+
+Canon gained six entity types and 226 entities, taking it to v2.0.0: `materials`, `items`,
+`processes`, `recipes`, `vehicles` and `foodways`. These are the calls behind them.
+
+**Weapons are nouns and canon has no word for damage** (decided 2026-08-30, by the owner).
+The game states combat is absent by design in four places. Canon models weapons fully --
+material, maker, wielder, worth -- and `affordances.json` gives it `cut` and `deter` and no
+vocabulary in which harm can be expressed. Enforced by lint rather than remembered, because
+`strike`, typed in good faith six months from now, is exactly the thirteenth value a declared
+vocabulary exists to catch. Changing this means editing that file and recording it here.
+
+**Material classes are tags, borrowed from Minecraft data packs.** A recipe names `#fibre`,
+not 347 species. The argument is maintenance rather than elegance: a recipe layer that
+enumerates its inputs is editable for about a month, and one that asks for a class accepts a
+reed canon has not written yet.
+
+**Species did not gain a `yields` field.** The plan for this work called for one on ~60
+species. Materials already name their species through `won_from`, and stating the same fact
+twice is what the faction ruling forbids -- the faction owns `members` and a character does
+not name one back, so the two cannot drift. The alternative considered and refused was
+deriving yields from `flora.uses` and `fauna.clade`, which is the heuristic that made an owl a
+ghost and three mongooses into crabs.
+
+**`flora.uses` was left alone.** It looked like the material vocabulary in embryo and is not:
+over half its values -- `shade`, `warning_marker`, `navigational_landmark` -- are not
+substances and cannot be carried. It answers what people *do* with a plant. Folding it in
+would have destroyed a distinction rather than declared one. It remains an undeclared
+vocabulary and is a reasonable thing to declare later, on its own terms.
+
+**Food is split across the boundary.** A dish is an `item` whose output happens to be edible,
+so it ships. What a loaf *means* on the day the river comes over the bank is a `foodway`, and
+does not. The plan proposed a `dishes/` type; that was wrong on this repository's own
+precedent, which splits `place` from `point_of_interest` on whether a player can stand there
+and `character` from `npc` on whether they speak.
+
+**Named vessels stay `place` entities.** The Battered Ekranoplan, the Kelpfang, the
+Leviathan's Rib and the Survival Train are unique and have stories. `vehicles/` holds the
+repeatable kinds, and names its famous examples in `exemplars` -- one-directional, so the
+vessel does not name the vehicle back.
+
+**The bundle has a weight budget, and it is enforced.** 560 KB, in
+`check_export_boundary.py`. Vite inlines every byte into the page, which is the argument that
+already keeps characters, events and 41 places out; before this it was a number somebody
+noticed in a dry run and forgot. The budget was hit during this work, which is what forced the
+next call.
+
+**`canon` and `sources` are withheld from `crafting.json` only.** Provenance is for the canon
+book and the retrieval service, which read `database/` directly, and nothing in the game has
+ever read either. 18 KB. This is a *boundary* decision rather than a *shape* one -- the rule
+that canon exports canon's own shape exists to stop canon tracking the game's data model, and
+choosing which facts cross at all is what NOT_EXPORTED already does per folder. The same
+argument holds for species, places and knowledge and would save more; it was not applied to
+them because those feed a game with 600-odd passing tests, and that change belongs in a commit
+where those are being run.
+
+**Two gaps in the gate were found and closed while doing this.** The index check walked the
+manifest, so a whole folder the manifest had never heard of was invisible -- 46 materials
+passed a green lint before that check existed. And the craft closure in
+`check_playability.py` is a fixpoint for the same reason the discovery walk is: a rope whose
+recipe needs a loom and a loom whose recipe needs a rope both exist, both name real
+ingredients, and neither can ever be first. That cycle was real in the first draft.
+
+---
+
 ## Open — needs a human call
 
 | Question | Why it is open |

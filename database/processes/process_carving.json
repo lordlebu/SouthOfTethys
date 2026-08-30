@@ -1,0 +1,14 @@
+{
+  "id": "process_carving",
+  "type": "process",
+  "name": "Carving",
+  "needs": [
+    "cut"
+  ],
+  "notes": "Shaping bone, wood, shell or antler with a blade. The most portable of the making processes -- it is what a person does at a camp fire with what they picked up that day.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 5
+}

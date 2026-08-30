@@ -1,0 +1,14 @@
+{
+  "id": "foodway_mahua_liquor_grief",
+  "type": "foodway",
+  "name": "The bitter cup",
+  "culture": "jharwa",
+  "dish": "item_mahua_liquor",
+  "occasion": "The night after a burial, and not before.",
+  "meaning": "Grief is drunk at once and in company rather than carried. Drinking it alone is the clearest way in the Jharwa hills to say something is wrong.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 4
+}

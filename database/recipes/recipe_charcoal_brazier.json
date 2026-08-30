@@ -1,0 +1,27 @@
+{
+  "id": "recipe_charcoal_brazier",
+  "type": "recipe",
+  "name": "Firing a brazier",
+  "process": "process_firing",
+  "ingredients": [
+    {
+      "material": "material_river_clay",
+      "count": 2
+    },
+    {
+      "tag": "#fuel",
+      "count": 2
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_charcoal_brazier"
+    }
+  ],
+  "notes": "Portable fire. Lets heat happen where there is none.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 33
+}

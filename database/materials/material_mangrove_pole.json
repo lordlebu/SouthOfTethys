@@ -1,0 +1,23 @@
+{
+  "id": "material_mangrove_pole",
+  "type": "material",
+  "name": "Mangrove pole",
+  "classes": [
+    "timber"
+  ],
+  "won_from": [
+    "flora_bonewood_mangrove",
+    "flora_iron_root_mangrove"
+  ],
+  "found_in": [
+    "wetland",
+    "coast"
+  ],
+  "rarity": "common",
+  "notes": "Cut from the stilt roots rather than the trunk. Already the right shape, already used to standing in salt water, and no use at all for anything that must be straight.",
+  "canon": "inferred",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "source_index": 5
+}

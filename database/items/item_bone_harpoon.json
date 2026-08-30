@@ -1,0 +1,22 @@
+{
+  "id": "item_bone_harpoon",
+  "type": "item",
+  "name": "Bone harpoon",
+  "base_item": "item_hafted_tool",
+  "kind": "weapon",
+  "affords": [
+    "cut",
+    "deter"
+  ],
+  "materials": [
+    "material_fish_bone",
+    "material_bamboo_cane",
+    "material_sinew"
+  ],
+  "notes": "The sawfish rostral tooth arrives already barbed, so this is a harpoon somebody did very little to. Canon says what it is for and pointedly not what it does to anything.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 25
+}

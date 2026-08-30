@@ -1,0 +1,22 @@
+{
+  "id": "material_fish_bone",
+  "type": "material",
+  "name": "Sawfish bone",
+  "classes": [
+    "bone"
+  ],
+  "won_from": [
+    "fauna_estuary_sawfish"
+  ],
+  "found_in": [
+    "river",
+    "coast"
+  ],
+  "rarity": "common",
+  "notes": "The rostral teeth of the sawfish come out of the estuary already barbed, and a harpoon made from one is a harpoon somebody did very little to.",
+  "canon": "inferred",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "source_index": 11
+}

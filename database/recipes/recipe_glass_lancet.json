@@ -1,0 +1,22 @@
+{
+  "id": "recipe_glass_lancet",
+  "type": "recipe",
+  "name": "Knapping a glass lancet",
+  "process": "process_knapping",
+  "ingredients": [
+    {
+      "tag": "#glass"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_glass_lancet"
+    }
+  ],
+  "notes": "Magma-glass or scar-glass, whichever the ground offers -- they knap the same, which is why they share a class.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 11
+}

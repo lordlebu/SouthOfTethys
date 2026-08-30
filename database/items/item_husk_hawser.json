@@ -1,0 +1,19 @@
+{
+  "id": "item_husk_hawser",
+  "type": "item",
+  "name": "Husk hawser",
+  "base_item": "item_cordage",
+  "kind": "tool",
+  "affords": [
+    "bind"
+  ],
+  "materials": [
+    "material_palm_husk"
+  ],
+  "notes": "Coarse palm-husk line that does not mind salt water. The harbour rope, and the reason a date palm is worth more standing than felled.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 7
+}

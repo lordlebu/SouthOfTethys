@@ -1,0 +1,14 @@
+{
+  "id": "foodway_tamarind_paste_summer",
+  "type": "foodway",
+  "name": "The sour season",
+  "culture": "harappan",
+  "dish": "item_tamarind_paste",
+  "occasion": "Through the worst of the heat, in almost everything.",
+  "meaning": "Sour food is how a delta survives its own summer. Nobody calls it a custom; everybody does it.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 7
+}

@@ -1,0 +1,23 @@
+{
+  "id": "material_myrrh_gum",
+  "type": "material",
+  "name": "Myrrh gum",
+  "classes": [
+    "resin",
+    "physic"
+  ],
+  "won_from": [
+    "flora_myrrh_thorn"
+  ],
+  "found_in": [
+    "desert",
+    "hills"
+  ],
+  "rarity": "rare",
+  "notes": "The wound salve canon names on the myrrh-thorn is this, softened in oil. It is also the best glue in the desert, which is the same property read two ways.",
+  "canon": "inferred",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "source_index": 19
+}

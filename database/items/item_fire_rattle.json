@@ -1,0 +1,19 @@
+{
+  "id": "item_fire_rattle",
+  "type": "item",
+  "name": "Fire rattle",
+  "kind": "weapon",
+  "affords": [
+    "deter"
+  ],
+  "materials": [
+    "material_bamboo_cane",
+    "material_oyster_shell"
+  ],
+  "notes": "Shells on a line, shaken. Filed as a weapon because that is honestly its category and it is the clearest case in the file that the category is not about harm.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 30
+}

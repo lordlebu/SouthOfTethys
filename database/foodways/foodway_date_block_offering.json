@@ -1,0 +1,14 @@
+{
+  "id": "foodway_date_block_offering",
+  "type": "foodway",
+  "name": "The palm's return",
+  "culture": "harappan",
+  "dish": "item_date_block",
+  "occasion": "Left at the foot of the tree it came from, at the end of the harvest.",
+  "meaning": "The palm is owed something. A practical culture doing an impractical thing, which is usually where a foodway is.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 13
+}

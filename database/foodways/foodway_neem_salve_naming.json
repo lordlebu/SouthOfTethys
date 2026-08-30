@@ -1,0 +1,14 @@
+{
+  "id": "foodway_neem_salve_naming",
+  "type": "foodway",
+  "name": "The bitter mark",
+  "culture": "harappan",
+  "dish": "item_neem_salve",
+  "occasion": "Smeared on a newborn, once.",
+  "meaning": "Bitterness first, so nothing after it is a shock. Canon has neem for medicine and this is the reading the delta puts on it.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 8
+}

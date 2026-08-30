@@ -1,0 +1,18 @@
+{
+  "id": "item_walking_staff",
+  "type": "item",
+  "name": "Walking staff",
+  "kind": "tool",
+  "affords": [
+    "cross"
+  ],
+  "materials": [
+    "material_teak_timber"
+  ],
+  "notes": "Shoulder height, worn smooth at the grip. Good for testing what will hold your weight before you stand on it. **Also from the game's kit.**",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 60
+}

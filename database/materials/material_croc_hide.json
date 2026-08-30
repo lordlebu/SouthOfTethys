@@ -1,0 +1,24 @@
+{
+  "id": "material_croc_hide",
+  "type": "material",
+  "name": "Croc hide",
+  "classes": [
+    "hide"
+  ],
+  "won_from": [
+    "fauna_sleek_dromedary_croc",
+    "fauna_woolly_bactrian_croc"
+  ],
+  "found_in": [
+    "river",
+    "wetland",
+    "desert"
+  ],
+  "rarity": "rare",
+  "notes": "Scuted, awkward to cut and nearly impossible to wear out. The dromedary-croc's is the lighter of the two and the one the delta actually uses.",
+  "canon": "inferred",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "source_index": 13
+}

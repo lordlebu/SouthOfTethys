@@ -1,0 +1,26 @@
+{
+  "id": "recipe_walking_staff",
+  "type": "recipe",
+  "name": "Cutting a walking staff",
+  "process": "process_carving",
+  "ingredients": [
+    {
+      "tag": "#timber"
+    },
+    {
+      "item": "item_flint_knife",
+      "kept": true
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_walking_staff"
+    }
+  ],
+  "notes": "Shoulder height, worn smooth at the grip in its own time.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 18
+}

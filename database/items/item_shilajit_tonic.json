@@ -1,0 +1,19 @@
+{
+  "id": "item_shilajit_tonic",
+  "type": "item",
+  "name": "Shilajit tonic",
+  "kind": "physic",
+  "affords": [
+    "heal",
+    "trade"
+  ],
+  "materials": [
+    "material_shilajit"
+  ],
+  "notes": "Scraped from high rock and taken in water. Worth carrying down the mountain, which is the only claim canon makes for it.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 57
+}

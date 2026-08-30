@@ -1,0 +1,15 @@
+{
+  "id": "item_cordage",
+  "type": "item",
+  "name": "Cordage",
+  "kind": "tool",
+  "affords": [
+    "bind"
+  ],
+  "notes": "The prototype every rope inherits from. Twisted fibre that holds two things together, and the single most useful object in this world by a distance nobody would guess.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 0
+}

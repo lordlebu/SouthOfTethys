@@ -1,0 +1,15 @@
+{
+  "id": "item_woven_ware",
+  "type": "item",
+  "name": "Woven ware",
+  "kind": "textile",
+  "affords": [
+    "carry"
+  ],
+  "notes": "The prototype for mat, basket, sail and cloth -- one process at four scales, so one base with four overrides rather than four unrelated entities.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 1
+}

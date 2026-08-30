@@ -27,6 +27,12 @@ hundred lore entries in an exported folder is the one mistake here with a cost a
 | A god, a monster, a story people tell | `mythology/` | no |
 | A group | `factions/` | no |
 | An object that matters | `artifacts/` | no |
+| A substance you can carry away | `materials/` | **yes** |
+| An object a person can hold | `items/` | **yes** |
+| A way of making | `processes/` | **yes** |
+| What becomes what | `recipes/` | **yes** |
+| Something you board | `vehicles/` | **yes** |
+| What a dish means | `foodways/` | no |
 | A country-sized area | `regions/` | **yes** |
 
 Two distinctions that are easy to get wrong:
@@ -167,6 +173,195 @@ answers what they belong to, and both are checked. The twelve values live in
 thirteenth into a character and hoping. Four come in near-identical pairs on purpose --
 `asura`/`asura_tainted`, `vanara`/`vanara_spirit` -- because the difference is what those stories
 turn on.
+
+### A material
+
+A material answers what stuff *is* and where it comes from. It never answers how much of it
+there is -- that is a question about one particular player, and it belongs to the game.
+
+```json
+{
+  "id": "material_reed_fibre",
+  "type": "material",
+  "name": "Reed fibre",
+  "classes": ["fibre"],
+  "won_from": ["flora_saraswati_reed"],
+  "found_in": ["wetland", "river"],
+  "rarity": "common",
+  "notes": "Retted in standing water until the pith rots away, then combed out.",
+  "canon": "inferred",
+  "sources": ["docs/bestiary.md"],
+  "source_index": 0
+}
+```
+
+**`classes` is a declared vocabulary**, in `database/material_classes.json`, and it is the
+thing recipes actually name. A recipe asks for `#fibre` rather than for a list of species, so
+canon can gain a new reed in ten years and every cordage recipe written today accepts it
+without an edit. Give a material two classes where it honestly has two -- mahua seed is `oil`
+and `produce` -- rather than picking the more important one.
+
+**`won_from` may be absent.** Canon knows salt-crust is salt without owing anyone an account
+of which pan it was scraped from. What it may *not* be is a bare string: like every other
+reference in canon it names entities, and the walker checks them.
+
+**This is not `flora.uses`.** That field stays where it is and answers a different question --
+what people *do* with a plant, including `shade` and `navigational_landmark`, which are not
+substances and cannot be carried. A material class says what you can take away.
+
+### An item
+
+An item is ordinary and repeatable. An `artifact` is a named thing canon treats as a character
+in its own right, with a power and a cost -- the Mask of Tethys is an artifact, a reed rope is
+an item, and there are thousands of the second.
+
+```json
+{
+  "id": "item_reed_rope",
+  "type": "item",
+  "name": "Reed rope",
+  "base_item": "item_cordage",
+  "kind": "tool",
+  "affords": ["bind"],
+  "materials": ["material_reed_fibre"],
+  "notes": "Light, cheap and rots. Everything that does not have to hold a boat.",
+  "canon": "inferred",
+  "sources": ["inferred from canon geography"],
+  "source_index": 6
+}
+```
+
+**`affords` is required and must have one entry.** An object that affords nothing is scenery,
+and scenery belongs in a point of interest's description. The values are declared in
+`database/affordances.json` and there is deliberately **no word for damage** -- a weapon `cut`s
+and `deter`s. If combat is ever wanted it arrives by editing that file and recording the call in
+`docs/decisions.md`, not by an item claiming it.
+
+**`base_item` is inherit-then-override.** State what makes this one different and let the base
+say the rest. The chain must terminate; a loop is a lint failure that names the path.
+
+**Date anything bronze.** `epochs` absent means every epoch, which is right for a rope and
+wrong for metal -- canon is a bronze world with iron as a rumour.
+
+### A process
+
+A process answers what a recipe has to be performed *at*, so a recipe can say "fired" without
+restating what a kiln is.
+
+```json
+{
+  "id": "process_firing",
+  "type": "process",
+  "name": "Firing",
+  "performed_at": ["settlement"],
+  "needs": ["burn"],
+  "notes": "Clay to pottery in a kiln.",
+  "canon": "inferred",
+  "sources": ["inferred from canon geography"],
+  "source_index": 7
+}
+```
+
+**`performed_at` absent means anywhere, including standing in a field.** That is the honest
+default -- somebody splitting reeds needs a river bank, not a building. Only name kinds where
+the process genuinely needs the site.
+
+**`needs` names an affordance, not a tool.** Firing needs something that burns, and canon should
+not have to decide whether that is a hearth, a brazier or a pit. Any item affording it will do,
+which is the same argument tag ingredients make about materials.
+
+### A recipe
+
+The only entity type here that is a relation rather than a thing, and it is still a noun: a
+recipe is a stated fact about the world. Whether a particular player has four handfuls of reed
+is not canon's business.
+
+```json
+{
+  "id": "recipe_reed_mat",
+  "type": "recipe",
+  "name": "Weaving a reed mat",
+  "process": "process_weaving",
+  "ingredients": [
+    { "tag": "#fibre", "count": 6 },
+    { "item": "item_loom_frame", "kept": true }
+  ],
+  "outputs": [{ "item": "item_reed_mat" }],
+  "known_by": ["harappan"],
+  "canon": "inferred",
+  "sources": ["inferred from canon geography"],
+  "source_index": 4
+}
+```
+
+**Prefer a `#tag` to a named material.** A recipe asking for `#fibre` accepts a reed canon has
+not written yet; one naming four species is edited every time the bestiary grows. Name an exact
+`material` only where the specific stuff is the point -- pitch, not any resin.
+
+**Set `kept` on a tool.** Absent means consumed, and forgetting it is how a recipe layer
+quietly eats every knife in the world.
+
+**An output may be a material.** Pressing gives oil, smelting gives metal. That is what keeps a
+chain going instead of bottoming out at the first made object.
+
+**Where materials come from is stated once, on the material.** `material.won_from` names the
+species, and nothing on the species names the material back. This is the ruling factions
+already have -- the faction owns `members` and a character does not name one back, so the two
+cannot drift. An earlier plan for this layer had a `yields` field on all 347 species; it was
+dropped on exactly that precedent, and because the alternative was deriving yields from prose,
+which is the mistake that made an owl a ghost and a mongoose a crab.
+
+### A vehicle, and a foodway
+
+Both are small types with one interesting rule each.
+
+A **vehicle** is a *kind* of craft, repeatable the way an item is. Canon already holds four
+named vessels -- the Battered Ekranoplan, the Kelpfang, the Leviathan's Rib and the Survival
+Train -- as `place` entities with `kind: vessel`, and those stay where they are. It is the same
+split items and artifacts have: a reed raft is a vehicle and there are hundreds; the Kelpfang is
+one, and it has a story. A vehicle may name its named craft in `exemplars`, and **the vessel
+does not name the vehicle back** -- one-directional, so the two cannot drift.
+
+```json
+{
+  "id": "vehicle_outrigger",
+  "type": "vehicle",
+  "name": "Outrigger",
+  "kind": "ship",
+  "crosses": ["sea", "coast"],
+  "capacity": 6,
+  "materials": ["material_teak_timber", "material_palm_husk"],
+  "built_by": "process_boatbuilding",
+  "exemplars": ["place_kelpfang"],
+  "canon": "inferred",
+  "sources": ["inferred from canon geography"],
+  "source_index": 5
+}
+```
+
+**Date the machines.** `epochs` absent means every epoch, which is right for a raft and badly
+wrong for a ground-effect craft.
+
+A **foodway** is what a dish *means* -- whose it is, when it is eaten, what it marks -- and it
+is **not exported**. The edible half is an `item` and ships; this is a fact about the Harappans
+and sits beside mythology. `occasion` is the load-bearing field: a dish with no occasion is a
+recipe, and recipes are already a type.
+
+```json
+{
+  "id": "foodway_flood_bread_rising",
+  "type": "foodway",
+  "name": "The rising loaf",
+  "culture": "harappan",
+  "dish": "item_flood_bread",
+  "occasion": "The first day the river comes over the bank.",
+  "meaning": "That the flood is a harvest and not a disaster.",
+  "places": ["settlement_lothal"],
+  "canon": "inferred",
+  "sources": ["inferred from canon geography"],
+  "source_index": 0
+}
+```
 
 ### A character
 

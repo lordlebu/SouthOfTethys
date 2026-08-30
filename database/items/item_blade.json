@@ -1,0 +1,15 @@
+{
+  "id": "item_blade",
+  "type": "item",
+  "name": "Blade",
+  "kind": "tool",
+  "affords": [
+    "cut"
+  ],
+  "notes": "The prototype for anything with a worked edge, before it is told what it is made of.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 2
+}

@@ -1,0 +1,19 @@
+{
+  "id": "material_scar_glass",
+  "type": "material",
+  "name": "Scar glass",
+  "classes": [
+    "glass"
+  ],
+  "found_in": [
+    "desert",
+    "coast"
+  ],
+  "rarity": "rare",
+  "notes": "Fused sand from the Glass Scar at Dwarka. Whatever made it is one of the things the player is there to work out, so canon says what it is and pointedly not how it happened.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 27
+}

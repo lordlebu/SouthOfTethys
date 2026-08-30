@@ -13,6 +13,7 @@ This walks the world the way a player does and reports what cannot be reached:
   questions     every question is raised, and every reading of it can be reached
   entry         every gated sub-location opens for someone who did the work
   conditions    no rung waits on weather the world never produces
+  making        every recipe can actually be performed, and every item can be got
 
     python utils/check_playability.py
     python utils/check_playability.py field_map_lothal
@@ -71,6 +72,30 @@ class World:
         self.questions = load_all("field_questions")
         self.npcs = load_all("npcs")
         self.words = load_all("vocabulary")
+        self.materials = load_all("materials")
+        self.items = load_all("items")
+        self.processes = load_all("processes")
+        self.recipes = load_all("recipes")
+
+    def classes_of(self, mid: str) -> set[str]:
+        return set(self.materials.get(mid, {}).get("classes") or [])
+
+    def affords(self, iid: str) -> set[str]:
+        """What an item lets you do, following base_item up the chain.
+
+        Inheritance is read here rather than resolved at export, because the checker has to
+        agree with whatever the game will compute -- and the game reads the same chain. An
+        item that overrides `affords` replaces its base's rather than adding to it, which is
+        how Factorio's override works and is the less surprising of the two readings.
+        """
+        seen, cursor = set(), iid
+        while cursor and cursor not in seen:
+            seen.add(cursor)
+            doc = self.items.get(cursor) or {}
+            if doc.get("affords"):
+                return set(doc["affords"])
+            cursor = doc.get("base_item")
+        return set()
 
     def last_rung(self, did: str) -> int:
         return len(self.discoveries[did].get("levels") or []) - 1
@@ -159,6 +184,130 @@ def did_notice(s: State, did: str) -> bool:
     return True
 
 
+def make(w: World, biomes: set[str], kinds: set[str]) -> tuple[set[str], set[str]]:
+    """Start from what the ground offers and make whatever becomes possible.
+
+    The same shape as `play` above and for the same reason. The naive question -- "does a
+    recipe exist for this item?" -- passes a chain that can never start: a rope whose recipe
+    needs a loom, and a loom whose recipe needs a rope. Both exist, both name real
+    ingredients, and neither can ever be first. Asking instead "what can be made from
+    nothing, and then from that" is the only formulation that finds it.
+
+    That exact cycle was in the first draft of these recipes. Spinning was written as needing
+    the `work` affordance, which only a loom, a quern or a bow-drill provides, and every one
+    of those needs cordage. Nothing in the fibre half of canon could be made at all.
+
+    Returns the materials and items obtainable, given the biomes a map is made of and the
+    kinds of place standing on it.
+    """
+    held_m = {
+        mid for mid, doc in w.materials.items()
+        if biomes & set(doc.get("found_in") or [])
+    }
+    held_i: set[str] = set()
+
+    changed = True
+    while changed:
+        changed = False
+        have_classes = {c for m in held_m for c in w.classes_of(m)}
+        have_affords = {a for i in held_i for a in w.affords(i)}
+
+        for rid, r in sorted(w.recipes.items()):
+            proc = w.processes.get(r.get("process"), {})
+
+            # Where it must happen. Absent means anywhere, including standing in a field.
+            at = set(proc.get("performed_at") or [])
+            if at and not (at & kinds):
+                continue
+
+            # What the maker must be holding -- an affordance, not a named tool.
+            if not set(proc.get("needs") or []) <= have_affords:
+                continue
+
+            ok = True
+            for need in r.get("ingredients") or []:
+                if "tag" in need and need["tag"].lstrip("#") not in have_classes:
+                    ok = False
+                elif "material" in need and need["material"] not in held_m:
+                    ok = False
+                elif "item" in need and need["item"] not in held_i:
+                    ok = False
+                if not ok:
+                    break
+            if not ok:
+                continue
+
+            for got in r.get("outputs") or []:
+                if "item" in got and got["item"] not in held_i:
+                    held_i.add(got["item"])
+                    changed = True
+                elif "material" in got and got["material"] not in held_m:
+                    held_m.add(got["material"])
+                    changed = True
+
+    return held_m, held_i
+
+
+def making(w: World, problems: list[str]) -> None:
+    """Every recipe is performable somewhere, and every item can be got somewhere.
+
+    Judged across the whole authored world rather than per map, because a player travels: a
+    recipe that only works at Dwarka is fine, and one that works nowhere is a bug.
+    """
+    if not w.recipes:
+        return
+
+    biomes = {b for fm in w.maps.values() for b in (fm.get("seed_biomes") or [])}
+    kinds = {d.get("kind") for d in w.pois.values() if d.get("kind")}
+    held_m, held_i = make(w, biomes, kinds)
+
+    for rid, r in sorted(w.recipes.items()):
+        outs = [o.get("item") or o.get("material") for o in r.get("outputs") or []]
+        if any(o in held_i or o in held_m for o in outs):
+            continue
+        proc = w.processes.get(r.get("process"), {})
+        at = set(proc.get("performed_at") or [])
+        if at and not (at & kinds):
+            problems.append(
+                f"{rid} is performed at {'/'.join(sorted(at))}, and no point of interest "
+                f"on any map is one"
+            )
+            continue
+        missing_tools = set(proc.get("needs") or []) - {a for i in held_i for a in w.affords(i)}
+        if missing_tools:
+            problems.append(
+                f"{rid} needs something that {'/'.join(sorted(missing_tools))}s, and nothing "
+                f"obtainable does"
+            )
+            continue
+        short = []
+        for need in r.get("ingredients") or []:
+            if "tag" in need and need["tag"].lstrip("#") not in {
+                c for m in held_m for c in w.classes_of(m)
+            }:
+                short.append(need["tag"])
+            elif "material" in need and need["material"] not in held_m:
+                short.append(need["material"])
+            elif "item" in need and need["item"] not in held_i:
+                short.append(need["item"])
+        problems.append(f"{rid} can never be performed: nothing supplies {', '.join(short)}")
+
+    # An item nothing yields and no recipe makes. A prototype is exempt -- it exists to be
+    # inherited from, not to be held, which is why `item_cordage` has no recipe and should not.
+    prototypes = {d["base_item"] for d in w.items.values() if d.get("base_item")}
+    for iid in sorted(w.items):
+        if iid in held_i or iid in prototypes:
+            continue
+        problems.append(f"{iid} exists but nothing gathers or makes it")
+
+    for mid in sorted(w.materials):
+        if mid in held_m:
+            continue
+        problems.append(
+            f"{mid} exists but is found in no map's biomes and no recipe produces it"
+        )
+
+
 def why_stuck(w: World, s: State, did: str) -> str:
     """The requirement that never arrived, for a message worth reading."""
     levels = w.discoveries[did].get("levels") or []
@@ -226,6 +375,7 @@ def main() -> int:
 
     problems: list[str] = []
     structural(w, problems)
+    making(w, problems)
 
     # The truth for a player is the whole connected world: they can travel. Per-map figures
     # come after, and are reported rather than enforced -- a map that needs its neighbour is

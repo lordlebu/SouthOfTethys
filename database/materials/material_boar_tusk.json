@@ -1,0 +1,22 @@
+{
+  "id": "material_boar_tusk",
+  "type": "material",
+  "name": "Boar tusk",
+  "classes": [
+    "bone"
+  ],
+  "won_from": [
+    "fauna_mountain_forest_boar"
+  ],
+  "found_in": [
+    "forest",
+    "hills"
+  ],
+  "rarity": "rare",
+  "notes": "Curved, hollow at the root, and hard enough to take an edge. Worn as often as it is worked.",
+  "canon": "inferred",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "source_index": 10
+}

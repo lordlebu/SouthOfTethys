@@ -1,0 +1,79 @@
+{
+  "version": "1.0.0",
+  "description": "What a material *is*, declared once so that a recipe can ask for a kind of stuff rather than for a list of species. The companion to growth_forms.json and clades.json: those say what a plant and an animal are, this says what they give up. A recipe naming `#fibre` is satisfied by any material carrying the class, so canon can gain a new reed in ten years' time and every cordage recipe written today accepts it without an edit.",
+  "note": "Borrowed, deliberately, from the item-tag system Minecraft data packs use -- `#minecraft:planks` rather than an enumeration of nine woods. The argument is the same one and it is about maintenance rather than elegance: canon holds 347 species, and a recipe layer that has to name them is editable for about a month. This is not `flora.uses`, which answers a different question and stays where it is. `uses` says what people do with a plant -- shade, a boundary marker, a landmark to steer by -- and over half of those are not substances at all. A material class says what you can carry away.",
+  "classes": {
+    "fibre": {
+      "label": "Fibre",
+      "note": "Anything that can be retted, combed and spun. Plant and animal both -- reed, palm husk, cliff-goat hair -- because a rope does not care which it came from and every recipe that wants one wants either."
+    },
+    "timber": {
+      "label": "Timber",
+      "note": "Wood cut for structure. The distinction from `fuel` is what it is cut *for*: iron-teak is timber and mangrove charcoal is fuel, and the same tree can give both."
+    },
+    "bone": {
+      "label": "Bone",
+      "note": "Bone, antler, tooth and ivory. Canon's leviathans are the reason this is not folded into `stone` as a hard-workable: a bone plate is harvested and a flint is quarried, and the two reach a workshop by entirely different routes."
+    },
+    "hide": {
+      "label": "Hide",
+      "note": "Skin, leather and sinew. Sinew sits here rather than in `fibre` because it is won by skinning, not by retting -- provenance decides the class where the finished behaviour is ambiguous."
+    },
+    "shell": {
+      "label": "Shell",
+      "note": "Mollusc, ammonite and crustacean armour. Canon leans on this hard: the Chess of Fate is inlaid with fossilised ammonites, and the Shattered Sea Oyster is the whole reason Dwarka has a harbour worth the name."
+    },
+    "resin": {
+      "label": "Resin",
+      "note": "Gum, pitch, incense and lac. Frankincense and myrrh are both in canon already as traded scrub, and a resin is the only adhesive this era has."
+    },
+    "clay": {
+      "label": "Clay",
+      "note": "Earth that fires. Held apart from `stone` because the process is the point -- clay is the one material in this list that is *made* hard rather than found hard."
+    },
+    "stone": {
+      "label": "Stone",
+      "note": "Rock worked by knapping, grinding or dressing. Basalt, flint, chert, sandstone."
+    },
+    "glass": {
+      "label": "Glass",
+      "note": "Fused silica, whether a kiln did it or the ground did. Canon's magma-glass and the Glass Scar at Dwarka are natural; a bead is not. Same class, because they knap and cut the same way."
+    },
+    "metal": {
+      "label": "Metal",
+      "note": "Copper, tin, bronze, gold, meteoric iron. The era's outer edge -- canon is a bronze world with iron as a rumour, and nothing in this vocabulary should let a recipe quietly invent a smelted iron industry."
+    },
+    "salt": {
+      "label": "Salt",
+      "note": "Salt, natron and the mineral crusts. Its own class rather than a `physic` or a `produce` because in this world it is a preservative, a trade currency and the ground Dwarka stands on, and all three matter."
+    },
+    "pigment": {
+      "label": "Pigment",
+      "note": "Dye, ochre, ink and lime-white. Canon has two indigos and grows them on purpose."
+    },
+    "grain": {
+      "label": "Grain",
+      "note": "Staple seed -- rice, barley, millet. Separated from `produce` because grain stores and produce does not, which is the difference a settlement is built on."
+    },
+    "produce": {
+      "label": "Produce",
+      "note": "Fruit, root, leaf and nut eaten as they are. Dates, taro, tamarind."
+    },
+    "flesh": {
+      "label": "Flesh",
+      "note": "Meat, fish and eggs. Named plainly rather than as `meat` so that fish and shellfish are obviously inside it -- a river culture eats far more of the second than the first."
+    },
+    "oil": {
+      "label": "Oil",
+      "note": "Pressed seed oil and rendered fat. Burns, cooks, and waterproofs, which is three recipes' worth of reason to exist. Canon's mahua is already recorded as an oil tree."
+    },
+    "fuel": {
+      "label": "Fuel",
+      "note": "Charcoal, dung, dry reed and peat. What a process consumes rather than what it transforms -- a firing recipe wants `#fuel` and does not care which."
+    },
+    "physic": {
+      "label": "Physic",
+      "note": "Medicinal substance -- salve, tonic, bitter bark. Canon already carries neem, a wound salve on the myrrh-thorn and a shilajit tonic, so the class is describing what is there rather than proposing a healing system. Nothing in the game reads it as a stat."
+    }
+  }
+}

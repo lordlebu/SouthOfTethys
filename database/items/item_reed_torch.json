@@ -1,0 +1,19 @@
+{
+  "id": "item_reed_torch",
+  "type": "item",
+  "name": "Reed torch",
+  "kind": "light",
+  "affords": [
+    "burn"
+  ],
+  "materials": [
+    "material_reed_fibre",
+    "material_tree_pitch"
+  ],
+  "notes": "Pitched reed bundle. Bright, brief, and gone in the rain.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 38
+}

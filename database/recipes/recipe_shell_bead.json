@@ -1,0 +1,31 @@
+{
+  "id": "recipe_shell_bead",
+  "type": "recipe",
+  "name": "Drilling shell beads",
+  "process": "process_carving",
+  "ingredients": [
+    {
+      "tag": "#shell",
+      "count": 2
+    },
+    {
+      "item": "item_bow_drill",
+      "kept": true
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_shell_bead",
+      "count": 4
+    }
+  ],
+  "known_by": [
+    "harappan"
+  ],
+  "notes": "The smallest unit of worth anybody agrees on, and Harappa is where they are made.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 22
+}

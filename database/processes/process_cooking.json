@@ -1,0 +1,15 @@
+{
+  "id": "process_cooking",
+  "type": "process",
+  "name": "Cooking",
+  "needs": [
+    "burn",
+    "contain"
+  ],
+  "notes": "Heat and a pot. Deliberately siteless -- a hearth is a fire somebody built, and a traveller builds one wherever they stop.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 12
+}

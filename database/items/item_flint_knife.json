@@ -1,0 +1,19 @@
+{
+  "id": "item_flint_knife",
+  "type": "item",
+  "name": "Flint knife",
+  "base_item": "item_blade",
+  "kind": "tool",
+  "affords": [
+    "cut"
+  ],
+  "materials": [
+    "material_flint"
+  ],
+  "notes": "Knapped in an afternoon, sharp for a week, replaced without ceremony.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 15
+}

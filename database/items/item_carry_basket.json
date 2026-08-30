@@ -1,0 +1,21 @@
+{
+  "id": "item_carry_basket",
+  "type": "item",
+  "name": "Carry basket",
+  "base_item": "item_woven_ware",
+  "kind": "textile",
+  "affords": [
+    "carry",
+    "contain"
+  ],
+  "materials": [
+    "material_reed_fibre",
+    "material_bamboo_cane"
+  ],
+  "notes": "Split cane ribs with reed weft. Carries as much as a person can and weighs almost nothing empty.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 10
+}

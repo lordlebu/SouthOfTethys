@@ -1,0 +1,22 @@
+{
+  "id": "material_frankincense",
+  "type": "material",
+  "name": "Frankincense",
+  "classes": [
+    "resin"
+  ],
+  "won_from": [
+    "flora_frankincense_scrub"
+  ],
+  "found_in": [
+    "desert",
+    "hills"
+  ],
+  "rarity": "rare",
+  "notes": "Canon already records the scrub for incense and trade resin. Tapped by scoring the bark and coming back a fortnight later, which makes it a crop as much as a gathering.",
+  "canon": "inferred",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "source_index": 18
+}

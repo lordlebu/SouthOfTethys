@@ -1,0 +1,24 @@
+{
+  "id": "material_date_fruit",
+  "type": "material",
+  "name": "Dates",
+  "classes": [
+    "produce"
+  ],
+  "won_from": [
+    "flora_date_palm",
+    "flora_oasis_date_palm"
+  ],
+  "found_in": [
+    "desert",
+    "coast",
+    "settlement"
+  ],
+  "rarity": "common",
+  "notes": "Dried on the frond and carried in a pressed block. Sweet, heavy, and the reason a desert crossing is arithmetic rather than a gamble.",
+  "canon": "inferred",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "source_index": 38
+}

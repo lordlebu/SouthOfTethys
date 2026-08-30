@@ -1,0 +1,20 @@
+{
+  "id": "material_flint",
+  "type": "material",
+  "name": "Flint",
+  "classes": [
+    "stone"
+  ],
+  "found_in": [
+    "hills",
+    "plains",
+    "coast"
+  ],
+  "rarity": "common",
+  "notes": "Nodules out of limestone, or cobbles out of a riverbed. Knaps predictably, which is the entire reason it outlasted better-looking stone.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 23
+}

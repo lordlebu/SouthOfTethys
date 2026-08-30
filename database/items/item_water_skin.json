@@ -1,0 +1,21 @@
+{
+  "id": "item_water_skin",
+  "type": "item",
+  "name": "Water skin",
+  "base_item": "item_vessel_ware",
+  "kind": "container",
+  "affords": [
+    "contain",
+    "carry"
+  ],
+  "materials": [
+    "material_goat_hide",
+    "material_tree_pitch"
+  ],
+  "notes": "Pitched inside. Tastes of it, and everyone stopped noticing generations ago.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 33
+}

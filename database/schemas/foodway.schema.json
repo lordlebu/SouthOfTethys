@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Foodway",
+  "description": "What a dish *means*: whose it is, when it is eaten, and what it marks. The cultural half of food, held apart from the edible half and deliberately **not exported**.\n\nThe obvious design gives food its own `dishes/` type. It is wrong by this repository's own precedent -- `place` splits from `point_of_interest` on whether a player can stand there, and `character` from `npc` on whether they speak. A dish is an item whose output happens to be edible, so it lives in `items/` and ships. What does not ship is the flood-bread eaten when the river rises, which is a fact about the Harappans and belongs beside mythology.",
+  "type": "object",
+  "required": ["id", "type", "name", "culture", "dish"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^foodway_[a-z0-9_]+$" },
+    "type": { "const": "foodway" },
+    "name": { "type": "string", "minLength": 1 },
+    "culture": {
+      "type": "string",
+      "description": "Whose custom this is, from database/cultures.json. Checked by lint against that file the way `culture` on a character is."
+    },
+    "dish": {
+      "type": "string",
+      "pattern": "^item_[a-z0-9_]+$",
+      "description": "The `item_` this is a custom about. The one link across the boundary: the item ships and this does not, which is exactly the split."
+    },
+    "occasion": {
+      "type": "string",
+      "minLength": 1,
+      "description": "When it is eaten. The load-bearing field -- a dish with no occasion is a recipe, and recipes are already a type."
+    },
+    "meaning": {
+      "type": "string",
+      "description": "What eating it says. Where a foodway earns its place as a noun rather than a footnote on an item."
+    },
+    "places": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "`settlement_`, `place_` or `region_` ids where the custom holds."
+    },
+    "epochs": { "type": "array", "items": { "type": "string" } },
+    "notes": { "type": "string" },
+    "canon": { "type": "string", "enum": ["primary", "secondary", "inferred"] },
+    "sources": { "type": "array", "items": { "type": "string" } },
+    "source_index": { "type": "integer", "minimum": 0 }
+  },
+  "additionalProperties": false
+}

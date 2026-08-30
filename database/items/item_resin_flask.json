@@ -1,0 +1,20 @@
+{
+  "id": "item_resin_flask",
+  "type": "item",
+  "name": "Resin flask",
+  "base_item": "item_vessel_ware",
+  "kind": "container",
+  "affords": [
+    "contain"
+  ],
+  "materials": [
+    "material_river_clay",
+    "material_myrrh_gum"
+  ],
+  "notes": "Small, stoppered, and worth more full than the room it sits in.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 35
+}

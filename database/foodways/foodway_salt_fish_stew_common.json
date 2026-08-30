@@ -1,0 +1,14 @@
+{
+  "id": "foodway_salt_fish_stew_common",
+  "type": "foodway",
+  "name": "The common pot",
+  "culture": "harappan",
+  "dish": "item_salt_fish_stew",
+  "occasion": "Any evening nobody has marked as anything.",
+  "meaning": "Almost nothing, and that is the point -- a culture is mostly the meal it does not think about.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 3
+}

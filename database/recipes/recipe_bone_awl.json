@@ -1,0 +1,26 @@
+{
+  "id": "recipe_bone_awl",
+  "type": "recipe",
+  "name": "Carving a bone awl",
+  "process": "process_carving",
+  "ingredients": [
+    {
+      "tag": "#bone"
+    },
+    {
+      "item": "item_flint_knife",
+      "kept": true
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_bone_awl"
+    }
+  ],
+  "notes": "Bores a hole and scores a line, with the same point.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 14
+}

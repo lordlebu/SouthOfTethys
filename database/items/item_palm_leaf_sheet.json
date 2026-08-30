@@ -1,0 +1,18 @@
+{
+  "id": "item_palm_leaf_sheet",
+  "type": "item",
+  "name": "Palm-leaf sheet",
+  "kind": "record",
+  "affords": [
+    "mark"
+  ],
+  "materials": [
+    "material_palm_husk"
+  ],
+  "notes": "Cut, boiled, dried and smoothed. Takes a scored line better than it takes ink.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 43
+}

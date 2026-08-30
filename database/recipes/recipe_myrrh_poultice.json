@@ -1,0 +1,28 @@
+{
+  "id": "recipe_myrrh_poultice",
+  "type": "recipe",
+  "name": "Making a myrrh poultice",
+  "process": "process_cooking",
+  "ingredients": [
+    {
+      "material": "material_myrrh_gum"
+    },
+    {
+      "material": "material_bark_bast"
+    },
+    {
+      "tag": "#oil"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_myrrh_poultice"
+    }
+  ],
+  "notes": "The salve canon already names on the thorn, spread on bast.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 70
+}
