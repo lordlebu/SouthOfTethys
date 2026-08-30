@@ -3,6 +3,10 @@
   "type": "place",
   "name": "Narmada University Library",
   "kind": "settlement",
+  "epochs": [
+    "epoch_current"
+  ],
+  "within": "field_map_narmada",
   "continent": "jambhudweepa",
   "description": "An ancient, grand academic center built on the cliffs of the Narmada River, blending 19th-century Victorian Kolkata aesthetics with ancient Hindu motifs.",
   "notes": "Constructed 10,000 years ago under the first Naga King to map Jambhudweepa. It features cream and brick-red walls, tall green-shuttered windows, teakwood desks, and shelves overflowing with ancient palm-leaf manuscripts and leather-bound tomes. Subtle steampunk steam pipes hum softly along its walls, and it serves as the intellectual battleground between Professor Onko and Digha Jani.",

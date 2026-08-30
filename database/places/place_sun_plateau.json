@@ -3,6 +3,15 @@
   "type": "place",
   "name": "The Sun Plateau",
   "kind": "frontier",
+  "epochs": [
+    "epoch_prehistoric",
+    "epoch_deep_antiquity",
+    "epoch_migrations",
+    "epoch_civilization_dawn",
+    "epoch_current",
+    "epoch_post_cataclysm"
+  ],
+  "within": "place_tamraparni",
   "continent": "jambhudweepa",
   "description": "An enormous, tropical plateau hidden between sheer mountain walls, rising high above the clouds.",
   "notes": "A lost paradise where prehistoric Harappan ruins are covered by giant tropical foliage. It is the resting place of the colossal stone golems and the sacred threshold where physical reality folds into 'The Game.'",

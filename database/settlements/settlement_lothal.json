@@ -2,6 +2,11 @@
   "id": "settlement_lothal",
   "type": "settlement",
   "name": "Lothal",
+  "epochs": [
+    "epoch_civilization_dawn",
+    "epoch_current",
+    "epoch_post_cataclysm"
+  ],
   "region": "region_saraswati_delta",
   "epoch_founded": "epoch_civilization_dawn",
   "founders": [
@@ -19,5 +24,6 @@
   "sources": [
     "AI_CONTEXT.md",
     "map"
-  ]
+  ],
+  "within": "field_map_lothal"
 }

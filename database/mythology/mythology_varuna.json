@@ -2,10 +2,19 @@
   "id": "mythology_varuna",
   "type": "mythology",
   "name": "Varuna",
-  "domain": ["abyssal", "deep_tethys", "rta"],
+  "domain": [
+    "abyssal",
+    "deep_tethys",
+    "rta"
+  ],
   "aspect": "Asura of the Deep Tethys, keeper of Ṛta (cosmic order)",
-  "relations": { "bound_by_storm_oath": "character_mehme" },
+  "relations": {
+    "bound_by_storm_oath": "character_mehme",
+    "is": "character_varuna_of_the_deep"
+  },
   "notes": "Plays cosmic chess against Indra. In possible post-cataclysm future, appears as older man leading Survival Train.",
   "canon": "primary",
-  "sources": ["AI_CONTEXT.md"]
+  "sources": [
+    "AI_CONTEXT.md"
+  ]
 }

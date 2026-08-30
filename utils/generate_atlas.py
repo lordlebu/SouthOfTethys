@@ -199,8 +199,45 @@ def courses(folders: dict[str, list[dict]], epoch_id: str) -> list[dict]:
     return [e for e in folders.get("places", []) if e.get("path") and in_era(e, epoch_id)]
 
 
+def centroid(ring: list) -> dict | None:
+    """The middle of a traced outline, for a place that only knows which region holds it."""
+    pts = [pt for pt in ring or [] if isinstance(pt, list) and len(pt) == 2]
+    if not pts:
+        return None
+    return {"x": sum(pt[0] for pt in pts) / len(pts), "y": sum(pt[1] for pt in pts) / len(pts)}
+
+
+def anchors(folders: dict[str, list[dict]]) -> dict[str, dict]:
+    """Every entity that knows where it is, by id -- what a `within` can point at."""
+    out = {}
+    for name in ("field_maps", "places", "settlements", "regions"):
+        for e in folders.get(name, []):
+            c = e.get("coordinates")
+            if isinstance(c, dict) and "x" in c and "y" in c:
+                out[e["id"]] = c
+            elif e.get("extent"):
+                out[e["id"]] = centroid(e["extent"])
+            elif e.get("path"):
+                out[e["id"]] = centroid(e["path"])
+    return {k: v for k, v in out.items() if v}
+
+
 def placed(folders: dict[str, list[dict]], epoch_id: str) -> list[dict]:
-    """Everything with coordinates that exists in this era, resolved to its state then."""
+    """Everything that can be put on the grid this era, surveyed or inherited.
+
+    Canon names far more places than it has ever surveyed. Only what was legible on
+    `Partial_map.png` got coordinates, so seventeen places named by events were drawn nowhere
+    and every era's chapter mentioned ground its own map did not show.
+
+    A place may instead say what contains it. The position then comes from the parent -- its
+    coordinates, or the middle of its outline -- and the point is marked `inherited`, which the
+    renderer draws hollow. That is the whole of the honesty here: the map shows that canon knows
+    the Nilgiri Canopy is in the Nilgiri, and does not pretend to know where in it.
+
+    One hop only, deliberately. A chain of parents would let an unplaced place borrow from
+    another unplaced place and land somewhere nobody chose.
+    """
+    known = anchors(folders)
     out = []
     for name in ("field_maps", "places", "settlements"):
         for entity in folders.get(name, []):
@@ -208,8 +245,13 @@ def placed(folders: dict[str, list[dict]], epoch_id: str) -> list[dict]:
                 continue
             resolved = state_in_era(entity, epoch_id)
             coords = resolved.get("coordinates")
+            inherited = False
+            if not (isinstance(coords, dict) and "x" in coords and "y" in coords):
+                coords = known.get(resolved.get("within") or "")
+                inherited = coords is not None
             if isinstance(coords, dict) and "x" in coords and "y" in coords:
-                out.append({**resolved, "_folder": name})
+                out.append({**resolved, "coordinates": coords,
+                            "_folder": name, "_inherited": inherited})
     return out
 
 
@@ -233,6 +275,9 @@ def svg_map(points: list[dict], epoch_name: str,
         "<style>",
         "  .bg{fill:#E7EAE6}.grid{stroke:#CBD1CB;stroke-width:.3}.edge{stroke:#AFB8B1;stroke-width:.6}",
         "  .dot{fill:#2C5C8F}.dot-place{fill:#7E6A2E}",
+        # An inherited position is drawn hollow: canon knows what contains this place
+        # and not where in it. A filled dot would claim a survey nobody made.
+        "  .dot-within{fill:none;stroke:#7E6A2E;stroke-width:.5}",
         "  .lbl{fill:#17201F;font:3.2px Archivo,sans-serif}",
         "  .cap{fill:#7D8A86;font:2.6px 'JetBrains Mono',monospace}",
         f"  .sea{{fill:{SEA[0]}}} .land{{fill:{LAND[0]}}}",
@@ -243,7 +288,8 @@ def svg_map(points: list[dict], epoch_name: str,
         f"  {light}",
         "  @media(prefers-color-scheme:dark){",
         "   .bg{fill:#121817}.grid{stroke:#28322F}.edge{stroke:#3E4C4E}",
-        "   .dot{fill:#74A8DA}.dot-place{fill:#CBAE6A}.lbl{fill:#E2E7E3}.cap{fill:#78857F}",
+        "   .dot{fill:#74A8DA}.dot-place{fill:#CBAE6A}.dot-within{fill:none;stroke:#CBAE6A}"
+        "   .lbl{fill:#E2E7E3}.cap{fill:#78857F}",
         f"   .sea{{fill:{SEA[1]}}} .land{{fill:{LAND[1]}}}",
         "   polygon{stroke:#3A4436} .rgn{fill:#9FB09A}",
         "   .course{stroke:#6E9CBD} .course-lbl{fill:#9DBDD4}",
@@ -296,6 +342,8 @@ def svg_map(points: list[dict], epoch_name: str,
     for p in points:
         x, y = p["coordinates"]["x"], p["coordinates"]["y"]
         cls = "dot" if p["_folder"] == "field_maps" else "dot-place"
+        if p.get("_inherited"):
+            cls += " dot-within"
         anchor = "end" if x == max(xs) else ("start" if x == min(xs) else "middle")
         dx = -2 if anchor == "end" else (2 if anchor == "start" else 0)
         parts.append(f'<circle class="{cls}" cx="{x}" cy="{y}" r="1.5"/>')

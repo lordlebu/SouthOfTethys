@@ -1,0 +1,22 @@
+{
+  "id": "mythology_chess_of_fate",
+  "type": "mythology",
+  "name": "The Chess of Fate",
+  "domain": [
+    "cosmology",
+    "fate",
+    "tectonics"
+  ],
+  "aspect": "The endless game whose board is the world and whose pieces are its islands, ranges and plates",
+  "relations": {
+    "played_by": "character_varuna_of_the_deep",
+    "against": "character_indra",
+    "refereed_by": "character_dyaus_pitar",
+    "played_on": "artifact_chess_of_fate"
+  },
+  "notes": "The primordial cosmic board game played by Indra and Varuṇa, refereed by the Sky Father Dyauṣ Pitar, which shapes the physical and spiritual geography of the Tethys-rim world. Dyauṣ Pitar's sixty-four celestial coordinates are the grid the Harappan sages later revered -- and the same abstract 0-100 grid canon draws its atlas on, which is the joke the myth is telling. Mortals keep rediscovering refractions of the rules: the Jharwa and Tushara bone tallies, and the Mask of Vaṛkesh on its altar at the Sun Plateau, which folds a battle into a tabletop and seats the fighters across a board from the Mask itself.",
+  "canon": "primary",
+  "sources": [
+    "dump/the-chess-of-fate-mythology.md"
+  ]
+}

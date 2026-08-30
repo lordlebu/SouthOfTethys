@@ -73,6 +73,17 @@
       "items": {
         "type": "string"
       }
+    },
+    "within": {
+      "type": "string",
+      "description": "What contains this place -- another place, a region, a settlement or a field map.\n\nExists because canon names far more places than it can survey. Seventeen were named by events and drawn nowhere, because only the ones legible on `dump/Partial_map.png` ever got coordinates and everything authored since has had none. Each era's chapter mentioned places the era's map did not show.\n\nPlotting each by hand does not scale and mostly invents geography. This does neither: the Nilgiri Canopy is in the Nilgiri, the Narmada University Library is on the Narmada field map, and saying so is a fact canon already holds. The atlas resolves a position from the parent and **draws it as inherited rather than surveyed** -- a hollow marker, not a filled one -- so the map never claims a precision it does not have.\n\nA place with its own `coordinates` ignores this. A place with neither is simply unplaced, which stays honest and common."
+    },
+    "epochs": {
+      "type": "array",
+      "description": "Epoch ids from database/timeline/epochs.json. Absent means the place exists in every era.",
+      "items": {
+        "type": "string"
+      }
     }
   },
   "additionalProperties": false

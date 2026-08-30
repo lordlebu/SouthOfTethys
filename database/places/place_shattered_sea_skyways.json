@@ -1,0 +1,22 @@
+{
+  "id": "place_shattered_sea_skyways",
+  "type": "place",
+  "name": "The Vyom-Yakshi Sky-Isles",
+  "kind": "island",
+  "within": "region_shattered_sea",
+  "region": "region_shattered_sea",
+  "epochs": [
+    "epoch_prehistoric",
+    "epoch_deep_antiquity",
+    "epoch_migrations",
+    "epoch_civilization_dawn",
+    "epoch_current",
+    "epoch_post_cataclysm"
+  ],
+  "description": "Low-gravity landforms hanging over the Shattered Sea, and the shifting shores of Muria beneath them.",
+  "notes": "Where the cosmic game's moves refract down into physical ground. Ground rather than building, so every era, though what floats there is not the same twice.",
+  "canon": "secondary",
+  "sources": [
+    "dump/the-chess-of-fate-mythology.md"
+  ]
+}

@@ -3,6 +3,15 @@
   "type": "place",
   "name": "Gondwana Plateau",
   "kind": "frontier",
+  "epochs": [
+    "epoch_prehistoric",
+    "epoch_deep_antiquity",
+    "epoch_migrations",
+    "epoch_civilization_dawn",
+    "epoch_current",
+    "epoch_post_cataclysm"
+  ],
+  "within": "place_deccan",
   "continent": "jambhudweepa",
   "description": "A desolate, ancient, and weightless dimension dominated by a colossal, looming sentient planet in the sky.",
   "notes": "A reality-fractured plateau representing the deep-time biological memory of the ancient supercontinent Gondwana. Trees, rivers, and cliffs float weightlessly. It houses ancient volcanic black lingams and half-buried stone tablets with archaic glyphs, accessible from the mortal realm only through space-time rifts and cosmic wormholes.",

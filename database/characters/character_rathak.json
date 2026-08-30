@@ -2,7 +2,7 @@
   "id": "character_rathak",
   "type": "character",
   "name": "Rathak",
-  "culture": "trader",
+  "culture": "explorer",
   "species": "human",
   "status": "alive",
   "epoch": "epoch_civilization_dawn",

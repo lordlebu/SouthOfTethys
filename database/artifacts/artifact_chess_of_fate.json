@@ -1,0 +1,18 @@
+{
+  "id": "artifact_chess_of_fate",
+  "type": "artifact",
+  "name": "The Board of the Chess of Fate",
+  "material": [
+    "fossilised blackwood",
+    "basalt",
+    "ivory-shell inlay"
+  ],
+  "notes": "A massive, legendary tabletop game board representing the cosmic grid of Jambhudweepa. It is said to have been carved by the divine craftsman Tvaṣṭṛ, with its squares inlaid with fossilized ammonites and magma-glass. When the gods move its pieces, the very rifts of the Tethys Sea widen and contract.",
+  "canon": "secondary",
+  "sources": [
+    "Vedic Mythology and Version Controlled Tectonic Drift",
+    "Compendium of Celestial Beings and Primordial Entities"
+  ],
+  "power": "Every move made on it moves the world: coastlines shift, ranges rise, and gateways open where a piece is set down.",
+  "risk": "The board is the world, so there is no square to stand on that is not already in play. Mortals who find a refraction of the rules -- a bone tally, a mask on an altar -- are playing whether they meant to or not."
+}

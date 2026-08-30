@@ -3,6 +3,12 @@
   "type": "place",
   "name": "The Upriver Exile",
   "kind": "settlement",
+  "epochs": [
+    "epoch_civilization_dawn",
+    "epoch_current",
+    "epoch_post_cataclysm"
+  ],
+  "within": "region_saraswati_delta",
   "description": "Wherever Shaashak and Khadi settled after leaving Lothal by river skiff, and where Sarita was born.",
   "notes": "From `event_exile_of_shaashak` and `event_birth_of_sarita`. Canon says only that it is upriver and far from Lothal's tainted legacy — deliberately unlocated, which is the point of an exile.",
   "canon": "primary",

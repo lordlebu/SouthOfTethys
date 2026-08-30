@@ -5,7 +5,12 @@
   "cultures": [
     {
       "id": "harappan",
-      "count": 10
+      "count": 11
+    },
+    {
+      "id": "explorer",
+      "count": 6,
+      "note": "The one culture here that is not a people. Every other entry names a lineage you are born into; this one names a way of moving through the world, and it is why the same word fits a Tushara nomad girl, a Civilization Dawn whale-blimp commander and a god wearing a mortal frame.\n\nSix hold it, across four eras and every kind of vessel canon has: Varuna captains the Kelpfang and Mitra navigates it; Rathak runs cargo over the Tethys by airship; Ruvan walks, and is the observer the others are measured against; Guyuk crosses the steppe on foot and her second life crosses the ruined grasslands by train. What they share is not ancestry or territory but a disposition -- they go and look, and they bring back an account.\n\nThat is also the player's disposition, which is not an accident. The game is one long field journey and Varuna is the character you are; the culture is the one canon offers as an answer to what kind of person does that."
     },
     {
       "id": "kia",
@@ -16,23 +21,27 @@
       "count": 5
     },
     {
+      "id": "maya_born",
+      "count": 3
+    },
+    {
       "id": "narmada_scholar",
-      "count": 4
+      "count": 3
+    },
+    {
+      "id": "primordial",
+      "count": 3
     },
     {
       "id": "tuli",
       "count": 3
     },
     {
+      "id": "celestial",
+      "count": 2
+    },
+    {
       "id": "jharwa",
-      "count": 2
-    },
-    {
-      "id": "maya_born",
-      "count": 2
-    },
-    {
-      "id": "primordial",
       "count": 2
     },
     {
@@ -41,10 +50,6 @@
     },
     {
       "id": "vedda",
-      "count": 2
-    },
-    {
-      "id": "wanderer",
       "count": 2
     },
     {
@@ -64,15 +69,7 @@
       "count": 1
     },
     {
-      "id": "celestial",
-      "count": 1
-    },
-    {
       "id": "cosmic",
-      "count": 1
-    },
-    {
-      "id": "explorer",
       "count": 1
     },
     {
@@ -81,10 +78,6 @@
     },
     {
       "id": "lundish",
-      "count": 1
-    },
-    {
-      "id": "narmada_survivor",
       "count": 1
     },
     {
@@ -100,16 +93,22 @@
       "count": 1
     },
     {
-      "id": "trader",
+      "id": "unknown",
       "count": 1
+    },
+    {
+      "id": "wanderer",
+      "count": 1
+    },
+    {
+      "id": "trader",
+      "count": 0,
+      "note": "Named in the prose of the Lothal guilds. Nobody currently holds it: Rathak, its only bearer, is an explorer who trades rather than a trader who travels."
     },
     {
       "id": "tushara",
-      "count": 1
-    },
-    {
-      "id": "unknown",
-      "count": 1
+      "count": 0,
+      "note": "The steppe people Guyuk was born to. She now carries `explorer`, which is a disposition rather than a birth, so nobody in canon currently holds this. The people are named across the prose and the declaration stays."
     }
   ]
 }

@@ -126,6 +126,16 @@ Where canon *dates* a place, canon wins over the rule of thumb. Hyrcania is grou
 six, but the two events that happen there sit in the Migrations, and if the steppe had been
 named only in that era it would carry only that era.
 
+**Four ways to say where.** A point is `coordinates`; an area is `extent`, a closed ring of
+`[x, y]`; a river or a road is `path`, an ordered line read source-first. And when canon does not
+know where something sits but does know what holds it, **`within`** names the parent and the atlas
+takes the position from there, drawing it hollow instead of filled.
+
+Prefer `within` to a guess. Seventeen places were named by events and drawn nowhere, because only
+what was legible on the reference map ever got coordinates -- every era's chapter mentioned ground
+its own map did not show. Saying the Nilgiri Canopy is in the Nilgiri is a fact canon already
+holds; inventing a coordinate for it is not.
+
 **Three ways to say where.** A point is `coordinates`; an area is `extent`, a closed ring of
 `[x, y]`; a river or a road is `path`, an ordered line read source-first. A line is not a thin
 ring — drawn as a ring it has to be traced out and back, and every edit has to keep both banks

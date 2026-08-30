@@ -8,7 +8,9 @@
     "character_owlman"
   ],
   "location": "place_gondwana",
-  "predecessors": [],
+  "predecessors": [
+    "event_the_first_cosmic_move"
+  ],
   "successors": [
     "event_asura_gondwana_intervention",
     "event_asura_synapsid_domestication"

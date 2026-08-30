@@ -237,9 +237,13 @@ def main() -> int:
     # visibly wrong picture rather than a missing line in a census. A place canon has not located
     # may stay undated; there are 22 of those and dating them is not the price of drawing a map.
     for eid, (path, payload) in sorted(entities.items()):
-        if path.parent.name != "places" or payload.get("sample"):
+        if path.parent.name not in ("places", "settlements") or payload.get("sample"):
             continue
-        if not (payload.get("coordinates") or payload.get("extent") or payload.get("path")):
+        # `within` counts: a place that inherits a position from its parent is drawn, and an
+        # undated one then appears in every era. That is how the Narmada University Library came
+        # to stand in Deep Antiquity the moment inheritance was switched on.
+        if not (payload.get("coordinates") or payload.get("extent") or payload.get("path")
+                or payload.get("within")):
             continue
         if not payload.get("epochs"):
             errors.append(

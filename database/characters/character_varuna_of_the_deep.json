@@ -1,0 +1,21 @@
+{
+  "id": "character_varuna_of_the_deep",
+  "type": "character",
+  "name": "Varuṇa of the Deep",
+  "epithets": [
+    "Asura of the Deep Tethys",
+    "Keeper of Ṛta"
+  ],
+  "culture": "celestial",
+  "species": "deity",
+  "status": "mythic",
+  "epoch": "epoch_prehistoric",
+  "roles": [
+    "player"
+  ],
+  "notes": "Plays the cosmic game from the abyss, answering Indra's fire with cold water and pressure. He preserves Ṛta -- the pristine order and the quiet memory of the ancient seas -- which is a position on the board rather than a kindness.",
+  "canon": "primary",
+  "sources": [
+    "dump/the-chess-of-fate-mythology.md"
+  ]
+}

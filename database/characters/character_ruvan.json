@@ -2,7 +2,7 @@
   "id": "character_ruvan",
   "type": "character",
   "name": "Ruvan",
-  "culture": "wanderer",
+  "culture": "explorer",
   "species": "human",
   "status": "alive",
   "epoch": "epoch_civilization_dawn",
