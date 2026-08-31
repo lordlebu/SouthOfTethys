@@ -1,0 +1,20 @@
+{
+  "id": "item_ashwagandha_tonic",
+  "type": "item",
+  "name": "Ashwagandha tonic",
+  "kind": "physic",
+  "affords": [
+    "heal",
+    "eat"
+  ],
+  "materials": [
+    "material_ashwagandha_root",
+    "material_mahua_oil"
+  ],
+  "notes": "Root powder in warm oil, taken at night. For exhaustion, which canon distinguishes from illness.",
+  "canon": "secondary",
+  "sources": [
+    "Indian ethnobotany, adapted to canon"
+  ],
+  "source_index": 71
+}

@@ -24,5 +24,6 @@
   ],
   "placement": "encounter",
   "rarity": "common",
-  "journal_prompt": "A coarse shrub with sticky leaves and white flowers, growing where nobody chose to put it."
+  "journal_prompt": "A coarse shrub with sticky leaves and white flowers, growing where nobody chose to put it.",
+  "source_index": 76
 }

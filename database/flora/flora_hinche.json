@@ -22,5 +22,6 @@
   ],
   "placement": "encounter",
   "rarity": "common",
-  "journal_prompt": "A mat of fleshy stems lying flat on still water, rooting wherever a node touches mud."
+  "journal_prompt": "A mat of fleshy stems lying flat on still water, rooting wherever a node touches mud.",
+  "source_index": 80
 }

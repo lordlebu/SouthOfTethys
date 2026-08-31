@@ -25,5 +25,6 @@
   "placement": "encounter",
   "rarity": "common",
   "journal_prompt": "A long monitor lizard noses along the fish-drying racks, unhurried, entirely certain nobody will stop it.",
-  "mood": "watchful"
+  "mood": "watchful",
+  "source_index": 242
 }

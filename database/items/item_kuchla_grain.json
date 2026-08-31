@@ -1,0 +1,19 @@
+{
+  "id": "item_kuchla_grain",
+  "type": "item",
+  "name": "A grain of kuchla",
+  "kind": "physic",
+  "affords": [
+    "heal"
+  ],
+  "materials": [
+    "material_purified_kuchla",
+    "material_mahua_oil"
+  ],
+  "notes": "One purified seed ground into oil and divided into doses the size of a grain of rice. For a palsy, and for nothing else -- a preparation this specific is a preparation nobody improvises.",
+  "canon": "secondary",
+  "sources": [
+    "Indian ethnobotany, adapted to canon"
+  ],
+  "source_index": 70
+}

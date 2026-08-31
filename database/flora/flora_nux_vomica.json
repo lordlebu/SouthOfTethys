@@ -1,0 +1,29 @@
+{
+  "id": "flora_nux_vomica",
+  "type": "flora",
+  "name": "Kuchla",
+  "scientific": "Strychnos nux-vomica",
+  "growth_form": "tree",
+  "habitats": [
+    "region_saraswati_delta",
+    "region_narmada_plateau"
+  ],
+  "uses": [
+    "poison",
+    "physic",
+    "trade"
+  ],
+  "notes": "The seed is a flat grey disc and it will kill a grown person. It is also, soaked and thrown and soaked again for a fortnight, one of the few things that will settle a palsy -- and the same household keeps it in a sealed jar for both reasons. Canon records the two uses on one plant because that is what the plant is, and the difference between them is entirely a matter of preparation.",
+  "canon": "secondary",
+  "sources": [
+    "Indian ethnobotany, adapted to canon"
+  ],
+  "biomes": [
+    "forest",
+    "plains"
+  ],
+  "placement": "encounter",
+  "rarity": "rare",
+  "journal_prompt": "A modest tree with glossy paired leaves and a fruit like a small orange, which children are told about early and pointedly.",
+  "source_index": 114
+}

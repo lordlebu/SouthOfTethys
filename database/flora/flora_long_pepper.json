@@ -1,0 +1,29 @@
+{
+  "id": "flora_long_pepper",
+  "type": "flora",
+  "name": "Pippali",
+  "scientific": "Piper longum",
+  "growth_form": "vine",
+  "habitats": [
+    "region_saraswati_delta",
+    "region_narmada_plateau"
+  ],
+  "uses": [
+    "seasoning",
+    "physic",
+    "trade"
+  ],
+  "notes": "Hotter than the round pepper and picked unripe, the whole spike dried. Cooked with as often as it is prescribed, which makes it the one plant on this page a household would call food.",
+  "canon": "secondary",
+  "sources": [
+    "Indian ethnobotany, adapted to canon"
+  ],
+  "biomes": [
+    "forest",
+    "settlement"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A climbing vine on a shade tree, catkin-like spikes greening toward grey.",
+  "source_index": 113
+}

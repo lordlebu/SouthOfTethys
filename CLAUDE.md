@@ -14,7 +14,7 @@ That division settles nearly every question that comes up: everything canon hold
 rather than debating it.
 
 Canon is one JSON file per entity under `database/`, validated against JSON Schema in
-`database/schemas/`. `database/index.json` is the manifest — **v2.3.1, 853 entities**.
+`database/schemas/`. `database/index.json` is the manifest — **v2.4.0, 880 entities**.
 
 **Adding anything to canon: read `database/AUTHORING.md` first.** It carries the templates and
 the one decision that matters — which folder, because nine of them reach the game and eight
@@ -48,8 +48,10 @@ added later without a single Python edit on account of a game change.
 the game's CI enforce it.
 
 **Array order is load-bearing.** The game picks species by indexing into per-biome lists, so
-entities carry `source_index` and anything without one sorts last. Reordering silently changes
-what lives on somebody's tile.
+every entity in `fauna/` and `flora/` carries a `source_index` and the lint refuses one that does
+not. Absent used to be legal and meant "sorts last, by id" — which is how twenty-five new plants
+moved every unindexed species after them and silently changed what grows on saved ground.
+Reordering is invisible from here and obvious to whoever loads their journey.
 
 **One branch at a time, and never `main`.** Work stays on a single feature branch until it
 merges. A new piece of work does not get a new branch because it feels separate — it goes on the

@@ -1,0 +1,28 @@
+{
+  "id": "recipe_purify_kuchla",
+  "type": "recipe",
+  "name": "Purifying kuchla",
+  "process": "process_purifying",
+  "ingredients": [
+    {
+      "material": "material_kuchla_seed",
+      "count": 4
+    },
+    {
+      "item": "item_cooking_pot",
+      "kept": true
+    }
+  ],
+  "outputs": [
+    {
+      "material": "material_purified_kuchla",
+      "count": 2
+    }
+  ],
+  "notes": "A fortnight of soaking, the liquor thrown away and replaced daily. **The only kind of recipe that consumes a poison in canon**, and that is deliberate rather than an omission: there is no word in `affordances.json` for what a thing made to harm somebody would be for.",
+  "canon": "secondary",
+  "sources": [
+    "Indian ethnobotany, adapted to canon"
+  ],
+  "source_index": 77
+}

@@ -22,5 +22,6 @@
   ],
   "placement": "flavour",
   "rarity": "common",
-  "journal_prompt": "Tulsi grows in a clay pot by the door, cropped short by daily picking for the morning rites."
+  "journal_prompt": "Tulsi grows in a clay pot by the door, cropped short by daily picking for the morning rites.",
+  "source_index": 100
 }

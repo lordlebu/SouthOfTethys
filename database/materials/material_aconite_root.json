@@ -1,0 +1,22 @@
+{
+  "id": "material_aconite_root",
+  "type": "material",
+  "name": "Aconite root",
+  "classes": [
+    "poison"
+  ],
+  "won_from": [
+    "flora_vatsanabha"
+  ],
+  "found_in": [
+    "hills",
+    "mountains"
+  ],
+  "rarity": "rare",
+  "notes": "The most dangerous thing in canon's ground, and the only poison it records being used as a weapon -- on arrows, by hill people, once.",
+  "canon": "secondary",
+  "sources": [
+    "Indian ethnobotany, adapted to canon"
+  ],
+  "source_index": 55
+}

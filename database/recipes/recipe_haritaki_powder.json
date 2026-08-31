@@ -1,0 +1,28 @@
+{
+  "id": "recipe_haritaki_powder",
+  "type": "recipe",
+  "name": "Grinding haritaki",
+  "process": "process_grinding",
+  "ingredients": [
+    {
+      "material": "material_haritaki_fruit",
+      "count": 3
+    },
+    {
+      "item": "item_grinding_quern",
+      "kept": true
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_haritaki_powder",
+      "count": 2
+    }
+  ],
+  "notes": "Dried until it rattles, then ground fine enough to float.",
+  "canon": "secondary",
+  "sources": [
+    "Indian ethnobotany, adapted to canon"
+  ],
+  "source_index": 80
+}

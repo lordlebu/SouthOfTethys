@@ -1,0 +1,28 @@
+{
+  "id": "recipe_guggul_pill",
+  "type": "recipe",
+  "name": "Rolling guggul",
+  "process": "process_cooking",
+  "ingredients": [
+    {
+      "material": "material_guggul_resin",
+      "count": 2
+    },
+    {
+      "material": "material_pippali",
+      "count": 1
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_guggul_pill",
+      "count": 3
+    }
+  ],
+  "notes": "Softened over heat and rolled between the palms with pepper.",
+  "canon": "secondary",
+  "sources": [
+    "Indian ethnobotany, adapted to canon"
+  ],
+  "source_index": 81
+}

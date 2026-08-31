@@ -1,0 +1,23 @@
+{
+  "id": "material_ashwagandha_root",
+  "type": "material",
+  "name": "Ashwagandha root",
+  "classes": [
+    "physic"
+  ],
+  "won_from": [
+    "flora_ashwagandha"
+  ],
+  "found_in": [
+    "plains",
+    "desert",
+    "settlement"
+  ],
+  "rarity": "common",
+  "notes": "Dug in the dry months and dried further. Smells faintly of a horse, which everybody mentions.",
+  "canon": "secondary",
+  "sources": [
+    "Indian ethnobotany, adapted to canon"
+  ],
+  "source_index": 56
+}

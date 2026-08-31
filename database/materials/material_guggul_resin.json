@@ -1,0 +1,23 @@
+{
+  "id": "material_guggul_resin",
+  "type": "material",
+  "name": "Guggul",
+  "classes": [
+    "resin",
+    "physic"
+  ],
+  "won_from": [
+    "flora_guggul"
+  ],
+  "found_in": [
+    "desert",
+    "hills"
+  ],
+  "rarity": "rare",
+  "notes": "Tapped in beads from a cut in the bark. Smells like a temple and is swallowed like a pill.",
+  "canon": "secondary",
+  "sources": [
+    "Indian ethnobotany, adapted to canon"
+  ],
+  "source_index": 59
+}

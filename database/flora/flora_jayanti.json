@@ -25,5 +25,6 @@
   ],
   "placement": "encounter",
   "rarity": "common",
-  "journal_prompt": "A quick soft-wooded shrub on a field bund, yellow pea-flowers and a mist of small leaflets."
+  "journal_prompt": "A quick soft-wooded shrub on a field bund, yellow pea-flowers and a mist of small leaflets.",
+  "source_index": 84
 }

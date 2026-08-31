@@ -1,0 +1,29 @@
+{
+  "id": "flora_datura",
+  "type": "flora",
+  "name": "Dhatura",
+  "scientific": "Datura metel",
+  "growth_form": "flower",
+  "habitats": [
+    "region_saraswati_delta",
+    "region_narmada_plateau"
+  ],
+  "uses": [
+    "poison",
+    "psychoactive",
+    "ritual"
+  ],
+  "notes": "Grows on waste ground at the edge of every settlement, trumpet-flowered and entirely poisonous. Offered rather than taken -- the flower goes on a shrine and the seed goes nowhere near a pot.",
+  "canon": "secondary",
+  "sources": [
+    "Indian ethnobotany, adapted to canon"
+  ],
+  "biomes": [
+    "plains",
+    "settlement"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "White trumpets opening at dusk on a coarse weed nobody planted, and a spiked green fruit.",
+  "source_index": 110
+}

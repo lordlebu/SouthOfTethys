@@ -6,7 +6,7 @@
 
 What things are made of, and how they are made.
 
-**52 materials, 70 objects, 16 ways of making and 77 recipes.** Everything canon knows about turning one thing into another.
+**61 materials, 74 objects, 17 ways of making and 82 recipes.** Everything canon knows about turning one thing into another.
 
 A recipe names a `#class` wherever any material of that kind will do, which is why there are seventy-odd of them rather than one per species. An item marked *prototype* exists to be inherited from and is never made on its own.
 
@@ -17,20 +17,21 @@ A recipe names a `#class` wherever any material of that kind will do, which is w
 - **Bone** (`#bone`) — [Antler](#antler), [Boar tusk](#boar-tusk), [Leviathan bone](#leviathan-bone), [Sawfish bone](#sawfish-bone)
 - **Hide** (`#hide`) — [Croc hide](#croc-hide), [Goat hide](#goat-hide), [Sinew](#sinew)
 - **Shell** (`#shell`) — [Ammonite shell](#ammonite-shell), [Crayfish carapace](#crayfish-carapace), [Oyster shell](#oyster-shell)
-- **Resin** (`#resin`) — [Frankincense](#frankincense), [Myrrh gum](#myrrh-gum), [Pitch](#pitch)
+- **Resin** (`#resin`) — [Frankincense](#frankincense), [Guggul](#guggul), [Myrrh gum](#myrrh-gum), [Pitch](#pitch)
 - **Clay** (`#clay`) — [Grog](#grog), [River clay](#river-clay)
 - **Stone** (`#stone`) — [Basalt](#basalt), [Flint](#flint), [Sandstone](#sandstone)
 - **Glass** (`#glass`) — [Magma-glass](#magma-glass), [Scar glass](#scar-glass)
 - **Metal** (`#metal`) — [Bronze](#bronze), [Native copper](#native-copper), [Tin ore](#tin-ore)
 - **Salt** (`#salt`) — [Natron](#natron), [Salt crust](#salt-crust)
-- **Pigment** (`#pigment`) — [Indigo](#indigo), [Lamp black](#lamp-black), [Red ochre](#red-ochre)
+- **Pigment** (`#pigment`) — [Haritaki](#haritaki), [Indigo](#indigo), [Lamp black](#lamp-black), [Red ochre](#red-ochre)
 - **Grain** (`#grain`) — [Mustard seed](#mustard-seed), [Red delta rice](#red-delta-rice)
 - **Produce** (`#produce`) — [Bitter greens](#bitter-greens), [Dates](#dates), [Jackfruit](#jackfruit), [Lotus-root taro](#lotus-root-taro), [Mahua oil](#mahua-oil), [Mango](#mango), [Red delta rice](#red-delta-rice), [Tamarind pulp](#tamarind-pulp)
 - **Flesh** (`#flesh`) — [River fish](#river-fish)
 - **Oil** (`#oil`) — [Mahua oil](#mahua-oil), [Mustard seed](#mustard-seed)
 - **Fuel** (`#fuel`) — [Charcoal](#charcoal), [Dung cake](#dung-cake), [Pitch](#pitch)
-- **Physic** (`#physic`) — [Bitter greens](#bitter-greens), [Cardamom](#cardamom), [Ginger](#ginger), [Myrrh gum](#myrrh-gum), [Neem bark](#neem-bark), [Sandalwood billet](#sandalwood-billet), [Shilajit](#shilajit)
-- **Spice** (`#spice`) — [Cardamom](#cardamom), [Ginger](#ginger), [Mustard seed](#mustard-seed)
+- **Physic** (`#physic`) — [Ashwagandha root](#ashwagandha-root), [Bitter greens](#bitter-greens), [Brahmi](#brahmi), [Cardamom](#cardamom), [Ginger](#ginger), [Guggul](#guggul), [Haritaki](#haritaki), [Myrrh gum](#myrrh-gum), [Neem bark](#neem-bark), [Pippali](#pippali), [Purified kuchla](#purified-kuchla), [Sandalwood billet](#sandalwood-billet), [Shilajit](#shilajit)
+- **Spice** (`#spice`) — [Cardamom](#cardamom), [Ginger](#ginger), [Mustard seed](#mustard-seed), [Pippali](#pippali)
+- **Poison** (`#poison`) — [Aconite root](#aconite-root), [Dhatura seed](#dhatura-seed), [Kuchla seed](#kuchla-seed)
 
 ## The materials themselves
 
@@ -422,7 +423,7 @@ Pressed from the seed. Canon already has the tree down for oil, a fermented drin
 
 **Won from** Mahua, Sweet-Nectar Mahua.
 
-**Used in** [Catching lamp black](#catching-lamp-black), [Pressing mahua oil](#pressing-mahua-oil), [Baking travel cake](#baking-travel-cake), [Brewing mahua](#brewing-mahua), [Making neem salve](#making-neem-salve), [Making a myrrh poultice](#making-a-myrrh-poultice), [Cooking the fourteen](#cooking-the-fourteen).
+**Used in** [Catching lamp black](#catching-lamp-black), [Pressing mahua oil](#pressing-mahua-oil), [Baking travel cake](#baking-travel-cake), [Brewing mahua](#brewing-mahua), [Making neem salve](#making-neem-salve), [Making a myrrh poultice](#making-a-myrrh-poultice), [Cooking the fourteen](#cooking-the-fourteen), [Dividing a dose](#dividing-a-dose), [Making a tonic](#making-a-tonic).
 
 ### Charcoal
 
@@ -490,7 +491,7 @@ Pressed for a hot yellow oil, or cracked whole into it. A field of mustard is tw
 
 **Won from** Field Mustard.
 
-**Used in** [Catching lamp black](#catching-lamp-black), [Grinding flour](#grinding-flour), [Baking travel cake](#baking-travel-cake), [Making neem salve](#making-neem-salve), [Making a myrrh poultice](#making-a-myrrh-poultice), [Cooking the fourteen](#cooking-the-fourteen), [Tempering oil](#tempering-oil), [Pressing mustard oil](#pressing-mustard-oil).
+**Used in** [Catching lamp black](#catching-lamp-black), [Grinding flour](#grinding-flour), [Baking travel cake](#baking-travel-cake), [Making neem salve](#making-neem-salve), [Making a myrrh poultice](#making-a-myrrh-poultice), [Cooking the fourteen](#cooking-the-fourteen), [Tempering oil](#tempering-oil), [Pressing mustard oil](#pressing-mustard-oil), [Dividing a dose](#dividing-a-dose), [Making a tonic](#making-a-tonic).
 
 ### Cardamom
 
@@ -522,6 +523,90 @@ Unripe it is cooked like meat and ripe it is eaten like sweets. Canon files it a
 
 **Used in** [Cooking green jackfruit](#cooking-green-jackfruit).
 
+### Kuchla seed
+
+*rare · poison · forest · plains*
+
+Flat grey discs, kept in a sealed jar and counted. Nothing is made of them but medicine, and that only after a fortnight of soaking.
+
+**Won from** Kuchla.
+
+**Used in** [Purifying kuchla](#purifying-kuchla).
+
+### Purified kuchla
+
+*rare · physic*
+
+What a fortnight of soaking leaves. Still measured in single seeds and still counted out, because the process removes the danger rather than the need for care.
+
+**Won from** Kuchla.
+
+**Used in** [Dividing a dose](#dividing-a-dose).
+
+### Dhatura seed
+
+*common · poison · plains · settlement*
+
+Kept for the shrine and never for the pot. Canon records no preparation that makes these safe, and the households that grow it do not look for one.
+
+**Won from** Dhatura.
+
+### Aconite root
+
+*rare · poison · hills · mountains*
+
+The most dangerous thing in canon's ground, and the only poison it records being used as a weapon -- on arrows, by hill people, once.
+
+**Won from** Vatsanabha.
+
+### Ashwagandha root
+
+*common · physic · plains · desert · settlement*
+
+Dug in the dry months and dried further. Smells faintly of a horse, which everybody mentions.
+
+**Won from** Ashwagandha.
+
+**Used in** [Making a tonic](#making-a-tonic).
+
+### Brahmi
+
+*common · physic · wetland · river*
+
+Pulled by the handful from wet mud and used fresh, which limits it to where it grows.
+
+**Won from** Brahmi.
+
+### Haritaki
+
+*common · physic · pigment · forest · plains*
+
+Dried until it rattles. Powdered it is a remedy and steeped it is the tannin that blacks a hide, and only the second of those is beyond dispute.
+
+**Won from** Haritaki.
+
+**Used in** [Grinding haritaki](#grinding-haritaki).
+
+### Guggul
+
+*rare · resin · physic · desert · hills*
+
+Tapped in beads from a cut in the bark. Smells like a temple and is swallowed like a pill.
+
+**Won from** Guggul.
+
+**Used in** [Firing a resin flask](#firing-a-resin-flask), [Pressing an ink cake](#pressing-an-ink-cake), [Rolling guggul](#rolling-guggul).
+
+### Pippali
+
+*common · spice · physic · forest · settlement*
+
+Whole spikes picked unripe and dried grey. Hotter than round pepper and traded further.
+
+**Won from** Pippali.
+
+**Used in** [Tempering oil](#tempering-oil), [Rolling guggul](#rolling-guggul).
+
 ## Ways of making
 
 | Process | Done at | Needs | |
@@ -542,6 +627,7 @@ Unripe it is cooked like meat and ripe it is eaten like sweets. Canon files it a
 | **Drying and salting** | anywhere | nothing | Preserving by taking the water out. |
 | **Brewing** | settlement | Contains | Fermenting. |
 | **Boatbuilding** | settlement, travel_node | Cuts, Binds | Hull, frame, lashing and pitch. |
+| **Purifying** | anywhere | Contains | Days of soaking, the liquor thrown away and replaced, and then drying. |
 
 ## Recipes, by how they are done
 
@@ -1035,6 +1121,14 @@ A second oil for the delta, and a hotter one. Canon keeps one oil material -- wh
 
 Old fired pots, crushed back into new clay so the new one survives the kiln. The only material in canon that can only be made out of itself.
 
+#### Dividing a dose
+
+**Makes** 4 × A grain of kuchla. **Takes** [Purified kuchla](#purified-kuchla), `oil`, Quern *(kept)*.
+
+**Taught by** common knowledge.
+
+Ground into oil and divided small. The dividing is the safeguard and is done in company.
+
 #### Grinding flour
 
 **Makes** 3 × [Red delta rice](#red-delta-rice). **Takes** 2 × `grain`, Quern *(kept)*.
@@ -1042,6 +1136,14 @@ Old fired pots, crushed back into new clay so the new one survives the kiln. The
 **Taught by** common knowledge.
 
 Any grain. The quern does not care and neither does the recipe.
+
+#### Grinding haritaki
+
+**Makes** 2 × Haritaki powder. **Takes** 3 × [Haritaki](#haritaki), Quern *(kept)*.
+
+**Taught by** common knowledge.
+
+Dried until it rattles, then ground fine enough to float.
 
 #### Grinding ochre
 
@@ -1123,6 +1225,14 @@ Fourteen, counted. A cook who is one short does not make it with thirteen -- the
 
 The salve canon already names on the thorn, spread on bast.
 
+#### Making a tonic
+
+**Makes** 2 × [Ashwagandha tonic](https://lordlebu.github.io/SouthOfTethys/cookbook.html#ashwagandha-tonic). **Takes** 2 × [Ashwagandha root](#ashwagandha-root), `oil`.
+
+**Taught by** common knowledge.
+
+Warmed, not boiled. Taken at night.
+
 #### Making neem salve
 
 **Makes** Neem salve. **Takes** 2 × [Neem bark](#neem-bark), `oil`.
@@ -1138,6 +1248,14 @@ Bitter, oily, keeps a wound clean.
 **Taught by** common knowledge.
 
 Sour enough to make bad water drinkable and worse food interesting.
+
+#### Rolling guggul
+
+**Makes** 3 × Guggul pill. **Takes** 2 × [Guggul](#guggul), [Pippali](#pippali).
+
+**Taught by** common knowledge.
+
+Softened over heat and rolled between the palms with pepper.
 
 #### Tempering oil
 
@@ -1221,6 +1339,16 @@ Stinks for a fortnight. Then it is worth what it is worth.
 
 A line fixed both banks and a loop to hang from. Wants two people, which is why Teshk will not leave.
 
+### Purifying
+
+#### Purifying kuchla
+
+**Makes** 2 × [Purified kuchla](#purified-kuchla). **Takes** 4 × [Kuchla seed](#kuchla-seed), Cooking pot *(kept)*.
+
+**Taught by** common knowledge.
+
+A fortnight of soaking, the liquor thrown away and replaced daily. **The only kind of recipe that consumes a poison in canon**, and that is deliberate rather than an omission: there is no word in `affordances.json` for what a thing made to harm somebody would be for.
+
 ## Objects, by what they are for
 
 | Object | Traits | Made of | |
@@ -1252,6 +1380,10 @@ A line fixed both banks and a loop to hang from. Wants two people, which is why 
 | **Ammonite pendant** | *ornament · trade* | [Ammonite shell](#ammonite-shell) | A spiral somebody found already made. |
 | **Sandalwood comb** | *ornament · trade* | [Sandalwood billet](#sandalwood-billet) | Keeps its scent for a lifetime, which is most of why it is worth carrying anywhere. |
 | **Shell bead** | *ornament · trade* | [Oyster shell](#oyster-shell) | Drilled, strung, and the smallest unit of worth anybody agrees on. |
+| **A grain of kuchla** | *physic · heal* | [Purified kuchla](#purified-kuchla), [Mahua oil](#mahua-oil) | One purified seed ground into oil and divided into doses the size of a grain of rice. |
+| **Ashwagandha tonic** | *physic · heal · eat* | [Ashwagandha root](#ashwagandha-root), [Mahua oil](#mahua-oil) | Root powder in warm oil, taken at night. |
+| **Guggul pill** | *physic · heal · trade* | [Guggul](#guggul), [Pippali](#pippali) | Resin softened and rolled with pepper. |
+| **Haritaki powder** | *physic · heal · trade* | [Haritaki](#haritaki) | Dried fruit ground fine. |
 | **Myrrh poultice** | *physic · heal* | [Myrrh gum](#myrrh-gum), [Bast](#bast) | The wound salve canon names on the myrrh-thorn, softened in oil and spread on bast. |
 | **Neem salve** | *physic · heal* | [Neem bark](#neem-bark), [Mahua oil](#mahua-oil) | Bitter, oily, and keeps a wound clean. |
 | **Shilajit tonic** | *physic · heal · trade* | [Shilajit](#shilajit) | Scraped from high rock and taken in water. |

@@ -35,5 +35,6 @@
   "placement": "encounter",
   "rarity": "rare",
   "journal_prompt": "A spotted cat watches from the reed line with eyes set forward like a person's, and you understand that you are being considered.",
-  "mood": "watchful"
+  "mood": "watchful",
+  "source_index": 255
 }

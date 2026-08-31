@@ -22,5 +22,6 @@
   ],
   "placement": "flavour",
   "rarity": "common",
-  "journal_prompt": "Red rice stands in flooded squares, the water between the stalks holding the whole sky."
+  "journal_prompt": "Red rice stands in flooded squares, the water between the stalks holding the whole sky.",
+  "source_index": 99
 }

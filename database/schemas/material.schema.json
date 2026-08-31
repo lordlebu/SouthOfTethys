@@ -45,7 +45,8 @@
           "oil",
           "fuel",
           "physic",
-          "spice"
+          "spice",
+          "poison"
         ]
       },
       "description": "What kind of stuff this is, from database/material_classes.json. A list because the interesting materials are genuinely two things at once -- mahua seed is `oil` and `produce`, and a recipe asking for either should find it. Pinned against that file by lint_story.py in both directions, so the vocabulary and this enum cannot drift."
