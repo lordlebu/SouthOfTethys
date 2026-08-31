@@ -2,6 +2,10 @@
   "id": "flora_palta_gourd",
   "type": "flora",
   "name": "Palta",
+  "aliases": [
+    "Pointed gourd",
+    "Parwal"
+  ],
   "scientific": "Trichosanthes dioica",
   "growth_form": "vine",
   "habitats": [

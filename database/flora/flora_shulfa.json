@@ -2,6 +2,9 @@
   "id": "flora_shulfa",
   "type": "flora",
   "name": "Shulfa",
+  "aliases": [
+    "Dill"
+  ],
   "scientific": "Anethum graveolens",
   "growth_form": "flower",
   "habitats": [

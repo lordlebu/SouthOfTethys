@@ -2,6 +2,10 @@
   "id": "flora_keot_taro",
   "type": "flora",
   "name": "Keot",
+  "aliases": [
+    "Taro",
+    "Kachu"
+  ],
   "scientific": "Colocasia esculenta",
   "growth_form": "root",
   "habitats": [

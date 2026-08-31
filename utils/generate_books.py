@@ -185,6 +185,20 @@ def gives(recipe: dict, page: str | None = None) -> str:
     return ", ".join(parts)
 
 
+def also_known(e: dict) -> str:
+    """A plant or animal's other names, and its binomial.
+
+    Printed because a reference nobody can search is a reference nobody uses. Canon names
+    kuchla `Kuchla`, which is right for a world whose people would not say *Strychnos* -- and
+    it meant a reader who came looking for nux-vomica found an empty page in a book that had
+    the plant in it twice.
+    """
+    names = list(e.get("aliases") or [])
+    if e.get("scientific"):
+        names.append(f"*{e['scientific']}*")
+    return " · ".join(names)
+
+
 def sentence(text: str | None) -> str:
     """Canon's prose, trimmed to its first sentence for an index entry."""
     if not text:
@@ -228,7 +242,8 @@ def bestiary(fauna: list[dict], flora: list[dict], regions: list[dict]) -> None:
             kind = e.get("clade") or e.get("growth_form") or ""
             gloss = (clades.get(kind) or forms.get(kind) or {})
             gloss = gloss.get("label", kind) if isinstance(gloss, dict) else kind
-            sci = f"<br>*{e['scientific']}*" if e.get("scientific") else ""
+            other = also_known(e)
+            sci = f"<br>{other}" if other else ""
             # Rarity first, then what it is, then where -- and `lore only` where canon writes
             # about something it never places, which is the trait a reader most needs and the
             # old table buried in a parenthesis at the end of a column.
@@ -272,9 +287,10 @@ def apothecary(flora: list[dict], materials: list[dict], items: list[dict], reci
     def table(rows: list[dict], heading: str, note: str, describe) -> None:
         if not rows:
             return
-        body.extend([f"## {heading}", "", note, "", "| Name | Notes |", "|---|---|"])
+        body.extend([f"## {heading}", "", note, "",
+                     "| Name | Also known as | Notes |", "|---|---|---|"])
         for e in sorted(rows, key=lambda x: x["name"]):
-            body.append(f"| **{e['name']}** | {describe(e)} |")
+            body.append(f"| **{e['name']}** | {also_known(e)} | {describe(e)} |")
         body.append("")
 
     table(healing_plants, "Plants taken as physic",

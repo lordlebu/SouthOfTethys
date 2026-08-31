@@ -2,6 +2,11 @@
   "id": "flora_vatsanabha",
   "type": "flora",
   "name": "Vatsanabha",
+  "aliases": [
+    "Indian aconite",
+    "Monkshood",
+    "Wolfsbane"
+  ],
   "scientific": "Aconitum ferox",
   "growth_form": "flower",
   "habitats": [

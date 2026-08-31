@@ -2,6 +2,10 @@
   "id": "flora_guggul",
   "type": "flora",
   "name": "Guggul",
+  "aliases": [
+    "Indian bdellium",
+    "Mukul myrrh"
+  ],
   "scientific": "Commiphora wightii",
   "growth_form": "shrub",
   "habitats": [

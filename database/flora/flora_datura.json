@@ -2,6 +2,11 @@
   "id": "flora_datura",
   "type": "flora",
   "name": "Dhatura",
+  "aliases": [
+    "Datura",
+    "Thorn-apple",
+    "Devil's trumpet"
+  ],
   "scientific": "Datura metel",
   "growth_form": "flower",
   "habitats": [

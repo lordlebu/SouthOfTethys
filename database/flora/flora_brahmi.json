@@ -2,6 +2,9 @@
   "id": "flora_brahmi",
   "type": "flora",
   "name": "Brahmi",
+  "aliases": [
+    "Water hyssop"
+  ],
   "scientific": "Bacopa monnieri",
   "growth_form": "flower",
   "habitats": [
