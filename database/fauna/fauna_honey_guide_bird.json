@@ -25,5 +25,6 @@
   "placement": "encounter",
   "rarity": "common",
   "journal_prompt": "A small brown bird calls, hops to the next branch, and calls again. It wants you to follow, and it knows where the comb is.",
-  "mood": "watchful"
+  "mood": "watchful",
+  "source_index": 247
 }

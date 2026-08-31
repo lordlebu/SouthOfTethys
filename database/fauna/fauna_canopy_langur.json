@@ -25,5 +25,6 @@
   "placement": "encounter",
   "rarity": "common",
   "journal_prompt": "Grey langurs move through the branches overhead, pausing to look down with long-tailed disapproval.",
-  "mood": "watchful"
+  "mood": "watchful",
+  "source_index": 237
 }

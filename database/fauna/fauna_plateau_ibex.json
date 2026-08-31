@@ -25,5 +25,6 @@
   "placement": "encounter",
   "rarity": "common",
   "journal_prompt": "An ibex stands on a ledge no wider than your hand and looks down at you without concern.",
-  "mood": "watchful"
+  "mood": "watchful",
+  "source_index": 250
 }

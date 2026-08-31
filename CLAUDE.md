@@ -48,8 +48,10 @@ added later without a single Python edit on account of a game change.
 the game's CI enforce it.
 
 **Array order is load-bearing.** The game picks species by indexing into per-biome lists, so
-entities carry `source_index` and anything without one sorts last. Reordering silently changes
-what lives on somebody's tile.
+every entity in `fauna/` and `flora/` carries a `source_index` and the lint refuses one that does
+not. Absent used to be legal and meant "sorts last, by id" — which is how twenty-five new plants
+moved every unindexed species after them and silently changed what grows on saved ground.
+Reordering is invisible from here and obvious to whoever loads their journey.
 
 **One branch at a time, and never `main`.** Work stays on a single feature branch until it
 merges. A new piece of work does not get a new branch because it feels separate — it goes on the

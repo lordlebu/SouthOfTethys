@@ -26,5 +26,6 @@
   "placement": "encounter",
   "rarity": "common",
   "journal_prompt": "A heavy crab sidles between the mangrove roots, one claw raised like a man carrying something awkward.",
-  "mood": "watchful"
+  "mood": "watchful",
+  "source_index": 248
 }

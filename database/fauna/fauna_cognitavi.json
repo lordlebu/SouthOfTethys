@@ -27,5 +27,6 @@
   "sentient": true,
   "rarity": "rare",
   "mood": "clever",
-  "journal_prompt": "A navigator bird watches the water with its head tilted, reading something in it that you cannot, and does not much care that you are here."
+  "journal_prompt": "A navigator bird watches the water with its head tilted, reading something in it that you cannot, and does not much care that you are here.",
+  "source_index": 240
 }

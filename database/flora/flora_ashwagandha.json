@@ -23,5 +23,6 @@
   ],
   "placement": "encounter",
   "rarity": "common",
-  "journal_prompt": "A grey-leaved shrub on stony ground, small berries in papery lanterns."
+  "journal_prompt": "A grey-leaved shrub on stony ground, small berries in papery lanterns.",
+  "source_index": 108
 }

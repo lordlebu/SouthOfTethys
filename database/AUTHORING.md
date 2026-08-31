@@ -470,10 +470,16 @@ python utils/check_export_boundary.py --update
 **A failure there is usually right.** It means something you wrote reached the game's data. If
 that was the intent, re-pin. If it was not, you probably put an entity in an exported folder.
 
-**Array order is load-bearing in exported folders.** The game picks species by indexing into
-per-biome lists. `source_index` decides that order and anything without one sorts last. Adding
-a species to `fauna/` or `flora/` shifts what lives on somebody's existing tile — so give new
-species a `source_index`, and never re-sort an exported folder.
+**Array order is load-bearing, and `source_index` is required on every species.** The game picks
+species by indexing into per-biome lists, so the order they arrive in decides what grows on a
+given tile.
+
+This used to call the field optional — "anything without one sorts last" — which is true and was
+not enough. The unindexed ones sort last *by id*, so adding `flora_ashwagandha` puts it ahead of
+`flora_asura_thorn` and moves every unindexed species after it. Twenty-five plants arrived across
+two batches and quietly rearranged what was growing on saved ground; twenty fauna had carried the
+same latent hazard since before either. Every species has an index now and the lint refuses one
+without. Take the next free number, and never re-sort a folder.
 
 **A new folder must be classified.** If you add an entity type, name its folder in `BUNDLE` or
 `NOT_EXPORTED` in `utils/export_canon_bundle.py`, and in `DB_FOLDERS` in

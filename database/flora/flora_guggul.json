@@ -23,5 +23,6 @@
   ],
   "placement": "encounter",
   "rarity": "rare",
-  "journal_prompt": "A crooked thorn shrub with peeling papery bark, beaded with resin where it has been cut."
+  "journal_prompt": "A crooked thorn shrub with peeling papery bark, beaded with resin where it has been cut.",
+  "source_index": 111
 }

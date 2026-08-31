@@ -21,5 +21,6 @@
   ],
   "placement": "encounter",
   "rarity": "common",
-  "journal_prompt": "A trained vine over a low frame, striped young gourds hanging under rough leaves."
+  "journal_prompt": "A trained vine over a low frame, striped young gourds hanging under rough leaves.",
+  "source_index": 96
 }

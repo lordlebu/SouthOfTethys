@@ -24,5 +24,6 @@
   ],
   "placement": "encounter",
   "rarity": "common",
-  "journal_prompt": "A knuckled rhizome under a stand of narrow reed-like leaves, hot enough to smell when broken."
+  "journal_prompt": "A knuckled rhizome under a stand of narrow reed-like leaves, hot enough to smell when broken.",
+  "source_index": 78
 }

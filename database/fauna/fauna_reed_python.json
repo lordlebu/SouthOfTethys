@@ -24,5 +24,6 @@
   "placement": "encounter",
   "rarity": "common",
   "journal_prompt": "A thick python lies banked in the reeds, digesting, in no hurry to be anywhere.",
-  "mood": "watchful"
+  "mood": "watchful",
+  "source_index": 252
 }

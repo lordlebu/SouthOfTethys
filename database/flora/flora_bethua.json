@@ -22,5 +22,6 @@
   ],
   "placement": "encounter",
   "rarity": "common",
-  "journal_prompt": "Mealy grey-green leaves crowding the edge of a worked field, dusted as though with flour."
+  "journal_prompt": "Mealy grey-green leaves crowding the edge of a worked field, dusted as though with flour.",
+  "source_index": 72
 }

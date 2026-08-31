@@ -24,5 +24,6 @@
   ],
   "placement": "encounter",
   "rarity": "common",
-  "journal_prompt": "Fruit the size of a child growing straight out of the trunk, too heavy for any branch."
+  "journal_prompt": "Fruit the size of a child growing straight out of the trunk, too heavy for any branch.",
+  "source_index": 83
 }

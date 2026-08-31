@@ -330,6 +330,25 @@ def main() -> int:
             if form and form not in forms:
                 errors.append(f"{path.name}: '{form}' is not a growth form in growth_forms.json")
 
+    # --- species carry a source_index -------------------------------------------------
+    #
+    # `source_index` was documented as optional -- "anything without one sorts last" -- and that
+    # is true and was not enough. The unindexed ones sort last *by id*, so adding
+    # `flora_ashwagandha` puts it ahead of `flora_asura_thorn` and shifts every unindexed
+    # species after it. The game picks a tile's species by indexing into a per-biome list, so
+    # that silently changes what grows on somebody's saved ground.
+    #
+    # It happened twice in one afternoon, to the person who had written the warning down. So it
+    # is required now rather than advised: absent is no longer legal in the two folders where
+    # order is load-bearing, and a new species has to say where it goes.
+    for eid, (path, payload) in sorted(entities.items()):
+        if path.parent.name in {"fauna", "flora"} and "source_index" not in payload:
+            errors.append(
+                f"{path.name}: no source_index. Array order decides what lives on a tile, and "
+                f"an entity without one sorts by id among the others -- which moves them. Give "
+                f"it the next free index."
+            )
+
     # --- plant uses -------------------------------------------------------------------
     #
     # The last of the free-text vocabularies, and the one that shows why these pins are worth
