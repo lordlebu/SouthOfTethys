@@ -1,6 +1,6 @@
 # The Atlas of South of Tethys
 
-<p class="book-nav"><a href="https://lordlebu.github.io/SouthOfTethys/">The Timeline</a> &middot; <a href="https://lordlebu.github.io/SouthOfTethys/timeline_mermaid.html">Epochs &amp; Events</a> &middot; <strong>The Atlas</strong> &middot; <a href="https://lordlebu.github.io/SouthOfTethys/memory_map.html">The Memory Map</a></p>
+<p class="book-nav"><a href="https://lordlebu.github.io/SouthOfTethys/">The Timeline</a> &middot; <a href="https://lordlebu.github.io/SouthOfTethys/timeline_mermaid.html">Epochs &amp; Events</a> &middot; <strong>The Atlas</strong> &middot; <a href="https://lordlebu.github.io/SouthOfTethys/memory_map.html">The Memory Map</a> &middot; <a href="https://lordlebu.github.io/SouthOfTethys/bestiary.html">The Bestiary</a> &middot; <a href="https://lordlebu.github.io/SouthOfTethys/apothecary.html">The Apothecary</a> &middot; <a href="https://lordlebu.github.io/SouthOfTethys/workshop.html">The Workshop</a> &middot; <a href="https://lordlebu.github.io/SouthOfTethys/cookbook.html">The Cookbook</a></p>
 
 _Generated from `database/` by `utils/generate_atlas.py`. Do not edit by hand._
 
@@ -23,12 +23,12 @@ Each era below is canon as it stood then. An entity that names no epoch is prese
 | artifacts |  | 5 |
 | mythology |  | 9 |
 | fauna |  | 257 |
-| flora |  | 90 |
-| foodways |  | 15 |
-| items |  | 63 |
-| materials |  | 46 |
+| flora |  | 108 |
+| foodways |  | 19 |
+| items |  | 67 |
+| materials |  | 52 |
 | processes |  | 16 |
-| recipes |  | 67 |
+| recipes |  | 72 |
 | vehicles |  | 8 |
 
 ### Events
@@ -73,12 +73,12 @@ graph TD
 | artifacts |  | 5 |
 | mythology |  | 9 |
 | fauna |  | 257 |
-| flora |  | 90 |
-| foodways |  | 15 |
-| items |  | 63 |
-| materials |  | 46 |
+| flora |  | 108 |
+| foodways |  | 19 |
+| items |  | 67 |
+| materials |  | 52 |
 | processes |  | 16 |
-| recipes |  | 67 |
+| recipes |  | 72 |
 | vehicles |  | 8 |
 
 ### Events
@@ -116,12 +116,12 @@ graph TD
 | artifacts |  | 5 |
 | mythology |  | 9 |
 | fauna |  | 257 |
-| flora |  | 90 |
-| foodways |  | 15 |
-| items |  | 63 |
-| materials |  | 46 |
+| flora |  | 108 |
+| foodways |  | 19 |
+| items |  | 67 |
+| materials |  | 52 |
 | processes |  | 16 |
-| recipes |  | 67 |
+| recipes |  | 72 |
 | vehicles |  | 8 |
 
 ### Events
@@ -162,12 +162,12 @@ graph TD
 | artifacts |  | 5 |
 | mythology |  | 9 |
 | fauna |  | 257 |
-| flora |  | 90 |
-| foodways |  | 15 |
-| items | 3 | 63 |
-| materials |  | 46 |
+| flora |  | 108 |
+| foodways |  | 19 |
+| items | 3 | 67 |
+| materials |  | 52 |
 | processes |  | 16 |
-| recipes | 5 | 67 |
+| recipes | 5 | 72 |
 | vehicles |  | 8 |
 
 ### Events
@@ -224,12 +224,12 @@ graph TD
 | artifacts |  | 5 |
 | mythology |  | 9 |
 | fauna |  | 257 |
-| flora |  | 90 |
-| foodways |  | 15 |
-| items | 3 | 63 |
-| materials |  | 46 |
+| flora |  | 108 |
+| foodways |  | 19 |
+| items | 3 | 67 |
+| materials |  | 52 |
 | processes |  | 16 |
-| recipes | 5 | 67 |
+| recipes | 5 | 72 |
 | vehicles | 2 | 8 |
 
 ### Events
@@ -273,12 +273,12 @@ graph TD
 | field questions | 7 |  |
 | vocabulary | 8 |  |
 | fauna |  | 257 |
-| flora |  | 90 |
-| foodways |  | 15 |
-| items |  | 63 |
-| materials |  | 46 |
+| flora |  | 108 |
+| foodways |  | 19 |
+| items |  | 67 |
+| materials |  | 52 |
 | processes |  | 16 |
-| recipes |  | 67 |
+| recipes |  | 72 |
 | vehicles | 1 | 8 |
 
 ### Events

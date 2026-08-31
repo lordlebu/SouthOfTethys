@@ -53,7 +53,7 @@ DB = BASE / "database"
 DOCS = BASE / "docs"
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from book_nav import nav  # noqa: E402
+from book_nav import PAGES, nav  # noqa: E402
 
 
 def load(folder: str) -> list[dict]:
@@ -504,11 +504,38 @@ def check_links() -> list[str]:
         for page, anchor in ref.findall(text):
             want.append((path.stem, page or path.stem, anchor))
 
-    return [
+    broken = [
         f"{page}.md links to {dest}#{anchor}, which is not a heading there"
         for page, dest, anchor in want
         if dest in have and anchor not in have[dest]
     ]
+
+    # And every published page carries the whole nav.
+    #
+    # This is the failure `book_nav.py` was written to prevent, and adding four books to `PAGES`
+    # reintroduced it inside a day: the nav is shared state across five generators, so a new page
+    # is only linked from the pages that happen to be regenerated afterwards. Four books shipped
+    # reachable and linked from nowhere but each other, exactly as the atlas and timeline once
+    # were, and nothing failed -- because from inside the repository it looks done.
+    #
+    # Checked here rather than in `book_nav.py` because only a thing that reads `docs/` can see
+    # it, and this generator already reads all of `docs/`.
+    for filename, _page, label in PAGES:
+        path = DOCS / filename
+        if not path.exists():
+            broken.append(f"{filename} is in book_nav.PAGES and does not exist")
+            continue
+        text = path.read_text(encoding="utf-8")
+        for _other, _p, other_label in PAGES:
+            # Against the escaped label, because that is what `nav` writes: "Epochs & Events"
+            # reaches the page as "Epochs &amp; Events" and searching for the raw ampersand
+            # reports every page as broken, which is how this check first read.
+            if other_label.replace("&", "&amp;") not in text:
+                broken.append(
+                    f"{filename} does not link to {other_label!r} -- its nav is stale, so "
+                    f"re-run every generator rather than only the one you changed"
+                )
+    return broken
 
 
 def main() -> int:
