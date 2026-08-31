@@ -381,6 +381,53 @@ def main() -> int:
     # two live in different files -- so a class can be added to one and forgotten in the other,
     # after which a material is rejected for carrying a class canon has documented. Checked in
     # both directions, because both directions have happened to the clade pair.
+    # --- canon ids must not appear in prose a player reads -------------------
+    #
+    # `material_bitter_greens` carried "see `foodway_choddo_shak`" in its notes, and the game
+    # renders a material's notes as the description under its name in the satchel -- so a player
+    # picking bitter greens was shown a raw database id in the middle of a sentence. It survived
+    # a whole release because it reads as an ordinary cross-reference to anybody working in
+    # `database/`, which is exactly where it looks fine.
+    #
+    # **Checked per field, not per folder**, because shipping and showing are different things.
+    # A discovery's `notes` is in the bundle and nothing renders it -- the player reads
+    # `levels[].entry` -- so an id there is authoring commentary between two discoveries and is
+    # genuinely useful. A material's `notes` becomes the description under its name in the
+    # satchel (`making.ts`: `description: m.notes`), so an id there is on screen.
+    #
+    # The pairs below are the ones a player actually reads. Adding a field to this list is a
+    # claim that the game renders it; check `content/` before doing so.
+    # Duplicated from `export_canon_bundle.BUNDLE` rather than imported, on the same footing as
+    # every other cross-utility constant here: these scripts are run one at a time by CI and
+    # importing one into another has bitten this repo before. `check_export_boundary.py` is what
+    # keeps the two lists honest with each other.
+    shown_to_player = {
+        "materials": ("notes",),
+        "items": ("notes",),
+        "vehicles": ("notes",),
+        "processes": ("notes",),
+        "fauna": ("journal_prompt", "notes"),
+        "flora": ("journal_prompt", "notes"),
+        "points_of_interest": ("description", "arrival"),
+    }
+    id_in_prose = re.compile(
+        r"`((?:foodway|item|material|recipe|process|flora|fauna|discovery|poi|npc|place|"
+        r"region|epoch|vehicle|character|event|settlement|faction|artifact)_[a-z0-9_]+)`"
+    )
+    for eid, (path, entity) in all_entities().items():
+        fields = shown_to_player.get(path.parent.name)
+        if not fields:
+            continue
+        for field in fields:
+            text = entity.get(field)
+            if not isinstance(text, str):
+                continue
+            for found in id_in_prose.findall(text):
+                errors.append(
+                    f"{path.parent.name}/{path.name}: {field} shows the canon id "
+                    f"'{found}' to the player -- say the thing, do not cite it"
+                )
+
     classes_path = DB / "material_classes.json"
     mat_schema = SCHEMA_DIR / "material.schema.json"
     if classes_path.exists() and mat_schema.exists():
