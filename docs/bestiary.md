@@ -14,427 +14,427 @@ A species that can be met in play carries its biomes; one marked *lore* is writt
 
 *60 recorded.*
 
-| | Species | What it is | Where |
-|---|---|---|---|
-| Bird | **Abyssal Storm-Watcher** *Cognitavi abyssalis* | A Cognitavi navigator bird subspecies that specializes in reading weather patterns, guiding wisdom-seekers and ships safely through the Tethys monsoons. | sea |
-| Crocodilian | **Baurusuchus** *Baurusuchus palustris* | A heavy, quadrupedal land crocodile that prowls the delta, specializing in ambush techniques in shallow reed marshes. | wetland |
-| Root | **Bitter Marsh-root** *Sarasvatia amara* | A bitter-tasting variety of Saraswati spiceroot that grows in saltwater marshes, used as an antidote to marsh-fever. | wetland |
-| Mammal | **Black-Barked Canopy Tendua** *Panthera simiana arborea* | A melanistic, dark-coated subspecies of Tendua that hunts within the dense mangrove canopies of the Godavari delta. | coast, forest |
-| Flower | **Blood-red Asura Lotus** *Nelumbo asurica* | An invasive, deep-crimson lotus that thrives in areas of past magical corruption, its pollen inducing vivid, restless dreams. | wetland |
-| Tree | **Bonewood Mangrove** *Rhizophora osteoxyla* | Mangrove trees that absorb calcium and basalt from the volcanic coast, yielding a naturally curved, bone-hard timber used for construction. | coast, forest, mountains |
-| Reptile | **Burrowing Tortoise** *Geochelone fossor* | A large, long-lived tortoise (living 80-120 years) that digs spiral tunnels in a symbiotic relationship with the Nagaraptors, forming the underground foundations of the Taj Nest-Homes. | wetland, river |
-| Bird | **Crested Marsh-Runner** *Gallinula cristata* | A flightless bird of the delta marshes that sprints over floating lotus leaves using elongated, spread-out toes. | wetland |
-| Fish | **Deep-River Bronze** *Cyprinus chalceus* | A wild relative of the stepwell koi, navigating Tethyan estuaries with heavy, protective, metallic-looking bronze scales. | river |
-| Crustacean | **Delta Fiddler-Crab** *Uca sarasvati* | A small mud-crab with a brilliant blue shell, the males waving an oversized white claw to attract mates. | wetland, river |
-| Bird | **Delta Kingfisher** *Alcedo vishnu* | A tiny, brilliant-blue bird that dives with extreme speed to spear bronze fish, its sharp call mimicking wind chimes. | wetland, river |
-| Reptile | **Delta Reed-Python** *Python sylvanus minor* | A small, non-venomous constrictor snake that mimics the color of dried reeds, preying on nesting birds. | wetland |
-| Flower | **Emerald Harbor Lotus** *Nelumbo smaragdina* | A massive aquatic lotus with bright green petals that blooms in the estuaries of Lothal, drawing mineral-rich runoff. | wetland |
-| Fish | **Estuary Archer-Fish** *Toxotes tethys* | A fish that shoots jets of water from its mouth to knock down insects resting on overhanging mangrove leaves. | coast |
-| Reptile | **Gedrosian Spiny-tailed Lizard** *Saara gedrosia* | A vegetarian lizard that forms large colonies in the sand, using its hard, spiked tail to block burrow entrances. | desert |
-| Root | **Healing Silver-root** *Sarasvatia argentum* | An endemic medicinal tuber harvested along the Godavari, known for its rapid wound-healing properties when ground into salve. | wetland, river |
-| Mammal | **Indus Unicorn** *Monocerus indicus* | A legendary, swift-footed single-horned ungulate of the river valleys, highly revered and historically sacrificed in dark portals. | river, landmark |
-| Bird | **Iridescent Lothal Silvanus** *Sylvianus pictus* | A winged, bird-like dinosaurid with shimmering plumage that nests in the tall reed beds outside the Sylvian Gate of Lothal. | wetland |
-| Tree | **Iron-Root Mangrove** *Rhizophora ferrea* | A heavy, dark-wooded mangrove whose roots lock into the rocky coastline, forming impassable natural barriers. | coast |
-| Tree | **Ivory Coastal Bonewood** *Rhizophora eburnea* | A rare bonewood subspecies with smooth, cream-colored bark that resists waterrot and marine boring worms. | sea, coast |
-| Arachnid | **Jungle Web-Spinner** *Nephila sylvanica* | A giant spider of Mappa Mundi that weaves massive, golden webs capable of catching small birds and bats. | forest |
-| Insect | **Lava-Pool Water-Beetle** *Dytiscus vulcanus* | A predatory aquatic beetle that swims in hot mineral springs, feeding on larval vent-shrimps. | mountains |
-| Reptile | **Lothal Dune-Sprinter** *Acanthodactylus lothalensis* | A fast-moving, sand-colored lizard of the salt marshes that feeds on delta insects and crabs. | wetland |
-| Bird | **Lothal Heron-Raptor** *Sylvianus minor* | A small, wading theropod bird that uses its long neck and serrated beak to spear mud-lurkers. | wetland, river |
-| Amphibian | **Lothal Marsh-Lurker** *Megalobatrachus lothalensis* | An 8-foot giant river salamander that has survived since the Pleistocene. | wetland, river |
-| Fish | **Lothal Mud-Skipper** *Periophthalmus gigas* | A giant amphibious fish that climbs mangrove roots and breathes through its skin, highly prized for its tender, salty meat. | coast |
-| Bird | **Lothal Sand-Plover** *Charadrius lothalensis* | A small, pale shorebird that nests in the sandy riverbanks, distracting predators with elaborate broken-wing displays. | river |
-| Crustacean | **Lothal Shell-Cracker** *Carcinus lothalensis* | A crab with one oversized, stone-hard claw used to crush estuary mollusks, highly prized by local fishers. | coast |
-| Mammal | **Mangrove Crab-Eater** *Herpestes mangrovus* | A sleek mongoose species that specializes in cracking open hard-shelled delta crustaceans with its robust jaw structure. | coast |
-| Reptile | **Mangrove Snapping-Turtle** *Chelydra mangrovi* | A turtle with a razor-sharp beak that lies buried in the brackish mud, ambushing small crabs and fish. | coast |
-| Reptile | **Marsh-dwelling Terrapin** *Clemmys lothalensis* | A stem turtle lineage whose osteoderm shell is covered in green moss, providing perfect camouflage in swampy pools. | wetland |
-| Crocodilian | **Mud-Armored Ambusher** *Baurusuchus lutarius* | A baurusuchid that cakes itself in river mud, keeping its body temperature low and hiding from terrestrial prey. | river |
-| Mammal | **Muria River-Otter** *Lutra muria* | An agile, semi-aquatic mammal with dense, oil-slicked fur that hunts stepwell koi along the eastern coast of the island. | river |
-| Non-avian dinosaur | **Nagaraptor** *Nagaraptor vallatus* | Feathered velociraptor clans that have formed a complex diapsid scale-based civilization, using earthworks and moats to defend their nests. | wetland, river |
-| Fish | **Narmada Mud-Eel** *Monopterus narmadensis* | A slender, scale-less fish that burrows into the volcanic mud of riverbeds, breathing atmospheric air during dry spells. | river |
-| Shrub | **Poison-barb Indigo** *Indigofera spicata* | A wild relative of sweet indigo, possessing small, sharp thorns along its stems that inject a skin-irritating toxin. | wetland, river |
-| Fish | **Sacred Stepwell Koi** *Cyprinus devotus* | Bronze-scaled river fish bred in the sacred stepwells of Dwarka, featuring thick, armored scales to resist delta predators. | river |
-| Reptile | **Saltwater Gator-Turtle** *Macrochelys tethyan* | An ancient, armored turtle with a ridged shell resembling a crocodile's hide, lurking in brackish delta canals. | coast, hills |
-| Bird | **Saraswati Delta Heron** *Ardea sarasvati* | A long-legged wading bird with pale silver feathers that filters small bronze fish from the delta's estuaries. | coast |
-| Amphibian | **Saraswati Horned Frog** *Ceratophrys sarasvati* | A large-mouthed, sit-and-wait predator that burrows into leaf litter, its horns mimicking fallen twigs. | forest |
-| Grass | **Saraswati Reed** *Calamus sarasvaticus* | A tall, hollow, fibrous reed used by the Kia clan for weaving baskets, roofs, and lightweight outrigger hulls. | wetland |
-| Bird | **Saraswati Reed-Warbler** *Acrocephalus sylvanus* | A small, plain bird that weaves complex hanging nests in the tall delta reeds, mimicking the clicks of local dinosaurids. | wetland |
-| Mammal | **Scythian Wild Ass** *Equus hemionus scythicus* | A fast, resilient wild equine of the northern steppe deserts, highly valued by nomads for its stamina. | plains |
-| Reptile | **Silver-Banded Sea-Snake** *Hydrophis argentum* | A highly venomous sea snake with black and silver bands, hunting stepwell koi near coastal lagoons. | river |
-| Insect | **Sky-Faring Grasshopper** *Melanoplus caelius* | A lightweight, gas-buoyant grasshopper that migrates between floating islands, feeding on sky-bramble leaves. | sky_island, open_sky (lore only) |
-| Mammal | **Spotted Marsh Tendua** *Panthera simiana maculata* | A highly intelligent, leopard-like feline of the wetlands that has evolved human-like eye placement and ocular mimicry to stalk its prey. | wetland |
-| Crocodilian | **Striped Reed Stalker** *Baurusuchus striatus* | A camouflaged subspecies of Baurusuchus with vertical stripes, blending into the marsh grass of the Saraswati delta. | wetland |
-| Mammal | **Swamp-Wallaby** *Wallabia sylvanus* | A marsupial-like herbivore that grazes on the delta's edge, capable of swimming short distances between mangrove islets. | wetland |
-| Vine | **Sweet Indigo** *Indigofera dulcis* | A domesticated decorative vine bred by Harappan settlers, boasting vibrant purple flowers that yield a sweet-scented blue dye. | forest, settlement |
-| Crustacean | **Tethyan Blue-Crayfish** *Astacus caeruleus* | A large freshwater crustacean with vibrant blue claws that feeds on decaying organic matter in the Saraswati tributaries. | river |
-| Mollusc | **Tethyan Flying-Squid** *Todarodes tethys* | A marine mollusk that shoots itself out of the water to escape predators, gliding over waves with lateral fins. | sea |
-| Bird | **Tethyan Mud-Snipe** *Gallinago tethys* | A long-billed bird that probes the estuarial mud for marine worms, its call sounding like rhythmic clicking. | sea, coast |
-| Bird | **Tethys Pelican** *Pelecanus tethys* | A large-billed bird with a throat pouch used to scoop up schooling fish from the coastal shallows. | coast |
-| Mammal | **Tethys River Dolphin** *Platanista tethys* | A pale, blind cetacean that navigates the muddy delta waters using sophisticated acoustic clicks, hunted by Kias for meat and skin. | river |
-| Non-avian dinosaur | **Vajraptor** *Vajraptor territorialis* | An intelligent, social and territorial feathered dromaeosaur with colorful plumage and excellent problem-solving skills, building hidden canopy nests. | forest |
-| Mammal | **Vanga Marsh-Cat** *Felis chaus vanga* | A small, agile cat with tufted ears that hunts marsh-runners and frogs in the Godavari delta. | wetland |
-| Bird | **Vanga Pearl-Guide** *Cognitavi vanga* | An elite subspecies of the hyper-intelligent Cognitavi navigator birds that aids Tuli seafarers in locating deep-sea oyster beds. | sea, landmark |
-| Bird | **Vengi Marsh Harrier** *Circus vengi* | A low-flying bird of prey that sweeps over the reed beds, hunting young dinosaurids and salamanders. | wetland |
-| Amphibian | **Venomous Vengi Mud-Salamander** *Megalobatrachus toxicus* | A swamp-dwelling giant salamander variant whose skin exudes a paralyzing neurotoxin when threatened. | wetland |
-| Bird | **Vindhya Forest Falcon** *Falco sylvanus* | A quiet, predatory bird that hunts arboreal octopuses and squirrels in the Narmada canopies. | forest |
+| Species | Traits | What it is |
+|---|---|---|
+| **Abyssal Storm-Watcher**<br>*Cognitavi abyssalis* | *common · Bird · sea* | A Cognitavi navigator bird subspecies that specializes in reading weather patterns, guiding wisdom-seekers and ships safely through the Tethys monsoons. |
+| **Baurusuchus**<br>*Baurusuchus palustris* | *common · Crocodilian · wetland* | A heavy, quadrupedal land crocodile that prowls the delta, specializing in ambush techniques in shallow reed marshes. |
+| **Bitter Marsh-root**<br>*Sarasvatia amara* | *common · Root · wetland* | A bitter-tasting variety of Saraswati spiceroot that grows in saltwater marshes, used as an antidote to marsh-fever. |
+| **Black-Barked Canopy Tendua**<br>*Panthera simiana arborea* | *common · Mammal · coast · forest* | A melanistic, dark-coated subspecies of Tendua that hunts within the dense mangrove canopies of the Godavari delta. |
+| **Blood-red Asura Lotus**<br>*Nelumbo asurica* | *common · Flower · wetland · psychoactive* | An invasive, deep-crimson lotus that thrives in areas of past magical corruption, its pollen inducing vivid, restless dreams. |
+| **Bonewood Mangrove**<br>*Rhizophora osteoxyla* | *common · Tree · coast · forest · mountains · timber* | Mangrove trees that absorb calcium and basalt from the volcanic coast, yielding a naturally curved, bone-hard timber used for construction. |
+| **Burrowing Tortoise**<br>*Geochelone fossor* | *common · Reptile · wetland · river* | A large, long-lived tortoise (living 80-120 years) that digs spiral tunnels in a symbiotic relationship with the Nagaraptors, forming the underground foundations of the Taj Nest-Homes. |
+| **Crested Marsh-Runner**<br>*Gallinula cristata* | *common · Bird · wetland* | A flightless bird of the delta marshes that sprints over floating lotus leaves using elongated, spread-out toes. |
+| **Deep-River Bronze**<br>*Cyprinus chalceus* | *common · Fish · river* | A wild relative of the stepwell koi, navigating Tethyan estuaries with heavy, protective, metallic-looking bronze scales. |
+| **Delta Fiddler-Crab**<br>*Uca sarasvati* | *common · Crustacean · wetland · river* | A small mud-crab with a brilliant blue shell, the males waving an oversized white claw to attract mates. |
+| **Delta Kingfisher**<br>*Alcedo vishnu* | *common · Bird · wetland · river* | A tiny, brilliant-blue bird that dives with extreme speed to spear bronze fish, its sharp call mimicking wind chimes. |
+| **Delta Reed-Python**<br>*Python sylvanus minor* | *common · Reptile · wetland* | A small, non-venomous constrictor snake that mimics the color of dried reeds, preying on nesting birds. |
+| **Emerald Harbor Lotus**<br>*Nelumbo smaragdina* | *rare · Flower · wetland · ornament · filtration* | A massive aquatic lotus with bright green petals that blooms in the estuaries of Lothal, drawing mineral-rich runoff. |
+| **Estuary Archer-Fish**<br>*Toxotes tethys* | *common · Fish · coast* | A fish that shoots jets of water from its mouth to knock down insects resting on overhanging mangrove leaves. |
+| **Gedrosian Spiny-tailed Lizard**<br>*Saara gedrosia* | *common · Reptile · desert* | A vegetarian lizard that forms large colonies in the sand, using its hard, spiked tail to block burrow entrances. |
+| **Healing Silver-root**<br>*Sarasvatia argentum* | *common · Root · wetland · river* | An endemic medicinal tuber harvested along the Godavari, known for its rapid wound-healing properties when ground into salve. |
+| **Indus Unicorn**<br>*Monocerus indicus* | *mythic · Mammal · river · landmark* | A legendary, swift-footed single-horned ungulate of the river valleys, highly revered and historically sacrificed in dark portals. |
+| **Iridescent Lothal Silvanus**<br>*Sylvianus pictus* | *common · Bird · wetland* | A winged, bird-like dinosaurid with shimmering plumage that nests in the tall reed beds outside the Sylvian Gate of Lothal. |
+| **Iron-Root Mangrove**<br>*Rhizophora ferrea* | *common · Tree · coast* | A heavy, dark-wooded mangrove whose roots lock into the rocky coastline, forming impassable natural barriers. |
+| **Ivory Coastal Bonewood**<br>*Rhizophora eburnea* | *rare · Tree · sea · coast* | A rare bonewood subspecies with smooth, cream-colored bark that resists waterrot and marine boring worms. |
+| **Jungle Web-Spinner**<br>*Nephila sylvanica* | *rare · Arachnid · forest* | A giant spider of Mappa Mundi that weaves massive, golden webs capable of catching small birds and bats. |
+| **Lava-Pool Water-Beetle**<br>*Dytiscus vulcanus* | *common · Insect · mountains* | A predatory aquatic beetle that swims in hot mineral springs, feeding on larval vent-shrimps. |
+| **Lothal Dune-Sprinter**<br>*Acanthodactylus lothalensis* | *common · Reptile · wetland* | A fast-moving, sand-colored lizard of the salt marshes that feeds on delta insects and crabs. |
+| **Lothal Heron-Raptor**<br>*Sylvianus minor* | *common · Bird · wetland · river* | A small, wading theropod bird that uses its long neck and serrated beak to spear mud-lurkers. |
+| **Lothal Marsh-Lurker**<br>*Megalobatrachus lothalensis* | *rare · Amphibian · wetland · river* | An 8-foot giant river salamander that has survived since the Pleistocene. |
+| **Lothal Mud-Skipper**<br>*Periophthalmus gigas* | *rare · Fish · coast* | A giant amphibious fish that climbs mangrove roots and breathes through its skin, highly prized for its tender, salty meat. |
+| **Lothal Sand-Plover**<br>*Charadrius lothalensis* | *common · Bird · river* | A small, pale shorebird that nests in the sandy riverbanks, distracting predators with elaborate broken-wing displays. |
+| **Lothal Shell-Cracker**<br>*Carcinus lothalensis* | *common · Crustacean · coast* | A crab with one oversized, stone-hard claw used to crush estuary mollusks, highly prized by local fishers. |
+| **Mangrove Crab-Eater**<br>*Herpestes mangrovus* | *common · Mammal · coast* | A sleek mongoose species that specializes in cracking open hard-shelled delta crustaceans with its robust jaw structure. |
+| **Mangrove Snapping-Turtle**<br>*Chelydra mangrovi* | *common · Reptile · coast* | A turtle with a razor-sharp beak that lies buried in the brackish mud, ambushing small crabs and fish. |
+| **Marsh-dwelling Terrapin**<br>*Clemmys lothalensis* | *common · Reptile · wetland* | A stem turtle lineage whose osteoderm shell is covered in green moss, providing perfect camouflage in swampy pools. |
+| **Mud-Armored Ambusher**<br>*Baurusuchus lutarius* | *common · Crocodilian · river* | A baurusuchid that cakes itself in river mud, keeping its body temperature low and hiding from terrestrial prey. |
+| **Muria River-Otter**<br>*Lutra muria* | *common · Mammal · river* | An agile, semi-aquatic mammal with dense, oil-slicked fur that hunts stepwell koi along the eastern coast of the island. |
+| **Nagaraptor**<br>*Nagaraptor vallatus* | *common · Non-avian dinosaur · wetland · river* | Feathered velociraptor clans that have formed a complex diapsid scale-based civilization, using earthworks and moats to defend their nests. |
+| **Narmada Mud-Eel**<br>*Monopterus narmadensis* | *common · Fish · river* | A slender, scale-less fish that burrows into the volcanic mud of riverbeds, breathing atmospheric air during dry spells. |
+| **Poison-barb Indigo**<br>*Indigofera spicata* | *common · Shrub · wetland · river* | A wild relative of sweet indigo, possessing small, sharp thorns along its stems that inject a skin-irritating toxin. |
+| **Sacred Stepwell Koi**<br>*Cyprinus devotus* | *common · Fish · river* | Bronze-scaled river fish bred in the sacred stepwells of Dwarka, featuring thick, armored scales to resist delta predators. |
+| **Saltwater Gator-Turtle**<br>*Macrochelys tethyan* | *common · Reptile · coast · hills* | An ancient, armored turtle with a ridged shell resembling a crocodile's hide, lurking in brackish delta canals. |
+| **Saraswati Delta Heron**<br>*Ardea sarasvati* | *common · Bird · coast* | A long-legged wading bird with pale silver feathers that filters small bronze fish from the delta's estuaries. |
+| **Saraswati Horned Frog**<br>*Ceratophrys sarasvati* | *common · Amphibian · forest* | A large-mouthed, sit-and-wait predator that burrows into leaf litter, its horns mimicking fallen twigs. |
+| **Saraswati Reed**<br>*Calamus sarasvaticus* | *common · Grass · wetland* | A tall, hollow, fibrous reed used by the Kia clan for weaving baskets, roofs, and lightweight outrigger hulls. |
+| **Saraswati Reed-Warbler**<br>*Acrocephalus sylvanus* | *common · Bird · wetland* | A small, plain bird that weaves complex hanging nests in the tall delta reeds, mimicking the clicks of local dinosaurids. |
+| **Scythian Wild Ass**<br>*Equus hemionus scythicus* | *common · Mammal · plains* | A fast, resilient wild equine of the northern steppe deserts, highly valued by nomads for its stamina. |
+| **Silver-Banded Sea-Snake**<br>*Hydrophis argentum* | *common · Reptile · river* | A highly venomous sea snake with black and silver bands, hunting stepwell koi near coastal lagoons. |
+| **Sky-Faring Grasshopper**<br>*Melanoplus caelius* | *common · Insect · lore only · sky_island · open_sky* | A lightweight, gas-buoyant grasshopper that migrates between floating islands, feeding on sky-bramble leaves. |
+| **Spotted Marsh Tendua**<br>*Panthera simiana maculata* | *common · Mammal · wetland* | A highly intelligent, leopard-like feline of the wetlands that has evolved human-like eye placement and ocular mimicry to stalk its prey. |
+| **Striped Reed Stalker**<br>*Baurusuchus striatus* | *common · Crocodilian · wetland* | A camouflaged subspecies of Baurusuchus with vertical stripes, blending into the marsh grass of the Saraswati delta. |
+| **Swamp-Wallaby**<br>*Wallabia sylvanus* | *common · Mammal · wetland* | A marsupial-like herbivore that grazes on the delta's edge, capable of swimming short distances between mangrove islets. |
+| **Sweet Indigo**<br>*Indigofera dulcis* | *common · Vine · forest · settlement · dye · ornament* | A domesticated decorative vine bred by Harappan settlers, boasting vibrant purple flowers that yield a sweet-scented blue dye. |
+| **Tethyan Blue-Crayfish**<br>*Astacus caeruleus* | *common · Crustacean · river* | A large freshwater crustacean with vibrant blue claws that feeds on decaying organic matter in the Saraswati tributaries. |
+| **Tethyan Flying-Squid**<br>*Todarodes tethys* | *common · Mollusc · sea* | A marine mollusk that shoots itself out of the water to escape predators, gliding over waves with lateral fins. |
+| **Tethyan Mud-Snipe**<br>*Gallinago tethys* | *common · Bird · sea · coast* | A long-billed bird that probes the estuarial mud for marine worms, its call sounding like rhythmic clicking. |
+| **Tethys Pelican**<br>*Pelecanus tethys* | *common · Bird · coast* | A large-billed bird with a throat pouch used to scoop up schooling fish from the coastal shallows. |
+| **Tethys River Dolphin**<br>*Platanista tethys* | *common · Mammal · river* | A pale, blind cetacean that navigates the muddy delta waters using sophisticated acoustic clicks, hunted by Kias for meat and skin. |
+| **Vajraptor**<br>*Vajraptor territorialis* | *common · Non-avian dinosaur · forest* | An intelligent, social and territorial feathered dromaeosaur with colorful plumage and excellent problem-solving skills, building hidden canopy nests. |
+| **Vanga Marsh-Cat**<br>*Felis chaus vanga* | *common · Mammal · wetland* | A small, agile cat with tufted ears that hunts marsh-runners and frogs in the Godavari delta. |
+| **Vanga Pearl-Guide**<br>*Cognitavi vanga* | *rare · Bird · sea · landmark* | An elite subspecies of the hyper-intelligent Cognitavi navigator birds that aids Tuli seafarers in locating deep-sea oyster beds. |
+| **Vengi Marsh Harrier**<br>*Circus vengi* | *common · Bird · wetland* | A low-flying bird of prey that sweeps over the reed beds, hunting young dinosaurids and salamanders. |
+| **Venomous Vengi Mud-Salamander**<br>*Megalobatrachus toxicus* | *rare · Amphibian · wetland* | A swamp-dwelling giant salamander variant whose skin exudes a paralyzing neurotoxin when threatened. |
+| **Vindhya Forest Falcon**<br>*Falco sylvanus* | *common · Bird · forest* | A quiet, predatory bird that hunts arboreal octopuses and squirrels in the Narmada canopies. |
 
 ## Canon
 
 *55 recorded.*
 
-| | Species | What it is | Where |
-|---|---|---|---|
-| Shrub | **Asura Thorn** *Ziziphus asurica* | Hooked scrub planted as a living fence. | plains, settlement |
-| Flower | **Bethua** *Chenopodium album* | Mealy grey-green leaves crowding the edge of a worked field, dusted as though with flour. | plains, settlement |
-| Mammal | **Canopy Langur** *Semnopithecus aranya* | Grey langurs move through the branches overhead, pausing to look down with long-tailed disapproval. | forest, hills |
-| Mammal | **Caravan Dromedary** *Camelus dromedarius itineris* | A single-humped camel chews sideways and regards you with the patience of an animal that has walked further than you have. | desert, plains, settlement |
-| Bird | **Cliff Swift** *Apus narmadae* | Swifts cut the air above the grass in long scything arcs, too fast to count. | hills, mountains, plains |
-| Bird | **Cognitavi** *Cognitavi viator* | A navigator bird watches the water with its head tilted, reading something in it that you cannot, and does not much care that you are here. | coast, landmark |
-| Palm | **Date Palm** *Phoenix gedrosiana* | Date palms mark the waystation from a long way off, which is the point of planting them. | desert, settlement |
-| Bird | **Delta Egret** *Egretta saraswati* | A white egret stands in the shallows, folded like a closed umbrella, then slowly straightens. | wetland, river, coast |
-| Reptile | **Delta Monitor** *Varanus deltae* | A long monitor lizard noses along the fish-drying racks, unhurried, entirely certain nobody will stop it. | wetland, coast, settlement |
-| Reptile | **Dune Viper** *Echis gedrosianus* | A sidewinding track crosses the sand ahead of you, fresh, and ends where the snake buried itself. | desert |
-| Fish | **Estuary Sawfish** *Pristis tethys* | Something long moves under the brown water, and for a moment the saw of its snout breaks the surface. | coast, river |
-| Flower | **Field Mustard** *Brassica rapa* | A field turned yellow head to foot, loud with bees, the pods filling below the flowers. | plains, settlement |
-| Shrub | **Frankincense Scrub** *Boswellia gedrosiana* | Resin beads on the bark where the scrub has been scored, hardening into the tears burned at rites. | desert |
-| Shrub | **Ghentu** *Clerodendrum viscosum* | A coarse shrub with sticky leaves and white flowers, growing where nobody chose to put it. | plains, forest |
-| Tree | **Ghost Mangrove** *Avicennia phantasma* | The pale bark of these mangroves catches what light there is. | coast, wetland, river |
-| Root | **Ginger** *Zingiber officinale* | A knuckled rhizome under a stand of narrow reed-like leaves, hot enough to smell when broken. | forest, settlement |
-| Vine | **Guloncho** *Tinospora cordifolia* | Heart-shaped leaves on a vine hung with aerial roots that reach down without touching. | forest, settlement |
-| Shrub | **Hill Cardamom** *Elettaria cardamomum* | Pale pods low on a stem at the foot of tall leaves, in shade deep enough to feel cold. | forest, hills |
-| Flower | **Hinche** *Enhydra fluctuans* | A mat of fleshy stems lying flat on still water, rooting wherever a node touches mud. | wetland, river |
-| Bird | **Honey-Guide Bird** *Indicator narmadae* | A small brown bird calls, hops to the next branch, and calls again. | forest, hills, settlement |
-| Tree | **Iron-Teak** *Tectona ferrea* | Teak this dense is cut for river craft and tower beams, and takes a long lifetime to replace. | hills, mountains, forest |
-| Tree | **Jackfruit** *Artocarpus heterophyllus* | Fruit the size of a child growing straight out of the trunk, too heavy for any branch. | settlement, forest |
-| Shrub | **Jayanti** *Sesbania sesban* | A quick soft-wooded shrub on a field bund, yellow pea-flowers and a mist of small leaflets. | plains, wetland, settlement |
-| Shrub | **Kalkasunde** *Cassia sophera* | A leggy shrub with paired leaflets, yellow flowers, and a smell like cut grass gone sharp. | plains, settlement |
-| Root | **Kemuk** *Costus speciosus* | Leaves set in a slow spiral up a cane, a white crepe flower out of a red cone at the top. | forest, wetland |
-| Root | **Keot** *Colocasia esculenta* | Wide leaves shedding water in beads, pale runners spreading through the mud between them. | wetland, river, settlement |
-| Root | **Lotus-Root Taro** *Colocasia nelumbo-affinis* | Broad taro leaves crowd the pond margin, hiding the starchy corms that feed the granary through the dry months. | wetland, settlement |
-| Tree | **Mahua** *Madhuca longifolia* | Mahua flowers drop through the night and are gathered before the sun gets to them. | plains, hills |
-| Tree | **Mango** *Mangifera indica* | A dense dark crown throwing shade a household sits in, fruit hanging green among the leaves. | settlement, plains, forest |
-| Crustacean | **Mangrove Crab** *Scylla bonewoodi* | A heavy crab sidles between the mangrove roots, one claw raised like a man carrying something awkward. | coast, wetland, settlement |
-| Non-avian dinosaur | **Megalosaurus** *Megalosaurus jambhudweepensis* |  | underworld (lore only) |
-| Vine | **Moonseed Vine** *Menispermum tethys* | A pale vine has been grafted onto the fig and left to climb, the way it is done in groves people come to on purpose. | forest, landmark |
-| Shrub | **Myrrh-Thorn** *Commiphora spinosa* | A thorn shrub bleeding bitter gum, gathered for field salves and little else. | desert |
-| Tree | **Neem** *Azadirachta indica* | A neem tree shades the field edge, its leaves bitter enough that nothing much troubles the grain stored beneath it. | settlement, plains |
-| Root | **Ol Yam** *Amorphophallus paeoniifolius* | Broad umbrella leaves on a speckled stalk, the corm below big enough to feed a household. | wetland, settlement |
-| Vine | **Palta** *Trichosanthes dioica* | A trained vine over a low frame, striped young gourds hanging under rough leaves. | settlement, plains |
-| Vine | **Pepper Vine** *Piper tethys* | Pepper climbs the ravine wall in the wet shade, its berries drying to the black grain that travels downriver. | hills, forest |
-| Mammal | **Plateau Ibex** *Capra narmadae* | An ibex stands on a ledge no wider than your hand and looks down at you without concern. | hills, mountains |
-| Mammal | **Plateau Wolf** *Canis narmadae* | A lean wolf crosses the open ground at a trot. | hills, mountains, plains |
-| Flower | **Poison Oleander** *Nerium oleander* | Oleander flowers pink and cheerful on the dry margin. | plains, desert |
-| Grass | **Red Delta Rice** *Oryza rubra-delta* | Red rice stands in flooded squares, the water between the stalks holding the whole sky. | wetland, settlement |
-| Reptile | **Reed Python** *Python phragmitis* | A thick python lies banked in the reeds, digesting, in no hurry to be anywhere. | wetland, river |
-| Grass | **River Bamboo** *Bambusa saraswati* | Bamboo crowds the riverbank, creaking against itself, already half cut for scaffolding and fish traps. | river, forest |
-| Shrub | **Sacred Tulsi** *Ocimum sanctum* | Tulsi grows in a clay pot by the door, cropped short by daily picking for the morning rites. | settlement |
-| Grass | **Saltreed** *Phragmites salina* | Salt-tolerant reeds stand shoulder-high along the brackish flood, the same reeds that roof every hut in the marsh camps. | wetland, coast, river |
-| Reptile | **Sand Skink** *Scincus gedrosianus* | A skink pours itself into the dune and is gone, swimming under the surface like a fish. | desert |
-| Tree | **Sandalwood** *Santalum jambhudweepa* | Sandalwood, and someone has been here before you: a strip of heartwood cut away clean, the scent still hanging in the air. | forest, landmark |
-| Flower | **Shaluk** *Nymphaea pubescens* | Pink night-blooming lilies closing as the sun climbs, their long stalks pulled up in coils. | wetland, river |
-| Flower | **Shulfa** *Anethum graveolens* | Fine thread-leaves and flat yellow umbels, sharp-sweet when brushed against. | settlement, plains |
-| Fern | **Shushni** *Marsilea minuta* | Four small leaflets on a thread of stalk, standing just clear of the shallows like clover that has learned to swim. | wetland, river |
-| Tree | **Tamarind** *Tamarindus indica* | A tamarind leans over the road, pods hanging like dark fingers, the ground beneath it swept smooth by people who sit here. | settlement, plains |
-| Mammal | **Tendua** *Panthera simiana* | A spotted cat watches from the reed line with eyes set forward like a person's, and you understand that you are being considered. | wetland, forest |
-| Spectre | **Tendua Manticore** *Manticora tendua* |  | — (lore only) |
-| Tree | **Whisper-Fig** *Ficus susurrans* | The fig's trunk is hollow, and the wind moving through it makes a low sound that the delta people are careful not to interrupt. | forest, landmark |
-| Shrub | **Wild Indigo** *Indigofera silvestris* | Wild indigo, harsher than the garden kind, still good enough for dyers who cannot pay Lothal prices. | plains, hills |
+| Species | Traits | What it is |
+|---|---|---|
+| **Asura Thorn**<br>*Ziziphus asurica* | *common · Shrub · plains · settlement · boundary* | Hooked scrub planted as a living fence. |
+| **Bethua**<br>*Chenopodium album* | *common · Flower · plains · settlement · food* | Mealy grey-green leaves crowding the edge of a worked field, dusted as though with flour. |
+| **Canopy Langur**<br>*Semnopithecus aranya* | *common · Mammal · forest · hills* | Grey langurs move through the branches overhead, pausing to look down with long-tailed disapproval. |
+| **Caravan Dromedary**<br>*Camelus dromedarius itineris* | *common · Mammal · desert · plains · settlement* | A single-humped camel chews sideways and regards you with the patience of an animal that has walked further than you have. |
+| **Cliff Swift**<br>*Apus narmadae* | *common · Bird · hills · mountains · plains* | Swifts cut the air above the grass in long scything arcs, too fast to count. |
+| **Cognitavi**<br>*Cognitavi viator* | *rare · Bird · coast · landmark* | A navigator bird watches the water with its head tilted, reading something in it that you cannot, and does not much care that you are here. |
+| **Date Palm**<br>*Phoenix gedrosiana* | *common · Palm · desert · settlement · food · shade · fibre* | Date palms mark the waystation from a long way off, which is the point of planting them. |
+| **Delta Egret**<br>*Egretta saraswati* | *common · Bird · wetland · river · coast* | A white egret stands in the shallows, folded like a closed umbrella, then slowly straightens. |
+| **Delta Monitor**<br>*Varanus deltae* | *common · Reptile · wetland · coast · settlement* | A long monitor lizard noses along the fish-drying racks, unhurried, entirely certain nobody will stop it. |
+| **Dune Viper**<br>*Echis gedrosianus* | *common · Reptile · desert* | A sidewinding track crosses the sand ahead of you, fresh, and ends where the snake buried itself. |
+| **Estuary Sawfish**<br>*Pristis tethys* | *rare · Fish · coast · river* | Something long moves under the brown water, and for a moment the saw of its snout breaks the surface. |
+| **Field Mustard**<br>*Brassica rapa* | *common · Flower · plains · settlement · food · oil · seasoning* | A field turned yellow head to foot, loud with bees, the pods filling below the flowers. |
+| **Frankincense Scrub**<br>*Boswellia gedrosiana* | *common · Shrub · desert · fragrance · trade* | Resin beads on the bark where the scrub has been scored, hardening into the tears burned at rites. |
+| **Ghentu**<br>*Clerodendrum viscosum* | *common · Shrub · plains · forest · food · physic · boundary* | A coarse shrub with sticky leaves and white flowers, growing where nobody chose to put it. |
+| **Ghost Mangrove**<br>*Avicennia phantasma* | *rare · Tree · coast · wetland · river · landmark · fuel* | The pale bark of these mangroves catches what light there is. |
+| **Ginger**<br>*Zingiber officinale* | *common · Root · forest · settlement · seasoning · physic · trade* | A knuckled rhizome under a stand of narrow reed-like leaves, hot enough to smell when broken. |
+| **Guloncho**<br>*Tinospora cordifolia* | *rare · Vine · forest · settlement · food · physic* | Heart-shaped leaves on a vine hung with aerial roots that reach down without touching. |
+| **Hill Cardamom**<br>*Elettaria cardamomum* | *rare · Shrub · forest · hills · seasoning · fragrance · trade* | Pale pods low on a stem at the foot of tall leaves, in shade deep enough to feel cold. |
+| **Hinche**<br>*Enhydra fluctuans* | *common · Flower · wetland · river · food · physic* | A mat of fleshy stems lying flat on still water, rooting wherever a node touches mud. |
+| **Honey-Guide Bird**<br>*Indicator narmadae* | *common · Bird · forest · hills · settlement* | A small brown bird calls, hops to the next branch, and calls again. |
+| **Iron-Teak**<br>*Tectona ferrea* | *common · Tree · hills · mountains · forest · timber* | Teak this dense is cut for river craft and tower beams, and takes a long lifetime to replace. |
+| **Jackfruit**<br>*Artocarpus heterophyllus* | *common · Tree · settlement · forest · food · timber · shade* | Fruit the size of a child growing straight out of the trunk, too heavy for any branch. |
+| **Jayanti**<br>*Sesbania sesban* | *common · Shrub · plains · wetland · settlement · food · physic · boundary* | A quick soft-wooded shrub on a field bund, yellow pea-flowers and a mist of small leaflets. |
+| **Kalkasunde**<br>*Cassia sophera* | *common · Shrub · plains · settlement · food · physic* | A leggy shrub with paired leaflets, yellow flowers, and a smell like cut grass gone sharp. |
+| **Kemuk**<br>*Costus speciosus* | *rare · Root · forest · wetland · food · physic* | Leaves set in a slow spiral up a cane, a white crepe flower out of a red cone at the top. |
+| **Keot**<br>*Colocasia esculenta* | *common · Root · wetland · river · settlement · food* | Wide leaves shedding water in beads, pale runners spreading through the mud between them. |
+| **Lotus-Root Taro**<br>*Colocasia nelumbo-affinis* | *common · Root · wetland · settlement · food* | Broad taro leaves crowd the pond margin, hiding the starchy corms that feed the granary through the dry months. |
+| **Mahua**<br>*Madhuca longifolia* | *common · Tree · plains · hills · drink · oil · ritual* | Mahua flowers drop through the night and are gathered before the sun gets to them. |
+| **Mango**<br>*Mangifera indica* | *common · Tree · settlement · plains · forest · food · shade · ritual* | A dense dark crown throwing shade a household sits in, fruit hanging green among the leaves. |
+| **Mangrove Crab**<br>*Scylla bonewoodi* | *common · Crustacean · coast · wetland · settlement* | A heavy crab sidles between the mangrove roots, one claw raised like a man carrying something awkward. |
+| **Megalosaurus**<br>*Megalosaurus jambhudweepensis* | *Non-avian dinosaur · lore only · underworld* |  |
+| **Moonseed Vine**<br>*Menispermum tethys* | *rare · Vine · forest · landmark · ritual · memory* | A pale vine has been grafted onto the fig and left to climb, the way it is done in groves people come to on purpose. |
+| **Myrrh-Thorn**<br>*Commiphora spinosa* | *common · Shrub · desert · fragrance · physic* | A thorn shrub bleeding bitter gum, gathered for field salves and little else. |
+| **Neem**<br>*Azadirachta indica* | *common · Tree · settlement · plains · physic · shade* | A neem tree shades the field edge, its leaves bitter enough that nothing much troubles the grain stored beneath it. |
+| **Ol Yam**<br>*Amorphophallus paeoniifolius* | *common · Root · wetland · settlement · food · physic* | Broad umbrella leaves on a speckled stalk, the corm below big enough to feed a household. |
+| **Palta**<br>*Trichosanthes dioica* | *common · Vine · settlement · plains · food* | A trained vine over a low frame, striped young gourds hanging under rough leaves. |
+| **Pepper Vine**<br>*Piper tethys* | *common · Vine · hills · forest · seasoning · trade* | Pepper climbs the ravine wall in the wet shade, its berries drying to the black grain that travels downriver. |
+| **Plateau Ibex**<br>*Capra narmadae* | *common · Mammal · hills · mountains* | An ibex stands on a ledge no wider than your hand and looks down at you without concern. |
+| **Plateau Wolf**<br>*Canis narmadae* | *common · Mammal · hills · mountains · plains* | A lean wolf crosses the open ground at a trot. |
+| **Poison Oleander**<br>*Nerium oleander* | *common · Flower · plains · desert · poison · boundary* | Oleander flowers pink and cheerful on the dry margin. |
+| **Red Delta Rice**<br>*Oryza rubra-delta* | *common · Grass · wetland · settlement · food · trade* | Red rice stands in flooded squares, the water between the stalks holding the whole sky. |
+| **Reed Python**<br>*Python phragmitis* | *common · Reptile · wetland · river* | A thick python lies banked in the reeds, digesting, in no hurry to be anywhere. |
+| **River Bamboo**<br>*Bambusa saraswati* | *common · Grass · river · forest · timber · craftwork* | Bamboo crowds the riverbank, creaking against itself, already half cut for scaffolding and fish traps. |
+| **Sacred Tulsi**<br>*Ocimum sanctum* | *common · Shrub · settlement · ritual · physic* | Tulsi grows in a clay pot by the door, cropped short by daily picking for the morning rites. |
+| **Saltreed**<br>*Phragmites salina* | *common · Grass · wetland · coast · river · fibre · filtration* | Salt-tolerant reeds stand shoulder-high along the brackish flood, the same reeds that roof every hut in the marsh camps. |
+| **Sand Skink**<br>*Scincus gedrosianus* | *common · Reptile · desert* | A skink pours itself into the dune and is gone, swimming under the surface like a fish. |
+| **Sandalwood**<br>*Santalum jambhudweepa* | *rare · Tree · forest · landmark · ritual · fragrance · craftwork* | Sandalwood, and someone has been here before you: a strip of heartwood cut away clean, the scent still hanging in the air. |
+| **Shaluk**<br>*Nymphaea pubescens* | *common · Flower · wetland · river · food · ritual* | Pink night-blooming lilies closing as the sun climbs, their long stalks pulled up in coils. |
+| **Shulfa**<br>*Anethum graveolens* | *common · Flower · settlement · plains · food · seasoning* | Fine thread-leaves and flat yellow umbels, sharp-sweet when brushed against. |
+| **Shushni**<br>*Marsilea minuta* | *common · Fern · wetland · river · food · physic* | Four small leaflets on a thread of stalk, standing just clear of the shallows like clover that has learned to swim. |
+| **Tamarind**<br>*Tamarindus indica* | *common · Tree · settlement · plains · food · seasoning · shade* | A tamarind leans over the road, pods hanging like dark fingers, the ground beneath it swept smooth by people who sit here. |
+| **Tendua**<br>*Panthera simiana* | *rare · Mammal · wetland · forest* | A spotted cat watches from the reed line with eyes set forward like a person's, and you understand that you are being considered. |
+| **Tendua Manticore**<br>*Manticora tendua* | *Spectre · lore only* |  |
+| **Whisper-Fig**<br>*Ficus susurrans* | *rare · Tree · forest · landmark · shade · ritual* | The fig's trunk is hollow, and the wind moving through it makes a low sound that the delta people are careful not to interrupt. |
+| **Wild Indigo**<br>*Indigofera silvestris* | *common · Shrub · plains · hills · dye* | Wild indigo, harsher than the garden kind, still good enough for dyers who cannot pay Lothal prices. |
 
 ## Narmada Plateau
 
 *42 recorded.*
 
-| | Species | What it is | Where |
-|---|---|---|---|
-| Mammal | **Ash-Glider Squirrel** *Petaurista cinereus* | A nocturnal rodent with a wide skin fold that glides between tall mahua trees, its fur colored like grey ash. | forest |
-| Mammal | **Ash-Valley Field-Mouse** *Mus cinereus* | A small, nocturnal rodent that feeds on wild tea seeds, its burrow insulated with toxic red spore-moss. | hills, mountains |
-| Bird | **Basalt-Cliff Hornbill** *Ocyceros basalticus* | A large bird with a heavy, curved bill that nests in high rock crevices, feeding on wild figs and geckos. | hills, mountains |
-| Mollusc | **Bioluminescent Moss-Dweller** *Vrkshasmara phosphorea* | An arboreal octopus variant that feeds on glowing moss, causing its tentacles to emit a soft, pulsing green light at night. | forest |
-| Shrub | **Black Ash-Tea** *Camellia vulcanica* | Hardy wild tea bushes adapted to highly acidic, sulfur-rich volcanic soils, producing dark, highly caffeinated leaves. | mountains |
-| Insect | **Black-Striped Siege Bee** *Megapis obsidiana* | A territorial, hyper-aggressive giant bee subspecies whose sting delivers a burning, venomous heat resembling hot ash. | hills, mountains |
-| Lichen | **Blue Scholar's Moss** *Dictyonema caeruleum* | A bioluminescent fungal-algal symbiont that grows on the fossilized marrow of ancient Garudasaurs, illuminating the Stone Age University's archives. | hills, mountains |
-| Reptile | **Frilled Shringasaurus** *Shringasaurus torquatus* | It does not move aside. | plains, hills, mountains |
-| Bird | **Garudasaur Eagle** *Aquila garudae* | A colossal mountain eagle with obsidian-tipped feathers, carrying small goats and primates to its nest on the high volcanic ledges. | hills, mountains |
-| Shrub | **Golden Ember-Leaf** *Camellia aurata* | An elite wild tea variety whose leaves feature glowing, amber-colored veins, highly valued by Narmada scholars for its flavor and stimulating effects. | hills, mountains |
-| Insect | **Golden Honey-Goliath** *Megapis aurea* | A colossal bee species of the Narmada cliffs, harvested for its essential-oil-rich medicinal honey. | hills |
-| Crustacean | **Gondwana Spice-Sifter** *Peneus gondwanensis* | A freshwater mountain crustacean that lives in the mineral-rich volcanic streams, sifting through golden spice-sand for organic matter. | mountains |
-| Tree | **Highland Bitter Mahua** *Madhuca montana* | A rugged, slow-growing mahua variant whose seeds yield a thick, bitter oil used for lamps and traditional healing ointments. | mountains |
-| Reptile | **Lava-Ledge Gecko** *Gekko vulcanus* | A large gecko with sticky, heat-resistant pads that enable it to crawl directly over hot, cooled-down basalt flows. | hills, mountains |
-| Reptile | **Lesser Ember-Skink** *Agama scintillans* | A small, agile lizard of the volcanic vents, possessing fire-resistant scales and a tail that glows like a hot coal when excited. | mountains |
-| Shrub | **Lesser Whisper-Fig** *Ficus murmurans* | A smaller, shrub-like relative of the Bhuta-Kāna fig, growing on cliffs and whispering soft, ambient forest sounds during high winds. | hills |
-| Bird | **Lesser Whisper-Fig Bird** *Ficusophila minor* | A small, dull-colored bird that feeds exclusively on the fruit of the Bhuta-Kāna fig, nesting deep within its silver canopy. | forest |
-| Mammal | **Mountain Forest Boar** *Sus sylvanus* | A tusked, rugged omnivore that digs up volcanic tubers and rare roots, its thick hide protecting it from cliff lizards. | hills, mountains |
-| Mammal | **Narmada Cave Bear** *Ursus spelaeus narmadensis* | A massive, thick-furred predator of the high caves that climbs cliffs to raid honey-goliath nests, frequently clashing with human gatherers. | hills, mountains |
-| Crustacean | **Narmada Cave-Crab** *Potamon cavea* | A blind, pale freshwater crab that lives in the dark subterranean streams beneath the plateau. | hills, mountains |
-| Bird | **Narmada Honey-Guide** *Indicator narmadensis* | A small bird that has a symbiotic relationship with humans, leading them to honey-goliath nests in exchange for wax. | hills, mountains |
-| Reptile | **Narmada Rock-Python** *Python narmadensis* | A massive constrictor snake that camouflages as a volcanic root, waiting patiently near watering holes to seize prey. | mountains |
-| Mammal | **Narmada Tree-Shrew** *Anathana narmadensis* | An agile, insectivorous mammal that climbs the lower branches of ash-banyan trees, active during daylight. | forest |
-| Bird | **Obsidian-Cliff Eagle** *Aquila obsidiana* | A large bird of prey that nests on the highest peaks, its sharp eyes detecting movement in the valleys below. | hills, mountains |
-| Bird | **Red-Crested Woodpecker** *Picus phoeniceus* | A large bird that drills into hollow bonewood trees to extract boring beetles, its tapping echoing like stone-age drums. | forest |
-| Vine | **Shilajit Creeper** *Cissus shilajita* | A trailing, primitive moss-like plant that grows near mineral fissures, absorbing pure bitumen and organic compounds from the rock. | hills, mountains |
-| Reptile | **Shilajit Guardian Lizard** *Agama shilajit* | A fire-spitting cliff lizard that ingests raw sulfur and flint to strike defensive sparks, guarding natural mineral deposits. | hills |
-| Reptile | **Shringasaurus** *Shringasaurus indicus* | Two horns come up out of the scrub before the head does, curved forward like a bull's and set above the eyes rather than on the nose. | plains, forest, hills |
-| Tree | **Silver-Leaved Oracle Fig** *Ficus bhutakana* | A massive fig tree grown from a magical moon-seed, its roots acting as a biological archive tree whispering memories in the wind. | forest, landmark |
-| Tree | **Sweet-Nectar Mahua** *Madhuca narmadensis* | An indigenous tree producing sweet, fermentable cream-colored flowers that are central to the local tribal ecology and brewing traditions. | forest |
-| Lichen | **Toxic Red Spore-Moss** *Dictyonema venenum* | A dangerous, rust-colored variant of Garudasaur moss that releases airborne spores causing temporary respiratory paralysis in intruders. | hills, mountains |
-| Reptile | **Vindhya Bark-Gecko** *Hemidactylus vindhyensis* | A master of camouflage, its skin texture perfectly matching the rough wood of old mahua trees. | forest |
-| Mammal | **Vindhya Centipede-Eater** *Herpestes centipeda* | A small mongoose species with thick, leathery hide that protects it from the venomous stings of cliff centipedes. | hills |
-| Mammal | **Vindhya Cliff-Goat** *Capra vindhyensis* | A sure-footed, woolly mountain goat that grazes on steep volcanic ledges, often acting as a host or guide for anomalous entities. | hills, mountains |
-| Bird | **Vindhya Hill-Parakeet** *Psittacula vindhyensis* | A colorful, highly vocal bird that travels in large flocks, feeding on wild fruits and nesting in hollow trees. | hills |
-| Bird | **Vindhya Horned Owl** *Bubo vindhyensis* | A nocturnal predator with tufted feathers resembling horns, hunting tree-octopuses and small rodents in the canopy. | forest |
-| Mammal | **Vindhya Langur** *Presbytis vindhyensis* | A grey-furred, black-faced monkey that climbs the highest canopy of the Narmada Valley, feeding on sweet mahua flowers. | forest |
-| Mammal | **Vindhya Leopard** *Panthera pardus vindhyensis* | A lean, long-limbed mountain predator with a coat patterned like fractured volcanic ash, specializing in hunting cliff-goats. | hills, mountains |
-| Tree | **Vindhya Pine** *Pinus vindhyensis* | A towering, high-altitude conifer with resinous needles that withstands extreme temperature shifts and acidic ash rain. | hills, mountains |
-| Mammal | **Vindhya Rock-Squirrel** *Ratufa vindhyensis* | A giant, colorful squirrel that nests in high cliff cavities, feeding on wild pine nuts and fig seeds. | hills |
-| Mammal | **Volcanic Shrew** *Sorex vulcanus* | A tiny, hyperactive mammal with a metallic coat that searches leaf litter for sulfur-beetles and insect larvae. | mountains |
-| Mollusc | **Vṛkṣaśmara** *Vrkshasmara griseus* | Something grey shifts high in the canopy, too large for a monkey, and the leaves close over it again. | forest, hills, landmark |
+| Species | Traits | What it is |
+|---|---|---|
+| **Ash-Glider Squirrel**<br>*Petaurista cinereus* | *common · Mammal · forest* | A nocturnal rodent with a wide skin fold that glides between tall mahua trees, its fur colored like grey ash. |
+| **Ash-Valley Field-Mouse**<br>*Mus cinereus* | *common · Mammal · hills · mountains* | A small, nocturnal rodent that feeds on wild tea seeds, its burrow insulated with toxic red spore-moss. |
+| **Basalt-Cliff Hornbill**<br>*Ocyceros basalticus* | *common · Bird · hills · mountains* | A large bird with a heavy, curved bill that nests in high rock crevices, feeding on wild figs and geckos. |
+| **Bioluminescent Moss-Dweller**<br>*Vrkshasmara phosphorea* | *common · Mollusc · forest* | An arboreal octopus variant that feeds on glowing moss, causing its tentacles to emit a soft, pulsing green light at night. |
+| **Black Ash-Tea**<br>*Camellia vulcanica* | *common · Shrub · mountains · psychoactive · drink* | Hardy wild tea bushes adapted to highly acidic, sulfur-rich volcanic soils, producing dark, highly caffeinated leaves. |
+| **Black-Striped Siege Bee**<br>*Megapis obsidiana* | *rare · Insect · hills · mountains* | A territorial, hyper-aggressive giant bee subspecies whose sting delivers a burning, venomous heat resembling hot ash. |
+| **Blue Scholar's Moss**<br>*Dictyonema caeruleum* | *common · Lichen · hills · mountains* | A bioluminescent fungal-algal symbiont that grows on the fossilized marrow of ancient Garudasaurs, illuminating the Stone Age University's archives. |
+| **Frilled Shringasaurus**<br>*Shringasaurus torquatus* | *rare · Reptile · plains · hills · mountains* | It does not move aside. |
+| **Garudasaur Eagle**<br>*Aquila garudae* | *mythic · Bird · hills · mountains* | A colossal mountain eagle with obsidian-tipped feathers, carrying small goats and primates to its nest on the high volcanic ledges. |
+| **Golden Ember-Leaf**<br>*Camellia aurata* | *rare · Shrub · hills · mountains* | An elite wild tea variety whose leaves feature glowing, amber-colored veins, highly valued by Narmada scholars for its flavor and stimulating effects. |
+| **Golden Honey-Goliath**<br>*Megapis aurea* | *mythic · Insect · hills* | A colossal bee species of the Narmada cliffs, harvested for its essential-oil-rich medicinal honey. |
+| **Gondwana Spice-Sifter**<br>*Peneus gondwanensis* | *common · Crustacean · mountains* | A freshwater mountain crustacean that lives in the mineral-rich volcanic streams, sifting through golden spice-sand for organic matter. |
+| **Highland Bitter Mahua**<br>*Madhuca montana* | *common · Tree · mountains* | A rugged, slow-growing mahua variant whose seeds yield a thick, bitter oil used for lamps and traditional healing ointments. |
+| **Lava-Ledge Gecko**<br>*Gekko vulcanus* | *common · Reptile · hills · mountains* | A large gecko with sticky, heat-resistant pads that enable it to crawl directly over hot, cooled-down basalt flows. |
+| **Lesser Ember-Skink**<br>*Agama scintillans* | *common · Reptile · mountains* | A small, agile lizard of the volcanic vents, possessing fire-resistant scales and a tail that glows like a hot coal when excited. |
+| **Lesser Whisper-Fig**<br>*Ficus murmurans* | *common · Shrub · hills* | A smaller, shrub-like relative of the Bhuta-Kāna fig, growing on cliffs and whispering soft, ambient forest sounds during high winds. |
+| **Lesser Whisper-Fig Bird**<br>*Ficusophila minor* | *common · Bird · forest* | A small, dull-colored bird that feeds exclusively on the fruit of the Bhuta-Kāna fig, nesting deep within its silver canopy. |
+| **Mountain Forest Boar**<br>*Sus sylvanus* | *rare · Mammal · hills · mountains* | A tusked, rugged omnivore that digs up volcanic tubers and rare roots, its thick hide protecting it from cliff lizards. |
+| **Narmada Cave Bear**<br>*Ursus spelaeus narmadensis* | *rare · Mammal · hills · mountains* | A massive, thick-furred predator of the high caves that climbs cliffs to raid honey-goliath nests, frequently clashing with human gatherers. |
+| **Narmada Cave-Crab**<br>*Potamon cavea* | *common · Crustacean · hills · mountains* | A blind, pale freshwater crab that lives in the dark subterranean streams beneath the plateau. |
+| **Narmada Honey-Guide**<br>*Indicator narmadensis* | *common · Bird · hills · mountains* | A small bird that has a symbiotic relationship with humans, leading them to honey-goliath nests in exchange for wax. |
+| **Narmada Rock-Python**<br>*Python narmadensis* | *rare · Reptile · mountains* | A massive constrictor snake that camouflages as a volcanic root, waiting patiently near watering holes to seize prey. |
+| **Narmada Tree-Shrew**<br>*Anathana narmadensis* | *common · Mammal · forest* | An agile, insectivorous mammal that climbs the lower branches of ash-banyan trees, active during daylight. |
+| **Obsidian-Cliff Eagle**<br>*Aquila obsidiana* | *common · Bird · hills · mountains* | A large bird of prey that nests on the highest peaks, its sharp eyes detecting movement in the valleys below. |
+| **Red-Crested Woodpecker**<br>*Picus phoeniceus* | *common · Bird · forest* | A large bird that drills into hollow bonewood trees to extract boring beetles, its tapping echoing like stone-age drums. |
+| **Shilajit Creeper**<br>*Cissus shilajita* | *common · Vine · hills · mountains · physic · filtration* | A trailing, primitive moss-like plant that grows near mineral fissures, absorbing pure bitumen and organic compounds from the rock. |
+| **Shilajit Guardian Lizard**<br>*Agama shilajit* | *common · Reptile · hills* | A fire-spitting cliff lizard that ingests raw sulfur and flint to strike defensive sparks, guarding natural mineral deposits. |
+| **Shringasaurus**<br>*Shringasaurus indicus* | *common · Reptile · plains · forest · hills* | Two horns come up out of the scrub before the head does, curved forward like a bull's and set above the eyes rather than on the nose. |
+| **Silver-Leaved Oracle Fig**<br>*Ficus bhutakana* | *rare · Tree · forest · landmark · memory · ritual* | A massive fig tree grown from a magical moon-seed, its roots acting as a biological archive tree whispering memories in the wind. |
+| **Sweet-Nectar Mahua**<br>*Madhuca narmadensis* | *common · Tree · forest* | An indigenous tree producing sweet, fermentable cream-colored flowers that are central to the local tribal ecology and brewing traditions. |
+| **Toxic Red Spore-Moss**<br>*Dictyonema venenum* | *rare · Lichen · hills · mountains* | A dangerous, rust-colored variant of Garudasaur moss that releases airborne spores causing temporary respiratory paralysis in intruders. |
+| **Vindhya Bark-Gecko**<br>*Hemidactylus vindhyensis* | *common · Reptile · forest* | A master of camouflage, its skin texture perfectly matching the rough wood of old mahua trees. |
+| **Vindhya Centipede-Eater**<br>*Herpestes centipeda* | *common · Mammal · hills* | A small mongoose species with thick, leathery hide that protects it from the venomous stings of cliff centipedes. |
+| **Vindhya Cliff-Goat**<br>*Capra vindhyensis* | *common · Mammal · hills · mountains* | A sure-footed, woolly mountain goat that grazes on steep volcanic ledges, often acting as a host or guide for anomalous entities. |
+| **Vindhya Hill-Parakeet**<br>*Psittacula vindhyensis* | *common · Bird · hills* | A colorful, highly vocal bird that travels in large flocks, feeding on wild fruits and nesting in hollow trees. |
+| **Vindhya Horned Owl**<br>*Bubo vindhyensis* | *common · Bird · forest* | A nocturnal predator with tufted feathers resembling horns, hunting tree-octopuses and small rodents in the canopy. |
+| **Vindhya Langur**<br>*Presbytis vindhyensis* | *common · Mammal · forest* | A grey-furred, black-faced monkey that climbs the highest canopy of the Narmada Valley, feeding on sweet mahua flowers. |
+| **Vindhya Leopard**<br>*Panthera pardus vindhyensis* | *common · Mammal · hills · mountains* | A lean, long-limbed mountain predator with a coat patterned like fractured volcanic ash, specializing in hunting cliff-goats. |
+| **Vindhya Pine**<br>*Pinus vindhyensis* | *common · Tree · hills · mountains* | A towering, high-altitude conifer with resinous needles that withstands extreme temperature shifts and acidic ash rain. |
+| **Vindhya Rock-Squirrel**<br>*Ratufa vindhyensis* | *rare · Mammal · hills* | A giant, colorful squirrel that nests in high cliff cavities, feeding on wild pine nuts and fig seeds. |
+| **Volcanic Shrew**<br>*Sorex vulcanus* | *common · Mammal · mountains* | A tiny, hyperactive mammal with a metallic coat that searches leaf litter for sulfur-beetles and insect larvae. |
+| **Vṛkṣaśmara**<br>*Vrkshasmara griseus* | *rare · Mollusc · forest · hills · landmark* | Something grey shifts high in the canopy, too large for a monkey, and the leaves close over it again. |
 
 ## Asura Conjurations
 
 *41 recorded.*
 
-| | Species | What it is | Where |
-|---|---|---|---|
-| Construct | **Ash-Skinned Courtesan** *Māyā-born* | An artificial, female humanoid sculpted from river mud and lotus pollen, which later mutated into a flesh-hungry night-stalker. | river, wetland, settlement |
-| Mammal | **Asura-Tainted Bat** *Vespertilio asuricus minor* | A small, red-eyed bat that has mutated under the influence of Asura planets, feeding on blood and glowing insects. | forest, mountains |
-| Vine | **Asura-Tainted Flesh-Vine** *Vitis carnosa* | A highly mutated forest climber with animal-like muscle fibers, capable of grasping and constricting small animals. | forest |
-| Construct | **Asura-Tainted Gargoyle** *Māyā-born tuli* | A Māyā-born thing in the shape of a Tuli, its skin calcified into a stone-like hide. | sky_island, sky_underside (lore only) |
-| Bird | **Asura-Tainted Owl** *Bubo asuricus* | A giant owl with four eyes that has mutated near portals, hunting night-stalkers and small primates. | forest, hills |
-| Construct | **Clay-Born Watcher** *Māyā-born oculus* | An artificial, clay-sculpted eye construct animated by ancient mantras, used by Harappan lords to spy on their courts. | settlement |
-| Non-avian dinosaur | **Colossal Void-Devourer** *Sauropodoligator titan* | An extinct sauropod-crocodile hybrid resurrected from buried bones via dark Asura magic, crowned with a cursed human visage. | wetland, river |
-| Vine | **Crimson Blood-Weed** *Vitis asurica* | An invasive, predatory vine mutated by the bleeding energies of Asura planets, developing pulsing veins and a hunger for flesh. | forest |
-| Fern | **Cursed Ash-Fern** *Pteris asurica* | A fern with charcoal-black fronds that grows only in soil scorched by fire-brides, absorbing light and warmth from its surroundings. | forest, hills |
-| Non-mammalian synapsid | **Dimetrodon Scout-Mount** *Dimetrodon minor* | A faster, sleek sail-backed synapsid used by Asura scouts to navigate the rugged, volcanic frontiers. | mountains |
-| Non-mammalian synapsid | **Dimetrodon War-Mount** *Dimetrodon asuricus* | A sail-backed synapsid war predator mutated with bio-reactive colors and enhanced aggression for Asura commanders. | desert, plains |
-| Construct | **Ember-Born Dancer** *Māyā-born scintilla* | A fire-bride variant that dances within sacrificial bonfires, throwing sparks that ignite neighboring structures when displeased. | settlement |
-| Construct | **Ember-Scattering Sprite** *Māyā-born scintilla minor* | A small, fleeting spirit born from ritual embers that floats through the air, causing minor fires when displeased. | settlement |
-| Non-mammalian synapsid | **Estemmenosuchus Executioner** *Estemmenosuchus asuricus* | A massive, armored floodplain omnivore mutated with double jaw-strength, used for public execution rituals in Naraka. | underworld (lore only) |
-| Construct | **Feral Harappan Night-Stalker** *Māyā-born ferus* | A malevolent, clay-born construct that slips through the dark streets of Harappa, seeking to drain the warmth of the living. | settlement |
-| Root | **Fever-Root** *Curcuma asurica* | A mutated turmeric plant that grows near underworld rifts, its toxic, black rhizomes causing intense hallucinations when touched. | underworld (lore only) |
-| Non-mammalian synapsid | **Gorgonopsid Pack-Leader** *Gorgonops titan* | A larger, hyper-aggressive gorgonopsid bred by Asura generals to lead war-packs in battle. | plains, hills |
-| Non-mammalian synapsid | **Gorgonopsid War-Beast** *Gorgonops asuricus* | A shaggy-haired Permian predator selectively bred and genetically corrupted by Asuras to serve as heavy shock cavalry. | plains, hills |
-| Construct | **Heartwood Warden** *Homunculus silvaticus* | It has not moved since you sat down. | forest, wetland (lore only) |
-| Spectre | **Lethal Cave-Spectre** *Asura spectral* | A dark, floating entity born from the blood-spills of the first Asura invasion, guarding forgotten mountain tombs. | mountains |
-| Construct | **Lunar-Reflection Wraith** *Māyā-born spectral* | An incorporeal, tactile illusion manifested by lunar radiation refracting on the Great Bath's water, haunting lonely travelers. | desert, coast |
-| Reptile | **Naga Infiltrator** *Serpens simulans* | A secretive, shape-shifting serpent-human hybrid that slips into royal courts, carrying out the will of Takshak. | settlement |
-| Reptile | **Naga-Kin Sentry** *Serpens custos* | A semi-anthropomorphic serpent warrior that guards the sacred temples of Takshak, wielding bronze and stone spears. | settlement |
-| Pitcher plant | **Naraka Pitcher-Plant** *Nepenthes asurica* | A colossal carnivorous plant of the twilight zone, its wide, acid-filled pitcher capable of digesting entire small primates. | underworld (lore only) |
-| Flower | **Obsidian Rose** *Rosa obsidiana* | A rose bush with razor-sharp black petals that secrete a deadly coagulant, growing in the ruins of desecrated temples. | settlement |
-| Reptile | **Obsidian-Winged Serpent** *Serpens obsidianus* | A giant shape-shifting stone serpent with razor-sharp wings of volcanic glass, serving as the progenitor of the Naga clan. | mountains |
-| Tree | **Plunging-Fire Siege Tree** *Rakshasa-Vriksha* | A living tree magically and botanically tortured over decades, its trunk bent and reinforced with bronze to serve as a biomechanical catapult. | forest |
-| Spectre | **Quarry-Spawned Tendua** *Manticora quarry* | A manticore variant that haunts ancient stone quarries, its stone-hard fur blending into the weathered rock walls. | hills |
-| Non-avian dinosaur | **Rajasaurus Ambush-Drake** *Rajasaurus asuricus* | A colossal, feathered theropod predator genetically altered with Asura venom, serving as the ultimate fortress guardian. | settlement |
-| Tree | **Root-Anchored Artillery Tree** *Rakshasa-Vriksha ferrea* | A siege tree variant designed for defense, anchoring its stone-like roots deep into fortress walls to fling burning pitch. | forest, settlement |
-| Non-avian dinosaur | **Sand-Resurrected Behemoth** *Sauropodoligator arenarius* | A smaller, desert-bound variant of the Devourer, emerging from the sands of the Gedrosian wastes to hunt nomads. | desert |
-| Reptile | **Scutosaurus Battering-Ram** *Scutosaurus titan* | A massive scutosaur mutated with an bone-hard forehead plate, used to break down defensive palisades. | plains |
-| Reptile | **Scutosaurus Shield-Beast** *Scutosaurus asuricus* | A massive armored herbivore genetically engineered with iron-hard skin plates, utilized as mobile shield barriers in battles. | plains, hills |
-| Construct | **Stepwell Shadow** *Māyā-born umbra* | A shadow-lover variant that dwells in deep stepwells, wrapping around victims and pulling them into the dark waters. | river |
-| Worm | **Underworld Blood-Leech** *Hirudo asurica* | A giant aquatic parasite of the Naraka rivers that grows up to 3 feet, draining the vitality of anything that falls into the sulfurous waters. | underworld (lore only) |
-| Reptile | **Underworld Water-Snake** *Serpens asuricus* | A highly venomous, dark-scaled snake that swims in the sulfuric rivers of Naraka, its bite causing immediate paralysis. | underworld (lore only) |
-| Vine | **Violet Strangler-Vine** *Vitis violacea* | A thick, muscular vine that strangulates native trees, its violet-veined leaves exuding a sweet, sleep-inducing perfume. | forest |
-| Worm | **Void-Born Leech** *Hirudo titan* | A giant, 6-foot leech of the Naraka rifts that attaches to larger monsters, draining their magical energy. | underworld (lore only) |
-| Flower | **Whispering Blood-Orchid** *Orchis asurica* | A beautiful but unsettling orchid with fleshy, lip-like petals that whisper soft, mimicry-chime sounds to lure insects. | forest |
-| Construct | **White-Ash Bride** *Māyā-born ignis* | A short-lived, sentient female form that coalesces from ritual altar sparks, passionately violent and intensely hot to touch. | settlement |
-| Spectre | **Winged Behemoth Manticore** *Manticora titan* | An unnatural winged leopard with a human face, forged purely from brick-dust, shadow, and corrupted Asura mantras. | hills |
+| Species | Traits | What it is |
+|---|---|---|
+| **Ash-Skinned Courtesan**<br>*Māyā-born* | *mythic · Construct · river · wetland · settlement* | An artificial, female humanoid sculpted from river mud and lotus pollen, which later mutated into a flesh-hungry night-stalker. |
+| **Asura-Tainted Bat**<br>*Vespertilio asuricus minor* | *mythic · Mammal · forest · mountains* | A small, red-eyed bat that has mutated under the influence of Asura planets, feeding on blood and glowing insects. |
+| **Asura-Tainted Flesh-Vine**<br>*Vitis carnosa* | *mythic · Vine · forest* | A highly mutated forest climber with animal-like muscle fibers, capable of grasping and constricting small animals. |
+| **Asura-Tainted Gargoyle**<br>*Māyā-born tuli* | *mythic · Construct · lore only · sky_island · sky_underside* | A Māyā-born thing in the shape of a Tuli, its skin calcified into a stone-like hide. |
+| **Asura-Tainted Owl**<br>*Bubo asuricus* | *mythic · Bird · forest · hills* | A giant owl with four eyes that has mutated near portals, hunting night-stalkers and small primates. |
+| **Clay-Born Watcher**<br>*Māyā-born oculus* | *mythic · Construct · settlement* | An artificial, clay-sculpted eye construct animated by ancient mantras, used by Harappan lords to spy on their courts. |
+| **Colossal Void-Devourer**<br>*Sauropodoligator titan* | *mythic · Non-avian dinosaur · wetland · river* | An extinct sauropod-crocodile hybrid resurrected from buried bones via dark Asura magic, crowned with a cursed human visage. |
+| **Crimson Blood-Weed**<br>*Vitis asurica* | *mythic · Vine · forest* | An invasive, predatory vine mutated by the bleeding energies of Asura planets, developing pulsing veins and a hunger for flesh. |
+| **Cursed Ash-Fern**<br>*Pteris asurica* | *mythic · Fern · forest · hills* | A fern with charcoal-black fronds that grows only in soil scorched by fire-brides, absorbing light and warmth from its surroundings. |
+| **Dimetrodon Scout-Mount**<br>*Dimetrodon minor* | *mythic · Non-mammalian synapsid · mountains* | A faster, sleek sail-backed synapsid used by Asura scouts to navigate the rugged, volcanic frontiers. |
+| **Dimetrodon War-Mount**<br>*Dimetrodon asuricus* | *mythic · Non-mammalian synapsid · desert · plains* | A sail-backed synapsid war predator mutated with bio-reactive colors and enhanced aggression for Asura commanders. |
+| **Ember-Born Dancer**<br>*Māyā-born scintilla* | *mythic · Construct · settlement* | A fire-bride variant that dances within sacrificial bonfires, throwing sparks that ignite neighboring structures when displeased. |
+| **Ember-Scattering Sprite**<br>*Māyā-born scintilla minor* | *mythic · Construct · settlement* | A small, fleeting spirit born from ritual embers that floats through the air, causing minor fires when displeased. |
+| **Estemmenosuchus Executioner**<br>*Estemmenosuchus asuricus* | *mythic · Non-mammalian synapsid · lore only · underworld* | A massive, armored floodplain omnivore mutated with double jaw-strength, used for public execution rituals in Naraka. |
+| **Feral Harappan Night-Stalker**<br>*Māyā-born ferus* | *mythic · Construct · settlement* | A malevolent, clay-born construct that slips through the dark streets of Harappa, seeking to drain the warmth of the living. |
+| **Fever-Root**<br>*Curcuma asurica* | *mythic · Root · lore only · underworld* | A mutated turmeric plant that grows near underworld rifts, its toxic, black rhizomes causing intense hallucinations when touched. |
+| **Gorgonopsid Pack-Leader**<br>*Gorgonops titan* | *mythic · Non-mammalian synapsid · plains · hills* | A larger, hyper-aggressive gorgonopsid bred by Asura generals to lead war-packs in battle. |
+| **Gorgonopsid War-Beast**<br>*Gorgonops asuricus* | *mythic · Non-mammalian synapsid · plains · hills* | A shaggy-haired Permian predator selectively bred and genetically corrupted by Asuras to serve as heavy shock cavalry. |
+| **Heartwood Warden**<br>*Homunculus silvaticus* | *rare · Construct · lore only · forest · wetland* | It has not moved since you sat down. |
+| **Lethal Cave-Spectre**<br>*Asura spectral* | *mythic · Spectre · mountains* | A dark, floating entity born from the blood-spills of the first Asura invasion, guarding forgotten mountain tombs. |
+| **Lunar-Reflection Wraith**<br>*Māyā-born spectral* | *mythic · Construct · desert · coast* | An incorporeal, tactile illusion manifested by lunar radiation refracting on the Great Bath's water, haunting lonely travelers. |
+| **Naga Infiltrator**<br>*Serpens simulans* | *mythic · Reptile · settlement* | A secretive, shape-shifting serpent-human hybrid that slips into royal courts, carrying out the will of Takshak. |
+| **Naga-Kin Sentry**<br>*Serpens custos* | *mythic · Reptile · settlement* | A semi-anthropomorphic serpent warrior that guards the sacred temples of Takshak, wielding bronze and stone spears. |
+| **Naraka Pitcher-Plant**<br>*Nepenthes asurica* | *mythic · Pitcher plant · lore only · underworld* | A colossal carnivorous plant of the twilight zone, its wide, acid-filled pitcher capable of digesting entire small primates. |
+| **Obsidian Rose**<br>*Rosa obsidiana* | *mythic · Flower · settlement* | A rose bush with razor-sharp black petals that secrete a deadly coagulant, growing in the ruins of desecrated temples. |
+| **Obsidian-Winged Serpent**<br>*Serpens obsidianus* | *mythic · Reptile · mountains* | A giant shape-shifting stone serpent with razor-sharp wings of volcanic glass, serving as the progenitor of the Naga clan. |
+| **Plunging-Fire Siege Tree**<br>*Rakshasa-Vriksha* | *mythic · Tree · forest* | A living tree magically and botanically tortured over decades, its trunk bent and reinforced with bronze to serve as a biomechanical catapult. |
+| **Quarry-Spawned Tendua**<br>*Manticora quarry* | *mythic · Spectre · hills* | A manticore variant that haunts ancient stone quarries, its stone-hard fur blending into the weathered rock walls. |
+| **Rajasaurus Ambush-Drake**<br>*Rajasaurus asuricus* | *mythic · Non-avian dinosaur · settlement* | A colossal, feathered theropod predator genetically altered with Asura venom, serving as the ultimate fortress guardian. |
+| **Root-Anchored Artillery Tree**<br>*Rakshasa-Vriksha ferrea* | *mythic · Tree · forest · settlement* | A siege tree variant designed for defense, anchoring its stone-like roots deep into fortress walls to fling burning pitch. |
+| **Sand-Resurrected Behemoth**<br>*Sauropodoligator arenarius* | *mythic · Non-avian dinosaur · desert* | A smaller, desert-bound variant of the Devourer, emerging from the sands of the Gedrosian wastes to hunt nomads. |
+| **Scutosaurus Battering-Ram**<br>*Scutosaurus titan* | *mythic · Reptile · plains* | A massive scutosaur mutated with an bone-hard forehead plate, used to break down defensive palisades. |
+| **Scutosaurus Shield-Beast**<br>*Scutosaurus asuricus* | *mythic · Reptile · plains · hills* | A massive armored herbivore genetically engineered with iron-hard skin plates, utilized as mobile shield barriers in battles. |
+| **Stepwell Shadow**<br>*Māyā-born umbra* | *mythic · Construct · river* | A shadow-lover variant that dwells in deep stepwells, wrapping around victims and pulling them into the dark waters. |
+| **Underworld Blood-Leech**<br>*Hirudo asurica* | *mythic · Worm · lore only · underworld* | A giant aquatic parasite of the Naraka rivers that grows up to 3 feet, draining the vitality of anything that falls into the sulfurous waters. |
+| **Underworld Water-Snake**<br>*Serpens asuricus* | *mythic · Reptile · lore only · underworld* | A highly venomous, dark-scaled snake that swims in the sulfuric rivers of Naraka, its bite causing immediate paralysis. |
+| **Violet Strangler-Vine**<br>*Vitis violacea* | *mythic · Vine · forest* | A thick, muscular vine that strangulates native trees, its violet-veined leaves exuding a sweet, sleep-inducing perfume. |
+| **Void-Born Leech**<br>*Hirudo titan* | *mythic · Worm · lore only · underworld* | A giant, 6-foot leech of the Naraka rifts that attaches to larger monsters, draining their magical energy. |
+| **Whispering Blood-Orchid**<br>*Orchis asurica* | *mythic · Flower · forest* | A beautiful but unsettling orchid with fleshy, lip-like petals that whisper soft, mimicry-chime sounds to lure insects. |
+| **White-Ash Bride**<br>*Māyā-born ignis* | *mythic · Construct · settlement* | A short-lived, sentient female form that coalesces from ritual altar sparks, passionately violent and intensely hot to touch. |
+| **Winged Behemoth Manticore**<br>*Manticora titan* | *mythic · Spectre · hills* | An unnatural winged leopard with a human face, forged purely from brick-dust, shadow, and corrupted Asura mantras. |
 
 ## Shattered Sea & Mappa Mundi
 
 *41 recorded.*
 
-| | Species | What it is | Where |
-|---|---|---|---|
-| Mammal | **Abyssal Blue Leviathan** *Balaenoptera abyssalis* | A colossal baleen whale of the deep Tethys Sea, whose thick hide and bone plate are harvested for engineering maritime vessels. | sea |
-| Crocodilian | **Banded Scavenger Voay** *Voay lineatus* | A smaller, striped terrestrial crocodile that follows larger predators to feed on the remains of giant avian prey. | sea, forest |
-| Mammal | **Bone-Plated Orca** *Orcinus osteoplax* | A highly aggressive, predatory Tethyan toothed whale with thick bony armor plates protecting its skull and dorsal ridge. | sea |
-| Fish | **Coral-dwelling Moray** *Muraena coralina* | A long, serpentine fish with a brightly patterned skin that mimics the red blood-coral of the Shattered Sea reefs. | sea |
-| Bird | **Crested Sylvian** *Sylvianus cristatus* | A terrestrial, flightless theropod dromaeosaur of Mappa Mundi that rules the jungle floor, using pack coordination to hunt. | forest |
-| Fish | **Flying-Fish of the Tethys** *Exocoetus tethys* | A small, schooling fish that uses enlarged pectoral fins to glide over the ocean waves, escaping predatory toothed whales. | sea |
-| Fern | **Giant Bird-Nest Fern** *Asplenium maximus* | A massive epiphyte that grows in the forks of giant ancient trees, catching rainwater and debris to create mini-ecosystems. | forest |
-| Mollusc | **Giant Blue-Ringed Octopus** *Octopus caeruleus* | A highly intelligent, marine cephalopod of the Shattered Sea that flashes glowing blue bands to distract predators. | sea |
-| Crocodilian | **Giant Horned Voay** *Voay maximus* | A colossal, fully terrestrial galloping crocodile with thick hide and brow-horns, serving as the apex predator of the dry scrub. | sea, forest |
-| Bird | **Giant Jungle Raptor** *Sylvianus gigas* | A winged, predatory dinosaurid (pterosaur-avian link) with a massive beak, nesting in the highest forest canopies of the southern islands. | forest |
-| Palm | **Giant Mangrove-Palm** *Nypa gigas* | A unique, trunkless palm that grows directly in brackish delta waters, its robust fruit clusters floating on the tides. | coast |
-| Fish | **Hammerhead Reef-Shark** *Sphyrna reef* | A sleek, coastal shark with a broad, sensory-rich skull designed to detect prey hidden beneath the sandy reef floors. | sea |
-| Pitcher plant | **Hanging Monkey-Pitcher** *Nepenthes vanara* | A large carnivorous vine of the Mappa Mundi canopy, secreting a sweet, narcotic liquid that traps large insects and small frogs. | forest |
-| Bird | **Jungle Hornbill** *Buceros sylvanus* | A magnificent bird with a double-pointed casque, nesting in old hollow trees and feeding on wild figs. | forest |
-| Amphibian | **Jungle Horned Toad** *Megophrys sylvanica* | A leaf-mimicking toad with pointed flaps over its eyes, hiding in the leaf litter of Mappa Mundi. | forest |
-| Reptile | **Jungle python** *Python sylvanus* | A massive arboreal snake with emerald-green scales, blending into the hanging vines to drop onto terrestrial prey. | forest |
-| Grass | **Jungle-Crested Bamboo** *Bambusa sylvanica* | A fast-growing, heavy bamboo with thick walls and high silica content, used for constructing cages and outriggers. | forest |
-| Bird | **Jungle-Crested Mount** *Aepyornis crested* | A vibrantly colored elephantbird subspecies adapted to humid rainforest floors, capable of breaking through dense thickets. | forest |
-| Coral | **Lapis-Lazuli Reef-Builder** *Tethysolithus lapis* | A coral species with a dense, brilliant-blue calcified structure, highly prized for jewelry and architectural inlay. | sea |
-| Tree | **Mappa Mundi Banyan** *Ficus mappa* | A colossal, ancient tree whose aerial roots drop down to form a forest-like grove from a single trunk, housing thousands of canopy birds. | forest, landmark |
-| Reptile | **Mappa Mundi Flying-Lizard** *Draco sylvanus* | A small, colorful lizard with skin membranes that let it glide between tall jungle trees to escape tree-snakes. | forest |
-| Mammal | **Mappa Mundi Forest-Cat** *Prionailurus sylvanus* | A spotted wildcat with a long, balancing tail, hunting squirrels and frogs in the deep jungle canopy. | forest |
-| Amphibian | **Mappa Mundi Tree-Frog** *Hyla sylvanica* | A tiny, brightly colored amphibian with sticky toes, secreting a mild toxin used by local hunters to coat arrowheads. | forest |
-| Mollusc | **Mappa Mundi Tree-Snail** *Helix sylvanica* | A colorful land snail with a spiraled shell, feeding on moss and lichens growing on jungle trunks. | forest |
-| Coral | **Red Blood-Coral** *Tethysolithus rubra* | An aggressive, fast-growing coral polyp that builds fossilized ridges and reclaims ancient stone aqueducts in the marshes. | sea |
-| Mollusc | **Reef-dwelling Octopus** *Octopus reef* | An octopus with highly textured skin that mimics coral, hunting small crabs and fish in shallow waters. | sea |
-| Arachnid | **Sea Scorpion Queen** *Shrīmā mimetica* | A predatory Eurypterid of the southern lagoons that has undergone mimetic-devolvement, resembling human women to lure prey. | sea |
-| Fish | **Shattered Sea Barracuda** *Sphyraena shattered* | A sleek, silver predator with sharp teeth, hunting smaller schooling fish near the coral reefs. | sea |
-| Seaweed | **Shattered Sea Kelp** *Macrocystis tethyan* | A colossal marine alga that forms dense underwater forests, providing shelter and forage for juvenile cetaceans and rays. | sea |
-| Mollusc | **Shattered Sea Oyster** *Ostrea shattered* | A massive bivalve that produces iridescent black pearls, highly coveted by Vanga maritime merchants. | sea |
-| Grass | **Shattered Seaweed-Silk** *Zostera marina* | A marine flowering plant that forms extensive meadows in the shallows, harvested to weave fine, water-resistant cordage. | sea |
-| Arachnid | **Shrīmā** *Eurypterus mimeticus* | Something stands in the shallow lagoon at dusk, draped in seaweed-silk and cowrie shells, swaying as though dancing. | coast, sea |
-| Fish | **Southern Reef-Stingray** *Dasyatis meridionalis* | A flat, sand-colored fish that lies buried on the reef floor, armed with a venomous tail spine. | sea |
-| Bird | **Southern Sea-Eagle** *Haliaeetus meridionalis* | A large bird of prey with a white head and chest, nesting on high cliff edges and swooping down to seize marine fish. | sea |
-| Reptile | **Southern Sea-Turtle** *Chelonia meridionalis* | A large turtle that migrates thousands of miles across the Tethys, nesting on isolated volcanic beaches. | sea |
-| Bird | **Stealth-Patterned Theropod** *Sylvianus occultus* | A color-changing subspecies of Sylvian that mimics the jungle foliage, allowing silent ambush in the dense canopy. | forest |
-| Bird | **Steppe-Plumed Elephantbird** *Aepyornis stephensis* | A massive, shaggy-feathered ratite tamed by traveling merchants to serve as heavy beasts of burden on coastal routes. | coast, plains |
-| Fish | **Tethyan Blue-Fin Tuna** *Thunnus tethys* | A fast-swimming, silver-scaled predatory fish that travels in large schools in the open waters of the Shattered Sea. | sea |
-| Mollusc | **Tethyan Reef-Lurker** *Murex tethys* | A venomous, spiny mollusk that hides in coral crevices, preying on small fish with a rapid, toxic sting. | sea |
-| Mammal | **Tethys Leviathan Calf** *Balaenoptera minor* | A young, playful whale that travels in the warm coastal shallows, protected by the pod's bone-plated matriarchs. | sea |
-| Vine | **Volcanic Beach Creeper** *Ipomoea vulcanica* | A hardy, salt-tolerant vine with purple bell-shaped flowers, binding the black volcanic sands along the island's shores. | forest |
+| Species | Traits | What it is |
+|---|---|---|
+| **Abyssal Blue Leviathan**<br>*Balaenoptera abyssalis* | *mythic · Mammal · sea* | A colossal baleen whale of the deep Tethys Sea, whose thick hide and bone plate are harvested for engineering maritime vessels. |
+| **Banded Scavenger Voay**<br>*Voay lineatus* | *rare · Crocodilian · sea · forest* | A smaller, striped terrestrial crocodile that follows larger predators to feed on the remains of giant avian prey. |
+| **Bone-Plated Orca**<br>*Orcinus osteoplax* | *common · Mammal · sea* | A highly aggressive, predatory Tethyan toothed whale with thick bony armor plates protecting its skull and dorsal ridge. |
+| **Coral-dwelling Moray**<br>*Muraena coralina* | *common · Fish · sea* | A long, serpentine fish with a brightly patterned skin that mimics the red blood-coral of the Shattered Sea reefs. |
+| **Crested Sylvian**<br>*Sylvianus cristatus* | *common · Bird · forest* | A terrestrial, flightless theropod dromaeosaur of Mappa Mundi that rules the jungle floor, using pack coordination to hunt. |
+| **Flying-Fish of the Tethys**<br>*Exocoetus tethys* | *common · Fish · sea* | A small, schooling fish that uses enlarged pectoral fins to glide over the ocean waves, escaping predatory toothed whales. |
+| **Giant Bird-Nest Fern**<br>*Asplenium maximus* | *rare · Fern · forest* | A massive epiphyte that grows in the forks of giant ancient trees, catching rainwater and debris to create mini-ecosystems. |
+| **Giant Blue-Ringed Octopus**<br>*Octopus caeruleus* | *rare · Mollusc · sea* | A highly intelligent, marine cephalopod of the Shattered Sea that flashes glowing blue bands to distract predators. |
+| **Giant Horned Voay**<br>*Voay maximus* | *mythic · Crocodilian · sea · forest* | A colossal, fully terrestrial galloping crocodile with thick hide and brow-horns, serving as the apex predator of the dry scrub. |
+| **Giant Jungle Raptor**<br>*Sylvianus gigas* | *rare · Bird · forest* | A winged, predatory dinosaurid (pterosaur-avian link) with a massive beak, nesting in the highest forest canopies of the southern islands. |
+| **Giant Mangrove-Palm**<br>*Nypa gigas* | *rare · Palm · coast* | A unique, trunkless palm that grows directly in brackish delta waters, its robust fruit clusters floating on the tides. |
+| **Hammerhead Reef-Shark**<br>*Sphyrna reef* | *common · Fish · sea* | A sleek, coastal shark with a broad, sensory-rich skull designed to detect prey hidden beneath the sandy reef floors. |
+| **Hanging Monkey-Pitcher**<br>*Nepenthes vanara* | *common · Pitcher plant · forest* | A large carnivorous vine of the Mappa Mundi canopy, secreting a sweet, narcotic liquid that traps large insects and small frogs. |
+| **Jungle Hornbill**<br>*Buceros sylvanus* | *common · Bird · forest* | A magnificent bird with a double-pointed casque, nesting in old hollow trees and feeding on wild figs. |
+| **Jungle Horned Toad**<br>*Megophrys sylvanica* | *common · Amphibian · forest* | A leaf-mimicking toad with pointed flaps over its eyes, hiding in the leaf litter of Mappa Mundi. |
+| **Jungle python**<br>*Python sylvanus* | *rare · Reptile · forest* | A massive arboreal snake with emerald-green scales, blending into the hanging vines to drop onto terrestrial prey. |
+| **Jungle-Crested Bamboo**<br>*Bambusa sylvanica* | *common · Grass · forest* | A fast-growing, heavy bamboo with thick walls and high silica content, used for constructing cages and outriggers. |
+| **Jungle-Crested Mount**<br>*Aepyornis crested* | *common · Bird · forest* | A vibrantly colored elephantbird subspecies adapted to humid rainforest floors, capable of breaking through dense thickets. |
+| **Lapis-Lazuli Reef-Builder**<br>*Tethysolithus lapis* | *common · Coral · sea* | A coral species with a dense, brilliant-blue calcified structure, highly prized for jewelry and architectural inlay. |
+| **Mappa Mundi Banyan**<br>*Ficus mappa* | *mythic · Tree · forest · landmark* | A colossal, ancient tree whose aerial roots drop down to form a forest-like grove from a single trunk, housing thousands of canopy birds. |
+| **Mappa Mundi Flying-Lizard**<br>*Draco sylvanus* | *common · Reptile · forest* | A small, colorful lizard with skin membranes that let it glide between tall jungle trees to escape tree-snakes. |
+| **Mappa Mundi Forest-Cat**<br>*Prionailurus sylvanus* | *common · Mammal · forest* | A spotted wildcat with a long, balancing tail, hunting squirrels and frogs in the deep jungle canopy. |
+| **Mappa Mundi Tree-Frog**<br>*Hyla sylvanica* | *common · Amphibian · forest* | A tiny, brightly colored amphibian with sticky toes, secreting a mild toxin used by local hunters to coat arrowheads. |
+| **Mappa Mundi Tree-Snail**<br>*Helix sylvanica* | *common · Mollusc · forest* | A colorful land snail with a spiraled shell, feeding on moss and lichens growing on jungle trunks. |
+| **Red Blood-Coral**<br>*Tethysolithus rubra* | *common · Coral · sea* | An aggressive, fast-growing coral polyp that builds fossilized ridges and reclaims ancient stone aqueducts in the marshes. |
+| **Reef-dwelling Octopus**<br>*Octopus reef* | *common · Mollusc · sea* | An octopus with highly textured skin that mimics coral, hunting small crabs and fish in shallow waters. |
+| **Sea Scorpion Queen**<br>*Shrīmā mimetica* | *common · Arachnid · sea* | A predatory Eurypterid of the southern lagoons that has undergone mimetic-devolvement, resembling human women to lure prey. |
+| **Shattered Sea Barracuda**<br>*Sphyraena shattered* | *common · Fish · sea* | A sleek, silver predator with sharp teeth, hunting smaller schooling fish near the coral reefs. |
+| **Shattered Sea Kelp**<br>*Macrocystis tethyan* | *mythic · Seaweed · sea* | A colossal marine alga that forms dense underwater forests, providing shelter and forage for juvenile cetaceans and rays. |
+| **Shattered Sea Oyster**<br>*Ostrea shattered* | *rare · Mollusc · sea* | A massive bivalve that produces iridescent black pearls, highly coveted by Vanga maritime merchants. |
+| **Shattered Seaweed-Silk**<br>*Zostera marina* | *common · Grass · sea* | A marine flowering plant that forms extensive meadows in the shallows, harvested to weave fine, water-resistant cordage. |
+| **Shrīmā**<br>*Eurypterus mimeticus* | *mythic · Arachnid · coast · sea* | Something stands in the shallow lagoon at dusk, draped in seaweed-silk and cowrie shells, swaying as though dancing. |
+| **Southern Reef-Stingray**<br>*Dasyatis meridionalis* | *common · Fish · sea* | A flat, sand-colored fish that lies buried on the reef floor, armed with a venomous tail spine. |
+| **Southern Sea-Eagle**<br>*Haliaeetus meridionalis* | *common · Bird · sea* | A large bird of prey with a white head and chest, nesting on high cliff edges and swooping down to seize marine fish. |
+| **Southern Sea-Turtle**<br>*Chelonia meridionalis* | *common · Reptile · sea* | A large turtle that migrates thousands of miles across the Tethys, nesting on isolated volcanic beaches. |
+| **Stealth-Patterned Theropod**<br>*Sylvianus occultus* | *common · Bird · forest* | A color-changing subspecies of Sylvian that mimics the jungle foliage, allowing silent ambush in the dense canopy. |
+| **Steppe-Plumed Elephantbird**<br>*Aepyornis stephensis* | *rare · Bird · coast · plains* | A massive, shaggy-feathered ratite tamed by traveling merchants to serve as heavy beasts of burden on coastal routes. |
+| **Tethyan Blue-Fin Tuna**<br>*Thunnus tethys* | *common · Fish · sea* | A fast-swimming, silver-scaled predatory fish that travels in large schools in the open waters of the Shattered Sea. |
+| **Tethyan Reef-Lurker**<br>*Murex tethys* | *common · Mollusc · sea* | A venomous, spiny mollusk that hides in coral crevices, preying on small fish with a rapid, toxic sting. |
+| **Tethys Leviathan Calf**<br>*Balaenoptera minor* | *common · Mammal · sea* | A young, playful whale that travels in the warm coastal shallows, protected by the pod's bone-plated matriarchs. |
+| **Volcanic Beach Creeper**<br>*Ipomoea vulcanica* | *common · Vine · forest* | A hardy, salt-tolerant vine with purple bell-shaped flowers, binding the black volcanic sands along the island's shores. |
 
 ## Ganges Lava Sea
 
 *40 recorded.*
 
-| | Species | What it is | Where |
-|---|---|---|---|
-| Grass | **Antarctic Kelp-Grass** *Zostera antarctica* | A tough, cold-tolerant sea-grass that forms dense beds along the glacial shores, feeding seals and small fish. | lava_field, mountains |
-| Bird | **Antarctic Petrel** *Thalassoica antarctica* | A dark-winged bird that flies along the immense glacial cliffs of the deep south, nesting in rocky crevices. | lava_field, mountains |
-| Bird | **Antarctic Skua** *Catharacta antarctica* | A fierce, scavenging seabird that nests near the glacial bays, stealing fish from seals and other birds. | lava_field, mountains |
-| Insect | **Ash-Field Ground-Beetle** *Carabus cinereus* | A large, heat-resistant insect that tunnels through soft volcanic ash, feeding on organic debris carried down by streams. | lava_field, mountains |
-| Insect | **Ash-Plains Cricket** *Gryllus cinereus* | An insect with a soot-colored body, feeding on tough, ash-tolerant grasses along the basalt fields. | lava_field, mountains |
-| Arachnid | **Ash-Valley Scorpion** *Buthus cinereus* | A dark grey scorpion that blends into volcanic ash, active during the cooler night hours. | lava_field, mountains |
-| Mollusc | **Asura-Marked Black Ammonite** *Ammonites asuricus* | A dark, basalt-grey giant ammonite with glowing, sulfur-colored veins along its ridges, native to the volcanic ocean vents. | lava_field, mountains |
-| Reptile | **Basalt Cave-Lurker** *Agama basaltica* | A dark, stone-skinned lizard that lives in the deep fissures of cooled lava plains, feeding on iron snails and magma-crabs. | lava_field, mountains |
-| Crustacean | **Basalt-Armored Scavenger** *Gecarcinus basalticus* | A lava crab variant that feeds on mineral deposits along the cooled basalt shores, its claws strong enough to crush rock. | lava_field, mountains |
-| Crustacean | **Boiling-Water Hermit-Crab** *Pagurus vulcanus* | A crab that uses discarded basalt-snail shells, thriving in the scalding rock pools near the lava lake. | lava_field, mountains |
-| Mollusc | **Copper-Veined Snail** *Chrysomallon chalceus* | An extremophile gastropod of the lava lake, fusing copper and volcanic ore into a heavy, metallic shell. | lava_field, mountains |
-| Tree | **Crimson-Leaved Ash-Banyan** *Ficus ash-banyana* | A resilient tree capable of rooting directly into cooled basalt flows, feeding on mineral-rich volcanic ash. | lava_field, mountains |
-| Worm | **Crimson-Tipped Tubeworm** *Riftia asurica* | A giant worm species that grows near active underwater vents, forming dense crimson-tipped clusters. | lava_field, mountains |
-| Flower | **Deep-Earth Obsidian Lotus** *Nymphaea obsidiana* | A rare lotus variety with glossy, black glass-like petals that pulse softly with the earth's magmatic heat. | wetland |
-| Fish | **Frost-Whisker Carp** *Cyprinus glacialis* | An ancient fish species possessing natural antifreeze glycoproteins, glowing with a pale blue light beneath glacial ice. | lava_field, mountains |
-| Mollusc | **Giant Steel-Shelled Snail** *Chrysomallon ferreus* | A massive iron snail whose shell consists of layered iron-ash and basalt, reflecting the glowing fire of the lava lake. | lava_field, mountains |
-| Insect | **Glacial Ice-Flea** *Isotoma glacialis* | A tiny, specialized insect that feeds on pollen and debris deposited on the surface of glaciers near the ice wall. | lava_field, mountains |
-| Lichen | **Glacial Lichen** *Lichen glacialis* | A slow-growing, pale blue lichen that covers the stone ruins near the ice wall, absorbing moisture directly from the frost. | lava_field, mountains |
-| Mammal | **Glacial Ribbon-Seal** *Phoca ribbon* | A marine mammal with distinctive white band markings, hunting Sarovar fish beneath the ice shelves. | lava_field, mountains |
-| Mammal | **Glacial Snow-Hare** *Lepus glacialis* | A pure white, thick-furred hare that lives near the Antarctic ice wall, its feet padded like snowshoes to move over glaciers. | lava_field, mountains |
-| Arachnid | **Glacial Wolf-Spider** *Lycosa glacialis* | A large, furry spider that hunts snow-hares and small rodents near the ice wall, its body containing high sugar-antifreeze. | lava_field, mountains |
-| Mammal | **Glacier-Edged Seal** *Phoca glacialis* | A robust marine mammal with a thick layer of blubber, hunting Sarovar fish beneath the ice shelves of the deep south. | lava_field, mountains |
-| Flower | **Golden Amber Lotus** *Nymphaea succinea* | A primordial, mineral-absorbing plant that grows in thermal pools, its translucent petals glowing like polished amber. | wetland |
-| Insect | **Lava-Basalt Centipede** *Scolopendra vulcanica* | A multi-legged, fire-resistant invertebrate that hunts small lizards and insects in cooled basalt cracks. | lava_field, mountains |
-| Fern | **Lava-Glass Fern** *Pteris vulcanica* | A primitive fern with semi-translucent, silica-rich leaves that shimmer like glass, growing in damp volcanic crevices. | lava_field, mountains |
-| Crustacean | **Lava-Pool Shrimp** *Palaemon vulcanus* | A tiny, transparent crustacean that swims in the scalding rock pools, feeding on specialized thermophilic bacteria. | lava_field, mountains |
-| Worm | **Lava-Vent Tubeworm** *Riftia vulcanica* | A giant worm species that grows in dense colonies around underwater magma vents, absorbing mineral nutrients directly from the water. | lava_field, mountains |
-| Crustacean | **Magma-Claw Crab** *Gecarcinus magma* | A deep-sea vent crustacean that has adapted to direct magma exposure, possessing a heavy, obsidian-black carapace. | lava_field, mountains |
-| Mollusc | **Serene Brown Ammonite** *Ammonites pacificus* | A giant, peaceful nautiloid with an earthy, wood-patterned shell that drifts calmly through the steaming, boiling water zones. | lava_field, mountains |
-| Fish | **Shambala Ice-Pike** *Esox shambala* | A predatory, crystal-scaled fish of the frozen mountain lakes, specializing in hunting frost-whisker carp near glacier edges. | lava_field, mountains |
-| Bird | **Shambala Snow-Partridge** *Lerwa shambala* | A thick-feathered bird with camouflaged plumage, nesting in the rocky scree of the frozen mountain peaks. | lava_field, mountains |
-| Moss | **Snow-Looming Moss** *Bryum glaciale* | A dense, cushioning moss that thrives on glacier-bound stones, providing insulation for snow-hare nests. | lava_field, mountains |
-| Mammal | **Soot-Furred Rat** *Rattus cinereus* | A small, highly resilient rodent with heat-resistant, ash-colored fur, nesting in the stone ruins near the lava lake. | lava_field, mountains |
-| Grass | **Soot-Grass** *Agrostis cinerea* | A tough, ash-tolerant grass that grows in tufts along the cooled basalt plains, providing forage for heat-tolerant fauna. | lava_field, mountains |
-| Bird | **Soot-Winged Falcon** *Falco cinereus* | A predatory bird of the ash valleys, its plumage colored like charcoal to remain hidden against the dark volcanic sky. | lava_field, mountains |
-| Bird | **Sooty Shearwater** *Puffinus cinereus* | A seabird with charcoal-colored feathers, nesting in the high cliffs overlooking the boiling bays. | hills |
-| Insect | **Volcanic Ash-Moth** *Lymantria vulcanica* | A moth with dusty grey wings, its larvae feeding on the tough leaves of ash-banyan trees. | lava_field, mountains |
-| Amphibian | **Volcanic Salamander** *Salamandra vulcanica* | An amphibian with fire-resistant skin that lives in the warm mud pools near the caldera edges, feeding on small ash-beetles. | lava_field, mountains |
-| Flower | **Volcanic Sulfur-Flower** *Sulfuraria lutea* | A low, bright-yellow wildflower that grows near active sulfur vents, utilizing chemical-heavy soil to produce pungent nectar. | lava_field, mountains |
-| Tree | **Weeping Charcoal Tree** *Ficus cinereus* | An ash-banyan subspecies with dark, charcoal-like bark and weeping branches that secrete a non-flammable, waxy resin. | forest |
+| Species | Traits | What it is |
+|---|---|---|
+| **Antarctic Kelp-Grass**<br>*Zostera antarctica* | *rare · Grass · lava_field · mountains* | A tough, cold-tolerant sea-grass that forms dense beds along the glacial shores, feeding seals and small fish. |
+| **Antarctic Petrel**<br>*Thalassoica antarctica* | *rare · Bird · lava_field · mountains* | A dark-winged bird that flies along the immense glacial cliffs of the deep south, nesting in rocky crevices. |
+| **Antarctic Skua**<br>*Catharacta antarctica* | *rare · Bird · lava_field · mountains* | A fierce, scavenging seabird that nests near the glacial bays, stealing fish from seals and other birds. |
+| **Ash-Field Ground-Beetle**<br>*Carabus cinereus* | *rare · Insect · lava_field · mountains* | A large, heat-resistant insect that tunnels through soft volcanic ash, feeding on organic debris carried down by streams. |
+| **Ash-Plains Cricket**<br>*Gryllus cinereus* | *rare · Insect · lava_field · mountains* | An insect with a soot-colored body, feeding on tough, ash-tolerant grasses along the basalt fields. |
+| **Ash-Valley Scorpion**<br>*Buthus cinereus* | *rare · Arachnid · lava_field · mountains* | A dark grey scorpion that blends into volcanic ash, active during the cooler night hours. |
+| **Asura-Marked Black Ammonite**<br>*Ammonites asuricus* | *rare · Mollusc · lava_field · mountains* | A dark, basalt-grey giant ammonite with glowing, sulfur-colored veins along its ridges, native to the volcanic ocean vents. |
+| **Basalt Cave-Lurker**<br>*Agama basaltica* | *rare · Reptile · lava_field · mountains* | A dark, stone-skinned lizard that lives in the deep fissures of cooled lava plains, feeding on iron snails and magma-crabs. |
+| **Basalt-Armored Scavenger**<br>*Gecarcinus basalticus* | *rare · Crustacean · lava_field · mountains* | A lava crab variant that feeds on mineral deposits along the cooled basalt shores, its claws strong enough to crush rock. |
+| **Boiling-Water Hermit-Crab**<br>*Pagurus vulcanus* | *rare · Crustacean · lava_field · mountains* | A crab that uses discarded basalt-snail shells, thriving in the scalding rock pools near the lava lake. |
+| **Copper-Veined Snail**<br>*Chrysomallon chalceus* | *rare · Mollusc · lava_field · mountains* | An extremophile gastropod of the lava lake, fusing copper and volcanic ore into a heavy, metallic shell. |
+| **Crimson-Leaved Ash-Banyan**<br>*Ficus ash-banyana* | *rare · Tree · lava_field · mountains* | A resilient tree capable of rooting directly into cooled basalt flows, feeding on mineral-rich volcanic ash. |
+| **Crimson-Tipped Tubeworm**<br>*Riftia asurica* | *rare · Worm · lava_field · mountains* | A giant worm species that grows near active underwater vents, forming dense crimson-tipped clusters. |
+| **Deep-Earth Obsidian Lotus**<br>*Nymphaea obsidiana* | *rare · Flower · wetland* | A rare lotus variety with glossy, black glass-like petals that pulse softly with the earth's magmatic heat. |
+| **Frost-Whisker Carp**<br>*Cyprinus glacialis* | *rare · Fish · lava_field · mountains* | An ancient fish species possessing natural antifreeze glycoproteins, glowing with a pale blue light beneath glacial ice. |
+| **Giant Steel-Shelled Snail**<br>*Chrysomallon ferreus* | *rare · Mollusc · lava_field · mountains* | A massive iron snail whose shell consists of layered iron-ash and basalt, reflecting the glowing fire of the lava lake. |
+| **Glacial Ice-Flea**<br>*Isotoma glacialis* | *rare · Insect · lava_field · mountains* | A tiny, specialized insect that feeds on pollen and debris deposited on the surface of glaciers near the ice wall. |
+| **Glacial Lichen**<br>*Lichen glacialis* | *rare · Lichen · lava_field · mountains* | A slow-growing, pale blue lichen that covers the stone ruins near the ice wall, absorbing moisture directly from the frost. |
+| **Glacial Ribbon-Seal**<br>*Phoca ribbon* | *rare · Mammal · lava_field · mountains* | A marine mammal with distinctive white band markings, hunting Sarovar fish beneath the ice shelves. |
+| **Glacial Snow-Hare**<br>*Lepus glacialis* | *rare · Mammal · lava_field · mountains* | A pure white, thick-furred hare that lives near the Antarctic ice wall, its feet padded like snowshoes to move over glaciers. |
+| **Glacial Wolf-Spider**<br>*Lycosa glacialis* | *rare · Arachnid · lava_field · mountains* | A large, furry spider that hunts snow-hares and small rodents near the ice wall, its body containing high sugar-antifreeze. |
+| **Glacier-Edged Seal**<br>*Phoca glacialis* | *rare · Mammal · lava_field · mountains* | A robust marine mammal with a thick layer of blubber, hunting Sarovar fish beneath the ice shelves of the deep south. |
+| **Golden Amber Lotus**<br>*Nymphaea succinea* | *rare · Flower · wetland* | A primordial, mineral-absorbing plant that grows in thermal pools, its translucent petals glowing like polished amber. |
+| **Lava-Basalt Centipede**<br>*Scolopendra vulcanica* | *rare · Insect · lava_field · mountains* | A multi-legged, fire-resistant invertebrate that hunts small lizards and insects in cooled basalt cracks. |
+| **Lava-Glass Fern**<br>*Pteris vulcanica* | *rare · Fern · lava_field · mountains* | A primitive fern with semi-translucent, silica-rich leaves that shimmer like glass, growing in damp volcanic crevices. |
+| **Lava-Pool Shrimp**<br>*Palaemon vulcanus* | *rare · Crustacean · lava_field · mountains* | A tiny, transparent crustacean that swims in the scalding rock pools, feeding on specialized thermophilic bacteria. |
+| **Lava-Vent Tubeworm**<br>*Riftia vulcanica* | *rare · Worm · lava_field · mountains* | A giant worm species that grows in dense colonies around underwater magma vents, absorbing mineral nutrients directly from the water. |
+| **Magma-Claw Crab**<br>*Gecarcinus magma* | *rare · Crustacean · lava_field · mountains* | A deep-sea vent crustacean that has adapted to direct magma exposure, possessing a heavy, obsidian-black carapace. |
+| **Serene Brown Ammonite**<br>*Ammonites pacificus* | *rare · Mollusc · lava_field · mountains* | A giant, peaceful nautiloid with an earthy, wood-patterned shell that drifts calmly through the steaming, boiling water zones. |
+| **Shambala Ice-Pike**<br>*Esox shambala* | *rare · Fish · lava_field · mountains* | A predatory, crystal-scaled fish of the frozen mountain lakes, specializing in hunting frost-whisker carp near glacier edges. |
+| **Shambala Snow-Partridge**<br>*Lerwa shambala* | *rare · Bird · lava_field · mountains* | A thick-feathered bird with camouflaged plumage, nesting in the rocky scree of the frozen mountain peaks. |
+| **Snow-Looming Moss**<br>*Bryum glaciale* | *rare · Moss · lava_field · mountains* | A dense, cushioning moss that thrives on glacier-bound stones, providing insulation for snow-hare nests. |
+| **Soot-Furred Rat**<br>*Rattus cinereus* | *rare · Mammal · lava_field · mountains* | A small, highly resilient rodent with heat-resistant, ash-colored fur, nesting in the stone ruins near the lava lake. |
+| **Soot-Grass**<br>*Agrostis cinerea* | *rare · Grass · lava_field · mountains* | A tough, ash-tolerant grass that grows in tufts along the cooled basalt plains, providing forage for heat-tolerant fauna. |
+| **Soot-Winged Falcon**<br>*Falco cinereus* | *rare · Bird · lava_field · mountains* | A predatory bird of the ash valleys, its plumage colored like charcoal to remain hidden against the dark volcanic sky. |
+| **Sooty Shearwater**<br>*Puffinus cinereus* | *rare · Bird · hills* | A seabird with charcoal-colored feathers, nesting in the high cliffs overlooking the boiling bays. |
+| **Volcanic Ash-Moth**<br>*Lymantria vulcanica* | *rare · Insect · lava_field · mountains* | A moth with dusty grey wings, its larvae feeding on the tough leaves of ash-banyan trees. |
+| **Volcanic Salamander**<br>*Salamandra vulcanica* | *rare · Amphibian · lava_field · mountains* | An amphibian with fire-resistant skin that lives in the warm mud pools near the caldera edges, feeding on small ash-beetles. |
+| **Volcanic Sulfur-Flower**<br>*Sulfuraria lutea* | *rare · Flower · lava_field · mountains* | A low, bright-yellow wildflower that grows near active sulfur vents, utilizing chemical-heavy soil to produce pungent nectar. |
+| **Weeping Charcoal Tree**<br>*Ficus cinereus* | *rare · Tree · forest* | An ash-banyan subspecies with dark, charcoal-like bark and weeping branches that secrete a non-flammable, waxy resin. |
 
 ## Gedrosian Desert
 
 *40 recorded.*
 
-| | Species | What it is | Where |
-|---|---|---|---|
-| Fish | **Beedu** *Sarasvatimanta gedrosii* | A pale ray glides above the dune crest, silent, its bladders full of air, casting a shadow the size of a boat. | desert |
-| Grass | **Bitter Black Barley** *Hordeum niger* | A dark, hardy barley variant that grows in highly saline, parched desert soils, used primarily for brewing heavy travel ales. | desert |
-| Root | **Blue Healing Turmeric** *Curcuma caerulea* | A rare, medicinal turmeric variety whose rhizomes yield a dark blue powder capable of soothing burns and preventing infection. | desert |
-| Crocodilian | **Camelosuchus Calf** *Camelosuchus minor* | A young, playful camelosuchus that stays close to its mother, learning to forage on desert saltbush. | desert |
-| Crocodilian | **Coastal Sand-Sprinter** *Postosuchus bipedalis* | A predatory, bipedal crocodyliform that re-evolved an upright, bipedal sprinting gait to chase down prey on sandy shores. | desert |
-| Root | **Crimson Spice-Root** *Curcuma rubra* | A wild turmeric variant with bright red roots that has mutated under heavy mineral runoff, used as a warming spice and dye. | desert |
-| Reptile | **Crimson-Eyed Adder** *Vipera rubra* | A nocturnal sand-viper with glowing red eyes, specialized in hunting small rodents in the cold desert nights. | desert |
-| Bird | **Desert Falcon** *Falco gedrosianus* | A swift bird of prey that sweeps over the desert ridges to hunt young ostriches and desert rodents. | desert |
-| Mammal | **Desert Fox** *Vulpes gedrosiana* | A fox with enormous ears watches the road from a low dune, waiting to see whether anything falls off the caravan. | desert, plains, settlement |
-| Bird | **Desert Horned Owl** *Bubo deserti* | A nocturnal predator that hunts sand-vipers and rats, its silent flight muffled by soft, specialized feathers. | desert |
-| Mammal | **Desert Jerboa-Rat** *Dipodomys deserti* | A tiny, jumping rodent with long hind legs that avoids the searing day heat by burrowing deep beneath the sand dunes. | desert |
-| Shrub | **Desert Saltbush** *Atriplex gedrosia* | A low, grey-green shrub whose leaves are covered in salty, moisture-retaining crystals, a key forage for camelosuchus. | desert |
-| Arachnid | **Dune-Lurking Scorpion** *Buthus gedrosii* | A pale yellow scorpion that hides beneath thin layers of loose sand, striking with a swift, toxic sting when stepped on. | desert |
-| Arachnid | **Dune-Lurking Spider** *Sparassus arenarius* | A large, pale spider that burrows into the sand, constructing a silk-lined trapdoor to ambush insects. | desert |
-| Reptile | **Dune-Running Lizard** *Agama deserti* | A lizard that runs across hot sand on its hind legs, lifting its feet alternately to keep them cool. | desert |
-| Mammal | **Gedrosian Desert Wolf** *Canis lupus gedrosiae* | A lean, light-colored wolf that hunts in small packs, preying on wild ibex and stray cattle. | desert |
-| Bird | **Gedrosian Sand-Grouse** *Pterocles gedrosius* | A bird that flies miles to find water, absorbing moisture in its breast feathers to carry back to its chicks. | desert |
-| Reptile | **Gedrosian Spiny Lizard** *Uromastyx gedrosii* | An armored, herbivorous lizard with a thick, spiked tail used to seal its burrow entrance against predators. | desert |
-| Bird | **Giant Riding Ostrich** *Struthio camelus maximus* | A massive, flightless bird trained by the Tushara nomads to carry heavy cargo and scouts across the arid frontiers. | desert |
-| Reptile | **Glass-Scaled Viper** *Vipera vitrea* | An Hourglass Desert serpent whose scales mimic the shimmering, temporal-fractured sands, delivering a painful, dehydrating bite. | desert |
-| Grass | **Golden Sun-Barley** *Hordeum aureum* | A drought-resistant, long-headed grain cultivated by oasis settlers, producing sweet, nutrient-dense kernels. | desert, plains |
-| Bird | **Golden-Plumed Racer** *Struthio camelus auratus* | A sleek, highly prized breed of desert ostrich bred specifically for speed and long-distance scout expeditions. | desert |
-| Insect | **Highland Desert Beetle** *Carabus montanus* | A tough-shelled beetle that feeds on cactus pulp, active during the cool, early morning hours. | desert |
-| Mammal | **Highland Ibex** *Capra ibex gedrosia* | A wild mountain goat with massive, curved horns that navigates the rocky desert crags bordering the Taklamakan. | desert |
-| Crocodilian | **Highland Rock-Runner** *Postosuchus montanus* | A sturdier, darker subspecies of bipedal Postosuchus that hunts along the rocky desert ravines of Bahila Kush. | desert |
-| Cactus | **Hourglass Cactus** *Cereus arenarius* | A ribbed, columnar cactus whose spine patterns cast shifting shadows resembling hourglasses, storing water for months. | desert |
-| Insect | **Hourglass Centipede** *Scolopendra arenaria* | A multi-legged, predatory invertebrate with yellow and brown bands, hunting spiders and small lizards in sand crevices. | desert |
-| Palm | **Oasis Date Palm** *Phoenix dactylifera oasis* | A majestic palm tree that provides shelter, wood, and sweet, high-energy fruit in the hidden desert springs. | desert |
-| Insect | **Salt-Flat Beetle** *Carabus salinus* | A dark, highly reflective beetle that feeds on decaying organic matter along the margins of the blinding salt plains. | desert |
-| Insect | **Salt-Flat Cricket** *Gryllus salinus* | An insect with a thick, white carapace that feeds on dried saltbush leaves along the salt plains. | desert |
-| Amphibian | **Sand-Burrowing Toad** *Bufo arenarius* | An amphibian that remains buried in moist deep sand for months, emerging only during rare, sudden desert rains to breed. | desert |
-| Vine | **Sand-Dune Gourd** *Citrullus arenarius* | A trailing vine with thick, waxy leaves and water-filled, hollow gourds that thrive in the deepest desert sands. | desert |
-| Mammal | **Scythian War-Camel** *Camelus scythicus* | A massive, shaggy-haired desert ungulate bred for its high endurance and resistance to the bitter desert wind. | desert |
-| Crocodilian | **Sleek Dromedary-Croc** *Camelosuchus dromedarius* | A faster, single-humped variant of Camelosuchus adapted to sandy dunes, capable of sustaining high speeds across the wastes. | desert |
-| Tree | **Spiny Acacia** *Acacia spinosa* | A hardy, deep-rooted desert tree with long, needle-sharp thorns and yellow blossoms that draw honey-goliaths. | desert |
-| Mammal | **Taklamakan Sand-Cat** *Felis margarita taklamakan* | A small wildcat with wide, fur-covered paws that act as sand-shoes, enabling it to hunt vipers and lizards silently. | desert |
-| Reptile | **Taklamakan Sand-Viper** *Vipera sand-dune* | A sand-colored viper that moves with a side-winding motion, leaving S-shaped tracks across the deep dunes. | desert |
-| Shrub | **Tawny Sagebrush** *Artemisia tawny* | A highly fragrant, bitter herb that grows in the sandy plains, used by nomads to ward off desert insects and spirits. | desert, plains |
-| Fish | **White Salt-Flat Ray** *Sarasvatimanta alba* | A pale, chalk-white subspecies of Beedu that hunts over the blinding salt flats, reflecting the desert glare to remain invisible. | desert |
-| Crocodilian | **Woolly Bactrian-Croc** *Camelosuchus bactrianus* | A heavy, rugged crocodile-mammal hybrid with two water-retention humps, used by northern nomads to cross the highland deserts. | mountains |
+| Species | Traits | What it is |
+|---|---|---|
+| **Beedu**<br>*Sarasvatimanta gedrosii* | *rare · Fish · desert* | A pale ray glides above the dune crest, silent, its bladders full of air, casting a shadow the size of a boat. |
+| **Bitter Black Barley**<br>*Hordeum niger* | *common · Grass · desert* | A dark, hardy barley variant that grows in highly saline, parched desert soils, used primarily for brewing heavy travel ales. |
+| **Blue Healing Turmeric**<br>*Curcuma caerulea* | *rare · Root · desert* | A rare, medicinal turmeric variety whose rhizomes yield a dark blue powder capable of soothing burns and preventing infection. |
+| **Camelosuchus Calf**<br>*Camelosuchus minor* | *common · Crocodilian · desert* | A young, playful camelosuchus that stays close to its mother, learning to forage on desert saltbush. |
+| **Coastal Sand-Sprinter**<br>*Postosuchus bipedalis* | *common · Crocodilian · desert* | A predatory, bipedal crocodyliform that re-evolved an upright, bipedal sprinting gait to chase down prey on sandy shores. |
+| **Crimson Spice-Root**<br>*Curcuma rubra* | *common · Root · desert* | A wild turmeric variant with bright red roots that has mutated under heavy mineral runoff, used as a warming spice and dye. |
+| **Crimson-Eyed Adder**<br>*Vipera rubra* | *common · Reptile · desert* | A nocturnal sand-viper with glowing red eyes, specialized in hunting small rodents in the cold desert nights. |
+| **Desert Falcon**<br>*Falco gedrosianus* | *common · Bird · desert* | A swift bird of prey that sweeps over the desert ridges to hunt young ostriches and desert rodents. |
+| **Desert Fox**<br>*Vulpes gedrosiana* | *common · Mammal · desert · plains · settlement* | A fox with enormous ears watches the road from a low dune, waiting to see whether anything falls off the caravan. |
+| **Desert Horned Owl**<br>*Bubo deserti* | *common · Bird · desert* | A nocturnal predator that hunts sand-vipers and rats, its silent flight muffled by soft, specialized feathers. |
+| **Desert Jerboa-Rat**<br>*Dipodomys deserti* | *common · Mammal · desert* | A tiny, jumping rodent with long hind legs that avoids the searing day heat by burrowing deep beneath the sand dunes. |
+| **Desert Saltbush**<br>*Atriplex gedrosia* | *common · Shrub · desert* | A low, grey-green shrub whose leaves are covered in salty, moisture-retaining crystals, a key forage for camelosuchus. |
+| **Dune-Lurking Scorpion**<br>*Buthus gedrosii* | *common · Arachnid · desert* | A pale yellow scorpion that hides beneath thin layers of loose sand, striking with a swift, toxic sting when stepped on. |
+| **Dune-Lurking Spider**<br>*Sparassus arenarius* | *common · Arachnid · desert* | A large, pale spider that burrows into the sand, constructing a silk-lined trapdoor to ambush insects. |
+| **Dune-Running Lizard**<br>*Agama deserti* | *common · Reptile · desert* | A lizard that runs across hot sand on its hind legs, lifting its feet alternately to keep them cool. |
+| **Gedrosian Desert Wolf**<br>*Canis lupus gedrosiae* | *common · Mammal · desert* | A lean, light-colored wolf that hunts in small packs, preying on wild ibex and stray cattle. |
+| **Gedrosian Sand-Grouse**<br>*Pterocles gedrosius* | *common · Bird · desert* | A bird that flies miles to find water, absorbing moisture in its breast feathers to carry back to its chicks. |
+| **Gedrosian Spiny Lizard**<br>*Uromastyx gedrosii* | *common · Reptile · desert* | An armored, herbivorous lizard with a thick, spiked tail used to seal its burrow entrance against predators. |
+| **Giant Riding Ostrich**<br>*Struthio camelus maximus* | *rare · Bird · desert* | A massive, flightless bird trained by the Tushara nomads to carry heavy cargo and scouts across the arid frontiers. |
+| **Glass-Scaled Viper**<br>*Vipera vitrea* | *common · Reptile · desert* | An Hourglass Desert serpent whose scales mimic the shimmering, temporal-fractured sands, delivering a painful, dehydrating bite. |
+| **Golden Sun-Barley**<br>*Hordeum aureum* | *common · Grass · desert · plains* | A drought-resistant, long-headed grain cultivated by oasis settlers, producing sweet, nutrient-dense kernels. |
+| **Golden-Plumed Racer**<br>*Struthio camelus auratus* | *common · Bird · desert* | A sleek, highly prized breed of desert ostrich bred specifically for speed and long-distance scout expeditions. |
+| **Highland Desert Beetle**<br>*Carabus montanus* | *common · Insect · desert* | A tough-shelled beetle that feeds on cactus pulp, active during the cool, early morning hours. |
+| **Highland Ibex**<br>*Capra ibex gedrosia* | *rare · Mammal · desert* | A wild mountain goat with massive, curved horns that navigates the rocky desert crags bordering the Taklamakan. |
+| **Highland Rock-Runner**<br>*Postosuchus montanus* | *common · Crocodilian · desert* | A sturdier, darker subspecies of bipedal Postosuchus that hunts along the rocky desert ravines of Bahila Kush. |
+| **Hourglass Cactus**<br>*Cereus arenarius* | *common · Cactus · desert* | A ribbed, columnar cactus whose spine patterns cast shifting shadows resembling hourglasses, storing water for months. |
+| **Hourglass Centipede**<br>*Scolopendra arenaria* | *common · Insect · desert* | A multi-legged, predatory invertebrate with yellow and brown bands, hunting spiders and small lizards in sand crevices. |
+| **Oasis Date Palm**<br>*Phoenix dactylifera oasis* | *common · Palm · desert* | A majestic palm tree that provides shelter, wood, and sweet, high-energy fruit in the hidden desert springs. |
+| **Salt-Flat Beetle**<br>*Carabus salinus* | *common · Insect · desert* | A dark, highly reflective beetle that feeds on decaying organic matter along the margins of the blinding salt plains. |
+| **Salt-Flat Cricket**<br>*Gryllus salinus* | *common · Insect · desert* | An insect with a thick, white carapace that feeds on dried saltbush leaves along the salt plains. |
+| **Sand-Burrowing Toad**<br>*Bufo arenarius* | *rare · Amphibian · desert* | An amphibian that remains buried in moist deep sand for months, emerging only during rare, sudden desert rains to breed. |
+| **Sand-Dune Gourd**<br>*Citrullus arenarius* | *common · Vine · desert* | A trailing vine with thick, waxy leaves and water-filled, hollow gourds that thrive in the deepest desert sands. |
+| **Scythian War-Camel**<br>*Camelus scythicus* | *rare · Mammal · desert* | A massive, shaggy-haired desert ungulate bred for its high endurance and resistance to the bitter desert wind. |
+| **Sleek Dromedary-Croc**<br>*Camelosuchus dromedarius* | *common · Crocodilian · desert* | A faster, single-humped variant of Camelosuchus adapted to sandy dunes, capable of sustaining high speeds across the wastes. |
+| **Spiny Acacia**<br>*Acacia spinosa* | *common · Tree · desert* | A hardy, deep-rooted desert tree with long, needle-sharp thorns and yellow blossoms that draw honey-goliaths. |
+| **Taklamakan Sand-Cat**<br>*Felis margarita taklamakan* | *common · Mammal · desert* | A small wildcat with wide, fur-covered paws that act as sand-shoes, enabling it to hunt vipers and lizards silently. |
+| **Taklamakan Sand-Viper**<br>*Vipera sand-dune* | *common · Reptile · desert* | A sand-colored viper that moves with a side-winding motion, leaving S-shaped tracks across the deep dunes. |
+| **Tawny Sagebrush**<br>*Artemisia tawny* | *common · Shrub · desert · plains* | A highly fragrant, bitter herb that grows in the sandy plains, used by nomads to ward off desert insects and spirits. |
+| **White Salt-Flat Ray**<br>*Sarasvatimanta alba* | *common · Fish · desert* | A pale, chalk-white subspecies of Beedu that hunts over the blinding salt flats, reflecting the desert glare to remain invisible. |
+| **Woolly Bactrian-Croc**<br>*Camelosuchus bactrianus* | *common · Crocodilian · mountains* | A heavy, rugged crocodile-mammal hybrid with two water-retention humps, used by northern nomads to cross the highland deserts. |
 
 ## Tethys Sky Routes & Floating Islands
 
 *40 recorded.*
 
-| | Species | What it is | Where |
-|---|---|---|---|
-| Tree | **Aero-Mangrove / Vayu-Vriksha** *Rhizophora caelia* | Trees growing on the absolute edges of floating islands, plunging their roots downward into the open sky to harvest cloud-moisture. | sky_island (lore only) |
-| Fish | **Aero-Manta / High-Altitude Beedu** *Sarasvatimanta sky* | A massive, pale cousin of the desert Beedu that nests on the underside of floating islands, grazing on sky coral. | sky_island, sky_underside (lore only) |
-| Insect | **Aero-Moth** *Lymantria caelia* | A large moth with soft, dusty wings patterned like grey clouds, drawing toward the glow of sky-brambles. | sky_island (lore only) |
-| Mollusc | **Aero-Snail** *Helix caelia* | A land snail with a thin, lightweight shell that uses a mucus parachute to glide from island to island during high winds. | sky_island, open_sky (lore only) |
-| Insect | **Aero-Weevil** *Curculio caelius* | A beetle with a long snout that drills into the tough, gas-filled gourds to lay its eggs inside. | sky_island (lore only) |
-| Root | **Blue Pulse-Root** *Nirnroot caerulea* | A glowing plant species that absorbs bioluminescent trace minerals from the airborne soil, emitting a soft blue light. | sky_island, open_sky (lore only) |
-| Insect | **Cloud-Cricket** *Gryllus nubis* | An insect that produces high-frequency, melodic chirps that echo through the thin, cold air of the high altitude routes. | sky_island (lore only) |
-| Mammal | **Cloud-Leopard** *Neofelis nubis* | A beautifully patterned predator that climbs aero-mangrove branches, hunting sky-shrews and young birds in low gravity. | sky_island (lore only) |
-| Reptile | **Cloud-Lurking Gecko** *Gekko caelius* | A pale green gecko with large, adhesive pads, hunting moths and wasps on the underside of floating rocks. | sky_island, sky_underside (lore only) |
-| Mammal | **Cloud-Squirrel** *Sciurus nubis* | A rodent with exceptionally long, bushy tail used as a rudder, leaping impossible distances in the low-gravity environment. | sky_island, open_sky (lore only) |
-| Arachnid | **Cloud-Weaver Spider / Gaganjala** *Aranea nubis* | A massive arachnid that weaves static-charged webs between airborne mangrove roots, hunting small flying creatures. | sky_island, open_sky (lore only) |
-| Arachnid | **Cloud-Weaver Spiderling** *Aranea nubis minor* | A young spider that uses long silk threads to balloon through the air, traveling between distant floating islands. | sky_island, open_sky (lore only) |
-| Vine | **Cloud-Weaver Vine** *Vitis nubis* | A tough, climbing vine that spans the gap between close floating islands, forming natural rope bridges. | sky_island (lore only) |
-| Bird | **Cognitavi Cloud-Hermit** *Cognitavi solitarius* | A highly advanced, solitary subspecies of navigator bird that establishes isolated monasteries on the highest floating peaks. | sky_island (lore only) |
-| Reptile | **Floating-Island Chameleon** *Chamaeleo levitatus* | A lizard that changes color to match the glowing moss, using its prehensile tail to hang from sky-mangrove roots. | sky_island (lore only) |
-| Mammal | **Floating-Island Shrew** *Sorex levitatus* | A tiny rodent with hollow bones and webbed toes, gliding between moss-covered floating rocks to forage for insects. | sky_island, open_sky (lore only) |
-| Mammal | **Gargoyle-Bat** *Vespertilio asuricus* | A dark, stone-skinned bat of the shadowed undersides, feeding on large insects during the night. | sky_island, sky_underside (lore only) |
-| Bird | **High-Altitude Falcon** *Falco caelius* | A swift predator that hunts sky-gulls and finches, nesting on the sheer vertical cliffs of the highest islands. | sky_island (lore only) |
-| Vine | **Levitation Gourd / Sky-Balloon** *Cucurbita levitata* | A trailing vine producing massive, hollow gourds that trap lighter-than-air volcanic gases, used by mariners to patch blimps. | sky_island, open_sky (lore only) |
-| Insect | **Lodestone Beetle** *Carabus magneticus* | An insect with a metallic, magnetic carapace that feeds on mineral deposits along the floating island cores. | sky_island (lore only) |
-| Moss | **Lodestone Moss** *Bryum magneticum* | A dense, dark green moss that covers the magnetized cores of the floating islands, aligning its spores with the Earth's magnetic poles. | sky_island (lore only) |
-| Mollusc | **Lodestone Snail** *Helix magneticus* | A snail with an iron-rich shell that climbs the magnetized cliffs of the floating islands, sensing magnetic fields. | sky_island (lore only) |
-| Mammal | **Mist-Lurking Bat** *Myotis nubis* | A small, white bat that uses echolocation to hunt cloud-crickets and moths inside the island caves. | sky_island (lore only) |
-| Bird | **Mist-Valley Thrush** *Turdus caelius* | A bird with a sweet, echoing song that nests in the high, misty valleys, feeding on sky-bramble berries. | sky_island (lore only) |
-| Shrub | **Moon-Reflecting Mint** *Glassa luna* | An elegant herb whose translucent, silver-rimmed leaves reflect moonlight, used by sky-elves to brew soothing, prophetic teas. | sky_island (lore only) |
-| Bird | **Prana-Feeder Finch** *Fringilla prana* | A small, brightly colored bird that absorbs atmospheric life-force, its song bringing a sense of calm to travelers. | sky_island (lore only) |
-| Flower | **Prana-Lotus** *Nelumbo prana* | A beautiful lotus species that grows in the inverted waterfalls, its floating petals absorbing high-altitude prana radiation. | sky_island (lore only) |
-| Insect | **Prana-absorbing Butterfly** *Danaus caelius* | A large butterfly with glowing, translucent wings that feeds on the nectar of prana-lotuses, spreading glowing pollen. | sky_island, open_sky (lore only) |
-| Insect | **Sky-Dragon Fly** *Anax caelius* | A giant, predatory insect with four independent wings, hunting smaller moths and flies with extreme speed. | sky_island, open_sky (lore only) |
-| Crustacean | **Sky-Faring Crab** *Portunus caelius* | A light-shelled crab that climbs the aerial roots of sky-mangroves, feeding on moss and small insects. | sky_island (lore only) |
-| Cnidarian | **Sky-Faring Jellyfish** *Aurelia caelia* | An airborne, translucent organism that drifts on wind currents, filtering high-altitude plankton with stinging tentacles. | sky_island, open_sky (lore only) |
-| Mammal | **Sky-Faring Orca** *Orcinus volans* | A giant marine mammal that has adapted to glide through the dense, prana-rich clouds, its fins modified into wide membranes. | sky_island, open_sky (lore only) |
-| Mammal | **Sky-Faring Otter** *Lutra caelia* | An agile mammal that glides between floating pools using skin membranes, hunting sky-shrews and beetles. | sky_island, open_sky (lore only) |
-| Bird | **Sky-Gull** *Larus caelius* | A white shorebird that nests on the lodestone cliffs of the floating islands, riding high-altitude wind currents. | sky_island (lore only) |
-| Reptile | **Sky-Snake** *Chrysopelea caelia* | A slender, green serpent that flattens its body to glide between hanging vines of neighboring floating islands. | sky_island, open_sky (lore only) |
-| Reptile | **Sky-Turtle** *Chelonia caelia* | A small, lightweight turtle with a hollow, gas-filled shell, drifting lazily through the clouds between floating oases. | sky_island, open_sky (lore only) |
-| Shrub | **Static-Charged Bramble** *Rubus electricus* | Thorny bushes that feed on electrical discharges of high-altitude storms, glowing with residual lightning and delivering a shocking sting. | sky_island (lore only) |
-| Insect | **Static-Charged Wasp** *Vespa electrica* | A giant wasp species whose wings generate static electricity as they fly, delivering a shocking sting to defend its nest. | sky_island, open_sky (lore only) |
-| Shrub | **Sun-Catcher Herb** *Glassa solis* | A silicate-absorbing plant with leaves that mirror stained glass, concentrating golden sunlight for deep-time healing. | sky_island (lore only) |
-| Root | **Toxic Crimson Root** *Nirnroot rubra* | A rare, red-glowing variant of nirnroot whose roots exude a highly toxic sap used by assassins and sky-pirates. | sky_island (lore only) |
+| Species | Traits | What it is |
+|---|---|---|
+| **Aero-Mangrove / Vayu-Vriksha**<br>*Rhizophora caelia* | *rare · Tree · lore only · sky_island* | Trees growing on the absolute edges of floating islands, plunging their roots downward into the open sky to harvest cloud-moisture. |
+| **Aero-Manta / High-Altitude Beedu**<br>*Sarasvatimanta sky* | *rare · Fish · lore only · sky_island · sky_underside* | A massive, pale cousin of the desert Beedu that nests on the underside of floating islands, grazing on sky coral. |
+| **Aero-Moth**<br>*Lymantria caelia* | *rare · Insect · lore only · sky_island* | A large moth with soft, dusty wings patterned like grey clouds, drawing toward the glow of sky-brambles. |
+| **Aero-Snail**<br>*Helix caelia* | *rare · Mollusc · lore only · sky_island · open_sky* | A land snail with a thin, lightweight shell that uses a mucus parachute to glide from island to island during high winds. |
+| **Aero-Weevil**<br>*Curculio caelius* | *rare · Insect · lore only · sky_island* | A beetle with a long snout that drills into the tough, gas-filled gourds to lay its eggs inside. |
+| **Blue Pulse-Root**<br>*Nirnroot caerulea* | *rare · Root · lore only · sky_island · open_sky* | A glowing plant species that absorbs bioluminescent trace minerals from the airborne soil, emitting a soft blue light. |
+| **Cloud-Cricket**<br>*Gryllus nubis* | *rare · Insect · lore only · sky_island* | An insect that produces high-frequency, melodic chirps that echo through the thin, cold air of the high altitude routes. |
+| **Cloud-Leopard**<br>*Neofelis nubis* | *rare · Mammal · lore only · sky_island* | A beautifully patterned predator that climbs aero-mangrove branches, hunting sky-shrews and young birds in low gravity. |
+| **Cloud-Lurking Gecko**<br>*Gekko caelius* | *rare · Reptile · lore only · sky_island · sky_underside* | A pale green gecko with large, adhesive pads, hunting moths and wasps on the underside of floating rocks. |
+| **Cloud-Squirrel**<br>*Sciurus nubis* | *rare · Mammal · lore only · sky_island · open_sky* | A rodent with exceptionally long, bushy tail used as a rudder, leaping impossible distances in the low-gravity environment. |
+| **Cloud-Weaver Spider / Gaganjala**<br>*Aranea nubis* | *rare · Arachnid · lore only · sky_island · open_sky* | A massive arachnid that weaves static-charged webs between airborne mangrove roots, hunting small flying creatures. |
+| **Cloud-Weaver Spiderling**<br>*Aranea nubis minor* | *rare · Arachnid · lore only · sky_island · open_sky* | A young spider that uses long silk threads to balloon through the air, traveling between distant floating islands. |
+| **Cloud-Weaver Vine**<br>*Vitis nubis* | *rare · Vine · lore only · sky_island* | A tough, climbing vine that spans the gap between close floating islands, forming natural rope bridges. |
+| **Cognitavi Cloud-Hermit**<br>*Cognitavi solitarius* | *rare · Bird · lore only · sky_island* | A highly advanced, solitary subspecies of navigator bird that establishes isolated monasteries on the highest floating peaks. |
+| **Floating-Island Chameleon**<br>*Chamaeleo levitatus* | *rare · Reptile · lore only · sky_island* | A lizard that changes color to match the glowing moss, using its prehensile tail to hang from sky-mangrove roots. |
+| **Floating-Island Shrew**<br>*Sorex levitatus* | *rare · Mammal · lore only · sky_island · open_sky* | A tiny rodent with hollow bones and webbed toes, gliding between moss-covered floating rocks to forage for insects. |
+| **Gargoyle-Bat**<br>*Vespertilio asuricus* | *rare · Mammal · lore only · sky_island · sky_underside* | A dark, stone-skinned bat of the shadowed undersides, feeding on large insects during the night. |
+| **High-Altitude Falcon**<br>*Falco caelius* | *rare · Bird · lore only · sky_island* | A swift predator that hunts sky-gulls and finches, nesting on the sheer vertical cliffs of the highest islands. |
+| **Levitation Gourd / Sky-Balloon**<br>*Cucurbita levitata* | *rare · Vine · lore only · sky_island · open_sky* | A trailing vine producing massive, hollow gourds that trap lighter-than-air volcanic gases, used by mariners to patch blimps. |
+| **Lodestone Beetle**<br>*Carabus magneticus* | *rare · Insect · lore only · sky_island* | An insect with a metallic, magnetic carapace that feeds on mineral deposits along the floating island cores. |
+| **Lodestone Moss**<br>*Bryum magneticum* | *rare · Moss · lore only · sky_island* | A dense, dark green moss that covers the magnetized cores of the floating islands, aligning its spores with the Earth's magnetic poles. |
+| **Lodestone Snail**<br>*Helix magneticus* | *rare · Mollusc · lore only · sky_island* | A snail with an iron-rich shell that climbs the magnetized cliffs of the floating islands, sensing magnetic fields. |
+| **Mist-Lurking Bat**<br>*Myotis nubis* | *rare · Mammal · lore only · sky_island* | A small, white bat that uses echolocation to hunt cloud-crickets and moths inside the island caves. |
+| **Mist-Valley Thrush**<br>*Turdus caelius* | *rare · Bird · lore only · sky_island* | A bird with a sweet, echoing song that nests in the high, misty valleys, feeding on sky-bramble berries. |
+| **Moon-Reflecting Mint**<br>*Glassa luna* | *rare · Shrub · lore only · sky_island* | An elegant herb whose translucent, silver-rimmed leaves reflect moonlight, used by sky-elves to brew soothing, prophetic teas. |
+| **Prana-Feeder Finch**<br>*Fringilla prana* | *rare · Bird · lore only · sky_island* | A small, brightly colored bird that absorbs atmospheric life-force, its song bringing a sense of calm to travelers. |
+| **Prana-Lotus**<br>*Nelumbo prana* | *rare · Flower · lore only · sky_island* | A beautiful lotus species that grows in the inverted waterfalls, its floating petals absorbing high-altitude prana radiation. |
+| **Prana-absorbing Butterfly**<br>*Danaus caelius* | *rare · Insect · lore only · sky_island · open_sky* | A large butterfly with glowing, translucent wings that feeds on the nectar of prana-lotuses, spreading glowing pollen. |
+| **Sky-Dragon Fly**<br>*Anax caelius* | *rare · Insect · lore only · sky_island · open_sky* | A giant, predatory insect with four independent wings, hunting smaller moths and flies with extreme speed. |
+| **Sky-Faring Crab**<br>*Portunus caelius* | *rare · Crustacean · lore only · sky_island* | A light-shelled crab that climbs the aerial roots of sky-mangroves, feeding on moss and small insects. |
+| **Sky-Faring Jellyfish**<br>*Aurelia caelia* | *rare · Cnidarian · lore only · sky_island · open_sky* | An airborne, translucent organism that drifts on wind currents, filtering high-altitude plankton with stinging tentacles. |
+| **Sky-Faring Orca**<br>*Orcinus volans* | *rare · Mammal · lore only · sky_island · open_sky* | A giant marine mammal that has adapted to glide through the dense, prana-rich clouds, its fins modified into wide membranes. |
+| **Sky-Faring Otter**<br>*Lutra caelia* | *rare · Mammal · lore only · sky_island · open_sky* | An agile mammal that glides between floating pools using skin membranes, hunting sky-shrews and beetles. |
+| **Sky-Gull**<br>*Larus caelius* | *rare · Bird · lore only · sky_island* | A white shorebird that nests on the lodestone cliffs of the floating islands, riding high-altitude wind currents. |
+| **Sky-Snake**<br>*Chrysopelea caelia* | *rare · Reptile · lore only · sky_island · open_sky* | A slender, green serpent that flattens its body to glide between hanging vines of neighboring floating islands. |
+| **Sky-Turtle**<br>*Chelonia caelia* | *rare · Reptile · lore only · sky_island · open_sky* | A small, lightweight turtle with a hollow, gas-filled shell, drifting lazily through the clouds between floating oases. |
+| **Static-Charged Bramble**<br>*Rubus electricus* | *rare · Shrub · lore only · sky_island* | Thorny bushes that feed on electrical discharges of high-altitude storms, glowing with residual lightning and delivering a shocking sting. |
+| **Static-Charged Wasp**<br>*Vespa electrica* | *rare · Insect · lore only · sky_island · open_sky* | A giant wasp species whose wings generate static electricity as they fly, delivering a shocking sting to defend its nest. |
+| **Sun-Catcher Herb**<br>*Glassa solis* | *rare · Shrub · lore only · sky_island* | A silicate-absorbing plant with leaves that mirror stained glass, concentrating golden sunlight for deep-time healing. |
+| **Toxic Crimson Root**<br>*Nirnroot rubra* | *rare · Root · lore only · sky_island* | A rare, red-glowing variant of nirnroot whose roots exude a highly toxic sap used by assassins and sky-pirates. |
 
 ## Prototype Starters
 
 *6 recorded.*
 
-| | Species | What it is | Where |
-|---|---|---|---|
-| Mammal | **Cloud Antelope** *Naemorhedus nubilus* | For a breath, an antelope-shaped cloud stands on a ridge before dissolving into mist. | mountains, hills, landmark |
-| Mammal | **Hill Macaque** *Macaca vindhyensis* | A macaque studies your satchel, then pretends it was only admiring the view. | hills, forest, settlement |
-| Bird | **Monsoon Crane** *Grus pluvialis* | Tall white birds step between reeds as if reading the rain. | wetland, river, coast |
-| Mammal | **Painted Deer** *Axis pictus* | A small deer watches from the grass, its coat patterned like fallen petals. | plains, forest |
-| Mammal | **River Otter** *Lutra saraswati* | A slick shape rolls through the shallows, leaving rings of silver water behind. | river, wetland, forest |
-| Reptile | **Shell Turtle** *Conchochelys lothalensis* | A turtle rests where river sand meets the tide, carrying a map of scratches on its shell. | coast, river |
+| Species | Traits | What it is |
+|---|---|---|
+| **Cloud Antelope**<br>*Naemorhedus nubilus* | *common · Mammal · mountains · hills · landmark* | For a breath, an antelope-shaped cloud stands on a ridge before dissolving into mist. |
+| **Hill Macaque**<br>*Macaca vindhyensis* | *common · Mammal · hills · forest · settlement* | A macaque studies your satchel, then pretends it was only admiring the view. |
+| **Monsoon Crane**<br>*Grus pluvialis* | *common · Bird · wetland · river · coast* | Tall white birds step between reeds as if reading the rain. |
+| **Painted Deer**<br>*Axis pictus* | *common · Mammal · plains · forest* | A small deer watches from the grass, its coat patterned like fallen petals. |
+| **River Otter**<br>*Lutra saraswati* | *common · Mammal · river · wetland · forest* | A slick shape rolls through the shallows, leaving rings of silver water behind. |
+| **Shell Turtle**<br>*Conchochelys lothalensis* | *common · Reptile · coast · river* | A turtle rests where river sand meets the tide, carrying a map of scratches on its shell. |
 

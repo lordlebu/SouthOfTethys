@@ -16,7 +16,7 @@ What is eaten, when it is eaten, and what eating it says.
 
 Pressed into a brick and wrapped in leaf. Sweet, heavy, and the reason a desert crossing is arithmetic rather than a gamble.
 
-**Pressing a date block** — 4 × Dates.
+[Pressing a date block](https://lordlebu.github.io/SouthOfTethys/workshop.html#pressing-a-date-block) — 4 × [Dates](https://lordlebu.github.io/SouthOfTethys/workshop.html#dates).
 
 > **The parting block** *(trader)* — Pressed into the hands of someone leaving on a crossing.
 >
@@ -30,7 +30,7 @@ Pressed into a brick and wrapped in leaf. Sweet, heavy, and the reason a desert 
 
 Split, salted, racked. Keeps a season and travels anywhere.
 
-**Drying fish** — 2 × flesh, salt.
+[Drying fish](https://lordlebu.github.io/SouthOfTethys/workshop.html#drying-fish) — 2 × `flesh`, `salt`.
 
 > **The weir's share** *(harappan)* — Whenever a weir is lifted, before anything is counted.
 >
@@ -44,7 +44,7 @@ Split, salted, racked. Keeps a season and travels anywhere.
 
 Rice flour stretched with taro, which is what you eat in a year the rice did badly and the flood did well.
 
-**Baking flood bread** — 2 × Red delta rice, Lotus-root taro.
+[Baking flood bread](https://lordlebu.github.io/SouthOfTethys/workshop.html#baking-flood-bread) — 2 × [Red delta rice](https://lordlebu.github.io/SouthOfTethys/workshop.html#red-delta-rice), [Lotus-root taro](https://lordlebu.github.io/SouthOfTethys/workshop.html#lotus-root-taro).
 
 > **The rising loaf** *(harappan)* — The first day the river comes over the bank.
 >
@@ -58,7 +58,7 @@ Rice flour stretched with taro, which is what you eat in a year the rice did bad
 
 Unripe jackfruit cooked long enough to pull apart in threads. It is not meat and the delta does not claim it is; it is what the tree gives a month before it gives sweets.
 
-**Cooking green jackfruit** — 2 × Jackfruit, Ginger, salt.
+[Cooking green jackfruit](https://lordlebu.github.io/SouthOfTethys/workshop.html#cooking-green-jackfruit) — 2 × [Jackfruit](https://lordlebu.github.io/SouthOfTethys/workshop.html#jackfruit), [Ginger](https://lordlebu.github.io/SouthOfTethys/workshop.html#ginger), `salt`.
 
 > **The month before sweets** *(harappan)* — The weeks when the fruit is on the tree and not yet ripe.
 >
@@ -68,7 +68,7 @@ Unripe jackfruit cooked long enough to pull apart in threads. It is not meat and
 
 Unripe mango, salted and dried on a mat. Sour enough to make bad water drinkable, which is what it is carried for.
 
-**Salting green mango** — 3 × Mango, salt.
+[Salting green mango](https://lordlebu.github.io/SouthOfTethys/workshop.html#salting-green-mango) — 3 × [Mango](https://lordlebu.github.io/SouthOfTethys/workshop.html#mango), `salt`.
 
 > **The sour ration** *(trader)* — Cut and salted before the mangoes ripen, for a crossing later in the year.
 >
@@ -78,7 +78,7 @@ Unripe mango, salted and dried on a mat. Sour enough to make bad water drinkable
 
 Canon already records the tree for a fermented drink. Distilled nowhere -- this is the fermented thing itself, and strong enough.
 
-**Brewing mahua** — 3 × Mahua oil, Storage jar *(kept)*.
+[Brewing mahua](https://lordlebu.github.io/SouthOfTethys/workshop.html#brewing-mahua) — 3 × [Mahua oil](https://lordlebu.github.io/SouthOfTethys/workshop.html#mahua-oil), Storage jar *(kept)*.
 
 > **The bitter cup** *(jharwa)* — The night after a burial, and not before.
 >
@@ -96,7 +96,7 @@ The prototype for anything cooked, dried or pressed into a form somebody meant t
 
 The pot everything ends up in. Nobody writes a recipe for it and everybody makes it.
 
-**Cooking salt-fish stew** — Dried fish, 2 × Lotus-root taro, Tamarind pulp.
+[Cooking salt-fish stew](https://lordlebu.github.io/SouthOfTethys/workshop.html#cooking-salt-fish-stew) — [Dried fish](https://lordlebu.github.io/SouthOfTethys/cookbook.html#dried-fish), 2 × [Lotus-root taro](https://lordlebu.github.io/SouthOfTethys/workshop.html#lotus-root-taro), [Tamarind pulp](https://lordlebu.github.io/SouthOfTethys/workshop.html#tamarind-pulp).
 
 > **The common pot** *(harappan)* — Any evening nobody has marked as anything.
 >
@@ -106,7 +106,7 @@ The pot everything ends up in. Nobody writes a recipe for it and everybody makes
 
 The meal a settlement eats when there is nothing to mark.
 
-**Cooking spiced rice** — 2 × Red delta rice, salt.
+[Cooking spiced rice](https://lordlebu.github.io/SouthOfTethys/workshop.html#cooking-spiced-rice) — 2 × [Red delta rice](https://lordlebu.github.io/SouthOfTethys/workshop.html#red-delta-rice), `salt`.
 
 > **The set place** *(harappan)* — Laid for a traveller before they are asked their business.
 >
@@ -116,7 +116,7 @@ The meal a settlement eats when there is nothing to mark.
 
 Sour enough to make bad water drinkable and worse food interesting.
 
-**Making tamarind paste** — 2 × Tamarind pulp, salt.
+[Making tamarind paste](https://lordlebu.github.io/SouthOfTethys/workshop.html#making-tamarind-paste) — 2 × [Tamarind pulp](https://lordlebu.github.io/SouthOfTethys/workshop.html#tamarind-pulp), `salt`.
 
 > **The sour season** *(harappan)* — Through the worst of the heat, in almost everything.
 >
@@ -126,7 +126,7 @@ Sour enough to make bad water drinkable and worse food interesting.
 
 Mustard oil taken to smoking and dropped over with seed, ginger and pod. Poured on at the end rather than cooked in, so what it carries is the smell. Affords carrying rather than containing: it is poured out of a flask, it is not the flask.
 
-**Tempering oil** — 2 × Mustard seed, spice, Cooking pot *(kept)*.
+[Tempering oil](https://lordlebu.github.io/SouthOfTethys/workshop.html#tempering-oil) — 2 × [Mustard seed](https://lordlebu.github.io/SouthOfTethys/workshop.html#mustard-seed), `spice`, Cooking pot *(kept)*.
 
 > **The last pour** *(harappan)* — Poured over a dish at the moment it reaches the table, never before.
 >
@@ -134,9 +134,9 @@ Mustard oil taken to smoking and dropped over with seed, ginger and pod. Poured 
 
 ### The Fourteen
 
-Fourteen greens in one pot, bitter to the last, eaten on one night of the year. Nobody pretends it is pleasant -- see `foodway_choddo_shak` for what it is instead.
+Fourteen greens in one pot, bitter to the last, eaten on one night of the year. Nobody pretends it is pleasant, which is not what it is for.
 
-**Cooking the fourteen** — 14 × Bitter greens, oil, salt.
+[Cooking the fourteen](https://lordlebu.github.io/SouthOfTethys/workshop.html#cooking-the-fourteen) — 14 × [Bitter greens](https://lordlebu.github.io/SouthOfTethys/workshop.html#bitter-greens), `oil`, `salt`.
 
 > **The Fourteen** *(harappan)* — The last night before the dark of the year, when the household eats fourteen bitter greens.
 >
@@ -148,7 +148,7 @@ Fourteen greens in one pot, bitter to the last, eaten on one night of the year. 
 
 Rice flour, oil and fruit, baked hard. Made to be carried rather than to be enjoyed, and it tastes like it.
 
-**Baking travel cake** — 2 × Red delta rice, oil, Dates.
+[Baking travel cake](https://lordlebu.github.io/SouthOfTethys/workshop.html#baking-travel-cake) — 2 × [Red delta rice](https://lordlebu.github.io/SouthOfTethys/workshop.html#red-delta-rice), `oil`, [Dates](https://lordlebu.github.io/SouthOfTethys/workshop.html#dates).
 
 > **Vigil cake** *(wanderer)* — Baked before a journey nobody expects to be short.
 >
@@ -162,18 +162,18 @@ Rice flour, oil and fruit, baked hard. Made to be carried rather than to be enjo
 
 | Ingredient | | |
 |---|---|---|
-| **Bitter greens** | physic, produce | Fourteen leaves, and the number is the point rather than the plants -- see `foodway_choddo_shak`. |
-| **Cardamom** | spice, physic | Three pods will scent a whole pot, which is the only reason something growing in wet shade on one plateau is eaten a thousand miles away. |
-| **Dates** | produce | Dried on the frond and carried in a pressed block. |
-| **Ginger** | spice, physic | Dug rather than picked. |
-| **Jackfruit** | produce | Unripe it is cooked like meat and ripe it is eaten like sweets. |
-| **Lotus-root taro** | produce | A flood crop in canon's own words -- it wants the water the rice cannot take, so the two together mean a bad year is survivable. |
-| **Mahua oil** | oil, produce | Pressed from the seed. |
-| **Mango** | produce | Two crops from one tree a month apart: the green fruit is the sour one cooks with, and the ripe one is not cooked at all. |
-| **Mustard seed** | oil, spice, grain | Pressed for a hot yellow oil, or cracked whole into it. |
-| **Natron** | salt | The bitter salt from a dry lake bed. |
-| **Red delta rice** | grain, produce | Canon records it as a staple grain and a trade good. |
-| **River fish** | flesh | Split, salted and dried on a rack. |
-| **Salt crust** | salt | Scraped off a pan in sheets. |
-| **Tamarind pulp** | produce | Canon files the tree under food, souring agent and shade. |
+| [Bitter greens](https://lordlebu.github.io/SouthOfTethys/workshop.html#bitter-greens) | *physic · produce* | Fourteen leaves, and the number is the point rather than the plants -- see `foodway_choddo_shak`. |
+| [Cardamom](https://lordlebu.github.io/SouthOfTethys/workshop.html#cardamom) | *spice · physic* | Three pods will scent a whole pot, which is the only reason something growing in wet shade on one plateau is eaten a thousand miles away. |
+| [Dates](https://lordlebu.github.io/SouthOfTethys/workshop.html#dates) | *produce* | Dried on the frond and carried in a pressed block. |
+| [Ginger](https://lordlebu.github.io/SouthOfTethys/workshop.html#ginger) | *spice · physic* | Dug rather than picked. |
+| [Jackfruit](https://lordlebu.github.io/SouthOfTethys/workshop.html#jackfruit) | *produce* | Unripe it is cooked like meat and ripe it is eaten like sweets. |
+| [Lotus-root taro](https://lordlebu.github.io/SouthOfTethys/workshop.html#lotus-root-taro) | *produce* | A flood crop in canon's own words -- it wants the water the rice cannot take, so the two together mean a bad year is survivable. |
+| [Mahua oil](https://lordlebu.github.io/SouthOfTethys/workshop.html#mahua-oil) | *oil · produce* | Pressed from the seed. |
+| [Mango](https://lordlebu.github.io/SouthOfTethys/workshop.html#mango) | *produce* | Two crops from one tree a month apart: the green fruit is the sour one cooks with, and the ripe one is not cooked at all. |
+| [Mustard seed](https://lordlebu.github.io/SouthOfTethys/workshop.html#mustard-seed) | *oil · spice · grain* | Pressed for a hot yellow oil, or cracked whole into it. |
+| [Natron](https://lordlebu.github.io/SouthOfTethys/workshop.html#natron) | *salt* | The bitter salt from a dry lake bed. |
+| [Red delta rice](https://lordlebu.github.io/SouthOfTethys/workshop.html#red-delta-rice) | *grain · produce* | Canon records it as a staple grain and a trade good. |
+| [River fish](https://lordlebu.github.io/SouthOfTethys/workshop.html#river-fish) | *flesh* | Split, salted and dried on a rack. |
+| [Salt crust](https://lordlebu.github.io/SouthOfTethys/workshop.html#salt-crust) | *salt* | Scraped off a pan in sheets. |
+| [Tamarind pulp](https://lordlebu.github.io/SouthOfTethys/workshop.html#tamarind-pulp) | *produce* | Canon files the tree under food, souring agent and shade. |
 

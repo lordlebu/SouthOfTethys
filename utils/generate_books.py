@@ -10,6 +10,25 @@ angles: every page loads the same folders, resolves the same cross-references an
 same entity rows. Four scripts would be four copies of that, and the copies would drift the way
 `diarySections` and `Diary.tsx` drifted in the game before they were made one builder.
 
+**Built the way a role-playing compendium is built**, because that is what these are and the
+form is long settled. Three borrowings, all from Paizo's Archives of Nethys and the stat-block
+conventions it publishes:
+
+  1. **A traits line.** Pathfinder puts a row of keywords under every name -- rarity, then the
+     tags that decide how a thing interacts with everything else -- and it doubles as the filter
+     dimension. Canon already *had* traits and was printing them as prose: `rarity` on a species,
+     `classes` on a material, `affords` on an item, `uses` on a plant. They are keywords now.
+  2. **Entries link to each other.** A compendium is worth using because a monster's ability
+     reaches its description and a feat reaches its prerequisite. So a recipe's ingredients are
+     links to the materials, a material links to the species it is won from, and a dish links to
+     the custom that eats it.
+  3. **Backlinks, which are the half that makes it usable.** Knowing what a reed is matters less
+     than knowing what is made *of* reed, and only one of those is written down anywhere. Every
+     material entry ends with what uses it, gathered by walking the recipes backwards.
+
+Table view for the bestiary and stat blocks for the made things, which is the same split the
+Archives makes: 365 species is a thing you browse and filter, and a recipe is a thing you read.
+
 **The cookbook is the reason this exists at all.** `foodways/` is deliberately not exported --
 what a loaf means on the night the river comes over the bank is a fact about the Harappans and
 belongs beside mythology, not in a browser bundle. Which left fifteen entities that nothing
@@ -23,6 +42,7 @@ from __future__ import annotations
 
 import collections
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -74,11 +94,30 @@ def named(entities: list[dict]) -> dict[str, dict]:
     return {e["id"]: e for e in entities}
 
 
-# Every id in canon resolved to the name a reader would use, filled in by `main`.
+# Every id in canon, resolved to the name a reader would use and the page it is written on.
 #
-# A book that prints `2 × material_delta_rice` is a database dump with headings. The ids are
-# canon's business and the whole point of a generated book is that it is not.
+# A book that prints `2 × material_delta_rice` is a database dump with headings; one that prints
+# `2 × Red delta rice` and does not let you reach it is a catalogue. The ids are canon's business
+# and the point of a generated book is that it is neither of those.
+#
+# `id -> (name, page or None)`. A page of None means the thing has a name but no entry to reach,
+# which is true of species in the table view and of anything a book does not cover.
 NAMES: dict[str, str] = {}
+ENTRY_PAGE: dict[str, str] = {}
+
+SITE = "https://lordlebu.github.io/SouthOfTethys"
+
+
+def slug(text: str) -> str:
+    """A heading anchor, the way both render targets build one.
+
+    GitHub and kramdown both derive a heading's id from its text: lowercase, punctuation
+    dropped, spaces to hyphens. They agree for every name canon has, and relying on that is
+    what lets one link work in the repository and on the site -- the same two-target problem
+    `book_nav.py` solves with absolute URLs, one level down.
+    """
+    keep = [c.lower() if c.isalnum() else ("-" if c in " _-" else "") for c in text]
+    return "".join(keep).strip("-")
 
 
 def readable(ref: str | None) -> str:
@@ -90,22 +129,57 @@ def readable(ref: str | None) -> str:
     return NAMES.get(ref, ref)
 
 
-def takes(recipe: dict) -> str:
-    """A recipe's ingredients, in words."""
+def link(ref: str | None, page: str | None = None) -> str:
+    """A cross-reference, as a link where there is an entry to reach and prose where there is not.
+
+    Within a page the anchor alone is enough. Across pages it has to be the published absolute
+    URL: a relative `workshop.html` 404s in the repository and a relative `workshop.md` 404s on
+    the site, which is the reason `book_nav.py` gives for doing the same thing.
+    """
+    if not ref:
+        return ""
+    name = readable(ref)
+    if ref.startswith("#"):
+        return f"`{name}`"
+    where = ENTRY_PAGE.get(ref)
+    if not where:
+        return name
+    anchor = f"#{slug(name)}"
+    return f"[{name}]({anchor})" if where == page else f"[{name}]({SITE}/{where}.html{anchor})"
+
+
+def traits(*groups: object) -> str:
+    """A Pathfinder-style keyword line: rarity first, then the tags, comma separated.
+
+    Presentation only -- every keyword here is already a value in a declared vocabulary, and
+    that is the point. A trait line a reader can scan and a lint that refuses the twenty-second
+    value typed by accident are the same list seen from two ends.
+    """
+    words: list[str] = []
+    for g in groups:
+        if not g:
+            continue
+        words.extend([g] if isinstance(g, str) else list(g))
+    seen = list(dict.fromkeys(w for w in words if w))
+    return "*" + " · ".join(seen) + "*" if seen else ""
+
+
+def takes(recipe: dict, page: str | None = None) -> str:
+    """A recipe's ingredients, as links where there is somewhere to go."""
     parts = []
     for n in recipe.get("ingredients") or []:
-        what = readable(n.get("tag") or n.get("material") or n.get("item"))
+        what = link(n.get("tag") or n.get("material") or n.get("item"), page)
         count = n.get("count", 1)
         kept = " *(kept)*" if n.get("kept") else ""
         parts.append(f"{count} × {what}{kept}" if count > 1 else f"{what}{kept}")
     return ", ".join(parts)
 
 
-def gives(recipe: dict) -> str:
-    """A recipe's outputs, in words."""
+def gives(recipe: dict, page: str | None = None) -> str:
+    """A recipe's outputs, as links where there is somewhere to go."""
     parts = []
     for o in recipe.get("outputs") or []:
-        what = readable(o.get("item") or o.get("material"))
+        what = link(o.get("item") or o.get("material"), page)
         count = o.get("count", 1)
         parts.append(f"{count} × {what}" if count > 1 else what)
     return ", ".join(parts)
@@ -148,17 +222,22 @@ def bestiary(fauna: list[dict], flora: list[dict], regions: list[dict]) -> None:
         body.append("")
         body.append(f"*{len(here)} recorded.*")
         body.append("")
-        body.append("| | Species | What it is | Where |")
-        body.append("|---|---|---|---|")
+        body.append("| Species | Traits | What it is |")
+        body.append("|---|---|---|")
         for e in sorted(here, key=lambda x: x["name"]):
             kind = e.get("clade") or e.get("growth_form") or ""
             gloss = (clades.get(kind) or forms.get(kind) or {})
             gloss = gloss.get("label", kind) if isinstance(gloss, dict) else kind
-            sci = f"*{e['scientific']}*" if e.get("scientific") else ""
-            where = ", ".join(e.get("biomes") or []) or "—"
+            sci = f"<br>*{e['scientific']}*" if e.get("scientific") else ""
+            # Rarity first, then what it is, then where -- and `lore only` where canon writes
+            # about something it never places, which is the trait a reader most needs and the
+            # old table buried in a parenthesis at the end of a column.
+            tags = [e.get("rarity", ""), gloss]
             if e.get("placement") == "lore":
-                where = f"{where} (lore only)"
-            body.append(f"| {gloss} | **{e['name']}** {sci} | {sentence(e.get('journal_prompt'))} | {where} |")
+                tags.append("lore only")
+            tags.extend(e.get("biomes") or [])
+            tags.extend(e.get("uses") or [])
+            body.append(f"| **{e['name']}**{sci} | {traits(tags)} | {sentence(e.get('journal_prompt'))} |")
         body.append("")
 
     page(
@@ -219,7 +298,7 @@ def apothecary(flora: list[dict], materials: list[dict], items: list[dict], reci
     if how:
         body.extend(["## How they are made", "", "| Preparation | Takes |", "|---|---|"])
         for r in sorted(how, key=lambda x: x["name"]):
-            body.append(f"| **{r['name']}** | {takes(r)} |")
+            body.append(f"| {link(r['id'])} | {takes(r)} |")
         body.append("")
 
     page("apothecary.md", "The Apothecary",
@@ -257,9 +336,41 @@ def workshop(materials, items, processes, recipes, vehicles) -> None:
         if not here:
             continue
         label = gloss.get("label", c) if isinstance(gloss, dict) else c
-        names = ", ".join(sorted(m["name"] for m in here))
+        names = ", ".join(link(m["id"], "workshop") for m in sorted(here, key=lambda x: x["name"]))
         body.append(f"- **{label}** (`#{c}`) — {names}")
     body.append("")
+
+    # What is made *of* a thing, gathered by walking the recipes backwards. This is the half of
+    # a compendium that a list cannot give you: knowing what a reed is matters less than knowing
+    # what a reed becomes, and only one of those is written down anywhere in canon.
+    #
+    # A `#tag` ingredient credits every material carrying that class, because that is what the
+    # recipe actually accepts -- a mat asking for `#fibre` is genuinely a use for goat hair.
+    used_by: dict[str, list[str]] = collections.defaultdict(list)
+    for r in recipes:
+        for n in r.get("ingredients") or []:
+            if n.get("material"):
+                used_by[n["material"]].append(r["id"])
+            elif n.get("tag"):
+                for m in by_class.get(n["tag"].lstrip("#")) or []:
+                    used_by[m["id"]].append(r["id"])
+
+    body.extend(["## The materials themselves", ""])
+    for m in materials:
+        body.append(f"### {m['name']}")
+        body.append("")
+        body.append(traits([m.get("rarity", ""), *(m.get("classes") or []), *(m.get("found_in") or [])]))
+        body.append("")
+        if m.get("notes"):
+            body.append(m["notes"])
+            body.append("")
+        if m.get("won_from"):
+            body.append("**Won from** " + ", ".join(link(w) for w in m["won_from"]) + ".")
+            body.append("")
+        uses = list(dict.fromkeys(used_by.get(m["id"]) or []))
+        if uses:
+            body.append("**Used in** " + ", ".join(link(u, "workshop") for u in uses) + ".")
+            body.append("")
 
     body.extend(["## Ways of making", "", "| Process | Done at | Needs | |", "|---|---|---|---|"])
     for p in processes:
@@ -278,27 +389,38 @@ def workshop(materials, items, processes, recipes, vehicles) -> None:
     for pid, here in sorted(by_proc.items(), key=lambda kv: proc_by_id.get(kv[0], {}).get("source_index", 0)):
         body.append(f"### {proc_by_id.get(pid, {}).get('name', pid)}")
         body.append("")
-        body.append("| Makes | From | Taught by |")
-        body.append("|---|---|---|")
         for r in sorted(here, key=lambda x: x["name"]):
-            taught = ", ".join(readable(w) for w in r.get("taught_by") or []) or "common knowledge"
-            body.append(f"| {gives(r)} | {takes(r)} | {taught} |")
-        body.append("")
+            taught = ", ".join(link(w) for w in r.get("taught_by") or []) or "common knowledge"
+            body.append(f"#### {r['name']}")
+            body.append("")
+            if r.get("known_by"):
+                body.append(traits(r["known_by"]))
+                body.append("")
+            body.append(f"**Makes** {gives(r, 'workshop')}. **Takes** {takes(r, 'workshop')}.")
+            body.append("")
+            body.append(f"**Taught by** {taught}.")
+            body.append("")
+            if r.get("notes"):
+                body.append(r["notes"])
+                body.append("")
 
-    body.extend(["## Objects, by what they are for", "", "| Kind | Object | Affords | |", "|---|---|---|---|"])
+    body.extend(["## Objects, by what they are for", "", "| Object | Traits | Made of | |", "|---|---|---|---|"])
     for i in sorted(items, key=lambda x: (x.get("kind", ""), x["name"])):
-        aff = ", ".join(i.get("affords") or [])
-        proto = " *(prototype)*" if i["id"] in prototypes else ""
-        body.append(f"| {i.get('kind','')} | **{i['name']}**{proto} | {aff} | {sentence(i.get('notes'))} |")
+        tags = [i.get("kind", ""), *(i.get("affords") or [])]
+        if i["id"] in prototypes:
+            tags.append("prototype")
+        of = ", ".join(link(m, "workshop") for m in i.get("materials") or []) or "—"
+        body.append(f"| **{i['name']}** | {traits(tags)} | {of} | {sentence(i.get('notes'))} |")
     body.append("")
 
     if vehicles:
-        body.extend(["## Things that carry you", "", "| Craft | Kind | Crosses | Carries | |", "|---|---|---|---|---|"])
+        body.extend(["## Things that carry you", "", "| Craft | Traits | Built of | |", "|---|---|---|---|"])
         for v in vehicles:
-            body.append(
-                f"| **{v['name']}** | {v.get('kind','')} | {', '.join(v.get('crosses') or [])} | "
-                f"{v.get('capacity','—')} | {sentence(v.get('notes'))} |"
-            )
+            tags = [v.get("kind", ""), *(v.get("crosses") or [])]
+            if v.get("capacity"):
+                tags.append(f"carries {v['capacity']}")
+            of = ", ".join(link(m, "workshop") for m in v.get("materials") or []) or "—"
+            body.append(f"| **{v['name']}** | {traits(tags)} | {of} | {sentence(v.get('notes'))} |")
         body.append("")
 
     page("workshop.md", "The Workshop",
@@ -339,7 +461,7 @@ def cookbook(items, recipes, foodways, materials) -> None:
             body.append("")
         made_by = [r for r in dishes if any(o.get("item") == i["id"] for o in r.get("outputs") or [])]
         for r in made_by:
-            body.append(f"**{r['name']}** — {takes(r)}.")
+            body.append(f"{link(r['id'])} — {takes(r)}.")
             body.append("")
         for f in by_dish.get(i["id"]) or []:
             body.append(f"> **{f['name']}** *({f.get('culture','')})* — {f.get('occasion','')}")
@@ -353,11 +475,40 @@ def cookbook(items, recipes, foodways, materials) -> None:
     if edible:
         body.extend(["## What it is made from", "", "| Ingredient | | |", "|---|---|---|"])
         for m in sorted(edible, key=lambda x: x["name"]):
-            body.append(f"| **{m['name']}** | {', '.join(m.get('classes') or [])} | {sentence(m.get('notes'))} |")
+            body.append(f"| {link(m['id'])} | {traits(m.get('classes') or [])} | {sentence(m.get('notes'))} |")
         body.append("")
 
     page("cookbook.md", "The Cookbook",
          "What is eaten, when it is eaten, and what eating it says.", body)
+
+
+def check_links() -> list[str]:
+    """Every internal link in the books points at a heading that exists.
+
+    A compendium whose cross-references go nowhere is worse than one with none: it invites the
+    reader to follow something and then wastes the click. These links are all generated, so the
+    only way one breaks is a heading changing shape -- which is exactly the kind of thing nobody
+    notices in a 1,300-line generated page, and exactly what a generator should check about its
+    own output.
+
+    Compared as slugs rather than as text, because a slug is what both render targets resolve.
+    """
+    heading = re.compile(r"^#{2,4} (.+)$", re.M)
+    ref = re.compile(r"\]\((?:" + re.escape(SITE) + r"/(\w+)\.html)?#([\w-]+)\)")
+
+    have: dict[str, set[str]] = {}
+    want: list[tuple[str, str, str]] = []
+    for path in sorted(DOCS.glob("*.md")):
+        text = path.read_text(encoding="utf-8")
+        have[path.stem] = {slug(m) for m in heading.findall(text)}
+        for page, anchor in ref.findall(text):
+            want.append((path.stem, page or path.stem, anchor))
+
+    return [
+        f"{page}.md links to {dest}#{anchor}, which is not a heading there"
+        for page, dest, anchor in want
+        if dest in have and anchor not in have[dest]
+    ]
 
 
 def main() -> int:
@@ -370,12 +521,29 @@ def main() -> int:
         for e in group:
             NAMES[e["id"]] = e.get("name", e["id"])
 
+    # Which page carries a reachable entry for a thing. Anything absent stays plain prose --
+    # a species is a row in a table rather than an entry, so linking to it would promise a
+    # heading that is not there.
+    for e in materials:
+        ENTRY_PAGE[e["id"]] = "workshop"
+    for e in recipes:
+        ENTRY_PAGE[e["id"]] = "workshop"
+    for e in items:
+        if "eat" in (e.get("affords") or []):
+            ENTRY_PAGE[e["id"]] = "cookbook"
+
     bestiary(fauna, flora, load("regions"))
     apothecary(flora, materials, items, recipes)
     workshop(materials, items, processes, recipes, vehicles)
     cookbook(items, recipes, foodways, materials)
+    broken = check_links()
+    for b in broken:
+        print(f"  BROKEN  {b}")
     print(f"\nFour books from {len(fauna) + len(flora)} species and "
           f"{len(materials) + len(items) + len(recipes)} made things.")
+    if broken:
+        print(f"{len(broken)} cross-reference(s) point at nothing.")
+        return 1
     return 0
 
 

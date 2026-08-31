@@ -12,25 +12,515 @@ A recipe names a `#class` wherever any material of that kind will do, which is w
 
 ## Materials, by what they are
 
-- **Fibre** (`#fibre`) — Bamboo cane, Bast, Cliff-goat hair, Palm husk, Reed fibre, Sinew
-- **Timber** (`#timber`) — Bamboo cane, Iron-teak timber, Mangrove pole, Sandalwood billet
-- **Bone** (`#bone`) — Antler, Boar tusk, Leviathan bone, Sawfish bone
-- **Hide** (`#hide`) — Croc hide, Goat hide, Sinew
-- **Shell** (`#shell`) — Ammonite shell, Crayfish carapace, Oyster shell
-- **Resin** (`#resin`) — Frankincense, Myrrh gum, Pitch
-- **Clay** (`#clay`) — Grog, River clay
-- **Stone** (`#stone`) — Basalt, Flint, Sandstone
-- **Glass** (`#glass`) — Magma-glass, Scar glass
-- **Metal** (`#metal`) — Bronze, Native copper, Tin ore
-- **Salt** (`#salt`) — Natron, Salt crust
-- **Pigment** (`#pigment`) — Indigo, Lamp black, Red ochre
-- **Grain** (`#grain`) — Mustard seed, Red delta rice
-- **Produce** (`#produce`) — Bitter greens, Dates, Jackfruit, Lotus-root taro, Mahua oil, Mango, Red delta rice, Tamarind pulp
-- **Flesh** (`#flesh`) — River fish
-- **Oil** (`#oil`) — Mahua oil, Mustard seed
-- **Fuel** (`#fuel`) — Charcoal, Dung cake, Pitch
-- **Physic** (`#physic`) — Bitter greens, Cardamom, Ginger, Myrrh gum, Neem bark, Sandalwood billet, Shilajit
-- **Spice** (`#spice`) — Cardamom, Ginger, Mustard seed
+- **Fibre** (`#fibre`) — [Bamboo cane](#bamboo-cane), [Bast](#bast), [Cliff-goat hair](#cliff-goat-hair), [Palm husk](#palm-husk), [Reed fibre](#reed-fibre), [Sinew](#sinew)
+- **Timber** (`#timber`) — [Bamboo cane](#bamboo-cane), [Iron-teak timber](#iron-teak-timber), [Mangrove pole](#mangrove-pole), [Sandalwood billet](#sandalwood-billet)
+- **Bone** (`#bone`) — [Antler](#antler), [Boar tusk](#boar-tusk), [Leviathan bone](#leviathan-bone), [Sawfish bone](#sawfish-bone)
+- **Hide** (`#hide`) — [Croc hide](#croc-hide), [Goat hide](#goat-hide), [Sinew](#sinew)
+- **Shell** (`#shell`) — [Ammonite shell](#ammonite-shell), [Crayfish carapace](#crayfish-carapace), [Oyster shell](#oyster-shell)
+- **Resin** (`#resin`) — [Frankincense](#frankincense), [Myrrh gum](#myrrh-gum), [Pitch](#pitch)
+- **Clay** (`#clay`) — [Grog](#grog), [River clay](#river-clay)
+- **Stone** (`#stone`) — [Basalt](#basalt), [Flint](#flint), [Sandstone](#sandstone)
+- **Glass** (`#glass`) — [Magma-glass](#magma-glass), [Scar glass](#scar-glass)
+- **Metal** (`#metal`) — [Bronze](#bronze), [Native copper](#native-copper), [Tin ore](#tin-ore)
+- **Salt** (`#salt`) — [Natron](#natron), [Salt crust](#salt-crust)
+- **Pigment** (`#pigment`) — [Indigo](#indigo), [Lamp black](#lamp-black), [Red ochre](#red-ochre)
+- **Grain** (`#grain`) — [Mustard seed](#mustard-seed), [Red delta rice](#red-delta-rice)
+- **Produce** (`#produce`) — [Bitter greens](#bitter-greens), [Dates](#dates), [Jackfruit](#jackfruit), [Lotus-root taro](#lotus-root-taro), [Mahua oil](#mahua-oil), [Mango](#mango), [Red delta rice](#red-delta-rice), [Tamarind pulp](#tamarind-pulp)
+- **Flesh** (`#flesh`) — [River fish](#river-fish)
+- **Oil** (`#oil`) — [Mahua oil](#mahua-oil), [Mustard seed](#mustard-seed)
+- **Fuel** (`#fuel`) — [Charcoal](#charcoal), [Dung cake](#dung-cake), [Pitch](#pitch)
+- **Physic** (`#physic`) — [Bitter greens](#bitter-greens), [Cardamom](#cardamom), [Ginger](#ginger), [Myrrh gum](#myrrh-gum), [Neem bark](#neem-bark), [Sandalwood billet](#sandalwood-billet), [Shilajit](#shilajit)
+- **Spice** (`#spice`) — [Cardamom](#cardamom), [Ginger](#ginger), [Mustard seed](#mustard-seed)
+
+## The materials themselves
+
+### Reed fibre
+
+*common · fibre · wetland · river · coast*
+
+Retted in standing water until the pith rots away, then combed out and dried. The whole delta runs on it -- matting, basketry, and every rope that does not need to hold a boat.
+
+**Won from** Saraswati Reed, Saltreed.
+
+**Used in** [Retting reed](#retting-reed), [Twisting reed rope](#twisting-reed-rope), [Weaving a reed mat](#weaving-a-reed-mat), [Weaving a carry basket](#weaving-a-carry-basket), [Raising a grain bin](#raising-a-grain-bin), [Making a torch](#making-a-torch), [Cutting a stylus](#cutting-a-stylus).
+
+### Palm husk
+
+*common · fibre · desert · coast · settlement*
+
+The coarse mat of fibre at the base of a frond. Harsher than reed and far more patient of salt water, which is why the harbour rope is husk and the house rope is reed.
+
+**Won from** Date Palm, Oasis Date Palm.
+
+**Used in** [Laying a husk hawser](#laying-a-husk-hawser), [Weaving a reed mat](#weaving-a-reed-mat), [Weaving a carry basket](#weaving-a-carry-basket), [Weaving sail cloth](#weaving-sail-cloth), [Raising a grain bin](#raising-a-grain-bin), [Preparing palm leaf](#preparing-palm-leaf).
+
+### Cliff-goat hair
+
+*common · fibre · hills · mountains*
+
+Combed from the winter coat rather than shorn. Spins into a yarn that stays warm wet, which matters more on the Vindhya than anything else about it.
+
+**Won from** Vindhya Cliff-Goat.
+
+**Used in** [Weaving a reed mat](#weaving-a-reed-mat), [Weaving a carry basket](#weaving-a-carry-basket), [Weaving a blanket](#weaving-a-blanket), [Braiding a sling](#braiding-a-sling), [Raising a grain bin](#raising-a-grain-bin).
+
+### Bast
+
+*common · fibre · forest · plains*
+
+The inner bark, stripped in long ribbons and beaten soft. Taken from a tree the taker intends to keep, so it is cut in bands and never a ring.
+
+**Won from** Neem, Tamarind.
+
+**Used in** [Weaving a reed mat](#weaving-a-reed-mat), [Weaving a carry basket](#weaving-a-carry-basket), [Dyeing indigo cloth](#dyeing-indigo-cloth), [Weaving sail cloth](#weaving-sail-cloth), [Raising a grain bin](#raising-a-grain-bin), [Making tinder](#making-tinder), [Tanning hide](#tanning-hide), [Making a myrrh poultice](#making-a-myrrh-poultice).
+
+### Iron-teak timber
+
+*rare · timber · forest · hills*
+
+Canon already records this tree for ship timber and tower beams, which is a strong claim about a wood: it means the grain holds under a load that would split anything else growing near it.
+
+**Won from** Iron-Teak.
+
+**Used in** [Hafting a stone adze](#hafting-a-stone-adze), [Cutting a walking staff](#cutting-a-walking-staff), [Binding a boar spear](#binding-a-boar-spear), [Burning charcoal](#burning-charcoal), [Boiling pitch](#boiling-pitch), [Fixing a rope span](#fixing-a-rope-span), [Casting a chisel](#casting-a-chisel).
+
+### Mangrove pole
+
+*common · timber · wetland · coast*
+
+Cut from the stilt roots rather than the trunk. Already the right shape, already used to standing in salt water, and no use at all for anything that must be straight.
+
+**Won from** Bonewood Mangrove, Iron-Root Mangrove.
+
+**Used in** [Hafting a stone adze](#hafting-a-stone-adze), [Cutting a walking staff](#cutting-a-walking-staff), [Burning charcoal](#burning-charcoal), [Boiling pitch](#boiling-pitch), [Fixing a rope span](#fixing-a-rope-span), [Casting a chisel](#casting-a-chisel).
+
+### Bamboo cane
+
+*common · timber · fibre · river · forest · wetland*
+
+Two classes, honestly. A whole cane is a scaffold pole; a split one is a strap. Canon records the grove for scaffolding, rafts and tools, which is all three uses of one plant.
+
+**Won from** River Bamboo, Jungle-Crested Bamboo.
+
+**Used in** [Weaving a reed mat](#weaving-a-reed-mat), [Weaving a carry basket](#weaving-a-carry-basket), [Setting a fish weir](#setting-a-fish-weir), [Hafting a stone adze](#hafting-a-stone-adze), [Making a bow drill](#making-a-bow-drill), [Building a loom frame](#building-a-loom-frame), [Cutting a walking staff](#cutting-a-walking-staff), [Lashing mud shoes](#lashing-mud-shoes), [Notching a tally](#notching-a-tally), [Binding a bone harpoon](#binding-a-bone-harpoon), [Binding a reed spear](#binding-a-reed-spear), [Raising a grain bin](#raising-a-grain-bin), [Burning charcoal](#burning-charcoal), [Boiling pitch](#boiling-pitch), [Raising a hide tent](#raising-a-hide-tent), [Fixing a rope span](#fixing-a-rope-span), [Casting a chisel](#casting-a-chisel).
+
+### Sandalwood billet
+
+*rare · timber · physic · forest · hills*
+
+Heartwood only; the sapwood is scentless and worth nothing. Carved, burnt or ground, and canon has it doing all three.
+
+**Won from** Sandalwood.
+
+**Used in** [Hafting a stone adze](#hafting-a-stone-adze), [Cutting a walking staff](#cutting-a-walking-staff), [Carving a comb](#carving-a-comb), [Burning charcoal](#burning-charcoal), [Boiling pitch](#boiling-pitch), [Fixing a rope span](#fixing-a-rope-span), [Carving a salt box](#carving-a-salt-box), [Casting a chisel](#casting-a-chisel).
+
+### Leviathan bone
+
+*mythic · bone · sea · coast*
+
+Canon states outright that the hide and bone plate of the Abyssal Blue are harvested for building maritime vessels. A single rib is a keel. Nobody takes one alone, and nobody takes one often.
+
+**Won from** Abyssal Blue Leviathan, Tethys Leviathan Calf.
+
+**Used in** [Carving a bone awl](#carving-a-bone-awl).
+
+### Antler
+
+*common · bone · forest · plains · hills*
+
+Shed each year and gathered off the ground, which makes it the one bone in this list that costs nothing but the walking.
+
+**Won from** Painted Deer.
+
+**Used in** [Hafting an antler pick](#hafting-an-antler-pick), [Carving a bone awl](#carving-a-bone-awl).
+
+### Boar tusk
+
+*rare · bone · forest · hills*
+
+Curved, hollow at the root, and hard enough to take an edge. Worn as often as it is worked.
+
+**Won from** Mountain Forest Boar.
+
+**Used in** [Carving a bone awl](#carving-a-bone-awl), [Binding a boar spear](#binding-a-boar-spear).
+
+### Sawfish bone
+
+*common · bone · river · coast*
+
+The rostral teeth of the sawfish come out of the estuary already barbed, and a harpoon made from one is a harpoon somebody did very little to.
+
+**Won from** Estuary Sawfish.
+
+**Used in** [Carving a bone awl](#carving-a-bone-awl), [Binding a bone harpoon](#binding-a-bone-harpoon).
+
+### Goat hide
+
+*common · hide · hills · mountains*
+
+Tanned with bark liquor. Becomes a water-skin, a drum head, or the seat of a saddle, in roughly that order of frequency.
+
+**Won from** Vindhya Cliff-Goat.
+
+**Used in** [Braiding a sling](#braiding-a-sling), [Tanning hide](#tanning-hide), [Pitching a water skin](#pitching-a-water-skin), [Making a bedroll](#making-a-bedroll), [Raising a hide tent](#raising-a-hide-tent).
+
+### Croc hide
+
+*rare · hide · river · wetland · desert*
+
+Scuted, awkward to cut and nearly impossible to wear out. The dromedary-croc's is the lighter of the two and the one the delta actually uses.
+
+**Won from** Sleek Dromedary-Croc, Woolly Bactrian-Croc.
+
+**Used in** [Tanning hide](#tanning-hide).
+
+### Sinew
+
+*common · hide · fibre · forest · hills · plains*
+
+Filed under hide as well as fibre because of how it is got: skinning, not retting. Dries to a lashing that tightens as it goes, which no plant fibre does.
+
+**Won from** Painted Deer, Mountain Forest Boar.
+
+**Used in** [Drying sinew lashing](#drying-sinew-lashing), [Weaving a reed mat](#weaving-a-reed-mat), [Weaving a carry basket](#weaving-a-carry-basket), [Making a bow drill](#making-a-bow-drill), [Raising a grain bin](#raising-a-grain-bin), [Tanning hide](#tanning-hide).
+
+### Oyster shell
+
+*common · shell · coast · sea*
+
+Burnt for lime, ground for temper, or cut for inlay. The middens outside Dwarka are made of the ones nobody bothered with.
+
+**Won from** Shattered Sea Oyster.
+
+**Used in** [Drilling shell beads](#drilling-shell-beads), [Stringing a fire rattle](#stringing-a-fire-rattle).
+
+### Ammonite shell
+
+*rare · shell · sea · coast*
+
+Canon inlays the Board of the Chess of Fate with fossilised ammonites, so this is a material with a reputation before it is a material with a use. The black ones are not worked by anybody sensible.
+
+**Won from** Serene Brown Ammonite, Asura-Marked Black Ammonite.
+
+**Used in** [Drilling shell beads](#drilling-shell-beads), [Drilling an ammonite](#drilling-an-ammonite), [Stringing a fire rattle](#stringing-a-fire-rattle).
+
+### Crayfish carapace
+
+*common · shell · river · coast*
+
+Thin, blue, and worth keeping only for the colour. Ground into a pigment more often than it is worked whole.
+
+**Won from** Tethyan Blue-Crayfish.
+
+**Used in** [Drilling shell beads](#drilling-shell-beads), [Stringing a fire rattle](#stringing-a-fire-rattle).
+
+### Frankincense
+
+*rare · resin · desert · hills*
+
+Canon already records the scrub for incense and trade resin. Tapped by scoring the bark and coming back a fortnight later, which makes it a crop as much as a gathering.
+
+**Won from** Frankincense Scrub.
+
+**Used in** [Firing a resin flask](#firing-a-resin-flask), [Pressing an ink cake](#pressing-an-ink-cake).
+
+### Myrrh gum
+
+*rare · resin · physic · desert · hills*
+
+The wound salve canon names on the myrrh-thorn is this, softened in oil. It is also the best glue in the desert, which is the same property read two ways.
+
+**Won from** Myrrh-Thorn.
+
+**Used in** [Firing a resin flask](#firing-a-resin-flask), [Pressing an ink cake](#pressing-an-ink-cake), [Making a myrrh poultice](#making-a-myrrh-poultice).
+
+### Pitch
+
+*common · resin · fuel*
+
+Boiled down from resinous heartwood in a covered pit. Nothing floats without it -- every hull in canon is a hull somebody paid this attention. Boiled out of resinous heartwood in a covered pit.
+
+**Used in** [Firing a storage jar](#firing-a-storage-jar), [Firing a cooking pot](#firing-a-cooking-pot), [Firing an oil lamp](#firing-an-oil-lamp), [Firing a brazier](#firing-a-brazier), [Firing a resin flask](#firing-a-resin-flask), [Boiling pitch](#boiling-pitch), [Making a torch](#making-a-torch), [Pitching a water skin](#pitching-a-water-skin), [Making a bedroll](#making-a-bedroll), [Pressing an ink cake](#pressing-an-ink-cake).
+
+### River clay
+
+*common · clay · river · wetland · coast*
+
+Dug from the cut bank where the water has already done the sorting. The Saraswati's is grey wet and buff fired.
+
+**Used in** [Firing a storage jar](#firing-a-storage-jar), [Firing a cooking pot](#firing-a-cooking-pot), [Firing an oil lamp](#firing-an-oil-lamp), [Firing a brazier](#firing-a-brazier), [Cutting a seal](#cutting-a-seal), [Firing a resin flask](#firing-a-resin-flask), [Raising a grain bin](#raising-a-grain-bin).
+
+### Grog
+
+*common · clay*
+
+Old fired pots, crushed and put back into new clay so the new one survives the kiln. The only material in this file that can only be made from itself. Crushed out of old fired pots. There is no grog in the ground.
+
+**Used in** [Firing a cooking pot](#firing-a-cooking-pot).
+
+### Flint
+
+*common · stone · hills · plains · coast*
+
+Nodules out of limestone, or cobbles out of a riverbed. Knaps predictably, which is the entire reason it outlasted better-looking stone.
+
+**Used in** [Knapping a flint knife](#knapping-a-flint-knife), [Binding a reed spear](#binding-a-reed-spear).
+
+### Basalt
+
+*common · stone · mountains · lava_field · hills*
+
+The Deccan is made of it. Too tough to knap and perfect for anything that must grind -- querns, mortars, and the Board of the Chess of Fate.
+
+**Used in** [Hafting a stone adze](#hafting-a-stone-adze), [Dressing a quern](#dressing-a-quern).
+
+### Sandstone
+
+*common · stone · desert · hills · plains*
+
+Dressed rather than knapped. Soft enough to cut with bronze and hard enough to still be standing when the person who cut it is not.
+
+### Magma-glass
+
+*rare · glass · lava_field · mountains*
+
+Volcanic glass, and canon's Chess of Fate has its squares inlaid with it. Takes an edge sharper than bronze and loses it to a hard look.
+
+**Used in** [Knapping a glass lancet](#knapping-a-glass-lancet).
+
+### Scar glass
+
+*rare · glass · desert · coast*
+
+Fused sand from the Glass Scar at Dwarka. Whatever made it is one of the things the player is there to work out, so canon says what it is and pointedly not how it happened.
+
+**Used in** [Knapping a glass lancet](#knapping-a-glass-lancet).
+
+### Native copper
+
+*rare · metal · hills · mountains · desert*
+
+Found as metal rather than smelted from ore -- green-crusted lumps in a dry watercourse. Cold-worked, annealed, worked again.
+
+**Used in** [Smelting copper](#smelting-copper), [Casting bronze](#casting-bronze).
+
+### Tin ore
+
+*rare · metal · mountains · hills*
+
+Cassiterite, heavy and black, panned out of highland gravel. Scarce enough that its trade route is more important than its deposit.
+
+**Used in** [Casting bronze](#casting-bronze).
+
+### Bronze
+
+*rare · metal*
+
+Copper and tin, and the era's outer edge. Canon is a bronze world with iron as a rumour; nothing here should let a recipe quietly invent a smelted iron industry. Cast, never found. Copper and tin and a furnace -- see recipe_cast_bronze.
+
+**Used in** [Casting a bronze knife](#casting-a-bronze-knife), [Casting a chisel](#casting-a-chisel), [Casting a spearhead](#casting-a-spearhead).
+
+### Salt crust
+
+*common · salt · desert · coast*
+
+Scraped off a pan in sheets. It is preservative, currency and the ground Dwarka stands on, which is why it is its own class and not a footnote under stone.
+
+**Won from** Desert Saltbush.
+
+**Used in** [Drying fish](#drying-fish), [Making tamarind paste](#making-tamarind-paste), [Cooking spiced rice](#cooking-spiced-rice), [Cooking the fourteen](#cooking-the-fourteen), [Salting green mango](#salting-green-mango), [Cooking green jackfruit](#cooking-green-jackfruit).
+
+### Natron
+
+*rare · salt · desert*
+
+The bitter salt from a dry lake bed. Cleans, cures hide, and makes glass possible.
+
+**Used in** [Drying fish](#drying-fish), [Making tamarind paste](#making-tamarind-paste), [Cooking spiced rice](#cooking-spiced-rice), [Cooking the fourteen](#cooking-the-fourteen), [Salting green mango](#salting-green-mango), [Cooking green jackfruit](#cooking-green-jackfruit).
+
+### Indigo
+
+*rare · pigment · plains · wetland · settlement*
+
+Fermented in a vat until it stinks, then oxidised in the air. The cloth comes out green and turns blue while you watch, which is why it is worth what it is worth.
+
+**Won from** Wild Indigo, Sweet Indigo.
+
+**Used in** [Dyeing indigo cloth](#dyeing-indigo-cloth), [Fermenting indigo](#fermenting-indigo).
+
+### Red ochre
+
+*common · pigment · hills · desert · plains*
+
+Iron-stained earth, ground and washed. The oldest pigment anybody has, and the one every mark in this world is made in until somebody wants blue.
+
+**Used in** [Grinding ochre](#grinding-ochre).
+
+### Lamp black
+
+*common · pigment*
+
+Soot caught on a cold plate held over a flame. Bound with gum it is ink, which makes it the material Varuna's diary is actually written in. Soot caught on a plate. Nobody gathers it; somebody makes it.
+
+**Used in** [Pressing an ink cake](#pressing-an-ink-cake).
+
+### Red delta rice
+
+*common · grain · produce · wetland · river · plains*
+
+Canon records it as a staple grain and a trade good. Stores through a season, which is the whole difference between a camp and a settlement.
+
+**Won from** Red Delta Rice.
+
+**Used in** [Grinding flour](#grinding-flour), [Baking flood bread](#baking-flood-bread), [Cooking spiced rice](#cooking-spiced-rice), [Baking travel cake](#baking-travel-cake).
+
+### Lotus-root taro
+
+*common · produce · wetland · river*
+
+A flood crop in canon's own words -- it wants the water the rice cannot take, so the two together mean a bad year is survivable.
+
+**Won from** Lotus-Root Taro.
+
+**Used in** [Baking flood bread](#baking-flood-bread), [Cooking salt-fish stew](#cooking-salt-fish-stew).
+
+### Dates
+
+*common · produce · desert · coast · settlement*
+
+Dried on the frond and carried in a pressed block. Sweet, heavy, and the reason a desert crossing is arithmetic rather than a gamble.
+
+**Won from** Date Palm, Oasis Date Palm.
+
+**Used in** [Pressing a date block](#pressing-a-date-block), [Baking travel cake](#baking-travel-cake).
+
+### Tamarind pulp
+
+*common · produce · forest · plains · settlement*
+
+Canon files the tree under food, souring agent and shade. This is the first two; the third is not a thing you can carry.
+
+**Won from** Tamarind.
+
+**Used in** [Making tamarind paste](#making-tamarind-paste), [Cooking salt-fish stew](#cooking-salt-fish-stew).
+
+### River fish
+
+*common · flesh · river · coast · wetland*
+
+Split, salted and dried on a rack. Named for what it is rather than for a species, because a weir does not sort its catch.
+
+**Won from** Estuary Archer-Fish, Beedu.
+
+**Used in** [Drying fish](#drying-fish).
+
+### Mahua oil
+
+*common · oil · produce · forest · plains · hills*
+
+Pressed from the seed. Canon already has the tree down for oil, a fermented drink and a ritual offering, and this is only the first of the three.
+
+**Won from** Mahua, Sweet-Nectar Mahua.
+
+**Used in** [Catching lamp black](#catching-lamp-black), [Pressing mahua oil](#pressing-mahua-oil), [Baking travel cake](#baking-travel-cake), [Brewing mahua](#brewing-mahua), [Making neem salve](#making-neem-salve), [Making a myrrh poultice](#making-a-myrrh-poultice), [Cooking the fourteen](#cooking-the-fourteen).
+
+### Charcoal
+
+*common · fuel*
+
+Canon names the ghost mangrove for charcoal specifically. Burnt slow under turf, and the only fuel in this list hot enough to melt anything. Burnt slow under turf from timber. Not a thing lying about.
+
+**Won from** Ghost Mangrove.
+
+**Used in** [Firing a storage jar](#firing-a-storage-jar), [Firing a cooking pot](#firing-a-cooking-pot), [Firing an oil lamp](#firing-an-oil-lamp), [Firing a brazier](#firing-a-brazier), [Firing a resin flask](#firing-a-resin-flask), [Boiling pitch](#boiling-pitch), [Making tinder](#making-tinder), [Smelting copper](#smelting-copper), [Casting bronze](#casting-bronze), [Casting a bronze knife](#casting-a-bronze-knife), [Casting a chisel](#casting-a-chisel), [Casting a spearhead](#casting-a-spearhead).
+
+### Dung cake
+
+*common · fuel · plains · settlement · desert*
+
+Patted flat and dried on a wall. Unglamorous, universal, and what almost every meal in this world is actually cooked over.
+
+**Used in** [Firing a storage jar](#firing-a-storage-jar), [Firing a cooking pot](#firing-a-cooking-pot), [Firing an oil lamp](#firing-an-oil-lamp), [Firing a brazier](#firing-a-brazier), [Firing a resin flask](#firing-a-resin-flask), [Boiling pitch](#boiling-pitch).
+
+### Neem bark
+
+*common · physic · forest · plains · settlement*
+
+Canon has the tree for medicine and insect repellent. Bitter enough that nobody takes it for pleasure and reliable enough that everybody has some.
+
+**Won from** Neem.
+
+**Used in** [Making neem salve](#making-neem-salve).
+
+### Shilajit
+
+*rare · physic · mountains · hills*
+
+The tonic canon names on the creeper -- a mineral exudate scraped from high rock. Filed as physic rather than salt because of what it is for, not what it is made of.
+
+**Won from** Shilajit Creeper.
+
+**Used in** [Preparing shilajit](#preparing-shilajit).
+
+### Bitter greens
+
+*common · physic · produce · wetland · river · plains · settlement*
+
+Fourteen leaves, and the number is the point rather than the plants -- see `foodway_choddo_shak`. Gathered on one morning from ditch, bund, pond and field edge, most of them things nobody planted. Bitter to the last, on purpose.
+
+**Won from** Ol Yam, Bethua, Kalkasunde, Neem, Hinche, Shushni, Jayanti, Guloncho, Palta, Shulfa, Shaluk, Ghentu, Kemuk, Keot.
+
+**Used in** [Cooking the fourteen](#cooking-the-fourteen).
+
+### Ginger
+
+*common · spice · physic · forest · settlement*
+
+Dug rather than picked. Keeps a season in dry sand and travels as well as anything that is not a stone, which is most of why it is worth as much away from where it grows.
+
+**Won from** Ginger.
+
+**Used in** [Tempering oil](#tempering-oil), [Cooking green jackfruit](#cooking-green-jackfruit).
+
+### Mustard seed
+
+*common · oil · spice · grain · plains · settlement*
+
+Pressed for a hot yellow oil, or cracked whole into it. A field of mustard is two crops standing in one place.
+
+**Won from** Field Mustard.
+
+**Used in** [Catching lamp black](#catching-lamp-black), [Grinding flour](#grinding-flour), [Baking travel cake](#baking-travel-cake), [Making neem salve](#making-neem-salve), [Making a myrrh poultice](#making-a-myrrh-poultice), [Cooking the fourteen](#cooking-the-fourteen), [Tempering oil](#tempering-oil), [Pressing mustard oil](#pressing-mustard-oil).
+
+### Cardamom
+
+*rare · spice · physic · forest · hills*
+
+Three pods will scent a whole pot, which is the only reason something growing in wet shade on one plateau is eaten a thousand miles away.
+
+**Won from** Hill Cardamom.
+
+**Used in** [Tempering oil](#tempering-oil).
+
+### Mango
+
+*common · produce · settlement · plains · forest*
+
+Two crops from one tree a month apart: the green fruit is the sour one cooks with, and the ripe one is not cooked at all.
+
+**Won from** Mango.
+
+**Used in** [Salting green mango](#salting-green-mango).
+
+### Jackfruit
+
+*common · produce · settlement · forest*
+
+Unripe it is cooked like meat and ripe it is eaten like sweets. Canon files it as produce both times, because it is a fruit whichever way it is used.
+
+**Won from** Jackfruit.
+
+**Used in** [Cooking green jackfruit](#cooking-green-jackfruit).
 
 ## Ways of making
 
@@ -57,244 +547,768 @@ A recipe names a `#class` wherever any material of that kind will do, which is w
 
 ### Knapping
 
-| Makes | From | Taught by |
-|---|---|---|
-| Flint knife | 2 × Flint | common knowledge |
-| Glass lancet | glass | common knowledge |
+#### Knapping a flint knife
+
+**Makes** Flint knife. **Takes** 2 × [Flint](#flint).
+
+**Taught by** common knowledge.
+
+An afternoon's work, sharp for a week, replaced without ceremony.
+
+#### Knapping a glass lancet
+
+**Makes** Glass lancet. **Takes** `glass`.
+
+**Taught by** common knowledge.
+
+Magma-glass or scar-glass, whichever the ground offers -- they knap the same, which is why they share a class.
 
 ### Retting
 
-| Makes | From | Taught by |
-|---|---|---|
-| 2 × Reed fibre | Reed fibre | common knowledge |
+#### Retting reed
+
+**Makes** 2 × [Reed fibre](#reed-fibre). **Takes** [Reed fibre](#reed-fibre).
+
+**Taught by** common knowledge.
+
+Nine days in standing water, then combed. The one recipe here that turns a thing into more of itself, because retting is what makes gathered reed into usable fibre at all.
 
 ### Spinning and twisting
 
-| Makes | From | Taught by |
-|---|---|---|
-| Sling | 2 × Cliff-goat hair, Goat hide | Marn |
-| Husk hawser | 6 × Palm husk | Pell |
-| Reed rope | 4 × Reed fibre | common knowledge |
+#### Braiding a sling
+
+**Makes** Sling. **Takes** 2 × [Cliff-goat hair](#cliff-goat-hair), [Goat hide](#goat-hide).
+
+**Taught by** Marn.
+
+Two cords and a pouch. Keeps birds off a crop far more often than anything else.
+
+#### Laying a husk hawser
+
+**Makes** Husk hawser. **Takes** 6 × [Palm husk](#palm-husk).
+
+**Taught by** Pell.
+
+Heavier and slower than reed, and it will still be there next season.
+
+#### Twisting reed rope
+
+**Makes** Reed rope. **Takes** 4 × [Reed fibre](#reed-fibre).
+
+**Taught by** common knowledge.
+
+Four handfuls to a working length. Wants a whorl, which is any item that works.
 
 ### Weaving
 
-| Makes | From | Taught by |
-|---|---|---|
-| Indigo cloth | 4 × Bast, 2 × Indigo, Loom frame *(kept)* | common knowledge |
-| Bedroll | Reed mat, Goat hide, Pitch | Uma |
-| Grain bin | 6 × Bamboo cane, 4 × River clay, 4 × fibre | Uma |
-| Fish weir | 6 × Bamboo cane, Reed rope | Thrali |
-| Goat-hair blanket | 5 × Cliff-goat hair, Loom frame *(kept)* | Marn |
-| Carry basket | 2 × Bamboo cane, 4 × fibre | common knowledge |
-| Reed mat | 6 × fibre, Loom frame *(kept)* | Uma |
-| Sail cloth | 6 × Palm husk, 4 × Bast, Loom frame *(kept)* | common knowledge |
+#### Dyeing indigo cloth
+
+*harappan*
+
+**Makes** Indigo cloth. **Takes** 4 × [Bast](#bast), 2 × [Indigo](#indigo), Loom frame *(kept)*.
+
+**Taught by** common knowledge.
+
+Green out of the vat, blue in the air. Half its worth is that everyone has watched it happen.
+
+#### Making a bedroll
+
+**Makes** Bedroll. **Takes** Reed mat, [Goat hide](#goat-hide), [Pitch](#pitch).
+
+**Taught by** Uma.
+
+Oiled cloth over a reed mat. It has been rained on.
+
+#### Raising a grain bin
+
+**Makes** Grain bin. **Takes** 6 × [Bamboo cane](#bamboo-cane), 4 × [River clay](#river-clay), 4 × `fibre`.
+
+**Taught by** Uma.
+
+Mud-plastered basketwork, taller than a person. Does not move once filled -- the first object here only a settlement can own.
+
+#### Setting a fish weir
+
+**Makes** Fish weir. **Takes** 6 × [Bamboo cane](#bamboo-cane), Reed rope.
+
+**Taught by** Thrali.
+
+Built in the water and left. What it catches is not sorted, which is why the fish it gives is named for the river.
+
+#### Weaving a blanket
+
+*tushara*
+
+**Makes** Goat-hair blanket. **Takes** 5 × [Cliff-goat hair](#cliff-goat-hair), Loom frame *(kept)*.
+
+**Taught by** Marn.
+
+Known on the steppe and in the hills, where staying warm wet is the only question.
+
+#### Weaving a carry basket
+
+**Makes** Carry basket. **Takes** 2 × [Bamboo cane](#bamboo-cane), 4 × `fibre`.
+
+**Taught by** common knowledge.
+
+Split cane ribs, then any fibre for the weft.
+
+#### Weaving a reed mat
+
+**Makes** Reed mat. **Takes** 6 × `fibre`, Loom frame *(kept)*.
+
+**Taught by** Uma.
+
+Any fibre will do, which is what a tag ingredient is for -- reed in the delta, husk on the coast, and the recipe does not have to know which.
+
+#### Weaving sail cloth
+
+**Makes** Sail cloth. **Takes** 6 × [Palm husk](#palm-husk), 4 × [Bast](#bast), Loom frame *(kept)*.
+
+**Taught by** common knowledge.
+
+Coarse and heavy. The difference between a boat that drifts and a boat that goes.
 
 ### Carving
 
-| Makes | From | Taught by |
-|---|---|---|
-| Boar spear | Iron-teak timber, Boar tusk, Sinew lashing | common knowledge |
-| Bone harpoon | Sawfish bone, Bamboo cane, Sinew lashing | Thrali |
-| Field diary | 4 × Palm-leaf sheet, Reed rope, Bone awl *(kept)* | Okhi |
-| Reed spear | Bamboo cane, Flint, Reed rope | common knowledge |
-| Loom frame | 4 × Bamboo cane, Reed rope, Flint knife *(kept)* | common knowledge |
-| Bone awl | bone, Flint knife *(kept)* | Sura |
-| Sandalwood comb | Sandalwood billet, Flint knife *(kept)* | common knowledge |
-| Salt box | Sandalwood billet, Flint knife *(kept)* | Bekh |
-| Clay seal | River clay, Bone awl *(kept)* | common knowledge |
-| 2 × Reed stylus | Reed fibre, Flint knife *(kept)* | Vessa |
-| Walking staff | timber, Flint knife *(kept)* | common knowledge |
-| Quern | 2 × Basalt, Stone adze *(kept)* | common knowledge |
-| Ammonite pendant | Ammonite shell, Bow drill *(kept)* | Sura |
-| 4 × Shell bead | 2 × shell, Bow drill *(kept)* | Sura |
-| Stone adze | Basalt, Sinew lashing, timber | common knowledge |
-| Antler pick | Antler, Reed rope | common knowledge |
-| Mud shoes | 2 × Bamboo cane, Reed rope | common knowledge |
-| Bow drill | Bamboo cane, Sinew, Flint knife *(kept)* | common knowledge |
-| 2 × Reed torch | 2 × Reed fibre, Pitch | common knowledge |
-| Tally stick | Bamboo cane, Bone awl *(kept)* | Vessa |
-| Water skin | Goat hide, Pitch, Bone awl *(kept)* | common knowledge |
-| Hide tent | 4 × Goat hide, 3 × Bamboo cane, Husk hawser | common knowledge |
-| Fire rattle | 4 × shell, Reed rope | common knowledge |
+#### Binding a boar spear
+
+**Makes** Boar spear. **Takes** [Iron-teak timber](#iron-teak-timber), [Boar tusk](#boar-tusk), Sinew lashing.
+
+**Taught by** common knowledge.
+
+Cross-barred below the head, so that what it stops does not walk up it.
+
+#### Binding a bone harpoon
+
+**Makes** Bone harpoon. **Takes** [Sawfish bone](#sawfish-bone), [Bamboo cane](#bamboo-cane), Sinew lashing.
+
+**Taught by** Thrali.
+
+The rostral tooth arrives barbed. Very little is done to it.
+
+#### Binding a field diary
+
+**Makes** Field diary. **Takes** 4 × Palm-leaf sheet, Reed rope, Bone awl *(kept)*.
+
+**Taught by** Okhi.
+
+The crossings-out are the useful part. A first guess is worth keeping once it is wrong.
+
+#### Binding a reed spear
+
+**Makes** Reed spear. **Takes** [Bamboo cane](#bamboo-cane), [Flint](#flint), Reed rope.
+
+**Taught by** common knowledge.
+
+Held level, it moves a herd. That is its recorded use.
+
+#### Building a loom frame
+
+**Makes** Loom frame. **Takes** 4 × [Bamboo cane](#bamboo-cane), Reed rope, Flint knife *(kept)*.
+
+**Taught by** common knowledge.
+
+Upright, weighted, taken apart to travel. Every woven thing waits on this one.
+
+#### Carving a bone awl
+
+**Makes** Bone awl. **Takes** `bone`, Flint knife *(kept)*.
+
+**Taught by** Sura.
+
+Bores a hole and scores a line, with the same point.
+
+#### Carving a comb
+
+**Makes** Sandalwood comb. **Takes** [Sandalwood billet](#sandalwood-billet), Flint knife *(kept)*.
+
+**Taught by** common knowledge.
+
+Keeps its scent for a lifetime, which is most of why anyone carries one.
+
+#### Carving a salt box
+
+**Makes** Salt box. **Takes** [Sandalwood billet](#sandalwood-billet), Flint knife *(kept)*.
+
+**Taught by** Bekh.
+
+Wood rather than clay, because salt draws water and a fired jar sweats.
+
+#### Cutting a seal
+
+*harappan*
+
+**Makes** Clay seal. **Takes** [River clay](#river-clay), Bone awl *(kept)*.
+
+**Taught by** common knowledge.
+
+Says who packed it and that nobody has opened it since.
+
+#### Cutting a stylus
+
+**Makes** 2 × Reed stylus. **Takes** [Reed fibre](#reed-fibre), Flint knife *(kept)*.
+
+**Taught by** Vessa.
+
+Recut every few lines, and lost constantly.
+
+#### Cutting a walking staff
+
+**Makes** Walking staff. **Takes** `timber`, Flint knife *(kept)*.
+
+**Taught by** common knowledge.
+
+Shoulder height, worn smooth at the grip in its own time.
+
+#### Dressing a quern
+
+**Makes** Quern. **Takes** 2 × [Basalt](#basalt), Stone adze *(kept)*.
+
+**Taught by** common knowledge.
+
+Two stones, dressed to sit true. The household that owns one does not lend it.
+
+#### Drilling an ammonite
+
+**Makes** Ammonite pendant. **Takes** [Ammonite shell](#ammonite-shell), Bow drill *(kept)*.
+
+**Taught by** Sura.
+
+A spiral somebody found already made.
+
+#### Drilling shell beads
+
+*harappan*
+
+**Makes** 4 × Shell bead. **Takes** 2 × `shell`, Bow drill *(kept)*.
+
+**Taught by** Sura.
+
+The smallest unit of worth anybody agrees on, and Harappa is where they are made.
+
+#### Hafting a stone adze
+
+**Makes** Stone adze. **Takes** [Basalt](#basalt), Sinew lashing, `timber`.
+
+**Taught by** common knowledge.
+
+The blade set across the haft, not along it. That difference matters enormously to a boat.
+
+#### Hafting an antler pick
+
+**Makes** Antler pick. **Takes** [Antler](#antler), Reed rope.
+
+**Taught by** common knowledge.
+
+Free, in the sense that the deer left it lying there.
+
+#### Lashing mud shoes
+
+**Makes** Mud shoes. **Takes** 2 × [Bamboo cane](#bamboo-cane), Reed rope.
+
+**Taught by** common knowledge.
+
+Splayed frames under the foot. A salt flat becomes ground you can cross.
+
+#### Making a bow drill
+
+**Makes** Bow drill. **Takes** [Bamboo cane](#bamboo-cane), [Sinew](#sinew), Flint knife *(kept)*.
+
+**Taught by** common knowledge.
+
+Holes and fire, the same motion at different patience.
+
+#### Making a torch
+
+**Makes** 2 × Reed torch. **Takes** 2 × [Reed fibre](#reed-fibre), [Pitch](#pitch).
+
+**Taught by** common knowledge.
+
+Bright, brief, and gone in the rain.
+
+#### Notching a tally
+
+**Makes** Tally stick. **Takes** [Bamboo cane](#bamboo-cane), Bone awl *(kept)*.
+
+**Taught by** Vessa.
+
+Notched and split so both halves must agree. A contract nobody can argue with.
+
+#### Pitching a water skin
+
+**Makes** Water skin. **Takes** [Goat hide](#goat-hide), [Pitch](#pitch), Bone awl *(kept)*.
+
+**Taught by** common knowledge.
+
+Tastes of the pitch. Everyone stopped noticing generations ago.
+
+#### Raising a hide tent
+
+*tushara*
+
+**Makes** Hide tent. **Takes** 4 × [Goat hide](#goat-hide), 3 × [Bamboo cane](#bamboo-cane), Husk hawser.
+
+**Taught by** common knowledge.
+
+Two people to raise and one to strike.
+
+#### Stringing a fire rattle
+
+**Makes** Fire rattle. **Takes** 4 × `shell`, Reed rope.
+
+**Taught by** common knowledge.
+
+Shells on a line. The clearest case in canon that a weapon is not about harm.
 
 ### Tanning
 
-| Makes | From | Taught by |
-|---|---|---|
-| 2 × Goat hide | 2 × hide, 2 × Bast, Storage jar *(kept)* | Marn |
+#### Tanning hide
+
+**Makes** 2 × [Goat hide](#goat-hide). **Takes** 2 × `hide`, 2 × [Bast](#bast), Storage jar *(kept)*.
+
+**Taught by** Marn.
+
+Bark liquor and time. Nobody will let you do it upwind of them.
 
 ### Firing
 
-| Makes | From | Taught by |
-|---|---|---|
-| 2 × Pitch | 2 × timber, fuel, Cooking pot *(kept)* | common knowledge |
-| 2 × Charcoal | 3 × timber | common knowledge |
-| 2 × Lamp black | oil, Oil lamp *(kept)* | common knowledge |
-| Brazier | 2 × River clay, 2 × fuel | common knowledge |
-| Cooking pot | 2 × River clay, Grog, 2 × fuel | common knowledge |
-| Resin flask | River clay, resin, fuel | common knowledge |
-| Storage jar | 3 × River clay, 2 × fuel | Bekh |
-| Oil lamp | River clay, fuel | common knowledge |
+#### Boiling pitch
+
+**Makes** 2 × [Pitch](#pitch). **Takes** 2 × `timber`, `fuel`, Cooking pot *(kept)*.
+
+**Taught by** common knowledge.
+
+In a covered pit. Nothing floats without it.
+
+#### Burning charcoal
+
+**Makes** 2 × [Charcoal](#charcoal). **Takes** 3 × `timber`.
+
+**Taught by** common knowledge.
+
+Burnt slow under turf. The only fuel hot enough to melt anything.
+
+#### Catching lamp black
+
+**Makes** 2 × [Lamp black](#lamp-black). **Takes** `oil`, Oil lamp *(kept)*.
+
+**Taught by** common knowledge.
+
+Soot on a cold plate held over a flame.
+
+#### Firing a brazier
+
+**Makes** Brazier. **Takes** 2 × [River clay](#river-clay), 2 × `fuel`.
+
+**Taught by** common knowledge.
+
+Portable fire. Lets heat happen where there is none.
+
+#### Firing a cooking pot
+
+**Makes** Cooking pot. **Takes** 2 × [River clay](#river-clay), [Grog](#grog), 2 × `fuel`.
+
+**Taught by** common knowledge.
+
+Coarse-tempered so it survives the fire it is made for.
+
+#### Firing a resin flask
+
+**Makes** Resin flask. **Takes** [River clay](#river-clay), `resin`, `fuel`.
+
+**Taught by** common knowledge.
+
+Small, stoppered, worth more full than the room it sits in.
+
+#### Firing a storage jar
+
+**Makes** Storage jar. **Takes** 3 × [River clay](#river-clay), 2 × `fuel`.
+
+**Taught by** Bekh.
+
+A grain surplus is not a harvest. It is one of these.
+
+#### Firing an oil lamp
+
+**Makes** Oil lamp. **Takes** [River clay](#river-clay), `fuel`.
+
+**Taught by** common knowledge.
+
+A closed lamp with a shielded wick, the kind that survives being carried.
 
 ### Smelting
 
-| Makes | From | Taught by |
-|---|---|---|
-| 3 × Native copper | 2 × Native copper, 3 × Charcoal, Brazier *(kept)* | common knowledge |
+#### Smelting copper
+
+*harappan*
+
+**Makes** 3 × [Native copper](#native-copper). **Takes** 2 × [Native copper](#native-copper), 3 × [Charcoal](#charcoal), Brazier *(kept)*.
+
+**Taught by** common knowledge.
+
+Canon is a bronze world with iron as a rumour. Nothing above this line goes further.
 
 ### Casting
 
-| Makes | From | Taught by |
-|---|---|---|
-| Bronze knife | Bronze, 2 × Charcoal | common knowledge |
-| Bronze chisel | Bronze, 2 × Charcoal, timber | common knowledge |
-| Bronze spearhead | Bronze, 2 × Charcoal | common knowledge |
-| 2 × Bronze | 3 × Native copper, Tin ore, 3 × Charcoal | common knowledge |
+#### Casting a bronze knife
+
+*harappan*
+
+**Makes** Bronze knife. **Takes** [Bronze](#bronze), 2 × [Charcoal](#charcoal).
+
+**Taught by** common knowledge.
+
+Holds an edge and takes a new one.
+
+#### Casting a chisel
+
+*harappan*
+
+**Makes** Bronze chisel. **Takes** [Bronze](#bronze), 2 × [Charcoal](#charcoal), `timber`.
+
+**Taught by** common knowledge.
+
+What dressed sandstone is dressed with. A settlement with these has a mason.
+
+#### Casting a spearhead
+
+*harappan*
+
+**Makes** Bronze spearhead. **Takes** [Bronze](#bronze), 2 × [Charcoal](#charcoal).
+
+**Taught by** common knowledge.
+
+Socketed, so it outlives its shaft. Traded far past where anyone can make one.
+
+#### Casting bronze
+
+*harappan*
+
+**Makes** 2 × [Bronze](#bronze). **Takes** 3 × [Native copper](#native-copper), [Tin ore](#tin-ore), 3 × [Charcoal](#charcoal).
+
+**Taught by** common knowledge.
+
+Copper and tin. Worth more than the person carrying it usually is.
 
 ### Pressing
 
-| Makes | From | Taught by |
-|---|---|---|
-| Date block | 4 × Dates | common knowledge |
-| Ink cake | 2 × Lamp black, resin, Cooking pot *(kept)* | Okhi |
-| 3 × Mahua oil | 2 × Mahua oil, Cooking pot *(kept)* | common knowledge |
-| 2 × Mahua oil | 4 × Mustard seed, Cooking pot *(kept)* | common knowledge |
+#### Pressing a date block
+
+**Makes** [Date block](https://lordlebu.github.io/SouthOfTethys/cookbook.html#date-block). **Takes** 4 × [Dates](#dates).
+
+**Taught by** common knowledge.
+
+Wrapped in leaf. Why a desert crossing is arithmetic rather than a gamble.
+
+#### Pressing an ink cake
+
+**Makes** Ink cake. **Takes** 2 × [Lamp black](#lamp-black), `resin`, Cooking pot *(kept)*.
+
+**Taught by** Okhi.
+
+Soot bound with gum and dried into a block. What Varuna's diary is written in.
+
+#### Pressing mahua oil
+
+**Makes** 3 × [Mahua oil](#mahua-oil). **Takes** 2 × [Mahua oil](#mahua-oil), Cooking pot *(kept)*.
+
+**Taught by** common knowledge.
+
+Under a beam or a stone, with something underneath to catch it.
+
+#### Pressing mustard oil
+
+**Makes** 2 × [Mahua oil](#mahua-oil). **Takes** 4 × [Mustard seed](#mustard-seed), Cooking pot *(kept)*.
+
+**Taught by** common knowledge.
+
+A second oil for the delta, and a hotter one. Canon keeps one oil material -- what changes is which seed the press was fed.
 
 ### Grinding
 
-| Makes | From | Taught by |
-|---|---|---|
-| 3 × Grog | Storage jar, Quern *(kept)* | common knowledge |
-| 3 × Red delta rice | 2 × grain, Quern *(kept)* | common knowledge |
-| 3 × Red ochre | 2 × Red ochre, Quern *(kept)* | common knowledge |
-| Shilajit tonic | Shilajit, Quern *(kept)* | common knowledge |
+#### Crushing grog
+
+**Makes** 3 × [Grog](#grog). **Takes** Storage jar, Quern *(kept)*.
+
+**Taught by** common knowledge.
+
+Old fired pots, crushed back into new clay so the new one survives the kiln. The only material in canon that can only be made out of itself.
+
+#### Grinding flour
+
+**Makes** 3 × [Red delta rice](#red-delta-rice). **Takes** 2 × `grain`, Quern *(kept)*.
+
+**Taught by** common knowledge.
+
+Any grain. The quern does not care and neither does the recipe.
+
+#### Grinding ochre
+
+**Makes** 3 × [Red ochre](#red-ochre). **Takes** 2 × [Red ochre](#red-ochre), Quern *(kept)*.
+
+**Taught by** common knowledge.
+
+Ground and washed. The oldest pigment anybody has.
+
+#### Preparing shilajit
+
+**Makes** Shilajit tonic. **Takes** [Shilajit](#shilajit), Quern *(kept)*.
+
+**Taught by** common knowledge.
+
+Scraped from high rock and taken in water.
 
 ### Cooking
 
-| Makes | From | Taught by |
-|---|---|---|
-| 2 × Flood bread | 2 × Red delta rice, Lotus-root taro | common knowledge |
-| 2 × Travel cake | 2 × Red delta rice, oil, Dates | common knowledge |
-| 2 × Green jackfruit pot | 2 × Jackfruit, Ginger, salt | common knowledge |
-| Salt-fish stew | Dried fish, 2 × Lotus-root taro, Tamarind pulp | common knowledge |
-| Spiced rice | 2 × Red delta rice, salt | common knowledge |
-| 2 × The Fourteen | 14 × Bitter greens, oil, salt | common knowledge |
-| Myrrh poultice | Myrrh gum, Bast, oil | common knowledge |
-| Neem salve | 2 × Neem bark, oil | common knowledge |
-| Tamarind paste | 2 × Tamarind pulp, salt | common knowledge |
-| Tempered oil | 2 × Mustard seed, spice, Cooking pot *(kept)* | common knowledge |
+#### Baking flood bread
+
+*harappan*
+
+**Makes** 2 × [Flood bread](https://lordlebu.github.io/SouthOfTethys/cookbook.html#flood-bread). **Takes** 2 × [Red delta rice](#red-delta-rice), [Lotus-root taro](#lotus-root-taro).
+
+**Taught by** common knowledge.
+
+What you eat in a year the rice did badly and the flood did well.
+
+#### Baking travel cake
+
+**Makes** 2 × [Travel cake](https://lordlebu.github.io/SouthOfTethys/cookbook.html#travel-cake). **Takes** 2 × [Red delta rice](#red-delta-rice), `oil`, [Dates](#dates).
+
+**Taught by** common knowledge.
+
+Baked hard. Made to be carried rather than enjoyed, and it tastes like it.
+
+#### Cooking green jackfruit
+
+*harappan*
+
+**Makes** 2 × [Green jackfruit pot](https://lordlebu.github.io/SouthOfTethys/cookbook.html#green-jackfruit-pot). **Takes** 2 × [Jackfruit](#jackfruit), [Ginger](#ginger), `salt`.
+
+**Taught by** common knowledge.
+
+Cooked until it pulls apart in threads. Hands are oiled first or the sap will not come off.
+
+#### Cooking salt-fish stew
+
+**Makes** [Salt-fish stew](https://lordlebu.github.io/SouthOfTethys/cookbook.html#salt-fish-stew). **Takes** [Dried fish](https://lordlebu.github.io/SouthOfTethys/cookbook.html#dried-fish), 2 × [Lotus-root taro](#lotus-root-taro), [Tamarind pulp](#tamarind-pulp).
+
+**Taught by** common knowledge.
+
+The pot everything ends up in. Nobody writes it down and everybody makes it.
+
+#### Cooking spiced rice
+
+**Makes** [Spiced rice](https://lordlebu.github.io/SouthOfTethys/cookbook.html#spiced-rice). **Takes** 2 × [Red delta rice](#red-delta-rice), `salt`.
+
+**Taught by** common knowledge.
+
+What a settlement eats when there is nothing to mark.
+
+#### Cooking the fourteen
+
+*harappan*
+
+**Makes** 2 × [The Fourteen](https://lordlebu.github.io/SouthOfTethys/cookbook.html#the-fourteen). **Takes** 14 × [Bitter greens](#bitter-greens), `oil`, `salt`.
+
+**Taught by** common knowledge.
+
+Fourteen, counted. A cook who is one short does not make it with thirteen -- they go back out.
+
+#### Making a myrrh poultice
+
+**Makes** Myrrh poultice. **Takes** [Myrrh gum](#myrrh-gum), [Bast](#bast), `oil`.
+
+**Taught by** common knowledge.
+
+The salve canon already names on the thorn, spread on bast.
+
+#### Making neem salve
+
+**Makes** Neem salve. **Takes** 2 × [Neem bark](#neem-bark), `oil`.
+
+**Taught by** common knowledge.
+
+Bitter, oily, keeps a wound clean.
+
+#### Making tamarind paste
+
+**Makes** [Tamarind paste](https://lordlebu.github.io/SouthOfTethys/cookbook.html#tamarind-paste). **Takes** 2 × [Tamarind pulp](#tamarind-pulp), `salt`.
+
+**Taught by** common knowledge.
+
+Sour enough to make bad water drinkable and worse food interesting.
+
+#### Tempering oil
+
+**Makes** [Tempered oil](https://lordlebu.github.io/SouthOfTethys/cookbook.html#tempered-oil). **Takes** 2 × [Mustard seed](#mustard-seed), `spice`, Cooking pot *(kept)*.
+
+**Taught by** common knowledge.
+
+Oil taken to smoking, then seed and pod dropped in off the heat. Poured over at the end.
 
 ### Drying and salting
 
-| Makes | From | Taught by |
-|---|---|---|
-| 2 × Dried fish | 2 × flesh, salt | Thrali |
-| Sinew lashing | 2 × Sinew | common knowledge |
-| 2 × Tinder bundle | Bast, Charcoal | common knowledge |
-| 3 × Palm-leaf sheet | 2 × Palm husk, Cooking pot *(kept)* | Okhi |
-| 2 × Green mango sour | 3 × Mango, salt | common knowledge |
+#### Drying fish
+
+**Makes** 2 × [Dried fish](https://lordlebu.github.io/SouthOfTethys/cookbook.html#dried-fish). **Takes** 2 × `flesh`, `salt`.
+
+**Taught by** Thrali.
+
+Split, salted, racked. Keeps a season and travels anywhere.
+
+#### Drying sinew lashing
+
+**Makes** Sinew lashing. **Takes** 2 × [Sinew](#sinew).
+
+**Taught by** common knowledge.
+
+Split, wetted and wound on while damp. Tightens as it dries, which is the whole point.
+
+#### Making tinder
+
+**Makes** 2 × Tinder bundle. **Takes** [Bast](#bast), [Charcoal](#charcoal).
+
+**Taught by** common knowledge.
+
+Kept dry against the body. Usually the difference between a cold night and a warm one.
+
+#### Preparing palm leaf
+
+**Makes** 3 × Palm-leaf sheet. **Takes** 2 × [Palm husk](#palm-husk), Cooking pot *(kept)*.
+
+**Taught by** Okhi.
+
+Cut, boiled, dried, smoothed. Takes a scored line better than it takes ink.
+
+#### Salting green mango
+
+**Makes** 2 × [Green mango sour](https://lordlebu.github.io/SouthOfTethys/cookbook.html#green-mango-sour). **Takes** 3 × [Mango](#mango), `salt`.
+
+**Taught by** common knowledge.
+
+Sliced, salted and left on a mat in the sun for four days.
 
 ### Brewing
 
-| Makes | From | Taught by |
-|---|---|---|
-| Mahua liquor | 3 × Mahua oil, Storage jar *(kept)* | common knowledge |
-| 4 × Indigo | 2 × Indigo, Storage jar *(kept)* | common knowledge |
+#### Brewing mahua
+
+*jharwa*
+
+**Makes** [Mahua liquor](https://lordlebu.github.io/SouthOfTethys/cookbook.html#mahua-liquor). **Takes** 3 × [Mahua oil](#mahua-oil), Storage jar *(kept)*.
+
+**Taught by** common knowledge.
+
+Fermented, not distilled. Strong enough.
+
+#### Fermenting indigo
+
+*harappan*
+
+**Makes** 4 × [Indigo](#indigo). **Takes** 2 × [Indigo](#indigo), Storage jar *(kept)*.
+
+**Taught by** common knowledge.
+
+Stinks for a fortnight. Then it is worth what it is worth.
 
 ### Boatbuilding
 
-| Makes | From | Taught by |
-|---|---|---|
-| Rope span | 2 × Husk hawser, 2 × timber | Pell |
+#### Fixing a rope span
+
+**Makes** Rope span. **Takes** 2 × Husk hawser, 2 × `timber`.
+
+**Taught by** Pell.
+
+A line fixed both banks and a loop to hang from. Wants two people, which is why Teshk will not leave.
 
 ## Objects, by what they are for
 
-| Kind | Object | Affords | |
+| Object | Traits | Made of | |
 |---|---|---|---|
-| container | **Cooking pot** | contain | Coarse-tempered so it survives the fire. |
-| container | **Grain bin** | contain | Mud-plastered basketwork, taller than a person. |
-| container | **Resin flask** | contain | Small, stoppered, and worth more full than the room it sits in. |
-| container | **Salt box** | contain | Wood rather than clay, because salt draws water and a fired jar sweats. |
-| container | **Storage jar** | contain | Fired, lidded, and half-buried to stay cool. |
-| container | **Vessel** *(prototype)* | contain | The prototype for anything that keeps something in. |
-| container | **Water skin** | contain, carry | Pitched inside. |
-| food | **Date block** | eat, carry | Pressed into a brick and wrapped in leaf. |
-| food | **Dried fish** | eat, trade | Split, salted, racked. |
-| food | **Flood bread** | eat | Rice flour stretched with taro, which is what you eat in a year the rice did badly and the flood did well. |
-| food | **Green jackfruit pot** | eat | Unripe jackfruit cooked long enough to pull apart in threads. |
-| food | **Green mango sour** | eat, carry | Unripe mango, salted and dried on a mat. |
-| food | **Mahua liquor** | eat, trade | Canon already records the tree for a fermented drink. |
-| food | **Prepared food** *(prototype)* | eat | The prototype for anything cooked, dried or pressed into a form somebody meant to eat later. |
-| food | **Salt-fish stew** | eat | The pot everything ends up in. |
-| food | **Spiced rice** | eat | The meal a settlement eats when there is nothing to mark. |
-| food | **Tamarind paste** | eat | Sour enough to make bad water drinkable and worse food interesting. |
-| food | **Tempered oil** | eat, carry | Mustard oil taken to smoking and dropped over with seed, ginger and pod. |
-| food | **The Fourteen** | eat | Fourteen greens in one pot, bitter to the last, eaten on one night of the year. |
-| food | **Travel cake** | eat, carry | Rice flour, oil and fruit, baked hard. |
-| light | **Brazier** | burn, contain | Portable fire. |
-| light | **Oil lamp** | burn | A closed clay lamp with a shielded wick, the kind that survives being carried. |
-| light | **Reed torch** | burn | Pitched reed bundle. |
-| light | **Tinder bundle** | burn | Kept dry against the body. |
-| ornament | **Ammonite pendant** | trade | A spiral somebody found already made. |
-| ornament | **Sandalwood comb** | trade | Keeps its scent for a lifetime, which is most of why it is worth carrying anywhere. |
-| ornament | **Shell bead** | trade | Drilled, strung, and the smallest unit of worth anybody agrees on. |
-| physic | **Myrrh poultice** | heal | The wound salve canon names on the myrrh-thorn, softened in oil and spread on bast. |
-| physic | **Neem salve** | heal | Bitter, oily, and keeps a wound clean. |
-| physic | **Shilajit tonic** | heal, trade | Scraped from high rock and taken in water. |
-| record | **Clay seal** | mark, trade | Pressed into the clay closing a jar or a bale. |
-| record | **Field diary** | mark | Bound, and about a third full. |
-| record | **Ink cake** | mark | Soot bound with gum, dried into a block, wetted on a stone. |
-| record | **Palm-leaf sheet** | mark | Cut, boiled, dried and smoothed. |
-| record | **Reed stylus** | mark | Cut to a point and recut every few lines. |
-| record | **Tally stick** | mark | Notched and split, so both parties hold half and neither can add a notch alone. |
-| shelter | **Bedroll** | shelter | Oiled cloth over a reed mat, rolled and strapped under the satchel. |
-| shelter | **Hide tent** | shelter | Two people to raise and one to strike. |
-| textile | **Carry basket** | carry, contain | Split cane ribs with reed weft. |
-| textile | **Fish weir** | carry | A fence in the water that lets the river do the catching. |
-| textile | **Goat-hair blanket** | shelter | Stays warm wet. |
-| textile | **Indigo cloth** | trade, shelter | Comes out of the vat green and turns blue in the air while you watch. |
-| textile | **Reed mat** | shelter, carry | A floor, a wall, a roof or a bed depending on which way it is put down. |
-| textile | **Sail cloth** | cross | Coarse, heavy, and the difference between a boat that drifts and a boat that goes. |
-| textile | **Woven ware** *(prototype)* | carry | The prototype for mat, basket, sail and cloth -- one process at four scales, so one base with four overrides rather than four unrelated entities. |
-| tool | **Antler pick** | cut, work | For clay, chalk and soft rock. |
-| tool | **Blade** *(prototype)* | cut | The prototype for anything with a worked edge, before it is told what it is made of. |
-| tool | **Bone awl** | cut, mark | Bores a hole and scores a line. |
-| tool | **Bow drill** | work, burn | Makes holes and makes fire, which is the same motion done with different patience. |
-| tool | **Bronze chisel** | cut, work | What dressed sandstone is dressed with. |
-| tool | **Bronze knife** | cut, trade | Holds an edge, takes a new one, and is worth more than the person carrying it usually is. |
-| tool | **Cordage** *(prototype)* | bind | The prototype every rope inherits from. |
-| tool | **Flint knife** | cut | Knapped in an afternoon, sharp for a week, replaced without ceremony. |
-| tool | **Glass lancet** | cut | Sharper than bronze and loses the edge to a hard look. |
-| tool | **Hafted tool** *(prototype)* | cut | A head bound to a handle. |
-| tool | **Husk hawser** | bind | Coarse palm-husk line that does not mind salt water. |
-| tool | **Loom frame** | work | Upright, weighted, and taken apart to travel. |
-| tool | **Mud shoes** | cross | Splayed frames lashed under the foot. |
-| tool | **Quern** | work | Grain to flour, ochre to pigment, bark to powder. |
-| tool | **Reed rope** | bind | Light, cheap and rots. |
-| tool | **Rope span** | cross, bind | A line fixed both banks, and a loop to hang from. |
-| tool | **Sinew lashing** | bind | Dries tight rather than merely holding, which is why every hafted tool wants it and no plant fibre will substitute. |
-| tool | **Stone adze** | cut, work | For dressing timber. |
-| tool | **Walking staff** | cross | Shoulder height, worn smooth at the grip. |
-| weapon | **Boar spear** | cut, deter | Cross-barred below the head so that what it stops does not walk up it. |
-| weapon | **Bone harpoon** | cut, deter | The sawfish rostral tooth arrives already barbed, so this is a harpoon somebody did very little to. |
-| weapon | **Bronze spearhead** | cut, deter, trade | Socketed, so it outlives its shaft. |
-| weapon | **Fire rattle** | deter | Shells on a line, shaken. |
-| weapon | **Reed spear** | cut, deter | Held level, it moves a herd. |
-| weapon | **Sling** | deter | Two cords and a pouch. |
+| **Cooking pot** | *container · contain* | [River clay](#river-clay), [Grog](#grog) | Coarse-tempered so it survives the fire. |
+| **Grain bin** | *container · contain* | [River clay](#river-clay), [Reed fibre](#reed-fibre) | Mud-plastered basketwork, taller than a person. |
+| **Resin flask** | *container · contain* | [River clay](#river-clay), [Myrrh gum](#myrrh-gum) | Small, stoppered, and worth more full than the room it sits in. |
+| **Salt box** | *container · contain* | [Sandalwood billet](#sandalwood-billet) | Wood rather than clay, because salt draws water and a fired jar sweats. |
+| **Storage jar** | *container · contain* | [River clay](#river-clay), [Grog](#grog) | Fired, lidded, and half-buried to stay cool. |
+| **Vessel** | *container · contain · prototype* | — | The prototype for anything that keeps something in. |
+| **Water skin** | *container · contain · carry* | [Goat hide](#goat-hide), [Pitch](#pitch) | Pitched inside. |
+| **Date block** | *food · eat · carry* | [Dates](#dates) | Pressed into a brick and wrapped in leaf. |
+| **Dried fish** | *food · eat · trade* | [River fish](#river-fish), [Salt crust](#salt-crust) | Split, salted, racked. |
+| **Flood bread** | *food · eat* | [Red delta rice](#red-delta-rice), [Lotus-root taro](#lotus-root-taro) | Rice flour stretched with taro, which is what you eat in a year the rice did badly and the flood did well. |
+| **Green jackfruit pot** | *food · eat* | [Jackfruit](#jackfruit), [Ginger](#ginger) | Unripe jackfruit cooked long enough to pull apart in threads. |
+| **Green mango sour** | *food · eat · carry* | [Mango](#mango), [Salt crust](#salt-crust) | Unripe mango, salted and dried on a mat. |
+| **Mahua liquor** | *food · eat · trade* | [Mahua oil](#mahua-oil) | Canon already records the tree for a fermented drink. |
+| **Prepared food** | *food · eat · prototype* | — | The prototype for anything cooked, dried or pressed into a form somebody meant to eat later. |
+| **Salt-fish stew** | *food · eat* | [River fish](#river-fish), [Lotus-root taro](#lotus-root-taro), [Tamarind pulp](#tamarind-pulp) | The pot everything ends up in. |
+| **Spiced rice** | *food · eat* | [Red delta rice](#red-delta-rice), [Salt crust](#salt-crust) | The meal a settlement eats when there is nothing to mark. |
+| **Tamarind paste** | *food · eat* | [Tamarind pulp](#tamarind-pulp), [Salt crust](#salt-crust) | Sour enough to make bad water drinkable and worse food interesting. |
+| **Tempered oil** | *food · eat · carry* | [Mustard seed](#mustard-seed), [Ginger](#ginger), [Cardamom](#cardamom) | Mustard oil taken to smoking and dropped over with seed, ginger and pod. |
+| **The Fourteen** | *food · eat* | [Bitter greens](#bitter-greens), [Mustard seed](#mustard-seed) | Fourteen greens in one pot, bitter to the last, eaten on one night of the year. |
+| **Travel cake** | *food · eat · carry* | [Red delta rice](#red-delta-rice), [Mahua oil](#mahua-oil), [Dates](#dates) | Rice flour, oil and fruit, baked hard. |
+| **Brazier** | *light · burn · contain* | [River clay](#river-clay), [Charcoal](#charcoal) | Portable fire. |
+| **Oil lamp** | *light · burn* | [River clay](#river-clay), [Mahua oil](#mahua-oil) | A closed clay lamp with a shielded wick, the kind that survives being carried. |
+| **Reed torch** | *light · burn* | [Reed fibre](#reed-fibre), [Pitch](#pitch) | Pitched reed bundle. |
+| **Tinder bundle** | *light · burn* | [Bast](#bast), [Charcoal](#charcoal) | Kept dry against the body. |
+| **Ammonite pendant** | *ornament · trade* | [Ammonite shell](#ammonite-shell) | A spiral somebody found already made. |
+| **Sandalwood comb** | *ornament · trade* | [Sandalwood billet](#sandalwood-billet) | Keeps its scent for a lifetime, which is most of why it is worth carrying anywhere. |
+| **Shell bead** | *ornament · trade* | [Oyster shell](#oyster-shell) | Drilled, strung, and the smallest unit of worth anybody agrees on. |
+| **Myrrh poultice** | *physic · heal* | [Myrrh gum](#myrrh-gum), [Bast](#bast) | The wound salve canon names on the myrrh-thorn, softened in oil and spread on bast. |
+| **Neem salve** | *physic · heal* | [Neem bark](#neem-bark), [Mahua oil](#mahua-oil) | Bitter, oily, and keeps a wound clean. |
+| **Shilajit tonic** | *physic · heal · trade* | [Shilajit](#shilajit) | Scraped from high rock and taken in water. |
+| **Clay seal** | *record · mark · trade* | [River clay](#river-clay), [Oyster shell](#oyster-shell) | Pressed into the clay closing a jar or a bale. |
+| **Field diary** | *record · mark* | [Palm husk](#palm-husk), [Bast](#bast), [Lamp black](#lamp-black) | Bound, and about a third full. |
+| **Ink cake** | *record · mark* | [Lamp black](#lamp-black), [Frankincense](#frankincense) | Soot bound with gum, dried into a block, wetted on a stone. |
+| **Palm-leaf sheet** | *record · mark* | [Palm husk](#palm-husk) | Cut, boiled, dried and smoothed. |
+| **Reed stylus** | *record · mark* | [Reed fibre](#reed-fibre) | Cut to a point and recut every few lines. |
+| **Tally stick** | *record · mark* | [Bamboo cane](#bamboo-cane) | Notched and split, so both parties hold half and neither can add a notch alone. |
+| **Bedroll** | *shelter* | [Reed fibre](#reed-fibre), [Goat hide](#goat-hide), [Pitch](#pitch) | Oiled cloth over a reed mat, rolled and strapped under the satchel. |
+| **Hide tent** | *shelter* | [Goat hide](#goat-hide), [Bamboo cane](#bamboo-cane), [Palm husk](#palm-husk) | Two people to raise and one to strike. |
+| **Carry basket** | *textile · carry · contain* | [Reed fibre](#reed-fibre), [Bamboo cane](#bamboo-cane) | Split cane ribs with reed weft. |
+| **Fish weir** | *textile · carry* | [Bamboo cane](#bamboo-cane), [Reed fibre](#reed-fibre) | A fence in the water that lets the river do the catching. |
+| **Goat-hair blanket** | *textile · shelter* | [Cliff-goat hair](#cliff-goat-hair) | Stays warm wet. |
+| **Indigo cloth** | *textile · trade · shelter* | [Indigo](#indigo), [Bast](#bast) | Comes out of the vat green and turns blue in the air while you watch. |
+| **Reed mat** | *textile · shelter · carry* | [Reed fibre](#reed-fibre) | A floor, a wall, a roof or a bed depending on which way it is put down. |
+| **Sail cloth** | *textile · cross* | [Palm husk](#palm-husk), [Bast](#bast) | Coarse, heavy, and the difference between a boat that drifts and a boat that goes. |
+| **Woven ware** | *textile · carry · prototype* | — | The prototype for mat, basket, sail and cloth -- one process at four scales, so one base with four overrides rather than four unrelated entities. |
+| **Antler pick** | *tool · cut · work* | [Antler](#antler) | For clay, chalk and soft rock. |
+| **Blade** | *tool · cut · prototype* | — | The prototype for anything with a worked edge, before it is told what it is made of. |
+| **Bone awl** | *tool · cut · mark* | [Antler](#antler) | Bores a hole and scores a line. |
+| **Bow drill** | *tool · work · burn* | [Bamboo cane](#bamboo-cane), [Sinew](#sinew) | Makes holes and makes fire, which is the same motion done with different patience. |
+| **Bronze chisel** | *tool · cut · work* | [Bronze](#bronze) | What dressed sandstone is dressed with. |
+| **Bronze knife** | *tool · cut · trade* | [Bronze](#bronze) | Holds an edge, takes a new one, and is worth more than the person carrying it usually is. |
+| **Cordage** | *tool · bind · prototype* | — | The prototype every rope inherits from. |
+| **Flint knife** | *tool · cut* | [Flint](#flint) | Knapped in an afternoon, sharp for a week, replaced without ceremony. |
+| **Glass lancet** | *tool · cut* | [Magma-glass](#magma-glass) | Sharper than bronze and loses the edge to a hard look. |
+| **Hafted tool** | *tool · cut · prototype* | — | A head bound to a handle. |
+| **Husk hawser** | *tool · bind* | [Palm husk](#palm-husk) | Coarse palm-husk line that does not mind salt water. |
+| **Loom frame** | *tool · work* | [Bamboo cane](#bamboo-cane), [Reed fibre](#reed-fibre) | Upright, weighted, and taken apart to travel. |
+| **Mud shoes** | *tool · cross* | [Bamboo cane](#bamboo-cane), [Reed fibre](#reed-fibre) | Splayed frames lashed under the foot. |
+| **Quern** | *tool · work* | [Basalt](#basalt) | Grain to flour, ochre to pigment, bark to powder. |
+| **Reed rope** | *tool · bind* | [Reed fibre](#reed-fibre) | Light, cheap and rots. |
+| **Rope span** | *tool · cross · bind* | [Palm husk](#palm-husk), [Iron-teak timber](#iron-teak-timber) | A line fixed both banks, and a loop to hang from. |
+| **Sinew lashing** | *tool · bind* | [Sinew](#sinew) | Dries tight rather than merely holding, which is why every hafted tool wants it and no plant fibre will substitute. |
+| **Stone adze** | *tool · cut · work* | [Basalt](#basalt), [Sinew](#sinew) | For dressing timber. |
+| **Walking staff** | *tool · cross* | [Iron-teak timber](#iron-teak-timber) | Shoulder height, worn smooth at the grip. |
+| **Boar spear** | *weapon · cut · deter* | [Iron-teak timber](#iron-teak-timber), [Boar tusk](#boar-tusk) | Cross-barred below the head so that what it stops does not walk up it. |
+| **Bone harpoon** | *weapon · cut · deter* | [Sawfish bone](#sawfish-bone), [Bamboo cane](#bamboo-cane), [Sinew](#sinew) | The sawfish rostral tooth arrives already barbed, so this is a harpoon somebody did very little to. |
+| **Bronze spearhead** | *weapon · cut · deter · trade* | [Bronze](#bronze) | Socketed, so it outlives its shaft. |
+| **Fire rattle** | *weapon · deter* | [Bamboo cane](#bamboo-cane), [Oyster shell](#oyster-shell) | Shells on a line, shaken. |
+| **Reed spear** | *weapon · cut · deter* | [Bamboo cane](#bamboo-cane), [Flint](#flint) | Held level, it moves a herd. |
+| **Sling** | *weapon · deter* | [Cliff-goat hair](#cliff-goat-hair), [Goat hide](#goat-hide) | Two cords and a pouch. |
 
 ## Things that carry you
 
-| Craft | Kind | Crosses | Carries | |
-|---|---|---|---|---|
-| **Reed raft** | raft | river, wetland | 2 | Bundled reed lashed to a cane frame. |
-| **Dugout** | boat | river, wetland, coast | 3 | One trunk, burnt and adzed hollow. |
-| **Coracle** | boat | river | 2 | A basket with a skin over it. |
-| **Delta barge** | boat | river, wetland, coast | 8 | Flat-bottomed and poled. |
-| **Coastal dhow** | ship | coast, sea | 12 | Sewn rather than nailed -- husk cordage through drilled planks, and the whole hull flexes. |
-| **Outrigger** | ship | sea, coast | 6 | A hull too narrow to stand up on its own, and a float that makes it the steadiest thing on open water. |
-| **Ox cart** | cart | plains, settlement, desert, hills | 4 | Solid wheels, no springs, and a pace nobody hurries. |
-| **Salt sled** | sled | desert, coast | 2 | Dragged over a salt pan where a wheel would cut through the crust and stop. |
-| **Bone-framed trawler** | ship | sea, coast | 20 | Canon states the Abyssal Blue's bone plate is harvested for building maritime vessels. |
-| **Ground-effect craft** | machine | sea, coast, desert | 30 | Flies a few metres above the water and cannot go higher, which makes it neither a boat nor an aircraft and useless anywhere but the open Tethys. |
-| **Workshop train** | machine | plains, hills, desert, settlement | 60 | A travelling apothecary and workshop rather than transport. |
+| Craft | Traits | Built of | |
+|---|---|---|---|
+| **Reed raft** | *raft · river · wetland · carries 2* | [Reed fibre](#reed-fibre), [Bamboo cane](#bamboo-cane) | Bundled reed lashed to a cane frame. |
+| **Dugout** | *boat · river · wetland · coast · carries 3* | [Iron-teak timber](#iron-teak-timber), [Pitch](#pitch) | One trunk, burnt and adzed hollow. |
+| **Coracle** | *boat · river · carries 2* | [Croc hide](#croc-hide), [Bamboo cane](#bamboo-cane), [Pitch](#pitch) | A basket with a skin over it. |
+| **Delta barge** | *boat · river · wetland · coast · carries 8* | [Iron-teak timber](#iron-teak-timber), [Palm husk](#palm-husk), [Pitch](#pitch) | Flat-bottomed and poled. |
+| **Coastal dhow** | *ship · coast · sea · carries 12* | [Iron-teak timber](#iron-teak-timber), [Palm husk](#palm-husk), [Pitch](#pitch) | Sewn rather than nailed -- husk cordage through drilled planks, and the whole hull flexes. |
+| **Outrigger** | *ship · sea · coast · carries 6* | [Iron-teak timber](#iron-teak-timber), [Palm husk](#palm-husk) | A hull too narrow to stand up on its own, and a float that makes it the steadiest thing on open water. |
+| **Ox cart** | *cart · plains · settlement · desert · hills · carries 4* | [Iron-teak timber](#iron-teak-timber), [Sinew](#sinew) | Solid wheels, no springs, and a pace nobody hurries. |
+| **Salt sled** | *sled · desert · coast · carries 2* | [Bamboo cane](#bamboo-cane), [Palm husk](#palm-husk) | Dragged over a salt pan where a wheel would cut through the crust and stop. |
+| **Bone-framed trawler** | *ship · sea · coast · carries 20* | [Leviathan bone](#leviathan-bone), [Iron-teak timber](#iron-teak-timber), [Bronze](#bronze) | Canon states the Abyssal Blue's bone plate is harvested for building maritime vessels. |
+| **Ground-effect craft** | *machine · sea · coast · desert · carries 30* | [Bronze](#bronze) | Flies a few metres above the water and cannot go higher, which makes it neither a boat nor an aircraft and useless anywhere but the open Tethys. |
+| **Workshop train** | *machine · plains · hills · desert · settlement · carries 60* | [Bronze](#bronze), [Iron-teak timber](#iron-teak-timber) | A travelling apothecary and workshop rather than transport. |
 

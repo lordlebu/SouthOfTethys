@@ -73,7 +73,7 @@ Their own category rather than a negative. A culture that plants oleander on a b
 
 | Preparation | Takes |
 |---|---|
-| **Making a myrrh poultice** | Myrrh gum, Bast, oil |
-| **Making neem salve** | 2 × Neem bark, oil |
-| **Preparing shilajit** | Shilajit, Quern *(kept)* |
+| [Making a myrrh poultice](https://lordlebu.github.io/SouthOfTethys/workshop.html#making-a-myrrh-poultice) | [Myrrh gum](https://lordlebu.github.io/SouthOfTethys/workshop.html#myrrh-gum), [Bast](https://lordlebu.github.io/SouthOfTethys/workshop.html#bast), `oil` |
+| [Making neem salve](https://lordlebu.github.io/SouthOfTethys/workshop.html#making-neem-salve) | 2 × [Neem bark](https://lordlebu.github.io/SouthOfTethys/workshop.html#neem-bark), `oil` |
+| [Preparing shilajit](https://lordlebu.github.io/SouthOfTethys/workshop.html#preparing-shilajit) | [Shilajit](https://lordlebu.github.io/SouthOfTethys/workshop.html#shilajit), Quern *(kept)* |
 
