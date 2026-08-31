@@ -2,32 +2,111 @@
   "version": "1.0.0",
   "description": "Canonical biome vocabulary. Wider than the game's data/biomes.json on purpose: canon describes places the game cannot yet render, and a species should be able to say where it lives even when the walk has nowhere to put it. utils/export_game_data.py projects this down to the renderable set, and a species left with no renderable biome exports as placement 'lore'.",
   "biomes": [
-    { "id": "sea",        "name": "Sea",        "realm": "ground", "renderable": true,  "notes": "Tethyan water. Not walkable in the game." },
-    { "id": "coast",      "name": "Coast",      "realm": "ground", "renderable": true },
-    { "id": "plains",     "name": "Plains",     "realm": "ground", "renderable": true },
-    { "id": "forest",     "name": "Forest",     "realm": "ground", "renderable": true },
-    { "id": "wetland",    "name": "Wetland",    "realm": "ground", "renderable": true },
-    { "id": "hills",      "name": "Hills",      "realm": "ground", "renderable": true },
-    { "id": "mountains",  "name": "Mountains",  "realm": "ground", "renderable": true },
-    { "id": "desert",     "name": "Desert",     "realm": "ground", "renderable": true },
-    { "id": "river",      "name": "River",      "realm": "ground", "renderable": true },
-    { "id": "settlement", "name": "Settlement", "realm": "ground", "renderable": true },
-    { "id": "landmark",   "name": "Landmark",   "realm": "ground", "renderable": true },
-
-    { "id": "sky_island",    "name": "Floating Island",   "realm": "sky", "renderable": false,
+    {
+      "id": "sea",
+      "name": "Sea",
+      "realm": "ground",
+      "renderable": true,
+      "notes": "Tethyan water. Not walkable in the game."
+    },
+    {
+      "id": "coast",
+      "name": "Coast",
+      "realm": "ground",
+      "renderable": true
+    },
+    {
+      "id": "plains",
+      "name": "Plains",
+      "realm": "ground",
+      "renderable": true
+    },
+    {
+      "id": "forest",
+      "name": "Forest",
+      "realm": "ground",
+      "renderable": true
+    },
+    {
+      "id": "wetland",
+      "name": "Wetland",
+      "realm": "ground",
+      "renderable": true
+    },
+    {
+      "id": "hills",
+      "name": "Hills",
+      "realm": "ground",
+      "renderable": true
+    },
+    {
+      "id": "mountains",
+      "name": "Mountains",
+      "realm": "ground",
+      "renderable": true
+    },
+    {
+      "id": "desert",
+      "name": "Desert",
+      "realm": "ground",
+      "renderable": true
+    },
+    {
+      "id": "river",
+      "name": "River",
+      "realm": "ground",
+      "renderable": true
+    },
+    {
+      "id": "settlement",
+      "name": "Settlement",
+      "realm": "ground",
+      "renderable": true
+    },
+    {
+      "id": "landmark",
+      "name": "Landmark",
+      "realm": "ground",
+      "renderable": true
+    },
+    {
+      "id": "sky_island",
+      "name": "Floating Island",
+      "realm": "sky",
+      "renderable": false,
       "region": "region_tethys_sky_routes",
-      "notes": "The island surface itself — glowing moss, prismatic glass herbs, aero-mangrove groves at the edges. Held up by lodestone cores of Permian-irradiated ore." },
-    { "id": "sky_underside", "name": "Island Underside",  "realm": "sky", "renderable": false,
+      "notes": "The island surface itself — glowing moss, prismatic glass herbs, aero-mangrove groves at the edges. Held up by lodestone cores of Permian-irradiated ore."
+    },
+    {
+      "id": "sky_underside",
+      "name": "Island Underside",
+      "realm": "sky",
+      "renderable": false,
       "region": "region_tethys_sky_routes",
-      "notes": "The inverted world beneath an island, where gravity is warped and rainwater falls upward. Sky coral calcifies here and holds the crumbling rock together; the Asura-tainted gargoyles shelter in it." },
-    { "id": "open_sky",      "name": "Open Sky",          "realm": "sky", "renderable": false,
+      "notes": "The inverted world beneath an island, where gravity is warped and rainwater falls upward. Sky coral calcifies here and holds the crumbling rock together; the Asura-tainted gargoyles shelter in it."
+    },
+    {
+      "id": "open_sky",
+      "name": "Open Sky",
+      "realm": "sky",
+      "renderable": false,
       "region": "region_tethys_sky_routes",
-      "notes": "The air between islands, worked by gliders and migrants — aero-mantas, sky-faring orcas, ballooning spiderlings. The orca-blimp routes run through it." },
-
-    { "id": "underworld",    "name": "Naraka Rifts",      "realm": "subterranean", "renderable": false,
-      "notes": "The rift country beyond the portals: sulphurous rivers, blood-warm pools, the twilight zone. Naraka water is not the Saraswati's, so its creatures do not simply swim into a delta — they cross into this realm at a gate. See `crosses_at` on the species themselves; the Dwarka Gate is the established one (settlement_dwarka, event_shadow_pact, event_naraka_portal). A Naraka creature met in this realm should therefore be met near a gate, not spread through ordinary water." },
-    { "id": "lava_field",    "name": "Lava Sea",          "realm": "extreme", "renderable": false,
+      "notes": "The air between islands, worked by gliders and migrants — aero-mantas, sky-faring orcas, ballooning spiderlings. The orca-blimp routes run through it."
+    },
+    {
+      "id": "underworld",
+      "name": "Naraka Rifts",
+      "realm": "subterranean",
+      "renderable": false,
+      "notes": "The rift country beyond the portals: sulphurous rivers, blood-warm pools, the twilight zone. Naraka water is not the Saraswati's, so its creatures do not simply swim into a delta — they cross into this realm at a gate. See `crosses_at` on the species themselves; the Dwarka Gate is the established one (settlement_dwarka, event_shadow_pact, event_naraka_portal). A Naraka creature met in this realm should therefore be met near a gate, not spread through ordinary water."
+    },
+    {
+      "id": "lava_field",
+      "name": "Lava Sea",
+      "realm": "extreme",
+      "renderable": true,
       "region": "region_ganges_lava_sea",
-      "notes": "The molten surface and scalding shallows of the Ganges Lava Lake, where magma meets ocean. Distinct from the volcanic highlands around it, which are ordinary mountains and remain renderable." }
+      "notes": "The molten surface and scalding shallows of the Ganges Lava Lake, where magma meets ocean. Distinct from the volcanic highlands around it, which are ordinary mountains and remain renderable. Renderable since the engine gained placeholder tiles: a biome with no drawn art is now drawn from its own colour and symbol rather than being undrawable, so the 29 encounterable fauna and 7 flora that live here can finally be met. The sky biomes and the underworld stay unrenderable because every species in them is authored `lore` -- that is an authorial decision, not a missing drawing."
+    }
   ]
 }
