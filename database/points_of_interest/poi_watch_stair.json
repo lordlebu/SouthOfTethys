@@ -4,16 +4,18 @@
   "id": "poi_watch_stair",
   "name": "The Watch Stair",
   "kind": "wilderness",
+  "stands": "high",
   "terrain": [
     "coast",
-    "settlement"
+    "settlement",
+    "hills"
   ],
   "discoveries": [
     "discovery_gate_rhythm"
   ],
   "description": "Steps up the old wall, kept clear, with a good view of the court.",
   "arrival": "Somebody keeps these steps clear of weed, and there is a worn patch at the top where people stand. They are not watching the sea from here.",
-  "notes": "The observation post. Exists so the gate can be watched over time rather than visited once, which is what its discovery needs.",
+  "notes": "The observation post. Exists so the gate can be watched over time rather than visited once, which is what its discovery needs.`hills` was added to the terrain when `stands` did: a lookout confined to coast and settlement could never actually be sited on the high ground it is for.",
   "epochs": [
     "epoch_post_cataclysm"
   ],

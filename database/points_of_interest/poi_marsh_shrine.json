@@ -12,6 +12,7 @@
   "id": "poi_marsh_shrine",
   "name": "The Marsh Shrine",
   "kind": "anomaly",
+  "stands": "low",
   "terrain": [
     "wetland"
   ],

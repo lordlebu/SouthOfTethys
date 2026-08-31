@@ -4,6 +4,7 @@
   "name": "The Herders' Terraces",
   "field_map": "field_map_narmada",
   "kind": "wilderness",
+  "stands": "high",
   "terrain": [
     "hills",
     "forest"

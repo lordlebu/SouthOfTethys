@@ -4,6 +4,7 @@
   "id": "poi_tide_market",
   "name": "The Tide Market",
   "kind": "settlement",
+  "stands": "low",
   "terrain": [
     "settlement"
   ],

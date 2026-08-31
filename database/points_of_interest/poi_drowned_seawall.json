@@ -4,6 +4,7 @@
   "id": "poi_drowned_seawall",
   "name": "The Drowned Seawall",
   "kind": "archaeological_site",
+  "stands": "low",
   "terrain": [
     "coast",
     "desert",

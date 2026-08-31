@@ -4,6 +4,7 @@
   "name": "The Long Archive",
   "field_map": "field_map_narmada",
   "kind": "archaeological_site",
+  "stands": "high",
   "terrain": [
     "settlement",
     "hills"

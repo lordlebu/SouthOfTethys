@@ -5,6 +5,7 @@
   "field_map": "field_map_lothal",
   "kind": "archaeological_site",
   "ruin_of": "settlement_lothal",
+  "stands": "low",
   "terrain": [
     "settlement",
     "landmark"

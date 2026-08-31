@@ -12,6 +12,7 @@
   "id": "poi_eastern_field",
   "name": "The Eastern Field",
   "kind": "eco_site",
+  "stands": "low",
   "terrain": [
     "wetland",
     "settlement"
