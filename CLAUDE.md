@@ -47,11 +47,16 @@ added later without a single Python edit on account of a game change.
 **Never hand-edit the game's `data/canon/`.** Change the entity here, re-export. A lock file and
 the game's CI enforce it.
 
-**Array order is load-bearing.** The game picks species by indexing into per-biome lists, so
-every entity in `fauna/` and `flora/` carries a `source_index` and the lint refuses one that does
-not. Absent used to be legal and meant "sorts last, by id" — which is how twenty-five new plants
-moved every unindexed species after them and silently changed what grows on saved ground.
-Reordering is invisible from here and obvious to whoever loads their journey.
+**`source_index` is required on every species; array order is no longer load-bearing.** The lint
+refuses an entity in `fauna/` or `flora/` without one. It used to decide what grew on a tile —
+the game picked species by *indexing into* per-biome lists — and absent was legal, meaning "sorts
+last, by id", which is how twenty-five new plants moved every unindexed species after them and
+silently changed what grows on saved ground.
+
+The game now picks by **rendezvous hashing over species ids**, so position is never read and
+adding content takes only the tiles it wins (4.8%, against 95.4% before). The index remains
+required as the authored bestiary sequence the books read in, and as a duplicate guard. Still do
+not re-sort a folder — but doing so is now a presentation bug, not a corrupted save.
 
 **One branch at a time, and never `main`.** Work stays on a single feature branch until it
 merges. A new piece of work does not get a new branch because it feels separate — it goes on the

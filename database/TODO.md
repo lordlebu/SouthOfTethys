@@ -108,7 +108,8 @@ Primordial Union, and the Dragon's Spine (which is a retained test fixture and c
 
 - [ ] Indian food: *choddo shak* (fourteen greens, Bengali), and fruits, vegetables and spices
       beyond them. Then the dishes as `items` + `recipes` + `foodways`, which is what the making
-      layer was built for. New species take a trailing `source_index` so array order is safe.
+      layer was built for. New species take a trailing `source_index` -- still required, though
+      the game no longer picks by array position, so adding species is safe by construction.
 - [ ] Indian vehicles: a Harappan cart and the Sinauli chariot, both well attested and both
       fitting `epoch_civilization_dawn`.
 
