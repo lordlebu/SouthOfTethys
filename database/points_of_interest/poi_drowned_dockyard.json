@@ -12,6 +12,7 @@
   "id": "poi_drowned_dockyard",
   "name": "The Drowned Dockyard",
   "kind": "eco_site",
+  "stands": "low",
   "terrain": [
     "coast",
     "river"

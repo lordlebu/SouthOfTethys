@@ -37,6 +37,17 @@
       ],
       "description": "What sort of place it is. Drives how the diary files what is found here, and which discipline gains from documenting it."
     },
+    "stands": {
+      "type": "string",
+      "enum": [
+        "high",
+        "low",
+        "either"
+      ],
+      "default": "either",
+      "description": "Whether this place wants height, as distinct from a biome. `terrain` says what the ground is made of; this says where it sits on the slope, which is a different question and was not askable before. A watch stair wants somewhere you can see from; a drowned dockyard is underwater by definition. `either` is the honest default and most places mean it -- a midden is wherever the city put it.\n\nRead against the generator's three elevation terraces, the same ones cliffs are drawn between: `high` prefers band 1 or 2, `low` prefers band 0. A preference rather than a rule -- a map with no high ground still has to put the place somewhere, and refusing would lose it entirely.",
+      "$comment": "Added when every point of interest on Lothal and Dwarka was landing on band 0 while both maps carried over a hundred and twenty hill tiles. Nothing was choosing badly: no place on either map listed `hills` in its terrain, so high ground was never a candidate. Canon was right about the biomes -- a silted granary and a tide market are low by their own description -- so the fix was a word for the thing canon could not say."
+    },
     "terrain": {
       "type": "array",
       "description": "Which of the field map's biomes this can be placed on. The adapter needs somewhere plausible to put it.",

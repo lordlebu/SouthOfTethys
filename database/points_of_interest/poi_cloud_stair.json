@@ -4,6 +4,7 @@
   "name": "The Cloud Stair",
   "field_map": "field_map_narmada",
   "kind": "anomaly",
+  "stands": "high",
   "terrain": [
     "mountains"
   ],

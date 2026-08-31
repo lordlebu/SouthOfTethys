@@ -4,6 +4,7 @@
   "name": "The Walking Spring",
   "field_map": "field_map_narmada",
   "kind": "eco_site",
+  "stands": "high",
   "terrain": [
     "hills",
     "forest"

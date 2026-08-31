@@ -12,6 +12,7 @@
   "id": "poi_silted_granary",
   "name": "The Silted Granary",
   "kind": "archaeological_site",
+  "stands": "low",
   "terrain": [
     "settlement",
     "wetland"
