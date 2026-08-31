@@ -1,6 +1,6 @@
 # The Timeline of South of Tethys
 
-<p class="book-nav"><a href="https://lordlebu.github.io/SouthOfTethys/">The Timeline</a> &middot; <strong>Epochs &amp; Events</strong> &middot; <a href="https://lordlebu.github.io/SouthOfTethys/atlas.html">The Atlas</a> &middot; <a href="https://lordlebu.github.io/SouthOfTethys/memory_map.html">The Memory Map</a></p>
+<p class="book-nav"><a href="https://lordlebu.github.io/SouthOfTethys/">The Timeline</a> &middot; <strong>Epochs &amp; Events</strong> &middot; <a href="https://lordlebu.github.io/SouthOfTethys/atlas.html">The Atlas</a> &middot; <a href="https://lordlebu.github.io/SouthOfTethys/memory_map.html">The Memory Map</a> &middot; <a href="https://lordlebu.github.io/SouthOfTethys/bestiary.html">The Bestiary</a> &middot; <a href="https://lordlebu.github.io/SouthOfTethys/apothecary.html">The Apothecary</a> &middot; <a href="https://lordlebu.github.io/SouthOfTethys/workshop.html">The Workshop</a> &middot; <a href="https://lordlebu.github.io/SouthOfTethys/cookbook.html">The Cookbook</a></p>
 
 _Generated from `database/events/` and `database/timeline/epochs.json` by `utils/generate_timeline_mermaid.py`. Do not edit by hand._
 
