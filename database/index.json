@@ -1,5 +1,5 @@
 {
-  "version": "2.3.0",
+  "version": "2.3.1",
   "description": "SouthOfTethys canonical entity index",
   "counts": {
     "artifacts": 5,
@@ -22,7 +22,7 @@
     "recipes": 77,
     "regions": 7,
     "settlements": 2,
-    "vehicles": 11,
+    "vehicles": 13,
     "vocabulary": 8
   },
   "entities": {
@@ -903,12 +903,14 @@
       "vehicle_coastal_dhow",
       "vehicle_delta_barge",
       "vehicle_ground_effect_craft",
+      "vehicle_harappan_cart",
       "vehicle_hide_coracle",
       "vehicle_log_dugout",
       "vehicle_outrigger",
       "vehicle_ox_cart",
       "vehicle_reed_raft",
       "vehicle_salt_sled",
+      "vehicle_sinauli_wagon",
       "vehicle_workshop_train"
     ],
     "vocabulary": [
