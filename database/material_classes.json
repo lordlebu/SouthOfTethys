@@ -78,6 +78,10 @@
     "spice": {
       "label": "Spice",
       "note": "Carried in small amounts and worth far more than its weight. Its own class rather than a `produce` for the same reason `salt` is not one: three cardamom pods scent a whole pot, which makes a spice a thing you trade across a continent where produce is a thing you eat where it grew. Added when ginger, mustard and cardamom arrived and `produce` was plainly the wrong word for all three.\n\nNot to be confused with the `seasoning` *use* in plant_uses.json -- that says what people do with a plant, this says what you can carry away. The first draft of the spice materials used `seasoning` here and the lint refused it, which is the entire reason both pins exist."
+    },
+    "poison": {
+      "label": "Poison",
+      "note": "A substance known to harm, and gathered on purpose. Its own class rather than a bitter `physic`, because a household that keeps kuchla in a sealed jar is not keeping medicine and knows it.\n\n**Nothing can be made of it except medicine, and that is the vocabulary working rather than a gap.** `affordances.json` has no word for harm -- it was written that way so the cozy ruling could not be quietly undone -- so an object made to poison somebody could not say what it was for. Canon therefore records the stuff and stops: the only recipes that consume a poison are the ones that purify it. That is also, as it happens, what the tradition these plants come from actually does."
     }
   }
 }

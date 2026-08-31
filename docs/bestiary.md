@@ -6,9 +6,79 @@
 
 Every living thing canon records, and where it was recorded.
 
-Canon holds **257 animals and 108 plants**. They are grouped here by the region they were recorded in, because that is how the bestiary they came from was organised and because a reader looking one up is usually looking at a place.
+Canon holds **257 animals and 116 plants**. They are grouped here by the region they were recorded in, because that is how the bestiary they came from was organised and because a reader looking one up is usually looking at a place.
 
 A species that can be met in play carries its biomes; one marked *lore* is written about and never placed, which is most of the sky and all of the Asura conjurations.
+
+## Canon
+
+*63 recorded.*
+
+| Species | Traits | What it is |
+|---|---|---|
+| **Ashwagandha**<br>*Withania somnifera* | *common · Shrub · plains · desert · settlement · physic* | A grey-leaved shrub on stony ground, small berries in papery lanterns. |
+| **Asura Thorn**<br>*Ziziphus asurica* | *common · Shrub · plains · settlement · boundary* | Hooked scrub planted as a living fence. |
+| **Bethua**<br>*Chenopodium album* | *common · Flower · plains · settlement · food* | Mealy grey-green leaves crowding the edge of a worked field, dusted as though with flour. |
+| **Brahmi**<br>*Bacopa monnieri* | *common · Flower · wetland · river · physic* | Small fleshy leaves creeping over wet mud, white flowers barely clear of the water. |
+| **Canopy Langur**<br>*Semnopithecus aranya* | *common · Mammal · forest · hills* | Grey langurs move through the branches overhead, pausing to look down with long-tailed disapproval. |
+| **Caravan Dromedary**<br>*Camelus dromedarius itineris* | *common · Mammal · desert · plains · settlement* | A single-humped camel chews sideways and regards you with the patience of an animal that has walked further than you have. |
+| **Cliff Swift**<br>*Apus narmadae* | *common · Bird · hills · mountains · plains* | Swifts cut the air above the grass in long scything arcs, too fast to count. |
+| **Cognitavi**<br>*Cognitavi viator* | *rare · Bird · coast · landmark* | A navigator bird watches the water with its head tilted, reading something in it that you cannot, and does not much care that you are here. |
+| **Date Palm**<br>*Phoenix gedrosiana* | *common · Palm · desert · settlement · food · shade · fibre* | Date palms mark the waystation from a long way off, which is the point of planting them. |
+| **Delta Egret**<br>*Egretta saraswati* | *common · Bird · wetland · river · coast* | A white egret stands in the shallows, folded like a closed umbrella, then slowly straightens. |
+| **Delta Monitor**<br>*Varanus deltae* | *common · Reptile · wetland · coast · settlement* | A long monitor lizard noses along the fish-drying racks, unhurried, entirely certain nobody will stop it. |
+| **Dhatura**<br>*Datura metel* | *common · Flower · plains · settlement · poison · psychoactive · ritual* | White trumpets opening at dusk on a coarse weed nobody planted, and a spiked green fruit. |
+| **Dune Viper**<br>*Echis gedrosianus* | *common · Reptile · desert* | A sidewinding track crosses the sand ahead of you, fresh, and ends where the snake buried itself. |
+| **Estuary Sawfish**<br>*Pristis tethys* | *rare · Fish · coast · river* | Something long moves under the brown water, and for a moment the saw of its snout breaks the surface. |
+| **Field Mustard**<br>*Brassica rapa* | *common · Flower · plains · settlement · food · oil · seasoning* | A field turned yellow head to foot, loud with bees, the pods filling below the flowers. |
+| **Frankincense Scrub**<br>*Boswellia gedrosiana* | *common · Shrub · desert · fragrance · trade* | Resin beads on the bark where the scrub has been scored, hardening into the tears burned at rites. |
+| **Ghentu**<br>*Clerodendrum viscosum* | *common · Shrub · plains · forest · food · physic · boundary* | A coarse shrub with sticky leaves and white flowers, growing where nobody chose to put it. |
+| **Ghost Mangrove**<br>*Avicennia phantasma* | *rare · Tree · coast · wetland · river · landmark · fuel* | The pale bark of these mangroves catches what light there is. |
+| **Ginger**<br>*Zingiber officinale* | *common · Root · forest · settlement · seasoning · physic · trade* | A knuckled rhizome under a stand of narrow reed-like leaves, hot enough to smell when broken. |
+| **Guggul**<br>*Commiphora wightii* | *rare · Shrub · desert · hills · physic · fragrance · trade* | A crooked thorn shrub with peeling papery bark, beaded with resin where it has been cut. |
+| **Guloncho**<br>*Tinospora cordifolia* | *rare · Vine · forest · settlement · food · physic* | Heart-shaped leaves on a vine hung with aerial roots that reach down without touching. |
+| **Haritaki**<br>*Terminalia chebula* | *common · Tree · forest · plains · physic · dye · trade* | A tall tree with ribbed yellow-green fruit, the ground beneath it swept for windfalls. |
+| **Hill Cardamom**<br>*Elettaria cardamomum* | *rare · Shrub · forest · hills · seasoning · fragrance · trade* | Pale pods low on a stem at the foot of tall leaves, in shade deep enough to feel cold. |
+| **Hinche**<br>*Enhydra fluctuans* | *common · Flower · wetland · river · food · physic* | A mat of fleshy stems lying flat on still water, rooting wherever a node touches mud. |
+| **Honey-Guide Bird**<br>*Indicator narmadae* | *common · Bird · forest · hills · settlement* | A small brown bird calls, hops to the next branch, and calls again. |
+| **Iron-Teak**<br>*Tectona ferrea* | *common · Tree · hills · mountains · forest · timber* | Teak this dense is cut for river craft and tower beams, and takes a long lifetime to replace. |
+| **Jackfruit**<br>*Artocarpus heterophyllus* | *common · Tree · settlement · forest · food · timber · shade* | Fruit the size of a child growing straight out of the trunk, too heavy for any branch. |
+| **Jayanti**<br>*Sesbania sesban* | *common · Shrub · plains · wetland · settlement · food · physic · boundary* | A quick soft-wooded shrub on a field bund, yellow pea-flowers and a mist of small leaflets. |
+| **Kalkasunde**<br>*Cassia sophera* | *common · Shrub · plains · settlement · food · physic* | A leggy shrub with paired leaflets, yellow flowers, and a smell like cut grass gone sharp. |
+| **Kemuk**<br>*Costus speciosus* | *rare · Root · forest · wetland · food · physic* | Leaves set in a slow spiral up a cane, a white crepe flower out of a red cone at the top. |
+| **Keot**<br>*Colocasia esculenta* | *common · Root · wetland · river · settlement · food* | Wide leaves shedding water in beads, pale runners spreading through the mud between them. |
+| **Kuchla**<br>*Strychnos nux-vomica* | *rare · Tree · forest · plains · poison · physic · trade* | A modest tree with glossy paired leaves and a fruit like a small orange, which children are told about early and pointedly. |
+| **Lotus-Root Taro**<br>*Colocasia nelumbo-affinis* | *common · Root · wetland · settlement · food* | Broad taro leaves crowd the pond margin, hiding the starchy corms that feed the granary through the dry months. |
+| **Mahua**<br>*Madhuca longifolia* | *common · Tree · plains · hills · drink · oil · ritual* | Mahua flowers drop through the night and are gathered before the sun gets to them. |
+| **Mango**<br>*Mangifera indica* | *common · Tree · settlement · plains · forest · food · shade · ritual* | A dense dark crown throwing shade a household sits in, fruit hanging green among the leaves. |
+| **Mangrove Crab**<br>*Scylla bonewoodi* | *common · Crustacean · coast · wetland · settlement* | A heavy crab sidles between the mangrove roots, one claw raised like a man carrying something awkward. |
+| **Megalosaurus**<br>*Megalosaurus jambhudweepensis* | *Non-avian dinosaur · lore only · underworld* |  |
+| **Moonseed Vine**<br>*Menispermum tethys* | *rare · Vine · forest · landmark · ritual · memory* | A pale vine has been grafted onto the fig and left to climb, the way it is done in groves people come to on purpose. |
+| **Myrrh-Thorn**<br>*Commiphora spinosa* | *common · Shrub · desert · fragrance · physic* | A thorn shrub bleeding bitter gum, gathered for field salves and little else. |
+| **Neem**<br>*Azadirachta indica* | *common · Tree · settlement · plains · physic · shade* | A neem tree shades the field edge, its leaves bitter enough that nothing much troubles the grain stored beneath it. |
+| **Ol Yam**<br>*Amorphophallus paeoniifolius* | *common · Root · wetland · settlement · food · physic* | Broad umbrella leaves on a speckled stalk, the corm below big enough to feed a household. |
+| **Palta**<br>*Trichosanthes dioica* | *common · Vine · settlement · plains · food* | A trained vine over a low frame, striped young gourds hanging under rough leaves. |
+| **Pepper Vine**<br>*Piper tethys* | *common · Vine · hills · forest · seasoning · trade* | Pepper climbs the ravine wall in the wet shade, its berries drying to the black grain that travels downriver. |
+| **Pippali**<br>*Piper longum* | *common · Vine · forest · settlement · seasoning · physic · trade* | A climbing vine on a shade tree, catkin-like spikes greening toward grey. |
+| **Plateau Ibex**<br>*Capra narmadae* | *common · Mammal · hills · mountains* | An ibex stands on a ledge no wider than your hand and looks down at you without concern. |
+| **Plateau Wolf**<br>*Canis narmadae* | *common · Mammal · hills · mountains · plains* | A lean wolf crosses the open ground at a trot. |
+| **Poison Oleander**<br>*Nerium oleander* | *common · Flower · plains · desert · poison · boundary* | Oleander flowers pink and cheerful on the dry margin. |
+| **Red Delta Rice**<br>*Oryza rubra-delta* | *common · Grass · wetland · settlement · food · trade* | Red rice stands in flooded squares, the water between the stalks holding the whole sky. |
+| **Reed Python**<br>*Python phragmitis* | *common · Reptile · wetland · river* | A thick python lies banked in the reeds, digesting, in no hurry to be anywhere. |
+| **River Bamboo**<br>*Bambusa saraswati* | *common · Grass · river · forest · timber · craftwork* | Bamboo crowds the riverbank, creaking against itself, already half cut for scaffolding and fish traps. |
+| **Sacred Tulsi**<br>*Ocimum sanctum* | *common · Shrub · settlement · ritual · physic* | Tulsi grows in a clay pot by the door, cropped short by daily picking for the morning rites. |
+| **Saltreed**<br>*Phragmites salina* | *common · Grass · wetland · coast · river · fibre · filtration* | Salt-tolerant reeds stand shoulder-high along the brackish flood, the same reeds that roof every hut in the marsh camps. |
+| **Sand Skink**<br>*Scincus gedrosianus* | *common · Reptile · desert* | A skink pours itself into the dune and is gone, swimming under the surface like a fish. |
+| **Sandalwood**<br>*Santalum jambhudweepa* | *rare · Tree · forest · landmark · ritual · fragrance · craftwork* | Sandalwood, and someone has been here before you: a strip of heartwood cut away clean, the scent still hanging in the air. |
+| **Shaluk**<br>*Nymphaea pubescens* | *common · Flower · wetland · river · food · ritual* | Pink night-blooming lilies closing as the sun climbs, their long stalks pulled up in coils. |
+| **Shulfa**<br>*Anethum graveolens* | *common · Flower · settlement · plains · food · seasoning* | Fine thread-leaves and flat yellow umbels, sharp-sweet when brushed against. |
+| **Shushni**<br>*Marsilea minuta* | *common · Fern · wetland · river · food · physic* | Four small leaflets on a thread of stalk, standing just clear of the shallows like clover that has learned to swim. |
+| **Tamarind**<br>*Tamarindus indica* | *common · Tree · settlement · plains · food · seasoning · shade* | A tamarind leans over the road, pods hanging like dark fingers, the ground beneath it swept smooth by people who sit here. |
+| **Tendua**<br>*Panthera simiana* | *rare · Mammal · wetland · forest* | A spotted cat watches from the reed line with eyes set forward like a person's, and you understand that you are being considered. |
+| **Tendua Manticore**<br>*Manticora tendua* | *Spectre · lore only* |  |
+| **Vatsanabha**<br>*Aconitum ferox* | *rare · Flower · hills · mountains · poison · physic* | Hooded blue flowers on a stem in wet upland shade, the root pale and forked like a small hand. |
+| **Whisper-Fig**<br>*Ficus susurrans* | *rare · Tree · forest · landmark · shade · ritual* | The fig's trunk is hollow, and the wind moving through it makes a low sound that the delta people are careful not to interrupt. |
+| **Wild Indigo**<br>*Indigofera silvestris* | *common · Shrub · plains · hills · dye* | Wild indigo, harsher than the garden kind, still good enough for dyers who cannot pay Lothal prices. |
 
 ## Saraswati Delta
 
@@ -76,68 +146,6 @@ A species that can be met in play carries its biomes; one marked *lore* is writt
 | **Vengi Marsh Harrier**<br>*Circus vengi* | *common · Bird · wetland* | A low-flying bird of prey that sweeps over the reed beds, hunting young dinosaurids and salamanders. |
 | **Venomous Vengi Mud-Salamander**<br>*Megalobatrachus toxicus* | *rare · Amphibian · wetland* | A swamp-dwelling giant salamander variant whose skin exudes a paralyzing neurotoxin when threatened. |
 | **Vindhya Forest Falcon**<br>*Falco sylvanus* | *common · Bird · forest* | A quiet, predatory bird that hunts arboreal octopuses and squirrels in the Narmada canopies. |
-
-## Canon
-
-*55 recorded.*
-
-| Species | Traits | What it is |
-|---|---|---|
-| **Asura Thorn**<br>*Ziziphus asurica* | *common · Shrub · plains · settlement · boundary* | Hooked scrub planted as a living fence. |
-| **Bethua**<br>*Chenopodium album* | *common · Flower · plains · settlement · food* | Mealy grey-green leaves crowding the edge of a worked field, dusted as though with flour. |
-| **Canopy Langur**<br>*Semnopithecus aranya* | *common · Mammal · forest · hills* | Grey langurs move through the branches overhead, pausing to look down with long-tailed disapproval. |
-| **Caravan Dromedary**<br>*Camelus dromedarius itineris* | *common · Mammal · desert · plains · settlement* | A single-humped camel chews sideways and regards you with the patience of an animal that has walked further than you have. |
-| **Cliff Swift**<br>*Apus narmadae* | *common · Bird · hills · mountains · plains* | Swifts cut the air above the grass in long scything arcs, too fast to count. |
-| **Cognitavi**<br>*Cognitavi viator* | *rare · Bird · coast · landmark* | A navigator bird watches the water with its head tilted, reading something in it that you cannot, and does not much care that you are here. |
-| **Date Palm**<br>*Phoenix gedrosiana* | *common · Palm · desert · settlement · food · shade · fibre* | Date palms mark the waystation from a long way off, which is the point of planting them. |
-| **Delta Egret**<br>*Egretta saraswati* | *common · Bird · wetland · river · coast* | A white egret stands in the shallows, folded like a closed umbrella, then slowly straightens. |
-| **Delta Monitor**<br>*Varanus deltae* | *common · Reptile · wetland · coast · settlement* | A long monitor lizard noses along the fish-drying racks, unhurried, entirely certain nobody will stop it. |
-| **Dune Viper**<br>*Echis gedrosianus* | *common · Reptile · desert* | A sidewinding track crosses the sand ahead of you, fresh, and ends where the snake buried itself. |
-| **Estuary Sawfish**<br>*Pristis tethys* | *rare · Fish · coast · river* | Something long moves under the brown water, and for a moment the saw of its snout breaks the surface. |
-| **Field Mustard**<br>*Brassica rapa* | *common · Flower · plains · settlement · food · oil · seasoning* | A field turned yellow head to foot, loud with bees, the pods filling below the flowers. |
-| **Frankincense Scrub**<br>*Boswellia gedrosiana* | *common · Shrub · desert · fragrance · trade* | Resin beads on the bark where the scrub has been scored, hardening into the tears burned at rites. |
-| **Ghentu**<br>*Clerodendrum viscosum* | *common · Shrub · plains · forest · food · physic · boundary* | A coarse shrub with sticky leaves and white flowers, growing where nobody chose to put it. |
-| **Ghost Mangrove**<br>*Avicennia phantasma* | *rare · Tree · coast · wetland · river · landmark · fuel* | The pale bark of these mangroves catches what light there is. |
-| **Ginger**<br>*Zingiber officinale* | *common · Root · forest · settlement · seasoning · physic · trade* | A knuckled rhizome under a stand of narrow reed-like leaves, hot enough to smell when broken. |
-| **Guloncho**<br>*Tinospora cordifolia* | *rare · Vine · forest · settlement · food · physic* | Heart-shaped leaves on a vine hung with aerial roots that reach down without touching. |
-| **Hill Cardamom**<br>*Elettaria cardamomum* | *rare · Shrub · forest · hills · seasoning · fragrance · trade* | Pale pods low on a stem at the foot of tall leaves, in shade deep enough to feel cold. |
-| **Hinche**<br>*Enhydra fluctuans* | *common · Flower · wetland · river · food · physic* | A mat of fleshy stems lying flat on still water, rooting wherever a node touches mud. |
-| **Honey-Guide Bird**<br>*Indicator narmadae* | *common · Bird · forest · hills · settlement* | A small brown bird calls, hops to the next branch, and calls again. |
-| **Iron-Teak**<br>*Tectona ferrea* | *common · Tree · hills · mountains · forest · timber* | Teak this dense is cut for river craft and tower beams, and takes a long lifetime to replace. |
-| **Jackfruit**<br>*Artocarpus heterophyllus* | *common · Tree · settlement · forest · food · timber · shade* | Fruit the size of a child growing straight out of the trunk, too heavy for any branch. |
-| **Jayanti**<br>*Sesbania sesban* | *common · Shrub · plains · wetland · settlement · food · physic · boundary* | A quick soft-wooded shrub on a field bund, yellow pea-flowers and a mist of small leaflets. |
-| **Kalkasunde**<br>*Cassia sophera* | *common · Shrub · plains · settlement · food · physic* | A leggy shrub with paired leaflets, yellow flowers, and a smell like cut grass gone sharp. |
-| **Kemuk**<br>*Costus speciosus* | *rare · Root · forest · wetland · food · physic* | Leaves set in a slow spiral up a cane, a white crepe flower out of a red cone at the top. |
-| **Keot**<br>*Colocasia esculenta* | *common · Root · wetland · river · settlement · food* | Wide leaves shedding water in beads, pale runners spreading through the mud between them. |
-| **Lotus-Root Taro**<br>*Colocasia nelumbo-affinis* | *common · Root · wetland · settlement · food* | Broad taro leaves crowd the pond margin, hiding the starchy corms that feed the granary through the dry months. |
-| **Mahua**<br>*Madhuca longifolia* | *common · Tree · plains · hills · drink · oil · ritual* | Mahua flowers drop through the night and are gathered before the sun gets to them. |
-| **Mango**<br>*Mangifera indica* | *common · Tree · settlement · plains · forest · food · shade · ritual* | A dense dark crown throwing shade a household sits in, fruit hanging green among the leaves. |
-| **Mangrove Crab**<br>*Scylla bonewoodi* | *common · Crustacean · coast · wetland · settlement* | A heavy crab sidles between the mangrove roots, one claw raised like a man carrying something awkward. |
-| **Megalosaurus**<br>*Megalosaurus jambhudweepensis* | *Non-avian dinosaur · lore only · underworld* |  |
-| **Moonseed Vine**<br>*Menispermum tethys* | *rare · Vine · forest · landmark · ritual · memory* | A pale vine has been grafted onto the fig and left to climb, the way it is done in groves people come to on purpose. |
-| **Myrrh-Thorn**<br>*Commiphora spinosa* | *common · Shrub · desert · fragrance · physic* | A thorn shrub bleeding bitter gum, gathered for field salves and little else. |
-| **Neem**<br>*Azadirachta indica* | *common · Tree · settlement · plains · physic · shade* | A neem tree shades the field edge, its leaves bitter enough that nothing much troubles the grain stored beneath it. |
-| **Ol Yam**<br>*Amorphophallus paeoniifolius* | *common · Root · wetland · settlement · food · physic* | Broad umbrella leaves on a speckled stalk, the corm below big enough to feed a household. |
-| **Palta**<br>*Trichosanthes dioica* | *common · Vine · settlement · plains · food* | A trained vine over a low frame, striped young gourds hanging under rough leaves. |
-| **Pepper Vine**<br>*Piper tethys* | *common · Vine · hills · forest · seasoning · trade* | Pepper climbs the ravine wall in the wet shade, its berries drying to the black grain that travels downriver. |
-| **Plateau Ibex**<br>*Capra narmadae* | *common · Mammal · hills · mountains* | An ibex stands on a ledge no wider than your hand and looks down at you without concern. |
-| **Plateau Wolf**<br>*Canis narmadae* | *common · Mammal · hills · mountains · plains* | A lean wolf crosses the open ground at a trot. |
-| **Poison Oleander**<br>*Nerium oleander* | *common · Flower · plains · desert · poison · boundary* | Oleander flowers pink and cheerful on the dry margin. |
-| **Red Delta Rice**<br>*Oryza rubra-delta* | *common · Grass · wetland · settlement · food · trade* | Red rice stands in flooded squares, the water between the stalks holding the whole sky. |
-| **Reed Python**<br>*Python phragmitis* | *common · Reptile · wetland · river* | A thick python lies banked in the reeds, digesting, in no hurry to be anywhere. |
-| **River Bamboo**<br>*Bambusa saraswati* | *common · Grass · river · forest · timber · craftwork* | Bamboo crowds the riverbank, creaking against itself, already half cut for scaffolding and fish traps. |
-| **Sacred Tulsi**<br>*Ocimum sanctum* | *common · Shrub · settlement · ritual · physic* | Tulsi grows in a clay pot by the door, cropped short by daily picking for the morning rites. |
-| **Saltreed**<br>*Phragmites salina* | *common · Grass · wetland · coast · river · fibre · filtration* | Salt-tolerant reeds stand shoulder-high along the brackish flood, the same reeds that roof every hut in the marsh camps. |
-| **Sand Skink**<br>*Scincus gedrosianus* | *common · Reptile · desert* | A skink pours itself into the dune and is gone, swimming under the surface like a fish. |
-| **Sandalwood**<br>*Santalum jambhudweepa* | *rare · Tree · forest · landmark · ritual · fragrance · craftwork* | Sandalwood, and someone has been here before you: a strip of heartwood cut away clean, the scent still hanging in the air. |
-| **Shaluk**<br>*Nymphaea pubescens* | *common · Flower · wetland · river · food · ritual* | Pink night-blooming lilies closing as the sun climbs, their long stalks pulled up in coils. |
-| **Shulfa**<br>*Anethum graveolens* | *common · Flower · settlement · plains · food · seasoning* | Fine thread-leaves and flat yellow umbels, sharp-sweet when brushed against. |
-| **Shushni**<br>*Marsilea minuta* | *common · Fern · wetland · river · food · physic* | Four small leaflets on a thread of stalk, standing just clear of the shallows like clover that has learned to swim. |
-| **Tamarind**<br>*Tamarindus indica* | *common · Tree · settlement · plains · food · seasoning · shade* | A tamarind leans over the road, pods hanging like dark fingers, the ground beneath it swept smooth by people who sit here. |
-| **Tendua**<br>*Panthera simiana* | *rare · Mammal · wetland · forest* | A spotted cat watches from the reed line with eyes set forward like a person's, and you understand that you are being considered. |
-| **Tendua Manticore**<br>*Manticora tendua* | *Spectre · lore only* |  |
-| **Whisper-Fig**<br>*Ficus susurrans* | *rare · Tree · forest · landmark · shade · ritual* | The fig's trunk is hollow, and the wind moving through it makes a low sound that the delta people are careful not to interrupt. |
-| **Wild Indigo**<br>*Indigofera silvestris* | *common · Shrub · plains · hills · dye* | Wild indigo, harsher than the garden kind, still good enough for dyers who cannot pay Lothal prices. |
 
 ## Narmada Plateau
 

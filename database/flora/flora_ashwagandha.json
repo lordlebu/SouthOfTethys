@@ -1,0 +1,27 @@
+{
+  "id": "flora_ashwagandha",
+  "type": "flora",
+  "name": "Ashwagandha",
+  "scientific": "Withania somnifera",
+  "growth_form": "shrub",
+  "habitats": [
+    "region_saraswati_delta",
+    "region_narmada_plateau"
+  ],
+  "uses": [
+    "physic"
+  ],
+  "notes": "A dry-ground shrub whose root smells faintly of a horse, which is where the name comes from and what everybody says about it first. Taken for exhaustion rather than for illness.",
+  "canon": "secondary",
+  "sources": [
+    "Indian ethnobotany, adapted to canon"
+  ],
+  "biomes": [
+    "plains",
+    "desert",
+    "settlement"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A grey-leaved shrub on stony ground, small berries in papery lanterns."
+}

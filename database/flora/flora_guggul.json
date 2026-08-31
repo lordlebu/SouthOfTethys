@@ -1,0 +1,27 @@
+{
+  "id": "flora_guggul",
+  "type": "flora",
+  "name": "Guggul",
+  "scientific": "Commiphora wightii",
+  "growth_form": "shrub",
+  "habitats": [
+    "region_gedrosian_desert"
+  ],
+  "uses": [
+    "physic",
+    "fragrance",
+    "trade"
+  ],
+  "notes": "A thorny desert shrub tapped for a resin that smells like a temple and is swallowed like a pill. Slow to yield and slower to recover, so a stand that is worked too hard is a stand that is gone.",
+  "canon": "secondary",
+  "sources": [
+    "Indian ethnobotany, adapted to canon"
+  ],
+  "biomes": [
+    "desert",
+    "hills"
+  ],
+  "placement": "encounter",
+  "rarity": "rare",
+  "journal_prompt": "A crooked thorn shrub with peeling papery bark, beaded with resin where it has been cut."
+}

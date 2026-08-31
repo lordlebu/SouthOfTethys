@@ -1,0 +1,19 @@
+{
+  "id": "item_haritaki_powder",
+  "type": "item",
+  "name": "Haritaki powder",
+  "kind": "physic",
+  "affords": [
+    "heal",
+    "trade"
+  ],
+  "materials": [
+    "material_haritaki_fruit"
+  ],
+  "notes": "Dried fruit ground fine. Taken for almost anything, which is usually a sign a remedy does nothing in particular -- canon records the claim without endorsing it.",
+  "canon": "secondary",
+  "sources": [
+    "Indian ethnobotany, adapted to canon"
+  ],
+  "source_index": 72
+}

@@ -1,0 +1,18 @@
+{
+  "id": "material_purified_kuchla",
+  "type": "material",
+  "name": "Purified kuchla",
+  "classes": [
+    "physic"
+  ],
+  "won_from": [
+    "flora_nux_vomica"
+  ],
+  "rarity": "rare",
+  "notes": "What a fortnight of soaking leaves. Still measured in single seeds and still counted out, because the process removes the danger rather than the need for care.",
+  "canon": "secondary",
+  "sources": [
+    "Indian ethnobotany, adapted to canon"
+  ],
+  "source_index": 53
+}

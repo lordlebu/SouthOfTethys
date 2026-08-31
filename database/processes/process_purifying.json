@@ -1,0 +1,14 @@
+{
+  "id": "process_purifying",
+  "type": "process",
+  "name": "Purifying",
+  "needs": [
+    "contain"
+  ],
+  "notes": "Days of soaking, the liquor thrown away and replaced, and then drying. It is the one process here that adds nothing and removes something -- every other way of making turns a thing into more of a thing, and this turns a poison into a medicine by taking part of it away.\n\nSlow on purpose and impossible to hurry, which is the whole safeguard: a preparation that could be rushed would be rushed.",
+  "canon": "secondary",
+  "sources": [
+    "shodhana, the Ayurvedic purification of toxic drugs"
+  ],
+  "source_index": 16
+}

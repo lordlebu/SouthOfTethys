@@ -1,0 +1,20 @@
+{
+  "id": "item_guggul_pill",
+  "type": "item",
+  "name": "Guggul pill",
+  "kind": "physic",
+  "affords": [
+    "heal",
+    "trade"
+  ],
+  "materials": [
+    "material_guggul_resin",
+    "material_pippali"
+  ],
+  "notes": "Resin softened and rolled with pepper. Worth carrying a long way, which is most of why the stands are overworked.",
+  "canon": "secondary",
+  "sources": [
+    "Indian ethnobotany, adapted to canon"
+  ],
+  "source_index": 73
+}

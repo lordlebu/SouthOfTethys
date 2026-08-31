@@ -72,7 +72,8 @@
               "#oil",
               "#fuel",
               "#physic",
-              "#spice"
+              "#spice",
+              "#poison"
             ],
             "description": "Any material carrying this class satisfies the ingredient. **The reason this layer is maintainable**: a recipe naming `#fibre` accepts a reed canon has not written yet, where a recipe naming four species has to be edited every time the bestiary grows. Hash-prefixed so a tag is never mistaken for an id. Pinned against material_classes.json by lint."
           },

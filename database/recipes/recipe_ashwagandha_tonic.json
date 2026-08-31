@@ -1,0 +1,28 @@
+{
+  "id": "recipe_ashwagandha_tonic",
+  "type": "recipe",
+  "name": "Making a tonic",
+  "process": "process_cooking",
+  "ingredients": [
+    {
+      "material": "material_ashwagandha_root",
+      "count": 2
+    },
+    {
+      "tag": "#oil",
+      "count": 1
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_ashwagandha_tonic",
+      "count": 2
+    }
+  ],
+  "notes": "Warmed, not boiled. Taken at night.",
+  "canon": "secondary",
+  "sources": [
+    "Indian ethnobotany, adapted to canon"
+  ],
+  "source_index": 79
+}

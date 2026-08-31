@@ -1,0 +1,25 @@
+{
+  "id": "flora_brahmi",
+  "type": "flora",
+  "name": "Brahmi",
+  "scientific": "Bacopa monnieri",
+  "growth_form": "flower",
+  "habitats": [
+    "region_saraswati_delta"
+  ],
+  "uses": [
+    "physic"
+  ],
+  "notes": "A creeping marsh herb taken for a failing memory. Filed as `physic` and **not** as `memory`: canon's `memory` use means a plant that *is* a record, like the oracle fig, and reading it as `helps you remember` would collapse a literal claim into a figurative one on the first plant that invited it.",
+  "canon": "secondary",
+  "sources": [
+    "Indian ethnobotany, adapted to canon"
+  ],
+  "biomes": [
+    "wetland",
+    "river"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "Small fleshy leaves creeping over wet mud, white flowers barely clear of the water."
+}

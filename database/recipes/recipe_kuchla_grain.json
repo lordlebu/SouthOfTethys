@@ -1,0 +1,32 @@
+{
+  "id": "recipe_kuchla_grain",
+  "type": "recipe",
+  "name": "Dividing a dose",
+  "process": "process_grinding",
+  "ingredients": [
+    {
+      "material": "material_purified_kuchla",
+      "count": 1
+    },
+    {
+      "tag": "#oil",
+      "count": 1
+    },
+    {
+      "item": "item_grinding_quern",
+      "kept": true
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_kuchla_grain",
+      "count": 4
+    }
+  ],
+  "notes": "Ground into oil and divided small. The dividing is the safeguard and is done in company.",
+  "canon": "secondary",
+  "sources": [
+    "Indian ethnobotany, adapted to canon"
+  ],
+  "source_index": 78
+}

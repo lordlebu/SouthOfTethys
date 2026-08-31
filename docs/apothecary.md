@@ -10,23 +10,30 @@ What this world treats a hurt with, and what it is careful of. Canon has no heal
 
 ## Plants taken as physic
 
-13 of canon's plants are recorded as medicine.
+20 of canon's plants are recorded as medicine.
 
 | Name | Notes |
 |---|---|
+| **Ashwagandha** | A dry-ground shrub whose root smells faintly of a horse, which is where the name comes from and what everybody says about it first. |
+| **Brahmi** | A creeping marsh herb taken for a failing memory. |
 | **Ghentu** | Sticky, rank-smelling, and planted at a boundary as often as eaten. |
 | **Ginger** | Dug, not picked. |
+| **Guggul** | A thorny desert shrub tapped for a resin that smells like a temple and is swallowed like a pill. |
 | **Guloncho** | A climbing stem that will root from the air, which is most of its reputation. |
+| **Haritaki** | The fruit is dried and powdered and taken for almost everything, which is usually a sign a remedy does nothing in particular. |
 | **Hinche** | Floats in still water at the pond's edge. |
 | **Jayanti** | Grown along field bunds as much as for the pot: it holds a bank together and feeds the soil, and the young leaves go into the fourteen. |
 | **Kalkasunde** | Bitter enough that it is eaten in small amounts and mostly for what it is thought to do rather than for the taste. |
 | **Kemuk** | A spiral ginger of damp shade. |
+| **Kuchla** | The seed is a flat grey disc and it will kill a grown person. |
 | **Myrrh-Thorn** | Thorny desert shrub yielding bitter resin. |
 | **Neem** | Bitter medicinal tree of villages and field edges. |
 | **Ol Yam** | A corm the size of a head, and an acrid one -- it has to be cut, soaked and cooked long or it burns the throat. |
+| **Pippali** | Hotter than the round pepper and picked unripe, the whole spike dried. |
 | **Sacred Tulsi** | Household and shrine herb. |
 | **Shilajit Creeper** | Rock-clinging vine that concentrates bituminous minerals from cliff seeps. |
 | **Shushni** | A four-leaved water fern, taken for sleep as much as for food. |
+| **Vatsanabha** | Highland aconite, and the most dangerous root canon holds. |
 
 ## What is carried
 
@@ -34,11 +41,17 @@ The substances themselves, once gathered.
 
 | Name | Notes |
 |---|---|
+| **Ashwagandha root** | Dug in the dry months and dried further. |
 | **Bitter greens** | Fourteen leaves, and the number is the point rather than the plants -- see `foodway_choddo_shak`. |
+| **Brahmi** | Pulled by the handful from wet mud and used fresh, which limits it to where it grows. |
 | **Cardamom** | Three pods will scent a whole pot, which is the only reason something growing in wet shade on one plateau is eaten a thousand miles away. |
 | **Ginger** | Dug rather than picked. |
+| **Guggul** | Tapped in beads from a cut in the bark. |
+| **Haritaki** | Dried until it rattles. |
 | **Myrrh gum** | The wound salve canon names on the myrrh-thorn is this, softened in oil. |
 | **Neem bark** | Canon has the tree for medicine and insect repellent. |
+| **Pippali** | Whole spikes picked unripe and dried grey. |
+| **Purified kuchla** | What a fortnight of soaking leaves. |
 | **Sandalwood billet** | Heartwood only; the sapwood is scentless and worth nothing. |
 | **Shilajit** | The tonic canon names on the creeper -- a mineral exudate scraped from high rock. |
 
@@ -48,6 +61,10 @@ Salve, poultice and tonic -- three preparations and nothing more elaborate.
 
 | Name | Notes |
 |---|---|
+| **A grain of kuchla** | One purified seed ground into oil and divided into doses the size of a grain of rice. |
+| **Ashwagandha tonic** | Root powder in warm oil, taken at night. |
+| **Guggul pill** | Resin softened and rolled with pepper. |
+| **Haritaki powder** | Dried fruit ground fine. |
 | **Myrrh poultice** | The wound salve canon names on the myrrh-thorn, softened in oil and spread on bast. |
 | **Neem salve** | Bitter, oily, and keeps a wound clean. |
 | **Shilajit tonic** | Scraped from high rock and taken in water. |
@@ -60,6 +77,7 @@ Kept apart from physic, deliberately: a dream-inducer is not a treatment, and fi
 |---|---|
 | **Black Ash-Tea** | Hardy wild tea adapted to acidic, sulfur-rich volcanic soils. |
 | **Blood-red Asura Lotus** | Invasive deep-crimson lotus thriving in areas of past magical corruption. |
+| **Dhatura** | Grows on waste ground at the edge of every settlement, trumpet-flowered and entirely poisonous. |
 
 ## Plants known to harm
 
@@ -67,13 +85,20 @@ Their own category rather than a negative. A culture that plants oleander on a b
 
 | Name | Notes |
 |---|---|
+| **Dhatura** | Grows on waste ground at the edge of every settlement, trumpet-flowered and entirely poisonous. |
+| **Kuchla** | The seed is a flat grey disc and it will kill a grown person. |
 | **Poison Oleander** | Toxic flowering shrub of dry margins. |
+| **Vatsanabha** | Highland aconite, and the most dangerous root canon holds. |
 
 ## How they are made
 
 | Preparation | Takes |
 |---|---|
+| [Dividing a dose](https://lordlebu.github.io/SouthOfTethys/workshop.html#dividing-a-dose) | [Purified kuchla](https://lordlebu.github.io/SouthOfTethys/workshop.html#purified-kuchla), `oil`, Quern *(kept)* |
+| [Grinding haritaki](https://lordlebu.github.io/SouthOfTethys/workshop.html#grinding-haritaki) | 3 × [Haritaki](https://lordlebu.github.io/SouthOfTethys/workshop.html#haritaki), Quern *(kept)* |
 | [Making a myrrh poultice](https://lordlebu.github.io/SouthOfTethys/workshop.html#making-a-myrrh-poultice) | [Myrrh gum](https://lordlebu.github.io/SouthOfTethys/workshop.html#myrrh-gum), [Bast](https://lordlebu.github.io/SouthOfTethys/workshop.html#bast), `oil` |
+| [Making a tonic](https://lordlebu.github.io/SouthOfTethys/workshop.html#making-a-tonic) | 2 × [Ashwagandha root](https://lordlebu.github.io/SouthOfTethys/workshop.html#ashwagandha-root), `oil` |
 | [Making neem salve](https://lordlebu.github.io/SouthOfTethys/workshop.html#making-neem-salve) | 2 × [Neem bark](https://lordlebu.github.io/SouthOfTethys/workshop.html#neem-bark), `oil` |
 | [Preparing shilajit](https://lordlebu.github.io/SouthOfTethys/workshop.html#preparing-shilajit) | [Shilajit](https://lordlebu.github.io/SouthOfTethys/workshop.html#shilajit), Quern *(kept)* |
+| [Rolling guggul](https://lordlebu.github.io/SouthOfTethys/workshop.html#rolling-guggul) | 2 × [Guggul](https://lordlebu.github.io/SouthOfTethys/workshop.html#guggul), [Pippali](https://lordlebu.github.io/SouthOfTethys/workshop.html#pippali) |
 

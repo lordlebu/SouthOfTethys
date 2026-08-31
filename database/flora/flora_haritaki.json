@@ -1,0 +1,28 @@
+{
+  "id": "flora_haritaki",
+  "type": "flora",
+  "name": "Haritaki",
+  "scientific": "Terminalia chebula",
+  "growth_form": "tree",
+  "habitats": [
+    "region_saraswati_delta",
+    "region_narmada_plateau"
+  ],
+  "uses": [
+    "physic",
+    "dye",
+    "trade"
+  ],
+  "notes": "The fruit is dried and powdered and taken for almost everything, which is usually a sign a remedy does nothing in particular. This one is also the tannin that blacks a hide and fixes a dye, and nobody doubts that part.",
+  "canon": "secondary",
+  "sources": [
+    "Indian ethnobotany, adapted to canon"
+  ],
+  "biomes": [
+    "forest",
+    "plains"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A tall tree with ribbed yellow-green fruit, the ground beneath it swept for windfalls."
+}

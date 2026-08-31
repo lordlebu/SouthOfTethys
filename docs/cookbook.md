@@ -6,11 +6,17 @@
 
 What is eaten, when it is eaten, and what eating it says.
 
-**13 dishes, 12 recipes and 19 customs.** What this world eats, and — the part that matters — when and why.
+**14 dishes, 13 recipes and 19 customs.** What this world eats, and — the part that matters — when and why.
 
 **The customs are the reason this page exists.** A `foodway` is deliberately not exported to the game: a dish is an object and ships, but what a loaf *means* on the night the river comes over the bank is a fact about a people and belongs beside mythology. That left them read by nothing at all. Here they are read.
 
 ## What is eaten, and what it is for
+
+### Ashwagandha tonic
+
+Root powder in warm oil, taken at night. For exhaustion, which canon distinguishes from illness.
+
+[Making a tonic](https://lordlebu.github.io/SouthOfTethys/workshop.html#making-a-tonic) — 2 × [Ashwagandha root](https://lordlebu.github.io/SouthOfTethys/workshop.html#ashwagandha-root), `oil`.
 
 ### Date block
 
@@ -172,6 +178,7 @@ Rice flour, oil and fruit, baked hard. Made to be carried rather than to be enjo
 | [Mango](https://lordlebu.github.io/SouthOfTethys/workshop.html#mango) | *produce* | Two crops from one tree a month apart: the green fruit is the sour one cooks with, and the ripe one is not cooked at all. |
 | [Mustard seed](https://lordlebu.github.io/SouthOfTethys/workshop.html#mustard-seed) | *oil · spice · grain* | Pressed for a hot yellow oil, or cracked whole into it. |
 | [Natron](https://lordlebu.github.io/SouthOfTethys/workshop.html#natron) | *salt* | The bitter salt from a dry lake bed. |
+| [Pippali](https://lordlebu.github.io/SouthOfTethys/workshop.html#pippali) | *spice · physic* | Whole spikes picked unripe and dried grey. |
 | [Red delta rice](https://lordlebu.github.io/SouthOfTethys/workshop.html#red-delta-rice) | *grain · produce* | Canon records it as a staple grain and a trade good. |
 | [River fish](https://lordlebu.github.io/SouthOfTethys/workshop.html#river-fish) | *flesh* | Split, salted and dried on a rack. |
 | [Salt crust](https://lordlebu.github.io/SouthOfTethys/workshop.html#salt-crust) | *salt* | Scraped off a pan in sheets. |

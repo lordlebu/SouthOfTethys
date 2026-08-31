@@ -1,0 +1,26 @@
+{
+  "id": "flora_vatsanabha",
+  "type": "flora",
+  "name": "Vatsanabha",
+  "scientific": "Aconitum ferox",
+  "growth_form": "flower",
+  "habitats": [
+    "region_narmada_plateau"
+  ],
+  "uses": [
+    "poison",
+    "physic"
+  ],
+  "notes": "Highland aconite, and the most dangerous root canon holds. Purified it is a medicine of last resort; unpurified it is what the hill people once tipped arrows with, which is the only recorded use canon has for a poison that was not eventually a cure.",
+  "canon": "secondary",
+  "sources": [
+    "Indian ethnobotany, adapted to canon"
+  ],
+  "biomes": [
+    "hills",
+    "mountains"
+  ],
+  "placement": "encounter",
+  "rarity": "rare",
+  "journal_prompt": "Hooded blue flowers on a stem in wet upland shade, the root pale and forked like a small hand."
+}

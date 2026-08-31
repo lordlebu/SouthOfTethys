@@ -1,0 +1,23 @@
+{
+  "id": "material_haritaki_fruit",
+  "type": "material",
+  "name": "Haritaki",
+  "classes": [
+    "physic",
+    "pigment"
+  ],
+  "won_from": [
+    "flora_haritaki"
+  ],
+  "found_in": [
+    "forest",
+    "plains"
+  ],
+  "rarity": "common",
+  "notes": "Dried until it rattles. Powdered it is a remedy and steeped it is the tannin that blacks a hide, and only the second of those is beyond dispute.",
+  "canon": "secondary",
+  "sources": [
+    "Indian ethnobotany, adapted to canon"
+  ],
+  "source_index": 58
+}

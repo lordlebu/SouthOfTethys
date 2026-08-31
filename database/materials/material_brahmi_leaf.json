@@ -1,0 +1,22 @@
+{
+  "id": "material_brahmi_leaf",
+  "type": "material",
+  "name": "Brahmi",
+  "classes": [
+    "physic"
+  ],
+  "won_from": [
+    "flora_brahmi"
+  ],
+  "found_in": [
+    "wetland",
+    "river"
+  ],
+  "rarity": "common",
+  "notes": "Pulled by the handful from wet mud and used fresh, which limits it to where it grows.",
+  "canon": "secondary",
+  "sources": [
+    "Indian ethnobotany, adapted to canon"
+  ],
+  "source_index": 57
+}

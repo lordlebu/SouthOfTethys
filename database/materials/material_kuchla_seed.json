@@ -1,0 +1,22 @@
+{
+  "id": "material_kuchla_seed",
+  "type": "material",
+  "name": "Kuchla seed",
+  "classes": [
+    "poison"
+  ],
+  "won_from": [
+    "flora_nux_vomica"
+  ],
+  "found_in": [
+    "forest",
+    "plains"
+  ],
+  "rarity": "rare",
+  "notes": "Flat grey discs, kept in a sealed jar and counted. Nothing is made of them but medicine, and that only after a fortnight of soaking.",
+  "canon": "secondary",
+  "sources": [
+    "Indian ethnobotany, adapted to canon"
+  ],
+  "source_index": 52
+}
