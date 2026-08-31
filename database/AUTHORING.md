@@ -470,16 +470,24 @@ python utils/check_export_boundary.py --update
 **A failure there is usually right.** It means something you wrote reached the game's data. If
 that was the intent, re-pin. If it was not, you probably put an entity in an exported folder.
 
-**Array order is load-bearing, and `source_index` is required on every species.** The game picks
-species by indexing into per-biome lists, so the order they arrive in decides what grows on a
-given tile.
+**`source_index` is required on every species — but array order is no longer load-bearing.**
+Take the next free number and never re-sort a folder.
 
-This used to call the field optional — "anything without one sorts last" — which is true and was
-not enough. The unindexed ones sort last *by id*, so adding `flora_ashwagandha` puts it ahead of
-`flora_asura_thorn` and moves every unindexed species after it. Twenty-five plants arrived across
-two batches and quietly rearranged what was growing on saved ground; twenty fauna had carried the
-same latent hazard since before either. Every species has an index now and the lint refuses one
-without. Take the next free number, and never re-sort a folder.
+The history is worth keeping, because the rule survived its reason. The game used to pick species
+by *indexing into* per-biome lists, so the order they arrived in decided what grew on a given
+tile. The field was called optional — "anything without one sorts last" — which was true and was
+not enough: unindexed entries sort last *by id*, so adding `flora_ashwagandha` put it ahead of
+`flora_asura_thorn` and moved every unindexed species after it. Twenty-five plants arrived across
+two batches and quietly rearranged what was growing on saved ground.
+
+The game now picks species by **rendezvous hashing over their ids** rather than by position, so a
+species' tiles depend on nothing but that species and that tile. Adding one to canon takes only
+the tiles it wins outright — measured at 4.8% of a biome's ground, against 95.4% under the old
+scheme. **Adding canon content is no longer a save-breaking change on the game side.**
+
+The index stays required, for two reasons that have nothing to do with the seed: it is the
+authored bestiary sequence the books read in, and a required unique field is a cheap guard against
+accidental duplicates. It is presentation now, not a contract.
 
 **A new folder must be classified.** If you add an entity type, name its folder in `BUNDLE` or
 `NOT_EXPORTED` in `utils/export_canon_bundle.py`, and in `DB_FOLDERS` in
