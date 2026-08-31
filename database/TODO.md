@@ -32,7 +32,7 @@ See `docs/decisions.md` for the reasoning behind each.
       weather, and is deliberately never generated
 - [x] `lava_field` — the Ganges Lava Sea now names it, and so do the 36 species that were
       filed under `mountains`
-- [ ] Make `lava_field` renderable: it needs a tile texture before anything can stand on it,
+- [x] `lava_field` is renderable. It needed a tile texture before anything could stand on it,
       which is an art call. Species keep `mountains` alongside it until then.
 
 ## Field diary — content
@@ -80,36 +80,39 @@ Primordial Union, and the Dragon's Spine (which is a retained test fixture and c
 - [x] `field_map_narmada` gained `river`. The map is named for a river and had none: the
       generator carved channels and `applyPalette` erased every one, leaving ten named
       watercourses pointing at hills.
-- [ ] **Replace `BECOMES` with a constrained classifier.** Generating a whole continent and then
-      remapping it into a field map's palette is bespoke to this project and is the weakest thing
-      in the generator. Three faults came out of it in one afternoon: marsh reclassified to
-      watercourse, a plateau's rim reclassified to watercourse, and the same rim reclassified to
-      hill. The standard answer is to hand `classifyBiome` the biomes a map is allowed to use so
-      the thresholds divide the range among those, and nothing is ever generated that has to be
-      substituted afterwards. Until then every ordering in that table is load-bearing and all
-      three maps must be measured after touching one.
-- [ ] Narmada's river is wider than a river. `carveRivers` cuts about 3% of that map and
-      `routes.ts` eases wetland to river along every path between its six places; two sources,
-      no single knob. Belongs with the rewrite above rather than another tuning pass.
+- [x] **`BECOMES` replaced by a constrained classifier.** `classifyBiome` now takes the map's
+      palette and never produces anything outside it, so nothing needs substituting and the table
+      is deleted. A test asserts the invariant. Lothal is unchanged to the tile; Narmada gained
+      real relief (13.8% hills + 3.1% mountains) and Dwarka kept its waterline. It needed no
+      `SAVE_VERSION` bump, because baked worlds mean an existing journey keeps its ground.
+- [x] Narmada's river is no longer wider than a river: 14.2% to 3.4%. Most of the old figure was
+      marsh the substitution table had turned into watercourse, so the rewrite above fixed it
+      rather than any tuning.
 - [ ] Canyons on the Narmada plateau, and cliffs on a delta. Both are wanted and neither is
       expressible today: `relief` bends elevation and moisture and says nothing about relief in
       the visual sense.
 
 ## Art, and what is blocked on it
 
-- [ ] Tiles for `lava_field`, the sky biomes, and train track. All three wait on source art --
-      `tools/build-terrain.js` converts drawn art into sheets, it does not invent it. The canon
-      half of `lava_field` is nearly done: 36 species already name it and 29 are `encounter`.
-- [ ] Marks for the making layer. Materials, items and vehicles have no art at all; the satchel
-      panel is text. `src/ui/SpeciesIcon.tsx` is the pattern -- canon states the fact, the game
-      picks the glyph, and an exhaustive `Record` makes a missing one a build failure.
+- [x] Tiles are no longer blocked on drawn art. `data/biomes.json` already gave every biome a
+      colour and a symbol, and the game now builds a placeholder tile from those -- mottled in the
+      biome's own hue, with the mark on one variant in four. `lava_field` is open and its 29
+      encounterable fauna and 7 flora are reachable. Real drawn art is still better; it is no
+      longer a precondition.
+- [x] Marks for the making layer: `src/ui/ThingIcon.tsx` covers all 20 material classes, all 10
+      item kinds, vehicles by kind, and recipes by what they make. An exhaustive `Record` makes a
+      missing one a build failure.
+- [ ] Train track still wants a tile, and is now a tile-and-a-word away rather than a commission.
+- [ ] Marks for the 17 `processes`. The last uncovered vocabulary, and a small one -- a process
+      surfaces only as a recipe's requirement and the recipe already carries its output's mark.
 
 ## Content wanted
 
-- [ ] Indian food: *choddo shak* (fourteen greens, Bengali), and fruits, vegetables and spices
-      beyond them. Then the dishes as `items` + `recipes` + `foodways`, which is what the making
-      layer was built for. New species take a trailing `source_index` -- still required, though
-      the game no longer picks by array position, so adding species is safe by construction.
+- [x] Indian food: *choddo shak* landed as thirteen greens, five spices and fruits, six
+      materials, four dishes, five recipes and four customs -- the making layer being used rather
+      than extended. More fruits, vegetables and spices are still wanted. New species take a
+      trailing `source_index` -- still required, though the game no longer picks by array
+      position, so adding species is safe by construction.
 - [ ] Indian vehicles: a Harappan cart and the Sinauli chariot, both well attested and both
       fitting `epoch_civilization_dawn`.
 
