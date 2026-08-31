@@ -2,6 +2,10 @@
   "id": "flora_ghentu",
   "type": "flora",
   "name": "Ghentu",
+  "aliases": [
+    "Bhant",
+    "Glory bower"
+  ],
   "scientific": "Clerodendrum viscosum",
   "growth_form": "shrub",
   "habitats": [

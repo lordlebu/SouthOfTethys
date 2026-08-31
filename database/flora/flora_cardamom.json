@@ -2,6 +2,10 @@
   "id": "flora_cardamom",
   "type": "flora",
   "name": "Hill Cardamom",
+  "aliases": [
+    "Green cardamom",
+    "Elaichi"
+  ],
   "scientific": "Elettaria cardamomum",
   "growth_form": "shrub",
   "habitats": [

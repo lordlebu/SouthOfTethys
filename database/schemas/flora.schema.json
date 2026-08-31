@@ -191,6 +191,13 @@
         "type": "string"
       },
       "description": "Entity ids where this plant's story crosses another's -- an event, a settlement. Resolved by the reference walker rather than here. Typed as a string on the first attempt at this schema, which the two flora carrying it immediately disproved."
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Other names this plant is known by. Fauna has carried this field for as long as the schema has and flora never did, which was an asymmetry with no argument behind it -- a plant is at least as likely to have a second name as an animal, and rather more likely where the vernacular and the botanical name are both in daily use.\n\nIt was noticed the way these things are: somebody asked for nux-vomica, canon held it under `Kuchla`, and the apothecary printed no binomial -- so a plant that was there could not be found by the only name the reader had for it."
     }
   },
   "additionalProperties": false

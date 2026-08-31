@@ -2,6 +2,10 @@
   "id": "flora_kemuk",
   "type": "flora",
   "name": "Kemuk",
+  "aliases": [
+    "Crepe ginger",
+    "Spiral ginger"
+  ],
   "scientific": "Costus speciosus",
   "growth_form": "root",
   "habitats": [

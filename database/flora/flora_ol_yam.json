@@ -2,6 +2,10 @@
   "id": "flora_ol_yam",
   "type": "flora",
   "name": "Ol Yam",
+  "aliases": [
+    "Elephant foot yam",
+    "Suran"
+  ],
   "scientific": "Amorphophallus paeoniifolius",
   "growth_form": "root",
   "habitats": [

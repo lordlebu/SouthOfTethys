@@ -2,6 +2,11 @@
   "id": "flora_nux_vomica",
   "type": "flora",
   "name": "Kuchla",
+  "aliases": [
+    "Nux-vomica",
+    "Strychnine tree",
+    "Poison nut"
+  ],
   "scientific": "Strychnos nux-vomica",
   "growth_form": "tree",
   "habitats": [

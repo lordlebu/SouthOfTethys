@@ -2,6 +2,9 @@
   "id": "flora_kalkasunde",
   "type": "flora",
   "name": "Kalkasunde",
+  "aliases": [
+    "Kasondi"
+  ],
   "scientific": "Cassia sophera",
   "growth_form": "shrub",
   "habitats": [

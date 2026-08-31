@@ -2,6 +2,10 @@
   "id": "flora_mustard",
   "type": "flora",
   "name": "Field Mustard",
+  "aliases": [
+    "Field mustard",
+    "Sarson"
+  ],
   "scientific": "Brassica rapa",
   "growth_form": "flower",
   "habitats": [

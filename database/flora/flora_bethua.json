@@ -2,6 +2,11 @@
   "id": "flora_bethua",
   "type": "flora",
   "name": "Bethua",
+  "aliases": [
+    "Bathua",
+    "Lamb's quarters",
+    "Fat hen"
+  ],
   "scientific": "Chenopodium album",
   "growth_form": "flower",
   "habitats": [
