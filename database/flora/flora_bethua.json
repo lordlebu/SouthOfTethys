@@ -1,0 +1,26 @@
+{
+  "id": "flora_bethua",
+  "type": "flora",
+  "name": "Bethua",
+  "scientific": "Chenopodium album",
+  "growth_form": "flower",
+  "habitats": [
+    "region_saraswati_delta",
+    "region_narmada_plateau"
+  ],
+  "uses": [
+    "food"
+  ],
+  "notes": "A weed of turned ground that nobody plants and everybody eats. It arrives with the plough and is gone by the hot months.",
+  "canon": "secondary",
+  "sources": [
+    "Bengali choddo shak, adapted to canon's delta"
+  ],
+  "biomes": [
+    "plains",
+    "settlement"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "Mealy grey-green leaves crowding the edge of a worked field, dusted as though with flour."
+}

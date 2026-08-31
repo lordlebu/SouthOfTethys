@@ -3,7 +3,12 @@
   "title": "Material",
   "description": "A substance canon can name, carry and make something out of. The layer that was missing: canon could say a leviathan swims and that a harpoon exists, and had no way to say the second is made from the first. A material answers what stuff *is* and where it comes from; it never answers how much of it there is, which is a question about a particular player and belongs to the game.",
   "type": "object",
-  "required": ["id", "type", "name", "classes"],
+  "required": [
+    "id",
+    "type",
+    "name",
+    "classes"
+  ],
   "properties": {
     "id": {
       "type": "string",
@@ -22,16 +27,34 @@
       "items": {
         "type": "string",
         "enum": [
-          "fibre", "timber", "bone", "hide", "shell", "resin", "clay", "stone",
-          "glass", "metal", "salt", "pigment", "grain", "produce", "flesh",
-          "oil", "fuel", "physic"
+          "fibre",
+          "timber",
+          "bone",
+          "hide",
+          "shell",
+          "resin",
+          "clay",
+          "stone",
+          "glass",
+          "metal",
+          "salt",
+          "pigment",
+          "grain",
+          "produce",
+          "flesh",
+          "oil",
+          "fuel",
+          "physic",
+          "spice"
         ]
       },
       "description": "What kind of stuff this is, from database/material_classes.json. A list because the interesting materials are genuinely two things at once -- mahua seed is `oil` and `produce`, and a recipe asking for either should find it. Pinned against that file by lint_story.py in both directions, so the vocabulary and this enum cannot drift."
     },
     "won_from": {
       "type": "array",
-      "items": { "type": "string" },
+      "items": {
+        "type": "string"
+      },
       "description": "The `flora_`, `fauna_` or `place_` entities this is taken from. Resolved by the reference walker rather than here. Absent is legal and common -- canon knows salt-crust is salt without owing anyone an account of which pan it was scraped from."
     },
     "found_in": {
@@ -39,26 +62,47 @@
       "items": {
         "type": "string",
         "enum": [
-          "sea", "coast", "plains", "forest", "wetland", "hills", "mountains",
-          "desert", "river", "settlement", "landmark", "sky_island",
-          "sky_underside", "open_sky", "underworld", "lava_field"
+          "sea",
+          "coast",
+          "plains",
+          "forest",
+          "wetland",
+          "hills",
+          "mountains",
+          "desert",
+          "river",
+          "settlement",
+          "landmark",
+          "sky_island",
+          "sky_underside",
+          "open_sky",
+          "underworld",
+          "lava_field"
         ]
       },
       "description": "Biomes the material can be gathered in, from database/biomes.json. Wider than the game's renderable set on purpose, exactly as `biomes` is on a species -- canon may put a thing in the open sky and let the export drop it."
     },
     "rarity": {
       "type": "string",
-      "enum": ["common", "rare", "mythic"],
+      "enum": [
+        "common",
+        "rare",
+        "mythic"
+      ],
       "description": "How often a gatherer meets it. Same three values as a species carries, and for the same reason: the game weights pools with it, so a fourth value silently changes what a player finds."
     },
     "worked_by": {
       "type": "array",
-      "items": { "type": "string" },
+      "items": {
+        "type": "string"
+      },
       "description": "`process_` ids that can transform this. Optional and one-directional by design -- a recipe names its own process, and this is a convenience for the atlas rather than a second source of truth."
     },
     "epochs": {
       "type": "array",
-      "items": { "type": "string" },
+      "items": {
+        "type": "string"
+      },
       "description": "Epoch ids from database/timeline/epochs.json. Absent means present in all epochs, which is right for most stuff -- clay does not belong to an era."
     },
     "source_index": {
@@ -71,12 +115,18 @@
     },
     "canon": {
       "type": "string",
-      "enum": ["primary", "secondary", "inferred"],
+      "enum": [
+        "primary",
+        "secondary",
+        "inferred"
+      ],
       "description": "How firmly this is established. Most materials are `inferred`: canon's sources describe a world in which people plainly have rope, and rarely stop to say so."
     },
     "sources": {
       "type": "array",
-      "items": { "type": "string" }
+      "items": {
+        "type": "string"
+      }
     }
   },
   "additionalProperties": false

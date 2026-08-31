@@ -1,0 +1,26 @@
+{
+  "id": "flora_keot_taro",
+  "type": "flora",
+  "name": "Keot",
+  "scientific": "Colocasia esculenta",
+  "growth_form": "root",
+  "habitats": [
+    "region_saraswati_delta"
+  ],
+  "uses": [
+    "food"
+  ],
+  "notes": "The runner rather than the corm -- taro grown for its stolons, which are the part the fourteen wants.",
+  "canon": "secondary",
+  "sources": [
+    "Bengali choddo shak, adapted to canon's delta"
+  ],
+  "biomes": [
+    "wetland",
+    "river",
+    "settlement"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "Wide leaves shedding water in beads, pale runners spreading through the mud between them."
+}

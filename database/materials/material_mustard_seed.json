@@ -1,0 +1,24 @@
+{
+  "id": "material_mustard_seed",
+  "type": "material",
+  "name": "Mustard seed",
+  "classes": [
+    "oil",
+    "spice",
+    "grain"
+  ],
+  "won_from": [
+    "flora_mustard"
+  ],
+  "found_in": [
+    "plains",
+    "settlement"
+  ],
+  "rarity": "common",
+  "notes": "Pressed for a hot yellow oil, or cracked whole into it. A field of mustard is two crops standing in one place.",
+  "canon": "inferred",
+  "sources": [
+    "Bengali choddo shak, adapted to canon's delta"
+  ],
+  "source_index": 48
+}

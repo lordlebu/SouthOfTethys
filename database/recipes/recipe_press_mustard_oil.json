@@ -1,0 +1,28 @@
+{
+  "id": "recipe_press_mustard_oil",
+  "type": "recipe",
+  "name": "Pressing mustard oil",
+  "process": "process_pressing",
+  "ingredients": [
+    {
+      "material": "material_mustard_seed",
+      "count": 4
+    },
+    {
+      "item": "item_cooking_pot",
+      "kept": true
+    }
+  ],
+  "outputs": [
+    {
+      "material": "material_mahua_oil",
+      "count": 2
+    }
+  ],
+  "notes": "A second oil for the delta, and a hotter one. Canon keeps one oil material -- what changes is which seed the press was fed.",
+  "canon": "inferred",
+  "sources": [
+    "Bengali choddo shak, adapted to canon's delta"
+  ],
+  "source_index": 76
+}

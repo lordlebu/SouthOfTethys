@@ -1,0 +1,26 @@
+{
+  "id": "flora_shaluk_lily",
+  "type": "flora",
+  "name": "Shaluk",
+  "scientific": "Nymphaea pubescens",
+  "growth_form": "flower",
+  "habitats": [
+    "region_saraswati_delta"
+  ],
+  "uses": [
+    "food",
+    "ritual"
+  ],
+  "notes": "The stalk is the food and the flower is the offering, from one plant on one morning -- which is the whole reason it sits in both lists.",
+  "canon": "secondary",
+  "sources": [
+    "Bengali choddo shak, adapted to canon's delta"
+  ],
+  "biomes": [
+    "wetland",
+    "river"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "Pink night-blooming lilies closing as the sun climbs, their long stalks pulled up in coils."
+}

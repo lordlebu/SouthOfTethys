@@ -73,7 +73,7 @@ NOT_EXPORTED = [
 # Sorts after every entity that has a source_index, so canon-only additions append.
 UNINDEXED = 10**9
 
-# Provenance fields withheld from the making-layer collections.
+# Provenance fields withheld from every exported collection.
 #
 # `canon` and `sources` say how firmly canon believes a thing and where it came from. They are
 # for the canon book and the retrieval service, both of which read `database/` directly, and
@@ -88,12 +88,15 @@ UNINDEXED = 10**9
 # NOT_EXPORTED, and per value when it keeps only renderable biomes. This is the same kind of
 # call one level finer.
 #
-# 18 KB on a 540 KB budget, which is what made it worth doing now rather than later.
+# It began on the making layer alone, saving 18 KB, with a note that the same argument held for
+# species, places and knowledge and that applying it there belonged in a commit where the game's
+# suite was being run alongside.
 #
-# **Deliberately not applied to species, places or knowledge yet.** The same argument holds for
-# all three and would save more, but those three already feed a game with 460 passing tests and
-# a committed lock file, so that change belongs in a commit where those tests are being run.
-WITHHELD_FROM_CRAFTING = ("canon", "sources")
+# **The budget gate is what collected on that note.** The Indian food batch took the bundle to
+# 563.9 KB against a 560 KB limit, and the rule written beside that limit says the answer is a
+# lore/play split inside the exported types rather than a bigger number. So this now applies to
+# all four files, and gives back 60 KB -- appreciably more than the batch that forced it cost.
+WITHHELD = ("canon", "sources")
 
 
 def resolved_affordances(items: list[dict]) -> dict[str, list[str]]:
@@ -176,11 +179,7 @@ def build_bundle() -> tuple[dict[str, str], dict[str, int]]:
         payload: dict = {"canon_version": index["version"]}
         for folder in folders:
             entities = load_folder(folder)
-            if filename == "crafting.json":
-                entities = [
-                    {k: v for k, v in e.items() if k not in WITHHELD_FROM_CRAFTING}
-                    for e in entities
-                ]
+            entities = [{k: v for k, v in e.items() if k not in WITHHELD} for e in entities]
             payload[folder] = entities
             counts[folder] = len(payload[folder])
         # The biome vocabulary belongs with places: it is what `seed_biomes` and `terrain`

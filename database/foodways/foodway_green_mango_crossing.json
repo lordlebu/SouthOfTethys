@@ -1,0 +1,14 @@
+{
+  "id": "foodway_green_mango_crossing",
+  "type": "foodway",
+  "name": "The sour ration",
+  "culture": "trader",
+  "dish": "item_green_mango_sour",
+  "occasion": "Cut and salted before the mangoes ripen, for a crossing later in the year.",
+  "meaning": "Bad water is a fact of a long walk and this is what makes it drinkable. A caravan that has run out is a caravan that turns back, so the sour is counted out at the start beside the dried fish.",
+  "canon": "inferred",
+  "sources": [
+    "Bengali choddo shak, adapted to canon's delta"
+  ],
+  "source_index": 16
+}

@@ -1,0 +1,27 @@
+{
+  "id": "flora_shulfa",
+  "type": "flora",
+  "name": "Shulfa",
+  "scientific": "Anethum graveolens",
+  "growth_form": "flower",
+  "habitats": [
+    "region_saraswati_delta",
+    "region_narmada_plateau"
+  ],
+  "uses": [
+    "food",
+    "seasoning"
+  ],
+  "notes": "Feathery and anise-sweet. The only one of the fourteen anybody would call pleasant on its own, which is why it is added last.",
+  "canon": "secondary",
+  "sources": [
+    "Bengali choddo shak, adapted to canon's delta"
+  ],
+  "biomes": [
+    "settlement",
+    "plains"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "Fine thread-leaves and flat yellow umbels, sharp-sweet when brushed against."
+}

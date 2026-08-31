@@ -1,0 +1,35 @@
+{
+  "id": "recipe_choddo_shak",
+  "type": "recipe",
+  "name": "Cooking the fourteen",
+  "process": "process_cooking",
+  "ingredients": [
+    {
+      "material": "material_bitter_greens",
+      "count": 14
+    },
+    {
+      "tag": "#oil",
+      "count": 1
+    },
+    {
+      "tag": "#salt",
+      "count": 1
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_choddo_shak",
+      "count": 2
+    }
+  ],
+  "known_by": [
+    "harappan"
+  ],
+  "notes": "Fourteen, counted. A cook who is one short does not make it with thirteen -- they go back out.",
+  "canon": "inferred",
+  "sources": [
+    "Bengali choddo shak, adapted to canon's delta"
+  ],
+  "source_index": 72
+}

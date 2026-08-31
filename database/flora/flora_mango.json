@@ -1,0 +1,29 @@
+{
+  "id": "flora_mango",
+  "type": "flora",
+  "name": "Mango",
+  "scientific": "Mangifera indica",
+  "growth_form": "tree",
+  "habitats": [
+    "region_saraswati_delta",
+    "region_narmada_plateau"
+  ],
+  "uses": [
+    "food",
+    "shade",
+    "ritual"
+  ],
+  "notes": "Shade, fruit and firewood from one tree, which is why a village is often planted around one rather than the other way about. The unripe fruit is the sour one cooks with.",
+  "canon": "secondary",
+  "sources": [
+    "Bengali choddo shak, adapted to canon's delta"
+  ],
+  "biomes": [
+    "settlement",
+    "plains",
+    "forest"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A dense dark crown throwing shade a household sits in, fruit hanging green among the leaves."
+}

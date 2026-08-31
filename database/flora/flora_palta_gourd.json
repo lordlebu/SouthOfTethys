@@ -1,0 +1,25 @@
+{
+  "id": "flora_palta_gourd",
+  "type": "flora",
+  "name": "Palta",
+  "scientific": "Trichosanthes dioica",
+  "growth_form": "vine",
+  "habitats": [
+    "region_saraswati_delta"
+  ],
+  "uses": [
+    "food"
+  ],
+  "notes": "The gourd is the crop and the leaf is the green, so a household growing one has both.",
+  "canon": "secondary",
+  "sources": [
+    "Bengali choddo shak, adapted to canon's delta"
+  ],
+  "biomes": [
+    "settlement",
+    "plains"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A trained vine over a low frame, striped young gourds hanging under rough leaves."
+}

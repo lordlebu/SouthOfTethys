@@ -1,0 +1,22 @@
+{
+  "id": "material_jackfruit_flesh",
+  "type": "material",
+  "name": "Jackfruit",
+  "classes": [
+    "produce"
+  ],
+  "won_from": [
+    "flora_jackfruit"
+  ],
+  "found_in": [
+    "settlement",
+    "forest"
+  ],
+  "rarity": "common",
+  "notes": "Unripe it is cooked like meat and ripe it is eaten like sweets. Canon files it as produce both times, because it is a fruit whichever way it is used.",
+  "canon": "inferred",
+  "sources": [
+    "Bengali choddo shak, adapted to canon's delta"
+  ],
+  "source_index": 51
+}

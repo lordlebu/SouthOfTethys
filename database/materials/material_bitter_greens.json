@@ -1,0 +1,38 @@
+{
+  "id": "material_bitter_greens",
+  "type": "material",
+  "name": "Bitter greens",
+  "classes": [
+    "physic",
+    "produce"
+  ],
+  "won_from": [
+    "flora_ol_yam",
+    "flora_bethua",
+    "flora_kalkasunde",
+    "flora_neem",
+    "flora_hinche",
+    "flora_shushni",
+    "flora_jayanti",
+    "flora_guloncho",
+    "flora_palta_gourd",
+    "flora_shulfa",
+    "flora_shaluk_lily",
+    "flora_ghentu",
+    "flora_kemuk",
+    "flora_keot_taro"
+  ],
+  "found_in": [
+    "wetland",
+    "river",
+    "plains",
+    "settlement"
+  ],
+  "rarity": "common",
+  "notes": "Fourteen leaves, and the number is the point rather than the plants -- see `foodway_choddo_shak`. Gathered on one morning from ditch, bund, pond and field edge, most of them things nobody planted. Bitter to the last, on purpose.",
+  "canon": "inferred",
+  "sources": [
+    "Bengali choddo shak, adapted to canon's delta"
+  ],
+  "source_index": 46
+}

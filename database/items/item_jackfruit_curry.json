@@ -1,0 +1,20 @@
+{
+  "id": "item_jackfruit_curry",
+  "type": "item",
+  "name": "Green jackfruit pot",
+  "base_item": "item_prepared_food",
+  "kind": "food",
+  "affords": [
+    "eat"
+  ],
+  "materials": [
+    "material_jackfruit_flesh",
+    "material_ginger_root"
+  ],
+  "notes": "Unripe jackfruit cooked long enough to pull apart in threads. It is not meat and the delta does not claim it is; it is what the tree gives a month before it gives sweets.",
+  "canon": "inferred",
+  "sources": [
+    "Bengali choddo shak, adapted to canon's delta"
+  ],
+  "source_index": 69
+}

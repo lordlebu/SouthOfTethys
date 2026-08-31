@@ -1,0 +1,29 @@
+{
+  "id": "flora_jayanti",
+  "type": "flora",
+  "name": "Jayanti",
+  "scientific": "Sesbania sesban",
+  "growth_form": "shrub",
+  "habitats": [
+    "region_saraswati_delta",
+    "region_narmada_plateau"
+  ],
+  "uses": [
+    "food",
+    "physic",
+    "boundary"
+  ],
+  "notes": "Grown along field bunds as much as for the pot: it holds a bank together and feeds the soil, and the young leaves go into the fourteen.",
+  "canon": "secondary",
+  "sources": [
+    "Bengali choddo shak, adapted to canon's delta"
+  ],
+  "biomes": [
+    "plains",
+    "wetland",
+    "settlement"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A quick soft-wooded shrub on a field bund, yellow pea-flowers and a mist of small leaflets."
+}

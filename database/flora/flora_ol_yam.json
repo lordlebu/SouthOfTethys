@@ -1,0 +1,26 @@
+{
+  "id": "flora_ol_yam",
+  "type": "flora",
+  "name": "Ol Yam",
+  "scientific": "Amorphophallus paeoniifolius",
+  "growth_form": "root",
+  "habitats": [
+    "region_saraswati_delta"
+  ],
+  "uses": [
+    "food",
+    "physic"
+  ],
+  "notes": "A corm the size of a head, and an acrid one -- it has to be cut, soaked and cooked long or it burns the throat. The leaf is the part counted among the fourteen.",
+  "canon": "secondary",
+  "sources": [
+    "Bengali choddo shak, adapted to canon's delta"
+  ],
+  "biomes": [
+    "wetland",
+    "settlement"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "Broad umbrella leaves on a speckled stalk, the corm below big enough to feed a household."
+}

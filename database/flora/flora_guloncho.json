@@ -1,0 +1,27 @@
+{
+  "id": "flora_guloncho",
+  "type": "flora",
+  "name": "Guloncho",
+  "scientific": "Tinospora cordifolia",
+  "growth_form": "vine",
+  "habitats": [
+    "region_saraswati_delta",
+    "region_narmada_plateau"
+  ],
+  "uses": [
+    "food",
+    "physic"
+  ],
+  "notes": "A climbing stem that will root from the air, which is most of its reputation. Taken against fever.",
+  "canon": "secondary",
+  "sources": [
+    "Bengali choddo shak, adapted to canon's delta"
+  ],
+  "biomes": [
+    "forest",
+    "settlement"
+  ],
+  "placement": "encounter",
+  "rarity": "rare",
+  "journal_prompt": "Heart-shaped leaves on a vine hung with aerial roots that reach down without touching."
+}

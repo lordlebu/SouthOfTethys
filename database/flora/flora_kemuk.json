@@ -1,0 +1,27 @@
+{
+  "id": "flora_kemuk",
+  "type": "flora",
+  "name": "Kemuk",
+  "scientific": "Costus speciosus",
+  "growth_form": "root",
+  "habitats": [
+    "region_saraswati_delta",
+    "region_narmada_plateau"
+  ],
+  "uses": [
+    "food",
+    "physic"
+  ],
+  "notes": "A spiral ginger of damp shade. The stem is peeled and the sour core eaten.",
+  "canon": "secondary",
+  "sources": [
+    "Bengali choddo shak, adapted to canon's delta"
+  ],
+  "biomes": [
+    "forest",
+    "wetland"
+  ],
+  "placement": "encounter",
+  "rarity": "rare",
+  "journal_prompt": "Leaves set in a slow spiral up a cane, a white crepe flower out of a red cone at the top."
+}

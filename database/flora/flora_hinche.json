@@ -1,0 +1,26 @@
+{
+  "id": "flora_hinche",
+  "type": "flora",
+  "name": "Hinche",
+  "scientific": "Enhydra fluctuans",
+  "growth_form": "flower",
+  "habitats": [
+    "region_saraswati_delta"
+  ],
+  "uses": [
+    "food",
+    "physic"
+  ],
+  "notes": "Floats in still water at the pond's edge. Cooling, bitter, and one of the few greens that can be gathered from a boat.",
+  "canon": "secondary",
+  "sources": [
+    "Bengali choddo shak, adapted to canon's delta"
+  ],
+  "biomes": [
+    "wetland",
+    "river"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A mat of fleshy stems lying flat on still water, rooting wherever a node touches mud."
+}
