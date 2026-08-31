@@ -1,0 +1,29 @@
+{
+  "id": "vehicle_harappan_cart",
+  "type": "vehicle",
+  "name": "Harappan cart",
+  "kind": "cart",
+  "crosses": [
+    "settlement",
+    "plains",
+    "river",
+    "coast",
+    "hills"
+  ],
+  "capacity": 3,
+  "materials": [
+    "material_teak_timber",
+    "material_sinew",
+    "material_palm_husk"
+  ],
+  "epochs": [
+    "epoch_civilization_dawn",
+    "epoch_current"
+  ],
+  "notes": "Two solid wheels of three planks dowelled together, and an axle that turns with them rather than under them -- so the whole undercarriage groans and a driver is heard coming from a field away. Nobody has improved on it because nothing about it is difficult: a household can cut one, and a broken wheel is three new planks.\n\nThe commonest vehicle in canon and the least remarked on, which is the usual fate of the thing everybody has. It is drawn in miniature more often than it is written about -- small clay carts turn up in every settlement, in numbers that make more sense as toys than as votives, though canon does not insist on either.",
+  "canon": "secondary",
+  "sources": [
+    "Indus Valley terracotta cart models"
+  ],
+  "source_index": 11
+}

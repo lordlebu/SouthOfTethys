@@ -14,13 +14,13 @@
     "items": 70,
     "processes": 16,
     "recipes": 77,
-    "vehicles": 11
+    "vehicles": 13
   },
   "sha256": {
-    "canon.lock.json": "0cff8ef7bc780d4ee5849f075a263d186fb696603358549a88c646cd0823c7bd",
-    "crafting.json": "2c5d17ec82e86d8dc1541ff28245e42cfd04161b00d8df1335178249448f22d2",
-    "knowledge.json": "8f5644341d1683ccad477078cdb29c95e6ae601b2130602d603cd7b0682aca0e",
-    "places.json": "a5380fa7dd32e8bd7772897ae06670a718bcaf2aecfe6c55df39446b8230baa8",
-    "species.json": "5ba01824b8db6223bb96b94754a7044e411c11d236b5d56e85e02d4ea2636b51"
+    "canon.lock.json": "95982eabd9178b1713cd7b46b6b7680250124d0e27cca18233923299dd8abe40",
+    "crafting.json": "8dd527860992efa70123308ecc72850e2a87aa35c96b0710337bd92f18173e01",
+    "knowledge.json": "72eb5d248520aa34eb467f2ba521c95aaed87e15a4f80559afe9ad0d9d3051f9",
+    "places.json": "ec8fab05cf3d4a29db2aa5b33c65749e0d31c1800a52d9879d7dafcbbcec973c",
+    "species.json": "954d2e2f1cae6fbd6ba04368bce934782653dc890f3081dc584027d25f4cef14"
   }
 }

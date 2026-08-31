@@ -1,0 +1,27 @@
+{
+  "id": "vehicle_sinauli_wagon",
+  "type": "vehicle",
+  "name": "The Sinauli wagon",
+  "kind": "cart",
+  "crosses": [
+    "settlement",
+    "plains",
+    "hills"
+  ],
+  "capacity": 2,
+  "materials": [
+    "material_teak_timber",
+    "material_native_copper",
+    "material_croc_hide"
+  ],
+  "epochs": [
+    "epoch_civilization_dawn",
+    "epoch_current"
+  ],
+  "notes": "Copper-sheathed along every edge a hand would touch, with triangular figures worked into the wheel faces. Found only in graves, and only ever with a body in it.\n\n**Canon files it as a cart, and the argument is the point.** Its wheels are solid -- three planks and a copper rim, the same construction as the household cart above -- and a spoked wheel is what would make it a chariot. So the people who bury one are burying something that looks like a war machine and is built like a farm vehicle, and canon does not know which of those they meant. Recording the dispute rather than settling it is the same call made about the Shattering: the question is better than any answer available.",
+  "canon": "secondary",
+  "sources": [
+    "Sinauli burial finds, c. 2000 BCE"
+  ],
+  "source_index": 12
+}
