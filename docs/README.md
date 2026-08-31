@@ -9,6 +9,10 @@ A procedurally evolving storytelling engine inspired by world simulation games l
 - **[📖 Complete Timeline](index.md)** - Every event, by epoch and then by cause
 - **[📊 Visual Timeline](timeline_mermaid.md)** - The epochs, and the causal graph of events
 - **[🗺️ The Atlas](atlas.md)** - Canon as it stood in each era: a census, its events, and a map where one exists
+- **[🐾 The Bestiary](bestiary.md)** - Every living thing canon records, and where it was recorded
+- **[⚗️ The Apothecary](apothecary.md)** - Bitter barks, scraped resins, and the things it is wiser not to eat
+- **[🔨 The Workshop](workshop.md)** - What things are made of, and how they are made
+- **[🍲 The Cookbook](cookbook.md)** - What is eaten, when it is eaten, and what eating it says
 - **[⏰ Timeline Data](timeline.json)** - Raw event data in JSON format
 
 ## 🗺️ Maps
@@ -55,6 +59,7 @@ ruff check ./utils/*.py --fix
 - Lint and validate story data: `python utils/lint_story.py`
 - Generate timeline summary and Mermaid diagram: `python utils/generate_timeline_mermaid.py`
 - Generate the per-era atlas: `python utils/generate_atlas.py`
+- Generate the four reference books: `python utils/generate_books.py`
 - Generate timeline (JSON): `python utils/generate_timeline.py`
 - Simulate species evolution: `python utils/evolve_species.py`
 - Process story snippets: see `vidur_portal/README.md`. The Ollama step this used to
