@@ -1,0 +1,17 @@
+{
+  "id": "foodway_tempered_oil_welcome",
+  "type": "foodway",
+  "name": "The last pour",
+  "culture": "harappan",
+  "dish": "item_spiced_oil",
+  "occasion": "Poured over a dish at the moment it reaches the table, never before.",
+  "meaning": "The smell arrives before the food does, and that is the point: a household with nothing much in the pot can still make the room smell as though it has. It is the most a poor kitchen can do and everybody knows it, which is why nobody says so.",
+  "places": [
+    "settlement_lothal"
+  ],
+  "canon": "inferred",
+  "sources": [
+    "Bengali choddo shak, adapted to canon's delta"
+  ],
+  "source_index": 17
+}

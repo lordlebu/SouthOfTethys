@@ -1,0 +1,28 @@
+{
+  "id": "flora_jackfruit",
+  "type": "flora",
+  "name": "Jackfruit",
+  "scientific": "Artocarpus heterophyllus",
+  "growth_form": "tree",
+  "habitats": [
+    "region_saraswati_delta",
+    "region_narmada_plateau"
+  ],
+  "uses": [
+    "food",
+    "timber",
+    "shade"
+  ],
+  "notes": "The unripe fruit is cooked like meat and the ripe one is eaten like sweets, from the same tree a month apart.",
+  "canon": "secondary",
+  "sources": [
+    "Bengali choddo shak, adapted to canon's delta"
+  ],
+  "biomes": [
+    "settlement",
+    "forest"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "Fruit the size of a child growing straight out of the trunk, too heavy for any branch."
+}

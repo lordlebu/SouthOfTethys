@@ -1,0 +1,17 @@
+{
+  "id": "foodway_choddo_shak",
+  "type": "foodway",
+  "name": "The Fourteen",
+  "culture": "harappan",
+  "dish": "item_choddo_shak",
+  "occasion": "The last night before the dark of the year, when the household eats fourteen bitter greens.",
+  "meaning": "That the year has a worst night and everyone gets through it together. The greens are gathered that morning from ditch, bund, pond and field edge -- most of them things nobody planted, and several that are only food because somebody once had to find out. It is a meal about having survived a season of not much, eaten deliberately while there is still not much.\n\n**Fourteen is the whole of it.** Which fourteen shifts from household to household and from the delta to the plateau, and nobody argues about the list; a cook one short goes back out rather than making it with thirteen. The count is the observance and the plants are what happened to be growing.",
+  "places": [
+    "settlement_lothal"
+  ],
+  "canon": "inferred",
+  "sources": [
+    "Bengali choddo shak, adapted to canon's delta"
+  ],
+  "source_index": 15
+}

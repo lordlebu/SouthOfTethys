@@ -1,0 +1,27 @@
+{
+  "id": "flora_cardamom",
+  "type": "flora",
+  "name": "Hill Cardamom",
+  "scientific": "Elettaria cardamomum",
+  "growth_form": "shrub",
+  "habitats": [
+    "region_narmada_plateau"
+  ],
+  "uses": [
+    "seasoning",
+    "fragrance",
+    "trade"
+  ],
+  "notes": "Grows only in wet shade on the plateau's flanks and is worth carrying down. Three pods will scent a whole pot.",
+  "canon": "secondary",
+  "sources": [
+    "Bengali choddo shak, adapted to canon's delta"
+  ],
+  "biomes": [
+    "forest",
+    "hills"
+  ],
+  "placement": "encounter",
+  "rarity": "rare",
+  "journal_prompt": "Pale pods low on a stem at the foot of tall leaves, in shade deep enough to feel cold."
+}

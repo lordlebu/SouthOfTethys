@@ -1,0 +1,28 @@
+{
+  "id": "flora_ginger",
+  "type": "flora",
+  "name": "Ginger",
+  "scientific": "Zingiber officinale",
+  "growth_form": "root",
+  "habitats": [
+    "region_saraswati_delta",
+    "region_narmada_plateau"
+  ],
+  "uses": [
+    "seasoning",
+    "physic",
+    "trade"
+  ],
+  "notes": "Dug, not picked. Keeps for a season in dry sand and travels as well as anything that is not a stone.",
+  "canon": "secondary",
+  "sources": [
+    "Bengali choddo shak, adapted to canon's delta"
+  ],
+  "biomes": [
+    "forest",
+    "settlement"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A knuckled rhizome under a stand of narrow reed-like leaves, hot enough to smell when broken."
+}

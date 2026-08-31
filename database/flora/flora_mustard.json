@@ -1,0 +1,28 @@
+{
+  "id": "flora_mustard",
+  "type": "flora",
+  "name": "Field Mustard",
+  "scientific": "Brassica rapa",
+  "growth_form": "flower",
+  "habitats": [
+    "region_saraswati_delta",
+    "region_narmada_plateau"
+  ],
+  "uses": [
+    "food",
+    "oil",
+    "seasoning"
+  ],
+  "notes": "The seed is pressed for oil and the young leaf goes in the pot, so a field of it is two crops standing in one place.",
+  "canon": "secondary",
+  "sources": [
+    "Bengali choddo shak, adapted to canon's delta"
+  ],
+  "biomes": [
+    "plains",
+    "settlement"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A field turned yellow head to foot, loud with bees, the pods filling below the flowers."
+}

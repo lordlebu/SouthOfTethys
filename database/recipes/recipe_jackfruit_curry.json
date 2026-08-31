@@ -1,0 +1,35 @@
+{
+  "id": "recipe_jackfruit_curry",
+  "type": "recipe",
+  "name": "Cooking green jackfruit",
+  "process": "process_cooking",
+  "ingredients": [
+    {
+      "material": "material_jackfruit_flesh",
+      "count": 2
+    },
+    {
+      "material": "material_ginger_root",
+      "count": 1
+    },
+    {
+      "tag": "#salt",
+      "count": 1
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_jackfruit_curry",
+      "count": 2
+    }
+  ],
+  "known_by": [
+    "harappan"
+  ],
+  "notes": "Cooked until it pulls apart in threads. Hands are oiled first or the sap will not come off.",
+  "canon": "inferred",
+  "sources": [
+    "Bengali choddo shak, adapted to canon's delta"
+  ],
+  "source_index": 75
+}

@@ -1,0 +1,28 @@
+{
+  "id": "recipe_green_mango_sour",
+  "type": "recipe",
+  "name": "Salting green mango",
+  "process": "process_drying",
+  "ingredients": [
+    {
+      "material": "material_mango_fruit",
+      "count": 3
+    },
+    {
+      "tag": "#salt",
+      "count": 1
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_green_mango_sour",
+      "count": 2
+    }
+  ],
+  "notes": "Sliced, salted and left on a mat in the sun for four days.",
+  "canon": "inferred",
+  "sources": [
+    "Bengali choddo shak, adapted to canon's delta"
+  ],
+  "source_index": 73
+}

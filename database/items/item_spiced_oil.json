@@ -1,0 +1,22 @@
+{
+  "id": "item_spiced_oil",
+  "type": "item",
+  "name": "Tempered oil",
+  "base_item": "item_prepared_food",
+  "kind": "food",
+  "affords": [
+    "eat",
+    "carry"
+  ],
+  "materials": [
+    "material_mustard_seed",
+    "material_ginger_root",
+    "material_cardamom_pod"
+  ],
+  "notes": "Mustard oil taken to smoking and dropped over with seed, ginger and pod. Poured on at the end rather than cooked in, so what it carries is the smell. Affords carrying rather than containing: it is poured out of a flask, it is not the flask.",
+  "canon": "inferred",
+  "sources": [
+    "Bengali choddo shak, adapted to canon's delta"
+  ],
+  "source_index": 68
+}

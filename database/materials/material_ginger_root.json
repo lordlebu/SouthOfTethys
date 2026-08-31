@@ -1,0 +1,23 @@
+{
+  "id": "material_ginger_root",
+  "type": "material",
+  "name": "Ginger",
+  "classes": [
+    "spice",
+    "physic"
+  ],
+  "won_from": [
+    "flora_ginger"
+  ],
+  "found_in": [
+    "forest",
+    "settlement"
+  ],
+  "rarity": "common",
+  "notes": "Dug rather than picked. Keeps a season in dry sand and travels as well as anything that is not a stone, which is most of why it is worth as much away from where it grows.",
+  "canon": "inferred",
+  "sources": [
+    "Bengali choddo shak, adapted to canon's delta"
+  ],
+  "source_index": 47
+}

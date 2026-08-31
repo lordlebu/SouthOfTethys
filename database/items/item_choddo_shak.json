@@ -1,0 +1,20 @@
+{
+  "id": "item_choddo_shak",
+  "type": "item",
+  "name": "The Fourteen",
+  "base_item": "item_prepared_food",
+  "kind": "food",
+  "affords": [
+    "eat"
+  ],
+  "materials": [
+    "material_bitter_greens",
+    "material_mustard_seed"
+  ],
+  "notes": "Fourteen greens in one pot, bitter to the last, eaten on one night of the year. Nobody pretends it is pleasant -- see `foodway_choddo_shak` for what it is instead.",
+  "canon": "inferred",
+  "sources": [
+    "Bengali choddo shak, adapted to canon's delta"
+  ],
+  "source_index": 66
+}

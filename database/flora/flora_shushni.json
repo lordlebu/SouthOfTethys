@@ -1,0 +1,26 @@
+{
+  "id": "flora_shushni",
+  "type": "flora",
+  "name": "Shushni",
+  "scientific": "Marsilea minuta",
+  "growth_form": "fern",
+  "habitats": [
+    "region_saraswati_delta"
+  ],
+  "uses": [
+    "food",
+    "physic"
+  ],
+  "notes": "A four-leaved water fern, taken for sleep as much as for food. The leaflets fold shut at dusk, which is how a gatherer knows the hour has got away from them.",
+  "canon": "secondary",
+  "sources": [
+    "Bengali choddo shak, adapted to canon's delta"
+  ],
+  "biomes": [
+    "wetland",
+    "river"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "Four small leaflets on a thread of stalk, standing just clear of the shallows like clover that has learned to swim."
+}

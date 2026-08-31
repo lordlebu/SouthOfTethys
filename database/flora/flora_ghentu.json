@@ -1,0 +1,28 @@
+{
+  "id": "flora_ghentu",
+  "type": "flora",
+  "name": "Ghentu",
+  "scientific": "Clerodendrum viscosum",
+  "growth_form": "shrub",
+  "habitats": [
+    "region_saraswati_delta",
+    "region_narmada_plateau"
+  ],
+  "uses": [
+    "food",
+    "physic",
+    "boundary"
+  ],
+  "notes": "Sticky, rank-smelling, and planted at a boundary as often as eaten. Bitter past the point most people would go without a reason.",
+  "canon": "secondary",
+  "sources": [
+    "Bengali choddo shak, adapted to canon's delta"
+  ],
+  "biomes": [
+    "plains",
+    "forest"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A coarse shrub with sticky leaves and white flowers, growing where nobody chose to put it."
+}

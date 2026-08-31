@@ -1,0 +1,23 @@
+{
+  "id": "material_cardamom_pod",
+  "type": "material",
+  "name": "Cardamom",
+  "classes": [
+    "spice",
+    "physic"
+  ],
+  "won_from": [
+    "flora_cardamom"
+  ],
+  "found_in": [
+    "forest",
+    "hills"
+  ],
+  "rarity": "rare",
+  "notes": "Three pods will scent a whole pot, which is the only reason something growing in wet shade on one plateau is eaten a thousand miles away.",
+  "canon": "inferred",
+  "sources": [
+    "Bengali choddo shak, adapted to canon's delta"
+  ],
+  "source_index": 49
+}

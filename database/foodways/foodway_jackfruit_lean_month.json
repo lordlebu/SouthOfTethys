@@ -1,0 +1,14 @@
+{
+  "id": "foodway_jackfruit_lean_month",
+  "type": "foodway",
+  "name": "The month before sweets",
+  "culture": "harappan",
+  "dish": "item_jackfruit_curry",
+  "occasion": "The weeks when the fruit is on the tree and not yet ripe.",
+  "meaning": "The same tree feeds you twice with a month between, and the first time it does not taste like a treat. Eating it green is not making do -- it is knowing the tree well enough to take what it has now instead of waiting for what it will have.",
+  "canon": "inferred",
+  "sources": [
+    "Bengali choddo shak, adapted to canon's delta"
+  ],
+  "source_index": 18
+}

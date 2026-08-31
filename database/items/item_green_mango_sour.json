@@ -1,0 +1,21 @@
+{
+  "id": "item_green_mango_sour",
+  "type": "item",
+  "name": "Green mango sour",
+  "base_item": "item_prepared_food",
+  "kind": "food",
+  "affords": [
+    "eat",
+    "carry"
+  ],
+  "materials": [
+    "material_mango_fruit",
+    "material_salt_crust"
+  ],
+  "notes": "Unripe mango, salted and dried on a mat. Sour enough to make bad water drinkable, which is what it is carried for.",
+  "canon": "inferred",
+  "sources": [
+    "Bengali choddo shak, adapted to canon's delta"
+  ],
+  "source_index": 67
+}

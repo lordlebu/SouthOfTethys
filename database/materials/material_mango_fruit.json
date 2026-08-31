@@ -1,0 +1,23 @@
+{
+  "id": "material_mango_fruit",
+  "type": "material",
+  "name": "Mango",
+  "classes": [
+    "produce"
+  ],
+  "won_from": [
+    "flora_mango"
+  ],
+  "found_in": [
+    "settlement",
+    "plains",
+    "forest"
+  ],
+  "rarity": "common",
+  "notes": "Two crops from one tree a month apart: the green fruit is the sour one cooks with, and the ripe one is not cooked at all.",
+  "canon": "inferred",
+  "sources": [
+    "Bengali choddo shak, adapted to canon's delta"
+  ],
+  "source_index": 50
+}

@@ -1,0 +1,26 @@
+{
+  "id": "flora_kalkasunde",
+  "type": "flora",
+  "name": "Kalkasunde",
+  "scientific": "Cassia sophera",
+  "growth_form": "shrub",
+  "habitats": [
+    "region_saraswati_delta"
+  ],
+  "uses": [
+    "food",
+    "physic"
+  ],
+  "notes": "Bitter enough that it is eaten in small amounts and mostly for what it is thought to do rather than for the taste.",
+  "canon": "secondary",
+  "sources": [
+    "Bengali choddo shak, adapted to canon's delta"
+  ],
+  "biomes": [
+    "plains",
+    "settlement"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A leggy shrub with paired leaflets, yellow flowers, and a smell like cut grass gone sharp."
+}
