@@ -14,6 +14,7 @@ This walks the world the way a player does and reports what cannot be reached:
   entry         every gated sub-location opens for someone who did the work
   conditions    no rung waits on weather the world never produces
   making        every recipe can actually be performed, and every item can be got
+  finite        what never renews, and is concentrated in one kind of ground (reported)
 
     python utils/check_playability.py
     python utils/check_playability.py field_map_lothal
@@ -391,6 +392,87 @@ def why_stuck(w: World, s: State, did: str) -> str:
     return f"rung {nxt} was never begun"
 
 
+def nothing_runs_out(w: World, problems: list[str], notes: list[str]) -> None:
+    """Nothing a recipe needs can be used up beyond recovery.
+
+    **This is the check that had to exist before the game could deplete anything**, and it is
+    deliberately not the check that was planned. The plan said "teach the closure to count":
+    multiply out every recipe's `count` and prove the world holds enough. Measuring first showed
+    that would be almost entirely noise, and would miss the fault that actually reaches a player.
+
+    Why counting is the wrong question. `make()` above ignores counts, and its own comment
+    explains the bargain that makes it sound: the game's tiles are inexhaustible, so "obtainable"
+    and "obtainable four times" are one question. Depletion breaks that -- but only partly.
+    A material that regenerates is *still* inexhaustible to a patient walker; waiting is not
+    running out. So `fast`, `seasonal` and `slow` keep the old bargain exactly, and the only
+    thing that can strand somebody is `renews: never`.
+
+    Why *this* question. Canon cannot count stock and should not try: `found_in` says which
+    biomes hold a material and nothing says how much, because canon does not model a world's
+    stock -- that is the game's, and it depends on a seed canon has never seen. What canon can
+    see is the *shape* of a lock-out, which needs no simulation at all:
+
+        a material that never renews,
+        that a recipe needs,
+        that a map offers in only one of its biomes,
+        and that nothing can make more of.
+
+    All four together mean a player on that map is drawing down a finite supply concentrated in
+    one kind of ground, with no way back. Three of the four are already load-bearing elsewhere,
+    so this reads canon rather than inventing a new claim about it.
+
+    The fourth clause is why this is not a naive scarcity warning, and it was found by reading
+    the recipes rather than assuming: **`recipe_smelt_copper` takes 2 native copper and returns
+    3.** Smelting makes copper rather than spending it, so a material that looks scarce can be
+    the one thing on the map that is not. A check that counted ingredients and ignored outputs
+    would have reported it as the worst case on two maps.
+
+    Reported rather than enforced, and that is the honest register: a single-biome material is a
+    design choice today -- shilajit is *meant* to be rare -- and becomes a fault only once a node
+    can be emptied. When phase 4 lands, the pin in the game's `test/makingMatters.test.ts` and
+    this list have to be read together.
+    """
+    if not w.recipes or not w.maps:
+        return
+
+    # What a recipe can produce more of than it consumes. Net, because 2-in-3-out is a source.
+    renewable_by_craft: set[str] = set()
+    for r in w.recipes.values():
+        spent: dict[str, int] = {}
+        for need in r.get("ingredients") or []:
+            if "material" in need:
+                spent[need["material"]] = spent.get(need["material"], 0) + int(need.get("count", 1))
+        for got in r.get("outputs") or []:
+            mid = got.get("material")
+            if mid and int(got.get("count", 1)) > spent.get(mid, 0):
+                renewable_by_craft.add(mid)
+
+    # What a recipe asks for by name, and the largest single ask, so the note can say the stake.
+    wanted: dict[str, int] = {}
+    for r in w.recipes.values():
+        for need in r.get("ingredients") or []:
+            mid = need.get("material")
+            if mid:
+                wanted[mid] = max(wanted.get(mid, 0), int(need.get("count", 1)))
+
+    for mid, most in sorted(wanted.items()):
+        doc = w.materials.get(mid) or {}
+        if doc.get("renews") != "never" or mid in renewable_by_craft:
+            continue
+        found_in = set(doc.get("found_in") or [])
+        if not found_in:
+            continue
+
+        for map_id, fm in sorted(w.maps.items()):
+            here = found_in & set(fm.get("seed_biomes") or [])
+            if len(here) != 1:
+                continue
+            notes.append(
+                f"{map_id}: {mid} never renews, is wanted {most} at a time, and is only in "
+                f"{here.pop()} -- a node that empties would strand it here"
+            )
+
+
 def structural(w: World, problems: list[str]) -> None:
     """The checks that do not need a simulation: things pointing at each other correctly."""
     for map_id, fm in w.maps.items():
@@ -444,8 +526,12 @@ def main() -> int:
     only = sys.argv[1] if len(sys.argv) > 1 else None
 
     problems: list[str] = []
+    # Reported, never enforced. See `nothing_runs_out` -- these are design facts today and
+    # become faults only once a resource node can be emptied.
+    notes: list[str] = []
     structural(w, problems)
     making(w, problems)
+    nothing_runs_out(w, problems, notes)
 
     # The truth for a player is the whole connected world: they can travel. Per-map figures
     # come after, and are reported rather than enforced -- a map that needs its neighbour is
@@ -512,6 +598,12 @@ def main() -> int:
         print(f"    people             : {len({n for p in here for n in (w.pois[p].get('npcs') or [])})}")
         print(f"    words got here     : {len(local.words)}")
         print(f"    finishable alone   : {len(finished)} of {len(claimed)}")
+
+    if notes:
+        print()
+        print("  Finite, and concentrated in one kind of ground:")
+        for n in notes:
+            print(f"    {n}")
 
     print()
     if problems:

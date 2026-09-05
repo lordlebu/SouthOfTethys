@@ -834,6 +834,45 @@ the next phase and must land before the game depletes anything.
 
 ---
 
+## Nothing runs out — settled 2026-09-05
+
+**The plan for this was wrong, and measuring first is what caught it.** It said "teach the
+closure to count": multiply out every recipe's `count` and prove the world holds enough. That
+check would have been almost entirely noise and would have missed the fault that actually
+reaches a player.
+
+Depletion breaks the count-blind bargain in `make()` only *partly*. A material that regenerates
+is still inexhaustible to a patient walker — waiting is not running out — so `fast`, `seasonal`
+and `slow` keep the old bargain exactly as written. **Only `renews: never` can strand anybody**,
+and that is 11 materials, 7 of which a recipe wants.
+
+Measured against what the maps hold, every margin is comfortable — 350 flint on Lothal against a
+knife needing 2 — with one exception that is not a counting problem at all: **Dwarka holds
+exactly one shilajit.** A single point of failure, not a shortfall. So the check that earns its
+place asks *can a player be locked out*, not *does the world hold enough*.
+
+**Canon cannot count stock and does not try.** `found_in` says which biomes hold a material and
+nothing says how much, because stock depends on a seed canon has never seen. What canon can see
+without simulating anything is the *shape* of a lock-out: a material that never renews, that a
+recipe needs, that a map offers in only one of its biomes, and that nothing can make more of.
+
+**The fourth clause is the one that matters, and reading the recipes is what found it.**
+`recipe_smelt_copper` takes 2 native copper and returns 3 — smelting *makes* copper rather than
+spending it. A check that counted ingredients and ignored outputs would have reported copper as
+the worst case on two maps. Sabotaging the recipe to break even makes it appear immediately,
+which is how that clause is verified.
+
+Reported rather than enforced, and deliberately: seven materials are concentrated in one kind of
+ground today — shilajit, tin ore and basalt in hills, ammonite and the glasses in mountains — and
+that is a design choice while tiles are inexhaustible. It becomes a fault the day a node can be
+emptied. When phase 4 lands, this list and the no-depletion pin in the game's
+`test/makingMatters.test.ts` have to be read together.
+
+Worth knowing before more maps are authored: **the whole `stone` and `glass` classes are
+`never`**, and stone is what knives, adzes and querns are made of.
+
+---
+
 ## Security
 
 Two Hugging Face tokens were exposed during setup and must be treated as burned: one pasted
