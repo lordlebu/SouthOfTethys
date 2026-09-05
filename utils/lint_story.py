@@ -111,6 +111,28 @@ def load(path: Path):
         return json.load(f)
 
 
+def biome_enums(node, path: str = "") -> list[tuple[str, set[str]]]:
+    """Every enum in a schema that is a list of biomes, wherever it is nested.
+
+    Found by content rather than by field name: the seven schemas spell it `biomes`,
+    `found_in`, `seed_biomes`, `terrain` and `crosses`, and a check keyed to those names would
+    silently skip the eighth. An enum containing `mountains` and `desert` is a biome list
+    whatever it is called.
+    """
+    out: list[tuple[str, set[str]]] = []
+    if isinstance(node, dict):
+        values = node.get("enum")
+        if isinstance(values, list) and {"mountains", "desert"} <= set(values):
+            out.append((path or "enum", set(values)))
+        for key, child in node.items():
+            if key != "enum":
+                out.extend(biome_enums(child, f"{path}.{key}" if path else key))
+    elif isinstance(node, list):
+        for i, child in enumerate(node):
+            out.extend(biome_enums(child, f"{path}[{i}]"))
+    return out
+
+
 def all_entities() -> dict[str, tuple[Path, dict]]:
     found = {}
     for folder in set(PREFIX_DIRS.values()):
@@ -445,6 +467,34 @@ def main() -> int:
                 f"material.schema.json allows class '{extra}' that material_classes.json "
                 f"does not declare"
             )
+
+    # --- the biome vocabulary ---------------------------------------------------------
+    #
+    # **The pin that was missing.** `biomes.json` declares which biomes exist and seven schemas
+    # each carry their own copy of the list as an enum. Nothing held the two together, so the
+    # vocabulary and the schemas could drift in either direction -- and did the moment `snow` was
+    # added: the biome was declared, canon linted clean, and the first entity to live there would
+    # have been rejected for naming a biome canon had just gained.
+    #
+    # The same failure the class, affordance and clade pins exist to stop, and checked the same
+    # way. Both directions: a biome the schemas do not allow cannot be authored, and a biome the
+    # schemas allow that canon has never declared is a typo with a schema blessing it.
+    biomes_path = DB / "biomes.json"
+    if biomes_path.exists():
+        declared_biomes = {b["id"] for b in load(biomes_path)["biomes"]}
+        for schema_file in sorted(SCHEMA_DIR.glob("*.json")):
+            schema = load(schema_file)
+            for where, listed in biome_enums(schema):
+                for missing in sorted(declared_biomes - listed):
+                    errors.append(
+                        f"{schema_file.name}: {where} does not allow biome '{missing}', "
+                        f"which biomes.json declares"
+                    )
+                for extra in sorted(listed - declared_biomes):
+                    errors.append(
+                        f"{schema_file.name}: {where} allows biome '{extra}', "
+                        f"which biomes.json does not declare"
+                    )
 
     # --- renewal rates ----------------------------------------------------------------
     #

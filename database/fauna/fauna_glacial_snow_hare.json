@@ -6,7 +6,7 @@
   "clade": "mammal",
   "region": "ganges-lava-sea",
   "biomes": [
-    "lava_field",
+    "snow",
     "mountains"
   ],
   "placement": "encounter",
