@@ -9,11 +9,12 @@
     "flora_desert_saltbush"
   ],
   "found_in": [
-    "desert",
-    "coast"
+    "coast",
+    "desert"
   ],
   "rarity": "common",
-  "notes": "Scraped off a pan in sheets. It is preservative, currency and the ground Dwarka stands on, which is why it is its own class and not a footnote under stone.",
+  "renews": "fast",
+  "notes": "Scraped from a pan rather than cut from the bush. Kept on the coast as well as the desert because the sea leaves it there without the saltbush having grown: this is the one material canon names a plant for and does not actually require the plant.",
   "canon": "inferred",
   "sources": [
     "inferred from canon geography"

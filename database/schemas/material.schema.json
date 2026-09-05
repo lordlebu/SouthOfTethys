@@ -92,6 +92,16 @@
       ],
       "description": "How often a gatherer meets it. Same three values as a species carries, and for the same reason: the game weights pools with it, so a fourth value silently changes what a player finds."
     },
+    "renews": {
+      "type": "string",
+      "enum": [
+        "fast",
+        "seasonal",
+        "slow",
+        "never"
+      ],
+      "description": "Whether a place you have taken this from gives it again, from database/renewal_rates.json. An ordering rather than a duration -- canon says salt-crust returns faster than sandalwood and never says in how many days, because the length of a day is a question about play. The game reads it to decide whether a depleted resource node ever refills; without it the game would have to guess from `rarity`, which answers a different question entirely. Pinned against that file by lint_story.py in both directions, so the vocabulary and this enum cannot drift."
+    },
     "worked_by": {
       "type": "array",
       "items": {

@@ -23,12 +23,14 @@
     "flora_keot_taro"
   ],
   "found_in": [
-    "wetland",
-    "river",
+    "forest",
     "plains",
-    "settlement"
+    "river",
+    "settlement",
+    "wetland"
   ],
   "rarity": "common",
+  "renews": "fast",
   "notes": "Fourteen leaves, and the number is the point rather than the plants. Gathered on one morning from ditch, bund, pond and field edge, most of them things nobody planted. Bitter to the last, on purpose.",
   "canon": "inferred",
   "sources": [

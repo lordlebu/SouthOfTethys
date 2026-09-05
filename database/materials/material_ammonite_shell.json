@@ -10,10 +10,11 @@
     "fauna_asura_marked_black_ammonite"
   ],
   "found_in": [
-    "sea",
-    "coast"
+    "lava_field",
+    "mountains"
   ],
   "rarity": "rare",
+  "renews": "never",
   "notes": "Canon inlays the Board of the Chess of Fate with fossilised ammonites, so this is a material with a reputation before it is a material with a use. The black ones are not worked by anybody sensible.",
   "canon": "inferred",
   "sources": [

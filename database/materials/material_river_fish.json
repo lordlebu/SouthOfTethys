@@ -6,16 +6,17 @@
     "flesh"
   ],
   "won_from": [
-    "fauna_estuary_archer_fish",
-    "fauna_beedu"
+    "fauna_deep_river_bronze",
+    "fauna_narmada_mud_eel",
+    "fauna_estuary_archer_fish"
   ],
   "found_in": [
-    "river",
     "coast",
-    "wetland"
+    "river"
   ],
   "rarity": "common",
-  "notes": "Split, salted and dried on a rack. Named for what it is rather than for a species, because a weir does not sort its catch.",
+  "renews": "seasonal",
+  "notes": "Split, salted and dried on a rack. Named for what it is rather than for a species, because a weir does not sort its catch -- so it names the ordinary fish of the river and the estuary together, and not the stepwell koi, which is sacred and is nobody's supper.",
   "canon": "inferred",
   "sources": [
     "docs/bestiary.md"

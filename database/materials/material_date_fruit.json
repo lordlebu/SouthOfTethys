@@ -11,10 +11,10 @@
   ],
   "found_in": [
     "desert",
-    "coast",
     "settlement"
   ],
   "rarity": "common",
+  "renews": "seasonal",
   "notes": "Dried on the frond and carried in a pressed block. Sweet, heavy, and the reason a desert crossing is arithmetic rather than a gamble.",
   "canon": "inferred",
   "sources": [

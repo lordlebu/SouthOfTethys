@@ -9,10 +9,11 @@
     "flora_lotus_root_taro"
   ],
   "found_in": [
-    "wetland",
-    "river"
+    "settlement",
+    "wetland"
   ],
   "rarity": "common",
+  "renews": "seasonal",
   "notes": "A flood crop in canon's own words -- it wants the water the rice cannot take, so the two together mean a bad year is survivable.",
   "canon": "inferred",
   "sources": [

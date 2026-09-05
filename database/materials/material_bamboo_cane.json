@@ -11,11 +11,11 @@
     "flora_jungle_crested_bamboo"
   ],
   "found_in": [
-    "river",
     "forest",
-    "wetland"
+    "river"
   ],
   "rarity": "common",
+  "renews": "slow",
   "notes": "Two classes, honestly. A whole cane is a scaffold pole; a split one is a strap. Canon records the grove for scaffolding, rafts and tools, which is all three uses of one plant.",
   "canon": "inferred",
   "sources": [

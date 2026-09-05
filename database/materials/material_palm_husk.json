@@ -11,10 +11,10 @@
   ],
   "found_in": [
     "desert",
-    "coast",
     "settlement"
   ],
   "rarity": "common",
+  "renews": "fast",
   "notes": "The coarse mat of fibre at the base of a frond. Harsher than reed and far more patient of salt water, which is why the harbour rope is husk and the house rope is reed.",
   "canon": "inferred",
   "sources": [
