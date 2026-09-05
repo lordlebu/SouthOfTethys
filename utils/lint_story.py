@@ -446,6 +446,78 @@ def main() -> int:
                 f"does not declare"
             )
 
+    # --- renewal rates ----------------------------------------------------------------
+    #
+    # The same pin again, for the vocabulary that says whether a material comes back. Written
+    # alongside `renewal_rates.json` rather than after it, for the reason the affordances note
+    # gives below.
+    renewal_path = DB / "renewal_rates.json"
+    if renewal_path.exists() and mat_schema.exists():
+        declared_rates = set(load(renewal_path)["rates"])
+        listed_rates = set(
+            load(mat_schema)["properties"].get("renews", {}).get("enum") or []
+        )
+        for missing in sorted(declared_rates - listed_rates):
+            errors.append(
+                f"renewal_rates.json declares '{missing}' that material.schema.json's "
+                f"renews enum does not allow"
+            )
+        for extra in sorted(listed_rates - declared_rates):
+            errors.append(
+                f"material.schema.json allows renews '{extra}' that renewal_rates.json "
+                f"does not declare"
+            )
+
+    # --- a material is gatherable only where its source lives -------------------------
+    #
+    # The bug this exists to make unauthorable: `material_ammonite_shell` was gathered in
+    # `coast` and `sea`, and both ammonites it is won from live in `lava_field` and
+    # `mountains`. Not one biome in common -- so the shell could be picked up in every biome
+    # the animal cannot survive in, and in none of the ones it can. Twenty-five materials
+    # disagreed with their own sources this way, and nothing anywhere reported it, because
+    # each file is internally consistent and the contradiction only exists *between* them.
+    #
+    # It matters more now than it did: the game is moving from gathering a biome-wide list to
+    # gathering **what is standing on the tile**, so a material whose source is not in the
+    # biome becomes literally unobtainable rather than merely odd.
+    #
+    # **A subset check, not equality, and the asymmetry is the whole rule.** A material that
+    # names fewer biomes than its sources reach is under-supplied and harmless -- the species
+    # is there, you simply cannot take that from it here. A material that names a biome none
+    # of its sources reach is the bug.
+    #
+    # `won_from` may also name a `place_`, which has no biome list; those are skipped rather
+    # than guessed at. And a material may legitimately outrun its source when the *material*
+    # travels without it -- leviathan bone and oyster shell wash up on a coast, salt crusts a
+    # pan the saltbush never grew in -- so those three are listed here by id and say why in
+    # their own `notes`.
+    travels_without_its_source = {
+        "material_leviathan_bone",
+        "material_oyster_shell",
+        "material_salt_crust",
+    }
+    species_biomes: dict[str, set] = {}
+    for eid, (path, payload) in all_entities().items():
+        if path.parent.name in ("flora", "fauna"):
+            species_biomes[eid] = set(payload.get("biomes") or [])
+    for eid, (path, payload) in all_entities().items():
+        if path.parent.name != "materials":
+            continue
+        if eid in travels_without_its_source:
+            continue
+        sources = [s for s in (payload.get("won_from") or []) if s in species_biomes]
+        if not sources:
+            continue
+        reachable: set = set()
+        for source in sources:
+            reachable |= species_biomes[source]
+        for biome in sorted(set(payload.get("found_in") or []) - reachable):
+            errors.append(
+                f"materials/{path.name}: found_in names '{biome}', where none of its "
+                f"won_from species live ({', '.join(sorted(reachable)) or 'nowhere'}) -- "
+                f"either the material or the species is wrong about where it is"
+            )
+
     # --- affordances ------------------------------------------------------------------
     #
     # Nothing carries `affords` yet -- items land on day 2 -- but the file is written and the

@@ -10,11 +10,13 @@
     "flora_sweet_indigo"
   ],
   "found_in": [
+    "forest",
+    "hills",
     "plains",
-    "wetland",
     "settlement"
   ],
   "rarity": "rare",
+  "renews": "seasonal",
   "notes": "Fermented in a vat until it stinks, then oxidised in the air. The cloth comes out green and turns blue while you watch, which is why it is worth what it is worth.",
   "canon": "inferred",
   "sources": [

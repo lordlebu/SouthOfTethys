@@ -10,11 +10,12 @@
     "fauna_tethys_leviathan_calf"
   ],
   "found_in": [
-    "sea",
-    "coast"
+    "coast",
+    "sea"
   ],
   "rarity": "mythic",
-  "notes": "Canon states outright that the hide and bone plate of the Abyssal Blue are harvested for building maritime vessels. A single rib is a keel. Nobody takes one alone, and nobody takes one often.",
+  "renews": "slow",
+  "notes": "Canon records it as a staple of the far trade. Kept gatherable on the coast as well as at sea because a leviathan bone reaches a beach without the leviathan: it is the one material here that arrives by washing up, which is also the only way a walker on foot ever meets one.",
   "canon": "inferred",
   "sources": [
     "docs/bestiary.md"

@@ -13,7 +13,8 @@
     "sea"
   ],
   "rarity": "common",
-  "notes": "Burnt for lime, ground for temper, or cut for inlay. The middens outside Dwarka are made of the ones nobody bothered with.",
+  "renews": "slow",
+  "notes": "Shell banks build where the water drops them, so this is taken on a coast as often as from the water the animal lived in.",
   "canon": "inferred",
   "sources": [
     "docs/bestiary.md"

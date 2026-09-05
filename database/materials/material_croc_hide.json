@@ -10,11 +10,11 @@
     "fauna_woolly_bactrian_croc"
   ],
   "found_in": [
-    "river",
-    "wetland",
-    "desert"
+    "desert",
+    "mountains"
   ],
   "rarity": "rare",
+  "renews": "seasonal",
   "notes": "Scuted, awkward to cut and nearly impossible to wear out. The dromedary-croc's is the lighter of the two and the one the delta actually uses.",
   "canon": "inferred",
   "sources": [

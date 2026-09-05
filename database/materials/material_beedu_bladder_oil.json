@@ -1,0 +1,23 @@
+{
+  "id": "material_beedu_bladder_oil",
+  "type": "material",
+  "name": "Beedu bladder oil",
+  "classes": [
+    "oil",
+    "fuel"
+  ],
+  "won_from": [
+    "fauna_beedu"
+  ],
+  "found_in": [
+    "desert"
+  ],
+  "rarity": "rare",
+  "renews": "seasonal",
+  "notes": "Drawn from the gas bladders that hold a beedu up over the dunes. Thin, almost colourless, and it burns with very little smoke -- which is why a desert crossing carries it and a river settlement, with mahua oil to hand, does not bother.",
+  "canon": "inferred",
+  "sources": [
+    "SouthOfTethys.txt"
+  ],
+  "source_index": 61
+}

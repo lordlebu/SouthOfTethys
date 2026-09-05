@@ -1,5 +1,5 @@
 {
-  "version": "2.5.0",
+  "version": "2.6.0",
   "description": "SouthOfTethys canonical entity index",
   "counts": {
     "artifacts": 5,
@@ -13,7 +13,7 @@
     "flora": 116,
     "foodways": 19,
     "items": 74,
-    "materials": 61,
+    "materials": 62,
     "mythology": 9,
     "npcs": 8,
     "places": 41,
@@ -670,6 +670,7 @@
       "material_bamboo_cane",
       "material_bark_bast",
       "material_basalt",
+      "material_beedu_bladder_oil",
       "material_bitter_greens",
       "material_boar_tusk",
       "material_brahmi_leaf",

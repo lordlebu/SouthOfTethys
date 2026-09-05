@@ -10,10 +10,12 @@
     "flora_iron_root_mangrove"
   ],
   "found_in": [
-    "wetland",
-    "coast"
+    "coast",
+    "forest",
+    "mountains"
   ],
   "rarity": "common",
+  "renews": "slow",
   "notes": "Cut from the stilt roots rather than the trunk. Already the right shape, already used to standing in salt water, and no use at all for anything that must be straight.",
   "canon": "inferred",
   "sources": [

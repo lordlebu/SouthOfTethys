@@ -10,11 +10,11 @@
     "flora_red_delta_rice"
   ],
   "found_in": [
-    "wetland",
-    "river",
-    "plains"
+    "settlement",
+    "wetland"
   ],
   "rarity": "common",
+  "renews": "seasonal",
   "notes": "Canon records it as a staple grain and a trade good. Stores through a season, which is the whole difference between a camp and a settlement.",
   "canon": "inferred",
   "sources": [

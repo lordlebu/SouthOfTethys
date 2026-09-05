@@ -783,6 +783,57 @@ enforces `unlocks`, so it drifts freely. Wire it to something or drop it.
 
 ---
 
+## The ground that gives — settled 2026-09-05
+
+**A material may only be gathered where something it is won from lives.** Enforced by
+`lint_story.py`, and it found twenty-five materials that disagreed with their own sources.
+The worst was `material_ammonite_shell`: gathered in `coast` and `sea`, won from two ammonites
+that live in `lava_field` and `mountains`. **Not one biome in common** — so the shell could be
+picked up in every biome the animal cannot survive in, and in none of the ones it can.
+
+Nothing reported this for as long as it existed, because each file is internally consistent and
+the contradiction only lives *between* them. That is the whole argument for the rule: a check
+that reads two entities together is the only thing that could ever have seen it.
+
+**A subset check rather than equality, and the asymmetry is the rule.** A material naming fewer
+biomes than its sources reach is under-supplied and harmless — the species is there, you simply
+cannot take that from it here. A material naming a biome none of its sources reach is the bug.
+Requiring equality would have forced fourteen edits that fix nothing.
+
+Three materials are listed in the linter as travelling without their source: leviathan bone and
+oyster shell wash up on a coast, and salt crusts a pan the saltbush never grew in. Each says so
+in its own `notes`. **They are exceptions by id rather than by rule**, because the moment this
+becomes a pattern somebody will use it to mean "and also anywhere convenient".
+
+**The ammonite was settled as a fossil**, in the mountains where canon puts the animal, rather
+than as a shell on a beach. It is the first honest case of `renews: never` and it decided the
+pattern for the other twenty-four: **where a material and its species disagree, the species is
+the authority.** A species entity says where a living thing can be; a material's `found_in` was
+in most cases a guess written next to it.
+
+**The beedu was a river fish.** `material_river_fish` named `fauna_beedu` alongside the
+estuary archer-fish — and the beedu is a desert manta ray that glides over dunes on gas-filled
+bladders. It was caught in weirs because two ids sat in one list. It now has
+`material_beedu_bladder_oil`, which is what canon's own description of the animal was already
+describing, and `material_river_fish` names the two ordinary river fish it always meant. The
+sacred stepwell koi stays out of the weir.
+
+**`renews` says whether a material comes back; it does not say how fast.** New field, new
+vocabulary in `database/renewal_rates.json`, pinned against the schema in both directions like
+`material_classes.json` before it. Canon says salt-crust returns faster than sandalwood and
+never says in how many days, because **the length of a day is a question about play**. The game
+turns `seasonal` into a number and owns that number.
+
+The alternative was letting the game infer renewal from `rarity`, which answers a different
+question: a leviathan is rare because few of them exist, and a quarried block of basalt is not
+rare at all and is still gone once it is cut.
+
+**This does not yet unblock depletion.** `check_playability.py` still ignores every `count`,
+which is sound only while the game's tiles are inexhaustible. Teaching that closure to count is
+the next phase and must land before the game depletes anything.
+
+---
+
 ## Security
 
 Two Hugging Face tokens were exposed during setup and must be treated as burned: one pasted

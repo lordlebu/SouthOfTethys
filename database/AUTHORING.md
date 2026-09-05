@@ -194,6 +194,7 @@ there is -- that is a question about one particular player, and it belongs to th
   "won_from": ["flora_saraswati_reed"],
   "found_in": ["wetland", "river"],
   "rarity": "common",
+  "renews": "fast",
   "notes": "Retted in standing water until the pith rots away, then combed out.",
   "canon": "inferred",
   "sources": ["docs/bestiary.md"],
@@ -210,6 +211,23 @@ and `produce` -- rather than picking the more important one.
 **`won_from` may be absent.** Canon knows salt-crust is salt without owing anyone an account
 of which pan it was scraped from. What it may *not* be is a bare string: like every other
 reference in canon it names entities, and the walker checks them.
+
+**`found_in` may not name a biome your `won_from` species cannot reach.** The lint refuses it,
+and the bug it exists to stop was real for as long as materials have existed:
+`material_ammonite_shell` was gathered on the `coast` while both its ammonites live in
+`lava_field` and `mountains` -- no biome in common at all. Fewer biomes than the species reach
+is fine and common; *more* is a claim that the stuff appears where nothing makes it. Where the
+two disagree, **the species wins** -- it is the entity that says where a living thing can be.
+
+If a material genuinely travels without its source, say so in `notes` and add the id to
+`travels_without_its_source` in `lint_story.py`. Three do: leviathan bone and oyster shell wash
+ashore, and salt crusts a pan no saltbush grew in. Keep it that small.
+
+**`renews` says whether a place gives it again**, from `database/renewal_rates.json`:
+`fast`, `seasonal`, `slow` or `never`. It is an *ordering*, not a duration -- canon never says
+how many days, because the length of a day is a question about play, and the game owns it. The
+test for `never`: would taking it a second time require the thing to have happened again? A
+fossil needs another death and an age of rock; a reed needs a season.
 
 **This is not `flora.uses`.** That field stays where it is and answers a different question --
 what people *do* with a plant, including `shade` and `navigational_landmark`, which are not

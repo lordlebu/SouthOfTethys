@@ -10,10 +10,11 @@
     "flora_tamarind"
   ],
   "found_in": [
-    "forest",
-    "plains"
+    "plains",
+    "settlement"
   ],
   "rarity": "common",
+  "renews": "fast",
   "notes": "The inner bark, stripped in long ribbons and beaten soft. Taken from a tree the taker intends to keep, so it is cut in bands and never a ring.",
   "canon": "inferred",
   "sources": [
