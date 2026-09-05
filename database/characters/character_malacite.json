@@ -1,0 +1,24 @@
+{
+  "id": "character_malacite",
+  "type": "character",
+  "name": "Malacite",
+  "epithets": [
+    "Self-Proclaimed King of Jambhudweepa"
+  ],
+  "culture": "ancient_court",
+  "species": "human",
+  "status": "alive",
+  "epoch": "epoch_post_cataclysm",
+  "roles": [
+    "claimant",
+    "chakravartin_heir"
+  ],
+  "physical": {
+    "wears": "scale armour worked with malachite and lapis, a gilded helm"
+  },
+  "notes": "Claims Jambhudweepa by descent from a chakravartin line that was genuinely powerful and is now genuinely gone. The regalia is real and the kingdom is not, which is the whole of him -- he walks the same blasted ground as everybody else, dressed for a court that no longer meets. Filler while the epoch is written out.",
+  "canon": "draft",
+  "sources": [
+    "Varuna's Field Diary design"
+  ]
+}
