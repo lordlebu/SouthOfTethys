@@ -1,0 +1,23 @@
+{
+  "id": "character_mehtar",
+  "type": "character",
+  "name": "Mehtar",
+  "epithets": [
+    "Of the Mask Family"
+  ],
+  "culture": "harappan",
+  "species": "human",
+  "status": "alive",
+  "epoch": "epoch_post_cataclysm",
+  "roles": [
+    "mask_bearer"
+  ],
+  "physical": {
+    "wears": "a bull mask in teal and gold, patterned red and teal cloth"
+  },
+  "notes": "Descendant of Kavik, and so of Mehme, carrying the Mask Family line into the post-cataclysmic era. Not recorded as a relation because the schema has parents and children and this is neither -- the line runs many generations back, and naming Kavik a parent would assert something false. Wears the bull mask as inheritance rather than office: the masks outlasted the family that answered for them, which is the same joke Bekh is the other half of. Filler while the epoch is written out.",
+  "canon": "draft",
+  "sources": [
+    "Varuna's Field Diary design"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "character_mithra",
+  "type": "character",
+  "name": "Mithra",
+  "epithets": [
+    "The Red Cap"
+  ],
+  "culture": "explorer",
+  "species": "human",
+  "status": "alive",
+  "epoch": "epoch_post_cataclysm",
+  "roles": [
+    "outrider",
+    "field_scholar"
+  ],
+  "physical": {
+    "build": "a youth, slight",
+    "wears": "a red Phrygian cap, undyed working cloth, a satchel worn across the body"
+  },
+  "notes": "Youth of the Survival Train, and the second of the two who lead it. Rides ahead of the train where Varuna walks beside it -- the same work at a different pace. Filler while the epoch is written out: enough for a playable traveller to exist in canon, not enough to be a story yet.",
+  "canon": "draft",
+  "sources": [
+    "AI_CONTEXT.md"
+  ]
+}
