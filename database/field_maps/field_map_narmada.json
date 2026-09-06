@@ -19,7 +19,8 @@
     "poi_basalt_quarry",
     "poi_walking_spring",
     "poi_herders_terraces",
-    "poi_cloud_stair"
+    "poi_cloud_stair",
+    "poi_high_camp"
   ],
   "neighbours": [
     "field_map_lothal"

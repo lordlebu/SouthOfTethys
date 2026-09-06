@@ -1,5 +1,5 @@
 {
-  "version": "2.6.0",
+  "version": "2.7.0",
   "description": "SouthOfTethys canonical entity index",
   "counts": {
     "artifacts": 5,
@@ -17,7 +17,7 @@
     "mythology": 9,
     "npcs": 8,
     "places": 41,
-    "points_of_interest": 20,
+    "points_of_interest": 21,
     "processes": 17,
     "recipes": 82,
     "regions": 7,
@@ -802,6 +802,7 @@
       "poi_gate_court",
       "poi_glass_scar",
       "poi_herders_terraces",
+      "poi_high_camp",
       "poi_kavik_tower",
       "poi_long_archive",
       "poi_lothal_camp",
