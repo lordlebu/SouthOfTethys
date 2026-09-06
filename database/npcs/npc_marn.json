@@ -5,7 +5,8 @@
   "role": "herder",
   "found_at": [
     "poi_herders_terraces",
-    "poi_walking_spring"
+    "poi_walking_spring",
+    "poi_high_camp"
   ],
   "language": "maru",
   "would_settle": true,
