@@ -58,6 +58,17 @@ adding content takes only the tiles it wins (4.8%, against 95.4% before). The in
 required as the authored bestiary sequence the books read in, and as a duplicate guard. Still do
 not re-sort a folder — but doing so is now a presentation bug, not a corrupted save.
 
+**`renews` is an ordering, never a duration.** Every material says whether a place gives it
+again — `fast`, `seasonal`, `slow`, `never` — from the vocabulary in `renewal_rates.json`. Canon
+says salt-crust returns faster than sandalwood and **never says in how many days**, because the
+length of a day is a question about play: the game owns that number and turns the ordering into
+days in `src/content/tiers.ts`.
+
+The test for `never`: *would taking it a second time require the thing to have happened again?* A
+fossil needs another death and an age of rock. A reed needs a season. It is honoured literally —
+the game never regrows a `never` node — so `check_playability.py` reports which of them sit in one
+kind of ground, and that report is only worth having because the game keeps the promise.
+
 **One branch at a time, and never `main`.** Work stays on a single feature branch until it
 merges. A new piece of work does not get a new branch because it feels separate — it goes on the
 branch already open, and the whole lot is reviewed as one pull request. Cut the next branch only
@@ -164,7 +175,14 @@ only thing canon says about the *shape* of a map, as distinct from what it is ma
 rule cannot produce a harbour, an island and a plateau, and trying made every map a dome that was
 hardest to walk exactly in the middle where the walking happens.
 
-A region can only hold a map if its biomes are `renderable` in `database/biomes.json`. The
-Shattered Sea is the only unbuilt region that qualifies today; the Tethys Sky Routes are blocked
-until sky biomes can be drawn, and the Ganges Lava Sea would render as `mountains` until
-`lava_field` has a tile.
+A region can only hold a map if its biomes are `renderable` in `database/biomes.json`. **That
+gate has moved**: the game now has painted ground for `lava_field`, `snow`, `sky_island` and
+`sky_underside`, so the Ganges Lava Sea and the Tethys Sky Routes are no longer blocked on art.
+What still blocks the sky is authorial rather than technical — every species in those biomes is
+`placement: lore` on purpose, so a map there would be country with nothing living in it.
+
+One thing to know before putting a new biome in a map's `seed_biomes`: that list is a **climate
+palette**, and the classifier divides elevation and moisture among everything in it. Adding
+`lava_field` to a map would make roughly a third of it lava. The four new grounds reach the map as
+*patches* stamped after classification instead, which is why `snow` appears in the Narmada's
+palette and covers 77 tiles rather than a band of the map.
