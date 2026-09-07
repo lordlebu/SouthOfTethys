@@ -21,7 +21,12 @@
     "poi_first_pier",
     "poi_lodestone_face",
     "poi_far_landing",
-    "poi_kept_stones"
+    "poi_kept_stones",
+    "poi_sunk_cutting",
+    "poi_second_line",
+    "poi_vedda_ford",
+    "poi_quiet_atelier",
+    "poi_nomad_ground"
   ],
   "neighbours": [
     "field_map_lothal",

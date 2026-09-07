@@ -1,0 +1,43 @@
+{
+  "id": "npc_sesh",
+  "type": "npc",
+  "name": "Sesh",
+  "role": "stone-reader",
+  "found_at": [
+    "poi_black_pavement",
+    "poi_fang_bed"
+  ],
+  "language": "kia",
+  "would_settle": true,
+  "knows": [
+    "discovery_bones_in_one_stone"
+  ],
+  "lines": [
+    {
+      "text": "You are standing on it. Everybody stands on it. It goes under the whole town."
+    },
+    {
+      "text": "Hexagons. All the way down as far as anybody has dug, and nobody has dug far, because why would you."
+    },
+    {
+      "text": "The bone seam is up by the hill. Big teeth, two of them, top jaw. Not a fish and not a cat.",
+      "gives": [
+        "discovery_bones_in_one_stone"
+      ]
+    },
+    {
+      "text": "And the bird tracks are in the same rock, down at the shore. I have shown a dozen people and you are the second to go and look at both.",
+      "requires": [
+        "discovery_bones_in_one_stone"
+      ]
+    }
+  ],
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "notes": "Dwarka's local knowledge being simply right, which is that map's thesis. Sesh has the observation exactly and no theory, and the one thing Sesh notices about visitors is which of them bother to walk to both sites.",
+  "canon": "secondary",
+  "sources": [
+    "inferred from canon geography"
+  ]
+}

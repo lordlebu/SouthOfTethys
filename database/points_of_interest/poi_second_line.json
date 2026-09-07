@@ -1,0 +1,25 @@
+{
+  "id": "poi_second_line",
+  "type": "point_of_interest",
+  "name": "The Second Line",
+  "field_map": "field_map_aravali",
+  "kind": "archaeological_site",
+  "stands": "low",
+  "terrain": [
+    "forest",
+    "plains"
+  ],
+  "description": "A parallel embankment carrying nothing at all.",
+  "arrival": "An embankment running alongside the first, the same height and the same age, with no iron on it. Either it was lifted or it was never laid.",
+  "notes": "Two lines were built and one was abandoned first, which says the traffic was once heavy enough to need doubling. That is a whole civilisation stated in an earthwork, and nobody on the map remarks on it.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "secondary",
+  "sources": [
+    "inferred from region_aravali"
+  ],
+  "npcs": [
+    "npc_odri"
+  ]
+}
