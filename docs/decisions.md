@@ -913,6 +913,34 @@ seemed reasonable on the day.
 that code meets the decision without coming here first. `routine.ts` already derives a species'
 rhythm the same way and for the same stated reason, which is the precedent this follows.
 
+## A failed stalk still gives — settled 2026-09-07
+
+**The plan for the activity layer contradicted itself, and the floor won.**
+
+Its phase one said of stalking: *"Fail and it leaves — the node is untouched, not emptied."* Three
+paragraphs earlier the same plan said a minigame varies *"how much and how well, never whether"*.
+Both cannot hold. The second is the older ruling, it is carried in `tiers.ts`, and
+`test/nodes.test.ts` fails by name if it is reversed — so the code implements the floor and a
+clumsy stalk still hands over what the tile promised.
+
+**Why the floor rather than the flight.** Gathering is the only way a material enters a satchel, so
+a failure roll does not sit in front of one gesture — it sits in front of every recipe downstream
+of it, and stacks multiplicatively with depletion. A cozy game varies how much, not whether.
+
+**The stalk already has a real refusal that costs nothing extra.** `routine.ts` decides whether the
+animal is even present: resting or sheltering means you find sign rather than the animal, the row
+is blocked, and the journal names a better hour to come back. That is the "you did not get it"
+experience, and it is *teachable* — a hidden die on the attempt is not, because a player cannot
+practise against it.
+
+So the fail state lives in **when you go**, not in whether the dice liked you. That is the same
+shape as the rest of this game: the wrong hour is a thing you can learn, and learning is the
+mechanic.
+
+This is recorded because the plan was approved with both sentences in it, and the conflict was
+resolved in a commit rather than out loud. Anyone reading that plan against the code will find the
+difference and should find this rather than assume an oversight.
+
 ## Security
 
 Two Hugging Face tokens were exposed during setup and must be treated as burned: one pasted
