@@ -1,0 +1,43 @@
+{
+  "id": "npc_terke",
+  "type": "npc",
+  "name": "Terke",
+  "role": "nomad",
+  "found_at": [
+    "poi_nomad_ground",
+    "poi_vedda_ford"
+  ],
+  "language": "maru",
+  "would_settle": false,
+  "knows": [
+    "discovery_three_crossings"
+  ],
+  "lines": [
+    {
+      "text": "Animals will not go on the iron. Would you? It hums."
+    },
+    {
+      "text": "We cross at the shingle. Always the shingle. My mother crossed at the shingle and hers.",
+      "gives": [
+        "discovery_three_crossings"
+      ]
+    },
+    {
+      "text": "There are stones down there, set in the bed. Not ours. They were there when we started coming and we use them, so.",
+      "requires": [
+        "discovery_three_crossings"
+      ]
+    },
+    {
+      "text": "The rail people ask why we do not ride. We ask why they wait."
+    }
+  ],
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "notes": "The living end of the map's oldest thread. Terke fords where the Vedda forded and has no interest in the line at all -- not hostility, just a different set of needs. Animals, water, no timetable.\n\nSays nothing about the Age of Machinery because it is not a thing that happened to them.",
+  "canon": "secondary",
+  "sources": [
+    "inferred from canon geography"
+  ]
+}

@@ -33,9 +33,9 @@
     {
       "id": "epoch_current",
       "order": 4,
-      "name": "Current Era (Age of Machinery)",
+      "name": "The Age of Machinery",
       "range": "~1920s equivalent",
-      "notes": "Narmada University, dieselpunk exploration"
+      "notes": "Narmada University, dieselpunk exploration\n\n**Renamed from \"Current Era (Age of Machinery)\".** It was never the current era from any reader's position and it is emphatically not the player's: the game is set in `epoch_post_cataclysm`, after this one ended, walking through what it left behind. A label that means \"now\" on the era a player finds in ruins is the kind of name that quietly misleads every future author.\n\nThe id stays `epoch_current` deliberately. Fifty-five entities reference it and the atlas writes `docs/atlas/epoch_current.svg`; renaming an id to fix a display name is how a rename becomes a migration. The name is what anybody reads."
     },
     {
       "id": "epoch_post_cataclysm",

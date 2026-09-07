@@ -1,0 +1,25 @@
+{
+  "id": "poi_vedda_ford",
+  "type": "point_of_interest",
+  "name": "The Vedda Ford",
+  "field_map": "field_map_aravali",
+  "kind": "wilderness",
+  "stands": "low",
+  "terrain": [
+    "coast",
+    "plains"
+  ],
+  "description": "The old crossing, downstream of everything, still the shallowest water.",
+  "arrival": "Shingle on both banks and a bar between them you can wade at low water. There are stones set in the bed that are not river stones, worn round, laid a pace apart.",
+  "notes": "**The oldest of three crossings, and the one still in use.** The Vedda forded here in `epoch_migrations`, the Age of Machinery bridged it, and the nomads ford it again -- the same water, because water does not care what anybody builds.\n\nThe player finds them in the wrong order: the rail-head first, this last. That is what makes the rail sad rather than impressive. It is the middle of three things, not the end of one.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "secondary",
+  "sources": [
+    "inferred from region_aravali"
+  ],
+  "npcs": [
+    "npc_terke"
+  ]
+}

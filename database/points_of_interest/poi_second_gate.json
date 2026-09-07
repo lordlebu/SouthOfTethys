@@ -1,0 +1,22 @@
+{
+  "id": "poi_second_gate",
+  "type": "point_of_interest",
+  "name": "The Second Gate",
+  "field_map": "field_map_dwarka",
+  "kind": "anomaly",
+  "stands": "low",
+  "terrain": [
+    "lava_field",
+    "desert"
+  ],
+  "description": "Another doorway, out past the salt, that nobody sweeps.",
+  "arrival": "The same build as the Gate Court and none of the care: a frame of dressed basalt in a field of it, half-drifted with salt, and no path worn to it. It is not doing anything today.",
+  "notes": "**The gates are plural, and canon always said so.** `event_shadow_pact` and `event_asura_synapsid_domestication` both say \"a Dwarka Gate\", indefinite, and nothing has ever named a second one. This is that -- and the contrast is the point: one gate is swept municipal infrastructure, and this one is a door in a field that everybody has agreed to stop walking to.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "secondary",
+  "sources": [
+    "inferred from event_fang_vs_scale_wars"
+  ]
+}

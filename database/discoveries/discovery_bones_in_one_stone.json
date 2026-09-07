@@ -1,0 +1,35 @@
+{
+  "id": "discovery_bones_in_one_stone",
+  "type": "discovery",
+  "name": "Bones in One Stone",
+  "discipline": "evolution",
+  "found_at": [
+    "poi_fang_bed",
+    "poi_scale_shore"
+  ],
+  "levels": [
+    {
+      "entry": "A seam of bone in the black pavement: heavy skulls, a pair of long teeth in the upper jaw, nothing like them alive."
+    },
+    {
+      "entry": "A short walk away, three-toed trackways in the same stone, walking toward water that was not there yet."
+    },
+    {
+      "entry": "They are the same rock. Same layer, same hexagons, same weathering."
+    },
+    {
+      "entry": "The teeth replace from the back forward, like the skeleton in the midden and unlike anything in the delta."
+    },
+    {
+      "entry": "Two kinds of animal that share nothing, lying in one stone that formed after both. I can describe the rock and I cannot describe how they came to be in it together."
+    }
+  ],
+  "notes": "Ends unresolved: described exactly, explained not at all.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "secondary",
+  "sources": [
+    "inferred from canon geography"
+  ]
+}

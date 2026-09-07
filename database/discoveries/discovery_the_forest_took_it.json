@@ -1,0 +1,35 @@
+{
+  "id": "discovery_the_forest_took_it",
+  "type": "discovery",
+  "name": "What the Forest Took",
+  "discipline": "archaeology",
+  "found_at": [
+    "poi_sunk_cutting",
+    "poi_second_line"
+  ],
+  "levels": [
+    {
+      "entry": "Iron rails in the floor of a green cutting, with roots up between the sleepers."
+    },
+    {
+      "entry": "A signal post with a tree through the frame. The tree is younger than the post by a long way and the post has not been moved."
+    },
+    {
+      "entry": "The cutting is dug, not natural -- both banks are spoil and the spoil is graded."
+    },
+    {
+      "entry": "There is a second embankment beside it, same height, same age, carrying nothing. They doubled it."
+    },
+    {
+      "entry": "You do not double a line for a few people and a market. This carried enough traffic to need two, and then it carried none, and the difference is not written anywhere I can find."
+    }
+  ],
+  "notes": "Ends unresolved: described exactly, explained not at all.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "secondary",
+  "sources": [
+    "inferred from canon geography"
+  ]
+}

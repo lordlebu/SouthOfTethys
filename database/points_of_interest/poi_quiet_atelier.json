@@ -1,0 +1,22 @@
+{
+  "id": "poi_quiet_atelier",
+  "type": "point_of_interest",
+  "name": "The Quiet Atelier",
+  "field_map": "field_map_aravali",
+  "kind": "archaeological_site",
+  "stands": "high",
+  "terrain": [
+    "forest",
+    "hills"
+  ],
+  "description": "A workshop of glass and benches, kept, and nobody in it.",
+  "arrival": "Glass panes in an iron frame, most of them whole, in a clearing that has been kept clear. Benches, seed trays in rows, a press, and jars along a shelf with the labels facing out. There is dust on all of it and not much.",
+  "notes": "**Guyuk's, and she is not here.** `character_guyuk_reborn` -- the Seed-Gleaner -- is aboard the Survival Train in `event_survival_train_solarpunk`, working blasted soil back into growth. This is a second bench she keeps and is not at.\n\nA workshop nobody is currently in suits this map: the Aravali's thesis is ground that remembers what people will not say, and an atelier in use would answer questions the map is built to leave open. The dust says weeks, not years. She is coming back.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "secondary",
+  "sources": [
+    "inferred from region_aravali"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "npc_odri",
+  "type": "npc",
+  "name": "Odri",
+  "role": "scavenger",
+  "found_at": [
+    "poi_sunk_cutting",
+    "poi_second_line"
+  ],
+  "language": "kia",
+  "would_settle": true,
+  "knows": [
+    "discovery_the_forest_took_it"
+  ],
+  "lines": [
+    {
+      "text": "Careful in the cutting. The sleepers go through where the roots have had them."
+    },
+    {
+      "text": "Chairs, plates, bolts. Good iron, better than anything anybody smelts now, and there is a hundred miles of it under that green.",
+      "gives": [
+        "discovery_the_forest_took_it"
+      ]
+    },
+    {
+      "text": "Two lines. Nobody believes me till they walk the second bank. Two lines, and one lifted before the other stopped.",
+      "requires": [
+        "discovery_the_forest_took_it"
+      ]
+    },
+    {
+      "text": "What ran on it? Something that needed doubling. That is all the iron will tell you and I have asked it a lot."
+    }
+  ],
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "notes": "Knows the Age of Machinery from the wrong end -- as a source of good metal -- which is the honest way a person in a forest would know it. Odri has better evidence about the era than any scholar on the map and no framework to put it in, and is entirely content with that.",
+  "canon": "secondary",
+  "sources": [
+    "inferred from canon geography"
+  ]
+}
