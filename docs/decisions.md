@@ -873,6 +873,46 @@ Worth knowing before more maps are authored: **the whole `stone` and `glass` cla
 
 ---
 
+## Hands at work — settled 2026-09-07
+
+**Canon does not gain `taken_by` or `wariness`. The game derives both, and canon takes them only
+once the exceptions are known.**
+
+The game now puts a gesture between deciding to take something and having it: you stoop over a
+plant, stalk an animal, or work the ground. Two fields were proposed for canon to carry that —
+`taken_by` on materials, naming how a thing comes away, and `wariness` on fauna, saying how hard
+an animal is to approach. Both were declined for now, deliberately, and this records why so the
+question is not reopened from scratch.
+
+**The split is not in doubt; the timing is.** Both would be legitimate canon: how a material is
+taken and how wary an animal is are facts about the world, not about play — the same test that
+puts `renews` here and `DAYS_TO_RETURN` in the game. Difficulty numbers were rejected outright on
+that test and are not revisited by this entry.
+
+**Why derive first.** The game already answers both questions from fields canon holds:
+
+- the gesture falls out of `won_from` alone — a material with a plant source is stooped over, an
+  animal source is stalked, and no source at all is worked out of the ground. Measured across the
+  62 materials that is 34 / 13 / 15, with no awkward remainder;
+- wariness stands in as `rarity` plus what `routine.ts` already says the animal is *doing* at this
+  hour, which is a better answer than a static field would give — a feeding animal and a hunting
+  one differ, and one number per species cannot say that.
+
+Authoring a field before the derivation has been played is how a schema acquires a column that
+nobody can fill honestly. Canon has paid for that once already: `source_index` was allowed to be
+absent, absent meant "sorts last", and twenty-five new plants silently moved what grew on saved
+ground. A field authored on a guess is the same shape of debt.
+
+**What would promote them.** The derivation is wrong somewhere, and the exceptions are the
+specification. When a material's gesture has to be special-cased in `gestures.ts`, or a species
+needs a wariness the routine cannot express, that case is the evidence — and a field authored
+from a list of real exceptions says something true, where one authored from a guess says whatever
+seemed reasonable on the day.
+
+`src/content/gestures.ts` states the same reasoning at the point it derives, so somebody changing
+that code meets the decision without coming here first. `routine.ts` already derives a species'
+rhythm the same way and for the same stated reason, which is the precedent this follows.
+
 ## Security
 
 Two Hugging Face tokens were exposed during setup and must be treated as burned: one pasted
