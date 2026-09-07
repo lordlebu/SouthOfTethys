@@ -1,0 +1,34 @@
+{
+  "id": "discovery_the_ore_that_lifts",
+  "type": "discovery",
+  "name": "The Ore That Lifts",
+  "discipline": "anomalies",
+  "found_at": [
+    "poi_lodestone_face"
+  ],
+  "levels": [
+    {
+      "entry": "Black rock in the island's flank. Grit from it does not lie down; it stands on end and points."
+    },
+    {
+      "entry": "It points the same way here as it does on the far island, and neither way is north."
+    },
+    {
+      "entry": "A knife laid on the face will not lie flat. Held above it, it is lighter than it is in my hand."
+    },
+    {
+      "entry": "The whole island is this. Not standing on it -- made of it, all the way through, which is why the edges crumble and the middle does not."
+    },
+    {
+      "entry": "So the island is held up by what it is made of, and the ore weighs less the more of it there is together. I have written that down twice and it is still what the measurements say."
+    }
+  ],
+  "notes": "Aravali. Deliberately unresolved at the last rung -- the diary describes exactly and refuses to guess, which is the discipline this game is about.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "secondary",
+  "sources": [
+    "inferred from region_aravali"
+  ]
+}

@@ -18,5 +18,8 @@
   "canon": "secondary",
   "sources": [
     "inferred from region_aravali"
+  ],
+  "npcs": [
+    "npc_hesh"
   ]
 }
