@@ -1,0 +1,24 @@
+{
+  "id": "material_sky_moss",
+  "type": "material",
+  "name": "Lodestone moss",
+  "classes": [
+    "fibre",
+    "physic"
+  ],
+  "won_from": [
+    "flora_lodestone_moss"
+  ],
+  "found_in": [
+    "sky_island",
+    "sky_underside"
+  ],
+  "rarity": "rare",
+  "renews": "fast",
+  "notes": "Grows in mats over the ore and takes some of its habit -- a handful pulls very slightly toward iron. Dries to a wadding that holds a dressing in place without a lashing, which is most of why anyone climbs for it.",
+  "canon": "inferred",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "source_index": 64
+}

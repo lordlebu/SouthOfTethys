@@ -80,17 +80,17 @@
       "id": "sky_island",
       "name": "Floating Island",
       "realm": "sky",
-      "renderable": false,
+      "renderable": true,
       "region": "region_tethys_sky_routes",
-      "notes": "The island surface itself — glowing moss, prismatic glass herbs, aero-mangrove groves at the edges. Held up by lodestone cores of Permian-irradiated ore."
+      "notes": "The island surface itself — glowing moss, prismatic glass herbs, aero-mangrove groves at the edges. Held up by lodestone cores of Permian-irradiated ore. Renderable since the tiles were painted: `sky_island.png` and `sky_underside.png` are sliced into the terrain sheet and carried in TERRAIN_ORDER."
     },
     {
       "id": "sky_underside",
       "name": "Island Underside",
       "realm": "sky",
-      "renderable": false,
+      "renderable": true,
       "region": "region_tethys_sky_routes",
-      "notes": "The inverted world beneath an island, where gravity is warped and rainwater falls upward. Sky coral calcifies here and holds the crumbling rock together; the Asura-tainted gargoyles shelter in it."
+      "notes": "The inverted world beneath an island, where gravity is warped and rainwater falls upward. Sky coral calcifies here and holds the crumbling rock together; the Asura-tainted gargoyles shelter in it. Renderable since the tiles were painted: `sky_island.png` and `sky_underside.png` are sliced into the terrain sheet and carried in TERRAIN_ORDER."
     },
     {
       "id": "open_sky",

@@ -8,7 +8,7 @@
   "biomes": [
     "sky_island"
   ],
-  "placement": "lore",
+  "placement": "encounter",
   "rarity": "rare",
   "journal_prompt": "An insect with a metallic, magnetic carapace that feeds on mineral deposits along the floating island cores.",
   "canon": "primary",
@@ -17,5 +17,5 @@
   ],
   "mood": "graceful",
   "source_index": 183,
-  "placement_note": "Lives on the floating islands. `sky_island` and its neighbours are real canon biomes but are not renderable yet, so the export holds this as lore until a sky mode exists. This is a stated home, not an untagged entity."
+  "placement_note": "Placeable since the sky tiles were painted. The earlier note held this as lore \"until a sky mode exists\" -- `sky_island` and `sky_underside` are renderable now, so the condition it named is met."
 }

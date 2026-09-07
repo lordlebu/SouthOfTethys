@@ -1,0 +1,23 @@
+{
+  "id": "material_static_sap",
+  "type": "material",
+  "name": "Static sap",
+  "classes": [
+    "resin",
+    "fuel"
+  ],
+  "won_from": [
+    "flora_static_charged_bramble"
+  ],
+  "found_in": [
+    "sky_island"
+  ],
+  "rarity": "rare",
+  "renews": "seasonal",
+  "notes": "Bled from the bramble, and it crackles as it leaves the cut. Sets hard and clear, and a bead of it will lift a hair from the back of your hand across a finger-width of air.",
+  "canon": "inferred",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "source_index": 67
+}

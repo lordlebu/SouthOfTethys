@@ -8,7 +8,7 @@
   "biomes": [
     "sky_island"
   ],
-  "placement": "lore",
+  "placement": "encounter",
   "rarity": "rare",
   "journal_prompt": "A swift predator that hunts sky-gulls and finches, nesting on the sheer vertical cliffs of the highest islands.",
   "canon": "primary",
@@ -17,5 +17,5 @@
   ],
   "mood": "fearsome",
   "source_index": 204,
-  "placement_note": "Lives on the floating islands. `sky_island` and its neighbours are real canon biomes but are not renderable yet, so the export holds this as lore until a sky mode exists. This is a stated home, not an untagged entity."
+  "placement_note": "Placeable since the sky tiles were painted. The earlier note held this as lore \"until a sky mode exists\" -- `sky_island` and `sky_underside` are renderable now, so the condition it named is met."
 }

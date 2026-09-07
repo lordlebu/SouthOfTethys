@@ -1,0 +1,23 @@
+{
+  "id": "material_aero_bark",
+  "type": "material",
+  "name": "Aero-mangrove bark",
+  "classes": [
+    "timber",
+    "resin"
+  ],
+  "won_from": [
+    "flora_aero_mangrove_vayu_vriksha"
+  ],
+  "found_in": [
+    "sky_island"
+  ],
+  "rarity": "rare",
+  "renews": "slow",
+  "notes": "Stripped from the trees that hold the island edges together. Cures to a board that resists splitting along the grain the way ordinary timber does not, which is the reason the trestles are built of it.",
+  "canon": "inferred",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "source_index": 66
+}

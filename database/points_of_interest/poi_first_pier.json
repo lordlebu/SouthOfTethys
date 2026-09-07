@@ -1,0 +1,21 @@
+{
+  "id": "poi_first_pier",
+  "type": "point_of_interest",
+  "name": "The First Pier",
+  "field_map": "field_map_aravali",
+  "kind": "travel_node",
+  "stands": "high",
+  "terrain": [
+    "sky_island"
+  ],
+  "description": "The nearer island, where the line comes ashore in the air.",
+  "arrival": "The track runs out over nothing and then there is ground under it -- grass, low cushion-plant, a stand of aero-mangrove holding the edge together with its roots. Walk to the rim and the rain that is falling on the underside is falling the wrong way.",
+  "notes": "The first floating island a player stands on, and the map's teaching moment: the inverted water is right there at the rim, and nothing explains it. Canon does -- lodestone cores of Permian-irradiated ore, a legacy of the shattering of Gondwana -- but nobody on this map says so, because nobody on this map knows.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "secondary",
+  "sources": [
+    "inferred from region_aravali"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "poi_kept_stones",
+  "type": "point_of_interest",
+  "name": "The Kept Stones",
+  "field_map": "field_map_aravali",
+  "kind": "archaeological_site",
+  "stands": "high",
+  "terrain": [
+    "hills",
+    "mountains"
+  ],
+  "description": "A wall somebody still repairs, around nothing anybody will name.",
+  "arrival": "Dry stone, a course or two higher than the weather would leave it, running round a shoulder of the range and enclosing a hollow with nothing in it. The gap that would be a gate has been closed with newer stone. There is no path to it and the grass at the foot is not grown over.",
+  "notes": "**The trace, and the whole thesis of the map.** Canon puts the Mask Family schism, the Jharwa massacre and the hidden sanctuary of Vara-Ma, Orek and Thren in these ranges. None of that is on stage: Sira and Thren are four hundred years of backstory and this is one afternoon's walking, so the archive's rule holds -- deep-lore figures reach a player as traces.\n\nWhat the player gets is a wall in good repair around an empty hollow, and the fact that somebody is still keeping it. They never learn what happened here. They learn that something did, and that it is not over.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "secondary",
+  "sources": [
+    "inferred from region_aravali"
+  ]
+}

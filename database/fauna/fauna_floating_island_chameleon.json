@@ -8,7 +8,7 @@
   "biomes": [
     "sky_island"
   ],
-  "placement": "lore",
+  "placement": "encounter",
   "rarity": "rare",
   "journal_prompt": "A lizard that changes color to match the glowing moss, using its prehensile tail to hang from sky-mangrove roots.",
   "canon": "primary",
@@ -17,5 +17,5 @@
   ],
   "mood": "luminous",
   "source_index": 192,
-  "placement_note": "Lives on the floating islands. `sky_island` and its neighbours are real canon biomes but are not renderable yet, so the export holds this as lore until a sky mode exists. This is a stated home, not an untagged entity."
+  "placement_note": "Placeable since the sky tiles were painted. The earlier note held this as lore \"until a sky mode exists\" -- `sky_island` and `sky_underside` are renderable now, so the condition it named is met."
 }

@@ -1,0 +1,23 @@
+{
+  "id": "material_prana_pollen",
+  "type": "material",
+  "name": "Prana-pollen",
+  "classes": [
+    "physic",
+    "pigment"
+  ],
+  "won_from": [
+    "flora_prana_lotus"
+  ],
+  "found_in": [
+    "sky_island"
+  ],
+  "rarity": "rare",
+  "renews": "seasonal",
+  "notes": "Shaken from the lotus that grows in the inverted falls. Faintly warm in the hand and keeps its warmth for a day after; the cloud-hermits are said to take it for the altitude, though what it treats is not agreed.",
+  "canon": "inferred",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "source_index": 63
+}
