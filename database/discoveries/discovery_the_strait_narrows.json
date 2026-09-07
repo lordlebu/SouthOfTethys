@@ -1,0 +1,31 @@
+{
+  "id": "discovery_the_strait_narrows",
+  "type": "discovery",
+  "name": "Why the Crossing Is Here",
+  "discipline": "geography",
+  "found_at": [
+    "poi_rail_head"
+  ],
+  "levels": [
+    {
+      "entry": "The sea between the shores is a mile or so. East of here it opens and does not close again."
+    },
+    {
+      "entry": "Both headlands are the same black-and-grey stone in the same courses, tilted the same way."
+    },
+    {
+      "entry": "They are one hill with the middle gone. The strait is where it broke, not where it was cut."
+    },
+    {
+      "entry": "And the islands are the middle. Two pieces of the same hill, still up, which is the thing nobody here says out loud because it is obvious to them."
+    }
+  ],
+  "notes": "Aravali. Four rungs rather than five: this one answers.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "secondary",
+  "sources": [
+    "inferred from region_aravali"
+  ]
+}

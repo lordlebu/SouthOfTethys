@@ -6,8 +6,8 @@
     "regions": 7,
     "field_maps": 4,
     "points_of_interest": 26,
-    "npcs": 8,
-    "discoveries": 31,
+    "npcs": 10,
+    "discoveries": 37,
     "field_questions": 7,
     "vocabulary": 8,
     "materials": 68,
@@ -17,10 +17,10 @@
     "vehicles": 14
   },
   "sha256": {
-    "canon.lock.json": "0bc3c5b4eb1d11aed945fb5c41a4eab831445ad8bea32748378d7a065a9dad0a",
-    "crafting.json": "bcfa70df43f730dcc9393c1d5d715f2c4aa302ffc47e538e75df27ce816e6354",
-    "knowledge.json": "d47c1445fc883c4a5e8e95a1302947b0f1e53691d17bc4667f624c011bb12c4a",
-    "places.json": "73146fd9d90e39a3f98077447e15734d519cace132e86312fc00cd58ef75d6f4",
-    "species.json": "1866b785ef29eb498175480ccef90b43515b98f12de8b3c401e0d1b26a6b3652"
+    "canon.lock.json": "cff07a778e7b8b013e521367406792ff48eb80cf61c530faa7b299ae3fb2cd52",
+    "crafting.json": "cc4f7b428e88c5f79004949d6fbcddce8aff5551c55a70230cc90058309f53f0",
+    "knowledge.json": "6e867376a96a9d68f710b304a001f41d2905bc5969268c5298160e53b4cb9e00",
+    "places.json": "1d2241112d4150b24260e8bf67ee42e9e39799fb0ba087e56867145ff60e1834",
+    "species.json": "e88d438f4c51195d1013884a78a016d650655b09f902be352a80c73e0378e477"
   }
 }

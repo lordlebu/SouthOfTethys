@@ -1,0 +1,35 @@
+{
+  "id": "discovery_the_line_that_floats",
+  "type": "discovery",
+  "name": "The Line That Floats",
+  "discipline": "archaeology",
+  "found_at": [
+    "poi_rail_head",
+    "poi_far_landing"
+  ],
+  "levels": [
+    {
+      "entry": "Iron rail running out over the strait. Nothing under it and no legs down to the water."
+    },
+    {
+      "entry": "The rail is bedded on the same black ore, in short lengths, laid end to end."
+    },
+    {
+      "entry": "The carriage does not touch the rail. There is a hand's width of nothing between them the whole way over."
+    },
+    {
+      "entry": "Bolt holes along the underside of the rail, and no bolts, and no rust in the holes. It was built to be taken up again."
+    },
+    {
+      "entry": "Somebody worked out that the ore that makes the islands impossible makes the crossing cheap, and then built a road they could unbuild. I would like to know what they were expecting."
+    }
+  ],
+  "notes": "Aravali. Deliberately unresolved at the last rung -- the diary describes exactly and refuses to guess, which is the discipline this game is about.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "secondary",
+  "sources": [
+    "inferred from region_aravali"
+  ]
+}

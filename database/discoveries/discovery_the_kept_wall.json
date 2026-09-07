@@ -1,0 +1,34 @@
+{
+  "id": "discovery_the_kept_wall",
+  "type": "discovery",
+  "name": "The Kept Wall",
+  "discipline": "archaeology",
+  "found_at": [
+    "poi_kept_stones"
+  ],
+  "levels": [
+    {
+      "entry": "Dry stone round a shoulder of the range, enclosing a hollow with nothing in it."
+    },
+    {
+      "entry": "The wall is a course or two higher than weather would have left it. Somebody has been putting stones back."
+    },
+    {
+      "entry": "There is no path to it. The grass at the foot is not grown over, which means it is walked and not often."
+    },
+    {
+      "entry": "The gate has been closed with newer stone, laid from the inside."
+    },
+    {
+      "entry": "A wall in repair around an empty place, and the people at the rail-head will talk about the ore all day and go quiet about this. I have not asked twice."
+    }
+  ],
+  "notes": "Aravali. Deliberately unresolved at the last rung -- the diary describes exactly and refuses to guess, which is the discipline this game is about.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "secondary",
+  "sources": [
+    "inferred from region_aravali"
+  ]
+}

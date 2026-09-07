@@ -1,0 +1,32 @@
+{
+  "id": "discovery_what_grows_on_nothing",
+  "type": "discovery",
+  "name": "What Grows on Nothing",
+  "discipline": "botany",
+  "found_at": [
+    "poi_first_pier",
+    "poi_far_landing"
+  ],
+  "levels": [
+    {
+      "entry": "The island top carries grass, cushion-plant and a stand of mangrove at the edge."
+    },
+    {
+      "entry": "The mangrove roots run out past the rock and hold it. Where they have died back the edge has gone with them."
+    },
+    {
+      "entry": "Moss on the ore grows toward iron. A nail laid on a mat of it is furred over in a season."
+    },
+    {
+      "entry": "The lotus in the climbing water is warm to the hand and stays warm after it is picked, which no other flower here does."
+    }
+  ],
+  "notes": "Aravali. Four rungs rather than five: this one answers.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "secondary",
+  "sources": [
+    "inferred from region_aravali"
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "id": "npc_hesh",
+  "type": "npc",
+  "name": "Hesh",
+  "role": "line-keeper",
+  "found_at": [
+    "poi_rail_head",
+    "poi_first_pier"
+  ],
+  "language": "kia",
+  "would_settle": false,
+  "knows": [
+    "discovery_the_line_that_floats",
+    "discovery_the_ore_that_lifts",
+    "discovery_the_strait_narrows"
+  ],
+  "lines": [
+    {
+      "text": "It runs when it runs. Sit down. You are not the first person to think looking at it will help."
+    },
+    {
+      "text": "No, it does not touch. Hand's width, whole way over. You get used to the quiet or you walk, and there is no walking.",
+      "gives": [
+        "discovery_the_line_that_floats"
+      ]
+    },
+    {
+      "text": "The black stuff under the rail is the same as the islands. Same rock. It wants to be up, so up is where it stays, and we lay iron on it and call that a road.",
+      "requires": [
+        "discovery_the_line_that_floats"
+      ],
+      "gives": [
+        "discovery_the_ore_that_lifts"
+      ]
+    },
+    {
+      "text": "Bolt holes and no bolts. My grandmother said her grandmother said it was built to come up again. Nobody has ever taken it up.",
+      "requires": [
+        "discovery_the_ore_that_lifts"
+      ]
+    },
+    {
+      "text": "Look at the two headlands. Same stone, same tilt, same courses. It was one hill. The middle of it is those two things hanging over the water, and you are about to ride across the gap where it broke.",
+      "requires": [
+        "discovery_the_strait_narrows"
+      ]
+    }
+  ],
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "notes": "Keeps the line and does not explain it, which is the map in one person. Hesh knows the mechanism exactly -- the ore wants to be up -- and has no more curiosity about it than a ferryman has about buoyancy. That is the counterweight to a traveller who writes everything down.\n\nSays nothing at all about the Kept Stones. That silence is deliberate and is not gated on any discovery: asking Hesh about the wall gets you the timetable.",
+  "canon": "secondary",
+  "sources": [
+    "inferred from region_aravali"
+  ]
+}
