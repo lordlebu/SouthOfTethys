@@ -12,7 +12,8 @@
     "settlement",
     "hills",
     "coast",
-    "river"
+    "river",
+    "lava_field"
   ],
   "scale": "small",
   "points_of_interest": [
@@ -23,7 +24,11 @@
     "poi_salt_orchard",
     "poi_watch_stair",
     "poi_glass_scar",
-    "poi_caravan_camp"
+    "poi_caravan_camp",
+    "poi_black_pavement",
+    "poi_fang_bed",
+    "poi_scale_shore",
+    "poi_second_gate"
   ],
   "neighbours": [
     "field_map_lothal"

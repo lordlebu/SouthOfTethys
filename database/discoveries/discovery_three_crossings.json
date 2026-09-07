@@ -1,0 +1,34 @@
+{
+  "id": "discovery_three_crossings",
+  "type": "discovery",
+  "name": "Three Crossings, One Ford",
+  "discipline": "archaeology",
+  "found_at": [
+    "poi_vedda_ford"
+  ],
+  "levels": [
+    {
+      "entry": "A bar of shingle you can wade. The nomads use it and so does everything with four legs."
+    },
+    {
+      "entry": "There are stones set in the bed, worn round, laid about a pace apart. River stones do not line up."
+    },
+    {
+      "entry": "They are under the modern silt, which means they were laid before it, which means before the line."
+    },
+    {
+      "entry": "The rail crosses two miles upstream at the narrowest water. This crosses at the shallowest, which is a different question and an older one."
+    },
+    {
+      "entry": "So: forded, then bridged, then forded again, and the ford has not moved. Whoever laid these stones and whoever pitched those tents made the same decision about the same river a very long way apart."
+    }
+  ],
+  "notes": "Ends unresolved: described exactly, explained not at all.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "secondary",
+  "sources": [
+    "inferred from canon geography"
+  ]
+}

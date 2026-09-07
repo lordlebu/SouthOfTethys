@@ -1,0 +1,25 @@
+{
+  "id": "poi_sunk_cutting",
+  "type": "point_of_interest",
+  "name": "The Sunk Cutting",
+  "field_map": "field_map_aravali",
+  "kind": "archaeological_site",
+  "stands": "low",
+  "terrain": [
+    "forest",
+    "hills"
+  ],
+  "description": "A rail cutting the forest has closed over.",
+  "arrival": "The ground goes down between two banks and the canopy meets overhead, so it is a green tunnel with iron in the floor of it. Roots have come up between the sleepers and lifted them. A signal post stands in the middle with a tree grown through the frame.",
+  "notes": "The Age of Machinery, reclaimed. This is the thread the map was missing: the line over the strait is not a curiosity, it is the last working piece of something that used to run between two continents. The forest took the rest.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "secondary",
+  "sources": [
+    "inferred from region_aravali"
+  ],
+  "npcs": [
+    "npc_odri"
+  ]
+}

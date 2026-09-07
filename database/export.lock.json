@@ -5,9 +5,9 @@
     "flora": 110,
     "regions": 7,
     "field_maps": 4,
-    "points_of_interest": 26,
-    "npcs": 10,
-    "discoveries": 37,
+    "points_of_interest": 35,
+    "npcs": 13,
+    "discoveries": 42,
     "field_questions": 7,
     "vocabulary": 8,
     "materials": 68,
@@ -17,10 +17,10 @@
     "vehicles": 14
   },
   "sha256": {
-    "canon.lock.json": "cff07a778e7b8b013e521367406792ff48eb80cf61c530faa7b299ae3fb2cd52",
-    "crafting.json": "cc4f7b428e88c5f79004949d6fbcddce8aff5551c55a70230cc90058309f53f0",
-    "knowledge.json": "6e867376a96a9d68f710b304a001f41d2905bc5969268c5298160e53b4cb9e00",
-    "places.json": "1d2241112d4150b24260e8bf67ee42e9e39799fb0ba087e56867145ff60e1834",
-    "species.json": "e88d438f4c51195d1013884a78a016d650655b09f902be352a80c73e0378e477"
+    "canon.lock.json": "2f3fb14ef7ae5df8c4a4a04d4189e0ea277195a3786bcd6aef70fdaa41eaf74d",
+    "crafting.json": "805d129d3a89a382607679ab49431306aac2d5f532d6fe4ed9b7d47ee05dd766",
+    "knowledge.json": "eb4244fe23d53f31e42b1de7ea9334c244f88ee04d6521e7acc8ed9acd724387",
+    "places.json": "cc2c0a42ac2cf08b33feea31586f2b1c2169a346a230532e6c4339cd7d86f540",
+    "species.json": "dbd11902248d437025653ceed949c59ad0ebf18b130888b4c97aec0872481dd0"
   }
 }

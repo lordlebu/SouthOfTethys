@@ -1,0 +1,34 @@
+{
+  "id": "discovery_the_kept_bench",
+  "type": "discovery",
+  "name": "The Kept Bench",
+  "discipline": "botany",
+  "found_at": [
+    "poi_quiet_atelier"
+  ],
+  "levels": [
+    {
+      "entry": "A glasshouse in a clearing, panes mostly whole, benches and seed trays inside."
+    },
+    {
+      "entry": "The trays are sorted and labelled, and the labels face out so they can be read from the aisle. Somebody works here."
+    },
+    {
+      "entry": "Grass seed, mostly, and steppe varieties -- and a shelf of soil samples from ground that is not local, each one worse than the last."
+    },
+    {
+      "entry": "The dust is weeks deep, not years. Whoever keeps this is coming back to it."
+    },
+    {
+      "entry": "They are not growing food here. They are working out what will grow in dirt that has stopped growing anything, which is a much stranger thing to be doing in a forest this healthy."
+    }
+  ],
+  "notes": "Ends unresolved: described exactly, explained not at all.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "secondary",
+  "sources": [
+    "inferred from canon geography"
+  ]
+}

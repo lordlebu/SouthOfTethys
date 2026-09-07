@@ -1,0 +1,34 @@
+{
+  "id": "discovery_the_other_doors",
+  "type": "discovery",
+  "name": "The Other Doors",
+  "discipline": "anomalies",
+  "found_at": [
+    "poi_second_gate"
+  ],
+  "levels": [
+    {
+      "entry": "A second doorway, out past the salt, framed in the same dressed basalt as the swept one."
+    },
+    {
+      "entry": "No path to it. Nobody sweeps it and nobody warns you off it either."
+    },
+    {
+      "entry": "Same courses, same joints, same stone. Built by whoever built the other, and not later."
+    },
+    {
+      "entry": "Pell says there are more. Says it the way you would say there are more wells."
+    },
+    {
+      "entry": "So the Gate Court is not the gate. It is the one they kept, and keeping one and abandoning the rest is a decision somebody made and nobody remembers making."
+    }
+  ],
+  "notes": "Ends unresolved: described exactly, explained not at all.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "secondary",
+  "sources": [
+    "inferred from canon geography"
+  ]
+}

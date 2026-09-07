@@ -1,0 +1,22 @@
+{
+  "id": "poi_scale_shore",
+  "type": "point_of_interest",
+  "name": "The Scale Shore",
+  "field_map": "field_map_dwarka",
+  "kind": "eco_site",
+  "stands": "low",
+  "terrain": [
+    "lava_field",
+    "coast"
+  ],
+  "description": "Trackways in the stone, going into the sea.",
+  "arrival": "Three-toed prints in the black rock, a stride and a half apart, walking in a straight line toward water that was not there when they were made. They do not come back.",
+  "notes": "The other half of the split, in the same stone as the Fang Bed and a short walk from it. Two kinds of animal that canon says never shared ground, lying in one rock -- which is the whole argument the map makes and never states.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "secondary",
+  "sources": [
+    "inferred from event_fang_vs_scale_wars"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "poi_fang_bed",
+  "type": "point_of_interest",
+  "name": "The Fang Bed",
+  "field_map": "field_map_dwarka",
+  "kind": "eco_site",
+  "stands": "high",
+  "terrain": [
+    "lava_field",
+    "hills"
+  ],
+  "description": "Bones of the wrong animal in the wrong rock.",
+  "arrival": "A seam in the basalt full of bone, and the bone is all one kind of thing: heavy skulls with a pair of long teeth in the upper jaw and nothing like them since. They are lying in rock that formed after they should have been gone.",
+  "notes": "The Fang, in the Scale's ground. `event_fang_vs_scale_wars` says the gorgonopsids held the fern forests and the archosaurs took the volcanic highlands -- so a bed of synapsid bone in basalt is the line being crossed, preserved. The player is not told that; the player is told the teeth do not match anything alive.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "secondary",
+  "sources": [
+    "inferred from event_fang_vs_scale_wars"
+  ],
+  "npcs": [
+    "npc_sesh"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "poi_black_pavement",
+  "type": "point_of_interest",
+  "name": "The Black Pavement",
+  "field_map": "field_map_dwarka",
+  "kind": "archaeological_site",
+  "stands": "low",
+  "terrain": [
+    "lava_field",
+    "coast"
+  ],
+  "description": "Basalt columns worn flat, and the ground everything here is built on.",
+  "arrival": "Hexagons underfoot, packed like a honeycomb and rubbed smooth by feet and salt. It goes under the wall, under the court, under the market. Somebody laid a city on top of it and never had to quarry a stone.",
+  "notes": "The rock the gates sit on, and the reason Dwarka is where it is. Canon puts the Asura arrival at the Ganges Lava Sea and says the rift hardened into it; this is the same eruption reaching the coast -- the Scale's volcanic highlands, weathered down and walked on. Nothing arrived here. Something very old is underneath.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "secondary",
+  "sources": [
+    "inferred from event_fang_vs_scale_wars"
+  ],
+  "npcs": [
+    "npc_sesh"
+  ]
+}

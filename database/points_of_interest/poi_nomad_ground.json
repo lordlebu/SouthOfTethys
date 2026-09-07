@@ -1,0 +1,25 @@
+{
+  "id": "poi_nomad_ground",
+  "type": "point_of_interest",
+  "name": "Nomad Ground",
+  "field_map": "field_map_aravali",
+  "kind": "settlement",
+  "stands": "low",
+  "terrain": [
+    "plains",
+    "coast"
+  ],
+  "description": "Where the people who still cross put their tents.",
+  "arrival": "Felt tents on the shingle above the ford, guyed low, with the fire in the middle and the animals downstream of it. Nobody has pitched anywhere near the rail-head, which has a roof and a water butt and is a mile off.",
+  "notes": "Sited at the ford rather than the rail-head, deliberately and legibly. The nomads use the crossing the Vedda used and ignore the one the machine age built, because a ford needs no timetable and a river takes animals.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "secondary",
+  "sources": [
+    "inferred from region_aravali"
+  ],
+  "npcs": [
+    "npc_terke"
+  ]
+}

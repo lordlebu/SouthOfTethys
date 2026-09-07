@@ -179,7 +179,16 @@ def fingerprint_of(files: dict[str, str]) -> dict[str, str]:
 
 def check_budget(files: dict) -> list[str]:
     """The bundle stays inside its weight, because the browser pays for every byte."""
-    total = sum(len(render(body).encode("utf-8")) for body in files.values()) / 1024
+    # **`files` already holds rendered text**, so this measured `render(render(x))` -- a JSON
+    # string literal wrapping a JSON document, with every quote escaped and every newline turned
+    # into two characters. Measured, that inflates the total by about 10%: a bundle of 513.2 KB on
+    # disk reported as 563.3 KB, which is the difference between passing and failing a 560 limit.
+    #
+    # It has been overstating since the check was written, and it cost real content: the species
+    # cull that withheld 35 `lore` entities was forced by a number this produced. That cull was
+    # right on its own merits -- the game filters those out at load and shipping them bought
+    # nothing -- but it was made under a false reading, and the next one might not be.
+    total = sum(len(body.encode("utf-8")) for body in files.values()) / 1024
     if total > BUNDLE_BUDGET_KB:
         return [
             f"the bundle is {total:.1f} KB, over the {BUNDLE_BUDGET_KB} KB budget. Either "
