@@ -8,7 +8,7 @@
   "biomes": [
     "sky_island"
   ],
-  "placement": "lore",
+  "placement": "flavour",
   "rarity": "rare",
   "journal_prompt": "A silicate-absorbing plant with leaves that mirror stained glass, concentrating golden sunlight for deep-time healing.",
   "canon": "primary",
@@ -16,5 +16,5 @@
     "docs/bestiary.md"
   ],
   "source_index": 55,
-  "placement_note": "Lives on the floating islands. `sky_island` and its neighbours are real canon biomes but are not renderable yet, so the export holds this as lore until a sky mode exists. This is a stated home, not an untagged entity."
+  "placement_note": "Placeable since the sky tiles were painted. **`flavour` rather than `encounter`, because that is what the game reads for a plant** -- `species.ts` indexes flora by `flavour` and fauna by `encounter`, since a plant is something you find growing rather than somebody you meet. Promoting these to `encounter` first put them in the bundle and left `floraIn` empty, which the game's own coverage test caught."
 }

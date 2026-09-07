@@ -1,0 +1,23 @@
+{
+  "id": "material_gourd_shell",
+  "type": "material",
+  "name": "Sky-balloon shell",
+  "classes": [
+    "fibre",
+    "fuel"
+  ],
+  "won_from": [
+    "flora_levitation_gourd_sky_balloon"
+  ],
+  "found_in": [
+    "sky_island"
+  ],
+  "rarity": "rare",
+  "renews": "seasonal",
+  "notes": "The gourd is lighter than the air it displaces while it is on the vine, and merely very light once it is cut. Halved and dried it is a float, a bailer, or the body of a small drum.",
+  "canon": "inferred",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "source_index": 65
+}

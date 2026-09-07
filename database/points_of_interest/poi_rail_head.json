@@ -1,0 +1,22 @@
+{
+  "id": "poi_rail_head",
+  "type": "point_of_interest",
+  "name": "The Rail-Head",
+  "field_map": "field_map_aravali",
+  "kind": "settlement",
+  "stands": "low",
+  "terrain": [
+    "coast",
+    "plains"
+  ],
+  "description": "Where the line begins, and where everybody waits for it.",
+  "arrival": "A shed, a water butt, a length of platform, and the iron running away north over the water on legs of pale timber. People sit on their bundles with the patience of those who have done this before. Nobody looks at the islands, which is its own kind of looking.",
+  "notes": "The arrival, and the map's one ordinary place. Everything else here is strange -- ore that holds a hill in the air, rain that falls upward, a sanctuary nobody will name -- so the map needs one spot where the strangeness is somebody else's and the business at hand is a timetable.\n\nIt is a settlement rather than a travel_node because people live here; the line is a thing that happens to them.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "secondary",
+  "sources": [
+    "inferred from region_aravali"
+  ]
+}

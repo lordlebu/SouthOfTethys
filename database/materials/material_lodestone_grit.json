@@ -1,0 +1,21 @@
+{
+  "id": "material_lodestone_grit",
+  "type": "material",
+  "name": "Lodestone grit",
+  "classes": [
+    "stone",
+    "metal"
+  ],
+  "found_in": [
+    "sky_island",
+    "sky_underside"
+  ],
+  "rarity": "rare",
+  "renews": "never",
+  "notes": "The islands are held up by it. What can be worked loose from an exposed core is a coarse black grit that will not settle in a bowl -- it stands on end and points, which is what a compass is for and why no compass works within a mile of one. Taken from the rock, not from anything living.",
+  "canon": "inferred",
+  "sources": [
+    "docs/bestiary.md"
+  ],
+  "source_index": 62
+}

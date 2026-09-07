@@ -1,0 +1,21 @@
+{
+  "id": "poi_far_landing",
+  "type": "point_of_interest",
+  "name": "The Far Landing",
+  "field_map": "field_map_aravali",
+  "kind": "travel_node",
+  "stands": "high",
+  "terrain": [
+    "sky_island"
+  ],
+  "description": "The second island, and the last of Jambhudweepa.",
+  "arrival": "Another island, smaller, and the far shore visible past it as a green line that is not home. There is a bell on a post here, and a mark cut into the rail where somebody has been counting something.",
+  "notes": "The second pier and the turn of the map: from here the player is looking at somewhere else rather than back at where they started. The bell and the tally are the only human marks on either island, and they are deliberately unexplained.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "secondary",
+  "sources": [
+    "inferred from region_aravali"
+  ]
+}
