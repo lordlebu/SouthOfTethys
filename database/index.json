@@ -1,5 +1,5 @@
 {
-  "version": "2.10.0",
+  "version": "2.11.0",
   "description": "SouthOfTethys canonical entity index",
   "counts": {
     "artifacts": 5,
@@ -22,7 +22,7 @@
     "recipes": 82,
     "regions": 7,
     "settlements": 2,
-    "vehicles": 13,
+    "vehicles": 14,
     "vocabulary": 8
   },
   "entities": {
@@ -949,6 +949,7 @@
       "vehicle_ground_effect_craft",
       "vehicle_harappan_cart",
       "vehicle_hide_coracle",
+      "vehicle_lodestone_train",
       "vehicle_log_dugout",
       "vehicle_outrigger",
       "vehicle_ox_cart",
