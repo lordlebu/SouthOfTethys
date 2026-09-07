@@ -99,6 +99,30 @@ UNINDEXED = 10**9
 WITHHELD = ("canon", "sources")
 
 
+def withhold_lore_species(folder: str, entities: list[dict]) -> list[dict]:
+    """Drop species the game can never place.
+
+    `placement: lore` means "exists in the record alone" -- authored, real, and not something a
+    player can meet. The game filters on that at load: `species.ts` indexes fauna by `encounter`
+    and flora by `flavour`, so a `lore` entity is read, held in memory, and never chosen.
+
+    **This is the lore/play split the budget rule asks for, applied one level finer.** Shipping
+    them cost 25.5 KB across 35 entities and bought nothing: checked before withholding, no
+    material's `won_from`, no recipe and no discovery names any of them, so nothing in the other
+    three files is left pointing at a species that is no longer there.
+
+    Withheld rather than deleted, and the distinction is the whole of the canon/game split.
+    Canon is the record and keeps them; the bundle is what one game needs to draw a walk, and
+    these are not part of that. It is the same call `NOT_EXPORTED` makes per folder.
+
+    The day a sky mode places them, `placement` changes in canon and they cross the boundary
+    again with no edit here -- which is exactly what just happened to sixteen of them.
+    """
+    if folder not in ("fauna", "flora"):
+        return entities
+    return [e for e in entities if e.get("placement") != "lore"]
+
+
 def resolved_affordances(items: list[dict]) -> dict[str, list[str]]:
     """What each item affords, with `base_item` followed to the end of the chain.
 
@@ -179,6 +203,7 @@ def build_bundle() -> tuple[dict[str, str], dict[str, int]]:
         payload: dict = {"canon_version": index["version"]}
         for folder in folders:
             entities = load_folder(folder)
+            entities = withhold_lore_species(folder, entities)
             entities = [{k: v for k, v in e.items() if k not in WITHHELD} for e in entities]
             payload[folder] = entities
             counts[folder] = len(payload[folder])
