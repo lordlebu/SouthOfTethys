@@ -20,5 +20,6 @@
   ],
   "npcs": [
     "npc_hesh"
-  ]
+  ],
+  "shore": "either"
 }

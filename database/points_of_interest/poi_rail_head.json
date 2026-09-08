@@ -21,5 +21,6 @@
   ],
   "npcs": [
     "npc_hesh"
-  ]
+  ],
+  "shore": "near"
 }
