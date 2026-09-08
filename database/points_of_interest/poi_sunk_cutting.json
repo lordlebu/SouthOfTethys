@@ -20,7 +20,8 @@
     "inferred from region_aravali"
   ],
   "npcs": [
-    "npc_odri"
+    "npc_odri",
+    "npc_anu"
   ],
   "shore": "near"
 }

@@ -2,7 +2,7 @@
   "id": "npc_terke",
   "type": "npc",
   "name": "Terke",
-  "role": "nomad",
+  "role": "drover",
   "found_at": [
     "poi_nomad_ground",
     "poi_vedda_ford"
@@ -39,5 +39,6 @@
   "canon": "secondary",
   "sources": [
     "inferred from canon geography"
-  ]
+  ],
+  "sex": "female"
 }

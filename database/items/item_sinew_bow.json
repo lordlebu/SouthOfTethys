@@ -1,0 +1,21 @@
+{
+  "id": "item_sinew_bow",
+  "type": "item",
+  "name": "Sinew-backed bow",
+  "kind": "weapon",
+  "affords": [
+    "cut",
+    "deter"
+  ],
+  "materials": [
+    "material_teak_timber",
+    "material_sinew",
+    "material_deer_antler"
+  ],
+  "notes": "A short bow for horseback and broken ground: a timber belly, sinew glued along the back to take the stretch, antler let into the tips. The sinew is what makes it -- dried, it tightens as it goes, which no plant fibre does, and canon says exactly that on the material itself.\n\nShort because of where it is used. A long bow is drawn standing still on flat ground, and the people who carry these are moving, on slopes, among animals.\n\nAffords `cut` and `deter`, like every other weapon here. Nothing in canon affords killing, and the sling entry says why: the record has slings keeping birds off a crop far more often than it has them doing anything else.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 74
+}

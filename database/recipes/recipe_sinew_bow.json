@@ -1,0 +1,31 @@
+{
+  "id": "recipe_sinew_bow",
+  "type": "recipe",
+  "name": "Backing a bow",
+  "process": "process_carving",
+  "ingredients": [
+    {
+      "material": "material_teak_timber"
+    },
+    {
+      "material": "material_sinew"
+    },
+    {
+      "material": "material_deer_antler"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_sinew_bow"
+    }
+  ],
+  "notes": "The sinew goes on wet and the bow is not finished until it has dried, which is weeks. Nobody makes one in a hurry and nobody makes their first one alone.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 82,
+  "taught_by": [
+    "npc_anu"
+  ]
+}
