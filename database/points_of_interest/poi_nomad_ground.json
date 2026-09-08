@@ -20,7 +20,8 @@
     "inferred from region_aravali"
   ],
   "npcs": [
-    "npc_terke"
+    "npc_terke",
+    "npc_anu"
   ],
   "shore": "near"
 }
