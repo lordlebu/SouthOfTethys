@@ -10,7 +10,7 @@
   ],
   "description": "The second island, and the last of Jambhudweepa.",
   "arrival": "Another island, smaller, and the far shore visible past it as a green line that is not home. There is a bell on a post here, and a mark cut into the rail where somebody has been counting something.",
-  "notes": "The second pier and the turn of the map: from here the player is looking at somewhere else rather than back at where they started. The bell and the tally are the only human marks on either island, and they are deliberately unexplained.",
+  "notes": "The second pier and the turn of the map: from here the player is looking at somewhere else rather than back at where they started. The bell and the tally are the only human marks on either island, and they are deliberately unexplained.\n\n**`shore: far`.** \"The second island\" -- the far one, reached last. See The First Pier for why this had to be said out loud.",
   "epochs": [
     "epoch_post_cataclysm"
   ],
@@ -18,5 +18,5 @@
   "sources": [
     "inferred from region_aravali"
   ],
-  "shore": "either"
+  "shore": "far"
 }
