@@ -10,7 +10,7 @@
   ],
   "description": "The nearer island, where the line comes ashore in the air.",
   "arrival": "The track runs out over nothing and then there is ground under it -- grass, low cushion-plant, a stand of aero-mangrove holding the edge together with its roots. Walk to the rim and the rain that is falling on the underside is falling the wrong way.",
-  "notes": "The first floating island a player stands on, and the map's teaching moment: the inverted water is right there at the rim, and nothing explains it. Canon does -- lodestone cores of Permian-irradiated ore, a legacy of the shattering of Gondwana -- but nobody on this map says so, because nobody on this map knows.",
+  "notes": "The first floating island a player stands on, and the map's teaching moment: the inverted water is right there at the rim, and nothing explains it. Canon does -- lodestone cores of Permian-irradiated ore, a legacy of the shattering of Gondwana -- but nobody on this map says so, because nobody on this map knows.\n\n**`shore: near`, because the description already said so and the placement could not hear it.** \"The nearer island\" is the first line of this entry, and with `shore: either` the game put this and The Far Landing three rows apart on the *same* island while the other one stood empty. The two piers are the two ends of the crossing; putting them on one island is the map drawn wrong.",
   "epochs": [
     "epoch_post_cataclysm"
   ],
@@ -21,5 +21,5 @@
   "npcs": [
     "npc_hesh"
   ],
-  "shore": "either"
+  "shore": "near"
 }

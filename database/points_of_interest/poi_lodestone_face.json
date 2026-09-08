@@ -10,7 +10,7 @@
   ],
   "description": "An exposed core, and the only place the ore can be worked.",
   "arrival": "A wound in the island's flank where something took a bite out of it, and the rock inside is black and faintly wrong. Grit stands on end where it has fallen. A dropped knife does not lie flat.",
-  "notes": "Where lodestone grit comes from, and the map's one `never`-renewing material. The island is held up by this: taking it is the closest the game comes to asking whether a thing should be taken at all, and nothing in the text says so out loud.",
+  "notes": "Where lodestone grit comes from, and the map's one `never`-renewing material. The island is held up by this: taking it is the closest the game comes to asking whether a thing should be taken at all, and nothing in the text says so out loud.\n\n**`shore: far`.** The ore face is on the second island rather than the first, so the question it asks -- whether the thing holding the island up should be taken off it -- is put to a player who has already crossed rather than one still learning what an island is.",
   "epochs": [
     "epoch_post_cataclysm"
   ],
@@ -18,5 +18,5 @@
   "sources": [
     "inferred from region_aravali"
   ],
-  "shore": "either"
+  "shore": "far"
 }
