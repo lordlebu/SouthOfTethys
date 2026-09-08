@@ -115,6 +115,15 @@
         "type": "string"
       },
       "description": "Character ids this person comes from, when the line matters and the person is not that character. Bekh is Mask Family by descent from Kavik across enough generations that the name means little to her -- putting `character_kavik` in `character` would have said she IS him. Found while authoring the Lothal slice, which is what the slice was for."
+    },
+    "pronoun": {
+      "type": "string",
+      "enum": [
+        "he",
+        "she",
+        "they"
+      ],
+      "description": "Which pronoun this person takes. Canon carried these implicitly in prose -- Pell's son, Uma's life, Bekh's daughter -- which meant reading a discovery to find out, and left the six people added later with no answer at all.\n\nStated because a portrait has to draw somebody and prose is a poor place to look it up. `they` is available and is not a fallback for unknown: absent means unstated, and a person who takes `they` says so."
     }
   },
   "additionalProperties": false

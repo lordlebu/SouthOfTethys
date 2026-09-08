@@ -2,7 +2,7 @@
   "id": "npc_odri",
   "type": "npc",
   "name": "Odri",
-  "role": "scavenger",
+  "role": "iron-scavenger",
   "found_at": [
     "poi_sunk_cutting",
     "poi_second_line"
@@ -39,5 +39,6 @@
   "canon": "secondary",
   "sources": [
     "inferred from canon geography"
-  ]
+  ],
+  "pronoun": "she"
 }

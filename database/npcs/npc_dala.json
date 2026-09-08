@@ -2,7 +2,7 @@
   "id": "npc_dala",
   "type": "npc",
   "name": "Dala",
-  "role": "wall-keeper",
+  "role": "stonewaller",
   "found_at": [
     "poi_kept_stones"
   ],
@@ -41,5 +41,6 @@
   "canon": "secondary",
   "sources": [
     "inferred from region_aravali"
-  ]
+  ],
+  "pronoun": "he"
 }
