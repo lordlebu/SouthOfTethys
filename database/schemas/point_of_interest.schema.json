@@ -61,7 +61,7 @@
           "wetland",
           "hills",
           "mountains",
-            "snow",
+          "snow",
           "desert",
           "river",
           "settlement",
@@ -162,6 +162,15 @@
     "ruin_of": {
       "type": "string",
       "description": "The entity this place used to be, when it is now a wreck of it. Lothal in Epoch 5 is `kind: settlement` with `ruin_of: settlement_lothal` -- survivors camped inside the half-buried relic, so it is a living place and a ruin at once rather than either. Lets the diary say what stood here without duplicating the entity."
+    },
+    "shore": {
+      "type": "string",
+      "enum": [
+        "near",
+        "far",
+        "either"
+      ],
+      "description": "Which side of a crossing this place is on, for maps that have two shores. `near` is the side the traveller arrives from -- Jambhudweepa, on the Aravali -- and `far` is the other. Absent means `either`, which is correct for every map that is one country rather than a crossing.\n\nThis is a fact about the place, not about play: a rail-head where people wait for the carriage is on the shore they wait on, and a map generator with no opinion put it on the wrong side of the water."
     }
   },
   "additionalProperties": false
