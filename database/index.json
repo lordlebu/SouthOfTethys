@@ -1,10 +1,10 @@
 {
-  "version": "2.14.0",
+  "version": "2.15.0",
   "description": "SouthOfTethys canonical entity index",
   "counts": {
     "artifacts": 5,
     "characters": 64,
-    "discoveries": 42,
+    "discoveries": 43,
     "events": 36,
     "factions": 3,
     "fauna": 257,
@@ -15,7 +15,7 @@
     "items": 74,
     "materials": 68,
     "mythology": 9,
-    "npcs": 13,
+    "npcs": 14,
     "places": 41,
     "points_of_interest": 35,
     "processes": 17,
@@ -140,6 +140,7 @@
       "discovery_three_crossings",
       "discovery_tower_collapse",
       "discovery_what_grows_on_nothing",
+      "discovery_what_will_still_grow",
       "discovery_winter_line",
       "discovery_wrong_anatomy"
     ],
@@ -760,6 +761,7 @@
       "npc_bekh",
       "npc_dala",
       "npc_hesh",
+      "npc_ila",
       "npc_marn",
       "npc_odri",
       "npc_okhi",

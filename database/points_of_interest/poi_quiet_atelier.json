@@ -19,5 +19,8 @@
   "sources": [
     "inferred from region_aravali"
   ],
-  "shore": "near"
+  "shore": "near",
+  "npcs": [
+    "npc_ila"
+  ]
 }
