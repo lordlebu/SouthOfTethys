@@ -450,6 +450,45 @@ def main() -> int:
                     f"'{found}' to the player -- say the thing, do not cite it"
                 )
 
+    # A species whose own name says what climate it lives in, filed in the opposite one.
+    #
+    # **This is a bulk-import guard, not a taste rule.** Every one of the thirty-one species
+    # carrying `lava_field` carried the identical pair `lava_field, mountains` -- no variation at
+    # all across the batch -- and it had swept up an Antarctic petrel, two seals, an ice-pike, a
+    # frost-whiskered carp, a kelp-grass and a snow moss along with two dozen ash-moths and
+    # magma-crabs that genuinely belong on cooled basalt.
+    #
+    # Nothing noticed for as long as the game had no stamp for `lava_field` and drew none of it.
+    # The moment one was written, a glacial ribbon-seal was offered to a player standing on warm
+    # rock in a cold desert at Dwarka, hunting beneath ice shelves several thousand miles away.
+    #
+    # Names are the evidence here because these entries have no descriptions to read: the import
+    # left them empty, so the only thing that says where a thing lives is what it is called. That
+    # is thin, and deliberately so -- the rule only fires when a name contains an unmistakable
+    # climate word and the biome list contradicts it outright.
+    #
+    # Matched on whole words. The first version looked for substrings and reported the Crimson
+    # Spice-Root as an ice plant, because "spice" contains "ice" -- a rule that cries wolf on a
+    # spice gets switched off, so it is worth the boundary.
+    cold_word = re.compile(
+        r"\b(glacial|glacier|antarctic|arctic|polar|ice|frost|snow)\b", re.IGNORECASE
+    )
+    WARM_BIOMES = {"lava_field", "desert"}
+    for eid, (path, entity) in all_entities().items():
+        if path.parent.name not in ("fauna", "flora"):
+            continue
+        biomes = set(entity.get("biomes") or [])
+        clash = biomes & WARM_BIOMES
+        if not clash:
+            continue
+        said = cold_word.findall(entity.get("name") or "")
+        if said:
+            errors.append(
+                f"{path.parent.name}/{path.name}: '{entity.get('name')}' is named for "
+                f"{said[0].lower()} and is filed in {sorted(clash)[0]} -- an ice animal on warm ground. "
+                f"Check the biome list; this is what a bestiary import gets wrong."
+            )
+
     classes_path = DB / "material_classes.json"
     mat_schema = SCHEMA_DIR / "material.schema.json"
     if classes_path.exists() and mat_schema.exists():

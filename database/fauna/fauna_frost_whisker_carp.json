@@ -6,7 +6,7 @@
   "clade": "fish",
   "region": "ganges-lava-sea",
   "biomes": [
-    "lava_field",
+    "snow",
     "mountains"
   ],
   "placement": "encounter",
@@ -17,5 +17,6 @@
     "docs/bestiary.md"
   ],
   "mood": "luminous",
-  "source_index": 152
+  "source_index": 152,
+  "notes": "\n\n**Moved off `lava_field`**, with the seals and the petrels and for the same reason. A frost-whiskered fish on warm basalt is the same import artefact, and the Shambala ice-pike it sits beside in the bestiary went to the snow in the same pass."
 }
