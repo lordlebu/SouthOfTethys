@@ -334,7 +334,8 @@ one a fixture can reach.
 |---|---|
 | Where does `full_moon` belong? | It is in the `weather` enum but is not weather. Probably its own field with a lunar cycle behind it. |
 | How long should a weather spell last? | Currently 3 in-game hours (~7.5 real minutes). Pure playtest question; it is the knob most likely to be wrong. |
-| Which region gets the *fourth* field map? | Three exist and are joined — Lothal, the Narmada Plateau and Dwarka, which answered the third. A fourth is a creative call with no structural argument behind it. The Shattered Sea is the only unbuilt region renderable today; the Ganges Lava Sea needs `lava_field` to get a tile first, and the Tethys Sky Routes need sky biomes. This question said *third* for long enough that Dwarka shipped while it still asked. |
+| ~~Which region gets the *fourth* field map?~~ | **Answered: the Aravali** (2026-09-08). The Aravali Crossing, and it is the first map that is a *sequence* rather than a country — shore, water, islands, far shore. It also made the question's own premise obsolete: the Ganges Lava Sea and the Tethys Sky Routes were listed as blocked on art, and both are renderable now. What blocks the sky today is authorial, not technical. |
+| Which region gets the *fifth*? | The Shattered Sea is the ready one. The Ganges Lava Sea is buildable now that `lava_field` both renders and is stamped, and would be the first map whose ground is basalt rather than the first with basalt in it. The Tethys Sky Routes need 26 species moved off `placement: lore` before a map there is anything but empty country. |
 
 **`species` is a declared vocabulary** (decided 2026-08-29, by the owner). Twelve values in
 `database/species.json`, checked by lint, the same treatment `culture` got. Characters only:
@@ -662,12 +663,12 @@ those is the real work.
 | Saraswati Delta | two maps — Lothal, Dwarka |
 | Narmada Plateau, Gedrosian Desert | one map each |
 | Shattered Sea | **buildable** — `sea` and `forest` both render |
-| Aravali | records no biomes at all; buildable once it does, as Gedrosian was |
-| Ganges Lava Sea | buildable, but the ground renders as `mountains` until the `lava_field` tile exists |
-| Tethys Sky Routes | **blocked** — `sky_island`, `sky_underside` and `open_sky` are not renderable |
+| Aravali | **built** — The Aravali Crossing, the fourth field map |
+| Ganges Lava Sea | **buildable** — `lava_field` renders *and* is stamped; see below |
+| Tethys Sky Routes | **buildable** — the sky biomes render and the Aravali stamps them. What still blocks it is authorial: 26 of the 42 sky species are `placement: lore` on purpose, so a map there would be country with almost nothing living in it |
 
-So the realistic ceiling without new art is about seven maps, not nine, and one of those seven
-would look wrong.
+The ceiling is now nine, not seven, and no map on the list would look wrong. What limits the last
+two is authored content rather than art.
 
 **Ladders are as long as they need to be** (decided 2026-08-12). An earlier note treated seven
 rungs as a target and 3-of-18 as a shortfall. It is not one: a rung is one rewrite of a diary
@@ -684,10 +685,30 @@ The engine's `DELTA_CLIMATE` is now only a fallback for a map that forgot to say
 Ganges Lava Sea is active volcanic rift cooling into jagged black basalt plains, and its fauna
 are armoured, heat-resistant and often fused with volcanic minerals. The region now names
 `lava_field`, and the 36 species that were filed under `mountains` name it too — kept alongside
-`mountains` rather than replacing it, because `lava_field` is **not renderable yet**, and a
-species with no renderable biome becomes `lore` and stops being placed at all. **Drawing it
-needs a tile texture, which is the art instance's call.** Until then canon is accurate and the
-engine simply filters it.
+`mountains` rather than replacing it, because `lava_field` was **not renderable yet**, and a
+species with no renderable biome becomes `lore` and stops being placed at all.
+
+**Closed, and it took three steps rather than the one this entry expected** (2026-09-08). The
+entry assumed a tile texture was the whole of it. It was the first third.
+
+1. *The tile shipped* — and nothing appeared. A tile makes a biome drawable; it does not put any of
+   it on a map.
+2. *The game had no stamp for it.* The engine's classifier only emits eight terrain biomes, and
+   `lava_field` is not one: it is a **place**, stamped onto finished ground afterwards, the way the
+   snow drifts and the floating islands are. Nobody had written that stamp, so Dwarka generated
+   **zero tiles of basalt on every seed** while four points of interest quietly took their
+   second-choice terrain — including both Asura gates, which canon puts *on* the rock.
+3. *The pairing was undone, and the undoing found the real damage.* All 31 species carrying
+   `lava_field` carried the identical pair `lava_field, mountains` — no variation at all, which is
+   the signature of `import_bestiary.py` rather than of anybody's judgement. It had swept up eight
+   polar species along with two dozen genuinely volcanic ones, and the first evening the ground
+   existed the game offered a **glacial ribbon-seal on warm basalt in a cold desert**.
+
+The rule this leaves, and it is the general one: **a biome nothing draws hides its own data
+errors.** Canon can be internally consistent, pass every gate, and still be wrong in a way only
+rendering reveals. `lint_story.py` now refuses a species whose name states one climate while its
+biome list states another — thin evidence, deliberately, because these imported entries have no
+descriptions to read.
 
 **`world.json` is no longer exported.** 46 KB of characters, events, settlements, factions,
 artifacts, mythology and the epoch table that nothing imported. Vite inlines the bundle into

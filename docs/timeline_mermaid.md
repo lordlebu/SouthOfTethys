@@ -17,7 +17,7 @@ timeline
         50K – 5K years ago : Aravali Massacre & Sanctuary : The Botai Cattle Raid : The Jharwa First-Wave & The Shell Pact : Opening of the Naraka Lok Portal : The Narmada Apothecary Herb Quest : The Retreat of Owlman
     section Civilization Dawn (Lothal Era)
         c. 3000 – 500 BCE : The Final Voyage of the Kelpfang : The Storm-Bone Khan's Warning at Lothal : The Wandering of the Narmada Seed-Mind : Silvershore War : Founding of Lothal : Black Lotus Siege : The Stone Pact : Tendua Crisis and Assassination of Kavik : Retrieval of the Mask of Harappa : Exile of Shaashak and Khadi : The Awakening of the Mask of Vaṛkesh : Birth of Sarita Silversong
-    section Current Era (Age of Machinery)
+    section The Age of Machinery
         ~1920s equivalent : The Antarctic Ice Wall Expedition : The Narmada Upriver Expedition : The Gondwana Spacetime Teleportation : The Battered Ekranoplan's Ice Wall Voyage
     section Post-Cataclysmic Era (The Great Shattering)
         after the Collapse : The Solarpunk Odyssey of the Ark
@@ -68,7 +68,7 @@ graph TD
         E29["The Awakening of the Mask of Vaṛkesh"]
         E30["Birth of Sarita Silversong"]
     end
-    subgraph epoch_current["Current Era (Age of Machinery)"]
+    subgraph epoch_current["The Age of Machinery"]
         E31["The Antarctic Ice Wall Expedition"]
         E32["The Narmada Upriver Expedition"]
         E33["The Gondwana Spacetime Teleportation"]

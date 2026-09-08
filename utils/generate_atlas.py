@@ -191,12 +191,23 @@ def shapes(folders: dict[str, list[dict]], epoch_id: str) -> tuple[list[dict], l
 def courses(folders: dict[str, list[dict]], epoch_id: str) -> list[dict]:
     """Rivers and routes -- anything canon gives a line rather than a ring.
 
-    Held back on the same era as the coastline: a river without its valley is a stripe in the
-    sea.
+    A *river* is held back on the same era as the coastline, for the reason UNSHAPED exists: a
+    river without its valley is a stripe in the sea.
+
+    A **route is not**, and the distinction is the same one the docstring above UNSHAPED already
+    draws for points. What the Post-Cataclysm has lost is the coastline, not the arrangement -- and
+    a railway is arrangement. It was laid by people between places canon still knows the position
+    of, and unlike a river it does not need the ground either side of it to be legible: the
+    Lodestone Line is *specifically* the thing that survived the Shattering, still standing on two
+    floating islands with the sea beneath it unrecognisable.
+
+    Withholding it made the era's map say the line had gone, on a map whose own field map is a
+    walk along it.
     """
+    lines = [e for e in folders.get("places", []) if e.get("path") and in_era(e, epoch_id)]
     if epoch_id in UNSHAPED:
-        return []
-    return [e for e in folders.get("places", []) if e.get("path") and in_era(e, epoch_id)]
+        return [e for e in lines if e.get("kind") == "route"]
+    return lines
 
 
 def centroid(ring: list) -> dict | None:
@@ -284,6 +295,10 @@ def svg_map(points: list[dict], epoch_name: str,
         "  polygon{stroke:#7E8A76;stroke-width:.25}",
         "  .rgn{fill:#39402F;font:2.7px Archivo,sans-serif;font-style:italic;opacity:.9}",
         "  .course{fill:none;stroke:#5B87A8;stroke-width:.8;stroke-linejoin:round;stroke-linecap:round}",
+        # A route is not a watercourse. Same slot, different hand: iron rather than water, and
+        # dashed, because the only route canon draws is a railway that no longer runs end to end.
+        "  .route{fill:none;stroke:#8A6A4F;stroke-width:.9;stroke-dasharray:2.4 1.2;stroke-linejoin:round;stroke-linecap:round}",
+        "  .route-lbl{fill:#6B4F38;font:2.2px Archivo,sans-serif;font-style:italic}",
         "  .course-lbl{fill:#2F5470;font:2.2px Archivo,sans-serif;font-style:italic}",
         f"  {light}",
         "  @media(prefers-color-scheme:dark){",
@@ -293,6 +308,7 @@ def svg_map(points: list[dict], epoch_name: str,
         f"   .sea{{fill:{SEA[1]}}} .land{{fill:{LAND[1]}}}",
         "   polygon{stroke:#3A4436} .rgn{fill:#9FB09A}",
         "   .course{stroke:#6E9CBD} .course-lbl{fill:#9DBDD4}",
+        "   .route{stroke:#B08D6B} .route-lbl{fill:#C7A181}",
         f"   {dark}",
         "  }",
         "</style>",
@@ -317,10 +333,14 @@ def svg_map(points: list[dict], epoch_name: str,
 
     # Rivers over the ground they cut through, under everything standing on it.
     for e in lines or []:
-        parts.append(f'<polyline class="course" points="{ring(e["path"])}"/>')
+        # `route` and `river` share this slot and must not share a look: one is dug by water and
+        # the other is laid by people, and drawn identically the Lodestone Line reads as a
+        # tributary of the Saraswati.
+        css = "route" if e.get("kind") == "route" else "course"
+        parts.append(f'<polyline class="{css}" points="{ring(e["path"])}"/>')
         hx, hy = e["path"][len(e["path"]) // 2]
         parts.append(
-            f'<text class="course-lbl" x="{hx:.1f}" y="{hy - 1.4:.1f}" '
+            f'<text class="{css}-lbl" x="{hx:.1f}" y="{hy - 1.4:.1f}" '
             f'text-anchor="middle">{xml_text(e["name"])}</text>'
         )
 

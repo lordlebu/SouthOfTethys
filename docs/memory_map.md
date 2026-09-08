@@ -301,7 +301,7 @@ graph LR
 
 **Present in no event of this era:** Daedrasura, Kubera, Lira.
 
-## Current Era (Age of Machinery)
+## The Age of Machinery
 
 ```mermaid
 graph LR
@@ -340,10 +340,17 @@ graph LR
 
 ```mermaid
 graph LR
+  subgraph grp_ancient_court["ancient_court (culture)"]
+    character_malacite("Malacite")
+  end
   subgraph grp_explorer["explorer (culture)"]
     character_varuna("Captain Varuna")
     character_guyuk_reborn("Guyuk the Seed-Gleaner")
+    character_mithra("Mithra")
     character_mitra("Mitra")
+  end
+  subgraph grp_harappan["harappan (culture)"]
+    character_mehtar("Mehtar")
   end
   event_survival_train_solarpunk["The Solarpunk Odyssey of the Ark"]
   character_guyuk_reborn --> event_survival_train_solarpunk
@@ -351,4 +358,6 @@ graph LR
   character_varuna --> event_survival_train_solarpunk
 ```
 
-3 character(s), 1 event(s) they appear in, 1 group(s).
+6 character(s), 1 event(s) they appear in, 3 group(s).
+
+**Present in no event of this era:** Malacite, Mehtar, Mithra.
