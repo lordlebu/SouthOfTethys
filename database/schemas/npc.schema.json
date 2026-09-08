@@ -116,14 +116,13 @@
       },
       "description": "Character ids this person comes from, when the line matters and the person is not that character. Bekh is Mask Family by descent from Kavik across enough generations that the name means little to her -- putting `character_kavik` in `character` would have said she IS him. Found while authoring the Lothal slice, which is what the slice was for."
     },
-    "pronoun": {
+    "sex": {
       "type": "string",
       "enum": [
-        "he",
-        "she",
-        "they"
+        "male",
+        "female"
       ],
-      "description": "Which pronoun this person takes. Canon carried these implicitly in prose -- Pell's son, Uma's life, Bekh's daughter -- which meant reading a discovery to find out, and left the six people added later with no answer at all.\n\nStated because a portrait has to draw somebody and prose is a poor place to look it up. `they` is available and is not a fallback for unknown: absent means unstated, and a person who takes `they` says so."
+      "description": "Male or female. Recorded because canon tracks descent -- `descended_from` on people, reincarnation on characters, and a Mask Family schism that runs four hundred years through named parents and children -- and a lineage cannot be followed without knowing who can bear a child.\n\nNamed `sex` rather than `gender` because that is what the field is for. It answers a question about descent, not about how somebody lives or is addressed.\n\nIt replaced a short-lived `pronoun` field. That one carried he/she/they and was reaching for two different things at once -- how to write about a person, and whether a bloodline can pass through them -- which is why it could not answer either cleanly."
     }
   },
   "additionalProperties": false
