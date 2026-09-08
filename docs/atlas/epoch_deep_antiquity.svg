@@ -9,6 +9,8 @@
   polygon{stroke:#7E8A76;stroke-width:.25}
   .rgn{fill:#39402F;font:2.7px Archivo,sans-serif;font-style:italic;opacity:.9}
   .course{fill:none;stroke:#5B87A8;stroke-width:.8;stroke-linejoin:round;stroke-linecap:round}
+  .route{fill:none;stroke:#8A6A4F;stroke-width:.9;stroke-dasharray:2.4 1.2;stroke-linejoin:round;stroke-linecap:round}
+  .route-lbl{fill:#6B4F38;font:2.2px Archivo,sans-serif;font-style:italic}
   .course-lbl{fill:#2F5470;font:2.2px Archivo,sans-serif;font-style:italic}
   .t-desert{fill:#D9C89A}.t-plains{fill:#A8BE84}.t-forest{fill:#7EA46E}.t-wetland{fill:#8FAD9E}.t-hills{fill:#B3B183}.t-mountains{fill:#A9A79C}.t-river{fill:#8FB3C4}.t-coast{fill:#D8CBA0}.t-sea{fill:#7FA6C0}.t-lava_field{fill:#C4735A}
   @media(prefers-color-scheme:dark){
@@ -17,6 +19,7 @@
    .sea{fill:#18242E} .land{fill:#2A3026}
    polygon{stroke:#3A4436} .rgn{fill:#9FB09A}
    .course{stroke:#6E9CBD} .course-lbl{fill:#9DBDD4}
+   .route{stroke:#B08D6B} .route-lbl{fill:#C7A181}
    .t-desert{fill:#3B3524}.t-plains{fill:#2A3520}.t-forest{fill:#20301E}.t-wetland{fill:#1E2E2A}.t-hills{fill:#302E20}.t-mountains{fill:#2C2B26}.t-river{fill:#1D2E36}.t-coast{fill:#393322}.t-sea{fill:#1B2C36}.t-lava_field{fill:#3A1C15}
   }
 </style>

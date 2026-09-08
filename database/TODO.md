@@ -34,6 +34,13 @@ See `docs/decisions.md` for the reasoning behind each.
       filed under `mountains`
 - [x] `lava_field` is renderable. It needed a tile texture before anything could stand on it,
       which is an art call. Species keep `mountains` alongside it until then.
+- [x] `lava_field` is **on a map**, which is not the same thing and took two months longer. The
+      tile made it drawable; the game still had no *stamp* for it, so Dwarka generated none of it
+      on any seed and both Asura gates stood on sand. See `docs/decisions.md`.
+- [x] The pairing undone — and eight polar species taken off the lava with it. All 31 species
+      carrying `lava_field` carried the identical pair `lava_field, mountains`, which is an import
+      signature; a glacial ribbon-seal was being offered on warm basalt in a cold desert. A lint
+      rule now refuses a name that states one climate against biomes that state another.
 
 ## Field diary — content
 - [x] A second field map — the Narmada Plateau, joined to Lothal by `neighbours`

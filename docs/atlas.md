@@ -23,12 +23,12 @@ Each era below is canon as it stood then. An entity that names no epoch is prese
 | artifacts |  | 5 |
 | mythology |  | 9 |
 | fauna |  | 257 |
-| flora |  | 108 |
+| flora |  | 116 |
 | foodways |  | 19 |
-| items |  | 67 |
-| materials |  | 52 |
-| processes |  | 16 |
-| recipes |  | 72 |
+| items |  | 72 |
+| materials |  | 68 |
+| processes |  | 17 |
+| recipes |  | 78 |
 | vehicles |  | 8 |
 
 ### Events
@@ -73,12 +73,12 @@ graph TD
 | artifacts |  | 5 |
 | mythology |  | 9 |
 | fauna |  | 257 |
-| flora |  | 108 |
+| flora |  | 116 |
 | foodways |  | 19 |
-| items |  | 67 |
-| materials |  | 52 |
-| processes |  | 16 |
-| recipes |  | 72 |
+| items |  | 72 |
+| materials |  | 68 |
+| processes |  | 17 |
+| recipes |  | 78 |
 | vehicles |  | 8 |
 
 ### Events
@@ -116,12 +116,12 @@ graph TD
 | artifacts |  | 5 |
 | mythology |  | 9 |
 | fauna |  | 257 |
-| flora |  | 108 |
+| flora |  | 116 |
 | foodways |  | 19 |
-| items |  | 67 |
-| materials |  | 52 |
-| processes |  | 16 |
-| recipes |  | 72 |
+| items |  | 72 |
+| materials |  | 68 |
+| processes |  | 17 |
+| recipes |  | 78 |
 | vehicles |  | 8 |
 
 ### Events
@@ -162,13 +162,13 @@ graph TD
 | artifacts |  | 5 |
 | mythology |  | 9 |
 | fauna |  | 257 |
-| flora |  | 108 |
+| flora |  | 116 |
 | foodways |  | 19 |
-| items | 3 | 67 |
-| materials |  | 52 |
-| processes |  | 16 |
-| recipes | 5 | 72 |
-| vehicles |  | 8 |
+| items | 3 | 72 |
+| materials |  | 68 |
+| processes |  | 17 |
+| recipes | 5 | 78 |
+| vehicles | 2 | 8 |
 
 ### Events
 
@@ -207,16 +207,20 @@ graph TD
 
 6 region(s) traced, 25 place(s) plotted. [Open the SVG](atlas/epoch_civilization_dawn.svg)
 
-## Current Era (Age of Machinery)
+## The Age of Machinery
 
 **~1920s equivalent**
 
 > Narmada University, dieselpunk exploration
 
+**Renamed from "Current Era (Age of Machinery)".** It was never the current era from any reader's position and it is emphatically not the player's: the game is set in `epoch_post_cataclysm`, after this one ended, walking through what it left behind. A label that means "now" on the era a player finds in ruins is the kind of name that quietly misleads every future author.
+
+The id stays `epoch_current` deliberately. Fifty-five entities reference it and the atlas writes `docs/atlas/epoch_current.svg`; renaming an id to fix a display name is how a rename becomes a migration. The name is what anybody reads.
+
 | | dated to this era | timeless |
 |---|---:|---:|
 | regions |  | 7 |
-| places | 30 | 9 |
+| places | 31 | 9 |
 | settlements | 1 | 1 |
 | characters | 6 |  |
 | factions |  | 3 |
@@ -224,13 +228,13 @@ graph TD
 | artifacts |  | 5 |
 | mythology |  | 9 |
 | fauna |  | 257 |
-| flora |  | 108 |
+| flora |  | 116 |
 | foodways |  | 19 |
-| items | 3 | 67 |
-| materials |  | 52 |
-| processes |  | 16 |
-| recipes | 5 | 72 |
-| vehicles | 2 | 8 |
+| items | 3 | 72 |
+| materials |  | 68 |
+| processes |  | 17 |
+| recipes | 5 | 78 |
+| vehicles | 4 | 8 |
 
 ### Events
 
@@ -246,7 +250,7 @@ graph TD
 
 ### Map
 
-![Map of Current Era (Age of Machinery)](atlas/epoch_current.svg)
+![Map of The Age of Machinery](atlas/epoch_current.svg)
 
 6 region(s) traced, 26 place(s) plotted. [Open the SVG](atlas/epoch_current.svg)
 
@@ -259,27 +263,27 @@ graph TD
 | | dated to this era | timeless |
 |---|---:|---:|
 | regions |  | 7 |
-| places | 23 | 9 |
+| places | 24 | 9 |
 | settlements | 1 | 1 |
-| field maps | 3 |  |
-| points of interest | 20 |  |
-| characters | 1 |  |
-| npcs | 8 |  |
+| field maps | 4 |  |
+| points of interest | 35 |  |
+| characters | 4 |  |
+| npcs | 15 |  |
 | factions |  | 3 |
 | events | 1 |  |
 | artifacts |  | 5 |
 | mythology |  | 9 |
-| discoveries | 31 |  |
+| discoveries | 44 |  |
 | field questions | 7 |  |
 | vocabulary | 8 |  |
 | fauna |  | 257 |
-| flora |  | 108 |
+| flora |  | 116 |
 | foodways |  | 19 |
-| items |  | 67 |
-| materials |  | 52 |
-| processes |  | 16 |
-| recipes |  | 72 |
-| vehicles | 1 | 8 |
+| items |  | 72 |
+| materials |  | 68 |
+| processes |  | 17 |
+| recipes |  | 78 |
+| vehicles | 2 | 8 |
 
 ### Events
 
@@ -292,4 +296,4 @@ graph TD
 
 ![Map of Post-Cataclysmic Era (The Great Shattering)](atlas/epoch_post_cataclysm.svg)
 
-0 region(s) traced, 23 place(s) plotted. [Open the SVG](atlas/epoch_post_cataclysm.svg)
+0 region(s) traced, 24 place(s) plotted. [Open the SVG](atlas/epoch_post_cataclysm.svg)

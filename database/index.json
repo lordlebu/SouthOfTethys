@@ -1,5 +1,5 @@
 {
-  "version": "2.17.0",
+  "version": "2.18.0",
   "description": "SouthOfTethys canonical entity index",
   "counts": {
     "artifacts": 5,
@@ -16,7 +16,7 @@
     "materials": 68,
     "mythology": 9,
     "npcs": 15,
-    "places": 41,
+    "places": 42,
     "points_of_interest": 35,
     "processes": 17,
     "recipes": 83,
@@ -796,6 +796,7 @@
       "place_konkan_hills",
       "place_lemuria",
       "place_leviathans_rib",
+      "place_lodestone_line",
       "place_madagascar",
       "place_mainland_asia",
       "place_makkan_coast",

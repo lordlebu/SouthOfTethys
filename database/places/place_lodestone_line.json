@@ -1,0 +1,47 @@
+{
+  "id": "place_lodestone_line",
+  "type": "place",
+  "name": "The Lodestone Line",
+  "kind": "route",
+  "path": [
+    [
+      53,
+      43
+    ],
+    [
+      48,
+      38
+    ],
+    [
+      43,
+      33
+    ],
+    [
+      46,
+      27
+    ],
+    [
+      52,
+      21
+    ],
+    [
+      58,
+      15
+    ],
+    [
+      64,
+      10
+    ]
+  ],
+  "region": "region_aravali",
+  "epochs": [
+    "epoch_current",
+    "epoch_post_cataclysm"
+  ],
+  "description": "A railway laid on Permian-irradiated lodestone, running from the Narmada plateau over the Aravali ranges and out across the narrows of the Shattered Sea. It does not rest on anything: the ore holds its own height, which is why the two floating islands are its piers and why a ship passes beneath it without lowering a mast.",
+  "notes": "**The Age of Machinery's one surviving piece of infrastructure, and it only half survives.** Canon's arrival text for the Aravali Crossing describes the state it is in now: a rail-head, a shed, and a line of iron running out over the strait. The iron stops at the water. The stretch between the islands is kept because it is the only way across; the shore approaches are overgrown, and people climb rope where the line used to come down.\n\nIt appears in two epochs and no earlier one. Rail is Age of Machinery work by definition, and nothing after the Shattering has rebuilt it -- the Post-Cataclysmic entry is the same line, four hundred years of weather later, which is what a player walks.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from field_map_aravali"
+  ]
+}
