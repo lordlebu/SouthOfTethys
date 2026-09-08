@@ -6,7 +6,7 @@
   "clade": "mammal",
   "region": "ganges-lava-sea",
   "biomes": [
-    "lava_field",
+    "snow",
     "mountains"
   ],
   "placement": "encounter",
@@ -17,5 +17,6 @@
     "docs/bestiary.md"
   ],
   "mood": "fearsome",
-  "source_index": 159
+  "source_index": 159,
+  "notes": "\n\n**Moved off `lava_field`.** This was filed as living on cooled basalt and in mountains, which put an ice animal on warm volcanic rock in a cold *desert* -- the game duly offered it to a player standing on the Black Pavement at Dwarka, hunting beneath ice shelves that are several thousand miles away.\n\nIt is a bulk-import artefact rather than a judgement anybody made: every one of the thirty-one species carrying `lava_field` carried the identical pair `lava_field, mountains`, with no variation at all, and the batch swept up seven polar entries along with two dozen genuinely volcanic ones. `snow, mountains` already existed and already held the glacial ice-flea and the glacial snow-hare -- the same prefix as this, split across two imports.\n\nIt stayed invisible while nothing drew `lava_field`. The moment the game grew a stamp for it, the seal appeared."
 }
