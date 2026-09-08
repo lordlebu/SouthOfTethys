@@ -46,7 +46,7 @@
           "wetland",
           "hills",
           "mountains",
-            "snow",
+          "snow",
           "desert",
           "river",
           "settlement",
@@ -168,6 +168,14 @@
       ],
       "default": "basin",
       "description": "The landform, which decides how the generator shapes this map's ground.\n\nCanon does not describe tiles -- it says what kind of place this is, and the engine draws it. This field exists because one shaping rule cannot produce a harbour, an island and a plateau: every map was being built as a dome, low at the rim and high in the middle, so travel cost climbed from 1.15 at the edge to 1.98 at the centre and the walking was hardest exactly where the walking happens.\n\n* `delta`   -- low, wet, threaded with channels. The easy ground is the water's edge.\n* `island`  -- sea on every side, land in the middle. What is left of somewhere larger.\n* `plateau` -- flat and high, severe at the rim. The scarp is the drama, not the surface.\n* `basin`   -- a bowl. The default, and what a seabed becomes when it loses its sea."
+    },
+    "proportion": {
+      "type": "string",
+      "enum": [
+        "square",
+        "portrait"
+      ],
+      "description": "The shape of the ground, as distinct from its size (`scale`) or its form (`relief`). Absent means square, which is what every map was until a crossing needed otherwise.\n\n`portrait` is for a country that is walked in one direction. The Aravali is a strait: stony shore, water, islands, far shore, in that order, and the whole of it is the journey from one side to the other. Drawn square, the sea has to be wide enough to be a sea in both directions at once, which leaves the shores too thin to hold any relief and the islands too close together to read as two. Drawn tall, the crossing has room to be long without the country having to be wide.\n\nIt is a fact about the place rather than about the screen. A delta spreads and a plateau sits; a crossing runs."
     }
   },
   "additionalProperties": false
