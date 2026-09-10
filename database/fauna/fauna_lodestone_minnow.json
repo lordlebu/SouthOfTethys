@@ -1,0 +1,21 @@
+{
+  "id": "fauna_lodestone_minnow",
+  "type": "fauna",
+  "name": "Lodestone Minnow",
+  "scientific": "Puntius magnetis",
+  "clade": "fish",
+  "region": "tethys-sky-routes",
+  "biomes": [
+    "sky_water"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "A finger-length shoaling fish with iron in its scales. The shoal turns all at once and always to the same quarter, which is the direction of the lodestone core holding the island up -- so a pool of them is a compass nobody built.",
+  "canon": "primary",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "mood": "playful",
+  "source_index": 257,
+  "placement_note": "Placeable since the pools were stamped. `sky_water` is renderable and the Aravali carries two of them."
+}
