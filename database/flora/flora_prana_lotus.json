@@ -6,7 +6,8 @@
   "growth_form": "flower",
   "region": "tethys-sky-routes",
   "biomes": [
-    "sky_island"
+    "sky_island",
+    "sky_water"
   ],
   "placement": "flavour",
   "rarity": "rare",
@@ -16,5 +17,5 @@
     "docs/bestiary.md"
   ],
   "source_index": 57,
-  "placement_note": "Placeable since the sky tiles were painted. **`flavour` rather than `encounter`, because that is what the game reads for a plant** -- `species.ts` indexes flora by `flavour` and fauna by `encounter`, since a plant is something you find growing rather than somebody you meet. Promoting these to `encounter` first put them in the bundle and left `floraIn` empty, which the game's own coverage test caught."
+  "placement_note": "Placeable since the sky tiles were painted. **`flavour` rather than `encounter`, because that is what the game reads for a plant** -- `species.ts` indexes flora by `flavour` and fauna by `encounter`, since a plant is something you find growing rather than somebody you meet. Promoting these to `encounter` first put them in the bundle and left `floraIn` empty, which the game's own coverage test caught. **`sky_water` added when the pools became wadeable**: its own prompt has always said it grows in the inverted waterfalls with its petals floating, and a lotus tagged only to dry ground was the entry disagreeing with itself."
 }
