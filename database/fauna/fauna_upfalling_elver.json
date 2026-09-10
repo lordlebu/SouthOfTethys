@@ -1,0 +1,22 @@
+{
+  "id": "fauna_upfalling_elver",
+  "type": "fauna",
+  "name": "Upfalling Elver",
+  "scientific": "Anguilla ascendens",
+  "clade": "fish",
+  "region": "tethys-sky-routes",
+  "biomes": [
+    "sky_water",
+    "sky_underside"
+  ],
+  "placement": "encounter",
+  "rarity": "mythic",
+  "journal_prompt": "A young eel, hand-long and glass-clear, climbing the underside of a floating island through rain that is falling upward. Canon says gravity is warped beneath a shelf and that rainwater goes the wrong way there; this is the animal that uses it. Where the elvers come from is the question -- there is no sea within a day of the sky routes, and no adult has ever been taken from a pool.",
+  "canon": "primary",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "mood": "uncanny",
+  "source_index": 259,
+  "placement_note": "Placeable since the pools were stamped. Tagged to the underside as well because that is the half of its life a walker on the rim can actually see."
+}

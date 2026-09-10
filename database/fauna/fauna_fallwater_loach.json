@@ -1,0 +1,21 @@
+{
+  "id": "fauna_fallwater_loach",
+  "type": "fauna",
+  "name": "Fallwater Loach",
+  "scientific": "Nemacheilus praecipitis",
+  "clade": "fish",
+  "region": "tethys-sky-routes",
+  "biomes": [
+    "sky_water"
+  ],
+  "placement": "encounter",
+  "rarity": "rare",
+  "journal_prompt": "A flat-bellied fish that holds station on the stone at the very lip where the pool goes over, mouth into the current, grazing the film of algae the moving water keeps clean. What happens to the ones that lose their grip is not recorded, because nobody has ever been underneath to look.",
+  "canon": "primary",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "mood": "patient",
+  "source_index": 258,
+  "placement_note": "Placeable since the pools were stamped. `sky_water` is renderable and the Aravali carries two of them."
+}
