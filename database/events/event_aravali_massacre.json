@@ -14,7 +14,9 @@
   ],
   "location": "region_aravali",
   "predecessors": [],
-  "successors": [],
+  "successors": [
+    "event_the_last_course"
+  ],
   "causes": [
     "sira_stolen_mask",
     "dark_manipulation"
