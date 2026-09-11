@@ -1,5 +1,5 @@
 {
-  "version": "2.21.0",
+  "version": "2.22.0",
   "description": "SouthOfTethys canonical entity index",
   "counts": {
     "artifacts": 5,
@@ -17,7 +17,7 @@
     "mythology": 10,
     "npcs": 15,
     "places": 42,
-    "points_of_interest": 36,
+    "points_of_interest": 37,
     "processes": 17,
     "recipes": 83,
     "regions": 7,
@@ -181,7 +181,7 @@
       "event_survival_train_solarpunk",
       "event_tendua_crisis",
       "event_the_first_cosmic_move",
-      "event_the_last_course",
+      "event_the_last_puja",
       "event_union_narmada_man_apsara"
     ],
     "factions": [
@@ -826,6 +826,7 @@
       "place_western_ghats"
     ],
     "points_of_interest": [
+      "poi_alms_step",
       "poi_basalt_quarry",
       "poi_black_pavement",
       "poi_bone_midden",
@@ -839,6 +840,7 @@
       "poi_first_pier",
       "poi_gate_court",
       "poi_glass_scar",
+      "poi_grit_mill",
       "poi_herders_terraces",
       "poi_high_camp",
       "poi_kavik_tower",
@@ -856,7 +858,6 @@
       "poi_second_gate",
       "poi_second_line",
       "poi_silted_granary",
-      "poi_stacked_temple",
       "poi_sunk_cutting",
       "poi_tide_market",
       "poi_vedda_ford",
