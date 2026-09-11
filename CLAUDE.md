@@ -74,7 +74,16 @@ merges. A new piece of work does not get a new branch because it feels separate 
 branch already open, and the whole lot is reviewed as one pull request. Cut the next branch only
 once the previous one has merged.
 
-This is a working rule rather than an enforced one, and it was written after three branches were
+The half of this that kept being forgotten is now enforced. `.claude/hooks/push-gate.sh` runs on
+every `git push` and refuses one that would add commits to a branch whose pull request has already
+merged — a commit was orphaned that way on the game side, and it was not the first. It asks git
+rather than GitHub, because `gh` is not installed: a remote branch contained in `origin/main` has
+landed. Only the broken case is refused — new commits built on the *pre-merge* tip, reaching no
+review and no `main` — while a branch restarted from the merged base goes through with a reminder
+that the merged pull request cannot be reused. The script's header carries the conditions and the
+one case it knowingly cannot see; `ALLOW_MERGED_PUSH=1` overrides it.
+
+The rest is a working rule rather than an enforced one, and it was written after three branches were
 left in flight at once — `ingest-draft`, `region-extents` and `north-dwarka` — which made it
 impossible to tell what had merged, what was waiting, and which change had caused which failure.
 The tidiness of one-change-one-branch is not worth that.
