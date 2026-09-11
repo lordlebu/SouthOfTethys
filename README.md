@@ -7,7 +7,7 @@ half-remembered word lives in [`database/`](database/) as one JSON file, validat
 push — so the lore cannot quietly contradict itself, and a machine can hand any of it to a
 reader, a game, or a language model.
 
-**v2.20.0 · 933 entities · all cross-references resolving**
+**v2.21.0 · 936 entities · all cross-references resolving**
 
 | | |
 |---|---|

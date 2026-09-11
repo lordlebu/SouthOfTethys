@@ -1,11 +1,11 @@
 {
-  "version": "2.20.0",
+  "version": "2.21.0",
   "description": "SouthOfTethys canonical entity index",
   "counts": {
     "artifacts": 5,
     "characters": 64,
     "discoveries": 44,
-    "events": 36,
+    "events": 37,
     "factions": 3,
     "fauna": 260,
     "field_maps": 4,
@@ -14,10 +14,10 @@
     "foodways": 19,
     "items": 75,
     "materials": 68,
-    "mythology": 9,
+    "mythology": 10,
     "npcs": 15,
     "places": 42,
-    "points_of_interest": 35,
+    "points_of_interest": 36,
     "processes": 17,
     "recipes": 83,
     "regions": 7,
@@ -181,6 +181,7 @@
       "event_survival_train_solarpunk",
       "event_tendua_crisis",
       "event_the_first_cosmic_move",
+      "event_the_last_course",
       "event_union_narmada_man_apsara"
     ],
     "factions": [
@@ -760,6 +761,7 @@
       "mythology_narmada_apsara_union",
       "mythology_primordial_rift",
       "mythology_the_first_shell_pact",
+      "mythology_the_seats_of_the_players",
       "mythology_varuna"
     ],
     "npcs": [
@@ -854,6 +856,7 @@
       "poi_second_gate",
       "poi_second_line",
       "poi_silted_granary",
+      "poi_stacked_temple",
       "poi_sunk_cutting",
       "poi_tide_market",
       "poi_vedda_ford",
