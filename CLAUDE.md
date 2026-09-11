@@ -153,6 +153,13 @@ destroys the mechanic.
 
 ## Where the reasoning lives
 
+**`.claude/skills/session-craft/` is the one to read first in a new session.** It carries what the
+*environment* does rather than what canon is: branch deletion refused at the proxy by every route,
+`gh` installed but GraphQL-blocked, the bump-then-fix-both-READMEs sequence the lint enforces, and
+the cross-repo blind spot where `check:data` passes while the two repositories disagree about what
+an entity is called. The game repo carries a fuller companion covering art intake and rendering.
+
+
 | File | What it holds |
 |---|---|
 | `docs/decisions.md` | every call made on the project's behalf, and what is still open |
