@@ -25,5 +25,8 @@
   ],
   "description": "Pale mangroves standing in a ring, and something at the centre that is not a tree.",
   "arrival": "The Kia did not build the shrine so much as agree about it. A ring of ghost mangrove, a stone with a hollow worn into the top, and a great deal of water that is shallower than it looks if you know where to put your feet.",
-  "notes": "Kia rather than Harappan. Where the channel discovery is learned and the marsh-lurker can be watched."
+  "notes": "Kia rather than Harappan. Where the channel discovery is learned and the marsh-lurker can be watched.",
+  "npcs": [
+    "npc_kunch"
+  ]
 }

@@ -22,5 +22,8 @@
   "sources": [
     "Varuna's Field Diary design",
     "AI_CONTEXT.md"
+  ],
+  "npcs": [
+    "npc_moonj"
   ]
 }

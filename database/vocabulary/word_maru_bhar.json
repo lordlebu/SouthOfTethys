@@ -1,0 +1,19 @@
+{
+  "type": "vocabulary",
+  "language": "maru",
+  "id": "word_maru_bhar",
+  "word": "bhar",
+  "gloss": "a load an animal agreed to",
+  "literal": "weight, with consent",
+  "learned_from": [
+    "npc_moonj"
+  ],
+  "notes": "Not the weight of a thing -- maru has an ordinary word for that. `Bhar` is what is actually moving, which on the plateau is always less than what was loaded and is settled between a driver and an animal rather than decided by either. The archive has never found a use for it and the quarry cannot manage without it.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "secondary",
+  "sources": [
+    "Varuna's Field Diary design"
+  ]
+}

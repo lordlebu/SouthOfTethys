@@ -1,0 +1,50 @@
+{
+  "id": "npc_moonj",
+  "type": "npc",
+  "name": "Moonj",
+  "role": "driver, to a straight-tusk",
+  "found_at": [
+    "poi_basalt_quarry",
+    "poi_narmada_university",
+    "poi_walking_spring"
+  ],
+  "language": "maru",
+  "sex": "female",
+  "would_settle": false,
+  "knows": [
+    "discovery_quarry_sequence"
+  ],
+  "lines": [
+    {
+      "text": "Bhar. Not the weight -- the weight is the weight, anybody with a rope knows the weight. Bhar is what she has agreed to carry today, and it is always less, and arguing about the difference is how a driver gets a foot broken.",
+      "gives": [
+        "word_maru_bhar"
+      ]
+    },
+    {
+      "text": "Six courses of the hall came up this road on her mother. They will tell you up there that the stone was quarried in such a year by such a hand. The stone was quarried by a hand and moved by an animal, and only one of those is written down.",
+      "requires": [],
+      "gives": []
+    },
+    {
+      "text": "She drinks at the spring and I do not hurry her. It is an hour. I have had that hour every second day of my life and I would not sell it.",
+      "requires": [],
+      "gives": []
+    },
+    {
+      "text": "Nine inches, every course, all the way up. She sets them down to a finger and I have never once told her how far to lower. Somebody up there measured it afterwards and wrote the number in a book, and the number was already in the animal.",
+      "requires": [
+        "discovery_quarry_sequence"
+      ],
+      "gives": []
+    }
+  ],
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "notes": "The other half of the University's nine halls: the archive records what was cut and has no word at all for what carried it. Moonj is the person the record leaves out, which is why she is on the plateau and not on it.\n\nShe would not settle. The road between the quarry and the halls is a life she chose, and the ending's roster is people who would come with you -- she has somewhere to be every second day.",
+  "canon": "secondary",
+  "sources": [
+    "Varuna's Field Diary design"
+  ]
+}

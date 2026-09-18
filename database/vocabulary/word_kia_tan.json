@@ -1,0 +1,19 @@
+{
+  "type": "vocabulary",
+  "language": "kia",
+  "id": "word_kia_tan",
+  "word": "tan / tan-set",
+  "gloss": "a struck note / the road's note",
+  "literal": "hollow / hollow-path",
+  "learned_from": [
+    "npc_kunch"
+  ],
+  "notes": "The same root as the word for a cut reed. A length of cane gives one note and only one, so the delta counts intervals in cane rather than in numbers -- two hands of cane is a phrase, and everybody who has walked with Kunch knows roughly how long that is on the road.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "secondary",
+  "sources": [
+    "Varuna's Field Diary design"
+  ]
+}

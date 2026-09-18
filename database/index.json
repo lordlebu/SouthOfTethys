@@ -1,5 +1,5 @@
 {
-  "version": "2.23.0",
+  "version": "2.24.0",
   "description": "SouthOfTethys canonical entity index",
   "counts": {
     "artifacts": 5,
@@ -7,7 +7,7 @@
     "discoveries": 44,
     "events": 37,
     "factions": 3,
-    "fauna": 261,
+    "fauna": 262,
     "field_maps": 4,
     "field_questions": 7,
     "flora": 118,
@@ -15,7 +15,7 @@
     "items": 75,
     "materials": 68,
     "mythology": 10,
-    "npcs": 15,
+    "npcs": 17,
     "places": 42,
     "points_of_interest": 37,
     "processes": 17,
@@ -23,7 +23,7 @@
     "regions": 7,
     "settlements": 2,
     "vehicles": 14,
-    "vocabulary": 8
+    "vocabulary": 10
   },
   "entities": {
     "artifacts": [
@@ -351,6 +351,7 @@
       "fauna_narmada_honey_guide",
       "fauna_narmada_mud_eel",
       "fauna_narmada_rock_python",
+      "fauna_narmada_straight_tusk",
       "fauna_narmada_tree_shrew",
       "fauna_obsidian_cliff_eagle",
       "fauna_obsidian_winged_serpent",
@@ -773,7 +774,9 @@
       "npc_dala",
       "npc_hesh",
       "npc_ila",
+      "npc_kunch",
       "npc_marn",
+      "npc_moonj",
       "npc_odri",
       "npc_okhi",
       "npc_pell",
@@ -1002,11 +1005,13 @@
     ],
     "vocabulary": [
       "word_kia_ossu",
+      "word_kia_tan",
       "word_kia_thal",
       "word_kia_thal_set",
       "word_kia_uvai",
       "word_kia_vaath",
       "word_maru_anu",
+      "word_maru_bhar",
       "word_maru_khet",
       "word_maru_sev"
     ]

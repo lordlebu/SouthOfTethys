@@ -11,7 +11,8 @@
   "npcs": [
     "npc_thrali",
     "npc_uma",
-    "npc_bekh"
+    "npc_bekh",
+    "npc_kunch"
   ],
   "related_entities": [
     "settlement_lothal",

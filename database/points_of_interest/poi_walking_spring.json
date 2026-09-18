@@ -14,7 +14,8 @@
     "discovery_bitter_millet"
   ],
   "npcs": [
-    "npc_marn"
+    "npc_marn",
+    "npc_moonj"
   ],
   "description": "A spring the archive records at a fixed point, and a line of dead stonework saying otherwise.",
   "arrival": "The water comes out of the hillside cold enough to hurt. Forty paces downslope there is a stone basin, dry, well made, and obviously built to catch exactly this. Forty paces further there is another.",
