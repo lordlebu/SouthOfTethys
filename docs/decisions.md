@@ -24,10 +24,17 @@ an object does to something else: a blade cuts, a rope binds. An instrument does
 until somebody picks it up.
 
 Three to start with, and they are deliberately three *costs* rather than three sounds. The reed
-flute is cane and an afternoon, made on the walk out of the ground you were standing on. The cane
-chime is a hand of canes bound at the grip, tuned by shortening so it only ever goes up. The sitar
-is seasoned timber over a dried sky-balloon shell with a sympathetic course underneath — a year, a
-maker who has ruined several, and the only one of the three that affords `trade`.
+flute is cane and an afternoon, made on the walk out of the ground you were standing on. The
+**bhoomwhacker** is a hand of canes bound at the grip, tuned by shortening so it only ever goes up.
+The sitar is seasoned timber over a dried sky-balloon shell with a sympathetic course underneath —
+a year, a maker who has ruined several, and the only one of the three that affords `trade`.
+
+**The bhoomwhacker is not called a boomwhacker, and the reason is trademark rather than taste.**
+That is a registered name belonging to a company that started selling tuned plastic tubes in the
+1990s, and canon names objects in-world — *Reed raft*, *Salt sled*, *Fire rattle*. It was called
+"Cane chime" first, which is safe, accurate and says nothing; *bhoom* is the noise the cane makes
+and also what the delta calls the ground the cane grew out of, so the name carries its sound and
+its material at once and still rhymes with the thing everybody will actually think of.
 
 **The affordance vocabulary is declared twice and both copies must be edited.** `affordances.json`
 carries the word and its note; `schemas/item.schema.json` carries an enum of the same values, and
