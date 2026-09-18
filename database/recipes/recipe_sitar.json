@@ -1,0 +1,34 @@
+{
+  "id": "recipe_sitar",
+  "type": "recipe",
+  "name": "Stringing a neck over a shell",
+  "process": "process_carving",
+  "ingredients": [
+    {
+      "material": "material_teak_timber",
+      "count": 2
+    },
+    {
+      "material": "material_gourd_shell"
+    },
+    {
+      "material": "material_sinew",
+      "count": 2
+    },
+    {
+      "item": "item_bow_drill",
+      "kept": true
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_sitar"
+    }
+  ],
+  "notes": "The sympathetic course is the hard part and the reason this is a trade: the underneath strings have to be true to the ones above them or they answer at the wrong moment and the whole thing sounds ill.",
+  "canon": "inferred",
+  "sources": [
+    "Varuna's Field Diary design"
+  ],
+  "source_index": 85
+}

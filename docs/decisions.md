@@ -13,6 +13,41 @@ Both repos are on `feature/canon-bundle`.
 
 ## Decisions taken
 
+**`play` is the fourteenth affordance, and instruments are the eleventh item kind.**
+`affordances.json` says in its own note that a new word arrives by a deliberate edit there and a
+line here, rather than by an item quietly claiming one — this is that line. It was added because
+canon already had instruments in its prose and no way to say what one is *for*: Kunch carries cut
+canes, and the delta counts an interval in cane rather than in numbers.
+
+It is passive — "Played" — like `eat` and unlike the rest. The active forms in that list are things
+an object does to something else: a blade cuts, a rope binds. An instrument does nothing at all
+until somebody picks it up.
+
+Three to start with, and they are deliberately three *costs* rather than three sounds. The reed
+flute is cane and an afternoon, made on the walk out of the ground you were standing on. The
+**bamboomer** is a hand of canes bound at the grip, tuned by shortening so it only ever goes up.
+The sitar is seasoned timber over a dried sky-balloon shell with a sympathetic course underneath —
+a year, a maker who has ruined several, and the only one of the three that affords `trade`.
+
+**The bamboomer is not called a boomwhacker, and the reason is trademark rather than taste.** That
+is a registered name belonging to a company that has sold tuned plastic tubes since the 1990s, and
+canon names objects in-world — *Reed raft*, *Salt sled*, *Fire rattle*.
+
+It took two goes. "Cane chime" was first and was the wrong fix: safe, accurate, and saying nothing.
+"Bhoomwhacker" was second and was reaching — it rhymed, but it got there by borrowing *bhoomi* for
+a meaning the delta does not otherwise use, and it kept the modern "-whacker" that made the
+original unusable in the first place. **Bamboomer is the material and the noise in one word**,
+which is more than either of the other two instruments manages: a flute is named for what it is
+made of, a sitar for its shape, and this for both at once.
+
+**The affordance vocabulary is declared twice and both copies must be edited.** `affordances.json`
+carries the word and its note; `schemas/item.schema.json` carries an enum of the same values, and
+the schema is what the lint validates against. Adding `play` to the first alone fails three items
+with *"'play' is not one of …"*, which is the right failure and a confusing one if you have just
+written the note explaining the word. Worth folding the enum into a `$ref` at some point; until
+then, two files.
+
+
 **Canon exports canon's shape; the game adapts it.** The exporter emits `species/places/
 knowledge/world.json` in canon's own vocabulary, and the game owns `src/content/*.ts` to
 translate. The earlier direction — canon emitting the engine's `Creature`/`Flora` shape — made

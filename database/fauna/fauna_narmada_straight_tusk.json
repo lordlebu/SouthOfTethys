@@ -1,0 +1,36 @@
+{
+  "id": "fauna_narmada_straight_tusk",
+  "type": "fauna",
+  "name": "Narmada Straight-Tusk",
+  "aliases": [
+    "Straight-tusk",
+    "Valley elephant"
+  ],
+  "scientific": "Palaeoloxodon namadicus",
+  "clade": "mammal",
+  "diet": "Herbivore",
+  "habitats": [
+    "region_narmada_plateau"
+  ],
+  "behaviour": [
+    "herd",
+    "cargo",
+    "browsing"
+  ],
+  "notes": "The valley's own elephant, and the largest thing that walks on it. The tusks come out almost straight rather than curving, which is why a pair of them makes a doorway and why the archive has two propped either side of its own.\n\nWorked rather than tamed, and the distinction is one the drivers insist on: an animal that can put a shoulder to a cut block of basalt cannot be made to do anything it has decided against. What a driver has is forty years of being agreed with.",
+  "canon": "secondary",
+  "sources": [
+    "Pleistocene South Asian megafauna, adapted to canon"
+  ],
+  "biomes": [
+    "plains",
+    "forest",
+    "hills",
+    "river"
+  ],
+  "placement": "encounter",
+  "rarity": "rare",
+  "mood": "patient",
+  "journal_prompt": "It is browsing at the height of a roof and has not registered you at all. The tusks are wrong -- they go forward rather than out, two pale shafts a shade longer than the animal is tall.",
+  "source_index": 261
+}

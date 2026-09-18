@@ -1,0 +1,47 @@
+{
+  "id": "npc_kunch",
+  "type": "npc",
+  "name": "Kunch",
+  "role": "road singer, up on a bird",
+  "found_at": [
+    "poi_lothal_camp",
+    "poi_marsh_shrine",
+    "poi_eastern_field"
+  ],
+  "language": "kia",
+  "sex": "male",
+  "would_settle": false,
+  "knows": [],
+  "lines": [
+    {
+      "text": "You will hear me before you see me and that is the arrangement. Cane, cut to length -- this one is the water note, this one is two fields of walking, this one I do not use because it sounds like somebody being unwell. Cut them long and take them down to the note; they only tune one way. Bind them at the grip or you are carrying three sticks.",
+      "gives": [
+        "word_kia_tan",
+        "recipe_cane_chime"
+      ]
+    },
+    {
+      "text": "Her name is not your business and she would not answer to it anyway. Nine feet of bad opinion and the only animal on this delta that can see over the reeds, which between us is the whole of why I am up here and not down there with my feet wet.",
+      "requires": [],
+      "gives": []
+    },
+    {
+      "text": "Nobody pays me. People feed me, which is not the same and is more reliable. A song does not go off.",
+      "requires": [],
+      "gives": []
+    },
+    {
+      "text": "The shrine, yes. I do not go in and I do not sing near it. Not for any reason I can give you -- the cane sounds wrong there, flat where it should not be flat, and I have stopped arguing with it.",
+      "requires": [],
+      "gives": []
+    }
+  ],
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "notes": "The delta's news, carried at the pace of a large bird. Deliberately gives no discovery and settles nowhere: he is the counterweight to the camp, which is people who stayed, and to the archive over on the plateau, which is people who wrote it down. Kunch does neither and gets there first.\n\nThe instrument is a set of cut canes of graded length, struck rather than blown. Canon does not hold it as an `item` because there is no `kind` for an instrument and no affordance for playing one -- adding either is a vocabulary decision rather than an authoring one. See docs/decisions.md.",
+  "canon": "secondary",
+  "sources": [
+    "Varuna's Field Diary design"
+  ]
+}

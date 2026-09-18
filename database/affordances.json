@@ -54,6 +54,10 @@
     "shelter": {
       "label": "Shelters",
       "note": "Keeps weather off a sleeping person. Matting, a hide tent, a bedroll -- which the game's kit has carried from its first step."
+    },
+    "play": {
+      "label": "Played",
+      "note": "Makes a note on purpose. A flute, a struck cane, a plucked string.\n\n**Added deliberately, which is what this file asks for.** The note above says a thirteenth value typed by accident is exactly what the lint catches, and that a new word arrives by an edit here and a line in docs/decisions.md rather than by an item quietly claiming it. This is that edit. It exists because canon had three instruments' worth of prose -- Kunch's cut canes, the delta's habit of counting intervals in cane rather than in numbers -- and no way to say what an instrument is for.\n\nPassive, like `eat`, because that is the honest voice: a thing is played, it does not play. The active forms in this list are things an object does to something else -- a blade cuts, a rope binds -- and an instrument does nothing until somebody picks it up."
     }
   }
 }
