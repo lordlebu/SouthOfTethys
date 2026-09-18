@@ -1,0 +1,34 @@
+{
+  "id": "flora_wayside_knotgrass",
+  "type": "flora",
+  "name": "Wayside Knotgrass",
+  "aliases": [
+    "Doorstep grass",
+    "Trodden knot"
+  ],
+  "scientific": "Polygonum aviculare itineris",
+  "growth_form": "grass",
+  "habitats": [
+    "region_saraswati_delta",
+    "region_narmada_plateau",
+    "region_aravali"
+  ],
+  "uses": [
+    "physic",
+    "food"
+  ],
+  "notes": "The plant a path makes. It cannot compete anywhere the taller grasses are left alone, so it lives exactly where feet, wheels and hooves keep knocking everything else down -- a mat of wiry stems flat enough to be walked over without breaking. Where it thins out, the way has not been used this season.",
+  "canon": "secondary",
+  "sources": [
+    "Indian ethnobotany, adapted to canon"
+  ],
+  "biomes": [
+    "plains",
+    "settlement",
+    "coast"
+  ],
+  "placement": "flavour",
+  "rarity": "common",
+  "journal_prompt": "A wiry mat pressed into the middle of the path, greener where the feet go than on either side of it, which is the wrong way round until you think about why.",
+  "source_index": 116
+}
