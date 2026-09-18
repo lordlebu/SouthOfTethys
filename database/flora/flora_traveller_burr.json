@@ -1,0 +1,34 @@
+{
+  "id": "flora_traveller_burr",
+  "type": "flora",
+  "name": "Traveller's Burr",
+  "aliases": [
+    "Hem-burr",
+    "Fleece-thief"
+  ],
+  "scientific": "Xanthium itinerans",
+  "growth_form": "shrub",
+  "habitats": [
+    "region_saraswati_delta",
+    "region_gedrosian_desert",
+    "region_aravali"
+  ],
+  "uses": [
+    "physic",
+    "dye"
+  ],
+  "notes": "A shoulder-high weed whose seed case is a hooked burr, and whose whole method is other people's journeys. It does not grow where the wind blows; it grows where somebody walked, because a hem, a fleece or a dog carried it there and it dropped off when they stopped. A drover who has crossed the ford picks a dozen out of the animals on the far side, and plants next year's stand doing it.",
+  "canon": "secondary",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "biomes": [
+    "plains",
+    "settlement",
+    "desert"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "journal_prompt": "Hooked green cases at the height of a knee, and three of them already on your hem. You did not notice picking them up and you will not notice putting them down.",
+  "source_index": 117
+}

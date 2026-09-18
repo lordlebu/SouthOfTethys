@@ -1,0 +1,38 @@
+{
+  "id": "fauna_drovers_dog",
+  "type": "fauna",
+  "name": "Drover's Dog",
+  "aliases": [
+    "Road dog",
+    "Ford dog"
+  ],
+  "scientific": "Canis familiaris pastoralis",
+  "clade": "mammal",
+  "diet": "Omnivore",
+  "habitats": [
+    "region_aravali",
+    "region_narmada_plateau",
+    "region_saraswati_delta"
+  ],
+  "behaviour": [
+    "commensal",
+    "herd",
+    "guide"
+  ],
+  "notes": "Belongs to nobody in particular and to whichever string of animals is going the right way. It attaches itself at one camp and detaches at another, which over a season carries it further than any of the people it walked with. The drovers do not feed it and would notice at once if it were not there.",
+  "canon": "secondary",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "biomes": [
+    "plains",
+    "settlement",
+    "coast",
+    "hills"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "mood": "patient",
+  "journal_prompt": "It has been forty paces ahead since the ford and has not once looked back to check you are still coming, which is either trust or indifference and is probably both.",
+  "source_index": 260
+}
