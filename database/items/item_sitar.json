@@ -1,0 +1,24 @@
+{
+  "id": "item_sitar",
+  "type": "item",
+  "name": "Sitar",
+  "kind": "instrument",
+  "affords": [
+    "play",
+    "trade"
+  ],
+  "materials": [
+    "material_teak_timber",
+    "material_gourd_shell",
+    "material_sinew"
+  ],
+  "notes": "A long neck over a dried sky-balloon shell, with sinew strung the length of it and a second course of thinner strings underneath that nobody touches. Those are the point: they are not played, they are left to sound on their own when the strings above them do, and an instrument that answers itself is worth the year it takes to build.\n\nThe only instrument here that is somebody's trade rather than somebody's afternoon. A flute is cane and a morning; this is seasoned timber, a shell that had to be grown and dried, and a maker who has ruined several.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "secondary",
+  "sources": [
+    "Varuna's Field Diary design"
+  ],
+  "source_index": 77
+}

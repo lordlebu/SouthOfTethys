@@ -1,0 +1,26 @@
+{
+  "id": "recipe_reed_flute",
+  "type": "recipe",
+  "name": "Burning the holes in a cane",
+  "process": "process_carving",
+  "ingredients": [
+    {
+      "material": "material_bamboo_cane"
+    },
+    {
+      "item": "item_flint_knife",
+      "kept": true
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_reed_flute"
+    }
+  ],
+  "notes": "Burned rather than drilled. A bored hole splits the wall along the grain and the cane is finished; a hot point crushes the fibre instead and the edge stays.\n\nNamed as the flint knife rather than as `item_blade`, which is the prototype an edge inherits from and which nothing makes -- a recipe wanting one can never be performed.",
+  "canon": "inferred",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 83
+}

@@ -1,0 +1,29 @@
+{
+  "id": "recipe_cane_chime",
+  "type": "recipe",
+  "name": "Cutting a hand of canes to length",
+  "process": "process_carving",
+  "ingredients": [
+    {
+      "material": "material_bamboo_cane",
+      "count": 3
+    },
+    {
+      "material": "material_reed_fibre"
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_cane_chime"
+    }
+  ],
+  "notes": "Cut long and shorten to the note, because it only tunes upward. The binding is what makes it one instrument rather than three sticks.",
+  "canon": "inferred",
+  "sources": [
+    "Varuna's Field Diary design"
+  ],
+  "source_index": 84,
+  "taught_by": [
+    "npc_kunch"
+  ]
+}

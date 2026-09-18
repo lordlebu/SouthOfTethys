@@ -1,0 +1,22 @@
+{
+  "id": "item_reed_flute",
+  "type": "item",
+  "name": "Reed flute",
+  "kind": "instrument",
+  "affords": [
+    "play",
+    "carry"
+  ],
+  "materials": [
+    "material_bamboo_cane"
+  ],
+  "notes": "One length of cane, a notch to blow across and six holes burned rather than cut, because a drilled hole splits the wall and a burned one does not. The cheapest instrument there is and the only one a person makes for themselves on the walk -- an afternoon, and the cane came from the ground they were standing on.\n\nGoes flat when it is wet, which in the delta is most of the year, and everybody plays a little sharp to allow for it.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "secondary",
+  "sources": [
+    "inferred from canon geography"
+  ],
+  "source_index": 75
+}
