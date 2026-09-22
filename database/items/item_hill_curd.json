@@ -1,0 +1,18 @@
+{
+  "id": "item_hill_curd",
+  "type": "item",
+  "name": "Hill curd",
+  "kind": "food",
+  "affords": [
+    "eat"
+  ],
+  "materials": [
+    "material_sivatherium_milk"
+  ],
+  "notes": "Milk set overnight in a covered pot near the embers, sharp and thick enough to stand a spoon in. The herders carry it wrapped in leaves and eat it with parched grain; it keeps two days in the cold of the plateau and one anywhere else.\n\nA curd is proof that somebody stood beside a wild animal long enough to be given something, and went home and made supper of it.",
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design"
+  ],
+  "source_index": 78
+}

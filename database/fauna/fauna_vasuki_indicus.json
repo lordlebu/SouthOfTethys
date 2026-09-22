@@ -1,0 +1,37 @@
+{
+  "id": "fauna_vasuki_indicus",
+  "type": "fauna",
+  "name": "Vasuki",
+  "scientific": "Vasuki indicus",
+  "clade": "reptile",
+  "diet": "Carnivore",
+  "habitats": [
+    "region_gedrosian_desert",
+    "region_saraswati_delta"
+  ],
+  "behaviour": [
+    "constricting",
+    "solitary",
+    "basking"
+  ],
+  "related_species": [
+    "fauna_delta_reed_python",
+    "fauna_narmada_rock_python"
+  ],
+  "notes": "Eleven to fifteen metres, thick through as a man's chest, and no venom at all -- it is a madtsoiid, and it kills by holding. It lies up in the rock shade through the heat and moves at the edges of the day, which is when you find a track across a dune four hand-spans wide and no animal at the end of it.\n\nWhat it leaves is the skin. A snake this size sheds in one piece and the piece is longer than a boat, lying in the lee of a rock like something discarded rather than something lost. The caravan people do not hunt it and do not need to: they follow the sheds, and a serpent that has shed once will shed again in the same handful of places.",
+  "canon": "primary",
+  "sources": [
+    "Vasuki indicus, described from the Kutch lignite 2024",
+    "Varuna's Field Diary design"
+  ],
+  "biomes": [
+    "desert",
+    "hills"
+  ],
+  "placement": "encounter",
+  "rarity": "mythic",
+  "journal_prompt": "The track crosses the dune and does not stop, and it is as wide as both my hands laid end to end. I followed it to a rock shelf and found the skin instead of the animal -- whole, from jaw to tail, the eye-caps still in it, and longer than the boat we came down on.",
+  "mood": "uncanny",
+  "region": "gedrosian-taklamakan",
+  "source_index": 265
+}

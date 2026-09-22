@@ -1,0 +1,30 @@
+{
+  "id": "recipe_hill_curd",
+  "type": "recipe",
+  "name": "Setting the hill curd",
+  "process": "process_cooking",
+  "ingredients": [
+    {
+      "tag": "#milk",
+      "count": 2
+    },
+    {
+      "item": "item_cooking_pot",
+      "kept": true
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_hill_curd"
+    }
+  ],
+  "known_by": [
+    "maru"
+  ],
+  "notes": "Tagged `#milk` rather than naming the sivatherium, on the house rule: the day canon writes a second milking animal, this recipe already accepts it.",
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design"
+  ],
+  "source_index": 86
+}

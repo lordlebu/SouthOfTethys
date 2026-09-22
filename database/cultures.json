@@ -109,6 +109,11 @@
       "id": "tushara",
       "count": 0,
       "note": "The steppe people Guyuk was born to. She now carries `explorer`, which is a disposition rather than a birth, so nobody in canon currently holds this. The people are named across the prose and the declaration stays."
+    },
+    {
+      "id": "maru",
+      "count": 0,
+      "note": "The plateau herders, named for the language canon already gives them -- `maru` is the tongue Marn speaks and the vocabulary folder carries its words. Declared as a culture because a recipe needed to say whose knowledge it is: setting curd from a browsing animal is theirs, and 'harappan' would have been a lie about a people three hundred miles downriver.\n\nCount zero because culture sits on characters and canon's characters are elsewhere; the people are named through their language, their terraces and their herder."
     }
   ]
 }

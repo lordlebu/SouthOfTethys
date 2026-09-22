@@ -1,26 +1,26 @@
 {
   "description": "What canon's exported surface hashes to. Written by utils/check_export_boundary.py --update, and updated deliberately when a lore change is meant to reach the game.",
   "counts": {
-    "fauna": 234,
+    "fauna": 236,
     "flora": 112,
     "regions": 7,
     "field_maps": 4,
     "points_of_interest": 37,
     "npcs": 17,
-    "discoveries": 45,
-    "field_questions": 7,
+    "discoveries": 46,
+    "field_questions": 8,
     "vocabulary": 10,
-    "materials": 68,
-    "items": 78,
+    "materials": 71,
+    "items": 81,
     "processes": 17,
-    "recipes": 86,
+    "recipes": 89,
     "vehicles": 14
   },
   "sha256": {
-    "canon.lock.json": "ef60ea613c27fd0a8a52dc2cf3450c8664713129c8ff644290c56d2c99cff431",
-    "crafting.json": "fc4b26c90fcc9f4c44d2eb22aa5554ee756bfad4d5aeda547edce557d70e92a7",
-    "knowledge.json": "052c1f028688a04c3b732ac67de7b202d2d95be964c2c195fd76cf0efcac9ecb",
-    "places.json": "080f7e26c8da6d02341b927bad75c5b7a006b9a6aba934c97d5a1a3d9648575d",
-    "species.json": "5b92177a56e5c75d2af1553e0da7ce18f8cbf1efbd2101aaedf2c4f644e054a2"
+    "canon.lock.json": "381d15025546c7572eadef1f7b708f8e96a5c954aff54edc290d907ae5959d32",
+    "crafting.json": "0202a0a69b4ba98e7d7681ee7f31f01450e1570e8b7080958f4b665adfa15360",
+    "knowledge.json": "7f48aa7984af52aff862a12673a968b22ca692b261075df9175fad8faff3e857",
+    "places.json": "e3f43593877c4d27a2b6aad44aa9f0fa0a6dd023dc1692d7863e29ffb499d231",
+    "species.json": "8d8ec39ef6daa69a706309b757b3ede5adf0bc67a6d959798a5b52cea670793a"
   }
 }

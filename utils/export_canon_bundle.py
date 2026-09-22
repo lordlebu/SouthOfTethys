@@ -114,7 +114,20 @@ WITHHELD = ("canon", "sources")
 # Checked the way `withhold_lore_species` was before it withheld anything -- by reading the
 # consuming interfaces rather than by grepping for the word, because a field that is destructured
 # would not show up as `.notes` anywhere.
-WITHHELD_NOTES = ("discoveries", "field_questions", "vocabulary")
+#
+# **`recipes` is the fourth and it is the subtle one, because the game does map it.**
+# `making.ts` reads `r.notes` into `Recipe.description` exactly as it does for materials, items,
+# processes and vehicles -- so the first three's argument ("no field at all") does not apply and
+# it looks read. It is not. Every consumer of the `recipes` export filters by id, ingredients or
+# process: `crafting.ts` three times, `cooking.ts`, `making-chain.ts`, `using.ts`. Nothing renders
+# a recipe's description, where an *item's* description reaches the player through `using.ts` when
+# they eat or take a remedy, and a vehicle's through `vehicles.ts`. 6.8 KB across 86 recipes.
+#
+# The mapping is left alone on purpose. `description: r.notes ?? ''` still compiles and still
+# yields the empty string, so nothing in the game has to change for this and nothing breaks if a
+# panel later wants the text -- at which point this folder comes back off the list and costs its
+# 6.8 KB deliberately, which is the decision being made in the open rather than by omission.
+WITHHELD_NOTES = ("discoveries", "field_questions", "vocabulary", "recipes")
 
 
 def withhold_lore_species(folder: str, entities: list[dict]) -> list[dict]:
