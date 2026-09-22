@@ -997,6 +997,58 @@ This is recorded because the plan was approved with both sentences in it, and th
 resolved in a commit rather than out loud. Anyone reading that plan against the code will find the
 difference and should find this rather than assume an oversight.
 
+## Animals that move — settled 2026-09-22
+
+Four quests wanted an animal you can walk up to, and canon had never had one: a creature was a
+property of a tile, true of every matching tile at once and true of it for ever. Four calls came
+out of building it, and each overturned or narrowed something.
+
+**`milk` is a twenty-first material class.** `flesh` is "meat, fish and eggs" and every one of
+those ends an animal; `oil` is pressed seed and rendered fat, which is a thing done to a body. A
+milking leaves the animal standing and lets you come back tomorrow. That distinction is what a game
+without combat is built on, so it is a class rather than a stretched `oil` — and the class
+vocabulary is mirrored in `material.schema.json` and `recipe.schema.json`'s tag enum, both of which
+the lint checks.
+
+**Vasuki sheds; a viper is milked.** The 2024 Kutch madtsoiid has no venom apparatus, so asking it
+for venom was the one part of the ask the fiction would visibly strain against. Split across two
+animals instead: the shed skin is *found* rather than taken, which sidesteps doing anything to a
+living animal, and the venom comes off the desert vipers canon already had. The `poison` class then
+settles what venom is for and settles it narrowly — nothing can be made of a poison but medicine,
+because `affordances.json` has no word for harm — so the antivenin is the sanctioned use and a
+weapon is structurally unsayable.
+
+**The pet market is not a pet market.** The ask was to capture a frilled shringasaurus and sell it.
+"Catch" and "capture" are the two verbs this game removed, and `collection.ts` is deliberately not
+progression — a market that pays for captured animals points the one system built to be free of
+consequence at a reward. So `question_kept_animal` asks whether the animal *can* be kept and
+resolves that it cannot: the frill is full of vessels and is how it sheds heat, so a pen against a
+wall cooks it slowly. The Tide Market's ledger carries the same entry four times in nine years,
+always a juvenile, never a sale or a grown animal. A player who arrives meaning to sell one leaves
+having worked out that the trade cannot work. **No currency was invented and no barter counter was
+built** — the quest stopped needing one.
+
+**`maru` is a declared culture.** It was already a language with a word list and a herder, and a
+recipe needed to say whose knowledge it is. `harappan` would have been a lie about a people three
+hundred miles downriver.
+
+### What the gates could not see
+
+`check_playability.py` asks whether a material is obtainable *somewhere* — whether a species that
+yields it shares a biome with a map. Three materials passed that and were unobtainable in practice,
+because the game picks a tile's creature by rendezvous hash **weighted by rarity** and then rolls
+again on the material's own rarity, and the two multiply. Measured over twelve seeds: shed
+snakeskin and viper venom on **zero** tiles.
+
+Three separate causes, none of them a typo: a `mythic` animal yielding a `rare` material; a biome
+(`plains`) that the wrong map grows most of, which put a Narmada giraffid on 45 Dwarka tiles; and
+Dwarka growing **20 desert tiles out of 4096** while every venomous snake in canon is desert-only,
+which no rarity setting could fix and which widened `won_from` to all four vipers.
+
+The game side now carries a guard with a floor measured rather than picked. This is written down
+because the gate is not wrong — it answers the question it asks — and the next person to author a
+material won from an animal should know that question is narrower than it sounds.
+
 ## Security
 
 Two Hugging Face tokens were exposed during setup and must be treated as burned: one pasted
