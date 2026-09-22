@@ -6,14 +6,17 @@
     "poison"
   ],
   "won_from": [
-    "fauna_glass_scaled_viper"
+    "fauna_glass_scaled_viper",
+    "fauna_crimson_eyed_adder",
+    "fauna_dune_viper",
+    "fauna_taklamakan_sand_viper"
   ],
   "found_in": [
     "desert"
   ],
-  "rarity": "rare",
+  "rarity": "common",
   "renews": "slow",
-  "notes": "Taken from a glass-scaled viper held behind the head over the rim of a cup, a few drops at a time, and the animal is let go where it was found. Clear, faintly yellow, and it dries to a varnish. A milked viper needs weeks before it is worth milking again.\n\nThe only thing it can become is medicine: canon's affordance vocabulary has no word for harm, so the recipes that consume a poison are the ones that purify it -- which is what the tradition it comes from does with a venom.",
+  "notes": "Taken from a desert viper held behind the head over the rim of a cup, a few drops at a time, and the animal is let go where it was found. Clear, faintly yellow, and it dries to a varnish. Four serpents of the dry country give it and the caravan people do not much distinguish between them -- what matters is the milking, and a milked viper needs weeks before it is worth milking again.\n\nThe only thing it can become is medicine: canon's affordance vocabulary has no word for harm, so the recipes that consume a poison are the ones that purify it -- which is what the tradition it comes from does with a venom.",
   "canon": "primary",
   "sources": [
     "Varuna's Field Diary design"
