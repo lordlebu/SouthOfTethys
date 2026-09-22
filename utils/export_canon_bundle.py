@@ -98,6 +98,24 @@ UNINDEXED = 10**9
 # all four files, and gives back 60 KB -- appreciably more than the batch that forced it cost.
 WITHHELD = ("canon", "sources")
 
+# `notes` as well, for the three folders whose notes nothing reads.
+#
+# **Per-folder rather than global, because `notes` is play content in half the bundle and
+# authoring rationale in the other half.** `canon.ts` reads a species' notes as the fallback for
+# `journal_prompt`, and `making.ts` reads them as the description of every material, item,
+# process, recipe and vehicle -- five call sites. Adding `notes` to `WITHHELD` would silently
+# blank all of those.
+#
+# The three below are the other half. The game's `Discovery`, `FieldQuestion` and `Word`
+# interfaces in `src/content/knowledge.ts` have **no `notes` field at all**, so every byte was
+# inlined into the page by Vite and read by nothing: 11.3 KB across 45 discoveries, 1.3 KB across
+# 7 questions and 1.6 KB across 10 words.
+#
+# Checked the way `withhold_lore_species` was before it withheld anything -- by reading the
+# consuming interfaces rather than by grepping for the word, because a field that is destructured
+# would not show up as `.notes` anywhere.
+WITHHELD_NOTES = ("discoveries", "field_questions", "vocabulary")
+
 
 def withhold_lore_species(folder: str, entities: list[dict]) -> list[dict]:
     """Drop species the game can never place.
@@ -204,7 +222,8 @@ def build_bundle() -> tuple[dict[str, str], dict[str, int]]:
         for folder in folders:
             entities = load_folder(folder)
             entities = withhold_lore_species(folder, entities)
-            entities = [{k: v for k, v in e.items() if k not in WITHHELD} for e in entities]
+            drop = WITHHELD + (("notes",) if folder in WITHHELD_NOTES else ())
+            entities = [{k: v for k, v in e.items() if k not in drop} for e in entities]
             payload[folder] = entities
             counts[folder] = len(payload[folder])
         # The biome vocabulary belongs with places: it is what `seed_biomes` and `terrain`
