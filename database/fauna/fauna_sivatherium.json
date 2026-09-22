@@ -1,0 +1,35 @@
+{
+  "id": "fauna_sivatherium",
+  "type": "fauna",
+  "name": "Sivatherium",
+  "scientific": "Sivatherium giganteum",
+  "clade": "mammal",
+  "diet": "Herbivore",
+  "habitats": [
+    "region_narmada_plateau"
+  ],
+  "behaviour": [
+    "browsing",
+    "herding",
+    "unhurried"
+  ],
+  "related_species": [
+    "fauna_cloud_antelope"
+  ],
+  "notes": "A giraffid built like an ox: shoulder-high to a tall man, heavy in the chest, with two pairs of horns -- small and conical above the eyes, broad and palmate behind them, like a moose's carried on a giraffe's neck. It browses the hill margins in threes and fours, taking the high leaves nothing else reaches, and moves between two or three feeding grounds across a day.\n\nIt is not afraid of people and this is the whole of why it matters. The herders' word for it means something nearer \"the tall neighbour\" than \"the game\": a cow in milk will stand to be milked by somebody who has brought her something and is not in a hurry, which is a relationship rather than a hunt. The first canon giraffid, and the only animal in the record that gives without being ended.",
+  "canon": "primary",
+  "sources": [
+    "SouthOfTethys.txt",
+    "Varuna's Field Diary design"
+  ],
+  "biomes": [
+    "hills",
+    "forest"
+  ],
+  "placement": "encounter",
+  "rarity": "rare",
+  "journal_prompt": "Four horns, and the back pair are flat as a palm held open. She let me come inside ten feet and went on stripping the high branches, and the herder's girl walked straight up to her shoulder with a bowl as though to a byre.",
+  "mood": "gentle",
+  "region": "narmada-vindhya",
+  "source_index": 264
+}

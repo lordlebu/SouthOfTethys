@@ -63,6 +63,10 @@
       "label": "Flesh",
       "note": "Meat, fish and eggs. Named plainly rather than as `meat` so that fish and shellfish are obviously inside it -- a river culture eats far more of the second than the first."
     },
+    "milk": {
+      "label": "Milk",
+      "note": "Milk and what sets from it, taken from a living animal. Its own class rather than a `flesh` or an `oil`, and the distinction is the one this game is built on: `flesh` is \"meat, fish and eggs\" and every one of those ends an animal, where a milking leaves it standing and lets you come back tomorrow. That is the difference between a take and a harvest, and it is why milk is the material a wandering animal can give. `oil` is the pressed and rendered half -- seed oil and fat -- which is a thing done to a body rather than a thing a body offers."
+    },
     "oil": {
       "label": "Oil",
       "note": "Pressed seed oil and rendered fat. Burns, cooks, and waterproofs, which is three recipes' worth of reason to exist. Canon's mahua is already recorded as an oil tree."

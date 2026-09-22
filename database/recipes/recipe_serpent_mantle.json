@@ -1,0 +1,16 @@
+{
+  "id": "recipe_serpent_mantle",
+  "type": "recipe",
+  "name": "Oiling the shed",
+  "process": "process_tanning",
+  "ingredients": [
+    { "material": "material_shed_snakeskin", "count": 1 },
+    { "tag": "#oil", "count": 2 }
+  ],
+  "outputs": [{ "item": "item_serpent_mantle" }],
+  "known_by": ["harappan"],
+  "notes": "The skin is named exactly rather than tagged `#hide`: every other hide in canon comes off a dead animal and is tanned, and this one is a shed being softened. The same word for two different acts would let a mantle be made of goat.",
+  "canon": "primary",
+  "sources": ["Varuna's Field Diary design"],
+  "source_index": 88
+}

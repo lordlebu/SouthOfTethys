@@ -1,0 +1,23 @@
+{
+  "id": "material_sivatherium_milk",
+  "type": "material",
+  "name": "Sivatherium milk",
+  "classes": [
+    "milk"
+  ],
+  "won_from": [
+    "fauna_sivatherium"
+  ],
+  "found_in": [
+    "hills",
+    "forest"
+  ],
+  "rarity": "rare",
+  "renews": "fast",
+  "notes": "Thick, faintly sweet, and yellow rather than white from the leaves she browses. Taken from a cow that is standing willingly, which is the only way it is taken at all -- a sivatherium that does not want to be milked walks away, and there is no version of this where she is held.\n\nA cow in milk is in milk tomorrow. What is scarce is not the milk but the meeting: she is on one tile of a plateau, and she moves.",
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design"
+  ],
+  "source_index": 68
+}

@@ -1,0 +1,39 @@
+{
+  "id": "discovery_frill_in_hand",
+  "type": "discovery",
+  "name": "The Frill in Hand",
+  "discipline": "zoology",
+  "subject": "fauna_frilled_shringasaurus",
+  "found_at": [
+    "poi_tide_market",
+    "poi_caravan_camp"
+  ],
+  "levels": [
+    {
+      "entry": "There is a young shringasaurus in a pen behind the fish stalls, about the size of a large dog, and the frill is not grown -- a ridge of skin over the neck with the horns still soft under it."
+    },
+    {
+      "entry": "It is not thriving. The frill should be warm to the hand and thin enough to see the light through; this one is thick, dull and cool, and it holds the same corner of the pen all day facing the wall."
+    },
+    {
+      "entry": "The frill is not for show and not for shade alone. It is full of vessels and it is how the animal sheds heat -- which is why the adults hold open ground and do not shelter, and why one penned against a wall is slowly cooking in its own shade."
+    },
+    {
+      "entry": "So it cannot be kept anywhere it cannot walk away from the heat, which is to say it cannot be kept. Marn's people have a word, *bhar* -- a load an animal agreed to. The herders use it of a beast that carries. Nobody has ever used it of this one, and that is not an accident of vocabulary."
+    }
+  ],
+  "answers": [
+    "question_kept_animal"
+  ],
+  "related_discoveries": [
+    "discovery_market_ledger"
+  ],
+  "notes": "Written so the player reaches the mechanism before the verdict: the third rung is a fact about blood and heat, and the fourth is what that fact costs. Arriving at 'it cannot be kept' from the anatomy rather than from sentiment is the difference between this and a lecture.\n\nThe last rung reaches for `word_maru_bhar` -- 'a load an animal agreed to' -- rather than gating on it. The word is the map's existing name for the thing this whole quest is about, and the shringasaurus is the animal it has never been said of. Not a requirement, because the conclusion stands on the anatomy alone and a player who never met Marn should still reach it.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design"
+  ]
+}

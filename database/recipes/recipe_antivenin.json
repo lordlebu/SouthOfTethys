@@ -1,0 +1,17 @@
+{
+  "id": "recipe_antivenin",
+  "type": "recipe",
+  "name": "Drawing the venom",
+  "process": "process_purifying",
+  "ingredients": [
+    { "tag": "#poison", "count": 1 },
+    { "material": "material_neem_bark", "count": 2 },
+    { "item": "item_cooking_pot", "kept": true }
+  ],
+  "outputs": [{ "item": "item_antivenin" }],
+  "known_by": ["harappan"],
+  "notes": "The only thing canon's poison class permits: a recipe that consumes a poison to purify it. Tagged `#poison` so any venom canon writes later is already accepted, and the neem named exactly because the specific bark is the point rather than any bitter thing.",
+  "canon": "primary",
+  "sources": ["Varuna's Field Diary design"],
+  "source_index": 87
+}

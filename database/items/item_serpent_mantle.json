@@ -1,0 +1,20 @@
+{
+  "id": "item_serpent_mantle",
+  "type": "item",
+  "name": "Serpent mantle",
+  "kind": "textile",
+  "affords": [
+    "mark",
+    "shelter"
+  ],
+  "materials": [
+    "material_shed_snakeskin",
+    "material_mahua_oil"
+  ],
+  "notes": "A shed oiled soft and cut into a shoulder cloak, the pattern running unbroken from collar to hem because it came off one animal in one piece. It sheds rain and it is warm out of all proportion to its weight.\n\nIt tells anyone who sees it that you found a Vasuki shed and knew what to do with it, and it is a better night out of doors.",
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design"
+  ],
+  "source_index": 80
+}

@@ -1,0 +1,19 @@
+{
+  "id": "item_antivenin",
+  "type": "item",
+  "name": "Drawn antivenin",
+  "kind": "physic",
+  "affords": [
+    "heal"
+  ],
+  "materials": [
+    "material_viper_venom",
+    "material_neem_bark"
+  ],
+  "notes": "Venom cut with neem bark and worked over low heat until it will not kill, which the caravan people have done for longer than anyone here can account for and cannot explain. It is carried by everybody who walks the salt roads and used perhaps twice in a life.\n\nThe joke the Tide Market makes of it is that the cure and the poison come off the same animal on the same afternoon, and the only difference is an hour's work.",
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design"
+  ],
+  "source_index": 79
+}

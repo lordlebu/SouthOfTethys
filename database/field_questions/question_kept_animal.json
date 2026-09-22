@@ -1,0 +1,32 @@
+{
+  "id": "question_kept_animal",
+  "type": "field_question",
+  "question": "Can a frilled shringasaurus be kept?",
+  "discipline": "zoology",
+  "raised_at": "poi_tide_market",
+  "raised_by": "npc_sura",
+  "evidence": [
+    "discovery_market_ledger",
+    "discovery_frill_in_hand"
+  ],
+  "resolutions": [
+    {
+      "conclusion": "Yes, if it is taken young enough. The juvenile at the market is alive and eating, which settles it.",
+      "requires": ["discovery_frill_in_hand"],
+      "sound": false,
+      "revisit": "It is eating, but it is eating less each week, and the ledger has the same entry four times in nine years -- always a juvenile, never the same one twice.",
+      "revisit_after": "discovery_market_ledger"
+    },
+    {
+      "conclusion": "No. They are bought young four or five times a decade and none has lived two years; the ledger records the purchases and never a sale, a death or a grown animal. It is not a pet that keeps escaping. It is an animal that does not survive being kept, bought again each time by somebody who was not told.",
+      "requires": ["discovery_market_ledger", "discovery_frill_in_hand"],
+      "sound": true
+    }
+  ],
+  "local_knowledge": "The drovers will not take one on the caravan at any price and give no reason beyond that it is bad luck on the road -- which is the right answer arrived at from the wrong direction, and four generations quicker than the ledger arrives at it.",
+  "academic_hypothesis": "A Narmada zoology would say the animal is territorial and solitary and therefore unsuited to confinement, which is true, correctly reasoned, and stops one step short: it explains the distress and not the deaths.",
+  "notes": "The question the Tide Market's ledger was waiting for. Deliberately answerable only by reading a merchant's accounts against the animal in front of you -- neither half settles it, which is this map's argument about local knowledge being right without being able to say why.\n\nIt is also the quest's off-ramp from capture. A player who arrives meaning to sell one leaves having worked out that the trade cannot work, and the thing to do with the juvenile is take it back.",
+  "epochs": ["epoch_post_cataclysm"],
+  "canon": "primary",
+  "sources": ["Varuna's Field Diary design"]
+}
