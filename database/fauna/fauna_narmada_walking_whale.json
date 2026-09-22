@@ -1,0 +1,34 @@
+{
+  "id": "fauna_narmada_walking_whale",
+  "type": "fauna",
+  "name": "Narmada Walking Whale",
+  "scientific": "Ambulocetus narmadensis",
+  "clade": "mammal",
+  "diet": "Carnivore",
+  "habitats": [
+    "region_narmada_plateau"
+  ],
+  "behaviour": [
+    "wading",
+    "solitary",
+    "ambush"
+  ],
+  "related_species": [
+    "fauna_tethys_river_dolphin"
+  ],
+  "notes": "A whale with legs, in a river, eight hundred miles from any sea. Longer than a man is tall and heavier than a bullock, with the short thick limbs of something that swims better than it walks and walks well enough to leave the water. It hunts the shallows at the bend below the quarry, lying still with only the long jaw under the surface. The archive holds no specimen and no account of one; the quarry face holds the ash band that buried its relatives, nine inches of it. It is the animal the record does not contain, still standing in the river the record was cut from.",
+  "canon": "primary",
+  "sources": [
+    "Varuna's Field Diary design"
+  ],
+  "biomes": [
+    "river",
+    "hills"
+  ],
+  "placement": "encounter",
+  "rarity": "mythic",
+  "journal_prompt": "It came out of the water on legs. Not flippers used as legs -- legs, with feet, and it put its weight on them one at a time the way a heavy animal does, and then it turned its head and the head was a whale's.",
+  "mood": "patient",
+  "region": "narmada-vindhya",
+  "source_index": 263
+}
