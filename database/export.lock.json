@@ -17,10 +17,10 @@
     "vehicles": 14
   },
   "sha256": {
-    "canon.lock.json": "ddfbd3596a488d5d27bc51188df0ab96805dc946afcb0734f72180b33d85d0a0",
+    "canon.lock.json": "24a769ec2821602eb54f54ba756a2a66b2072d552c5a0ee2cff2571efa1bab2b",
     "crafting.json": "fc4b26c90fcc9f4c44d2eb22aa5554ee756bfad4d5aeda547edce557d70e92a7",
     "knowledge.json": "e00f4a26a59234032f54a8319a5236a81fc99bc4b1b6df852c0768942deed58a",
     "places.json": "080f7e26c8da6d02341b927bad75c5b7a006b9a6aba934c97d5a1a3d9648575d",
-    "species.json": "cc69f7845e4e0ae8be4f715aba218f73290b1a513f979ac28f4e1b1c6e9f4396"
+    "species.json": "5b92177a56e5c75d2af1553e0da7ce18f8cbf1efbd2101aaedf2c4f644e054a2"
   }
 }

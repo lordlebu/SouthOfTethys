@@ -16,14 +16,13 @@
   "related_species": [
     "fauna_tethys_river_dolphin"
   ],
-  "notes": "A whale with legs, in a river, eight hundred miles from any sea. Longer than a man is tall and heavier than a bullock, with the short thick limbs of something that swims better than it walks and walks well enough to leave the water. It hunts the shallows at the bend below the quarry, lying still with only the long jaw under the surface. The archive holds no specimen and no account of one; the quarry face holds the ash band that buried its relatives, nine inches of it. It is the animal the record does not contain, still standing in the river the record was cut from.",
+  "notes": "A whale with legs, in a river, eight hundred miles from any sea. Longer than a man is tall and heavier than a bullock, with the short thick limbs of something that swims better than it walks and walks well enough to leave the water. It hunts the shallows at the bend below the quarry, lying still with only the long jaw under the surface. It hauls out on the bank to rest and to move between pools, but it does not leave the water for long: the legs carry it well enough over gravel and badly over anything else. The archive holds no specimen and no account of one; the quarry face holds the ash band that buried its relatives, nine inches of it. It is the animal the record does not contain, still standing in the river the record was cut from.",
   "canon": "primary",
   "sources": [
     "Varuna's Field Diary design"
   ],
   "biomes": [
-    "river",
-    "hills"
+    "river"
   ],
   "placement": "encounter",
   "rarity": "mythic",
