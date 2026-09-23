@@ -1049,6 +1049,41 @@ The game side now carries a guard with a floor measured rather than picked. This
 because the gate is not wrong — it answers the question it asks — and the next person to author a
 material won from an animal should know that question is narrower than it sounds.
 
+## A dugout at Lothal — settled 2026-09-23
+
+Rivers are becoming slow going on foot (the game's *Roads and Wet Ground* plan: travel cost 3,
+where it was 1, the same as plains). That collides with Lothal's thesis, which is that the delta
+is walked by following the channels — its route easing turns marsh *into* river on purpose. Rather
+than make Lothal an exception to the river rule, Lothal gets a boat: on foot the channels are hard,
+in a dugout they are the fastest ground on the map, and "follow the water" becomes literal.
+
+**The boat was already canon.** `vehicle_log_dugout` — one trunk, burnt and adzed hollow — crosses
+`river`, `wetland` and `coast`. Nothing new was authored except the fact that one is *here*.
+
+**That fact is a noun, so it is canon's: `vehicles` on a field map.** "There are dugouts at
+Lothal" says what exists; boarding, steering, speed and mooring say what a player does. The field
+is optional, absent means none, and only Lothal carries it.
+
+**The calls, so the next reader does not have to reconstruct them:**
+
+- **It is presence, not an unlock and not a recipe.** A listed vehicle is lying ready when the
+  traveller arrives. An unlisted one still exists and can still be built where the game supports
+  making. Reading the list as "the only craft allowed here" would be wrong.
+- **Kept in the kit, once found.** Decided by the owner for the game: after stepping ashore the
+  dugout is carried rather than left tied up, so it can be launched from any bank the map allows.
+  That is the *kit* model — fixed, never dropped, never managed — and not an inventory. It is a
+  game rule, and canon records it here only so the field is not later mistaken for "one boat at
+  one mooring".
+- **Scoped to the map that lists it.** The kit does not carry Lothal's dugout onto Dwarka. A map
+  that should have one says so in its own `vehicles`.
+- **Guarded against the silent failure.** `lint_story.py` refuses an id that is not a vehicle, and
+  a vehicle none of whose `crosses` biomes is in the map's `seed_biomes`. Without that, a boat on a
+  dry map is valid in both files and simply never offered — the same between-the-files shape as a
+  material gathered where its source never lives.
+- **Canon lands first.** The exporter carries the field in `places.json` unchanged, and the game's
+  adapter reads it. `proportion` shipped the other way round once — the game reading a field that
+  existed only in a working tree here — and this is ordered to avoid repeating that.
+
 ## Security
 
 Two Hugging Face tokens were exposed during setup and must be treated as burned: one pasted

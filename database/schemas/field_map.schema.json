@@ -177,6 +177,16 @@
         "portrait"
       ],
       "description": "The shape of the ground, as distinct from its size (`scale`) or its form (`relief`). Absent means square, which is what every map was until a crossing needed otherwise.\n\n`portrait` is for a country that is walked in one direction. The Aravali is a strait: stony shore, water, islands, far shore, in that order, and the whole of it is the journey from one side to the other. Drawn square, the sea has to be wide enough to be a sea in both directions at once, which leaves the shores too thin to hold any relief and the islands too close together to read as two. Drawn tall, the crossing has room to be long without the country having to be wide.\n\nIt is a fact about the place rather than about the screen. A delta spreads and a plateau sits; a crossing runs."
+    },
+    "vehicles": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^vehicle_[a-z0-9_]+$"
+      },
+      "description": "Craft that are simply *here* on this map, lying ready for the traveller from the first morning -- the dugout moored at Lothal, and nothing else yet. vehicle ids, from database/vehicles/.\n\n**What it means, exactly.** A vehicle listed here is part of the country, the way a ford or a landing is: people on this map move this way, and a stranger can too. It is a noun -- *there are dugouts at Lothal* -- so it lives in canon. Everything about using one is a verb and belongs to the game: where it is moored, how boarding works, how fast it goes, and whether the traveller keeps it after stepping ashore.\n\n**What it does not mean.** It is not a recipe and not an unlock. A vehicle absent from this list still exists in canon and can still be built through its `built_by` process where the game supports making; this list only says which ones are already on the water when the traveller arrives. It is also not a claim that the craft works everywhere on the map: a vehicle carries only over its own `crosses` biomes, and the game enforces that.\n\n**Absent means none**, which is what every map was until Lothal. Do not add an empty list.\n\n**Guard.** `lint_story.py` refuses an id here that is not a vehicle, and refuses a vehicle none of whose `crosses` biomes appears in this map's `seed_biomes` -- a boat on a map with no water it can float on is a mistake, and it would ship silently because the game would simply never offer it.\n\nAdded for the dugout on Lothal: the delta is walked by following the channels, and on foot a river is slow going. See docs/decisions.md, *A dugout at Lothal*."
     }
   },
   "additionalProperties": false

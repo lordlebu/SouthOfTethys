@@ -607,6 +607,39 @@ def main() -> int:
                 f"either the material or the species is wrong about where it is"
             )
 
+    # --- a field map's vehicles are vehicles, and can float on it -------------------------
+    #
+    # `vehicles` on a field map says which craft are simply *there* when the traveller arrives
+    # -- the dugout at Lothal. The generic reference check already proves each id exists; it
+    # cannot prove the id is a vehicle, or that the vehicle has anything to travel on here.
+    #
+    # The second is the one worth a rule. A vehicle carries only over its own `crosses` biomes,
+    # so a boat listed on a map whose palette holds none of them is authored but unusable -- and
+    # it fails silently, because the game simply never finds water to launch it on. The same
+    # shape as the material gathered where its source never lives: each file is right on its
+    # own, and the contradiction exists only between them.
+    #
+    # `seed_biomes` is the palette, not a promise every biome appears -- but a palette without
+    # the biome is a promise it does not, which is the direction this checks.
+    for eid, (path, payload) in sorted(entities.items()):
+        if path.parent.name != "field_maps":
+            continue
+        palette = set(payload.get("seed_biomes") or [])
+        for vid in payload.get("vehicles") or []:
+            found = entities.get(vid)
+            if found is None:
+                continue  # the reference check reports it
+            vpath, vehicle = found
+            if vpath.parent.name != "vehicles":
+                errors.append(f"field_maps/{path.name}: vehicles lists '{vid}', which is not a vehicle")
+                continue
+            if not palette & set(vehicle.get("crosses") or []):
+                errors.append(
+                    f"field_maps/{path.name}: vehicles lists '{vid}', which crosses "
+                    f"{', '.join(vehicle.get('crosses') or []) or 'nothing'} -- none of them is "
+                    f"in this map's seed_biomes, so it could never be launched here"
+                )
+
     # --- affordances ------------------------------------------------------------------
     #
     # Nothing carries `affords` yet -- items land on day 2 -- but the file is written and the

@@ -366,6 +366,25 @@ does not name the vehicle back** -- one-directional, so the two cannot drift.
 **Date the machines.** `epochs` absent means every epoch, which is right for a raft and badly
 wrong for a ground-effect craft.
 
+**Putting one on a map is a separate fact, and it lives on the map.** A vehicle entity says what a
+craft *is*; it never says where one is lying. When a map's people move a particular way and a
+stranger arriving there could too, list the vehicle on the **field map**:
+
+```json
+"vehicles": ["vehicle_log_dugout"]
+```
+
+Only Lothal carries it, for the dugout. Three things to know before adding another:
+
+- **It means "already there", not "can be built".** A vehicle absent from the list still exists
+  and can still be made through its `built_by` process where the game supports making.
+- **The craft must be able to float on the map.** At least one of its `crosses` biomes has to be
+  in the map's `seed_biomes`, and the lint refuses one that is not -- a boat on dry country would
+  otherwise ship silently and never be offered.
+- **How it is used is the game's.** Where it is moored, how boarding works, its speed, and that the
+  traveller keeps it in the kit after stepping ashore are all play, and none of it is written here.
+  Absent means none; do not write an empty list. See `docs/decisions.md`, *A dugout at Lothal*.
+
 A **foodway** is what a dish *means* -- whose it is, when it is eaten, what it marks -- and it
 is **not exported**. The edible half is an `item` and ships; this is a fact about the Harappans
 and sits beside mythology. `occasion` is the load-bearing field: a dish with no occasion is a
