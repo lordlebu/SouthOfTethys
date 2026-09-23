@@ -381,8 +381,8 @@ Only Lothal carries it, for the dugout. Three things to know before adding anoth
 - **The craft must be able to float on the map.** At least one of its `crosses` biomes has to be
   in the map's `seed_biomes`, and the lint refuses one that is not -- a boat on dry country would
   otherwise ship silently and never be offered.
-- **How it is used is the game's.** Where it is moored, how boarding works, its speed, and that the
-  traveller keeps it in the kit after stepping ashore are all play, and none of it is written here.
+- **How it is used is the game's.** How boarding works, its speed, and that the traveller has it
+  in the kit from the first morning are all play, and none of it is written here.
   Absent means none; do not write an empty list. See `docs/decisions.md`, *A dugout at Lothal*.
 
 A **foodway** is what a dish *means* -- whose it is, when it is eaten, what it marks -- and it
