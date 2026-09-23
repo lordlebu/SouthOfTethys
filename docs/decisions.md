@@ -1069,11 +1069,13 @@ is optional, absent means none, and only Lothal carries it.
 - **It is presence, not an unlock and not a recipe.** A listed vehicle is lying ready when the
   traveller arrives. An unlisted one still exists and can still be built where the game supports
   making. Reading the list as "the only craft allowed here" would be wrong.
-- **Kept in the kit, once found.** Decided by the owner for the game: after stepping ashore the
-  dugout is carried rather than left tied up, so it can be launched from any bank the map allows.
-  That is the *kit* model — fixed, never dropped, never managed — and not an inventory. It is a
-  game rule, and canon records it here only so the field is not later mistaken for "one boat at
-  one mooring".
+- **In the kit from the first morning.** Decided by the owner for the game, and revised once:
+  the first ruling had the dugout found moored and then kept; the second, which shipped, has it in
+  the kit from the start on a map that lists it. Stepping from any bank into the river boards it,
+  with no button, and stepping onto dry land or a bridge leaves it. That is the *kit* model —
+  fixed, never dropped, never managed — and not an inventory. It is a game rule (the game's
+  `game/afloat.ts`), and canon records it here only so the field is not later mistaken for "one
+  boat at one mooring" or for something the traveller has to earn.
 - **Scoped to the map that lists it.** The kit does not carry Lothal's dugout onto Dwarka. A map
   that should have one says so in its own `vehicles`.
 - **Guarded against the silent failure.** `lint_story.py` refuses an id that is not a vehicle, and
