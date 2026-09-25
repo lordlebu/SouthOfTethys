@@ -1086,6 +1086,34 @@ is optional, absent means none, and only Lothal carries it.
   adapter reads it. `proportion` shipped the other way round once — the game reading a field that
   existed only in a working tree here — and this is ordered to avoid repeating that.
 
+## Strangers' names, and whose events are whose — settled 2026-09-25
+
+The game put strangers on every road (the carriers, drovers and pilgrims in its
+`content/travellers.ts`) and needed to call them something. A name is a noun, so it is canon's.
+
+- **Given names live on the culture.** `harappan`, `kia` and `maru` each carry twelve
+  `given_names` in `database/cultures.json`: the three peoples canon has alive on the field maps
+  in `epoch_post_cataclysm`. Silvershore stragglers and Tamralinga traders are also of this era
+  and carry none yet; nobody asked for them to be met.
+- **Written in each people's sound, and checked against everybody.** Harappan codas like Kavik
+  and Orek, Kia clipped like Bekh and Thrali, Maru nasal like Moonj and Marn. Every name was
+  grepped against canon and the game first. Three near-misses were changed: Pila and Ilu beside
+  Ila, Saru beside Sura, Kesh beside the Mask of Vaṛkesh. The lint now refuses a given name that
+  is a word in any entity's name, or that two peoples share.
+- **Ungendered, deliberately.** Canon's own people's names carry no gender, and the game's face
+  pool is split by gender while its prose calls every stranger *they*. A gendered name list would
+  be the one place those two could contradict each other.
+- **Exported as `peoples` in `places.json`**, only the cultures that carry names. The other two
+  dozen cultures are lore the game never reads, and the bundle budget is a lore/play split.
+  Bumped to 2.29.0 because the bundle's bytes changed.
+
+**Recorded, not built: authored game events.** The owner ruled that an event true of the world
+(a dream the delta has, a visitor with a question) is canon's, and one that happens to one
+player is the game's. When the first is authored it needs a new entity type, and **`event_` is
+taken**: it is this repository's timeline history, 37 entities with `successors` edges the
+timeline draws. A game-facing type must use another name, so the timeline and the road never
+share a prefix.
+
 ## Security
 
 Two Hugging Face tokens were exposed during setup and must be treated as burned: one pasted

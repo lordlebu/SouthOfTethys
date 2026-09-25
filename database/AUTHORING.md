@@ -433,6 +433,14 @@ Shattering is a different claim, and canon should say which it means. Write the 
 own character with `reincarnation_of` naming the earlier one. Two entities and a link says it;
 one entity in five events across four eras does not.
 
+**Somebody nobody wrote down gets a name from their people, not from you.** The game meets
+strangers on the road -- carriers, drovers, pilgrims -- who are not characters and never will be.
+Their names come from `given_names` on their culture in `database/cultures.json`, and only the
+three peoples alive on the field maps in `epoch_post_cataclysm` carry a list: `harappan`, `kia`
+and `maru`. To add a name, add it there, in that people's sound. The lint refuses one that is
+already a word in any entity's name, or that two peoples share -- so a given name can never turn
+out to be somebody who already exists. Names are ungendered, as canon's own people's are.
+
 **If it acts, it is a character.** A `mythology_` entity holds a name, a domain and an aspect --
 it is a story told, not somebody who was there. The moment it negotiates, travels or is named a
 participant, it belongs in `characters/`. This has happened twice, to Owlman and to the Ammonite

@@ -5,7 +5,21 @@
   "cultures": [
     {
       "id": "harappan",
-      "count": 11
+      "count": 11,
+      "given_names": [
+        "Tharek",
+        "Mehrun",
+        "Orun",
+        "Saalik",
+        "Rethik",
+        "Daavik",
+        "Veren",
+        "Ishkal",
+        "Naaren",
+        "Pethar",
+        "Oshen",
+        "Iskaa"
+      ]
     },
     {
       "id": "explorer",
@@ -14,7 +28,21 @@
     },
     {
       "id": "kia",
-      "count": 5
+      "count": 5,
+      "given_names": [
+        "Dakh",
+        "Uvi",
+        "Nesh",
+        "Thesk",
+        "Rekh",
+        "Nakh",
+        "Vaani",
+        "Ekhi",
+        "Tavi",
+        "Hura",
+        "Othu",
+        "Brekh"
+      ]
     },
     {
       "id": "silvershore",
@@ -113,7 +141,22 @@
     {
       "id": "maru",
       "count": 0,
-      "note": "The plateau herders, named for the language canon already gives them -- `maru` is the tongue Marn speaks and the vocabulary folder carries its words. Declared as a culture because a recipe needed to say whose knowledge it is: setting curd from a browsing animal is theirs, and 'harappan' would have been a lie about a people three hundred miles downriver.\n\nCount zero because culture sits on characters and canon's characters are elsewhere; the people are named through their language, their terraces and their herder."
+      "note": "The plateau herders, named for the language canon already gives them -- `maru` is the tongue Marn speaks and the vocabulary folder carries its words. Declared as a culture because a recipe needed to say whose knowledge it is: setting curd from a browsing animal is theirs, and 'harappan' would have been a lie about a people three hundred miles downriver.\n\nCount zero because culture sits on characters and canon's characters are elsewhere; the people are named through their language, their terraces and their herder.",
+      "given_names": [
+        "Bhoon",
+        "Kherne",
+        "Lenje",
+        "Anje",
+        "Okre",
+        "Dharn",
+        "Venj",
+        "Dhune",
+        "Oonu",
+        "Kalje",
+        "Nurme",
+        "Palke"
+      ]
     }
-  ]
+  ],
+  "given_names_note": "Given names a people uses, for the people the game meets without canon having written them -- the carriers, drovers and pilgrims on the road. Declared on the culture so a name is a value of a people rather than an invention of the engine: the game deals them, canon owns them. Only the three peoples alive on the field maps in epoch_post_cataclysm carry a list. Names are ungendered, as canon's own people's names are; nothing here decides who a stranger is beyond what they are called. Each list was written in its people's sound -- Harappan codas in -ek, -ik, -en, -ar and doubled vowels (Kavik, Orek, Aasha); Kia short with -kh, -sh or an open vowel (Bekh, Hesh, Thrali); Maru nasal and rounded (Moonj, Marn, Okhi) -- and checked against every person, place and word in canon so none is somebody who already exists. The lint refuses a given name that is."
 }
