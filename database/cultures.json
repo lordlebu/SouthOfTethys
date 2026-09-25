@@ -19,7 +19,9 @@
         "Pethar",
         "Oshen",
         "Iskaa"
-      ]
+      ],
+      "dress": "Cotton, worn wrapped and draped, and dyed -- madder red, indigo, turmeric, ochre -- as often as it is left the colour of the boll. Harappan settlers wear their wealth where it can be seen, when they have any: a little gold or silver at the ear, the wrist or the nose, and beads of lapis lazuli, carnelian and other stones brought a long way. The families take wives from beyond their own realm, so a Harappan household is often of more than one people to look at, and nobody there thinks it worth remarking on.",
+      "art_reference": "Reference only, for whoever paints them; not a claim about any people living today. Faces and builds after the peoples of Gujarat, Sindh and Punjab. Some women, married in from beyond the realm, after the peoples of Bengal and Odisha."
     },
     {
       "id": "explorer",
@@ -42,7 +44,9 @@
         "Hura",
         "Othu",
         "Brekh"
-      ]
+      ],
+      "dress": "The delta's own people, and they dress like it: light wrapped cloth dyed in the marsh's colours, and flowers -- worn in the hair, behind the ear, strung as a garland. Hair is dressed with care and at length, coiled, braided and pinned with shell and bone, by men and women both. Their women are full-figured, and nobody among the Kia would think that needed saying.",
+      "art_reference": "Reference only, for whoever paints them; not a claim about any people living today. Faces and builds after the peoples of Maharashtra, the Konkan coast and Kerala; some after Austronesian peoples, as far as the Philippines."
     },
     {
       "id": "silvershore",
@@ -159,8 +163,11 @@
         "Kolu",
         "Dholu",
         "Solu"
-      ]
+      ],
+      "dress": "Newer to these roads than the delta's peoples, and nomads still: they dress for the upland and the cold night rather than the marsh. Animal fur and skin -- goat, sheep, whatever the herd gave -- worn as vests, cloaks and collars over wool and felt, with dyed cloth where they have traded for it.",
+      "art_reference": "Reference only, for whoever paints them; not a claim about any people living today. Faces and builds after the peoples of Himachal and Nepal; some after Tibetan peoples. Not everybody among them should look East Asian."
     }
   ],
-  "given_names_note": "Given names a people uses, for the people the game meets without canon having written them -- the carriers, drovers and pilgrims on the road. Declared on the culture so a name is a value of a people rather than an invention of the engine: the game deals them, canon owns them. Only the three peoples alive on the field maps in epoch_post_cataclysm carry a list. Names are ungendered, as canon's own people's names are; nothing here decides who a stranger is beyond what they are called. Each list was written in its people's sound -- Harappan codas in -ek, -ik, -en, -ar and doubled vowels (Kavik, Orek, Aasha); Kia short with -kh, -sh or an open vowel (Bekh, Hesh, Thrali); Maru nasal and rounded (Moonj, Marn, Okhi) -- and checked against every person, place and word in canon so none is somebody who already exists. The lint refuses a given name that is."
+  "given_names_note": "Given names a people uses, for the people the game meets without canon having written them -- the carriers, drovers and pilgrims on the road. Declared on the culture so a name is a value of a people rather than an invention of the engine: the game deals them, canon owns them. Only the three peoples alive on the field maps in epoch_post_cataclysm carry a list. Names are ungendered, as canon's own people's names are; nothing here decides who a stranger is beyond what they are called. Each list was written in its people's sound -- Harappan codas in -ek, -ik, -en, -ar and doubled vowels (Kavik, Orek, Aasha); Kia short with -kh, -sh or an open vowel (Bekh, Hesh, Thrali); Maru nasal and rounded (Moonj, Marn, Okhi) -- and checked against every person, place and word in canon so none is somebody who already exists. The lint refuses a given name that is.",
+  "dress_note": "`dress` is canon: how a people clothes and adorns itself, which the game's art follows. `art_reference` is not canon about the world -- it names real-world peoples as a painter's reference for faces and builds, and nothing in the world of this game is those peoples. Only the three peoples alive on the field maps in epoch_post_cataclysm carry either, because only they are painted. Added at the owner's direction, 2026-09-25."
 }
