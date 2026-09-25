@@ -1091,8 +1091,8 @@ is optional, absent means none, and only Lothal carries it.
 The game put strangers on every road (the carriers, drovers and pilgrims in its
 `content/travellers.ts`) and needed to call them something. A name is a noun, so it is canon's.
 
-- **Given names live on the culture.** `harappan`, `kia` and `maru` each carry twelve
-  `given_names` in `database/cultures.json`: the three peoples canon has alive on the field maps
+- **Given names live on the culture.** `harappan` and `kia` carry twelve `given_names` and
+  `maru` sixteen -- Malu, Kolu, Dholu and Solu added at the owner's request -- in `database/cultures.json`: the three peoples canon has alive on the field maps
   in `epoch_post_cataclysm`. Silvershore stragglers and Tamralinga traders are also of this era
   and carry none yet; nobody asked for them to be met.
 - **Written in each people's sound, and checked against everybody.** Harappan codas like Kavik
