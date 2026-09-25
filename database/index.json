@@ -1,5 +1,5 @@
 {
-  "version": "2.29.0",
+  "version": "2.30.0",
   "description": "SouthOfTethys canonical entity index",
   "counts": {
     "artifacts": 5,
@@ -15,7 +15,7 @@
     "items": 81,
     "materials": 71,
     "mythology": 10,
-    "npcs": 17,
+    "npcs": 18,
     "places": 42,
     "points_of_interest": 37,
     "processes": 17,
@@ -785,6 +785,7 @@
     ],
     "npcs": [
       "npc_anu",
+      "npc_asura_princess",
       "npc_bekh",
       "npc_dala",
       "npc_hesh",
