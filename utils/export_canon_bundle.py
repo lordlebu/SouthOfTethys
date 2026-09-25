@@ -227,6 +227,7 @@ def build_bundle() -> tuple[dict[str, str], dict[str, int]]:
     """
     index = json.loads((DB / "index.json").read_text(encoding="utf-8"))
     biomes = json.loads((DB / "biomes.json").read_text(encoding="utf-8"))
+    cultures = json.loads((DB / "cultures.json").read_text(encoding="utf-8"))
     files: dict[str, str] = {}
     counts: dict[str, int] = {}
 
@@ -243,6 +244,14 @@ def build_bundle() -> tuple[dict[str, str], dict[str, int]]:
         # are drawn from, and the game needs to know which of them it can render.
         if filename == "places.json":
             payload["biomes"] = biomes["biomes"]
+            # The peoples a stranger can belong to, with the names they give their children. Only
+            # cultures that carry `given_names` cross: the other two dozen are lore the game never
+            # reads, and the bundle budget is a lore/play split.
+            payload["peoples"] = [
+                {"id": c["id"], "given_names": c["given_names"]}
+                for c in cultures["cultures"]
+                if c.get("given_names")
+            ]
         # Canon's own answer to the one rule the game reimplements. See `resolved_affordances`.
         if filename == "crafting.json":
             payload["conformance"] = {"affords": resolved_affordances(payload["items"])}

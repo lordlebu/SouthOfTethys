@@ -879,6 +879,45 @@ def main() -> int:
                         f"database/cultures.json"
                     )
 
+        # --- given names: nobody who already exists -----------------------------------
+        #
+        # A culture may carry `given_names`, the names the game deals to strangers of that
+        # people. A given name that is already somebody -- an NPC, a character, a place --
+        # would make two people out of one, which is the failure a backstory once nearly
+        # caused by spelling the Jharwa as the Jhawara. So a given name must be nobody yet,
+        # appear under one people only, and be a plain capitalised word the prose can use.
+        taken: dict[str, str] = {}
+        for eid, (path, payload) in entities.items():
+            name = payload.get("name")
+            if isinstance(name, str) and name:
+                for word in re.findall(r"[A-Za-z][A-Za-z'-]+", name):
+                    taken.setdefault(word.lower(), eid)
+        seen_names: dict[str, str] = {}
+        given_total = 0
+        for culture in load(cultures_path).get("cultures", []):
+            for given in culture.get("given_names") or []:
+                given_total += 1
+                if not isinstance(given, str) or not re.fullmatch(r"[A-Z][a-z]+", given):
+                    errors.append(
+                        f"cultures.json: given name {given!r} of '{culture['id']}' is not one "
+                        f"capitalised word"
+                    )
+                    continue
+                key = given.lower()
+                if key in taken:
+                    errors.append(
+                        f"cultures.json: given name '{given}' of '{culture['id']}' is already "
+                        f"a word in the name of {taken[key]}"
+                    )
+                if key in seen_names:
+                    errors.append(
+                        f"cultures.json: given name '{given}' is listed under both "
+                        f"'{seen_names[key]}' and '{culture['id']}'"
+                    )
+                seen_names[key] = culture["id"]
+        if given_total:
+            print(f"  names      : {given_total} given names, none of them anybody yet")
+
     # --- and so is species -------------------------------------------------------------
     #
     # The same gap `culture` had, one field over: 12 free-text values across 52 characters with
