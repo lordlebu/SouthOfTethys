@@ -1114,6 +1114,25 @@ taken**: it is this repository's timeline history, 37 entities with `successors`
 timeline draws. A game-facing type must use another name, so the timeline and the road never
 share a prefix.
 
+## How the three peoples look — settled 2026-09-25
+
+Until now canon recorded no appearance for anybody, and the game's art obeyed that literally:
+every portrait and face prompt asked for plain undyed cloth and no jewellery, because anything else
+would have been the art inventing what canon had not said. The strangers on the road wear dyed
+cloth, so the prompts and the game had quietly come to disagree. The owner has now said how the
+three peoples alive on the field maps dress, and it lives on each culture in `cultures.json`.
+
+- **`dress` is canon.** Harappan settlers wear dyed cotton and, when they have it, gold, silver and
+  lapis lazuli; their families take wives from beyond the realm. The Kia wear flowers and dress
+  their hair with care, men and women both, and their women are full-figured. The Maru are newer
+  nomads who dress for the upland in fur and skin over wool and felt.
+- **`art_reference` is not canon about the world.** It names real-world peoples (Gujarat, Sindh,
+  Punjab, Bengal, Odisha; Maharashtra, the Konkan, Kerala, Austronesian peoples; Himachal, Nepal,
+  Tibet) as a painter's reference for faces and builds, and says so in every entry. Nobody in this
+  world is those peoples. Kept apart so the difference cannot blur.
+- **Not exported.** The game reads neither field at runtime; its art prompts are written from them
+  by hand, in the game's `docs/face-prompts.md`. The bundle is unchanged and needs no version bump.
+
 ## Security
 
 Two Hugging Face tokens were exposed during setup and must be treated as burned: one pasted
