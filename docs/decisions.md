@@ -1145,7 +1145,10 @@ on her character, her parents' epithets and the `asura_hybrid` culture.
   moved her: the road's nomads walk the Narmada and not Dwarka. The Narmada is the plateau, and the
   Cloud Stair — a stair that keeps going after the scarp stops — is its anomaly.
 - **`npc_asura_princess`, linked to her character**, with two lines: a greeting, and her interest in
-  cultivation and food. They ask nothing and give nothing; her quest is deliberately unwritten.
+  cultivation and food. The second hands over `question_terrace_purpose`, whose sound answer is
+  contour irrigation for a population nobody recorded, which she is old enough to have seen. That is
+  what records meeting her in the diary; it is the question Marn already gives, so nothing new becomes
+  reachable. Her quest is deliberately unwritten.
 - **No language**, so she is understood from the first word: she has had a very long time to learn how
   people talk.
 - **That she walks up to you is the game's**, not canon's: a verb. Canon holds who she is and what she

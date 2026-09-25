@@ -16,13 +16,16 @@
     },
     {
       "text": "These terraces could grow more than goats, if anybody asked them properly. My people are hungry in places you have not been yet. When you know what grows here, come and tell me, and I will tell you what I know about making it grow.",
-      "requires": []
+      "requires": [],
+      "gives": [
+        "question_terrace_purpose"
+      ]
     }
   ],
   "epochs": [
     "epoch_post_cataclysm"
   ],
-  "notes": "The Asura-Tainted Princess, woken after the Cataclysm, at the edge of the Narmada plateau. The first time the traveller reaches the Cloud Stair she walks up to them rather than waiting to be found; that is the game's doing, and her words are these lines. No language, so she is understood from the first word: she has had a very long time to learn how people talk. Her quest is not written; these lines ask nothing and give nothing.",
+  "notes": "The Asura-Tainted Princess, woken after the Cataclysm, at the edge of the Narmada plateau. The first time the traveller reaches the Cloud Stair she walks up to them rather than waiting to be found; that is the game's doing, and her words are these lines. No language, so she is understood from the first word: she has had a very long time to learn how people talk. Her quest is not written. Her second line hands over `question_terrace_purpose` -- the terraces' sound answer is contour irrigation for a population the archive never recorded, and she is old enough to have seen it. It is the question Marn already gives, so nothing new becomes reachable; it is what makes meeting her leave a trace in the diary.",
   "canon": "primary",
   "sources": [
     "owner, 2026-09-26"
