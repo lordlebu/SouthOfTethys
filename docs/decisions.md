@@ -1133,6 +1133,26 @@ three peoples alive on the field maps dress, and it lives on each culture in `cu
 - **Not exported.** The game reads neither field at runtime; its art prompts are written from them
   by hand, in the game's `docs/face-prompts.md`. The bundle is unchanged and needs no version bump.
 
+## The Asura-Tainted Princess wakes — settled 2026-09-26
+
+The owner gave her history: the forbidden union of Varunesh (Tukulti-Vishra) and Manjalaya
+(Vishaili), the unicorn bled into a Dwarka Gate, her exile to a windswept plateau over the Tethys as
+a living warning, and her waking after the Cataclysm, when Narakalok fractured and half-breeds in
+Bahlika, Kush and Hyrkania woke the old asuras. It fits what canon held without contradiction; it is
+on her character, her parents' epithets and the `asura_hybrid` culture.
+
+- **Met at the Cloud Stair, on the Narmada.** The owner first placed her at the Dwarka portal, then
+  moved her: the road's nomads walk the Narmada and not Dwarka. The Narmada is the plateau, and the
+  Cloud Stair — a stair that keeps going after the scarp stops — is its anomaly.
+- **`npc_asura_princess`, linked to her character**, with two lines: a greeting, and her interest in
+  cultivation and food. They ask nothing and give nothing; her quest is deliberately unwritten.
+- **No language**, so she is understood from the first word: she has had a very long time to learn how
+  people talk.
+- **That she walks up to you is the game's**, not canon's: a verb. Canon holds who she is and what she
+  says.
+
+Bahlika, Kush and Hyrkania are named in her notes only; none is an entity yet.
+
 ## Security
 
 Two Hugging Face tokens were exposed during setup and must be treated as burned: one pasted
