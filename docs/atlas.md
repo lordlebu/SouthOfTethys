@@ -25,10 +25,10 @@ Each era below is canon as it stood then. An entity that names no epoch is prese
 | fauna |  | 265 |
 | flora |  | 118 |
 | foodways |  | 19 |
-| items |  | 75 |
+| items |  | 76 |
 | materials |  | 71 |
 | processes |  | 17 |
-| recipes |  | 84 |
+| recipes |  | 85 |
 | vehicles |  | 8 |
 
 ### Events
@@ -75,10 +75,10 @@ graph TD
 | fauna |  | 265 |
 | flora |  | 118 |
 | foodways |  | 19 |
-| items |  | 75 |
+| items |  | 76 |
 | materials |  | 71 |
 | processes |  | 17 |
-| recipes |  | 84 |
+| recipes |  | 85 |
 | vehicles |  | 8 |
 
 ### Events
@@ -119,10 +119,10 @@ graph TD
 | fauna |  | 265 |
 | flora |  | 118 |
 | foodways |  | 19 |
-| items |  | 75 |
+| items |  | 76 |
 | materials |  | 71 |
 | processes |  | 17 |
-| recipes |  | 84 |
+| recipes |  | 85 |
 | vehicles |  | 8 |
 
 ### Events
@@ -166,10 +166,10 @@ graph TD
 | fauna |  | 265 |
 | flora |  | 118 |
 | foodways |  | 19 |
-| items | 3 | 75 |
+| items | 3 | 76 |
 | materials |  | 71 |
 | processes |  | 17 |
-| recipes | 5 | 84 |
+| recipes | 5 | 85 |
 | vehicles | 2 | 8 |
 
 ### Events
@@ -233,10 +233,10 @@ The id stays `epoch_current` deliberately. Fifty-five entities reference it and 
 | fauna |  | 265 |
 | flora |  | 118 |
 | foodways |  | 19 |
-| items | 3 | 75 |
+| items | 3 | 76 |
 | materials |  | 71 |
 | processes |  | 17 |
-| recipes | 5 | 84 |
+| recipes | 5 | 85 |
 | vehicles | 4 | 8 |
 
 ### Events
@@ -283,10 +283,10 @@ graph TD
 | fauna |  | 265 |
 | flora |  | 118 |
 | foodways |  | 19 |
-| items | 3 | 75 |
+| items | 3 | 76 |
 | materials |  | 71 |
 | processes |  | 17 |
-| recipes |  | 84 |
+| recipes |  | 85 |
 | vehicles | 2 | 8 |
 
 ### Events

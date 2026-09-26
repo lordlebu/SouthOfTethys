@@ -1185,6 +1185,33 @@ road company — stays the game's, and never grants knowledge.
 budget, so `notes` is now withheld from regions, field maps, points of interest and NPCs as well,
 after reading every game importer of `places.json`: none reads it. 526.2 KB, with 34 KB spare.
 
+## The Violet-Horned Clan, and the princess's one task — settled 2026-09-27
+
+The owner gave the asuras their Epoch 5 identity: a sovereign, peaceful people, **the Violet-Horned
+Clan** (the Dolmen-Keepers), who heal poisoned ground, keep the fallen asura dolmens, farm basalt
+terraces, trade with the Maru, and hold the Asura-Tainted Princess as their elder.
+
+- **On the existing `asura_hybrid`, not a new `culture_asura_solarpunk`.** The owner's text proposed
+  the new id. Canon's culture ids carry no prefix, and `asura_hybrid` is already the princess's
+  people: a second id would have made her the elder of a people she does not belong to. The clan is
+  that people's Epoch 5 life, written into its `note`, `dress` and `art_reference`.
+- **Checked against canon before writing.** The Crimson Blood-Weed, the Garudasaur, the Permian
+  poison, Daedrasura, the Asura Planets, Mithra and the Ark (the Survival Train) all exist
+  already, and the text agrees with them. The dolmens, the Naraka-Vani and the amethyst are new,
+  and live in the note only: nothing structured names them yet.
+- **Twelve given names, drafted for the owner to rewrite**, in the sound of canon's asura names
+  (Varunesh, Manjalaya, Vishaili), and passed through the lint's check against every name in canon.
+- **The princess's one task**: cook her the Fourteen (`item_choddo_shak`), in return for her
+  friendship. A priced line, as Uma's and Pell's are. It has to give something only she gives, or a
+  player who already held the gift would never be offered the trade, so her friendship teaches a new
+  recipe, **root tea** (ginger and ashwagandha root, cooked), the clan's drink. The owner's turmeric
+  and "Garudasaur root" are not materials in canon; the note says so.
+- **Friendship at the end**: `discovery_terrace_water` now helps her, and a new line of hers leads to
+  it, as the lint requires of any help. She will not settle: she stays with her people.
+
+No places were added. The clan's villages are described in the note; a settlement entity waits until
+something needs to stand in one.
+
 ## Security
 
 Two Hugging Face tokens were exposed during setup and must be treated as burned: one pasted

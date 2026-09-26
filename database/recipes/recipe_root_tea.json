@@ -1,0 +1,31 @@
+{
+  "id": "recipe_root_tea",
+  "type": "recipe",
+  "name": "Cooking root tea",
+  "process": "process_cooking",
+  "ingredients": [
+    {
+      "material": "material_ginger_root",
+      "count": 1
+    },
+    {
+      "material": "material_ashwagandha_root",
+      "count": 1
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_root_tea",
+      "count": 2
+    }
+  ],
+  "taught_by": [
+    "npc_asura_princess"
+  ],
+  "notes": "The Asura-Tainted Princess teaches it, once you have cooked her the Fourteen. Her friendship, in a pot.",
+  "canon": "primary",
+  "sources": [
+    "owner, 2026-09-27"
+  ],
+  "source_index": 89
+}
