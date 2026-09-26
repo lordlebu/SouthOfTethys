@@ -1,0 +1,37 @@
+{
+  "id": "happening_year_names",
+  "type": "happening",
+  "title": "Counting years",
+  "occasion": "road",
+  "field_maps": [
+    "field_map_narmada"
+  ],
+  "requires": [
+    "discovery_moving_spring"
+  ],
+  "prose": "An old herder is resting on the terrace wall while her goats work the slope below. She tells you, without being asked, that she was born in the year the goats went up early, married in the year of the long frost, and that her mother used to say the water had walked in the year before she was born. Nobody on the plateau counts years any other way, she says, except the people in the halls, and they only started when everything broke.",
+  "choices": [
+    {
+      "label": "Ask what the water's year is called",
+      "line": "She says it twice, slowly, so you have it: anu-shivit, the year it walked. The spring has a name for its own last move, and nobody wrote it down in a hall.",
+      "grants": [
+        "word_maru_anu"
+      ]
+    },
+    {
+      "label": "Sit with her a while",
+      "line": "You sit on the wall while she names the years back to her grandmother's. Somewhere in there is the year the water walked -- anu-shivit, she calls it -- and it is older than the halls' first page.",
+      "grants": [
+        "word_maru_anu"
+      ]
+    }
+  ],
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "notes": "The Narmada's thesis is a record that begins at the wound; this is the record that does not. Requires the Moving Spring observed, the gate Vessa's line uses for the same word, so it is a second road to `word_maru_anu` and opens nothing new. The herder is nobody canon names, which is deliberate: the point is that anybody on the plateau counts this way. Drafted for the owner to rewrite or approve.",
+  "canon": "primary",
+  "sources": [
+    "drafted by Claude for the owner's approval, 2026-09-26"
+  ]
+}

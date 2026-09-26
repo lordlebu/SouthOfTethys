@@ -1,5 +1,5 @@
 {
-  "version": "2.30.0",
+  "version": "2.31.0",
   "description": "SouthOfTethys canonical entity index",
   "counts": {
     "artifacts": 5,
@@ -12,6 +12,7 @@
     "field_questions": 8,
     "flora": 118,
     "foodways": 19,
+    "happenings": 3,
     "items": 81,
     "materials": 71,
     "mythology": 10,
@@ -614,6 +615,11 @@
       "foodway_tempered_oil_welcome",
       "foodway_travel_cake_vigil",
       "foodway_travel_cake_wake"
+    ],
+    "happenings": [
+      "happening_tower_standing",
+      "happening_where_you_stop",
+      "happening_year_names"
     ],
     "items": [
       "item_ammonite_pendant",

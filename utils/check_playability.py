@@ -72,6 +72,7 @@ class World:
         self.discoveries = load_all("discoveries")
         self.questions = load_all("field_questions")
         self.npcs = load_all("npcs")
+        self.happenings = load_all("happenings")
         self.words = load_all("vocabulary")
         self.materials = load_all("materials")
         self.items = load_all("items")
@@ -185,7 +186,45 @@ def play(w: World, here: set[str], tools: set[str] | None = None,
                         changed = True
                     elif gift in w.discoveries and did_notice(s, gift):
                         changed = True
+
+        # Things that happen to you. A written happening wins over a woven one whenever it can
+        # happen and is never rationed, so once its map is walked and what it asks for has been
+        # seen, it happens: its choices are as sure a source as a line. Every choice, because
+        # every choice is takeable -- the game offers the last one even when all are gated.
+        for hid in sorted(w.happenings):
+            h = w.happenings[hid]
+            if not can_happen_here(w, h, here):
+                continue
+            if not all(observed(w, s, r) for r in h.get("requires") or []):
+                continue
+            for choice in h.get("choices") or []:
+                for gift in choice.get("grants") or []:
+                    if gift in w.words and gift not in s.words:
+                        s.words.add(gift)
+                        changed = True
+                    elif gift in w.questions and gift not in s.questions:
+                        s.questions.add(gift)
+                        changed = True
+                    elif gift in w.discoveries and did_notice(s, gift):
+                        changed = True
     return s
+
+
+def can_happen_here(w: World, h: dict, here: set[str]) -> bool:
+    """Whether some point in `here` is somewhere this happening can find the traveller.
+
+    `at` narrows an arrival to its points of interest; otherwise any point on one of its maps
+    will do, and no maps means every map. Mirrors `canHappen` in the game's `events.ts`.
+    """
+    maps = set(h.get("field_maps") or [])
+    at = set(h.get("at") or [])
+    for p in here:
+        if maps and w.pois[p].get("field_map") not in maps:
+            continue
+        if at and p not in at:
+            continue
+        return True
+    return False
 
 
 def did_notice(s: State, did: str) -> bool:
@@ -519,6 +558,28 @@ def structural(w: World, problems: list[str]) -> None:
     for q, doc in w.questions.items():
         if not any(r.get("sound") for r in doc.get("resolutions") or []):
             problems.append(f"{q} has no sound resolution -- the player cannot be right")
+
+    # A happening's `at` is an arrival, on its own maps. Either mistake makes it never happen,
+    # and nothing else would say so: the game would simply never find the circumstance.
+    grantable = set(w.discoveries) | set(w.words) | set(w.questions) | set(w.recipes)
+    for h, doc in sorted(w.happenings.items()):
+        maps = set(doc.get("field_maps") or [])
+        for p in doc.get("at") or []:
+            if doc.get("occasion") != "arriving":
+                problems.append(f"{h} names `at` {p}, but only an arrival happens at a point")
+            if p not in w.pois:
+                problems.append(f"{h} happens at {p}, which does not exist")
+            elif maps and w.pois[p].get("field_map") not in maps:
+                problems.append(f"{h} happens at {p}, which is not on any of its field_maps")
+        for m in maps - set(w.maps):
+            problems.append(f"{h} happens on {m}, which does not exist")
+        for choice in doc.get("choices") or []:
+            for g in choice.get("grants") or []:
+                if g not in grantable:
+                    problems.append(
+                        f"{h} grants {g}, which is not a discovery, word, question or recipe "
+                        "-- a happening opens what a line opens, and nothing else"
+                    )
 
 
 def main() -> int:

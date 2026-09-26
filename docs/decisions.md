@@ -1156,6 +1156,35 @@ on her character, her parents' epithets and the `asura_hybrid` culture.
 
 Bahlika, Kush and Hyrkania are named in her notes only; none is an entity yet.
 
+## Written happenings — settled 2026-09-26
+
+The game's plan asked who owns an authored event (Q3), and the owner took the recommendation: **a
+split**. What is true of the world — a dream a map has, somebody on the road, what a camp is doing
+when you arrive — is canon's. What the game weaves from whatever is on a tile — tracks, weather,
+road company — stays the game's, and never grants knowledge.
+
+- **A new type, `happening_`, in `database/happenings/`.** Not `event_`: that prefix is the
+  timeline, and a happening is what can happen to one player in the game's era. It says **where**
+  (maps, and for an arrival the points), **on what occasion** (night, arriving, road, working — the
+  game's own four), **what must have been seen** (observed, as a line asks, not understood), the
+  prose, and up to three choices, each granting what a line's `gives` may grant.
+- **Canon never says which day or how often.** Same ruling as `renews`: the length and rhythm of
+  play are the game's. A written happening wins over a woven one whenever it can happen.
+- **Exported in `places.json`**, beside the people standing in the same places, with `notes`
+  withheld.
+- **`check_playability.py` counts their grants**, since a written happening is unrationed and
+  certain once its map is walked, and refuses a grant that is not a discovery, word, question or
+  recipe, or an `at` off the happening's own maps.
+- **Three drafts, for the owner to rewrite or approve**, one per map's thesis, each granting only
+  what another route already reaches: *The tower, standing* (a Lothal dream of Kavik's tower and
+  the empty niche), *Counting years* (a Narmada herder who names years, and gives `anu-shivit`), and
+  *Where you stop* (a caravan at Dwarka's Caravan Ground, which has stood empty since it moved from
+  the Dry Harbour). The herder and the drover are nobody canon names, on purpose.
+
+**The bundle budget, collected on again.** The three took `places.json` to 558.9 KB of the 560 KB
+budget, so `notes` is now withheld from regions, field maps, points of interest and NPCs as well,
+after reading every game importer of `places.json`: none reads it. 526.2 KB, with 34 KB spare.
+
 ## Security
 
 Two Hugging Face tokens were exposed during setup and must be treated as burned: one pasted

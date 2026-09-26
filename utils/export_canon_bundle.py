@@ -13,7 +13,7 @@ Four files rather than one, split by what a module needs rather than by entity t
 
   species.json      fauna and flora, with everything they carry
   places.json       regions, field maps, points of interest, the people standing in them,
-                    and the biome vocabulary
+                    what can happen to you there, and the biome vocabulary
   knowledge.json    discoveries, field questions, vocabulary
 
 Plus canon.lock.json, which carries the version and a hash of each so the game's CI can
@@ -40,7 +40,7 @@ DEFAULT_OUT = Path(os.environ.get("CANON_REPO", REPO.parent / "4000BCESaraswathy
 # entity has one, then id -- see the note on ordering below.
 BUNDLE = {
     "species.json": ["fauna", "flora"],
-    "places.json": ["regions", "field_maps", "points_of_interest", "npcs"],
+    "places.json": ["regions", "field_maps", "points_of_interest", "npcs", "happenings"],
     "knowledge.json": ["discoveries", "field_questions", "vocabulary"],
     "crafting.json": ["materials", "items", "processes", "recipes", "vehicles"],
 }
@@ -127,7 +127,22 @@ WITHHELD = ("canon", "sources")
 # yields the empty string, so nothing in the game has to change for this and nothing breaks if a
 # panel later wants the text -- at which point this folder comes back off the list and costs its
 # 6.8 KB deliberately, which is the decision being made in the open rather than by omission.
-WITHHELD_NOTES = ("discoveries", "field_questions", "vocabulary", "recipes")
+#
+# **`happenings` is the fifth, and was withheld from the commit that created it.** The game's
+# `GameEvent` has no `notes`: a happening's `notes` are the authoring rationale -- which thesis it
+# serves, why its grant opens nothing new -- and the prose the player reads is `prose`.
+#
+# **And the four folders of `places.json`, when happenings took the bundle to 558.9 KB.** The game's
+# `RawFieldMap`, `RawPoi` and `RawNpc` in `src/content/places.ts` carry no `notes`, and its
+# `CanonRegion` reads only `bestiary_region`; `test/adapterCoverage.test.ts` lists `notes` as skipped
+# on all four. Checked by reading those interfaces and every importer of `places.json`, the way the
+# first three were. About 30 KB of authoring rationale -- why a map was retired, whose line was
+# moved where -- that no player ever saw. The player's prose on these is `description`, `arrival`
+# and `lines`, and those stay.
+WITHHELD_NOTES = (
+    "discoveries", "field_questions", "vocabulary", "recipes", "happenings",
+    "regions", "field_maps", "points_of_interest", "npcs",
+)
 
 
 def withhold_lore_species(folder: str, entities: list[dict]) -> list[dict]:

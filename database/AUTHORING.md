@@ -4,7 +4,7 @@ Everything canon holds is a **noun**. Pick the right one, write one JSON file, u
 manifest, run the gate. Four steps, and the gate tells you if you got it wrong.
 
 If you only read one thing: **the folder you choose decides whether your writing reaches the
-game.** Nine folders are exported into the browser bundle and eight are not, and putting a
+game.** Fifteen folders are exported into the browser bundle and eight are not, and putting a
 hundred lore entries in an exported folder is the one mistake here with a cost attached.
 
 ---
@@ -20,6 +20,7 @@ hundred lore entries in an exported folder is the one mistake here with a cost a
 | A spot inside a walkable map | `points_of_interest/` | **yes** |
 | A person in the history | `characters/` | no |
 | A person the player can talk to | `npcs/` | **yes** |
+| Something that happens to the player on a map | `happenings/` | **yes** |
 | A ladder of understanding the player climbs | `discoveries/` | **yes** |
 | A question the player forms a reading of | `field_questions/` | **yes** |
 | An animal or a plant | `fauna/`, `flora/` | **yes** |
@@ -405,6 +406,46 @@ recipe, and recipes are already a type.
   "source_index": 0
 }
 ```
+
+### A happening
+
+```json
+{
+  "id": "happening_something_on_the_road",
+  "type": "happening",
+  "title": "Something on the road",
+  "occasion": "road",
+  "field_maps": ["field_map_narmada"],
+  "requires": ["discovery_moving_spring"],
+  "prose": "Second person, present tense, plain: what happens, as the card shows it.",
+  "choices": [
+    {
+      "label": "A verb, in the traveller's register",
+      "line": "What the diary records once it is taken.",
+      "grants": ["word_maru_anu"]
+    }
+  ],
+  "epochs": ["epoch_post_cataclysm"],
+  "canon": "primary",
+  "sources": ["where this came from"]
+}
+```
+
+**Not an `event_`.** That prefix is the timeline: what happened in history. A happening is what can
+happen to *one player* on a field map in the game's era -- a dream the delta has, somebody on the
+road, what the camp is doing when you arrive. The game already weaves ordinary ones (tracks,
+weather, road company) from whatever is on the tile; those never grant knowledge. A written one
+**wins over a woven one whenever it can happen** and may grant exactly what a line may.
+
+`occasion` is one of four: `night`, `arriving` (the first time you reach one of the points in
+`at`), `road` or `working` (just after gathering). **Canon never says which day or how often** --
+that is play, and the game owns it, as it owns how long `renews` takes.
+
+`requires` is *observed*, not understood: a dream is built from what you have seen. And **every
+choice must be takeable, and none worse than not having been here.** `check_playability.py` counts
+every choice's `grants` as reachable once the map is walked and the requirements seen, refuses a
+grant that is not a discovery, word, question or recipe, and refuses an `at` that is not on the
+happening's own maps.
 
 ### A character
 

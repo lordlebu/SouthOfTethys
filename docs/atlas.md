@@ -21,14 +21,14 @@ Each era below is canon as it stood then. An entity that names no epoch is prese
 | factions |  | 3 |
 | events | 8 |  |
 | artifacts |  | 5 |
-| mythology |  | 9 |
-| fauna |  | 257 |
-| flora |  | 116 |
+| mythology |  | 10 |
+| fauna |  | 265 |
+| flora |  | 118 |
 | foodways |  | 19 |
-| items |  | 72 |
-| materials |  | 68 |
+| items |  | 75 |
+| materials |  | 71 |
 | processes |  | 17 |
-| recipes |  | 78 |
+| recipes |  | 84 |
 | vehicles |  | 8 |
 
 ### Events
@@ -71,14 +71,14 @@ graph TD
 | factions |  | 3 |
 | events | 5 |  |
 | artifacts |  | 5 |
-| mythology |  | 9 |
-| fauna |  | 257 |
-| flora |  | 116 |
+| mythology |  | 10 |
+| fauna |  | 265 |
+| flora |  | 118 |
 | foodways |  | 19 |
-| items |  | 72 |
-| materials |  | 68 |
+| items |  | 75 |
+| materials |  | 71 |
 | processes |  | 17 |
-| recipes |  | 78 |
+| recipes |  | 84 |
 | vehicles |  | 8 |
 
 ### Events
@@ -110,18 +110,19 @@ graph TD
 | regions |  | 7 |
 | places | 25 | 9 |
 | settlements |  | 1 |
+| points of interest | 1 |  |
 | characters | 11 |  |
 | factions |  | 3 |
 | events | 6 |  |
 | artifacts |  | 5 |
-| mythology |  | 9 |
-| fauna |  | 257 |
-| flora |  | 116 |
+| mythology |  | 10 |
+| fauna |  | 265 |
+| flora |  | 118 |
 | foodways |  | 19 |
-| items |  | 72 |
-| materials |  | 68 |
+| items |  | 75 |
+| materials |  | 71 |
 | processes |  | 17 |
-| recipes |  | 78 |
+| recipes |  | 84 |
 | vehicles |  | 8 |
 
 ### Events
@@ -156,18 +157,19 @@ graph TD
 | regions |  | 7 |
 | places | 28 | 9 |
 | settlements | 1 | 1 |
+| points of interest | 1 |  |
 | characters | 27 |  |
 | factions |  | 3 |
 | events | 12 |  |
 | artifacts |  | 5 |
-| mythology |  | 9 |
-| fauna |  | 257 |
-| flora |  | 116 |
+| mythology |  | 10 |
+| fauna |  | 265 |
+| flora |  | 118 |
 | foodways |  | 19 |
-| items | 3 | 72 |
-| materials |  | 68 |
+| items | 3 | 75 |
+| materials |  | 71 |
 | processes |  | 17 |
-| recipes | 5 | 78 |
+| recipes | 5 | 84 |
 | vehicles | 2 | 8 |
 
 ### Events
@@ -222,18 +224,19 @@ The id stays `epoch_current` deliberately. Fifty-five entities reference it and 
 | regions |  | 7 |
 | places | 31 | 9 |
 | settlements | 1 | 1 |
+| points of interest | 1 |  |
 | characters | 6 |  |
 | factions |  | 3 |
 | events | 4 |  |
 | artifacts |  | 5 |
-| mythology |  | 9 |
-| fauna |  | 257 |
-| flora |  | 116 |
+| mythology |  | 10 |
+| fauna |  | 265 |
+| flora |  | 118 |
 | foodways |  | 19 |
-| items | 3 | 72 |
-| materials |  | 68 |
+| items | 3 | 75 |
+| materials |  | 71 |
 | processes |  | 17 |
-| recipes | 5 | 78 |
+| recipes | 5 | 84 |
 | vehicles | 4 | 8 |
 
 ### Events
@@ -266,23 +269,24 @@ graph TD
 | places | 24 | 9 |
 | settlements | 1 | 1 |
 | field maps | 4 |  |
-| points of interest | 35 |  |
+| points of interest | 37 |  |
 | characters | 4 |  |
-| npcs | 15 |  |
+| npcs | 18 |  |
+| happenings | 3 |  |
 | factions |  | 3 |
-| events | 1 |  |
+| events | 2 |  |
 | artifacts |  | 5 |
-| mythology |  | 9 |
-| discoveries | 44 |  |
-| field questions | 7 |  |
-| vocabulary | 8 |  |
-| fauna |  | 257 |
-| flora |  | 116 |
+| mythology |  | 10 |
+| discoveries | 46 |  |
+| field questions | 8 |  |
+| vocabulary | 10 |  |
+| fauna |  | 265 |
+| flora |  | 118 |
 | foodways |  | 19 |
-| items |  | 72 |
-| materials |  | 68 |
+| items | 3 | 75 |
+| materials |  | 71 |
 | processes |  | 17 |
-| recipes |  | 78 |
+| recipes |  | 84 |
 | vehicles | 2 | 8 |
 
 ### Events
@@ -290,6 +294,7 @@ graph TD
 ```mermaid
 graph TD
     E0["The Solarpunk Odyssey of the Ark"]
+    E1["The Last Puja"]
 ```
 
 ### Map

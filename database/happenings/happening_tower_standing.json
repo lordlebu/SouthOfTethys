@@ -1,0 +1,37 @@
+{
+  "id": "happening_tower_standing",
+  "type": "happening",
+  "title": "The tower, standing",
+  "occasion": "night",
+  "field_maps": [
+    "field_map_lothal"
+  ],
+  "requires": [
+    "discovery_tower_collapse"
+  ],
+  "prose": "You dream of Kavik's tower before it sat down: all twenty-two storeys, dry ground to the horizon, and the stair going up through the middle of it. You climb. At shoulder height there is a niche in the stair wall, and something in it is looking out at you with a face that is not a face. You wake before you reach it.",
+  "choices": [
+    {
+      "label": "Write it down before it goes",
+      "line": "You write down the niche and the height of it, by feel, in the dark. In the morning the page is mostly scrawl, but the height is legible: shoulder height, on the stair.",
+      "grants": [
+        "discovery_mask_niche"
+      ]
+    },
+    {
+      "label": "Lie still and let it fade",
+      "line": "You lie still and let the tower go back to rubble. What stays is the niche, and the feeling of being looked at by something that was meant to be there.",
+      "grants": [
+        "discovery_mask_niche"
+      ]
+    }
+  ],
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "notes": "Lothal teaches looking, and carries the Mask Family; this is the map dreaming that thesis back at you. Requires only that the tower's collapse has been observed -- that the fallen courses have been seen -- because a dream is made of what you have seen, not what you have finished. Both choices point at the Empty Niche, which the tower already offers: this is a second way to notice it, and it adds nothing a player could not reach. Who took the mask stays unanswered, as `discovery_mask_niche` asks. Drafted for the owner to rewrite or approve.",
+  "canon": "primary",
+  "sources": [
+    "drafted by Claude for the owner's approval, 2026-09-26"
+  ]
+}

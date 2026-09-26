@@ -60,6 +60,9 @@ DB_FOLDERS = [
     "discoveries",
     "field_questions",
     "npcs",
+    # Written happenings: a dream on a map, somebody on the road. Prose a player can meet, so
+    # retrieval should find it as it finds an NPC's lines.
+    "happenings",
     "vocabulary",
     # The lore layer: named places the player never stands in. Retrieval is the one consumer
     # that should see all of it -- the game deliberately does not, but a question about Harappa

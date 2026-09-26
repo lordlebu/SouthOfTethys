@@ -65,6 +65,7 @@ PREFIX_DIRS = {
     "recipe_": "recipes",
     "vehicle_": "vehicles",
     "foodway_": "foodways",
+    "happening_": "happenings",
 }
 
 # folder -> schema stem, where the two differ.
@@ -82,6 +83,7 @@ SCHEMA_FOR = {
     "recipes": "recipe",
     "vehicles": "vehicle",
     "foodways": "foodway",
+    "happenings": "happening",
 }
 
 # Values that look like ids but are not entity references.
