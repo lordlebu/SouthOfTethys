@@ -20,7 +20,7 @@ timeline
     section The Age of Machinery
         ~1920s equivalent : The Antarctic Ice Wall Expedition : The Narmada Upriver Expedition : The Gondwana Spacetime Teleportation : The Battered Ekranoplan's Ice Wall Voyage
     section Post-Cataclysmic Era (The Great Shattering)
-        after the Collapse : The Solarpunk Odyssey of the Ark
+        after the Collapse : The Solarpunk Odyssey of the Ark : The Last Puja
 ```
 
 ## The events, by cause
@@ -76,6 +76,7 @@ graph TD
     end
     subgraph epoch_post_cataclysm["Post-Cataclysmic Era (The Great Shattering)"]
         E35["The Solarpunk Odyssey of the Ark"]
+        E36["The Last Puja"]
     end
     E0 --> E2
     E1 --> E2
@@ -87,6 +88,7 @@ graph TD
     E7 --> E10
     E8 --> E11
     E10 --> E15
+    E13 --> E36
     E14 --> E16
     E15 --> E18
     E16 --> E20

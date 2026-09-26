@@ -1,0 +1,128 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Happening",
+  "description": "Something that happens to the traveller, written by a person rather than woven by the game: a dream on a particular map, somebody on the road with something to say, what the camp is doing when you arrive.\n\nNot an `event_`. That prefix is the timeline -- what happened in history, to whom, in which epoch. A happening is what can happen to one player on a field map in the game's era, and it is true of the world in the way an NPC's line is: it would be said, or dreamt, or seen, by anybody who stood there.\n\nThe game weaves ordinary happenings itself -- tracks, weather, road company -- from what is on the tile, and those never grant knowledge. A written one wins over a woven one whenever it can happen, and may grant what a line may grant, because canon wrote it.\n\nCanon says **where**, **on what occasion**, and **what you must already have seen**. It never says which day or how often: that is a question about play, and the game owns it, as it owns how long `renews` takes.",
+  "type": "object",
+  "required": [
+    "id",
+    "type",
+    "title",
+    "occasion",
+    "prose",
+    "choices"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^happening_[a-z0-9_]+$"
+    },
+    "type": {
+      "const": "happening"
+    },
+    "title": {
+      "type": "string",
+      "description": "What the card is titled. A few words."
+    },
+    "occasion": {
+      "type": "string",
+      "enum": [
+        "night",
+        "arriving",
+        "road",
+        "working"
+      ],
+      "description": "When it can find you. `night` is a night slept anywhere on the map, `arriving` the first time you reach a point of interest, `road` a step along the way, `working` the moment after gathering something. The same four the game asks about."
+    },
+    "field_maps": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^field_map_[a-z0-9_]+$"
+      },
+      "description": "The maps it can happen on. Empty or absent means any of them."
+    },
+    "at": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^poi_[a-z0-9_]+$"
+      },
+      "description": "For `arriving` only: the points of interest whose arrival it belongs to. Each must be on one of `field_maps`."
+    },
+    "requires": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Discovery or word ids the traveller must have. **Observed, not understood** -- the rule a line follows: a discovery counts once its first rung past noticing is climbed. A dream is built out of what you have seen, not what you have finished."
+    },
+    "prose": {
+      "type": "string",
+      "description": "The passage, in the diary's voice: first person, past tense, plain. This is the happening."
+    },
+    "choices": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 3,
+      "description": "What the traveller can do about it. **Every choice is takeable and none is worse than not having been here** -- a cozy game's rule, and the game's: a choice that needs something you lack is not offered, and if every one did, the last is offered anyway.",
+      "items": {
+        "type": "object",
+        "required": [
+          "label",
+          "line"
+        ],
+        "properties": {
+          "label": {
+            "type": "string",
+            "description": "What the button says. A verb, in the traveller's register."
+          },
+          "line": {
+            "type": "string",
+            "description": "What the diary records once it is taken. The outcome; there is no other."
+          },
+          "needs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Discovery, word or recipe ids the traveller must hold for this to be offered at all."
+          },
+          "grants": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Discovery, word, field_question or recipe ids this opens -- exactly what a line's `gives` may open, through the same door. A discovery given is noticed, not climbed."
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "epochs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "notes": {
+      "type": "string",
+      "description": "For whoever edits canon next. Withheld from the game's bundle."
+    },
+    "canon": {
+      "type": "string",
+      "enum": [
+        "primary",
+        "secondary",
+        "draft"
+      ],
+      "default": "primary"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}

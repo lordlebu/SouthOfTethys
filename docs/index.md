@@ -161,25 +161,29 @@ _Sample fixture — kept to exercise the tooling, not part of the story._
 **Participants:** character_shaashak, character_khadi, character_sarita
 
 ## The Antarctic Ice Wall Expedition
-**Epoch:** Current Era (Age of Machinery)
+**Epoch:** The Age of Machinery
 **Summary:** Bound to mortal bodies, Captain Varuna and his companion Mitra lead a whale-bone trawler into the freezing southern waters of the Tethys. Trapped in a glacial maze, Varuna's drive to ram through the ice wall clashes with the Ammonite Man's drive to preserve it as a memory archive, resolved only when Mitra mediates a silent, drifting passage.
 **Participants:** character_varuna, character_mitra, character_ammonite_man
 
 ## The Narmada Upriver Expedition
-**Epoch:** Current Era (Age of Machinery)
+**Epoch:** The Age of Machinery
 **Summary:** To investigate sightings of the elusive Asura planet, field historian Digha Jani and the skeptical Professor Onko travel up the Narmada River. Awaiting supplies, they stay with isolated tribes, teaching children to harvest golden spice sand and logging the region's unique cliffside honey-gatherer pacts and tea plantations.
 **Participants:** character_onko, character_digha_jani
 
 ## The Gondwana Spacetime Teleportation
-**Epoch:** Current Era (Age of Machinery)
+**Epoch:** The Age of Machinery
 **Summary:** During a violent monsoon storm in the Narmada forests, a direct lightning strike leaves Digha Jani unharmed and glowing, before subsequent strikes tear a rift in spacetime. The scholars are teleported through a cosmic wormhole to the floating, weightless Gondwana plateau, where they discover ancient tablets and a basalt boundary stone.
 **Participants:** character_onko, character_digha_jani
 
 ## The Battered Ekranoplan's Ice Wall Voyage
-**Epoch:** Current Era (Age of Machinery)
+**Epoch:** The Age of Machinery
 **Summary:** At high speeds, a rusted, wobbly ground-effect ekranoplan departs the port of Vanga near the Vengi marshes, carrying a nameless crew and a stowaway langur monkey who causes absolute chaos on their journey to the Antarctic Ice Wall.
 
 ## The Solarpunk Odyssey of the Ark
 **Epoch:** Post-Cataclysmic Era (The Great Shattering)
 **Summary:** Aboard the colossal greenhouse train, Varuna and Mitra guide human survivors across the wild grasslands of post-cataclysmic Jambhudweepa. Moving through scarcity and storms, they gather refugees and eventually halt the train to construct a permanent, restorative solarpunk community.
 **Participants:** character_varuna, character_mitra, character_guyuk_reborn
+
+## The Last Puja
+**Epoch:** Post-Cataclysmic Era (The Great Shattering)
+**Summary:** The temple raised over the Jharwa dead is abandoned. Nothing sacks it and nothing burns it: the crossing goes quiet, the alms stop, the purohits leave, and there is no one left to pay for repairs. The dome goes first. The plinth, and the names along it, outlast the building that was the offering.

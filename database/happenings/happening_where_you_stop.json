@@ -1,0 +1,37 @@
+{
+  "id": "happening_where_you_stop",
+  "type": "happening",
+  "title": "Where you stop",
+  "occasion": "arriving",
+  "field_maps": [
+    "field_map_dwarka"
+  ],
+  "at": [
+    "poi_caravan_camp"
+  ],
+  "prose": "A caravan is already unloading when you arrive: donkeys hobbled, water skins stacked, a fire started in a ring of stones blackened by a great many fires before it. You ask the drover why they camp here, on the wrong side of the ridge and a long walk from the well. She looks at you as if you had asked why the sun comes up in the east. This is where you stop, she says. Everybody stops here.",
+  "choices": [
+    {
+      "label": "Ask who stopped here first",
+      "line": "Her grandfather's caravan stopped here, she says, and his grandfather's before that. Nobody remembers a reason. You look at the line the road takes into camp and wonder what it is following.",
+      "grants": [
+        "discovery_road_follows_water"
+      ]
+    },
+    {
+      "label": "Stop here too",
+      "line": "You unroll your bedding beside theirs. It is a bad place to camp, exposed and far from water, and everybody in it sleeps well, because this is where you stop.",
+      "grants": [
+        "discovery_road_follows_water"
+      ]
+    }
+  ],
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "notes": "Dwarka is where local knowledge is simply right, and a road that still follows a river sixty years gone is its quietest proof. The Caravan Ground has had nobody in it since it moved from the Dry Harbour; this puts people in it once, on arrival, without making anyone a resident. Both choices point at `discovery_road_follows_water`, which the camp already offers. Drafted for the owner to rewrite or approve.",
+  "canon": "primary",
+  "sources": [
+    "drafted by Claude for the owner's approval, 2026-09-26"
+  ]
+}

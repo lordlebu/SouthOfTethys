@@ -61,7 +61,7 @@ SKIP = {"schemas", "timeline"}
 # What a reader wants named first.
 ORDER = [
     "regions", "places", "settlements", "field_maps", "points_of_interest",
-    "characters", "npcs", "factions", "events", "artifacts", "mythology",
+    "characters", "npcs", "happenings", "factions", "events", "artifacts", "mythology",
     "discoveries", "field_questions", "vocabulary", "fauna", "flora",
 ]
 
