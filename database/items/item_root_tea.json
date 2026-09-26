@@ -1,0 +1,20 @@
+{
+  "id": "item_root_tea",
+  "type": "item",
+  "name": "Root tea",
+  "kind": "physic",
+  "affords": [
+    "heal",
+    "eat"
+  ],
+  "materials": [
+    "material_ginger_root",
+    "material_ashwagandha_root"
+  ],
+  "notes": "Ginger and ashwagandha root cooked slow, never boiled hard. The Violet-Horned Clan brew it in copper pots on their basalt terraces, with turmeric and a root the plateau does not grow; this is the traveller's version, from what can be gathered. For tiredness, which canon distinguishes from illness.",
+  "canon": "primary",
+  "sources": [
+    "owner, 2026-09-27: the Clan's root tea"
+  ],
+  "source_index": 81
+}

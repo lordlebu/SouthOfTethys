@@ -15,17 +15,31 @@
       "text": "Hi. You walk like somebody who came a long way to look at a stair. So did I, once. I have had a long time to think about it since."
     },
     {
-      "text": "These terraces could grow more than goats, if anybody asked them properly. My people are hungry in places you have not been yet. When you know what grows here, come and tell me, and I will tell you what I know about making it grow.",
+      "text": "These terraces could grow more than goats, if anybody asked them properly. My people are hungry in places you have not been yet. When you know what grows here, come and tell me, and I will tell you what I know about making it grow. And if you would be a friend of mine, cook me the Fourteen: fourteen bitter greens in one pot, counted. Nobody has cooked for me in a very long time.",
       "requires": [],
       "gives": [
         "question_terrace_purpose"
+      ]
+    },
+    {
+      "text": "Is that the Fourteen? -- Fourteen. You counted. Then we are friends, and friends drink something kinder than bitter greens afterwards. Ginger and ashwagandha root, cooked slow in whatever pot you have. My people brew it in copper up on the terraces. Now you can.",
+      "requires": [],
+      "costs": "item_choddo_shak",
+      "gives": [
+        "recipe_root_tea"
+      ]
+    },
+    {
+      "text": "You have been up on the terraces. Look at the fall of the courses: a finger in a pace, along the hill and not down it. Whoever built them was feeding far more people than live up here now, and my people are some of what is left of them. Work out how they held the water and you will have worked out how we eat. That is what I know about making it grow.",
+      "requires": [
+        "discovery_terrace_water"
       ]
     }
   ],
   "epochs": [
     "epoch_post_cataclysm"
   ],
-  "notes": "The Asura-Tainted Princess, woken after the Cataclysm, at the edge of the Narmada plateau. The first time the traveller reaches the Cloud Stair she walks up to them rather than waiting to be found; that is the game's doing, and her words are these lines. No language, so she is understood from the first word: she has had a very long time to learn how people talk. Her quest is not written. Her second line hands over `question_terrace_purpose` -- the terraces' sound answer is contour irrigation for a population the archive never recorded, and she is old enough to have seen it. It is the question Marn already gives, so nothing new becomes reachable; it is what makes meeting her leave a trace in the diary.",
+  "notes": "The Asura-Tainted Princess, woken after the Cataclysm, at the edge of the Narmada plateau, and the revered elder and botanical guide of the Violet-Horned Clan (see `asura_hybrid` in cultures.json). The first time the traveller reaches the Cloud Stair she walks up to them rather than waiting to be found; that is the game's doing, and her words are these lines. No language, so she is understood from the first word.\n\nHer one task, at the owner's direction (2026-09-27): cook her the Fourteen, `item_choddo_shak`, in return for her friendship. The third line is the handover, priced as Uma's and Pell's are, and her friendship teaches `recipe_root_tea`, which nobody else does -- it has to give something only she gives, or a player who already held the gift would never be offered the trade. Her second line asks for it and hands over `question_terrace_purpose`, whose sound answer is contour irrigation for a population nobody recorded.\n\nFinishing the terraces (`discovery_terrace_water`) helps her, so she is counted among the people you helped at the end. She will not settle: she stays with her people on the plateau.",
   "canon": "primary",
   "sources": [
     "owner, 2026-09-26"

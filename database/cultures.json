@@ -95,7 +95,23 @@
     {
       "id": "asura_hybrid",
       "count": 1,
-      "note": "Asura-blooded people. Before the Cataclysm, the Asura-Tainted Princess alone. After it, Narakalok fractured and half-breeds began to mingle with humans in the north and west -- Bahlika, Kush, Hyrkania -- and, as Asia grew less hospitable, to worship the old asuras and wake them. The hybrid nomads are her people. Not yet met on the road in the field diary: its strangers are drawn from harappan, kia and maru only, and the owner has the asura hybrids walk as Maru for now."
+      "note": "Asura-blooded people. Before the Cataclysm, the Asura-Tainted Princess alone. After it, Narakalok fractured and half-breeds began to mingle with humans in the north and west -- Bahlika, Kush, Hyrkania -- and some, as Asia grew less hospitable, woke the old asuras.\n\nIn epoch_post_cataclysm they are a people of their own, sovereign and peaceful: the Violet-Horned Clan, also called the Dolmen-Keepers (owner, 2026-09-27). They descend from old asura-human unions, the hybrid delta lineages, and the dwellers of the Dwarka Gate rift zones who carry the violet asura bloodline. The Great Shattering severed the portals and freed them from the old cosmic manipulation; they reject the asuric ethos of domination and sacrifice, and hold their blood to be a toolkit for healing the wounded earth rather than a curse.\n\nThey live where others will not: over old fault lines and the fallen fragments of the Asura Planets, whose Permian poison their bodies absorb and neutralise. Where they settle, the Crimson Blood-Weed turns harmless and the ground turns to fertile soil. They keep the fallen asura dolmens with bone flutes, bronze bells and chanting, and make resting shrines of stones that once drove people mad. They breed glowing mosses, grow shade terraces, and tend tame Permian draft beasts.\n\nTheir villages are cut into volcanic basalt cliffs and old portal craters: open tiled terraces, clay-plastered houses, timber trellises. Daily life is agrarian -- wild millet ground on stone, root tea brewed in copper pots, old palm-leaf manuscripts copied, the stars studied. The Asura-Tainted Princess is their revered elder and botanical guide, the bridge between the rites of Deep Antiquity and the green future.\n\nThey trade purified mineral soil, glowing saplings and glass lanterns with the Maru for wool, wild honey and salvaged copper wire, and walk the roads beside them, which is how the field diary meets them: on the Narmada, kin to the Maru, on the basalt plateau where the princess stands. They help the Ark's crew with star-maps and water, and work beside the Kia to clear silted mangrove channels.",
+      "given_names": [
+        "Vishaya",
+        "Aurvesh",
+        "Nairali",
+        "Kelvaya",
+        "Tukvaya",
+        "Mandesh",
+        "Ishkai",
+        "Ruvaya",
+        "Zhaivel",
+        "Orvanu",
+        "Daivesh",
+        "Kaumali"
+      ],
+      "dress": "At home, flowing low-waisted linen robes and woven vine tunics, with circlets of silver and copper wire set with raw amethyst. Subtle curled ram horns, amethyst-tinted eyes, and skin that shifts from azure to violet under moonlight or strong feeling. On the road, a headcloth wound between the horns and fur against the plateau's cold.",
+      "art_reference": "Reference only, for whoever paints them. No real-world people: they are canon's own, painted after the Asura-Tainted Princess -- ram horns curling back from the temples, violet stones -- and kin in face and build to the Maru they walk beside."
     },
     {
       "id": "bloodfang",
@@ -169,6 +185,6 @@
       "art_reference": "Reference only, for whoever paints them; not a claim about any people living today. Faces and builds after the peoples of Himachal and Nepal; some after Tibetan peoples. Not everybody among them should look East Asian."
     }
   ],
-  "given_names_note": "Given names a people uses, for the people the game meets without canon having written them -- the carriers, drovers and pilgrims on the road. Declared on the culture so a name is a value of a people rather than an invention of the engine: the game deals them, canon owns them. Only the three peoples alive on the field maps in epoch_post_cataclysm carry a list. Names are ungendered, as canon's own people's names are; nothing here decides who a stranger is beyond what they are called. Each list was written in its people's sound -- Harappan codas in -ek, -ik, -en, -ar and doubled vowels (Kavik, Orek, Aasha); Kia short with -kh, -sh or an open vowel (Bekh, Hesh, Thrali); Maru nasal and rounded (Moonj, Marn, Okhi) -- and checked against every person, place and word in canon so none is somebody who already exists. The lint refuses a given name that is.",
-  "dress_note": "`dress` is canon: how a people clothes and adorns itself, which the game's art follows. `art_reference` is not canon about the world -- it names real-world peoples as a painter's reference for faces and builds, and nothing in the world of this game is those peoples. Only the three peoples alive on the field maps in epoch_post_cataclysm carry either, because only they are painted. Added at the owner's direction, 2026-09-25."
+  "given_names_note": "Given names a people uses, for the people the game meets without canon having written them -- the carriers, drovers and pilgrims on the road. Declared on the culture so a name is a value of a people rather than an invention of the engine: the game deals them, canon owns them. Only the four peoples alive on the field maps in epoch_post_cataclysm carry a list: the three the game first met, and the Violet-Horned Clan (asura_hybrid), who walk beside the Maru. Names are ungendered, as canon's own people's names are; nothing here decides who a stranger is beyond what they are called. Each list was written in its people's sound -- Harappan codas in -ek, -ik, -en, -ar and doubled vowels (Kavik, Orek, Aasha); Kia short with -kh, -sh or an open vowel (Bekh, Hesh, Thrali); Maru nasal and rounded (Moonj, Marn, Okhi); the Clan's after the asura names canon already holds (Varunesh, Manjalaya, Vishaili), drafted for the owner to rewrite -- and checked against every person, place and word in canon so none is somebody who already exists. The lint refuses a given name that is.",
+  "dress_note": "`dress` is canon: how a people clothes and adorns itself, which the game's art follows. `art_reference` is not canon about the world -- it names real-world peoples as a painter's reference for faces and builds, and nothing in the world of this game is those peoples. Only the peoples alive on the field maps in epoch_post_cataclysm carry either, because only they are painted. Added at the owner's direction, 2026-09-25."
 }
