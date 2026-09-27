@@ -13,7 +13,13 @@
   ],
   "lines": [
     {
-      "text": "You are looking at the crust. Everybody looks at the crust. My mother said it was the Shattering's, and that the ground would come back when it chose. It has not chosen."
+      "text": "You are looking at the crust. Everybody looks at the crust. My mother said it was the Shattering's, and that the ground would come back when it chose. -- Eight acres, and it has not chosen. Ask anybody why and they will say poisoned, and not one of them could tell you what by.",
+      "gives": [
+        "question_eastern_field"
+      ]
+    },
+    {
+      "text": "I am the one they ask when a thing has to be decided about ground. Nobody has asked me about this field in a long time. Nobody wants it."
     },
     {
       "text": "Rice? On the granary walls? -- I have walked past those walls every day of my life. Show me.",

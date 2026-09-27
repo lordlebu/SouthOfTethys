@@ -13,7 +13,13 @@
   ],
   "lines": [
     {
-      "text": "Mind the walls. -- Not for your sake. For the rice."
+      "text": "Mind the walls. -- Not for your sake. For the rice. It grows in the ossu, the thin layer the flood left on top, and if you knock that off it there is nothing under it but brick.",
+      "gives": [
+        "word_kia_ossu"
+      ]
+    },
+    {
+      "text": "Every autumn I cut it and every autumn it comes back. Nobody planted it. I have stopped asking who did."
     },
     {
       "text": "You have been down the channel. I can see it on your feet. -- Six feet of fall, and I have been cutting rice off the top of it for twenty years like a goat.",
