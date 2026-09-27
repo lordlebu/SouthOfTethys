@@ -1,0 +1,40 @@
+{
+  "id": "npc_drel",
+  "type": "npc",
+  "name": "Drel",
+  "role": "rice-cutter, dada of the granary",
+  "found_at": [
+    "poi_silted_granary"
+  ],
+  "language": "kia",
+  "would_settle": false,
+  "knows": [
+    "discovery_red_rice_survival"
+  ],
+  "lines": [
+    {
+      "text": "Mind the walls. -- Not for your sake. For the rice. It grows in the ossu, the thin layer the flood left on top, and if you knock that off it there is nothing under it but brick.",
+      "gives": [
+        "word_kia_ossu"
+      ]
+    },
+    {
+      "text": "Every autumn I cut it and every autumn it comes back. Nobody planted it. I have stopped asking who did."
+    },
+    {
+      "text": "You have been down the channel. I can see it on your feet. -- Six feet of fall, and I have been cutting rice off the top of it for twenty years like a goat.",
+      "requires": [
+        "discovery_granary_fall"
+      ]
+    }
+  ],
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "notes": "Drafted 27 September 2026 for the owner to rewrite. The granary's dada: nobody gave it to him, he simply got there first every autumn. Stays with the granary if helped, because somebody should see the north chamber cleared.",
+  "canon": "draft",
+  "sources": [
+    "Settling In plan, 27 September 2026"
+  ],
+  "sex": "male"
+}

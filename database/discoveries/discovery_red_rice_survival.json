@@ -16,7 +16,8 @@
     "poi_silted_granary"
   ],
   "helps": [
-    "npc_bekh"
+    "npc_bekh",
+    "npc_hasme"
   ],
   "restores": [
     "poi_eastern_field"

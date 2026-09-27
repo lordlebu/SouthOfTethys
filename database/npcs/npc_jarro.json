@@ -1,0 +1,43 @@
+{
+  "id": "npc_jarro",
+  "type": "npc",
+  "name": "Jarro",
+  "role": "dada of the Caravan Ground",
+  "found_at": [
+    "poi_caravan_camp"
+  ],
+  "language": "kia",
+  "would_settle": false,
+  "knows": [
+    "discovery_road_follows_water"
+  ],
+  "lines": [
+    {
+      "text": "Hear that? Strike the flag by the well and it rings hollow. Tan, the drivers call it -- the road's note. Where the ground rings like that, the road goes round.",
+      "gives": [
+        "word_kia_tan"
+      ]
+    },
+    {
+      "text": "Every stall on this rise pays the well a skin of water a season. I keep the well. So they pay me, and I keep the well. It is not complicated."
+    },
+    {
+      "text": "University people draw me a straight line across the basin every year and tell me I am losing a day. I give them a skin of water for the walk and they come back the long way."
+    },
+    {
+      "text": "So you walked it. -- Now you know why nobody here needs telling.",
+      "requires": [
+        "discovery_road_follows_water"
+      ]
+    }
+  ],
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "notes": "Drafted 27 September 2026 for the owner to rewrite. The Caravan Ground's dada: nobody gave him the rise, he has simply kept its well longer than anyone has argued. Right about the road before the player is, and patient about it.",
+  "canon": "draft",
+  "sources": [
+    "Settling In plan, 27 September 2026"
+  ],
+  "sex": "male"
+}

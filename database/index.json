@@ -1,5 +1,5 @@
 {
-  "version": "2.33.0",
+  "version": "2.35.0",
   "description": "SouthOfTethys canonical entity index",
   "counts": {
     "artifacts": 5,
@@ -13,10 +13,11 @@
     "flora": 118,
     "foodways": 19,
     "happenings": 3,
+    "homesteads": 3,
     "items": 82,
     "materials": 71,
     "mythology": 10,
-    "npcs": 18,
+    "npcs": 24,
     "places": 42,
     "points_of_interest": 37,
     "processes": 17,
@@ -621,6 +622,11 @@
       "happening_where_you_stop",
       "happening_year_names"
     ],
+    "homesteads": [
+      "homestead_dwarka",
+      "homestead_lothal",
+      "homestead_narmada"
+    ],
     "items": [
       "item_ammonite_pendant",
       "item_antivenin",
@@ -792,11 +798,15 @@
     ],
     "npcs": [
       "npc_anu",
+      "npc_ardhi",
       "npc_asura_princess",
       "npc_bekh",
       "npc_dala",
+      "npc_drel",
+      "npc_hasme",
       "npc_hesh",
       "npc_ila",
+      "npc_jarro",
       "npc_kunch",
       "npc_marn",
       "npc_moonj",
@@ -807,7 +817,9 @@
       "npc_sura",
       "npc_terke",
       "npc_thrali",
+      "npc_tolla",
       "npc_uma",
+      "npc_ushi",
       "npc_vessa"
     ],
     "places": [

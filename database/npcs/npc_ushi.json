@@ -1,0 +1,43 @@
+{
+  "id": "npc_ushi",
+  "type": "npc",
+  "name": "Ushi",
+  "role": "keeper of the salt orchard, morol of the market's growers",
+  "found_at": [
+    "poi_salt_orchard"
+  ],
+  "language": "kia",
+  "would_settle": true,
+  "knows": [
+    "discovery_fever_root_spread"
+  ],
+  "lines": [
+    {
+      "text": "Water them from the landward end, always. My grandmother said so and she was right about everything else. -- The market calls that uvai: a thing remembered by somebody who is not here to be asked why.",
+      "gives": [
+        "word_kia_uvai"
+      ]
+    },
+    {
+      "text": "Every surveyor who comes down from the plateau tells me it is the salt. It has been salt here since before the orchard. The trees did well in it for sixty years."
+    },
+    {
+      "text": "I am the one the growers send to the market when there is an argument about water. There is always an argument about water."
+    },
+    {
+      "text": "Fever-root. -- I have been pulling it up for ten years and calling it a weed. It is not a weed. It is winning.",
+      "requires": [
+        "discovery_fever_root_spread"
+      ]
+    }
+  ],
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "notes": "Drafted 27 September 2026 for the owner to rewrite. Dwarka's thesis is that local knowledge is simply right, so she is right before the player is: it is not the salt killing the orchard, and she has always known it. She holds the orchard's dry end the way a morol holds anything -- by being the one asked.",
+  "canon": "draft",
+  "sources": [
+    "Settling In plan, 27 September 2026"
+  ],
+  "sex": "female"
+}

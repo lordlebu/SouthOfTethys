@@ -46,5 +46,8 @@
     "x": 52,
     "y": 42
   },
-  "relief": "plateau"
+  "relief": "plateau",
+  "departs_from": [
+    "poi_high_camp"
+  ]
 }

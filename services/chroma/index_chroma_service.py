@@ -63,6 +63,9 @@ DB_FOLDERS = [
     # Written happenings: a dream on a map, somebody on the road. Prose a player can meet, so
     # retrieval should find it as it finds an NPC's lines.
     "happenings",
+    # What the player may build on a map and whose ground it is: the grounds, their holders' worries
+    # and the stages are prose a player meets, so the retrieval service should find them.
+    "homesteads",
     "vocabulary",
     # The lore layer: named places the player never stands in. Retrieval is the one consumer
     # that should see all of it -- the game deliberately does not, but a question about Harappa

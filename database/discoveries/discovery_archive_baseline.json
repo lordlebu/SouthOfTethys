@@ -38,7 +38,8 @@
     "question_moving_spring"
   ],
   "helps": [
-    "npc_vessa"
+    "npc_vessa",
+    "npc_ardhi"
   ],
   "notes": "The thesis. Seven rungs, and gated on two other discoveries so it cannot be reached by walking into the building -- the player has to bring the plateau's evidence in with them. Deliberately sympathetic to the University in the last line.",
   "epochs": [

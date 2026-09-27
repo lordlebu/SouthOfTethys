@@ -6,7 +6,8 @@
   "gloss": "the thin layer",
   "literal": "not-ours bone",
   "learned_from": [
-    "npc_sura"
+    "npc_sura",
+    "npc_drel"
   ],
   "notes": "A stratigraphic term in a language with no word for stratigraphy. The bone-pickers needed to tell each other which layer they meant.",
   "epochs": [

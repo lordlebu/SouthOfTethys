@@ -53,5 +53,8 @@
     "x": 16,
     "y": 64
   },
-  "relief": "basin"
+  "relief": "basin",
+  "departs_from": [
+    "poi_caravan_camp"
+  ]
 }

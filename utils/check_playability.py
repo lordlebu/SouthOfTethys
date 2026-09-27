@@ -73,6 +73,7 @@ class World:
         self.questions = load_all("field_questions")
         self.npcs = load_all("npcs")
         self.happenings = load_all("happenings")
+        self.homesteads = load_all("homesteads")
         self.words = load_all("vocabulary")
         self.materials = load_all("materials")
         self.items = load_all("items")
@@ -582,6 +583,50 @@ def structural(w: World, problems: list[str]) -> None:
                     )
 
 
+def homesteads_hold(w: World, end: State, obtainable: set[str], problems: list[str]) -> None:
+    """Every ground can be agreed and every stage built, by a player who has done what can be done.
+
+    The settling loop is a chain of gates -- a worry answered, then another, then materials and
+    people for each stage -- and a gate nothing opens stops the whole map's ending while every
+    other check here stays green. So each worry needs at least one answer a player can reach: a
+    discovery that can be finished, a person some finishable discovery helps, a word of the
+    holder's tongue that some line hands over, a thing that can be gathered or made. And each
+    stage's backers cannot outnumber the people of the map who can be helped.
+    """
+    finished = {d for d in w.discoveries if end.rung_of(d) >= w.last_rung(d)}
+    helped = {who for d in finished for who in (w.discoveries[d].get("helps") or [])}
+    for hid, doc in sorted(w.homesteads.items()):
+        here = {p for p, d in w.pois.items() if d.get("field_map") == doc.get("field_map")}
+        people = {n for n, d in w.npcs.items() if here & set(d.get("found_at") or [])}
+        for g in doc.get("grounds") or []:
+            language = (w.npcs.get(g.get("held_by")) or {}).get("language")
+            for worry in g.get("worries") or []:
+                def reachable(m: dict) -> bool:
+                    kind = m.get("approach")
+                    if kind == "show":
+                        return m.get("discovery") in finished
+                    if kind == "vouch":
+                        return m.get("person") in helped
+                    if kind == "tongue":
+                        if m.get("word"):
+                            return m["word"] in end.words
+                        return any(x.startswith(f"word_{language}_") for x in end.words)
+                    if kind == "offer":
+                        return m.get("material") in obtainable
+                    return False
+                if not any(reachable(m) for m in worry.get("met_by") or []):
+                    problems.append(f"{hid}: {g.get('id')}/{worry.get('id')} can never be answered")
+        for stage in doc.get("stages") or []:
+            for need in stage.get("needs") or []:
+                if need.get("id") not in obtainable:
+                    problems.append(f"{hid}: stage {stage.get('id')} needs {need.get('id')}, which can never be got")
+            if stage.get("backers", 0) > len(people & helped):
+                problems.append(
+                    f"{hid}: stage {stage.get('id')} wants {stage['backers']} backers and only "
+                    f"{len(people & helped)} people of the map can be helped"
+                )
+
+
 def main() -> int:
     w = World()
     only = sys.argv[1] if len(sys.argv) > 1 else None
@@ -610,6 +655,7 @@ def main() -> int:
     tools = {a for i in gettable for a in w.affords(i)}
 
     end = play(w, everywhere, tools, gettable)
+    homesteads_hold(w, end, _materials | gettable, problems)
 
     for did in sorted(w.discoveries):
         if not (set(w.discoveries[did].get("found_at") or []) & everywhere):

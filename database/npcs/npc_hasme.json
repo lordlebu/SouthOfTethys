@@ -1,0 +1,40 @@
+{
+  "id": "npc_hasme",
+  "type": "npc",
+  "name": "Hasme",
+  "role": "morol of the camp, keeper of the eastern field",
+  "found_at": [
+    "poi_eastern_field"
+  ],
+  "language": "kia",
+  "would_settle": true,
+  "knows": [
+    "discovery_poisoned_ground"
+  ],
+  "lines": [
+    {
+      "text": "You are looking at the crust. Everybody looks at the crust. My mother said it was the Shattering's, and that the ground would come back when it chose. -- Eight acres, and it has not chosen. Ask anybody why and they will say poisoned, and not one of them could tell you what by.",
+      "gives": [
+        "question_eastern_field"
+      ]
+    },
+    {
+      "text": "I am the one they ask when a thing has to be decided about ground. Nobody has asked me about this field in a long time. Nobody wants it."
+    },
+    {
+      "text": "Rice? On the granary walls? -- I have walked past those walls every day of my life. Show me.",
+      "requires": [
+        "discovery_red_rice_survival"
+      ]
+    }
+  ],
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "notes": "Drafted 27 September 2026 for the owner to rewrite. Lothal's morol: not a chief, the person the camp asks when a thing has to be decided about ground. She holds the eastern field by keeping everybody off it, which she thinks is a kindness.",
+  "canon": "draft",
+  "sources": [
+    "Settling In plan, 27 September 2026"
+  ],
+  "sex": "female"
+}
