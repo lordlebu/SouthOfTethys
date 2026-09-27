@@ -89,7 +89,7 @@ SCHEMA_FOR = {
 # Values that look like ids but are not entity references.
 NOT_REFERENCES = {"sources", "type", "canon", "id"}
 
-# The three field maps the game's overworld screen is composed around.
+# The field maps the game's overworld screen is composed around.
 #
 # `src/content/overworldMap.ts` builds that entire screen out of these coordinates: where each
 # node sits, the straight-line distances between maps, the viewBox fitted to their extent, and
@@ -98,11 +98,17 @@ NOT_REFERENCES = {"sources", "type", "canon", "id"}
 # it, because the geometry tests there check the arithmetic and not the data it runs on.
 #
 # So they are pinned here rather than only described in a plan. Canon may place new things
-# anywhere it likes; these three are what everything else is placed relative to.
+# anywhere it likes; these are what everything else is placed relative to.
 OVERWORLD_ANCHORS = {
     "field_map_lothal": {"x": 28, "y": 50},
     "field_map_dwarka": {"x": 16, "y": 64},
-    "field_map_narmada": {"x": 58, "y": 20},
+    # Inside its own region since 2026-09-27. It sat at (58, 20) -- north of everything -- from
+    # before the regions were traced off the drawn map, which puts the plateau inland and the
+    # Aravali ranges on the northern coast.
+    "field_map_narmada": {"x": 52, "y": 42},
+    # The topmost map, by the owner's ruling of 2026-09-27: the Aravali is the top of insular
+    # India, joined to Asia by the floating islands and the line. Pinned so nothing slides above it.
+    "field_map_aravali": {"x": 51, "y": 30},
 }
 
 ID_SHAPED = re.compile("^(" + "|".join(re.escape(p) for p in PREFIX_DIRS) + ")[a-z0-9_]+$")

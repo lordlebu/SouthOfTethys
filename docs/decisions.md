@@ -192,11 +192,13 @@ nobody bumps identifies nothing. Drift against the game repo is *reported and no
 canon does not own the game's working tree, and CI does not check it out.
 
 **The three overworld coordinates are pinned in the linter.** `src/content/overworldMap.ts`
-builds that whole screen out of Lothal (28, 50), Dwarka (16, 64) and Narmada (58, 20): node
+builds that whole screen out of Lothal (28, 50), Dwarka (16, 64), Narmada (52, 42) and, since
+2026-09-27, the Aravali (51, 30), the topmost map by the owner's ruling: node
 positions, distances, the viewBox fitted to their extent, and which way the outermost labels
 lean. Moving one crashes nothing -- it silently rescales the screen, and the geometry tests in
 both repositories check the arithmetic rather than the data it runs on. Canon may place new
-things anywhere; these three are what everything else is placed relative to.
+things anywhere; these are what everything else is placed relative to. Narmada moved from
+(58, 20) to (52, 42) the same day, into its own region: it had been north of the Aravali.
 
 **An event edge must be stated from both ends.** Only `successors` is read when the timeline is
 drawn, so an edge declared on the predecessor side alone exists in canon and never appears in

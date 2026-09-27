@@ -101,8 +101,12 @@ Settled 2026-08-27, before any place was entered. All four were cheap to decide 
 expensive afterwards, which is why they were taken first.
 
 **`y` increases southward on the 0-100 grid.** `y = 0` is north. Lothal sits at (28, 50),
-Dwarka at (16, 64) — south and west of it — and the Narmada Plateau at (58, 20), the
-northernmost of the three. This is the screen convention rather than the latitude one, and it
+Dwarka at (16, 64) — south and west of it — and the Narmada Plateau at (52, 42), inland. The
+Aravali Crossing at (51, 30) is the northernmost map: **amended 2026-09-27 by the owner**, "the
+Aravali is the top-most part of insular India, and connects to Asia by the floating islands and
+the train line." Narmada was first placed at (58, 20), north of everything, before the Aravali
+existed and before the regions were traced off the drawn map; that pin sat outside its own region
+for a month. This is the screen convention rather than the latitude one, and it
 is chosen because SVG's `y` already grows downward: the game's overworld screen and every atlas
 view render the grid directly, with no flip anywhere.
 
