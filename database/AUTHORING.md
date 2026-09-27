@@ -513,6 +513,13 @@ an answer that names the wrong kind of thing. `check_playability.py` refuses a w
 player can reach will answer, a stage whose materials can never be got, and a stage that wants more
 backers than the map has people who can be helped.
 
+**Each map's worries carry its thesis.** Lothal's holders are afraid of what nobody has looked at;
+Dwarka's (`homestead_dwarka`) are simply right, and wait to see whether the traveller has caught up;
+the Narmada's steward (`homestead_narmada`) trusts a record that begins at the wound. A worry that
+could be lifted onto another map unchanged is not doing its job. Stages use what that map's own
+ground gives -- sandstone and husk hawser in Dwarka, basalt and sinew on the plateau -- which the
+playability check cannot see, since it asks only whether a thing can be got *somewhere*.
+
 ### A character
 
 ```json

@@ -13,7 +13,8 @@
     "discovery_terrace_water"
   ],
   "npcs": [
-    "npc_marn"
+    "npc_marn",
+    "npc_tolla"
   ],
   "description": "Stone steps up a hillside, grazed by goats, described in the archive as ornamental.",
   "arrival": "Two hundred steps of dry-laid stone, each one a little lower at the outer edge than the inner. Marn's goats are on them. The University's survey calls them a devotional feature and gives them a paragraph.",

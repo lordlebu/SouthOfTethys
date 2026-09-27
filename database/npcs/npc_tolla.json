@@ -1,0 +1,41 @@
+{
+  "id": "npc_tolla",
+  "type": "npc",
+  "name": "Tolla",
+  "role": "head herder, dada of the high grazing",
+  "found_at": [
+    "poi_herders_terraces"
+  ],
+  "language": "maru",
+  "would_settle": true,
+  "knows": [],
+  "lines": [
+    {
+      "text": "A goat carries what it agreed to carry and not a handful more. Bhar, we say -- a load with consent in it. Put a thing on a goat without asking and it will lie down in the road and be right.",
+      "gives": [
+        "word_maru_bhar"
+      ]
+    },
+    {
+      "text": "The top step is the goats' in the dry months. It always has been. The University calls it ornamental, and I let them."
+    },
+    {
+      "text": "The wind comes over the edge up here like a hand. It took my father's tent. It has taken better things than that."
+    },
+    {
+      "text": "You stood in it. On purpose. -- Then you know it is not only taking.",
+      "requires": [
+        "discovery_escarpment_wind"
+      ]
+    }
+  ],
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "notes": "Drafted 27 September 2026 for the owner to rewrite. The high grazing's dada: he decides which goats go on which step, and nobody else has wanted the job. Would settle, if something up here were built to stay.",
+  "canon": "draft",
+  "sources": [
+    "Settling In plan, 27 September 2026"
+  ],
+  "sex": "male"
+}

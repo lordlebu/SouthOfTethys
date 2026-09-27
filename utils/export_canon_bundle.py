@@ -96,7 +96,12 @@ UNINDEXED = 10**9
 # 563.9 KB against a 560 KB limit, and the rule written beside that limit says the answer is a
 # lore/play split inside the exported types rather than a bigger number. So this now applies to
 # all four files, and gives back 60 KB -- appreciably more than the batch that forced it cost.
-WITHHELD = ("canon", "sources")
+#
+# **`epochs` joined them when two more homesteads took the bundle to 562.1 KB.** The game reads no
+# epoch anywhere -- `src/` never names the field, and `test/adapterCoverage.test.ts` lists it as
+# skipped on every collection -- because the whole game is set in one of them. About 7 KB across
+# 146 entities. When the game grows a second era this comes back off the list, deliberately.
+WITHHELD = ("canon", "sources", "epochs")
 
 # `notes` as well, for the three folders whose notes nothing reads.
 #

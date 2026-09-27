@@ -30,7 +30,8 @@
     }
   ],
   "helps": [
-    "npc_sura"
+    "npc_sura",
+    "npc_ushi"
   ],
   "restores": [
     "poi_salt_orchard"

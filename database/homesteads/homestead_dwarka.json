@@ -1,0 +1,192 @@
+{
+  "id": "homestead_dwarka",
+  "type": "homestead",
+  "name": "The pump on the long way",
+  "field_map": "field_map_dwarka",
+  "grounds": [
+    {
+      "id": "ground_orchard_dry_end",
+      "at": "poi_salt_orchard",
+      "name": "The orchard's dry end",
+      "held_by": "npc_ushi",
+      "prose": "The landward rows of the salt orchard, on firm ground above the crust, where the trees are still doing well and the wind comes in off the basin without anything in its way. Ushi waters them from this end, always, and does not intend to stop.",
+      "worries": [
+        {
+          "id": "dying",
+          "says": "The trees are dying from the sea end. You are going to tell me it is the salt. Everybody from up the coast tells me it is the salt.",
+          "hint": "She is not asking to be told. She knows it is not the salt, and she is waiting to see whether you have looked at what is doing well where the trees are not.",
+          "not_that": "That is the salt answer again, in better words.",
+          "eased": "Fever-root. Taking the ground a finger at a time, and making it no good for anything else. -- I said it was not the salt. Nobody listens to the one who does the watering.",
+          "met_by": [
+            {
+              "approach": "show",
+              "discovery": "discovery_fever_root_spread"
+            }
+          ]
+        },
+        {
+          "id": "again",
+          "says": "And the sea will not be back. It has left before and it will leave again, and a thing built for it coming back is a thing that will be wrong in my lifetime.",
+          "hint": "She is not frightened of the sea going. She wants to know you have understood that it goes -- the midden says so, or anybody who picks it.",
+          "not_that": "That does not tell me you know what happens here.",
+          "eased": "Yes. Layer on layer of it, and a word for it, and a place for the bones. You have read it. Good.",
+          "met_by": [
+            {
+              "approach": "show",
+              "discovery": "discovery_midden_layers"
+            },
+            {
+              "approach": "vouch",
+              "person": "npc_sura"
+            }
+          ]
+        },
+        {
+          "id": "stranger",
+          "says": "And you are from the plateau, or from the delta, or somewhere they measure things. The orchard does not need measuring.",
+          "hint": "She wants you to have learned something here rather than brought it: a word of the market's, or somebody of Dwarka's to speak for you.",
+          "not_that": "That is where you are from. I asked what you have learned here.",
+          "eased": "You have been listening, then. That is rarer than you would think.",
+          "met_by": [
+            {
+              "approach": "tongue"
+            },
+            {
+              "approach": "vouch",
+              "person": "npc_pell"
+            },
+            {
+              "approach": "vouch",
+              "person": "npc_sura"
+            }
+          ]
+        }
+      ],
+      "agrees": "Put it at the dry end, then, and turn the pump to the landward well -- the old one, the one my grandmother used. And pull the fever-root on your way past. Every time."
+    },
+    {
+      "id": "ground_caravan_rise",
+      "at": "poi_caravan_camp",
+      "name": "The caravan rise",
+      "held_by": "npc_jarro",
+      "prose": "A low rise above the Caravan Ground, where the road stops for the night beside a well older than the road. The flagstones round the well ring hollow if you strike them, and every stall on the rise pays Jarro for the water.",
+      "worries": [
+        {
+          "id": "long_way",
+          "says": "The road goes the long way round the basin. You want to build on the long way. Tell me why it is long, and I will tell you whether you can.",
+          "hint": "He knows why. He is not asking you to find out; he is asking whether you already have. Somebody who had walked the road as it goes would know what it goes round.",
+          "not_that": "That is a University answer. They draw a straight line and come back the long way.",
+          "eased": "Water. It goes where the water was, and the water was here. -- Nobody needs to be told that twice.",
+          "met_by": [
+            {
+              "approach": "show",
+              "discovery": "discovery_road_follows_water"
+            }
+          ]
+        },
+        {
+          "id": "sea",
+          "says": "And a pump. For what -- the harbour? There is no harbour. The sea is not coming back, whatever they tell each other in the gate court.",
+          "hint": "He wants to know you have stopped waiting for the sea. The walls could tell you that, or the market's slates, or the man who keeps them.",
+          "not_that": "You are still building for the sea. It has gone.",
+          "eased": "Later every year. It is on the slates, and the walls say it, and you have read them both. Then you are pumping from the well, like a sensible person.",
+          "met_by": [
+            {
+              "approach": "show",
+              "discovery": "discovery_seawall_courses"
+            },
+            {
+              "approach": "show",
+              "discovery": "discovery_market_ledger"
+            },
+            {
+              "approach": "vouch",
+              "person": "npc_pell"
+            }
+          ]
+        },
+        {
+          "id": "toll",
+          "says": "And the rise pays the well. Every stall pays. A pump on my rise pays as well, or the drivers ask why they do.",
+          "hint": "He does not want paying so much as he wants to be seen to be paid. Anything the road would trade for, shown to him, would do.",
+          "not_that": "That is not something a driver would take for water.",
+          "eased": "That will do. Keep it -- I only wanted it said in front of the drivers that you would.",
+          "met_by": [
+            {
+              "approach": "offer",
+              "material": "material_date_fruit"
+            },
+            {
+              "approach": "offer",
+              "material": "material_salt_crust"
+            },
+            {
+              "approach": "vouch",
+              "person": "npc_ushi"
+            }
+          ]
+        }
+      ],
+      "agrees": "Build it by the well, then. Where the flag rings. And when it turns, the first skin is the well's -- which is to say mine."
+    }
+  ],
+  "stages": [
+    {
+      "id": "foundation",
+      "name": "Lay the footing",
+      "needs": [
+        {
+          "id": "material_sandstone",
+          "count": 4
+        },
+        {
+          "id": "material_palm_husk",
+          "count": 3
+        }
+      ],
+      "backers": 1,
+      "prose": "Dressed sandstone in a ring on the firm ground, packed with husk against the wind, and a scaffold of old harbour spars lashed round it. Somebody you helped brought a cart for the stone and said it was going that way anyway."
+    },
+    {
+      "id": "tower",
+      "name": "Raise the tower",
+      "needs": [
+        {
+          "id": "material_mangrove_pole",
+          "count": 3
+        },
+        {
+          "id": "item_husk_hawser",
+          "count": 1
+        }
+      ],
+      "backers": 2,
+      "prose": "A lattice of mangrove poles, guyed with husk hawser laid the way Pell lays it, three strands against the twist. From the top you can see the whole basin, the road going the long way round it, and exactly what it goes round."
+    },
+    {
+      "id": "sails",
+      "name": "Hang the vanes, and fill the still",
+      "needs": [
+        {
+          "id": "material_bamboo_cane",
+          "count": 3
+        },
+        {
+          "id": "material_date_fruit",
+          "count": 3
+        }
+      ],
+      "backers": 2,
+      "prose": "Bamboo vanes that turned the first morning and lifted water the first afternoon. Beside the pump a glasshouse of salt-glass over shallow trays, where the sun takes the brine and leaves the water, and date palms set in the first beds of it."
+    }
+  ],
+  "settled": "They came up from the market at evening -- growers, a driver or two, somebody's grandmother -- and nobody said it was a place yet. The vanes turned. The still dripped. By dark there was a lamp in the glasshouse and a queue at the well, and Jarro was taking nothing from anybody, and pretending he was.",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "notes": "Drafted 27 September 2026 for the owner to rewrite. Dwarka's thesis is that local knowledge is simply right, so here the holders are right before the player is: Ushi knows it is not the salt, Jarro knows why the road goes the long way, and both are waiting to see whether the traveller has caught up. A wind-pump rather than a mill, because what Dwarka lacks is sweet water; the glasshouse is a solar still. Drawn, for now, with Lothal's mill and glasshouse.",
+  "canon": "draft",
+  "sources": [
+    "Settling In plan, 27 September 2026"
+  ]
+}

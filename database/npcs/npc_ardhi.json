@@ -1,0 +1,43 @@
+{
+  "id": "npc_ardhi",
+  "type": "npc",
+  "name": "Ardhi",
+  "role": "steward of the University's ground",
+  "found_at": [
+    "poi_narmada_university"
+  ],
+  "language": "maru",
+  "would_settle": false,
+  "knows": [
+    "discovery_archive_baseline"
+  ],
+  "lines": [
+    {
+      "text": "You have come from the spring. Everybody does, eventually, and asks me why it is not where the survey puts it. I say the survey is correct. I have been saying it for nineteen years.",
+      "gives": [
+        "question_moving_spring"
+      ]
+    },
+    {
+      "text": "Every post-hole on the plateau is in the survey, and every one was dug after the road. Nothing goes up on University ground that the survey has not seen."
+    },
+    {
+      "text": "I keep the ground book. The archive keeps what happened; I keep where it is allowed to happen. It is less interesting and I prefer it."
+    },
+    {
+      "text": "Before the first entry. -- Nineteen years, and I never once asked what the first page was written after.",
+      "requires": [
+        "discovery_archive_baseline"
+      ]
+    }
+  ],
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "notes": "Drafted 27 September 2026 for the owner to rewrite. The Narmada's thesis is a record that begins at the wound. She trusts the survey the way other people trust ground, and is not wrong to -- it is perfect -- only about where it starts.",
+  "canon": "draft",
+  "sources": [
+    "Settling In plan, 27 September 2026"
+  ],
+  "sex": "female"
+}

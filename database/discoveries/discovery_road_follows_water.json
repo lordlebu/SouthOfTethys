@@ -34,5 +34,8 @@
   "sources": [
     "Varuna's Field Diary design",
     "AI_CONTEXT.md"
+  ],
+  "helps": [
+    "npc_jarro"
   ]
 }

@@ -13,7 +13,8 @@
     "discovery_fever_root_spread"
   ],
   "npcs": [
-    "npc_sura"
+    "npc_sura",
+    "npc_ushi"
   ],
   "description": "Fruit trees dying at one end and something else doing well at the other.",
   "arrival": "The orchard is half orchard. The seaward rows are salt-killed and standing, and through them, in the shade the dead trees still cast, something with the wrong leaf shape is doing extremely well.",
