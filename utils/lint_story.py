@@ -66,6 +66,7 @@ PREFIX_DIRS = {
     "vehicle_": "vehicles",
     "foodway_": "foodways",
     "happening_": "happenings",
+    "homestead_": "homesteads",
 }
 
 # folder -> schema stem, where the two differ.
@@ -84,6 +85,7 @@ SCHEMA_FOR = {
     "vehicles": "vehicle",
     "foodways": "foodway",
     "happenings": "happening",
+    "homesteads": "homestead",
 }
 
 # Values that look like ids but are not entity references.
@@ -765,6 +767,42 @@ def main() -> int:
             continue
         if not (payload.get("scientific") or "").strip():
             errors.append(f"{path.name}: no `scientific`")
+
+    # --- homesteads say where they stand, and whose it is --------------------------
+    #
+    # The reference check resolves every id, so a ground at a place that does not exist already
+    # fails. What it cannot see is a ground on another map, a holder who is never at the ground
+    # they hold, or an answer that names the wrong kind of thing for its approach -- a `show` with
+    # no discovery would be a worry nobody can ever ease, and the settling loop would stop there.
+    homestead_maps = {}
+    for eid, (path, payload) in entities.items():
+        if path.parent.name != "homesteads":
+            continue
+        fm = payload.get("field_map")
+        if fm in homestead_maps:
+            errors.append(f"{path.name}: {fm} already has {homestead_maps[fm]}; one homestead a map")
+        homestead_maps[fm] = eid
+        on_map = set((entities.get(fm, (None, {}))[1] or {}).get("points_of_interest") or [])
+        ground_ids = set()
+        for g in payload.get("grounds") or []:
+            gid = g.get("id")
+            if gid in ground_ids:
+                errors.append(f"{path.name}: ground {gid} twice")
+            ground_ids.add(gid)
+            if g.get("at") not in on_map:
+                errors.append(f"{path.name}: {gid} stands at {g.get('at')}, which is not on {fm}")
+            holder = entities.get(g.get("held_by"), (None, {}))[1] or {}
+            if g.get("at") not in (holder.get("found_at") or []):
+                errors.append(f"{path.name}: {gid} is held by {g.get('held_by')}, who is never at {g.get('at')}")
+            for w in g.get("worries") or []:
+                for m in w.get("met_by") or []:
+                    needs = {"show": "discovery", "vouch": "person", "offer": "material"}.get(m.get("approach"))
+                    if needs and not m.get(needs):
+                        errors.append(f"{path.name}: {gid}/{w.get('id')}: a `{m.get('approach')}` answer names no {needs}")
+                    if m.get("approach") == "tongue" and m.get("word") and not str(m["word"]).startswith(
+                        f"word_{holder.get('language')}_"
+                    ):
+                        errors.append(f"{path.name}: {gid}/{w.get('id')}: {m['word']} is not {holder.get('language')}")
 
     # --- the overworld's anchors ---------------------------------------------------
     for map_id, expected in sorted(OVERWORLD_ANCHORS.items()):

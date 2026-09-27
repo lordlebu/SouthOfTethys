@@ -4,7 +4,7 @@ Everything canon holds is a **noun**. Pick the right one, write one JSON file, u
 manifest, run the gate. Four steps, and the gate tells you if you got it wrong.
 
 If you only read one thing: **the folder you choose decides whether your writing reaches the
-game.** Fifteen folders are exported into the browser bundle and eight are not, and putting a
+game.** Sixteen folders are exported into the browser bundle and eight are not, and putting a
 hundred lore entries in an exported folder is the one mistake here with a cost attached.
 
 ---
@@ -21,6 +21,7 @@ hundred lore entries in an exported folder is the one mistake here with a cost a
 | A person in the history | `characters/` | no |
 | A person the player can talk to | `npcs/` | **yes** |
 | Something that happens to the player on a map | `happenings/` | **yes** |
+| What the player may build on a map, and with whose say-so | `homesteads/` | **yes** |
 | A ladder of understanding the player climbs | `discoveries/` | **yes** |
 | A question the player forms a reading of | `field_questions/` | **yes** |
 | An animal or a plant | `fauna/`, `flora/` | **yes** |
@@ -446,6 +447,63 @@ choice must be takeable, and none worse than not having been here.** `check_play
 every choice's `grants` as reachable once the map is walked and the requirements seen, refuses a
 grant that is not a discovery, word, question or recipe, and refuses an `at` that is not on the
 happening's own maps.
+
+### A homestead
+
+What the traveller builds on a field map with the backing of its people -- the endgame of the
+Settling In plan. **Not a `settlement_`**, which is history: Kavik's Lothal, with founders and an
+epoch. One homestead a map at most, and some maps have none on purpose -- the Aravali is a crossing.
+
+```json
+{
+  "id": "homestead_lothal",
+  "type": "homestead",
+  "name": "The mill among the trees",
+  "field_map": "field_map_lothal",
+  "grounds": [
+    {
+      "id": "ground_eastern_field",
+      "at": "poi_eastern_field",
+      "name": "The Eastern Field",
+      "held_by": "npc_hasme",
+      "prose": "What the ground is like, said the first time the traveller asks.",
+      "worries": [
+        {
+          "id": "poisoned",
+          "says": "The worry, in the holder's own voice.",
+          "hint": "What listening draws out: the kind of answer, never the answer.",
+          "not_that": "What they say to an answer that misses. Never a penalty.",
+          "eased": "What they say when it is answered.",
+          "met_by": [{ "approach": "show", "discovery": "discovery_poisoned_ground" }]
+        }
+      ],
+      "agrees": "What they say when every worry is answered."
+    }
+  ],
+  "stages": [
+    {
+      "id": "foundation",
+      "name": "Lay the foundation",
+      "needs": [{ "id": "material_river_clay", "count": 4 }],
+      "backers": 1,
+      "prose": "What the diary says when this stage stands."
+    }
+  ],
+  "settled": "What the diary says when the people move in."
+}
+```
+
+**Talked, never fought.** An answer is one of four approaches: `tongue` (a word of the holder's own
+language -- any, or the one named), `show` (a discovery finished), `vouch` (a person the traveller
+has helped) or `offer` (a thing carried). Listening is always open in the game and never eases a
+worry: it is how the traveller hears the `hint`. The holder is an `npc_` found at the ground, and
+usually one a finished discovery `helps`, so helping them is the same fact the standing and the
+ending read.
+
+`lint_story.py` refuses a ground off the homestead's map, a holder who is never at the ground, and
+an answer that names the wrong kind of thing. `check_playability.py` refuses a worry nothing a
+player can reach will answer, a stage whose materials can never be got, and a stage that wants more
+backers than the map has people who can be helped.
 
 ### A character
 

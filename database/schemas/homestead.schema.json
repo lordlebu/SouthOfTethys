@@ -1,0 +1,235 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Homestead",
+  "description": "What the traveller may build on a field map, with the backing of its people: the grounds it could stand on, the person who holds each ground and must be talked round, and the building in the stages it goes up in.\n\nNot a `settlement_`. That prefix is history -- Kavik's Lothal, a city with founders and an epoch. A homestead is what one traveller builds in the game's era, and canon says only what is true of the world around it: which grounds there are and whose they are, what worries the holder, what would answer each worry, and what the building is made of. It never says how long anything takes or in what order the player must do things; that is play.\n\n**Talked, never fought.** Each worry is answered by something the traveller already has -- a word of the holder's language, a discovery finished, a person helped who will vouch, a thing carried. Nothing can be lost by a wrong answer.\n\nOne homestead per field map at most, and some maps have none on purpose: the Aravali is a crossing.",
+  "type": "object",
+  "required": [
+    "id",
+    "type",
+    "name",
+    "field_map",
+    "grounds",
+    "stages",
+    "settled"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^homestead_[a-z0-9_]+$"
+    },
+    "type": {
+      "const": "homestead"
+    },
+    "name": {
+      "type": "string",
+      "description": "What the finished homestead is called."
+    },
+    "field_map": {
+      "type": "string",
+      "pattern": "^field_map_[a-z0-9_]+$"
+    },
+    "grounds": {
+      "type": "array",
+      "minItems": 1,
+      "description": "Where it could stand. The traveller builds on one, which is the whole of choosing.",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "at",
+          "name",
+          "held_by",
+          "prose",
+          "worries",
+          "agrees"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^ground_[a-z0-9_]+$"
+          },
+          "at": {
+            "type": "string",
+            "pattern": "^poi_[a-z0-9_]+$",
+            "description": "The point of interest the ground is, on this homestead's map."
+          },
+          "name": {
+            "type": "string"
+          },
+          "held_by": {
+            "type": "string",
+            "pattern": "^npc_[a-z0-9_]+$",
+            "description": "The person who holds it: a morol, a dada, a gunda, a dacoit chief. Found at `at`."
+          },
+          "prose": {
+            "type": "string",
+            "description": "What the ground is like, said the first time the traveller stands on it to ask."
+          },
+          "worries": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 4,
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "says",
+                "hint",
+                "not_that",
+                "eased",
+                "met_by"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "pattern": "^[a-z0-9_]+$"
+                },
+                "says": {
+                  "type": "string",
+                  "description": "The worry, in the holder's own voice."
+                },
+                "hint": {
+                  "type": "string",
+                  "description": "What listening draws out: enough to know what kind of answer would do, never the answer itself."
+                },
+                "not_that": {
+                  "type": "string",
+                  "description": "What the holder says to an answer that misses. In character, and never a penalty."
+                },
+                "eased": {
+                  "type": "string",
+                  "description": "What the holder says when it is answered."
+                },
+                "met_by": {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "approach"
+                    ],
+                    "additionalProperties": false,
+                    "properties": {
+                      "approach": {
+                        "type": "string",
+                        "enum": [
+                          "tongue",
+                          "show",
+                          "vouch",
+                          "offer"
+                        ],
+                        "description": "`tongue` is speaking the figure's own language: any word of it the traveller knows, or the one named. `show` is a discovery the traveller has finished. `vouch` is somebody the traveller has helped, standing up for them. `offer` is a thing from the satchel, handed over. Listening is always open and never eases a worry: it is how the traveller hears what would."
+                      },
+                      "word": {
+                        "type": "string",
+                        "pattern": "^word_[a-z0-9_]+$"
+                      },
+                      "discovery": {
+                        "type": "string",
+                        "pattern": "^discovery_[a-z0-9_]+$"
+                      },
+                      "person": {
+                        "type": "string",
+                        "pattern": "^npc_[a-z0-9_]+$"
+                      },
+                      "material": {
+                        "type": "string",
+                        "pattern": "^(material|item)_[a-z0-9_]+$"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "agrees": {
+            "type": "string",
+            "description": "What the holder says when every worry is answered."
+          }
+        }
+      }
+    },
+    "stages": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 4,
+      "description": "The building, in the order it goes up. Each is one press on the ground once it is agreed.",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "needs",
+          "backers",
+          "prose"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9_]+$"
+          },
+          "name": {
+            "type": "string"
+          },
+          "needs": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "count"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "pattern": "^(material|item)_[a-z0-9_]+$"
+                },
+                "count": {
+                  "type": "integer",
+                  "minimum": 1
+                }
+              }
+            },
+            "description": "What is spent building it. Materials and items, never a currency."
+          },
+          "backers": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "How many people of this map the traveller must have helped for this stage: hands to raise it."
+          },
+          "prose": {
+            "type": "string",
+            "description": "What the diary says when this stage stands."
+          }
+        }
+      }
+    },
+    "settled": {
+      "type": "string",
+      "description": "What the diary says when the last stage stands and the people who backed it move in."
+    },
+    "epochs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "notes": {
+      "type": "string"
+    },
+    "canon": {
+      "type": "string"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}

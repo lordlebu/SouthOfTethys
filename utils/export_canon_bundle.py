@@ -40,7 +40,7 @@ DEFAULT_OUT = Path(os.environ.get("CANON_REPO", REPO.parent / "4000BCESaraswathy
 # entity has one, then id -- see the note on ordering below.
 BUNDLE = {
     "species.json": ["fauna", "flora"],
-    "places.json": ["regions", "field_maps", "points_of_interest", "npcs", "happenings"],
+    "places.json": ["regions", "field_maps", "points_of_interest", "npcs", "happenings", "homesteads"],
     "knowledge.json": ["discoveries", "field_questions", "vocabulary"],
     "crafting.json": ["materials", "items", "processes", "recipes", "vehicles"],
 }
@@ -142,6 +142,9 @@ WITHHELD = ("canon", "sources")
 WITHHELD_NOTES = (
     "discoveries", "field_questions", "vocabulary", "recipes", "happenings",
     "regions", "field_maps", "points_of_interest", "npcs",
+    # A homestead's `notes` are the authoring rationale; the player reads its grounds' prose, the
+    # worries and the stages. Withheld in the commit that created the folder, as happenings were.
+    "homesteads",
 )
 
 

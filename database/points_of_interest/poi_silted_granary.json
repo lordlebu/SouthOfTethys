@@ -26,5 +26,8 @@
   ],
   "description": "A grid of brick chambers filled to the brim with silt, and something growing out of them.",
   "arrival": "The granary held the city's grain on raised platforms so the flood could not reach it. The flood has since reached it. What is remarkable is not that the chambers filled but that the crop came back on its own, red and thin, growing out of the tops of the walls.",
-  "notes": "Where the rice discovery lives. The ruin is already doing the restoring; Varuna only has to notice."
+  "notes": "Where the rice discovery lives. The ruin is already doing the restoring; Varuna only has to notice.",
+  "npcs": [
+    "npc_drel"
+  ]
 }
