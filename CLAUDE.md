@@ -191,6 +191,12 @@ only thing canon says about the *shape* of a map, as distinct from what it is ma
 rule cannot produce a harbour, an island and a plateau, and trying made every map a dome that was
 hardest to walk exactly in the middle where the walking happens.
 
+A field map with neighbours names where it is left from, **`departs_from`**, and a map that
+settles has one **homestead** (`database/homesteads/`): grounds, their holders, the worries each
+holder has, and three building stages. Its worries must carry the map's thesis, and its stages use
+what that map's ground gives. See `database/AUTHORING.md` and the Settling In entry in
+`docs/decisions.md`. The Aravali has none, by the owner's ruling: it is the crossing.
+
 A region can only hold a map if its biomes are `renderable` in `database/biomes.json`. **That
 gate has moved**: the game now has painted ground for `lava_field`, `snow`, `sky_island` and
 `sky_underside`, so the Ganges Lava Sea and the Tethys Sky Routes are no longer blocked on art.

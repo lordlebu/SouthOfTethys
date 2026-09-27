@@ -1214,6 +1214,40 @@ terraces, trade with the Maru, and hold the Asura-Tainted Princess as their elde
 No places were added. The clan's villages are described in the note; a settlement entity waits until
 something needs to stand in one.
 
+## Settling In: homesteads and cart points — settled 2026-09-27
+
+The game's endgame: help a map's people, then settle there with their backing. Canon holds the nouns
+and the game the verbs, so two new things were added here, and nothing about how settling plays.
+
+- **`homestead_`, not `settlement_`.** `settlement_` is history: Kavik's Lothal, a city with
+  founders and an epoch. A homestead is what one traveller builds in the game's era. It declares:
+  - its grounds, and who holds each (a morol, a dada, never a chief);
+  - each holder's worries, and what answers each (a word of their tongue, a finished discovery, a
+    helped person vouching, a thing carried);
+  - three stages of materials and backers.
+
+  It never says how long anything takes. One a map at most. The lint refuses a ground off its map,
+  or a holder who is never at the ground. Playability refuses a worry nothing reachable answers,
+  a stage no one can build, and more backers than the map can help. Notes are withheld from the bundle.
+- **Each map's worries carry its thesis.** On Lothal, Hasme and Drel fear what nobody has looked at.
+  On Dwarka, Ushi and Jarro are right before the traveller is, because local knowledge is simply
+  right there. On the Narmada, Ardhi trusts a record that begins at the wound, and Tolla fears the
+  wind the mill will turn. Six new people, each drafted for the owner to rewrite, each with an
+  opening line that gives a word or a question, as the game requires.
+- **The Aravali has no homestead, on the owner's word:** "it is all about crossing the sea." It is
+  the topmost map, joined to Asia by the floating islands and the line (canon 2.33.0 moved the
+  Narmada's pin below it).
+- **`departs_from` on every field map with a neighbour**: the one or two places the cart leaves from.
+  The lint refuses a map with neighbours and none.
+- **`epochs` is withheld from the bundle.** The two new homesteads took it to 562.1 KB against the 560
+  budget. The game reads no epoch anywhere, so it joined `canon` and `sources` in `WITHHELD`, and the
+  bundle is 553.1 KB. The next overflow cannot be solved with a field; see the game's retrospective.
+- **The hive is canon because the owner drew it.** The Narmada's last stage mentions a hive on a
+  thatched stand, so the picture and the text agree.
+
+The game's `docs/settling-in.md` is the record of the plan, and its `docs/retrospective.md` looks
+back over both repositories from their first commits.
+
 ## Security
 
 Two Hugging Face tokens were exposed during setup and must be treated as burned: one pasted
