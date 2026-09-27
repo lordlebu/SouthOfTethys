@@ -50,5 +50,8 @@
     "x": 28,
     "y": 50
   },
-  "relief": "delta"
+  "relief": "delta",
+  "departs_from": [
+    "poi_lothal_camp"
+  ]
 }

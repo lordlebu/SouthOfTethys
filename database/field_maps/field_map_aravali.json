@@ -54,5 +54,9 @@
     "y": 30
   },
   "relief": "island",
-  "proportion": "portrait"
+  "proportion": "portrait",
+  "departs_from": [
+    "poi_first_pier",
+    "poi_far_landing"
+  ]
 }

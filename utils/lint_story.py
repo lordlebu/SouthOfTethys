@@ -768,6 +768,17 @@ def main() -> int:
         if not (payload.get("scientific") or "").strip():
             errors.append(f"{path.name}: no `scientific`")
 
+    # --- a map is left from its own cart points ------------------------------------
+    for eid, (path, payload) in entities.items():
+        if path.parent.name != "field_maps":
+            continue
+        own = set(payload.get("points_of_interest") or [])
+        for p in payload.get("departs_from") or []:
+            if p not in own:
+                errors.append(f"{path.name}: departs from {p}, which is not on this map")
+        if payload.get("neighbours") and not payload.get("departs_from"):
+            errors.append(f"{path.name}: has neighbours but no `departs_from` -- nowhere to leave from")
+
     # --- homesteads say where they stand, and whose it is --------------------------
     #
     # The reference check resolves every id, so a ground at a place that does not exist already

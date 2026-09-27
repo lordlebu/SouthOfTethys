@@ -448,6 +448,14 @@ every choice's `grants` as reachable once the map is walked and the requirements
 grant that is not a discovery, word, question or recipe, and refuses an `at` that is not on the
 happening's own maps.
 
+### Where a map is left from
+
+Every field map with a neighbour names **`departs_from`**: the points of interest a traveller must
+stand at to go on -- the cart yard, the pier, the caravan ground. The owner's ruling of 27 September:
+maps are left from designated places, as a horse-cart leaves a yard and not a field. The first is
+where somebody arriving is set down. `lint_story.py` refuses one that is not on its own map, and a
+map with neighbours and none.
+
 ### A homestead
 
 What the traveller builds on a field map with the backing of its people -- the endgame of the
