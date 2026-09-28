@@ -8,12 +8,14 @@
   ],
   "won_from": [
     "flora_mahua",
-    "flora_sweet_nectar_mahua"
+    "flora_sweet_nectar_mahua",
+    "flora_highland_bitter_mahua"
   ],
   "found_in": [
     "forest",
     "plains",
-    "hills"
+    "hills",
+    "mountains"
   ],
   "rarity": "common",
   "renews": "seasonal",

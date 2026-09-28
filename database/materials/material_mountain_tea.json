@@ -1,0 +1,26 @@
+{
+  "id": "material_mountain_tea",
+  "type": "material",
+  "name": "Mountain tea",
+  "classes": [
+    "produce",
+    "physic"
+  ],
+  "won_from": [
+    "flora_black_ash_tea",
+    "flora_golden_ember_leaf"
+  ],
+  "found_in": [
+    "hills",
+    "mountains"
+  ],
+  "rarity": "common",
+  "renews": "fast",
+  "notes": "The young leaves of the wild tea bushes on sulphurous volcanic ground: the dark, sharp black-ash leaf that anyone may pick, and the amber-veined ember leaf the Narmada scholars prize. Plucked at the tip, and the bush flushes again within the season.",
+  "canon": "inferred",
+  "sources": [
+    "database/flora/flora_black_ash_tea.json",
+    "database/flora/flora_golden_ember_leaf.json"
+  ],
+  "source_index": 73
+}

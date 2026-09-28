@@ -1,0 +1,23 @@
+{
+  "id": "material_hare_pelt",
+  "type": "material",
+  "name": "Snow hare pelt",
+  "classes": [
+    "hide"
+  ],
+  "won_from": [
+    "fauna_glacial_snow_hare"
+  ],
+  "found_in": [
+    "snow",
+    "mountains"
+  ],
+  "rarity": "rare",
+  "renews": "seasonal",
+  "notes": "Thick white winter fur off the glacial snow hare. Too small and too thin-skinned to make a garment alone; stitched as a lining, and the warmest thing a traveller on the ice can carry.",
+  "canon": "inferred",
+  "sources": [
+    "database/fauna/fauna_glacial_snow_hare.json"
+  ],
+  "source_index": 75
+}
