@@ -39,17 +39,17 @@
 <line class="grid" x1="100" y1="0" x2="100" y2="100"/>
 <line class="grid" x1="0" y1="100" x2="100" y2="100"/>
 <line class="edge" x1="51" y1="30" x2="28" y2="50"/>
-<line class="edge" x1="51" y1="30" x2="58" y2="20"/>
+<line class="edge" x1="51" y1="30" x2="52" y2="42"/>
 <line class="edge" x1="16" y1="64" x2="28" y2="50"/>
-<line class="edge" x1="28" y1="50" x2="58" y2="20"/>
+<line class="edge" x1="28" y1="50" x2="52" y2="42"/>
 <circle class="dot" cx="51" cy="30" r="1.5"/>
 <text class="lbl" x="51" y="27" text-anchor="middle">The Aravali Crossing</text>
 <circle class="dot" cx="16" cy="64" r="1.5"/>
 <text class="lbl" x="18" y="61" text-anchor="start">North Dwarka</text>
 <circle class="dot" cx="28" cy="50" r="1.5"/>
 <text class="lbl" x="28" y="47" text-anchor="middle">Lothal</text>
-<circle class="dot" cx="58" cy="20" r="1.5"/>
-<text class="lbl" x="58" y="17" text-anchor="middle">The Narmada Plateau</text>
+<circle class="dot" cx="52" cy="42" r="1.5"/>
+<text class="lbl" x="52" y="39" text-anchor="middle">The Narmada Plateau</text>
 <circle class="dot-place dot-within" cx="50" cy="95" r="1.5"/>
 <text class="lbl" x="50" y="92" text-anchor="middle">Antarctic Ice Wall</text>
 <circle class="dot-place" cx="46" cy="52" r="1.5"/>
@@ -68,8 +68,8 @@
 <text class="lbl" x="45" y="59" text-anchor="middle">The Konkan Hills</text>
 <circle class="dot-place" cx="20" cy="24" r="1.5"/>
 <text class="lbl" x="20" y="21" text-anchor="middle">Makkan Coast</text>
-<circle class="dot-place dot-within" cx="58" cy="20" r="1.5"/>
-<text class="lbl" x="58" y="17" text-anchor="middle">First Narmada Outpost</text>
+<circle class="dot-place dot-within" cx="52" cy="42" r="1.5"/>
+<text class="lbl" x="52" y="39" text-anchor="middle">First Narmada Outpost</text>
 <circle class="dot-place" cx="47" cy="67" r="1.5"/>
 <text class="lbl" x="47" y="64" text-anchor="middle">Nilgiri</text>
 <circle class="dot-place dot-within" cx="47" cy="67" r="1.5"/>

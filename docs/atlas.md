@@ -26,7 +26,7 @@ Each era below is canon as it stood then. An entity that names no epoch is prese
 | flora |  | 118 |
 | foodways |  | 19 |
 | items |  | 76 |
-| materials |  | 71 |
+| materials |  | 76 |
 | processes |  | 17 |
 | recipes |  | 85 |
 | vehicles |  | 8 |
@@ -76,7 +76,7 @@ graph TD
 | flora |  | 118 |
 | foodways |  | 19 |
 | items |  | 76 |
-| materials |  | 71 |
+| materials |  | 76 |
 | processes |  | 17 |
 | recipes |  | 85 |
 | vehicles |  | 8 |
@@ -120,7 +120,7 @@ graph TD
 | flora |  | 118 |
 | foodways |  | 19 |
 | items |  | 76 |
-| materials |  | 71 |
+| materials |  | 76 |
 | processes |  | 17 |
 | recipes |  | 85 |
 | vehicles |  | 8 |
@@ -167,7 +167,7 @@ graph TD
 | flora |  | 118 |
 | foodways |  | 19 |
 | items | 3 | 76 |
-| materials |  | 71 |
+| materials |  | 76 |
 | processes |  | 17 |
 | recipes | 5 | 85 |
 | vehicles | 2 | 8 |
@@ -234,7 +234,7 @@ The id stays `epoch_current` deliberately. Fifty-five entities reference it and 
 | flora |  | 118 |
 | foodways |  | 19 |
 | items | 3 | 76 |
-| materials |  | 71 |
+| materials |  | 76 |
 | processes |  | 17 |
 | recipes | 5 | 85 |
 | vehicles | 4 | 8 |
@@ -271,7 +271,7 @@ graph TD
 | field maps | 4 |  |
 | points of interest | 37 |  |
 | characters | 4 |  |
-| npcs | 18 |  |
+| npcs | 24 |  |
 | happenings | 3 |  |
 | factions |  | 3 |
 | events | 2 |  |
@@ -283,8 +283,9 @@ graph TD
 | fauna |  | 265 |
 | flora |  | 118 |
 | foodways |  | 19 |
+| homesteads | 3 |  |
 | items | 3 | 76 |
-| materials |  | 71 |
+| materials |  | 76 |
 | processes |  | 17 |
 | recipes |  | 85 |
 | vehicles | 2 | 8 |

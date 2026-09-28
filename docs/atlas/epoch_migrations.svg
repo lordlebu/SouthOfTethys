@@ -75,8 +75,8 @@
 <text class="lbl" x="20" y="21" text-anchor="middle">Makkan Coast</text>
 <circle class="dot-place" cx="13" cy="19" r="1.5"/>
 <text class="lbl" x="15" y="16" text-anchor="start">Mohenjodaro</text>
-<circle class="dot-place dot-within" cx="58" cy="20" r="1.5"/>
-<text class="lbl" x="58" y="17" text-anchor="middle">First Narmada Outpost</text>
+<circle class="dot-place dot-within" cx="52" cy="42" r="1.5"/>
+<text class="lbl" x="52" y="39" text-anchor="middle">First Narmada Outpost</text>
 <circle class="dot-place" cx="47" cy="67" r="1.5"/>
 <text class="lbl" x="47" y="64" text-anchor="middle">Nilgiri</text>
 <circle class="dot-place dot-within" cx="47" cy="67" r="1.5"/>

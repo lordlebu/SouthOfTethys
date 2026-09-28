@@ -1,5 +1,5 @@
 {
-  "version": "2.36.0",
+  "version": "2.37.0",
   "description": "SouthOfTethys canonical entity index",
   "counts": {
     "artifacts": 5,
@@ -15,7 +15,7 @@
     "happenings": 3,
     "homesteads": 3,
     "items": 82,
-    "materials": 71,
+    "materials": 76,
     "mythology": 10,
     "npcs": 24,
     "places": 42,
@@ -741,6 +741,7 @@
       "material_goat_hide",
       "material_gourd_shell",
       "material_guggul_resin",
+      "material_hare_pelt",
       "material_haritaki_fruit",
       "material_indigo_dye",
       "material_jackfruit_flesh",
@@ -752,6 +753,7 @@
       "material_mahua_oil",
       "material_mango_fruit",
       "material_mangrove_pole",
+      "material_mountain_tea",
       "material_mustard_seed",
       "material_myrrh_gum",
       "material_native_copper",
@@ -759,6 +761,7 @@
       "material_neem_bark",
       "material_oyster_shell",
       "material_palm_husk",
+      "material_pine_resin",
       "material_pippali",
       "material_potters_grog",
       "material_prana_pollen",
@@ -776,13 +779,15 @@
       "material_sinew",
       "material_sivatherium_milk",
       "material_sky_moss",
+      "material_snow_moss",
       "material_static_sap",
       "material_tamarind_pulp",
       "material_taro_root",
       "material_teak_timber",
       "material_tin_ore",
       "material_tree_pitch",
-      "material_viper_venom"
+      "material_viper_venom",
+      "material_wild_honey"
     ],
     "mythology": [
       "mythology_ascension_of_agun",
