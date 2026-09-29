@@ -13,10 +13,12 @@
   "journal_prompt": "A small, fleeting spirit born from ritual embers that floats through the air, causing minor fires when displeased.",
   "canon": "primary",
   "sources": [
-    "docs/bestiary.md"
+    "docs/bestiary.md",
+    "docs/lore/lorework-2026-09-29.md"
   ],
   "mood": "graceful",
   "source_index": 229,
   "sentient": true,
-  "subclade": "ember_born"
+  "subclade": "ember_born",
+  "appearance": "A tiny, crackling wisp of floating soot and bright orange sparks that darts through the air like a fiery dragonfly, leaving a short-lived trail of glowing ash."
 }

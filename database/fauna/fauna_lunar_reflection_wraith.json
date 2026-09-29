@@ -14,9 +14,11 @@
   "journal_prompt": "An incorporeal, tactile illusion manifested by lunar radiation refracting on the Great Bath's water, haunting lonely travelers.",
   "canon": "primary",
   "sources": [
-    "docs/bestiary.md"
+    "docs/bestiary.md",
+    "docs/lore/lorework-2026-09-29.md"
   ],
   "mood": "uncanny",
   "source_index": 212,
-  "sentient": true
+  "sentient": true,
+  "appearance": "An ethereal, faceless apparition made entirely of rippling silver light and the caustic patterns of moonlit water. It hovers a hand's breadth above the surface and mirrors, distorted, the silhouette of whoever looks into it."
 }

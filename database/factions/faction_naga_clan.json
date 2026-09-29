@@ -1,0 +1,16 @@
+{
+  "id": "faction_naga_clan",
+  "type": "faction",
+  "name": "The Naga Clan",
+  "aliases": [
+    "Naga-Kin"
+  ],
+  "culture": "vedda",
+  "origin": "Vedda and Indus migrants of the Deccan Plateau and the Saraswati Delta, spiritual and bodily descendants of Rakshak Takshak",
+  "notes": "Human people who trace their line to Takshak, the shape-shifting stone serpent with obsidian wings (fauna_obsidian_winged_serpent). They keep serpent-cult rites, work metal, and are known for political espionage. Two of their callings used to be filed as animals and are people: the infiltrators, shape-shifting courtiers in royal courts who serve Takshak as diplomats, spies and assassins, with iridescent scales along the jaw and slit pupils that show by lamplight (was `fauna_naga_infiltrator`, Serpens simulans); and the Naga-Kin sentries, armed temple guards in forged bronze with polished stone spears at the gates and stepwells of Dwarka (was `fauna_naga_kin_sentry`, Serpens custos). Reclassified by the owner's ruling of 29 September 2026. Not related to the Nagaraptors; see mythology_naga_raptor_fallacy.",
+  "canon": "secondary",
+  "sources": [
+    "docs/bestiary.md",
+    "docs/lore/lorework-2026-09-29.md"
+  ]
+}

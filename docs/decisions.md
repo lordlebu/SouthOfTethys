@@ -1248,6 +1248,38 @@ and the game the verbs, so two new things were added here, and nothing about how
 The game's `docs/settling-in.md` is the record of the plan, and its `docs/retrospective.md` looks
 back over both repositories from their first commits.
 
+## What things look like, and what is not an animal — settled 2026-09-29
+
+The game's art plan listed the species canon could not describe without inventing them, and the
+ones that ran into the rule that nothing in this world is a threat. The owner answered both in one
+set of notes, kept whole at `docs/lore/lorework-2026-09-29.md` and cited by everything below.
+
+- **`appearance` is a new field on fauna and flora**: the body, colour and texture, in prose a
+  painter can work from, never the pose. 28 species carry one. It is **withheld from the bundle**,
+  because the game draws paintings and has never read a description of how a thing looks. Adding
+  all 28 changed the bundle by nothing, which is the check that the withholding holds.
+- **The Asura war beasts are painted calm.** They were bred by the Asura tens of millions of years
+  ago and are now rare, tamed or feral, and no longer tied to them. The scutosaurs graze or haul
+  stone in harness; the gorgonopsids and the dimetrodon rest saddled or tethered; the rajasaurus
+  sleeps over a temple arch. Their journal lines were rewritten to say so. They stay animals.
+- **The Colossal Void-Devourer is not an animal.** It is one construct raised from bones, not a
+  species, so it left `fauna/` for `artifacts/` as a relic: an overgrown skeleton set in basalt. A
+  player no longer meets it on the road.
+- **The Nagaraptor, the Vajraptor and the two Naga were people all along.** Culture, tool use and
+  political agency. They left `fauna/` for three factions -- the Taj Nagaraptors, the Vajraptor
+  Canopy Sentinels and the Naga Clan -- and two lore-only cultures, `taj` and `vajraptor`, which
+  carry no given names so the game deals no strangers of them. They want portraits and lines, not
+  plates. The Nagaraptors and the Naga are unrelated; the belief that they are is its own myth,
+  `mythology_naga_raptor_fallacy`, with Onko's paper and Digha Jani's correction.
+- **The tendua and the manticores are animals**, of a Permian simian-felid line, on the owner's word.
+- **The lore repository is free to grow.** The whole of `database/` is 3.5 MB; the Vercel deploy is
+  94 MB, 79 of it the bundled embedding model, against a 250 MB function limit. Nothing needed
+  disabling. What constrains lore is the game's 560 KB bundle, and the answer to that is a lore-only
+  field withheld at export, as `appearance` is -- not a smaller canon.
+
+Still open: the five horror plants (the siege trees, the flesh-vine, the blood-weed, the blood
+orchid), which the notes did not reach; and where large mammals live, below.
+
 ## Security
 
 Two Hugging Face tokens were exposed during setup and must be treated as burned: one pasted

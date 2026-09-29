@@ -13,9 +13,11 @@
   "journal_prompt": "A bird with a sweet, echoing song that nests in the high, misty valleys, feeding on sky-bramble berries.",
   "canon": "primary",
   "sources": [
-    "docs/bestiary.md"
+    "docs/bestiary.md",
+    "docs/lore/lorework-2026-09-29.md"
   ],
   "mood": "watchful",
   "source_index": 200,
-  "placement_note": "Placeable since the sky tiles were painted. The earlier note held this as lore \"until a sky mode exists\" -- `sky_island` and `sky_underside` are renderable now, so the condition it named is met."
+  "placement_note": "Placeable since the sky tiles were painted. The earlier note held this as lore \"until a sky mode exists\" -- `sky_island` and `sky_underside` are renderable now, so the condition it named is met.",
+  "appearance": "A plump songbird with soft ash-grey back feathers fading into a pale lavender-white breast speckled with tiny indigo chevrons."
 }

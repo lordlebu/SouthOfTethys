@@ -14,7 +14,9 @@
   "journal_prompt": "A bioluminescent fungal-algal symbiont that grows on the fossilized marrow of ancient Garudasaurs, illuminating the Stone Age University's archives.",
   "canon": "primary",
   "sources": [
-    "docs/bestiary.md"
+    "docs/bestiary.md",
+    "docs/lore/lorework-2026-09-29.md"
   ],
-  "source_index": 10
+  "source_index": 10,
+  "appearance": "A velvet-soft, carpet-like turf of pale cerulean tendrils that gives off a soft, pulsing blue glow where it grows over fossilised marrow."
 }

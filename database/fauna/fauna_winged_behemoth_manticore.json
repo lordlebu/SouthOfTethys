@@ -13,8 +13,10 @@
   "journal_prompt": "An unnatural winged leopard with a human face, forged purely from brick-dust, shadow, and corrupted Asura mantras.",
   "canon": "primary",
   "sources": [
-    "docs/bestiary.md"
+    "docs/bestiary.md",
+    "docs/lore/lorework-2026-09-29.md"
   ],
   "mood": "uncanny",
-  "source_index": 208
+  "source_index": 208,
+  "appearance": "A colossal, shadowy manticore descended from corrupted sphinx-felids: the muscular body of a black leopard, flexible ape-like forelimbs, and broad membranous wings woven from brick-dust and shadow. Its strikingly expressive human face is crowned with scorpion-spine horns, and it can speak, in archaic dialects."
 }

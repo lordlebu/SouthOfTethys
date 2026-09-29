@@ -13,10 +13,12 @@
   "journal_prompt": "A fire-bride variant that dances within sacrificial bonfires, throwing sparks that ignite neighboring structures when displeased.",
   "canon": "primary",
   "sources": [
-    "docs/bestiary.md"
+    "docs/bestiary.md",
+    "docs/lore/lorework-2026-09-29.md"
   ],
   "mood": "graceful",
   "source_index": 215,
   "sentient": true,
-  "subclade": "ember_born"
+  "subclade": "ember_born",
+  "appearance": "A tall, luminous figure woven from twisting golden flames and dark charcoal smoke, moving with fluid, hypnotic grace, as if performing a temple dance inside a bonfire."
 }

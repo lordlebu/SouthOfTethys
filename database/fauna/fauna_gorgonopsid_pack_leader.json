@@ -11,11 +11,13 @@
   ],
   "placement": "encounter",
   "rarity": "mythic",
-  "journal_prompt": "A larger, hyper-aggressive gorgonopsid bred by Asura generals to lead war-packs in battle.",
+  "journal_prompt": "A big sabre-toothed gorgonopsid of a line the Asura once bred to lead war-packs. The packs are long gone; this one lies sphinx-still by a basalt gate and lets the road go by.",
   "canon": "primary",
   "sources": [
-    "docs/bestiary.md"
+    "docs/bestiary.md",
+    "docs/lore/lorework-2026-09-29.md"
   ],
   "mood": "uncanny",
-  "source_index": 231
+  "source_index": 231,
+  "appearance": "A large gorgonopsid: a sabre-toothed Permian synapsid, long-skulled and heavy-shouldered, larger than the rest of its line."
 }

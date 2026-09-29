@@ -13,7 +13,9 @@
   "journal_prompt": "A smaller, shrub-like relative of the Bhuta-Kāna fig, growing on cliffs and whispering soft, ambient forest sounds during high winds.",
   "canon": "primary",
   "sources": [
-    "docs/bestiary.md"
+    "docs/bestiary.md",
+    "docs/lore/lorework-2026-09-29.md"
   ],
-  "source_index": 15
+  "source_index": 15,
+  "appearance": "A sprawling, cliff-clinging shrub with smooth silver-grey bark, spade-shaped leathery leaves, and small ribbed purple figs set along the branches."
 }

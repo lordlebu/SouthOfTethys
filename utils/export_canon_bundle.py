@@ -101,7 +101,12 @@ UNINDEXED = 10**9
 # epoch anywhere -- `src/` never names the field, and `test/adapterCoverage.test.ts` lists it as
 # skipped on every collection -- because the whole game is set in one of them. About 7 KB across
 # 146 entities. When the game grows a second era this comes back off the list, deliberately.
-WITHHELD = ("canon", "sources", "epochs")
+#
+# **`appearance` joined them in the commit that created it.** It is what a species looks like, in
+# prose for the books and the art plan's prompts -- a body, a colour, a texture. The game draws
+# paintings and marks and has never read a description of how a thing looks, so every byte of it
+# would be inlined into the page and read by nothing.
+WITHHELD = ("canon", "sources", "epochs", "appearance")
 
 # `notes` as well, for the three folders whose notes nothing reads.
 #

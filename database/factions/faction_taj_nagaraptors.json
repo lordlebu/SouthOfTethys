@@ -1,0 +1,19 @@
+{
+  "id": "faction_taj_nagaraptors",
+  "type": "faction",
+  "name": "The Taj Nagaraptors",
+  "aliases": [
+    "Taj caste",
+    "Proto-Jambhu Dromaeosaurs",
+    "Nagaraptor vallatus"
+  ],
+  "culture": "taj",
+  "origin": "native diapsid theropods of Jambhudweep, the Scale alliance of the Fang vs Scale Wars",
+  "notes": "Feathered, social raptors who build multi-level earthen Taj Nest-Homes over the spiral tunnels of the burrowing tortoise, which gains warning of predators in return, and ring them with moats and earthworks. They wear clay body pigment and shell-and-feather jewellery, carry carved skull staffs, and are governed by matriarchal councils; the present elder is Taj-Mother Kurukula. They belonged to the Scale alliance in the Fang vs Scale Wars. Reclassified from the bestiary (`fauna_nagaraptor`) to a people by the owner's ruling of 29 September 2026: they have culture, tool use and political agency, so they want portraits and lines, not a plate. See mythology_naga_raptor_fallacy for why they are so often confused with the Naga, to whom they are not related.",
+  "canon": "secondary",
+  "sources": [
+    "SouthOfTethys.txt",
+    "docs/bestiary.md",
+    "docs/lore/lorework-2026-09-29.md"
+  ]
+}

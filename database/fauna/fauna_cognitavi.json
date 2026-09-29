@@ -17,7 +17,8 @@
   "notes": "Hyper-intelligent navigator birds. Subspecies include Vanga Pearl-Guide and Abyssal Storm-Watcher that aid seafarers.",
   "canon": "primary",
   "sources": [
-    "SouthOfTethys.txt"
+    "SouthOfTethys.txt",
+    "docs/lore/lorework-2026-09-29.md"
   ],
   "biomes": [
     "coast",
@@ -28,5 +29,6 @@
   "rarity": "rare",
   "mood": "clever",
   "journal_prompt": "A navigator bird watches the water with its head tilted, reading something in it that you cannot, and does not much care that you are here.",
-  "source_index": 240
+  "source_index": 240,
+  "appearance": "An elegant, raven-sized bird with sleek, iridescent slate-grey plumage, a pronounced ivory casque above a sharp hooked beak, and luminous amber eyes marked with star-like pale flecks."
 }

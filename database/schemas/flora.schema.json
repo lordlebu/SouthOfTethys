@@ -200,6 +200,11 @@
         "type": "string"
       },
       "description": "Other names this plant is known by. Fauna has carried this field for as long as the schema has and flora never did, which was an asymmetry with no argument behind it -- a plant is at least as likely to have a second name as an animal, and rather more likely where the vernacular and the botanical name are both in daily use.\n\nIt was noticed the way these things are: somebody asked for nux-vomica, canon held it under `Kuchla`, and the apothecary printed no binomial -- so a plant that was there could not be found by the only name the reader had for it."
+    },
+    "appearance": {
+      "type": "string",
+      "minLength": 20,
+      "description": "What it looks like, in prose a painter can work from: the body, colour and texture, not the pose. Canon's record for the books and the art plan; withheld from the game's bundle, which never reads it."
     }
   },
   "additionalProperties": false

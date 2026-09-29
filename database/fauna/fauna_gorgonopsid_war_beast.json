@@ -11,11 +11,13 @@
   ],
   "placement": "encounter",
   "rarity": "mythic",
-  "journal_prompt": "A shaggy-haired Permian predator selectively bred and genetically corrupted by Asuras to serve as heavy shock cavalry.",
+  "journal_prompt": "A shaggy sabre-toothed Permian predator, bred by the Asura long ago as shock cavalry. This one wears an old harness and a new owner's knots, and dozes at the edge of camp.",
   "canon": "primary",
   "sources": [
-    "docs/bestiary.md"
+    "docs/bestiary.md",
+    "docs/lore/lorework-2026-09-29.md"
   ],
   "mood": "uncanny",
-  "source_index": 220
+  "source_index": 220,
+  "appearance": "A shaggy-haired, sabre-toothed gorgonopsid, heavy in the shoulder, often still wearing a harness from an older use."
 }

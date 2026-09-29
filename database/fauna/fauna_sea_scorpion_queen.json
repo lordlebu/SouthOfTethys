@@ -13,8 +13,10 @@
   "journal_prompt": "A predatory Eurypterid of the southern lagoons that has undergone mimetic-devolvement, resembling human women to lure prey.",
   "canon": "primary",
   "sources": [
-    "docs/bestiary.md"
+    "docs/bestiary.md",
+    "docs/lore/lorework-2026-09-29.md"
   ],
   "mood": "fearsome",
-  "source_index": 125
+  "source_index": 125,
+  "appearance": "An unsettlingly tall aquatic mimic. Its upper body resembles a serene, pale-skinned woman in a cowl of wet kelp, and below the waist it becomes an armoured, segmented dark-teal eurypterid tail flanked by jointed swimming paddles."
 }

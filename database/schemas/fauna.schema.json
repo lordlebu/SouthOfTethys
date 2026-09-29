@@ -228,6 +228,11 @@
         "type": "string"
       },
       "description": "Other names this creature is known by. Two fauna carry one, and neither schema nor linter knew until `additionalProperties` was tightened."
+    },
+    "appearance": {
+      "type": "string",
+      "minLength": 20,
+      "description": "What it looks like, in prose a painter can work from: the body, colour and texture, not the pose. Canon's record for the books and the art plan; withheld from the game's bundle, which never reads it."
     }
   },
   "additionalProperties": false
