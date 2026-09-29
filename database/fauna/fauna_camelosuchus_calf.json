@@ -13,8 +13,13 @@
   "journal_prompt": "A young, playful camelosuchus that stays close to its mother, learning to forage on desert saltbush.",
   "canon": "primary",
   "sources": [
-    "docs/bestiary.md"
+    "docs/bestiary.md",
+    "docs/lore/lorework-2026-09-29.md"
   ],
   "mood": "playful",
-  "source_index": 109
+  "source_index": 109,
+  "landmasses": [
+    "jambhudweepa",
+    "gondwana"
+  ]
 }

@@ -19,7 +19,8 @@
   "canon": "primary",
   "sources": [
     "SouthOfTethys.txt",
-    "docs/bestiary.md"
+    "docs/bestiary.md",
+    "docs/lore/lorework-2026-09-29.md"
   ],
   "region": "saraswati-godavari-deltas",
   "biomes": [
@@ -30,5 +31,9 @@
   "rarity": "rare",
   "journal_prompt": "An 8-foot giant river salamander that has survived since the Pleistocene. It waits in the murky delta pools of Lothal to ambush passing prey. The skull is flatter and broader than a salamander's has any right to be, and the legs sprawl where they should tuck.",
   "mood": "fearsome",
-  "source_index": 6
+  "source_index": 6,
+  "landmasses": [
+    "jambhudweepa",
+    "gondwana"
+  ]
 }

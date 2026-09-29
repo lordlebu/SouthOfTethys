@@ -18,5 +18,9 @@
   ],
   "mood": "uncanny",
   "source_index": 233,
-  "appearance": "A pareiasaur like the shield-beast, heavier in the head, with a broad bone-hard plate across its forehead, and a leather harness for hauling."
+  "appearance": "A pareiasaur like the shield-beast, heavier in the head, with a broad bone-hard plate across its forehead, and a leather harness for hauling.",
+  "landmasses": [
+    "jambhudweepa",
+    "gondwana"
+  ]
 }

@@ -13,8 +13,13 @@
   "journal_prompt": "A swamp-dwelling giant salamander variant whose skin exudes a paralyzing neurotoxin when threatened.",
   "canon": "primary",
   "sources": [
-    "docs/bestiary.md"
+    "docs/bestiary.md",
+    "docs/lore/lorework-2026-09-29.md"
   ],
   "mood": "fearsome",
-  "source_index": 7
+  "source_index": 7,
+  "landmasses": [
+    "jambhudweepa",
+    "gondwana"
+  ]
 }

@@ -4,10 +4,11 @@
   "name": "Gondwana",
   "kind": "continent",
   "description": "The southern supercontinent Jambhudweep was fused to in deep time, before the seas divided it.",
-  "notes": "Named as the setting of the Fang vs Scale wars. Canon had no entity for it, which is why the source document filed that event under `region_shattered_sea` -- a region that exists, and is not where the war happened. A place canon can point at is the fix.",
+  "notes": "Named as the setting of the Fang vs Scale wars. Canon had no entity for it, which is why the source document filed that event under `region_shattered_sea` -- a region that exists, and is not where the war happened. A place canon can point at is the fix. Its survivors are Jambhudweep's too, and nowhere else: the Permian and Triassic relicts, now critically rare; the giant amphibians; the crocodylomorphs, which Jambhudweep has in more shapes than anywhere; the first freshwater whales; and the giant flightless birds. Canon marks them `landmasses: [jambhudweepa, gondwana]`, and means to author more of each.",
   "canon": "primary",
   "sources": [
     "dump/fang-vs-scale-wars.md",
-    "AI_CONTEXT.md"
+    "AI_CONTEXT.md",
+    "docs/lore/lorework-2026-09-29.md"
   ]
 }

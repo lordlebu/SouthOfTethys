@@ -13,8 +13,13 @@
   "journal_prompt": "A predatory, bipedal crocodyliform that re-evolved an upright, bipedal sprinting gait to chase down prey on sandy shores.",
   "canon": "primary",
   "sources": [
-    "docs/bestiary.md"
+    "docs/bestiary.md",
+    "docs/lore/lorework-2026-09-29.md"
   ],
   "mood": "fearsome",
-  "source_index": 92
+  "source_index": 92,
+  "landmasses": [
+    "jambhudweepa",
+    "gondwana"
+  ]
 }

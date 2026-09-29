@@ -14,8 +14,13 @@
   "journal_prompt": "A smaller, striped terrestrial crocodile that follows larger predators to feed on the remains of giant avian prey.",
   "canon": "primary",
   "sources": [
-    "docs/bestiary.md"
+    "docs/bestiary.md",
+    "docs/lore/lorework-2026-09-29.md"
   ],
   "mood": "fearsome",
-  "source_index": 120
+  "source_index": 120,
+  "landmasses": [
+    "jambhudweepa",
+    "gondwana"
+  ]
 }

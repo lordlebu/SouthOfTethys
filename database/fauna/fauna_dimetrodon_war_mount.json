@@ -19,5 +19,9 @@
   ],
   "mood": "uncanny",
   "source_index": 221,
-  "appearance": "A sail-backed synapsid whose sail is banded in the bright colours the Asura bred into its line, often saddled."
+  "appearance": "A sail-backed synapsid whose sail is banded in the bright colours the Asura bred into its line, often saddled.",
+  "landmasses": [
+    "jambhudweepa",
+    "gondwana"
+  ]
 }

@@ -13,8 +13,13 @@
   "journal_prompt": "A faster, single-humped variant of Camelosuchus adapted to sandy dunes, capable of sustaining high speeds across the wastes.",
   "canon": "primary",
   "sources": [
-    "docs/bestiary.md"
+    "docs/bestiary.md",
+    "docs/lore/lorework-2026-09-29.md"
   ],
   "mood": "watchful",
-  "source_index": 89
+  "source_index": 89,
+  "landmasses": [
+    "jambhudweepa",
+    "gondwana"
+  ]
 }

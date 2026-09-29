@@ -1278,7 +1278,41 @@ set of notes, kept whole at `docs/lore/lorework-2026-09-29.md` and cited by ever
   field withheld at export, as `appearance` is -- not a smaller canon.
 
 Still open: the five horror plants (the siege trees, the flesh-vine, the blood-weed, the blood
-orchid), which the notes did not reach; and where large mammals live, below.
+orchid), which the notes did not reach.
+
+## Two shores: Mainland Asia north of the Aravali — settled 2026-09-29
+
+The owner's ruling: the large mammals, elephants and bears specifically, live in Asia, not on
+Jambhudweep, and are met north of the Aravali. Jambhudweep leans instead toward giant flightless
+birds, early freshwater whales, crocodylomorphs, critically rare Permian and Triassic relicts and
+giant amphibians, which it shares with Gondwana.
+
+- **"Laurasia" is `mainland_asia`**, the continent canon already had (`place_mainland_asia`,
+  "across the Tethys Sea", Harappa's side). It gained the alias rather than a second name.
+- **`landmasses` on a species restricts it; absent means anywhere its biomes are.** Four live only
+  in Mainland Asia: the Straight-Tusked Elephant, the Laurasian Cave Bear, the new Laurasian Wolf
+  and the woolly bactrian croc. Twenty-three are Jambhudweep's and Gondwana's and never cross north:
+  the gorgonopsids, scutosaurs, dimetrodons and shringasaurs, the Postosuchus, the two giant
+  salamanders, the voays and baurusuchids and the camel-crocs, the walking whale and the river
+  dolphin, and the two elephantbirds. Everything else still crosses freely.
+- **`landmass_edges` on a field map says which edge is another landmass**; the game finds the ground
+  by flooding from that edge through land until it meets the sea. The Aravali's is `north:
+  mainland_asia`, and the flood stops exactly at the strait. Canon names the edge and never a row
+  count, the way `renews` names an ordering and never a number of days.
+- **The ids stay; the names move.** `fauna_narmada_straight_tusk` and `fauna_narmada_cave_bear` key
+  saves, plates and the art manifest, so they keep their ids and change their names, with the old
+  ones as aliases. The traces stay true: the Narmada's straight-tusks are working animals walked
+  south by their drivers (Moonj is one), and the archive's doorway tusks came south in trade. The
+  bear no longer climbs the Narmada cliffs for honey.
+- **The lint refuses a species whose landmasses no field map reaches**, because a restriction to
+  unreached ground would remove it from play and pass every other check.
+- **The bias is authored, not weighted.** Jambhudweep's own kinds are to dominate by number, as more
+  of them are written; the relicts stay rare because they are critically so.
+
+The game's `test/landmass.test.ts` walks every tile of the four maps: the Asian four are met only on
+the northern shore -- the wolf on 40 tiles, the elephant on 16, the bear on 4 -- and no relict is
+ever met there. The woolly bactrian croc lives only on mountains, and the northern shore has 23
+mountain tiles, so it is not met yet.
 
 ## Security
 

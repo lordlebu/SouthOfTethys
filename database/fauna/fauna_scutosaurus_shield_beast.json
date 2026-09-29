@@ -19,5 +19,9 @@
   ],
   "mood": "watchful",
   "source_index": 223,
-  "appearance": "A Permian pareiasaur: a massive, low, barrel-bodied herbivore covered in bony plates, often wearing weathered leather and brass harness from the work it is put to now."
+  "appearance": "A Permian pareiasaur: a massive, low, barrel-bodied herbivore covered in bony plates, often wearing weathered leather and brass harness from the work it is put to now.",
+  "landmasses": [
+    "jambhudweepa",
+    "gondwana"
+  ]
 }

@@ -1,0 +1,33 @@
+{
+  "id": "fauna_laurasian_wolf",
+  "type": "fauna",
+  "name": "Laurasian Wolf",
+  "scientific": "Canis lupus laurasiae",
+  "clade": "mammal",
+  "region": "aravali",
+  "diet": "Carnivore",
+  "behaviour": [
+    "pack",
+    "steppe"
+  ],
+  "biomes": [
+    "plains",
+    "hills",
+    "forest"
+  ],
+  "landmasses": [
+    "mainland_asia"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "mood": "watchful",
+  "journal_prompt": "A grey wolf of the northern steppe crosses the dry grass at a steady trot, head low, going somewhere it has been before.",
+  "appearance": "A lean grey wolf of the steppe, its coat grizzled grey and tawny, paler at the throat and along the legs, with a dark-tipped bushy tail and amber eyes.",
+  "notes": "The wolf of Mainland Asia, met only on the Aravali's northern shore. Jambhudweep's own wolf is the plateau wolf; the strait keeps them apart.",
+  "canon": "secondary",
+  "sources": [
+    "docs/lore/lorework-2026-09-29.md",
+    "assets/source/dump/plate-laurasian-wolf.png (game repo)"
+  ],
+  "source_index": 266
+}

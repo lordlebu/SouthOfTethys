@@ -19,5 +19,9 @@
   ],
   "mood": "uncanny",
   "source_index": 220,
-  "appearance": "A shaggy-haired, sabre-toothed gorgonopsid, heavy in the shoulder, often still wearing a harness from an older use."
+  "appearance": "A shaggy-haired, sabre-toothed gorgonopsid, heavy in the shoulder, often still wearing a harness from an older use.",
+  "landmasses": [
+    "jambhudweepa",
+    "gondwana"
+  ]
 }
