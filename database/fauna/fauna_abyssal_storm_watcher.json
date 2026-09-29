@@ -20,7 +20,8 @@
   "canon": "primary",
   "sources": [
     "SouthOfTethys.txt",
-    "docs/bestiary.md"
+    "docs/bestiary.md",
+    "docs/lore/lorework-2026-09-29.md"
   ],
   "region": "saraswati-godavari-deltas",
   "biomes": [
@@ -31,5 +32,6 @@
   "journal_prompt": "A Cognitavi navigator bird subspecies that specializes in reading weather patterns, guiding wisdom-seekers and ships safely through the Tethys monsoons.",
   "mood": "clever",
   "sentient": true,
-  "source_index": 16
+  "source_index": 16,
+  "appearance": "A Cognitavi: raven-sized, with sleek, iridescent slate-grey plumage, an ivory casque above a sharp hooked beak and amber eyes flecked like stars. The storm-watcher is the dark-winged kind, its wings near-black against a squall sky."
 }

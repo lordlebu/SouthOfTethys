@@ -128,7 +128,8 @@
         "ganges-lava-sea",
         "tethys-sky-routes",
         "asura-conjurations",
-        "prototype-starters"
+        "prototype-starters",
+        "aravali"
       ],
       "description": "Bestiary region of origin, kept for provenance."
     },
@@ -228,6 +229,25 @@
         "type": "string"
       },
       "description": "Other names this creature is known by. Two fauna carry one, and neither schema nor linter knew until `additionalProperties` was tightened."
+    },
+    "appearance": {
+      "type": "string",
+      "minLength": 20,
+      "description": "What it looks like, in prose a painter can work from: the body, colour and texture, not the pose. Canon's record for the books and the art plan; withheld from the game's bundle, which never reads it."
+    },
+    "landmasses": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "jambhudweepa",
+          "mainland_asia",
+          "gondwana",
+          "tethys"
+        ]
+      },
+      "minItems": 1,
+      "uniqueItems": true,
+      "description": "Where it lives, by landmass. Absent means wherever its biomes are: most species cross freely. Present means only there -- the elephants and bears of Mainland Asia never stand on Jambhudweep, and Jambhudweep's relicts never cross north. The game places a species only on ground of a landmass it names."
     }
   },
   "additionalProperties": false

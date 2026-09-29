@@ -16,7 +16,8 @@
   "canon": "primary",
   "sources": [
     "SouthOfTethys.txt",
-    "docs/bestiary.md"
+    "docs/bestiary.md",
+    "docs/lore/lorework-2026-09-29.md"
   ],
   "region": "saraswati-godavari-deltas",
   "biomes": [
@@ -26,5 +27,9 @@
   "rarity": "common",
   "journal_prompt": "A heavy, quadrupedal land crocodile that prowls the delta, specializing in ambush techniques in shallow reed marshes.",
   "mood": "fearsome",
-  "source_index": 18
+  "source_index": 18,
+  "landmasses": [
+    "jambhudweepa",
+    "gondwana"
+  ]
 }

@@ -16,7 +16,8 @@
   "canon": "primary",
   "sources": [
     "SouthOfTethys.txt",
-    "docs/bestiary.md"
+    "docs/bestiary.md",
+    "docs/lore/lorework-2026-09-29.md"
   ],
   "region": "saraswati-godavari-deltas",
   "biomes": [
@@ -26,5 +27,9 @@
   "rarity": "common",
   "journal_prompt": "A pale, blind cetacean that navigates the muddy delta waters using sophisticated acoustic clicks, hunted by Kias for meat and skin.",
   "mood": "watchful",
-  "source_index": 31
+  "source_index": 31,
+  "landmasses": [
+    "jambhudweepa",
+    "gondwana"
+  ]
 }

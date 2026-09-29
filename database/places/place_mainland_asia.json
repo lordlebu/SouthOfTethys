@@ -63,9 +63,14 @@
     ]
   ],
   "description": "The northern landmass across the Tethys Sea, carrying the Saraswati valley cities.",
-  "notes": "Named on the render as a whole rather than divided. Canon models nothing on it yet; the cities below are its only entries. Ground rather than building: it is here before anyone names it and after they stop. Ground rather than building: it is here before anyone names it and after they stop.",
+  "notes": "Named on the render as a whole rather than divided. Ground rather than building: it is here before anyone names it and after they stop. It is where the large mammals are. The elephants and the bears live north of the Tethys, not on Jambhudweep, and the Laurasian wolf with them; the Aravali's northern shore is the edge of it that a traveller walks, so that is the only ground the game places them on. What Jambhudweep has of them it was given: the Narmada's working straight-tusks were walked south across the crossing by their drivers, and its archive's doorway tusks came south in trade.",
   "canon": "inferred",
   "sources": [
-    "dump/Partial_map.png"
+    "dump/Partial_map.png",
+    "docs/lore/lorework-2026-09-29.md"
+  ],
+  "aliases": [
+    "Asia",
+    "Laurasia"
   ]
 }

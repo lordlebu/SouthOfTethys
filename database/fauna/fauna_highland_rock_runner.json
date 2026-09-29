@@ -13,8 +13,13 @@
   "journal_prompt": "A sturdier, darker subspecies of bipedal Postosuchus that hunts along the rocky desert ravines of Bahila Kush.",
   "canon": "primary",
   "sources": [
-    "docs/bestiary.md"
+    "docs/bestiary.md",
+    "docs/lore/lorework-2026-09-29.md"
   ],
   "mood": "fearsome",
-  "source_index": 93
+  "source_index": 93,
+  "landmasses": [
+    "jambhudweepa",
+    "gondwana"
+  ]
 }

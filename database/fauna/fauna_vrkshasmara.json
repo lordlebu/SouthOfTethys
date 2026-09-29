@@ -22,7 +22,8 @@
   "notes": "Evolved for tree canopies of Narmada Valley. Bioluminescent moss-dweller variant exists.",
   "canon": "primary",
   "sources": [
-    "SouthOfTethys.txt"
+    "SouthOfTethys.txt",
+    "docs/lore/lorework-2026-09-29.md"
   ],
   "biomes": [
     "forest",
@@ -34,5 +35,6 @@
   "journal_prompt": "Something grey shifts high in the canopy, too large for a monkey, and the leaves close over it again.",
   "mood": "watchful",
   "region": "narmada-vindhya",
-  "source_index": 56
+  "source_index": 56,
+  "appearance": "A massive, grey-mottled tree-mollusc descended from octopus after the extinction at the end of the Cretaceous. Its mantle is bulbous and weathered, like rough oak galls. It grips high branches with eight thick, muscular tentacles rimmed with keratinous suction discs, which fold flat against the bark when it rests."
 }

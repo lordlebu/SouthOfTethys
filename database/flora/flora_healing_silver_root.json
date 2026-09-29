@@ -14,7 +14,9 @@
   "journal_prompt": "An endemic medicinal tuber harvested along the Godavari, known for its rapid wound-healing properties when ground into salve.",
   "canon": "primary",
   "sources": [
-    "docs/bestiary.md"
+    "docs/bestiary.md",
+    "docs/lore/lorework-2026-09-29.md"
   ],
-  "source_index": 4
+  "source_index": 4,
+  "appearance": "Above ground, low clusters of broad, heart-shaped leaves with shimmering silver veins, and small pale-blue bell flowers that droop toward the soil."
 }

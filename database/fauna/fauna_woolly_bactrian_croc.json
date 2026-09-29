@@ -16,7 +16,8 @@
   "canon": "primary",
   "sources": [
     "SouthOfTethys.txt",
-    "docs/bestiary.md"
+    "docs/bestiary.md",
+    "docs/lore/lorework-2026-09-29.md"
   ],
   "region": "gedrosian-taklamakan",
   "biomes": [
@@ -26,5 +27,9 @@
   "rarity": "common",
   "journal_prompt": "A heavy, rugged crocodile-mammal hybrid with two water-retention humps, used by northern nomads to cross the highland deserts.",
   "mood": "watchful",
-  "source_index": 88
+  "source_index": 88,
+  "appearance": "A heavy, sprawling crocodyliform that survived in Asia into the age of mammals. Armoured moss-grey scales give way along the spine to a coat of thick, matted tawny fur, which frames two prominent fatty humps set just behind the heavy shoulder girdle.",
+  "landmasses": [
+    "mainland_asia"
+  ]
 }

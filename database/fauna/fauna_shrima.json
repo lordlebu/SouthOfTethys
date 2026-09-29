@@ -25,7 +25,8 @@
   "canon": "primary",
   "sources": [
     "docs/bestiary.md",
-    "Palm-Leaf Manuscript of iKnaya Subayai"
+    "Palm-Leaf Manuscript of iKnaya Subayai",
+    "docs/lore/lorework-2026-09-29.md"
   ],
   "region": "shattered-sea-mappa-mundi",
   "biomes": [
@@ -36,5 +37,6 @@
   "rarity": "mythic",
   "journal_prompt": "Something stands in the shallow lagoon at dusk, draped in seaweed-silk and cowrie shells, swaying as though dancing. The proportions are almost right. The antennae are not.",
   "mood": "uncanny",
-  "source_index": 236
+  "source_index": 236,
+  "appearance": "An amphibious, shrimp-like humanoid with a slender, translucent pale-amber shell of a body, draped in seaweed-silk and chains of cowrie shells, with two long, sweeping glass-like antennae that curve above its head like a living tiara."
 }

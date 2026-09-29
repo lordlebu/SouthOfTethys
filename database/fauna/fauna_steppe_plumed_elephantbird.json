@@ -15,8 +15,13 @@
   "journal_prompt": "A massive, shaggy-feathered ratite tamed by traveling merchants to serve as heavy beasts of burden on coastal routes.",
   "canon": "primary",
   "sources": [
-    "docs/bestiary.md"
+    "docs/bestiary.md",
+    "docs/lore/lorework-2026-09-29.md"
   ],
   "mood": "watchful",
-  "source_index": 123
+  "source_index": 123,
+  "landmasses": [
+    "jambhudweepa",
+    "gondwana"
+  ]
 }

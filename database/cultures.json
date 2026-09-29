@@ -183,6 +183,16 @@
       ],
       "dress": "Newer to these roads than the delta's peoples, and nomads still: they dress for the upland and the cold night rather than the marsh. Animal fur and skin -- goat, sheep, whatever the herd gave -- worn as vests, cloaks and collars over wool and felt, with dyed cloth where they have traded for it.",
       "art_reference": "Reference only, for whoever paints them; not a claim about any people living today. Faces and builds after the peoples of Himachal and Nepal; some after Tibetan peoples. Not everybody among them should look East Asian."
+    },
+    {
+      "id": "taj",
+      "count": 0,
+      "note": "The Nagaraptors of the Taj caste: feathered dromaeosaur sophonts who build the earthen Taj Nest-Homes. Lore only -- no given names, so the game deals no strangers of this people."
+    },
+    {
+      "id": "vajraptor",
+      "count": 0,
+      "note": "The Vajraptors, the canopy sentinels of Mappa Mundi: feathered dromaeosaur sophonts allied with its human canopy-keepers. Lore only -- no given names."
     }
   ],
   "given_names_note": "Given names a people uses, for the people the game meets without canon having written them -- the carriers, drovers and pilgrims on the road. Declared on the culture so a name is a value of a people rather than an invention of the engine: the game deals them, canon owns them. Only the four peoples alive on the field maps in epoch_post_cataclysm carry a list: the three the game first met, and the Violet-Horned Clan (asura_hybrid), who walk beside the Maru. Names are ungendered, as canon's own people's names are; nothing here decides who a stranger is beyond what they are called. Each list was written in its people's sound -- Harappan codas in -ek, -ik, -en, -ar and doubled vowels (Kavik, Orek, Aasha); Kia short with -kh, -sh or an open vowel (Bekh, Hesh, Thrali); Maru nasal and rounded (Moonj, Marn, Okhi); the Clan's after the asura names canon already holds (Varunesh, Manjalaya, Vishaili), drafted for the owner to rewrite -- and checked against every person, place and word in canon so none is somebody who already exists. The lint refuses a given name that is.",

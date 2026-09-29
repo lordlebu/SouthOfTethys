@@ -10,11 +10,13 @@
   ],
   "placement": "encounter",
   "rarity": "mythic",
-  "journal_prompt": "A colossal, feathered theropod predator genetically altered with Asura venom, serving as the ultimate fortress guardian.",
+  "journal_prompt": "A colossal feathered abelisaur, its scales veined faint violet with the venom the Asura put in its line. It sleeps coiled over a vine-hung temple arch and has not woken for anyone in living memory.",
   "canon": "primary",
   "sources": [
-    "docs/bestiary.md"
+    "docs/bestiary.md",
+    "docs/lore/lorework-2026-09-29.md"
   ],
   "mood": "uncanny",
-  "source_index": 224
+  "source_index": 224,
+  "appearance": "A colossal feathered abelisaurid with faint violet veins of Asura venom running through its scales."
 }

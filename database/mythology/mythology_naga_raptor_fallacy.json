@@ -1,0 +1,17 @@
+{
+  "id": "mythology_naga_raptor_fallacy",
+  "type": "mythology",
+  "name": "The Naga-Raptor Fallacy",
+  "domain": [
+    "scholarship",
+    "serpents",
+    "rumour"
+  ],
+  "aspect": "The belief that the Naga were raptors once, the correction that the word only ever meant scale-bearer, and the rumour that outlived both",
+  "relations": {},
+  "notes": "In the Age of Machinery, scholars at Narmada University found the root 'Naga' -- scale, serpent, river-ruler -- in ancient Proto-Brahmi glyphs. Professor Onko published a bestiary paper arguing that the human Naga clan were devolved bipedal raptors that had lost their feathers and grown smooth scales, and pointed to the Taj caste's scale-patterned ceremonial body paint as proof. The field historian Digha Jani disproved it: 'Naga' was only the word the Jharwa cave-painters used for any intelligent, scale-bearing river-dweller. Among Lothal's sailors and delta merchants a superstition persists regardless: a Nagaraptor that lives a hundred years in a sacred stepwell grows obsidian scales in place of its feathers and can take human shape as a Naga infiltrator. Canon's fact is the correction -- the Taj Nagaraptors and the Naga clan are two unrelated lineages -- and the rumour is what people say.",
+  "canon": "secondary",
+  "sources": [
+    "docs/lore/lorework-2026-09-29.md"
+  ]
+}

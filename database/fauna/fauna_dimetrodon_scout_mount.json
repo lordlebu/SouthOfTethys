@@ -13,8 +13,13 @@
   "journal_prompt": "A faster, sleek sail-backed synapsid used by Asura scouts to navigate the rugged, volcanic frontiers.",
   "canon": "primary",
   "sources": [
-    "docs/bestiary.md"
+    "docs/bestiary.md",
+    "docs/lore/lorework-2026-09-29.md"
   ],
   "mood": "uncanny",
-  "source_index": 232
+  "source_index": 232,
+  "landmasses": [
+    "jambhudweepa",
+    "gondwana"
+  ]
 }

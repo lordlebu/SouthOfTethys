@@ -13,9 +13,11 @@
   "journal_prompt": "An insect that produces high-frequency, melodic chirps that echo through the thin, cold air of the high altitude routes.",
   "canon": "primary",
   "sources": [
-    "docs/bestiary.md"
+    "docs/bestiary.md",
+    "docs/lore/lorework-2026-09-29.md"
   ],
   "mood": "watchful",
   "source_index": 187,
-  "placement_note": "Placeable since the sky tiles were painted. The earlier note held this as lore \"until a sky mode exists\" -- `sky_island` and `sky_underside` are renderable now, so the condition it named is met."
+  "placement_note": "Placeable since the sky tiles were painted. The earlier note held this as lore \"until a sky mode exists\" -- `sky_island` and `sky_underside` are renderable now, so the condition it named is met.",
+  "appearance": "A lightweight orthopteran of the low-gravity heights, with a translucent pale-cyan exoskeleton, glass-like antennae and a slender, silver-veined abdomen that catches the light of the thin air."
 }

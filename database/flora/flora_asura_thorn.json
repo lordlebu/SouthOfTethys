@@ -14,7 +14,8 @@
   "notes": "Hooked scrub that thickens near old Dwarka-tainted ground. Planted as living fences; pollen irritates the eyes.",
   "canon": "primary",
   "sources": [
-    "SouthOfTethys.txt"
+    "SouthOfTethys.txt",
+    "docs/lore/lorework-2026-09-29.md"
   ],
   "biomes": [
     "plains",
@@ -23,5 +24,6 @@
   "placement": "flavour",
   "rarity": "common",
   "journal_prompt": "Hooked scrub planted as a living fence. It grows thickest on the old tainted ground, which nobody mentions.",
-  "source_index": 70
+  "source_index": 70,
+  "appearance": "A gnarled, low-slung scrub with dark purple-tinted bark, razor-sharp hooked crimson thorns, and small leathery dark-green leaves among tiny yellow star-shaped blossoms."
 }

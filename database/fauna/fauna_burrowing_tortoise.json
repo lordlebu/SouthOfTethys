@@ -12,14 +12,12 @@
     "fossorial",
     "symbiotic"
   ],
-  "related_species": [
-    "fauna_nagaraptor"
-  ],
-  "notes": "Heavy delta tortoise that digs deep tunnels. Nagaraptor clans use the burrows as nest foundations; the tortoise gains predator warning in return.",
+  "notes": "Heavy delta tortoise that digs deep tunnels. The Taj Nagaraptors (faction_taj_nagaraptors) use the burrows as nest foundations; the tortoise gains predator warning in return.",
   "canon": "primary",
   "sources": [
     "SouthOfTethys.txt",
-    "docs/bestiary.md"
+    "docs/bestiary.md",
+    "docs/lore/lorework-2026-09-29.md"
   ],
   "region": "saraswati-godavari-deltas",
   "biomes": [

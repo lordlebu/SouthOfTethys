@@ -19,7 +19,8 @@
   "canon": "primary",
   "sources": [
     "SouthOfTethys.txt",
-    "docs/bestiary.md"
+    "docs/bestiary.md",
+    "docs/lore/lorework-2026-09-29.md"
   ],
   "region": "saraswati-godavari-deltas",
   "biomes": [
@@ -29,5 +30,9 @@
   "rarity": "common",
   "journal_prompt": "A baurusuchid that cakes itself in river mud, keeping its body temperature low and hiding from terrestrial prey.",
   "mood": "fearsome",
-  "source_index": 20
+  "source_index": 20,
+  "landmasses": [
+    "jambhudweepa",
+    "gondwana"
+  ]
 }

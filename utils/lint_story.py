@@ -913,6 +913,31 @@ def main() -> int:
                 errors.append(f"AUTHORING.md: the {folder} template is invalid at {where} -- {err.message}")
         print(f"  templates  : {checked} in AUTHORING.md")
 
+    # --- a species' landmass must be ground some map has ---------------------------
+    #
+    # `landmasses` restricts where the game will place a species, so naming only a landmass no
+    # field map reaches silently removes it from play -- it would pass every other check and
+    # never be met. A map reaches its region's continent, and whatever its `landmass_edges`
+    # name. Lore species are exempt: they are not placed anywhere.
+    regions = {eid: p for eid, (_, p) in entities.items() if p.get("type") == "region"}
+    reachable_land: set[str] = set()
+    for _, (_, p) in entities.items():
+        if p.get("type") != "field_map":
+            continue
+        continent = (regions.get(p.get("region") or "") or {}).get("continent")
+        if continent:
+            reachable_land.add(continent)
+        reachable_land.update((p.get("landmass_edges") or {}).values())
+    for eid, (path, p) in sorted(entities.items()):
+        lands = p.get("landmasses")
+        if not lands or p.get("placement") == "lore":
+            continue
+        if not set(lands) & reachable_land:
+            errors.append(
+                f"{path.name}: lives only on {', '.join(lands)}, which no field map reaches "
+                f"({', '.join(sorted(reachable_land))}), so the game would never place it"
+            )
+
     # --- cultures are declared, not typed twice ---------------------------------------
     #
     # `culture` was 25 free-text values across 51 characters with nothing checking any of

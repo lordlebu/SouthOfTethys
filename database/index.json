@@ -1,13 +1,13 @@
 {
-  "version": "2.37.0",
+  "version": "2.38.0",
   "description": "SouthOfTethys canonical entity index",
   "counts": {
-    "artifacts": 5,
+    "artifacts": 6,
     "characters": 64,
     "discoveries": 46,
     "events": 37,
-    "factions": 3,
-    "fauna": 265,
+    "factions": 6,
+    "fauna": 261,
     "field_maps": 4,
     "field_questions": 8,
     "flora": 118,
@@ -16,7 +16,7 @@
     "homesteads": 3,
     "items": 82,
     "materials": 76,
-    "mythology": 10,
+    "mythology": 11,
     "npcs": 24,
     "places": 42,
     "points_of_interest": 37,
@@ -30,6 +30,7 @@
   "entities": {
     "artifacts": [
       "artifact_chess_of_fate",
+      "artifact_colossal_void_devourer",
       "artifact_mask_of_harappa",
       "artifact_mask_of_sunlit_stone",
       "artifact_mask_of_tethys",
@@ -191,7 +192,10 @@
     "factions": [
       "faction_kia_clan",
       "faction_mask_family",
-      "faction_silvershore"
+      "faction_naga_clan",
+      "faction_silvershore",
+      "faction_taj_nagaraptors",
+      "faction_vajraptor_canopy_sentinels"
     ],
     "fauna": [
       "fauna_abyssal_blue_leviathan",
@@ -239,7 +243,6 @@
       "fauna_coastal_sand_sprinter",
       "fauna_cognitavi",
       "fauna_cognitavi_cloud_hermit",
-      "fauna_colossal_void_devourer",
       "fauna_copper_veined_snail",
       "fauna_coral_dwelling_moray",
       "fauna_crested_marsh_runner",
@@ -312,6 +315,7 @@
       "fauna_jungle_horned_toad",
       "fauna_jungle_python",
       "fauna_jungle_web_spinner",
+      "fauna_laurasian_wolf",
       "fauna_lava_basalt_centipede",
       "fauna_lava_ledge_gecko",
       "fauna_lava_pool_shrimp",
@@ -347,9 +351,6 @@
       "fauna_mountain_forest_boar",
       "fauna_mud_armored_ambusher",
       "fauna_muria_river_otter",
-      "fauna_naga_infiltrator",
-      "fauna_naga_kin_sentry",
-      "fauna_nagaraptor",
       "fauna_narmada_cave_bear",
       "fauna_narmada_cave_crab",
       "fauna_narmada_honey_guide",
@@ -435,7 +436,6 @@
       "fauna_underworld_blood_leech",
       "fauna_underworld_water_snake",
       "fauna_upfalling_elver",
-      "fauna_vajraptor",
       "fauna_vanga_marsh_cat",
       "fauna_vanga_pearl_guide",
       "fauna_vasuki_indicus",
@@ -795,6 +795,7 @@
       "mythology_chess_of_fate",
       "mythology_gorvaxx",
       "mythology_lionman_guidance",
+      "mythology_naga_raptor_fallacy",
       "mythology_narmada_apsara_union",
       "mythology_primordial_rift",
       "mythology_the_first_shell_pact",

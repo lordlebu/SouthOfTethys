@@ -13,7 +13,9 @@
   "journal_prompt": "An aggressive, fast-growing coral polyp that builds fossilized ridges and reclaims ancient stone aqueducts in the marshes.",
   "canon": "primary",
   "sources": [
-    "docs/bestiary.md"
+    "docs/bestiary.md",
+    "docs/lore/lorework-2026-09-29.md"
   ],
-  "source_index": 30
+  "source_index": 30,
+  "appearance": "A fast-growing, reef-building polyp that raises interlocking, finger-like lattice arches and dense, jagged wall-crusts in vivid vermilion, furred with velvety scarlet polyps."
 }

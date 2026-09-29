@@ -1,0 +1,18 @@
+{
+  "id": "faction_vajraptor_canopy_sentinels",
+  "type": "faction",
+  "name": "The Vajraptor Canopy Sentinels",
+  "aliases": [
+    "Vajraptors",
+    "Vajraptor territorialis"
+  ],
+  "culture": "vajraptor",
+  "origin": "feathered dromaeosaurs of the Mappa Mundi canopy",
+  "notes": "Intelligent, territorial feathered dromaeosaurs with blue-and-red display plumage, flightless, who build hidden canopy nests. Fully raptor-shaped, they use wooden tools, signal to each other on bone flutes, wear fibre bands woven into their plumage, and fight alongside Mappa Mundi's human canopy-keepers in joint ambushes. Reclassified from the bestiary (`fauna_vajraptor`) to a people of allies by the owner's ruling of 29 September 2026.",
+  "canon": "secondary",
+  "sources": [
+    "SouthOfTethys.txt",
+    "docs/bestiary.md",
+    "docs/lore/lorework-2026-09-29.md"
+  ]
+}

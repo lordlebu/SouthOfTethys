@@ -1,0 +1,18 @@
+{
+  "id": "artifact_colossal_void_devourer",
+  "type": "artifact",
+  "name": "The Colossal Void-Devourer",
+  "material": [
+    "fossil bone",
+    "volcanic basalt",
+    "violet moss"
+  ],
+  "power": "The bones of an extinct sauropod-crocodile, raised into motion by prana worked through Asura rites and crowned with a cursed human visage. Whatever moved it once, it is a single thing that was made, not a kind of animal that lives.",
+  "risk": "It lies embedded in basalt now, overgrown and draped in violet moss, and is visited as a landmark. What the rite that raised it could do again is the question nobody who studies it wants answered.",
+  "notes": "Moved out of the bestiary by the owner's ruling of 29 September 2026: canon makes it one construct raised from bones rather than a living species, so it does not belong in the fauna pool and a player no longer meets it on the road. It was `fauna_colossal_void_devourer` (Sauropodoligator titan, mythic, wetland and river). Paint it as an overgrown bone skeleton set in volcanic basalt under violet moss -- a historical landmark rather than a roaming predator.",
+  "canon": "secondary",
+  "sources": [
+    "docs/bestiary.md",
+    "docs/lore/lorework-2026-09-29.md"
+  ]
+}

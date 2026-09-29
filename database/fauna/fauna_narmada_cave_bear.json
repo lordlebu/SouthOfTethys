@@ -1,21 +1,31 @@
 {
   "id": "fauna_narmada_cave_bear",
   "type": "fauna",
-  "name": "Narmada Cave Bear",
-  "scientific": "Ursus spelaeus narmadensis",
+  "name": "Laurasian Cave Bear",
+  "scientific": "Ursus spelaeus laurasiae",
   "clade": "mammal",
-  "region": "narmada-vindhya",
+  "region": "aravali",
   "biomes": [
     "hills",
     "mountains"
   ],
   "placement": "encounter",
   "rarity": "rare",
-  "journal_prompt": "A massive, thick-furred predator of the high caves that climbs cliffs to raid honey-goliath nests, frequently clashing with human gatherers.",
+  "journal_prompt": "A massive, thick-furred bear of the high caves north of the strait, climbing a cliff for a wild bees' nest with more patience than you would think a thing that size could have.",
   "canon": "primary",
   "sources": [
-    "docs/bestiary.md"
+    "docs/bestiary.md",
+    "docs/lore/lorework-2026-09-29.md"
   ],
   "mood": "fearsome",
-  "source_index": 65
+  "source_index": 65,
+  "aliases": [
+    "Narmada Cave Bear"
+  ],
+  "taxonomy": {
+    "note": "Was `Ursus spelaeus narmadensis`, for a valley it does not live in. It is a bear of Mainland Asia, and none cross to Jambhudweep."
+  },
+  "landmasses": [
+    "mainland_asia"
+  ]
 }

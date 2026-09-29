@@ -15,10 +15,12 @@
   "journal_prompt": "An artificial, female humanoid sculpted from river mud and lotus pollen, which later mutated into a flesh-hungry night-stalker.",
   "canon": "primary",
   "sources": [
-    "docs/bestiary.md"
+    "docs/bestiary.md",
+    "docs/lore/lorework-2026-09-29.md"
   ],
   "mood": "uncanny",
   "source_index": 210,
   "sentient": true,
-  "subclade": "clay_born"
+  "subclade": "clay_born",
+  "appearance": "A tall, slender night-walker made of packed river mud, white ash and yellow pollen, wearing a veil of withered lotus fronds over a smooth, porcelain-like face that shifts subtly, like wet clay, when it is watched."
 }

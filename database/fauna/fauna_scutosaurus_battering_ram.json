@@ -10,11 +10,17 @@
   ],
   "placement": "encounter",
   "rarity": "mythic",
-  "journal_prompt": "A massive scutosaur mutated with an bone-hard forehead plate, used to break down defensive palisades.",
+  "journal_prompt": "A heavy pareiasaur with a bone-hard forehead plate, bred long ago to break palisades. The ones left drag terrace stone in leather harness and push at nothing harder than a stuck sledge.",
   "canon": "primary",
   "sources": [
-    "docs/bestiary.md"
+    "docs/bestiary.md",
+    "docs/lore/lorework-2026-09-29.md"
   ],
   "mood": "uncanny",
-  "source_index": 233
+  "source_index": 233,
+  "appearance": "A pareiasaur like the shield-beast, heavier in the head, with a broad bone-hard plate across its forehead, and a leather harness for hauling.",
+  "landmasses": [
+    "jambhudweepa",
+    "gondwana"
+  ]
 }

@@ -13,7 +13,9 @@
   "journal_prompt": "A bitter-tasting variety of Saraswati spiceroot that grows in saltwater marshes, used as an antidote to marsh-fever.",
   "canon": "primary",
   "sources": [
-    "docs/bestiary.md"
+    "docs/bestiary.md",
+    "docs/lore/lorework-2026-09-29.md"
   ],
-  "source_index": 5
+  "source_index": 5,
+  "appearance": "Above ground, tall dark-green reed-like stalks crowned with tight reddish-brown spikelets, and waxy, salt-resistant narrow fronds."
 }

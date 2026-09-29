@@ -1248,6 +1248,72 @@ and the game the verbs, so two new things were added here, and nothing about how
 The game's `docs/settling-in.md` is the record of the plan, and its `docs/retrospective.md` looks
 back over both repositories from their first commits.
 
+## What things look like, and what is not an animal — settled 2026-09-29
+
+The game's art plan listed the species canon could not describe without inventing them, and the
+ones that ran into the rule that nothing in this world is a threat. The owner answered both in one
+set of notes, kept whole at `docs/lore/lorework-2026-09-29.md` and cited by everything below.
+
+- **`appearance` is a new field on fauna and flora**: the body, colour and texture, in prose a
+  painter can work from, never the pose. 28 species carry one. It is **withheld from the bundle**,
+  because the game draws paintings and has never read a description of how a thing looks. Adding
+  all 28 changed the bundle by nothing, which is the check that the withholding holds.
+- **The Asura war beasts are painted calm.** They were bred by the Asura tens of millions of years
+  ago and are now rare, tamed or feral, and no longer tied to them. The scutosaurs graze or haul
+  stone in harness; the gorgonopsids and the dimetrodon rest saddled or tethered; the rajasaurus
+  sleeps over a temple arch. Their journal lines were rewritten to say so. They stay animals.
+- **The Colossal Void-Devourer is not an animal.** It is one construct raised from bones, not a
+  species, so it left `fauna/` for `artifacts/` as a relic: an overgrown skeleton set in basalt. A
+  player no longer meets it on the road.
+- **The Nagaraptor, the Vajraptor and the two Naga were people all along.** Culture, tool use and
+  political agency. They left `fauna/` for three factions -- the Taj Nagaraptors, the Vajraptor
+  Canopy Sentinels and the Naga Clan -- and two lore-only cultures, `taj` and `vajraptor`, which
+  carry no given names so the game deals no strangers of them. They want portraits and lines, not
+  plates. The Nagaraptors and the Naga are unrelated; the belief that they are is its own myth,
+  `mythology_naga_raptor_fallacy`, with Onko's paper and Digha Jani's correction.
+- **The tendua and the manticores are animals**, of a Permian simian-felid line, on the owner's word.
+- **The lore repository is free to grow.** The whole of `database/` is 3.5 MB; the Vercel deploy is
+  94 MB, 79 of it the bundled embedding model, against a 250 MB function limit. Nothing needed
+  disabling. What constrains lore is the game's 560 KB bundle, and the answer to that is a lore-only
+  field withheld at export, as `appearance` is -- not a smaller canon.
+
+Still open: the five horror plants (the siege trees, the flesh-vine, the blood-weed, the blood
+orchid), which the notes did not reach.
+
+## Two shores: Mainland Asia north of the Aravali — settled 2026-09-29
+
+The owner's ruling: the large mammals, elephants and bears specifically, live in Asia, not on
+Jambhudweep, and are met north of the Aravali. Jambhudweep leans instead toward giant flightless
+birds, early freshwater whales, crocodylomorphs, critically rare Permian and Triassic relicts and
+giant amphibians, which it shares with Gondwana.
+
+- **"Laurasia" is `mainland_asia`**, the continent canon already had (`place_mainland_asia`,
+  "across the Tethys Sea", Harappa's side). It gained the alias rather than a second name.
+- **`landmasses` on a species restricts it; absent means anywhere its biomes are.** Four live only
+  in Mainland Asia: the Straight-Tusked Elephant, the Laurasian Cave Bear, the new Laurasian Wolf
+  and the woolly bactrian croc. Twenty-three are Jambhudweep's and Gondwana's and never cross north:
+  the gorgonopsids, scutosaurs, dimetrodons and shringasaurs, the Postosuchus, the two giant
+  salamanders, the voays and baurusuchids and the camel-crocs, the walking whale and the river
+  dolphin, and the two elephantbirds. Everything else still crosses freely.
+- **`landmass_edges` on a field map says which edge is another landmass**; the game finds the ground
+  by flooding from that edge through land until it meets the sea. The Aravali's is `north:
+  mainland_asia`, and the flood stops exactly at the strait. Canon names the edge and never a row
+  count, the way `renews` names an ordering and never a number of days.
+- **The ids stay; the names move.** `fauna_narmada_straight_tusk` and `fauna_narmada_cave_bear` key
+  saves, plates and the art manifest, so they keep their ids and change their names, with the old
+  ones as aliases. The traces stay true: the Narmada's straight-tusks are working animals walked
+  south by their drivers (Moonj is one), and the archive's doorway tusks came south in trade. The
+  bear no longer climbs the Narmada cliffs for honey.
+- **The lint refuses a species whose landmasses no field map reaches**, because a restriction to
+  unreached ground would remove it from play and pass every other check.
+- **The bias is authored, not weighted.** Jambhudweep's own kinds are to dominate by number, as more
+  of them are written; the relicts stay rare because they are critically so.
+
+The game's `test/landmass.test.ts` walks every tile of the four maps: the Asian four are met only on
+the northern shore -- the wolf on 40 tiles, the elephant on 16, the bear on 4 -- and no relict is
+ever met there. The woolly bactrian croc lives only on mountains, and the northern shore has 23
+mountain tiles, so it is not met yet.
+
 ## Security
 
 Two Hugging Face tokens were exposed during setup and must be treated as burned: one pasted

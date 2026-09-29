@@ -13,8 +13,10 @@
   "journal_prompt": "A manticore variant that haunts ancient stone quarries, its stone-hard fur blending into the weathered rock walls.",
   "canon": "primary",
   "sources": [
-    "docs/bestiary.md"
+    "docs/bestiary.md",
+    "docs/lore/lorework-2026-09-29.md"
   ],
   "mood": "watchful",
-  "source_index": 209
+  "source_index": 209,
+  "appearance": "A heavy, wingless manticore of the ancient Permian simian-felid line, its stone-furred frame made of rough sandstone and river gravel. It has dexterous, ape-like forepaws, a segmented basalt scorpion tail, and a hauntingly expressive human face capable of subtle feeling and of mocking speech."
 }

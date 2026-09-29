@@ -11,11 +11,17 @@
   ],
   "placement": "encounter",
   "rarity": "mythic",
-  "journal_prompt": "A massive armored herbivore genetically engineered with iron-hard skin plates, utilized as mobile shield barriers in battles.",
+  "journal_prompt": "A massive, bone-plated pareiasaur. The Asura bred its line as living shield-walls tens of millions of years ago; now it grazes feral by old earthworks, or hauls stone for whoever has tamed it.",
   "canon": "primary",
   "sources": [
-    "docs/bestiary.md"
+    "docs/bestiary.md",
+    "docs/lore/lorework-2026-09-29.md"
   ],
   "mood": "watchful",
-  "source_index": 223
+  "source_index": 223,
+  "appearance": "A Permian pareiasaur: a massive, low, barrel-bodied herbivore covered in bony plates, often wearing weathered leather and brass harness from the work it is put to now.",
+  "landmasses": [
+    "jambhudweepa",
+    "gondwana"
+  ]
 }
