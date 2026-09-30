@@ -41,6 +41,7 @@ from __future__ import annotations
 
 import argparse
 import ast
+import gzip
 import hashlib
 import json
 import sys
@@ -67,22 +68,36 @@ NOT_INDEXED = {"timeline"}
 
 INDEXER = BASE / "services" / "chroma" / "index_chroma_service.py"
 
-# What the browser bundle is allowed to weigh, in kilobytes.
+# What the browser bundle is allowed to weigh: kilobytes **gzipped**, which is what a player downloads.
 #
-# Vite inlines every byte of `data/canon/` into the page, so an exported collection is weight
-# on every load rather than something quietly available -- which is the argument that kept
-# characters, events and 41 places out of the bundle in the first place. Before this constant
-# the size was a thing somebody noticed in a dry run and then forgot; now it fails.
+# This was 560 KB of raw JSON for a long time, and that number was the wrong instrument. Every
+# host the game is published to compresses text on the way out, and the budgets the rest of the
+# web keeps -- Lighthouse, size-limit, bundlesize -- are stated in transfer size for that reason.
+# Measured on 30 September 2026: the bundle was 569 KB raw and **116 KB on the wire**, in a game
+# whose paintings come to 30 MB. The gate had been withholding content, batch after batch, to
+# protect four thousandths of the download.
 #
-# 560 was set when the bundle measured 444 KB here and the making layer was one folder of six.
-# Measure against *this* number rather than the exporter's dry run, which prints 404 KB for the
-# same bundle -- the dry run sizes the raw payload and this sizes what `render` actually writes,
-# and picking a budget off the smaller of the two is how a limit ends up 40 KB tighter than
-# whoever set it believed. Materials cost about 28 KB for 46 entities, which leaves the five
-# remaining types roughly 115 KB at that density. If they do not fit, the answer is a lore/play
-# split *inside* the new types -- the same call that withholds hundreds of places today -- and
-# not a bigger number here. Raising it makes the game slower to load, so raise it deliberately.
-BUNDLE_BUDGET_KB = 560
+# **The rule is that the data may not outweigh the engine that draws it.** Phaser is 348 KB
+# gzipped, so 350. That is an anchor somebody can check rather than a figure somebody chose, and
+# it leaves canon room to roughly triple. The game holds the same number against the built
+# `canon-*.js` chunk in `tools/check-bundle-size.js`; this one reads a little heavier than that
+# one, about 10%, because it weighs the indented files rather than Vite's minified chunk, which
+# is the safe direction for the side that cannot run the build.
+#
+# What the withholding lists in `export_canon_bundle.py` did under the old number still stands,
+# and not because of the budget: a field the game never reads is dead weight at any limit.
+#
+# **When this is reached, the answer is loading on demand and not a bigger number.** Everything
+# here is read before the first frame. Lore a player opens -- a character, an event, an era --
+# does not have to be: exported as its own file and fetched behind an `import()` in the game, it
+# costs nothing until somebody asks for it, and has no budget to speak of. That is a third side
+# of the boundary beside BUNDLE and NOT_EXPORTED, to be added with the first thing that reads it.
+BUNDLE_BUDGET_GZ_KB = 350
+
+
+def gzipped_kb(text: str) -> float:
+    # `mtime=0` keeps the header constant, so the same bundle weighs the same on every run.
+    return len(gzip.compress(text.encode("utf-8"), compresslevel=9, mtime=0)) / 1024
 
 
 def content_folders() -> list[str]:
@@ -178,22 +193,17 @@ def fingerprint_of(files: dict[str, str]) -> dict[str, str]:
 
 
 def check_budget(files: dict) -> list[str]:
-    """The bundle stays inside its weight, because the browser pays for every byte."""
-    # **`files` already holds rendered text**, so this measured `render(render(x))` -- a JSON
-    # string literal wrapping a JSON document, with every quote escaped and every newline turned
-    # into two characters. Measured, that inflates the total by about 10%: a bundle of 513.2 KB on
-    # disk reported as 563.3 KB, which is the difference between passing and failing a 560 limit.
-    #
-    # It has been overstating since the check was written, and it cost real content: the species
-    # cull that withheld 35 `lore` entities was forced by a number this produced. That cull was
-    # right on its own merits -- the game filters those out at load and shipping them bought
-    # nothing -- but it was made under a false reading, and the next one might not be.
-    total = sum(len(body.encode("utf-8")) for body in files.values()) / 1024
-    if total > BUNDLE_BUDGET_KB:
+    """The bundle stays inside its weight, measured as the player downloads it."""
+    # **`files` already holds rendered text.** An earlier version passed it through `render` a
+    # second time and measured a JSON string literal wrapping a JSON document, which overstated
+    # the total by about 10% and forced a cull of 35 species under a false reading. Weigh the
+    # text as it is.
+    total = sum(gzipped_kb(body) for body in files.values())
+    if total > BUNDLE_BUDGET_GZ_KB:
         return [
-            f"the bundle is {total:.1f} KB, over the {BUNDLE_BUDGET_KB} KB budget. Either "
-            f"withhold a collection from BUNDLE, or raise BUNDLE_BUDGET_KB deliberately and "
-            f"say in the commit that the game got heavier."
+            f"the bundle is {total:.1f} KB gzipped, over the {BUNDLE_BUDGET_GZ_KB} KB budget. "
+            f"Move what the first frame does not need behind a lazy pack -- see the note on "
+            f"BUNDLE_BUDGET_GZ_KB -- rather than raising the number."
         ]
     return []
 
@@ -276,6 +286,8 @@ def main() -> int:
     print(f"  indexed    : {len(set(listed) & set(content_folders()))} of {len(content_folders())}"
           f" ({len(NOT_INDEXED)} deliberately not)")
     print(f"  entities   : {sum(counts.values())} exported")
+    weight = sum(gzipped_kb(body) for body in files.values())
+    print(f"  weight     : {weight:.1f} of {BUNDLE_BUDGET_GZ_KB} KB gzipped")
     print(f"  fingerprint: {'pinned' if FINGERPRINT.exists() else 'MISSING'}")
     if DEFAULT_OUT.exists():
         print(f"  game bundle: {'matches' if not drift else str(len(drift)) + ' file(s) differ'}")

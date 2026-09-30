@@ -287,7 +287,8 @@ Leviathan's Rib and the Survival Train are unique and have stories. `vehicles/` 
 repeatable kinds, and names its famous examples in `exemplars` -- one-directional, so the
 vessel does not name the vehicle back.
 
-**The bundle has a weight budget, and it is enforced.** 560 KB, in
+**The bundle has a weight budget, and it is enforced.** 560 KB raw at the time (now 350 KB
+gzipped -- see *The bundle is weighed as it is downloaded*), in
 `check_export_boundary.py`. Vite inlines every byte into the page, which is the argument that
 already keeps characters, events and 41 places out; before this it was a number somebody
 noticed in a dry run and forgot. The budget was hit during this work, which is what forced the
@@ -1275,7 +1276,8 @@ set of notes, kept whole at `docs/lore/lorework-2026-09-29.md` and cited by ever
 - **The lore repository is free to grow.** The whole of `database/` is 3.5 MB; the Vercel deploy is
   94 MB, 79 of it the bundled embedding model, against a 250 MB function limit. Nothing needed
   disabling. What constrains lore is the game's 560 KB bundle, and the answer to that is a lore-only
-  field withheld at export, as `appearance` is -- not a smaller canon.
+  field withheld at export, as `appearance` is -- not a smaller canon. (The 560 has since become
+  350 KB gzipped; see *The bundle is weighed as it is downloaded*.)
 
 Still open: the five horror plants (the siege trees, the flesh-vine, the blood-weed, the blood
 orchid), which the notes did not reach.
@@ -1352,6 +1354,34 @@ changes nothing. The entity count moves to 1095.
 Open: the peoples of three nations; where the "?" places really sit; the Aranya rainforests (the
 chart) and the Aranta (canon) may be one forest. The rest of `SouthOfTethys.txt` -- the bestiary,
 the characters, the Kia, the Mask Family -- was already canon from earlier ingests.
+
+## The bundle is weighed as it is downloaded — settled 2026-09-30
+
+The owner's ruling: a 560 KB ceiling on what canon may send the game is no way to grow lore, and
+the answer should be what the rest of the industry does.
+
+Measured first. The bundle was 569 KB of raw JSON and **116 KB gzipped**, which is what a player
+downloads; the game around it is 30 MB of paintings and a 348 KB engine. The gate was weighing the
+wrong thing, and had forced a withholding on nearly every content batch since the making layer.
+
+- **The budget is 350 KB gzipped**, as `BUNDLE_BUDGET_GZ_KB` in `check_export_boundary.py`.
+  Transfer size is the unit Lighthouse, size-limit and bundlesize all budget in. The number is an
+  anchor rather than a choice: *the data may not outweigh the engine that draws it*. At 114 KB
+  today canon can roughly triple.
+- **The game holds the same number against the built file.** Canon's data is now its own chunk,
+  `canon-*.js`, beside Phaser's, so a canon release no longer re-downloads the app; the game's
+  `check:size` budgets it at 350 KB gzipped and the app's own code at 200.
+- **What was withheld stays withheld.** `WITHHELD`, `WITHHELD_NOTES` and `withhold_lore_species`
+  drop what the game never reads, and that is dead weight at any limit. The earlier entries in this
+  file that say "560 KB" record why each was found; none is undone.
+- **Past 350 the answer is loading on demand.** Everything in the bundle is read before the first
+  frame. Lore a player *opens* does not have to be: a pack exported as its own file and fetched
+  behind an `import()` costs nothing until it is asked for. That is a third side of the export
+  boundary, and it is deliberately **not built yet** -- nothing in the game reads characters,
+  events or eras, and a pack with no reader is the unused weight the old rule was right about.
+
+Open: the reader. A lore pack needs a view in the game to open it, and what that view is -- a
+codex, the canon panel working offline, pages of the travel journal -- is a design call.
 
 ## Security
 
