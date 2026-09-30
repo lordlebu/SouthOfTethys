@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>South of Tethys Canon</title>
+<meta name="description" content="Every place, people, creature, plant, event and era of Jambhudweepa, as the canon of South of Tethys records it.">
+<style>
+/* The game's own tokens (src/ui/styles.css in 4000BCESaraswathy), so the record reads as the same
+   book as the field diary. Light only, as the game is: its plates are cream watercolour. */
+:root {
+  color-scheme: light;
+  --ink: #34263a;
+  --paper: #fff6df;
+  --sheet: #fffbef;
+  --edge: rgba(52, 38, 58, 0.16);
+  --accent: #a45c40;
+  --muted: #6d5a68;
+  --faint: #75696f;
+  --serif: Georgia, 'Times New Roman', serif;
+  --mono: ui-monospace, Consolas, monospace;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body { background: var(--paper); color: var(--ink); font: 17px/1.55 var(--serif); }
+a { color: var(--accent); }
+a:focus-visible, button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.page { max-width: 72rem; margin: 0 auto; padding-inline: 16px; padding-block: 28px 64px; display: flex; flex-direction: column; gap: 22px; }
+header { display: flex; flex-direction: column; gap: 6px; }
+h1 { font-size: clamp(1.7rem, 4vw, 2.3rem); margin: 0; font-weight: 700; text-wrap: balance; }
+.lede { margin: 0; color: var(--muted); max-width: 62ch; }
+.links { display: flex; flex-wrap: wrap; gap: 14px; font-size: 0.95rem; }
+form { display: flex; gap: 8px; }
+input[type=search] { flex: 1; min-width: 0; font: inherit; padding: 10px 14px; border: 1px solid var(--edge); border-radius: 999px; background: var(--sheet); color: var(--ink); }
+button { font: inherit; cursor: pointer; }
+.go { padding: 10px 18px; border-radius: 999px; border: 0; background: var(--accent); color: var(--sheet); }
+.folders { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { border: 1px solid var(--edge); background: transparent; color: var(--ink); border-radius: 999px; padding: 3px 11px; font-size: 0.88rem; }
+.chip[aria-pressed=true] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.chip small { color: inherit; opacity: 0.75; font-variant-numeric: tabular-nums; }
+.layout { display: grid; grid-template-columns: minmax(0, 20rem) minmax(0, 1fr); gap: 28px; align-items: start; }
+@media (max-width: 760px) { .layout { grid-template-columns: minmax(0, 1fr); } }
+.list { display: flex; flex-direction: column; border-top: 1px solid var(--edge); }
+.list h2 { font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin: 14px 0 6px; font-weight: 400; }
+.list a { display: flex; justify-content: space-between; gap: 10px; padding: 7px 2px; border-bottom: 1px solid var(--edge); color: var(--ink); text-decoration: none; }
+.list a:hover { color: var(--accent); }
+.list a[aria-current=true] { color: var(--accent); font-weight: 700; }
+.list a span:last-child { color: var(--faint); font-size: 0.82rem; white-space: nowrap; }
+.empty, .note { color: var(--muted); font-style: italic; margin: 10px 0; }
+article { background: var(--sheet); border: 1px solid var(--edge); border-radius: 10px; padding: 22px clamp(16px, 3vw, 32px); min-width: 0; }
+article h2 { font-size: clamp(1.4rem, 3vw, 1.9rem); margin: 0 0 4px; text-wrap: balance; }
+.kind { color: var(--muted); font-size: 0.9rem; margin: 0 0 18px; }
+.prose { max-width: 66ch; }
+.prose p { margin: 0 0 0.9em; white-space: pre-line; }
+.prose h3, .facts h3 { font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); font-weight: 400; margin: 20px 0 6px; }
+dl { display: grid; grid-template-columns: minmax(8rem, max-content) minmax(0, 1fr); gap: 6px 18px; margin: 0; }
+dt { color: var(--muted); }
+dd { margin: 0; overflow-wrap: anywhere; }
+.tags { display: flex; flex-wrap: wrap; gap: 5px; }
+.tag { border: 1px solid var(--edge); border-radius: 999px; padding: 0 9px; font-size: 0.88rem; }
+a.tag { text-decoration: none; }
+code { font-family: var(--mono); font-size: 0.85em; }
+footer { color: var(--faint); font-size: 0.85rem; }
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <h1>The canon of South of Tethys</h1>
+    <p class="lede">Everything recorded about Jambhudweepa: its places, peoples, creatures, plants, events and eras. The game shows one era of it from the ground. This is the rest.</p>
+    <div class="links">
+      <a href="https://lordlebu.itch.io/south-of-tethys">Play the game</a>
+      <a href="https://x.com/landofmyst">Write to the author</a>
+    </div>
+  </header>
+
+  <form id="search" role="search">
+    <label for="q" hidden>Search the canon</label>
+    <input id="q" type="search" autocomplete="off" placeholder="A name, or a question: who keeps the fallen dolmens?">
+    <button class="go" type="submit">Search</button>
+  </form>
+  <div class="folders" id="folders" aria-label="Browse by kind"></div>
+
+  <div class="layout">
+    <nav class="list" id="list" aria-label="Entries"><p class="note">Loading the record…</p></nav>
+    <article id="entry" aria-live="polite"><p class="note">Search, or choose a kind above, then pick an entry.</p></article>
+  </div>
+
+  <footer>The record is the <a href="https://github.com/lordlebu/SouthOfTethys">SouthOfTethys</a> database, republished here whenever it changes.</footer>
+</div>
+
+<script>
+// How each folder of database/ is named for a reader, and the order the kinds are offered in.
+const KINDS = {
+  characters: 'Characters', events: 'Events', places: 'Places', regions: 'Regions',
+  settlements: 'Settlements', factions: 'Factions', mythology: 'Mythology', artifacts: 'Artifacts',
+  timeline: 'Eras', fauna: 'Creatures', flora: 'Plants', foodways: 'Foodways',
+  points_of_interest: 'Points of interest', npcs: 'People met', field_maps: 'Field maps',
+  homesteads: 'Homesteads', happenings: 'Happenings', discoveries: 'Discoveries',
+  field_questions: 'Field questions', vocabulary: 'Words', materials: 'Materials', items: 'Items',
+  processes: 'Processes', recipes: 'Recipes', vehicles: 'Vehicles'
+};
+// Prose, in the order it is read. Everything else is a fact, a list or a nested record.
+const PROSE = ['summary', 'description', 'journal_prompt', 'arrival', 'behaviour', 'notes', 'placement_note'];
+// Bookkeeping a reader does not need. `sources` is shown last and small.
+const HIDDEN = new Set(['id', 'type', 'name', 'title', 'source_index', 'sources']);
+
+let index = new Map();
+let byFolder = new Map();
+let current = null;
+
+const $ = (id) => document.getElementById(id);
+const el = (tag, props = {}, ...children) => {
+  const node = Object.assign(document.createElement(tag), props);
+  for (const child of children) if (child != null) node.append(child);
+  return node;
+};
+const label = (key) => key.replace(/_/g, ' ').replace(/^./, (c) => c.toUpperCase());
+const kindOf = (folder) => KINDS[folder] || label(folder);
+
+function linkTo(id, text, className) {
+  const known = index.get(id);
+  if (!known) return document.createTextNode(text ?? id);
+  const a = el('a', { href: '#' + id, textContent: text ?? known.name });
+  if (className) a.className = className;
+  return a;
+}
+
+/** Text in which `entity_id` written in backticks becomes a link, as canon's notes write them. */
+function richText(text) {
+  const out = document.createDocumentFragment();
+  let last = 0;
+  for (const match of text.matchAll(/`([a-z0-9_]+)`/g)) {
+    out.append(text.slice(last, match.index));
+    out.append(index.has(match[1]) ? linkTo(match[1]) : el('code', { textContent: match[1] }));
+    last = match.index + match[0].length;
+  }
+  out.append(text.slice(last));
+  return out;
+}
+
+function valueNode(value) {
+  if (value == null || value === '') return null;
+  if (Array.isArray(value)) {
+    if (value.length === 0) return null;
+    if (value.every((v) => typeof v !== 'object')) {
+      return el('div', { className: 'tags' }, ...value.map((v) =>
+        index.has(String(v)) ? linkTo(String(v), null, 'tag') : el('span', { className: 'tag', textContent: label(String(v)) })));
+    }
+    return el('div', {}, ...value.map((v) => valueNode(v)));
+  }
+  if (typeof value === 'object') {
+    const dl = el('dl');
+    for (const [k, v] of Object.entries(value)) {
+      const node = valueNode(v);
+      if (node) dl.append(el('dt', { textContent: label(k) }), el('dd', {}, node));
+    }
+    return dl.childElementCount ? dl : null;
+  }
+  const text = String(value);
+  if (index.has(text)) return linkTo(text);
+  return typeof value === 'string' && text.length > 80 ? el('span', {}, richText(text)) : document.createTextNode(typeof value === 'string' ? label(text) : text);
+}
+
+async function show(id) {
+  const known = index.get(id);
+  const entry = $('entry');
+  if (!known) {
+    entry.replaceChildren(el('p', { className: 'note', textContent: 'There is no entry by that name.' }));
+    return;
+  }
+  current = id;
+  markCurrent();
+  entry.replaceChildren(el('p', { className: 'note', textContent: 'Opening ' + known.name + '…' }));
+  const response = await fetch('entity/' + encodeURIComponent(id));
+  if (!response.ok) {
+    entry.replaceChildren(el('p', { className: 'note', textContent: 'That entry could not be opened. Try again in a moment.' }));
+    return;
+  }
+  const { folder, entity } = await response.json();
+  const prose = el('div', { className: 'prose' });
+  for (const key of PROSE) {
+    if (typeof entity[key] !== 'string' || !entity[key].trim()) continue;
+    if (key !== 'summary' && key !== 'description') prose.append(el('h3', { textContent: label(key) }));
+    prose.append(el('p', {}, richText(entity[key])));
+  }
+  const facts = el('dl');
+  for (const [key, value] of Object.entries(entity)) {
+    if (HIDDEN.has(key) || PROSE.includes(key)) continue;
+    const node = valueNode(value);
+    if (node) facts.append(el('dt', { textContent: label(key) }), el('dd', {}, node));
+  }
+  const sources = Array.isArray(entity.sources) && entity.sources.length
+    ? el('p', { className: 'note', textContent: 'Sources: ' + entity.sources.map((s) => typeof s === 'string' ? s : JSON.stringify(s)).join('; ') })
+    : null;
+  entry.replaceChildren(
+    el('h2', { textContent: entity.name || entity.title || id }),
+    el('p', { className: 'kind', textContent: kindOf(folder) }),
+    prose.childElementCount ? prose : null,
+    facts.childElementCount ? el('div', { className: 'facts' }, el('h3', { textContent: 'In the record' }), facts) : null,
+    sources
+  );
+  document.title = (entity.name || entity.title || id) + ' · South of Tethys Canon';
+  if (window.innerWidth <= 760) entry.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function markCurrent() {
+  for (const a of $('list').querySelectorAll('a')) a.setAttribute('aria-current', String(a.hash === '#' + current));
+}
+
+function listOf(heading, items, emptyText) {
+  const list = $('list');
+  list.replaceChildren(el('h2', { textContent: heading }));
+  if (!items.length) list.append(el('p', { className: 'empty', textContent: emptyText }));
+  for (const item of items) {
+    list.append(el('a', { href: '#' + item.id }, el('span', { textContent: item.name }), el('span', { textContent: kindOf(item.folder) })));
+  }
+  markCurrent();
+}
+
+function browse(folder) {
+  for (const chip of $('folders').children) chip.setAttribute('aria-pressed', String(chip.dataset.folder === folder));
+  const items = [...(byFolder.get(folder) || [])].sort((a, b) => a.name.localeCompare(b.name));
+  listOf(kindOf(folder), items, 'Nothing recorded of this kind yet.');
+}
+
+async function search(query) {
+  const words = query.trim().toLowerCase();
+  if (!words) return;
+  for (const chip of $('folders').children) chip.setAttribute('aria-pressed', 'false');
+  // Names first, at once: a reader who types a name wants that entry, not the nearest meaning.
+  const named = [...index.values()].filter((e) => e.name.toLowerCase().includes(words) || e.id.includes(words.replace(/\s+/g, '_'))).slice(0, 12);
+  listOf('Searching…', named, '');
+  let meant = [];
+  try {
+    const response = await fetch('search', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ query, k: 12 }) });
+    if (response.ok) meant = (await response.json()).sources.filter((s) => index.has(s.entity_id)).map((s) => index.get(s.entity_id));
+  } catch { /* names alone still answer */ }
+  const seen = new Set(named.map((e) => e.id));
+  listOf('Results for “' + query.trim() + '”', [...named, ...meant.filter((e) => !seen.has(e.id))], 'Nothing in the record matches that.');
+}
+
+async function start() {
+  const response = await fetch('entities');
+  const { entities } = await response.json();
+  index = new Map(entities.map((e) => [e.id, e]));
+  for (const e of entities) {
+    if (!byFolder.has(e.folder)) byFolder.set(e.folder, []);
+    byFolder.get(e.folder).push(e);
+  }
+  const folders = Object.keys(KINDS).filter((f) => byFolder.has(f)).concat([...byFolder.keys()].filter((f) => !(f in KINDS)));
+  $('folders').replaceChildren(...folders.map((f) => {
+    const chip = el('button', { type: 'button', className: 'chip' }, kindOf(f) + ' ', el('small', { textContent: String(byFolder.get(f).length) }));
+    chip.dataset.folder = f;
+    chip.setAttribute('aria-pressed', 'false');
+    chip.addEventListener('click', () => browse(f));
+    return chip;
+  }));
+  const wanted = decodeURIComponent(location.hash.slice(1));
+  browse(index.has(wanted) ? index.get(wanted).folder : 'characters');
+  if (index.has(wanted)) show(wanted);
+}
+
+$('search').addEventListener('submit', (event) => { event.preventDefault(); search($('q').value); });
+addEventListener('hashchange', () => show(decodeURIComponent(location.hash.slice(1))));
+start().catch(() => $('list').replaceChildren(el('p', { className: 'note', textContent: 'The record could not be reached. Try again in a moment.' })));
+</script>
+</body>
+</html>
