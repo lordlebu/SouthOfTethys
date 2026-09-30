@@ -1,0 +1,23 @@
+{
+  "id": "place_kelpfang_ii",
+  "type": "place",
+  "name": "The Kelpfang-II",
+  "kind": "vessel",
+  "epochs": [
+    "epoch_current",
+    "epoch_post_cataclysm"
+  ],
+  "description": "An unlaunched experimental rail-barge at the Great Junction Drydock, where three refugees dragged the archive cart aboard as the ground broke. It drifted and settled for good in the newly formed Aravali wetlands, and became their home.",
+  "states": [
+    {
+      "epoch": "epoch_post_cataclysm",
+      "status": "ruined",
+      "description": "A hollow, moss-covered iron skeleton under trailing vines and purple bougainvillea beside the Memorial Shrine."
+    }
+  ],
+  "notes": "Named for the Kelpfang, the living outrigger of the Tamra-Veil Wardens (place_kelpfang).",
+  "canon": "secondary",
+  "sources": [
+    "SouthOfTethys.txt"
+  ]
+}

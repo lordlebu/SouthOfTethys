@@ -1,0 +1,23 @@
+{
+  "id": "character_kael",
+  "type": "character",
+  "name": "Kael",
+  "culture": "harappan",
+  "status": "deceased",
+  "epoch": "epoch_current",
+  "roles": [
+    "master valve-artisan"
+  ],
+  "relations": {
+    "parent": "character_kavi",
+    "partners": [
+      "character_ananya",
+      "character_devraj"
+    ]
+  },
+  "notes": "Kavi's child, a master valve-artisan who left the Lothal trade houses' expectations behind to live as the man he was. He anchored the archive cart with a crowbar on the day the ground broke at the Great Junction Drydock, forged tools and copper pipes from scrap aboard the stranded Kelpfang-II, bore twins in the golden season that followed, and died defending their cradle on the Night of Red Teeth. Ananya burned him on a cedar pyre in his smith's apron with Kavi's calipers on his chest. One of the Founding Three.",
+  "canon": "secondary",
+  "sources": [
+    "SouthOfTethys.txt"
+  ]
+}

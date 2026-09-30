@@ -1,0 +1,26 @@
+{
+  "id": "place_dwarka_gate",
+  "type": "place",
+  "name": "Dwarka Gate (submerged)",
+  "kind": "site",
+  "continent": "jambhudweepa",
+  "epochs": [
+    "epoch_current"
+  ],
+  "description": "Interdimensional basalt arches offshore. Drilling was halted after steam drills struck a geothermal Lingam bed and blue auroras rose from the arches.",
+  "states": [
+    {
+      "epoch": "epoch_current",
+      "coordinates": {
+        "x": 17.3,
+        "y": 35.2
+      },
+      "held_by": "faction_vayu_dwarkadhish_coral_monarchies"
+    }
+  ],
+  "notes": "From the Age of Machinery chart, where it sits in 'Jambhudweep – NW coast'. Its position is that era's, before the Shattering; canon states no other.",
+  "canon": "secondary",
+  "sources": [
+    "docs/lore/world_pre_shattering_2026-09-30.json"
+  ]
+}

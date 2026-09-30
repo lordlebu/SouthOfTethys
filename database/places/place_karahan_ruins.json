@@ -1,0 +1,25 @@
+{
+  "id": "place_karahan_ruins",
+  "type": "place",
+  "name": "Karahan ruins",
+  "kind": "ruin",
+  "continent": "mainland_asia",
+  "epochs": [
+    "epoch_current"
+  ],
+  "description": "Sister ruins east of Göbekli.",
+  "states": [
+    {
+      "epoch": "epoch_current",
+      "coordinates": {
+        "x": 27.8,
+        "y": 4.3
+      }
+    }
+  ],
+  "notes": "From the Age of Machinery chart, where it sits in 'Far North'. Its position is that era's, before the Shattering; canon states no other.",
+  "canon": "secondary",
+  "sources": [
+    "docs/lore/world_pre_shattering_2026-09-30.json"
+  ]
+}

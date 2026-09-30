@@ -1,0 +1,16 @@
+{
+  "id": "faction_shwetavahana_riverine_league",
+  "type": "faction",
+  "name": "Shwetavahana Riverine League",
+  "culture": "silvershore",
+  "epochs": [
+    "epoch_current"
+  ],
+  "origin": "faction_silvershore",
+  "notes": "The mercantile nation. Silvershore descendants who own the banks, locks and river tolls of the Saraswati and Godavari. Descendants of the Silvershore river-lords and Indus canal-masters: a financial and cartographic nation of banking houses, locks and river tolls. A nation of the Age of Machinery, on the pre-Shattering chart.",
+  "canon": "secondary",
+  "sources": [
+    "docs/lore/world_pre_shattering_2026-09-30.json",
+    "SouthOfTethys.txt"
+  ]
+}

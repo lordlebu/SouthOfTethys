@@ -1,0 +1,21 @@
+{
+  "id": "event_ground_breaks_at_great_junction",
+  "type": "event",
+  "title": "The Day the Ground Broke at the Great Junction",
+  "epoch": "epoch_current",
+  "date_approx": "the end of Epoch 4",
+  "participants": [
+    "character_kael",
+    "character_ananya",
+    "character_devraj"
+  ],
+  "summary": "What the survivors called D-Day: silent purple auroras, the canal gone into geothermal fissures overnight, freighters on their sides in the mud, and a second shock that shattered the Lothal customs domes before the sea drew back and rose in a glowing wave. Kael, Ananya and Devraj dragged the archive cart aboard the Kelpfang-II and drifted out of a drowning city. This is the Shattering as three people lived it; why it came is not written.",
+  "canon": "secondary",
+  "sources": [
+    "SouthOfTethys.txt"
+  ],
+  "location": "place_great_junction",
+  "successors": [
+    "event_golden_season_on_the_wetlands"
+  ]
+}

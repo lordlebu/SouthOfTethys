@@ -1,0 +1,16 @@
+{
+  "id": "faction_narmada_academic_republic",
+  "type": "faction",
+  "name": "Narmada Academic Republic",
+  "culture": "narmada_scholar",
+  "epochs": [
+    "epoch_current"
+  ],
+  "seat": "place_narmada_city",
+  "notes": "The enlightenment nation. A council of field historians and naturalists governs the central plateau and licenses fossil-energy extraction. Formed from the consolidation of Narmada University's scholars, clerks and plateau city-dwellers: a constitutional republic of field historians, naturalists and comparative anatomists, proud of its telescopes, printing presses and empirical science. Its university city is cream-and-brick halls and glass greenhouses over basalt cliffs. A nation of the Age of Machinery, on the pre-Shattering chart.",
+  "canon": "secondary",
+  "sources": [
+    "docs/lore/world_pre_shattering_2026-09-30.json",
+    "SouthOfTethys.txt"
+  ]
+}

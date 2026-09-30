@@ -1,0 +1,22 @@
+{
+  "id": "place_anatolia",
+  "type": "place",
+  "name": "Anatolia",
+  "kind": "frontier",
+  "continent": "mainland_asia",
+  "description": "Green uplands at the western edge of the north.",
+  "states": [
+    {
+      "epoch": "epoch_current",
+      "coordinates": {
+        "x": 4.7,
+        "y": 4.1
+      }
+    }
+  ],
+  "notes": "From the Age of Machinery chart, where it sits in 'Far North'. Its position is that era's, before the Shattering; canon states no other.",
+  "canon": "secondary",
+  "sources": [
+    "docs/lore/world_pre_shattering_2026-09-30.json"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "fauna_mountain_lake_whale",
+  "type": "fauna",
+  "name": "Mountain Lake Whale",
+  "aliases": [
+    "Shambala Mirror-Glider",
+    "Manasarovar Cloud-Breather",
+    "Ice-Plate Leviathan"
+  ],
+  "scientific": "Siniacetus alpinus",
+  "clade": "mammal",
+  "biomes": [
+    "snow",
+    "mountains"
+  ],
+  "placement": "lore",
+  "rarity": "mythic",
+  "appearance": "A small, pale, land-locked baleen whale of the high glacial lakes, its bone plates coated in mineral-slick calcium that looks like shelf ice; its blow freezes the moment it leaves the water into floating crystal canopies.",
+  "journal_prompt": "When the moon sits flat on Chandra-Taal, the mirror-glider rises, humming at a pitch that makes the lake-bottom stones ring.",
+  "notes": "Descended from Tethys Leviathan pods trapped in rising valleys when the plates collided and pushed up Jambhudweep's highland spine; they grew a vascular antifreeze and woolly blubber. Himachali villagers call them the sacred mounts of the lake-spirits, carrying the monasteries' prayers in their lungs. Lore only, not placed in the game.",
+  "canon": "secondary",
+  "sources": [
+    "SouthOfTethys.txt"
+  ],
+  "source_index": 268
+}

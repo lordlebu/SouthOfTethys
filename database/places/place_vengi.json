@@ -17,6 +17,19 @@
   "notes": "Question-marked on the render. The annotation groups it with the coastal civilizations alongside Dwarka, Lothal and Tamraparni, which is the only claim canon has about it. Raised by people, so it begins with them. The reference map draws a living city, and the map is a picture of one era rather than of all of them. Raised by people, so it begins with them. The reference map draws a living city, and the map is a picture of one era rather than of all of them.",
   "canon": "inferred",
   "sources": [
-    "dump/Partial_map.png"
+    "dump/Partial_map.png",
+    "docs/lore/world_pre_shattering_2026-09-30.json"
+  ],
+  "states": [
+    {
+      "epoch": "epoch_current",
+      "coordinates": {
+        "x": 67.1,
+        "y": 46.3
+      },
+      "held_by": "faction_vanga_maritime_federation",
+      "confirmed": false,
+      "description": "Marsh docks of the eastern coast. Devraj's red-fog morning happens at the Vengi Marsh Docks."
+    }
   ]
 }

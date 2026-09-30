@@ -1,0 +1,17 @@
+{
+  "id": "event_saraswati_canal_drain",
+  "type": "event",
+  "title": "The Saraswati Canal Drains",
+  "epoch": "epoch_current",
+  "date_approx": "late Epoch 4",
+  "location": "place_great_junction",
+  "participants": [
+    "faction_harappan_lothal_union"
+  ],
+  "summary": "The Inland Waterway Board's red alert: the main Saraswati trade canal dropped three feet overnight, and more than forty iron freighters of coal and grain went aground between Dwarka and Lothal. Engineers blamed tectonic fracturing along the central basalt fault. Whether it helped bring on the Great Shattering is not settled; canon records what was reported, not why the world broke.",
+  "canon": "secondary",
+  "sources": [
+    "docs/lore/world_pre_shattering_2026-09-30.json",
+    "SouthOfTethys.txt"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "place_gobi",
+  "type": "place",
+  "name": "Gobi Desert",
+  "kind": "desert",
+  "continent": "mainland_asia",
+  "description": "Held by non-human entities.",
+  "states": [
+    {
+      "epoch": "epoch_current",
+      "coordinates": {
+        "x": 50.9,
+        "y": 13.5
+      }
+    }
+  ],
+  "notes": "From the Age of Machinery chart, where it sits in 'Mainland Asia'. Its position is that era's, before the Shattering; canon states no other.",
+  "canon": "secondary",
+  "sources": [
+    "docs/lore/world_pre_shattering_2026-09-30.json"
+  ]
+}

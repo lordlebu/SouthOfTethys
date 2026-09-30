@@ -1,0 +1,25 @@
+{
+  "id": "place_hastinapura",
+  "type": "place",
+  "name": "Hastinapura",
+  "kind": "settlement",
+  "continent": "jambhudweepa",
+  "epochs": [
+    "epoch_current"
+  ],
+  "description": "Post-Harappan town on the northeastern plain.",
+  "states": [
+    {
+      "epoch": "epoch_current",
+      "coordinates": {
+        "x": 57.0,
+        "y": 33.4
+      }
+    }
+  ],
+  "notes": "From the Age of Machinery chart, where it sits in 'Jambhudweep – NE'. Its position is that era's, before the Shattering; canon states no other.",
+  "canon": "secondary",
+  "sources": [
+    "docs/lore/world_pre_shattering_2026-09-30.json"
+  ]
+}

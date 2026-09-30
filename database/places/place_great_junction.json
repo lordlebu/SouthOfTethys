@@ -1,0 +1,25 @@
+{
+  "id": "place_great_junction",
+  "type": "place",
+  "name": "Great Junction Drydock",
+  "kind": "site",
+  "epochs": [
+    "epoch_current"
+  ],
+  "description": "Where the Saraswati Canal meets the Tethys estuary. On D-Day the water drained into geothermal fissures here, and the Kelpfang-II set out from this pier.",
+  "states": [
+    {
+      "epoch": "epoch_current",
+      "coordinates": {
+        "x": 16.4,
+        "y": 28.2
+      },
+      "held_by": "faction_harappan_lothal_union"
+    }
+  ],
+  "notes": "From the Age of Machinery chart, where it sits in 'Saraswati Delta'. Its position is that era's, before the Shattering; canon states no other.",
+  "canon": "secondary",
+  "sources": [
+    "docs/lore/world_pre_shattering_2026-09-30.json"
+  ]
+}

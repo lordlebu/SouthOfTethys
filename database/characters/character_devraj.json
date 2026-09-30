@@ -1,0 +1,23 @@
+{
+  "id": "character_devraj",
+  "type": "character",
+  "name": "Devraj",
+  "culture": "tuli",
+  "status": "deceased",
+  "epoch": "epoch_current",
+  "roles": [
+    "maritime telegraph operator",
+    "glass-lens grinder"
+  ],
+  "relations": {
+    "partners": [
+      "character_ananya",
+      "character_kael"
+    ]
+  },
+  "notes": "A retired maritime telegraph operator and lens-grinder of the Vengi marsh docks in late Epoch 4, seventy when the ground broke. His lenses became the Kelpfang-II's solar cookers; on the Night of Red Teeth the Dhol dragged him into the dark and nothing was found but his calipers. Ananya built a memorial shrine for him on the river terrace; his lenses later lit the Ark. One of the Founding Three.",
+  "canon": "secondary",
+  "sources": [
+    "SouthOfTethys.txt"
+  ]
+}

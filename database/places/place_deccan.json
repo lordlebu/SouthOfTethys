@@ -19,7 +19,18 @@
   "description": "The high interior south of the Narmada country.",
   "canon": "inferred",
   "sources": [
-    "dump/Partial_map.png"
+    "dump/Partial_map.png",
+    "docs/lore/world_pre_shattering_2026-09-30.json"
   ],
-  "notes": "Ground rather than building: it is here before anyone names it and after they stop. Ground rather than building: it is here before anyone names it and after they stop."
+  "notes": "Ground rather than building: it is here before anyone names it and after they stop. Ground rather than building: it is here before anyone names it and after they stop.",
+  "states": [
+    {
+      "epoch": "epoch_current",
+      "coordinates": {
+        "x": 53.2,
+        "y": 57.8
+      },
+      "description": "Uplands east of Meru, between the Narmada and Godavari."
+    }
+  ]
 }

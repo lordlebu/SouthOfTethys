@@ -1,0 +1,18 @@
+{
+  "id": "event_moriah_spore_blight",
+  "type": "event",
+  "title": "The Moriah Spore-Blight",
+  "epoch": "epoch_current",
+  "date_approx": "late Epoch 4",
+  "location": "place_lemuria",
+  "participants": [
+    "faction_harappan_lothal_union",
+    "faction_hyrkanian_tushara_rail_khanates"
+  ],
+  "summary": "An airborne fungal blight traced to dredging in the sunken Lemurian trenches, carried on coal freighters into the factory wards. It calcifies the lungs -- 'Fossil-Lung' -- and put every factory ward in Lothal and the Hyrkanian foundries under a 21-day quarantine; citizens burned sulphur-and-copper candles in doorways and wore damp felt masks. Whether it helped bring on the Great Shattering is not settled; canon records what was reported, not why the world broke.",
+  "canon": "secondary",
+  "sources": [
+    "docs/lore/world_pre_shattering_2026-09-30.json",
+    "SouthOfTethys.txt"
+  ]
+}

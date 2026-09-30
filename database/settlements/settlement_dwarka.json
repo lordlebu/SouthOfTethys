@@ -10,6 +10,18 @@
   "canon": "primary",
   "sources": [
     "map",
-    "AI_CONTEXT.md"
+    "AI_CONTEXT.md",
+    "docs/lore/world_pre_shattering_2026-09-30.json"
+  ],
+  "states": [
+    {
+      "epoch": "epoch_current",
+      "coordinates": {
+        "x": 22.8,
+        "y": 33.8
+      },
+      "held_by": "faction_vayu_dwarkadhish_coral_monarchies",
+      "description": "Seat of the Vayu principality. Landing of the Delta Causeway, and closest port to the drowned Dwarka Gate."
+    }
   ]
 }

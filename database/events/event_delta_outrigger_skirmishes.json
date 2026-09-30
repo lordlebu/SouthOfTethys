@@ -1,0 +1,16 @@
+{
+  "id": "event_delta_outrigger_skirmishes",
+  "type": "event",
+  "title": "The Delta Outrigger Skirmishes",
+  "epoch": "epoch_current",
+  "date_approx": "late Epoch 4",
+  "participants": [
+    "faction_vanga_maritime_federation"
+  ],
+  "summary": "Vanga steam-gunboats against the migrant outrigger fleets of the Sea-Drifters in the eastern marshes: blockades and burnt harbour towns.",
+  "canon": "secondary",
+  "sources": [
+    "SouthOfTethys.txt"
+  ],
+  "location": "place_vengi"
+}

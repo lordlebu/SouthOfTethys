@@ -1,0 +1,25 @@
+{
+  "id": "place_samgam_city",
+  "type": "place",
+  "name": "Samgam City",
+  "kind": "settlement",
+  "epochs": [
+    "epoch_current"
+  ],
+  "description": "Colony city on Lemuria.",
+  "states": [
+    {
+      "epoch": "epoch_current",
+      "coordinates": {
+        "x": 58.2,
+        "y": 99.0
+      },
+      "held_by": "faction_colonial_holdings"
+    }
+  ],
+  "notes": "From the Age of Machinery chart, where it sits in 'South'. Its position is that era's, before the Shattering; canon states no other.",
+  "canon": "secondary",
+  "sources": [
+    "docs/lore/world_pre_shattering_2026-09-30.json"
+  ]
+}

@@ -18,9 +18,9 @@ timeline
     section Civilization Dawn (Lothal Era)
         c. 3000 – 500 BCE : The Final Voyage of the Kelpfang : The Storm-Bone Khan's Warning at Lothal : The Wandering of the Narmada Seed-Mind : Silvershore War : Founding of Lothal : Black Lotus Siege : The Stone Pact : Tendua Crisis and Assassination of Kavik : Retrieval of the Mask of Harappa : Exile of Shaashak and Khadi : The Awakening of the Mask of Vaṛkesh : Birth of Sarita Silversong
     section The Age of Machinery
-        ~1920s equivalent : The Antarctic Ice Wall Expedition : The Narmada Upriver Expedition : The Gondwana Spacetime Teleportation : The Battered Ekranoplan's Ice Wall Voyage
+        ~1920s equivalent : The Antarctic Ice Wall Expedition : The Cartographic & Mercantile Accord : The Delta Outrigger Skirmishes : Drilling Halted at the Dwarka Gate : The Frontier Marrow Wars : The Great Coal & Dolmen War : The Great Marrow & Coal War : The Day the Ground Broke at the Great Junction : The Mappa Mundi Colonial Insurgencies : The Mappa Mundi Telegraph Sabotage : The Moriah Spore-Blight : The Narmada Upriver Expedition : The Gondwana Spacetime Teleportation : The Battered Ekranoplan's Ice Wall Voyage : The Paratethyan Lock Blockades : Polar Voyagers Arrive at Tamralinga : The Saraswati Canal Drains : Tide-Lock Three Opens : The Undersea Lava River and the Red Fog
     section Post-Cataclysmic Era (The Great Shattering)
-        after the Collapse : The Solarpunk Odyssey of the Ark : The Last Puja
+        after the Collapse : The Golden Season on the Wetlands : The Night of Red Teeth : The Ark Meets Ananya : The Solarpunk Odyssey of the Ark : The Last Puja
 ```
 
 ## The events, by cause
@@ -70,13 +70,31 @@ graph TD
     end
     subgraph epoch_current["The Age of Machinery"]
         E31["The Antarctic Ice Wall Expedition"]
-        E32["The Narmada Upriver Expedition"]
-        E33["The Gondwana Spacetime Teleportation"]
-        E34["The Battered Ekranoplan's Ice Wall Voyage"]
+        E32["The Cartographic & Mercantile Accord"]
+        E33["The Delta Outrigger Skirmishes"]
+        E34["Drilling Halted at the Dwarka Gate"]
+        E35["The Frontier Marrow Wars"]
+        E36["The Great Coal & Dolmen War"]
+        E37["The Great Marrow & Coal War"]
+        E38["The Day the Ground Broke at the Great Junction"]
+        E39["The Mappa Mundi Colonial Insurgencies"]
+        E40["The Mappa Mundi Telegraph Sabotage"]
+        E41["The Moriah Spore-Blight"]
+        E42["The Narmada Upriver Expedition"]
+        E43["The Gondwana Spacetime Teleportation"]
+        E44["The Battered Ekranoplan's Ice Wall Voyage"]
+        E45["The Paratethyan Lock Blockades"]
+        E46["Polar Voyagers Arrive at Tamralinga"]
+        E47["The Saraswati Canal Drains"]
+        E48["Tide-Lock Three Opens"]
+        E49["The Undersea Lava River and the Red Fog"]
     end
     subgraph epoch_post_cataclysm["Post-Cataclysmic Era (The Great Shattering)"]
-        E35["The Solarpunk Odyssey of the Ark"]
-        E36["The Last Puja"]
+        E50["The Golden Season on the Wetlands"]
+        E51["The Night of Red Teeth"]
+        E52["The Ark Meets Ananya"]
+        E53["The Solarpunk Odyssey of the Ark"]
+        E54["The Last Puja"]
     end
     E0 --> E2
     E1 --> E2
@@ -88,7 +106,7 @@ graph TD
     E7 --> E10
     E8 --> E11
     E10 --> E15
-    E13 --> E36
+    E13 --> E54
     E14 --> E16
     E15 --> E18
     E16 --> E20
@@ -107,8 +125,12 @@ graph TD
     E27 --> E28
     E28 --> E29
     E28 --> E30
-    E31 --> E35
-    E32 --> E33
-    E33 --> E34
-    E34 --> E35
+    E31 --> E53
+    E36 --> E37
+    E38 --> E50
+    E42 --> E43
+    E43 --> E44
+    E44 --> E53
+    E50 --> E51
+    E51 --> E52
 ```

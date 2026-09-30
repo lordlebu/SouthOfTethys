@@ -1,0 +1,22 @@
+{
+  "id": "place_mt_tengri",
+  "type": "place",
+  "name": "Mt Tengri",
+  "kind": "peak",
+  "continent": "mainland_asia",
+  "description": "Sky-peak above the Huna lands.",
+  "states": [
+    {
+      "epoch": "epoch_current",
+      "coordinates": {
+        "x": 18.0,
+        "y": 12.3
+      }
+    }
+  ],
+  "notes": "From the Age of Machinery chart, where it sits in 'Mainland Asia'. Its position is that era's, before the Shattering; canon states no other.",
+  "canon": "secondary",
+  "sources": [
+    "docs/lore/world_pre_shattering_2026-09-30.json"
+  ]
+}

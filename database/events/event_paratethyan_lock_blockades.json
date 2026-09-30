@@ -1,0 +1,14 @@
+{
+  "id": "event_paratethyan_lock_blockades",
+  "type": "event",
+  "title": "The Paratethyan Lock Blockades",
+  "epoch": "epoch_current",
+  "date_approx": "late Epoch 4",
+  "participants": [],
+  "summary": "Zingaran privateers and Stygian ironclads clash over the tolls at the narrow sea gates of the inland basins.",
+  "canon": "secondary",
+  "sources": [
+    "SouthOfTethys.txt"
+  ],
+  "location": "place_paratethys_sea"
+}

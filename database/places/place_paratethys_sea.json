@@ -1,0 +1,15 @@
+{
+  "id": "place_paratethys_sea",
+  "type": "place",
+  "name": "The Paratethys",
+  "kind": "sea",
+  "continent": "mainland_asia",
+  "epochs": [
+    "epoch_current"
+  ],
+  "description": "The northern and inland water network that joined Jambhudweep to the greater continents before the Shattering: brackish gulfs and deep basins from the Pannonian plain to the Caspian and the Aral.",
+  "canon": "secondary",
+  "sources": [
+    "SouthOfTethys.txt"
+  ]
+}

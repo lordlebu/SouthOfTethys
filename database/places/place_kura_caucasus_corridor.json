@@ -1,0 +1,16 @@
+{
+  "id": "place_kura_caucasus_corridor",
+  "type": "place",
+  "name": "The Kura-Transcaucasian Corridor",
+  "kind": "range",
+  "continent": "mainland_asia",
+  "within": "place_paratethys_sea",
+  "epochs": [
+    "epoch_current"
+  ],
+  "description": "A narrow mountain land-bridge of volcanic plateaus and geothermal vents, its fortress cities built over Asura dolmens and rich mines.",
+  "canon": "secondary",
+  "sources": [
+    "SouthOfTethys.txt"
+  ]
+}

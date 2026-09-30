@@ -1,0 +1,21 @@
+{
+  "id": "place_ganga_lava_lake",
+  "type": "place",
+  "name": "Ganga Lava Lake",
+  "kind": "lake",
+  "description": "Volcanic lake at the fringe of non-human lands. Ganges Ash-Nomads burn charcoal around it in obsidian goggles.",
+  "states": [
+    {
+      "epoch": "epoch_current",
+      "coordinates": {
+        "x": 91.9,
+        "y": 34.1
+      }
+    }
+  ],
+  "notes": "From the Age of Machinery chart, where it sits in 'Eastern landmass'. Its position is that era's, before the Shattering; canon states no other.",
+  "canon": "secondary",
+  "sources": [
+    "docs/lore/world_pre_shattering_2026-09-30.json"
+  ]
+}

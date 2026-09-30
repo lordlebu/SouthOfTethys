@@ -13,6 +13,17 @@
   "notes": "From `event_black_lotus_siege`, which calls it both a camp and a fort. `Fort` is used here because the event describes scaling cliffs into it. Held by the Naga-Raja, and where Varna and Rathak were kept.",
   "canon": "primary",
   "sources": [
-    "database/events"
+    "database/events",
+    "docs/lore/world_pre_shattering_2026-09-30.json"
+  ],
+  "states": [
+    {
+      "epoch": "epoch_current",
+      "coordinates": {
+        "x": 21.0,
+        "y": 43.9
+      },
+      "description": "Town on the site of the old Black Lotus pirate camp that Varna drowned in flood and fire. Western rail junction."
+    }
   ]
 }

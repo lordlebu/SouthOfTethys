@@ -1,0 +1,31 @@
+{
+  "id": "place_mappa_mundi",
+  "type": "place",
+  "name": "Mappa Mundi Island",
+  "kind": "island",
+  "within": "region_shattered_sea",
+  "description": "Ironwood jungle island in the far southwest, home of Sylvians and Vajraptors.",
+  "states": [
+    {
+      "epoch": "epoch_current",
+      "coordinates": {
+        "x": 7.9,
+        "y": 97.4
+      },
+      "held_by": "faction_colonial_holdings"
+    }
+  ],
+  "notes": "From the Age of Machinery chart, where it sits in 'SW island'. Its position is that era's, before the Shattering; canon states no other.",
+  "canon": "secondary",
+  "sources": [
+    "docs/lore/world_pre_shattering_2026-09-30.json"
+  ],
+  "epochs": [
+    "epoch_prehistoric",
+    "epoch_deep_antiquity",
+    "epoch_migrations",
+    "epoch_civilization_dawn",
+    "epoch_current",
+    "epoch_post_cataclysm"
+  ]
+}

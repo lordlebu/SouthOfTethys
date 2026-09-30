@@ -1,0 +1,25 @@
+{
+  "id": "place_siberian_gold",
+  "type": "place",
+  "name": "Siberian gold deposits",
+  "kind": "mine",
+  "continent": "mainland_asia",
+  "epochs": [
+    "epoch_current"
+  ],
+  "description": "Northern goldfields near Great Tartaria.",
+  "states": [
+    {
+      "epoch": "epoch_current",
+      "coordinates": {
+        "x": 64.2,
+        "y": 5.3
+      }
+    }
+  ],
+  "notes": "From the Age of Machinery chart, where it sits in 'Far North'. Its position is that era's, before the Shattering; canon states no other.",
+  "canon": "secondary",
+  "sources": [
+    "docs/lore/world_pre_shattering_2026-09-30.json"
+  ]
+}

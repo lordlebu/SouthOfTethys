@@ -1,0 +1,19 @@
+{
+  "id": "character_kavi",
+  "type": "character",
+  "name": "Kavi",
+  "culture": "harappan",
+  "status": "deceased",
+  "epoch": "epoch_current",
+  "roles": [
+    "apprentice valve-smith"
+  ],
+  "relations": {
+    "child": "character_kael"
+  },
+  "notes": "An apprentice valve-smith at the Harappan Tidal Ironworks in early Epoch 4, living in a red-brick tenement in Lothal's Lower Brick Quarter. His brass calipers passed to his child Kael and in the end lay on Kael's funeral pyre.",
+  "canon": "secondary",
+  "sources": [
+    "SouthOfTethys.txt"
+  ]
+}

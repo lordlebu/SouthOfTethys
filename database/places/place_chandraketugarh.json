@@ -1,0 +1,25 @@
+{
+  "id": "place_chandraketugarh",
+  "type": "place",
+  "name": "Chandraketugarh",
+  "kind": "city",
+  "epochs": [
+    "epoch_current"
+  ],
+  "description": "Island city of the Vedda apothecary guilds, locked in a feud with Daedrasura's cultists over Garudasaur blood.",
+  "states": [
+    {
+      "epoch": "epoch_current",
+      "coordinates": {
+        "x": 85.6,
+        "y": 47.0
+      },
+      "held_by": "faction_vanga_maritime_federation"
+    }
+  ],
+  "notes": "From the Age of Machinery chart, where it sits in 'Eastern Tethys'. Its position is that era's, before the Shattering; canon states no other.",
+  "canon": "secondary",
+  "sources": [
+    "docs/lore/world_pre_shattering_2026-09-30.json"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "place_stygia",
+  "type": "place",
+  "name": "Stygia",
+  "kind": "frontier",
+  "epochs": [
+    "epoch_current"
+  ],
+  "description": "With Shem, the Southern Black-Stone Hegemony: riverine empires of the arid southern Tethys rim, snake-worship, obsidian quarries and dark alchemy, holding the trade in Garudasaur marrow moss and resin with slave labour in basalt mines.",
+  "notes": "A distant power of the Age of Machinery, beyond the edge of the pre-Shattering chart: known in Narmada from trade, telegraph and war, and deliberately given no position.",
+  "canon": "secondary",
+  "sources": [
+    "SouthOfTethys.txt"
+  ]
+}

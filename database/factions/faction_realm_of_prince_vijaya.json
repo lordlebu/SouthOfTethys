@@ -1,0 +1,15 @@
+{
+  "id": "faction_realm_of_prince_vijaya",
+  "type": "faction",
+  "name": "Realm of Prince Vijaya",
+  "culture": "unknown",
+  "epochs": [
+    "epoch_current"
+  ],
+  "seat": "place_vijaya_city",
+  "notes": "Southern-tip kingdom around Tamraparni. Its politics and its ties to Kubera's Yakshas are still unwritten. A nation of the Age of Machinery, on the pre-Shattering chart. Its people are not yet named in canon, so its culture is `unknown` rather than a guess.",
+  "canon": "secondary",
+  "sources": [
+    "docs/lore/world_pre_shattering_2026-09-30.json"
+  ]
+}

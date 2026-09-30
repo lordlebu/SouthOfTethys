@@ -1,0 +1,26 @@
+{
+  "id": "place_deccan_industrial",
+  "type": "place",
+  "name": "Deccan industrial zone",
+  "kind": "mine",
+  "continent": "jambhudweepa",
+  "epochs": [
+    "epoch_current"
+  ],
+  "description": "Copper-smelters harvesting sulfur and ore along the plateau cliffs.",
+  "states": [
+    {
+      "epoch": "epoch_current",
+      "coordinates": {
+        "x": 41.5,
+        "y": 46.3
+      },
+      "held_by": "faction_narmada_academic_republic"
+    }
+  ],
+  "notes": "From the Age of Machinery chart, where it sits in 'Jambhudweep – Plateau'. Its position is that era's, before the Shattering; canon states no other.",
+  "canon": "secondary",
+  "sources": [
+    "docs/lore/world_pre_shattering_2026-09-30.json"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "place_founding_three_shrine",
+  "type": "place",
+  "name": "The Memorial Shrine of the Founding Three",
+  "kind": "site",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "within": "place_aravali_yurt_sanctuary",
+  "description": "Carved basalt slabs on the river terrace, built by Ananya for Devraj, whose body was never found. Its niche held his lenses and calipers and Kael's forging hammer until the twins gave the lenses and Kael's copper solar-coils to Varuna and Mithra for the Ark.",
+  "canon": "secondary",
+  "sources": [
+    "SouthOfTethys.txt"
+  ]
+}

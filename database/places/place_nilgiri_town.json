@@ -1,0 +1,27 @@
+{
+  "id": "place_nilgiri_town",
+  "type": "place",
+  "name": "Nilgiri (Nirigili) town",
+  "kind": "settlement",
+  "continent": "jambhudweepa",
+  "within": "place_nilgiri",
+  "epochs": [
+    "epoch_current"
+  ],
+  "description": "West-coast town of the Nilgiri Canopy-Keepers, where the coast rail meets the Meru spoke. Name still marked '?' on your chart.",
+  "states": [
+    {
+      "epoch": "epoch_current",
+      "coordinates": {
+        "x": 19.8,
+        "y": 55.9
+      },
+      "confirmed": false
+    }
+  ],
+  "notes": "From the Age of Machinery chart, where it sits in 'Jambhudweep – SW'. Its position is that era's, before the Shattering; canon states no other.",
+  "canon": "secondary",
+  "sources": [
+    "docs/lore/world_pre_shattering_2026-09-30.json"
+  ]
+}

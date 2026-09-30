@@ -17,6 +17,18 @@
   "notes": "Canon already names Harappa through `artifact_mask_of_harappa` and the Mask Family who carried it across the Tethys to found Lothal. The city itself had never been an entity. Raised by people, so it begins with them. The reference map draws a living city, and the map is a picture of one era rather than of all of them.",
   "canon": "inferred",
   "sources": [
-    "dump/Partial_map.png"
+    "dump/Partial_map.png",
+    "docs/lore/world_pre_shattering_2026-09-30.json"
+  ],
+  "states": [
+    {
+      "epoch": "epoch_current",
+      "coordinates": {
+        "x": 19.1,
+        "y": 19.6
+      },
+      "held_by": "faction_harappan_lothal_union",
+      "description": "Ancestral city of the Mask Family, up the Saraswati on the mainland. By Epoch 4 it is a heritage city feeding stone-engineers to the Union."
+    }
   ]
 }

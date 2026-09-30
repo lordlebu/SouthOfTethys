@@ -1,0 +1,16 @@
+{
+  "id": "place_euxine_pontic_basin",
+  "type": "place",
+  "name": "The Euxine-Pontic Basin",
+  "kind": "sea",
+  "continent": "mainland_asia",
+  "within": "place_paratethys_sea",
+  "epochs": [
+    "epoch_current"
+  ],
+  "description": "Central Paratethys: a deep, stratified inland sea under limestone bluffs, with maritime leagues, shipyards and pearl fisheries.",
+  "canon": "secondary",
+  "sources": [
+    "SouthOfTethys.txt"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "place_siberian_grasslands",
+  "type": "place",
+  "name": "Siberian grasslands",
+  "kind": "plains",
+  "continent": "mainland_asia",
+  "description": "Steppe of various mammalian groups, stretching the width of the north.",
+  "states": [
+    {
+      "epoch": "epoch_current",
+      "coordinates": {
+        "x": 49.6,
+        "y": 8.0
+      }
+    }
+  ],
+  "notes": "From the Age of Machinery chart, where it sits in 'Far North'. Its position is that era's, before the Shattering; canon states no other.",
+  "canon": "secondary",
+  "sources": [
+    "docs/lore/world_pre_shattering_2026-09-30.json"
+  ]
+}

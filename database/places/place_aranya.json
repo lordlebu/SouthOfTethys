@@ -1,0 +1,23 @@
+{
+  "id": "place_aranya",
+  "type": "place",
+  "name": "Aranya rainforests",
+  "kind": "forest",
+  "continent": "jambhudweepa",
+  "description": "Dense rainforest east of University Ridge.",
+  "states": [
+    {
+      "epoch": "epoch_current",
+      "coordinates": {
+        "x": 51.2,
+        "y": 40.6
+      },
+      "held_by": "faction_narmada_academic_republic"
+    }
+  ],
+  "notes": "From the Age of Machinery chart, where it sits in 'Jambhudweep – Plateau'. Its position is that era's, before the Shattering; canon states no other.",
+  "canon": "secondary",
+  "sources": [
+    "docs/lore/world_pre_shattering_2026-09-30.json"
+  ]
+}

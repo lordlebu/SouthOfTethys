@@ -84,6 +84,69 @@
       "items": {
         "type": "string"
       }
+    },
+    "states": {
+      "type": "array",
+      "description": "What changed, and when, for the few places that genuinely transform.\n\nA place states its identity once and overrides only what moved. Most places carry no states at all and are eight-line files; this exists for the handful like Dwarka, a working harbour in Civilization Dawn and a drowned gate after the Shattering.\n\nUsually what changes is a name or a status, not a position -- a city does not move. The exception is the Shattering itself, which fractured the world along tectonic and dimensional boundaries at once, so `coordinates` may be restated here for somewhere it carried with it.\n\nOne entity per place per epoch was the alternative and was rejected: it multiplies hundreds by six and makes 'is this the same place?' unanswerable.",
+      "items": {
+        "type": "object",
+        "required": [
+          "epoch"
+        ],
+        "properties": {
+          "epoch": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string",
+            "description": "What it is called in this era, if that changed."
+          },
+          "kind": {
+            "type": "string"
+          },
+          "coordinates": {
+            "type": "object",
+            "description": "Where the place sits in this era, if the Shattering moved it.\n\nUnused, and likely to stay that way. The Great Shattering is withheld on purpose -- canon keeps its consequences and not its account, because working it out is what the player is there to do. So there is no statement of what moved or how far, and there is not going to be one in `events`.\n\nThe field remains because it is the honest shape: a city does not move, but a continent that fractures takes its cities with it. If the drip through `discoveries` ever establishes where something stood before, this is where that goes.",
+            "required": [
+              "x",
+              "y"
+            ],
+            "properties": {
+              "x": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 100
+              },
+              "y": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 100
+              }
+            },
+            "additionalProperties": false
+          },
+          "status": {
+            "type": "string",
+            "description": "A short state word -- drowned, ruined, founded, abandoned, buried.",
+            "minLength": 1
+          },
+          "description": {
+            "type": "string"
+          },
+          "notes": {
+            "type": "string"
+          },
+          "held_by": {
+            "type": "string",
+            "description": "The faction that held this place in the era, when the era's map says. The Age of Machinery chart colours places by nation; this is that colour as a fact."
+          },
+          "confirmed": {
+            "type": "boolean",
+            "description": "False where the era's chart marks the place with '?': placed, but not yet settled."
+          }
+        },
+        "additionalProperties": false
+      }
     }
   },
   "additionalProperties": false

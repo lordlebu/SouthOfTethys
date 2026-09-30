@@ -1,0 +1,14 @@
+{
+  "id": "faction_ark_community",
+  "type": "faction",
+  "name": "The Ark Community",
+  "culture": "wanderer",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "notes": "The train-town collective of the Solarpunk era: Harappan solar-craftsmen, Narmada scholars and displaced city refugees living aboard the rusted greenhouse train, the Ark of Civilization, under Varuna and Mithra. When the train stops for good it becomes the plaza of a solar village.",
+  "canon": "secondary",
+  "sources": [
+    "SouthOfTethys.txt"
+  ]
+}

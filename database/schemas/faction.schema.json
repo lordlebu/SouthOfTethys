@@ -69,6 +69,17 @@
       "items": {
         "type": "string"
       }
+    },
+    "epochs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "The eras the faction existed in. Absent means canon has not dated it. The Age of Machinery's nations are one era's and say so."
+    },
+    "seat": {
+      "type": "string",
+      "description": "The place or settlement it is governed from, when it has one."
     }
   },
   "additionalProperties": false

@@ -1,0 +1,21 @@
+{
+  "id": "event_ark_meets_ananya",
+  "type": "event",
+  "title": "The Ark Meets Ananya",
+  "epoch": "epoch_post_cataclysm",
+  "date_approx": "Epoch 5",
+  "participants": [
+    "character_ananya",
+    "character_varuna",
+    "character_mithra"
+  ],
+  "summary": "Decades on, the Ark halts at the Aravali valley. Varuna and Mithra find the Kelpfang-II's overgrown hull, the shrine, and Ananya, who remembers nothing of the old world. Her grown children give them the lenses and copper solar-coils kept on the shrine's altar, which light and purify the Ark's water for generations.",
+  "canon": "secondary",
+  "sources": [
+    "SouthOfTethys.txt"
+  ],
+  "location": "place_founding_three_shrine",
+  "predecessors": [
+    "event_night_of_red_teeth"
+  ]
+}

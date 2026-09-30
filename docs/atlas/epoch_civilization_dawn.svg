@@ -1,7 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-14 -14 128 128" width="720" role="img" aria-label="Map of Civilization Dawn (Lothal Era)">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-14 -14 128 128" width="720" height="720" role="img" aria-label="Map of Civilization Dawn (Lothal Era)">
 <style>
   .bg{fill:#E7EAE6}.grid{stroke:#CBD1CB;stroke-width:.3}.edge{stroke:#AFB8B1;stroke-width:.6}
-  .dot{fill:#2C5C8F}.dot-place{fill:#7E6A2E}
+  .dot{fill:#2C5C8F}.dot-place{fill:#7E6A2E}.dot-people{fill:#9A4B3A}
+  .lbl-people{fill:#6E3528;font:italic 2.4px Archivo,sans-serif}
   .dot-within{fill:none;stroke:#7E6A2E;stroke-width:.5}
   .lbl{fill:#17201F;font:3.2px Archivo,sans-serif}
   .cap{fill:#7D8A86;font:2.6px 'JetBrains Mono',monospace}
@@ -15,13 +16,14 @@
   .t-desert{fill:#D9C89A}.t-plains{fill:#A8BE84}.t-forest{fill:#7EA46E}.t-wetland{fill:#8FAD9E}.t-hills{fill:#B3B183}.t-mountains{fill:#A9A79C}.t-river{fill:#8FB3C4}.t-coast{fill:#D8CBA0}.t-sea{fill:#7FA6C0}.t-lava_field{fill:#C4735A}
   @media(prefers-color-scheme:dark){
    .bg{fill:#121817}.grid{stroke:#28322F}.edge{stroke:#3E4C4E}
-   .dot{fill:#74A8DA}.dot-place{fill:#CBAE6A}.dot-within{fill:none;stroke:#CBAE6A}   .lbl{fill:#E2E7E3}.cap{fill:#78857F}
+   .dot{fill:#74A8DA}.dot-place{fill:#CBAE6A}.dot-within{fill:none;stroke:#CBAE6A}   .dot-people{fill:#D98A74}.lbl-people{fill:#E5A897}   .lbl{fill:#E2E7E3}.cap{fill:#78857F}
    .sea{fill:#18242E} .land{fill:#2A3026}
    polygon{stroke:#3A4436} .rgn{fill:#9FB09A}
    .course{stroke:#6E9CBD} .course-lbl{fill:#9DBDD4}
    .route{stroke:#B08D6B} .route-lbl{fill:#C7A181}
    .t-desert{fill:#3B3524}.t-plains{fill:#2A3520}.t-forest{fill:#20301E}.t-wetland{fill:#1E2E2A}.t-hills{fill:#302E20}.t-mountains{fill:#2C2B26}.t-river{fill:#1D2E36}.t-coast{fill:#393322}.t-sea{fill:#1B2C36}.t-lava_field{fill:#3A1C15}
   }
+
 </style>
 <rect class="bg" x="-14" y="-14" width="128" height="128"/>
 <rect class="sea" x="0" y="0" width="100" height="100"/>
@@ -44,16 +46,16 @@
 <polyline class="course" points="52,6 45,9 38,12 32,15 25,17 18,19 17,22"/>
 <text class="course-lbl" x="32.0" y="13.6" text-anchor="middle">The Saraswati</text>
 <line class="grid" x1="0" y1="0" x2="0" y2="100"/>
-<line class="grid" x1="0" y1="0" x2="100" y2="0"/>
 <line class="grid" x1="20" y1="0" x2="20" y2="100"/>
-<line class="grid" x1="0" y1="20" x2="100" y2="20"/>
 <line class="grid" x1="40" y1="0" x2="40" y2="100"/>
-<line class="grid" x1="0" y1="40" x2="100" y2="40"/>
 <line class="grid" x1="60" y1="0" x2="60" y2="100"/>
-<line class="grid" x1="0" y1="60" x2="100" y2="60"/>
 <line class="grid" x1="80" y1="0" x2="80" y2="100"/>
-<line class="grid" x1="0" y1="80" x2="100" y2="80"/>
 <line class="grid" x1="100" y1="0" x2="100" y2="100"/>
+<line class="grid" x1="0" y1="0" x2="100" y2="0"/>
+<line class="grid" x1="0" y1="20" x2="100" y2="20"/>
+<line class="grid" x1="0" y1="40" x2="100" y2="40"/>
+<line class="grid" x1="0" y1="60" x2="100" y2="60"/>
+<line class="grid" x1="0" y1="80" x2="100" y2="80"/>
 <line class="grid" x1="0" y1="100" x2="100" y2="100"/>
 <circle class="dot-place dot-within" cx="50" cy="95" r="1.5"/>
 <text class="lbl" x="50" y="92" text-anchor="middle">Antarctic Ice Wall</text>
@@ -75,6 +77,8 @@
 <text class="lbl" x="45" y="59" text-anchor="middle">The Konkan Hills</text>
 <circle class="dot-place" cx="20" cy="24" r="1.5"/>
 <text class="lbl" x="20" y="21" text-anchor="middle">Makkan Coast</text>
+<circle class="dot-place dot-within" cx="59.285714285714285" cy="82.85714285714286" r="1.5"/>
+<text class="lbl" x="59.285714285714285" y="79.85714285714286" text-anchor="middle">Mappa Mundi Island</text>
 <circle class="dot-place" cx="13" cy="19" r="1.5"/>
 <text class="lbl" x="15" y="16" text-anchor="start">Mohenjodaro</text>
 <circle class="dot-place dot-within" cx="52" cy="42" r="1.5"/>

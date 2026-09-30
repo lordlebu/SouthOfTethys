@@ -1,0 +1,22 @@
+{
+  "id": "place_tarim",
+  "type": "place",
+  "name": "Tarim",
+  "kind": "desert",
+  "continent": "mainland_asia",
+  "description": "Basin below the Gobi.",
+  "states": [
+    {
+      "epoch": "epoch_current",
+      "coordinates": {
+        "x": 40.2,
+        "y": 14.2
+      }
+    }
+  ],
+  "notes": "From the Age of Machinery chart, where it sits in 'Mainland Asia'. Its position is that era's, before the Shattering; canon states no other.",
+  "canon": "secondary",
+  "sources": [
+    "docs/lore/world_pre_shattering_2026-09-30.json"
+  ]
+}

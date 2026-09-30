@@ -1,0 +1,30 @@
+{
+  "id": "place_hyrcania_outpost",
+  "type": "place",
+  "name": "Hyrcania Outpost",
+  "kind": "city",
+  "aliases": [
+    "Hrycania outpost"
+  ],
+  "continent": "mainland_asia",
+  "within": "place_hyrcania",
+  "epochs": [
+    "epoch_current"
+  ],
+  "description": "Eastern terminus of the Trans-Himalayan railway. The 1884 Accord puts this corridor under joint Narmada-Hyrkanian administration.",
+  "states": [
+    {
+      "epoch": "epoch_current",
+      "coordinates": {
+        "x": 62.0,
+        "y": 20.6
+      },
+      "held_by": "faction_hyrkanian_tushara_rail_khanates"
+    }
+  ],
+  "notes": "From the Age of Machinery chart, where it sits in 'Mainland Asia'. Its position is that era's, before the Shattering; canon states no other.",
+  "canon": "secondary",
+  "sources": [
+    "docs/lore/world_pre_shattering_2026-09-30.json"
+  ]
+}

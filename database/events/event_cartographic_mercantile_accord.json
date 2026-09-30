@@ -1,0 +1,17 @@
+{
+  "id": "event_cartographic_mercantile_accord",
+  "type": "event",
+  "title": "The Cartographic & Mercantile Accord",
+  "epoch": "epoch_current",
+  "date_approx": "middle Epoch 4",
+  "participants": [
+    "faction_narmada_academic_republic",
+    "faction_hyrkanian_tushara_rail_khanates"
+  ],
+  "summary": "Ratified in Lothal: joint administration of the Trans-Himalayan railway corridor, and exclusive rights for Narmada scholars to catalogue finds along the Saraswati Basin. The Narmada Chronicle dates it 1884 in the reckoning of its day.",
+  "canon": "secondary",
+  "sources": [
+    "SouthOfTethys.txt"
+  ],
+  "location": "settlement_lothal"
+}

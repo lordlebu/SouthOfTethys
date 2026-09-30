@@ -1,0 +1,16 @@
+{
+  "id": "faction_vayu_dwarkadhish_coral_monarchies",
+  "type": "faction",
+  "name": "Vayu & Dwarkadhish Coral Monarchies",
+  "culture": "unknown",
+  "epochs": [
+    "epoch_current"
+  ],
+  "seat": "settlement_dwarka",
+  "notes": "Two old coastal principalities under coral-stone arches: Vayu at North Dwarka and Dwarkadhish at Dwarka. They guard the Dwarka Gate and the sacred conch trade. Old coastal principalities under coral-stone arches that guard the interdimensional Dwarka Gate structures, and hold deep-sea diving, textiles and the sacred conch trade under a strict naval watch over the western sea gates. A nation of the Age of Machinery, on the pre-Shattering chart. Its people are not yet named in canon, so its culture is `unknown` rather than a guess.",
+  "canon": "secondary",
+  "sources": [
+    "docs/lore/world_pre_shattering_2026-09-30.json",
+    "SouthOfTethys.txt"
+  ]
+}

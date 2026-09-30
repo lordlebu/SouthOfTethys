@@ -1,0 +1,31 @@
+{
+  "id": "fauna_river_whale",
+  "type": "fauna",
+  "name": "River Whale",
+  "aliases": [
+    "Saraswati Silt-Drifter",
+    "Ganga Clay-Borer",
+    "Silt-Breezer"
+  ],
+  "scientific": "Potamocetus sarasvaticus",
+  "clade": "mammal",
+  "region": "saraswati-godavari-deltas",
+  "biomes": [
+    "river",
+    "wetland"
+  ],
+  "landmasses": [
+    "jambhudweepa",
+    "gondwana"
+  ],
+  "placement": "lore",
+  "rarity": "rare",
+  "appearance": "A long, serpentine, blind cetacean with a highly flexible neck of elongated vertebrae that turns its head at a right angle round tight bends. Its eyes are vestigial beads under tough skin, its acoustic melon fills half its skull, and it sifts river silt with a shovel-like, toothless keratin jaw.",
+  "journal_prompt": "A long back rolls in the brown channel and the head comes round on a neck no whale should have.",
+  "notes": "An early offshoot of the basilosaurids, and one of Jambhudweep's first freshwater whales; larger and stranger than the river dolphin it shares the delta with. The Kia call them the River's Lungs, and say their movement keeps the deep channels from silting shut; their fisherfolk steer by the whales' tail-slaps in the blind mist, and warn never to throw stone or lead where one sleeps. Digha Jani's reading is the flexible neck and the melon. Lore only, not placed in the game.",
+  "canon": "secondary",
+  "sources": [
+    "SouthOfTethys.txt"
+  ],
+  "source_index": 267
+}

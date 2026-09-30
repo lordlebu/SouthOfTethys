@@ -1,0 +1,25 @@
+{
+  "id": "place_villages_n",
+  "type": "place",
+  "name": "Coastal villages",
+  "kind": "settlement",
+  "continent": "jambhudweepa",
+  "epochs": [
+    "epoch_current"
+  ],
+  "description": "Fishing villages strung along the northern rail.",
+  "states": [
+    {
+      "epoch": "epoch_current",
+      "coordinates": {
+        "x": 34.7,
+        "y": 31.0
+      }
+    }
+  ],
+  "notes": "From the Age of Machinery chart, where it sits in 'Jambhudweep – N coast'. Its position is that era's, before the Shattering; canon states no other.",
+  "canon": "secondary",
+  "sources": [
+    "docs/lore/world_pre_shattering_2026-09-30.json"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "place_new_borneo",
+  "type": "place",
+  "name": "New Borneo colony",
+  "kind": "settlement",
+  "within": "place_mappa_mundi",
+  "epochs": [
+    "epoch_current"
+  ],
+  "description": "Colonial ironwood camp on Mappa Mundi.",
+  "states": [
+    {
+      "epoch": "epoch_current",
+      "coordinates": {
+        "x": 7.9,
+        "y": 98.4
+      },
+      "held_by": "faction_colonial_holdings"
+    }
+  ],
+  "notes": "From the Age of Machinery chart, where it sits in 'SW island'. Its position is that era's, before the Shattering; canon states no other.",
+  "canon": "secondary",
+  "sources": [
+    "docs/lore/world_pre_shattering_2026-09-30.json"
+  ]
+}

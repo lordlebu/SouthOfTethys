@@ -19,7 +19,8 @@
   "notes": "Drawn on the render as a dotted shape containing only a question mark -- the cartographer knowing something is there and not what. Kept as `unknown` territory rather than given content. Ground rather than building: it is here before anyone names it and after they stop. Ground rather than building: it is here before anyone names it and after they stop.",
   "canon": "inferred",
   "sources": [
-    "dump/Partial_map.png"
+    "dump/Partial_map.png",
+    "docs/lore/world_pre_shattering_2026-09-30.json"
   ],
   "extent": [
     [
@@ -42,5 +43,17 @@
       86,
       76
     ]
+  ],
+  "states": [
+    {
+      "epoch": "epoch_current",
+      "coordinates": {
+        "x": 90.3,
+        "y": 78.4
+      },
+      "held_by": "faction_colonial_holdings",
+      "confirmed": false,
+      "description": "Colony island shared with the Onge and Jarawa. Frost-skinned voyagers from the Southern Ice Wall trade ivory and blubber-resin at its outer pier."
+    }
   ]
 }

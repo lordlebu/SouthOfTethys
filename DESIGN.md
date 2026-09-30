@@ -142,7 +142,12 @@ eight-line files. One entity per place per epoch was rejected: it multiplies hun
 makes "is this the same place?" unanswerable.
 
 **Only the post-cataclysm era has a map, until the Cataclysm is written.** Settled
-2026-08-27. The three field-map coordinates are the only positions canon holds, and
+2026-08-27. **Amended 2026-09-30 by the owner:** the Age of Machinery now has a map of its own, the
+owner's pre-Shattering chart (`docs/lore/world_pre_shattering_2026-09-30.json`), and
+`Partial_map.png` belongs to the earlier eras. Its positions are each place's `states` entry for
+`epoch_current`, and the atlas draws that era from the chart alone. The Shattering's cause is still
+not written; the chart places the world *before* it without saying why it broke. Lore only -- the
+game is set in the last era and none of this reaches it. See `docs/decisions.md`. The three field-map coordinates are the only positions canon holds, and
 `field_map.schema.json` records that their layout is cataclysm-shaped rather than geographic.
 An earlier era therefore has nothing to plot.
 
@@ -162,6 +167,11 @@ Reversing this is cheap in a way the y-axis ruling was not: nothing has been ent
 it. That is the whole argument for waiting.
 
 **The Great Shattering has no event, and is not going to get one.** Settled 2026-08-27.
+**Still holds, narrowed 2026-09-30:** canon now records what the Age of Machinery's own papers
+*reported* -- the canal drain, the Dwarka Gate drilling, the spore-blight, the red fog -- and the
+day three survivors lived through at the Great Junction, each saying plainly that why the world
+broke is not settled. The owner: "causes are unclear still." What canon still refuses is an
+account of the cause.
 
 Canon holds the Shattering's *consequences* everywhere — a drowned Dwarka, a half-buried
 Lothal, a hollow university, a lava sea where a river was — and deliberately holds no account

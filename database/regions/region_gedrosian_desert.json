@@ -35,9 +35,10 @@
       19
     ]
   ],
-  "notes": "Arid interior, and young: the harbour, the fossil channel and the caravan road all date the water's departure to within cultural memory rather than to geological time. Forty authored species, all desert-placeable.",
+  "notes": "Arid interior, and young: the harbour, the fossil channel and the caravan road all date the water's departure to within cultural memory rather than to geological time. Forty authored species, all desert-placeable. On the Age of Machinery chart it is labelled at (8.9, 24.5): Coal-scrapers mine fossil beds at its edge; Dune-Scavengers ride Camelosuchus through its ruins.",
   "canon": "primary",
   "sources": [
-    "map"
+    "map",
+    "docs/lore/world_pre_shattering_2026-09-30.json"
   ]
 }

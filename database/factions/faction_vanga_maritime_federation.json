@@ -1,0 +1,16 @@
+{
+  "id": "faction_vanga_maritime_federation",
+  "type": "faction",
+  "name": "Vanga Maritime Federation",
+  "culture": "tuli",
+  "epochs": [
+    "epoch_current"
+  ],
+  "seat": "place_vanga",
+  "notes": "The oceanic nation. Former Tuli pearl-divers and delta merchants who control the eastern Tethys with ekranoplans and ironclad outriggers. Unified from the Tuli pearl-divers, harbour merchants and eastern delta seafarers: a thalassocracy on stone piers and boardwalks above the tide near the Vengi marshes, holding the shipping lanes with coal-burning ekranoplans, ironclad outriggers and deep-water pearl fisheries. A nation of the Age of Machinery, on the pre-Shattering chart.",
+  "canon": "secondary",
+  "sources": [
+    "docs/lore/world_pre_shattering_2026-09-30.json",
+    "SouthOfTethys.txt"
+  ]
+}

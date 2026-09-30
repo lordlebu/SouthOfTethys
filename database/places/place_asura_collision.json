@@ -1,0 +1,22 @@
+{
+  "id": "place_asura_collision",
+  "type": "place",
+  "name": "Asura Planet Collision Zone",
+  "kind": "frontier",
+  "continent": "mainland_asia",
+  "description": "Impact crater of the Asura planet, ringed by a boiling ocean and irradiated wastelands.",
+  "states": [
+    {
+      "epoch": "epoch_current",
+      "coordinates": {
+        "x": 90.3,
+        "y": 10.4
+      }
+    }
+  ],
+  "notes": "From the Age of Machinery chart, where it sits in 'Northeast'. Its position is that era's, before the Shattering; canon states no other.",
+  "canon": "secondary",
+  "sources": [
+    "docs/lore/world_pre_shattering_2026-09-30.json"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "event_mappa_mundi_colonial_insurgencies",
+  "type": "event",
+  "title": "The Mappa Mundi Colonial Insurgencies",
+  "epoch": "epoch_current",
+  "date_approx": "late Epoch 4",
+  "participants": [
+    "faction_colonial_holdings",
+    "faction_vajraptor_canopy_sentinels"
+  ],
+  "summary": "Tribes allied with Sylvians and Vajraptors ambush the Aquilonian logging camps and cut the island cables.",
+  "canon": "secondary",
+  "sources": [
+    "SouthOfTethys.txt"
+  ],
+  "location": "place_mappa_mundi"
+}

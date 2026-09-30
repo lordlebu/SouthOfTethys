@@ -1,0 +1,18 @@
+{
+  "id": "event_dwarka_gate_drilling_halted",
+  "type": "event",
+  "title": "Drilling Halted at the Dwarka Gate",
+  "epoch": "epoch_current",
+  "date_approx": "late Epoch 4",
+  "location": "place_dwarka_gate",
+  "participants": [
+    "faction_vayu_dwarkadhish_coral_monarchies",
+    "faction_narmada_academic_republic"
+  ],
+  "summary": "Mining at the submerged Dwarka Gate was suspended at midnight after localised spatial tremors, when steam drills struck a high-pressure geothermal Lingam bed and blue auroras rose from the basalt arches. The Narmada Geological Corps warned that further drilling risked permanent crustal destabilisation. Whether it helped bring on the Great Shattering is not settled; canon records what was reported, not why the world broke.",
+  "canon": "secondary",
+  "sources": [
+    "docs/lore/world_pre_shattering_2026-09-30.json",
+    "SouthOfTethys.txt"
+  ]
+}

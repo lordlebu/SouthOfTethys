@@ -1,0 +1,16 @@
+{
+  "id": "faction_harappan_lothal_union",
+  "type": "faction",
+  "name": "Harappan-Lothal Industrial Union",
+  "culture": "harappan",
+  "epochs": [
+    "epoch_current"
+  ],
+  "seat": "settlement_lothal",
+  "notes": "The guild nation. Foundries, clockwork factories and patent registries along the Saraswati estuaries, run from Kavik's retrofitted 22-story sandstone tower in Lothal. Descended from the Mask Family, Harappan stone-engineers and urbanised Kia artisans: a heavy-industrial federation of iron foundries, clockwork factories and copper solar-coil workshops, governed through trade ledgers, patent registries and civic councils. Kavik's ancient tower is its steam beacon and telegraph lighthouse. A nation of the Age of Machinery, on the pre-Shattering chart.",
+  "canon": "secondary",
+  "sources": [
+    "docs/lore/world_pre_shattering_2026-09-30.json",
+    "SouthOfTethys.txt"
+  ]
+}

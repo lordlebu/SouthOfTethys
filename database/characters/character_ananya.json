@@ -1,0 +1,23 @@
+{
+  "id": "character_ananya",
+  "type": "character",
+  "name": "Ananya",
+  "culture": "narmada_scholar",
+  "status": "alive",
+  "epoch": "epoch_current",
+  "roles": [
+    "archivist",
+    "matriarch of the Aravali Yurt Sanctuary"
+  ],
+  "relations": {
+    "partners": [
+      "character_kael",
+      "character_devraj"
+    ]
+  },
+  "notes": "An assistant archivist at the Narmada Academic Library in middle Epoch 4, who saved six centuries of deep-time survey charts on the day the ground broke. A roof beam on the Night of Red Teeth took her memory of the old world entirely; she kept the twins, the hearth and her grief, and the homestead she opened to wanderers became the Aravali Yurt Sanctuary. Decades later, white-haired, she met Varuna and Mithra at the shrine and remembered none of it. One of the Founding Three, and the one who lived.",
+  "canon": "secondary",
+  "sources": [
+    "SouthOfTethys.txt"
+  ]
+}
