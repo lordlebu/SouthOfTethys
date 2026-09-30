@@ -136,6 +136,7 @@ graph LR
   end
   subgraph grp_vedda["vedda (culture)"]
     character_bela("Bela")
+    character_kashyapa("Kashyapa")
     character_ranu("Ranu")
   end
   subgraph grp_wanderer["wanderer (culture)"]
@@ -166,9 +167,9 @@ graph LR
   character_vara_ma --> event_aravali_massacre
 ```
 
-14 character(s), 6 event(s) they appear in, 7 group(s).
+15 character(s), 6 event(s) they appear in, 7 group(s).
 
-**Present in no event of this era:** The Meditating Apsara.
+**Present in no event of this era:** Kashyapa, The Meditating Apsara.
 
 ## Civilization Dawn (Lothal Era)
 
@@ -309,7 +310,12 @@ graph LR
     character_varuna("Captain Varuna")
     character_mitra("Mitra")
   end
+  subgraph grp_harappan["harappan (culture)"]
+    character_kael("Kael")
+    character_kavi("Kavi")
+  end
   subgraph grp_narmada_scholar["narmada_scholar (culture)"]
+    character_ananya("Ananya")
     character_digha_jani("Digha Jani")
     character_onko("Onko")
     character_shakariman("Shakariman")
@@ -320,21 +326,28 @@ graph LR
   subgraph grp_primordial["primordial (culture)"]
     character_ammonite_man("Ammonite Man")
   end
+  subgraph grp_tuli["tuli (culture)"]
+    character_devraj("Devraj")
+  end
   event_antarctic_ice_wall_expedition["The Antarctic Ice Wall Expedition"]
   event_gondwana_teleportation["The Gondwana Spacetime Teleportation"]
+  event_ground_breaks_at_great_junction["The Day the Ground Broke at the Great Junction"]
   event_narmada_upriver_expedition["The Narmada Upriver Expedition"]
   character_ammonite_man --> event_antarctic_ice_wall_expedition
+  character_ananya --> event_ground_breaks_at_great_junction
+  character_devraj --> event_ground_breaks_at_great_junction
   character_digha_jani --> event_gondwana_teleportation
   character_digha_jani --> event_narmada_upriver_expedition
+  character_kael --> event_ground_breaks_at_great_junction
   character_mitra --> event_antarctic_ice_wall_expedition
   character_onko --> event_gondwana_teleportation
   character_onko --> event_narmada_upriver_expedition
   character_varuna --> event_antarctic_ice_wall_expedition
 ```
 
-7 character(s), 3 event(s) they appear in, 4 group(s).
+11 character(s), 4 event(s) they appear in, 6 group(s).
 
-**Present in no event of this era:** Aurum Theophanes, Shakariman.
+**Present in no event of this era:** Aurum Theophanes, Kavi, Shakariman.
 
 ## Post-Cataclysmic Era (The Great Shattering)
 
@@ -350,14 +363,33 @@ graph LR
     character_mitra("Mitra")
   end
   subgraph grp_harappan["harappan (culture)"]
+    character_kael("Kael")
     character_mehtar("Mehtar")
   end
+  subgraph grp_narmada_scholar["narmada_scholar (culture)"]
+    character_ananya("Ananya")
+  end
+  subgraph grp_tuli["tuli (culture)"]
+    character_devraj("Devraj")
+  end
+  event_ark_meets_ananya["The Ark Meets Ananya"]
+  event_golden_season_on_the_wetlands["The Golden Season on the Wetlands"]
+  event_night_of_red_teeth["The Night of Red Teeth"]
   event_survival_train_solarpunk["The Solarpunk Odyssey of the Ark"]
+  character_ananya --> event_ark_meets_ananya
+  character_ananya --> event_golden_season_on_the_wetlands
+  character_ananya --> event_night_of_red_teeth
+  character_devraj --> event_golden_season_on_the_wetlands
+  character_devraj --> event_night_of_red_teeth
   character_guyuk_reborn --> event_survival_train_solarpunk
+  character_kael --> event_golden_season_on_the_wetlands
+  character_kael --> event_night_of_red_teeth
+  character_mithra --> event_ark_meets_ananya
   character_mitra --> event_survival_train_solarpunk
+  character_varuna --> event_ark_meets_ananya
   character_varuna --> event_survival_train_solarpunk
 ```
 
-6 character(s), 1 event(s) they appear in, 3 group(s).
+9 character(s), 4 event(s) they appear in, 5 group(s).
 
-**Present in no event of this era:** Malacite, Mehtar, Mithra.
+**Present in no event of this era:** Malacite, Mehtar.

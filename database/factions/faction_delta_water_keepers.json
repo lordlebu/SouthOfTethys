@@ -1,0 +1,14 @@
+{
+  "id": "faction_delta_water_keepers",
+  "type": "faction",
+  "name": "The Delta Water-Keepers",
+  "culture": "kia",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "notes": "Descendants of the Kia and of Lothal's canal engineers, in timber-and-reed villages over the estuaries: tidal watermills, silt-cleared channels and salt-tolerant crops to heal the coast.",
+  "canon": "secondary",
+  "sources": [
+    "SouthOfTethys.txt"
+  ]
+}

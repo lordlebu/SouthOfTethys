@@ -1,0 +1,25 @@
+{
+  "id": "place_geothermal_stations",
+  "type": "place",
+  "name": "Geothermal stations",
+  "kind": "mine",
+  "epochs": [
+    "epoch_current"
+  ],
+  "description": "Offshore stations tapping the undersea lava lake and lava river.",
+  "states": [
+    {
+      "epoch": "epoch_current",
+      "coordinates": {
+        "x": 78.0,
+        "y": 40.2
+      },
+      "held_by": "faction_vanga_maritime_federation"
+    }
+  ],
+  "notes": "From the Age of Machinery chart, where it sits in 'Eastern Tethys'. Its position is that era's, before the Shattering; canon states no other.",
+  "canon": "secondary",
+  "sources": [
+    "docs/lore/world_pre_shattering_2026-09-30.json"
+  ]
+}

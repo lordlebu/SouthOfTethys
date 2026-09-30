@@ -1,0 +1,14 @@
+{
+  "id": "event_polar_voyagers_at_tamralinga",
+  "type": "event",
+  "title": "Polar Voyagers Arrive at Tamralinga",
+  "epoch": "epoch_current",
+  "date_approx": "middle Epoch 4",
+  "participants": [],
+  "summary": "A whale-bone ice-runner of frost-skinned voyagers from the Southern Ice Wall docks at Tamralinga's outer pier and trades fossil ivory, blubber-resins and strange acoustic records for iron axes and salt; Narmada linguists are sent to learn their click-dialect.",
+  "canon": "secondary",
+  "sources": [
+    "SouthOfTethys.txt"
+  ],
+  "location": "place_tamralinga"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "place_prana_mine",
+  "type": "place",
+  "name": "Prana extraction mine",
+  "kind": "mine",
+  "continent": "jambhudweepa",
+  "epochs": [
+    "epoch_current"
+  ],
+  "description": "Draws life-force (prana) out of the ground.",
+  "states": [
+    {
+      "epoch": "epoch_current",
+      "coordinates": {
+        "x": 31.6,
+        "y": 75.4
+      }
+    }
+  ],
+  "notes": "From the Age of Machinery chart, where it sits in 'Jambhudweep – South'. Its position is that era's, before the Shattering; canon states no other.",
+  "canon": "secondary",
+  "sources": [
+    "docs/lore/world_pre_shattering_2026-09-30.json"
+  ]
+}

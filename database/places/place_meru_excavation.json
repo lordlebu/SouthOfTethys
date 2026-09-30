@@ -1,0 +1,27 @@
+{
+  "id": "place_meru_excavation",
+  "type": "place",
+  "name": "Meru excavation",
+  "kind": "mine",
+  "continent": "jambhudweepa",
+  "within": "place_mount_meru",
+  "epochs": [
+    "epoch_current"
+  ],
+  "description": "The Republic's dig into Meru itself. The chart also marks it as a suspected fault: it is not named in the Age of Machinery chronicles as a cause of anything, and is kept as a question -- if the Shattering began at the world's axis, this is where.",
+  "states": [
+    {
+      "epoch": "epoch_current",
+      "coordinates": {
+        "x": 43.7,
+        "y": 51.8
+      },
+      "held_by": "faction_narmada_academic_republic"
+    }
+  ],
+  "notes": "From the Age of Machinery chart, where it sits in 'Jambhudweep – Heart'. Its position is that era's, before the Shattering; canon states no other.",
+  "canon": "secondary",
+  "sources": [
+    "docs/lore/world_pre_shattering_2026-09-30.json"
+  ]
+}

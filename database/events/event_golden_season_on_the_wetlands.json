@@ -1,0 +1,24 @@
+{
+  "id": "event_golden_season_on_the_wetlands",
+  "type": "event",
+  "title": "The Golden Season on the Wetlands",
+  "epoch": "epoch_post_cataclysm",
+  "date_approx": "early Epoch 5",
+  "participants": [
+    "character_kael",
+    "character_ananya",
+    "character_devraj"
+  ],
+  "summary": "Two years mired in the new Aravali wetlands: Devraj's lens cookers, Ananya's maps of springs and edible plants, Kael's tools and copper pipes from scrap -- and the love that grew among the three. Kael bore twins, a boy with Devraj's calm eyes and a girl with Kael's fierce spirit.",
+  "canon": "secondary",
+  "sources": [
+    "SouthOfTethys.txt"
+  ],
+  "location": "place_kelpfang_ii",
+  "predecessors": [
+    "event_ground_breaks_at_great_junction"
+  ],
+  "successors": [
+    "event_night_of_red_teeth"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "event_tide_lock_three_opened",
+  "type": "event",
+  "title": "Tide-Lock Three Opens",
+  "epoch": "epoch_current",
+  "date_approx": "early Epoch 4",
+  "participants": [
+    "faction_harappan_lothal_union"
+  ],
+  "summary": "The Harappan Guild of Engineers' new iron sluice gates raise four grain barges at dawn, cutting six hours from the passage out of the Saraswati marshes. The same issue of the Lothal Gazette carries the Tuli pearl-divers' protest against steam dredgers tearing up the black-oyster reefs, and news of the synapsid debate at Narmada University.",
+  "canon": "secondary",
+  "sources": [
+    "SouthOfTethys.txt"
+  ],
+  "location": "place_tide_lock_three"
+}

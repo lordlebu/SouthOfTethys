@@ -1,0 +1,15 @@
+{
+  "id": "place_kush",
+  "type": "place",
+  "name": "Kush",
+  "kind": "frontier",
+  "epochs": [
+    "epoch_current"
+  ],
+  "description": "With Punt, the Equatorial Frontier Kingdoms bordering Mappa Mundi and Lemuria: gold and timber, and guerrilla war against the colonial companies.",
+  "notes": "A distant power of the Age of Machinery, beyond the edge of the pre-Shattering chart: known in Narmada from trade, telegraph and war, and deliberately given no position.",
+  "canon": "secondary",
+  "sources": [
+    "SouthOfTethys.txt"
+  ]
+}

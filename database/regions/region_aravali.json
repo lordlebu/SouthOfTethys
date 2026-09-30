@@ -40,11 +40,12 @@
       39
     ]
   ],
-  "notes": "Stony ranges. Site of Mask Family schism, Jharwa massacre, and hidden sanctuary of Vara-Ma/Orek/Thren.",
+  "notes": "Stony ranges. Site of Mask Family schism, Jharwa massacre, and hidden sanctuary of Vara-Ma/Orek/Thren. On the Age of Machinery chart it is labelled at (48.3, 33.0): Stony hills of the Glass-Herbalists. After D-Day, the wetlands below become the Aravali Yurt Sanctuary.",
   "canon": "primary",
   "sources": [
     "AI_CONTEXT.md",
-    "map"
+    "map",
+    "docs/lore/world_pre_shattering_2026-09-30.json"
   ],
   "bestiary_region": "aravali"
 }

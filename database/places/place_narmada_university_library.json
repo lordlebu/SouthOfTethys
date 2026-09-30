@@ -13,6 +13,18 @@
   "canon": "primary",
   "sources": [
     "Digha Jani and the Cosmic Secrets of Jambhudweepa",
-    "The Predatory Sentience of Asura Planets"
+    "The Predatory Sentience of Asura Planets",
+    "docs/lore/world_pre_shattering_2026-09-30.json"
+  ],
+  "states": [
+    {
+      "epoch": "epoch_current",
+      "coordinates": {
+        "x": 40.3,
+        "y": 41.0
+      },
+      "held_by": "faction_narmada_academic_republic",
+      "description": "University Ridge. Brass observatories on basalt cliffs, trams along the ridge avenue, Ananya's library."
+    }
   ]
 }

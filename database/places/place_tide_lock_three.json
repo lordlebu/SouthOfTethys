@@ -1,0 +1,15 @@
+{
+  "id": "place_tide_lock_three",
+  "type": "place",
+  "name": "Tide-Lock Three",
+  "kind": "site",
+  "epochs": [
+    "epoch_current"
+  ],
+  "within": "settlement_lothal",
+  "description": "Iron sluice gates on the Saraswati approaches to Lothal, driven by a triple-piston steam engine, which cut six hours from the barge passage out of the marshes.",
+  "canon": "secondary",
+  "sources": [
+    "SouthOfTethys.txt"
+  ]
+}

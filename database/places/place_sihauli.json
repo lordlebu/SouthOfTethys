@@ -16,7 +16,22 @@
   "description": "The easternmost of the three named valley cities, toward the mountains.",
   "canon": "inferred",
   "sources": [
-    "dump/Partial_map.png"
+    "dump/Partial_map.png",
+    "docs/lore/world_pre_shattering_2026-09-30.json"
   ],
-  "notes": "Raised by people, so it begins with them. The reference map draws a living city, and the map is a picture of one era rather than of all of them. Raised by people, so it begins with them. The reference map draws a living city, and the map is a picture of one era rather than of all of them."
+  "notes": "Raised by people, so it begins with them. The reference map draws a living city, and the map is a picture of one era rather than of all of them. Raised by people, so it begins with them. The reference map draws a living city, and the map is a picture of one era rather than of all of them.",
+  "states": [
+    {
+      "epoch": "epoch_current",
+      "coordinates": {
+        "x": 22.0,
+        "y": 24.0
+      },
+      "held_by": "faction_harappan_lothal_union",
+      "description": "East bank. Home of the Sinauli-Vedda dialect of the old chariot traders."
+    }
+  ],
+  "aliases": [
+    "Sinauli"
+  ]
 }

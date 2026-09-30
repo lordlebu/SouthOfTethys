@@ -1,0 +1,25 @@
+{
+  "id": "place_vanga",
+  "type": "place",
+  "name": "Vanga",
+  "kind": "city",
+  "epochs": [
+    "epoch_current"
+  ],
+  "description": "Federation capital on stone piers and boardwalks above the tide. Tuli pearl-divers protest the steam dredgers tearing up black-oyster reefs.",
+  "states": [
+    {
+      "epoch": "epoch_current",
+      "coordinates": {
+        "x": 95.9,
+        "y": 42.7
+      },
+      "held_by": "faction_vanga_maritime_federation"
+    }
+  ],
+  "notes": "From the Age of Machinery chart, where it sits in 'Eastern landmass'. Its position is that era's, before the Shattering; canon states no other.",
+  "canon": "secondary",
+  "sources": [
+    "docs/lore/world_pre_shattering_2026-09-30.json"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "place_hyrcanian_caspian_depression",
+  "type": "place",
+  "name": "The Hyrcanian-Caspian Depression",
+  "kind": "plains",
+  "continent": "mainland_asia",
+  "within": "place_paratethys_sea",
+  "epochs": [
+    "epoch_current"
+  ],
+  "description": "Eastern Paratethys: an endorheic basin of salt flats, oil seeps and wind-scoured steppe; caravan grounds, coal towns and armoured rail corridors.",
+  "canon": "secondary",
+  "sources": [
+    "SouthOfTethys.txt"
+  ]
+}

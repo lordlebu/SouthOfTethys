@@ -1,0 +1,16 @@
+{
+  "id": "faction_hyrkanian_tushara_rail_khanates",
+  "type": "faction",
+  "name": "Hyrkanian & Tushara Rail-Khanates",
+  "culture": "tushara",
+  "epochs": [
+    "epoch_current"
+  ],
+  "seat": "place_bahlika",
+  "notes": "Wind-hardened overland empire of the northern passes. Camelosuchus riders, armored trains, and a monopoly on coal and iron. Nomadic-industrial empire of the northern passes and the Hyrcanian steppe. Its riders sit domesticated Camelosuchus; its armoured steam-and-diesel trains run the Trans-Himalayan corridors, and it holds the overland coal, iron and trade routes into the Saraswati Basin. A nation of the Age of Machinery, on the pre-Shattering chart.",
+  "canon": "secondary",
+  "sources": [
+    "docs/lore/world_pre_shattering_2026-09-30.json",
+    "SouthOfTethys.txt"
+  ]
+}

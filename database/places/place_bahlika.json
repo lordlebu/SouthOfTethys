@@ -1,0 +1,26 @@
+{
+  "id": "place_bahlika",
+  "type": "place",
+  "name": "Bahlika",
+  "kind": "city",
+  "continent": "mainland_asia",
+  "epochs": [
+    "epoch_current"
+  ],
+  "description": "Khanate city where the Trans-Himalayan railway forks and the bridge line drops south to the island.",
+  "states": [
+    {
+      "epoch": "epoch_current",
+      "coordinates": {
+        "x": 47.0,
+        "y": 22.1
+      },
+      "held_by": "faction_hyrkanian_tushara_rail_khanates"
+    }
+  ],
+  "notes": "From the Age of Machinery chart, where it sits in 'Mainland Asia'. Its position is that era's, before the Shattering; canon states no other.",
+  "canon": "secondary",
+  "sources": [
+    "docs/lore/world_pre_shattering_2026-09-30.json"
+  ]
+}

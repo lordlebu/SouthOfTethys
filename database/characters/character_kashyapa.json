@@ -1,0 +1,16 @@
+{
+  "id": "character_kashyapa",
+  "type": "character",
+  "name": "Kashyapa",
+  "culture": "vedda",
+  "status": "mythic",
+  "epoch": "epoch_migrations",
+  "roles": [
+    "origin of the Vedda lineage"
+  ],
+  "notes": "The distant, unwritten origin of the Vedda line, from the Era of Human Migrations, before cities and ledgers. Nothing written records him; he survives only in Vedda oral memory, which is why no temple or priesthood was ever built for him.",
+  "canon": "secondary",
+  "sources": [
+    "SouthOfTethys.txt"
+  ]
+}

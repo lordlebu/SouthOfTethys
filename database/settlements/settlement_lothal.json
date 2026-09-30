@@ -23,7 +23,19 @@
   "canon": "primary",
   "sources": [
     "AI_CONTEXT.md",
-    "map"
+    "map",
+    "docs/lore/world_pre_shattering_2026-09-30.json"
   ],
-  "within": "field_map_lothal"
+  "within": "field_map_lothal",
+  "states": [
+    {
+      "epoch": "epoch_current",
+      "coordinates": {
+        "x": 26.5,
+        "y": 37.4
+      },
+      "held_by": "faction_harappan_lothal_union",
+      "description": "Capital of the Union. Red Tower Precinct, Tide-Lock Three, the Harappan Tidal Ironworks, and the Narmada Man's skull shrine under the Crystal Spire to the north."
+    }
+  ]
 }

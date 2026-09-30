@@ -1,0 +1,25 @@
+{
+  "id": "place_ether_mine",
+  "type": "place",
+  "name": "Ether mine",
+  "kind": "mine",
+  "continent": "jambhudweepa",
+  "epochs": [
+    "epoch_current"
+  ],
+  "description": "Extracts ether, a fuel with no mundane explanation yet.",
+  "states": [
+    {
+      "epoch": "epoch_current",
+      "coordinates": {
+        "x": 25.2,
+        "y": 66.5
+      }
+    }
+  ],
+  "notes": "From the Age of Machinery chart, where it sits in 'Jambhudweep – SW'. Its position is that era's, before the Shattering; canon states no other.",
+  "canon": "secondary",
+  "sources": [
+    "docs/lore/world_pre_shattering_2026-09-30.json"
+  ]
+}

@@ -20,7 +20,8 @@
   "notes": "Question-marked on the render. Ground rather than building: it is here before anyone names it and after they stop. Ground rather than building: it is here before anyone names it and after they stop.",
   "canon": "inferred",
   "sources": [
-    "dump/Partial_map.png"
+    "dump/Partial_map.png",
+    "docs/lore/world_pre_shattering_2026-09-30.json"
   ],
   "extent": [
     [
@@ -43,5 +44,17 @@
       63,
       75
     ]
+  ],
+  "states": [
+    {
+      "epoch": "epoch_current",
+      "coordinates": {
+        "x": 47.0,
+        "y": 78.1
+      },
+      "held_by": "faction_realm_of_prince_vijaya",
+      "confirmed": false,
+      "description": "Southern terminus of the Meru line. Marked '?' on your chart."
+    }
   ]
 }

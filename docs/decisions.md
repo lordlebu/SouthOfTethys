@@ -1314,6 +1314,45 @@ the northern shore -- the wolf on 40 tiles, the elephant on 16, the bear on 4 --
 ever met there. The woolly bactrian croc lives only on mountains, and the northern shore has 23
 mountain tiles, so it is not met yet.
 
+## The Age of Machinery, charted — settled 2026-09-30
+
+The owner's pre-Shattering chart (`docs/lore/world_pre_shattering_2026-09-30.json`, kept whole)
+and the Epoch 4 and 5 sections of `SouthOfTethys.txt` came in together. **Lore only, on the owner's
+word**: the game is set in the last, solarpunk era, so nothing here reaches it. Every new entity is
+in a folder the exporter withholds, and the three new species are `placement: lore`. The bundle is
+byte-for-byte the same, so **the version stays 2.38.0**: canon's version is what the game's bundle
+is stamped with, and bumping it for lore the game never reads would force a game commit that
+changes nothing. The entity count moves to 1095.
+
+- **The chart is the map for its era, and `Partial_map.png` is for the earlier ones.** Each place's
+  position is a `states` entry for `epoch_current`, scaled per axis from the chart's 2004 by 3246
+  pixels to the 0-100 grid. The atlas gained a charted era: the Age of Machinery draws only what
+  its chart places, with the peoples as squares, at the chart's portrait proportions, and no traced
+  coastline under it.
+- **68 places.** 13 were canon and gained their era's position (Harappa, Mohenjodaro, Sihauli --
+  the chart's Sinauli -- Lothal, North Dwarka, the Narmada University Library, Vengi and more); two
+  canon regions took theirs in their notes; the rest are new. Four are marked `confirmed: false`,
+  as the chart marks them '?'. The chart's Dwarka is not North Dwarka, so it is its own place.
+  New kinds: `peak`, `mine`, `site`, `lake`.
+- **Nine nations are factions**, each with `epochs` and a `seat`, and each place the chart colours
+  names its holder as `held_by`. Three have culture `unknown` because canon has not named their
+  people yet: the Coral Monarchies, Prince Vijaya's realm and the colonial holdings.
+- **38 peoples are cultures with `homelands`**, lore only because they carry no given names.
+- **The four faults are events as they were reported**, each saying the cause is not settled. The
+  Meru dig stays a question on its place: "not named in the chronicles as a cause".
+- **The distant Hyborian-named powers are beyond the chart**: places with no position, on the
+  owner's ruling. **The great war was two wars**: the Great Coal & Dolmen War between the Union and
+  the Rail-Khanates, then the continental Great Marrow & Coal War.
+- **The Founding Three** (Kael, Ananya, Devraj) and Kavi are characters, their story is six events
+  from the day the ground broke to the Ark, and the Aravali Yurt Sanctuary, the Kelpfang-II and the
+  shrine are places. Kael is recorded as the man he was, without the name he left.
+- **The River Whale is its own animal**, on the owner's ruling, beside the river dolphin; with the
+  Mountain Lake Whale and the Proto-Tendua it is lore only.
+
+Open: the peoples of three nations; where the "?" places really sit; the Aranya rainforests (the
+chart) and the Aranta (canon) may be one forest. The rest of `SouthOfTethys.txt` -- the bestiary,
+the characters, the Kia, the Mask Family -- was already canon from earlier ingests.
+
 ## Security
 
 Two Hugging Face tokens were exposed during setup and must be treated as burned: one pasted

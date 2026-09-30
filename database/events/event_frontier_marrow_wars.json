@@ -1,0 +1,17 @@
+{
+  "id": "event_frontier_marrow_wars",
+  "type": "event",
+  "title": "The Frontier Marrow Wars",
+  "epoch": "epoch_current",
+  "date_approx": "late Epoch 4",
+  "participants": [
+    "faction_harappan_lothal_union",
+    "faction_hyrkanian_tushara_rail_khanates"
+  ],
+  "summary": "Harappan timber cartels and Hyrkanian mining syndicates fight the Sun-Iron kingdoms in guerrilla wars over Garudasaur fossil-marrow beds and ironwood.",
+  "canon": "secondary",
+  "sources": [
+    "SouthOfTethys.txt"
+  ],
+  "location": "place_mappa_mundi"
+}

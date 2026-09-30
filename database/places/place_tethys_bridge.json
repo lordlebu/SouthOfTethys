@@ -1,0 +1,25 @@
+{
+  "id": "place_tethys_bridge",
+  "type": "place",
+  "name": "Great Tethys Bridge",
+  "kind": "site",
+  "epochs": [
+    "epoch_current"
+  ],
+  "description": "The rail bridge from Bahlika to the Aravalis, tying the island to the mainland corridor.",
+  "states": [
+    {
+      "epoch": "epoch_current",
+      "coordinates": {
+        "x": 46.8,
+        "y": 27.0
+      },
+      "held_by": "faction_narmada_academic_republic"
+    }
+  ],
+  "notes": "From the Age of Machinery chart, where it sits in 'Tethys Strait'. Its position is that era's, before the Shattering; canon states no other.",
+  "canon": "secondary",
+  "sources": [
+    "docs/lore/world_pre_shattering_2026-09-30.json"
+  ]
+}

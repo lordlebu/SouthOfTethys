@@ -1,0 +1,15 @@
+{
+  "id": "faction_kingdom_of_pragjyotisha",
+  "type": "faction",
+  "name": "Kingdom of Pragjyotisha",
+  "culture": "harappan",
+  "epochs": [
+    "epoch_current"
+  ],
+  "seat": "place_pragjyotisha",
+  "notes": "A Harappan remnant kingdom on the eastern landmass, beyond the lava straits. How it relates to the Union is still open. A nation of the Age of Machinery, on the pre-Shattering chart.",
+  "canon": "secondary",
+  "sources": [
+    "docs/lore/world_pre_shattering_2026-09-30.json"
+  ]
+}

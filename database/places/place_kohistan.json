@@ -1,0 +1,25 @@
+{
+  "id": "place_kohistan",
+  "type": "place",
+  "name": "Kohistan",
+  "kind": "settlement",
+  "continent": "mainland_asia",
+  "epochs": [
+    "epoch_current"
+  ],
+  "description": "Frontier town of the Kalasha hills.",
+  "states": [
+    {
+      "epoch": "epoch_current",
+      "coordinates": {
+        "x": 7.9,
+        "y": 18.6
+      }
+    }
+  ],
+  "notes": "From the Age of Machinery chart, where it sits in 'Mainland Asia'. Its position is that era's, before the Shattering; canon states no other.",
+  "canon": "secondary",
+  "sources": [
+    "docs/lore/world_pre_shattering_2026-09-30.json"
+  ]
+}

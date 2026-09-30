@@ -1,0 +1,23 @@
+{
+  "id": "place_turanian_steppes",
+  "type": "place",
+  "name": "Turanian Steppes",
+  "kind": "plains",
+  "continent": "mainland_asia",
+  "description": "Isolated tribes, telegraph-riders, and the Silk-and-Coal overland corridors.",
+  "states": [
+    {
+      "epoch": "epoch_current",
+      "coordinates": {
+        "x": 30.1,
+        "y": 11.6
+      },
+      "held_by": "faction_hyrkanian_tushara_rail_khanates"
+    }
+  ],
+  "notes": "From the Age of Machinery chart, where it sits in 'Mainland Asia'. Its position is that era's, before the Shattering; canon states no other.",
+  "canon": "secondary",
+  "sources": [
+    "docs/lore/world_pre_shattering_2026-09-30.json"
+  ]
+}

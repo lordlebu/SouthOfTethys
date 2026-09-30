@@ -1,0 +1,24 @@
+{
+  "id": "event_night_of_red_teeth",
+  "type": "event",
+  "title": "The Night of Red Teeth",
+  "epoch": "epoch_post_cataclysm",
+  "date_approx": "early Epoch 5",
+  "participants": [
+    "character_kael",
+    "character_ananya",
+    "character_devraj"
+  ],
+  "summary": "In the monsoon of the third year a pack of hunger-driven, red-furred Dhol broke the fence at midnight. Kael killed four and fell defending the cradle; Devraj was dragged into the dark; a falling beam took Ananya's memory. She burned Kael on a cedar pyre and built a shrine for Devraj.",
+  "canon": "secondary",
+  "sources": [
+    "SouthOfTethys.txt"
+  ],
+  "location": "place_kelpfang_ii",
+  "predecessors": [
+    "event_golden_season_on_the_wetlands"
+  ],
+  "successors": [
+    "event_ark_meets_ananya"
+  ]
+}

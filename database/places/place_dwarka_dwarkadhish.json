@@ -1,0 +1,29 @@
+{
+  "id": "place_dwarka_dwarkadhish",
+  "type": "place",
+  "name": "Dwarka",
+  "kind": "city",
+  "aliases": [
+    "Dwarkadhish's Dwarka"
+  ],
+  "continent": "jambhudweepa",
+  "epochs": [
+    "epoch_current"
+  ],
+  "description": "Seat of the Dwarkadhish principality on the north shore. Freighters ran aground on the canal between here and Lothal when the water dropped.",
+  "states": [
+    {
+      "epoch": "epoch_current",
+      "coordinates": {
+        "x": 59.5,
+        "y": 32.2
+      },
+      "held_by": "faction_vayu_dwarkadhish_coral_monarchies"
+    }
+  ],
+  "notes": "From the Age of Machinery chart, where it sits in 'Jambhudweep – N coast'. Its position is that era's, before the Shattering; canon states no other.",
+  "canon": "secondary",
+  "sources": [
+    "docs/lore/world_pre_shattering_2026-09-30.json"
+  ]
+}

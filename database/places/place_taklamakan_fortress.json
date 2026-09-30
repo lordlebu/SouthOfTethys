@@ -1,0 +1,26 @@
+{
+  "id": "place_taklamakan_fortress",
+  "type": "place",
+  "name": "Taklamakan Pass Fortress",
+  "kind": "site",
+  "continent": "mainland_asia",
+  "epochs": [
+    "epoch_current"
+  ],
+  "description": "Khanate fortress guarding the pass.",
+  "states": [
+    {
+      "epoch": "epoch_current",
+      "coordinates": {
+        "x": 51.1,
+        "y": 17.4
+      },
+      "held_by": "faction_hyrkanian_tushara_rail_khanates"
+    }
+  ],
+  "notes": "From the Age of Machinery chart, where it sits in 'Mainland Asia'. Its position is that era's, before the Shattering; canon states no other.",
+  "canon": "secondary",
+  "sources": [
+    "docs/lore/world_pre_shattering_2026-09-30.json"
+  ]
+}

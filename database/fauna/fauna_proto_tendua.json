@@ -1,0 +1,28 @@
+{
+  "id": "fauna_proto_tendua",
+  "type": "fauna",
+  "name": "Proto-Tendua",
+  "aliases": [
+    "Noble Proto-Tendua",
+    "Sphinx-Tendua"
+  ],
+  "scientific": "Protothera sphinx",
+  "clade": "synapsid",
+  "biomes": [
+    "hills",
+    "forest"
+  ],
+  "landmasses": [
+    "jambhudweepa",
+    "gondwana"
+  ],
+  "placement": "lore",
+  "rarity": "mythic",
+  "appearance": "A Permian simian-felid: a big cat's body with dexterous, ape-like paws and a face of fine, expressive muscle, made for speech.",
+  "notes": "The ancestor of the Tenduas, from the Permian, when the Vanaras built their tree-cities: a convergence of early therocephalians, felid predators and proto-primates that grew speech, deep feeling and an obsession with riddles, geography and philosophy. They sat as neutral judges at old basalt steps and river crossings, holding court with Vanara sages and the Ammonite Man. Their feeling is also their weakness: Asura generals in the Fang vs Scale Wars spliced corrupted Tendua lines with scorpion venom, brick-dust and stone magic into the manticores, whose faces calcified into human ones and whose voices turned to mockery. Digha Jani's university bestiary later called them monstrous hybrids and missed that the faces were convergent evolution. Lore only.",
+  "canon": "secondary",
+  "sources": [
+    "SouthOfTethys.txt"
+  ],
+  "source_index": 269
+}

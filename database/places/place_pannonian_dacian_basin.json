@@ -1,0 +1,16 @@
+{
+  "id": "place_pannonian_dacian_basin",
+  "type": "place",
+  "name": "The Pannonian-Dacian Basin",
+  "kind": "plains",
+  "continent": "mainland_asia",
+  "within": "place_paratethys_sea",
+  "epochs": [
+    "epoch_current"
+  ],
+  "description": "Western Paratethys: brackish gulfs in fertile alluvial plains under mountain arcs. Dense steam river-ports, farm terraces, and the heartland of heavy manufacture.",
+  "canon": "secondary",
+  "sources": [
+    "SouthOfTethys.txt"
+  ]
+}

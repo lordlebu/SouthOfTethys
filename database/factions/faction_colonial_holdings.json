@@ -1,0 +1,14 @@
+{
+  "id": "faction_colonial_holdings",
+  "type": "faction",
+  "name": "Colonial holdings & outposts",
+  "culture": "unknown",
+  "epochs": [
+    "epoch_current"
+  ],
+  "notes": "Overseas camps and trading piers: Mappa Mundi ironwood colonies, Tamralinga, and the Lemurian colony. A nation of the Age of Machinery, on the pre-Shattering chart. Its people are not yet named in canon, so its culture is `unknown` rather than a guess.",
+  "canon": "secondary",
+  "sources": [
+    "docs/lore/world_pre_shattering_2026-09-30.json"
+  ]
+}

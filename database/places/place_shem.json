@@ -1,0 +1,15 @@
+{
+  "id": "place_shem",
+  "type": "place",
+  "name": "Shem",
+  "kind": "frontier",
+  "epochs": [
+    "epoch_current"
+  ],
+  "description": "Stygia's partner in the Southern Black-Stone Hegemony.",
+  "notes": "A distant power of the Age of Machinery, beyond the edge of the pre-Shattering chart: known in Narmada from trade, telegraph and war, and deliberately given no position.",
+  "canon": "secondary",
+  "sources": [
+    "SouthOfTethys.txt"
+  ]
+}

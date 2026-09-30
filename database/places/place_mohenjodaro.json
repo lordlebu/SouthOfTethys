@@ -17,6 +17,18 @@
   "notes": "`event_founding_lothal` records the Mask Family's migration from Mohenjodaro as a cause. The origin was in canon; the place was not. Raised by people, so it begins with them. The reference map draws a living city, and the map is a picture of one era rather than of all of them. Raised by people, so it begins with them. The reference map draws a living city, and the map is a picture of one era rather than of all of them.",
   "canon": "inferred",
   "sources": [
-    "dump/Partial_map.png"
+    "dump/Partial_map.png",
+    "docs/lore/world_pre_shattering_2026-09-30.json"
+  ],
+  "states": [
+    {
+      "epoch": "epoch_current",
+      "coordinates": {
+        "x": 15.3,
+        "y": 22.9
+      },
+      "held_by": "faction_harappan_lothal_union",
+      "description": "West of the Saraswati. Old brick grid, now a river-lock town."
+    }
   ]
 }

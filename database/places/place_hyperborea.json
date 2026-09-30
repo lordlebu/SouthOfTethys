@@ -1,0 +1,15 @@
+{
+  "id": "place_hyperborea",
+  "type": "place",
+  "name": "Hyperborea",
+  "kind": "frontier",
+  "epochs": [
+    "epoch_current"
+  ],
+  "description": "With the Cimmerians, the Glacial Highland Clans of the ice limits, who rejected steam and guarded the passes against mining syndicates.",
+  "notes": "A distant power of the Age of Machinery, beyond the edge of the pre-Shattering chart: known in Narmada from trade, telegraph and war, and deliberately given no position.",
+  "canon": "secondary",
+  "sources": [
+    "SouthOfTethys.txt"
+  ]
+}

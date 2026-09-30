@@ -1,0 +1,17 @@
+{
+  "id": "event_undersea_lava_river",
+  "type": "event",
+  "title": "The Undersea Lava River and the Red Fog",
+  "epoch": "epoch_current",
+  "date_approx": "late Epoch 4",
+  "location": "place_vengi",
+  "participants": [
+    "faction_vanga_maritime_federation"
+  ],
+  "summary": "Deep-earth magnetic anomalies over the Vengi marshes, a rust-red fog that hid the sun and stilled the sea breeze, and the smell of ozone and sulphur, attributed to a lava river under the sea. Whether it helped bring on the Great Shattering is not settled; canon records what was reported, not why the world broke.",
+  "canon": "secondary",
+  "sources": [
+    "docs/lore/world_pre_shattering_2026-09-30.json",
+    "SouthOfTethys.txt"
+  ]
+}

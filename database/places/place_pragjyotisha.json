@@ -1,0 +1,25 @@
+{
+  "id": "place_pragjyotisha",
+  "type": "place",
+  "name": "Pragjyotisha",
+  "kind": "city",
+  "epochs": [
+    "epoch_current"
+  ],
+  "description": "A Harappan remnant kingdom beyond the eastern strait, cut off from Lothal. Its ties to the Union are unwritten.",
+  "states": [
+    {
+      "epoch": "epoch_current",
+      "coordinates": {
+        "x": 93.9,
+        "y": 25.3
+      },
+      "held_by": "faction_kingdom_of_pragjyotisha"
+    }
+  ],
+  "notes": "From the Age of Machinery chart, where it sits in 'Eastern landmass'. Its position is that era's, before the Shattering; canon states no other.",
+  "canon": "secondary",
+  "sources": [
+    "docs/lore/world_pre_shattering_2026-09-30.json"
+  ]
+}

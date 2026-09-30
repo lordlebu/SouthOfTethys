@@ -1,0 +1,26 @@
+{
+  "id": "place_gold_mine",
+  "type": "place",
+  "name": "Gold mine",
+  "kind": "mine",
+  "continent": "jambhudweepa",
+  "within": "place_deccan",
+  "epochs": [
+    "epoch_current"
+  ],
+  "description": "Western foothills of Meru.",
+  "states": [
+    {
+      "epoch": "epoch_current",
+      "coordinates": {
+        "x": 35.5,
+        "y": 53.5
+      }
+    }
+  ],
+  "notes": "From the Age of Machinery chart, where it sits in 'Jambhudweep – Heart'. Its position is that era's, before the Shattering; canon states no other.",
+  "canon": "secondary",
+  "sources": [
+    "docs/lore/world_pre_shattering_2026-09-30.json"
+  ]
+}

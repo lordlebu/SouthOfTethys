@@ -178,6 +178,47 @@ UNSHAPED = {"epoch_post_cataclysm"}
 # coastline, not the arrangement.
 UNMAPPED = {"epoch_prehistoric"}
 
+# An era with a chart of its own, drawn from that chart alone.
+#
+# **The Age of Machinery has one, and it is not the traced coastline.** The owner's pre-Shattering
+# chart (docs/lore/world_pre_shattering_2026-09-30.json) places the era's cities, mines, ruins and
+# peoples, and the owner's ruling of 30 September 2026 is that `Partial_map.png` belongs to the
+# earlier eras. So this era draws only what its own chart places -- each place's `states` entry
+# for the era, and each people's homeland in `cultures.json` -- with no traced land under it and
+# no position borrowed from the older map. Two maps on one page would put a Harappan Union city in
+# the old sea, which is exactly the failure UNSHAPED already exists to prevent.
+#
+# `height` keeps the chart's own proportions. It is a portrait sheet, 2004 by 3246, and its
+# positions are stored on the 0-100 grid per axis, so drawing it square would squash it.
+CHARTED = {
+    "epoch_current": {"height": round(100 * 3246 / 2004, 1),
+                      "caption": "north is up \u00b7 the Age of Machinery chart, before the Shattering"},
+}
+
+
+def charted(folders: dict[str, list[dict]], epoch_id: str) -> list[dict]:
+    """What the era's own chart places: explicit positions for the era, and its peoples."""
+    tall = CHARTED[epoch_id]["height"] / 100
+    out = []
+    for name in ("field_maps", "places", "settlements"):
+        for entity in folders.get(name, []):
+            st = next((x for x in entity.get("states") or [] if x.get("epoch") == epoch_id), None)
+            c = (st or {}).get("coordinates")
+            if not (isinstance(c, dict) and "x" in c and "y" in c):
+                continue
+            out.append({**state_in_era(entity, epoch_id), "coordinates": {"x": c["x"], "y": round(c["y"] * tall, 1)},
+                        "_folder": name, "_inherited": False})
+    cultures = json.loads((BASE / "database" / "cultures.json").read_text(encoding="utf-8"))
+    for c in cultures.get("cultures", []):
+        for h in c.get("homelands") or []:
+            if h.get("epoch") != epoch_id:
+                continue
+            xy = h["coordinates"]
+            out.append({"id": f"{c['id']}:{h.get('label')}", "name": h.get("label") or c["id"],
+                        "coordinates": {"x": xy["x"], "y": round(xy["y"] * tall, 1)},
+                        "_folder": "peoples", "_inherited": False})
+    return out
+
 
 def shapes(folders: dict[str, list[dict]], epoch_id: str) -> tuple[list[dict], list[dict]]:
     """Landmasses and regions with a traced outline that exist in this era."""
@@ -268,7 +309,8 @@ def placed(folders: dict[str, list[dict]], epoch_id: str) -> list[dict]:
 
 def svg_map(points: list[dict], epoch_name: str,
             land: list[dict] | None = None, ground: list[dict] | None = None,
-            lines: list[dict] | None = None) -> str:
+            lines: list[dict] | None = None, height: float = 100,
+            caption: str = "north is up \u00b7 0-100 grid") -> str:
     """The 0-100 grid, drawn directly. y grows downward, which is the ruling and also SVG.
 
     Sea, then the landmasses, then each region washed by its first biome, then whatever canon
@@ -276,16 +318,17 @@ def svg_map(points: list[dict], epoch_name: str,
     """
     land = land or []
     ground = ground or []
-    W = H = 100
+    W, H = 100, height
     pad = 14
     light = "".join(f".t-{b}{{fill:{c[0]}}}" for b, c in TERRAIN.items())
     dark = "".join(f".t-{b}{{fill:{c[1]}}}" for b, c in TERRAIN.items())
     parts = [
         f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="{-pad} {-pad} {W + pad * 2} {H + pad * 2}" '
-        f'width="720" role="img" aria-label="Map of {xml_text(epoch_name)}">',
+        f'width="720" height="{round(720 * (H + pad * 2) / (W + pad * 2))}" role="img" aria-label="Map of {xml_text(epoch_name)}">',
         "<style>",
         "  .bg{fill:#E7EAE6}.grid{stroke:#CBD1CB;stroke-width:.3}.edge{stroke:#AFB8B1;stroke-width:.6}",
-        "  .dot{fill:#2C5C8F}.dot-place{fill:#7E6A2E}",
+        "  .dot{fill:#2C5C8F}.dot-place{fill:#7E6A2E}.dot-people{fill:#9A4B3A}",
+        "  .lbl-people{fill:#6E3528;font:italic 2.4px Archivo,sans-serif}",
         # An inherited position is drawn hollow: canon knows what contains this place
         # and not where in it. A filled dot would claim a survey nobody made.
         "  .dot-within{fill:none;stroke:#7E6A2E;stroke-width:.5}",
@@ -304,6 +347,7 @@ def svg_map(points: list[dict], epoch_name: str,
         "  @media(prefers-color-scheme:dark){",
         "   .bg{fill:#121817}.grid{stroke:#28322F}.edge{stroke:#3E4C4E}",
         "   .dot{fill:#74A8DA}.dot-place{fill:#CBAE6A}.dot-within{fill:none;stroke:#CBAE6A}"
+        "   .dot-people{fill:#D98A74}.lbl-people{fill:#E5A897}"
         "   .lbl{fill:#E2E7E3}.cap{fill:#78857F}",
         f"   .sea{{fill:{SEA[1]}}} .land{{fill:{LAND[1]}}}",
         "   polygon{stroke:#3A4436} .rgn{fill:#9FB09A}",
@@ -311,6 +355,9 @@ def svg_map(points: list[dict], epoch_name: str,
         "   .route{stroke:#B08D6B} .route-lbl{fill:#C7A181}",
         f"   {dark}",
         "  }",
+        # A charted era has a hundred points where the others have a handful: smaller type and
+        # smaller marks, or the labels bury the map.
+        ("  .lbl{font-size:1.6px}.lbl-people{font-size:1.4px}" if H != 100 else ""),
         "</style>",
         f'<rect class="bg" x="{-pad}" y="{-pad}" width="{W + pad * 2}" height="{H + pad * 2}"/>',
     ]
@@ -346,6 +393,7 @@ def svg_map(points: list[dict], epoch_name: str,
 
     for g in range(0, 101, 20):
         parts.append(f'<line class="grid" x1="{g}" y1="0" x2="{g}" y2="{H}"/>')
+    for g in range(0, int(H) + 1, 20):
         parts.append(f'<line class="grid" x1="0" y1="{g}" x2="{W}" y2="{g}"/>')
 
     by_id = {p["id"]: p for p in points}
@@ -361,18 +409,24 @@ def svg_map(points: list[dict], epoch_name: str,
     xs = [p["coordinates"]["x"] for p in points]
     for p in points:
         x, y = p["coordinates"]["x"], p["coordinates"]["y"]
-        cls = "dot" if p["_folder"] == "field_maps" else "dot-place"
+        people = p["_folder"] == "peoples"
+        cls = "dot" if p["_folder"] == "field_maps" else ("dot-people" if people else "dot-place")
         if p.get("_inherited"):
             cls += " dot-within"
         anchor = "end" if x == max(xs) else ("start" if x == min(xs) else "middle")
         dx = -2 if anchor == "end" else (2 if anchor == "start" else 0)
-        parts.append(f'<circle class="{cls}" cx="{x}" cy="{y}" r="1.5"/>')
+        # A people is where a people lives, not a point anyone built: a small square, not a dot.
+        if people:
+            parts.append(f'<rect class="{cls}" x="{x - 0.6}" y="{y - 0.6}" width="1.2" height="1.2"/>')
+        else:
+            parts.append(f'<circle class="{cls}" cx="{x}" cy="{y}" r="{1.5 if H == 100 else 0.8}"/>')
+        lbl = "lbl-people" if people else "lbl"
         parts.append(
-            f'<text class="lbl" x="{x + dx}" y="{y - 3}" text-anchor="{anchor}">'
+            f'<text class="{lbl}" x="{x + dx}" y="{y - (3 if H == 100 else 1.4)}" text-anchor="{anchor}">'
             f'{xml_text(p.get("name") or p["id"])}</text>'
         )
     # A literal middle dot, not `&middot;` -- that entity is undefined in XML.
-    parts.append(f'<text class="cap" x="0" y="{H + 8}">north is up · 0-100 grid</text>')
+    parts.append(f'<text class="cap" x="0" y="{H + 8}">{xml_text(caption)}</text>')
     parts.append("</svg>")
     return "\n".join(parts)
 
@@ -425,9 +479,13 @@ def main() -> int:
         if graph:
             doc += ["### Events", "", graph, ""]
 
-        points = placed(folders, eid) if eid not in UNMAPPED else []
-        land, ground = shapes(folders, eid)
-        lines = courses(folders, eid)
+        chart = CHARTED.get(eid)
+        if chart:
+            points, land, ground, lines = charted(folders, eid), [], [], []
+        else:
+            points = placed(folders, eid) if eid not in UNMAPPED else []
+            land, ground = shapes(folders, eid)
+            lines = courses(folders, eid)
         # Ground is enough for a map. An era can have coastline and regions without a single
         # placed settlement, and that is still a picture of somewhere.
         if eid in UNMAPPED:
@@ -445,14 +503,18 @@ def main() -> int:
         elif points or ground:
             mapped += 1
             svg_path = OUT_MAPS / f"{eid}.svg"
-            svg_path.write_text(svg_map(points, name, land, ground, lines) + "\n", encoding="utf-8")
+            svg = (svg_map(points, name, height=chart["height"], caption=chart["caption"]) if chart
+                   else svg_map(points, name, land, ground, lines))
+            svg_path.write_text(svg + "\n", encoding="utf-8")
             rel = f"atlas/{eid}.svg"
             doc += [
                 "### Map",
                 "",
                 f"![Map of {name}]({rel})",
                 "",
-                f"{len(ground)} region(s) traced, {len(points)} place(s) plotted. "
+                (f"Drawn from the era's own chart: {sum(1 for p in points if p['_folder'] != 'peoples')} place(s) "
+                 f"and {sum(1 for p in points if p['_folder'] == 'peoples')} people(s), before the Shattering. "
+                 if chart else f"{len(ground)} region(s) traced, {len(points)} place(s) plotted. ") +
                 f"[Open the SVG]({rel})",
                 "",
             ]

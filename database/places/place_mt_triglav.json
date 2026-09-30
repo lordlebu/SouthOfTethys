@@ -1,0 +1,22 @@
+{
+  "id": "place_mt_triglav",
+  "type": "place",
+  "name": "Mt Triglav",
+  "kind": "peak",
+  "continent": "mainland_asia",
+  "description": "Northwest peak on the Panthalassa shore.",
+  "states": [
+    {
+      "epoch": "epoch_current",
+      "coordinates": {
+        "x": 3.8,
+        "y": 1.7
+      }
+    }
+  ],
+  "notes": "From the Age of Machinery chart, where it sits in 'Far North'. Its position is that era's, before the Shattering; canon states no other.",
+  "canon": "secondary",
+  "sources": [
+    "docs/lore/world_pre_shattering_2026-09-30.json"
+  ]
+}

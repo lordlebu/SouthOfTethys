@@ -1,0 +1,19 @@
+{
+  "id": "event_great_coal_and_dolmen_war",
+  "type": "event",
+  "title": "The Great Coal & Dolmen War",
+  "epoch": "epoch_current",
+  "date_approx": "late Epoch 4",
+  "participants": [
+    "faction_harappan_lothal_union",
+    "faction_hyrkanian_tushara_rail_khanates"
+  ],
+  "summary": "The Harappan-Lothal Union against the Rail-Khanates over the central coal basins and the Asura dolmen energy sites their grids needed. The first of the two great wars.",
+  "canon": "secondary",
+  "sources": [
+    "SouthOfTethys.txt"
+  ],
+  "successors": [
+    "event_great_marrow_and_coal_war"
+  ]
+}

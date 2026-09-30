@@ -1,0 +1,26 @@
+{
+  "id": "place_vijaya_city",
+  "type": "place",
+  "name": "Prince Vijaya City",
+  "kind": "city",
+  "continent": "jambhudweepa",
+  "epochs": [
+    "epoch_current"
+  ],
+  "description": "Seat of Prince Vijaya, who offers the Mask of Tethys to Khadi.",
+  "states": [
+    {
+      "epoch": "epoch_current",
+      "coordinates": {
+        "x": 47.1,
+        "y": 79.4
+      },
+      "held_by": "faction_realm_of_prince_vijaya"
+    }
+  ],
+  "notes": "From the Age of Machinery chart, where it sits in 'Jambhudweep – South tip'. Its position is that era's, before the Shattering; canon states no other.",
+  "canon": "secondary",
+  "sources": [
+    "docs/lore/world_pre_shattering_2026-09-30.json"
+  ]
+}

@@ -15,14 +15,14 @@ Each era below is canon as it stood then. An entity that names no epoch is prese
 | | dated to this era | timeless |
 |---|---:|---:|
 | regions |  | 7 |
-| places | 19 | 9 |
+| places | 20 | 26 |
 | settlements |  | 1 |
 | characters | 9 |  |
-| factions |  | 3 |
+| factions |  | 6 |
 | events | 8 |  |
-| artifacts |  | 5 |
-| mythology |  | 10 |
-| fauna |  | 265 |
+| artifacts |  | 6 |
+| mythology |  | 11 |
+| fauna |  | 264 |
 | flora |  | 118 |
 | foodways |  | 19 |
 | items |  | 76 |
@@ -65,14 +65,14 @@ graph TD
 | | dated to this era | timeless |
 |---|---:|---:|
 | regions |  | 7 |
-| places | 20 | 9 |
+| places | 21 | 26 |
 | settlements |  | 1 |
 | characters | 7 |  |
-| factions |  | 3 |
+| factions |  | 6 |
 | events | 5 |  |
-| artifacts |  | 5 |
-| mythology |  | 10 |
-| fauna |  | 265 |
+| artifacts |  | 6 |
+| mythology |  | 11 |
+| fauna |  | 264 |
 | flora |  | 118 |
 | foodways |  | 19 |
 | items |  | 76 |
@@ -97,7 +97,7 @@ graph TD
 
 ![Map of Deep Antiquity](atlas/epoch_deep_antiquity.svg)
 
-6 region(s) traced, 17 place(s) plotted. [Open the SVG](atlas/epoch_deep_antiquity.svg)
+6 region(s) traced, 18 place(s) plotted. [Open the SVG](atlas/epoch_deep_antiquity.svg)
 
 ## Era of Human Migrations
 
@@ -108,15 +108,15 @@ graph TD
 | | dated to this era | timeless |
 |---|---:|---:|
 | regions |  | 7 |
-| places | 25 | 9 |
+| places | 26 | 26 |
 | settlements |  | 1 |
 | points of interest | 1 |  |
-| characters | 11 |  |
-| factions |  | 3 |
+| characters | 12 |  |
+| factions |  | 6 |
 | events | 6 |  |
-| artifacts |  | 5 |
-| mythology |  | 10 |
-| fauna |  | 265 |
+| artifacts |  | 6 |
+| mythology |  | 11 |
+| fauna |  | 264 |
 | flora |  | 118 |
 | foodways |  | 19 |
 | items |  | 76 |
@@ -144,7 +144,7 @@ graph TD
 
 ![Map of Era of Human Migrations](atlas/epoch_migrations.svg)
 
-6 region(s) traced, 22 place(s) plotted. [Open the SVG](atlas/epoch_migrations.svg)
+6 region(s) traced, 23 place(s) plotted. [Open the SVG](atlas/epoch_migrations.svg)
 
 ## Civilization Dawn (Lothal Era)
 
@@ -155,15 +155,15 @@ graph TD
 | | dated to this era | timeless |
 |---|---:|---:|
 | regions |  | 7 |
-| places | 28 | 9 |
+| places | 29 | 26 |
 | settlements | 1 | 1 |
 | points of interest | 1 |  |
 | characters | 27 |  |
-| factions |  | 3 |
+| factions |  | 6 |
 | events | 12 |  |
-| artifacts |  | 5 |
-| mythology |  | 10 |
-| fauna |  | 265 |
+| artifacts |  | 6 |
+| mythology |  | 11 |
+| fauna |  | 264 |
 | flora |  | 118 |
 | foodways |  | 19 |
 | items | 3 | 76 |
@@ -207,7 +207,7 @@ graph TD
 
 ![Map of Civilization Dawn (Lothal Era)](atlas/epoch_civilization_dawn.svg)
 
-6 region(s) traced, 25 place(s) plotted. [Open the SVG](atlas/epoch_civilization_dawn.svg)
+6 region(s) traced, 26 place(s) plotted. [Open the SVG](atlas/epoch_civilization_dawn.svg)
 
 ## The Age of Machinery
 
@@ -222,15 +222,15 @@ The id stays `epoch_current` deliberately. Fifty-five entities reference it and 
 | | dated to this era | timeless |
 |---|---:|---:|
 | regions |  | 7 |
-| places | 31 | 9 |
+| places | 82 | 26 |
 | settlements | 1 | 1 |
 | points of interest | 1 |  |
-| characters | 6 |  |
-| factions |  | 3 |
-| events | 4 |  |
-| artifacts |  | 5 |
-| mythology |  | 10 |
-| fauna |  | 265 |
+| characters | 10 |  |
+| factions | 9 | 6 |
+| events | 19 |  |
+| artifacts |  | 6 |
+| mythology |  | 11 |
+| fauna |  | 264 |
 | flora |  | 118 |
 | foodways |  | 19 |
 | items | 3 | 76 |
@@ -244,18 +244,34 @@ The id stays `epoch_current` deliberately. Fifty-five entities reference it and 
 ```mermaid
 graph TD
     E0["The Antarctic Ice Wall Expedition"]
-    E1["The Narmada Upriver Expedition"]
-    E2["The Gondwana Spacetime Teleportation"]
-    E3["The Battered Ekranoplan's Ice Wall Voyage"]
-    E1 --> E2
-    E2 --> E3
+    E1["The Cartographic & Mercantile Accord"]
+    E2["The Delta Outrigger Skirmishes"]
+    E3["Drilling Halted at the Dwarka Gate"]
+    E4["The Frontier Marrow Wars"]
+    E5["The Great Coal & Dolmen War"]
+    E6["The Great Marrow & Coal War"]
+    E7["The Day the Ground Broke at the Great Junction"]
+    E8["The Mappa Mundi Colonial Insurgencies"]
+    E9["The Mappa Mundi Telegraph Sabotage"]
+    E10["The Moriah Spore-Blight"]
+    E11["The Narmada Upriver Expedition"]
+    E12["The Gondwana Spacetime Teleportation"]
+    E13["The Battered Ekranoplan's Ice Wall Voyage"]
+    E14["The Paratethyan Lock Blockades"]
+    E15["Polar Voyagers Arrive at Tamralinga"]
+    E16["The Saraswati Canal Drains"]
+    E17["Tide-Lock Three Opens"]
+    E18["The Undersea Lava River and the Red Fog"]
+    E5 --> E6
+    E11 --> E12
+    E12 --> E13
 ```
 
 ### Map
 
 ![Map of The Age of Machinery](atlas/epoch_current.svg)
 
-6 region(s) traced, 26 place(s) plotted. [Open the SVG](atlas/epoch_current.svg)
+Drawn from the era's own chart: 66 place(s) and 38 people(s), before the Shattering. [Open the SVG](atlas/epoch_current.svg)
 
 ## Post-Cataclysmic Era (The Great Shattering)
 
@@ -266,21 +282,21 @@ graph TD
 | | dated to this era | timeless |
 |---|---:|---:|
 | regions |  | 7 |
-| places | 24 | 9 |
+| places | 28 | 26 |
 | settlements | 1 | 1 |
 | field maps | 4 |  |
 | points of interest | 37 |  |
 | characters | 4 |  |
 | npcs | 24 |  |
 | happenings | 3 |  |
-| factions |  | 3 |
-| events | 2 |  |
-| artifacts |  | 5 |
-| mythology |  | 10 |
+| factions | 3 | 6 |
+| events | 5 |  |
+| artifacts |  | 6 |
+| mythology |  | 11 |
 | discoveries | 46 |  |
 | field questions | 8 |  |
 | vocabulary | 10 |  |
-| fauna |  | 265 |
+| fauna |  | 264 |
 | flora |  | 118 |
 | foodways |  | 19 |
 | homesteads | 3 |  |
@@ -294,12 +310,17 @@ graph TD
 
 ```mermaid
 graph TD
-    E0["The Solarpunk Odyssey of the Ark"]
-    E1["The Last Puja"]
+    E0["The Golden Season on the Wetlands"]
+    E1["The Night of Red Teeth"]
+    E2["The Ark Meets Ananya"]
+    E3["The Solarpunk Odyssey of the Ark"]
+    E4["The Last Puja"]
+    E0 --> E1
+    E1 --> E2
 ```
 
 ### Map
 
 ![Map of Post-Cataclysmic Era (The Great Shattering)](atlas/epoch_post_cataclysm.svg)
 
-0 region(s) traced, 24 place(s) plotted. [Open the SVG](atlas/epoch_post_cataclysm.svg)
+0 region(s) traced, 26 place(s) plotted. [Open the SVG](atlas/epoch_post_cataclysm.svg)

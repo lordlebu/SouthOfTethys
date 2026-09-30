@@ -1,0 +1,14 @@
+{
+  "id": "faction_aravali_yurt_sanctuary",
+  "type": "faction",
+  "name": "The Aravali Yurt Sanctuary",
+  "culture": "unknown",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "notes": "Aravali glass-herbalists and the wanderers Ananya took in, working with Guyuk Reborn at agricultural restoration: glowing saplings first grown on the Ark, traded for wild honey and medicinal roots.",
+  "canon": "secondary",
+  "sources": [
+    "SouthOfTethys.txt"
+  ]
+}

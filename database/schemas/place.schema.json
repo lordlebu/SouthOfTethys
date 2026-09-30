@@ -23,7 +23,7 @@
     },
     "kind": {
       "type": "string",
-      "description": "What sort of thing this is. Coarse on purpose: the distinction that matters is a city from a mountain range, not a city from a town. `plains` was added when the Hyrkanian Steppe needed a home and `frontier` would have described its politics rather than its ground. `vessel` covers a place that moves and is lived in -- the Kelpfang, the Survival Train -- because a vehicle is somewhere people are, and the Train's stated ending is that it stops and becomes a village.",
+      "description": "What sort of thing this is. Coarse on purpose: the distinction that matters is a city from a mountain range, not a city from a town. `plains` was added when the Hyrkanian Steppe needed a home and `frontier` would have described its politics rather than its ground. `vessel` covers a place that moves and is lived in -- the Kelpfang, the Survival Train -- because a vehicle is somewhere people are, and the Train's stated ending is that it stops and becomes a village. `peak`, `mine`, `site` and `lake` came with the Age of Machinery chart, which marks single mountains, extraction works, built sites that are neither city nor ruin, and a lava lake.",
       "enum": [
         "continent",
         "city",
@@ -42,7 +42,11 @@
         "ruin",
         "route",
         "unknown",
-        "vessel"
+        "vessel",
+        "peak",
+        "mine",
+        "site",
+        "lake"
       ]
     },
     "continent": {
@@ -167,6 +171,14 @@
           },
           "notes": {
             "type": "string"
+          },
+          "held_by": {
+            "type": "string",
+            "description": "The faction that held this place in the era, when the era's map says. The Age of Machinery chart colours places by nation; this is that colour as a fact."
+          },
+          "confirmed": {
+            "type": "boolean",
+            "description": "False where the era's chart marks the place with '?': placed, but not yet settled."
           }
         },
         "additionalProperties": false

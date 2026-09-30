@@ -1,0 +1,15 @@
+{
+  "id": "place_aravali_yurt_sanctuary",
+  "type": "place",
+  "name": "The Aravali Yurt Sanctuary",
+  "kind": "settlement",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "within": "region_aravali",
+  "description": "A hill-country sanctuary grown around Ananya's riverbank homestead: clay huts and timber shelters of wanderers she took in, where glass-herbalists and Guyuk Reborn raise the glowing saplings first grown on the Ark and trade them for wild honey and roots. Uncorrupted Tenduas haunt its stone terraces and trade mountain lore for goat's milk and honey.",
+  "canon": "secondary",
+  "sources": [
+    "SouthOfTethys.txt"
+  ]
+}

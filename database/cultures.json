@@ -21,7 +21,19 @@
         "Iskaa"
       ],
       "dress": "Cotton, worn wrapped and draped, and dyed -- madder red, indigo, turmeric, ochre -- as often as it is left the colour of the boll. Harappan settlers wear their wealth where it can be seen, when they have any: a little gold or silver at the ear, the wrist or the nose, and beads of lapis lazuli, carnelian and other stones brought a long way. The families take wives from beyond their own realm, so a Harappan household is often of more than one people to look at, and nobody there thinks it worth remarking on.",
-      "art_reference": "Reference only, for whoever paints them; not a claim about any people living today. Faces and builds after the peoples of Gujarat, Sindh and Punjab. Some women, married in from beyond the realm, after the peoples of Bengal and Odisha."
+      "art_reference": "Reference only, for whoever paints them; not a claim about any people living today. Faces and builds after the peoples of Gujarat, Sindh and Punjab. Some women, married in from beyond the realm, after the peoples of Bengal and Odisha.",
+      "homelands": [
+        {
+          "epoch": "epoch_current",
+          "coordinates": {
+            "x": 22.5,
+            "y": 22.1
+          },
+          "label": "Saraswati Valley civilization",
+          "group": "human",
+          "note": "The old river civilization of Harappa, Mohenjo-daro and Sinauli, ancestors of the Mask Family and the Union."
+        }
+      ]
     },
     {
       "id": "explorer",
@@ -46,7 +58,19 @@
         "Brekh"
       ],
       "dress": "The delta's own people, and they dress like it: light wrapped cloth dyed in the marsh's colours, and flowers -- worn in the hair, behind the ear, strung as a garland. Hair is dressed with care and at length, coiled, braided and pinned with shell and bone, by men and women both. Their women are full-figured, and nobody among the Kia would think that needed saying.",
-      "art_reference": "Reference only, for whoever paints them; not a claim about any people living today. Faces and builds after the peoples of Maharashtra, the Konkan coast and Kerala; some after Austronesian peoples, as far as the Philippines."
+      "art_reference": "Reference only, for whoever paints them; not a claim about any people living today. Faces and builds after the peoples of Maharashtra, the Konkan coast and Kerala; some after Austronesian peoples, as far as the Philippines.",
+      "homelands": [
+        {
+          "epoch": "epoch_current",
+          "coordinates": {
+            "x": 21.0,
+            "y": 26.5
+          },
+          "label": "Kia Clan",
+          "group": "human",
+          "note": "Fluid marsh-dwellers of the delta who ride bamboo rafts beside the river whales. Urbanised Kia artisans helped found the Union."
+        }
+      ]
     },
     {
       "id": "silvershore",
@@ -74,7 +98,19 @@
     },
     {
       "id": "jharwa",
-      "count": 2
+      "count": 2,
+      "homelands": [
+        {
+          "epoch": "epoch_current",
+          "coordinates": {
+            "x": 4.6,
+            "y": 19.6
+          },
+          "label": "Magical beings",
+          "group": "non-human",
+          "note": "Beings who took over the Jharwa homeland near Kohistan."
+        }
+      ]
     },
     {
       "id": "vanara",
@@ -82,11 +118,45 @@
     },
     {
       "id": "vedda",
-      "count": 2
+      "count": 2,
+      "homelands": [
+        {
+          "epoch": "epoch_current",
+          "coordinates": {
+            "x": 11.9,
+            "y": 13.5
+          },
+          "label": "Magical beings",
+          "group": "non-human",
+          "note": "Beings who took the Vedda homeland; the Vedda themselves moved south and east."
+        },
+        {
+          "epoch": "epoch_current",
+          "coordinates": {
+            "x": 85.7,
+            "y": 49.6
+          },
+          "label": "Vedda apothecaries",
+          "group": "human",
+          "note": "Urban Vedda of Chandraketugarh, feuding with Daedrasura's cultists over Garudasaur blood."
+        }
+      ]
     },
     {
       "id": "yaksha",
-      "count": 2
+      "count": 2,
+      "homelands": [
+        {
+          "epoch": "epoch_current",
+          "coordinates": {
+            "x": 31.1,
+            "y": 71.9
+          },
+          "label": "Yakshas",
+          "group": "non-human",
+          "note": "Kubera's Yakshas hold the south of the island. The southern rail runs right through their land."
+        }
+      ]
     },
     {
       "id": "ancient_court",
@@ -157,7 +227,19 @@
     {
       "id": "tushara",
       "count": 0,
-      "note": "The steppe people Guyuk was born to. She now carries `explorer`, which is a disposition rather than a birth, so nobody in canon currently holds this. The people are named across the prose and the declaration stays."
+      "note": "The steppe people Guyuk was born to. She now carries `explorer`, which is a disposition rather than a birth, so nobody in canon currently holds this. The people are named across the prose and the declaration stays.",
+      "homelands": [
+        {
+          "epoch": "epoch_current",
+          "coordinates": {
+            "x": 36.6,
+            "y": 19.2
+          },
+          "label": "Tushara",
+          "group": "human",
+          "note": "Steppe telegraph-riders; half of the Rail-Khanates."
+        }
+      ]
     },
     {
       "id": "maru",
@@ -182,19 +264,512 @@
         "Solu"
       ],
       "dress": "Newer to these roads than the delta's peoples, and nomads still: they dress for the upland and the cold night rather than the marsh. Animal fur and skin -- goat, sheep, whatever the herd gave -- worn as vests, cloaks and collars over wool and felt, with dyed cloth where they have traded for it.",
-      "art_reference": "Reference only, for whoever paints them; not a claim about any people living today. Faces and builds after the peoples of Himachal and Nepal; some after Tibetan peoples. Not everybody among them should look East Asian."
+      "art_reference": "Reference only, for whoever paints them; not a claim about any people living today. Faces and builds after the peoples of Himachal and Nepal; some after Tibetan peoples. Not everybody among them should look East Asian.",
+      "homelands": [
+        {
+          "epoch": "epoch_current",
+          "coordinates": {
+            "x": 43.0,
+            "y": 21.3
+          },
+          "label": "Early Maru tribes",
+          "group": "human",
+          "note": "Desert and steppe nomads along the northern rail; ancestors of the Epoch 5 Maru."
+        }
+      ]
     },
     {
       "id": "taj",
       "count": 0,
-      "note": "The Nagaraptors of the Taj caste: feathered dromaeosaur sophonts who build the earthen Taj Nest-Homes. Lore only -- no given names, so the game deals no strangers of this people."
+      "note": "The Nagaraptors of the Taj caste: feathered dromaeosaur sophonts who build the earthen Taj Nest-Homes. Lore only -- no given names, so the game deals no strangers of this people.",
+      "homelands": [
+        {
+          "epoch": "epoch_current",
+          "coordinates": {
+            "x": 53.9,
+            "y": 97.4
+          },
+          "label": "Nagaraptors & Vanaras",
+          "group": "non-human",
+          "note": "Feathered raptor clans with a scale-based civilization, living alongside the Vanaras."
+        }
+      ]
     },
     {
       "id": "vajraptor",
       "count": 0,
-      "note": "The Vajraptors, the canopy sentinels of Mappa Mundi: feathered dromaeosaur sophonts allied with its human canopy-keepers. Lore only -- no given names."
+      "note": "The Vajraptors, the canopy sentinels of Mappa Mundi: feathered dromaeosaur sophonts allied with its human canopy-keepers. Lore only -- no given names.",
+      "homelands": [
+        {
+          "epoch": "epoch_current",
+          "coordinates": {
+            "x": 9.9,
+            "y": 99.6
+          },
+          "label": "Vajraptor & Sylvian flocks",
+          "group": "non-human",
+          "note": "Feathered theropods allied with the tribes; they help cut the telegraph wire."
+        }
+      ]
+    },
+    {
+      "id": "cimmerian",
+      "count": 0,
+      "note": "Glacial highland clans of the Far North, who rejected urban steam and guarded the deep-time mountain passes against the mining syndicates. Lore only: no given names, so the game deals no strangers of them.",
+      "homelands": [
+        {
+          "epoch": "epoch_current",
+          "coordinates": {
+            "x": 9.9,
+            "y": 4.4
+          },
+          "label": "Cimmerian tribes",
+          "group": "human",
+          "note": "Iron-willed highland clans who reject steam and guard the old mountain passes."
+        }
+      ]
+    },
+    {
+      "id": "tartari",
+      "count": 0,
+      "note": "Non-human people of the Far North, marked on the chart as Tartari. Lore only: no given names, so the game deals no strangers of them.",
+      "homelands": [
+        {
+          "epoch": "epoch_current",
+          "coordinates": {
+            "x": 64.3,
+            "y": 7.0
+          },
+          "label": "Tartari",
+          "group": "non-human",
+          "note": "Asura-hybrid people of Great Tartaria."
+        }
+      ]
+    },
+    {
+      "id": "huna",
+      "count": 0,
+      "note": "A human tribe of Mainland Asia. Lore only: no given names, so the game deals no strangers of them.",
+      "homelands": [
+        {
+          "epoch": "epoch_current",
+          "coordinates": {
+            "x": 17.9,
+            "y": 10.4
+          },
+          "label": "Huna tribe",
+          "group": "human",
+          "note": "Tribe of the Tengri foothills."
+        }
+      ]
+    },
+    {
+      "id": "shaka",
+      "count": 0,
+      "note": "The Shaka-rauka, a human people of Mainland Asia. Lore only: no given names, so the game deals no strangers of them.",
+      "homelands": [
+        {
+          "epoch": "epoch_current",
+          "coordinates": {
+            "x": 57.5,
+            "y": 11.4
+          },
+          "label": "Shaka-rauka",
+          "group": "human",
+          "note": "A new human tribe whose land is Shakastan, ruled from Sistan."
+        }
+      ]
+    },
+    {
+      "id": "kalasha",
+      "count": 0,
+      "note": "Frontier tribes of the Mainland Asian highlands. Lore only: no given names, so the game deals no strangers of them.",
+      "homelands": [
+        {
+          "epoch": "epoch_current",
+          "coordinates": {
+            "x": 12.2,
+            "y": 17.8
+          },
+          "label": "Kalasha frontier tribes",
+          "group": "human",
+          "note": "Frontier tribes below the passes."
+        }
+      ]
+    },
+    {
+      "id": "denisovan",
+      "count": 0,
+      "note": "A non-human people of Mainland Asia -- the chart's word, and a real one. Lore only: no given names, so the game deals no strangers of them.",
+      "homelands": [
+        {
+          "epoch": "epoch_current",
+          "coordinates": {
+            "x": 67.1,
+            "y": 21.8
+          },
+          "label": "Denisovans",
+          "group": "non-human",
+          "note": "A non-sapiens human lineage living beyond the Hrycania outpost."
+        }
+      ]
+    },
+    {
+      "id": "early_humans",
+      "count": 0,
+      "note": "Primitive humans, still living apart on Jambhudweep in the Age of Machinery, west and east. Lore only: no given names, so the game deals no strangers of them.",
+      "homelands": [
+        {
+          "epoch": "epoch_current",
+          "coordinates": {
+            "x": 19.9,
+            "y": 49.9
+          },
+          "label": "Primitive humans (west)",
+          "group": "human",
+          "note": "Unsettled lands along the western coast rail."
+        },
+        {
+          "epoch": "epoch_current",
+          "coordinates": {
+            "x": 63.8,
+            "y": 44.1
+          },
+          "label": "Primitive humans (east)",
+          "group": "human",
+          "note": "Unsettled lands inside the eastern rail loop."
+        }
+      ]
+    },
+    {
+      "id": "onge",
+      "count": 0,
+      "note": "The Onge, with the last of the Tuli in the far south of Jambhudweep, and with the Jarawa on the south-eastern island. Lore only: no given names, so the game deals no strangers of them.",
+      "homelands": [
+        {
+          "epoch": "epoch_current",
+          "coordinates": {
+            "x": 59.8,
+            "y": 69.9
+          },
+          "label": "Onge tribes & Tuli remnants",
+          "group": "human",
+          "note": "Onge tribes and Tuli who never joined the Vanga Federation."
+        },
+        {
+          "epoch": "epoch_current",
+          "coordinates": {
+            "x": 88.6,
+            "y": 76.8
+          },
+          "label": "Onge & Jarawa",
+          "group": "human",
+          "note": "Indigenous peoples sharing Tamralinga with the colony."
+        }
+      ]
+    },
+    {
+      "id": "mittani",
+      "count": 0,
+      "note": "Human tribes of the Far North. Lore only: no given names, so the game deals no strangers of them.",
+      "homelands": [
+        {
+          "epoch": "epoch_current",
+          "coordinates": {
+            "x": 4.9,
+            "y": 8.0
+          },
+          "label": "Mittani tribes",
+          "group": "human",
+          "note": "The people of Hattusha."
+        }
+      ]
+    },
+    {
+      "id": "mythical_beings",
+      "count": 0,
+      "note": "Non-human beings of the Far North, named on the chart only as mythical. Lore only: no given names, so the game deals no strangers of them.",
+      "homelands": [
+        {
+          "epoch": "epoch_current",
+          "coordinates": {
+            "x": 20.7,
+            "y": 7.1
+          },
+          "label": "Mythical beings",
+          "group": "non-human",
+          "note": "They took over the lands around the Göbekli ruins."
+        }
+      ]
+    },
+    {
+      "id": "steppe_tribes",
+      "count": 0,
+      "note": "Isolated steppe tribes of Mainland Asia. Lore only: no given names, so the game deals no strangers of them.",
+      "homelands": [
+        {
+          "epoch": "epoch_current",
+          "coordinates": {
+            "x": 34.8,
+            "y": 13.0
+          },
+          "label": "Isolated steppe tribes",
+          "group": "human",
+          "note": "Small tribes scattered across the Turanian steppes."
+        }
+      ]
+    },
+    {
+      "id": "non_human_entities",
+      "count": 0,
+      "note": "Unnamed non-human entities the chart marks in four places: Dzungaria, the Gobi, the Gangdese and the eastern landmass. Lore only: no given names, so the game deals no strangers of them.",
+      "homelands": [
+        {
+          "epoch": "epoch_current",
+          "coordinates": {
+            "x": 46.3,
+            "y": 12.3
+          },
+          "label": "Non-human entities (Dzungaria)",
+          "group": "non-human",
+          "note": "Unnamed beings holding Dzungaria."
+        },
+        {
+          "epoch": "epoch_current",
+          "coordinates": {
+            "x": 56.5,
+            "y": 14.5
+          },
+          "label": "Non-human entities (Gobi)",
+          "group": "non-human",
+          "note": "Unnamed beings holding the Gobi."
+        },
+        {
+          "epoch": "epoch_current",
+          "coordinates": {
+            "x": 84.3,
+            "y": 22.9
+          },
+          "label": "Non-human entities (Gangdese)",
+          "group": "non-human",
+          "note": "Unnamed beings of the Gangdese ranges."
+        },
+        {
+          "epoch": "epoch_current",
+          "coordinates": {
+            "x": 94.5,
+            "y": 28.6
+          },
+          "label": "Non-human entities (east)",
+          "group": "non-human",
+          "note": "Unnamed beings north of the Ganga Lava Lake."
+        }
+      ]
+    },
+    {
+      "id": "bharata",
+      "count": 0,
+      "note": "The Bharata tribe of Mainland Asia. Lore only: no given names, so the game deals no strangers of them.",
+      "homelands": [
+        {
+          "epoch": "epoch_current",
+          "coordinates": {
+            "x": 21.8,
+            "y": 17.2
+          },
+          "label": "Bharata tribe",
+          "group": "human",
+          "note": "Highland tribe of Kashmir."
+        }
+      ]
+    },
+    {
+      "id": "botai",
+      "count": 0,
+      "note": "Remnants of the Botai, horse people of the Mainland Asian steppe. Lore only: no given names, so the game deals no strangers of them.",
+      "homelands": [
+        {
+          "epoch": "epoch_current",
+          "coordinates": {
+            "x": 34.7,
+            "y": 17.5
+          },
+          "label": "Botai remnants",
+          "group": "human",
+          "note": "Last of the Botai, under the early Himalayas."
+        }
+      ]
+    },
+    {
+      "id": "elamite",
+      "count": 0,
+      "note": "Elamite tribes on the western edge of Mainland Asia. Lore only: no given names, so the game deals no strangers of them.",
+      "homelands": [
+        {
+          "epoch": "epoch_current",
+          "coordinates": {
+            "x": 4.6,
+            "y": 27.4
+          },
+          "label": "Elamite tribes",
+          "group": "human",
+          "note": "Western coastal tribes toward Akkad."
+        }
+      ]
+    },
+    {
+      "id": "dune_scavengers",
+      "count": 0,
+      "note": "Gedrosian desert nomads who ride domesticated Camelosuchus and zebu across the shifting sands, sifting ruins for copper. In the Solarpunk era they are among the peoples who became the Maru. Lore only: no given names, so the game deals no strangers of them.",
+      "homelands": [
+        {
+          "epoch": "epoch_current",
+          "coordinates": {
+            "x": 9.3,
+            "y": 26.5
+          },
+          "label": "Gedrosian Dune-Scavengers",
+          "group": "human",
+          "note": "Desert nomads who ride Camelosuchus and zebu, sifting ruins for copper."
+        }
+      ]
+    },
+    {
+      "id": "soldier_entities",
+      "count": 0,
+      "note": "Non-human soldier entities of Mainland Asia, named on the chart only for what they are. Lore only: no given names, so the game deals no strangers of them.",
+      "homelands": [
+        {
+          "epoch": "epoch_current",
+          "coordinates": {
+            "x": 57.5,
+            "y": 21.8
+          },
+          "label": "Soldier entities",
+          "group": "non-human",
+          "note": "Mostly soldier beings garrisoning the passes near Hrycania."
+        }
+      ]
+    },
+    {
+      "id": "ash_nomads",
+      "count": 0,
+      "note": "Heat-hardened miners and charcoal-burners around the volcanic fringes of the Ganges Lava Sea, in thick leather and obsidian goggles. Lore only: no given names, so the game deals no strangers of them.",
+      "homelands": [
+        {
+          "epoch": "epoch_current",
+          "coordinates": {
+            "x": 91.9,
+            "y": 37.8
+          },
+          "label": "Ganges Ash-Nomads",
+          "group": "human",
+          "note": "Miners and charcoal-burners of the lava fringes, in leather tunics and obsidian goggles."
+        }
+      ]
+    },
+    {
+      "id": "glass_herbalists",
+      "count": 0,
+      "note": "Mountain folk of the stony Aravali hills who harvest mineral plants and Garudasaur moss and blow heat-resistant glass for city apothecaries. In the Solarpunk era they keep the Aravali Yurt Sanctuary. Lore only: no given names, so the game deals no strangers of them.",
+      "homelands": [
+        {
+          "epoch": "epoch_current",
+          "coordinates": {
+            "x": 41.0,
+            "y": 33.9
+          },
+          "label": "Aravali Glass-Herbalists",
+          "group": "human",
+          "note": "Hill folk who harvest mineral plants and Garudasaur moss and blow heat-proof glass for apothecaries."
+        }
+      ]
+    },
+    {
+      "id": "tendua",
+      "count": 0,
+      "note": "The Tenduas as a people: articulate, sphinx-like simian-felids of a Permian line, with speech, deep feeling and an old love of riddles, geography and philosophy. Some were corrupted into manticores; the uncorrupted are reclusive and noble. Lore only: no given names, so the game deals no strangers of them.",
+      "homelands": [
+        {
+          "epoch": "epoch_current",
+          "coordinates": {
+            "x": 52.9,
+            "y": 34.5
+          },
+          "label": "Tenduas",
+          "group": "non-human",
+          "note": "Articulate sphinx-cats of Permian descent. Narmada bestiaries wrongly file them as monstrous hybrids."
+        }
+      ]
+    },
+    {
+      "id": "post_harappan",
+      "count": 0,
+      "note": "Post-Harappan townsfolk of eastern Jambhudweep. Lore only: no given names, so the game deals no strangers of them.",
+      "homelands": [
+        {
+          "epoch": "epoch_current",
+          "coordinates": {
+            "x": 65.2,
+            "y": 35.7
+          },
+          "label": "Post-Harappan townsfolk",
+          "group": "human",
+          "note": "The people of Hastinapura and Pataliputra."
+        }
+      ]
+    },
+    {
+      "id": "canopy_keepers",
+      "count": 0,
+      "note": "Deep-forest clans of the Nilgiri who live in timber villages built into the high branches, keep the old footbridges, and gather wild mahua flowers and medicinal honey. Lore only: no given names, so the game deals no strangers of them.",
+      "homelands": [
+        {
+          "epoch": "epoch_current",
+          "coordinates": {
+            "x": 19.9,
+            "y": 57.4
+          },
+          "label": "Nilgiri Canopy-Keepers",
+          "group": "human",
+          "note": "Forest clans in timber villages high in the branches."
+        }
+      ]
+    },
+    {
+      "id": "mappa_mundi_tribes",
+      "count": 0,
+      "note": "The human tribes of Mappa Mundi, who with the Vajraptor flocks fought the Age of Machinery's logging colonies. Lore only: no given names, so the game deals no strangers of them.",
+      "homelands": [
+        {
+          "epoch": "epoch_current",
+          "coordinates": {
+            "x": 5.9,
+            "y": 95.3
+          },
+          "label": "Mappa Mundi tribes",
+          "group": "human",
+          "note": "Indigenous humans who fight the colonial logging camps."
+        }
+      ]
+    },
+    {
+      "id": "ice_nomads",
+      "count": 0,
+      "note": "Antarctican Ice-Nomads: frost-skinned voyagers of the Southern Ice Wall on whale-bone kayaks and iron-ribbed ice-runners. They speak in low clicks, will not enter inland cities, and trade frozen relics, ivory and blubber-resins at Tamralinga before vanishing into the fog. Beyond the chart. Lore only."
+    },
+    {
+      "id": "sea_drifters",
+      "count": 0,
+      "note": "Sea-Drifters of the Shattered Isles: fleets of double-hulled outriggers with palm-bark sails, driven west across the Eastern Tethys by red tides at home, bringing black pearls, obsidian and chants of land sinking under the waves. Beyond the chart. Lore only."
+    },
+    {
+      "id": "sun_iron",
+      "count": 0,
+      "note": "The Sun-Iron Kingdoms of the southern continent's interior, beyond Mappa Mundi and Lemuria: dry-stone ziggurats, bloomery iron, copper-sheathed shields and war-canoes sent upriver against the coal drills. Beyond the chart. Lore only."
     }
   ],
   "given_names_note": "Given names a people uses, for the people the game meets without canon having written them -- the carriers, drovers and pilgrims on the road. Declared on the culture so a name is a value of a people rather than an invention of the engine: the game deals them, canon owns them. Only the four peoples alive on the field maps in epoch_post_cataclysm carry a list: the three the game first met, and the Violet-Horned Clan (asura_hybrid), who walk beside the Maru. Names are ungendered, as canon's own people's names are; nothing here decides who a stranger is beyond what they are called. Each list was written in its people's sound -- Harappan codas in -ek, -ik, -en, -ar and doubled vowels (Kavik, Orek, Aasha); Kia short with -kh, -sh or an open vowel (Bekh, Hesh, Thrali); Maru nasal and rounded (Moonj, Marn, Okhi); the Clan's after the asura names canon already holds (Varunesh, Manjalaya, Vishaili), drafted for the owner to rewrite -- and checked against every person, place and word in canon so none is somebody who already exists. The lint refuses a given name that is.",
-  "dress_note": "`dress` is canon: how a people clothes and adorns itself, which the game's art follows. `art_reference` is not canon about the world -- it names real-world peoples as a painter's reference for faces and builds, and nothing in the world of this game is those peoples. Only the peoples alive on the field maps in epoch_post_cataclysm carry either, because only they are painted. Added at the owner's direction, 2026-09-25."
+  "dress_note": "`dress` is canon: how a people clothes and adorns itself, which the game's art follows. `art_reference` is not canon about the world -- it names real-world peoples as a painter's reference for faces and builds, and nothing in the world of this game is those peoples. Only the peoples alive on the field maps in epoch_post_cataclysm carry either, because only they are painted. Added at the owner's direction, 2026-09-25.",
+  "homelands_note": "`homelands` is where the Age of Machinery chart (docs/lore/world_pre_shattering_2026-09-30.json) marks a people, on the 0-100 grid, in that era. Lore only; the exporter crosses only `given_names`."
 }

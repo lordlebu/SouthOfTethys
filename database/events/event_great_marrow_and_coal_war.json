@@ -1,0 +1,20 @@
+{
+  "id": "event_great_marrow_and_coal_war",
+  "type": "event",
+  "title": "The Great Marrow & Coal War",
+  "epoch": "epoch_current",
+  "date_approx": "late Epoch 4",
+  "participants": [
+    "faction_harappan_lothal_union",
+    "faction_narmada_academic_republic",
+    "faction_hyrkanian_tushara_rail_khanates"
+  ],
+  "summary": "The continental war that followed: a Western Industrial Axis of Aquilonia, Narmada and Lothal against an Eastern-Southern Bloc of Hyrkania, Turan and Stygia, over the last Garudasaur marrow beds and the dolmen sites. Armoured trains on the steppe, ironclads shelling ports, and the first chemical and spore weapons in the trenches. Its common name is the Marrow War.",
+  "canon": "secondary",
+  "sources": [
+    "SouthOfTethys.txt"
+  ],
+  "predecessors": [
+    "event_great_coal_and_dolmen_war"
+  ]
+}
