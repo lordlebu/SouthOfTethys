@@ -68,6 +68,7 @@ PREFIX_DIRS = {
     "happening_": "happenings",
     "homestead_": "homesteads",
     "saying_": "sayings",
+    "storyline_": "storylines",
 }
 
 # folder -> schema stem, where the two differ.
@@ -88,6 +89,7 @@ SCHEMA_FOR = {
     "happenings": "happening",
     "homesteads": "homestead",
     "sayings": "saying",
+    "storylines": "storyline",
 }
 
 # Values that look like ids but are not entity references.
@@ -799,6 +801,73 @@ def main() -> int:
             occasions = json.loads(saying_path.read_text(encoding="utf-8")).get("occasions", [])
             if saying_id == prologue.get("opening") and "opening" not in occasions:
                 errors.append(f"{path.name}: the prologue opens on {saying_id}, which is not an opening saying")
+
+    # --- a road off a map, stated from both ends -----------------------------------
+    #
+    # Roads and Hands phase 4. A crossing is told from the map's `roads`: what carries you, the
+    # painting, the way, and who sees you off. The reference walk resolves the vehicle and the
+    # keeper; what it cannot see is a road to a map that is not a neighbour, a neighbour with no
+    # road, a keeper who is not at a cart point, or the two ends describing two different roads.
+    roads_by_pair = {}
+    for eid, (path, payload) in entities.items():
+        if path.parent.name != "field_maps":
+            continue
+        neighbours = set(payload.get("neighbours") or [])
+        cart_points = set(payload.get("departs_from") or [])
+        reached = set()
+        for road in payload.get("roads") or []:
+            to = road.get("to")
+            reached.add(to)
+            if to not in neighbours:
+                errors.append(f"{path.name}: a road to {to}, which is not a neighbour")
+            keeper = (road.get("keeper") or {}).get("npc")
+            keeper_payload = entities.get(keeper, (None, {}))[1] if keeper else {}
+            if keeper and not cart_points & set(keeper_payload.get("found_at") or []):
+                errors.append(f"{path.name}: the road to {to} is kept by {keeper}, who is not at a cart point here")
+            ends = sorted([eid, to])
+            expected_art = "journey-" + "-".join(e.replace("field_map_", "") for e in ends)
+            if road.get("art") != expected_art:
+                errors.append(f"{path.name}: the road to {to} should be painted as {expected_art}, not {road.get('art')}")
+            roads_by_pair.setdefault(tuple(ends), []).append((path.name, road.get("by")))
+        for missing in sorted(neighbours - reached):
+            errors.append(f"{path.name}: no road to {missing}, which is a neighbour")
+    for pair, ends in roads_by_pair.items():
+        if len({by for _, by in ends}) > 1:
+            errors.append(f"{' and '.join(n for n, _ in ends)}: the road between them is travelled by {', '.join(sorted({str(b) for _, b in ends}))} -- one road, one way of going")
+
+    # Journey happenings belong to a road: both ends named, and a road between them.
+    for eid, (path, payload) in entities.items():
+        if path.parent.name != "happenings" or payload.get("occasion") != "journey":
+            continue
+        maps = payload.get("field_maps") or []
+        if len(maps) != 2 or tuple(sorted(maps)) not in roads_by_pair:
+            errors.append(f"{path.name}: a journey happening must name the two ends of one road")
+
+    # --- a storyline walks its own map, in order -----------------------------------
+    #
+    # A person's arc (the owner's of 2 October 2026). The reference walk resolves every id; what it
+    # cannot see is an arrival with nowhere to arrive, a place on another map, two beats with one
+    # name, or a joining that comes anywhere but at the end of an arc that says somebody joins.
+    for eid, (path, payload) in entities.items():
+        if path.parent.name != "storylines":
+            continue
+        map_payload = entities.get(payload.get("field_map"), (None, {}))[1]
+        on_map = set(map_payload.get("points_of_interest") or [])
+        beats = payload.get("beats") or []
+        seen_beats = set()
+        for i, beat in enumerate(beats):
+            bid = beat.get("id")
+            if bid in seen_beats:
+                errors.append(f"{path.name}: two beats named {bid}")
+            seen_beats.add(bid)
+            if beat.get("when") == "arriving" and not beat.get("at"):
+                errors.append(f"{path.name}: beat {bid} happens on arriving, but says nowhere to arrive")
+            if beat.get("at") and beat["at"] not in on_map:
+                errors.append(f"{path.name}: beat {bid} is at {beat['at']}, which is not on {payload.get('field_map')}")
+            if beat.get("joins") and (not payload.get("joins") or i != len(beats) - 1):
+                errors.append(f"{path.name}: beat {bid} joins the walkers, but only the last beat of an arc that `joins` may")
+        if payload.get("joins") and not any(b.get("joins") for b in beats):
+            errors.append(f"{path.name}: says its person joins, and no beat is where they do")
 
     # --- homesteads say where they stand, and whose it is --------------------------
     #

@@ -69,6 +69,8 @@ DB_FOLDERS = [
     # What the peoples say on the road, in the cutscenes. Short lines a player reads, and with
     # `inspired_by` the one place a reader can ask where a line came from.
     "sayings",
+    # People's arcs, beat by beat: prose a player meets, so retrieval should find it.
+    "storylines",
     "vocabulary",
     # The lore layer: named places the player never stands in. Retrieval is the one consumer
     # that should see all of it -- the game deliberately does not, but a question about Harappa

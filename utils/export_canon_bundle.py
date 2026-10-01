@@ -47,7 +47,10 @@ BUNDLE = {
                     # the journey between them -- its `field_maps` point at this file's maps -- and
                     # nothing in it is learned or held, which is what `knowledge.json` is for.
                     # `carried_by` is a bare culture id; the credit on screen is `attribution`.
-                    "sayings"],
+                    "sayings",
+                    # A person's arc, beat by beat (the owner's of 2 October 2026). Placed here as
+                    # happenings are: its beats happen at this file's places, on this file's maps.
+                    "storylines"],
     "knowledge.json": ["discoveries", "field_questions", "vocabulary"],
     "crafting.json": ["materials", "items", "processes", "recipes", "vehicles"],
 }
@@ -171,6 +174,8 @@ WITHHELD_NOTES = (
     # A saying's `notes` record what was changed from the owner's draft to fit canon -- a horse
     # made an ox, a line ungendered. Editing history; the player reads `text` and `attribution`.
     "sayings",
+    # A storyline's `notes` are how the owner's outline was fitted; the player reads the beats.
+    "storylines",
 )
 
 

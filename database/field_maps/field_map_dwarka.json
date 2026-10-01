@@ -56,5 +56,20 @@
   "relief": "basin",
   "departs_from": [
     "poi_caravan_camp"
+  ],
+  "roads": [
+    {
+      "to": "field_map_lothal",
+      "by": "vehicle_elephantbird_cart",
+      "art": "journey-dwarka-lothal",
+      "prose": [
+        "The cart road west follows a river that is no longer there.",
+        "The banks are still where they were. There is only dust between them, and the road keeps faithfully to every bend."
+      ],
+      "keeper": {
+        "npc": "npc_jarro",
+        "line": "The road goes the long way. It always did. Sit on the left, out of the wind."
+      }
+    }
   ]
 }

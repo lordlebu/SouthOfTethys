@@ -1,0 +1,29 @@
+{
+  "id": "happening_the_ferry_song",
+  "type": "happening",
+  "title": "The ferry song",
+  "occasion": "journey",
+  "field_maps": [
+    "field_map_lothal",
+    "field_map_aravali"
+  ],
+  "prose": "Halfway across, with neither shore much more than a line, the woman at the steering oar starts to sing. It is a counting song: one verse for each island, one for each river behind you, one for each of the people who taught it to her. The two hanging islands get a verse each, as if they were ordinary.",
+  "choices": [
+    {
+      "label": "Ask her to sing it again",
+      "line": "She sings it again, slower, so you can write the verses down. There is a verse for a river you have never heard of, between two you have. She shrugs. It was in the song when she learned it."
+    },
+    {
+      "label": "Listen, and watch the islands",
+      "line": "You listen to the song and watch the islands come up out of the haze, and the boat keeps time with neither."
+    }
+  ],
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "notes": "The sea road to the Aravali, told as the Vedda's river-litany survives in ordinary mouths: a counting song that still names a river nobody can place. Ties the sayings (`saying_remember_the_rivers`) to something a traveller hears rather than reads. Drafted for the owner to rewrite or approve.",
+  "canon": "primary",
+  "sources": [
+    "drafted by Claude for the owner's approval, 2026-10-02"
+  ]
+}

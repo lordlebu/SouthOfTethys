@@ -29,9 +29,10 @@
         "night",
         "arriving",
         "road",
-        "working"
+        "working",
+        "journey"
       ],
-      "description": "When it can find you. `night` is a night slept anywhere on the map, `arriving` the first time you reach a point of interest, `road` a step along the way, `working` the moment after gathering something. The same four the game asks about."
+      "description": "When it can find you. `night` is a night slept anywhere on the map, `arriving` the first time you reach a point of interest, `road` a step along the way, `working` the moment after gathering something. The same four the game asks about. `journey` is on the road between two maps, during the ride: its `field_maps` name both ends of the road, and it may happen the first time that road is taken."
     },
     "field_maps": {
       "type": "array",

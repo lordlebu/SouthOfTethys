@@ -1,0 +1,106 @@
+{
+  "id": "storyline_asura_princess",
+  "type": "storyline",
+  "name": "The Princess of the Cloud Stair",
+  "person": "npc_asura_princess",
+  "field_map": "field_map_narmada",
+  "joins": false,
+  "beats": [
+    {
+      "id": "ruins",
+      "title": "In the quarry tank",
+      "when": "arriving",
+      "at": "poi_basalt_quarry",
+      "art": "asura-bathe-ruins",
+      "requires": [
+        "recipe_root_tea"
+      ],
+      "prose": "Rain has filled the lowest course of the quarry, and the princess is in it, horns and all, as untroubled as a heron. You cooked the Fourteen, she says. Nobody has cooked for me in four hundred years. Sit. -- My people are hungry. The terraces up the hill could feed them, if anybody read them the way they were cut. The archive says ornamental. Find out what they are for.",
+      "choices": [
+        {
+          "label": "Promise to read the terraces",
+          "line": "You promise. She says she has been promised things before, and then that you are the first one to write it down."
+        }
+      ]
+    },
+    {
+      "id": "settlement",
+      "title": "The University tank",
+      "when": "arriving",
+      "at": "poi_narmada_university",
+      "art": "asura-bathe-settlement",
+      "requires": [
+        "discovery_terrace_water"
+      ],
+      "prose": "The princess has talked the University out of its lotus tank for an afternoon, and nobody in the nine halls quite knows how. You read them, she says, before you have said anything. Water. A finger in a pace, along the hill. The archive will have to write that down, and it will hate it. She laughs, and the lotus pads rock.",
+      "choices": [
+        {
+          "label": "Tell her what the courses carry",
+          "line": "You tell her, course by course. She repeats it back to you in a language that is not hers, for her people, until she has it word for word."
+        }
+      ]
+    },
+    {
+      "id": "teaching",
+      "title": "The old tablets",
+      "when": "arriving",
+      "at": "poi_cloud_stair",
+      "art": "asura-teaching",
+      "prose": "At the top of the stair, where it goes on after the scarp stops, she has laid out tablets of fired clay that her people carried up from somewhere older. She shows you how the marks run -- not left to right, but the way water would run across them -- and reads one aloud. It is a list of springs, and two of them are on the plateau.",
+      "choices": [
+        {
+          "label": "Learn to read the marks",
+          "line": "By the end you can read a spring when you see one. She says that is the first word of a long language, and the most useful."
+        }
+      ]
+    },
+    {
+      "id": "supper",
+      "title": "Supper on the plateau",
+      "when": "night",
+      "art": "scene-rest-asura",
+      "prose": "She cooks this time: root tea, and something with the bitter greens you brought her, which she says is the Fourteen done properly. The wind off the scarp does not stop and she does not seem to feel it. She tells you about the courts she was cast out of, briefly, the way you would mention a town you once passed through.",
+      "choices": [
+        {
+          "label": "Eat, and listen",
+          "line": "It is better than your Fourteen, and she knows it."
+        }
+      ]
+    },
+    {
+      "id": "bond",
+      "title": "Under the same stars",
+      "when": "night",
+      "art": "scene-rest-asura2",
+      "prose": "You sleep near the fire, and so does she, close enough to share its warmth and the blanket. Before sleep she points out the constellations a god once marked on her in a dream, and you find that you can see them.",
+      "choices": [
+        {
+          "label": "Watch the stars with her",
+          "line": "You fall asleep counting them, and wake knowing her name for every one."
+        }
+      ]
+    },
+    {
+      "id": "farewell",
+      "title": "She stays",
+      "when": "arriving",
+      "at": "poi_high_camp",
+      "art": "asura-farewell",
+      "prose": "She walks with you as far as the High Camp and stops at the edge of the felt tents, where the road goes down. My people, she says. You understand. There is a terrace to dig and a spring to find, and somebody has to read them the tablets. She does not say goodbye. She stands on the scarp with the wind in her hair until the road turns, and when you look back she is still there.",
+      "choices": [
+        {
+          "label": "Go on",
+          "line": "You go on. The plateau keeps her, and she keeps the plateau, and you write both down."
+        }
+      ]
+    }
+  ],
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "notes": "The owner's arc of 2 October 2026: the bitter-greens quest (the Fourteen, her existing task, which teaches `recipe_root_tea` -- so holding the tea is what opens the arc), a meeting in a ruin, a second quest (her people's terraces, answered by `discovery_terrace_water`), a meeting at a settlement, a teaching at the plateau's edge, a supper and a bond. She does not join: she has other priorities for her people, and the last scene is her staying back. The farewell painting (`asura-farewell`) is asked for on the plan page.",
+  "canon": "primary",
+  "sources": [
+    "drafted by Claude from the owner's outline of 2026-10-02, for the owner to rewrite or approve"
+  ]
+}

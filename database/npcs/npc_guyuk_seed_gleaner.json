@@ -1,0 +1,18 @@
+{
+  "id": "npc_guyuk_seed_gleaner",
+  "type": "npc",
+  "name": "Guyuk",
+  "character": "character_guyuk_reborn",
+  "found_at": [],
+  "role": "herbalist, the Seed-Gleaner",
+  "sex": "female",
+  "lines": [],
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "notes": "Guyuk the Seed-Gleaner, as she is in this age: a herbalist of the Aravali who keeps the Quiet Atelier and is seldom in it, and who does not remember being a nomad. Met only through her storyline (`storyline_guyuk`) -- no `found_at`, so she is never standing anywhere to be talked to until her arc brings her. The nomad girl of `character_guyuk` belongs to another age and reaches the player as traces only, by the epoch rule. Joins the walkers when her arc ends, by the owner's direction of 2 October 2026.",
+  "canon": "primary",
+  "sources": [
+    "drafted by Claude from the owner's outline of 2026-10-02, for the owner to rewrite or approve"
+  ]
+}

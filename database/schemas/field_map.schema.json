@@ -202,6 +202,52 @@
       "pattern": "^poi_[a-z0-9_]+$",
       "description": "Where a traveller arriving on this map is set down; defaults to the first of `departs_from`. Must be a point of interest on this map.\n\nSeparate from `departs_from` because arriving and leaving are not always the same place. The Aravali is left from its piers -- the First Pier for the south, the Far Landing for the north -- but nobody arrives standing on a floating island mid-strait: canon's own `arrival` prose and the Rail-Head's description put the traveller at the Rail-Head, *the arrival, and the map's one ordinary place*. Absent means the default, which is right for every map whose cart yard is also where the carts come in."
     },
+    "roads": {
+      "type": "array",
+      "description": "The roads off this map, one for each neighbour: what carries the traveller, the painting of the road, two or three lines of what the way is like, and the line the cart point's keeper says as you go. The owner's ruling of 1 October 2026 (Roads and Hands, phase 4): a crossing is a short journey told in cards, never a playable map and never film. The game owns the pacing and the time it takes; canon says only what the road is.\n\nA road is stated from both ends, and the two must agree on the vehicle and the painting -- it is one road.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["to", "by", "art", "prose", "keeper"],
+        "properties": {
+          "to": {
+            "type": "string",
+            "pattern": "^field_map_[a-z0-9_]+$",
+            "description": "The neighbour this road reaches. Must be one of `neighbours`."
+          },
+          "by": {
+            "type": "string",
+            "pattern": "^vehicle_[a-z0-9_]+$",
+            "description": "What carries the traveller: a canon vehicle."
+          },
+          "art": {
+            "type": "string",
+            "pattern": "^journey-[a-z0-9]+-[a-z0-9]+$",
+            "description": "The painting of the road, as the game looks it up: `journey-<a>-<b>` with the two maps in alphabetical order, so both ends name one picture."
+          },
+          "prose": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 3,
+            "items": { "type": "string", "minLength": 1 },
+            "description": "What the way is like, in the second person, a line each."
+          },
+          "keeper": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["npc", "line"],
+            "properties": {
+              "npc": {
+                "type": "string",
+                "pattern": "^npc_[a-z0-9_]+$",
+                "description": "Who sees you off: somebody found at one of this map's `departs_from`."
+              },
+              "line": { "type": "string", "minLength": 1, "description": "What they say as you go." }
+            }
+          }
+        }
+      }
+    },
     "prologue": {
       "type": "object",
       "additionalProperties": false,

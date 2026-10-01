@@ -54,13 +54,54 @@
   "departs_from": [
     "poi_lothal_camp"
   ],
+  "roads": [
+    {
+      "to": "field_map_aravali",
+      "by": "vehicle_coastal_dhow",
+      "art": "journey-aravali-lothal",
+      "prose": [
+        "Out of the delta on a sewn-plank boat, the shore going grey behind you.",
+        "By afternoon two islands hang above the sea ahead, and nobody on board remarks on it."
+      ],
+      "keeper": {
+        "npc": "npc_thrali",
+        "line": "The boat goes on the tide, not on you. Get in while it's floating."
+      }
+    },
+    {
+      "to": "field_map_dwarka",
+      "by": "vehicle_elephantbird_cart",
+      "art": "journey-dwarka-lothal",
+      "prose": [
+        "The cart road west follows a river that is no longer there.",
+        "The banks are still where they were. There is only dust between them, and the road keeps faithfully to every bend."
+      ],
+      "keeper": {
+        "npc": "npc_kunch",
+        "line": "West? Follow the river that isn't there. The cart knows the way better than I do."
+      }
+    },
+    {
+      "to": "field_map_narmada",
+      "by": "vehicle_elephantbird_cart",
+      "art": "journey-lothal-narmada",
+      "prose": [
+        "Past the last of the delta the ground starts to rise, and keeps rising.",
+        "The road up the scarp is the only part of the plateau anyone built, and it was built well."
+      ],
+      "keeper": {
+        "npc": "npc_kunch",
+        "line": "Up the scarp, then. Sing on the steep part. The bird likes it, and so will you."
+      }
+    }
+  ],
   "prologue": {
     "opening": "saying_the_walking_song",
     "plates": [
       {
         "art": "prologue-1-road",
         "lines": [
-          "First light on the delta road. The cart keeps the pace of the ox, and you walk beside it.",
+          "First light on the delta road. The cart keeps the pace of the bird in its shafts, and you walk beside it.",
           "Ahead, smoke rises from somewhere you cannot see yet."
         ],
         "saying": "saying_dawn_belongs_to_the_traveller"

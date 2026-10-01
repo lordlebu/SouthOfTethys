@@ -1,0 +1,24 @@
+{
+  "id": "vehicle_elephantbird_cart",
+  "type": "vehicle",
+  "name": "Elephantbird cart",
+  "kind": "cart",
+  "crosses": [
+    "plains",
+    "settlement",
+    "desert",
+    "hills",
+    "coast"
+  ],
+  "capacity": 4,
+  "materials": [
+    "material_teak_timber",
+    "material_sinew"
+  ],
+  "notes": "A two-wheeled cart drawn by a Steppe-Plumed Elephantbird, the shaggy ratite merchants tamed for burden on the coast roads. Faster than an ox and less patient; it walks at the pace it chooses and the driver walks beside it. The owner's paintings of every cart road between the maps, 1 October 2026, draw this bird in the shafts, and Kunch has always gone about 'up on a bird' -- so the roads moved to the art.",
+  "canon": "primary",
+  "sources": [
+    "the owner's road and opening paintings, 2026-10-01"
+  ],
+  "source_index": 14
+}

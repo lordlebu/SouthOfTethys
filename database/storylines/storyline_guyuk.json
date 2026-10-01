@@ -1,0 +1,139 @@
+{
+  "id": "storyline_guyuk",
+  "type": "storyline",
+  "name": "The Seed-Gleaner",
+  "person": "npc_guyuk_seed_gleaner",
+  "field_map": "field_map_aravali",
+  "joins": true,
+  "beats": [
+    {
+      "id": "rumour",
+      "title": "The herbalist at the Atelier",
+      "when": "road",
+      "prose": "A woman sharing the shade with you on the way up from the shingle says there is a herbalist on this side of the strait who can tell a fever from a bad well by the colour of a fingernail. She keeps a workshop of glass at the Quiet Atelier, the woman says, when she keeps it at all.",
+      "choices": [
+        {
+          "label": "Ask about the Atelier",
+          "line": "Glass and benches, past the Kept Stones. You write it down beside the herbalist, with a question mark."
+        },
+        {
+          "label": "Thank her",
+          "line": "You thank her for the shade and the news, and the road goes on."
+        }
+      ]
+    },
+    {
+      "id": "absent",
+      "title": "Not here",
+      "when": "arriving",
+      "at": "poi_quiet_atelier",
+      "prose": "The benches are swept and the glass is clean, and the seedlings in their trays were watered this morning. The one minding them looks up. She is not here, they say. She walks the old places when the plants do not need her, and she does not say which.",
+      "choices": [
+        {
+          "label": "Ask when she will be back",
+          "line": "When the plants need her, they say, which is never the day you hope."
+        },
+        {
+          "label": "Look at the seedlings",
+          "line": "Every tray is labelled in a hand you cannot read, and every seedling is something you have only ever seen as a seed."
+        }
+      ]
+    },
+    {
+      "id": "ruins",
+      "title": "Water at the Alms Step",
+      "when": "arriving",
+      "at": "poi_alms_step",
+      "art": "guyuk-bathe-ruins",
+      "prose": "Somebody has cleared the old tank below the step, and is in it: a woman with hair gone white early, bathing in the cold the way some people pray. She sees you and does not hurry. You are the one who asked at my Atelier, she says. Good. Then bring me rice from the delta, the old red kind that was never grown in salt. Bring it, and I will know you mean it.",
+      "choices": [
+        {
+          "label": "Promise to bring it",
+          "line": "Rice from the delta, then. She sinks back into the water as if the matter is closed, which it is."
+        }
+      ]
+    },
+    {
+      "id": "forest",
+      "title": "At the Vedda Ford",
+      "when": "arriving",
+      "at": "poi_vedda_ford",
+      "art": "guyuk-bathe-forest",
+      "asks": [
+        {
+          "id": "material_delta_rice",
+          "count": 3
+        }
+      ],
+      "prose": "Downstream of everything, where the ford is shallowest, she is in the water again, a short blade on a stone beside her -- for reeds, she says, before you can ask. She takes the rice in both hands, smells it, and almost smiles. This is it. Now the harder part: mustard seed from the plateau, and dates from Dwarka, from palms that remember water. Bring them to the Atelier. I will be there this time.",
+      "choices": [
+        {
+          "label": "Give her the rice",
+          "line": "You give her the rice. She ties it in a cloth and tucks it into her belt, and tells you which way the plateau road goes, as if you might not know."
+        }
+      ]
+    },
+    {
+      "id": "teaching",
+      "title": "What the seeds are for",
+      "when": "arriving",
+      "at": "poi_quiet_atelier",
+      "art": "guyuk-teaching",
+      "asks": [
+        {
+          "id": "material_mustard_seed",
+          "count": 3
+        },
+        {
+          "id": "material_date_fruit",
+          "count": 3
+        }
+      ],
+      "prose": "She is at the benches when you come in, and the one minding the trays has been sent for water. She lays the seeds out side by side -- rice, mustard, date -- and shows you how she wakes them: wrapped in clay and dung, pressed in the palm, and thrown where the ground has given up. A seed ball, she says. It waits for rain. So do I.",
+      "choices": [
+        {
+          "label": "Learn to make them",
+          "line": "Your first three come apart in your hands. The fourth holds. She nods at it as if it were a person she had been introduced to.",
+          "grants": [
+            "recipe_seed_ball"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "supper",
+      "title": "Supper with the Seed-Gleaner",
+      "when": "night",
+      "art": "scene-rest-guyuk",
+      "prose": "She eats with you that evening, out of the same pot, and asks nothing about where you came from. She talks about soil instead: which ground is tired and which is only sulking, and how you can tell. When the fire is low she says she used to dream of a steppe she has never seen, and then that she has stopped.",
+      "choices": [
+        {
+          "label": "Listen",
+          "line": "You listen until the fire is embers. She does not mention the steppe again."
+        }
+      ]
+    },
+    {
+      "id": "bond",
+      "title": "Two walkers become three",
+      "when": "night",
+      "art": "scene-rest-guyuk2",
+      "joins": true,
+      "prose": "You wake before dawn and she is already awake, filling a satchel with seed balls. I am coming with you, she says, as if that had been decided a long time ago. The Atelier will keep. The ground will not.",
+      "choices": [
+        {
+          "label": "Walk on together",
+          "line": "From this morning there are three of you on the road, and one of you throws seed balls into every patch of dead ground you pass."
+        }
+      ]
+    }
+  ],
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "notes": "The owner's arc of 2 October 2026: a rumour of a herbalist, an absent Atelier, a meeting in the ruins, a first request, a meeting in the forest, a teaching about herbs at the Atelier, a supper and a bond -- after which Guyuk walks with the traveller and can be walked as. The owner's 'seeds from three maps' fit the requests: rice from the delta first, then mustard from the plateau and dates from Dwarka. The forest painting the owner filed as `asura-bathe-forest` shows Guyuk, so it is named `guyuk-bathe-forest` here.",
+  "canon": "primary",
+  "sources": [
+    "drafted by Claude from the owner's outline of 2026-10-02, for the owner to rewrite or approve"
+  ]
+}

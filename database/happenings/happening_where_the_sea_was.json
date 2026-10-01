@@ -1,0 +1,29 @@
+{
+  "id": "happening_where_the_sea_was",
+  "type": "happening",
+  "title": "Where the sea was",
+  "occasion": "journey",
+  "field_maps": [
+    "field_map_lothal",
+    "field_map_dwarka"
+  ],
+  "prose": "The cart stops on a low rise for no reason you can see, and the driver gets down to stretch. Below, the dry ground runs out flat and pale to the west, with a darker line drawn across it like the mark a pot leaves on a table. The driver nods at it. That is where the sea came to, he says, when his mother was a girl.",
+  "choices": [
+    {
+      "label": "Ask how far it has gone",
+      "line": "He does not know how far. Far enough that the harbour at Dwarka sits on sand, he says, and the boats in it are houses now. He gets back up and the bird goes on without being asked."
+    },
+    {
+      "label": "Draw the line in the diary",
+      "line": "You draw the dark line and the flat ground past it. It is the first thing in the diary about Dwarka, and it is about water that is not there."
+    }
+  ],
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "notes": "The road to Dwarka, which carries the map's thesis before the traveller arrives: local knowledge is right, and the sea left inside living memory. Drafted for the owner to rewrite or approve.",
+  "canon": "primary",
+  "sources": [
+    "drafted by Claude for the owner's approval, 2026-10-02"
+  ]
+}
