@@ -70,7 +70,7 @@
     },
     {
       "to": "field_map_dwarka",
-      "by": "vehicle_ox_cart",
+      "by": "vehicle_elephantbird_cart",
       "art": "journey-dwarka-lothal",
       "prose": [
         "The cart road west follows a river that is no longer there.",
@@ -83,7 +83,7 @@
     },
     {
       "to": "field_map_narmada",
-      "by": "vehicle_ox_cart",
+      "by": "vehicle_elephantbird_cart",
       "art": "journey-lothal-narmada",
       "prose": [
         "Past the last of the delta the ground starts to rise, and keeps rising.",
@@ -91,7 +91,7 @@
       ],
       "keeper": {
         "npc": "npc_kunch",
-        "line": "Up the scarp, then. Sing on the steep part. The ox likes it, and so will you."
+        "line": "Up the scarp, then. Sing on the steep part. The bird likes it, and so will you."
       }
     }
   ],
@@ -101,7 +101,7 @@
       {
         "art": "prologue-1-road",
         "lines": [
-          "First light on the delta road. The cart keeps the pace of the ox, and you walk beside it.",
+          "First light on the delta road. The cart keeps the pace of the bird in its shafts, and you walk beside it.",
           "Ahead, smoke rises from somewhere you cannot see yet."
         ],
         "saying": "saying_dawn_belongs_to_the_traveller"

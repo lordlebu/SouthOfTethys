@@ -1,5 +1,5 @@
 {
-  "version": "2.43.0",
+  "version": "2.44.0",
   "description": "SouthOfTethys canonical entity index",
   "counts": {
     "artifacts": 6,
@@ -25,7 +25,7 @@
     "regions": 7,
     "sayings": 33,
     "settlements": 2,
-    "vehicles": 14,
+    "vehicles": 15,
     "vocabulary": 10
   },
   "entities": {
@@ -1193,6 +1193,7 @@
       "vehicle_bone_framed_trawler",
       "vehicle_coastal_dhow",
       "vehicle_delta_barge",
+      "vehicle_elephantbird_cart",
       "vehicle_ground_effect_craft",
       "vehicle_harappan_cart",
       "vehicle_hide_coracle",

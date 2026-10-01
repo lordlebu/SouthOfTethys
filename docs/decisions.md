@@ -1634,11 +1634,16 @@ nothing said. Every map now names its roads: four roads, each stated from both e
 
 | Road | By | Who sees you off |
 |---|---|---|
-| Lothal and North Dwarka | ox cart, along a river that is no longer there | Kunch; Jarro |
-| Lothal and the Narmada | ox cart, up the scarp | Kunch; Marn |
+| Lothal and North Dwarka | elephantbird cart, along a river that is no longer there | Kunch; Jarro |
+| Lothal and the Narmada | elephantbird cart, up the scarp | Kunch; Marn |
 | Lothal and the Aravali | coastal dhow, by sea | Thrali; Hesh, whose "It runs when it runs. Sit down." was already canon |
-| The Narmada and the Aravali | ox cart, down the herders' track | Marn; Hesh |
+| The Narmada and the Aravali | elephantbird cart, down the herders' track | Marn; Hesh |
 
+- **The carts are drawn by elephantbirds, because the owner's paintings say so.** Every cart road the
+  owner painted, and the opening's road at first light, has a shaggy ratite in the shafts -- canon's
+  Steppe-Plumed Elephantbird, tamed by merchants for burden. The roads were first written as ox carts;
+  the art was right and the prose moved (`vehicle_elephantbird_cart`, the prologue's first plate, Kunch's
+  line). The ox cart stays in canon, so the Vedda sayings that wake the oxen are still true.
 - **Canon says what the road is; the game says how long it takes** (owner's answer to Q7: set out at
   dawn, arrive by evening). No duration is written here, as `renews` never writes days.
 - **A `journey` occasion** for happenings on a road. Two are drafted for the owner: *The ferry song*

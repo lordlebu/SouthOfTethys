@@ -53,7 +53,7 @@
   "roads": [
     {
       "to": "field_map_aravali",
-      "by": "vehicle_ox_cart",
+      "by": "vehicle_elephantbird_cart",
       "art": "journey-aravali-narmada",
       "prose": [
         "North off the plateau by the herders' track, down through grass that gets shorter every hour.",
@@ -66,7 +66,7 @@
     },
     {
       "to": "field_map_lothal",
-      "by": "vehicle_ox_cart",
+      "by": "vehicle_elephantbird_cart",
       "art": "journey-lothal-narmada",
       "prose": [
         "Past the last of the delta the ground starts to rise, and keeps rising.",

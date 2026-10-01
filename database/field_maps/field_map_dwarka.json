@@ -60,7 +60,7 @@
   "roads": [
     {
       "to": "field_map_lothal",
-      "by": "vehicle_ox_cart",
+      "by": "vehicle_elephantbird_cart",
       "art": "journey-dwarka-lothal",
       "prose": [
         "The cart road west follows a river that is no longer there.",
