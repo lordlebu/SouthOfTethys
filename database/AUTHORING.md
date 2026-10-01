@@ -456,6 +456,11 @@ maps are left from designated places, as a horse-cart leaves a yard and not a fi
 where somebody arriving is set down. `lint_story.py` refuses one that is not on its own map, and a
 map with neighbours and none.
 
+Where arriving and leaving are different places, say so with **`arrives_at`**: one point of
+interest, on this map, where a traveller coming in is set down. The Aravali is left from its piers
+but arrived at the Rail-Head, as its own `arrival` prose says. Absent means the first of
+`departs_from`, which is right for any map whose cart yard is also where the carts come in.
+
 ### A homestead
 
 What the traveller builds on a field map with the backing of its people -- the endgame of the

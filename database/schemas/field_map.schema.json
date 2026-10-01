@@ -195,7 +195,12 @@
         "type": "string",
         "pattern": "^poi_[a-z0-9_]+$"
       },
-      "description": "Where the cart, the boat or the line leaves this map from: the points of interest a traveller must stand at to go on to a neighbour. Each must be on this map. The owner's ruling of 27 September 2026: maps are left from designated places, the way a horse-cart leaves from a yard and not from a field. The first is where a traveller arriving from elsewhere is set down."
+      "description": "Where the cart, the boat or the line leaves this map from: the points of interest a traveller must stand at to go on to a neighbour. Each must be on this map. The owner's ruling of 27 September 2026: maps are left from designated places, the way a horse-cart leaves from a yard and not from a field. The first is where a traveller arriving from elsewhere is set down, unless `arrives_at` names somewhere else."
+    },
+    "arrives_at": {
+      "type": "string",
+      "pattern": "^poi_[a-z0-9_]+$",
+      "description": "Where a traveller arriving on this map is set down; defaults to the first of `departs_from`. Must be a point of interest on this map.\n\nSeparate from `departs_from` because arriving and leaving are not always the same place. The Aravali is left from its piers -- the First Pier for the south, the Far Landing for the north -- but nobody arrives standing on a floating island mid-strait: canon's own `arrival` prose and the Rail-Head's description put the traveller at the Rail-Head, *the arrival, and the map's one ordinary place*. Absent means the default, which is right for every map whose cart yard is also where the carts come in."
     },
     "landmass_edges": {
       "type": "object",

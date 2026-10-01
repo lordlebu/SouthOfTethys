@@ -778,6 +778,12 @@ def main() -> int:
                 errors.append(f"{path.name}: departs from {p}, which is not on this map")
         if payload.get("neighbours") and not payload.get("departs_from"):
             errors.append(f"{path.name}: has neighbours but no `departs_from` -- nowhere to leave from")
+        # And where it is arrived at, when that is somewhere else. The same rule as a cart point:
+        # a traveller set down on another map's ground, or on a place that does not exist, would
+        # pass the reference walk -- a poi id is a poi id -- and arrive nowhere.
+        arrives = payload.get("arrives_at")
+        if arrives and arrives not in own:
+            errors.append(f"{path.name}: arrives at {arrives}, which is not on this map")
 
     # --- homesteads say where they stand, and whose it is --------------------------
     #
