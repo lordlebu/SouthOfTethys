@@ -30,6 +30,12 @@ concurrency:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    # **Retry a network blip rather than fail the deploy on it.** Run 36835256037 (1 October 2026)
+    # stopped at Install with nothing in the repository involved: the same install had passed an
+    # hour and a half before, and no package it pulls released in between. pip reads these itself.
+    env:
+      PIP_RETRIES: '5'
+      PIP_TIMEOUT: '60'
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-python@v6
@@ -41,7 +47,10 @@ jobs:
       # cartography scripts; indexing needs chromadb, which it does not list because the
       # indexer imports it lazily.
       - name: Install
-        run: pip install "chromadb>=0.5.0" jsonschema
+        # Capped below the next major: 1.x is what the index, the bundle and `/health` are built
+        # against, and an unpinned 2.0 arriving overnight would break the deploy the same way.
+        # Keep in step with services/api/requirements.txt.
+        run: pip install "chromadb>=0.5.0,<2" jsonschema
 
       # `build_deploy.py` refuses to run without this, and deliberately: chromadb hardcodes its
       # model cache to the home directory and downloads 86MB on first use, which fails on a
