@@ -29,7 +29,7 @@ what modelling the geography actually requires.
 
 New story points go in `database/`, one JSON file per entity. **[database/AUTHORING.md](../database/AUTHORING.md)**
 has copy-paste templates and the four steps. The one decision that matters is which folder:
-nine reach the game's bundle and eight do not.
+seventeen reach the game's bundle and eight do not.
 
 ## 🚀 Publishing & Local Workflow
 

@@ -1,0 +1,20 @@
+{
+  "id": "item_fibre_cord",
+  "type": "item",
+  "name": "Fibre cord",
+  "base_item": "item_cordage",
+  "kind": "tool",
+  "affords": [
+    "bind"
+  ],
+  "materials": [
+    "material_bark_bast",
+    "material_reed_fibre"
+  ],
+  "notes": "Two plies of bast or reed rolled on the thigh until they lock. The first lashing anybody makes, and enough to haft an adze or string a bow drill -- it holds, and it has to be retied. Sinew dries tight and does not; that is why a spear or a harpoon still wants sinew, and an adze can start with this.",
+  "canon": "inferred",
+  "sources": [
+    "owner, 2026-10-01 (Roads and Hands, phase 1)"
+  ],
+  "source_index": 82
+}

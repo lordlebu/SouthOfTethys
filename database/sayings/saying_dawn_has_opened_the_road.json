@@ -1,0 +1,24 @@
+{
+  "id": "saying_dawn_has_opened_the_road",
+  "type": "saying",
+  "name": "Dawn has opened the road",
+  "text": "Dawn has opened the road.\nRise.\nWake the oxen.\nGather the water.\nFold the tents.\nThe night has carried us this far.\nThe light will carry us farther.",
+  "attribution": "Vedda waking-call",
+  "carried_by": "vedda",
+  "occasions": [
+    "dawn",
+    "departure"
+  ],
+  "inspired_by": {
+    "source": "Rigveda 1.113, to Usas the Dawn, who wakes the world to its work",
+    "note": "Original composition after Rigveda 1.113, to Usas the Dawn, who wakes the world to its work. Not a translation, and not a quotation."
+  },
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "notes": "Edited from the owner's draft: \"Wake the horses\" became \"Wake the oxen\": canon has no horse in Jambhudweep.",
+  "canon": "primary",
+  "sources": [
+    "the owner's draft of nomadic-migration sayings for the cutscenes, 2026-10-01"
+  ]
+}

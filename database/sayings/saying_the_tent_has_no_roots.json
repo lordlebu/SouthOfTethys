@@ -1,0 +1,19 @@
+{
+  "id": "saying_the_tent_has_no_roots",
+  "type": "saying",
+  "name": "The tent has no roots",
+  "text": "The tent has no roots, but the people do.",
+  "attribution": "Vedda saying",
+  "carried_by": "vedda",
+  "occasions": [
+    "fireside",
+    "settling"
+  ],
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "the owner's draft of nomadic-migration sayings for the cutscenes, 2026-10-01"
+  ]
+}

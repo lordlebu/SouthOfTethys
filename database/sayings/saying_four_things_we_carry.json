@@ -1,0 +1,23 @@
+{
+  "id": "saying_four_things_we_carry",
+  "type": "saying",
+  "name": "Four things we carry",
+  "text": "When we leave, we carry four things.\nFire,\nwater,\nthe seed,\nand the names of the dead.\nThe road may take the first three from us.\nIt cannot take the fourth.\nFor the ancestors have already walked ahead.\nWe are only following their footprints.",
+  "attribution": "Vedda saying",
+  "carried_by": "vedda",
+  "occasions": [
+    "departure",
+    "opening"
+  ],
+  "inspired_by": {
+    "source": "Rigveda 10.14, the road of the ancestors",
+    "note": "Original composition after Rigveda 10.14, the road of the ancestors. Not a translation, and not a quotation."
+  },
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "the owner's draft of nomadic-migration sayings for the cutscenes, 2026-10-01"
+  ]
+}

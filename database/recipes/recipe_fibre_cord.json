@@ -1,0 +1,23 @@
+{
+  "id": "recipe_fibre_cord",
+  "type": "recipe",
+  "name": "Twisting fibre cord",
+  "process": "process_twisting",
+  "ingredients": [
+    {
+      "tag": "#fibre",
+      "count": 2
+    }
+  ],
+  "outputs": [
+    {
+      "item": "item_fibre_cord"
+    }
+  ],
+  "notes": "Known to everybody, because nobody remembers being taught it. Any fibre will do -- bark bast and reed are what a traveller usually has, goat hair and palm husk twist as well.",
+  "canon": "inferred",
+  "sources": [
+    "owner, 2026-10-01 (Roads and Hands, phase 1)"
+  ],
+  "source_index": 90
+}

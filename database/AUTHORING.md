@@ -4,7 +4,7 @@ Everything canon holds is a **noun**. Pick the right one, write one JSON file, u
 manifest, run the gate. Four steps, and the gate tells you if you got it wrong.
 
 If you only read one thing: **the folder you choose decides whether your writing reaches the
-game.** Sixteen folders are exported into the browser bundle and eight are not, and putting a
+game.** Seventeen folders are exported into the browser bundle and eight are not, and putting a
 hundred lore entries in an exported folder is the one mistake here with a cost attached.
 
 ---
@@ -21,6 +21,7 @@ hundred lore entries in an exported folder is the one mistake here with a cost a
 | A person in the history | `characters/` | no |
 | A person the player can talk to | `npcs/` | **yes** |
 | Something that happens to the player on a map | `happenings/` | **yes** |
+| A line a people says on the road, shown in a cutscene | `sayings/` | **yes** |
 | What the player may build on a map, and with whose say-so | `homesteads/` | **yes** |
 | A ladder of understanding the player climbs | `discoveries/` | **yes** |
 | A question the player forms a reading of | `field_questions/` | **yes** |
@@ -448,6 +449,50 @@ every choice's `grants` as reachable once the map is walked and the requirements
 grant that is not a discovery, word, question or recipe, and refuses an `at` that is not on the
 happening's own maps.
 
+### A saying
+
+```json
+{
+  "id": "saying_something_said_on_the_road",
+  "type": "saying",
+  "name": "Something said on the road",
+  "text": "The words, exactly as said.\nA line break is a line break on screen.",
+  "attribution": "Vedda saying",
+  "carried_by": "vedda",
+  "occasions": ["road", "fireside"],
+  "field_maps": ["field_map_narmada"],
+  "inspired_by": {
+    "source": "Rigveda 10.75, the hymn that names the rivers",
+    "note": "Original composition after Rigveda 10.75, the hymn that names the rivers. Not a translation, and not a quotation."
+  },
+  "notes": "What was changed from the draft to fit canon, if anything.",
+  "epochs": ["epoch_post_cataclysm"],
+  "canon": "primary",
+  "sources": ["where this came from"]
+}
+```
+
+What the peoples of South of Tethys say on the road -- at first light, at a ford, at the fire, on
+arriving and on staying. The game shows them in its cutscenes; `occasions` says which (`opening`,
+`dawn`, `departure`, `road`, `crossing`, `arrival`, `night`, `fireside`, `settling`) and
+`field_maps`, when present, narrows them to a map. `carried_by` is a people from
+`database/cultures.json`, and **every saying so far is the Vedda's** -- the owner's ruling; another
+people's sayings would be a deliberate addition, not a default. Canon never says when in a scene
+a line appears, or how often it returns -- that is play.
+
+Two rules, both the owner's of 1 October 2026:
+
+**On screen, the credit is in-world only.** `attribution` is what the game shows -- "Vedda
+saying", "Vedda waking-call" -- never a book, an author or a century. Where a line was written
+after a real-world source, **`inspired_by` says so, and says it is an original composition after
+that source, never a translation or a quotation.** The schema refuses a `note` that does not begin
+"Original composition after". It is withheld from the game's bundle and shown by the lore portal.
+
+**The line has to be true of this world.** No animal or people canon does not have -- a draft's
+"wake the horses" became "wake the oxen", because Jambhudweep has no horse -- and ungendered unless
+a named person is meant: "our mothers and fathers", "a traveller", "whoever knows". Record what was
+changed from a draft in `notes`.
+
 ### Where a map is left from
 
 Every field map with a neighbour names **`departs_from`**: the points of interest a traveller must
@@ -521,9 +566,30 @@ backers than the map has people who can be helped.
 **Each map's worries carry its thesis.** Lothal's holders are afraid of what nobody has looked at;
 Dwarka's (`homestead_dwarka`) are simply right, and wait to see whether the traveller has caught up;
 the Narmada's steward (`homestead_narmada`) trusts a record that begins at the wound. A worry that
-could be lifted onto another map unchanged is not doing its job. Stages use what that map's own
-ground gives -- sandstone and husk hawser in Dwarka, basalt and sinew on the plateau -- which the
-playability check cannot see, since it asks only whether a thing can be got *somewhere*.
+could be lifted onto another map unchanged is not doing its job.
+
+**A stage may only need what is common on its own map, and what its own people can make from
+that.** Two kinds of need, and nothing else:
+
+- **a material the map's ground gives reliably** -- not one that exists there, one a player will
+  actually walk across. The game's `test/criticalPath.test.ts` is the measure: on at least 10 of 12
+  seeds, on at least 3 tiles each. Rarity in the material file is not the test; tile counts are,
+  because a common plant in a biome the map barely has (Dwarka's desert is about thirty tiles) is
+  rare *there*;
+- **an item made by a recipe known from the start or taught by somebody on this map, with no hunted
+  or rare input anywhere in its chain.** Husk hawser is Pell's and is palm husk; reed rope and fibre
+  cord are everybody's and are a handful of fibre. Sinew lashing is not allowed, because sinew is a
+  hunt, which is why the Narmada's tower is lashed with goat-hair cord.
+
+A homestead is the endgame, built here by the people of here, so "obtainable on another map" is not
+an answer. Stages still use what that map's own ground gives -- sandstone and husk in Dwarka, basalt
+and cane on the plateau, clay and reed on the delta -- and the prose should name it. A stage's prose
+may describe more than it needs (Lothal's and Dwarka's glasshouses need no glass), but never
+something the needs contradict.
+
+`check_playability.py` refuses a stage its own map cannot build, from that map's ground, teachers and
+kinds of place (`MAKING_PER_MAP_GATES`). It cannot see rarity, so the reliability half of this rule
+is the game's test to hold, and the author's to respect.
 
 ### A character
 

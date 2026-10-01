@@ -5,7 +5,7 @@
   "process": "process_carving",
   "ingredients": [
     {
-      "material": "material_sandalwood_billet"
+      "tag": "#timber"
     },
     {
       "item": "item_flint_knife",
@@ -17,7 +17,7 @@
       "item": "item_salt_box"
     }
   ],
-  "notes": "Wood rather than clay, because salt draws water and a fired jar sweats.",
+  "notes": "Wood rather than clay, because salt draws water and a fired jar sweats. Bekh says wood and means any wood: on the delta it is mangrove, hard and indifferent to salt. It was sandalwood until 1 October 2026, which made a keeper's everyday box a precious thing nobody on Lothal could find.",
   "canon": "inferred",
   "sources": [
     "inferred from canon geography"

@@ -1,0 +1,22 @@
+{
+  "id": "saying_rivers_are_another_road",
+  "type": "saying",
+  "name": "Another road",
+  "text": "The rivers are not the road's end. They are another road.",
+  "attribution": "Vedda saying",
+  "carried_by": "vedda",
+  "occasions": [
+    "crossing"
+  ],
+  "inspired_by": {
+    "source": "Rigveda 3.33, Visvamitra asking the rivers to let the people cross",
+    "note": "Original composition after Rigveda 3.33, Visvamitra asking the rivers to let the people cross. Not a translation, and not a quotation."
+  },
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "the owner's draft of nomadic-migration sayings for the cutscenes, 2026-10-01"
+  ]
+}

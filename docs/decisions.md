@@ -1463,6 +1463,134 @@ Two simplifications are on purpose and named in the code. A species restricted t
 as placed on any map that reaches that landmass, where the game asks per tile; and the report asks
 what can be had *at all*, so it is as blind to rarity as the rest of this file.
 
+## Sayings on the road — settled 2026-10-01
+
+The game's cutscenes -- the opening, the rides between maps, camp firesides, dawn, arrivals,
+settling -- carry short proverbial lines: nomadic-migration sayings of the peoples of South of
+Tethys, some written after Rigvedic hymns. The owner drafted thirty-three and ruled on three things:
+
+- **They are canon, one entity per saying, in `database/sayings/`, and they reach the game.** A
+  saying is a noun: something a people holds, true of the world whether or not anybody hears it.
+  When it is said is a verb, and stays the game's -- canon gives only `occasions` (`opening`,
+  `dawn`, `departure`, `road`, `crossing`, `arrival`, `night`, `fireside`, `settling`) and,
+  sometimes, `field_maps`. It never says which scene or how often, as it never says how long
+  `renews` takes. Exported because the cutscenes are the only thing that reads them; a lore-only
+  folder would have needed the game to hold its own copy, which is the hand-edited bundle the
+  canon/game split exists to prevent. **In `places.json`, beside `happenings`**: a saying belongs
+  to the maps and the road between them, as a happening does; nothing in it is learned, which is
+  what `knowledge.json` holds. `carried_by` crosses as a bare culture id: the Vedda are not among
+  the bundle's `peoples`, which carries only cultures with `given_names`, so the credit the game
+  shows is `attribution`, never a lookup.
+- **On screen, the credit is in-world only** -- `attribution`, "Vedda saying", "Vedda
+  waking-call". The real-world inspiration is kept as `inspired_by`, shown by the lore portal and
+  **withheld from the bundle** alongside `sources`, since it is the same kind of fact. It must say
+  the line is an **original composition after** its source, never a translation or a quotation; the
+  schema refuses a note that does not begin so.
+- **Lines were edited to fit canon.** No horses -- Jambhudweep has none, so "wake the horses" is
+  "wake the oxen", which the ox-cart already makes true -- and ungendered: "our fathers" is "our
+  mothers and fathers", "he who knows the stars" is "whoever knows". Each change is recorded in
+  that saying's `notes`, which are withheld from the bundle as a happening's are.
+
+`carried_by` is checked against `database/cultures.json` by the lint, as `culture` and `known_by`
+are. **Every saying is the Vedda's**, by a fourth ruling the same day: the draft had given two to
+the Tushara, one to the Maru and a dozen to nobody in particular ("Saying of the road", "Ford-keepers'
+saying"), and all thirty-three now carry `carried_by: vedda` and a Vedda attribution. The field stays
+optional so another people's sayings can be added later, deliberately.
+
+## Roads and Hands, phase 1: every map can be finished from its own ground — settled 2026-10-01
+
+The owner played Lothal and could neither raise the settlement nor make half of what it offers. Phase
+0 built the instruments -- the game's `test/criticalPath.test.ts`, which asks of every map across
+twelve seeds whether what its people teach and what its homestead needs come out of what its ground
+gives **reliably** (10 of 12 seeds, 3 tiles each), and canon's per-map report. This is the content
+that empties them. Canon 2.41.0. The principle throughout: make canon truer, not recipes weaker, and
+keep each map's thesis.
+
+**The owner's three rulings.**
+
+- **Hand-twisted fibre cord is the first lashing.** `item_fibre_cord`, made by `recipe_fibre_cord`
+  from two `#fibre`, known to everybody, by hand, anywhere. The recipe schema has no ingredient
+  alternatives (an ingredient is one tag, one material or one item), so the canon way is a second
+  recipe for each tool: `recipe_stone_adze_corded` (basalt, cord, `#timber`) and
+  `recipe_bow_drill_corded` (`#timber`, cord, a flint knife kept). Two recipes making one output
+  already had precedent in the two oil presses. The corded bow drill takes any springy `#timber`
+  rather than bamboo, which is truer of a bow drill and is what lets Dwarka, with almost no bamboo,
+  drill a bead. **Sinew stays the stronger lashing**: the sinew recipes are untouched, and the
+  spear, harpoon, sinew bow and sitar still ask for sinew. Sinew lashing's note no longer says no
+  plant fibre will substitute; it says a cord holds and has to be retied.
+- **Reed rope is twisted by hand.** It used `process_spinning`, which needs `work` because spinning
+  draws thread on a whorl -- a real tool, so spinning was right and the filing was wrong. A rope
+  rolled on the thigh needs no whorl. **New process: `process_twisting`**, no needs, no site.
+  Reed rope and fibre cord use it; the husk hawser and the hunting sling stay spun. This is the one
+  new process id, and the game keys gestures, verbs, benches and marks to process ids, so it needs
+  `process_twisting` in `PROCESS_GESTURE` (`stoop` -- patient and rhythmic), `PROCESS_VERB`
+  ("Twist it"), a bench in `stations.ts` and a mark in the thing icons. Its fallbacks (`stoop`,
+  "Make it") keep it playable meanwhile; its coverage tests fail until then, on purpose.
+- **Sea salt on Lothal.** `material_sea_salt`: class `salt`, from the ground (no `won_from`), on the
+  `coast`, common, renews `fast`. Lothal is a harbour on a gulf known for its salt pans. Being ground
+  it lies on every coast, Dwarka's and the Aravali's included; Dwarka keeps its salt crust and its
+  salt-glass as its own, and nothing of Dwarka's was moved or removed.
+
+**The gaps that were mine to design.**
+
+- **Lothal, bedroll** (Uma's). The test blamed tree pitch, and was wrong: `recipe_tree_pitch` already
+  makes it on Lothal. The real block was goat hide, which a delta does not have. The painted deer
+  already gave antler and sinew, so it now gives **`material_deer_hide`** too, and the bedroll asks
+  for `#hide` rather than goat hide. Truer twice: an animal that gives sinew gives its skin, and a
+  bedroll needs a hide, not a goat.
+- **Lothal, bone harpoon** (Thrali's). `material_fish_bone` was the sawfish's alone -- a rare animal
+  -- on a coast full of fish. Renamed **Fish bone** and won from the three fish that already give
+  `river_fish` as well. The sawfish's barbed rostral teeth stay in its note as the best of it.
+- **Lothal, salt box** (Bekh's). Bekh's own line says "wood for salt", and means any wood; sandalwood
+  was the recipe's, not hers, and made a keeper's everyday box something nobody on Lothal could find.
+  It asks for `#timber` -- on the delta, mangrove. The sandalwood comb stays the sandalwood craft.
+- **Lothal, dried fish** -- sea salt, above.
+- **Dwarka.** Measured, Dwarka's desert is about **thirty tiles** of some 2,300: the
+  map's palette lists desert first, and still the "cold high desert" generates as mostly plains
+  (about 1,000) and dead coast (about 830). Why is the game's generator's question, and is reported
+  there; canon did not move the map. What canon did:
+  - **`flora_palmyra_palm`** (*Borassus flabellifer*, the tala), on `plains` and `settlement`, now a
+    source of palm husk. The fan palm of the dry plains of Gujarat and the Deccan, and the palm whose
+    leaves the old books are written on. It gives Dwarka husk for Pell's hawser and rope span and for
+    the foundation, and gives the Narmada's archive its own pages. Canon `draft`, for the owner.
+  - **`material_ammonite_shell` is a fossil from the ground**, no longer won from the living
+    ammonites. Its note always called it fossilised and it `renews: never`, the textbook fossil;
+    taking it off a rare animal, with a rare roll on top, left Sura teaching a pendant from a shell
+    almost nobody saw. It stays rare, in `lava_field` and `mountains`, and is now found on Dwarka's
+    lava ground reliably -- the Kutch coast is ammonite country. It also gives Sura's shell bead its
+    `#shell`.
+  - **The homestead's last stage** needed bamboo cane and date fruit, neither reliably on Dwarka. It
+    needs **palm husk and sandstone**: vanes of husk matting, plaited as the harbour plaited its sails
+    (the owner's vane art reads as matting on spokes), and a still-house on a sandstone footing. The
+    date palms stay in the prose and the owner's art -- as offsets carried up by the market, because
+    a date palm is grown from its mother and not its stone -- so nothing a player must find. The
+    foundation (sandstone, husk) and the tower (mangrove, husk hawser) were already right once husk
+    could be had.
+- **Narmada.** **Okhi teaches the bone awl and the storage jar**, in one new line: the archive's oldest
+  volumes came up out of the ground in sealed jars, and a palm-leaf book is pricked with an awl and
+  threaded. That unblocks Vessa's tally stick, Okhi's field diary, and -- through the jar, grog and
+  the pot -- her palm-leaf sheets and ink, and Marn's tanning. Sura and Bekh still teach them too.
+  **Lamp black already had a source**, `recipe_lamp_black` (oil burned in a lamp), and every map
+  with a settlement made it; the test's "grows nowhere" read the ground and not the recipes. What
+  stopped the ink was the pot.
+- **The Narmada's tower** was lashed with sinew. A homestead may not wait on a hunt (the rule now in
+  `AUTHORING.md`), so it is lashed with goat-hair fibre cord, which the herders have in plenty.
+
+**Kept on purpose: the princess's price.** Root tea is ginger and ashwagandha, both on the Narmada,
+but the princess teaches it only for the Fourteen, which wants salt, and the plateau has none. Salt
+is the lowland's and the Maru carry it up to trade, so the traveller brings it from the coast or
+brings the dish ready cooked -- which is what makes it her task. `MAKING_PER_MAP_KEPT` names it, and
+the owner may overrule: a plateau rock salt would close it. The game's test does not see prices, so
+it does not list this.
+
+**`MAKING_PER_MAP_GATES` is True.** The per-map report gates from 2.41.0, with that one named
+exception; an exception that stops failing is itself a failure. The game's `KNOWN_GAPS` is empty for
+all four maps, measured.
+
+**The rule for homesteads**, in `AUTHORING.md`: a stage may need only a material its own map gives
+reliably, and items made by recipes known from the start or taught there, with no hunted or rare input
+in the chain.
+
 ## Security
 
 Two Hugging Face tokens were exposed during setup and must be treated as burned: one pasted

@@ -1,0 +1,18 @@
+{
+  "id": "saying_the_stars_remember_the_way",
+  "type": "saying",
+  "name": "The stars remember the way",
+  "text": "We follow the stars because the stars remember the way home.",
+  "attribution": "Vedda saying",
+  "carried_by": "vedda",
+  "occasions": [
+    "night"
+  ],
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "the owner's draft of nomadic-migration sayings for the cutscenes, 2026-10-01"
+  ]
+}

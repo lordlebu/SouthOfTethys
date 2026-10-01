@@ -2,7 +2,7 @@
   "id": "recipe_reed_rope",
   "type": "recipe",
   "name": "Twisting reed rope",
-  "process": "process_spinning",
+  "process": "process_twisting",
   "ingredients": [
     {
       "material": "material_reed_fibre",
@@ -14,7 +14,7 @@
       "item": "item_reed_rope"
     }
   ],
-  "notes": "Four handfuls to a working length. Wants a whorl, which is any item that works.",
+  "notes": "Four handfuls to a working length, rolled by hand. It was filed under spinning and so asked for a whorl, which no rope-maker on a river bank has ever needed; by the owner's ruling of 1 October 2026 it is twisted with nothing but palms.",
   "canon": "inferred",
   "sources": [
     "inferred from canon geography"

@@ -30,6 +30,14 @@
       ]
     },
     {
+      "text": "Nothing here was ever on a shelf first. The oldest volumes came up out of the ground in jars, sealed, and the jars are the only reason there is anything to copy -- so a copyist learns to fire one before she learns to cut a letter. And an awl: you prick the leaf, you thread the cord through, and the book is a book. Bone, a deer's shin for choice. Mine is older than Vessa.",
+      "requires": [],
+      "gives": [
+        "recipe_storage_jar",
+        "recipe_bone_awl"
+      ]
+    },
+    {
       "text": "There is a shelf I dust and cannot read. Thirty years. If you learn what is on it I would like to be told, and I would like it told to me before it is told to the halls.",
       "requires": [
         "discovery_quarry_sequence"

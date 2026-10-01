@@ -67,6 +67,7 @@ PREFIX_DIRS = {
     "foodway_": "foodways",
     "happening_": "happenings",
     "homestead_": "homesteads",
+    "saying_": "sayings",
 }
 
 # folder -> schema stem, where the two differ.
@@ -86,6 +87,7 @@ SCHEMA_FOR = {
     "foodways": "foodway",
     "happenings": "happening",
     "homesteads": "homestead",
+    "sayings": "saying",
 }
 
 # Values that look like ids but are not entity references.
@@ -966,6 +968,14 @@ def main() -> int:
                         f"{path.name}: known_by '{who}' is not declared in "
                         f"database/cultures.json"
                     )
+            # A saying names the people who carry it, in the same vocabulary. Absent means it is
+            # common to the road, so only a stated value is checked.
+            carrier = payload.get("carried_by")
+            if isinstance(carrier, str) and carrier and carrier not in known_cultures:
+                errors.append(
+                    f"{path.name}: carried_by '{carrier}' is not declared in "
+                    f"database/cultures.json"
+                )
 
         # --- given names: nobody who already exists -----------------------------------
         #

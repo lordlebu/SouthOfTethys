@@ -1,0 +1,18 @@
+{
+  "id": "saying_a_camp_is_a_pause",
+  "type": "saying",
+  "name": "A pause between two horizons",
+  "text": "A camp is only a pause between two horizons.",
+  "attribution": "Vedda saying",
+  "carried_by": "vedda",
+  "occasions": [
+    "fireside"
+  ],
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "the owner's draft of nomadic-migration sayings for the cutscenes, 2026-10-01"
+  ]
+}

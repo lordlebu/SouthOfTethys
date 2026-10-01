@@ -1,0 +1,19 @@
+{
+  "id": "saying_whole_earth_home",
+  "type": "saying",
+  "name": "The whole earth is home",
+  "text": "Once, we wandered because we had nowhere to stay. Now we wander because the whole earth is home.",
+  "attribution": "Vedda saying, as it is said now",
+  "carried_by": "vedda",
+  "occasions": [
+    "opening",
+    "settling"
+  ],
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "the owner's draft of nomadic-migration sayings for the cutscenes, 2026-10-01"
+  ]
+}

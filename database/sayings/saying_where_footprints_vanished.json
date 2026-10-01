@@ -1,0 +1,18 @@
+{
+  "id": "saying_where_footprints_vanished",
+  "type": "saying",
+  "name": "Where the footprints vanished",
+  "text": "The old ones walked beneath these stars. We walk where their footprints have vanished.",
+  "attribution": "Vedda saying",
+  "carried_by": "vedda",
+  "occasions": [
+    "night"
+  ],
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "the owner's draft of nomadic-migration sayings for the cutscenes, 2026-10-01"
+  ]
+}

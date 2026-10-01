@@ -304,6 +304,7 @@ Drawn from the era's own chart: 66 place(s) and 38 people(s), before the Shatter
 | materials |  | 76 |
 | processes |  | 17 |
 | recipes |  | 85 |
+| sayings | 33 |  |
 | vehicles | 2 | 8 |
 
 ### Events
