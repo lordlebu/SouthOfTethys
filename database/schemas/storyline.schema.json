@@ -1,0 +1,173 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Storyline",
+  "description": "A person's arc: an ordered run of beats, each a story card that plays when its moment comes and the beat before it is done. The owner's arcs of 2 October 2026 for Guyuk and the Asura princess. Canon says what happens and in what order; the game says when a moment has come and keeps the flags.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "type",
+    "name",
+    "person",
+    "field_map",
+    "joins",
+    "beats"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^storyline_[a-z0-9_]+$"
+    },
+    "type": {
+      "const": "storyline"
+    },
+    "name": {
+      "type": "string"
+    },
+    "person": {
+      "type": "string",
+      "pattern": "^npc_[a-z0-9_]+$",
+      "description": "Whose story it is."
+    },
+    "field_map": {
+      "type": "string",
+      "pattern": "^field_map_[a-z0-9_]+$",
+      "description": "The map the arc is walked on. A beat with no `at` happens anywhere on it."
+    },
+    "joins": {
+      "type": "boolean",
+      "description": "Whether the person joins the walkers when the arc ends -- the owner's 'two walkers become three'. False for somebody who has other priorities for her people."
+    },
+    "beats": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "title",
+          "when",
+          "prose",
+          "choices"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9_]+$"
+          },
+          "title": {
+            "type": "string"
+          },
+          "when": {
+            "type": "string",
+            "enum": [
+              "arriving",
+              "night",
+              "road"
+            ],
+            "description": "`arriving` on reaching `at`; `night` a night slept anywhere on the map; `road` a step along the way."
+          },
+          "at": {
+            "type": "string",
+            "pattern": "^poi_[a-z0-9_]+$",
+            "description": "The place, for `arriving`. Must be on the storyline's map."
+          },
+          "requires": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Discovery, word, recipe or question ids the traveller must hold for this beat to come. Observed is enough for a discovery, as for a happening."
+          },
+          "asks": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "id",
+                "count"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "count": {
+                  "type": "integer",
+                  "minimum": 1
+                }
+              }
+            },
+            "description": "What the traveller hands over in this beat. The beat comes only when it is all carried, and the first choice gives it."
+          },
+          "art": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$",
+            "description": "The painting, as the game looks it up in its story folder."
+          },
+          "prose": {
+            "type": "string",
+            "description": "Second person, present tense."
+          },
+          "choices": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 3,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "label",
+                "line"
+              ],
+              "properties": {
+                "label": {
+                  "type": "string"
+                },
+                "line": {
+                  "type": "string"
+                },
+                "grants": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "description": "Every choice takeable and none worse than not having been there -- a happening's rule."
+          },
+          "joins": {
+            "type": "boolean",
+            "description": "This beat is the one the person joins the walkers on. Only on a storyline whose `joins` is true, and only on its last beat."
+          }
+        }
+      }
+    },
+    "epochs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "notes": {
+      "type": "string"
+    },
+    "canon": {
+      "type": "string",
+      "enum": [
+        "primary",
+        "secondary",
+        "inferred",
+        "draft"
+      ]
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

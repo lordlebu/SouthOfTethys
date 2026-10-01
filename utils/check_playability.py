@@ -110,6 +110,8 @@ class World:
         self.questions = load_all("field_questions")
         self.npcs = load_all("npcs")
         self.happenings = load_all("happenings")
+        # A person's arc (the owner's of 2 October 2026): who it brings, and what its beats grant.
+        self.storylines = load_all("storylines")
         self.homesteads = load_all("homesteads")
         self.words = load_all("vocabulary")
         self.materials = load_all("materials")
@@ -451,7 +453,15 @@ def making(w: World, problems: list[str]) -> None:
             if who not in w.npcs:
                 problems.append(f"{rid} is taught by {who}, who does not exist")
                 continue
-            if not any(rid in (ln.get("gives") or []) for ln in w.npcs[who].get("lines") or []):
+            said = any(rid in (ln.get("gives") or []) for ln in w.npcs[who].get("lines") or [])
+            # Or their storyline teaches it: Guyuk shows you the seed ball in a beat of her arc, not
+            # in a line, because she is met only through the arc.
+            told = any(
+                rid in (c.get("grants") or [])
+                for sl in w.storylines.values() if sl.get("person") == who
+                for b in sl.get("beats") or [] for c in b.get("choices") or []
+            )
+            if not (said or told):
                 problems.append(
                     f"{rid} says {who} teaches it, and no line of theirs gives it -- "
                     f"the recipe would be unlearnable"
@@ -607,8 +617,10 @@ def structural(w: World, problems: list[str]) -> None:
                     "never produces (see docs/decisions.md)"
                 )
 
+    brought = {sl.get("person") for sl in w.storylines.values()}
     for n, doc in w.npcs.items():
-        if not doc.get("found_at"):
+        # Somebody met only through their storyline stands nowhere on purpose: the arc brings them.
+        if not doc.get("found_at") and n not in brought:
             problems.append(f"{n} stands nowhere")
 
     for q, doc in w.questions.items():

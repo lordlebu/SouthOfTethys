@@ -1,5 +1,5 @@
 {
-  "version": "2.44.0",
+  "version": "2.45.0",
   "description": "SouthOfTethys canonical entity index",
   "counts": {
     "artifacts": 6,
@@ -12,19 +12,20 @@
     "field_questions": 8,
     "flora": 119,
     "foodways": 19,
-    "happenings": 5,
+    "happenings": 6,
     "homesteads": 3,
-    "items": 83,
+    "items": 84,
     "materials": 78,
     "mythology": 11,
-    "npcs": 24,
+    "npcs": 25,
     "places": 112,
     "points_of_interest": 37,
     "processes": 18,
-    "recipes": 93,
+    "recipes": 94,
     "regions": 7,
     "sayings": 33,
     "settlements": 2,
+    "storylines": 2,
     "vehicles": 15,
     "vocabulary": 10
   },
@@ -659,6 +660,7 @@
     ],
     "happenings": [
       "happening_the_ferry_song",
+      "happening_the_sleeping_stranger",
       "happening_tower_standing",
       "happening_where_the_sea_was",
       "happening_where_you_stop",
@@ -735,6 +737,7 @@
       "item_salt_box",
       "item_salt_fish_stew",
       "item_sandalwood_comb",
+      "item_seed_ball",
       "item_serpent_mantle",
       "item_shell_bead",
       "item_shilajit_tonic",
@@ -854,6 +857,7 @@
       "npc_bekh",
       "npc_dala",
       "npc_drel",
+      "npc_guyuk_seed_gleaner",
       "npc_hasme",
       "npc_hesh",
       "npc_ila",
@@ -1120,6 +1124,7 @@
       "recipe_salt_box",
       "recipe_salt_fish_stew",
       "recipe_sandalwood_comb",
+      "recipe_seed_ball",
       "recipe_serpent_mantle",
       "recipe_shell_bead",
       "recipe_shilajit_tonic",
@@ -1188,6 +1193,10 @@
     "settlements": [
       "settlement_dwarka",
       "settlement_lothal"
+    ],
+    "storylines": [
+      "storyline_asura_princess",
+      "storyline_guyuk"
     ],
     "vehicles": [
       "vehicle_bone_framed_trawler",

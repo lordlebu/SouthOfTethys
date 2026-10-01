@@ -4,7 +4,7 @@ Everything canon holds is a **noun**. Pick the right one, write one JSON file, u
 manifest, run the gate. Four steps, and the gate tells you if you got it wrong.
 
 If you only read one thing: **the folder you choose decides whether your writing reaches the
-game.** Seventeen folders are exported into the browser bundle and eight are not, and putting a
+game.** Eighteen folders are exported into the browser bundle and eight are not, and putting a
 hundred lore entries in an exported folder is the one mistake here with a cost attached.
 
 ---
@@ -22,6 +22,7 @@ hundred lore entries in an exported folder is the one mistake here with a cost a
 | A person the player can talk to | `npcs/` | **yes** |
 | Something that happens to the player on a map | `happenings/` | **yes** |
 | A line a people says on the road, shown in a cutscene | `sayings/` | **yes** |
+| A person's arc, beat by beat: story cards, requests, a bond | `storylines/` | **yes** |
 | What the player may build on a map, and with whose say-so | `homesteads/` | **yes** |
 | A ladder of understanding the player climbs | `discoveries/` | **yes** |
 | A question the player forms a reading of | `field_questions/` | **yes** |
@@ -761,3 +762,18 @@ itself a sample may reference it, so it stays deletable.
 | `docs/decisions.md` | every call made on the project's behalf, and what is still open |
 | `database/VALIDATION.md` | what the linters check, and what they deliberately do not |
 | `database/TODO.md` | what is missing |
+
+
+## Storylines
+
+A person's arc is a `storylines/` entity: an ordered run of beats on one map, each a story card that
+comes when its moment does and the beat before it is done. A beat is `when` it can come (`arriving`
+at a place on the map, a `night` slept there, or a step on the `road`), what it `requires` the
+traveller to hold, what it `asks` them to hand over (the beat waits until it is all carried, and the
+first choice gives it), the painting (`art`), the prose and the choices. A storyline that `joins`
+ends on a beat that `joins`: from then on the person walks with the traveller and can be walked as.
+
+The arcs of 2 October 2026 are the owner's: Guyuk, the Seed-Gleaner of the Aravali, who joins, and
+the Asura princess of the Narmada, who forms the bond and stays back for her people. The prose is
+drafted to the owner's outline for the owner to rewrite. A person met only through her arc -- Guyuk
+-- is an NPC with no `found_at`.

@@ -1653,6 +1653,24 @@ nothing said. Every map now names its roads: four roads, each stated from both e
 - Lint holds a road to a neighbour, a neighbour to a road, a keeper to a cart point, the two ends to
   one vehicle and one painting, and a journey happening to one road.
 
+## Storylines, walkers and the people who join — settled 2026-10-02
+
+The owner's direction, with the paintings in hand: Guyuk becomes a walker once her arc is done, the
+Asura princess has an arc and stays back, and all the travellers in the roster walk together and can
+be switched between at will. Varuna and Mithra walk from the first morning; Guyuk makes three.
+
+- **A new folder, `storylines/`**, reaching the game. An arc is ordered beats, each a story card at a
+  place, a night or a step on the road, with what it requires and what it asks to be handed over.
+- **Guyuk is Guyuk the Seed-Gleaner** (`npc_guyuk_seed_gleaner`, of `character_guyuk_reborn`): the
+  herbalist of this age, who does not remember being a nomad. The nomad girl is another age and stays a
+  trace, by the epoch rule. She has no `found_at`: the arc brings her. Her three seeds are her requests
+  -- rice from the delta, then mustard from the plateau and dates from Dwarka -- and she teaches the
+  seed ball, which nobody else does.
+- **The princess's arc opens on the Fourteen**, her existing task, by the root tea it teaches; her
+  second quest is her people's terraces, answered by the terrace reading canon already holds.
+- **Shaka is a barbarian found asleep** on the Aravali (`happening_the_sleeping_stranger`), not
+  Shakariman the surveyor. **The cataclysm painting** goes to the lore portal, never the game.
+
 ## Security
 
 Two Hugging Face tokens were exposed during setup and must be treated as burned: one pasted

@@ -68,6 +68,7 @@ PREFIX_DIRS = {
     "happening_": "happenings",
     "homestead_": "homesteads",
     "saying_": "sayings",
+    "storyline_": "storylines",
 }
 
 # folder -> schema stem, where the two differ.
@@ -88,6 +89,7 @@ SCHEMA_FOR = {
     "happenings": "happening",
     "homesteads": "homestead",
     "sayings": "saying",
+    "storylines": "storyline",
 }
 
 # Values that look like ids but are not entity references.
@@ -840,6 +842,32 @@ def main() -> int:
         maps = payload.get("field_maps") or []
         if len(maps) != 2 or tuple(sorted(maps)) not in roads_by_pair:
             errors.append(f"{path.name}: a journey happening must name the two ends of one road")
+
+    # --- a storyline walks its own map, in order -----------------------------------
+    #
+    # A person's arc (the owner's of 2 October 2026). The reference walk resolves every id; what it
+    # cannot see is an arrival with nowhere to arrive, a place on another map, two beats with one
+    # name, or a joining that comes anywhere but at the end of an arc that says somebody joins.
+    for eid, (path, payload) in entities.items():
+        if path.parent.name != "storylines":
+            continue
+        map_payload = entities.get(payload.get("field_map"), (None, {}))[1]
+        on_map = set(map_payload.get("points_of_interest") or [])
+        beats = payload.get("beats") or []
+        seen_beats = set()
+        for i, beat in enumerate(beats):
+            bid = beat.get("id")
+            if bid in seen_beats:
+                errors.append(f"{path.name}: two beats named {bid}")
+            seen_beats.add(bid)
+            if beat.get("when") == "arriving" and not beat.get("at"):
+                errors.append(f"{path.name}: beat {bid} happens on arriving, but says nowhere to arrive")
+            if beat.get("at") and beat["at"] not in on_map:
+                errors.append(f"{path.name}: beat {bid} is at {beat['at']}, which is not on {payload.get('field_map')}")
+            if beat.get("joins") and (not payload.get("joins") or i != len(beats) - 1):
+                errors.append(f"{path.name}: beat {bid} joins the walkers, but only the last beat of an arc that `joins` may")
+        if payload.get("joins") and not any(b.get("joins") for b in beats):
+            errors.append(f"{path.name}: says its person joins, and no beat is where they do")
 
     # --- homesteads say where they stand, and whose it is --------------------------
     #

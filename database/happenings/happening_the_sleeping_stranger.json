@@ -1,0 +1,28 @@
+{
+  "id": "happening_the_sleeping_stranger",
+  "type": "happening",
+  "title": "A stranger asleep",
+  "occasion": "road",
+  "field_maps": [
+    "field_map_aravali"
+  ],
+  "prose": "Off the track, in the lee of a boulder, a man is asleep in the sun: furs in the wrong season, a broad face burned by some other sky, an unstrung bow under his head for a pillow. Everything about him says he has walked from much further north than the strait. He does not wake, and his breathing does not change as you pass.",
+  "choices": [
+    {
+      "label": "Leave him to sleep",
+      "line": "You leave him to sleep. Whoever he is, he has come a long way to do it."
+    },
+    {
+      "label": "Leave a little food by his hand",
+      "line": "You leave a flatbread on the stone by his hand. When you look back from the next rise, it is gone, and he has not moved."
+    }
+  ],
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "notes": "The owner's Shaka (2 October 2026): 'you stumble upon a barbarian from a distant land sleeping'. On the Aravali, the map that faces the mainland. He is not Shakariman the Narmada surveyor. The game draws the owner's painting `scene-rest-shaka` for it.",
+  "canon": "primary",
+  "sources": [
+    "drafted by Claude from the owner's outline of 2026-10-02, for the owner to rewrite or approve"
+  ]
+}
