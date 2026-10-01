@@ -14,7 +14,7 @@ That division settles nearly every question that comes up: everything canon hold
 rather than debating it.
 
 Canon is one JSON file per entity under `database/`, validated against JSON Schema in
-`database/schemas/`. `database/index.json` is the manifest — **v2.42.0, 1136 entities**.
+`database/schemas/`. `database/index.json` is the manifest — **v2.43.0, 1138 entities**.
 
 **Adding anything to canon: read `database/AUTHORING.md` first.** It carries the templates and
 the one decision that matters — which folder, because seventeen of them reach the game and eight

@@ -1627,6 +1627,27 @@ lines and a Vedda saying, before the player stands at the Camp in the Kilns.
   as the morning's goal so the dock carries the rest.
 - Lint refuses a prologue saying that is not a saying, and an opening saying not meant for an opening.
 
+## Roads and Hands, phase 4: the roads between maps — settled 2026-10-02
+
+Crossing between maps was a button and a scene restart, with the clock reset (fixed in phase 0) and
+nothing said. Every map now names its roads: four roads, each stated from both ends.
+
+| Road | By | Who sees you off |
+|---|---|---|
+| Lothal and North Dwarka | ox cart, along a river that is no longer there | Kunch; Jarro |
+| Lothal and the Narmada | ox cart, up the scarp | Kunch; Marn |
+| Lothal and the Aravali | coastal dhow, by sea | Thrali; Hesh, whose "It runs when it runs. Sit down." was already canon |
+| The Narmada and the Aravali | ox cart, down the herders' track | Marn; Hesh |
+
+- **Canon says what the road is; the game says how long it takes** (owner's answer to Q7: set out at
+  dawn, arrive by evening). No duration is written here, as `renews` never writes days.
+- **A `journey` occasion** for happenings on a road. Two are drafted for the owner: *The ferry song*
+  on the sea road, a counting song that still names a river nobody can place, and *Where the sea
+  was* on the road to Dwarka, which carries the map's thesis before the traveller arrives. The other
+  two roads take the game's woven road events until written ones exist.
+- Lint holds a road to a neighbour, a neighbour to a road, a keeper to a cart point, the two ends to
+  one vehicle and one painting, and a journey happening to one road.
+
 ## Security
 
 Two Hugging Face tokens were exposed during setup and must be treated as burned: one pasted

@@ -49,5 +49,33 @@
   "relief": "plateau",
   "departs_from": [
     "poi_high_camp"
+  ],
+  "roads": [
+    {
+      "to": "field_map_aravali",
+      "by": "vehicle_ox_cart",
+      "art": "journey-aravali-narmada",
+      "prose": [
+        "North off the plateau by the herders' track, down through grass that gets shorter every hour.",
+        "Then shingle, a strait, and a line of trestles striding out over the water."
+      ],
+      "keeper": {
+        "npc": "npc_marn",
+        "line": "North to the shingle. Tell the line-keeper the herders sent you. He'll pretend not to care."
+      }
+    },
+    {
+      "to": "field_map_lothal",
+      "by": "vehicle_ox_cart",
+      "art": "journey-lothal-narmada",
+      "prose": [
+        "Past the last of the delta the ground starts to rise, and keeps rising.",
+        "The road up the scarp is the only part of the plateau anyone built, and it was built well."
+      ],
+      "keeper": {
+        "npc": "npc_marn",
+        "line": "Down is quicker than up and harder on the knees. Mind the third turn."
+      }
+    }
   ]
 }

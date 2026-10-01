@@ -63,5 +63,33 @@
   "arrives_at": "poi_rail_head",
   "landmass_edges": {
     "north": "mainland_asia"
-  }
+  },
+  "roads": [
+    {
+      "to": "field_map_lothal",
+      "by": "vehicle_coastal_dhow",
+      "art": "journey-aravali-lothal",
+      "prose": [
+        "Out of the delta on a sewn-plank boat, the shore going grey behind you.",
+        "By afternoon two islands hang above the sea ahead, and nobody on board remarks on it."
+      ],
+      "keeper": {
+        "npc": "npc_hesh",
+        "line": "It runs when it runs. Sit down."
+      }
+    },
+    {
+      "to": "field_map_narmada",
+      "by": "vehicle_ox_cart",
+      "art": "journey-aravali-narmada",
+      "prose": [
+        "North off the plateau by the herders' track, down through grass that gets shorter every hour.",
+        "Then shingle, a strait, and a line of trestles striding out over the water."
+      ],
+      "keeper": {
+        "npc": "npc_hesh",
+        "line": "The cart for the plateau waits at the far end. It waits longer than the line does."
+      }
+    }
+  ]
 }

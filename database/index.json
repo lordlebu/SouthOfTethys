@@ -1,5 +1,5 @@
 {
-  "version": "2.42.0",
+  "version": "2.43.0",
   "description": "SouthOfTethys canonical entity index",
   "counts": {
     "artifacts": 6,
@@ -12,7 +12,7 @@
     "field_questions": 8,
     "flora": 119,
     "foodways": 19,
-    "happenings": 3,
+    "happenings": 5,
     "homesteads": 3,
     "items": 83,
     "materials": 78,
@@ -658,7 +658,9 @@
       "foodway_travel_cake_wake"
     ],
     "happenings": [
+      "happening_the_ferry_song",
       "happening_tower_standing",
+      "happening_where_the_sea_was",
       "happening_where_you_stop",
       "happening_year_names"
     ],

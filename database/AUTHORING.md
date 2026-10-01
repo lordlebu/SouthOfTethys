@@ -506,6 +506,13 @@ interest, on this map, where a traveller coming in is set down. The Aravali is l
 but arrived at the Rail-Head, as its own `arrival` prose says. Absent means the first of
 `departs_from`, which is right for any map whose cart yard is also where the carts come in.
 
+**Every neighbour has a road, in the map's `roads`.** Each says what carries the traveller (`by`, a
+vehicle), the painting (`art`, `journey-<a>-<b>` with the two maps in alphabetical order, so both
+ends name one picture), two or three lines of what the way is like, and the `keeper` who sees you
+off -- somebody found at one of the map's cart points, with one line. A road is stated from both
+ends and both must agree on the vehicle. A happening with `occasion: journey` belongs to a road: its
+`field_maps` are exactly the two ends. The game owns how long the crossing takes.
+
 **A journey's opening is the map's `prologue`.** Only the map a journey begins on needs one -- today
 Lothal. It is a saying shown alone (`opening`, which must list `opening` among its occasions) and up
 to six plates, each a painting's file name (`prologue-1-road`), one or two lines in the second
