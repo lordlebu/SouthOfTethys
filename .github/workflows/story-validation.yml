@@ -9,6 +9,11 @@ on:
 jobs:
   validate:
     runs-on: ubuntu-latest
+    # This is the check `main` requires, so a PyPI blip here blocks every merge. pip retries itself
+    # with these; see the same block in deploy-canon-service.yml for the run that prompted it.
+    env:
+      PIP_RETRIES: '5'
+      PIP_TIMEOUT: '60'
     steps:
       - name: Checkout code
         uses: actions/checkout@v7

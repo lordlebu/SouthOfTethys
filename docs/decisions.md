@@ -1591,6 +1591,24 @@ all four maps, measured.
 reliably, and items made by recipes known from the start or taught there, with no hunted or rare input
 in the chain.
 
+## A network blip does not fail a deploy — settled 2026-10-02
+
+Deploy run 36835256037, after #152 merged, stopped at its first step: `pip install
+"chromadb>=0.5.0" jsonschema`. Nothing in the repository was involved. The same install had passed
+at 06:42 that morning for #151, no package it resolves released between the two runs, and the same
+resolution still succeeds on Python 3.11 (80 packages, ChromaDB 1.5.9). A transient fault between
+the runner and PyPI is the reading that fits; the log could not be read without a GitHub login.
+
+The owner asked for the deploy to be hardened rather than only re-run:
+
+- **pip retries.** `PIP_RETRIES: 5` and `PIP_TIMEOUT: 60` on the deploy job and on `validate` in
+  `story-validation.yml`. pip reads both from the environment. `validate` is the check `main`
+  requires, so a blip there blocks every merge, not just one deploy.
+- **ChromaDB capped below 2** in the deploy, `services/api/requirements.txt` (which the Vercel
+  bundle installs from) and `services/chroma/requirements.txt`. The index, the bundle and `/health`
+  are built against 1.x; an open floor let an overnight 2.0 break the deploy the same way. Raising
+  the cap is a deliberate change made with a deploy watched, not a thing that happens to us.
+
 ## Security
 
 Two Hugging Face tokens were exposed during setup and must be treated as burned: one pasted
