@@ -1,0 +1,19 @@
+{
+  "id": "saying_our_road_was_written",
+  "type": "saying",
+  "name": "Our road was written",
+  "text": "Our road was written before our mothers and fathers were born.",
+  "attribution": "Vedda saying",
+  "carried_by": "vedda",
+  "occasions": [
+    "road"
+  ],
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "notes": "Edited from the owner's draft: \"before our fathers were born\" made ungendered.",
+  "canon": "primary",
+  "sources": [
+    "the owner's draft of nomadic-migration sayings for the cutscenes, 2026-10-01"
+  ]
+}

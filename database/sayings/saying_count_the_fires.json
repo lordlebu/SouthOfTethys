@@ -1,0 +1,23 @@
+{
+  "id": "saying_count_the_fires",
+  "type": "saying",
+  "name": "Count the fires",
+  "text": "Count not the miles beneath your feet. Count the fires that welcomed you.",
+  "attribution": "Vedda saying",
+  "carried_by": "vedda",
+  "occasions": [
+    "arrival",
+    "settling"
+  ],
+  "inspired_by": {
+    "source": "Bronze Age hospitality verses",
+    "note": "Original composition after Bronze Age hospitality verses. Not a translation, and not a quotation."
+  },
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "the owner's draft of nomadic-migration sayings for the cutscenes, 2026-10-01"
+  ]
+}

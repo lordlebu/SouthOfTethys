@@ -1,0 +1,21 @@
+{
+  "id": "saying_the_land_remembers",
+  "type": "saying",
+  "name": "The land remembers",
+  "text": "The land does not belong to those who stay. It remembers those who pass.",
+  "attribution": "Vedda saying",
+  "carried_by": "vedda",
+  "occasions": [
+    "crossing"
+  ],
+  "field_maps": [
+    "field_map_aravali"
+  ],
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "the owner's draft of nomadic-migration sayings for the cutscenes, 2026-10-01"
+  ]
+}

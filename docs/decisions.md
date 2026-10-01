@@ -1463,6 +1463,40 @@ Two simplifications are on purpose and named in the code. A species restricted t
 as placed on any map that reaches that landmass, where the game asks per tile; and the report asks
 what can be had *at all*, so it is as blind to rarity as the rest of this file.
 
+## Sayings on the road — settled 2026-10-01
+
+The game's cutscenes -- the opening, the rides between maps, camp firesides, dawn, arrivals,
+settling -- carry short proverbial lines: nomadic-migration sayings of the peoples of South of
+Tethys, some written after Rigvedic hymns. The owner drafted thirty-three and ruled on three things:
+
+- **They are canon, one entity per saying, in `database/sayings/`, and they reach the game.** A
+  saying is a noun: something a people holds, true of the world whether or not anybody hears it.
+  When it is said is a verb, and stays the game's -- canon gives only `occasions` (`opening`,
+  `dawn`, `departure`, `road`, `crossing`, `arrival`, `night`, `fireside`, `settling`) and,
+  sometimes, `field_maps`. It never says which scene or how often, as it never says how long
+  `renews` takes. Exported because the cutscenes are the only thing that reads them; a lore-only
+  folder would have needed the game to hold its own copy, which is the hand-edited bundle the
+  canon/game split exists to prevent. **In `places.json`, beside `happenings`**: a saying belongs
+  to the maps and the road between them, as a happening does; nothing in it is learned, which is
+  what `knowledge.json` holds. `carried_by` crosses as a bare culture id: the Vedda are not among
+  the bundle's `peoples`, which carries only cultures with `given_names`, so the credit the game
+  shows is `attribution`, never a lookup.
+- **On screen, the credit is in-world only** -- `attribution`, "Vedda saying", "Vedda
+  waking-call". The real-world inspiration is kept as `inspired_by`, shown by the lore portal and
+  **withheld from the bundle** alongside `sources`, since it is the same kind of fact. It must say
+  the line is an **original composition after** its source, never a translation or a quotation; the
+  schema refuses a note that does not begin so.
+- **Lines were edited to fit canon.** No horses -- Jambhudweep has none, so "wake the horses" is
+  "wake the oxen", which the ox-cart already makes true -- and ungendered: "our fathers" is "our
+  mothers and fathers", "he who knows the stars" is "whoever knows". Each change is recorded in
+  that saying's `notes`, which are withheld from the bundle as a happening's are.
+
+`carried_by` is checked against `database/cultures.json` by the lint, as `culture` and `known_by`
+are. **Every saying is the Vedda's**, by a fourth ruling the same day: the draft had given two to
+the Tushara, one to the Maru and a dozen to nobody in particular ("Saying of the road", "Ford-keepers'
+saying"), and all thirty-three now carry `carried_by: vedda` and a Vedda attribution. The field stays
+optional so another people's sayings can be added later, deliberately.
+
 ## Security
 
 Two Hugging Face tokens were exposed during setup and must be treated as burned: one pasted

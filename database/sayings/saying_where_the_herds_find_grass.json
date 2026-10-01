@@ -1,0 +1,23 @@
+{
+  "id": "saying_where_the_herds_find_grass",
+  "type": "saying",
+  "name": "Where the herds find grass",
+  "text": "Where the herds find grass, there our tents shall stand.",
+  "attribution": "Vedda saying",
+  "carried_by": "vedda",
+  "occasions": [
+    "fireside",
+    "arrival"
+  ],
+  "inspired_by": {
+    "source": "Bronze Age pastoral poetry",
+    "note": "Original composition after Bronze Age pastoral poetry. Not a translation, and not a quotation."
+  },
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "the owner's draft of nomadic-migration sayings for the cutscenes, 2026-10-01"
+  ]
+}

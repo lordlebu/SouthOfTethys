@@ -1,0 +1,18 @@
+{
+  "id": "saying_the_next_fire",
+  "type": "saying",
+  "name": "The next fire",
+  "text": "Where the old fire burned, we shall make the next fire.",
+  "attribution": "Vedda saying",
+  "carried_by": "vedda",
+  "occasions": [
+    "settling"
+  ],
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "the owner's draft of nomadic-migration sayings for the cutscenes, 2026-10-01"
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Saying",
+  "description": "A proverbial line a people of South of Tethys carries on the road: what is said at the fire, at first light, at a ford, on arriving somewhere and on staying. The game shows them in its cutscenes -- the opening, the rides between maps, camp firesides, dawn, arrivals, settling.\n\nOne record is one saying. It is a noun in the way a word is: something a people holds, true of the world whether or not anybody hears it.\n\n**On screen a saying is credited in-world only**, by `attribution` -- \"Vedda saying\", never a book or a century. Where a line was written after a real-world source, `inspired_by` records that for the canon book and the lore portal, and it says what the line is: an original composition after the source, never a translation or a quotation of it. It is withheld from the game's bundle.\n\nCanon says **what is said, by whom, and on what occasion**. It never says when in a scene or how often a line returns: that is a question about play, and the game owns it, as it owns how long `renews` takes.",
+  "type": "object",
+  "required": [
+    "id",
+    "type",
+    "name",
+    "text",
+    "attribution",
+    "occasions"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^saying_[a-z0-9_]+$"
+    },
+    "type": {
+      "const": "saying"
+    },
+    "name": {
+      "type": "string",
+      "description": "How canon refers to it. A few words, usually its own."
+    },
+    "text": {
+      "type": "string",
+      "description": "The words, exactly as they are said. A line break is a line break on screen: a litany is several lines, a proverb is one."
+    },
+    "attribution": {
+      "type": "string",
+      "description": "The in-world credit the game shows beneath it -- \"Vedda saying\", \"Vedda waking-call\", \"Vedda elder's saying\". Never a real-world title, author or date."
+    },
+    "carried_by": {
+      "type": "string",
+      "description": "The people who say it, from `database/cultures.json`. Every saying so far is the Vedda's, by the owner's ruling of 2026-10-01; the field stays open so another people's can be added deliberately. Absent would mean common to the road -- said by travellers of any people."
+    },
+    "occasions": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "enum": [
+          "opening",
+          "dawn",
+          "departure",
+          "road",
+          "crossing",
+          "arrival",
+          "night",
+          "fireside",
+          "settling"
+        ]
+      },
+      "description": "When it is said. `opening` is the journey's first scene, before anything has been walked. `dawn` is waking and breaking camp. `departure` is leaving a map for another. `road` is the ride between maps. `crossing` is a river, a sea or a range crossed on the way. `arrival` is being set down on a new map. `night` is the dark, under the stars, away from the fire. `fireside` is the camp's evening, with people round the fire. `settling` is a homestead standing and its people moving in."
+    },
+    "field_maps": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^field_map_[a-z0-9_]+$"
+      },
+      "description": "The maps it belongs to -- a saying of the scarp road is said on the plateau. Empty or absent means any of them."
+    },
+    "inspired_by": {
+      "type": "object",
+      "required": [
+        "source",
+        "note"
+      ],
+      "properties": {
+        "source": {
+          "type": "string",
+          "description": "The real-world text or tradition the line was written after, as precisely as is known -- a hymn by number where there is one."
+        },
+        "note": {
+          "type": "string",
+          "pattern": "^Original composition after ",
+          "description": "What the line is to its source. Always begins \"Original composition after\": a saying is written after a source, never translated or quoted from it."
+        }
+      },
+      "additionalProperties": false,
+      "description": "Where the line came from in the real world, for the canon book and the lore portal. Absent means it was written for South of Tethys with no particular source. Withheld from the game's bundle: the game credits in-world only."
+    },
+    "epochs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "notes": {
+      "type": "string",
+      "description": "For whoever edits canon next -- including what was changed from the owner's draft to fit canon. Withheld from the game's bundle."
+    },
+    "canon": {
+      "type": "string",
+      "enum": [
+        "primary",
+        "secondary",
+        "draft"
+      ],
+      "default": "primary"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}

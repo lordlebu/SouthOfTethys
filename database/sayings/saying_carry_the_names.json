@@ -1,0 +1,18 @@
+{
+  "id": "saying_carry_the_names",
+  "type": "saying",
+  "name": "Carry the names",
+  "text": "Leave the stones behind. Carry the names.",
+  "attribution": "Vedda saying",
+  "carried_by": "vedda",
+  "occasions": [
+    "departure"
+  ],
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "the owner's draft of nomadic-migration sayings for the cutscenes, 2026-10-01"
+  ]
+}

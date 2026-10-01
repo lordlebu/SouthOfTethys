@@ -96,12 +96,12 @@ const KINDS = {
   settlements: 'Settlements', factions: 'Factions', mythology: 'Mythology', artifacts: 'Artifacts',
   timeline: 'Eras', fauna: 'Creatures', flora: 'Plants', foodways: 'Foodways',
   points_of_interest: 'Points of interest', npcs: 'People met', field_maps: 'Field maps',
-  homesteads: 'Homesteads', happenings: 'Happenings', discoveries: 'Discoveries',
+  homesteads: 'Homesteads', happenings: 'Happenings', sayings: 'Sayings', discoveries: 'Discoveries',
   field_questions: 'Field questions', vocabulary: 'Words', materials: 'Materials', items: 'Items',
   processes: 'Processes', recipes: 'Recipes', vehicles: 'Vehicles'
 };
 // Prose, in the order it is read. Everything else is a fact, a list or a nested record.
-const PROSE = ['summary', 'description', 'journal_prompt', 'arrival', 'behaviour', 'notes', 'placement_note'];
+const PROSE = ['summary', 'description', 'text', 'journal_prompt', 'arrival', 'behaviour', 'notes', 'placement_note'];
 // Bookkeeping a reader does not need. `sources` is shown last and small.
 const HIDDEN = new Set(['id', 'type', 'name', 'title', 'source_index', 'sources']);
 
@@ -181,7 +181,7 @@ async function show(id) {
   const prose = el('div', { className: 'prose' });
   for (const key of PROSE) {
     if (typeof entity[key] !== 'string' || !entity[key].trim()) continue;
-    if (key !== 'summary' && key !== 'description') prose.append(el('h3', { textContent: label(key) }));
+    if (key !== 'summary' && key !== 'description' && key !== 'text') prose.append(el('h3', { textContent: label(key) }));
     prose.append(el('p', {}, richText(entity[key])));
   }
   const facts = el('dl');

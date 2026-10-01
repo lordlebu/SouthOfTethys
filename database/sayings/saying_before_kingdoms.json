@@ -1,0 +1,19 @@
+{
+  "id": "saying_before_kingdoms",
+  "type": "saying",
+  "name": "Before there were kingdoms",
+  "text": "Before there were kingdoms, there were fires. Before there were roads, there were feet.",
+  "attribution": "Vedda saying",
+  "carried_by": "vedda",
+  "occasions": [
+    "opening",
+    "fireside"
+  ],
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "the owner's draft of nomadic-migration sayings for the cutscenes, 2026-10-01"
+  ]
+}

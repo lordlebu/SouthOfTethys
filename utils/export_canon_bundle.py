@@ -13,7 +13,8 @@ Four files rather than one, split by what a module needs rather than by entity t
 
   species.json      fauna and flora, with everything they carry
   places.json       regions, field maps, points of interest, the people standing in them,
-                    what can happen to you there, and the biome vocabulary
+                    what can happen to you there, what is said on the road between them,
+                    and the biome vocabulary
   knowledge.json    discoveries, field questions, vocabulary
 
 Plus canon.lock.json, which carries the version and a hash of each so the game's CI can
@@ -40,7 +41,13 @@ DEFAULT_OUT = Path(os.environ.get("CANON_REPO", REPO.parent / "4000BCESaraswathy
 # entity has one, then id -- see the note on ordering below.
 BUNDLE = {
     "species.json": ["fauna", "flora"],
-    "places.json": ["regions", "field_maps", "points_of_interest", "npcs", "happenings", "homesteads"],
+    "places.json": ["regions", "field_maps", "points_of_interest", "npcs", "happenings", "homesteads",
+                    # What the peoples say on the road, shown in the cutscenes. Placed here as
+                    # `happenings` were, and for the same reason: a saying belongs to the maps and
+                    # the journey between them -- its `field_maps` point at this file's maps -- and
+                    # nothing in it is learned or held, which is what `knowledge.json` is for.
+                    # `carried_by` is a bare culture id; the credit on screen is `attribution`.
+                    "sayings"],
     "knowledge.json": ["discoveries", "field_questions", "vocabulary"],
     "crafting.json": ["materials", "items", "processes", "recipes", "vehicles"],
 }
@@ -106,7 +113,13 @@ UNINDEXED = 10**9
 # prose for the books and the art plan's prompts -- a body, a colour, a texture. The game draws
 # paintings and marks and has never read a description of how a thing looks, so every byte of it
 # would be inlined into the page and read by nothing.
-WITHHELD = ("canon", "sources", "epochs", "appearance")
+#
+# **`inspired_by` joined them in the commit that created it.** A saying may be written after a
+# real-world text -- a Rigvedic hymn -- and canon records that, with what the line is to it: an
+# original composition, never a translation. That is provenance, the same kind of fact as
+# `sources`, and the owner's ruling of 2026-10-01 is that the game credits a saying in-world only
+# ("Vedda saying"). The lore portal shows it, from `database/`.
+WITHHELD = ("canon", "sources", "epochs", "appearance", "inspired_by")
 
 # `notes` as well, for the three folders whose notes nothing reads.
 #
@@ -155,6 +168,9 @@ WITHHELD_NOTES = (
     # A homestead's `notes` are the authoring rationale; the player reads its grounds' prose, the
     # worries and the stages. Withheld in the commit that created the folder, as happenings were.
     "homesteads",
+    # A saying's `notes` record what was changed from the owner's draft to fit canon -- a horse
+    # made an ox, a line ungendered. Editing history; the player reads `text` and `attribution`.
+    "sayings",
 )
 
 

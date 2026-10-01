@@ -1,0 +1,23 @@
+{
+  "id": "saying_four_givers",
+  "type": "saying",
+  "name": "What each thing gives",
+  "text": "Dawn gives the road.\nThe river gives direction.\nThe ancestors give memory.\nṚta gives meaning.",
+  "attribution": "Vedda formula",
+  "carried_by": "vedda",
+  "occasions": [
+    "opening",
+    "fireside"
+  ],
+  "inspired_by": {
+    "source": "Rigveda: Usas the Dawn (1.113), the rivers (10.75), the road of the ancestors (10.14), and Ṛta, which Varuna keeps",
+    "note": "Original composition after Rigveda: Usas the Dawn (1.113), the rivers (10.75), the road of the ancestors (10.14), and Ṛta, which Varuna keeps. Not a translation, and not a quotation."
+  },
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "the owner's draft of nomadic-migration sayings for the cutscenes, 2026-10-01"
+  ]
+}

@@ -4,7 +4,7 @@ Everything canon holds is a **noun**. Pick the right one, write one JSON file, u
 manifest, run the gate. Four steps, and the gate tells you if you got it wrong.
 
 If you only read one thing: **the folder you choose decides whether your writing reaches the
-game.** Sixteen folders are exported into the browser bundle and eight are not, and putting a
+game.** Seventeen folders are exported into the browser bundle and eight are not, and putting a
 hundred lore entries in an exported folder is the one mistake here with a cost attached.
 
 ---
@@ -21,6 +21,7 @@ hundred lore entries in an exported folder is the one mistake here with a cost a
 | A person in the history | `characters/` | no |
 | A person the player can talk to | `npcs/` | **yes** |
 | Something that happens to the player on a map | `happenings/` | **yes** |
+| A line a people says on the road, shown in a cutscene | `sayings/` | **yes** |
 | What the player may build on a map, and with whose say-so | `homesteads/` | **yes** |
 | A ladder of understanding the player climbs | `discoveries/` | **yes** |
 | A question the player forms a reading of | `field_questions/` | **yes** |
@@ -447,6 +448,50 @@ choice must be takeable, and none worse than not having been here.** `check_play
 every choice's `grants` as reachable once the map is walked and the requirements seen, refuses a
 grant that is not a discovery, word, question or recipe, and refuses an `at` that is not on the
 happening's own maps.
+
+### A saying
+
+```json
+{
+  "id": "saying_something_said_on_the_road",
+  "type": "saying",
+  "name": "Something said on the road",
+  "text": "The words, exactly as said.\nA line break is a line break on screen.",
+  "attribution": "Vedda saying",
+  "carried_by": "vedda",
+  "occasions": ["road", "fireside"],
+  "field_maps": ["field_map_narmada"],
+  "inspired_by": {
+    "source": "Rigveda 10.75, the hymn that names the rivers",
+    "note": "Original composition after Rigveda 10.75, the hymn that names the rivers. Not a translation, and not a quotation."
+  },
+  "notes": "What was changed from the draft to fit canon, if anything.",
+  "epochs": ["epoch_post_cataclysm"],
+  "canon": "primary",
+  "sources": ["where this came from"]
+}
+```
+
+What the peoples of South of Tethys say on the road -- at first light, at a ford, at the fire, on
+arriving and on staying. The game shows them in its cutscenes; `occasions` says which (`opening`,
+`dawn`, `departure`, `road`, `crossing`, `arrival`, `night`, `fireside`, `settling`) and
+`field_maps`, when present, narrows them to a map. `carried_by` is a people from
+`database/cultures.json`, and **every saying so far is the Vedda's** -- the owner's ruling; another
+people's sayings would be a deliberate addition, not a default. Canon never says when in a scene
+a line appears, or how often it returns -- that is play.
+
+Two rules, both the owner's of 1 October 2026:
+
+**On screen, the credit is in-world only.** `attribution` is what the game shows -- "Vedda
+saying", "Vedda waking-call" -- never a book, an author or a century. Where a line was written
+after a real-world source, **`inspired_by` says so, and says it is an original composition after
+that source, never a translation or a quotation.** The schema refuses a `note` that does not begin
+"Original composition after". It is withheld from the game's bundle and shown by the lore portal.
+
+**The line has to be true of this world.** No animal or people canon does not have -- a draft's
+"wake the horses" became "wake the oxen", because Jambhudweep has no horse -- and ungendered unless
+a named person is meant: "our mothers and fathers", "a traveller", "whoever knows". Record what was
+changed from a draft in `notes`.
 
 ### Where a map is left from
 

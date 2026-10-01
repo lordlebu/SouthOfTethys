@@ -1,0 +1,19 @@
+{
+  "id": "saying_we_follow_the_world",
+  "type": "saying",
+  "name": "We follow the world",
+  "text": "We do not wander. We follow the world as it moves.",
+  "attribution": "Vedda saying",
+  "carried_by": "vedda",
+  "occasions": [
+    "road",
+    "departure"
+  ],
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "the owner's draft of nomadic-migration sayings for the cutscenes, 2026-10-01"
+  ]
+}

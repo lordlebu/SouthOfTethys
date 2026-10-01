@@ -1,0 +1,23 @@
+{
+  "id": "saying_rta_is_the_road",
+  "type": "saying",
+  "name": "Ṛta is the road",
+  "text": "Ṛta has no road. It is the road.",
+  "attribution": "Vedda saying",
+  "carried_by": "vedda",
+  "occasions": [
+    "road",
+    "fireside"
+  ],
+  "inspired_by": {
+    "source": "Ṛta, the order Varuna keeps in the Rigveda",
+    "note": "Original composition after Ṛta, the order Varuna keeps in the Rigveda. Not a translation, and not a quotation."
+  },
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "the owner's draft of nomadic-migration sayings for the cutscenes, 2026-10-01"
+  ]
+}

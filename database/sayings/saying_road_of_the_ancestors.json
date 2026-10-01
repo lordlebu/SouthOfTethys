@@ -1,0 +1,23 @@
+{
+  "id": "saying_road_of_the_ancestors",
+  "type": "saying",
+  "name": "Who remembered the road",
+  "text": "The road was here before us.\nOur mothers and fathers walked it.\nTheirs walked it before them.\nWe walk it now.\nDo not ask who made the road.\nAsk who remembered it.\nFor when the stones disappear\nand the grass covers the footprints,\nthe road remains\ninside the memory of the people.",
+  "attribution": "Vedda elder's saying",
+  "carried_by": "vedda",
+  "occasions": [
+    "road"
+  ],
+  "inspired_by": {
+    "source": "Rigveda 10.14, the path the Fathers took",
+    "note": "Original composition after Rigveda 10.14, the path the Fathers took. Not a translation, and not a quotation."
+  },
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "notes": "Edited from the owner's draft: \"Our fathers ... Their fathers\" made ungendered.",
+  "canon": "primary",
+  "sources": [
+    "the owner's draft of nomadic-migration sayings for the cutscenes, 2026-10-01"
+  ]
+}

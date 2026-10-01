@@ -1,0 +1,24 @@
+{
+  "id": "saying_remember_the_rivers",
+  "type": "saying",
+  "name": "Remember the rivers",
+  "text": "Remember the rivers.\nRemember the river behind us,\nand the river before us.\nRemember where the oxen drank.\nRemember where the mothers rested.\nRemember where the dead were given to the earth.\nA people may forget a king.\nA people must never forget a river.",
+  "attribution": "Vedda river-litany",
+  "carried_by": "vedda",
+  "occasions": [
+    "road",
+    "crossing"
+  ],
+  "inspired_by": {
+    "source": "Rigveda 10.75, the hymn that names the rivers one after another",
+    "note": "Original composition after Rigveda 10.75, the hymn that names the rivers one after another. Not a translation, and not a quotation."
+  },
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "notes": "Edited from the owner's draft: \"where the horses drank\" became \"where the oxen drank\".",
+  "canon": "primary",
+  "sources": [
+    "the owner's draft of nomadic-migration sayings for the cutscenes, 2026-10-01"
+  ]
+}

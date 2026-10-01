@@ -1,0 +1,23 @@
+{
+  "id": "saying_dawn_belongs_to_the_traveller",
+  "type": "saying",
+  "name": "The dawn belongs to the traveller",
+  "text": "The dawn belongs neither to the city nor the wilderness. It belongs to the traveller.",
+  "attribution": "Vedda saying",
+  "carried_by": "vedda",
+  "occasions": [
+    "opening",
+    "dawn"
+  ],
+  "inspired_by": {
+    "source": "Bronze Age dawn hymns",
+    "note": "Original composition after Bronze Age dawn hymns. Not a translation, and not a quotation."
+  },
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "the owner's draft of nomadic-migration sayings for the cutscenes, 2026-10-01"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "saying_the_walking_song",
+  "type": "saying",
+  "name": "The Walking Song",
+  "text": "Do not ask where the road ends.\nAsk what it has taught your feet.\n\nOur mothers and fathers crossed the salt plains.\nTheirs crossed the mountains.\nBefore them, others followed the rivers south.\n\nWe carry no kingdom upon our backs.\nOnly fire, water, seed, and memory.\n\nWhen the grass calls, we rise.\nWhen the sky changes, we turn.\nWhen the old road disappears,\nwe become the road.",
+  "attribution": "The Walking Song, attributed to the first Vedda",
+  "carried_by": "vedda",
+  "occasions": [
+    "opening"
+  ],
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "notes": "Edited from the owner's draft: \"Our fathers ... Their fathers\" made ungendered.",
+  "canon": "primary",
+  "sources": [
+    "the owner's draft of nomadic-migration sayings for the cutscenes, 2026-10-01"
+  ]
+}

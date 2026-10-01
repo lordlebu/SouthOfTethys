@@ -1,0 +1,19 @@
+{
+  "id": "saying_the_wind_has_no_house",
+  "type": "saying",
+  "name": "The wind has no house",
+  "text": "The wind has no house. Neither should the memory of a people.",
+  "attribution": "Vedda saying",
+  "carried_by": "vedda",
+  "occasions": [
+    "road",
+    "night"
+  ],
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "the owner's draft of nomadic-migration sayings for the cutscenes, 2026-10-01"
+  ]
+}
