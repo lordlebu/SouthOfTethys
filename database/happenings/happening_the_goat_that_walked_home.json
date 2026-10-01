@@ -1,0 +1,28 @@
+{
+  "id": "happening_the_goat_that_walked_home",
+  "type": "happening",
+  "title": "The goat that walked home",
+  "occasion": "night",
+  "camps": [
+    "drovers"
+  ],
+  "prose": "One of the drovers tells about a goat sold at a market three days' walk away, that turned up at the fold a week later with the buyer's rope still on it. They kept the rope, she says, and the goat, and gave the buyer a better one. He came to visit it after.",
+  "choices": [
+    {
+      "label": "Ask if it still walks home",
+      "line": "Every time, she says, which is why nobody buys from them twice. She does not seem to think this is a problem."
+    },
+    {
+      "label": "Laugh",
+      "line": "You laugh, and she looks pleased, as if the story has done what it is for."
+    }
+  ],
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "notes": "A fireside story for a night slept beside a camp of drovers (Roads and Hands, phase 5). Shared by every map, as the owner's four camp kinds are. Drafted for the owner to rewrite or approve.",
+  "canon": "primary",
+  "sources": [
+    "drafted by Claude for the owner's approval, 2026-10-02"
+  ]
+}

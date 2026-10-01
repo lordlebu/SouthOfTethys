@@ -1,0 +1,28 @@
+{
+  "id": "happening_further_than_anyone_has_been",
+  "type": "happening",
+  "title": "Further than anyone has been",
+  "occasion": "night",
+  "camps": [
+    "pilgrims"
+  ],
+  "prose": "The pilgrims are walking to a shrine further than any of them has been. None of them can say exactly where it is; the oldest of them walked part of the way as a girl and turned back. They will know it when they see it, she says. That is how a shrine works.",
+  "choices": [
+    {
+      "label": "Ask what the shrine is for",
+      "line": "For arriving at, she says, and laughs at your face. Then she tells you, properly, and it takes until the fire is embers."
+    },
+    {
+      "label": "Wish them a good road",
+      "line": "They take the wish seriously, all of them, and say it back to you one by one."
+    }
+  ],
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "notes": "A fireside story for a night slept beside a camp of pilgrims (Roads and Hands, phase 5). Shared by every map, as the owner's four camp kinds are. Drafted for the owner to rewrite or approve.",
+  "canon": "primary",
+  "sources": [
+    "drafted by Claude for the owner's approval, 2026-10-02"
+  ]
+}

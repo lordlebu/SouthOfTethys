@@ -777,3 +777,11 @@ The arcs of 2 October 2026 are the owner's: Guyuk, the Seed-Gleaner of the Arava
 the Asura princess of the Narmada, who forms the bond and stays back for her people. The prose is
 drafted to the owner's outline for the owner to rewrite. A person met only through her arc -- Guyuk
 -- is an NPC with no `found_at`.
+
+
+## Fireside stories
+
+A `night` happening with `camps` belongs to a kind of camp -- `adventurers`, `dacoits`, `pilgrims` or
+`drovers` -- and happens on a night slept beside one: a story told at somebody else's fire. Two per
+kind to start (2 October 2026). The game prefers a written one it has not told before, and falls back
+to its own woven fireside when they are all told.

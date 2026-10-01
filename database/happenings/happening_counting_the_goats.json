@@ -1,0 +1,28 @@
+{
+  "id": "happening_counting_the_goats",
+  "type": "happening",
+  "title": "Counting the goats",
+  "occasion": "night",
+  "camps": [
+    "drovers"
+  ],
+  "prose": "Before sleep the drovers count the goats in the fold, not by number but by name, and every goat has one. Twice the count goes wrong and they start again from the beginning. The third time it comes right, and everybody lies down at once, as if a door had shut.",
+  "choices": [
+    {
+      "label": "Ask the names",
+      "line": "You learn eleven names and forget nine. The goat called Uncle looks at you as if it knows."
+    },
+    {
+      "label": "Help them count",
+      "line": "You count with them and get it wrong, and the count starts again, and nobody seems to mind."
+    }
+  ],
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "notes": "A fireside story for a night slept beside a camp of drovers (Roads and Hands, phase 5). Shared by every map, as the owner's four camp kinds are. Drafted for the owner to rewrite or approve.",
+  "canon": "primary",
+  "sources": [
+    "drafted by Claude for the owner's approval, 2026-10-02"
+  ]
+}

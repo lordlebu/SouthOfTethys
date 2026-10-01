@@ -1671,6 +1671,16 @@ be switched between at will. Varuna and Mithra walk from the first morning; Guyu
 - **Shaka is a barbarian found asleep** on the Aravali (`happening_the_sleeping_stranger`), not
   Shakariman the surveyor. **The cataclysm painting** goes to the lore portal, never the game.
 
+## Roads and Hands, phase 5: camps you notice — settled 2026-10-02
+
+A camp used to pitch for three days with nothing to say it was there, drawn as one fire ring and one
+yurt whatever its kind. The game now draws each kind from the owner's props, spread over the tiles
+round the fire, with a column of smoke above the fog; a night slept beside one is a camp night. Canon
+adds what is told at the fire: `camps` on a `night` happening, and eight fireside stories, two for
+each of the four kinds the owner kept. The owner asked for the generic camp art to be kept: the old
+fire ring is at the heart of every camp, the old yurt stands in for a kind's shelter in about one camp
+in three, and a struck camp leaves its ring cold on the ground for a few days.
+
 ## Security
 
 Two Hugging Face tokens were exposed during setup and must be treated as burned: one pasted

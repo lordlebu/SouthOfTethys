@@ -123,6 +123,19 @@
       "items": {
         "type": "string"
       }
+    },
+    "camps": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "adventurers",
+          "dacoits",
+          "pilgrims",
+          "drovers"
+        ]
+      },
+      "description": "The kinds of camp a `night` happening belongs to: it happens only on a night slept beside a camp of one of these kinds -- a fireside story. Absent means any night. The four kinds are the game's, shared by every map (the owner's ruling of 2 October 2026)."
     }
   },
   "additionalProperties": false

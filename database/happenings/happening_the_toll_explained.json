@@ -1,0 +1,28 @@
+{
+  "id": "happening_the_toll_explained",
+  "type": "happening",
+  "title": "The toll, explained",
+  "occasion": "night",
+  "camps": [
+    "dacoits"
+  ],
+  "prose": "The band's chief pours you something sour and explains the toll as if you had asked about the weather. The salt road crosses their grandmothers' ford, she says. The carriers pay to cross it. You are not carrying salt, so you are a guest, and a guest is fed. Somebody passes you bread to prove it.",
+  "choices": [
+    {
+      "label": "Ask whose ford it was before",
+      "line": "Before the grandmothers? She shrugs. Somebody's. Everything is somebody's, until it is ours."
+    },
+    {
+      "label": "Thank her for the bread",
+      "line": "You thank her, and she seems pleased that you understood the difference."
+    }
+  ],
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "notes": "A fireside story for a night slept beside a camp of dacoits (Roads and Hands, phase 5). Shared by every map, as the owner's four camp kinds are. Drafted for the owner to rewrite or approve.",
+  "canon": "primary",
+  "sources": [
+    "drafted by Claude for the owner's approval, 2026-10-02"
+  ]
+}

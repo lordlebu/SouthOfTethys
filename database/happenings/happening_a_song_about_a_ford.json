@@ -1,0 +1,28 @@
+{
+  "id": "happening_a_song_about_a_ford",
+  "type": "happening",
+  "title": "A song about a ford",
+  "occasion": "night",
+  "camps": [
+    "dacoits"
+  ],
+  "prose": "Late, when the jar has gone round twice, one of the band sings about a ford where the water ran backwards for a day and a whole caravan crossed dry. Everybody joins in on the part where the salt carriers fall in. They have clearly sung it a hundred times, and they are still delighted by it.",
+  "choices": [
+    {
+      "label": "Join in on the chorus",
+      "line": "You get the words wrong and nobody minds. By the third time you have them."
+    },
+    {
+      "label": "Listen",
+      "line": "You listen, and laugh where they laugh. It is not a kind song, and it is a very good one."
+    }
+  ],
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "notes": "A fireside story for a night slept beside a camp of dacoits (Roads and Hands, phase 5). Shared by every map, as the owner's four camp kinds are. Drafted for the owner to rewrite or approve.",
+  "canon": "primary",
+  "sources": [
+    "drafted by Claude for the owner's approval, 2026-10-02"
+  ]
+}
