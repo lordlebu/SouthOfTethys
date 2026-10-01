@@ -87,11 +87,11 @@ INDEXER = BASE / "services" / "chroma" / "index_chroma_service.py"
 # What the withholding lists in `export_canon_bundle.py` did under the old number still stands,
 # and not because of the budget: a field the game never reads is dead weight at any limit.
 #
-# **When this is reached, the answer is loading on demand and not a bigger number.** Everything
-# here is read before the first frame. Lore a player opens -- a character, an event, an era --
-# does not have to be: exported as its own file and fetched behind an `import()` in the game, it
-# costs nothing until somebody asks for it, and has no budget to speak of. That is a third side
-# of the boundary beside BUNDLE and NOT_EXPORTED, to be added with the first thing that reads it.
+# **When this is reached, the answer is not a bigger number.** Everything here is read before the
+# first frame, so it should be what the game plays with. Lore a player only reads -- a character,
+# an event, an era -- already has a home that costs the game nothing: the lore portal at the root of
+# the canon service (`services/api/portal.html`), which shows every entity whole and is republished
+# with every canon change. Put lore there, not here.
 BUNDLE_BUDGET_GZ_KB = 350
 
 

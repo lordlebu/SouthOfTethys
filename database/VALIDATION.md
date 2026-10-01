@@ -59,7 +59,7 @@ consistent; this asks whether canon can reach the game by accident.
 | **no folder on both sides** | Nothing is exported and withheld at once. |
 | **no phantom folder** | `BUNDLE` cannot name a directory that does not exist; the typo exports nothing and reads as "that data was empty". |
 | **bundle fingerprint** | The bundle the exporter *would* write still hashes to `database/export.lock.json`. An intended change is re-pinned with `--update`, deliberately, in the same commit. |
-| **bundle weight** | The bundle is at most 350 KB **gzipped** — what a player downloads, and no heavier than the engine that draws it. It was 560 KB raw until 30 September 2026. Past it, the answer is a pack loaded on demand, not a bigger number. |
+| **bundle weight** | The bundle is at most 350 KB **gzipped** — what a player downloads, and no heavier than the engine that draws it. It was 560 KB raw until 30 September 2026. Lore that is only read belongs in the lore portal, which costs the game nothing, not in a bigger number. |
 | **drift against the game** | Reported, never fatal, and skipped in CI where the sibling repository is not checked out. It is what catches a bundle exported from a branch that never merged. |
 
 `canon_version` is not sufficient for any of this, and the case that proved it has since played
