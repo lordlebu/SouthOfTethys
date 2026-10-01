@@ -1492,10 +1492,16 @@ Tethys, some written after Rigvedic hymns. The owner drafted thirty-three and ru
   that saying's `notes`, which are withheld from the bundle as a happening's are.
 
 `carried_by` is checked against `database/cultures.json` by the lint, as `culture` and `known_by`
-are. **Every saying is the Vedda's**, by a fourth ruling the same day: the draft had given two to
-the Tushara, one to the Maru and a dozen to nobody in particular ("Saying of the road", "Ford-keepers'
-saying"), and all thirty-three now carry `carried_by: vedda` and a Vedda attribution. The field stays
-optional so another people's sayings can be added later, deliberately.
+are. **The sayings belong to the lore's peoples.** The owner's "should be vedda" of 1 October was
+read as "every saying is the Vedda's", and all thirty-three were given to them; on 2 October the owner
+said that was not the intent and asked for the fictional ones to be spread across the lore's tribes.
+Twelve stay the Vedda's -- the Walking Song, the ancestor and migration lines, and every line written
+after a Rigvedic hymn, since the Vedda carry Ṛta in this canon. The rest went where each belongs: star
+and wind to the Tushara steppe-riders, grass and felt tents and the scarp road to the Maru herders,
+rivers and the travelling fire to the Kia rafters, settling and hospitality to the Harappans, sand to
+the Gedrosian dune-scavengers, the crossing to the Aravali glass-herbalists, the listening bones to the
+Violet-Horned Clan, the sea to the Sea-Drifters, and the ancestors no one leaves to the Shaka-rauka --
+the sleeping stranger's own people. Each carries `carried_by` and an in-world credit.
 
 ## Roads and Hands, phase 1: every map can be finished from its own ground — settled 2026-10-01
 

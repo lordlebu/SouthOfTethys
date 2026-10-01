@@ -33,7 +33,7 @@
     },
     "carried_by": {
       "type": "string",
-      "description": "The people who say it, from `database/cultures.json`. Every saying so far is the Vedda's, by the owner's ruling of 2026-10-01; the field stays open so another people's can be added deliberately. Absent would mean common to the road -- said by travellers of any people."
+      "description": "The people who say it, from `database/cultures.json`. The sayings belong to the lore's various peoples, by the owner's ruling of 2026-10-02 -- the Vedda keep the migration and ancestor lines and those written after Rigvedic hymns. Absent would mean common to the road -- said by travellers of any people."
     },
     "occasions": {
       "type": "array",

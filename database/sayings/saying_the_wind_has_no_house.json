@@ -3,8 +3,8 @@
   "type": "saying",
   "name": "The wind has no house",
   "text": "The wind has no house. Neither should the memory of a people.",
-  "attribution": "Vedda saying",
-  "carried_by": "vedda",
+  "attribution": "Tushara saying",
+  "carried_by": "tushara",
   "occasions": [
     "road",
     "night"
@@ -15,5 +15,6 @@
   "canon": "primary",
   "sources": [
     "the owner's draft of nomadic-migration sayings for the cutscenes, 2026-10-01"
-  ]
+  ],
+  "notes": "Carried by the tushara since 2 October 2026: the owner asked for the fictional sayings to belong to the lore's various peoples, not all to the Vedda."
 }

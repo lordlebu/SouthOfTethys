@@ -3,8 +3,8 @@
   "type": "saying",
   "name": "A pause between two horizons",
   "text": "A camp is only a pause between two horizons.",
-  "attribution": "Vedda saying",
-  "carried_by": "vedda",
+  "attribution": "Sea-Drifters' saying",
+  "carried_by": "sea_drifters",
   "occasions": [
     "fireside"
   ],
@@ -14,5 +14,6 @@
   "canon": "primary",
   "sources": [
     "the owner's draft of nomadic-migration sayings for the cutscenes, 2026-10-01"
-  ]
+  ],
+  "notes": "Carried by the sea drifters since 2 October 2026: the owner asked for the fictional sayings to belong to the lore's various peoples, not all to the Vedda."
 }

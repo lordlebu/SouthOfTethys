@@ -3,8 +3,8 @@
   "type": "saying",
   "name": "The bones are listening",
   "text": "Walk lightly. The bones beneath the earth are listening.",
-  "attribution": "Vedda saying",
-  "carried_by": "vedda",
+  "attribution": "Saying of the Violet-Horned Clan",
+  "carried_by": "asura_hybrid",
   "occasions": [
     "road",
     "arrival"
@@ -19,5 +19,6 @@
   "canon": "primary",
   "sources": [
     "the owner's draft of nomadic-migration sayings for the cutscenes, 2026-10-01"
-  ]
+  ],
+  "notes": "Carried by the asura hybrid since 2 October 2026: the owner asked for the fictional sayings to belong to the lore's various peoples, not all to the Vedda."
 }

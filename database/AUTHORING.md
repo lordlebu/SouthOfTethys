@@ -477,8 +477,11 @@ What the peoples of South of Tethys say on the road -- at first light, at a ford
 arriving and on staying. The game shows them in its cutscenes; `occasions` says which (`opening`,
 `dawn`, `departure`, `road`, `crossing`, `arrival`, `night`, `fireside`, `settling`) and
 `field_maps`, when present, narrows them to a map. `carried_by` is a people from
-`database/cultures.json`, and **every saying so far is the Vedda's** -- the owner's ruling; another
-people's sayings would be a deliberate addition, not a default. Canon never says when in a scene
+`database/cultures.json`. **The sayings belong to the lore's various peoples** (the owner, 2 October
+2026, reversing a misread of the day before that had given every one to the Vedda): the Vedda keep the
+migration and ancestor lines and those written after Rigvedic hymns, and the rest are the Tushara's,
+the Maru herders', the Kia's, the Harappans', the dune-scavengers', the Aravali glass-herbalists',
+the Violet-Horned Clan's, the Sea-Drifters' and the Shaka-rauka's -- each where its line belongs. Canon never says when in a scene
 a line appears, or how often it returns -- that is play.
 
 Two rules, both the owner's of 1 October 2026:

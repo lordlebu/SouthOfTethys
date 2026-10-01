@@ -3,8 +3,8 @@
   "type": "saying",
   "name": "Count the fires",
   "text": "Count not the miles beneath your feet. Count the fires that welcomed you.",
-  "attribution": "Vedda saying",
-  "carried_by": "vedda",
+  "attribution": "Harappan saying",
+  "carried_by": "harappan",
   "occasions": [
     "arrival",
     "settling"
@@ -19,5 +19,6 @@
   "canon": "primary",
   "sources": [
     "the owner's draft of nomadic-migration sayings for the cutscenes, 2026-10-01"
-  ]
+  ],
+  "notes": "Carried by the harappan since 2 October 2026: the owner asked for the fictional sayings to belong to the lore's various peoples, not all to the Vedda."
 }
