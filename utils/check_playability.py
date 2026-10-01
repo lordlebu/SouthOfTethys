@@ -15,6 +15,8 @@ This walks the world the way a player does and reports what cannot be reached:
   conditions    no rung waits on weather the world never produces
   making        every recipe can actually be performed, and every item can be got
   finite        what never renews, and is concentrated in one kind of ground (reported)
+  map by map    what each map can make with only its own ground, teachers and benches, read
+                the way the game places species (reported until MAKING_PER_MAP_GATES is True)
 
     python utils/check_playability.py
     python utils/check_playability.py field_map_lothal
@@ -51,6 +53,28 @@ DB = Path(__file__).resolve().parent.parent / "database"
 # climbed. See docs/decisions.md.
 UNPRODUCED_WEATHER = {"full_moon", "flood"}
 
+# Which placements the game actually stands on a tile, by kind. Mirrors `species.ts`, which
+# indexes fauna by `encounter` and flora by `flavour` -- and, from the Roads and Hands fix, flora
+# by `encounter` too: twenty-seven plants were authored `encounter` and the game, reading only
+# `flavour` for flora, never grew one, which left thirteen materials won from them dead. `lore` is
+# never placed by either. Absent placement reads as `lore`, as the game's adapter reads it.
+PLACED = {"fauna": {"encounter"}, "flora": {"flavour", "encounter"}}
+
+# Ground the generator stamps on every map whatever its palette says. `landmark` is one tile --
+# the journey's destination, put back after classification -- and no `seed_biomes` lists it,
+# because it is a place rather than a climate. One tile is still ground: sandalwood stands there.
+STAMPED_ON_EVERY_MAP = {"landmark"}
+
+# **The per-map making report is printed, not enforced, and this is the one switch.**
+#
+# It measures what a traveller can make on one map with only that map's ground and that map's
+# teachers, and on the day it was written it found real gaps -- dried fish taught on a Lothal with
+# no salt, ink and palm-leaf taught on a Narmada that cannot fire a pot -- that Phase 1 of Roads
+# and Hands fixes in content (fibre cord, sea salt). Failing on them before the content exists would only
+# teach people to ignore the gate. Set this to True once the report is clean, and every line it
+# prints becomes a problem and the exit code follows.
+MAKING_PER_MAP_GATES = False
+
 
 def load_all(folder: str) -> dict[str, dict]:
     d = DB / folder
@@ -79,6 +103,11 @@ class World:
         self.items = load_all("items")
         self.processes = load_all("processes")
         self.recipes = load_all("recipes")
+        self.flora = load_all("flora")
+        self.fauna = load_all("fauna")
+        self.regions = load_all("regions")
+        biomes = json.loads((DB / "biomes.json").read_text(encoding="utf-8")).get("biomes") or []
+        self.renderable = {b["id"] for b in biomes if b.get("renderable")}
 
     def classes_of(self, mid: str) -> set[str]:
         return set(self.materials.get(mid, {}).get("classes") or [])
@@ -236,7 +265,8 @@ def did_notice(s: State, did: str) -> bool:
     return True
 
 
-def make(w: World, biomes: set[str], kinds: set[str]) -> tuple[set[str], set[str]]:
+def make(w: World, biomes: set[str], kinds: set[str], ground: set[str] | None = None,
+         knows=None) -> tuple[set[str], set[str]]:
     """Start from what the ground offers and make whatever becomes possible.
 
     The same shape as `play` above and for the same reason. The naive question -- "does a
@@ -251,11 +281,21 @@ def make(w: World, biomes: set[str], kinds: set[str]) -> tuple[set[str], set[str
 
     Returns the materials and items obtainable, given the biomes a map is made of and the
     kinds of place standing on it.
+
+    `ground` and `knows` are the per-map report's two narrowings, and both default to the
+    world-wide reading the gates above have always used. `ground` replaces "any material whose
+    `found_in` meets these biomes" with an answer already worked out -- `ground_of`, which knows
+    a material won from a plant comes only from where that plant is placed. `knows(rid, items)`
+    says whether a recipe has been taught by now; it is handed the items held so far because a
+    teacher can charge one, and the price may be something this very loop has to make first.
     """
-    held_m = {
-        mid for mid, doc in w.materials.items()
-        if biomes & set(doc.get("found_in") or [])
-    }
+    if ground is not None:
+        held_m = set(ground)
+    else:
+        held_m = {
+            mid for mid, doc in w.materials.items()
+            if biomes & set(doc.get("found_in") or [])
+        }
     held_i: set[str] = set()
 
     changed = True
@@ -265,6 +305,8 @@ def make(w: World, biomes: set[str], kinds: set[str]) -> tuple[set[str], set[str
         have_affords = {a for i in held_i for a in w.affords(i)}
 
         for rid, r in sorted(w.recipes.items()):
+            if knows is not None and not knows(rid, held_i):
+                continue
             proc = w.processes.get(r.get("process"), {})
 
             # Where it must happen. Absent means anywhere, including standing in a field.
@@ -627,6 +669,323 @@ def homesteads_hold(w: World, end: State, obtainable: set[str], problems: list[s
                 )
 
 
+def map_biomes(fm: dict) -> set[str]:
+    """The ground a map is made of: its palette, and what the generator stamps on every map."""
+    return set(fm.get("seed_biomes") or []) | STAMPED_ON_EVERY_MAP
+
+
+def map_lands(w: World, fm: dict) -> set[str]:
+    """The landmasses a map reaches: its region's continent, and whatever its edges name.
+
+    The same reading the lint's landmass rule takes. It is coarser than the game, which asks
+    which landmass a *tile* is on -- the Aravali's north shore is Asia and its south shore is
+    not -- so a species that lives only on one shore counts as placed on the whole map. That
+    errs towards obtainable, which is the safe direction for a report that is not yet a gate.
+    """
+    lands = set((fm.get("landmass_edges") or {}).values())
+    continent = (w.regions.get(fm.get("region") or "") or {}).get("continent")
+    if continent:
+        lands.add(continent)
+    return lands
+
+
+def placed_on(w: World, fm: dict) -> dict[str, set[str]]:
+    """The species the game will actually stand on this map's tiles, and in which of its biomes.
+
+    Four things have to agree, and each is one the game checks: the placement is one it places
+    (`PLACED`), the biome is one it can draw (`renderable` -- the adapter drops the rest, and a
+    species left with none becomes `lore`), the biome is on this map, and the species lives on a
+    landmass the map reaches (`livesOn` in the game's `landmass.ts`; no `landmasses` means
+    anywhere).
+    """
+    biomes = map_biomes(fm)
+    lands = map_lands(w, fm)
+    out: dict[str, set[str]] = {}
+    for kind, pool in (("fauna", w.fauna), ("flora", w.flora)):
+        for sid, doc in pool.items():
+            if doc.get("placement") not in PLACED[kind]:
+                continue
+            where = set(doc.get("biomes") or []) & w.renderable & biomes
+            if not where:
+                continue
+            lives = doc.get("landmasses")
+            if lives and not set(lives) & lands:
+                continue
+            out[sid] = where
+    return out
+
+
+def ground_of(w: World, fm: dict, standing: dict[str, set[str]] | None = None) -> set[str]:
+    """What a map's tiles give up, by the rule the game's `yieldsAt` uses.
+
+    **A material with a living source comes from that source; a material without one comes from
+    the ground.** So rice is got where a rice plant is placed *and* rice is `found_in` that
+    biome, and flint wherever flint is `found_in`. Neither is "anything whose `found_in` meets
+    the map", which is what `make()` assumes when it is not told otherwise -- and that is the
+    blind spot this replaces: a material won from a `lore` plant passed every gate here, and
+    could not be picked up anywhere in the game.
+
+    The three materials the lint lets outrun their source (salt crust, oyster shell, leviathan
+    bone) are read the game's way too, which is strictly: from where the source stands. Their
+    wider `found_in` is a claim the game does not act on.
+    """
+    biomes = map_biomes(fm)
+    if standing is None:
+        standing = placed_on(w, fm)
+    out: set[str] = set()
+    for mid, doc in w.materials.items():
+        found = set(doc.get("found_in") or []) & biomes
+        sources = doc.get("won_from") or []
+        if not sources:
+            if found:
+                out.add(mid)
+        elif any(found & standing.get(s, set()) for s in sources):
+            out.add(mid)
+    return out
+
+
+def taught_here(w: World, here: set[str], s: State) -> dict[str, list[str | None]]:
+    """Recipe to the prices of the lines on this ground that teach it, None for a free one.
+
+    A line teaches only if it can be said here -- its `requires` observed by what this map alone
+    lets a player see, the same reading `play` gives every other line. A happening that can find
+    the traveller here teaches too, as it hands over a word. Mirrors `learnRecipe`, which is fed
+    by both, in the game's `journey.ts`.
+    """
+    out: dict[str, list[str | None]] = {}
+    people = {n for p in here for n in (w.pois[p].get("npcs") or [])}
+    for nid in sorted(people):
+        for line in w.npcs[nid].get("lines") or []:
+            if not all(observed(w, s, r) for r in line.get("requires") or []):
+                continue
+            for gift in line.get("gives") or []:
+                if gift in w.recipes:
+                    out.setdefault(gift, []).append(line.get("costs"))
+    for h in w.happenings.values():
+        if not can_happen_here(w, h, here):
+            continue
+        if not all(observed(w, s, r) for r in h.get("requires") or []):
+            continue
+        for choice in h.get("choices") or []:
+            for gift in choice.get("grants") or []:
+                if gift in w.recipes:
+                    out.setdefault(gift, []).append(None)
+    return out
+
+
+def making_per_map(w: World, only: str | None) -> tuple[list[str], list[str]]:
+    """What can be made on each map with only that map -- its ground, its teachers, its benches.
+
+    Returns the lines to print and the findings among them, so the caller can decide whether the
+    findings are problems (see `MAKING_PER_MAP_GATES`).
+
+    **Why per map, when `making` above deliberately judges the whole world.** A player travels,
+    so a recipe that only works at Dwarka is not a bug -- and that is still the gate. But it was
+    the whole of the making check, and it pooled every biome and every kind of place in the world
+    and assumed every recipe known. Three things it could not see, all measured:
+
+      * a recipe taught on a map where the thing it needs does not grow, which the player meets
+        as a teacher handing over something they cannot do anything with;
+      * a homestead stage that needs a material its own map never yields -- and a homestead is
+        built *here*, by the people of here, so "obtainable on another map" is a weaker answer
+        than it sounds;
+      * a material won only from a species the game never places. Pooled, it looked obtainable.
+
+    So this runs the same fixed point as `make()`, from nothing, narrowed three ways: the
+    materials are `ground_of` this map, the recipes are the common ones plus whatever a line on
+    this map can teach, and the benches are this map's kinds of place. Then it says why each
+    taught recipe and each homestead stage that did not come out of the loop is stuck -- a
+    missing material, a missing tool, a missing kind of place, or a source placed nowhere.
+    """
+    out: list[str] = []
+    findings: list[str] = []
+
+    # What the whole world's ground yields, by the game's rule. Anything outside it and outside
+    # every recipe the world can perform is dead everywhere, and is said once, at the end, rather
+    # than once per map.
+    standing_by_map = {mid: placed_on(w, fm) for mid, fm in w.maps.items()}
+    placed_anywhere = {s for st in standing_by_map.values() for s in st}
+    world_ground = set().union(*(ground_of(w, fm, standing_by_map[mid])
+                                 for mid, fm in w.maps.items())) if w.maps else set()
+    world_kinds = {d.get("kind") for d in w.pois.values() if d.get("kind")}
+    world_m, _world_i = make(w, set(), world_kinds, ground=world_ground)
+    prototypes = {d["base_item"] for d in w.items.values() if d.get("base_item")}
+
+    def makers(thing: str) -> list[str]:
+        return sorted(rid for rid, r in w.recipes.items()
+                      if any(thing in (o.get("item"), o.get("material")) for o in r.get("outputs") or []))
+
+    def why_material_nowhere(mid: str) -> str:
+        doc = w.materials.get(mid) or {}
+        sources = doc.get("won_from") or []
+        # Never gathered, only made -- purified kuchla names its plant but is got from a recipe --
+        # so the recipe is the reason, not the plant.
+        if not doc.get("found_in") and makers(mid):
+            return f"never gathered, and {', '.join(makers(mid))} can never be performed"
+        if sources:
+            unplaced = [s for s in sources if s not in placed_anywhere]
+            if len(unplaced) == len(sources):
+                kinds = sorted({
+                    (w.flora.get(s) or w.fauna.get(s) or {}).get("placement") or "unplaced"
+                    for s in sources
+                })
+                return f"won only from {', '.join(sources)} ({'/'.join(kinds)}), placed nowhere"
+            return (f"won from {', '.join(sorted(set(sources) - set(unplaced)))}, never standing "
+                    f"in its own found_in ({', '.join(doc.get('found_in') or []) or 'none'})")
+        if makers(mid):
+            return f"no ground holds it, and {', '.join(makers(mid))} can never be performed"
+        return f"found in {', '.join(doc.get('found_in') or []) or 'no biome'}, which no map has"
+
+    for map_id, fm in sorted(w.maps.items()):
+        if only and map_id != only:
+            continue
+        here = {p for p, d in w.pois.items() if d.get("field_map") == map_id}
+        kinds = {w.pois[p].get("kind") for p in here if w.pois[p].get("kind")}
+        biomes = map_biomes(fm)
+        standing = standing_by_map[map_id]
+        ground = ground_of(w, fm, standing)
+        seen = play(w, here)
+        taught = taught_here(w, here, seen)
+
+        def knows(rid: str, items: set[str]) -> bool:
+            if not w.recipes[rid].get("taught_by"):
+                return True
+            return any(c is None or c in items for c in taught.get(rid, ()))
+
+        held_m, held_i = make(w, biomes, kinds, ground=ground, knows=knows)
+        affords = {a for i in held_i for a in w.affords(i)}
+        classes = {c for m in held_m for c in w.classes_of(m)}
+
+        # The explanations recurse -- a pot needs grog needs a broken jar -- so each carries the
+        # trail of recipes it came by, and stops three deep or on meeting itself again. Deeper
+        # than that a line stops being readable; what is left is said in a word, and the full
+        # cause is printed under its own recipe whenever that is one this map teaches.
+        def via(thing: str, recipes: list[str], trail: tuple[str, ...]) -> str:
+            # Follow a recipe this map knows, if any does: that is the one a player would try.
+            known_here = [r for r in recipes if knows(r, held_i)]
+            first = (known_here or recipes)[0]
+            if not known_here and (len(trail) >= 3 or first in trail):
+                return f"{thing} ({first} is not taught on this map)"
+            if len(trail) >= 3 or any(r in trail for r in recipes):
+                return f"{thing} (not made here)"
+            return f"{thing} <- {first}: {'; '.join(blockers(first, trail + (first,)))}"
+
+        def why_material(mid: str, trail: tuple[str, ...] = ()) -> str:
+            if mid not in world_m:
+                return f"{mid} (dead everywhere: {why_material_nowhere(mid)})"
+            doc = w.materials.get(mid) or {}
+            sources = doc.get("won_from") or []
+            found = set(doc.get("found_in") or []) & biomes
+            recipes = makers(mid)
+            # Made rather than gathered: the reason is the recipe's, so say that instead.
+            if recipes and not doc.get("found_in"):
+                return via(mid, recipes, trail)
+            if not found:
+                where = f"lies in {', '.join(doc.get('found_in') or [])}, none here"
+            elif sources:
+                where = f"won from {', '.join(sources)}, none standing in this map's {', '.join(sorted(found))}"
+            else:
+                where = "unreachable here"
+            if recipes:
+                where += f"; {', '.join(recipes)} not made here"
+            return f"{mid} ({where})"
+
+        def why_item(iid: str, trail: tuple[str, ...]) -> str:
+            recipes = makers(iid)
+            if not recipes:
+                return f"{iid} (nothing makes it)"
+            return via(iid, recipes, trail)
+
+        def why_tag(tag: str) -> str:
+            cls = tag.lstrip("#")
+            members = sorted(m for m in w.materials if cls in w.classes_of(m))
+            if not members:
+                return f"{tag} (no material in canon has that class)"
+            return f"{tag} (nothing of that class here: {', '.join(why_material(m) for m in members)})"
+
+        def blockers(rid: str, trail: tuple[str, ...] = ()) -> list[str]:
+            r = w.recipes[rid]
+            why: list[str] = []
+            if not knows(rid, held_i):
+                who = ", ".join(r.get("taught_by") or [])
+                if rid in taught:
+                    # Every line that teaches it here charges, and nothing it charges is held.
+                    prices = sorted({c for c in taught[rid] if c})
+                    why.append(f"taught here only for a price: {', '.join(why_item(p, trail) for p in prices)}")
+                else:
+                    why.append(f"not taught on this map (taught by {who})")
+            proc = w.processes.get(r.get("process"), {})
+            at = set(proc.get("performed_at") or [])
+            if at and not at & kinds:
+                why.append(f"must be done at a {'/'.join(sorted(at))}, and nothing here is one")
+            for tool in sorted(set(proc.get("needs") or []) - affords):
+                able = sorted(i for i in w.items if tool in w.affords(i) and i not in prototypes)
+                if not able:
+                    why.append(f"needs something that can {tool}, and nothing in canon does")
+                else:
+                    why.append(f"needs something that can {tool}: {why_item(able[0], trail)}"
+                               + (f" (or {', '.join(able[1:])})" if able[1:] else ""))
+            for need in r.get("ingredients") or []:
+                if "tag" in need and need["tag"].lstrip("#") not in classes:
+                    why.append(f"missing {why_tag(need['tag'])}")
+                elif "material" in need and need["material"] not in held_m:
+                    why.append(f"missing {why_material(need['material'], trail)}")
+                elif "item" in need and need["item"] not in held_i:
+                    why.append(f"missing {why_item(need['item'], trail)}")
+            return why
+
+        # At the fixed point a recipe with nothing blocking it is one the loop performed. Asked
+        # this way rather than "is its output held", because an output can be held by another
+        # route -- gathered, or made by a second recipe -- while this one stays impossible.
+        def performable(rid: str) -> bool:
+            return not blockers(rid, (rid,))
+
+        people = {n for n, d in w.npcs.items() if here & set(d.get("found_at") or [])}
+        teaches = sorted(rid for rid, r in w.recipes.items() if set(r.get("taught_by") or []) & people)
+        common = [rid for rid, r in w.recipes.items() if not r.get("taught_by")]
+        known = [rid for rid in w.recipes if knows(rid, held_i)]
+
+        local: list[str] = []
+        for rid in teaches:
+            why = blockers(rid, (rid,))
+            if why:
+                local.append(f"{rid} (taught by {', '.join(sorted(set(w.recipes[rid]['taught_by']) & people))}) "
+                             f"cannot be made here: {'; '.join(why)}")
+
+        for hid, doc in sorted(w.homesteads.items()):
+            if doc.get("field_map") != map_id:
+                continue
+            for stage in doc.get("stages") or []:
+                for need in stage.get("needs") or []:
+                    nid = need.get("id") or ""
+                    if nid in held_m or nid in held_i:
+                        continue
+                    reason = why_item(nid, ()) if nid in w.items else why_material(nid)
+                    local.append(f"{hid}: stage {stage.get('id')} needs {reason}")
+
+        out.append(f"  {map_id}")
+        out.append(f"    from the ground    : {len(ground)} materials ({len(held_m)} with making)")
+        out.append(f"    recipes known      : {len(known)} ({len(common)} common, "
+                   f"{len(known) - len(common)} taught here)")
+        out.append(f"    recipes performable: {sum(1 for rid in w.recipes if performable(rid))}")
+        out.append(f"    items makeable     : {len(held_i)}")
+        for line in local:
+            out.append(f"    CANNOT  {line}")
+        findings.extend(f"{map_id}: {line}" for line in local)
+
+    # Dead everywhere: no placed species and no ground yields it, and no recipe the whole world can
+    # perform makes it. Said once, because every map would say it.
+    if not only:
+        dead = sorted(m for m in w.materials if m not in world_m)
+        out.append("")
+        out.append(f"  Yielded by no placed species, no ground, and no performable recipe: {len(dead)}")
+        for mid in dead:
+            out.append(f"    DEAD  {mid}: {why_material_nowhere(mid)}")
+        findings.extend(f"{mid} can be got nowhere: {why_material_nowhere(mid)}" for mid in dead)
+
+    return out, findings
+
+
 def main() -> int:
     w = World()
     only = sys.argv[1] if len(sys.argv) > 1 else None
@@ -711,6 +1070,17 @@ def main() -> int:
         print("  Finite, and concentrated in one kind of ground:")
         for n in notes:
             print(f"    {n}")
+
+    # Making, map by map. Printed whatever happens; a problem only once `MAKING_PER_MAP_GATES`
+    # is flipped, which is the whole of turning it into a gate.
+    report, findings = making_per_map(w, only)
+    print()
+    print("  Making, map by map -- each map's own ground, teachers and benches"
+          + ("" if MAKING_PER_MAP_GATES else " (reported, not yet enforced):"))
+    for line in report:
+        print(line)
+    if MAKING_PER_MAP_GATES:
+        problems.extend(findings)
 
     print()
     if problems:

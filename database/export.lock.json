@@ -19,10 +19,10 @@
     "vehicles": 14
   },
   "sha256": {
-    "canon.lock.json": "72996cd0c1100cf7f268a56160c772016ecac7f02f18d741ce6d4e825b137e02",
-    "crafting.json": "ed14c356ba81fbf9ae1ba4be3c75130db30d9edd331009c48fe1c24b276a7813",
-    "knowledge.json": "b2d4d0855b15d1cdeb13fd114c3fcc0fdfa9e86f554ebe94bfa189c663b6e3be",
-    "places.json": "6fdd27acfa520da7aa6ab2e882f1dce6ec7b110622110a197c27f54353c39a7c",
-    "species.json": "4b750d6647b2986ac589667d59277a413222fb90333646ba42585cd6c2e00401"
+    "canon.lock.json": "31583f8b3c37fbc731e5d0d2a24bef94c5635d16826bb8ebc93729fdf1ec68cf",
+    "crafting.json": "9bce716f0c81751545b33ed163befeabdbece180e303d102662acb24d1b9e2c9",
+    "knowledge.json": "9b373f74491a5dddd26b9ee84611737edad65c970fc5acacd6f967dae010acfd",
+    "places.json": "f66d70ceaf8b1c2f06c280c71ee3aae3e913713816af8476d35034fc1cd267de",
+    "species.json": "8d435571ae3623fdc8ca0af3c40d9be922665cdb9caac875954e4058c3d2bbc3"
   }
 }

@@ -1425,6 +1425,44 @@ panel are gone until the month turns. So:
 If the portal ever outgrows the free plan, the answer is a static export of `database/` to a CDN,
 which serves reading for nothing; only search needs a function.
 
+## Roads and Hands, phase 0: where you arrive, and what each map can make — settled 2026-10-01
+
+**`arrives_at` on a field map.** The game set an arriving traveller down at `departs_from[0]`,
+because the schema said that was what the first cart point meant. On the Aravali that is the First
+Pier -- a floating island in the middle of the strait -- while the map's own `arrival` prose and the
+Rail-Head's description both put the arrival at the Rail-Head, *the map's one ordinary place*.
+Leaving and arriving are different questions there, so canon now says both: `arrives_at` is one
+point of interest on the map, absent means the old default, and the lint refuses one that is not on
+its own map, as it does a cart point. It passes to the game as itself; canon exports its own shape.
+
+**A per-map making report in `check_playability.py`.** The making check pooled every biome and every
+kind of place in the world, counted a material held if any map biome was in its `found_in`, and
+assumed every recipe known. "What the gates could not see" above is one consequence; three more
+were measured for this plan:
+
+- **Placement was ignored.** The game takes a material with `won_from` only from a species *standing
+  on the tile*, and stands only `encounter` fauna and (from the game's Roads and Hands fix)
+  `flavour` or `encounter` flora. Read that way before the fix, thirteen materials won from
+  `encounter` plants -- ginger, mango, ashwagandha and ten more -- were obtainable nowhere, and every
+  gate here was green.
+- **Teaching was ignored.** A recipe with `taught_by` must be heard from a line, and a line is said
+  on one map. Thrali teaches dried fish on Lothal, which has no salt: the salt crust is won from a
+  desert saltbush. Okhi teaches ink and palm-leaf sheets on the Narmada, which cannot fire a pot,
+  because grog needs a broken storage jar and only Bekh, on Lothal, teaches the jar.
+- **Homesteads were judged world-wide**, when a homestead is built on its own map by its own people.
+  (Every stage turns out to be buildable on its own ground today, Lothal's reed-rope tower included.)
+
+The report simulates each map from nothing -- that map's ground read the game's way, the common
+recipes plus whatever a line there can teach, that map's kinds of place -- and says why each taught
+recipe and homestead stage that does not come out is stuck. **It is printed, not enforced**: its
+findings are real content gaps that Phase 1 fills (fibre cord, sea salt), and a gate that fails
+before the content exists teaches people to ignore it. `MAKING_PER_MAP_GATES` is the one switch.
+The world-wide check is unchanged and still gates.
+
+Two simplifications are on purpose and named in the code. A species restricted to a landmass counts
+as placed on any map that reaches that landmass, where the game asks per tile; and the report asks
+what can be had *at all*, so it is as blind to rarity as the rest of this file.
+
 ## Security
 
 Two Hugging Face tokens were exposed during setup and must be treated as burned: one pasted
