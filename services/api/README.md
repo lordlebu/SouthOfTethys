@@ -47,6 +47,14 @@ browser specs.
 The portal is live at <https://south-of-tethys-canon.vercel.app/> and is redeployed with every canon
 change by `deploy-canon-service.yml`. It is where the lore the game does not ship is read: the game
 carries only what it plays with, under a weight budget, and this carries the rest at no cost to it.
+It shows every field of every entity, `notes` included, on the owner's ruling.
+
+`GET /search?q=` is the same search as the POST, for the portal, so that the edge can cache it.
+
+**Guarded, because the free plan pauses rather than bills.** Read routes carry `Cache-Control` with
+a day at Vercel's edge, so repeats never reach the function. Search -- the only route that spends
+CPU -- caps a query at 200 characters, remembers 500 answers per instance, and allows one address 30
+a minute before a 429. See *The lore reader is the portal on Vercel* in `docs/decisions.md`.
 
 Both POST endpoints take a tile: `{seed, x, y, biome, creature?, flora?, landmark?, k?}`.
 

@@ -233,8 +233,10 @@ async function search(query) {
   listOf('Searching…', named, '');
   let meant = [];
   try {
-    const response = await fetch('search', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ query, k: 12 }) });
+    // A GET, so that Vercel's edge answers a question it has seen before without waking the service.
+    const response = await fetch('search?k=12&q=' + encodeURIComponent(query.trim().slice(0, 200)));
     if (response.ok) meant = (await response.json()).sources.filter((s) => index.has(s.entity_id)).map((s) => index.get(s.entity_id));
+    else if (response.status === 429) listOf('Results for “' + query.trim() + '”', named, 'Searching by meaning is resting for a minute. Names still match.');
   } catch { /* names alone still answer */ }
   const seen = new Set(named.map((e) => e.id));
   listOf('Results for “' + query.trim() + '”', [...named, ...meant.filter((e) => !seen.has(e.id))], 'Nothing in the record matches that.');

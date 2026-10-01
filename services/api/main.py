@@ -31,7 +31,10 @@ import sys
 from hmac import compare_digest
 from pathlib import Path
 
-from fastapi import FastAPI, Header, HTTPException
+import time
+from collections import OrderedDict, deque
+
+from fastapi import FastAPI, Header, HTTPException, Request, Response
 from fastapi.responses import HTMLResponse
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
@@ -318,6 +321,72 @@ def sources(hits: list[dict]) -> list[dict]:
 # Read-only and free to serve, like /lore and /search: files on disk and the existing index, no
 # model and no key.
 
+# **What the portal costs, and who pays it.** The deployment is on Vercel's Hobby plan, which is
+# free and hard-capped: a month's allowance is a million function calls and four hours of CPU, and
+# exhausting either does not send a bill -- it pauses the project until the month turns. Paused,
+# the portal is gone and so is the game's canon panel. So the guard here is not against cost but
+# against one visitor, or one script, spending everybody's month.
+#
+# Two kinds of route, guarded two ways:
+#
+#   cached   `/`, `/entities`, `/entity/{id}` and `GET /search` answer the same thing to everybody
+#            until the next deploy. They say so in `Cache-Control`, and Vercel's edge then serves
+#            repeats without calling the function at all. A new deploy starts a fresh cache, which
+#            is exactly when the answers change.
+#   limited  searching runs the embedding model, which is the one thing here that spends CPU.
+#            A query is capped in length, a repeat is answered from memory, and one address gets
+#            SEARCH_PER_MINUTE of them before being asked to wait.
+#
+# /ask spends money at Hugging Face rather than Vercel's CPU, and has always been behind a key.
+
+# A day at the edge, and a week of serving the old answer while a new one is fetched. The function
+# is reached at most once a day per path per edge region, whatever the traffic.
+CACHED = "public, max-age=300, s-maxage=86400, stale-while-revalidate=604800"
+SEARCH_PER_MINUTE = 30
+QUERY_MAX_CHARS = 200
+_recent: dict[str, deque] = {}
+_answers: OrderedDict[tuple[str, int], dict] = OrderedDict()
+
+
+def client_of(request: Request) -> str:
+    """The visitor's address as Vercel reports it, falling back to the socket's for local runs."""
+    forwarded = request.headers.get("x-forwarded-for", "")
+    return forwarded.split(",")[0].strip() or (request.client.host if request.client else "unknown")
+
+
+def within_limit(request: Request) -> None:
+    """Refuse an address that has searched SEARCH_PER_MINUTE times in the last minute.
+
+    Counted per running instance, so it is a speed bump rather than a wall: a busy hour can run
+    several instances, each counting on its own. That is enough for its purpose, which is to stop
+    one loop spending the month, and it costs no database to keep.
+    """
+    now = time.monotonic()
+    seen = _recent.setdefault(client_of(request), deque())
+    while seen and now - seen[0] > 60:
+        seen.popleft()
+    if len(seen) >= SEARCH_PER_MINUTE:
+        raise HTTPException(status_code=429, detail="too many searches; wait a minute")
+    seen.append(now)
+    # Forget addresses that have gone quiet, so the table cannot grow without end.
+    if len(_recent) > 5000:
+        for address in [a for a, q in _recent.items() if not q or now - q[-1] > 60]:
+            del _recent[address]
+
+
+def remembered_search(query: str, k: int) -> dict:
+    """A search, answered from memory if this instance has answered it already."""
+    key = (query.lower(), k)
+    if key in _answers:
+        _answers.move_to_end(key)
+        return _answers[key]
+    answer = {"query": query, "sources": sources(vidur.retrieve(query, k=k))}
+    _answers[key] = answer
+    if len(_answers) > 500:
+        _answers.popitem(last=False)
+    return answer
+
+
 DATABASE = REPO / "database"
 # Directories under database/ that validate canon rather than being it.
 NOT_ENTITIES = {"schemas"}
@@ -350,8 +419,9 @@ def entity_index() -> dict[str, dict]:
 
 
 @app.get("/entities")
-def entities() -> dict:
+def entities(response: Response) -> dict:
     """Every entity's id, name and folder: enough to browse, and to know which words are links."""
+    response.headers["Cache-Control"] = CACHED
     return {
         "entities": [
             {"id": e["id"], "name": e["name"], "folder": e["folder"]} for e in entity_index().values()
@@ -360,7 +430,7 @@ def entities() -> dict:
 
 
 @app.get("/entity/{entity_id}")
-def entity(entity_id: str) -> dict:
+def entity(entity_id: str, response: Response) -> dict:
     """One entity as canon holds it.
 
     Looked up in the index rather than joined onto a path, so an id cannot walk out of
@@ -369,6 +439,7 @@ def entity(entity_id: str) -> dict:
     known = entity_index().get(entity_id)
     if not known:
         raise HTTPException(status_code=404, detail="no such entity")
+    response.headers["Cache-Control"] = CACHED
     return {
         "folder": known["folder"],
         "entity": json.loads(known["path"].read_text(encoding="utf-8")),
@@ -381,7 +452,7 @@ PORTAL = Path(__file__).resolve().parent / "portal.html"
 @app.get("/", response_class=HTMLResponse)
 def portal() -> HTMLResponse:
     """The reader. One static page; everything it shows it fetches from the routes above."""
-    return HTMLResponse(PORTAL.read_text(encoding="utf-8"))
+    return HTMLResponse(PORTAL.read_text(encoding="utf-8"), headers={"Cache-Control": CACHED})
 
 
 @app.get("/health")
@@ -409,11 +480,11 @@ def health() -> dict:
 
 
 @app.post("/lore")
-def lore(place: Place) -> dict:
+def lore(place: Place, request: Request) -> dict:
     """What canon says about this tile. Retrieval only — no model, no waiting."""
-    query = as_query(place)
-    hits = vidur.retrieve(query, k=place.k)
-    return {"query": query, "sources": sources(hits)}
+    within_limit(request)
+    query = as_query(place)[:QUERY_MAX_CHARS]
+    return remembered_search(query, max(1, min(place.k, 20)))
 
 
 class Question(BaseModel):
@@ -423,8 +494,22 @@ class Question(BaseModel):
     k: int = 5
 
 
+@app.get("/search")
+def search_cached(q: str, response: Response, request: Request, k: int = 12) -> dict:
+    """The portal's search, as a GET so that Vercel's edge can answer a repeated question itself.
+
+    The same retrieval as the POST below. Two people asking the same thing cost one embedding.
+    """
+    query = q.strip()[:QUERY_MAX_CHARS]
+    if not query:
+        return {"query": "", "sources": []}
+    within_limit(request)
+    response.headers["Cache-Control"] = CACHED
+    return remembered_search(query, max(1, min(k, 20)))
+
+
 @app.post("/search")
-def search(question: Question) -> dict:
+def search(question: Question, request: Request) -> dict:
     """
     Retrieval over the whole corpus, for a question nobody wrote a tile for.
 
@@ -436,13 +521,13 @@ def search(question: Question) -> dict:
     returns which canon entities are nearest rather than prose about them. Generation stays
     behind `/ask` and its key.
     """
-    query = (question.query or "").strip()
+    query = (question.query or "").strip()[:QUERY_MAX_CHARS]
     if not query:
         return {"query": "", "sources": []}
+    within_limit(request)
     # Bounded rather than trusted: k comes from a client and a large one is a cheap way to
     # make the service do real work on somebody else's behalf.
-    hits = vidur.retrieve(query, k=max(1, min(question.k, 20)))
-    return {"query": query, "sources": sources(hits)}
+    return remembered_search(query, max(1, min(question.k, 20)))
 
 
 @app.post("/ask")

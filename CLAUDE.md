@@ -138,6 +138,12 @@ index, deploys it, and then asks the live `/health` whether its index covers can
 check exists because the service silently served a stale index for two whole field maps while
 reporting itself healthy.
 
+**That service is also the lore reader.** Its root is a page for people,
+<https://south-of-tethys-canon.vercel.app/>, which shows every entity whole, `notes` included: lore
+the game does not ship is read there rather than added to the bundle. It runs on Vercel's free plan,
+which pauses at its caps instead of billing, so its read routes are cached at the edge and search is
+rate-limited per address -- keep both when adding a route. `docs/decisions.md` has the entry.
+
 ## Two things that are easy to get wrong
 
 **`check_playability.py` simulates.** It starts from nothing and repeatedly does whatever has
