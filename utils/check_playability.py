@@ -16,7 +16,7 @@ This walks the world the way a player does and reports what cannot be reached:
   making        every recipe can actually be performed, and every item can be got
   finite        what never renews, and is concentrated in one kind of ground (reported)
   map by map    what each map can make with only its own ground, teachers and benches, read
-                the way the game places species (reported until MAKING_PER_MAP_GATES is True)
+                the way the game places species (gates; MAKING_PER_MAP_KEPT names what is kept)
 
     python utils/check_playability.py
     python utils/check_playability.py field_map_lothal
@@ -65,15 +65,28 @@ PLACED = {"fauna": {"encounter"}, "flora": {"flavour", "encounter"}}
 # because it is a place rather than a climate. One tile is still ground: sandalwood stands there.
 STAMPED_ON_EVERY_MAP = {"landmark"}
 
-# **The per-map making report is printed, not enforced, and this is the one switch.**
+# **The per-map making report gates, and this is the one switch.**
 #
 # It measures what a traveller can make on one map with only that map's ground and that map's
-# teachers, and on the day it was written it found real gaps -- dried fish taught on a Lothal with
-# no salt, ink and palm-leaf taught on a Narmada that cannot fire a pot -- that Phase 1 of Roads
-# and Hands fixes in content (fibre cord, sea salt). Failing on them before the content exists would only
-# teach people to ignore the gate. Set this to True once the report is clean, and every line it
-# prints becomes a problem and the exit code follows.
-MAKING_PER_MAP_GATES = False
+# teachers. On the day it was written it found real gaps -- dried fish taught on a Lothal with no
+# salt, ink and palm-leaf taught on a Narmada that cannot fire a pot -- and it was printed rather
+# than enforced until Phase 1 of Roads and Hands had filled them in content (fibre cord, reed rope
+# by hand, sea salt, Okhi's jar and awl). It was switched on in canon 2.41.0, when the report came
+# out clean but for the one gap below that is kept on purpose; every other line it prints is a
+# problem and the exit code follows.
+MAKING_PER_MAP_GATES = True
+
+# **Gaps kept on purpose, by map and recipe, each with its reason.** A ratchet in both directions,
+# as the game's `test/criticalPath.test.ts` is: a gap not named here fails, and an entry here that no
+# longer fails is reported stale, so this list can only be emptied deliberately.
+MAKING_PER_MAP_KEPT: dict[tuple[str, str], str] = {
+    # The princess's one task is to be cooked the Fourteen, and the Fourteen wants salt. The plateau
+    # has none -- salt is the lowland's, and the Maru carry it up to trade -- so the traveller brings
+    # it from the coast (Lothal's sea salt, Dwarka's crust) or brings the dish ready cooked. That is
+    # what makes it a task rather than a recipe, and it is reachable world-wide. Root tea itself is
+    # ginger and ashwagandha, both on the Narmada. Owner may overrule: a plateau rock salt would close it.
+    ("field_map_narmada", "recipe_root_tea"): "the princess's price wants salt carried up to the plateau",
+}
 
 
 def load_all(folder: str) -> dict[str, dict]:
@@ -946,11 +959,21 @@ def making_per_map(w: World, only: str | None) -> tuple[list[str], list[str]]:
         known = [rid for rid in w.recipes if knows(rid, held_i)]
 
         local: list[str] = []
+        kept: list[str] = []
         for rid in teaches:
             why = blockers(rid, (rid,))
             if why:
-                local.append(f"{rid} (taught by {', '.join(sorted(set(w.recipes[rid]['taught_by']) & people))}) "
-                             f"cannot be made here: {'; '.join(why)}")
+                line = (f"{rid} (taught by {', '.join(sorted(set(w.recipes[rid]['taught_by']) & people))}) "
+                        f"cannot be made here: {'; '.join(why)}")
+                if (map_id, rid) in MAKING_PER_MAP_KEPT:
+                    kept.append(f"{line} -- kept: {MAKING_PER_MAP_KEPT[(map_id, rid)]}")
+                else:
+                    local.append(line)
+            elif (map_id, rid) in MAKING_PER_MAP_KEPT:
+                local.append(f"{rid} is in MAKING_PER_MAP_KEPT but can be made here now -- strike it off")
+        for (kept_map, kept_rid) in MAKING_PER_MAP_KEPT:
+            if kept_map == map_id and kept_rid not in teaches:
+                local.append(f"{kept_rid} is in MAKING_PER_MAP_KEPT but nobody here teaches it -- strike it off")
 
         for hid, doc in sorted(w.homesteads.items()):
             if doc.get("field_map") != map_id:
@@ -969,6 +992,8 @@ def making_per_map(w: World, only: str | None) -> tuple[list[str], list[str]]:
                    f"{len(known) - len(common)} taught here)")
         out.append(f"    recipes performable: {sum(1 for rid in w.recipes if performable(rid))}")
         out.append(f"    items makeable     : {len(held_i)}")
+        for line in kept:
+            out.append(f"    KEPT    {line}")
         for line in local:
             out.append(f"    CANNOT  {line}")
         findings.extend(f"{map_id}: {line}" for line in local)

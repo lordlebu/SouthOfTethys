@@ -8,7 +8,7 @@
       "item": "item_reed_mat"
     },
     {
-      "material": "material_goat_hide"
+      "tag": "#hide"
     },
     {
       "material": "material_tree_pitch"
@@ -19,7 +19,7 @@
       "item": "item_bedroll"
     }
   ],
-  "notes": "Oiled cloth over a reed mat. It has been rained on.",
+  "notes": "Oiled cloth over a reed mat, backed with hide. It has been rained on. Any hide will do -- on the delta it is deer, up on the plateau goat.",
   "canon": "inferred",
   "sources": [
     "inferred from canon geography"

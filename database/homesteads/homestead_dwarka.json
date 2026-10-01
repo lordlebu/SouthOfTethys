@@ -168,23 +168,23 @@
       "name": "Hang the vanes, and fill the still",
       "needs": [
         {
-          "id": "material_bamboo_cane",
+          "id": "material_palm_husk",
           "count": 3
         },
         {
-          "id": "material_date_fruit",
+          "id": "material_sandstone",
           "count": 3
         }
       ],
       "backers": 2,
-      "prose": "Bamboo vanes that turned the first morning and lifted water the first afternoon. Beside the pump a glasshouse of salt-glass over shallow trays, where the sun takes the brine and leaves the water, and date palms set in the first beds of it."
+      "prose": "Vanes of husk matting on a ring of spokes, plaited the way the harbour once plaited its sails, that turned the first morning and lifted water the first afternoon. Beside the pump a still-house on a sandstone footing, salt-glass over shallow trays, where the sun takes the brine and leaves the water, and date palms set in the first beds of it -- offsets, carried up from the last grove by the market, because a date palm is grown from its mother and not from its stone."
     }
   ],
   "settled": "They came up from the market at evening -- growers, a driver or two, somebody's grandmother -- and nobody said it was a place yet. The vanes turned. The still dripped. By dark there was a lamp in the glasshouse and a queue at the well, and Jarro was taking nothing from anybody, and pretending he was.",
   "epochs": [
     "epoch_post_cataclysm"
   ],
-  "notes": "Drafted 27 September 2026 for the owner to rewrite. Dwarka's thesis is that local knowledge is simply right, so here the holders are right before the player is: Ushi knows it is not the salt, Jarro knows why the road goes the long way, and both are waiting to see whether the traveller has caught up. A wind-pump rather than a mill, because what Dwarka lacks is sweet water; the glasshouse is a solar still. Drawn with the owner's wind-pump and solar still (27 September 2026).",
+  "notes": "Drafted 27 September 2026 for the owner to rewrite. Dwarka's thesis is that local knowledge is simply right, so here the holders are right before the player is: Ushi knows it is not the salt, Jarro knows why the road goes the long way, and both are waiting to see whether the traveller has caught up. A wind-pump rather than a mill, because what Dwarka lacks is sweet water; the glasshouse is a solar still. Drawn with the owner's wind-pump and solar still (27 September 2026). Stages changed 1 October 2026 (Roads and Hands, phase 1) so the homestead can be finished from Dwarka's own ground: the vanes are husk matting rather than bamboo, which barely grows here, and the date palms are offsets the market brings rather than fruit the traveller finds, since Dwarka's desert is small enough that dates are not reliably there.",
   "canon": "draft",
   "sources": [
     "Settling In plan, 27 September 2026"

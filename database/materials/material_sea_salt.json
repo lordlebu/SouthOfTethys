@@ -1,0 +1,19 @@
+{
+  "id": "material_sea_salt",
+  "type": "material",
+  "name": "Sea salt",
+  "classes": [
+    "salt"
+  ],
+  "found_in": [
+    "coast"
+  ],
+  "rarity": "common",
+  "renews": "fast",
+  "notes": "Scraped from the pans the tide fills and the sun empties. Lothal is a harbour on a gulf known for its salt pans, and a fisher there who teaches drying fish is teaching something the shore makes possible. From the ground, not from anything living, so it lies on any coast. Distinct from salt crust, which is the desert's and Dwarka's: that grows on a saltbush and this is left by the sea.",
+  "canon": "inferred",
+  "sources": [
+    "owner, 2026-10-01 (Roads and Hands, phase 1)"
+  ],
+  "source_index": 76
+}

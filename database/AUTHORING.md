@@ -566,9 +566,30 @@ backers than the map has people who can be helped.
 **Each map's worries carry its thesis.** Lothal's holders are afraid of what nobody has looked at;
 Dwarka's (`homestead_dwarka`) are simply right, and wait to see whether the traveller has caught up;
 the Narmada's steward (`homestead_narmada`) trusts a record that begins at the wound. A worry that
-could be lifted onto another map unchanged is not doing its job. Stages use what that map's own
-ground gives -- sandstone and husk hawser in Dwarka, basalt and sinew on the plateau -- which the
-playability check cannot see, since it asks only whether a thing can be got *somewhere*.
+could be lifted onto another map unchanged is not doing its job.
+
+**A stage may only need what is common on its own map, and what its own people can make from
+that.** Two kinds of need, and nothing else:
+
+- **a material the map's ground gives reliably** -- not one that exists there, one a player will
+  actually walk across. The game's `test/criticalPath.test.ts` is the measure: on at least 10 of 12
+  seeds, on at least 3 tiles each. Rarity in the material file is not the test; tile counts are,
+  because a common plant in a biome the map barely has (Dwarka's desert is about thirty tiles) is
+  rare *there*;
+- **an item made by a recipe known from the start or taught by somebody on this map, with no hunted
+  or rare input anywhere in its chain.** Husk hawser is Pell's and is palm husk; reed rope and fibre
+  cord are everybody's and are a handful of fibre. Sinew lashing is not allowed, because sinew is a
+  hunt, which is why the Narmada's tower is lashed with goat-hair cord.
+
+A homestead is the endgame, built here by the people of here, so "obtainable on another map" is not
+an answer. Stages still use what that map's own ground gives -- sandstone and husk in Dwarka, basalt
+and cane on the plateau, clay and reed on the delta -- and the prose should name it. A stage's prose
+may describe more than it needs (Lothal's and Dwarka's glasshouses need no glass), but never
+something the needs contradict.
+
+`check_playability.py` refuses a stage its own map cannot build, from that map's ground, teachers and
+kinds of place (`MAKING_PER_MAP_GATES`). It cannot see rarity, so the reliability half of this rule
+is the game's test to hold, and the author's to respect.
 
 ### A character
 
