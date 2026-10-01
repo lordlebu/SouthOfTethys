@@ -88,6 +88,7 @@ VERCEL_JSON = """{
 # Only what main.py touches at runtime.
 COPY = [
     ("services/api/main.py", "services/api/main.py"),
+    ("services/api/portal.html", "services/api/portal.html"),
     ("services/api/requirements.txt", "services/api/requirements.txt"),
     ("services/api/Dockerfile", "Dockerfile"),
     ("vidur_portal/snippet_processor.py", "vidur_portal/snippet_processor.py"),

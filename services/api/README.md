@@ -39,6 +39,14 @@ browser specs.
 | `GET /health` | whether Chroma is reachable and how many chunks are indexed |
 | `POST /lore` | retrieval only. ~100ms warm. The reliable half. |
 | `POST /ask` | retrieval plus a generated passage. Seconds, and see the warning below. |
+| `POST /search` | retrieval over the whole corpus for a question in words rather than a tile |
+| `GET /` | **the lore portal**: a page for people that searches canon and shows any entry whole |
+| `GET /entities` | every entity's id, name and folder, which is what the portal browses |
+| `GET /entity/{id}` | one entity as canon holds it; an unknown id is a 404 before any file is read |
+
+The portal is live at <https://south-of-tethys-canon.vercel.app/> and is redeployed with every canon
+change by `deploy-canon-service.yml`. It is where the lore the game does not ship is read: the game
+carries only what it plays with, under a weight budget, and this carries the rest at no cost to it.
 
 Both POST endpoints take a tile: `{seed, x, y, biome, creature?, flora?, landmark?, k?}`.
 
@@ -70,7 +78,9 @@ working system that returns the right entity at a distance of ~0.29.
 
 ## Scope
 
-Local only. CORS allows `localhost:4173` and `:4180` and nothing else, and there is no
+CORS allows the local dev ports and the game's two published homes -- `lordlebu.github.io` and
+`html-classic.itch.zone`, which is the origin itch.io's embed actually sends -- plus anything in
+`CANON_ALLOWED_ORIGINS`. Otherwise local only, and there is no
 auth, no rate limiting and no caching beyond what the browser client does per tile.
 Deploying this means a host that runs Python — GitHub Pages cannot — plus swapping local
 `transformers` for a hosted inference endpoint.

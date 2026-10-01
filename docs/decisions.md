@@ -1383,6 +1383,31 @@ wrong thing, and had forced a withholding on nearly every content batch since th
 Open: the reader. A lore pack needs a view in the game to open it, and what that view is -- a
 codex, the canon panel working offline, pages of the travel journal -- is a design call.
 
+## The lore reader is the portal on Vercel — settled 2026-09-30
+
+Open since the bundle budget moved to gzipped weight: canon can hold far more than the game ships,
+and nothing let a person read the rest. The owner's ruling: the reader is the Vercel deployment
+already in use, not a view inside the game.
+
+- **`/` on `south-of-tethys-canon.vercel.app` is now a page**, `services/api/portal.html`: search by
+  name at once and by meaning through `/search`, browse by kind, and read any entry whole, with the
+  ids its notes name turned into links. Two read-only routes feed it, `/entities` and `/entity/{id}`.
+- **It costs the game nothing.** Nothing is bundled; the page is served by the deployment that
+  already carries `database/` for retrieval, and `deploy-canon-service.yml` republishes it with every
+  canon change. This is the lazy lore pack the budget entry anticipated, without the game having to
+  load it at all.
+- **It shows `notes`.** Much of canon's prose lives there, and so does authoring rationale -- who
+  ruled what and when. The repository is public, so nothing is revealed that was not already, but
+  the page does read partly as a working record. Splitting the two is a canon-wide change to how
+  notes are written, and is left open.
+- **itch.io's origin was missing from CORS**, and is now in code. The published game's canon panel
+  failed every request on itch.io while working on Pages, because the embed is served from
+  `html-classic.itch.zone`, not `itch.io`. Written into `main.py` as `PUBLISHED_ORIGINS` so it reaches
+  Vercel through git rather than living only in a dashboard setting.
+
+Open: whether `notes` should be split into lore and rationale; and a link from the game's canon
+panel into the portal, which is a game-side change.
+
 ## Security
 
 Two Hugging Face tokens were exposed during setup and must be treated as burned: one pasted

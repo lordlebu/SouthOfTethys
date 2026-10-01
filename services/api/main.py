@@ -32,6 +32,7 @@ from hmac import compare_digest
 from pathlib import Path
 
 from fastapi import FastAPI, Header, HTTPException
+from fastapi.responses import HTMLResponse
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 
@@ -139,7 +140,17 @@ LOCAL_ORIGINS = [
     "http://localhost:4173", "http://127.0.0.1:4173",
     "http://localhost:4180", "http://127.0.0.1:4180",
 ]
-ALLOWED_ORIGINS = LOCAL_ORIGINS + [
+# Where the game is published, which is a fact about the project rather than about one deployment,
+# so it is written here and reaches Vercel through git like everything else.
+#
+# itch.io is the one that was missing. It does not serve a game from itch.io: the page embeds an
+# iframe from `html-classic.itch.zone`, and that is the origin the browser sends. Without it the
+# published game's canon panel failed every request on itch.io while working on Pages.
+PUBLISHED_ORIGINS = [
+    "https://lordlebu.github.io",
+    "https://html-classic.itch.zone",
+]
+ALLOWED_ORIGINS = LOCAL_ORIGINS + PUBLISHED_ORIGINS + [
     o.strip() for o in os.environ.get("CANON_ALLOWED_ORIGINS", "").split(",") if o.strip()
 ]
 
@@ -293,6 +304,84 @@ def sources(hits: list[dict]) -> list[dict]:
         }
         for h in hits
     ]
+
+
+# ---------------------------------------------------------------------------------------------
+# The lore portal: canon, readable by a person.
+#
+# The game ships only what it plays with, under a budget, and everything else in `database/` --
+# the characters, the events, the eras, the places nobody walks -- had no reader at all. This is
+# it: a page at `/` that searches canon and shows any entity whole, served by the same deployment
+# that already carries `database/` for retrieval, and redeployed by the same workflow whenever
+# canon changes. Nothing is bundled into the game, so none of it counts against the game's weight.
+#
+# Read-only and free to serve, like /lore and /search: files on disk and the existing index, no
+# model and no key.
+
+DATABASE = REPO / "database"
+# Directories under database/ that validate canon rather than being it.
+NOT_ENTITIES = {"schemas"}
+
+_entities: dict[str, dict] | None = None
+
+
+def entity_index() -> dict[str, dict]:
+    """Every entity id to where it lives and what it is called. Built once per cold start."""
+    global _entities
+    if _entities is None:
+        found: dict[str, dict] = {}
+        for path in sorted(DATABASE.glob("*/*.json")):
+            if path.parent.name in NOT_ENTITIES:
+                continue
+            try:
+                doc = json.loads(path.read_text(encoding="utf-8"))
+            except (OSError, ValueError):
+                continue
+            if not isinstance(doc, dict) or not doc.get("id"):
+                continue
+            found[doc["id"]] = {
+                "id": doc["id"],
+                "name": doc.get("name") or doc.get("title") or doc["id"],
+                "folder": path.parent.name,
+                "path": path,
+            }
+        _entities = found
+    return _entities
+
+
+@app.get("/entities")
+def entities() -> dict:
+    """Every entity's id, name and folder: enough to browse, and to know which words are links."""
+    return {
+        "entities": [
+            {"id": e["id"], "name": e["name"], "folder": e["folder"]} for e in entity_index().values()
+        ]
+    }
+
+
+@app.get("/entity/{entity_id}")
+def entity(entity_id: str) -> dict:
+    """One entity as canon holds it.
+
+    Looked up in the index rather than joined onto a path, so an id cannot walk out of
+    `database/`: anything that is not a known id is a 404 before the filesystem is touched.
+    """
+    known = entity_index().get(entity_id)
+    if not known:
+        raise HTTPException(status_code=404, detail="no such entity")
+    return {
+        "folder": known["folder"],
+        "entity": json.loads(known["path"].read_text(encoding="utf-8")),
+    }
+
+
+PORTAL = Path(__file__).resolve().parent / "portal.html"
+
+
+@app.get("/", response_class=HTMLResponse)
+def portal() -> HTMLResponse:
+    """The reader. One static page; everything it shows it fetches from the routes above."""
+    return HTMLResponse(PORTAL.read_text(encoding="utf-8"))
 
 
 @app.get("/health")
