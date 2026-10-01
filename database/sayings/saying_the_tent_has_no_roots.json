@@ -3,8 +3,8 @@
   "type": "saying",
   "name": "The tent has no roots",
   "text": "The tent has no roots, but the people do.",
-  "attribution": "Vedda saying",
-  "carried_by": "vedda",
+  "attribution": "Maru herders' saying",
+  "carried_by": "maru",
   "occasions": [
     "fireside",
     "settling"
@@ -15,5 +15,6 @@
   "canon": "primary",
   "sources": [
     "the owner's draft of nomadic-migration sayings for the cutscenes, 2026-10-01"
-  ]
+  ],
+  "notes": "Carried by the maru since 2 October 2026: the owner asked for the fictional sayings to belong to the lore's various peoples, not all to the Vedda."
 }

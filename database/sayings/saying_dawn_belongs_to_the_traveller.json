@@ -3,8 +3,8 @@
   "type": "saying",
   "name": "The dawn belongs to the traveller",
   "text": "The dawn belongs neither to the city nor the wilderness. It belongs to the traveller.",
-  "attribution": "Vedda saying",
-  "carried_by": "vedda",
+  "attribution": "Saying of the dune-scavengers",
+  "carried_by": "dune_scavengers",
   "occasions": [
     "opening",
     "dawn"
@@ -19,5 +19,6 @@
   "canon": "primary",
   "sources": [
     "the owner's draft of nomadic-migration sayings for the cutscenes, 2026-10-01"
-  ]
+  ],
+  "notes": "Carried by the dune scavengers since 2 October 2026: the owner asked for the fictional sayings to belong to the lore's various peoples, not all to the Vedda."
 }

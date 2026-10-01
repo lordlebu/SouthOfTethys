@@ -835,6 +835,11 @@ def main() -> int:
         if len({by for _, by in ends}) > 1:
             errors.append(f"{' and '.join(n for n, _ in ends)}: the road between them is travelled by {', '.join(sorted({str(b) for _, b in ends}))} -- one road, one way of going")
 
+    # A fireside story is a night's: `camps` on any other occasion could never happen.
+    for eid, (path, payload) in entities.items():
+        if path.parent.name == "happenings" and payload.get("camps") and payload.get("occasion") != "night":
+            errors.append(f"{path.name}: `camps` belongs to a night slept beside a camp, not to {payload.get('occasion')}")
+
     # Journey happenings belong to a road: both ends named, and a road between them.
     for eid, (path, payload) in entities.items():
         if path.parent.name != "happenings" or payload.get("occasion") != "journey":

@@ -1492,10 +1492,16 @@ Tethys, some written after Rigvedic hymns. The owner drafted thirty-three and ru
   that saying's `notes`, which are withheld from the bundle as a happening's are.
 
 `carried_by` is checked against `database/cultures.json` by the lint, as `culture` and `known_by`
-are. **Every saying is the Vedda's**, by a fourth ruling the same day: the draft had given two to
-the Tushara, one to the Maru and a dozen to nobody in particular ("Saying of the road", "Ford-keepers'
-saying"), and all thirty-three now carry `carried_by: vedda` and a Vedda attribution. The field stays
-optional so another people's sayings can be added later, deliberately.
+are. **The sayings belong to the lore's peoples.** The owner's "should be vedda" of 1 October was
+read as "every saying is the Vedda's", and all thirty-three were given to them; on 2 October the owner
+said that was not the intent and asked for the fictional ones to be spread across the lore's tribes.
+Twelve stay the Vedda's -- the Walking Song, the ancestor and migration lines, and every line written
+after a Rigvedic hymn, since the Vedda carry Ṛta in this canon. The rest went where each belongs: star
+and wind to the Tushara steppe-riders, grass and felt tents and the scarp road to the Maru herders,
+rivers and the travelling fire to the Kia rafters, settling and hospitality to the Harappans, sand to
+the Gedrosian dune-scavengers, the crossing to the Aravali glass-herbalists, the listening bones to the
+Violet-Horned Clan, the sea to the Sea-Drifters, and the ancestors no one leaves to the Shaka-rauka --
+the sleeping stranger's own people. Each carries `carried_by` and an in-world credit.
 
 ## Roads and Hands, phase 1: every map can be finished from its own ground — settled 2026-10-01
 
@@ -1670,6 +1676,16 @@ be switched between at will. Varuna and Mithra walk from the first morning; Guyu
   second quest is her people's terraces, answered by the terrace reading canon already holds.
 - **Shaka is a barbarian found asleep** on the Aravali (`happening_the_sleeping_stranger`), not
   Shakariman the surveyor. **The cataclysm painting** goes to the lore portal, never the game.
+
+## Roads and Hands, phase 5: camps you notice — settled 2026-10-02
+
+A camp used to pitch for three days with nothing to say it was there, drawn as one fire ring and one
+yurt whatever its kind. The game now draws each kind from the owner's props, spread over the tiles
+round the fire, with a column of smoke above the fog; a night slept beside one is a camp night. Canon
+adds what is told at the fire: `camps` on a `night` happening, and eight fireside stories, two for
+each of the four kinds the owner kept. The owner asked for the generic camp art to be kept: the old
+fire ring is at the heart of every camp, the old yurt stands in for a kind's shelter in about one camp
+in three, and a struck camp leaves its ring cold on the ground for a few days.
 
 ## Security
 

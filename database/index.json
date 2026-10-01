@@ -1,5 +1,5 @@
 {
-  "version": "2.45.0",
+  "version": "2.47.0",
   "description": "SouthOfTethys canonical entity index",
   "counts": {
     "artifacts": 6,
@@ -12,7 +12,7 @@
     "field_questions": 8,
     "flora": 119,
     "foodways": 19,
-    "happenings": 6,
+    "happenings": 14,
     "homesteads": 3,
     "items": 84,
     "materials": 78,
@@ -659,8 +659,16 @@
       "foodway_travel_cake_wake"
     ],
     "happenings": [
+      "happening_a_song_about_a_ford",
+      "happening_counting_the_goats",
+      "happening_further_than_anyone_has_been",
+      "happening_nobody_s_bow",
       "happening_the_ferry_song",
+      "happening_the_goat_that_walked_home",
+      "happening_the_lamp_kept_lit",
+      "happening_the_map_with_a_hole",
       "happening_the_sleeping_stranger",
+      "happening_the_toll_explained",
       "happening_tower_standing",
       "happening_where_the_sea_was",
       "happening_where_you_stop",

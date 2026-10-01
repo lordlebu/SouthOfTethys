@@ -3,8 +3,8 @@
   "type": "saying",
   "name": "The land remembers",
   "text": "The land does not belong to those who stay. It remembers those who pass.",
-  "attribution": "Vedda saying",
-  "carried_by": "vedda",
+  "attribution": "Saying of the Aravali glass-herbalists",
+  "carried_by": "glass_herbalists",
   "occasions": [
     "crossing"
   ],
@@ -17,5 +17,6 @@
   "canon": "primary",
   "sources": [
     "the owner's draft of nomadic-migration sayings for the cutscenes, 2026-10-01"
-  ]
+  ],
+  "notes": "Carried by the glass herbalists since 2 October 2026: the owner asked for the fictional sayings to belong to the lore's various peoples, not all to the Vedda."
 }

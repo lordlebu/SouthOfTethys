@@ -1,0 +1,28 @@
+{
+  "id": "happening_nobody_s_bow",
+  "type": "happening",
+  "title": "Nobody's bow",
+  "occasion": "night",
+  "camps": [
+    "adventurers"
+  ],
+  "prose": "There is a bow leaning against the lean-to that none of them claims. It was there when they made camp, they say, and the time before, in a different place. One of them thinks it follows them. Another says that is a story for children, and moves it further from the fire.",
+  "choices": [
+    {
+      "label": "Look at the bow",
+      "line": "It is good work and old work, the string new. By morning it is back by the fire, and nobody admits to moving it."
+    },
+    {
+      "label": "Leave it be",
+      "line": "You leave it where it leans. You sleep well, and dream of nothing in particular."
+    }
+  ],
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "notes": "A fireside story for a night slept beside a camp of adventurers (Roads and Hands, phase 5). Shared by every map, as the owner's four camp kinds are. Drafted for the owner to rewrite or approve.",
+  "canon": "primary",
+  "sources": [
+    "drafted by Claude for the owner's approval, 2026-10-02"
+  ]
+}

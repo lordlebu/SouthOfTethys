@@ -3,8 +3,8 @@
   "type": "saying",
   "name": "The whole earth is home",
   "text": "Once, we wandered because we had nowhere to stay. Now we wander because the whole earth is home.",
-  "attribution": "Vedda saying, as it is said now",
-  "carried_by": "vedda",
+  "attribution": "Harappan saying, as it is said now",
+  "carried_by": "harappan",
   "occasions": [
     "opening",
     "settling"
@@ -15,5 +15,6 @@
   "canon": "primary",
   "sources": [
     "the owner's draft of nomadic-migration sayings for the cutscenes, 2026-10-01"
-  ]
+  ],
+  "notes": "Carried by the harappan since 2 October 2026: the owner asked for the fictional sayings to belong to the lore's various peoples, not all to the Vedda."
 }

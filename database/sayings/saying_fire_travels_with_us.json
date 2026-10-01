@@ -3,8 +3,8 @@
   "type": "saying",
   "name": "The fire travels with us",
   "text": "The road is long, but the fire travels with us.",
-  "attribution": "Vedda saying",
-  "carried_by": "vedda",
+  "attribution": "Kia saying",
+  "carried_by": "kia",
   "occasions": [
     "road",
     "fireside"
@@ -19,5 +19,6 @@
   "canon": "primary",
   "sources": [
     "the owner's draft of nomadic-migration sayings for the cutscenes, 2026-10-01"
-  ]
+  ],
+  "notes": "Carried by the kia since 2 October 2026: the owner asked for the fictional sayings to belong to the lore's various peoples, not all to the Vedda."
 }

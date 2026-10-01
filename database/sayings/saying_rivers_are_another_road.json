@@ -3,8 +3,8 @@
   "type": "saying",
   "name": "Another road",
   "text": "The rivers are not the road's end. They are another road.",
-  "attribution": "Vedda saying",
-  "carried_by": "vedda",
+  "attribution": "Kia ford-saying",
+  "carried_by": "kia",
   "occasions": [
     "crossing"
   ],
@@ -18,5 +18,6 @@
   "canon": "primary",
   "sources": [
     "the owner's draft of nomadic-migration sayings for the cutscenes, 2026-10-01"
-  ]
+  ],
+  "notes": "Carried by the kia since 2 October 2026: the owner asked for the fictional sayings to belong to the lore's various peoples, not all to the Vedda."
 }

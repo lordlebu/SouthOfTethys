@@ -1,0 +1,28 @@
+{
+  "id": "happening_the_lamp_kept_lit",
+  "type": "happening",
+  "title": "The lamp kept lit",
+  "occasion": "night",
+  "camps": [
+    "pilgrims"
+  ],
+  "prose": "There is a clay lamp at the cairn that one of the pilgrims tends all night, a turn each, so it never goes out. It has not gone out since they left home, they say. When you ask how long ago that was, they have to count, and argue about the count.",
+  "choices": [
+    {
+      "label": "Take a turn at the lamp",
+      "line": "They let you take a turn. You sit with it in the quiet for an hour, and hand it on lit."
+    },
+    {
+      "label": "Ask what happens if it goes out",
+      "line": "Nothing, they say. That is not the point. The point is that it has not."
+    }
+  ],
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "notes": "A fireside story for a night slept beside a camp of pilgrims (Roads and Hands, phase 5). Shared by every map, as the owner's four camp kinds are. Drafted for the owner to rewrite or approve.",
+  "canon": "primary",
+  "sources": [
+    "drafted by Claude for the owner's approval, 2026-10-02"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "happening_the_map_with_a_hole",
+  "type": "happening",
+  "title": "The map with a hole in it",
+  "occasion": "night",
+  "camps": [
+    "adventurers"
+  ],
+  "prose": "When the fire is low they unroll a map drawn on bark, and one of them traces your road on it for you with a stick. The middle of it is burned through, a hole the size of a hand. Somebody dropped it in a fire, she says. We have been walking round the edge of it for two seasons, filling it in.",
+  "choices": [
+    {
+      "label": "Ask what was in the middle",
+      "line": "Nobody knows, she says. That is why we are walking. She rolls the map up and says it is a better reason than most."
+    },
+    {
+      "label": "Tell them what you have seen",
+      "line": "You tell them what you have walked through, and she draws a stream into the hole, small and careful, in the right place."
+    }
+  ],
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "notes": "A fireside story for a night slept beside a camp of adventurers (Roads and Hands, phase 5). Shared by every map, as the owner's four camp kinds are. Drafted for the owner to rewrite or approve.",
+  "canon": "primary",
+  "sources": [
+    "drafted by Claude for the owner's approval, 2026-10-02"
+  ]
+}

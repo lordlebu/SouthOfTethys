@@ -3,8 +3,8 @@
   "type": "saying",
   "name": "Whoever knows the stars",
   "text": "Whoever knows the stars need not fear the empty plain.",
-  "attribution": "Vedda saying",
-  "carried_by": "vedda",
+  "attribution": "Tushara saying",
+  "carried_by": "tushara",
   "occasions": [
     "night",
     "road"
@@ -16,7 +16,7 @@
   "epochs": [
     "epoch_post_cataclysm"
   ],
-  "notes": "Edited from the owner's draft: \"He who knows\" made ungendered.",
+  "notes": "Edited from the owner's draft: \"He who knows\" made ungendered.\n\nCarried by the tushara since 2 October 2026: the owner asked for the fictional sayings to belong to the lore's various peoples, not all to the Vedda.",
   "canon": "primary",
   "sources": [
     "the owner's draft of nomadic-migration sayings for the cutscenes, 2026-10-01"

@@ -3,8 +3,8 @@
   "type": "saying",
   "name": "Nobody leaves their ancestors",
   "text": "A traveller may leave a house. No one leaves their ancestors.",
-  "attribution": "Vedda saying",
-  "carried_by": "vedda",
+  "attribution": "Shaka-rauka saying",
+  "carried_by": "shaka",
   "occasions": [
     "departure"
   ],
@@ -15,7 +15,7 @@
   "epochs": [
     "epoch_post_cataclysm"
   ],
-  "notes": "Edited from the owner's draft: \"A man may leave his house; he does not leave his ancestors\" made ungendered.",
+  "notes": "Edited from the owner's draft: \"A man may leave his house; he does not leave his ancestors\" made ungendered.\n\nCarried by the shaka since 2 October 2026: the owner asked for the fictional sayings to belong to the lore's various peoples, not all to the Vedda.",
   "canon": "primary",
   "sources": [
     "the owner's draft of nomadic-migration sayings for the cutscenes, 2026-10-01"
