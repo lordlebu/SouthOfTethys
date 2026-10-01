@@ -1396,17 +1396,34 @@ already in use, not a view inside the game.
   already carries `database/` for retrieval, and `deploy-canon-service.yml` republishes it with every
   canon change. This is the lazy lore pack the budget entry anticipated, without the game having to
   load it at all.
-- **It shows `notes`.** Much of canon's prose lives there, and so does authoring rationale -- who
-  ruled what and when. The repository is public, so nothing is revealed that was not already, but
-  the page does read partly as a working record. Splitting the two is a canon-wide change to how
-  notes are written, and is left open.
+- **It shows everything, `notes` included -- the owner's ruling, 2026-10-01: "as much data as
+  possible".** Much of canon's prose lives in `notes`, beside authoring rationale -- who ruled what and
+  when. The repository is public, so nothing is revealed that was not already. Nothing is withheld
+  from the portal, which is the opposite of the game's bundle and on purpose: the bundle withholds
+  for weight, and the portal has none to save.
 - **itch.io's origin was missing from CORS**, and is now in code. The published game's canon panel
   failed every request on itch.io while working on Pages, because the embed is served from
   `html-classic.itch.zone`, not `itch.io`. Written into `main.py` as `PUBLISHED_ORIGINS` so it reaches
   Vercel through git rather than living only in a dashboard setting.
 
-Open: whether `notes` should be split into lore and rationale; and a link from the game's canon
-panel into the portal, which is a game-side change.
+The game's canon panel links each entry it names into the portal (game #227).
+
+**And it is guarded against being used up, on the same ruling.** The deployment is on Vercel's
+free Hobby plan: hard caps of a million function calls and four hours of CPU a month, and running
+out pauses the project rather than billing anyone. Paused, both the portal and the game's canon
+panel are gone until the month turns. So:
+
+- `/`, `/entities`, `/entity/{id}` and `GET /search` send `Cache-Control` with a day at the edge,
+  and Vercel answers repeats without calling the function. A deploy starts a fresh cache, which is
+  the only time the answers change.
+- Searching runs the embedding model, the one thing that spends CPU. A query is cut to 200
+  characters, an instance remembers its last 500 answers, and one address gets 30 searches a minute
+  before a 429. Counted per instance, so a speed bump rather than a wall -- enough to stop one loop
+  spending the month.
+- `/ask` spends money at Hugging Face, not Vercel's CPU, and has been behind a key from the start.
+
+If the portal ever outgrows the free plan, the answer is a static export of `database/` to a CDN,
+which serves reading for nothing; only search needs a function.
 
 ## Security
 
