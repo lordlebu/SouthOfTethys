@@ -1609,6 +1609,24 @@ The owner asked for the deploy to be hardened rather than only re-run:
   are built against 1.x; an open floor let an overnight 2.0 break the deploy the same way. Raising
   the cap is a deliberate change made with a deploy watched, not a thing that happens to us.
 
+## Roads and Hands, phase 3: the opening — settled 2026-10-02
+
+A new journey used to go from the front door straight onto the map, on a tile the generator picked,
+with nothing said. Lothal now carries a `prologue`: the Walking Song alone, then four painted plates
+-- the delta road at first light, the kit, Lothal rising out of the reeds, the kilns -- each with two
+lines and a Vedda saying, before the player stands at the Camp in the Kilns.
+
+- **Second person, nobody named** (owner, 1 October): the traveller is whichever of five the player
+  chose, seen from behind in every plate. Captain Varuna, Mitra and the Survival Train stay lore.
+- **Plates and text, not film.** No animation pipeline exists, and painted stills with short lines are
+  the form the genre loves (Firewatch, The Banner Saga). The game draws a stand-in until each painting
+  lands.
+- **The first craft is not Uma's mat.** Her reed mat needs a loom frame and a working tool -- flint
+  knife, adze, frame, then the mat -- which is far too long for the first ten minutes. The game's
+  guided morning twists reed into rope first (no tool), then knaps a flint knife, and pins Uma's mat
+  as the morning's goal so the dock carries the rest.
+- Lint refuses a prologue saying that is not a saying, and an opening saying not meant for an opening.
+
 ## Security
 
 Two Hugging Face tokens were exposed during setup and must be treated as burned: one pasted

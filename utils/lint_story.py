@@ -787,6 +787,19 @@ def main() -> int:
         if arrives and arrives not in own:
             errors.append(f"{path.name}: arrives at {arrives}, which is not on this map")
 
+        # The opening's sayings must be sayings, and ones meant for an opening. The reference walk
+        # would resolve the id; it cannot see a fireside line pressed into the first minute.
+        prologue = payload.get("prologue") or {}
+        said = [prologue.get("opening")] + [plate.get("saying") for plate in prologue.get("plates", [])]
+        for saying_id in [s for s in said if s]:
+            saying_path = DB / "sayings" / f"{saying_id}.json"
+            if not saying_path.exists():
+                errors.append(f"{path.name}: the prologue says {saying_id}, which is not a saying")
+                continue
+            occasions = json.loads(saying_path.read_text(encoding="utf-8")).get("occasions", [])
+            if saying_id == prologue.get("opening") and "opening" not in occasions:
+                errors.append(f"{path.name}: the prologue opens on {saying_id}, which is not an opening saying")
+
     # --- homesteads say where they stand, and whose it is --------------------------
     #
     # The reference check resolves every id, so a ground at a place that does not exist already

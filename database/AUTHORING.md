@@ -506,6 +506,12 @@ interest, on this map, where a traveller coming in is set down. The Aravali is l
 but arrived at the Rail-Head, as its own `arrival` prose says. Absent means the first of
 `departs_from`, which is right for any map whose cart yard is also where the carts come in.
 
+**A journey's opening is the map's `prologue`.** Only the map a journey begins on needs one -- today
+Lothal. It is a saying shown alone (`opening`, which must list `opening` among its occasions) and up
+to six plates, each a painting's file name (`prologue-1-road`), one or two lines in the second
+person, and a saying. It says *you* and names nobody, and it shows the world as it is now: it never
+states the Shattering. The game owns how long a plate stays and when the opening plays.
+
 ### A homestead
 
 What the traveller builds on a field map with the backing of its people -- the endgame of the

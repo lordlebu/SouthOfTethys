@@ -202,6 +202,48 @@
       "pattern": "^poi_[a-z0-9_]+$",
       "description": "Where a traveller arriving on this map is set down; defaults to the first of `departs_from`. Must be a point of interest on this map.\n\nSeparate from `departs_from` because arriving and leaving are not always the same place. The Aravali is left from its piers -- the First Pier for the south, the Far Landing for the north -- but nobody arrives standing on a floating island mid-strait: canon's own `arrival` prose and the Rail-Head's description put the traveller at the Rail-Head, *the arrival, and the map's one ordinary place*. Absent means the default, which is right for every map whose cart yard is also where the carts come in."
     },
+    "prologue": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["opening", "plates"],
+      "description": "How a journey that begins on this map opens: a saying alone on a quiet card, then painted plates with two lines each and a saying under them, before the player takes control at the map's arrival point. Only the map a journey begins on needs one.\n\nThe owner's rulings of 1 October 2026: the opening says *you* and names nobody -- the traveller is whichever of the five the player picked, seen from behind -- and it shows the world as it is now and never states the Shattering (DESIGN.md). Painted stills and short text, never animation. The game owns the pacing: how long a plate stays, Skip, and when it plays at all.",
+      "properties": {
+        "opening": {
+          "type": "string",
+          "pattern": "^saying_[a-z0-9_]+$",
+          "description": "The saying shown alone before the first plate. Must resolve."
+        },
+        "plates": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 6,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["art", "lines"],
+            "properties": {
+              "art": {
+                "type": "string",
+                "pattern": "^prologue-[0-9]+-[a-z0-9-]+$",
+                "description": "The painting's file name as the game looks it up, without extension: `prologue-1-road` is `src/ui/prologue/prologue-1-road.png` there. The game draws a stand-in until it exists."
+              },
+              "lines": {
+                "type": "array",
+                "minItems": 1,
+                "maxItems": 2,
+                "items": { "type": "string", "minLength": 1 },
+                "description": "Second person, present tense. Two lines at most: a plate is a picture with a caption, not a page."
+              },
+              "saying": {
+                "type": "string",
+                "pattern": "^saying_[a-z0-9_]+$",
+                "description": "A saying under the lines. Must resolve and should list `opening` among its occasions."
+              }
+            }
+          }
+        }
+      }
+    },
     "landmass_edges": {
       "type": "object",
       "additionalProperties": false,
