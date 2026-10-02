@@ -24,8 +24,6 @@ PAGES = [
     ("atlas.md", "atlas.html", "The Atlas"),
     ("memory_map.md", "memory_map.html", "The Memory Map"),
     ("bestiary.md", "bestiary.html", "The Bestiary"),
-    ("apothecary.md", "apothecary.html", "The Apothecary"),
-    ("workshop.md", "workshop.html", "The Workshop"),
     ("cookbook.md", "cookbook.html", "The Cookbook"),
 ]
 

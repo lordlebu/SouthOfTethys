@@ -36,11 +36,8 @@ COLLECTION_NAME = "southoftethys"
 
 # Canon folders under database/
 DB_FOLDERS = [
-    "materials",
-    "items",
-    "processes",
-    "recipes",
-    "vehicles",
+    # Materials, items, processes, recipes, vehicles and homesteads left canon on 2 October 2026:
+    # making is the game's own data now, and retrieval answers about the world canon holds.
     "foodways",
     "characters",
     "events",
@@ -63,9 +60,6 @@ DB_FOLDERS = [
     # Written happenings: a dream on a map, somebody on the road. Prose a player can meet, so
     # retrieval should find it as it finds an NPC's lines.
     "happenings",
-    # What the player may build on a map and whose ground it is: the grounds, their holders' worries
-    # and the stages are prose a player meets, so the retrieval service should find them.
-    "homesteads",
     # What the peoples say on the road, in the cutscenes. Short lines a player reads, and with
     # `inspired_by` the one place a reader can ask where a line came from.
     "sayings",

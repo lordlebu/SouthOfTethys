@@ -14,11 +14,21 @@ That division settles nearly every question that comes up: everything canon hold
 rather than debating it.
 
 Canon is one JSON file per entity under `database/`, validated against JSON Schema in
-`database/schemas/`. `database/index.json` is the manifest — **v2.48.0, 1154 entities**.
+`database/schemas/`. `database/index.json` is the manifest — **v3.0.0, 861 entities**.
 
 **Adding anything to canon: read `database/AUTHORING.md` first.** It carries the templates and
-the one decision that matters — which folder, because eighteen of them reach the game and eight
+the one decision that matters — which folder, because twelve of them reach the game and nine
 do not.
+
+**Canon gives the world its context; the game does its own arithmetic** (the owner's ruling,
+2 October 2026). Materials, items, processes, recipes, vehicles and homesteads moved to the game's
+`data/making/` in v3.0.0, with their vocabularies (affordances, material classes, renewal rates).
+Every rule over them used to be written twice -- the cook fire, a tag, what a map can make -- once
+in the game and once in `check_playability.py`, and kept in step across two repositories by hand.
+Canon still *names* game-owned ids (a line teaching a recipe, Lothal's dugout, a custom's dish);
+the lint leaves those unresolved on purpose (`GAME_OWNED_PREFIXES`) and the game's
+`test/gameOwned.test.ts` resolves them. **When something new is a number, a cost or a rule, it
+belongs in the game; when it is who, where, what or why, it belongs here.**
 
 ## Commands
 
@@ -57,17 +67,6 @@ The game now picks by **rendezvous hashing over species ids**, so position is ne
 adding content takes only the tiles it wins (4.8%, against 95.4% before). The index remains
 required as the authored bestiary sequence the books read in, and as a duplicate guard. Still do
 not re-sort a folder — but doing so is now a presentation bug, not a corrupted save.
-
-**`renews` is an ordering, never a duration.** Every material says whether a place gives it
-again — `fast`, `seasonal`, `slow`, `never` — from the vocabulary in `renewal_rates.json`. Canon
-says salt-crust returns faster than sandalwood and **never says in how many days**, because the
-length of a day is a question about play: the game owns that number and turns the ordering into
-days in `src/content/tiers.ts`.
-
-The test for `never`: *would taking it a second time require the thing to have happened again?* A
-fossil needs another death and an age of rock. A reed needs a season. It is honoured literally —
-the game never regrows a `never` node — so `check_playability.py` reports which of them sit in one
-kind of ground, and that report is only worth having because the game keeps the promise.
 
 **One branch at a time, and never `main`.** Work stays on a single feature branch until it
 merges. A new piece of work does not get a new branch because it feels separate — it goes on the
@@ -149,7 +148,9 @@ rate-limited per address -- keep both when adding a route. `docs/decisions.md` h
 **`check_playability.py` simulates.** It starts from nothing and repeatedly does whatever has
 become possible until nothing more opens. The obvious implementation — "is this requirement
 obtainable somewhere?" — passes a dependency cycle, and one shipped. It knowingly duplicates
-`holds` and `observed` from the game's `src/journey.ts`; change one, change both.
+`holds` and `observed` from the game's `src/journey.ts`; change one, change both. It walks
+discoveries, words, questions and entry only: making left with v3.0.0, and the game's own
+`test/criticalPath.test.ts` asks what each map can make.
 
 **A requirement means two different things.** Climbing a rung needs what it stands on to be
 *understood*. Forming a reading of a question, or hearing a line, needs only that it has been
@@ -197,11 +198,10 @@ only thing canon says about the *shape* of a map, as distinct from what it is ma
 rule cannot produce a harbour, an island and a plateau, and trying made every map a dome that was
 hardest to walk exactly in the middle where the walking happens.
 
-A field map with neighbours names where it is left from, **`departs_from`**, and a map that
-settles has one **homestead** (`database/homesteads/`): grounds, their holders, the worries each
-holder has, and three building stages. Its worries must carry the map's thesis, and its stages use
-what that map's ground gives. See `database/AUTHORING.md` and the Settling In entry in
-`docs/decisions.md`. The Aravali has none, by the owner's ruling: it is the crossing.
+A field map with neighbours names where it is left from, **`departs_from`**. A map that settles has
+one **homestead**, which is the game's since v3.0.0 (`data/making/homesteads.json` there): its
+holders, words and places are canon's ids, and its worries should still carry the map's thesis. The
+Aravali has none, by the owner's ruling: it is the crossing.
 
 A region can only hold a map if its biomes are `renderable` in `database/biomes.json`. **That
 gate has moved**: the game now has painted ground for `lava_field`, `snow`, `sky_island` and

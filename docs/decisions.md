@@ -1687,6 +1687,34 @@ each of the four kinds the owner kept. The owner asked for the generic camp art 
 fire ring is at the heart of every camp, the old yurt stands in for a kind's shelter in about one camp
 in three, and a struck camp leaves its ring cold on the ground for a few days.
 
+## Making moves to the game; canon keeps the world — settled 2026-10-02
+
+**The owner's ruling**, on seeing a contract test between the two repositories find twenty places
+where canon claimed a map could do something the game did not: move the crafting system to the
+game, and let canon say what grows in what climate, for reference. And then, the same afternoon:
+*the lore should focus on providing context about the world and should not be used to make granular
+calculations in the game.*
+
+**What moved (v3.0.0).** `materials/`, `items/`, `processes/`, `recipes/`, `vehicles/` and
+`homesteads/` -- 293 entities -- with their schemas and the three vocabularies they draw on
+(`affordances.json`, `material_classes.json`, `renewal_rates.json`). The game holds them in
+`data/making/`, byte for byte what it already read, and the authored notes that never shipped are
+kept in its `docs/making-notes.md`. Homesteads went with making because a building stage is a list
+of made things.
+
+**What it removed here.** The making half of `check_playability.py` (the fixed point, the per-map
+report, `needs_here` mirroring the game's cook fire), eleven making checks in `lint_story.py`, the
+`crafting.json` bundle and its `conformance` answer key, the workshop and apothecary books, and the
+retrieval index's making folders. The cookbook stays, built from the customs alone.
+
+**What still crosses.** Canon names game-owned ids in 44 places (a line that teaches a recipe or
+asks for an item, Lothal's dugout, a custom's dish); the game names canon's in 201 (a material's
+source species, a homestead's map, holders, words, places). `GAME_OWNED_PREFIXES` in the lint
+leaves the first unresolved here, and the game's `test/gameOwned.test.ts` resolves both.
+
+**The rule for what comes next:** a number, a cost or a rule belongs in the game; who, where, what
+and why belong here.
+
 ## Satchel and Hearth: wood from trees, fire from fuel, kinds over species — settled 2026-10-02
 
 The owner played the Narmada and could not make a container: the carry basket wanted bamboo, and 30 of

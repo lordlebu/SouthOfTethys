@@ -59,17 +59,19 @@ PREFIX_DIRS = {
     "npc_": "npcs",
     "word_": "vocabulary",
     "place_": "places",
-    "material_": "materials",
-    "item_": "items",
-    "process_": "processes",
-    "recipe_": "recipes",
-    "vehicle_": "vehicles",
     "foodway_": "foodways",
     "happening_": "happenings",
-    "homestead_": "homesteads",
     "saying_": "sayings",
     "storyline_": "storylines",
 }
+
+# **Ids the game owns, since 2 October 2026.** Making -- materials, items, processes, recipes,
+# vehicles -- and homesteads moved to the game repository. Canon still names them: a line that
+# teaches a recipe, a field map's boat, a foodway's dish. They are not resolved here, because the
+# answer is in the other repository; the game's `test/gameOwned.test.ts` resolves every one of them
+# against its own data. So a prefix below is left out of `PREFIX_DIRS`, and an id with it is text
+# to this file rather than a reference.
+GAME_OWNED_PREFIXES = ("material_", "item_", "process_", "recipe_", "vehicle_", "homestead_")
 
 # folder -> schema stem, where the two differ.
 SCHEMA_FOR = {
@@ -80,14 +82,8 @@ SCHEMA_FOR = {
     "artifacts": "artifact", "factions": "faction", "mythology": "mythology",
     "settlements": "settlement",
     "places": "place",
-    "materials": "material",
-    "items": "item",
-    "processes": "process",
-    "recipes": "recipe",
-    "vehicles": "vehicle",
     "foodways": "foodway",
     "happenings": "happening",
-    "homesteads": "homestead",
     "sayings": "saying",
     "storylines": "storyline",
 }
@@ -410,13 +406,6 @@ def main() -> int:
         for idle in sorted(declared_uses - in_use):
             print(f"  note       : plant use '{idle}' is declared and unused")
 
-    # --- material classes -----------------------------------------------------------
-    #
-    # The third of these pins, and written the same way as the growth-form one for the same
-    # reason. The schema holds the enum and `material_classes.json` holds the glosses, and the
-    # two live in different files -- so a class can be added to one and forgotten in the other,
-    # after which a material is rejected for carrying a class canon has documented. Checked in
-    # both directions, because both directions have happened to the clade pair.
     # --- canon ids must not appear in prose a player reads -------------------
     #
     # `material_bitter_greens` carried "see `foodway_choddo_shak`" in its notes, and the game
@@ -438,10 +427,6 @@ def main() -> int:
     # importing one into another has bitten this repo before. `check_export_boundary.py` is what
     # keeps the two lists honest with each other.
     shown_to_player = {
-        "materials": ("notes",),
-        "items": ("notes",),
-        "vehicles": ("notes",),
-        "processes": ("notes",),
         "fauna": ("journal_prompt", "notes"),
         "flora": ("journal_prompt", "notes"),
         "points_of_interest": ("description", "arrival"),
@@ -503,24 +488,6 @@ def main() -> int:
                 f"Check the biome list; this is what a bestiary import gets wrong."
             )
 
-    classes_path = DB / "material_classes.json"
-    mat_schema = SCHEMA_DIR / "material.schema.json"
-    if classes_path.exists() and mat_schema.exists():
-        declared = set(load(classes_path)["classes"])
-        listed = set(
-            load(mat_schema)["properties"]["classes"]["items"].get("enum") or []
-        )
-        for missing in sorted(declared - listed):
-            errors.append(
-                f"material_classes.json declares '{missing}' that material.schema.json's "
-                f"enum does not allow"
-            )
-        for extra in sorted(listed - declared):
-            errors.append(
-                f"material.schema.json allows class '{extra}' that material_classes.json "
-                f"does not declare"
-            )
-
     # --- the biome vocabulary ---------------------------------------------------------
     #
     # **The pin that was missing.** `biomes.json` declares which biomes exist and seven schemas
@@ -548,172 +515,6 @@ def main() -> int:
                         f"{schema_file.name}: {where} allows biome '{extra}', "
                         f"which biomes.json does not declare"
                     )
-
-    # --- renewal rates ----------------------------------------------------------------
-    #
-    # The same pin again, for the vocabulary that says whether a material comes back. Written
-    # alongside `renewal_rates.json` rather than after it, for the reason the affordances note
-    # gives below.
-    renewal_path = DB / "renewal_rates.json"
-    if renewal_path.exists() and mat_schema.exists():
-        declared_rates = set(load(renewal_path)["rates"])
-        listed_rates = set(
-            load(mat_schema)["properties"].get("renews", {}).get("enum") or []
-        )
-        for missing in sorted(declared_rates - listed_rates):
-            errors.append(
-                f"renewal_rates.json declares '{missing}' that material.schema.json's "
-                f"renews enum does not allow"
-            )
-        for extra in sorted(listed_rates - declared_rates):
-            errors.append(
-                f"material.schema.json allows renews '{extra}' that renewal_rates.json "
-                f"does not declare"
-            )
-
-    # --- a material is gatherable only where its source lives -------------------------
-    #
-    # The bug this exists to make unauthorable: `material_ammonite_shell` was gathered in
-    # `coast` and `sea`, and both ammonites it is won from live in `lava_field` and
-    # `mountains`. Not one biome in common -- so the shell could be picked up in every biome
-    # the animal cannot survive in, and in none of the ones it can. Twenty-five materials
-    # disagreed with their own sources this way, and nothing anywhere reported it, because
-    # each file is internally consistent and the contradiction only exists *between* them.
-    #
-    # It matters more now than it did: the game is moving from gathering a biome-wide list to
-    # gathering **what is standing on the tile**, so a material whose source is not in the
-    # biome becomes literally unobtainable rather than merely odd.
-    #
-    # **A subset check, not equality, and the asymmetry is the whole rule.** A material that
-    # names fewer biomes than its sources reach is under-supplied and harmless -- the species
-    # is there, you simply cannot take that from it here. A material that names a biome none
-    # of its sources reach is the bug.
-    #
-    # `won_from` may also name a `place_`, which has no biome list; those are skipped rather
-    # than guessed at. And a material may legitimately outrun its source when the *material*
-    # travels without it -- leviathan bone and oyster shell wash up on a coast, salt crusts a
-    # pan the saltbush never grew in -- so those three are listed here by id and say why in
-    # their own `notes`.
-    travels_without_its_source = {
-        "material_leviathan_bone",
-        "material_oyster_shell",
-        "material_salt_crust",
-    }
-    species_biomes: dict[str, set] = {}
-    for eid, (path, payload) in all_entities().items():
-        if path.parent.name in ("flora", "fauna"):
-            species_biomes[eid] = set(payload.get("biomes") or [])
-    for eid, (path, payload) in all_entities().items():
-        if path.parent.name != "materials":
-            continue
-        if eid in travels_without_its_source:
-            continue
-        sources = [s for s in (payload.get("won_from") or []) if s in species_biomes]
-        if not sources:
-            continue
-        reachable: set = set()
-        for source in sources:
-            reachable |= species_biomes[source]
-        for biome in sorted(set(payload.get("found_in") or []) - reachable):
-            errors.append(
-                f"materials/{path.name}: found_in names '{biome}', where none of its "
-                f"won_from species live ({', '.join(sorted(reachable)) or 'nowhere'}) -- "
-                f"either the material or the species is wrong about where it is"
-            )
-
-    # --- a field map's vehicles are vehicles, and can float on it -------------------------
-    #
-    # `vehicles` on a field map says which craft are simply *there* when the traveller arrives
-    # -- the dugout at Lothal. The generic reference check already proves each id exists; it
-    # cannot prove the id is a vehicle, or that the vehicle has anything to travel on here.
-    #
-    # The second is the one worth a rule. A vehicle carries only over its own `crosses` biomes,
-    # so a boat listed on a map whose palette holds none of them is authored but unusable -- and
-    # it fails silently, because the game simply never finds water to launch it on. The same
-    # shape as the material gathered where its source never lives: each file is right on its
-    # own, and the contradiction exists only between them.
-    #
-    # `seed_biomes` is the palette, not a promise every biome appears -- but a palette without
-    # the biome is a promise it does not, which is the direction this checks.
-    for eid, (path, payload) in sorted(entities.items()):
-        if path.parent.name != "field_maps":
-            continue
-        palette = set(payload.get("seed_biomes") or [])
-        for vid in payload.get("vehicles") or []:
-            found = entities.get(vid)
-            if found is None:
-                continue  # the reference check reports it
-            vpath, vehicle = found
-            if vpath.parent.name != "vehicles":
-                errors.append(f"field_maps/{path.name}: vehicles lists '{vid}', which is not a vehicle")
-                continue
-            if not palette & set(vehicle.get("crosses") or []):
-                errors.append(
-                    f"field_maps/{path.name}: vehicles lists '{vid}', which crosses "
-                    f"{', '.join(vehicle.get('crosses') or []) or 'nothing'} -- none of them is "
-                    f"in this map's seed_biomes, so it could never be launched here"
-                )
-
-    # --- affordances ------------------------------------------------------------------
-    #
-    # Nothing carries `affords` yet -- items land on day 2 -- but the file is written and the
-    # pin goes in with it rather than after it. An undeclared vocabulary is exactly what this
-    # layer exists to avoid repeating: `flora.uses` accumulated 30 free-text values before
-    # anybody noticed it was a vocabulary at all.
-    aff_path = DB / "affordances.json"
-    if aff_path.exists():
-        affordances = set(load(aff_path)["affordances"])
-        for eid, (path, payload) in entities.items():
-            for a in payload.get("affords") or []:
-                if a not in affordances:
-                    errors.append(
-                        f"{path.name}: '{a}' is not an affordance in affordances.json"
-                    )
-
-    # --- recipe tags are the declared classes, with a hash ----------------------------
-    #
-    # The fourth pin, and the one with a twist: the recipe schema's tag enum is the material
-    # class vocabulary with `#` in front, so the two can drift in a way that reads as a typo in
-    # the recipe rather than as two files disagreeing. Checked both ways, like the others.
-    recipe_schema = SCHEMA_DIR / "recipe.schema.json"
-    if classes_path.exists() and recipe_schema.exists():
-        declared = {f"#{c}" for c in load(classes_path)["classes"]}
-        tag_enum = set(
-            load(recipe_schema)["properties"]["ingredients"]["items"]["properties"]["tag"]
-            .get("enum") or []
-        )
-        for missing in sorted(declared - tag_enum):
-            errors.append(
-                f"material_classes.json declares '{missing[1:]}' that recipe.schema.json's "
-                f"tag enum does not allow as '{missing}'"
-            )
-        for extra in sorted(tag_enum - declared):
-            errors.append(
-                f"recipe.schema.json allows tag '{extra}' that material_classes.json does "
-                f"not declare"
-            )
-
-    # --- base_item chains -------------------------------------------------------------
-    #
-    # Inherit-then-override, the shape Factorio's prototypes take. Canon already does this twice
-    # under other names -- `fauna.base_species` and `character.reincarnation_of` -- and neither
-    # of those can loop, because both are checked. This one has to be too: a chain that eats its
-    # own tail resolves forever, and the export is where it would be discovered.
-    #
-    # The reference walker already proves the target exists; this only proves the chain ends.
-    for eid, (path, payload) in entities.items():
-        base = payload.get("base_item")
-        if not base:
-            continue
-        seen_chain, cursor = [eid], base
-        while cursor:
-            if cursor in seen_chain:
-                loop = " -> ".join(seen_chain + [cursor])
-                errors.append(f"{path.name}: base_item chain loops ({loop})")
-                break
-            seen_chain.append(cursor)
-            nxt = entities.get(cursor)
-            cursor = nxt[1].get("base_item") if nxt else None
 
     # --- invariants across sibling files -------------------------------------------
     #
@@ -873,42 +674,6 @@ def main() -> int:
                 errors.append(f"{path.name}: beat {bid} joins the walkers, but only the last beat of an arc that `joins` may")
         if payload.get("joins") and not any(b.get("joins") for b in beats):
             errors.append(f"{path.name}: says its person joins, and no beat is where they do")
-
-    # --- homesteads say where they stand, and whose it is --------------------------
-    #
-    # The reference check resolves every id, so a ground at a place that does not exist already
-    # fails. What it cannot see is a ground on another map, a holder who is never at the ground
-    # they hold, or an answer that names the wrong kind of thing for its approach -- a `show` with
-    # no discovery would be a worry nobody can ever ease, and the settling loop would stop there.
-    homestead_maps = {}
-    for eid, (path, payload) in entities.items():
-        if path.parent.name != "homesteads":
-            continue
-        fm = payload.get("field_map")
-        if fm in homestead_maps:
-            errors.append(f"{path.name}: {fm} already has {homestead_maps[fm]}; one homestead a map")
-        homestead_maps[fm] = eid
-        on_map = set((entities.get(fm, (None, {}))[1] or {}).get("points_of_interest") or [])
-        ground_ids = set()
-        for g in payload.get("grounds") or []:
-            gid = g.get("id")
-            if gid in ground_ids:
-                errors.append(f"{path.name}: ground {gid} twice")
-            ground_ids.add(gid)
-            if g.get("at") not in on_map:
-                errors.append(f"{path.name}: {gid} stands at {g.get('at')}, which is not on {fm}")
-            holder = entities.get(g.get("held_by"), (None, {}))[1] or {}
-            if g.get("at") not in (holder.get("found_at") or []):
-                errors.append(f"{path.name}: {gid} is held by {g.get('held_by')}, who is never at {g.get('at')}")
-            for w in g.get("worries") or []:
-                for m in w.get("met_by") or []:
-                    needs = {"show": "discovery", "vouch": "person", "offer": "material"}.get(m.get("approach"))
-                    if needs and not m.get(needs):
-                        errors.append(f"{path.name}: {gid}/{w.get('id')}: a `{m.get('approach')}` answer names no {needs}")
-                    if m.get("approach") == "tongue" and m.get("word") and not str(m["word"]).startswith(
-                        f"word_{holder.get('language')}_"
-                    ):
-                        errors.append(f"{path.name}: {gid}/{w.get('id')}: {m['word']} is not {holder.get('language')}")
 
     # --- the overworld's anchors ---------------------------------------------------
     for map_id, expected in sorted(OVERWORLD_ANCHORS.items()):

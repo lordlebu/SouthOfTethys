@@ -7,7 +7,7 @@ half-remembered word lives in [`database/`](database/) as one JSON file, validat
 push — so the lore cannot quietly contradict itself, and a machine can hand any of it to a
 reader, a game, or a language model.
 
-**v2.48.0 · 1154 entities · all cross-references resolving**
+**v3.0.0 · 861 entities · all cross-references resolving**
 
 | | |
 |---|---|
@@ -50,6 +50,11 @@ because a hypothesis is built from what you have *seen*, not what you have *fini
 resolve. `check_playability.py` goes further: it *simulates* a player from nothing, repeatedly
 doing whatever has become possible. The obvious alternative — asking whether each requirement is
 obtainable somewhere — passes a dependency cycle, and one shipped before this existed.
+
+**🌍 Context, not arithmetic.** Since v3.0.0 canon holds the world and the game does its own
+sums: materials, items, recipes, vehicles and homesteads moved to the game's `data/making/` on
+2 October 2026, so the lore says what lives where and who lives there, and never how many reeds a
+rope takes.
 
 **🤖 A corpus a model can actually use.** Every entity is embedded and served through a
 retrieval API, so the world can be asked questions in plain words rather than grepped.
