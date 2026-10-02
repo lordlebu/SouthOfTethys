@@ -1687,6 +1687,18 @@ each of the four kinds the owner kept. The owner asked for the generic camp art 
 fire ring is at the heart of every camp, the old yurt stands in for a kind's shelter in about one camp
 in three, and a struck camp leaves its ring cold on the ground for a few days.
 
+## A rung waits only on understanding — settled 2026-10-02
+
+**The owner's ruling**, the first phase of *A Lighter Game* (the game's `docs/a-lighter-game.md`).
+Twelve rungs waited for an hour or a weather (`conditions`) and six for a tool in hand (`needs_tool`).
+Both fields are gone from the discovery schema and from the eighteen rungs that carried them (v3.1.0):
+a rung needs what it stands on to be understood, and nothing else. An entry may still say "on a clear
+night" -- that is context, and it costs the player no wait. `check_playability.py` loses the
+unproduced-weather check with them, because nothing can wait on a weather any more.
+
+The six tool gates had never worked in play: the game asked whether a rung could be climbed without
+saying what the traveller carried, so those rungs were unclimbable. Removing the gate fixed that.
+
 ## Making moves to the game; canon keeps the world — settled 2026-10-02
 
 **The owner's ruling**, on seeing a contract test between the two repositories find twenty places

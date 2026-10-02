@@ -20,15 +20,7 @@
       ]
     },
     {
-      "entry": "On a clear night you can see how far it goes, and it does not stop where the cloud stops.",
-      "conditions": {
-        "time_of_day": [
-          "night"
-        ],
-        "weather": [
-          "clear"
-        ]
-      }
+      "entry": "On a clear night you can see how far it goes, and it does not stop where the cloud stops."
     },
     {
       "entry": "The lift on the scarp is real and it is nowhere near enough to hold stone. I can describe this exactly and explain none of it, and I have decided that writing it down accurately is the work."

@@ -68,68 +68,6 @@
               "type": "string"
             },
             "description": "What must be true to reach this rung: other discovery ids, vocabulary ids, a tool, an npc consulted. Empty means it follows from the level below."
-          },
-          "conditions": {
-            "type": "object",
-            "description": "When this rung can be reached at all, if the world has to cooperate.",
-            "properties": {
-              "time_of_day": {
-                "type": "array",
-                "items": {
-                  "type": "string",
-                  "enum": [
-                    "dawn",
-                    "morning",
-                    "afternoon",
-                    "evening",
-                    "night"
-                  ]
-                }
-              },
-              "weather": {
-                "type": "array",
-                "items": {
-                  "type": "string",
-                  "enum": [
-                    "clear",
-                    "rain",
-                    "storm",
-                    "mist",
-                    "flood",
-                    "full_moon"
-                  ]
-                }
-              },
-              "season": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              }
-            },
-            "additionalProperties": true
-          },
-          "needs_tool": {
-            "type": "array",
-            "items": {
-              "type": "string",
-              "enum": [
-                "cut",
-                "bind",
-                "carry",
-                "contain",
-                "burn",
-                "deter",
-                "cross",
-                "work",
-                "mark",
-                "trade",
-                "eat",
-                "heal",
-                "shelter"
-              ]
-            },
-            "description": "Affordances the traveller must have to hand to climb this rung, from database/affordances.json. **An affordance rather than a named item**, exactly as `process.needs` is: a rubbing needs something that marks, and canon should not have to decide whether that is a stylus, an awl or a burnt stick. Any item affording it will do.\n\nKept out of `requires` deliberately. That field names things that must be *known*, and the reference walker resolves every id in it; a tool is a thing you are carrying, which is a different kind of fact and would have to be smuggled past the walker as a non-id string. Two fields, two questions.\n\nVaruna's kit affords `burn`, `mark`, `shelter` and `cross` from his first step, so those four gate nothing on their own -- which is correct, and is why the interesting values here are `cut`, `work`, `contain` and `carry`."
           }
         },
         "additionalProperties": true

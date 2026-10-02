@@ -15,12 +15,7 @@
       "entry": "It is not always doing anything. Most of the day it is a doorway in a wall."
     },
     {
-      "entry": "In mist it is doing something. The air on the far side is a different air -- warmer, and it smells of stone rather than salt.",
-      "conditions": {
-        "weather": [
-          "mist"
-        ]
-      }
+      "entry": "In mist it is doing something. The air on the far side is a different air -- warmer, and it smells of stone rather than salt."
     },
     {
       "entry": "Not the tide — there has not been a tide here in sixty years — and not the hour. I sat the stair for three days with a slate and the only thing that matches is the mist."

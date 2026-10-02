@@ -14,20 +14,12 @@
       "entry": "Fused sand, and only at the surface — a hand down it is ordinary. Whatever did this was fast enough that the heat never travelled."
     },
     {
-      "entry": "It runs true for as far as I walked it, which was most of a morning, and it does not deviate for a dune or a ridge.",
-      "conditions": {
-        "weather": [
-          "clear"
-        ]
-      }
+      "entry": "It runs true for as far as I walked it, which was most of a morning, and it does not deviate for a dune or a ridge."
     },
     {
       "entry": "It crosses the old harbour floor without a break, and the silt underneath it is unfused. So it happened after the water left, and fast.",
       "requires": [
         "discovery_seawall_courses"
-      ],
-      "needs_tool": [
-        "cut"
       ]
     },
     {

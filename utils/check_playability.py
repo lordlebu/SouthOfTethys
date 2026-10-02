@@ -12,7 +12,6 @@ This walks the world the way a player does and reports what cannot be reached:
   words         every word is actually handed over by a line someone can say
   questions     every question is raised, and every reading of it can be reached
   entry         every gated sub-location opens for someone who did the work
-  conditions    no rung waits on weather the world never produces
 
 **Making is the game's, not this file's** (2 October 2026). Materials, items, processes, recipes,
 vehicles and homesteads moved to the game repository, which checks them there: what each map can
@@ -50,10 +49,6 @@ from pathlib import Path
 
 DB = Path(__file__).resolve().parent.parent / "database"
 
-# Weather the schema allows that `world/weather.ts` deliberately never generates: one is a
-# phase of the moon, the other a state of the land. A rung gated on either can never be
-# climbed. See docs/decisions.md.
-UNPRODUCED_WEATHER = {"full_moon", "flood"}
 
 def load_all(folder: str) -> dict[str, dict]:
     d = DB / folder
@@ -122,9 +117,8 @@ def observed(w: World, s: State, req: str) -> bool:
 def play(w: World, here: set[str]) -> State:
     """Start from nothing and do whatever becomes possible, until nothing more does.
 
-    A rung that wants a tool (`needs_tool`) is judged on the ladder alone here: whether anything
-    can be made that does the work is the game's question, now that making is the game's, and its
-    `test/criticalPath.test.ts` answers it map by map.
+    A rung waits on nothing but understanding (the owner's ruling, 2 October 2026): no hour, no
+    weather and no tool in hand, so the ladder alone is the whole question.
     """
     s = State()
     people = {n for p in here for n in (w.pois[p].get("npcs") or [])}
@@ -259,13 +253,6 @@ def structural(w: World, problems: list[str]) -> None:
         for who in doc.get("helps") or []:
             if who not in w.npcs:
                 problems.append(f"{d} helps {who}, who does not exist")
-        for lvl_i, lvl in enumerate(doc.get("levels") or []):
-            bad = set((lvl.get("conditions") or {}).get("weather") or []) & UNPRODUCED_WEATHER
-            if bad and not set((lvl.get("conditions") or {}).get("weather") or []) - bad:
-                problems.append(
-                    f"{d} rung {lvl_i} waits on {', '.join(sorted(bad))}, which the world "
-                    "never produces (see docs/decisions.md)"
-                )
 
     brought = {sl.get("person") for sl in w.storylines.values()}
     for n, doc in w.npcs.items():
