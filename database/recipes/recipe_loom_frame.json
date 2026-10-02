@@ -5,7 +5,7 @@
   "process": "process_carving",
   "ingredients": [
     {
-      "material": "material_bamboo_cane",
+      "tag": "#timber",
       "count": 4
     },
     {
@@ -21,7 +21,7 @@
       "item": "item_loom_frame"
     }
   ],
-  "notes": "Upright, weighted, taken apart to travel. Every woven thing waits on this one.",
+  "notes": "Upright, weighted, taken apart to travel. Every woven thing waits on this one. Any straight timber does: cane by preference, but windfall, mangrove pole or teak hold as well, on the owner's ruling of 2 October 2026 that a recipe names one species only where the species is the point.",
   "canon": "inferred",
   "sources": [
     "inferred from canon geography"
