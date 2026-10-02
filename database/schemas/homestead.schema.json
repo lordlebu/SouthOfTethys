@@ -178,15 +178,31 @@
             "type": "array",
             "items": {
               "type": "object",
+              "description": "One thing a stage spends: a material or item by `id`, or any material of a class by `tag` (`#timber`), the way a recipe's ingredient may. A tag where any of the kind will do -- the owner's ruling of 2 October 2026.",
               "required": [
-                "id",
                 "count"
+              ],
+              "oneOf": [
+                {
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "required": [
+                    "tag"
+                  ]
+                }
               ],
               "additionalProperties": false,
               "properties": {
                 "id": {
                   "type": "string",
                   "pattern": "^(material|item)_[a-z0-9_]+$"
+                },
+                "tag": {
+                  "type": "string",
+                  "pattern": "^#[a-z_]+$"
                 },
                 "count": {
                   "type": "integer",

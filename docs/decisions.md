@@ -1687,6 +1687,27 @@ each of the four kinds the owner kept. The owner asked for the generic camp art 
 fire ring is at the heart of every camp, the old yurt stands in for a kind's shelter in about one camp
 in three, and a struck camp leaves its ring cold on the ground for a few days.
 
+## Satchel and Hearth: wood from trees, fire from fuel, kinds over species — settled 2026-10-02
+
+The owner played the Narmada and could not make a container: the carry basket wanted bamboo, and 30 of
+707 forest tiles held any. Forests gave nothing on four tiles in five, a satchel of dung cakes could not
+cook, and the trunks drawn on the map were good for nothing. The game's plan is
+`docs/satchel-and-hearth.md` there; canon's half, on the owner's rulings:
+
+- **Windfall wood** (`material_windfall_wood`): timber and fuel, common, `renews: fast`, won from every
+  placed tree and palm. Whatever a tree lets fall, so no tree is felled for it and it comes back as fast
+  as weather does. The game makes it certain wherever a tree stands, and wherever a fallen log is drawn.
+- **A recipe names a species only where the species is the point.** AUTHORING.md already said so; five
+  recipes did not follow it. The loom frame, mud shoes, hide tent and grain bin take any `#timber`, and
+  the carry basket any `#fibre`. The flute, chime, weir, spear and harpoon keep cane: they want it hollow
+  or springing.
+- **A homestead stage may ask for a kind**, `{"tag": "#timber", "count": 3}`, as a recipe's ingredient
+  may. The Narmada's tower and sails take any timber; their prose now says cane and whatever straight
+  poles the woods gave up.
+- **A cook fire is fuel, or a hearth.** Cooking's need for something that burns is met by any carried
+  `fuel`, lit from the traveller's lamp, or by a settlement's or a road stop's hearth.
+  `check_playability.py` mirrors the game's `crafting.fireFor` in `needs_here`; change one, change both.
+
 ## Security
 
 Two Hugging Face tokens were exposed during setup and must be treated as burned: one pasted

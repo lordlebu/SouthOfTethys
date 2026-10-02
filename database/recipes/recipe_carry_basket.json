@@ -5,12 +5,8 @@
   "process": "process_weaving",
   "ingredients": [
     {
-      "material": "material_bamboo_cane",
-      "count": 2
-    },
-    {
       "tag": "#fibre",
-      "count": 4
+      "count": 6
     }
   ],
   "outputs": [
@@ -18,7 +14,7 @@
       "item": "item_carry_basket"
     }
   ],
-  "notes": "Split cane ribs, then any fibre for the weft.",
+  "notes": "Ribs and weft, both of any fibre: split cane where there is cane, bast or palm husk on the plains, goat hair in the hills. It used to want cane for the ribs, and on the Narmada and Dwarka cane is a day's search -- so the one container a traveller can make on open ground was out of reach on two maps of four (the owner's ruling, 2 October 2026).",
   "canon": "inferred",
   "sources": [
     "inferred from canon geography"

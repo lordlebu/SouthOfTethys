@@ -280,6 +280,23 @@ def did_notice(s: State, did: str) -> bool:
     return True
 
 
+# **A cook fire is fuel, or a hearth** -- the game's `crafting.fireFor`, mirrored as this file
+# mirrors `holds` and `observed` (the owner's ruling, 2 October 2026). Cooking's need for something
+# that burns is met by any carried material of a fire class, lit from the kit's lamp, or by a place
+# whose hearths are already lit. Change it there, change it here.
+FIRE_CLASSES = {"fuel"}
+HEARTH_AT = {"settlement", "travel_node"}
+
+
+def needs_here(w: World, proc_id: str, proc: dict, held_m: set[str], kinds: set[str]) -> set[str]:
+    """The affordances a process still asks a carried thing for, here, with what is held."""
+    needs = set(proc.get("needs") or [])
+    if proc_id == "process_cooking" and "burn" in needs:
+        if kinds & HEARTH_AT or any(FIRE_CLASSES & set(w.classes_of(m)) for m in held_m):
+            needs.discard("burn")
+    return needs
+
+
 def make(w: World, biomes: set[str], kinds: set[str], ground: set[str] | None = None,
          knows=None) -> tuple[set[str], set[str]]:
     """Start from what the ground offers and make whatever becomes possible.
@@ -329,8 +346,9 @@ def make(w: World, biomes: set[str], kinds: set[str], ground: set[str] | None = 
             if at and not (at & kinds):
                 continue
 
-            # What the maker must be holding -- an affordance, not a named tool.
-            if not set(proc.get("needs") or []) <= have_affords:
+            # What the maker must be holding -- an affordance, not a named tool. A cook fire may be
+            # fuel instead; see `needs_here`.
+            if not needs_here(w, r.get("process"), proc, held_m, kinds) <= have_affords:
                 continue
 
             # **Counts are ignored, deliberately, and it is a bargain with the game.**
@@ -395,7 +413,7 @@ def making(w: World, problems: list[str]) -> None:
                 f"on any map is one"
             )
             continue
-        missing_tools = set(proc.get("needs") or []) - {a for i in held_i for a in w.affords(i)}
+        missing_tools = needs_here(w, r.get("process"), proc, held_m, kinds) - {a for i in held_i for a in w.affords(i)}
         if missing_tools:
             problems.append(
                 f"{rid} needs something that {'/'.join(sorted(missing_tools))}s, and nothing "
@@ -685,7 +703,11 @@ def homesteads_hold(w: World, end: State, obtainable: set[str], problems: list[s
                     problems.append(f"{hid}: {g.get('id')}/{worry.get('id')} can never be answered")
         for stage in doc.get("stages") or []:
             for need in stage.get("needs") or []:
-                if need.get("id") not in obtainable:
+                # A tag asks for any material of the class, as a recipe's ingredient may.
+                if need.get("tag"):
+                    if need["tag"].lstrip("#") not in {c for m in obtainable if m in w.materials for c in w.classes_of(m)}:
+                        problems.append(f"{hid}: stage {stage.get('id')} needs {need['tag']}, and nothing of that class can be got")
+                elif need.get("id") not in obtainable:
                     problems.append(f"{hid}: stage {stage.get('id')} needs {need.get('id')}, which can never be got")
             if stage.get("backers", 0) > len(people & helped):
                 problems.append(
@@ -943,7 +965,7 @@ def making_per_map(w: World, only: str | None) -> tuple[list[str], list[str]]:
             at = set(proc.get("performed_at") or [])
             if at and not at & kinds:
                 why.append(f"must be done at a {'/'.join(sorted(at))}, and nothing here is one")
-            for tool in sorted(set(proc.get("needs") or []) - affords):
+            for tool in sorted(needs_here(w, r.get("process"), proc, held_m, kinds) - affords):
                 able = sorted(i for i in w.items if tool in w.affords(i) and i not in prototypes)
                 if not able:
                     why.append(f"needs something that can {tool}, and nothing in canon does")
@@ -992,6 +1014,11 @@ def making_per_map(w: World, only: str | None) -> tuple[list[str], list[str]]:
                 continue
             for stage in doc.get("stages") or []:
                 for need in stage.get("needs") or []:
+                    if need.get("tag"):
+                        if need["tag"].lstrip("#") in {c for m in held_m for c in w.classes_of(m)}:
+                            continue
+                        local.append(f"{hid}: stage {stage.get('id')} needs {need['tag']}, and nothing of that class is here")
+                        continue
                     nid = need.get("id") or ""
                     if nid in held_m or nid in held_i:
                         continue

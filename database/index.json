@@ -1,5 +1,5 @@
 {
-  "version": "2.47.0",
+  "version": "2.48.0",
   "description": "SouthOfTethys canonical entity index",
   "counts": {
     "artifacts": 6,
@@ -15,7 +15,7 @@
     "happenings": 14,
     "homesteads": 3,
     "items": 84,
-    "materials": 78,
+    "materials": 79,
     "mythology": 11,
     "npcs": 25,
     "places": 112,
@@ -843,7 +843,8 @@
       "material_tin_ore",
       "material_tree_pitch",
       "material_viper_venom",
-      "material_wild_honey"
+      "material_wild_honey",
+      "material_windfall_wood"
     ],
     "mythology": [
       "mythology_ascension_of_agun",
