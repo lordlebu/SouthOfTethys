@@ -9,13 +9,17 @@ so the 441 entities in database/ reached the game as 346 flat rows.
 This emits what canon actually holds, and leaves the shaping to the side that owns the
 engine. Canon changes when the fiction changes; the game changes when the design does.
 
-Four files rather than one, split by what a module needs rather than by entity type:
+Three files rather than one, split by what a module needs rather than by entity type:
 
   species.json      fauna and flora, with everything they carry
   places.json       regions, field maps, points of interest, the people standing in them,
                     what can happen to you there, what is said on the road between them,
                     and the biome vocabulary
   knowledge.json    discoveries, field questions, vocabulary
+
+There was a fourth, `crafting.json`, and `homesteads` rode in `places.json`. Both left on 2 October
+2026, when the owner moved making to the game: materials, items, processes, recipes, vehicles and
+homesteads are the game's own data now, under its `data/making/`. Canon keeps the world's nouns.
 
 Plus canon.lock.json, which carries the version and a hash of each so the game's CI can
 tell its committed copy still matches a canon release rather than having been hand-edited.
@@ -41,7 +45,7 @@ DEFAULT_OUT = Path(os.environ.get("CANON_REPO", REPO.parent / "4000BCESaraswathy
 # entity has one, then id -- see the note on ordering below.
 BUNDLE = {
     "species.json": ["fauna", "flora"],
-    "places.json": ["regions", "field_maps", "points_of_interest", "npcs", "happenings", "homesteads",
+    "places.json": ["regions", "field_maps", "points_of_interest", "npcs", "happenings",
                     # What the peoples say on the road, shown in the cutscenes. Placed here as
                     # `happenings` were, and for the same reason: a saying belongs to the maps and
                     # the journey between them -- its `field_maps` point at this file's maps -- and
@@ -52,7 +56,6 @@ BUNDLE = {
                     # happenings are: its beats happen at this file's places, on this file's maps.
                     "storylines"],
     "knowledge.json": ["discoveries", "field_questions", "vocabulary"],
-    "crafting.json": ["materials", "items", "processes", "recipes", "vehicles"],
 }
 
 # Not exported: characters, events, settlements, factions, artifacts, mythology and the epoch
@@ -76,7 +79,7 @@ NOT_EXPORTED = [
     # `foodways` is the cultural half of food -- whose a dish is, when it is eaten, what it
     # marks. The edible half is an `item` and ships; this does not, on the same split that
     # keeps `mythology` out. The one link across the boundary is `foodway.dish`, which names
-    # an item that does ship.
+    # an item the game owns.
     "foodways",
 ]
 
@@ -141,18 +144,8 @@ WITHHELD = ("canon", "sources", "epochs", "appearance", "inspired_by")
 # consuming interfaces rather than by grepping for the word, because a field that is destructured
 # would not show up as `.notes` anywhere.
 #
-# **`recipes` is the fourth and it is the subtle one, because the game does map it.**
-# `making.ts` reads `r.notes` into `Recipe.description` exactly as it does for materials, items,
-# processes and vehicles -- so the first three's argument ("no field at all") does not apply and
-# it looks read. It is not. Every consumer of the `recipes` export filters by id, ingredients or
-# process: `crafting.ts` three times, `cooking.ts`, `making-chain.ts`, `using.ts`. Nothing renders
-# a recipe's description, where an *item's* description reaches the player through `using.ts` when
-# they eat or take a remedy, and a vehicle's through `vehicles.ts`. 6.8 KB across 86 recipes.
-#
-# The mapping is left alone on purpose. `description: r.notes ?? ''` still compiles and still
-# yields the empty string, so nothing in the game has to change for this and nothing breaks if a
-# panel later wants the text -- at which point this folder comes back off the list and costs its
-# 6.8 KB deliberately, which is the decision being made in the open rather than by omission.
+# (`recipes` was the fourth, and `homesteads` was withheld from the commit that created it. Both
+# moved to the game with the making layer on 2 October 2026, and left this list with it.)
 #
 # **`happenings` is the fifth, and was withheld from the commit that created it.** The game's
 # `GameEvent` has no `notes`: a happening's `notes` are the authoring rationale -- which thesis it
@@ -166,11 +159,8 @@ WITHHELD = ("canon", "sources", "epochs", "appearance", "inspired_by")
 # moved where -- that no player ever saw. The player's prose on these is `description`, `arrival`
 # and `lines`, and those stay.
 WITHHELD_NOTES = (
-    "discoveries", "field_questions", "vocabulary", "recipes", "happenings",
+    "discoveries", "field_questions", "vocabulary", "happenings",
     "regions", "field_maps", "points_of_interest", "npcs",
-    # A homestead's `notes` are the authoring rationale; the player reads its grounds' prose, the
-    # worries and the stages. Withheld in the commit that created the folder, as happenings were.
-    "homesteads",
     # A saying's `notes` record what was changed from the owner's draft to fit canon -- a horse
     # made an ox, a line ungendered. Editing history; the player reads `text` and `attribution`.
     "sayings",
@@ -201,39 +191,6 @@ def withhold_lore_species(folder: str, entities: list[dict]) -> list[dict]:
     if folder not in ("fauna", "flora"):
         return entities
     return [e for e in entities if e.get("placement") != "lore"]
-
-
-def resolved_affordances(items: list[dict]) -> dict[str, list[str]]:
-    """What each item affords, with `base_item` followed to the end of the chain.
-
-    Emitted so the game can check its answer against canon's rather than merely agreeing by
-    convention. This rule genuinely lives in two languages -- `World.affords` here and
-    `affordsOf` in `src/content/making.ts` -- because canon has to prove a recipe performable
-    before it exports, and the comment on both has always said "change one, change both".
-
-    A comment is not a guard. This is: `test/makingMatters.test.ts` asserts its own resolution
-    equals this map for every item, so the two implementations fail together instead of
-    drifting apart quietly. About 2 KB, which is a cheap price for the one rule in this layer
-    that is written down twice.
-
-    An item that states `affords` **replaces** its base's rather than adding to it, which is
-    how Factorio's override works and is what the TypeScript does.
-    """
-    by_id = {i["id"]: i for i in items}
-    out: dict[str, list[str]] = {}
-    for item in items:
-        seen: set[str] = set()
-        cursor = item["id"]
-        found: list[str] = []
-        while cursor and cursor not in seen:
-            seen.add(cursor)
-            doc = by_id.get(cursor) or {}
-            if doc.get("affords"):
-                found = list(doc["affords"])
-                break
-            cursor = doc.get("base_item")
-        out[item["id"]] = found
-    return out
 
 
 def load_folder(folder: str) -> list[dict]:
@@ -301,9 +258,6 @@ def build_bundle() -> tuple[dict[str, str], dict[str, int]]:
                 for c in cultures["cultures"]
                 if c.get("given_names")
             ]
-        # Canon's own answer to the one rule the game reimplements. See `resolved_affordances`.
-        if filename == "crafting.json":
-            payload["conformance"] = {"affords": resolved_affordances(payload["items"])}
         files[filename] = render(payload)
 
     lock = {

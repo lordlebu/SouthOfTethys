@@ -14,12 +14,7 @@
       "entry": "Warm air off the plain hits the black rock and is turned straight up. The cloud is where it cools, and the scarp holds it there."
     },
     {
-      "entry": "It is strongest in the afternoon and it fails at night, and when it fails the cloud falls down the scarp in one piece.",
-      "conditions": {
-        "time_of_day": [
-          "afternoon"
-        ]
-      }
+      "entry": "It is strongest in the afternoon and it fails at night, and when it fails the cloud falls down the scarp in one piece."
     },
     {
       "entry": "Standing in it, the lift is enough to take a hat and keep it. Not a metaphor -- I lost one and watched it go up."

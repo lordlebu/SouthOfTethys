@@ -22,16 +22,7 @@
       "entry": "Thrali says the water turns silver and that things come up when it does. I have written it down without knowing what I have written."
     },
     {
-      "entry": "It does turn silver, on a still night after rain, and it is not the moon -- it happens under cloud.",
-      "conditions": {
-        "time_of_day": [
-          "night"
-        ],
-        "weather": [
-          "rain",
-          "clear"
-        ]
-      }
+      "entry": "It does turn silver, on a still night after rain, and it is not the moon -- it happens under cloud."
     },
     {
       "entry": "The silver is a bloom, not a light. Something microscopic rising in the closed basin when the rain freshens the top of it."

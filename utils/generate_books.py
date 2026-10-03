@@ -1,4 +1,10 @@
-"""Publish the four reference books: bestiary, apothecary, workshop, cookbook.
+"""Publish the reference books: the bestiary and the cookbook.
+
+**Two, since 2 October 2026.** There were four. The apothecary and the workshop were the making
+layer seen as a book -- medicine, materials, objects, recipes -- and the owner moved making to the
+game, so canon no longer holds what they were made from. The cookbook stays, built from the
+customs alone: its reason for existing was always the `foodways`, which nothing else reads. A
+custom names its dish by the game's item id, so the dish is printed as words, not as a link.
 
 The timeline says *when*, the atlas says *where*, the memory map says *who*. These four say
 **what** -- the 365 living things canon holds, the medicine made from them, the craft that turns
@@ -266,233 +272,34 @@ def bestiary(fauna: list[dict], flora: list[dict], regions: list[dict]) -> None:
 # --------------------------------------------------------------------------- the apothecary
 
 
-def apothecary(flora: list[dict], materials: list[dict], items: list[dict], recipes: list[dict]) -> None:
-    healing_plants = [f for f in flora if "physic" in (f.get("uses") or [])]
-    poisons = [f for f in flora if "poison" in (f.get("uses") or [])]
-    minds = [f for f in flora if "psychoactive" in (f.get("uses") or [])]
-    stuff = [m for m in materials if "physic" in (m.get("classes") or [])]
-    made = [i for i in items if i.get("kind") == "physic" or "heal" in (i.get("affords") or [])]
-    made_ids = {i["id"] for i in made}
-    how = [r for r in recipes if any(o.get("item") in made_ids for o in r.get("outputs") or [])]
-
-    body: list[str] = [
-        "What this world treats a hurt with, and what it is careful of. Canon has no healing "
-        "*mechanic* -- nothing here restores anything to anybody, and the game reads `heal` as "
-        "description rather than as a number. What it has is a pharmacopoeia: bitter barks, "
-        "scraped resins and one mineral exudate, mostly bitter and mostly taken because "
-        "somebody once found out the hard way.",
-        "",
-    ]
-
-    def table(rows: list[dict], heading: str, note: str, describe) -> None:
-        if not rows:
-            return
-        body.extend([f"## {heading}", "", note, "",
-                     "| Name | Also known as | Notes |", "|---|---|---|"])
-        for e in sorted(rows, key=lambda x: x["name"]):
-            body.append(f"| **{e['name']}** | {also_known(e)} | {describe(e)} |")
-        body.append("")
-
-    table(healing_plants, "Plants taken as physic",
-          f"{len(healing_plants)} of canon's plants are recorded as medicine.",
-          lambda e: sentence(e.get("notes")))
-    table(stuff, "What is carried",
-          "The substances themselves, once gathered.",
-          lambda e: sentence(e.get("notes")))
-    table(made, "What is prepared",
-          "Salve, poultice and tonic -- three preparations and nothing more elaborate.",
-          lambda e: sentence(e.get("notes")))
-    table(minds, "Plants that change the mind",
-          "Kept apart from physic, deliberately: a dream-inducer is not a treatment, and filing "
-          "it as one would have canon claiming something it does not.",
-          lambda e: sentence(e.get("notes")))
-    table(poisons, "Plants known to harm",
-          "Their own category rather than a negative. A culture that plants oleander on a "
-          "boundary is using the harm on purpose.",
-          lambda e: sentence(e.get("notes")))
-
-    if how:
-        body.extend(["## How they are made", "", "| Preparation | Takes |", "|---|---|"])
-        for r in sorted(how, key=lambda x: x["name"]):
-            body.append(f"| {link(r['id'])} | {takes(r)} |")
-        body.append("")
-
-    page("apothecary.md", "The Apothecary",
-         "Bitter barks, scraped resins, and the things it is wiser not to eat.", body)
-
-
-# --------------------------------------------------------------------------- the workshop
-
-
-def workshop(materials, items, processes, recipes, vehicles) -> None:
-    classes = vocab("material_classes.json", "classes")
-    affordances = vocab("affordances.json", "affordances")
-    proc_by_id = named(processes)
-    prototypes = {i["base_item"] for i in items if i.get("base_item")}
-
-    body: list[str] = [
-        f"**{len(materials)} materials, {len(items)} objects, {len(processes)} ways of making "
-        f"and {len(recipes)} recipes.** Everything canon knows about turning one thing into "
-        "another.",
-        "",
-        "A recipe names a `#class` wherever any material of that kind will do, which is why "
-        "there are seventy-odd of them rather than one per species. An item marked *prototype* "
-        "exists to be inherited from and is never made on its own.",
-        "",
-        "## Materials, by what they are",
-        "",
-    ]
-
-    by_class: dict[str, list[dict]] = collections.defaultdict(list)
-    for m in materials:
-        for c in m.get("classes") or []:
-            by_class[c].append(m)
-    for c, gloss in classes.items():
-        here = by_class.get(c) or []
-        if not here:
-            continue
-        label = gloss.get("label", c) if isinstance(gloss, dict) else c
-        names = ", ".join(link(m["id"], "workshop") for m in sorted(here, key=lambda x: x["name"]))
-        body.append(f"- **{label}** (`#{c}`) — {names}")
-    body.append("")
-
-    # What is made *of* a thing, gathered by walking the recipes backwards. This is the half of
-    # a compendium that a list cannot give you: knowing what a reed is matters less than knowing
-    # what a reed becomes, and only one of those is written down anywhere in canon.
-    #
-    # A `#tag` ingredient credits every material carrying that class, because that is what the
-    # recipe actually accepts -- a mat asking for `#fibre` is genuinely a use for goat hair.
-    used_by: dict[str, list[str]] = collections.defaultdict(list)
-    for r in recipes:
-        for n in r.get("ingredients") or []:
-            if n.get("material"):
-                used_by[n["material"]].append(r["id"])
-            elif n.get("tag"):
-                for m in by_class.get(n["tag"].lstrip("#")) or []:
-                    used_by[m["id"]].append(r["id"])
-
-    body.extend(["## The materials themselves", ""])
-    for m in materials:
-        body.append(f"### {m['name']}")
-        body.append("")
-        body.append(traits([m.get("rarity", ""), *(m.get("classes") or []), *(m.get("found_in") or [])]))
-        body.append("")
-        if m.get("notes"):
-            body.append(m["notes"])
-            body.append("")
-        if m.get("won_from"):
-            body.append("**Won from** " + ", ".join(link(w) for w in m["won_from"]) + ".")
-            body.append("")
-        uses = list(dict.fromkeys(used_by.get(m["id"]) or []))
-        if uses:
-            body.append("**Used in** " + ", ".join(link(u, "workshop") for u in uses) + ".")
-            body.append("")
-
-    body.extend(["## Ways of making", "", "| Process | Done at | Needs | |", "|---|---|---|---|"])
-    for p in processes:
-        at = ", ".join(p.get("performed_at") or []) or "anywhere"
-        needs = ", ".join(
-            (affordances.get(n) or {}).get("label", n) if isinstance(affordances.get(n), dict) else n
-            for n in p.get("needs") or []
-        ) or "nothing"
-        body.append(f"| **{p['name']}** | {at} | {needs} | {sentence(p.get('notes'))} |")
-    body.append("")
-
-    body.extend(["## Recipes, by how they are done", ""])
-    by_proc: dict[str, list[dict]] = collections.defaultdict(list)
-    for r in recipes:
-        by_proc[r.get("process", "")].append(r)
-    for pid, here in sorted(by_proc.items(), key=lambda kv: proc_by_id.get(kv[0], {}).get("source_index", 0)):
-        body.append(f"### {proc_by_id.get(pid, {}).get('name', pid)}")
-        body.append("")
-        for r in sorted(here, key=lambda x: x["name"]):
-            taught = ", ".join(link(w) for w in r.get("taught_by") or []) or "common knowledge"
-            body.append(f"#### {r['name']}")
-            body.append("")
-            if r.get("known_by"):
-                body.append(traits(r["known_by"]))
-                body.append("")
-            body.append(f"**Makes** {gives(r, 'workshop')}. **Takes** {takes(r, 'workshop')}.")
-            body.append("")
-            body.append(f"**Taught by** {taught}.")
-            body.append("")
-            if r.get("notes"):
-                body.append(r["notes"])
-                body.append("")
-
-    body.extend(["## Objects, by what they are for", "", "| Object | Traits | Made of | |", "|---|---|---|---|"])
-    for i in sorted(items, key=lambda x: (x.get("kind", ""), x["name"])):
-        tags = [i.get("kind", ""), *(i.get("affords") or [])]
-        if i["id"] in prototypes:
-            tags.append("prototype")
-        of = ", ".join(link(m, "workshop") for m in i.get("materials") or []) or "—"
-        body.append(f"| **{i['name']}** | {traits(tags)} | {of} | {sentence(i.get('notes'))} |")
-    body.append("")
-
-    if vehicles:
-        body.extend(["## Things that carry you", "", "| Craft | Traits | Built of | |", "|---|---|---|---|"])
-        for v in vehicles:
-            tags = [v.get("kind", ""), *(v.get("crosses") or [])]
-            if v.get("capacity"):
-                tags.append(f"carries {v['capacity']}")
-            of = ", ".join(link(m, "workshop") for m in v.get("materials") or []) or "—"
-            body.append(f"| **{v['name']}** | {traits(tags)} | {of} | {sentence(v.get('notes'))} |")
-        body.append("")
-
-    page("workshop.md", "The Workshop",
-         "What things are made of, and how they are made.", body)
-
-
-# --------------------------------------------------------------------------- the cookbook
-
-
-def cookbook(items, recipes, foodways, materials) -> None:
-    food = [i for i in items if "eat" in (i.get("affords") or [])]
-    food_ids = {i["id"] for i in food}
-    dishes = [r for r in recipes if any(o.get("item") in food_ids for o in r.get("outputs") or [])]
-    edible = [m for m in materials if set(m.get("classes") or []) & {"produce", "grain", "flesh", "spice", "salt", "oil"}]
+def cookbook(foodways: list[dict]) -> None:
     by_dish: dict[str, list[dict]] = collections.defaultdict(list)
     for f in foodways:
         by_dish[f.get("dish", "")].append(f)
-    item_name = {i["id"]: i["name"] for i in items}
 
     body: list[str] = [
-        f"**{len(food)} dishes, {len(dishes)} recipes and {len(foodways)} customs.** What this "
-        "world eats, and — the part that matters — when and why.",
+        f"**{len(foodways)} customs, around {len(by_dish)} dishes.** What this world eats, and -- "
+        "the part that matters -- when and why.",
         "",
         "**The customs are the reason this page exists.** A `foodway` is deliberately not "
-        "exported to the game: a dish is an object and ships, but what a loaf *means* on the "
-        "night the river comes over the bank is a fact about a people and belongs beside "
-        "mythology. That left them read by nothing at all. Here they are read.",
+        "exported to the game: what a loaf *means* on the night the river comes over the bank is "
+        "a fact about a people and belongs beside mythology. The dishes themselves are the "
+        "game's to cook, and live there.",
         "",
         "## What is eaten, and what it is for",
         "",
     ]
-
-    for i in sorted(food, key=lambda x: x["name"]):
-        body.append(f"### {i['name']}")
+    for dish in sorted(by_dish, key=readable):
+        body.append(f"### {readable(dish).capitalize()}")
         body.append("")
-        if i.get("notes"):
-            body.append(i["notes"])
-            body.append("")
-        made_by = [r for r in dishes if any(o.get("item") == i["id"] for o in r.get("outputs") or [])]
-        for r in made_by:
-            body.append(f"{link(r['id'])} — {takes(r)}.")
-            body.append("")
-        for f in by_dish.get(i["id"]) or []:
-            body.append(f"> **{f['name']}** *({f.get('culture','')})* — {f.get('occasion','')}")
+        for f in by_dish[dish]:
+            body.append(f"> **{f['name']}** *({f.get('culture','')})* -- {f.get('occasion','')}")
             body.append(">")
             for para in (f.get("meaning") or "").split("\n\n"):
                 body.append(f"> {para.strip()}")
                 body.append(">")
             body.pop()
             body.append("")
-
-    if edible:
-        body.extend(["## What it is made from", "", "| Ingredient | | |", "|---|---|---|"])
-        for m in sorted(edible, key=lambda x: x["name"]):
-            body.append(f"| {link(m['id'])} | {traits(m.get('classes') or [])} | {sentence(m.get('notes'))} |")
-        body.append("")
 
     page("cookbook.md", "The Cookbook",
          "What is eaten, when it is eaten, and what eating it says.", body)
@@ -556,34 +363,18 @@ def check_links() -> list[str]:
 
 def main() -> int:
     fauna, flora = load("fauna"), load("flora")
-    materials, items = load("materials"), load("items")
-    processes, recipes = load("processes"), load("recipes")
-    vehicles, foodways = load("vehicles"), load("foodways")
+    foodways = load("foodways")
 
-    for group in (fauna, flora, materials, items, processes, recipes, vehicles, load("npcs")):
+    for group in (fauna, flora, load("npcs")):
         for e in group:
             NAMES[e["id"]] = e.get("name", e["id"])
 
-    # Which page carries a reachable entry for a thing. Anything absent stays plain prose --
-    # a species is a row in a table rather than an entry, so linking to it would promise a
-    # heading that is not there.
-    for e in materials:
-        ENTRY_PAGE[e["id"]] = "workshop"
-    for e in recipes:
-        ENTRY_PAGE[e["id"]] = "workshop"
-    for e in items:
-        if "eat" in (e.get("affords") or []):
-            ENTRY_PAGE[e["id"]] = "cookbook"
-
     bestiary(fauna, flora, load("regions"))
-    apothecary(flora, materials, items, recipes)
-    workshop(materials, items, processes, recipes, vehicles)
-    cookbook(items, recipes, foodways, materials)
+    cookbook(foodways)
     broken = check_links()
     for b in broken:
         print(f"  BROKEN  {b}")
-    print(f"\nFour books from {len(fauna) + len(flora)} species and "
-          f"{len(materials) + len(items) + len(recipes)} made things.")
+    print(f"\nTwo books from {len(fauna) + len(flora)} species and {len(foodways)} customs.")
     if broken:
         print(f"{len(broken)} cross-reference(s) point at nothing.")
         return 1

@@ -4,8 +4,14 @@ Everything canon holds is a **noun**. Pick the right one, write one JSON file, u
 manifest, run the gate. Four steps, and the gate tells you if you got it wrong.
 
 If you only read one thing: **the folder you choose decides whether your writing reaches the
-game.** Eighteen folders are exported into the browser bundle and eight are not, and putting a
+game.** Twelve folders are exported into the browser bundle and nine are not, and putting a
 hundred lore entries in an exported folder is the one mistake here with a cost attached.
+
+**Making is not written here any more** (2 October 2026). Materials, items, processes, recipes,
+vehicles and homesteads are the game's own data, in its `data/making/`. Canon gives the world its
+context -- what lives where, who lives there, what they know and say -- and the game does its own
+arithmetic. A line may still teach a recipe or ask for an item by its id, a field map may still list
+its boat, and a custom may still name its dish: the game checks those ids exist.
 
 ---
 
@@ -23,7 +29,6 @@ hundred lore entries in an exported folder is the one mistake here with a cost a
 | Something that happens to the player on a map | `happenings/` | **yes** |
 | A line a people says on the road, shown in a cutscene | `sayings/` | **yes** |
 | A person's arc, beat by beat: story cards, requests, a bond | `storylines/` | **yes** |
-| What the player may build on a map, and with whose say-so | `homesteads/` | **yes** |
 | A ladder of understanding the player climbs | `discoveries/` | **yes** |
 | A question the player forms a reading of | `field_questions/` | **yes** |
 | An animal or a plant | `fauna/`, `flora/` | **yes** |
@@ -31,13 +36,9 @@ hundred lore entries in an exported folder is the one mistake here with a cost a
 | A god, a monster, a story people tell | `mythology/` | no |
 | A group | `factions/` | no |
 | An object that matters | `artifacts/` | no |
-| A substance you can carry away | `materials/` | **yes** |
-| An object a person can hold | `items/` | **yes** |
-| A way of making | `processes/` | **yes** |
-| What becomes what | `recipes/` | **yes** |
-| Something you board | `vehicles/` | **yes** |
 | What a dish means | `foodways/` | no |
 | A country-sized area | `regions/` | **yes** |
+| Anything gathered, made, cooked, boarded or built | the game's `data/making/` | it *is* the game |
 
 Two distinctions that are easy to get wrong:
 
@@ -184,215 +185,16 @@ thirteenth into a character and hoping. Four come in near-identical pairs on pur
 `asura`/`asura_tainted`, `vanara`/`vanara_spirit` -- because the difference is what those stories
 turn on.
 
-### A material
+### A foodway
 
-A material answers what stuff *is* and where it comes from. It never answers how much of it
-there is -- that is a question about one particular player, and it belongs to the game.
-
-```json
-{
-  "id": "material_reed_fibre",
-  "type": "material",
-  "name": "Reed fibre",
-  "classes": ["fibre"],
-  "won_from": ["flora_saraswati_reed"],
-  "found_in": ["wetland", "river"],
-  "rarity": "common",
-  "renews": "fast",
-  "notes": "Retted in standing water until the pith rots away, then combed out.",
-  "canon": "inferred",
-  "sources": ["docs/bestiary.md"],
-  "source_index": 0
-}
-```
-
-**`classes` is a declared vocabulary**, in `database/material_classes.json`, and it is the
-thing recipes actually name. A recipe asks for `#fibre` rather than for a list of species, so
-canon can gain a new reed in ten years and every cordage recipe written today accepts it
-without an edit. Give a material two classes where it honestly has two -- mahua seed is `oil`
-and `produce` -- rather than picking the more important one.
-
-**`won_from` may be absent.** Canon knows salt-crust is salt without owing anyone an account
-of which pan it was scraped from. What it may *not* be is a bare string: like every other
-reference in canon it names entities, and the walker checks them.
-
-**`found_in` may not name a biome your `won_from` species cannot reach.** The lint refuses it,
-and the bug it exists to stop was real for as long as materials have existed:
-`material_ammonite_shell` was gathered on the `coast` while both its ammonites live in
-`lava_field` and `mountains` -- no biome in common at all. Fewer biomes than the species reach
-is fine and common; *more* is a claim that the stuff appears where nothing makes it. Where the
-two disagree, **the species wins** -- it is the entity that says where a living thing can be.
-
-If a material genuinely travels without its source, say so in `notes` and add the id to
-`travels_without_its_source` in `lint_story.py`. Three do: leviathan bone and oyster shell wash
-ashore, and salt crusts a pan no saltbush grew in. Keep it that small.
-
-**`renews` says whether a place gives it again**, from `database/renewal_rates.json`:
-`fast`, `seasonal`, `slow` or `never`. It is an *ordering*, not a duration -- canon never says
-how many days, because the length of a day is a question about play, and the game owns it. The
-test for `never`: would taking it a second time require the thing to have happened again? A
-fossil needs another death and an age of rock; a reed needs a season.
-
-**This is not `flora.uses`.** That field stays where it is and answers a different question --
-what people *do* with a plant, including `shade` and `navigational_landmark`, which are not
-substances and cannot be carried. A material class says what you can take away.
-
-### An item
-
-An item is ordinary and repeatable. An `artifact` is a named thing canon treats as a character
-in its own right, with a power and a cost -- the Mask of Tethys is an artifact, a reed rope is
-an item, and there are thousands of the second.
-
-```json
-{
-  "id": "item_reed_rope",
-  "type": "item",
-  "name": "Reed rope",
-  "base_item": "item_cordage",
-  "kind": "tool",
-  "affords": ["bind"],
-  "materials": ["material_reed_fibre"],
-  "notes": "Light, cheap and rots. Everything that does not have to hold a boat.",
-  "canon": "inferred",
-  "sources": ["inferred from canon geography"],
-  "source_index": 6
-}
-```
-
-**`affords` is required and must have one entry.** An object that affords nothing is scenery,
-and scenery belongs in a point of interest's description. The values are declared in
-`database/affordances.json` and there is deliberately **no word for damage** -- a weapon `cut`s
-and `deter`s. If combat is ever wanted it arrives by editing that file and recording the call in
-`docs/decisions.md`, not by an item claiming it.
-
-**`base_item` is inherit-then-override.** State what makes this one different and let the base
-say the rest. The chain must terminate; a loop is a lint failure that names the path.
-
-**Date anything bronze.** `epochs` absent means every epoch, which is right for a rope and
-wrong for metal -- canon is a bronze world with iron as a rumour.
-
-### A process
-
-A process answers what a recipe has to be performed *at*, so a recipe can say "fired" without
-restating what a kiln is.
-
-```json
-{
-  "id": "process_firing",
-  "type": "process",
-  "name": "Firing",
-  "performed_at": ["settlement"],
-  "needs": ["burn"],
-  "notes": "Clay to pottery in a kiln.",
-  "canon": "inferred",
-  "sources": ["inferred from canon geography"],
-  "source_index": 7
-}
-```
-
-**`performed_at` absent means anywhere, including standing in a field.** That is the honest
-default -- somebody splitting reeds needs a river bank, not a building. Only name kinds where
-the process genuinely needs the site.
-
-**`needs` names an affordance, not a tool.** Firing needs something that burns, and canon should
-not have to decide whether that is a hearth, a brazier or a pit. Any item affording it will do,
-which is the same argument tag ingredients make about materials.
-
-### A recipe
-
-The only entity type here that is a relation rather than a thing, and it is still a noun: a
-recipe is a stated fact about the world. Whether a particular player has four handfuls of reed
-is not canon's business.
-
-```json
-{
-  "id": "recipe_reed_mat",
-  "type": "recipe",
-  "name": "Weaving a reed mat",
-  "process": "process_weaving",
-  "ingredients": [
-    { "tag": "#fibre", "count": 6 },
-    { "item": "item_loom_frame", "kept": true }
-  ],
-  "outputs": [{ "item": "item_reed_mat" }],
-  "known_by": ["harappan"],
-  "canon": "inferred",
-  "sources": ["inferred from canon geography"],
-  "source_index": 4
-}
-```
-
-**Prefer a `#tag` to a named material.** A recipe asking for `#fibre` accepts a reed canon has
-not written yet; one naming four species is edited every time the bestiary grows. Name an exact
-`material` only where the specific stuff is the point -- pitch, not any resin.
-
-**Set `kept` on a tool.** Absent means consumed, and forgetting it is how a recipe layer
-quietly eats every knife in the world.
-
-**An output may be a material.** Pressing gives oil, smelting gives metal. That is what keeps a
-chain going instead of bottoming out at the first made object.
-
-**Where materials come from is stated once, on the material.** `material.won_from` names the
-species, and nothing on the species names the material back. This is the ruling factions
-already have -- the faction owns `members` and a character does not name one back, so the two
-cannot drift. An earlier plan for this layer had a `yields` field on all 347 species; it was
-dropped on exactly that precedent, and because the alternative was deriving yields from prose,
-which is the mistake that made an owl a ghost and a mongoose a crab.
-
-### A vehicle, and a foodway
-
-Both are small types with one interesting rule each.
-
-A **vehicle** is a *kind* of craft, repeatable the way an item is. Canon already holds four
-named vessels -- the Battered Ekranoplan, the Kelpfang, the Leviathan's Rib and the Survival
-Train -- as `place` entities with `kind: vessel`, and those stay where they are. It is the same
-split items and artifacts have: a reed raft is a vehicle and there are hundreds; the Kelpfang is
-one, and it has a story. A vehicle may name its named craft in `exemplars`, and **the vessel
-does not name the vehicle back** -- one-directional, so the two cannot drift.
-
-```json
-{
-  "id": "vehicle_outrigger",
-  "type": "vehicle",
-  "name": "Outrigger",
-  "kind": "ship",
-  "crosses": ["sea", "coast"],
-  "capacity": 6,
-  "materials": ["material_teak_timber", "material_palm_husk"],
-  "built_by": "process_boatbuilding",
-  "exemplars": ["place_kelpfang"],
-  "canon": "inferred",
-  "sources": ["inferred from canon geography"],
-  "source_index": 5
-}
-```
-
-**Date the machines.** `epochs` absent means every epoch, which is right for a raft and badly
-wrong for a ground-effect craft.
-
-**Putting one on a map is a separate fact, and it lives on the map.** A vehicle entity says what a
-craft *is*; it never says where one is lying. When a map's people move a particular way and a
-stranger arriving there could too, list the vehicle on the **field map**:
-
-```json
-"vehicles": ["vehicle_log_dugout"]
-```
-
-Only Lothal carries it, for the dugout. Three things to know before adding another:
-
-- **It means "already there", not "can be built".** A vehicle absent from the list still exists
-  and can still be made through its `built_by` process where the game supports making.
-- **The craft must be able to float on the map.** At least one of its `crosses` biomes has to be
-  in the map's `seed_biomes`, and the lint refuses one that is not -- a boat on dry country would
-  otherwise ship silently and never be offered.
-- **How it is used is the game's.** How boarding works, its speed, and that the traveller has it
-  in the kit from the first morning are all play, and none of it is written here.
-  Absent means none; do not write an empty list. See `docs/decisions.md`, *A dugout at Lothal*.
+A field map may still list the boat that is already there when the traveller arrives --
+`"vehicles": ["vehicle_log_dugout"]` on Lothal. The vehicle itself is the game's; the game checks
+the id and that the boat can float on the map.
 
 A **foodway** is what a dish *means* -- whose it is, when it is eaten, what it marks -- and it
-is **not exported**. The edible half is an `item` and ships; this is a fact about the Harappans
-and sits beside mythology. `occasion` is the load-bearing field: a dish with no occasion is a
-recipe, and recipes are already a type.
+is **not exported**. The edible half is the game's item; this is a fact about the Harappans and
+sits beside mythology. `occasion` is the load-bearing field: a dish with no occasion is a recipe,
+and recipes are the game's.
 
 ```json
 {
@@ -522,91 +324,6 @@ Lothal. It is a saying shown alone (`opening`, which must list `opening` among i
 to six plates, each a painting's file name (`prologue-1-road`), one or two lines in the second
 person, and a saying. It says *you* and names nobody, and it shows the world as it is now: it never
 states the Shattering. The game owns how long a plate stays and when the opening plays.
-
-### A homestead
-
-What the traveller builds on a field map with the backing of its people -- the endgame of the
-Settling In plan. **Not a `settlement_`**, which is history: Kavik's Lothal, with founders and an
-epoch. One homestead a map at most, and some maps have none on purpose -- the Aravali is a crossing.
-
-```json
-{
-  "id": "homestead_lothal",
-  "type": "homestead",
-  "name": "The mill among the trees",
-  "field_map": "field_map_lothal",
-  "grounds": [
-    {
-      "id": "ground_eastern_field",
-      "at": "poi_eastern_field",
-      "name": "The Eastern Field",
-      "held_by": "npc_hasme",
-      "prose": "What the ground is like, said the first time the traveller asks.",
-      "worries": [
-        {
-          "id": "poisoned",
-          "says": "The worry, in the holder's own voice.",
-          "hint": "What listening draws out: the kind of answer, never the answer.",
-          "not_that": "What they say to an answer that misses. Never a penalty.",
-          "eased": "What they say when it is answered.",
-          "met_by": [{ "approach": "show", "discovery": "discovery_poisoned_ground" }]
-        }
-      ],
-      "agrees": "What they say when every worry is answered."
-    }
-  ],
-  "stages": [
-    {
-      "id": "foundation",
-      "name": "Lay the foundation",
-      "needs": [{ "id": "material_river_clay", "count": 4 }],
-      "backers": 1,
-      "prose": "What the diary says when this stage stands."
-    }
-  ],
-  "settled": "What the diary says when the people move in."
-}
-```
-
-**Talked, never fought.** An answer is one of four approaches: `tongue` (a word of the holder's own
-language -- any, or the one named), `show` (a discovery finished), `vouch` (a person the traveller
-has helped) or `offer` (a thing carried). Listening is always open in the game and never eases a
-worry: it is how the traveller hears the `hint`. The holder is an `npc_` found at the ground, and
-usually one a finished discovery `helps`, so helping them is the same fact the standing and the
-ending read.
-
-`lint_story.py` refuses a ground off the homestead's map, a holder who is never at the ground, and
-an answer that names the wrong kind of thing. `check_playability.py` refuses a worry nothing a
-player can reach will answer, a stage whose materials can never be got, and a stage that wants more
-backers than the map has people who can be helped.
-
-**Each map's worries carry its thesis.** Lothal's holders are afraid of what nobody has looked at;
-Dwarka's (`homestead_dwarka`) are simply right, and wait to see whether the traveller has caught up;
-the Narmada's steward (`homestead_narmada`) trusts a record that begins at the wound. A worry that
-could be lifted onto another map unchanged is not doing its job.
-
-**A stage may only need what is common on its own map, and what its own people can make from
-that.** Two kinds of need, and nothing else:
-
-- **a material the map's ground gives reliably** -- not one that exists there, one a player will
-  actually walk across. The game's `test/criticalPath.test.ts` is the measure: on at least 10 of 12
-  seeds, on at least 3 tiles each. Rarity in the material file is not the test; tile counts are,
-  because a common plant in a biome the map barely has (Dwarka's desert is about thirty tiles) is
-  rare *there*;
-- **an item made by a recipe known from the start or taught by somebody on this map, with no hunted
-  or rare input anywhere in its chain.** Husk hawser is Pell's and is palm husk; reed rope and fibre
-  cord are everybody's and are a handful of fibre. Sinew lashing is not allowed, because sinew is a
-  hunt, which is why the Narmada's tower is lashed with goat-hair cord.
-
-A homestead is the endgame, built here by the people of here, so "obtainable on another map" is not
-an answer. Stages still use what that map's own ground gives -- sandstone and husk in Dwarka, basalt
-and cane on the plateau, clay and reed on the delta -- and the prose should name it. A stage's prose
-may describe more than it needs (Lothal's and Dwarka's glasshouses need no glass), but never
-something the needs contradict.
-
-`check_playability.py` refuses a stage its own map cannot build, from that map's ground, teachers and
-kinds of place (`MAKING_PER_MAP_GATES`). It cannot see rarity, so the reliability half of this rule
-is the game's test to hold, and the author's to respect.
 
 ### A character
 

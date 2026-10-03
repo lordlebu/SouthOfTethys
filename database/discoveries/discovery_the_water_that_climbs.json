@@ -14,12 +14,7 @@
       "entry": "Under the rim it does not fall. It gathers on the underside and runs upward along it."
     },
     {
-      "entry": "It leaves the underside at the island's lowest point and goes on going up, into cloud, and does not come back down here.",
-      "conditions": {
-        "weather": [
-          "rain"
-        ]
-      }
+      "entry": "It leaves the underside at the island's lowest point and goes on going up, into cloud, and does not come back down here."
     },
     {
       "entry": "Moss grows on the underside in the direction the water climbs, which is the only way I can measure this when it is not raining."

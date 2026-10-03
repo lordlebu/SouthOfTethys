@@ -21,13 +21,7 @@
       "entry": "Something large moved in the pool and I did not see it move."
     },
     {
-      "entry": "An enormous salamander, perhaps eight feet, entirely still in the shallow water.",
-      "conditions": {
-        "time_of_day": [
-          "morning",
-          "evening"
-        ]
-      }
+      "entry": "An enormous salamander, perhaps eight feet, entirely still in the shallow water."
     },
     {
       "entry": "The Lothal Marsh-Lurker, which the old bestiaries have surviving here since the Pleistocene and which I had assumed was a flourish."
