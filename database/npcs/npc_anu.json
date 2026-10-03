@@ -43,6 +43,15 @@
       "requires": [
         "recipe_sinew_bow"
       ]
+    },
+    {
+      "text": "A boar does not go elsewhere. It is the one animal that comes to see what you are. So the spear is heavy, and the tusk on it is a boar's own -- teak for the shaft, sinew for the binding, and you carry it hoping to bring it home dry.",
+      "requires": [
+        "discovery_what_a_hunter_leaves"
+      ],
+      "gives": [
+        "recipe_boar_spear"
+      ]
     }
   ],
   "epochs": [
