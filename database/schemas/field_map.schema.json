@@ -290,6 +290,35 @@
         }
       }
     },
+    "firsts": {
+      "type": "array",
+      "description": "The first time something happens on this map that the game marks with a card: a boat lent, a line ridden. Canon says who, where and in what words; the game owns when (Lothal's loan waits until the third day, so the delta is waded before it is paddled -- the owner's ruling of 3 October 2026) and what the card does. Each is shown once per journey.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "vehicle", "npc", "art", "prose", "line"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^first_[a-z0-9_]+$", "description": "A name for this first, unique across canon." },
+          "vehicle": { "type": "string", "pattern": "^vehicle_[a-z0-9_]+$", "description": "What is lent or first ridden: a game-owned vehicle id, resolved by the game's gameOwned test." },
+          "npc": { "type": "string", "pattern": "^npc_[a-z0-9_]+$", "description": "Who hands it over or sees you aboard." },
+          "at": {
+            "type": "array",
+            "items": { "type": "string", "pattern": "^poi_[a-z0-9_]+$" },
+            "description": "Where they will do it, when it matters: the places the lender is found. Absent means wherever the vehicle is boarded."
+          },
+          "art": { "type": "string", "pattern": "^first-[a-z0-9-]+$", "description": "The painting of the moment, as the game looks it up in its event paintings." },
+          "prose": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 3,
+            "items": { "type": "string", "minLength": 1 },
+            "description": "What the moment is, in the second person, a line each."
+          },
+          "line": { "type": "string", "minLength": 1, "description": "What the person says as it happens." },
+          "not_yet": { "type": "string", "minLength": 1, "description": "What they say when asked before the game's time for it has come." }
+        }
+      }
+    },
     "landmass_edges": {
       "type": "object",
       "additionalProperties": false,

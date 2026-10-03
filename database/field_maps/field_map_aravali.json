@@ -91,5 +91,18 @@
         "line": "The cart for the plateau waits at the far end. It waits longer than the line does."
       }
     }
+  ],
+  "firsts": [
+    {
+      "id": "first_aravali_line",
+      "vehicle": "vehicle_lodestone_train",
+      "npc": "npc_hesh",
+      "art": "first-ride-aravali",
+      "prose": [
+        "The carriage comes in on a rail that rests on nothing and stops a hand's width above it, where the ore under the rail wants it to stop.",
+        "Hesh holds a lamp up, though it is daylight, and waits for you to step over the gap."
+      ],
+      "line": "Don't look down the first time. Everybody does, so look if you like."
+    }
   ]
 }
