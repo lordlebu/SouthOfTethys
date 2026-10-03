@@ -39,6 +39,15 @@
       ]
     },
     {
+      "text": "A boar does not go elsewhere. It is the one animal that comes to see what you are. So the spear is heavy, and the tusk on it is a boar's own -- teak for the shaft, sinew for the binding, and you carry it hoping to bring it home dry.",
+      "requires": [
+        "discovery_what_a_hunter_leaves"
+      ],
+      "gives": [
+        "recipe_boar_spear"
+      ]
+    },
+    {
       "text": "The bow is sinew on timber. It tightens as it dries, which no rope does. So the animal gives you the thing that draws the bow that takes the animal. You can sit with that or you can not.",
       "requires": [
         "recipe_sinew_bow"
