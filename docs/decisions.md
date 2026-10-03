@@ -1687,6 +1687,18 @@ each of the four kinds the owner kept. The owner asked for the generic camp art 
 fire ring is at the heart of every camp, the old yurt stands in for a kind's shelter in about one camp
 in three, and a struck camp leaves its ring cold on the ground for a few days.
 
+## Firsts: the boat is lent, the line is ridden once — settled 2026-10-03
+
+**The owner's rulings.** On Lothal the dugout is no longer in the kit from the first morning: Thrali
+lends it, at the Camp in the Kilns or the Drowned Dockyard, and only from the third day, so the delta
+is waded before it is paddled and a player has seen the water take them to the knee. The first ride
+on the Aravali's line gets the same kind of moment, with Hesh. Both are `firsts` on their field map
+(v3.2.0): who, where, the painting, the lines, and for the loan what Thrali says if asked too soon.
+
+**The split is the usual one.** Canon says who and where and in what words; the game owns when (the
+third day is a number) and what the card does. `vehicle_` ids are the game's and are resolved by its
+`gameOwned` test, like every other game-owned id canon names.
+
 ## A rung waits only on understanding — settled 2026-10-02
 
 **The owner's ruling**, the first phase of *A Lighter Game* (the game's `docs/a-lighter-game.md`).
