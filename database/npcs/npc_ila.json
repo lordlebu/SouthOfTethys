@@ -35,12 +35,6 @@
       ]
     },
     {
-      "text": "The lotus in the falling-up water keeps its warmth after it is picked. I have not worked out what that is for. She will know, or she will write to somebody who does.",
-      "requires": [
-        "discovery_the_kept_bench"
-      ]
-    },
-    {
       "text": "Seed keeps in a jar or it does not keep. She had me fire my own the first winter, from the river clay below the cutting -- one for every tray, the lid ground down until it sits. Make one before you make anything else of mine.",
       "requires": [
         "discovery_the_kept_bench"
@@ -56,6 +50,12 @@
       ],
       "gives": [
         "recipe_sandalwood_comb"
+      ]
+    },
+    {
+      "text": "The lotus in the falling-up water keeps its warmth after it is picked. I have not worked out what that is for. She will know, or she will write to somebody who does.",
+      "requires": [
+        "discovery_the_kept_bench"
       ]
     }
   ],

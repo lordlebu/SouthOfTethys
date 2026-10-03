@@ -23,18 +23,18 @@
       "text": "The wind comes over the edge up here like a hand. It took my father's tent. It has taken better things than that."
     },
     {
-      "text": "You stood in it. On purpose. -- Then you know it is not only taking.",
-      "requires": [
-        "discovery_escarpment_wind"
-      ]
-    },
-    {
       "text": "A snake leaves its skin on the top step every summer and the goats walk round it. Oil it twice and it turns that wind better than any wool. My father had a mantle of them. The wind took the tent and left him the mantle.",
       "requires": [
         "discovery_escarpment_wind"
       ],
       "gives": [
         "recipe_serpent_mantle"
+      ]
+    },
+    {
+      "text": "You stood in it. On purpose. -- Then you know it is not only taking.",
+      "requires": [
+        "discovery_escarpment_wind"
       ]
     }
   ],
