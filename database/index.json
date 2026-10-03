@@ -1,5 +1,5 @@
 {
-  "version": "3.2.0",
+  "version": "3.3.0",
   "description": "SouthOfTethys canonical entity index",
   "counts": {
     "artifacts": 6,
@@ -12,7 +12,7 @@
     "field_questions": 8,
     "flora": 119,
     "foodways": 19,
-    "happenings": 14,
+    "happenings": 15,
     "mythology": 11,
     "npcs": 25,
     "places": 112,
@@ -662,6 +662,7 @@
       "happening_the_lamp_kept_lit",
       "happening_the_map_with_a_hole",
       "happening_the_sleeping_stranger",
+      "happening_the_strait_from_the_rim",
       "happening_the_toll_explained",
       "happening_tower_standing",
       "happening_where_the_sea_was",

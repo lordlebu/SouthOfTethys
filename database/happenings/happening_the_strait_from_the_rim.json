@@ -1,0 +1,31 @@
+{
+  "id": "happening_the_strait_from_the_rim",
+  "type": "happening",
+  "title": "The strait from the rim",
+  "occasion": "arriving",
+  "field_maps": [
+    "field_map_aravali"
+  ],
+  "at": [
+    "poi_first_pier"
+  ],
+  "prose": "Somebody has come up before you. A woman kneels on a reed mat at the rim, hands flat on the grass, watching the strait below as if it might do something unexpected. It does: an outrigger the size of a house comes up the channel under three painted sails, a hand on one and a crescent on another, and the fishing boats scatter out of its way like ducks. She does not look round. From up here, she says, you can see who is going where, and nobody down there ever thinks to look up.",
+  "choices": [
+    {
+      "label": "Ask whose ship it is",
+      "line": "Vanga's, she says, out of the eastern delta. It goes up the strait in the morning and comes back at evening, and in all the years she has been climbing up here to watch it, not one soul aboard has looked up and seen her."
+    },
+    {
+      "label": "Kneel beside her and watch",
+      "line": "You watch until the outrigger is a stroke of white against the far islands. Far out, something long and grey breathes once, sends up a plume of spray, and goes back under. She lets out the breath she was holding. That, she says, is what she comes up for."
+    }
+  ],
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "notes": "The owner's painting of 3 October 2026: a woman watching the strait's ships from a sky island, after walking up. Arriving at the First Pier, which is the first floating island a player stands on, so it is met on the first climb. The woman is somebody already there, never the traveller, so the painting fits whoever the player is. The ship is the strait's Kelpfang-type outrigger (the game's `content/strait.ts`); the Kelpfang itself was broken up long ago (`place_kelpfang`), so she names only the people who sail one, the Vanga Maritime Federation and its outriggers. The grey thing breathing far out is the strait's whale. Drafted for the owner to rewrite or approve.",
+  "canon": "primary",
+  "sources": [
+    "drafted by Claude for the owner's approval, 2026-10-03"
+  ]
+}
