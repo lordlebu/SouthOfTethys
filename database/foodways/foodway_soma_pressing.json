@@ -1,0 +1,23 @@
+{
+  "id": "foodway_soma_pressing",
+  "type": "foodway",
+  "name": "The three pressings",
+  "culture": "glass_herbalists",
+  "dish": "item_soma_juice",
+  "occasion": "At dawn, noon and dusk of a day that must be got through awake: a vigil, a crossing, a sickness being sat with.",
+  "meaning": "That what Meru gave is not owned. It is pressed for a need and drunk the same day, never kept, never sold, and never pressed for somebody who only wants to feel it.",
+  "places": [
+    "place_mount_meru"
+  ],
+  "notes": "**The recipe, as canon holds it.** Fresh soma stalks are soaked in water until they swell, laid on a flat pressing stone and beaten with a second stone until they split. The juice is wrung through a fleece of sheep's or goat's wool into a pot, which takes the fibre out and leaves it clear and pale brown. Pure, it is too bitter to swallow, so it is cut: with milk, with curd, or with barley water, depending on who it is for. Three pressings make a day -- one at each of dawn, noon and dusk -- and the third is weaker than the first because the stalks are spent.\n\nKept by the Aravali glass-herbalists, who still go down to Meru's foothills for it and who blow the pressing pots.\n\n**Named ahead of the game.** `item_soma_juice` is not in the game's making data yet: the owner's word on 4 October 2026 was that soma is lore and the game does not need it. The day it does, the game authors the item, a soma-stalk material won from `flora_soma`, and the pressing recipe in `data/making/`, and this custom's `dish` resolves.",
+  "epochs": [
+    "epoch_current",
+    "epoch_post_cataclysm"
+  ],
+  "canon": "secondary",
+  "sources": [
+    "owner's direction, 4 October 2026",
+    "Rigveda, book 9 (the Soma hymns), as context only"
+  ],
+  "source_index": 19
+}

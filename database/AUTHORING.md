@@ -496,7 +496,8 @@ ends on a beat that `joins`: from then on the person walks with the traveller an
 The arcs of 2 October 2026 are the owner's: Guyuk, the Seed-Gleaner of the Aravali, who joins, and
 the Asura princess of the Narmada, who forms the bond and stays back for her people. The prose is
 drafted to the owner's outline for the owner to rewrite. A person met only through her arc -- Guyuk
--- is an NPC with no `found_at`.
+-- is an NPC with no `found_at`. So is somebody met only on the craft they drive: `drives` names the game's
+`vehicle_`, and Sudama drives the Sinauli wagon round Dwarka's Caravan Ground for Jarro.
 
 
 ## Fireside stories

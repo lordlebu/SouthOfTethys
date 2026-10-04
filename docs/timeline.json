@@ -994,6 +994,186 @@
     ]
   },
   {
+    "id": "event_cartographic_mercantile_accord",
+    "type": "event",
+    "title": "The Cartographic & Mercantile Accord",
+    "epoch": "epoch_current",
+    "date_approx": "middle Epoch 4",
+    "participants": [
+      "faction_narmada_academic_republic",
+      "faction_hyrkanian_tushara_rail_khanates"
+    ],
+    "summary": "Ratified in Lothal: joint administration of the Trans-Himalayan railway corridor, and exclusive rights for Narmada scholars to catalogue finds along the Saraswati Basin. The Narmada Chronicle dates it 1884 in the reckoning of its day.",
+    "canon": "secondary",
+    "sources": [
+      "SouthOfTethys.txt"
+    ],
+    "location": "settlement_lothal"
+  },
+  {
+    "id": "event_delta_outrigger_skirmishes",
+    "type": "event",
+    "title": "The Delta Outrigger Skirmishes",
+    "epoch": "epoch_current",
+    "date_approx": "late Epoch 4",
+    "participants": [
+      "faction_vanga_maritime_federation"
+    ],
+    "summary": "Vanga steam-gunboats against the migrant outrigger fleets of the Sea-Drifters in the eastern marshes: blockades and burnt harbour towns.",
+    "canon": "secondary",
+    "sources": [
+      "SouthOfTethys.txt"
+    ],
+    "location": "place_vengi"
+  },
+  {
+    "id": "event_dwarka_gate_drilling_halted",
+    "type": "event",
+    "title": "Drilling Halted at the Dwarka Gate",
+    "epoch": "epoch_current",
+    "date_approx": "late Epoch 4",
+    "location": "place_dwarka_gate",
+    "participants": [
+      "faction_vayu_dwarkadhish_coral_monarchies",
+      "faction_narmada_academic_republic"
+    ],
+    "summary": "Mining at the submerged Dwarka Gate was suspended at midnight after localised spatial tremors, when steam drills struck a high-pressure geothermal Lingam bed and blue auroras rose from the basalt arches. The Narmada Geological Corps warned that further drilling risked permanent crustal destabilisation. Whether it helped bring on the Great Shattering is not settled; canon records what was reported, not why the world broke.",
+    "canon": "secondary",
+    "sources": [
+      "docs/lore/world_pre_shattering_2026-09-30.json",
+      "SouthOfTethys.txt"
+    ]
+  },
+  {
+    "id": "event_frontier_marrow_wars",
+    "type": "event",
+    "title": "The Frontier Marrow Wars",
+    "epoch": "epoch_current",
+    "date_approx": "late Epoch 4",
+    "participants": [
+      "faction_harappan_lothal_union",
+      "faction_hyrkanian_tushara_rail_khanates"
+    ],
+    "summary": "Harappan timber cartels and Hyrkanian mining syndicates fight the Sun-Iron kingdoms in guerrilla wars over Garudasaur fossil-marrow beds and ironwood.",
+    "canon": "secondary",
+    "sources": [
+      "SouthOfTethys.txt"
+    ],
+    "location": "place_mappa_mundi"
+  },
+  {
+    "id": "event_great_coal_and_dolmen_war",
+    "type": "event",
+    "title": "The Great Coal & Dolmen War",
+    "epoch": "epoch_current",
+    "date_approx": "late Epoch 4",
+    "participants": [
+      "faction_harappan_lothal_union",
+      "faction_hyrkanian_tushara_rail_khanates"
+    ],
+    "summary": "The Harappan-Lothal Union against the Rail-Khanates over the central coal basins and the Asura dolmen energy sites their grids needed. The first of the two great wars.",
+    "canon": "secondary",
+    "sources": [
+      "SouthOfTethys.txt"
+    ],
+    "successors": [
+      "event_great_marrow_and_coal_war"
+    ]
+  },
+  {
+    "id": "event_great_marrow_and_coal_war",
+    "type": "event",
+    "title": "The Great Marrow & Coal War",
+    "epoch": "epoch_current",
+    "date_approx": "late Epoch 4",
+    "participants": [
+      "faction_harappan_lothal_union",
+      "faction_narmada_academic_republic",
+      "faction_hyrkanian_tushara_rail_khanates"
+    ],
+    "summary": "The continental war that followed: a Western Industrial Axis of Aquilonia, Narmada and Lothal against an Eastern-Southern Bloc of Hyrkania, Turan and Stygia, over the last Garudasaur marrow beds and the dolmen sites. Armoured trains on the steppe, ironclads shelling ports, and the first chemical and spore weapons in the trenches. Its common name is the Marrow War.",
+    "canon": "secondary",
+    "sources": [
+      "SouthOfTethys.txt"
+    ],
+    "predecessors": [
+      "event_great_coal_and_dolmen_war"
+    ]
+  },
+  {
+    "id": "event_ground_breaks_at_great_junction",
+    "type": "event",
+    "title": "The Day the Ground Broke at the Great Junction",
+    "epoch": "epoch_current",
+    "date_approx": "the end of Epoch 4",
+    "participants": [
+      "character_kael",
+      "character_ananya",
+      "character_devraj"
+    ],
+    "summary": "What the survivors called D-Day: silent purple auroras, the canal gone into geothermal fissures overnight, freighters on their sides in the mud, and a second shock that shattered the Lothal customs domes before the sea drew back and rose in a glowing wave. Kael, Ananya and Devraj dragged the archive cart aboard the Kelpfang-II and drifted out of a drowning city. This is the Shattering as three people lived it; why it came is not written.",
+    "canon": "secondary",
+    "sources": [
+      "SouthOfTethys.txt"
+    ],
+    "location": "place_great_junction",
+    "successors": [
+      "event_golden_season_on_the_wetlands"
+    ]
+  },
+  {
+    "id": "event_mappa_mundi_colonial_insurgencies",
+    "type": "event",
+    "title": "The Mappa Mundi Colonial Insurgencies",
+    "epoch": "epoch_current",
+    "date_approx": "late Epoch 4",
+    "participants": [
+      "faction_colonial_holdings",
+      "faction_vajraptor_canopy_sentinels"
+    ],
+    "summary": "Tribes allied with Sylvians and Vajraptors ambush the Aquilonian logging camps and cut the island cables.",
+    "canon": "secondary",
+    "sources": [
+      "SouthOfTethys.txt"
+    ],
+    "location": "place_mappa_mundi"
+  },
+  {
+    "id": "event_mappa_mundi_telegraph_sabotage",
+    "type": "event",
+    "title": "The Mappa Mundi Telegraph Sabotage",
+    "epoch": "epoch_current",
+    "date_approx": "middle Epoch 4",
+    "participants": [
+      "faction_colonial_holdings",
+      "faction_vajraptor_canopy_sentinels"
+    ],
+    "summary": "Indigenous tribes, with Vajraptor flocks, cut three miles of copper telegraph wire and ambush a logging convoy at the ironwood camps; two ironclads are sent to hold the river mouth.",
+    "canon": "secondary",
+    "sources": [
+      "SouthOfTethys.txt"
+    ],
+    "location": "place_mappa_mundi"
+  },
+  {
+    "id": "event_moriah_spore_blight",
+    "type": "event",
+    "title": "The Moriah Spore-Blight",
+    "epoch": "epoch_current",
+    "date_approx": "late Epoch 4",
+    "location": "place_lemuria",
+    "participants": [
+      "faction_harappan_lothal_union",
+      "faction_hyrkanian_tushara_rail_khanates"
+    ],
+    "summary": "An airborne fungal blight traced to dredging in the sunken Lemurian trenches, carried on coal freighters into the factory wards. It calcifies the lungs -- 'Fossil-Lung' -- and put every factory ward in Lothal and the Hyrkanian foundries under a 21-day quarantine; citizens burned sulphur-and-copper candles in doorways and wore damp felt masks. Whether it helped bring on the Great Shattering is not settled; canon records what was reported, not why the world broke.",
+    "canon": "secondary",
+    "sources": [
+      "docs/lore/world_pre_shattering_2026-09-30.json",
+      "SouthOfTethys.txt"
+    ]
+  },
+  {
     "id": "event_narmada_upriver_expedition",
     "type": "event",
     "title": "The Narmada Upriver Expedition",
@@ -1082,6 +1262,153 @@
     "canon": "secondary",
     "sources": [
       "We Took a Broken Ekranoplan Across the Tethys Sea - Blog Logs"
+    ]
+  },
+  {
+    "id": "event_paratethyan_lock_blockades",
+    "type": "event",
+    "title": "The Paratethyan Lock Blockades",
+    "epoch": "epoch_current",
+    "date_approx": "late Epoch 4",
+    "participants": [],
+    "summary": "Zingaran privateers and Stygian ironclads clash over the tolls at the narrow sea gates of the inland basins.",
+    "canon": "secondary",
+    "sources": [
+      "SouthOfTethys.txt"
+    ],
+    "location": "place_paratethys_sea"
+  },
+  {
+    "id": "event_polar_voyagers_at_tamralinga",
+    "type": "event",
+    "title": "Polar Voyagers Arrive at Tamralinga",
+    "epoch": "epoch_current",
+    "date_approx": "middle Epoch 4",
+    "participants": [],
+    "summary": "A whale-bone ice-runner of frost-skinned voyagers from the Southern Ice Wall docks at Tamralinga's outer pier and trades fossil ivory, blubber-resins and strange acoustic records for iron axes and salt; Narmada linguists are sent to learn their click-dialect.",
+    "canon": "secondary",
+    "sources": [
+      "SouthOfTethys.txt"
+    ],
+    "location": "place_tamralinga"
+  },
+  {
+    "id": "event_saraswati_canal_drain",
+    "type": "event",
+    "title": "The Saraswati Canal Drains",
+    "epoch": "epoch_current",
+    "date_approx": "late Epoch 4",
+    "location": "place_great_junction",
+    "participants": [
+      "faction_harappan_lothal_union"
+    ],
+    "summary": "The Inland Waterway Board's red alert: the main Saraswati trade canal dropped three feet overnight, and more than forty iron freighters of coal and grain went aground between Dwarka and Lothal. Engineers blamed tectonic fracturing along the central basalt fault. Whether it helped bring on the Great Shattering is not settled; canon records what was reported, not why the world broke.",
+    "canon": "secondary",
+    "sources": [
+      "docs/lore/world_pre_shattering_2026-09-30.json",
+      "SouthOfTethys.txt"
+    ]
+  },
+  {
+    "id": "event_tide_lock_three_opened",
+    "type": "event",
+    "title": "Tide-Lock Three Opens",
+    "epoch": "epoch_current",
+    "date_approx": "early Epoch 4",
+    "participants": [
+      "faction_harappan_lothal_union"
+    ],
+    "summary": "The Harappan Guild of Engineers' new iron sluice gates raise four grain barges at dawn, cutting six hours from the passage out of the Saraswati marshes. The same issue of the Lothal Gazette carries the Tuli pearl-divers' protest against steam dredgers tearing up the black-oyster reefs, and news of the synapsid debate at Narmada University.",
+    "canon": "secondary",
+    "sources": [
+      "SouthOfTethys.txt"
+    ],
+    "location": "place_tide_lock_three"
+  },
+  {
+    "id": "event_undersea_lava_river",
+    "type": "event",
+    "title": "The Undersea Lava River and the Red Fog",
+    "epoch": "epoch_current",
+    "date_approx": "late Epoch 4",
+    "location": "place_vengi",
+    "participants": [
+      "faction_vanga_maritime_federation"
+    ],
+    "summary": "Deep-earth magnetic anomalies over the Vengi marshes, a rust-red fog that hid the sun and stilled the sea breeze, and the smell of ozone and sulphur, attributed to a lava river under the sea. Whether it helped bring on the Great Shattering is not settled; canon records what was reported, not why the world broke.",
+    "canon": "secondary",
+    "sources": [
+      "docs/lore/world_pre_shattering_2026-09-30.json",
+      "SouthOfTethys.txt"
+    ]
+  },
+  {
+    "id": "event_golden_season_on_the_wetlands",
+    "type": "event",
+    "title": "The Golden Season on the Wetlands",
+    "epoch": "epoch_post_cataclysm",
+    "date_approx": "early Epoch 5",
+    "participants": [
+      "character_kael",
+      "character_ananya",
+      "character_devraj"
+    ],
+    "summary": "Two years mired in the new Aravali wetlands: Devraj's lens cookers, Ananya's maps of springs and edible plants, Kael's tools and copper pipes from scrap -- and the love that grew among the three. Kael bore twins, a boy with Devraj's calm eyes and a girl with Kael's fierce spirit.",
+    "canon": "secondary",
+    "sources": [
+      "SouthOfTethys.txt"
+    ],
+    "location": "place_kelpfang_ii",
+    "predecessors": [
+      "event_ground_breaks_at_great_junction"
+    ],
+    "successors": [
+      "event_night_of_red_teeth"
+    ]
+  },
+  {
+    "id": "event_night_of_red_teeth",
+    "type": "event",
+    "title": "The Night of Red Teeth",
+    "epoch": "epoch_post_cataclysm",
+    "date_approx": "early Epoch 5",
+    "participants": [
+      "character_kael",
+      "character_ananya",
+      "character_devraj"
+    ],
+    "summary": "In the monsoon of the third year a pack of hunger-driven, red-furred Dhol broke the fence at midnight. Kael killed four and fell defending the cradle; Devraj was dragged into the dark; a falling beam took Ananya's memory. She burned Kael on a cedar pyre and built a shrine for Devraj.",
+    "canon": "secondary",
+    "sources": [
+      "SouthOfTethys.txt"
+    ],
+    "location": "place_kelpfang_ii",
+    "predecessors": [
+      "event_golden_season_on_the_wetlands"
+    ],
+    "successors": [
+      "event_ark_meets_ananya"
+    ]
+  },
+  {
+    "id": "event_ark_meets_ananya",
+    "type": "event",
+    "title": "The Ark Meets Ananya",
+    "epoch": "epoch_post_cataclysm",
+    "date_approx": "Epoch 5",
+    "participants": [
+      "character_ananya",
+      "character_varuna",
+      "character_mithra"
+    ],
+    "summary": "Decades on, the Ark halts at the Aravali valley. Varuna and Mithra find the Kelpfang-II's overgrown hull, the shrine, and Ananya, who remembers nothing of the old world. Her grown children give them the lenses and copper solar-coils kept on the shrine's altar, which light and purify the Ark's water for generations.",
+    "canon": "secondary",
+    "sources": [
+      "SouthOfTethys.txt"
+    ],
+    "location": "place_founding_three_shrine",
+    "predecessors": [
+      "event_night_of_red_teeth"
     ]
   },
   {

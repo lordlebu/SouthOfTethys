@@ -1,0 +1,37 @@
+{
+  "id": "flora_soma",
+  "type": "flora",
+  "name": "Soma",
+  "aliases": [
+    "The pressed plant",
+    "Meru stalk"
+  ],
+  "scientific": "Ephedra merui",
+  "growth_form": "shrub",
+  "uses": [
+    "drink",
+    "psychoactive",
+    "ritual",
+    "physic"
+  ],
+  "notes": "A leafless, jointed shrub of the high stony slopes, all green stalk and no leaf, which is pressed rather than eaten. **It grew on Mount Meru first.** The oldest accounts put it on the upper slopes of the world's axis and nowhere else, and they are particular about where: the north face, above the line the rail ran on.\n\nIt is not found on Meru now. The Republic dug into the mountain's north slope in the Age of Machinery, and whether the digging killed it or the Shattering did, the slopes it grew on are gone. What survives grows in the foothills around the mountain -- the western and eastern foothills, in the stony ground below the old dig -- and less of it every generation. Whoever presses it now presses what Meru let fall.\n\nWhat it does is not in doubt and is the reason it is guarded: a cup of the fresh juice takes away hunger, cold and tiredness for a day and a night, and brings a clear, wide-awake gladness that the old hymns call immortality and the people who drink it call a loan. The bill comes the day after.\n\nThe glass-herbalists of the Aravali keep the pressing: three times in a day, for a need, and never for sale.",
+  "placement_note": "Grows in the foothills of Mount Meru, in the heart of Jambhudweep, which no field map reaches. Held as lore on the owner's word of 4 October 2026 that the game does not need it yet; the day a map reaches Meru's foothills it changes to `encounter` and the game authors its material.",
+  "canon": "secondary",
+  "sources": [
+    "owner's direction, 4 October 2026",
+    "Rigveda, book 9 (the Soma hymns), as context only"
+  ],
+  "region": "narmada-vindhya",
+  "biomes": [
+    "mountains",
+    "hills"
+  ],
+  "landmasses": [
+    "jambhudweepa"
+  ],
+  "placement": "lore",
+  "rarity": "rare",
+  "journal_prompt": "Green jointed stalks with no leaves at all, in a crack of grey rock. It looks like nothing, which may be how it has lasted.",
+  "appearance": "A low, leafless shrub of slender green jointed stalks, like a bundle of horsetail or ephedra, with tiny scale-like sheaths at each joint and small red fleshy cones in season, growing from cracks in pale stony ground.",
+  "source_index": 119
+}
