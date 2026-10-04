@@ -30,6 +30,11 @@
       },
       "description": "point_of_interest ids where they can be met."
     },
+    "drives": {
+      "type": "string",
+      "pattern": "^vehicle_[a-z0-9_]+$",
+      "description": "The craft this person drives on its round, a game-owned `vehicle_` id. Somebody who drives one is met on it, so they may stand nowhere (`found_at` empty), as somebody brought by a storyline may. The game reads this to name the driver on the card that meets the craft. Sudama drives the Sinauli wagon for Jarro (the owner, 4 October 2026)."
+    },
     "role": {
       "type": "string",
       "description": "How they read on meeting -- fisherman, scholar, herder, child. Not a class."

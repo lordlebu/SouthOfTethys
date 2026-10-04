@@ -86,7 +86,7 @@ A species that can be met in play carries its biomes; one marked *lore* is writt
 | **Wayside Knotgrass**<br>Doorstep grass · Trodden knot · *Polygonum aviculare itineris* | *common · Grass · plains · settlement · coast · physic · food* | A wiry mat pressed into the middle of the path, greener where the feet go than on either side of it, which is the wrong way round until you think about why. |
 | **Whisper-Fig**<br>*Ficus susurrans* | *rare · Tree · forest · landmark · shade · ritual* | The fig's trunk is hollow, and the wind moving through it makes a low sound that the delta people are careful not to interrupt. |
 | **Wild Indigo**<br>*Indigofera silvestris* | *common · Shrub · plains · hills · dye* | Wild indigo, harsher than the garden kind, still good enough for dyers who cannot pay Lothal prices. |
-| **Zebu**<br>Humped ox · Seal bull · *Bos indicus* | *common · Mammal · plains · settlement · hills* | A humped ox tethered by a camp, chewing, with the look of an animal that has pulled a cart further than you have walked. |
+| **Zebu**<br>Humped ox · Seal bull · *Bos indicus* | *common · Mammal · plains · settlement · hills* | A tawny cow tethered by a camp, chewing, her calf folded in the dust beside her. |
 
 ## Saraswati Delta
 

@@ -1694,8 +1694,8 @@ four paintings the Plates and Scenes page held for a decision became animals (v3
 
 - **The zebu** (`fauna_zebu`), brought across the strait from Mainland Asia by people. It carries no
   `landmasses`: it is on both shores because it was led, which is the one way a large northern
-  mammal crosses. Common on plains, settlements and hills. The painting shows almost no hump; it is
-  kept, and the prose describes the animal, with the question put to the owner.
+  mammal crosses. Common on plains, settlements and hills. The painting shows almost no hump
+  because it is a cow, on the owner's word: the bull carries the tall hump and goes in the traces.
 - **The Panchet Broad-Head** (`fauna_panchet_broad_head`), a temnospondyl of river and wetland,
   `["jambhudweepa", "gondwana"]` like every relict, and `rare` rather than critically rare, on the
   owner's word, because it is meant to be met.
@@ -1715,8 +1715,14 @@ the plant becomes `encounter`. The one thing that ships is Ila's line about it.
 
 **The game's half** is in its own repository: zebu milk, kulfi held to the Narmada by a `made_on`
 rule (nothing in the satchel spoils, so carried ice would otherwise set it anywhere), and the Sinauli
-wagon as a wanderer that is a vehicle, kept near the Caravan Ground, drawn by a zebu, with a card
-once a journey that waits until the traveller has walked a while.
+wagon as a wanderer that is a vehicle, kept near the Caravan Ground, drawn by a zebu bull, with a
+card once a journey that waits until the traveller has walked a while.
+
+**Sudama drives it, for Jarro** (`npc_sudama`), on the owner's word. A new field says so: `drives`
+on an NPC names the game's vehicle, and a driver may stand nowhere, as somebody a storyline brings
+may -- `check_playability.py` accepts either. The game reads it to name the driver on the card.
+Jarro, who keeps the Caravan Ground's well, names Sudama in a line; the round is how the well is
+kept. Canon does not say which people Sudama is from.
 
 ## Firsts: the boat is lent, the line is ridden once — settled 2026-10-03
 

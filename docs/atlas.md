@@ -262,7 +262,7 @@ Drawn from the era's own chart: 66 place(s) and 38 people(s), before the Shatter
 | field maps | 4 |  |
 | points of interest | 37 |  |
 | characters | 4 |  |
-| npcs | 25 |  |
+| npcs | 26 |  |
 | happenings | 15 |  |
 | factions | 3 | 6 |
 | events | 5 |  |

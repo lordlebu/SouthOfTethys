@@ -1,0 +1,17 @@
+{
+  "id": "npc_sudama",
+  "type": "npc",
+  "name": "Sudama",
+  "role": "charioteer to Jarro",
+  "found_at": [],
+  "drives": "vehicle_sinauli_wagon",
+  "lines": [],
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "notes": "Jarro's charioteer, on the owner's word of 4 October 2026. Sudama drives the Sinauli wagon round the dry ground of North Dwarka's Caravan Ground: a humped zebu bull in the traces, a spear upright, rolling through the late morning and standing the rest of the day where the road can be seen. The well at the Caravan Ground is Jarro's to keep, and the round is how it is kept.\n\nMet only on the wagon -- no `found_at`, and `drives` says why: Sudama is never standing anywhere to be talked to, as Guyuk is met only through an arc. The traveller sees Sudama on the card that comes with meeting the wagon, and hears the name from Jarro. Canon does not say which people Sudama is from.",
+  "canon": "primary",
+  "sources": [
+    "owner's direction, 4 October 2026"
+  ]
+}

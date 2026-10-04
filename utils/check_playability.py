@@ -257,7 +257,8 @@ def structural(w: World, problems: list[str]) -> None:
     brought = {sl.get("person") for sl in w.storylines.values()}
     for n, doc in w.npcs.items():
         # Somebody met only through their storyline stands nowhere on purpose: the arc brings them.
-        if not doc.get("found_at") and n not in brought:
+        # So does somebody who drives a craft on its round: they are met on it (`drives`).
+        if not doc.get("found_at") and n not in brought and not doc.get("drives"):
             problems.append(f"{n} stands nowhere")
 
     for q, doc in w.questions.items():

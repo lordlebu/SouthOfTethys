@@ -22,6 +22,9 @@
       "text": "Every stall on this rise pays the well a skin of water a season. I keep the well. So they pay me, and I keep the well. It is not complicated."
     },
     {
+      "text": "The wagon? That is Sudama. Sudama drives for me -- round the ground in the morning, and the rest of the day stood where the road can be seen. Nobody has tried the well since the wagon started going round. That is what it is for."
+    },
+    {
       "text": "University people draw me a straight line across the basin every year and tell me I am losing a day. I give them a skin of water for the walk and they come back the long way."
     },
     {
@@ -34,7 +37,7 @@
   "epochs": [
     "epoch_post_cataclysm"
   ],
-  "notes": "Drafted 27 September 2026 for the owner to rewrite. The Caravan Ground's dada: nobody gave him the rise, he has simply kept its well longer than anyone has argued. Right about the road before the player is, and patient about it.",
+  "notes": "Drafted 27 September 2026 for the owner to rewrite. The Caravan Ground's dada: nobody gave him the rise, he has simply kept its well longer than anyone has argued. Right about the road before the player is, and patient about it.\n\nSudama is Jarro's charioteer (`npc_sudama`), on the owner's word of 4 October 2026: the Sinauli wagon that keeps a round of the Caravan Ground is driven for Jarro, and the line about it is how the traveller learns the name.",
   "canon": "draft",
   "sources": [
     "Settling In plan, 27 September 2026"
