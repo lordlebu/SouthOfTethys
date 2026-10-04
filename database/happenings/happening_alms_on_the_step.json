@@ -1,0 +1,31 @@
+{
+  "id": "happening_alms_on_the_step",
+  "type": "happening",
+  "title": "Alms on the step",
+  "occasion": "arriving",
+  "field_maps": [
+    "field_map_aravali"
+  ],
+  "at": [
+    "poi_alms_step"
+  ],
+  "prose": "The path up to the Alms Step is cobbled, and somebody keeps it: the moss has been pulled from between the stones. A woman is ahead of you on it, barefoot, a basket of flowers on her hip, in no hurry. The falls are loud on both sides and their spray hangs in the light. At the step she sets a handful of flowers on the worn stone, where feet have dished it, and stands back as if it were somebody else's turn.",
+  "choices": [
+    {
+      "label": "Leave something of your own",
+      "line": "You leave a pinch of what you carry beside her flowers. She nods once, as if the step were owed it, and goes back down the path the way she came."
+    },
+    {
+      "label": "Find the names with your fingers",
+      "line": "Seven names you can make out, and a gap where an eighth was cut away on purpose. You copy the seven into the diary, and the gap."
+    }
+  ],
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "notes": "The owner's ask of 4 October 2026: a card on reaching the Alms Step, the temple on the first sky island. The owner's painting arrived the same day -- a woman carrying flowers up a cobbled path to a terracotta temple on a cliff edge between waterfalls -- and the draft's rice and lamp on an empty step gave way to it: the prose follows the painting. Drafted by Claude for the owner to rewrite. Guyuk's beat at the same place (`Water at the Alms Step`) comes first when it is due, as story beats always do.",
+  "canon": "secondary",
+  "sources": [
+    "drafted by Claude from the owner's ask of 4 October 2026, for the owner to rewrite or approve"
+  ]
+}

@@ -2,9 +2,12 @@
   "id": "happening_the_sleeping_stranger",
   "type": "happening",
   "title": "A stranger asleep",
-  "occasion": "road",
+  "occasion": "arriving",
   "field_maps": [
     "field_map_aravali"
+  ],
+  "at": [
+    "poi_kept_stones"
   ],
   "prose": "Off the track, in the lee of a boulder, a man is asleep in the sun: furs in the wrong season, a broad face burned by some other sky, an unstrung bow under his head for a pillow. Everything about him says he has walked from much further north than the strait. He does not wake, and his breathing does not change as you pass.",
   "choices": [
@@ -20,7 +23,7 @@
   "epochs": [
     "epoch_post_cataclysm"
   ],
-  "notes": "The owner's Shaka (2 October 2026): 'you stumble upon a barbarian from a distant land sleeping'. On the Aravali, the map that faces the mainland. He is not Shakariman the Narmada surveyor. The game draws the owner's painting `scene-rest-shaka` for it.",
+  "notes": "The owner's Shaka (2 October 2026): 'you stumble upon a barbarian from a distant land sleeping'. On the Aravali, the map that faces the mainland. He is not Shakariman the Narmada surveyor. The game draws the owner's painting `scene-rest-shaka` for it.\n\n**On the north bank, at the end of the map** (the owner, 4 October 2026). It was a `road` happening for the whole Aravali, and a written one is never rationed, so it came on the first road step of the second day, a day after Guyuk's rumour and beside the strait card. It now comes on reaching the Kept Stones, the one place on the mainland shore and the far end of the crossing -- where a man from much further north would be found.",
   "canon": "primary",
   "sources": [
     "drafted by Claude from the owner's outline of 2026-10-02, for the owner to rewrite or approve"

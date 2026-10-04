@@ -1687,6 +1687,25 @@ each of the four kinds the owner kept. The owner asked for the generic camp art 
 fire ring is at the heart of every camp, the old yurt stands in for a kind's shelter in about one camp
 in three, and a struck camp leaves its ring cold on the ground for a few days.
 
+## The Aravali's cards, spread across the crossing — settled 2026-10-04
+
+The owner found three written cards landing together on the Aravali: Guyuk's rumour on the first
+step, the strait from the rim at the First Pier a few steps on, and the sleeping stranger on the
+next day's road, wherever that was. A written happening is never rationed, so nothing kept them apart.
+They are now spread by place, north across the map in the order it is walked:
+
+- **Guyuk's rumour** stays the first road step after arriving.
+- **Alms on the step** (`happening_alms_on_the_step`), new: on reaching the Alms Step, the temple on
+  the first sky island. Drafted for the owner to rewrite; the owner paints it. Guyuk's own beat at
+  the Alms Step comes first when it is due, as story beats always do.
+- **The strait from the rim** moves to the Far Landing, the second island and the last of
+  Jambhudweepa, off the First Pier the Alms Step shares an island with.
+- **The sleeping stranger** becomes an arrival at the Kept Stones, the one place on the north bank and
+  the far end of the map -- where a man walked down from the far north would be found.
+
+An arrival is asked once, on first reaching a place, so spacing them by days would lose them; place
+is what spaces them.
+
 ## Zebu, Soma and the chariot — settled 2026-10-04
 
 The owner's asks, with the plan page at <https://claude.ai/artifact/FvWpowUY5WUZQoPFkYz9Bc>. Three of the

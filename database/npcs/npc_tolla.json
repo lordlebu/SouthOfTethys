@@ -32,6 +32,12 @@
       ]
     },
     {
+      "text": "When somebody has been up to the snowfield, we boil the milk down half a day until it is the colour of sand, and set it in little clay cones packed in the ice with a fist of salt over them. Kulfi. Bring me milk and a lump of that ice and I will show you. It does not keep and the ice does not either, so it is made up here or not at all.",
+      "gives": [
+        "recipe_kulfi"
+      ]
+    },
+    {
       "text": "You stood in it. On purpose. -- Then you know it is not only taking.",
       "requires": [
         "discovery_escarpment_wind"
@@ -41,7 +47,7 @@
   "epochs": [
     "epoch_post_cataclysm"
   ],
-  "notes": "Drafted 27 September 2026 for the owner to rewrite. The high grazing's dada: he decides which goats go on which step, and nobody else has wanted the job. Would settle, if something up here were built to stay.",
+  "notes": "Drafted 27 September 2026 for the owner to rewrite. The high grazing's dada: he decides which goats go on which step, and nobody else has wanted the job. Would settle, if something up here were built to stay.\n\nTeaches kulfi (the owner, 4 October 2026): the plateau's one sweet, made only on the Narmada because the ice is the snowfield's. The game holds the recipe to the Narmada with `made_on`; Tolla is the only one who shows it.",
   "canon": "draft",
   "sources": [
     "Settling In plan, 27 September 2026"
