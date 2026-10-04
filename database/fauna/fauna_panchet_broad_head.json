@@ -1,0 +1,38 @@
+{
+  "id": "fauna_panchet_broad_head",
+  "type": "fauna",
+  "name": "Panchet Broad-Head",
+  "aliases": [
+    "Mud-mouth",
+    "River lid"
+  ],
+  "scientific": "Pachygonia relicta",
+  "clade": "amphibian",
+  "diet": "Carnivore",
+  "behaviour": [
+    "ambush",
+    "basking",
+    "unhurried"
+  ],
+  "notes": "A temnospondyl, the old kind of amphibian that held the rivers before the crocodiles came: two metres of flat body and a head like a shovel blade, the eyes on top so it can lie under a hand's depth of water and watch. It eats fish and whatever drowns, and it does not chase anything. It opens its mouth and lets the current bring the meal.\n\nOne of Jambhudweep's relicts, shared with Gondwana and never across the strait. Rare rather than lost: the deltas still have the slow, warm, muddy water it needs, and the people who fish them know where one lies and fish somewhere else. Nobody eats one. The meat is said to taste of the bottom of the river, which is fair.",
+  "canon": "secondary",
+  "sources": [
+    "owner's direction, 4 October 2026",
+    "assets/source/dump/plate-tethyan-reef-lurker_temnospondil_amphibian.png (game repo)"
+  ],
+  "region": "saraswati-godavari-deltas",
+  "biomes": [
+    "river",
+    "wetland"
+  ],
+  "landmasses": [
+    "jambhudweepa",
+    "gondwana"
+  ],
+  "placement": "encounter",
+  "rarity": "rare",
+  "mood": "patient",
+  "journal_prompt": "What I took for a log on the mud bank had eyes on top of it. The head is wider than my shoulders and flat as a board, and it did not move the whole while I drew it -- only the throat, pumping, slow as breathing.",
+  "appearance": "A heavy, sprawling amphibian two metres long, with a broad flat rounded head, small eyes set high on the skull, a wide lipless mouth and short thick limbs. Mottled olive, brown and dull gold skin with a faint pitted texture on the skull, a paler belly, and a deep tail flattened side to side for swimming.",
+  "source_index": 271
+}

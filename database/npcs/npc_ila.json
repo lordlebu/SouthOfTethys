@@ -57,12 +57,15 @@
       "requires": [
         "discovery_the_kept_bench"
       ]
+    },
+    {
+      "text": "Soma? Guyuk says it grew on Meru once, and now only in the stony ground below it. One cup and a carrier walks three days without bread or sleep. She says it is not a gift, it is a loan -- and the fourth day collects."
     }
   ],
   "epochs": [
     "epoch_post_cataclysm"
   ],
-  "notes": "**The apothecary thread, given somebody to say it.** The brief for this map asked that a player learn how apothecary works and how it rebuilds -- and the atelier said soil samples and seed trays, which is agriculture. Ila is the half that was missing: physic first because sick people cannot wait for a harvest, then grass because grass holds a slope, then food.\n\nAn apprentice rather than Guyuk herself. Canon has the Seed-Gleaner aboard the Survival Train in `event_survival_train_solarpunk`, and a workshop nobody is currently in is the stronger image for this map anyway. Ila keeps it, plants what Guyuk sends, and writes down what comes up -- which is mostly nothing, and the nothing is the data.\n\nShe is at the rail-head as well as the bench, because that is where the soil arrives and where the letters go.",
+  "notes": "**The apothecary thread, given somebody to say it.** The brief for this map asked that a player learn how apothecary works and how it rebuilds -- and the atelier said soil samples and seed trays, which is agriculture. Ila is the half that was missing: physic first because sick people cannot wait for a harvest, then grass because grass holds a slope, then food.\n\nAn apprentice rather than Guyuk herself. Canon has the Seed-Gleaner aboard the Survival Train in `event_survival_train_solarpunk`, and a workshop nobody is currently in is the stronger image for this map anyway. Ila keeps it, plants what Guyuk sends, and writes down what comes up -- which is mostly nothing, and the nothing is the data.\n\nShe is at the rail-head as well as the bench, because that is where the soil arrives and where the letters go.\n\nHer soma line is the owner's ask of 4 October 2026: one person, named or not, saying what soma does. Ila because the pressing is the Aravali glass-herbalists' custom and her teacher is the herbalist who would know. It gives nothing -- soma is lore and the game does not carry it yet.",
   "canon": "secondary",
   "sources": [
     "inferred from character_guyuk_reborn"

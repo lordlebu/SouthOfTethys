@@ -1,0 +1,35 @@
+{
+  "id": "fauna_southern_sea_gull",
+  "type": "fauna",
+  "name": "Southern Sea-Gull",
+  "aliases": [
+    "Harbour gull"
+  ],
+  "scientific": "Larus tethyanus",
+  "clade": "bird",
+  "diet": "Omnivore",
+  "behaviour": [
+    "colonial",
+    "scavenger",
+    "coastal"
+  ],
+  "related_species": [
+    "fauna_sky_gull"
+  ],
+  "notes": "The big dark-backed gull of the southern coasts, on every rock where a boat comes in. It follows the trawlers out and the fish-gutters home, and a harbour with no gulls over it is a harbour where nobody is landing anything. Not the Sky-Gull of the floating islands, which is a smaller white bird that has never seen a fishing boat.\n\nSlate on the back and wings, white everywhere else, and a heavy yellow bill that will open a shellfish the gull has dropped on a rock twice. The fishers say a gull standing still on a rock means the weather will hold, and a gull walking means it will not.",
+  "canon": "secondary",
+  "sources": [
+    "owner's direction, 4 October 2026",
+    "assets/source/dump/plate-southern-seagul.png (game repo)"
+  ],
+  "biomes": [
+    "coast",
+    "sea"
+  ],
+  "placement": "encounter",
+  "rarity": "common",
+  "mood": "watchful",
+  "journal_prompt": "A big gull on the landing rock, slate-backed, yellow-billed, standing on one spot with the patience of something that knows the boats come back.",
+  "appearance": "A large gull, white on the head, neck and underparts, with a dark slate-grey back and wings, black wingtips with small white spots, a heavy hooked yellow bill, pale yellow eyes and pinkish-orange legs.",
+  "source_index": 272
+}

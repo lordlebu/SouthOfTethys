@@ -6,7 +6,7 @@
 
 What is eaten, when it is eaten, and what eating it says.
 
-**19 customs, around 14 dishes.** What this world eats, and -- the part that matters -- when and why.
+**20 customs, around 15 dishes.** What this world eats, and -- the part that matters -- when and why.
 
 **The customs are the reason this page exists.** A `foodway` is deliberately not exported to the game: what a loaf *means* on the night the river comes over the bank is a fact about a people and belongs beside mythology. The dishes themselves are the game's to cook, and live there.
 
@@ -89,6 +89,12 @@ What is eaten, when it is eaten, and what eating it says.
 > **The counted string** *(harappan)* -- Strung one bead a season from a child's birth, given at their marriage.
 >
 > Worth measured in patience rather than in quantity. A string bought whole fools nobody, because the beads do not match.
+
+### Item_soma_juice
+
+> **The three pressings** *(glass_herbalists)* -- At dawn, noon and dusk of a day that must be got through awake: a vigil, a crossing, a sickness being sat with.
+>
+> That what Meru gave is not owned. It is pressed for a need and drunk the same day, never kept, never sold, and never pressed for somebody who only wants to feel it.
 
 ### Item_spiced_oil
 

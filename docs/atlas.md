@@ -1,6 +1,6 @@
 # The Atlas of South of Tethys
 
-<p class="book-nav"><a href="https://lordlebu.github.io/SouthOfTethys/">The Timeline</a> &middot; <a href="https://lordlebu.github.io/SouthOfTethys/timeline_mermaid.html">Epochs &amp; Events</a> &middot; <strong>The Atlas</strong> &middot; <a href="https://lordlebu.github.io/SouthOfTethys/memory_map.html">The Memory Map</a> &middot; <a href="https://lordlebu.github.io/SouthOfTethys/bestiary.html">The Bestiary</a> &middot; <a href="https://lordlebu.github.io/SouthOfTethys/apothecary.html">The Apothecary</a> &middot; <a href="https://lordlebu.github.io/SouthOfTethys/workshop.html">The Workshop</a> &middot; <a href="https://lordlebu.github.io/SouthOfTethys/cookbook.html">The Cookbook</a></p>
+<p class="book-nav"><a href="https://lordlebu.github.io/SouthOfTethys/">The Timeline</a> &middot; <a href="https://lordlebu.github.io/SouthOfTethys/timeline_mermaid.html">Epochs &amp; Events</a> &middot; <strong>The Atlas</strong> &middot; <a href="https://lordlebu.github.io/SouthOfTethys/memory_map.html">The Memory Map</a> &middot; <a href="https://lordlebu.github.io/SouthOfTethys/bestiary.html">The Bestiary</a> &middot; <a href="https://lordlebu.github.io/SouthOfTethys/cookbook.html">The Cookbook</a></p>
 
 _Generated from `database/` by `utils/generate_atlas.py`. Do not edit by hand._
 
@@ -22,14 +22,9 @@ Each era below is canon as it stood then. An entity that names no epoch is prese
 | events | 8 |  |
 | artifacts |  | 6 |
 | mythology |  | 11 |
-| fauna |  | 264 |
-| flora |  | 118 |
+| fauna |  | 267 |
+| flora |  | 120 |
 | foodways |  | 19 |
-| items |  | 76 |
-| materials |  | 76 |
-| processes |  | 17 |
-| recipes |  | 85 |
-| vehicles |  | 8 |
 
 ### Events
 
@@ -72,14 +67,9 @@ graph TD
 | events | 5 |  |
 | artifacts |  | 6 |
 | mythology |  | 11 |
-| fauna |  | 264 |
-| flora |  | 118 |
+| fauna |  | 267 |
+| flora |  | 120 |
 | foodways |  | 19 |
-| items |  | 76 |
-| materials |  | 76 |
-| processes |  | 17 |
-| recipes |  | 85 |
-| vehicles |  | 8 |
 
 ### Events
 
@@ -116,14 +106,9 @@ graph TD
 | events | 6 |  |
 | artifacts |  | 6 |
 | mythology |  | 11 |
-| fauna |  | 264 |
-| flora |  | 118 |
+| fauna |  | 267 |
+| flora |  | 120 |
 | foodways |  | 19 |
-| items |  | 76 |
-| materials |  | 76 |
-| processes |  | 17 |
-| recipes |  | 85 |
-| vehicles |  | 8 |
 
 ### Events
 
@@ -163,14 +148,9 @@ graph TD
 | events | 12 |  |
 | artifacts |  | 6 |
 | mythology |  | 11 |
-| fauna |  | 264 |
-| flora |  | 118 |
+| fauna |  | 267 |
+| flora |  | 120 |
 | foodways |  | 19 |
-| items | 3 | 76 |
-| materials |  | 76 |
-| processes |  | 17 |
-| recipes | 5 | 85 |
-| vehicles | 2 | 8 |
 
 ### Events
 
@@ -230,14 +210,9 @@ The id stays `epoch_current` deliberately. Fifty-five entities reference it and 
 | events | 19 |  |
 | artifacts |  | 6 |
 | mythology |  | 11 |
-| fauna |  | 264 |
-| flora |  | 118 |
-| foodways |  | 19 |
-| items | 3 | 76 |
-| materials |  | 76 |
-| processes |  | 17 |
-| recipes | 5 | 85 |
-| vehicles | 4 | 8 |
+| fauna |  | 267 |
+| flora |  | 120 |
+| foodways | 1 | 19 |
 
 ### Events
 
@@ -287,8 +262,8 @@ Drawn from the era's own chart: 66 place(s) and 38 people(s), before the Shatter
 | field maps | 4 |  |
 | points of interest | 37 |  |
 | characters | 4 |  |
-| npcs | 24 |  |
-| happenings | 3 |  |
+| npcs | 25 |  |
+| happenings | 15 |  |
 | factions | 3 | 6 |
 | events | 5 |  |
 | artifacts |  | 6 |
@@ -296,16 +271,11 @@ Drawn from the era's own chart: 66 place(s) and 38 people(s), before the Shatter
 | discoveries | 46 |  |
 | field questions | 8 |  |
 | vocabulary | 10 |  |
-| fauna |  | 264 |
-| flora |  | 118 |
-| foodways |  | 19 |
-| homesteads | 3 |  |
-| items | 3 | 76 |
-| materials |  | 76 |
-| processes |  | 17 |
-| recipes |  | 85 |
+| fauna |  | 267 |
+| flora |  | 120 |
+| foodways | 1 | 19 |
 | sayings | 33 |  |
-| vehicles | 2 | 8 |
+| storylines | 2 |  |
 
 ### Events
 

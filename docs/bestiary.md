@@ -6,13 +6,13 @@
 
 Every living thing canon records, and where it was recorded.
 
-Canon holds **264 animals and 119 plants**. They are grouped here by the region they were recorded in, because that is how the bestiary they came from was organised and because a reader looking one up is usually looking at a place.
+Canon holds **267 animals and 120 plants**. They are grouped here by the region they were recorded in, because that is how the bestiary they came from was organised and because a reader looking one up is usually looking at a place.
 
 A species that can be met in play carries its biomes; one marked *lore* is written about and never placed, which is most of the sky and all of the Asura conjurations.
 
 ## Canon
 
-*69 recorded.*
+*71 recorded.*
 
 | Species | Traits | What it is |
 |---|---|---|
@@ -77,6 +77,7 @@ A species that can be met in play carries its biomes; one marked *lore* is writt
 | **Shaluk**<br>Water lily · Red water lily · *Nymphaea pubescens* | *common · Flower · wetland · river · food · ritual* | Pink night-blooming lilies closing as the sun climbs, their long stalks pulled up in coils. |
 | **Shulfa**<br>Dill · *Anethum graveolens* | *common · Flower · settlement · plains · food · seasoning* | Fine thread-leaves and flat yellow umbels, sharp-sweet when brushed against. |
 | **Shushni**<br>Water clover · Four-leaf clover fern · *Marsilea minuta* | *common · Fern · wetland · river · food · physic* | Four small leaflets on a thread of stalk, standing just clear of the shallows like clover that has learned to swim. |
+| **Southern Sea-Gull**<br>Harbour gull · *Larus tethyanus* | *common · Bird · coast · sea* | A big gull on the landing rock, slate-backed, yellow-billed, standing on one spot with the patience of something that knows the boats come back. |
 | **Tamarind**<br>*Tamarindus indica* | *common · Tree · settlement · plains · food · seasoning · shade* | A tamarind leans over the road, pods hanging like dark fingers, the ground beneath it swept smooth by people who sit here. |
 | **Tendua**<br>*Panthera simiana* | *rare · Mammal · wetland · forest* | A spotted cat watches from the reed line with eyes set forward like a person's, and you understand that you are being considered. |
 | **Tendua Manticore**<br>*Manticora tendua* | *Spectre · lore only* |  |
@@ -85,10 +86,11 @@ A species that can be met in play carries its biomes; one marked *lore* is writt
 | **Wayside Knotgrass**<br>Doorstep grass · Trodden knot · *Polygonum aviculare itineris* | *common · Grass · plains · settlement · coast · physic · food* | A wiry mat pressed into the middle of the path, greener where the feet go than on either side of it, which is the wrong way round until you think about why. |
 | **Whisper-Fig**<br>*Ficus susurrans* | *rare · Tree · forest · landmark · shade · ritual* | The fig's trunk is hollow, and the wind moving through it makes a low sound that the delta people are careful not to interrupt. |
 | **Wild Indigo**<br>*Indigofera silvestris* | *common · Shrub · plains · hills · dye* | Wild indigo, harsher than the garden kind, still good enough for dyers who cannot pay Lothal prices. |
+| **Zebu**<br>Humped ox · Seal bull · *Bos indicus* | *common · Mammal · plains · settlement · hills* | A humped ox tethered by a camp, chewing, with the look of an animal that has pulled a cart further than you have walked. |
 
 ## Saraswati Delta
 
-*59 recorded.*
+*60 recorded.*
 
 | Species | Traits | What it is |
 |---|---|---|
@@ -126,6 +128,7 @@ A species that can be met in play carries its biomes; one marked *lore* is writt
 | **Mud-Armored Ambusher**<br>*Baurusuchus lutarius* | *common · Crocodilian · river* | A baurusuchid that cakes itself in river mud, keeping its body temperature low and hiding from terrestrial prey. |
 | **Muria River-Otter**<br>*Lutra muria* | *common · Mammal · river* | An agile, semi-aquatic mammal with dense, oil-slicked fur that hunts stepwell koi along the eastern coast of the island. |
 | **Narmada Mud-Eel**<br>*Monopterus narmadensis* | *common · Fish · river* | A slender, scale-less fish that burrows into the volcanic mud of riverbeds, breathing atmospheric air during dry spells. |
+| **Panchet Broad-Head**<br>Mud-mouth · River lid · *Pachygonia relicta* | *rare · Amphibian · river · wetland* | What I took for a log on the mud bank had eyes on top of it. |
 | **Poison-barb Indigo**<br>*Indigofera spicata* | *common · Shrub · wetland · river* | A wild relative of sweet indigo, possessing small, sharp thorns along its stems that inject a skin-irritating toxin. |
 | **River Whale**<br>Saraswati Silt-Drifter · Ganga Clay-Borer · Silt-Breezer · *Potamocetus sarasvaticus* | *rare · Mammal · lore only · river · wetland* | A long back rolls in the brown channel and the head comes round on a neck no whale should have. |
 | **Sacred Stepwell Koi**<br>*Cyprinus devotus* | *common · Fish · river* | Bronze-scaled river fish bred in the sacred stepwells of Dwarka, featuring thick, armored scales to resist delta predators. |
@@ -154,7 +157,7 @@ A species that can be met in play carries its biomes; one marked *lore* is writt
 
 ## Narmada Plateau
 
-*43 recorded.*
+*44 recorded.*
 
 | Species | Traits | What it is |
 |---|---|---|
@@ -188,6 +191,7 @@ A species that can be met in play carries its biomes; one marked *lore* is writt
 | **Shringasaurus**<br>*Shringasaurus indicus* | *common · Reptile · plains · forest · hills* | Two horns come up out of the scrub before the head does, curved forward like a bull's and set above the eyes rather than on the nose. |
 | **Silver-Leaved Oracle Fig**<br>*Ficus bhutakana* | *rare · Tree · forest · landmark · memory · ritual* | A massive fig tree grown from a magical moon-seed, its roots acting as a biological archive tree whispering memories in the wind. |
 | **Sivatherium**<br>*Sivatherium giganteum* | *rare · Mammal · hills · forest* | Four horns, and the back pair are flat as a palm held open. |
+| **Soma**<br>The pressed plant · Meru stalk · *Ephedra merui* | *rare · Shrub · lore only · mountains · hills · drink · psychoactive · ritual · physic* | Green jointed stalks with no leaves at all, in a crack of grey rock. |
 | **Sweet-Nectar Mahua**<br>*Madhuca narmadensis* | *common · Tree · forest* | An indigenous tree producing sweet, fermentable cream-colored flowers that are central to the local tribal ecology and brewing traditions. |
 | **Toxic Red Spore-Moss**<br>*Dictyonema venenum* | *rare · Lichen · hills · mountains* | A dangerous, rust-colored variant of Garudasaur moss that releases airborne spores causing temporary respiratory paralysis in intruders. |
 | **Vindhya Bark-Gecko**<br>*Hemidactylus vindhyensis* | *common · Reptile · forest* | A master of camouflage, its skin texture perfectly matching the rough wood of old mahua trees. |
