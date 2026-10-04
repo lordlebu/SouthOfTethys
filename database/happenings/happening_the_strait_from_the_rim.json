@@ -7,7 +7,7 @@
     "field_map_aravali"
   ],
   "at": [
-    "poi_first_pier"
+    "poi_far_landing"
   ],
   "prose": "Somebody has come up before you. A woman kneels on a reed mat at the rim, hands flat on the grass, watching the strait below as if it might do something unexpected. It does: an outrigger the size of a house comes up the channel under three painted sails, a hand on one and a crescent on another, and the fishing boats scatter out of its way like ducks. She does not look round. From up here, she says, you can see who is going where, and nobody down there ever thinks to look up.",
   "choices": [
@@ -23,7 +23,7 @@
   "epochs": [
     "epoch_post_cataclysm"
   ],
-  "notes": "The owner's painting of 3 October 2026: a woman watching the strait's ships from a sky island, after walking up. Arriving at the First Pier, which is the first floating island a player stands on, so it is met on the first climb. The woman is somebody already there, never the traveller, so the painting fits whoever the player is. The ship is the strait's Kelpfang-type outrigger (the game's `content/strait.ts`); the Kelpfang itself was broken up long ago (`place_kelpfang`), so she names only the people who sail one, the Vanga Maritime Federation and its outriggers. The grey thing breathing far out is the strait's whale. Drafted for the owner to rewrite or approve.",
+  "notes": "The owner's painting of 3 October 2026: a woman watching the strait's ships from a sky island, after walking up. Arriving at the First Pier, which is the first floating island a player stands on, so it is met on the first climb. The woman is somebody already there, never the traveller, so the painting fits whoever the player is. The ship is the strait's Kelpfang-type outrigger (the game's `content/strait.ts`); the Kelpfang itself was broken up long ago (`place_kelpfang`), so she names only the people who sail one, the Vanga Maritime Federation and its outriggers. The grey thing breathing far out is the strait's whale. Drafted for the owner to rewrite or approve.\n\n**From the Far Landing, the second island** (the owner, 4 October 2026): it was at the First Pier, on the first island, a few steps from where the traveller is set down and beside the Alms Step's own card, so three written cards landed in the first hour. From the last of Jambhudweepa the strait is still below the rim, and the cards are spread across the crossing.",
   "canon": "primary",
   "sources": [
     "drafted by Claude for the owner's approval, 2026-10-03"

@@ -1,0 +1,31 @@
+{
+  "id": "happening_alms_on_the_step",
+  "type": "happening",
+  "title": "Alms on the step",
+  "occasion": "arriving",
+  "field_maps": [
+    "field_map_aravali"
+  ],
+  "at": [
+    "poi_alms_step"
+  ],
+  "prose": "On the worn middle of the bottom step, where feet have dished the stone, somebody has set a leaf of cooked rice and a clay lamp, still warm. Nobody is in sight. The names cut along the riser above it are too worn to read with the eyes; you find them with your fingers, a few at a time. Whoever left the rice left it for whoever came next.",
+  "choices": [
+    {
+      "label": "Leave something of your own",
+      "line": "You leave a pinch of what you carry beside the lamp. It is not the rice that matters, you think, but that the step is never bare."
+    },
+    {
+      "label": "Find the names with your fingers",
+      "line": "Seven names you can make out, and a gap where an eighth was cut away on purpose. You copy the seven into the diary, and the gap."
+    }
+  ],
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "notes": "The owner's ask of 4 October 2026: a card on reaching the Alms Step, the temple on the first sky island, with a painting the owner will provide (`happening_alms_on_the_step`). Drafted by Claude for the owner to rewrite. Guyuk's beat at the same place (`Water at the Alms Step`) comes first when it is due, as story beats always do.",
+  "canon": "secondary",
+  "sources": [
+    "drafted by Claude from the owner's ask of 4 October 2026, for the owner to rewrite or approve"
+  ]
+}

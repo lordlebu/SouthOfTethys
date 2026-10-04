@@ -12,7 +12,7 @@
     "field_questions": 8,
     "flora": 120,
     "foodways": 20,
-    "happenings": 15,
+    "happenings": 16,
     "mythology": 11,
     "npcs": 26,
     "places": 112,
@@ -659,6 +659,7 @@
     ],
     "happenings": [
       "happening_a_song_about_a_ford",
+      "happening_alms_on_the_step",
       "happening_counting_the_goats",
       "happening_further_than_anyone_has_been",
       "happening_nobody_s_bow",
