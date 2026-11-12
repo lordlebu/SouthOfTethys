@@ -3,7 +3,7 @@
   "type": "place",
   "name": "The Ancient Courts",
   "kind": "settlement",
-  "description": "The seat where Prince Varunesh made the Shadow Pact, and which the pact cursed.",
+  "description": "The seat of Pashupati Chakravarthy's pre-Jharwa court, whose precise location is unresolved. Varunesh's Shadow Pact was performed at the Dwarka Gate; the pact's consequences reached the ancient courts.",
   "notes": "Named only by `event_shadow_pact`, which records both the summoning of Manjalaya through a Dwarka Gate and `curse_on_ancient_courts` among its outcomes. Canon does not place it, and does not say whether the curse ever lifted.",
   "canon": "primary",
   "sources": [
