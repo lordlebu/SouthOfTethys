@@ -14,7 +14,7 @@ Each era below is canon as it stood then. An entity that names no epoch is prese
 
 | | dated to this era | timeless |
 |---|---:|---:|
-| regions |  | 7 |
+| regions |  | 8 |
 | places | 20 | 26 |
 | settlements |  | 1 |
 | characters | 9 |  |
@@ -59,7 +59,7 @@ graph TD
 
 | | dated to this era | timeless |
 |---|---:|---:|
-| regions |  | 7 |
+| regions |  | 8 |
 | places | 21 | 26 |
 | settlements |  | 1 |
 | characters | 7 |  |
@@ -97,7 +97,7 @@ graph TD
 
 | | dated to this era | timeless |
 |---|---:|---:|
-| regions |  | 7 |
+| regions |  | 8 |
 | places | 26 | 26 |
 | settlements |  | 1 |
 | points of interest | 1 |  |
@@ -139,7 +139,7 @@ graph TD
 
 | | dated to this era | timeless |
 |---|---:|---:|
-| regions |  | 7 |
+| regions |  | 8 |
 | places | 29 | 26 |
 | settlements | 1 | 1 |
 | points of interest | 1 |  |
@@ -201,7 +201,7 @@ The id stays `epoch_current` deliberately. Fifty-five entities reference it and 
 
 | | dated to this era | timeless |
 |---|---:|---:|
-| regions |  | 7 |
+| regions |  | 8 |
 | places | 82 | 26 |
 | settlements | 1 | 1 |
 | points of interest | 1 |  |
@@ -256,20 +256,20 @@ Drawn from the era's own chart: 66 place(s) and 38 people(s), before the Shatter
 
 | | dated to this era | timeless |
 |---|---:|---:|
-| regions |  | 7 |
-| places | 28 | 26 |
+| regions |  | 8 |
+| places | 30 | 26 |
 | settlements | 1 | 1 |
-| field maps | 4 |  |
-| points of interest | 37 |  |
+| field maps | 5 |  |
+| points of interest | 49 |  |
 | characters | 4 |  |
-| npcs | 26 |  |
-| happenings | 16 |  |
+| npcs | 34 |  |
+| happenings | 28 |  |
 | factions | 3 | 6 |
 | events | 5 |  |
 | artifacts |  | 6 |
 | mythology |  | 11 |
-| discoveries | 46 |  |
-| field questions | 8 |  |
+| discoveries | 54 |  |
+| field questions | 10 |  |
 | vocabulary | 10 |  |
 | fauna |  | 267 |
 | flora |  | 120 |
@@ -294,4 +294,4 @@ graph TD
 
 ![Map of Post-Cataclysmic Era (The Great Shattering)](atlas/epoch_post_cataclysm.svg)
 
-0 region(s) traced, 26 place(s) plotted. [Open the SVG](atlas/epoch_post_cataclysm.svg)
+0 region(s) traced, 29 place(s) plotted. [Open the SVG](atlas/epoch_post_cataclysm.svg)

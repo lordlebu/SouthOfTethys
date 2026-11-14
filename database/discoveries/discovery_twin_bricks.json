@@ -1,0 +1,31 @@
+{
+  "id": "discovery_twin_bricks",
+  "type": "discovery",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Owner-approved Saraswati twin cities plan, 14 November 2026"
+  ],
+  "name": "The Cool Side of the Brick",
+  "discipline": "archaeology",
+  "found_at": [
+    "poi_planted_ruins"
+  ],
+  "levels": [
+    {
+      "entry": "The exposed brick feels warm; the inner face is cool."
+    },
+    {
+      "entry": "The unroofed rooms keep a patch of shade all afternoon."
+    },
+    {
+      "entry": "The planted rooms use old walls as shelter, with the drain kept outside their roots."
+    },
+    {
+      "entry": "A roof is not the only useful part of a house. The gardener has kept what the plants need."
+    }
+  ],
+  "helps": []
+}

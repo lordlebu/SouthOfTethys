@@ -1,0 +1,23 @@
+{
+  "id": "poi_twin_landing",
+  "type": "point_of_interest",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Owner-approved Saraswati twin cities plan, 14 November 2026"
+  ],
+  "name": "The Southern Landing",
+  "field_map": "field_map_twins",
+  "kind": "travel_node",
+  "terrain": [
+    "coast"
+  ],
+  "arrival": "The boat waits in a sheltered bend above the salt line. The sewn sail is being mended with a needle too large to lose.",
+  "description": "The boat waits in a sheltered bend above the salt line. The sewn sail is being mended with a needle too large to lose.",
+  "discoveries": [],
+  "npcs": [
+    "npc_twin_landingkeeper"
+  ]
+}

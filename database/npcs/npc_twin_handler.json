@@ -1,0 +1,38 @@
+{
+  "id": "npc_twin_handler",
+  "type": "npc",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Owner-approved Saraswati twin cities plan, 14 November 2026"
+  ],
+  "name": "Pavi",
+  "role": "tram handler",
+  "found_at": [
+    "poi_harappa_station"
+  ],
+  "language": "harappan",
+  "would_settle": false,
+  "knows": [
+    "discovery_twin_nests"
+  ],
+  "lines": [
+    {
+      "text": "The bird knows both yards. I bring the water and change the harness at the end. The carriage only follows.",
+      "gives": [
+        "discovery_twin_nests"
+      ]
+    },
+    {
+      "text": "A harness comes loose at the yard. A working bird should not spend its rest pulling against the carriage."
+    },
+    {
+      "text": "You have looked long enough to see what we were trying to keep. That changes the conversation.",
+      "requires": [
+        "discovery_twin_nests"
+      ]
+    }
+  ]
+}

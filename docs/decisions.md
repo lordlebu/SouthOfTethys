@@ -1816,6 +1816,14 @@ cook, and the trunks drawn on the map were good for nothing. The game's plan is
   `fuel`, lit from the traveller's lamp, or by a settlement's or a road stop's hearth.
   `check_playability.py` mirrors the game's `crafting.fireFor` in `needs_here`; change one, change both.
 
+## Saraswati twin cities — settled 2026-11-14
+
+The owner's mainland replacement, living-remnant theme, initial population and content,
+Dwarka-scale cities, SNES art and combined wall/natural boundaries are recorded in
+[twin-cities.md](twin-cities.md). Canon owns their nouns and writing; the game owns the
+64×64 layout, road and rail, ostrich tram and rendering. This does not relocate historical
+Gedrosian entities or change the established epochs of Harappa and Mohenjodaro.
+
 ## Security
 
 Two Hugging Face tokens were exposed during setup and must be treated as burned: one pasted

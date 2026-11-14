@@ -1,0 +1,21 @@
+{
+  "id": "region_saraswati_twin_valley",
+  "type": "region",
+  "canon": "primary",
+  "sources": [
+    "Owner-approved Saraswati twin cities plan, 14 November 2026"
+  ],
+  "name": "The Mainland Saraswati Valley",
+  "continent": "mainland_asia",
+  "biomes": [
+    "desert",
+    "hills",
+    "plains",
+    "settlement",
+    "river",
+    "wetland",
+    "coast",
+    "sea"
+  ],
+  "notes": "Post-Shattering mainland reach of the Saraswati, between the northwest Gedrosian margin and the southeast Tethys. This local surviving reach does not relocate the earlier-era river or Lothal delta."
+}

@@ -1,0 +1,25 @@
+{
+  "id": "poi_nesting_ruins",
+  "type": "point_of_interest",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Owner-approved Saraswati twin cities plan, 14 November 2026"
+  ],
+  "name": "The Unroofed Rooms",
+  "field_map": "field_map_twins",
+  "kind": "archaeological_site",
+  "terrain": [
+    "settlement"
+  ],
+  "arrival": "Nobody sleeps in these rooms. There is grain husk at the thresholds and a bird carrying grass into the wall.",
+  "description": "Nobody sleeps in these rooms. There is grain husk at the thresholds and a bird carrying grass into the wall.",
+  "discoveries": [
+    "discovery_twin_nests"
+  ],
+  "npcs": [
+    "npc_twin_mason"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "happening_twin_carrier",
+  "type": "happening",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Owner-approved Saraswati twin cities plan, 14 November 2026"
+  ],
+  "title": "The Longer Road",
+  "occasion": "road",
+  "field_maps": [
+    "field_map_twins"
+  ],
+  "prose": "A carrier took the bank path rather than the causeway. There was shade there, and no parcel worth hurrying past it for.",
+  "requires": [],
+  "choices": [
+    {
+      "label": "Keep the page",
+      "line": "I wrote it down before going on."
+    }
+  ]
+}

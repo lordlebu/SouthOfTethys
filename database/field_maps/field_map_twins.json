@@ -1,0 +1,86 @@
+{
+  "id": "field_map_twins",
+  "type": "field_map",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Owner-approved Saraswati twin cities plan, 14 November 2026"
+  ],
+  "name": "Harappa and Mohenjodaro",
+  "region": "region_saraswati_twin_valley",
+  "scale": "large",
+  "relief": "river_valley",
+  "seed_biomes": [
+    "desert",
+    "hills",
+    "plains",
+    "settlement",
+    "river",
+    "wetland",
+    "coast",
+    "sea"
+  ],
+  "points_of_interest": [
+    "poi_harappa_court",
+    "poi_earthen_workshop",
+    "poi_nesting_ruins",
+    "poi_harappa_station",
+    "poi_brick_quarter",
+    "poi_drain_court",
+    "poi_planted_ruins",
+    "poi_twin_landing",
+    "poi_twin_causeway",
+    "poi_desert_ground",
+    "poi_reed_junction",
+    "poi_twin_cove"
+  ],
+  "neighbours": [
+    "field_map_aravali",
+    "field_map_lothal"
+  ],
+  "coordinates": {
+    "x": 39,
+    "y": 12
+  },
+  "departs_from": [
+    "poi_harappa_station",
+    "poi_twin_landing"
+  ],
+  "arrival": "Ochre walls above the river, red brick below. Between them an ostrich draws a tram along the causeway. The road keeps beside it. Some of the rooms have roofs, some have trees, and somebody is looking after both.",
+  "climate": {
+    "clear": 75,
+    "mist": 10,
+    "rain": 13,
+    "storm": 2
+  },
+  "roads": [
+    {
+      "to": "field_map_aravali",
+      "by": "vehicle_elephantbird_cart",
+      "art": "journey-aravali-twins",
+      "prose": [
+        "The Saraswati runs through green banks in a country of sand.",
+        "The two cities come into view on opposite banks, with a road and railway between them."
+      ],
+      "keeper": {
+        "npc": "npc_twin_stationkeeper",
+        "line": "The way is open. Come back when you like."
+      }
+    },
+    {
+      "to": "field_map_lothal",
+      "by": "vehicle_coastal_dhow",
+      "art": "journey-lothal-twins",
+      "prose": [
+        "The Saraswati runs through green banks in a country of sand.",
+        "The two cities come into view on opposite banks, with a road and railway between them."
+      ],
+      "keeper": {
+        "npc": "npc_twin_landingkeeper",
+        "line": "The way is open. Come back when you like."
+      }
+    }
+  ]
+}

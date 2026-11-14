@@ -1,0 +1,29 @@
+{
+  "id": "happening_twin_courtyard",
+  "type": "happening",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Owner-approved Saraswati twin cities plan, 14 November 2026"
+  ],
+  "title": "A Courtyard Worth Shading",
+  "occasion": "arriving",
+  "field_maps": [
+    "field_map_twins"
+  ],
+  "prose": "Nemi and Eru showed me where the repair stopped short of the roots. The courtyard kept its shade.",
+  "requires": [
+    "discovery_twin_shade"
+  ],
+  "choices": [
+    {
+      "label": "Keep the page",
+      "line": "I wrote it down before going on."
+    }
+  ],
+  "at": [
+    "poi_harappa_court"
+  ]
+}
