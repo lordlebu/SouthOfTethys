@@ -1,0 +1,33 @@
+{
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Owner-approved twin cities gameplay, graphics and expansion roadmap, 14 November 2026"
+  ],
+  "id": "happening_valley_reed_return",
+  "type": "happening",
+  "title": "The Next Repair",
+  "occasion": "arriving",
+  "field_maps": [
+    "field_map_twins"
+  ],
+  "at": [
+    "poi_reedwright_bank"
+  ],
+  "requires": [
+    "discovery_twin_banks"
+  ],
+  "prose": "A fresh reed is growing beside the drying frame. Irekha points out the old cut above it and the living root below.",
+  "choices": [
+    {
+      "label": "Look at the root",
+      "line": "The next repair is already growing beside the last one."
+    },
+    {
+      "label": "Leave the bed undisturbed",
+      "line": "The work and the wet bank have something to give each other."
+    }
+  ]
+}

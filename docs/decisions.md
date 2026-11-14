@@ -1824,6 +1824,11 @@ Dwarka-scale cities, SNES art and combined wall/natural boundaries are recorded 
 64×64 layout, road and rail, ostrich tram and rendering. This does not relocate historical
 Gedrosian entities or change the established epochs of Harappa and Mohenjodaro.
 
+The next approved stages put causeway conversations first, graphics immediately after,
+then a small expansion. The first batch adds two residents, three places and six happenings
+through existing schemas and discoveries; future work can extend it without a new
+progression system. Canon v3.7.0 records these additions.
+
 ## Security
 
 Two Hugging Face tokens were exposed during setup and must be treated as burned: one pasted

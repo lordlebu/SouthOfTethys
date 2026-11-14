@@ -1,0 +1,33 @@
+{
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Owner-approved twin cities gameplay, graphics and expansion roadmap, 14 November 2026"
+  ],
+  "id": "happening_valley_courtyard_return",
+  "type": "happening",
+  "title": "A Place at the Edge",
+  "occasion": "arriving",
+  "field_maps": [
+    "field_map_twins"
+  ],
+  "at": [
+    "poi_harappa_court"
+  ],
+  "requires": [
+    "discovery_twin_shade"
+  ],
+  "prose": "Someone has set a small reed mat beneath the courtyard tree. The roots still have their ring of loose earth.",
+  "choices": [
+    {
+      "label": "Sit outside the root ring",
+      "line": "The courtyard has room for visitors because its oldest resident has room too."
+    },
+    {
+      "label": "Notice the shade",
+      "line": "The repair makes space, rather than filling everything that was empty."
+    }
+  ]
+}
