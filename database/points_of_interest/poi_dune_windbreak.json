@@ -1,0 +1,23 @@
+{
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Owner-approved twin cities gameplay, graphics and expansion roadmap, 14 November 2026"
+  ],
+  "type": "point_of_interest",
+  "field_map": "field_map_twins",
+  "description": "A low crescent of repaired earth holds a patch of still sand. On the far side, the dune is already moving again.",
+  "id": "poi_dune_windbreak",
+  "name": "The Dune Windbreak",
+  "kind": "travel_node",
+  "terrain": [
+    "desert"
+  ],
+  "discoveries": [
+    "discovery_twin_desert"
+  ],
+  "npcs": [],
+  "arrival": "A low crescent of repaired earth holds a patch of still sand. On the far side, the dune is already moving again."
+}

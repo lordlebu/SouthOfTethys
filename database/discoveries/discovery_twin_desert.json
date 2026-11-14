@@ -11,7 +11,8 @@
   "name": "Life Between the Dunes",
   "discipline": "zoology",
   "found_at": [
-    "poi_desert_ground"
+    "poi_desert_ground",
+    "poi_dune_windbreak"
   ],
   "levels": [
     {

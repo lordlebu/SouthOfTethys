@@ -1,0 +1,26 @@
+{
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Owner-approved twin cities gameplay, graphics and expansion roadmap, 14 November 2026"
+  ],
+  "type": "point_of_interest",
+  "field_map": "field_map_twins",
+  "description": "A stone shelf looks over a sheltered inlet. Ulenna has marked one narrow way through the old walls, leaving the reeds and nests undisturbed.",
+  "id": "poi_nesting_cove",
+  "name": "The Nesting Cove",
+  "kind": "eco_site",
+  "terrain": [
+    "coast"
+  ],
+  "discoveries": [
+    "discovery_twin_delta",
+    "discovery_twin_nests"
+  ],
+  "npcs": [
+    "npc_cove_watcher_ulenna"
+  ],
+  "arrival": "A stone shelf looks over a sheltered inlet. Ulenna has marked one narrow way through the old walls, leaving the reeds and nests undisturbed."
+}

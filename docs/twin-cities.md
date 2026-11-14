@@ -23,7 +23,10 @@ daytime tram. The latest owner correction requests each city's footprint to matc
 buildings to match existing hut scale, SNES 16-bit artwork, and enclosures that combine walls
 and natural features. Dimensions, collision, art and transport arithmetic belong to the game.
 
-Keep room for a later two to four named people, three to four places and six to eight
-happenings. Add these through the existing schemas, rather than introducing a second
-progression system. The game repository's `docs/twin-cities.md` records implementation phases,
+Canon v3.7.0 implements the first expansion within that allowance: Irekha, a reed-boat
+repairer, and Ulenna, a cove watcher; the dune windbreak, reedwright bank and nesting cove;
+and six quiet arrival/return happenings. Current totals are fifteen places, ten named people
+and eighteen happenings, with the same eight discoveries and two questions. New locations
+are linked reciprocally to existing discoveries. Further expansion uses the existing schemas
+and diary progression. The game repository's `docs/twin-cities.md` records implementation phases,
 actual screenshots, reproducible review commands and the improvement backlog.

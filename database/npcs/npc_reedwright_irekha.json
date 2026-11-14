@@ -1,0 +1,38 @@
+{
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Owner-approved twin cities gameplay, graphics and expansion roadmap, 14 November 2026"
+  ],
+  "id": "npc_reedwright_irekha",
+  "type": "npc",
+  "name": "Irekha",
+  "role": "reed boat repairer",
+  "found_at": [
+    "poi_reedwright_bank"
+  ],
+  "language": "harappan",
+  "would_settle": false,
+  "knows": [
+    "discovery_twin_banks"
+  ],
+  "lines": [
+    {
+      "text": "The boat stays light because the reeds can move a little. A tight seam is not the same as a rigid one.",
+      "gives": [
+        "discovery_twin_banks"
+      ]
+    },
+    {
+      "text": "I mend the outer bundles here. The living reed bed supplies the next repair without losing its bank."
+    },
+    {
+      "text": "You have seen how the roots hold the bank. Leave them their strip of water and we both keep our work.",
+      "requires": [
+        "discovery_twin_banks"
+      ]
+    }
+  ]
+}

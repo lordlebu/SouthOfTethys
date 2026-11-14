@@ -1,0 +1,33 @@
+{
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Owner-approved twin cities gameplay, graphics and expansion roadmap, 14 November 2026"
+  ],
+  "id": "happening_valley_bird_return",
+  "type": "happening",
+  "title": "Between Arrivals",
+  "occasion": "arriving",
+  "field_maps": [
+    "field_map_twins"
+  ],
+  "at": [
+    "poi_nesting_cove"
+  ],
+  "requires": [
+    "discovery_twin_nests"
+  ],
+  "prose": "Ulenna shows an empty nest without touching it. A second bird has begun carrying stems to the next hollow.",
+  "choices": [
+    {
+      "label": "Keep watching",
+      "line": "An empty room can still belong to the next arrival."
+    },
+    {
+      "label": "Return by the marked path",
+      "line": "I left the hollow as I found it, with another use on the way."
+    }
+  ]
+}

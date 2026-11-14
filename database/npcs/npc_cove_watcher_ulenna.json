@@ -1,0 +1,38 @@
+{
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Owner-approved twin cities gameplay, graphics and expansion roadmap, 14 November 2026"
+  ],
+  "id": "npc_cove_watcher_ulenna",
+  "type": "npc",
+  "name": "Ulenna",
+  "role": "cove watcher",
+  "found_at": [
+    "poi_nesting_cove"
+  ],
+  "language": "harappan",
+  "would_settle": false,
+  "knows": [
+    "discovery_twin_nests"
+  ],
+  "lines": [
+    {
+      "text": "The birds leave a path between the nests. We keep to the same path, and nobody has to move.",
+      "gives": [
+        "discovery_twin_nests"
+      ]
+    },
+    {
+      "text": "I count arrivals from the old stone shelf. It is a useful ruin when we leave most of it alone."
+    },
+    {
+      "text": "You have noticed the nesting rooms upriver. Here the tide makes the rooms; the same courtesy keeps them open.",
+      "requires": [
+        "discovery_twin_nests"
+      ]
+    }
+  ]
+}

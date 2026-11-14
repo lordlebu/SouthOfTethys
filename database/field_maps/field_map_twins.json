@@ -34,7 +34,10 @@
     "poi_twin_causeway",
     "poi_desert_ground",
     "poi_reed_junction",
-    "poi_twin_cove"
+    "poi_twin_cove",
+    "poi_dune_windbreak",
+    "poi_reedwright_bank",
+    "poi_nesting_cove"
   ],
   "neighbours": [
     "field_map_aravali",
