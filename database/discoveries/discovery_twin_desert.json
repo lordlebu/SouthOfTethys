@@ -1,0 +1,31 @@
+{
+  "id": "discovery_twin_desert",
+  "type": "discovery",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Owner-approved Saraswati twin cities plan, 14 November 2026"
+  ],
+  "name": "Life Between the Dunes",
+  "discipline": "zoology",
+  "found_at": [
+    "poi_desert_ground"
+  ],
+  "levels": [
+    {
+      "entry": "The dune face appears untouched."
+    },
+    {
+      "entry": "Tracks converge on the saltbush in the sheltered hollow."
+    },
+    {
+      "entry": "At midday the tracks end at shade or burrows."
+    },
+    {
+      "entry": "The empty sand is part of the habitat too. Planting it thickly would replace this country, not mend it."
+    }
+  ],
+  "helps": []
+}

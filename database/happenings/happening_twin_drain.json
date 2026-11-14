@@ -1,0 +1,29 @@
+{
+  "id": "happening_twin_drain",
+  "type": "happening",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Owner-approved Saraswati twin cities plan, 14 November 2026"
+  ],
+  "title": "The Drain Left Growing",
+  "occasion": "arriving",
+  "field_maps": [
+    "field_map_twins"
+  ],
+  "prose": "Seli cleared the quick channel and left the neighbouring reeds standing. The work was choosing where to stop.",
+  "requires": [
+    "discovery_twin_drains"
+  ],
+  "choices": [
+    {
+      "label": "Keep the page",
+      "line": "I wrote it down before going on."
+    }
+  ],
+  "at": [
+    "poi_drain_court"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "question_twin_water",
+  "type": "field_question",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Owner-approved Saraswati twin cities plan, 14 November 2026"
+  ],
+  "question": "Which channels need clearing, and which are doing their work quietly?",
+  "discipline": "geography",
+  "raised_at": "poi_drain_court",
+  "raised_by": "npc_twin_waterkeeper",
+  "evidence": [
+    "discovery_twin_drains",
+    "discovery_twin_banks",
+    "discovery_twin_delta"
+  ],
+  "resolutions": [
+    {
+      "conclusion": "Every reed should be removed so water can move freely.",
+      "requires": [
+        "discovery_twin_drains"
+      ],
+      "sound": false,
+      "revisit": "Something is thriving in the part I called unused.",
+      "revisit_after": "discovery_twin_banks"
+    },
+    {
+      "conclusion": "Keep a clear route for the quick flow and leave connected planted margins to hold silt and shelter life.",
+      "requires": [
+        "discovery_twin_drains",
+        "discovery_twin_banks",
+        "discovery_twin_delta"
+      ],
+      "sound": true
+    }
+  ]
+}

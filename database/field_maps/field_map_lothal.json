@@ -38,7 +38,8 @@
   "neighbours": [
     "field_map_aravali",
     "field_map_dwarka",
-    "field_map_narmada"
+    "field_map_narmada",
+    "field_map_twins"
   ],
   "climate": {
     "clear": 58,
@@ -92,6 +93,19 @@
       "keeper": {
         "npc": "npc_kunch",
         "line": "Up the scarp, then. Sing on the steep part. The bird likes it, and so will you."
+      }
+    },
+    {
+      "to": "field_map_twins",
+      "by": "vehicle_coastal_dhow",
+      "art": "journey-lothal-twins",
+      "prose": [
+        "The Saraswati runs through green banks in a country of sand.",
+        "The two cities come into view on opposite banks, with a road and railway between them."
+      ],
+      "keeper": {
+        "npc": "npc_thrali",
+        "line": "North to the twin cities. The river still runs there."
       }
     }
   ],

@@ -1,0 +1,27 @@
+{
+  "id": "happening_twin_arrival",
+  "type": "happening",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Owner-approved Saraswati twin cities plan, 14 November 2026"
+  ],
+  "title": "Two Cities, One Crossing",
+  "occasion": "arriving",
+  "field_maps": [
+    "field_map_twins"
+  ],
+  "prose": "Tavi showed me the separate road and rail. I could go by either, and begin in either city.",
+  "requires": [],
+  "choices": [
+    {
+      "label": "Keep the page",
+      "line": "I wrote it down before going on."
+    }
+  ],
+  "at": [
+    "poi_harappa_station"
+  ]
+}

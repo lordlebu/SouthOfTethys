@@ -1,0 +1,24 @@
+{
+  "id": "poi_harappa_station",
+  "type": "point_of_interest",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Owner-approved Saraswati twin cities plan, 14 November 2026"
+  ],
+  "name": "Harappa Tram Yard",
+  "field_map": "field_map_twins",
+  "kind": "travel_node",
+  "terrain": [
+    "settlement"
+  ],
+  "arrival": "An ostrich stands in loose harness beside a little wheeled carriage. Beyond the platform the road and the rails keep their own sides of the causeway.",
+  "description": "An ostrich stands in loose harness beside a little wheeled carriage. Beyond the platform the road and the rails keep their own sides of the causeway.",
+  "discoveries": [],
+  "npcs": [
+    "npc_twin_stationkeeper",
+    "npc_twin_handler"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "npc_twin_gardener",
+  "type": "npc",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Owner-approved Saraswati twin cities plan, 14 November 2026"
+  ],
+  "name": "Nemi",
+  "role": "courtyard gardener",
+  "found_at": [
+    "poi_harappa_court",
+    "poi_planted_ruins"
+  ],
+  "language": "harappan",
+  "would_settle": false,
+  "knows": [
+    "discovery_twin_shade"
+  ],
+  "lines": [
+    {
+      "text": "The empty rooms are the best garden I have. The walls keep the afternoon off it.",
+      "gives": [
+        "discovery_twin_shade"
+      ]
+    },
+    {
+      "text": "I water the planted rooms in the morning and come back to the courtyard when the shade reaches the jars."
+    },
+    {
+      "text": "You have looked long enough to see what we were trying to keep. That changes the conversation.",
+      "requires": [
+        "discovery_twin_shade"
+      ]
+    }
+  ]
+}

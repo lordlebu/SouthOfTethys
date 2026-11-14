@@ -1,0 +1,25 @@
+{
+  "id": "poi_harappa_court",
+  "type": "point_of_interest",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Owner-approved Saraswati twin cities plan, 14 November 2026"
+  ],
+  "name": "The Shaded Courtyard",
+  "field_map": "field_map_twins",
+  "kind": "settlement",
+  "terrain": [
+    "settlement"
+  ],
+  "arrival": "A neem shades the water jars. The plaster behind it has been repaired around the roots, not over them.",
+  "description": "A neem shades the water jars. The plaster behind it has been repaired around the roots, not over them.",
+  "discoveries": [
+    "discovery_twin_shade"
+  ],
+  "npcs": [
+    "npc_twin_gardener"
+  ]
+}

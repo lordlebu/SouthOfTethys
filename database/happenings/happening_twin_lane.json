@@ -1,0 +1,29 @@
+{
+  "id": "happening_twin_lane",
+  "type": "happening",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Owner-approved Saraswati twin cities plan, 14 November 2026"
+  ],
+  "title": "The Empty Lane",
+  "occasion": "arriving",
+  "field_maps": [
+    "field_map_twins"
+  ],
+  "prose": "There were no footsteps in the lane, but there were seeds caught against every threshold.",
+  "requires": [
+    "discovery_twin_nests"
+  ],
+  "choices": [
+    {
+      "label": "Keep the page",
+      "line": "I wrote it down before going on."
+    }
+  ],
+  "at": [
+    "poi_earthen_workshop"
+  ]
+}

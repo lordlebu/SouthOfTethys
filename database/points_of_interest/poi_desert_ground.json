@@ -1,0 +1,23 @@
+{
+  "id": "poi_desert_ground",
+  "type": "point_of_interest",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Owner-approved Saraswati twin cities plan, 14 November 2026"
+  ],
+  "name": "The Sheltered Caravan Ground",
+  "field_map": "field_map_twins",
+  "kind": "travel_node",
+  "terrain": [
+    "desert"
+  ],
+  "arrival": "A hollow holds the wind off the ground. The dunes beyond it are bare except for saltbush and the tracks around it.",
+  "description": "A hollow holds the wind off the ground. The dunes beyond it are bare except for saltbush and the tracks around it.",
+  "discoveries": [
+    "discovery_twin_desert"
+  ],
+  "npcs": []
+}

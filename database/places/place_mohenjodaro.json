@@ -6,7 +6,8 @@
   "epochs": [
     "epoch_migrations",
     "epoch_civilization_dawn",
-    "epoch_current"
+    "epoch_current",
+    "epoch_post_cataclysm"
   ],
   "coordinates": {
     "x": 13,
@@ -29,6 +30,10 @@
       },
       "held_by": "faction_harappan_lothal_union",
       "description": "West of the Saraswati. Old brick grid, now a river-lock town."
+    },
+    {
+      "epoch": "epoch_post_cataclysm",
+      "description": "An inhabited remnant on the mainland Saraswati. Raised red-brick homes stand downriver on the east bank. This is the post-Shattering arrangement, not its older west-bank position."
     }
   ]
 }

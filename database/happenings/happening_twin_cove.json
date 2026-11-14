@@ -1,0 +1,29 @@
+{
+  "id": "happening_twin_cove",
+  "type": "happening",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Owner-approved Saraswati twin cities plan, 14 November 2026"
+  ],
+  "title": "Where the Water Changes",
+  "occasion": "arriving",
+  "field_maps": [
+    "field_map_twins"
+  ],
+  "prose": "Oru pointed out the freshwater inlet. The plants changed before I could taste the salt.",
+  "requires": [
+    "discovery_twin_salt"
+  ],
+  "choices": [
+    {
+      "label": "Keep the page",
+      "line": "I wrote it down before going on."
+    }
+  ],
+  "at": [
+    "poi_twin_cove"
+  ]
+}
