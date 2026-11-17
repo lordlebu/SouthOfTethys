@@ -1,5 +1,19 @@
 # The Saraswati twin cities — 14 November 2026
 
+## Colour and sculpture review — 17 November 2026
+
+Future paintings should use a wider variety of colours and distinct scene palettes, with
+indigo/blue/teal, green, plum and earth/cream accents and warm/cool separation. The cozy
+watercolor style need not tint every material sepia. NES map art keeps simple pixel masses
+and small ramps; no extra map detail or automatic repaint is requested. The linked external
+chat's specific palette guidance has not yet been retrieved; these rules record the owner's
+explicit instruction in the active game review.
+
+The corrected Kang event cards keep all statue hair/beard/features visibly carved stone.
+The carving-stage bust is unpainted; only the finished unveiling gets lapis lazuli eye inlays
+and sparse ochre/indigo paint. These are game-owned illustration choices, not added canon
+quest resources. The required painting backlog remains 36.
+
 ## Current game art and phase checkpoint — 17 November 2026
 
 The game now delivers Priest Kang in **light indigo**, with a named cozy watercolor conversation
