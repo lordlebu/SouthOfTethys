@@ -13,7 +13,7 @@
   "found_at": [
     "poi_nesting_cove"
   ],
-  "language": "harappan",
+  "language": "kia",
   "would_settle": false,
   "knows": [
     "discovery_twin_nests"
@@ -33,6 +33,16 @@
       "requires": [
         "discovery_twin_nests"
       ]
+    },
+    {
+      "text": "I believe your account of the western shore. Watch the beedu from where you stand; a rare animal is not an invitation to chase it.",
+      "requires_flags": [
+        "beedu:witnessed"
+      ]
     }
+  ],
+  "culture": "kia",
+  "trade_languages": [
+    "harappan"
   ]
 }

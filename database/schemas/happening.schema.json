@@ -94,6 +94,13 @@
               "type": "string"
             },
             "description": "Discovery, word, field_question or recipe ids this opens -- exactly what a line's `gives` may open, through the same door. A discovery given is noticed, not climbed."
+          },
+          "sets": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Player story facts left by a choice, using the existing event flag mechanism."
           }
         },
         "additionalProperties": false
@@ -136,6 +143,13 @@
         ]
       },
       "description": "The kinds of camp a `night` happening belongs to: it happens only on a night slept beside a camp of one of these kinds -- a fireside story. Absent means any night. The four kinds are the game's, shared by every map (the owner's ruling of 2 October 2026)."
+    },
+    "requires_flags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Story or supplied situational facts required for this happening. A real sighting must supply its visibility fact."
     }
   },
   "additionalProperties": false

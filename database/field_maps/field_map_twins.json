@@ -37,7 +37,8 @@
     "poi_twin_cove",
     "poi_dune_windbreak",
     "poi_reedwright_bank",
-    "poi_nesting_cove"
+    "poi_nesting_cove",
+    "poi_northwest_cave_camp"
   ],
   "neighbours": [
     "field_map_aravali",

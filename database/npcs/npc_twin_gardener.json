@@ -30,10 +30,23 @@
       "text": "I water the planted rooms in the morning and come back to the courtyard when the shade reaches the jars."
     },
     {
-      "text": "You have looked long enough to see what we were trying to keep. That changes the conversation.",
+      "text": "The shade reaches the jars before it reaches the planted rooms. That is why I keep both places alive.",
       "requires": [
         "discovery_twin_shade"
       ]
+    },
+    {
+      "text": "A flying ray? Tell me where its shadow crossed. A moving animal should not have to leave its home to be worth noticing.",
+      "requires_flags": [
+        "beedu:witnessed"
+      ]
+    },
+    {
+      "text": "The likeness stands outside the roots, and the jars still have their shade. That was the part I wanted kept.",
+      "requires_flags": [
+        "story:storyline_twin_kang_bust:unveiling"
+      ]
     }
-  ]
+  ],
+  "culture": "harappan"
 }

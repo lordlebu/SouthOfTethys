@@ -20,6 +20,7 @@
     "discovery_twin_shade"
   ],
   "npcs": [
-    "npc_twin_gardener"
+    "npc_twin_gardener",
+    "npc_priest_kang"
   ]
 }

@@ -1,0 +1,43 @@
+{
+  "id": "happening_twin_beedu_flight",
+  "type": "happening",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Owner-approved twin-valley story and art plan, 17 November 2026"
+  ],
+  "title": "A Shadow Leaves the Sand",
+  "occasion": "road",
+  "field_maps": [
+    "field_map_twins"
+  ],
+  "requires_flags": [
+    "beedu:visible"
+  ],
+  "prose": "A broad shadow crossed the sand before I heard anything. Above it a pale beedu lifted on the moving air, its wings scarcely changing shape. It turned toward the coast; the sand it had left settled behind it.",
+  "choices": [
+    {
+      "label": "Watch the glide",
+      "line": "I watched the ray ride the air toward the water. Its shadow kept the shape of the ground below.",
+      "sets": [
+        "beedu:witnessed"
+      ]
+    },
+    {
+      "label": "Follow its shadow from here",
+      "line": "The shadow crossed dune and hollow while the animal held a steadier height. I followed it with my eyes.",
+      "sets": [
+        "beedu:witnessed"
+      ]
+    },
+    {
+      "label": "Let it pass",
+      "line": "The broad shadow went on toward the coast. I let the beedu keep its distance.",
+      "sets": [
+        "beedu:witnessed"
+      ]
+    }
+  ]
+}

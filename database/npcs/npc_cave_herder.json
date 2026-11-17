@@ -1,0 +1,47 @@
+{
+  "id": "npc_cave_herder",
+  "type": "npc",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Owner-approved twin-valley story and art plan, 17 November 2026"
+  ],
+  "name": "The visiting herder",
+  "role": "camp herder",
+  "found_at": [
+    "poi_northwest_cave_camp"
+  ],
+  "language": "kia",
+  "would_settle": false,
+  "knows": [
+    "discovery_twin_cave"
+  ],
+  "lines": [
+    {
+      "text": "The goats graze beyond the approach. We leave the threshold free even when the shade is good.",
+      "gives": [
+        "discovery_twin_cave"
+      ]
+    },
+    {
+      "text": "A wide shadow once crossed the western sand without a footstep. I cannot promise you when a beedu will rise again."
+    },
+    {
+      "text": "I bring the animals here for rest, then move with the grazing. Yamantaka keeps the fold ready between visits."
+    },
+    {
+      "text": "You saw it rise, then. My old report and your own sighting belong on different lines of the page.",
+      "requires_flags": [
+        "beedu:witnessed"
+      ]
+    }
+  ],
+  "notes": "Intermittent helper, alternating with the cook; no new culture or random traveller pool.",
+  "culture": "kia",
+  "trade_languages": [
+    "harappan",
+    "maru"
+  ]
+}

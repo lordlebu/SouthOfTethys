@@ -1,0 +1,48 @@
+{
+  "id": "poi_northwest_cave_camp",
+  "type": "point_of_interest",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Owner-approved twin-valley story and art plan, 17 November 2026"
+  ],
+  "name": "The Windward Cave",
+  "field_map": "field_map_twins",
+  "kind": "settlement",
+  "stands": "high",
+  "terrain": [
+    "hills",
+    "desert"
+  ],
+  "description": "A sheltered cave at the valley's extreme northwestern ridge, with an open threshold, a small hearth and a fold outside.",
+  "arrival": "Three heads turn together at the cave mouth. Yamantaka makes room beside the windbreak. Beyond him Mirlepa sits in the lee of the rock; the dust reaches his feet and settles.",
+  "npcs": [
+    "npc_mirlepa",
+    "npc_yamantaka",
+    "npc_cave_cook",
+    "npc_cave_herder"
+  ],
+  "discoveries": [
+    "discovery_twin_cave"
+  ],
+  "sub_locations": [
+    {
+      "id": "cave_threshold",
+      "name": "The open threshold",
+      "description": "A clear passage between the windbreak and the hearth."
+    },
+    {
+      "id": "cave_alcove",
+      "name": "The meditation alcove",
+      "description": "A dry sheltered shelf with room to sit without blocking the doorway."
+    },
+    {
+      "id": "cave_fold",
+      "name": "The resting fold",
+      "description": "Low hurdles outside the sleeping place, empty between the herder's visits."
+    }
+  ],
+  "notes": "Permanent High Camp-like home; visitors rotate, the cave and two Denisovan residents do not. No separate interior field map."
+}

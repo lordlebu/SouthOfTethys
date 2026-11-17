@@ -1,0 +1,18 @@
+{
+  "id": "faction_windward_cave_household",
+  "type": "faction",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Owner-approved twin-valley story and art plan, 17 November 2026"
+  ],
+  "name": "The Windward Cave Household",
+  "culture": "denisovan",
+  "members": [
+    "character_mirlepa",
+    "character_yamantaka"
+  ],
+  "notes": "A permanent household on the northwestern Saraswati ridge. Maru households share routes and hospitality with it; cultural contact does not erase Denisovan identity. A visiting cook or herder sometimes keeps the hearth or fold."
+}

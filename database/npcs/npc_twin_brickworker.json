@@ -29,7 +29,7 @@
       "text": "Count the steps at the doors. The people who laid them knew how high the water could come."
     },
     {
-      "text": "You have looked long enough to see what we were trying to keep. That changes the conversation.",
+      "text": "A threshold and a channel are parts of one decision. A high door is little help if its water runs into the next house.",
       "requires": [
         "discovery_twin_bricks"
       ]
@@ -39,6 +39,19 @@
       "requires": [
         "discovery_twin_drains"
       ]
+    },
+    {
+      "text": "A pale wing above the sand, and no footmarks below it. Your account tells me more than a carving of a wing could.",
+      "requires_flags": [
+        "beedu:witnessed"
+      ]
+    },
+    {
+      "text": "Those bricks had another use before the plinth. We kept the sound ones and gave them work again.",
+      "requires_flags": [
+        "story:storyline_twin_kang_bust:unveiling"
+      ]
     }
-  ]
+  ],
+  "culture": "harappan"
 }

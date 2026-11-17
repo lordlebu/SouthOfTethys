@@ -30,10 +30,17 @@
       "text": "A moving leaf tells me more about the water than an empty channel does."
     },
     {
-      "text": "You have looked long enough to see what we were trying to keep. That changes the conversation.",
+      "text": "Watch a leaf where the cleared channel meets the reeds. Keeping water moving does not mean clearing everything away.",
       "requires": [
         "discovery_twin_drains"
       ]
+    },
+    {
+      "text": "You followed the shadow, not the animal. That is a useful way of watching water as well as air.",
+      "requires_flags": [
+        "beedu:witnessed"
+      ]
     }
-  ]
+  ],
+  "culture": "harappan"
 }

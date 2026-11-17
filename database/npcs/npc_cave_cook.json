@@ -1,0 +1,37 @@
+{
+  "id": "npc_cave_cook",
+  "type": "npc",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Owner-approved twin-valley story and art plan, 17 November 2026"
+  ],
+  "name": "The visiting cook",
+  "role": "camp cook",
+  "found_at": [
+    "poi_northwest_cave_camp"
+  ],
+  "language": "harappan",
+  "would_settle": false,
+  "knows": [
+    "discovery_twin_cave"
+  ],
+  "lines": [
+    {
+      "text": "The hearth is here because the smoke leaves by the upper crack. A sheltered flame is not the same as a smoky sleeping place.",
+      "gives": [
+        "discovery_twin_cave"
+      ]
+    },
+    {
+      "text": "I cook here for a little while, then take my pot to another household. The cave keeps its name when the cook changes."
+    },
+    {
+      "text": "If you bring news of the water jars, I will listen while this warms. Nobody has to earn a place beside the fire."
+    }
+  ],
+  "notes": "Intermittent helper; the game derives visits from journey day, never a permanent third occupant.",
+  "culture": "harappan"
+}
