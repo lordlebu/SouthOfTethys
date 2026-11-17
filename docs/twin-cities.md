@@ -1,5 +1,27 @@
 # The Saraswati twin cities — 14 November 2026
 
+## Current game art and phase checkpoint — 17 November 2026
+
+The game now delivers Priest Kang in **light indigo**, with a named cozy watercolor conversation
+portrait and separate carving/unveiling event paintings in the owner's supplied initial style.
+His overworld identity and three life-size bust stages use **“nes jrpg sprite”**. The stone bust
+stays sandstone. The optional five-beat commission remains the existing canon story; no second
+quest or new event prose is required for the game-owned paintings.
+
+Also delivered in the game: cave-local walking/alternating seated rests for Mirlepa and
+Yamantaka; visiting helpers; monthly prayer-flag/Icmic-cooker/bonfire variants; generated NES
+JRPG wildlife and ostrich tram; and Beedu's accepted small SNES flight/sighting/reaction layer.
+Most people remain Harappan, with two Kia, Hutel Elamite, and the two named Denisovans; the
+ethnicity/language/naming work is implemented. The existing world/canon division is unchanged.
+
+The gameplay phase is implemented; the required visual backlog is **36 paintings: 19 happenings,
+15 place views and 2 journey banners**, followed by integrated visual/performance review and
+exact-head CI/owner review. The eleven other existing NES NPC sheets and extra portrait/card
+variations are optional replacement work, outside that count. See the game's
+[audited phased inventory](https://github.com/lordlebu/4000BCESaraswathy/blob/ab618a6fc433b0a0a6730e5452735184674bab8c/docs/twin-cities-art-status.md)
+and [original plan checkpoint](https://github.com/lordlebu/4000BCESaraswathy/blob/ab618a6fc433b0a0a6730e5452735184674bab8c/docs/twin-cities-art-plan.md).
+Large raw generations and review screenshots remain in existing ignored desktop paths.
+
 > **Current visual direction (17 November 2026):** The game owns presentation; follow its [element-by-element art guide](https://github.com/lordlebu/4000BCESaraswathy/blob/main/docs/art-direction.md). New overworld people, wandering animals and ostrich/emu trams explicitly use **“nes jrpg sprite”**. Terrain/buildings remain simple NES, Beedu alone keeps accepted small SNES art, and off-map faces/events/places/species plates keep their painted forms. Mirlepa/Yamantaka portraits alone use the approved anime treatment. These are presentation choices, not new cultural or biological canon.
 
 The owner replaced the small-island proposal with a mainland journey between surviving
