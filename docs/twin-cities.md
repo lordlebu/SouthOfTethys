@@ -1,5 +1,15 @@
 # The Saraswati twin cities — 14 November 2026
 
+## Northeastern cave relocation — 18 November 2026
+
+The Windward Cave household now lives in the northeastern highlands: a green meadow beside
+a small mountain stream, with hills, bare mountains and border snowcaps. The northwest
+Gedrosian margin remains desert. Mirlepa, Yamantaka, their helpers, discovery and conversations
+retain their identities. The historical `poi_northwest_cave_camp` id remains for save compatibility.
+The game owns its (51,12) placement and bounded saved-map migration. This canon correction
+keeps v3.8.0 and re-exports the changed place/discovery with updated lock hashes; no new entities.
+The current graphics PRs remain game #264 and lore #170.
+
 ## Graphics follow-up — 18 November 2026
 
 The current game phase delivers nineteen new cozy watercolor event editions plus two journey
