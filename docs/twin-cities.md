@@ -1,5 +1,7 @@
 # The Saraswati twin cities — 14 November 2026
 
+> **Current visual direction (17 November 2026):** The game owns presentation; follow its [element-by-element art guide](https://github.com/lordlebu/4000BCESaraswathy/blob/main/docs/art-direction.md). New overworld people, wandering animals and ostrich/emu trams explicitly use **“nes jrpg sprite”**. Terrain/buildings remain simple NES, Beedu alone keeps accepted small SNES art, and off-map faces/events/places/species plates keep their painted forms. Mirlepa/Yamantaka portraits alone use the approved anime treatment. These are presentation choices, not new cultural or biological canon.
+
 The owner replaced the small-island proposal with a mainland journey between surviving
 Harappa and Mohenjodaro. The theme is **cities becoming habitats**: occupied courtyard
 homes beside nesting rooms, planted ruins and working water channels. These are living
