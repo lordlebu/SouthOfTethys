@@ -8,17 +8,20 @@
   "sources": [
     "Owner-approved Saraswati twin cities plan, 14 November 2026"
   ],
-  "name": "Oru",
+  "name": "Hutel",
   "role": "landing keeper",
   "found_at": [
     "poi_twin_landing"
   ],
-  "language": "harappan",
+  "language": "elamite",
   "would_settle": false,
   "knows": [
     "discovery_twin_salt"
   ],
   "lines": [
+    {
+      "text": "Hutel, from the western coast. Elamite is the language of my first household; Harappan is the language I use with most boats here."
+    },
     {
       "text": "Lothal is across the sea. The boat waits in fresh water while the tide makes up its mind.",
       "gives": [
@@ -29,7 +32,7 @@
       "text": "The boat has room. We wait for water, never for somebody to finish a notebook."
     },
     {
-      "text": "You have looked long enough to see what we were trying to keep. That changes the conversation.",
+      "text": "The fresh channel gives the boat room to wait while the tide changes. There is no notebook toll on leaving.",
       "requires": [
         "discovery_twin_salt"
       ]
@@ -39,6 +42,17 @@
       "requires": [
         "discovery_twin_banks"
       ]
+    },
+    {
+      "text": "From your description it turned with the coastal air. I heard reports from the west; I will keep your sighting separate from those.",
+      "requires_flags": [
+        "beedu:witnessed"
+      ]
     }
-  ]
+  ],
+  "culture": "elamite",
+  "trade_languages": [
+    "harappan"
+  ],
+  "notes": " Western Elamite landing keeper, formerly displayed as Oru. Hutel is a coined game name following the simplified Elamite-inspired sound brief, not an asserted historical attestation. Stable NPC ID retained."
 }

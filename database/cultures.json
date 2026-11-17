@@ -5,7 +5,7 @@
   "cultures": [
     {
       "id": "harappan",
-      "count": 11,
+      "count": 15,
       "given_names": [
         "Tharek",
         "Mehrun",
@@ -20,7 +20,7 @@
         "Oshen",
         "Iskaa"
       ],
-      "dress": "Cotton, worn wrapped and draped, and dyed -- madder red, indigo, turmeric, ochre -- as often as it is left the colour of the boll. Harappan settlers wear their wealth where it can be seen, when they have any: a little gold or silver at the ear, the wrist or the nose, and beads of lapis lazuli, carnelian and other stones brought a long way. The families take wives from beyond their own realm, so a Harappan household is often of more than one people to look at, and nobody there thinks it worth remarking on.",
+      "dress": "Cotton, worn wrapped and draped, and dyed -- madder red, indigo, turmeric, ochre -- as often as it is left the colour of the boll. Harappan settlers wear their wealth where it can be seen, when they have any: a little gold or silver at the ear, the wrist or the nose, and beads of lapis lazuli, carnelian and other stones brought a long way. The families take wives from beyond their own realm, so a Harappan household is often of more than one people to look at, and nobody there thinks it worth remarking on. For clearly adult high-status women, elegant open draping and lower necklines with tasteful visible cleavage can express status while retaining coverage. Working people keep practical garments; revealing dress is not a blanket rule for all women.",
       "art_reference": "Reference only, for whoever paints them; not a claim about any people living today. Faces and builds after the peoples of Gujarat, Sindh and Punjab. Some women, married in from beyond the realm, after the peoples of Bengal and Odisha.",
       "homelands": [
         {
@@ -37,12 +37,12 @@
     },
     {
       "id": "explorer",
-      "count": 6,
+      "count": 7,
       "note": "The one culture here that is not a people. Every other entry names a lineage you are born into; this one names a way of moving through the world, and it is why the same word fits a Tushara nomad girl, a Civilization Dawn whale-blimp commander and a god wearing a mortal frame.\n\nSix hold it, across four eras and every kind of vessel canon has: Varuna captains the Kelpfang and Mitra navigates it; Rathak runs cargo over the Tethys by airship; Ruvan walks, and is the observer the others are measured against; Guyuk crosses the steppe on foot and her second life crosses the ruined grasslands by train. What they share is not ancestry or territory but a disposition -- they go and look, and they bring back an account.\n\nThat is also the player's disposition, which is not an accident. The game is one long field journey and Varuna is the character you are; the culture is the one canon offers as an answer to what kind of person does that."
     },
     {
       "id": "kia",
-      "count": 5,
+      "count": 4,
       "given_names": [
         "Dakh",
         "Uvi",
@@ -74,7 +74,7 @@
     },
     {
       "id": "silvershore",
-      "count": 5
+      "count": 4
     },
     {
       "id": "maya_born",
@@ -82,7 +82,7 @@
     },
     {
       "id": "narmada_scholar",
-      "count": 3
+      "count": 4
     },
     {
       "id": "primordial",
@@ -90,11 +90,11 @@
     },
     {
       "id": "tuli",
-      "count": 3
+      "count": 4
     },
     {
       "id": "celestial",
-      "count": 2
+      "count": 6
     },
     {
       "id": "jharwa",
@@ -118,7 +118,7 @@
     },
     {
       "id": "vedda",
-      "count": 2,
+      "count": 3,
       "homelands": [
         {
           "epoch": "epoch_current",
@@ -160,7 +160,7 @@
     },
     {
       "id": "ancient_court",
-      "count": 1
+      "count": 2
     },
     {
       "id": "asura_hybrid",
@@ -399,8 +399,8 @@
     },
     {
       "id": "denisovan",
-      "count": 0,
-      "note": "A non-human people of Mainland Asia -- the chart's word, and a real one. Lore only: no given names, so the game deals no strangers of them.",
+      "count": 2,
+      "note": "Distinct archaic-human Denisovan people. Mirlepa and Yamantaka are the first two named residents; native language is fictional in-world Denisovan, with Harappan and Maru used for hospitality. No generic stranger-name pool is introduced.",
       "homelands": [
         {
           "epoch": "epoch_current",
@@ -412,7 +412,14 @@
           "group": "non-human",
           "note": "A non-sapiens human lineage living beyond the Hrycania outpost."
         }
-      ]
+      ],
+      "naming_conventions": "Mirlepa and Yamantaka are the two owner-specified named Denisovans and must remain unchanged. Later names need the same deliberate authoring, with a short personal name and optional household or role epithet. Do not automatically substitute Maru names or present this invented naming system as a reconstructed prehistoric language.",
+      "name_examples": [
+        "Mirlepa",
+        "Yamantaka"
+      ],
+      "dress": "The Windward Cave household wears Kalash-inspired layered woven garments with a few broad contrasting bands. Regional and individual details belong in portrait references; map sprites retain simple NES masses.",
+      "art_reference": "Owner-directed fictional Tibetan and archaic-human facial inspiration; Kalash-inspired clothing. Not a claim that modern Tibetan or Kalash people are Denisovans. Yamantaka alone has three anatomical heads."
     },
     {
       "id": "early_humans",
@@ -603,7 +610,7 @@
     {
       "id": "elamite",
       "count": 0,
-      "note": "Elamite tribes on the western edge of Mainland Asia. Lore only: no given names, so the game deals no strangers of them.",
+      "note": "A rare western coastal people toward Akkad. Hutel keeps the Saraswati landing; native Elamite and trade Harappan are distinct. Not added to the generic road-company selection pool.",
       "homelands": [
         {
           "epoch": "epoch_current",
@@ -615,7 +622,18 @@
           "group": "human",
           "note": "Western coastal tribes toward Akkad."
         }
-      ]
+      ],
+      "naming_conventions": "Use compact two- or three-syllable coined personal names with hut-, nap-, tem- or kut- sounds and endings such as -el, -uk or -ir. These are game-world Elamite-inspired forms, not a reconstructed historical naming law. Do not give every ordinary person a royal title or a divine compound.",
+      "name_examples": [
+        "Hutel",
+        "Napiruk",
+        "Temmel",
+        "Kutish",
+        "Peluk",
+        "Hutera"
+      ],
+      "dress": "Light plain woven wraps and shawls suited to the western coast; occasional restrained woven borders and practical rope or boat fittings. Avoid dressing every visitor as a king or soldier.",
+      "art_reference": "Southwestern Iranian / Susiana regional reference as art direction only, with individual variation; do not equate modern people with an ancient biological type."
     },
     {
       "id": "dune_scavengers",

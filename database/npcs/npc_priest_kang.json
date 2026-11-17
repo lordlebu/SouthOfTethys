@@ -1,0 +1,53 @@
+{
+  "id": "npc_priest_kang",
+  "type": "npc",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Owner-approved twin-valley story and art plan, 17 November 2026"
+  ],
+  "name": "Priest Kang",
+  "role": "keeper of the courtyard's civic memory",
+  "found_at": [
+    "poi_harappa_court"
+  ],
+  "language": "harappan",
+  "would_settle": false,
+  "knows": [
+    "discovery_twin_shade"
+  ],
+  "lines": [
+    {
+      "text": "I belong to the house of the remembered Priest-King. His face comes down to me; what we do with the courtyard is still ours to decide.",
+      "gives": [
+        "discovery_twin_shade"
+      ]
+    },
+    {
+      "text": "A likeness could stand here, if it leaves room for the jars and the people. Ask Nemi about the roots before you ask anyone about a pedestal."
+    },
+    {
+      "text": "The channels are clear because Seli clears them. A city cannot live on the memory of its rulers alone."
+    },
+    {
+      "text": "Your beedu will not stand on a plinth. We can remember a passing life without trying to keep it here.",
+      "requires_flags": [
+        "beedu:witnessed"
+      ]
+    },
+    {
+      "text": "There I am in stone. Remember the carver, Nemi, Eru and Renu beside the name; without their work it would only be a weight.",
+      "requires_flags": [
+        "story:storyline_twin_kang_bust:unveiling"
+      ]
+    }
+  ],
+  "character": "character_priest_kang",
+  "descended_from": [
+    "character_priest_king_harappa"
+  ],
+  "notes": "Fictional kinship. Face should closely match the Indus Priest-King sculpture reference; archaeological title and office are not asserted as fact.",
+  "culture": "harappan"
+}

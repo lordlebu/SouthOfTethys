@@ -1,0 +1,14 @@
+{
+  "id": "character_priest_king_harappa",
+  "type": "character",
+  "canon": "primary",
+  "sources": [
+    "Owner-approved twin-valley story and art plan, 17 November 2026"
+  ],
+  "name": "The remembered Priest-King",
+  "culture": "harappan",
+  "species": "human",
+  "status": "deceased",
+  "epoch": "epoch_civilization_dawn",
+  "notes": "A fictional remembered ancestor of Priest Kang. The character's title and kinship are invented lore; they do not establish the identity or office of the historical Indus sculpture's sitter."
+}

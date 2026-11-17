@@ -29,10 +29,17 @@
       "text": "A harness comes loose at the yard. A working bird should not spend its rest pulling against the carriage."
     },
     {
-      "text": "You have looked long enough to see what we were trying to keep. That changes the conversation.",
+      "text": "At the terminal I free the harness before I rest. A working bird should not have to pull even while it stands.",
       "requires": [
         "discovery_twin_nests"
       ]
+    },
+    {
+      "text": "The beedu borrows the moving air. My bird has to work for every yard; the water and the loose harness matter all the more.",
+      "requires_flags": [
+        "beedu:witnessed"
+      ]
     }
-  ]
+  ],
+  "culture": "harappan"
 }

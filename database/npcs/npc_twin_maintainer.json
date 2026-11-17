@@ -29,10 +29,17 @@
       "text": "The road stays open while the tram runs. Keep to its side and you can watch it pass."
     },
     {
-      "text": "You have looked long enough to see what we were trying to keep. That changes the conversation.",
+      "text": "I clear the middle and leave the rooted margins. A bridge needs banks that will still be there after rain.",
       "requires": [
         "discovery_twin_banks"
       ]
+    },
+    {
+      "text": "A broad shadow over uneven sand shows the ground differently. I would not strip a dune merely to find where it buried itself.",
+      "requires_flags": [
+        "beedu:witnessed"
+      ]
     }
-  ]
+  ],
+  "culture": "harappan"
 }

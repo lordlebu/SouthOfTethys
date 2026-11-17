@@ -133,6 +133,11 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "advance": {
+                  "type": "boolean",
+                  "default": true,
+                  "description": "False leaves an optional invitation open without advancing the story."
                 }
               }
             },
@@ -168,6 +173,10 @@
       "items": {
         "type": "string"
       }
+    },
+    "by_request": {
+      "description": "The first beat is invited explicitly by the player; later beats follow normally.",
+      "type": "boolean"
     }
   }
 }

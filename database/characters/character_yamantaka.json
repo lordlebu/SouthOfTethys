@@ -1,0 +1,17 @@
+{
+  "id": "character_yamantaka",
+  "type": "character",
+  "canon": "primary",
+  "sources": [
+    "Owner-approved twin-valley story and art plan, 17 November 2026"
+  ],
+  "name": "Yamantaka",
+  "culture": "denisovan",
+  "species": "denisovan",
+  "status": "alive",
+  "epoch": "epoch_post_cataclysm",
+  "roles": [
+    "threshold keeper"
+  ],
+  "notes": "A peaceful three-headed Denisovan guardian at Mirlepa's cave. Three anatomical heads are this individual's fantastical anatomy, not a Denisovan population trait. Kalash-inspired dress."
+}

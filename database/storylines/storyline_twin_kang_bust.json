@@ -1,0 +1,93 @@
+{
+  "id": "storyline_twin_kang_bust",
+  "type": "storyline",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Owner-approved twin-valley story and art plan, 17 November 2026"
+  ],
+  "name": "A Likeness With Room Around It",
+  "person": "npc_priest_kang",
+  "field_map": "field_map_twins",
+  "joins": false,
+  "beats": [
+    {
+      "id": "commission",
+      "title": "A Place for a Likeness",
+      "when": "arriving",
+      "at": "poi_harappa_court",
+      "prose": "Priest Kang touches the edge of his cloak. A likeness might stand in this courtyard, he says, but Nemi points to the living roots and the people sitting by the jars. First we must find a place that leaves room for them.",
+      "choices": [
+        {
+          "label": "Help plan the bust",
+          "line": "I agreed to help make a likeness without taking the courtyard away from its people."
+        },
+        {
+          "label": "Another time",
+          "line": "Kang leaves the invitation open. The shade and the way through are still mine to use.",
+          "advance": false
+        }
+      ]
+    },
+    {
+      "id": "site",
+      "title": "Outside the Root Ring",
+      "when": "arriving",
+      "at": "poi_harappa_court",
+      "prose": "Nemi marks a bare patch outside the root ring. Eru checks the old paving and the clear way past the jars. Kang sits where you can study his face. The site is agreed before a stone is touched.",
+      "choices": [
+        {
+          "label": "Keep the roots and passage clear",
+          "line": "We chose a modest site clear of the tree, the jars and the walking way."
+        }
+      ]
+    },
+    {
+      "id": "prepare",
+      "title": "The Makers' Part",
+      "when": "arriving",
+      "at": "poi_earthen_workshop",
+      "prose": "Eru has prepared a clay study and a sound base. Renu has sent reused bricks. A carver from the local workshop lays a pale offcut beside them: enough for a life-size head and shoulders, without quarrying a new face from the hillside.",
+      "choices": [
+        {
+          "label": "Help coordinate the work",
+          "line": "The stone was donated, the base reused, and the makers named. A likeness would take more than a sitter."
+        }
+      ]
+    },
+    {
+      "id": "carving",
+      "title": "A Face Coming Out of Stone",
+      "when": "arriving",
+      "at": "poi_earthen_workshop",
+      "prose": "On your return the carver is bringing the likeness out of the pale block. The headband, quiet eyes and close beard are Kang's. Eru checks the base, leaving the face to the one who knows that work.",
+      "choices": [
+        {
+          "label": "Study the likeness with Kang",
+          "line": "We compared the face with its sitter. Kang asked that the makers' part be remembered with his."
+        }
+      ]
+    },
+    {
+      "id": "unveiling",
+      "title": "A Likeness With Room Around It",
+      "when": "arriving",
+      "at": "poi_harappa_court",
+      "prose": "The life-size bust stands on its modest plinth outside the neem's root ring. The jars have their shade and the way through remains open. Kang studies his own likeness; Nemi watches someone sit down where they always did.",
+      "choices": [
+        {
+          "label": "Remember the sitter and the makers",
+          "line": "Kang's bust stood in Harappa. I recorded the sitter and the people who had made room for him."
+        },
+        {
+          "label": "Remember the living courtyard",
+          "line": "The new bust had not cost the courtyard its shade, its seats or its passage. That was part of the work."
+        }
+      ]
+    }
+  ],
+  "by_request": true,
+  "notes": "Bespoke paintings pending: kang-commission, kang-site, kang-workshop, kang-carving, kang-unveiling. Until accepted, use the established arrival-story art fallback; no unresolved art filename is exported."
+}

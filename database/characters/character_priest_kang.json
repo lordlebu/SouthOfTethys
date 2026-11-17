@@ -1,0 +1,17 @@
+{
+  "id": "character_priest_kang",
+  "type": "character",
+  "canon": "primary",
+  "sources": [
+    "Owner-approved twin-valley story and art plan, 17 November 2026"
+  ],
+  "name": "Priest Kang",
+  "culture": "harappan",
+  "species": "human",
+  "status": "alive",
+  "epoch": "epoch_post_cataclysm",
+  "roles": [
+    "keeper of civic memory"
+  ],
+  "notes": "Of the remembered Priest-King's household line. His optional life-size bust is commissioned and made in Harappa."
+}

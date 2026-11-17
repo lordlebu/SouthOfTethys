@@ -30,10 +30,23 @@
       "text": "The older courses are sound. It is the fresh loose plaster I am watching."
     },
     {
-      "text": "You have looked long enough to see what we were trying to keep. That changes the conversation.",
+      "text": "The sound old courses do not need replacing. I work on the loose plaster and leave the living roots their space.",
       "requires": [
         "discovery_twin_shade"
       ]
+    },
+    {
+      "text": "A shape can be steady in the air while its shadow runs over every hollow. I would like to see that.",
+      "requires_flags": [
+        "beedu:witnessed"
+      ]
+    },
+    {
+      "text": "The carver made the face. I made sure the base would hold without closing the way through.",
+      "requires_flags": [
+        "story:storyline_twin_kang_bust:unveiling"
+      ]
     }
-  ]
+  ],
+  "culture": "harappan"
 }

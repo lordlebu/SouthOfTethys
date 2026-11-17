@@ -1,0 +1,33 @@
+{
+  "id": "happening_twin_cave_arrival",
+  "type": "happening",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Owner-approved twin-valley story and art plan, 17 November 2026"
+  ],
+  "title": "Room Beside the Fire",
+  "occasion": "arriving",
+  "field_maps": [
+    "field_map_twins"
+  ],
+  "at": [
+    "poi_northwest_cave_camp"
+  ],
+  "prose": "Yamantaka showed me the open way in. Mirlepa shifted his mat, leaving room for another. The fold and the hearth were work someone had done before I arrived.",
+  "choices": [
+    {
+      "label": "Sit and notice the air",
+      "line": "Dust settled below the sleeping shelf. I kept the threshold clear.",
+      "grants": [
+        "discovery_twin_cave"
+      ]
+    },
+    {
+      "label": "Ask about the household",
+      "line": "The visitors change; the place they are offered stays."
+    }
+  ]
+}

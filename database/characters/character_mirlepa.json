@@ -1,0 +1,18 @@
+{
+  "id": "character_mirlepa",
+  "type": "character",
+  "canon": "primary",
+  "sources": [
+    "Owner-approved twin-valley story and art plan, 17 November 2026"
+  ],
+  "name": "Mirlepa",
+  "culture": "denisovan",
+  "species": "denisovan",
+  "status": "alive",
+  "epoch": "epoch_post_cataclysm",
+  "roles": [
+    "meditator",
+    "householder"
+  ],
+  "notes": "One of the first two named Denisovans met by the player. Shares hospitality and routes with Maru neighbours while retaining a separate identity. Fictional Tibetan/archaic-human facial inspiration and Kalash-inspired garments."
+}

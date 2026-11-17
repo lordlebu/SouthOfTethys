@@ -20,7 +20,7 @@ homestead to build, combat or experience currency.
 
 The game owns a 64×64 layout, separate road and railway on the causeway, and an ostrich-drawn
 daytime tram. The latest owner correction requests each city's footprint to match Dwarka,
-buildings to match existing hut scale, SNES 16-bit artwork, and enclosures that combine walls
+buildings to match existing hut scale, simple 8-bit NES artwork, and enclosures that combine walls
 and natural features. Dimensions, collision, art and transport arithmetic belong to the game.
 
 Canon v3.7.0 implements the first expansion within that allowance: Irekha, a reed-boat
@@ -30,3 +30,18 @@ and eighteen happenings, with the same eight discoveries and two questions. New 
 are linked reciprocally to existing discoveries. Further expansion uses the existing schemas
 and diary progression. The game repository's `docs/twin-cities.md` records implementation phases,
 actual screenshots, reproducible review commands and the improvement backlog.
+
+Canon v3.8.0 adds the Windward Cave household, its discovery and welcome, the actual-flight
+beedu happening, and Priest Kang's optional five-beat life-size bust commission. Current totals:
+sixteen places, fifteen NPC identities (thirteen main people and two alternating helpers),
+nine discoveries, two questions and twenty happenings. Mirlepa and Yamantaka are the only named
+Denisovans; their household has Maru contacts without becoming a random Maru traveller pool.
+Kang is a fictional descendant of the remembered Priest-King, whose archaeological reference
+does not establish an actual historical royal or priestly office.
+
+The thirteen main people are eight Harappans, two Kia, one Elamite (Hutel) and two Denisovans.
+Culture and native/trade languages are recorded separately on the NPCs; the visiting cook is
+Harappan and the visiting herder Kia. Hutel keeps the stable landingkeeper ID. Elamite naming
+examples are fictional conventions, not asserted ancient vocabulary. Presentation and the
+remaining art inventory are tracked in the game's original twin-city art plan; the current
+coding phase does not mark that complete visual programme finished.

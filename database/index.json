@@ -1,26 +1,26 @@
 {
-  "version": "3.7.0",
+  "version": "3.8.0",
   "description": "SouthOfTethys canonical entity index",
   "counts": {
     "artifacts": 6,
-    "characters": 69,
-    "discoveries": 54,
+    "characters": 73,
+    "discoveries": 55,
     "events": 55,
-    "factions": 18,
+    "factions": 19,
     "fauna": 267,
     "field_maps": 5,
     "field_questions": 10,
     "flora": 120,
     "foodways": 20,
-    "happenings": 34,
+    "happenings": 36,
     "mythology": 11,
-    "npcs": 36,
+    "npcs": 41,
     "places": 112,
-    "points_of_interest": 52,
+    "points_of_interest": 53,
     "regions": 8,
     "sayings": 33,
     "settlements": 2,
-    "storylines": 2,
+    "storylines": 3,
     "vocabulary": 10
   },
   "entities": {
@@ -73,6 +73,7 @@
       "character_mehme",
       "character_mehtar",
       "character_mira",
+      "character_mirlepa",
       "character_mithra",
       "character_mitra",
       "character_mitra_of_the_oath",
@@ -83,6 +84,8 @@
       "character_onko",
       "character_orek",
       "character_owlman",
+      "character_priest_kang",
+      "character_priest_king_harappa",
       "character_radiant_gentleman",
       "character_ranu",
       "character_rathak",
@@ -101,7 +104,8 @@
       "character_varuna_of_the_deep",
       "character_varunesh",
       "character_vijaya",
-      "character_yaksha_envoy"
+      "character_yaksha_envoy",
+      "character_yamantaka"
     ],
     "discoveries": [
       "discovery_archive_baseline",
@@ -146,6 +150,7 @@
       "discovery_tower_collapse",
       "discovery_twin_banks",
       "discovery_twin_bricks",
+      "discovery_twin_cave",
       "discovery_twin_delta",
       "discovery_twin_desert",
       "discovery_twin_drains",
@@ -234,7 +239,8 @@
       "faction_taj_nagaraptors",
       "faction_vajraptor_canopy_sentinels",
       "faction_vanga_maritime_federation",
-      "faction_vayu_dwarkadhish_coral_monarchies"
+      "faction_vayu_dwarkadhish_coral_monarchies",
+      "faction_windward_cave_household"
     ],
     "fauna": [
       "fauna_abyssal_blue_leviathan",
@@ -684,9 +690,11 @@
       "happening_tower_standing",
       "happening_twin_arrival",
       "happening_twin_bank",
+      "happening_twin_beedu_flight",
       "happening_twin_brick",
       "happening_twin_camp",
       "happening_twin_carrier",
+      "happening_twin_cave_arrival",
       "happening_twin_closing",
       "happening_twin_courtyard",
       "happening_twin_cove",
@@ -722,6 +730,8 @@
       "npc_ardhi",
       "npc_asura_princess",
       "npc_bekh",
+      "npc_cave_cook",
+      "npc_cave_herder",
       "npc_cove_watcher_ulenna",
       "npc_dala",
       "npc_drel",
@@ -732,10 +742,12 @@
       "npc_jarro",
       "npc_kunch",
       "npc_marn",
+      "npc_mirlepa",
       "npc_moonj",
       "npc_odri",
       "npc_okhi",
       "npc_pell",
+      "npc_priest_kang",
       "npc_reedwright_irekha",
       "npc_sesh",
       "npc_sudama",
@@ -753,7 +765,8 @@
       "npc_twin_waterkeeper",
       "npc_uma",
       "npc_ushi",
-      "npc_vessa"
+      "npc_vessa",
+      "npc_yamantaka"
     ],
     "places": [
       "place_anatolia",
@@ -904,6 +917,7 @@
       "poi_nesting_cove",
       "poi_nesting_ruins",
       "poi_nomad_ground",
+      "poi_northwest_cave_camp",
       "poi_planted_ruins",
       "poi_quiet_atelier",
       "poi_rail_head",
@@ -974,7 +988,8 @@
     ],
     "storylines": [
       "storyline_asura_princess",
-      "storyline_guyuk"
+      "storyline_guyuk",
+      "storyline_twin_kang_bust"
     ],
     "vocabulary": [
       "word_kia_ossu",

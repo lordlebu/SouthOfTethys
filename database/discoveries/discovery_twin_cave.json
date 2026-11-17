@@ -1,0 +1,34 @@
+{
+  "id": "discovery_twin_cave",
+  "type": "discovery",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Owner-approved twin-valley story and art plan, 17 November 2026"
+  ],
+  "name": "Room at the Threshold",
+  "discipline": "geography",
+  "found_at": [
+    "poi_northwest_cave_camp"
+  ],
+  "helps": [
+    "npc_mirlepa",
+    "npc_yamantaka"
+  ],
+  "levels": [
+    {
+      "entry": "The cave has a swept threshold and a small hearth."
+    },
+    {
+      "entry": "The windbreak bends the air without closing the entrance. Dust falls before it reaches the sleeping shelf."
+    },
+    {
+      "entry": "The fold is outside, the hearth draws smoke upward, and the centre stays clear for someone carrying water."
+    },
+    {
+      "entry": "This is a household organised around what passes through it: wind, smoke, animals and visitors. Stillness here is something maintained, like shade in the city."
+    }
+  ]
+}

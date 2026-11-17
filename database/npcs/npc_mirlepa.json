@@ -1,0 +1,54 @@
+{
+  "id": "npc_mirlepa",
+  "type": "npc",
+  "epochs": [
+    "epoch_post_cataclysm"
+  ],
+  "canon": "primary",
+  "sources": [
+    "Owner-approved twin-valley story and art plan, 17 November 2026"
+  ],
+  "name": "Mirlepa",
+  "role": "Denisovan meditator",
+  "found_at": [
+    "poi_northwest_cave_camp"
+  ],
+  "language": "denisovan",
+  "would_settle": false,
+  "knows": [
+    "discovery_twin_cave"
+  ],
+  "lines": [
+    {
+      "text": "You need not be still for my sake. Sit if there is something you want to notice.",
+      "gives": [
+        "discovery_twin_cave"
+      ]
+    },
+    {
+      "text": "The dust pauses at the threshold before it turns. I have watched it long enough to stop calling that an empty doorway."
+    },
+    {
+      "text": "We are Denisovans. Maru households share our grazing routes, but sharing a road does not make every household the same people."
+    },
+    {
+      "text": "When you return to the city, ask who clears its water. Stillness is one way of paying attention; work is another.",
+      "requires": [
+        "discovery_twin_cave"
+      ]
+    },
+    {
+      "text": "You watched a shadow change over the sand. You did not need the animal to be still in order to pay attention.",
+      "requires_flags": [
+        "beedu:witnessed"
+      ]
+    }
+  ],
+  "character": "character_mirlepa",
+  "notes": "Fictional Tibetan/archaic-human facial inspiration; Kalash-inspired dress. A person, not a scientific Denisovan facial reconstruction.",
+  "culture": "denisovan",
+  "trade_languages": [
+    "harappan",
+    "maru"
+  ]
+}

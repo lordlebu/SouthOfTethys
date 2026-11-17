@@ -5,12 +5,12 @@
   "species": [
     {
       "id": "human",
-      "count": 38,
+      "count": 45,
       "note": "The default, and 38 of 52 characters."
     },
     {
       "id": "asura",
-      "count": 2,
+      "count": 3,
       "note": "Sentient and person-like rather than beast -- metal humans who behave as people do. The culture of the same name is `maya_born` in cultures.json; the creature sense is a base_species pairing in fauna. Three senses, three homes."
     },
     {
@@ -25,7 +25,7 @@
     },
     {
       "id": "apsara",
-      "count": 1,
+      "count": 2,
       "note": "Celestial dancer, of the `celestial` culture."
     },
     {
@@ -35,12 +35,12 @@
     },
     {
       "id": "biological_spiritual_hybrid",
-      "count": 1,
+      "count": 2,
       "note": "Neither wholly alive nor wholly spirit."
     },
     {
       "id": "deity",
-      "count": 1,
+      "count": 5,
       "note": "A god as itself."
     },
     {
@@ -62,6 +62,11 @@
       "id": "vanara_spirit",
       "count": 1,
       "note": "A vanara that is no longer only a vanara. Kept distinct from `vanara` for the same reason as the asura pair."
+    },
+    {
+      "id": "denisovan",
+      "count": 2,
+      "note": "Archaic-human Denisovan lineage, distinct from cultural affiliation. The first named cave household contains Mirlepa and Yamantaka; three heads are specific to Yamantaka."
     }
   ]
 }

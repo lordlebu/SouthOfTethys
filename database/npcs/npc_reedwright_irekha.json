@@ -13,7 +13,7 @@
   "found_at": [
     "poi_reedwright_bank"
   ],
-  "language": "harappan",
+  "language": "kia",
   "would_settle": false,
   "knows": [
     "discovery_twin_banks"
@@ -33,6 +33,16 @@
       "requires": [
         "discovery_twin_banks"
       ]
+    },
+    {
+      "text": "A beedu holds its shape by yielding to the air. You have given me a good comparison for the next tight seam.",
+      "requires_flags": [
+        "beedu:witnessed"
+      ]
     }
+  ],
+  "culture": "kia",
+  "trade_languages": [
+    "harappan"
   ]
 }

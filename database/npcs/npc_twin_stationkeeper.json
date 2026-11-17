@@ -29,10 +29,17 @@
       "text": "Both platforms have a place to sit. The keeper at the southern landing will tell you about the boat."
     },
     {
-      "text": "You have looked long enough to see what we were trying to keep. That changes the conversation.",
+      "text": "The northwestern ridge has a cave household. Turn toward the rock above Harappa, and leave the threshold clear when you arrive.",
       "requires": [
         "discovery_twin_desert"
       ]
+    },
+    {
+      "text": "You saw the beedu yourself, then. Other travellers had brought reports; now I can say who described this passage.",
+      "requires_flags": [
+        "beedu:witnessed"
+      ]
     }
-  ]
+  ],
+  "culture": "harappan"
 }
