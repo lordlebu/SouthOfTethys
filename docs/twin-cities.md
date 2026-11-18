@@ -1,5 +1,36 @@
 # The Saraswati twin cities — 14 November 2026
 
+
+## Landscape and motion polish - 18 November 2026
+
+The new map now reuses suitable older-map grass/swamp/forest ground decor, with a compact
+four-frame **nes jrpg sprite** shrub sheet. Regular bushes mark dry cliff lips; paired half-size
+bushes soften grassland/desert borders. Placement is deterministic and capped, with routes,
+bridges, buildings, courts and the cave's walking area clear.
+
+Mirlepa and Yamantaka now exchange walking/seated roles every 120 seconds. Each walking turn
+has one slow out-and-back, typically 20 seconds per tile, with a minimum of 12 seconds per tile.
+Scene time drives their movement so the player's journey-time advances cannot speed it up.
+Monthly props and visiting helpers retain their existing journey-day schedule.
+
+The game adds simple three-frame river ripples, six blocky cave-hearth smoke puffs and small
+localized desert haze, all using cached textures and camera/fog visibility gates. Effects update
+at 5Hz; reduced-motion disables these optional marks. Their limits are 96 ripple marks, 12 haze
+cells and six puffs. Software-renderer comparisons found no desert-haze regression, while cave
+smoke readings remain noisy and need final hardware review. All five focused browser checks,
+all 3,835 unit tests, typecheck, production build and size/data gates pass; the app remains
+within 220 KiB gzip.
+
+No required illustration production remains. Final integrated visual/gameplay/save/performance
+review and owner review/merge remain; extra character sheets and seasonal variants are optional.
+Existing buildings and accepted Beedu art are retained. This is presentation/documentation work,
+with no new canon entities, languages, version, world generation or export changes.
+
+Production commit: [0ca9ac7](https://github.com/lordlebu/4000BCESaraswathy/commit/0ca9ac74cf813459011fb71c7275dd4d2315b526).
+The [exact prompts, budgets, checks and performance evidence](https://github.com/lordlebu/4000BCESaraswathy/blob/0ca9ac74cf813459011fb71c7275dd4d2315b526/docs/twin-landscape-motion-phase.md)
+and [updated original plan](https://github.com/lordlebu/4000BCESaraswathy/blob/0ca9ac74cf813459011fb71c7275dd4d2315b526/docs/twin-cities-art-plan.md) live in the game repository.
+Raw generations, screenshots and performance JSON stay in already ignored desktop paths.
+
 ## Place-view production complete ? 18 November 2026
 
 The game delivers all fifteen remaining cozy watercolor place panoramas. With the accepted
