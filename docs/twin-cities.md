@@ -1,6 +1,37 @@
 # The Saraswati twin cities — 14 November 2026
 
 
+## Approved terrain and final graphics checkpoint - 18 November 2026
+
+The owner selected **A - Muted sage** for the northeastern cave meadow and hills after reviewing
+three in-game samples. Lichen and olive remain development review alternatives. Sparse broad
+NES pixel turf/stone patterns replace the bright flat mint. Stepped height/riverbank shading and
+an earthy, irregular transition on both sides soften desert/grass, hill, mountain and snow edges.
+
+This is game-owned presentation: one shared ground atlas, baked once, still one ground image per
+tile. It replaces flat hill/bank outlines while preserving real cliff faces, bridges, buildings,
+the accepted Beedu, world generation and saves. The review seed uses 521 frames / 2.125 MiB.
+Mirlepa/Yamantaka retain their 120-second turns and very slow scene-time walks; generated cliff
+shrubs, half-size border bushes, habitat decor and capped smoke/haze/river ripples are delivered.
+
+Required illustration backlog: **0**. All 16 place views, 20 happening paintings, arrival/journey
+art and main portraits are complete. Final integrated visual/gameplay/save/hardware-performance
+review and owner review/merge remain; additional NPC sheets and seasonal variants are optional.
+Software-renderer measurements remain noisy, particularly cave medians; they are not hardware-FPS
+or zero-cost guarantees. No canon entities, language, version or export changes are needed.
+
+Verified game implementation: [f80033e](https://github.com/lordlebu/4000BCESaraswathy/commit/f80033e41855650959e2f320575af14382971a3f).
+Its checks passed **3,839 unit tests, eight combined browser cases**, typecheck, production build,
+canon lock and bundle-size gates (app 217.1/220 KiB gzip). Hosted CI is tracked on the review PR
+rather than treated as a permanent completed result in this document.
+
+Read the [approved terrain decision and measurements](https://github.com/lordlebu/4000BCESaraswathy/blob/f80033e41855650959e2f320575af14382971a3f/docs/twin-terrain-softening.md),
+[current completion audit](https://github.com/lordlebu/4000BCESaraswathy/blob/f80033e41855650959e2f320575af14382971a3f/docs/twin-cities-art-status.md),
+[art-form guide](https://github.com/lordlebu/4000BCESaraswathy/blob/f80033e41855650959e2f320575af14382971a3f/docs/art-direction.md) and [original phased plan](https://github.com/lordlebu/4000BCESaraswathy/blob/f80033e41855650959e2f320575af14382971a3f/docs/twin-cities-art-plan.md).
+Earlier dated counts and prompt briefs below are production history. All review captures and
+raw generations remain in already ignored desktop paths. Game review: [PR #266](https://github.com/lordlebu/4000BCESaraswathy/pull/266).
+
+
 ## Landscape and motion polish - 18 November 2026
 
 The new map now reuses suitable older-map grass/swamp/forest ground decor, with a compact
