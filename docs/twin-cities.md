@@ -1,5 +1,27 @@
 # The Saraswati twin cities — 14 November 2026
 
+## Place-view production complete ? 18 November 2026
+
+The game delivers all fifteen remaining cozy watercolor place panoramas. With the accepted
+Harappa courtyard, all sixteen twin-valley stops now have individual preferred views;
+**no required illustrations remain**. New panels are full-colour 512?224 PNGs, crop/resize only,
+with broader local palettes and authored features. The northeast cave shows green highlands,
+a stream and mountain/snow layers; desert stops stay arid. The station scene was recomposed
+so the ostrich and carriage remain visible in a shallow desktop card. Total new art: 3,677,562 bytes.
+
+Production commit: [b568138](https://github.com/lordlebu/4000BCESaraswathy/commit/b568138d4625b87074f0fb91217f7dcfaf94eb37).
+[Exact prompts, provenance and delivery ledger](https://github.com/lordlebu/4000BCESaraswathy/blob/b568138d4625b87074f0fb91217f7dcfaf94eb37/docs/twin-place-views-phase.md),
+[current audit](https://github.com/lordlebu/4000BCESaraswathy/blob/b568138d4625b87074f0fb91217f7dcfaf94eb37/docs/twin-cities-art-status.md)
+and [original plan](https://github.com/lordlebu/4000BCESaraswathy/blob/b568138d4625b87074f0fb91217f7dcfaf94eb37/docs/twin-cities-art-plan.md).
+
+The next required phase is the final combined review: crops/readability and keyboard/touch,
+fog/dusk, the cave household's turns/helpers/monthly props, Beedu flight/event/dialogue,
+tram terminals, Kang's optional bust, save/reload and measured frame/load costs. Resolve findings,
+then owner review/merge. Additional NPC replacements and seasonal variants remain optional.
+Existing map buildings, simple NES direction and accepted Beedu are retained. This changes
+presentation/documentation only: no new canon entities, languages, mechanics, version or export.
+Large raw generations and screenshots remain in existing ignored desktop paths.
+
 ## Northeastern cave relocation — 18 November 2026
 
 The Windward Cave household now lives in the northeastern highlands: a green meadow beside
@@ -8,7 +30,7 @@ Gedrosian margin remains desert. Mirlepa, Yamantaka, their helpers, discovery an
 retain their identities. The historical `poi_northwest_cave_camp` id remains for save compatibility.
 The game owns its (51,12) placement and bounded saved-map migration. This canon correction
 keeps v3.8.0 and re-exports the changed place/discovery with updated lock hashes; no new entities.
-The current graphics PRs remain game #264 and lore #170.
+The graphics/relocation work merged in game PR #264 and lore PRs #170/#171.
 
 ## Graphics follow-up — 18 November 2026
 
@@ -23,8 +45,8 @@ cactus, flowering cactus, grass and stones. Roads, rail, courts and cave walking
 The game also fixes unknown/known traveller portrait continuity and slows the ostrich tram's
 viewing pace from 100 to 240ms/tile without changing canon, route, fare or gameplay day cost.
 
-**Required paintings remaining: fifteen place views**, followed by final integrated visual,
-likeness/reference and performance review. The former 36-image backlog is reduced by this
+At this earlier checkpoint fifteen place views remained; the production phase above completes
+them. Final integrated visual, likeness/reference and performance review remains required. The former 36-image backlog is reduced by this
 completed twenty-one-image phase. Gameplay/culture/language data and building art are unchanged.
 See the game's phase ledger and audited original plan linked below for exact completed/pending
 items; this is a documentation synchronization, not a new canon release.
