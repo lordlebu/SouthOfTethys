@@ -1,6 +1,33 @@
 # The Saraswati twin cities — 14 November 2026
 
 
+## Cave household, rest and roads follow-up - 18 November 2026
+
+The game enlarges Yamantaka to twice his previous overworld scale and draws the cave body at
+1.5 tiles with a half-tile entrance. The Icmic cooker is 75% of its previous display scale.
+The intermittent cook reuses an accepted Maru portrait and nomad body; canon identity, language,
+helper schedule and conversations remain unchanged.
+
+Every night at the cave now presents the traveller with Mirlepa and Yamantaka: a shared-meal
+painting before rest and three separate sleeping mats/quilts afterward. Yamantaka retains three
+heads on one body in both images. The normal activity-card path selects the named cave's art
+instead of a generic roof image, and labels the action "Stay the night in the cave". Other
+shelters, night rules and save formats are retained. Both cozy watercolor cards are delivered
+in full colour with resize-only imports, without palette reduction.
+
+Highland scenery reuses the existing broad-leaf tree art plus a few code-native frozen conifers.
+Stone roads serve highlands/grassy approaches, sandstone Harappa and desert connectors, and brick
+Mohenjo-daro. Sand is retained around the two desert stops. Small stones appear by grassy paths;
+railways, bridges, city buildings, muted sage terrain and the accepted Beedu stay as approved.
+Placement is seeded and bounded, using the existing camera culling; no canon/world generation.
+
+Implementation and exact art prompts: [223bed5](https://github.com/lordlebu/4000BCESaraswathy/commit/223bed57ac7789394946dd3ec85c9afd63cdc2ac) and [phase ledger and prompts](https://github.com/lordlebu/4000BCESaraswathy/blob/223bed57ac7789394946dd3ec85c9afd63cdc2ac/docs/twin-cave-roads-phase.md).
+Phase-end verification passes: 3,860 unit tests across 176 files, eight browser checks and
+type/build/size/data gates (app 218.0/220 KiB gzip). Hosted CI is reported with the game review. Final integrated
+visual/gameplay/save/hardware review and owner merge remain; no required art from this follow-up
+is outstanding. This documentation sync does not change the canon version or exported bundle.
+
+
 ## Approved terrain and final graphics checkpoint - 18 November 2026
 
 The owner selected **A - Muted sage** for the northeastern cave meadow and hills after reviewing
