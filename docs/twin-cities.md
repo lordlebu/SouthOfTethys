@@ -1,6 +1,31 @@
 # The Saraswati twin cities — 14 November 2026
 
 
+## Approved rail crossing, vegetation, lights and water trail - 18 November 2026
+
+The owner clarified the **upper rail bridge** needs work; the lower road bridge is accepted.
+The new generated NES JRPG rail span was approved after reviewing its shaded stone/timber and
+proper cast shadow on water. Its abutments overlap both banks to close transparent-art gutters;
+rail gauge/connections remain aligned. The lower road bridge and all older-map bridge art remain.
+
+Approved vegetation C mixes simple object-style cliff shrubs and existing old-map grass along
+sand/grass borders. Covered clay walkway lamps restore the twin map's omitted road-light layer,
+using existing dry-approach spacing and warm, known-ground night glows. Moving otters reuse the
+accepted water ripple for a short, capped trail on open water; reduced motion suppresses it.
+Logical routes, save/canon data and the earlier approved cave/road/terrain work remain unchanged.
+
+Mixed art forms are deliberate. Agents must inspect the specific element and approved references,
+follow the known style or ask when uncertain, and show representative new/replacement samples
+for owner selection before applying them, including code-native art. Preserve accepted exceptions;
+a request for options stays review-only until selected. Both repositories' project guidance and
+the game's art documents record this rule.
+
+Implementation: [1f79b0c](https://github.com/lordlebu/4000BCESaraswathy/commit/1f79b0c1089d2b185d76a1f995f02f7b3fe03d1a). [Selections, exact prompts, source/rebuild and checks](https://github.com/lordlebu/4000BCESaraswathy/blob/1f79b0c1089d2b185d76a1f995f02f7b3fe03d1a/docs/twin-walkway-phase.md).
+Final phase verification passes: 3,863 unit tests, ten focused browser cases, typecheck/build/data/size
+gates (app 219.6/220 KiB gzip). The game ledger records exact results; broader integrated hardware/gameplay/save
+review and owner merge remain. No canon identity, language, schedule, version or export changes.
+
+
 ## Cave household, rest and roads follow-up - 18 November 2026
 
 The game enlarges Yamantaka to twice his previous overworld scale and draws the cave body at

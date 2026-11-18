@@ -30,6 +30,15 @@ the lint leaves those unresolved on purpose (`GAME_OWNED_PREFIXES`) and the game
 `test/gameOwned.test.ts` resolves them. **When something new is a number, a cost or a rule, it
 belongs in the game; when it is who, where, what or why, it belongs here.**
 
+## Game art handoff
+
+Mixed art forms are intentional. For game art, inspect the actual element and approved reference;
+follow the established style or ask the owner when uncertain. Show representative samples of new/
+replacement art, including code-native drawings, for selection before applying it. Preserve
+accepted exceptions. Requests for options stay review-only until selected. The game owns these
+views; visual changes do not by themselves require canon or export changes. Current choices and
+implementation references live in [docs/twin-cities.md](docs/twin-cities.md).
+
 ## Commands
 
 ```bash
