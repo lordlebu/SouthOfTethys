@@ -243,6 +243,19 @@ def structural(w: World, problems: list[str]) -> None:
             for d in w.pois[p].get("discoveries") or []:
                 if p not in (w.discoveries.get(d, {}).get("found_at") or []):
                     problems.append(f"{d} is listed on {p} but its own found_at does not agree")
+            parent_discoveries = set(w.pois[p].get("discoveries") or [])
+            assigned: set[str] = set()
+            for sub in w.pois[p].get("sub_locations") or []:
+                for d in sub.get("discoveries") or []:
+                    if d not in w.discoveries:
+                        problems.append(f"{p}/{sub['id']} lists {d}, which does not exist")
+                    elif d not in parent_discoveries:
+                        problems.append(
+                            f"{p}/{sub['id']} lists {d}, which is not offered by its parent point"
+                        )
+                    if d in assigned:
+                        problems.append(f"{d} is assigned to more than one sub-location on {p}")
+                    assigned.add(d)
             for n in w.pois[p].get("npcs") or []:
                 if p not in (w.npcs.get(n, {}).get("found_at") or []):
                     problems.append(f"{n} is listed on {p} but its own found_at does not agree")
