@@ -101,6 +101,15 @@
               "type": "string"
             },
             "description": "Discovery or vocabulary ids that must be held before this can be reached. This is how a cave that is 'too dark' opens later."
+          },
+          "discoveries": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^discovery_[a-z0-9_]+$"
+            },
+            "uniqueItems": true,
+            "description": "Discoveries specifically examined inside this sub-location. Every id must also be listed by the parent point of interest; absent means none are assigned here."
           }
         },
         "additionalProperties": true

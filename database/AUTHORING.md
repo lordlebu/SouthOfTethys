@@ -51,6 +51,12 @@ answer.
 **`character` vs `npc`.** A character is someone canon records. An NPC is someone standing on a
 map with lines to say. Kavik is a character; the people in the Lothal camp are NPCs.
 
+**Discoveries inside a point.** A deep point of interest may assign a parent discovery to one of
+its `sub_locations` with `discoveries`. This is a relationship, not a second copy: the discovery
+still names the parent in `found_at`, and the parent still lists it in `discoveries`. Assign it only
+when the evidence is specifically inside that named part. A discovery may belong to at most one
+sub-location of a point; an unassigned parent discovery remains available at the point itself.
+
 ---
 
 ## 2. Write the file
