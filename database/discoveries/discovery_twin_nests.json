@@ -16,6 +16,7 @@
   ],
   "levels": [
     {
+      "prompt": "Look into the rooms from the lane before deciding what an empty doorway tells you.",
       "entry": "The rooms look empty from the lane."
     },
     {

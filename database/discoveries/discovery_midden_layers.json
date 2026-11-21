@@ -8,6 +8,7 @@
   ],
   "levels": [
     {
+      "prompt": "Look at the exposed face of the heap. Follow one band of shell and see what lies immediately below it.",
       "entry": "The midden is layered like any midden: fish, shell, pot, ash, fish, shell, pot."
     },
     {

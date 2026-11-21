@@ -15,6 +15,7 @@
   ],
   "levels": [
     {
+      "prompt": "Follow each drain to its mouth and compare what the water can carry through.",
       "entry": "Only one of the two drains has been cleared."
     },
     {

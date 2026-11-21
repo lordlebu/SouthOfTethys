@@ -29,6 +29,7 @@
   ],
   "levels": [
     {
+      "prompt": "Ask Bekh to show you where the count of what they have ends and the count of what they need begins.",
       "entry": "Bekh keeps a count of what the camp has and what it will need, and the two columns have never met. They move every third winter because of the gap."
     },
     {

@@ -9,6 +9,7 @@
   ],
   "levels": [
     {
+      "prompt": "Look at the back of a turned terrace stone. The face usually hidden in the wall is the one worth reading.",
       "entry": "Some terrace stones carry short marks on the inner face, where they would not be seen once laid.",
       "requires": [
         "word_maru_khet"

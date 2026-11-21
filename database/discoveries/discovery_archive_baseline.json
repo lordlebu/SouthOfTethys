@@ -9,6 +9,7 @@
   ],
   "levels": [
     {
+      "prompt": "Find the first date on the shelf, then follow the spines forward. See if there is a year where the sequence breaks.",
       "entry": "The archive is four hundred and eleven years old and complete. I have never seen anything like it."
     },
     {

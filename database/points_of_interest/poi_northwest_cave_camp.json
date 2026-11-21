@@ -32,16 +32,19 @@
   "sub_locations": [
     {
       "id": "cave_threshold",
+      "arrival": "You pass between the windbreak and the hearth with room to spare. Behind the stones, the wind lets go of your sleeve.",
       "name": "The open threshold",
       "description": "A clear passage between the windbreak and the hearth."
     },
     {
       "id": "cave_alcove",
+      "arrival": "You sit on the dry shelf. From here you can still see the doorway, and anyone coming through can pass without asking you to move.",
       "name": "The meditation alcove",
       "description": "A dry sheltered shelf with room to sit without blocking the doorway."
     },
     {
       "id": "cave_fold",
+      "arrival": "You lift the hurdle just far enough to step through. The ground is worn beside the latch, where the herder stands to close it.",
       "name": "The resting fold",
       "description": "Low hurdles outside the sleeping place, empty between the herder's visits."
     }

@@ -22,11 +22,13 @@
   "sub_locations": [
     {
       "id": "outer_court",
+      "arrival": "You cross the drain where its cover stone has been lifted and set back. Someone has wedged it level with a chip of paving.",
       "name": "The Outer Court",
       "description": "Paving, a drain, and a low wall someone maintains. It looks like a yard because it is one."
     },
     {
       "id": "the_threshold",
+      "arrival": "You hold your hand across the opening. The change is sharp enough that you can move your wrist back and forth to find the line.",
       "name": "The Threshold",
       "description": "Where the air stops being the same on both sides. You can stand with one hand in each and feel the difference at the wrist.",
       "requires": [

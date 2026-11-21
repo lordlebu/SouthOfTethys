@@ -8,6 +8,7 @@
   ],
   "levels": [
     {
+      "prompt": "Put the archive's survey beside the ground in front of you. Start with the landmarks that have not moved.",
       "entry": "The archive gives the spring a fixed position, surveyed, with a date. The spring is not in that position."
     },
     {

@@ -19,11 +19,13 @@
   "sub_locations": [
     {
       "id": "reading_floor",
+      "arrival": "You take the place where the light falls across the table. The spine tells you whose copy you are holding and whose copy it was made from.",
       "name": "The Reading Floor",
       "description": "Long tables, north light, and the working copies -- which are copies of copies, and say so on the spine, which is more honest than most places manage."
     },
     {
       "id": "sequence_stacks",
+      "arrival": "You walk along the measurements until the years begin to feel like distance. A shelf can hold every reading taken and still leave room for what nobody thought to measure.",
       "name": "The Sequence Stacks",
       "description": "Every measurement the University has taken, in the order it was taken. Four hundred years of rainfall, riverflow, birds arriving and birds leaving. It is beautiful and it is the whole problem.",
       "requires": [
@@ -32,6 +34,7 @@
     },
     {
       "id": "unread_shelf",
+      "arrival": "You reach for a bundle, then stop. The writing on the outside is in the same hand as the writing within. Nobody has put a newer label over it.",
       "name": "The Unread Shelf",
       "description": "What came up the scarp already written and has never been transcribed, because nobody here can read it and nobody will admit that in writing.",
       "requires": [

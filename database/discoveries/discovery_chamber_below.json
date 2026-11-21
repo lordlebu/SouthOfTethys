@@ -20,6 +20,7 @@
   ],
   "levels": [
     {
+      "prompt": "Move along the west wall until the light catches its end. What looks solid from the water does not look solid from here.",
       "entry": "The undercroft is not one room. There is a second, behind the west wall, and the wall is a wall on one side only."
     },
     {

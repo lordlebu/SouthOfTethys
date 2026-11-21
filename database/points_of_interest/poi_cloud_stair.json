@@ -18,11 +18,13 @@
   "sub_locations": [
     {
       "id": "lower_flights",
+      "arrival": "You climb where the middle of each tread has gone smooth. At the edge, the stone still takes the full print of your sandal.",
       "name": "The Lower Flights",
       "description": "Cut into the scarp, wide enough for two, worn in the middle like any stair anyone ever used."
     },
     {
       "id": "the_turn",
+      "arrival": "You stop at the last step that touches the scarp. From there you can see daylight in the gap beneath the next one.",
       "name": "The Turn",
       "description": "Where the stair stops climbing the rock and starts climbing away from it. There is no rock under the last four steps and they are still there.",
       "requires": [
