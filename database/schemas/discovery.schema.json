@@ -62,6 +62,10 @@
             "type": "string",
             "description": "What the diary reads at this level. Varuna's voice, and it should sound less certain at the lower rungs."
           },
+          "prompt": {
+            "type": "string",
+            "description": "Optional scene prose shown before this level is recorded. Use only when the observation needs a specific physical moment; entry remains the durable diary wording."
+          },
           "requires": {
             "type": "array",
             "items": {

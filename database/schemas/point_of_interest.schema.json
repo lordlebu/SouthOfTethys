@@ -95,6 +95,10 @@
           "description": {
             "type": "string"
           },
+          "arrival": {
+            "type": "string",
+            "description": "Optional one-time prose for crossing into this sub-location. Description remains its stable summary."
+          },
           "requires": {
             "type": "array",
             "items": {
