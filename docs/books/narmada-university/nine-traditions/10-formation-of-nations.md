@@ -27,7 +27,9 @@ Parties and movements emerge from conflicts with a mechanism: a canal tax fuels 
 ## V. Machines make stronger states, not always identical ones
 Steam pumping, coal trains, telegraph signals, public debt, standards bureaus and industrial armies increase a capital's reach. Their political outcomes diverge. Lothal's industrial guilds take governing power; Narmada's charter institutions make a republic; Vanga's ports federalise; Shwetavahana's creditors convert dynastic prerogatives into a navigation league; Tushara and Hyrkania keep khans under joint rail law; Dwarka's houses guard a constitutional trust; Pragjyotisha preserves a negotiated crown; Vijaya's dynasty accepts treaty provinces.
 
-## VI. Political chronology (relative, deliberately undated)
+## VI. Political chronology (now given a provisional planning scale)
+The [Two Thousand and Two Hundred Years](13-two-thousand-two-hundred-years.md) supplies a **proposed 2,200-year relative scale** from Civilization Dawn to the threshold of Machinery; it is **not an attested calendar**. This table retains phase names rather than converting every treaty into an invented year. Crucially, **whale-blimp trade and routes to floating islands already exist during Civilization Dawn**. The intervening millennia concern expansion of aerial logistics, sky-mineral extraction and industrial production, not the first invention of flight.
+
 | Sequence | Institution or conflict | Illustrative proposed consequence |
 | --- | --- | --- |
 | Civilization Dawn | clan territories, early cities, independent courts | ports, pasture compacts and stone assemblies |
@@ -42,4 +44,4 @@ Steam pumping, coal trains, telegraph signals, public debt, standards bureaus an
 A royal archivist calls integration pacification; an upland witness calls it enclosure. A guild calls hereditary privileges freedom; a debtor calls them monopoly. The University's files must carry both voices. Absence of documents does not prove absence of a polity, while a modern institution's use of an ancient title does not prove genealogical continuity.
 
 ## Source boundaries
-The ancient Lothal, Kia, Vedda, Naga and Harappan evidence follows [The Chronicle of Convergence](../harappan-convergence/00-chronicle-of-convergence.md). The names of machinery-era polities are inherited from that chronicle. **All specifically named settlements, dynastic crises, compacts, parties and intermediary states developed here are proposals for editorial review.** No chronology, coordinate, population total or direct modern ethnic equivalence is asserted.
+The ancient Lothal, Kia, Vedda, Naga and Harappan evidence follows [The Chronicle of Convergence](../harappan-convergence/00-chronicle-of-convergence.md). The names of machinery-era polities are inherited from that chronicle. **All specifically named settlements, dynastic crises, compacts, parties and intermediary states developed here are proposals for editorial review.** The 2,200-year framework is a planning hypothesis, not a confirmed chronology; no canonical coordinate, population total or direct modern ethnic equivalence is asserted.
