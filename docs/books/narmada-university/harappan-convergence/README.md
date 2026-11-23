@@ -23,10 +23,10 @@ The term **convergence** does not mean that the peoples became one bloodline or 
 15. [Harappan receiving institutions ledger](14-harappan-receiving-institutions.md)
 16. [Civilization Dawn continuity audit](15-civilization-dawn-continuity-audit.md)
 17. [Migration peoples and unresolved identifications](16-migration-peoples-dossier-and-open-identifications.md)
-18. [Yadu and the Mask Family](17-yadu-and-the-mask-family.md)
-19. [Bharata Naga houses of Hastinapura](18-bharata-naga-hastinapura.md)
-20. [Aurva, Urva and the eastern fire houses](19-aurva-urva-and-the-eastern-fire-houses.md)
-21. [Agasthya and the Kia southward road](20-agasthya-the-kia-southward-road.md)
+18. [Yadu foundation of North Dwarka and the Mask Family](17-yadu-and-the-mask-family.md)
+19. [Bharata Naga foundation of Hastinapura](18-bharata-naga-hastinapura.md)
+20. [Urva, Aurva and the Garudasaur blood tradition](19-aurva-urva-and-the-eastern-fire-houses.md)
+21. [Agasthya and the humanization of the Yaksha south](20-agasthya-the-kia-southward-road.md)
 22. [Interwoven peoples before the Age of Machinery](21-interwoven-peoples-before-machinery.md)
 
 ## University method
