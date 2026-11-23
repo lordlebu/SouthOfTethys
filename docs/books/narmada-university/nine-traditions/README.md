@@ -11,6 +11,7 @@ The direct precedents are [The Chronicle of Convergence](../harappan-convergence
 1. [From Houses to Nations — state-building chronology](10-formation-of-nations.md)
 2. [Ethnicity, Constitutions and National Awakenings](11-national-awakenings-and-movements.md)
 3. [Age of Machinery — comparative political gazetteer](12-age-of-machinery-gazetteer.md)
+4. [The Two Thousand and Two Hundred Years — continuous chronology, whale blimps and sky-island minerals](13-two-thousand-two-hundred-years.md)
 
 ## Histories of existing nations
 1. [Harappan–Lothal Industrial Union](states/01-harappan-lothal.md)
@@ -37,8 +38,8 @@ These are *provisional local testimonies*, not the narrative organisation or a c
 - [Niyam Raja and Dharani Penu](09-kondh-earth-witness.md)
 
 ## Claim categories
-**Established setting:** names of existing nations and known actors/events explicitly present in earlier manuscripts. **Proposed reconstruction:** intervening kingdoms, named treaties, charter crises, parties, rail wars, dynastic transformations and nation-building pathways. **Unverified:** dates, specific borders, genealogical continuity, positions of missing towns and precise ethnic homelands.
+**Established setting:** names of existing nations and known actors/events explicitly present in earlier manuscripts. **Proposed reconstruction:** intervening kingdoms, named treaties, charter crises, parties, rail wars, dynastic transformations and nation-building pathways. **Unverified:** the proposed 2,200-year interval, dates, specific borders, genealogical continuity, positions of missing towns and precise ethnic homelands.
 
 Names originating in real Bön, Meitei, Tani, Sarna, Gondi, Khasi, Garo, Toda and Kondh traditions are used as **superficial inspiration for explicitly fictional mortal figures, titles or contested memories**. The books do **not** claim real sacred beings were human historical rulers, nor assign all members of a living ethnolinguistic group to an invented nation.
 
-**Review status:** manuscript proposal on a draft pull request. No structured game database, character biographies, approved geography or canonical timeline has been modified.
+**Review status:** manuscript proposal under editorial review. No structured game database, character biographies, approved geography or canonical timeline has been modified.
