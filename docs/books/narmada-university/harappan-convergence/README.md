@@ -21,6 +21,8 @@ The term **convergence** does not mean that the peoples became one bloodline or 
 13. [Vasiṣṭha and the victorious court](12-vasistha-and-the-victors-court.md)
 14. [The coalition and its aftermath: name-by-name register](13-coalition-and-aftermath-register.md)
 15. [Harappan receiving institutions ledger](14-harappan-receiving-institutions.md)
+16. [Civilization Dawn continuity audit](15-civilization-dawn-continuity-audit.md)
+17. [Migration peoples and unresolved identifications](16-migration-peoples-dossier-and-open-identifications.md)
 
 ## University method
 A name may signify a person, house, political people, ritual school, title, adversarial designation or narrative symbol. The same name in different centuries does not prove the same person. Witnesses separated by centuries are not forced into invented meetings.
