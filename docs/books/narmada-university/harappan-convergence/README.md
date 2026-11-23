@@ -28,6 +28,7 @@ The term **convergence** does not mean that the peoples became one bloodline or 
 20. [Urva, Aurva and the Garudasaur blood tradition](19-aurva-urva-and-the-eastern-fire-houses.md)
 21. [Agasthya and the humanization of the Yaksha south](20-agasthya-the-kia-southward-road.md)
 22. [Interwoven peoples before the Age of Machinery](21-interwoven-peoples-before-machinery.md)
+23. [South of Tethys tribal and institutional concordance](22-lore-linked-tribal-concordance.md)
 
 ## University method
 A name may signify a person, house, political people, ritual school, title, adversarial designation or narrative symbol. The same name in different centuries does not prove the same person. Witnesses separated by centuries are not forced into invented meetings.
