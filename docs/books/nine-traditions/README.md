@@ -67,7 +67,7 @@ Before drafting narrative chapters: (1) check all fictional names against the li
 
 - [Narmada University manuscripts](../narmada-university/README.md)
 - [Harappan convergence](../narmada-university/harappan-convergence/00-chronicle-of-convergence.md)
-- [Repository canon integrity plan](../../../canon-integrity-plan.md)
-- [Repository authoring rules](../../../../database/AUTHORING.md)
+- [Repository canon integrity plan](../../canon-integrity-plan.md)
+- [Repository authoring rules](../../../database/AUTHORING.md)
 
 *This file intentionally introduces no new canonical event dates, game entities, divine biographies, or claims about living religions.*
