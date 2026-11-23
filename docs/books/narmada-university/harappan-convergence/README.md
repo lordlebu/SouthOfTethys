@@ -18,6 +18,9 @@ The term **convergence** does not mean that the peoples became one bloodline or 
 10. [From Harappan institutions to the Age of Machinery](09-inheritance-in-the-age-of-machinery.md)
 11. [Scholarly concordance, source anchors and questions](10-scholarly-concordance.md)
 12. [Editorial roadmap and decision gates](11-chronicle-roadmap.md)
+13. [Vasiṣṭha and the victorious court](12-vasistha-and-the-victors-court.md)
+14. [The coalition and its aftermath: name-by-name register](13-coalition-and-aftermath-register.md)
+15. [Harappan receiving institutions ledger](14-harappan-receiving-institutions.md)
 
 ## University method
 A name may signify a person, house, political people, ritual school, title, adversarial designation or narrative symbol. The same name in different centuries does not prove the same person. Witnesses separated by centuries are not forced into invented meetings.
