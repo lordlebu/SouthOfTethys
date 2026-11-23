@@ -2,7 +2,7 @@
 
 *South of Tethys fictional historical dossiers; proposed for editorial review, not approved structured canon.*
 
-**Not Hindu mythology. Nagas are not snakes.** Shared names do not import external iconography, divine biographies or genealogies. Distinct migrant traditions became interwoven after arrival on Jambhudweepa. Cultural adoption does not establish blood descent.
+Distinct migrant traditions became interwoven after arrival on Jambhudweepa. Cultural adoption does not establish blood descent.
 
 [Ancestral transmission atlas](00-ancestral-transmission-atlas.md)
 

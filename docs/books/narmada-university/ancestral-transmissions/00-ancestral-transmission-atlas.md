@@ -3,7 +3,7 @@
 *Studies in Ancient Testimony — Narmada University — editorial review*
 
 ## Method
-This is the fictional history of **South of Tethys, not Hindu mythology**. **Nagas are non-serpentine peoples.** Names that resemble outside traditions do not transfer their biographies, iconography, anatomy, genealogies or cosmology. The ancestral traditions originated among distinct migrating populations and interwove after arrival on Jambhudweepa. Later cultural custody is not blood descent.
+The ancestral traditions originated among distinct migrating populations and interwove after arrival on Jambhudweepa. Later cultural custody is not blood descent.
 
 **Evidence labels:** Existing canon (structured repository history); attributed tradition (in-world testimony); proposed reconstruction (new editorial hypothesis); unresolved (no defensible determination).
 
@@ -26,8 +26,8 @@ Ilā's household inclusion, Bhaga's allocation, Aryaman's hospitality, Mitra's o
 ## Frontier practice
 Pūṣan's guides, Vāta's weather readers, Rudra's wilderness healers, Maruts' storm witnesses and Nāsatyas' rescue traditions can be adopted by Vedda and other communities without assigning a single ancestry.
 
-## Waters and Naga peoples
-Āpas and Apām Napāt traditions may be investigated in Naga, riverine, coastal and Dwarka contexts. **Nagas are people, not snakes**; no serpent body, snake cult or external mythic genealogy is implied.
+## Waters and Naga custodians
+Āpas and Apām Napāt traditions may be investigated in Naga, riverine, coastal and Dwarka contexts. These traditions require corroboration from Naga, riverine and coastal testimony.
 
 ## The Aravali Alms Step
 **Existing canon:** The surviving domed temple and inscribed plinth commemorate Jharwa dead from the Aravali massacre. The temple was raised by descendants of those responsible. **Proposed earlier attribution:** Wiznu and Aryaman's followers may have maintained protective observances at the crossing. The existence of an earlier building on the exact footprint is unresolved. Other claimed foundations remain unnamed and unlocated.

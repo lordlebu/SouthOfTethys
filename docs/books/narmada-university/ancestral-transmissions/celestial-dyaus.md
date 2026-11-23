@@ -1,12 +1,10 @@
-> **Editorial status:** Fictional Narmada University scholarship of South of Tethys, not Hindu mythology. Nagas are non-serpentine peoples. Traditions began among distinct migrating populations and interwove after arrival. Cultural adoption does not prove biological descent. All associations below are proposed unless explicitly identified as established canon.
-
 # Dyauṣ: Witness, Office and Later Transmission
 
 *Studies in Ancient Testimony — Celestial Appeals and Boundary Traditions*  
 *Narmada University — Collegium of Historical Inquiry*
 
 ## I. The Name and Its Witnesses
-**Classification:** existing celestial cosmic arbiter. A shared name does not import any outside mythology, and an inherited office does not automatically identify a single founder.
+**Classification:** existing celestial cosmic arbiter. A shared name does not establish an identical identity, and an inherited office does not automatically identify a single founder.
 
 ## II. Portrait and Disposition
 No mortal physical portrait is proposed: a celestial identity is not a human migrant. Later visual descriptions are religious testimonies, not verified anatomy. Their reputation reflects communities trying to explain a difficult practice, not an attested biography.
@@ -15,7 +13,7 @@ No mortal physical portrait is proposed: a celestial identity is not a human mig
 An existing celestial being is not a mortal migrant patriarch. Rival communities preserve different explanations for the same practice; a later attribution is not proof of the original actor's presence.
 
 ## IV. Later Custodians
-**Proposed communities:** Narmada cosmologists and sky observers. **Distinctive inheritance:** celestial order and interpretation of unusual sky events. These links describe possible social transmission, not exclusive tribal worship, biological descent, or serpent iconography for Nagas.
+**Proposed communities:** Narmada cosmologists and sky observers. **Distinctive inheritance:** celestial order and interpretation of unusual sky events. These links describe possible social transmission, not exclusive tribal worship or biological descent.
 
 ## V. Transmission After Arrival
 Distinct migrating populations carried their own practices. They became interwoven after arrival on Jambhudweepa, and some communities later attached celestial names to older techniques. Where the identity is already celestial, this is a history of **veneration and interpretation**, not the life of a mortal namesake.
