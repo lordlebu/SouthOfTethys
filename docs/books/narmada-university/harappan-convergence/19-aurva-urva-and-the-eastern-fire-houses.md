@@ -1,39 +1,28 @@
-# Aurva, Urva and the Eastern Fire Houses
-*The descendants of the Bhṛgus on the road to Chandraketugarh*
+# Urva and Aurva: The Bhṛgu Road to Chandraketugarh
+*Fire custodians and the apothecaries' contested Garudasaur material*
 
-## Two names in the lineage
-The Bhṛgu houses survived because knowledge could pass between people who did not share a court. Their older teachers served hearths, kilns, travellers and competing patrons. The University now preserves two later figures in that history: **Urva** and **Aurva**.
+## Two ṛṣis of the eastern line
+Urva and Aurva are remembered as separate ṛṣis of the Bhṛgu-descended eastern tradition. Their relationship is preserved as a succession of teaching and custodianship; an exact father–son genealogy is not supplied by the surviving local record. Their house carried practical knowledge of heat, vessels, preservation and disciplined handling of rare substances.
 
-Urva is presented here as a **remembered elder of the eastern-moving branch**. Aurva is a later ṛṣi whose custodians claim descent through Urva's teaching house. The relationship is a **proposed South of Tethys genealogy**, not a proven Rigvedic father–son record. The comparative literary name Aurva also carries traditions from later sources; those narratives must not be retroactively quoted as if they were present in the early hymns.
+## The long eastern passage
+Different Bhṛgu households travelled under different patrons. The eastern line moved through successive communities, learning from local makers and apothecaries. Its later descendants reached Chandraketugarh, where **Vedda healing guilds already possessed their own institutions and botanical knowledge**. The Bhṛgu contribution became an important part of those institutions without making the ṛṣis founders of the city.
 
-## The divided road
-Following the age of frontier warfare, different Bhṛgu houses sought different patrons. Some maintained their old fire rites near inland courts; others travelled with merchants and medical specialists, trading furnace knowledge for shelter. The eastern branch's story does not require that all Bhṛgus fled the same battle, nor that a single leader directed every household.
+## The Garudasura moss
+In the apothecaries' vocabulary, **Garudasura moss** is an alternative name for the **existing Garudasaur blood material**, not a separate plant or a newly discovered species. The term *moss* survives as a guild name for the material; it does not establish a botanical classification. The precise physical reason for the nickname is not recorded.
 
-Urva's reputation in this chronicle rests on preservation: a portable archive of temperatures, fuel mixtures, cautery, oath and apprenticeship. These details are **University narrative reconstruction**, not recovered inventory. They illustrate why a technical lineage might remain recognizable after its political protectors disappeared.
+Urva and Aurva are central to the tradition of **obtaining and handling this material**. Their work joined the Bhṛgu discipline of controlled heat and preservation to Vedda expertise in rare medicines. The University's chronicle attributes to their teaching line methods of securing, conserving and preparing the contested material, while leaving the exact procedures and dates for a dedicated technical dossier.
 
-## Aurva's discipline
-Aurva's teaching house is remembered for refusing to treat a useful flame as the property of one king. A furnace could melt a weapon or prepare an instrument for healing; the obligation lay in knowing the consequences of its use. In the University's eastern narrative, Aurva's pupils exchanged practices with Vedda apothecaries and coastal makers rather than replacing their traditions.
+This is not merely an incidental guild consultation. The Bhṛgu-descended teaching house became a **key contributor to the apothecaries' material economy and therapeutic practice**, particularly the Garudasaur blood supply that rival claimants sought to control.
 
-Aurva is not made the founder of every eastern kiln or of the Vedda healing guilds. The exchange is reciprocal: local apothecaries already held plant knowledge, while the travellers offered selected heat-working techniques.
+## Chandraketugarh and the dispute
+The late archive places Chandraketugarh under the Vanga Maritime Federation and records its Vedda apothecary guilds' feud with Daedrasura's cultists over Garudasaur blood. The Urva–Aurva tradition supplies a deeper history for the guilds' access to the same substance; it does not create a second resource or alter the identity of the rival cultists.
 
-## Chandraketugarh at the far end
-Chandraketugarh is attested in the Age of Machinery as an **island city of Vedda apothecary guilds**, held by the Vanga Maritime Federation and involved in a dispute with Daedrasura's cultists over Garudasaur blood. This late city is the **destination of the Bhṛgu descendants' proposed long migration**, not a city that Aurva himself is asserted to have founded.
+The city remained Vedda in its institutional foundation. Bhṛgu descendants entered its working life and helped develop the practices on which the later dispute depended.
 
-The chronicle therefore distinguishes three moments:
-1. The older Bhṛgu lineage and its division among patrons.
-2. The Urva–Aurva eastern teaching tradition, with its route and generations incompletely preserved.
-3. Later descendants or inheritors of that teaching tradition reaching Chandraketugarh and entering a city whose Vedda institutions already existed.
+## The long inheritance
+Urva and Aurva belong to the earlier teaching history; **later descendants and inheritors** carried the tradition to the Age of Machinery. The University does not extend the two ṛṣis' personal lifetimes across all intervening centuries.
 
-The interval between Aurva and the city's industrial-era record remains unmeasured. A guild claiming his name would establish a tradition of affiliation; it would not alone prove an uninterrupted biological descent.
+## University finding
+**Established in the present Narmada chronicle:** Urva and Aurva's Bhṛgu teaching line is central to the Vedda guilds' acquisition and preservation of Garudasaur blood, also called Garudasura moss.
 
-## The eastern guild
-A proposed **Eastern Fire House** may have become a small school within Chandraketugarh's broader healing and craft network, providing controlled heat, vessels and metal tools. Its teachers would answer to local law and collaborate with Vedda apothecaries. The school's precise charter, name and founding date remain unwitnessed.
-
-In the dispute over Garudasaur blood, descendants of the fire house could have been called to examine instruments or preserve samples. This is a possible later episode, not a replacement for the established feud or its participants.
-
-## Commission's finding
-**Adopted worldbuilding direction:** Urva and Aurva as separate ṛṣi figures in a Bhṛgu-descended eastern teaching tradition; later descendants reach Chandraketugarh.
-
-**Fixed local record:** Chandraketugarh's Vedda guilds, Vanga jurisdiction and Daedrasura dispute.
-
-**Unresolved:** exact Urva–Aurva kinship, generations of travel, intermediate settlements, and any continuous guild charter. The lineage is an evolving institution, not a single immortal traveller.
+**Open:** exact kinship, intermediate settlements, the material's nickname and the continuous written chain of guild custodians.
