@@ -23,7 +23,7 @@ Develop a traceable history of how distinct migrant peoples, established Vedda a
 - [x] Draft Viśvāmitra's transition from rājā to ṛṣi.
 - [x] Draft the divided Bhṛgu fire schools.
 - [x] Draft Nārada and the travelling witness tradition.
-- [ ] Write a dedicated Vasiṣṭha chapter with the victorious court's viewpoint and its evidentiary limits.
+- [x] Write a dedicated Vasiṣṭha chapter with the victorious court's viewpoint and its evidentiary limits.
 - [ ] Confirm the relation of Sudās, Divodāsa, the Bharatas and the Tṛtsus without inserting unnamed invented generations.
 - [ ] Locate a local source for each key turning point in the Viśvāmitra biography, or mark the scene as university literary reconstruction.
 
@@ -31,22 +31,30 @@ Develop a traceable history of how distinct migrant peoples, established Vedda a
 
 ## Phase III — Reconstruct the war and its immediate consequences
 - [x] Draft the multi-party war chapter.
-- [ ] Make a name-by-name order of battle with uncertainty and competing readings.
+- [x] Make a name-by-name provisional order of battle with uncertainty and competing readings.
 - [ ] Gather a non-victor account if the world archive contains one.
 - [ ] Investigate river crossings and border disputes without assigning unsupported map coordinates.
-- [ ] Distinguish the fate of leaders, armies, households and ordinary residents after the war.
+- [x] Distinguish possible outcomes for leaders, armies, households and ordinary residents after the war; specific fates remain unverified.
 - [ ] Record which defeated groups remained independent.
 
 **Gate:** The title 'Ten Kings' must not become a list of ten falsely precise modern nation-states.
 
 ## Phase IV — Reconcile with established Civilization Dawn
 - [x] Draft mechanisms of market, ferry, workshop, council and sanctuary integration.
-- [ ] Check every proposed connection against the Founding of Lothal, Stone Pact, Mask Family, Kia alliance, Black Lotus Siege and Tendua Crisis.
-- [ ] Build a ledger for each claimed Harappan ward, guild and ritual school: earliest record, receiving institution, witness and date.
-- [ ] Audit contacts between Harappan merchants, Vedda communities and Naga courts.
-- [ ] Identify independent craft contributions that cannot be assigned to the migrant houses.
+- [x] Audit proposed connections against the Founding of Lothal, Stone Pact, Mask Family, Kia alliance, Black Lotus Siege and Tendua Crisis; unsupported connections rejected or flagged.
+- [x] Build a receiving-institutions ledger identifying candidate wards, guilds and schools and explicitly recording where earliest records, witnesses and dates are absent.
+- [x] Audit established Vedda, Naga, Harappan and Kia identities and the documented Naga–Lothal conflict; further merchant contact claims remain unresolved.
+- [x] Identify independent Harappan stone-engineer and Kia craft contributions that cannot be assigned to the migrant houses.
 
 **Gate:** No older event is moved, renamed or given a new cause to fit the arrival of a newly added people.
+
+## Phase I–IV documentation completion assessment
+
+The first four phases now have a **complete documentary framework**: named-people classification, royal and scholastic dossiers, a coalition-and-aftermath register, a receiving-institutions ledger, and a source-by-source Civilization Dawn continuity audit. These are indexed in chapters 12–16.
+
+**Evidence gates remain open** where the surviving archive does not provide the required witness. Specifically, the Parni/Paṇi identification, self-designations, local coordinates, a non-victor war account, a documented South of Tethys battlefield, a local source for Viśvāmitra's renunciation scenes, and a named coalition-era household in a Harappan ward are not established. No completion checkmark should be read as certification of those missing facts.
+
+The commission has **completed the stage-four reconciliation audit**, not demonstrated that every speculative historical merger occurred. The primary Lothal event graph is preserved. Do not upgrade the unresolved links to canon without new evidence.
 
 ## Phase V — Trace the industrial inheritance
 - [x] Draft the industrial-successor chapter using the pre-Shattering national register.
