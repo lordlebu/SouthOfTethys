@@ -26,7 +26,7 @@ Ilā's household inclusion, Bhaga's allocation, Aryaman's hospitality, Mitra's o
 ## Frontier practice
 Pūṣan's guides, Vāta's weather readers, Rudra's wilderness healers, Maruts' storm witnesses and Nāsatyas' rescue traditions can be adopted by Vedda and other communities without assigning a single ancestry.
 
-## Waters and Naga peoples
+## Waters and Naga custodians
 Āpas and Apām Napāt traditions may be investigated in Naga, riverine, coastal and Dwarka contexts. These traditions require corroboration from Naga, riverine and coastal testimony.
 
 ## The Aravali Alms Step
