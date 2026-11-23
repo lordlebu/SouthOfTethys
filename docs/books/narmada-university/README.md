@@ -25,3 +25,7 @@ Draft university manuscripts for editorial review. The original approved charact
 
 ## New political-history series (draft)
 [From Civilization Dawn to the Nations of Machinery](nine-traditions/README.md) reconstructs the missing state-building centuries: dynasties and confederacies, commercial leagues, ethnic movements, constitutional struggles and the transitions into eight existing Age of Machinery polities. The nine traditions' local testimony dossiers are **supporting source narratives**, not a substitute for political history. All new treaties, revolutions and intermediate polities are editorial proposals; no structured canon is changed.
+
+
+### Proposed elapsed chronology and sky-flight continuity
+[The Two Thousand and Two Hundred Years](nine-traditions/13-two-thousand-two-hundred-years.md) sets a **provisional** 2,000–2,400-year Civilization Dawn → early Machinery interval (working anchor: 2,200 years), with no general Bronze Age collapse. It preserves Rathak's **already-operating whale blimps in Civilization Dawn** and instead traces the later scale-up of sky-island surveys, rare minerals, airship logistics, engines and industrial states. The 1920s-like Current Era may postdate the threshold of Machinery. This is not an amendment to canonical era dates.
