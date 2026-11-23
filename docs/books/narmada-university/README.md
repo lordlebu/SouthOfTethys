@@ -22,3 +22,6 @@ Eight in-universe historical manuscripts. These books are fictional scholarship,
 
 ## Status
 Draft university manuscripts for editorial review. The original approved character dossiers remain intact pending a separate dependency and taxonomy migration.
+
+## New political-history series (draft)
+[From Civilization Dawn to the Nations of Machinery](nine-traditions/README.md) reconstructs the missing state-building centuries: dynasties and confederacies, commercial leagues, ethnic movements, constitutional struggles and the transitions into eight existing Age of Machinery polities. The nine traditions' local testimony dossiers are **supporting source narratives**, not a substitute for political history. All new treaties, revolutions and intermediate polities are editorial proposals; no structured canon is changed.
