@@ -1,30 +1,26 @@
-# Yadu at the Gates of the Mask Family
-*On a Vedda–Naga–Harappan house in the western river world*
+# Yadu and the Northern Dwarka Hegemony
+*The Vedda–Naga–Harappan founders of North Dwarka*
 
-## The Yadu settlement
-The Yadu households of this chronicle are remembered as a **Vedda–Naga–Harappan community**: a people formed through residence, marriage, river work and successive obligations, not a pure line descending from one migrant ancestor. The Yadu name enters the University's comparative register from the early songs. Its placement among the inhabitants of Jambhudweepa is a later historical reconstruction.
+## Founding of the northern harbour
+The Yadus, a community formed through Vedda, Naga and Harappan connections, **founded North Dwarka** on the coast of the Saraswati delta. Their harbour grew into a regional hegemony **before Kavik's Lothal became powerful**. This is the North Dwarka near the submerged Dwarka Gate, not the separately recorded Dwarkadhish's Dwarka on the northern coast.
 
-Some households retained Vedda memories of ancestral guides; others served Naga courts and knew the conventions of metalwork, diplomacy and guarded passage. Harappan merchants supplied a third language of measures, contracts and civic standing. The term *Yadu* could cover an alliance of such houses before it named any single hereditary line.
+The Yadu foundation belongs to the early city-world; the precise founding generation remains unrecorded. The Gate's later industrial anomaly is not presumed to have caused the ancient settlement.
 
-## Meeting the Mask Family
-The Mask Family's origin at Mohenjo-daro and its settlement of Lothal under Kavik remain the city's established history. Yadu participation must therefore be placed **beside** that history rather than before it as a replacement foundation.
+## A composite people
+Yadu identity grew from Vedda memories of travel and river stewardship, Naga relations of diplomacy and maritime obligation, and Harappan commercial and civic practice. The community's mixed formation did not require every Yadu household to possess the same ancestry. Their founding achievement was political: a harbour with sufficient influence to command trade and negotiate with other courts.
 
-The University's proposed connection is a **collateral affiliation**: Yadu families may have exchanged spouses, goods, testimony or specialist service with members of the Mask Family and later claimed a recognized place among its wider kin and clients. Such a relationship would link Yadu memory to Harappan civic life without making Kavik a Yadu king or declaring the Mask of Harappa a Yadu artifact.
+## Before the rise of Lothal
+The Yadu hegemony preceded Lothal's ascent. Its merchants, pilots and treaty houses occupied a coastal world in which later Harappan expansion would have to negotiate rather than begin from emptiness. The surviving records do not establish whether the Yadu hegemony ended through defeat, treaty, fragmentation or gradual loss of commercial primacy.
 
-The first Yadu–Mask marriage, if any, is not named in the surviving record. Nor has a Yadu-marked seal been identified in the Mask Family's known archive. The genealogical bridge is consequently an adopted subject for investigation, not an established descent chart.
+Kavik remains the founder of Lothal in the established Mask Family record. The Silvershore War, Black Lotus Siege, Stone Pact and Tendua Crisis retain their own chronology; none is silently converted into the overthrow of the Yadus.
 
-## Three custodians of one household
-A Yadu household might preserve a Vedda oral ancestry, recognize a Naga court's obligations and register a Harappan commercial partnership. These identities need not be mutually exclusive. A child could inherit a craft from one parent, a legal guarantor from another and a ceremonial duty through adoption.
+## The Mask Family connection
+The Yadus were linked to the Mask Family through the western Harappan world. The University preserves a relationship of political contact and possible collateral kinship, not an invented line of named marriages. Their earlier maritime authority makes the connection one between historically significant houses, rather than a subordinate family's arrival after Lothal's foundation.
 
-The University will resist the temptation to write that every Yadu was simultaneously a Vedda, a Naga and a Harappan. The combined designation describes the community's **historical formation**, not the personal ancestry of every member.
+## The late city
+The later archive names North Dwarka as the harbour of the Vayu principality, near the submerged Gate and Delta Causeway. That later rulership does not erase the Yadu foundation. The intermediate transfer from Yadu hegemony to the later principality remains a research question.
 
-## At Lothal
-The Black Lotus Siege and the Stone Pact are distinct episodes of Kavik's era. A Yadu trader may have been affected by maritime conflict or the new Kia peace, but no surviving event list names a Yadu participant. The chronicle therefore treats Yadu contact as a possible neighbourhood and trade history rather than an unseen role in those events.
+## University finding
+**Established in the present Narmada chronicle:** Yadu mixed formation, founding of North Dwarka and a hegemony predating Lothal's rise.
 
-## Later inheritance
-By the Age of Machinery, the Harappan-Lothal Industrial Union could have inherited Yadu-linked workshop practices or family records if the intermediate civic archives existed. The Union's established Harappan, Mask Family and urbanised Kia ancestry remains intact; Yadu is an additional **proposed social connection**, not a substitute for those founders.
-
-## Commission's finding
-**Adopted worldbuilding direction:** Yadu as a mixed Vedda–Naga–Harappan community associated with the Mask Family.
-
-**Still unproven:** named marriages, founding dates, continuous descent and a documented Yadu office in Lothal. These questions belong to the archival register, not to an invented genealogy.
+**Open:** named founders, exact dates, the Yadu–Mask genealogy and the means by which the early hegemony gave way to later coastal powers.
