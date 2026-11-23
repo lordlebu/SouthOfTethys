@@ -1,5 +1,3 @@
-> **Narmada University editorial status:** South of Tethys fictional scholarship; proposed historical reconstruction, not approved structured canon. These names do not import Hindu mythology. Nagas are peoples of this world, **not snakes**. Traditions arose in distinct migrating populations and interwove after arrival on Jambhudweepa. Cultural transmission is not biological descent.
-
 # Vivasvān: Testimony and Later Inheritance
 
 *Studies in Ancient Testimony — Founders and the Common Hearth*  
@@ -18,10 +16,10 @@ The tradition is not assigned a shared original homeland with other ancestral na
 Ilā disputes inherited privilege; Savitr coordinates departure seasons. The dispute matters because later institutions could inherit the practice while disagreeing about its moral meaning, supernatural efficacy or right of custody. A rite's survival is not evidence that its original explanation was correct.
 
 ## V. Later Peoples and Institutions
-**Communities for investigation:** seasonal pastoral households and migrant councils. **Characteristic inheritance:** continuity of households, departure duties and succession. These are proposed transmission paths rather than established exclusive tribal cults. Nagas, when mentioned, are non-serpentine peoples of South of Tethys; no snake form or imported religious imagery is implied.
+**Communities for investigation:** seasonal pastoral households and migrant councils. **Characteristic inheritance:** continuity of households, departure duties and succession. These are proposed transmission paths rather than established exclusive tribal cults. Naga communities are considered as historical custodians where testimony supports that association.
 
 ## VI. Competing Testimonies
-A custodian's account treats the practice as a genuine inheritance; a neighbouring account may describe borrowing, appropriation or independent discovery. The University records both without manufacturing blood descent. Connections with the Jharwa, Vedda, Naga and Harappan histories require corroboration in this setting rather than analogy to outside mythology.
+A custodian's account treats the practice as a genuine inheritance; a neighbouring account may describe borrowing, appropriation or independent discovery. The University records both without manufacturing blood descent. Connections with the Jharwa, Vedda, Naga and Harappan histories require corroboration in this setting rather than analogy to other traditions.
 
 ## VII. Closing Judgment and Evidence Register
 **Existing canon:** Broad migration sequence, distinct later populations and already-established celestial identities where applicable. **Proposed:** Portraits of mortal bearers, later custodians, practice-specialization and specific disputes. **Unresolved:** original homeland, chronology, ancestry, actual ritual efficacy and the identity of historical officeholders. No character JSON, event, map, place, game or other structured canon is changed.
