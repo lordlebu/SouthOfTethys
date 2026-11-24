@@ -30,6 +30,8 @@ The term **convergence** does not mean that the peoples became one bloodline or 
 22. [Interwoven peoples before the Age of Machinery](21-interwoven-peoples-before-machinery.md)
 23. [South of Tethys tribal and institutional concordance](22-lore-linked-tribal-concordance.md)
 
+24. [Character and tribal epoch register](23-character-and-tribal-epoch-register.md)
+
 ## University method
 A name may signify a person, house, political people, ritual school, title, adversarial designation or narrative symbol. The same name in different centuries does not prove the same person. Witnesses separated by centuries are not forced into invented meetings.
 
@@ -42,4 +44,4 @@ No revised ancient borders, genealogies or fixed dates are presumed beyond the s
 - The older Narmada University ancestral transmission dossiers.
 - A separate comparative register of Rigvedic passages and later attributions, held in [the scholarly concordance](10-scholarly-concordance.md).
 
-These volumes are preliminary research manuscripts. They do not amend the structured historical register.
+These volumes include adopted narrative histories and working reconstructions. Corresponding draft character and event records exist in the structured archive; the manuscripts do not themselves amend those records.
