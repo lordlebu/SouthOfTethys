@@ -1,15 +1,6 @@
 # Donyi and Polo: Two Watchers of the Sky
-*The third register — human astronomers remembered by celestial names*
+*Political reconstruction for editorial review*
 
-The words **Donyi** and **Polo** appear as paired names or titles in fragments about a farming community that depended on both day length and night tides. The University's fictional reconstruction treats them as **two mortal observers**, possibly siblings or professional rivals; it does not treat the sun or moon as humans.
+**Epoch: Early Age of Machinery.** Donyi is a nationalist intellectual advocating common civic education without erasing local calendars; Polo is an astronomer and scientific reformer. They work with observatory instruments, tide tables, telegraph time signals and Vanga dock reports. Their proposed Twin Reckoning reconciles railway and administrative time with agricultural schedules. Rival court factions dispute whether a uniform standard implies cultural assimilation. Their compromise supports Pragjyotisha's composite political identity and scholarly exchange with Narmada. Earlier astronomical traditions are institutional antecedents, not their personal discoveries in Civilization Dawn.
 
-## Civilization Dawn
-Donyi records the shadows cast by a standing post at sowing season. Polo compares nights of high water with the timing of river crossings. Their calculations differ at a year of irregular rain; the village assembly chooses to preserve both methods. The disagreement prevents a disastrous single-date order to plant.
-
-Passing merchants purchase a copy of the schedule but omit its warnings. A later river flood gives the shortened version a reputation for false prophecy.
-
-## The inheritance
-Wooden shadow staffs decay. The method passes through farmers, tide observers and scribes. Some later texts turn the pair into lovers or enemies; none of these embellishments establishes their identities. A solar almanac copied in a city is not proof that the community joined that city.
-
-## Age of Machinery
-Narmada observatory technicians compare shadow tables with telegraph time signals and dock reports from Vanga. One clerk labels the old work *unscientific*, yet a canal engineer finds its local flood markers more useful than a distant standard clock. Their lesson is neither a supernatural astronomy nor a rejection of instruments: **measurements serve different scales and must be checked against place**.
+The names are superficial inspirations from living religious traditions; these fictional humans are not claims about real sacred figures. No structured canon is changed.
