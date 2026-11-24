@@ -1,17 +1,6 @@
 # Sanamahi, Pakhangba and Leimarel Sidabi: The House and the Water
-*The second register — three remembered custodians, not an imported pantheon*
+*Political reconstruction for editorial review*
 
-Three names occur together in a later delta household book. **Sanamahi** is described as the fire and stores keeper, **Pakhangba** as a canal negotiator whose seal bears a winding serpent, and **Leimarel Sidabi** as the elder who settled competing claims to the dwelling's land and water. The association is inspired only superficially by Meitei imagery; the University makes no claim to reconstruct real Sanamahi belief.
+**Epoch: Early Age of Machinery.** Sanamahi is a constitutional reformer, Pakhangba a mortal monarch and territorial unifier, and Leimarel Sidabi a queen and political administrator. They confront an industrial drainage crisis in the Lothal region, where old Mask and Kia jurisdictions overlap. Sanamahi proposes household representation and transparent grain accounts; Leimarel registers displaced families and inheritance claims; Pakhangba negotiates shared steam-pump works and canal jurisdiction with Kia councils. His serpent seal is a political emblem, not supernatural anatomy. Their proposed settlement helps transform contested royal authority into a negotiated industrial constitution; their exact dynastic relationship to the Mask Family remains unverified. Earlier canal customs predate all three.
 
-## Civilization Dawn
-A failed embankment threatens a cluster of mixed households near the tidal approaches. The three refuse the customary solution of saving the largest granary first. Sanamahi counts grain across homes, Leimarel Sidabi hears displaced families and records which plots had already carried crops, and Pakhangba brokers a shared repair crew with Kia water-guides.
-
-Their opponents accuse Pakhangba of using a serpent emblem to claim rule over all canals. A later ballad changes the emblem into the shape of his body. The human account is narrower: a skilled diplomat carried a recognizable seal.
-
-## Transmission
-The repaired embankment eventually disappears. Household lists, the serpent-marked stamp and a remembered arbitration formula may survive in unrelated hands. A widow called Leimarel in a much later document need not be the original elder's descendant.
-
-## Age of Machinery
-At Lothal, a dispute over factory tenements and steam-pumped flood channels revives an old rule that displaced residents must be counted before work begins. Civic lawyers attribute it to the Three Custodians; Kia families argue that the law existed before their names entered city copies. Both histories are entered in the record.
-
-The **Harappan-Lothal Industrial Union** inherits no exclusive right to the tradition. Its relevance lies in the clash between household safety, municipal authority and mechanized drainage.
+The names are superficial inspirations from living religious traditions; these fictional humans are not claims about real sacred figures. No structured canon is changed.
