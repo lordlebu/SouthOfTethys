@@ -1,13 +1,8 @@
 # Tökisy: The Keeper of the High Pastures
-*The eighth register — a mortal herdswoman in later pastoral testimony*
+*Political reconstruction for editorial review*
 
-The Nilgiri story associates **Tökisy** with the establishment of a protected buffalo pasture. In this fictional historical exercise she is approached as a human founder remembered through an honorific, not as a denial or reinterpretation of the real Toda creator goddess.
+**Epoch: Early Age of Machinery (around or after proposed Year 2,200).** All named protagonists are actual mortal individuals in the fictional setting, not ancient founders or inherited titles.
 
-## Civilization Dawn
-When forest clearances block a seasonal crossing, Tökisy negotiates alternating grazing times with a timber-growing settlement. She knows the animals by movement and injury and persuades rival herders to maintain a single watering point rather than drive their herds into competing springs. The compact concerns living animals, food and neighbors, not abstract ownership of the whole mountain.
+Tökisy is a pastoral autonomy leader in the Nilgiri highlands. A freight railway and commercial dairy scheme threaten ancient seasonal buffalo routes. She organizes herders through the Tökisy Pasture Association and negotiates the High Pasture Treaty with the southern crown, protecting seasonal easements and local judicial authority.
 
-## Centuries of custom
-Pasture stewards remember Tökisy's name even after fences, marriages and local migrations alter herd boundaries. A later account credits her with having created the first buffalo; the University's stricter reading can establish only that a founder is named in a story.
-
-## Age of Machinery
-A proposed mountain freight line cuts through the remembered route. Veterinary officers and dairy cooperative planners argue that machines will improve winter supply. Herding families present a contrary cost: a severed seasonal path may end the practice that makes the milk possible. The hearing illustrates that industrial improvement is never solely a matter of horsepower.
+Their names draw superficial inspiration from living religious traditions; this is not a claim about real sacred figures. Precise lifetimes and political events remain proposals.
