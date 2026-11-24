@@ -9,11 +9,11 @@ The University records the comparative poetic evidence before proposing a South 
 | Anu | Rigvedic war-cycle name | Political people | Unlocated in South of Tethys |
 | Druhyu | Rigvedic war-cycle name | Political people | Unlocated |
 | Pūru | Rigvedic political and war-cycle name | Political people or wider association | Unlocated |
-| Bharata | Rigvedic political name | People or political association | Unlocated; linked with Sudās traditions |
+| Bharata | Comparative name and adopted local history | Naga people | Hastinapura, opening of Civilization Dawn; Sudās relationship open |
 | Tṛtsu | Rigvedic patronage and war-cycle name | Court or political grouping | Unlocated |
-| Yadu | Rigvedic political name | Named people | Unlocated |
+| Yadu | Comparative name and adopted local history | Mixed Vedda–Naga–Harappan people | North Dwarka, early Civilization Dawn |
 | Turvaśa | Rigvedic political name | Named people | Unlocated |
-| Bhṛgu | Rigvedic ritual and war-cycle name | Lineage or collective, possibly with political adherents | Unlocated |
+| Bhṛgu | Comparative name and adopted eastern teaching history | Lineage or collective | Later Urva–Aurva inheritors at Chandraketugarh; earlier routes unresolved |
 | Paktha | Rigveda 7.18 conflict name | Possible people or fighting group | No confirmed local equivalent |
 | Bhalāna | Rigveda 7.18 conflict name | Possible people or fighting group | No confirmed local equivalent |
 | Alina | Rigveda 7.18 conflict name | Possible people or fighting group | No confirmed local equivalent |

@@ -100,7 +100,7 @@ The existing industrial polities demonstrate that mixed societies can preserve d
 | **Narmada Academic Republic** | Established scholarly polity | The University records these rival histories; documentation is not proof of a single founding people |
 
 ## VIII. Evidence gates
-The following links are **part of the adopted Narmada narrative**: Yadu–North Dwarka; Bharata–Hastinapura; Urva–Aurva–Chandraketugarh; Agasthya–Yaksha cultural change. Their **structured archive anchors** are cited above, but their newly adopted earlier events are not yet encoded in `database/`.
+The following links are **part of the adopted Narmada narrative**: Yadu–North Dwarka; Bharata–Hastinapura; Urva–Aurva–Chandraketugarh; Agasthya–Yaksha cultural change. Their **structured archive anchors** are cited above, and draft event records now encode all four connections: `event_yadu_foundation_north_dwarka`, `event_bharata_settlement_hastinapura`, `event_bhrgu_teaching_enters_vedda_guilds` and `event_agasthya_yaksha_southern_exchange`. The first two belong to Civilization Dawn, the last to the Age of Machinery, and the Bhṛgu transmission event remains undated. The settlement state histories still record only the later industrial geography. See the [epoch register](23-character-and-tribal-epoch-register.md).
 
 Other proposed links—Pūru river charters, Anu market settlement, Druhyu caravan ancestry, Turvaśa maritime households, and fixed homelands for smaller coalition names—remain **investigative hypotheses**. A future author must find or explicitly create a justified historical event before describing any of them as settled history.
 

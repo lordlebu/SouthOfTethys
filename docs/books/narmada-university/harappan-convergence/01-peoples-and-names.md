@@ -9,9 +9,9 @@ A poem is not a census. Some names denote confederations, others patrons or armi
 | **Anu** | Named political people or association | Possible treaty and settlement communities; location not established |
 | **Druhyu** | Named people associated with conflicts | Possible caravan and frontier successors, unverified |
 | **Pūru** | Major named people and political grouping | Possible independent partner, rival or urban constituency; no single destiny assigned |
-| **Bharata** | Political people linked in song to Sudās | Candidate patronage network and military coalition |
+| **Bharata** | Naga people; also linked in song to Sudās | Hastinapura settlement at the opening of Civilization Dawn; precise court relationship unresolved |
 | **Tṛtsu** | Group closely associated with Sudās's side | Candidate court and fighting constituency; relation to Bharata requires careful dating |
-| **Yadu** | Named people | Independent dossier required before matching to a later kingdom |
+| **Yadu** | Mixed Vedda–Naga–Harappan people | Founders of North Dwarka; coastal hegemony before Lothal's rise; Mask Family connection |
 | **Turvaśa** | Named people, sometimes coupled with Yadu | Independent dossier; no assumed single homeland |
 | **Bhṛgu** | Named ritual lineage and wartime grouping | Fire schools, craft patronage and disputed war allegiances |
 | **Paktha, Bhalāna, Alina** | Names in the war account | Possible hill, pass or alliance constituencies, not mapped |
