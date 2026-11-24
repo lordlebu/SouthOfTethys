@@ -14,7 +14,7 @@ The epoch identifiers below follow database/timeline/epochs.json. An assigned ep
 
 ## Character register
 
-| Character | Recorded epoch | Culture or qualification |
+| Character | Epoch (archive or adopted manuscript placement) | Culture or qualification |
 |---|---|---|
 | Indra (Indr), Dyauṣ Pitar | Prehistoric | Celestial; assignment does not delimit later activity |
 | Kashyapa | Migrations | Vedda oral ancestral figure |
@@ -23,8 +23,9 @@ The epoch identifiers below follow database/timeline/epochs.json. An assigned ep
 | Sudās | Migrations | Draft ruler associated with Bharata–Tṛtsu; culture unassigned |
 | Viśvāmitra | Migrations | Draft rājā and ṛṣi |
 | Vasiṣṭha | Migrations | Draft royal singer |
-| Nārada | Unassigned | Draft; late migrations or early cities proposed |
-| Urva, Aurva | Unassigned | Draft eastern Bhṛgu ṛṣis; Civilization Dawn proposed, not fixed |
+| Nārada | Late Era of Human Migrations (epoch_migrations) | Adopted manuscript placement; exact generation open; structured record not amended here |
+| Urva | Civilization Dawn (epoch_civilization_dawn) | Earlier eastern Bhṛgu teaching generation; adopted manuscript placement |
+| Aurva | Civilization Dawn (epoch_civilization_dawn) | Subsequent Bhṛgu teaching generation; Garudasaur blood tradition; adopted manuscript placement |
 | Kavik | Civilization Dawn | Harappan Mask Family |
 | Naga-Raja | Civilization Dawn | Human Polynesian-Khmer pirate king; not automatically Bharata |
 | Torin, Jarek, Varna | Civilization Dawn | Silvershore |
@@ -46,7 +47,7 @@ The epoch identifiers below follow database/timeline/epochs.json. An assigned ep
 | Yadu | Early Civilization Dawn | Adopted mixed Vedda–Naga–Harappan foundation of North Dwarka; hegemony before Lothal's rise; Mask Family affiliation, exact kinship open |
 | Bharata | Opening of Civilization Dawn settlement; earlier migration-era court traditions | Adopted Naga settlement at Hastinapura; Sudās relationship open |
 | Tṛtsu | Migrations | Comparative Sudās court association; no separate local capital |
-| Bhṛgu | Migration-era coalition; later teaching succession | Eastern Urva–Aurva inheritors join existing Vedda guilds at Chandraketugarh; individual dates open |
+| Bhṛgu | Migration-era coalition; later teaching succession | Urva and then Aurva teach during Civilization Dawn; later inheritors join existing Vedda guilds at Chandraketugarh; exact dates open |
 | Anu, Pūru, Druhyu, Turvaśa | Late migration horizon proposed | Frontier commerce, river networks, northern caravan routes and maritime exchange respectively; hypotheses only |
 | Paktha, Bhalāna, Alina, Śiva, Viṣāṇin, Matsya | Migration-era comparative conflict horizon | Local identities and settlements unresolved |
 | Kia / Agasthya | Age of Machinery encounter | Southern Yaksha institutions; earlier Jharwa passage remains distinct |
@@ -62,4 +63,4 @@ Paṇi, Parni, Dasyu and Ahi are not assigned tribal epochs or homelands by defa
 
 ## Editorial boundary
 
-This register documents the current archive and adopted narrative. Future structured changes may add early settlement states and supported chronological relationships, and assign currently null epochs after author approval. No database changes or canon promotions are made by this manuscript.
+This register documents the current archive and adopted narrative. Future structured changes may add early settlement states and supported chronological relationships, and synchronize the adopted Nārada, Urva and Aurva epoch assignments. Exact dates and the timing of the guild transmission event remain open. No database changes or canon promotions are made by this manuscript.

@@ -7,7 +7,7 @@ The name Nārada survives in hymn attributions associated with the Kāṇva trad
 The University has no confirmed record that Nārada personally witnessed the war of Sudās, met Kashyapa of the Vedda or visited the Naga-Raja's court. The chronological distances between those histories have not been resolved.
 
 ## The witness's vocation
-In the University's proposed migration-period portrait, Nārada represents a type of travelling specialist whose power lay in remembering words accurately between courts. A witness could recite an oath, challenge a false genealogy, retain the terms of a cattle exchange, or carry a complaint across a frontier.
+In the University's adopted late migration-period portrait, Nārada represents a type of travelling specialist whose power lay in remembering words accurately between courts. A witness could recite an oath, challenge a false genealogy, retain the terms of a cattle exchange, or carry a complaint across a frontier.
 
 Such a specialist depended upon hospitality and could become dangerous to a ruler who preferred forgetfulness. The stories of a messenger permitted entry to rival camps may have grown from the political value of remembered speech.
 
@@ -27,4 +27,4 @@ Narmada University's own travelling surveyors, excavators and oral historians in
 ## The separated names
 Kāṇva attributions and the Vedda memory of Kashyapa are preserved in separate registers until a dated chain connects them. Later narrative honours attached to Nārada may be treasured as literature, but they are not evidence that one historical traveller lived across multiple epochs.
 
-The University proposes a distinct Nārada dossier for the late migration or early city-state milieu, with his specific place and generation unconfirmed.
+The University places Nārada in the late Era of Human Migrations (epoch_migrations), in the broader scholarly milieu of Divodāsa, Sudās, Viśvāmitra and Vasiṣṭha. His specific place, generation and personal encounters remain unconfirmed. This is an adopted manuscript placement, not a claim of a revised database record.

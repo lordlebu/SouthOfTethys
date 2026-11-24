@@ -20,7 +20,7 @@ The late archive places Chandraketugarh under the Vanga Maritime Federation and 
 The city remained Vedda in its institutional foundation. Bhṛgu descendants entered its working life and helped develop the practices on which the later dispute depended.
 
 ## The long inheritance
-Urva and Aurva belong to the earlier teaching history; their individual epoch fields remain unassigned in the structured archive (Civilization Dawn is a working proposal only); **later descendants and inheritors** carried the tradition to the Age of Machinery. The University does not extend the two ṛṣis' personal lifetimes across all intervening centuries.
+Urva and Aurva belong to **Civilization Dawn (epoch_civilization_dawn)**. Urva represents the earlier eastern Bhṛgu teaching succession following the migration-era conflicts; Aurva belongs to a subsequent teaching generation, developing the tradition of obtaining and preserving Garudasaur blood. Their exact dates and biological relationship remain open. This adopted manuscript chronology does not itself change their structured character records. **Later descendants and inheritors** carried the tradition to the Age of Machinery. The University does not extend the two ṛṣis' personal lifetimes across all intervening centuries.
 
 ## University finding
 **Established in the present Narmada chronicle:** Urva and Aurva's Bhṛgu teaching line is central to the Vedda guilds' acquisition and preservation of Garudasaur blood, also called Garudasura moss.
