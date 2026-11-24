@@ -7,10 +7,10 @@ The land already possessed histories that no arriving people could inaugurate. V
 ## II. The long migrations
 The Jharwa, Vedda, Naga and Outlier movements occupy the University's broad Era of Human Migrations. These were not one caravan or a single century. Vedda oral custodians preserve Kashyapa as a remote origin-name; the Naga courts and clan histories provide other, independent lines of memory. Harappan settlement and later ritual scholarship cannot be placed before these established strata merely to make a continuous genealogy.
 
-The Anu, Druhyu, Pūru, Bharata, Tṛtsu, Yadu and Turvaśa names are here entered as *candidate later confederations or political affiliations*, pending independent local testimony. Their arrivals are not yet mapped, and the University will not assign them to existing Vedda or Naga ancestors by resemblance alone.
+Anu, Druhyu, Pūru, Tṛtsu and Turvaśa remain candidate political affiliations with unresolved local histories. The adopted histories identify the Yadus as a mixed Vedda–Naga–Harappan people founding North Dwarka and the Bharatas as a Naga people settling Hastinapura at the opening of Civilization Dawn. Their precise migration routes remain unknown.
 
 ## III. The age of crossings and frontier rulers
-The songs of Divodāsa, the waters crossed under Viśvāmitra's authority, and the rival claims surrounding Sudās suggest a time of competing patrons, movable courts, gifted animals, ford rights and alliances bound by witnesses. These figures need not have lived at the start of the migration epoch. The likely placing is a **late migration and early city-state transition**, with the exact generations unresolved.
+The songs of Divodāsa, the waters crossed under Viśvāmitra's authority, and the rival claims surrounding Sudās suggest a time of competing patrons, movable courts, gifted animals, ford rights and alliances bound by witnesses. These figures need not have lived at the start of the migration epoch. The structured draft records place Divodāsa, Sudās, Viśvāmitra and Vasiṣṭha in the **Era of Human Migrations**, as well as the coalition war and river passage. Their late-migration placement is a working chronology; exact generations remain unresolved.
 
 A ford, cattle enclosure or gate appears under several names in the surviving songs. None yet licenses a new coordinate on the University's maps.
 
