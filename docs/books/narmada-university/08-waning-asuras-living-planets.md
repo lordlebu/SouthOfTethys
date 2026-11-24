@@ -10,7 +10,7 @@ The Elder Asuras are remembered through sovereignty, institutions and command. L
 Vaishura's Fang Vanguard and the Gondwana Intervention belong to an age when the effects of Asura contact were immense. A rift is sometimes named *Asura Loka*, but the phrase supplies no verified map of a homeland. The earliest interventions changed animals, land and the conduct of war.
 
 ## II. The Narrower Gate
-Manjalaya's summoning through a Dwarka Gate and Daedrasura's influence through masks and rites suggest a later history of mediated encounters. Such mediation could mean weakness, withdrawal or an altered method of exerting power. The sources do not distinguish these possibilities decisively.
+Manjalaya's summoning through a Dwarka Gate and Daedrasura's influence through masks and rites suggest a later history of mediated encounters. Such mediation could mean weakness, withdrawal or an altered method of exerting power. The sources do not distinguish these possibilities decisively. A secondary prehistoric testimony also names Daedrasura, although other registers place his first appearance much later. The supposed passage from open dominion to distant influence must therefore be regarded as a hypothesis rather than a perfectly dated sequence.
 
 ## III. What Is an Asura Planet?
 The designation is applied to wandering celestial bodies reported to exhibit awareness and deception. These are not humanoid Asuras magnified into worlds. Some accounts describe an apparently familiar moon changing its aspect before returning to disguise. The University's records treat the sentient-planet hypothesis seriously without treating every report as independently verified.
@@ -21,7 +21,7 @@ The designation is applied to wandering celestial bodies reported to exhibit awa
 Onko may invoke Rahu and Ketu in calculations while remaining agnostic about a wandering planet's consciousness. Digha Jani's reports of apparent celestial deception are a separate question. The University will not equate a successful eclipse prediction with proof of an invisible mind.
 
 ## V. The Narmada Flood
-The primordial Narmada Man witnessed the approach of an Asura planet amid catastrophic flooding. His union with a meditating Apsara and the appearance of an Asura-tainted egg belong to the same account. Their conjunction does not prove that the planet intentionally caused every event beneath it.
+The primordial Narmada Man witnessed the approach of an Asura planet amid catastrophic flooding. His union with a meditating Apsara and the appearance of an Asura-tainted egg belong to the same account. Their conjunction does not prove that the planet intentionally caused every event beneath it. The name Narmada Man also appears in records assigned to Prehistory, the Migrations and Civilization Dawn. One describes several Narmada men, another an inherited seed-mind; neither proves that the primeval king stood bodily in every age. A catalogue places the Meditating Apsara's first appearance in the Migrations even though the flood account belongs to Deep Antiquity. Until those reckonings are reconciled, the University preserves the discrepancy rather than redating the flood.
 
 ## VI. The Wounded Earth
 Later charts preserve an Asura Planet Collision Zone surrounded by boiling waters and irradiated wasteland. The charted location belongs to its own epoch and cannot be projected unchanged into remote antiquity. Altered plants and creatures are attributed to the influence of wandering Asura planets; causation and intention must still be distinguished.
