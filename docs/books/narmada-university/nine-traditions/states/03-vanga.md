@@ -19,3 +19,7 @@ Steamships reward large capital, but individual port laws survive. Dockworkers a
 Tatara-Rabuga, a monarch, and Saljong, an agrarian leader, organize the modern Seed Fleet and grain movement during Early Machinery, contributing to the federal charter. These are mortal individuals, not ancient namesakes; earlier institutions predate them.
 
 **Tests:** which Tuli settlements entered first, the chronological relationship of eastern river polities, port charter texts and realistic limits of navigable trade routes.
+
+
+### Database concordance
+Eastern Seed Reserve Negotiations records both actors. Seed Fleet and Federal Harbour Charter participation remain proposed; the fleet's relationship to the negotiations is unresolved. See [Register of Persons and Public Acts](../14-character-event-register.md).
