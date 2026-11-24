@@ -7,12 +7,12 @@ half-remembered word lives in [`database/`](database/) as one JSON file, validat
 push — so the lore cannot quietly contradict itself, and a machine can hand any of it to a
 reader, a game, or a language model.
 
-**v3.9.0 · 1027 entities · all cross-references resolving**
+**v3.10.0 · 1031 entities · all cross-references resolving**
 
 | | |
 |---|---|
 | 🦎 **Life** | 257 fauna · 90 flora |
-| 🗺️ **World** | 7 regions · 41 places · 2 settlements · 116 characters · 100 events · 3 factions · 5 artifacts · 9 myths |
+| 🗺️ **World** | 7 regions · 41 places · 2 settlements · 116 characters · 104 events · 3 factions · 5 artifacts · 9 myths |
 | 🔍 **Field diary** | 3 field maps · 20 points of interest · 31 discoveries · 7 open questions · 8 people · 8 words |
 
 ---

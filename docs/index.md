@@ -11,7 +11,7 @@ _Generated from `database/events/`.
 
 ## The Turning of Kunti Against the Seedbearer
 **Epoch:** Prehistoric Foundations & Age of Vanaras
-**Summary:** Weaponised by the Asura guru Shukradeva and by Daedrasura, the celestial nymph Kunti is turned against Jambanson and made to disrupt his ecological and ancestral memory-seed magic. She is the instrument and not the author of it, which is the whole of her tragedy: the Land of Myst remembers her as the tricked goddess.
+**Summary:** Weaponised by the Asura guru Shukradeva and by Daedrasura, the celestial nymph Kunti is turned against Jambanson and made to disrupt his ecological and ancestral memory-seed magic. She is the instrument and not the author of it, which is the whole of her tragedy: the Land of Myst remembers her as the tricked goddess. The University concordance treats this prehistoric attribution as disputed because the Devourer’s established dossier opens in Civilization Dawn.
 **Participants:** character_kunti, character_jambanson, character_daedrasura
 
 ## The Planting of the Moon-Seed
@@ -92,10 +92,27 @@ _Draft history for editorial review._
 **Summary:** The household dossier recalls a dispute over who could enter inherited obligations, with a witness preserving the terms. Its later forms associate the dispute with rules of sanctuary and adoption.
 **Participants:** character_ila, character_vivasvan, character_vac
 
+## Divodāsa and the Frontier Court
+_Draft history for editorial review._
+**Epoch:** Era of Human Migrations
+**Summary:** The earlier royal figure is remembered in praise traditions. The University reconstructs his court as a mobile centre of passage obligations and arbitration; specific laws and victories are unconfirmed.
+**Participants:** character_divodasa
+
 ## The Jharwa First-Wave & The Shell Pact
 **Epoch:** Era of Human Migrations
 **Summary:** During the Pleistocene Glaciation, the Jharwa cave-painters cross the Tethys Sea to Jambhudweepa. Landing in the Saraswati Delta, Elder Repa establishes the Shell Pact with the Ammonite Man, trading spiral conches for safe passage through the deep channels.
 **Participants:** character_jharwa_elder_repa, character_ammonite_man
+
+## Jharwa Passage into the Yaksha South
+_Draft history for editorial review._
+**Epoch:** Era of Human Migrations
+**Summary:** Jharwa travellers reached the southern lands under Yaksha sovereignty before the later Kia journey. The itinerary and generation are unrecorded. The migration-era placement is a working reconstruction.
+
+## Nārada and the Travelling Witnesses
+_Draft history for editorial review._
+**Epoch:** Era of Human Migrations
+**Summary:** The adopted late-migration portrait associates Nārada with itinerant testimony and Kāṇva recitation across political boundaries. No specific journey, court meeting or oath is attested.
+**Participants:** character_narada
 
 ## Opening of the Naraka Lok Portal
 **Epoch:** Era of Human Migrations
@@ -115,7 +132,7 @@ _Draft history for editorial review._
 ## Sarishne Encounters Manjalaya at a Gate Disturbance
 _Draft history for editorial review._
 **Epoch:** Era of Human Migrations
-**Summary:** University testimony places the meeting at a later Dwarka Gate disturbance. The physical identity of the gate remains unsettled.
+**Summary:** University testimony places Sarishne and Manjalaya together at a Dwarka Gate disturbance during the Human Migrations. The account treats it as separate from the Deep Antiquity Shadow Pact and leaves the physical identity of the gate unsettled.
 **Participants:** character_sarishne, character_manjalaya
 
 ## River Passage of the Bharata Force
@@ -207,6 +224,18 @@ _Draft history for editorial review._
 **Summary:** In exile, Shaashak gives birth to Sarita. The child’s first cry echoes her mother’s lullaby. Represents future reconciliation of the two bloodlines.
 **Participants:** character_shaashak, character_khadi, character_sarita
 
+## Urva and the Eastern Bhṛgu Teaching Succession
+_Draft history for editorial review._
+**Epoch:** Civilization Dawn (Lothal Era)
+**Summary:** Urva represents the earlier eastern teaching generation, carrying Bhṛgu knowledge of heat, vessels and preservation after the migration-era conflicts.
+**Participants:** character_urva
+
+## Aurva and the Garudasaur Blood Tradition
+_Draft history for editorial review._
+**Epoch:** Civilization Dawn (Lothal Era)
+**Summary:** Aurva develops the eastern teaching tradition of obtaining and preserving Garudasaur blood. Later inheritors transmit it to Vedda guilds; no personal visit to Chandraketugarh or exact kinship is established.
+**Participants:** character_aurva
+
 ## Yadu Foundation of North Dwarka
 _Draft history for editorial review._
 **Epoch:** Civilization Dawn (Lothal Era)
@@ -226,7 +255,7 @@ _Draft history for editorial review._
 ## Lothal’s Factory Drainage Dispute
 _Draft history for editorial review._
 **Epoch:** The Age of Machinery
-**Summary:** Disputes over factory tenements and steam-pumped flood channels revived a rule that displaced households should be counted. Civic lawyers and Kia families disagree over its attribution.
+**Summary:** Disputes over factory tenements and steam-pumped flood channels revived a rule that displaced households should be counted. Civic lawyers and Kia families disagree over its attribution. The University proposes links to the delta reform programme, crown coordination and compensation hearings. The negotiating roster remains unverified.
 
 ## The Cartographic & Mercantile Accord
 **Epoch:** The Age of Machinery
@@ -315,12 +344,12 @@ _Draft history for editorial review._
 ## Narmada Archives Rival Grove Concession Copies
 _Draft history for editorial review._
 **Epoch:** The Age of Machinery
-**Summary:** Industrial fuel and rail interests cited a concession copy that omitted protections. Local residents submitted a rival copy preserving protected springs and graves.
+**Summary:** Industrial fuel and rail interests cited a concession copy that omitted protections. Local residents submitted a rival copy preserving protected springs and graves. The University proposes that the movements for woodland unity, highland resistance and Indigenous land rights submitted distinct positions. Personal attendance is unresolved.
 
 ## Narmada Compares Shadow Tables with Telegraph Time
 _Draft history for editorial review._
 **Epoch:** The Age of Machinery
-**Summary:** Observatory technicians compared inherited seasonal observations with telegraph signals and dock reports. An engineer found local flood markers more pertinent than a distant standard clock.
+**Summary:** Observatory technicians compared inherited seasonal observations with telegraph signals and dock reports. An engineer found local flood markers more pertinent than a distant standard clock. The University proposes a link to the Early Machinery astronomer’s scientific reforms. The observatory’s attendance record is unresolved.
 
 ## The Narmada Upriver Expedition
 **Epoch:** The Age of Machinery
@@ -339,7 +368,7 @@ _Draft history for editorial review._
 ## Nilgiri Freight Route Hearing
 _Draft history for editorial review._
 **Epoch:** The Age of Machinery
-**Summary:** Cooperative planners backed a freight line for its effect on winter supply. Herding households argued that the proposed route would sever a seasonal crossing needed for grazing.
+**Summary:** Cooperative planners backed a freight line for its effect on winter supply. Herding households argued that the proposed route would sever a seasonal crossing needed for grazing. The University proposes the Early Machinery pastoral autonomy leader as a representative at the hearing. The record of personal attendance remains open.
 
 ## The Paratethyan Lock Blockades
 **Epoch:** The Age of Machinery
@@ -352,7 +381,7 @@ _Draft history for editorial review._
 ## Dispute over Patent Claims on Charcoal Measures
 _Draft history for editorial review._
 **Epoch:** The Age of Machinery
-**Summary:** A foundry syndicate sought to patent a sequence resembling inherited measures. A legal historian questioned whether a method passed down through public teaching could become private property.
+**Summary:** A foundry syndicate sought to patent a sequence resembling inherited measures. A legal historian questioned whether a method passed down through public teaching could become private property. The University proposes a link to the craft educator’s public teaching programme. It also raises a possible role for the labour movement in representing apprentices and workers.
 
 ## Rail Succession Wars
 _Draft history for editorial review._
@@ -446,22 +475,17 @@ _Draft history for editorial review._
 ## Federal Harbour Charter
 _Draft history for editorial review._
 **Epoch:** unknown
-**Summary:** After unrest over concentrated warehouse ownership and access to emergency grain, the proposed charter divided responsibility for the fleet, customs and grain reserves.
+**Summary:** After unrest over concentrated warehouse ownership and access to emergency grain, the proposed charter divided responsibility for the fleet, customs and grain reserves. In a contemporary reconstruction, the eastern crown and organized inland producers are possible stakeholders in the charter. The signing roster remains unknown.
 
 ## Formation of the Furnace Confederacy
 _Draft history for editorial review._
 **Epoch:** unknown
-**Summary:** The proposed confederacy coordinated ore weights and security for routes between furnaces. The formation belongs to the early industrial transformation of the plateau.
-
-## Jharwa Passage into the Yaksha South
-_Draft history for editorial review._
-**Epoch:** unknown
-**Summary:** Jharwa travellers reached the southern lands under Yaksha sovereignty before the later Kia journey. The itinerary and generation are unrecorded.
+**Summary:** The proposed confederacy coordinated ore weights and security for routes between furnaces. The formation belongs to the early industrial transformation of the plateau. The political reconstruction associates its contemporary founding with the plateau confederation founder and proposes contributions from the cultural reformer and labour organizers. The founding roster remains open.
 
 ## The Last Attendance of Manjalaya
 _Draft history for editorial review._
 **Epoch:** unknown
-**Summary:** A provisional account remembers a peaceful death witnessed by a wilderness guardian and her partner. Dating and placement of this account remain open.
+**Summary:** A provisional account remembers the peaceful death of Manjalaya, with Sarishne and Gagdji in attendance. Its date, site and placement in the wider chronology remain open.
 **Participants:** character_manjalaya, character_sarishne, character_gagdji
 
 ## Lothal Canal Compact
@@ -472,22 +496,22 @@ _Draft history for editorial review._
 ## Nine-Pass Peace
 _Draft history for editorial review._
 **Epoch:** unknown
-**Summary:** The proposed highland peace distinguished rights to cross a pass, to graze and to govern. Its relationship to the winter passage agreement remains uncertain.
+**Summary:** The proposed highland peace distinguished rights to cross a pass, to graze and to govern. Its relationship to the winter passage agreement remains uncertain. The University proposes the highland confederation statesman as a negotiator if this was an Early Machinery settlement. The winter passage agreement is separately recorded.
 
 ## Plateau Charter Crisis
 _Draft history for editorial review._
 **Epoch:** unknown
-**Summary:** The proposed crisis followed a royal attempt to monopolize mineral rights and withdraw scholarly exemptions. The reconstruction leaves the monarch’s fate open and places a constitutional republic after the crisis.
+**Summary:** The proposed crisis followed a royal attempt to monopolize mineral rights and withdraw scholarly exemptions. The reconstruction leaves the monarch’s fate open and places a constitutional republic after the crisis. The University identifies confederation, cultural reform and labour constituencies as possible negotiating parties. The chronology, roster and monarch’s fate remain open.
 
 ## Pragjyotisha Hill Autonomy Charter
 _Draft history for editorial review._
 **Epoch:** unknown
-**Summary:** The proposed royal charter gave hill assemblies legislative standing after disputes over roads, levies and recruitment. Defence and diplomacy remained with the crown.
+**Summary:** The proposed royal charter gave hill assemblies legislative standing after disputes over roads, levies and recruitment. Defence and diplomacy remained with the crown. A contemporary reconstruction proposes the constitutional statesman for negotiations and the highland commander for questions of local defence and recruitment. The charter roster remains open.
 
 ## Pragjyotisha Adopts the Twin Reckoning
 _Draft history for editorial review._
 **Epoch:** unknown
-**Summary:** The proposed valley standard combined rival seasonal reckonings while preserving local timekeeping. Its constitutional adoption followed debate over the statewide role of the calendar.
+**Summary:** The proposed valley standard combined rival seasonal reckonings while preserving local timekeeping. Its constitutional adoption followed debate over the statewide role of the calendar. For a contemporary settlement, the University proposes advocacy by the nationalist intellectual and scientific input from the astronomer. The adoption date remains open.
 
 ## Expansion of Sky-Island Survey and Mineral Transport
 _Draft history for editorial review._
@@ -497,17 +521,17 @@ _Draft history for editorial review._
 ## Vanga Seed Fleet
 _Draft history for editorial review._
 **Epoch:** unknown
-**Summary:** Coastal testimony proposes a fleet carrying planting seed during scarcity. The precise connection between these voyages and eastern seed reserve negotiations remains open.
+**Summary:** Coastal testimony proposes a fleet carrying planting seed during scarcity. The precise connection between these voyages and eastern seed reserve negotiations remains open. The University proposes royal coordination and agrarian oversight if the fleet belongs to the same political horizon as the seed reserve negotiations.
 
 ## Vijayan High Pasture Treaty
 _Draft history for editorial review._
 **Epoch:** unknown
-**Summary:** The proposed treaty preserved seasonal buffalo routes and council jurisdiction in exchange for trade duties and defensive obligations. The identity of any early negotiator remains open.
+**Summary:** The proposed treaty preserved seasonal buffalo routes and council jurisdiction in exchange for trade duties and defensive obligations. The identity of any early negotiator remains open. The University proposes the pastoral autonomy leader as a negotiator if the treaty belongs to the contemporary settlement.
 
 ## Vijayan Watershed Compact
 _Draft history for editorial review._
 **Epoch:** unknown
-**Summary:** After upland opposition to mining concessions that threatened springs, the proposed compact granted local review of new extraction rights.
+**Summary:** After upland opposition to mining concessions that threatened springs, the proposed compact granted local review of new extraction rights. If the compact is contemporary with the quarry pact, the University proposes the upland crown and the agrarian rights movement as negotiating parties.
 
 ## War of the Three Estuaries
 _Draft history for editorial review._
@@ -517,4 +541,4 @@ _Draft history for editorial review._
 ## Lothal Guild Settlement
 _Draft history for editorial review._
 **Epoch:** unknown
-**Summary:** A succession dispute impaired payment of war debts. The proposed settlement divided jurisdiction among civic, guild and Kia water representatives.
+**Summary:** A succession dispute impaired payment of war debts. The proposed settlement divided jurisdiction among civic, guild and Kia water representatives. If this was the later constitutional settlement, the University considers the delta reformer, crown and royal administration possible stakeholders. The signatories remain unknown.

@@ -10,10 +10,11 @@
   ],
   "predecessors": [],
   "successors": [],
-  "summary": "University testimony places the meeting at a later Dwarka Gate disturbance. The physical identity of the gate remains unsettled.",
+  "summary": "University testimony places Sarishne and Manjalaya together at a Dwarka Gate disturbance during the Human Migrations. The account treats it as separate from the Deep Antiquity Shadow Pact and leaves the physical identity of the gate unsettled.",
   "canon": "draft",
   "sources": [
     "docs/books/narmada-university/07-sarishne-witness-of-the-shadow-pact.md",
-    "docs/books/narmada-university/05-manjalaya-royal-traditions.md"
+    "docs/books/narmada-university/05-manjalaya-royal-traditions.md",
+    "docs/books/narmada-university/character-event-concordance.md"
   ]
 }

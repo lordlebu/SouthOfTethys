@@ -5,13 +5,14 @@
   "culture": null,
   "species": "human",
   "status": "unknown",
-  "epoch": null,
+  "epoch": "epoch_civilization_dawn",
   "roles": [
     "eastern Bhṛgu ṛṣi"
   ],
-  "notes": "Remembered separately from Aurva in a succession of teaching on heat, vessels and preservation. The sources leave their exact kinship and dates open.",
+  "notes": "An eastern Bhṛgu ṛṣi of the earlier Civilization Dawn teaching generation, remembered for transmitting knowledge of heat, vessels and preservation after the migration-era conflicts. Exact dates and kinship with the later teacher Aurva remain open.",
   "canon": "draft",
   "sources": [
-    "docs/books/narmada-university/harappan-convergence/19-aurva-urva-and-the-eastern-fire-houses.md"
+    "docs/books/narmada-university/harappan-convergence/19-aurva-urva-and-the-eastern-fire-houses.md",
+    "docs/books/narmada-university/harappan-convergence/23-character-and-tribal-epoch-register.md"
   ]
 }

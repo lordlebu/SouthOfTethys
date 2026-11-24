@@ -23,9 +23,11 @@
       "character_asura_tainted_princess"
     ]
   },
-  "notes": "Asura princess of shadows summoned by Varunesh through dark tantra and unicorn sacrifice via Dwarka Gate. Skin shifts to radiant violet upon arousal. Mother of the Asura-Tainted Princess.",
+  "notes": "Asura princess of shadows summoned by Varunesh through dark tantra and unicorn sacrifice via Dwarka Gate. Skin shifts to radiant violet upon arousal. Mother of the Asura-Tainted Princess. The Shadow Pact is recorded at the Ancient Courts, with the summoning described as taking place through a Dwarka Gate. The gate traditions describe separate incidents in Deep Antiquity and the Migrations. A draft account of her peaceful death remains undated and unlocated.",
   "canon": "primary",
   "sources": [
-    "AI_CONTEXT.md"
+    "AI_CONTEXT.md",
+    "docs/books/narmada-university/05-manjalaya-royal-traditions.md",
+    "docs/books/narmada-university/character-event-concordance.md"
   ]
 }
