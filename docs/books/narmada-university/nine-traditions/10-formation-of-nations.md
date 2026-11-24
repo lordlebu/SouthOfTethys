@@ -45,3 +45,7 @@ A royal archivist calls integration pacification; an upland witness calls it enc
 
 ## Source boundaries
 The ancient Lothal, Kia, Vedda, Naga and Harappan evidence follows [The Chronicle of Convergence](../harappan-convergence/00-chronicle-of-convergence.md). The names of machinery-era polities are inherited from that chronicle. **All specifically named settlements, dynastic crises, compacts, parties and intermediary states developed here are proposals for editorial review.** The 2,200-year framework is a planning hypothesis, not a confirmed chronology; no canonical coordinate, population total or direct modern ethnic equivalence is asserted.
+
+
+## Character epoch correction
+All nineteen individuals in the Nine Houses register are mortal political actors of the **Early Age of Machinery**, active around or after the proposed Year 2,200 threshold. They personally participate in industrial nation-building, constitutional settlements and ethnic or labour movements. Earlier institutions and customs belong to unnamed predecessors, not these individuals. Any named movement or settlement involving them belongs to Early Machinery; earlier phases describe its institutional antecedents only. See [the character register](00-chronicle-of-nine-houses.md). Exact lifetimes remain unassigned; the proposed elapsed chronology and existing Dawn characters are unchanged.
