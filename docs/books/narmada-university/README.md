@@ -11,6 +11,8 @@ Eight in-universe historical manuscripts. These books are fictional scholarship,
 7. [Sarishne: Witness Beyond the Court](07-sarishne-witness-of-the-shadow-pact.md)
 8. [The Waning of the Asuras and the Living Planets](08-waning-asuras-living-planets.md)
 
+**Continuity reference:** [Asura Character–Event Concordance](character-event-concordance.md) links the characters to recorded events, identifies conflicting first-appearance epochs and unresolved locations, and distinguishes hidden witnesses from event participants.
+
 ## Continuity rules
 - Sarishne is Rakshasa; Gagdji is Oni; contact with Asura history is not Asura descent.
 - Varuṇa is celestial deity and Keeper of Ṛta, bearing the in-universe title Asura Mahat; Vairochana is an Elder Asura.

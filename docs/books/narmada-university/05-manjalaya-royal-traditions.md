@@ -19,7 +19,7 @@ The chronicles preserve the existence of an Asura-Tainted Princess. Her later li
 Sarishne, a Rakshasa associated with the Tenduas, secretly witnessed the original pact. A distinct, later migration-era disturbance brought her into contact with Manjalaya again. Their association establishes historical contact across lineages, not common ancestry.
 
 ## V. The Unsettled Last Account
-A later tradition places Sarishne and her Oni partner Gagdji at Manjalaya's peaceful death. Its date and chapter placement are provisional. The University records the account without assigning a year or declaring that all chronologies have been reconciled.
+A later tradition places Sarishne and her Oni partner Gagdji at Manjalaya's peaceful death. An entry called *The Last Attendance of Manjalaya* names the three figures but leaves both its date and its place unassigned. Its chapter placement remains provisional. The University records the claim without declaring that a dated death, an identified site or the full sequence of lives has been established.
 
 ## Closing Judgment
 Manjalaya's history concerns the limits of passage, power and testimony. It is not a warrant to merge Rakshasa, Oni and Asura identities.

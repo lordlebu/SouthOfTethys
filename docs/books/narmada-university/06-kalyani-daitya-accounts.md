@@ -7,7 +7,7 @@
 The name Kalyani survives in a short but important dossier. She is classified as Daitya. The scarcity of information should be acknowledged rather than concealed by elaborate inventions.
 
 ## I. The Distinct Name
-Daitya, Danava and Asura are not interchangeable labels in the University's present catalogues. Their relations may be argued by later scholars, but a single tradition cannot erase the distinctions preserved in the surviving records.
+Daitya, Danava and Asura are not interchangeable labels in the University's present catalogues. Their relations may be argued by later scholars, but a single tradition cannot erase the distinctions preserved in the surviving records. Some cataloguers shelve these lineages beneath a broad Asura designation for comparison; an archival heading is neither a claim of common blood nor a substitute for a lineage's own name.
 
 ## II. Kalyani
 The approved testimony establishes Kalyani's Daitya identity and her friendship with Vusajc Karthakur. Her epoch, location, mortality, abilities and political affiliations remain unknown. Any purported royal genealogy would exceed the evidence.
