@@ -147,28 +147,10 @@ _Draft history for editorial review._
 **Epoch:** Civilization Dawn (Lothal Era)
 **Summary:** The chronicle places the first Bharata Naga settlement at the opening of Civilization Dawn. It identifies neither a founder nor a direct connection to the ruler of the coalition war.
 
-## The Three Custodians’ Embankment Repair
-_Draft history for editorial review._
-**Epoch:** Civilization Dawn (Lothal Era)
-**Summary:** A failed embankment threatened mixed delta households. Three custodians counted available grain, heard displaced families and enlisted Kia water-guides in a shared repair.
-**Participants:** character_sanamahi, character_pakhangba, character_leimarel_sidabi
-
-## Eastern Hillside Seed Exchange
-_Draft history for editorial review._
-**Epoch:** Civilization Dawn (Lothal Era)
-**Summary:** A poor harvest prompted debate over flood-safe plots and the distribution of seed recorded as due after the next planting. A later Tuli merchant carried an abridged account to coastal traders.
-**Participants:** character_tatara_rabuga, character_saljong
-
 ## The Final Voyage of the Kelpfang
 **Epoch:** Civilization Dawn (Lothal Era)
 **Summary:** The historical chronicle of the living outrigger Kelpfang's final sea voyage. Crewed by the Tamra-Veil Wardens, the ship rescued refugees from the Lundish eruption, weathered a catastrophic stone resonance event, and was eventually dismantled to plant peaceful coastal settlements.
 **Participants:** character_lirael_wavecaller, character_sirael_thorncurrent, character_korran_driftwood_seer, character_the_traveler, character_elara_voss, character_radiant_gentleman
-
-## Compact of the Furnace Houses
-_Draft history for editorial review._
-**Epoch:** Civilization Dawn (Lothal Era)
-**Summary:** Rival furnace houses faced shortages of shared equipment and fuel. Testimonies remember shared furnace days, common measures and shelter for apprentices exposed to debt labour.
-**Participants:** character_bada_deo, character_kupar_lingo, character_jangubai
 
 ## The Storm-Bone Khan's Warning at Lothal
 **Epoch:** Civilization Dawn (Lothal Era)
@@ -179,24 +161,6 @@ _Draft history for editorial review._
 **Epoch:** Civilization Dawn (Lothal Era)
 **Summary:** Guyuk leaves the record. She goes to the Konkan hills carrying the reincarnated seed-mind of the Narmada Man, teaching the deep-time songs to blind bards so the oldest history survives in mouths rather than tablets.
 **Participants:** character_guyuk, character_narmada_man
-
-## Common Spring Access Marked in Stone
-_Draft history for editorial review._
-**Epoch:** Civilization Dawn (Lothal Era)
-**Summary:** Ridge testimony recalls that a marker line protected shared access to a spring. Some accounts credit successive assemblies for the work.
-**Participants:** character_u_blei_nongthaw
-
-## Hearing at the Landslip
-_Draft history for editorial review._
-**Epoch:** Civilization Dawn (Lothal Era)
-**Summary:** After a landslip, the guardian called witnesses and withheld permission to move the oldest marker until affected households had been heard.
-**Participants:** character_u_ryngkew
-
-## Winter Passage Agreement
-_Draft history for editorial review._
-**Epoch:** Civilization Dawn (Lothal Era)
-**Summary:** The highland guide negotiated safe passage for camp households and animals before sharing knowledge of sheltered springs. Accounts disagree over whose interests the agreement primarily served.
-**Participants:** character_shenrab
 
 ## Silvershore War
 **Epoch:** Civilization Dawn (Lothal Era)
@@ -243,24 +207,6 @@ _Draft history for editorial review._
 **Summary:** In exile, Shaashak gives birth to Sarita. The child’s first cry echoes her mother’s lullaby. Represents future reconciliation of the two bloodlines.
 **Participants:** character_shaashak, character_khadi, character_sarita
 
-## Nilgiri Shared Pasture Agreement
-_Draft history for editorial review._
-**Epoch:** Civilization Dawn (Lothal Era)
-**Summary:** After forest clearance blocked a seasonal crossing, a herdswoman negotiated rotating grazing times and a shared watering point.
-**Participants:** character_tokisy
-
-## Upland Watershed Quarry Pact
-_Draft history for editorial review._
-**Epoch:** Civilization Dawn (Lothal Era)
-**Summary:** Hill residents and lowland traders witnessed limited quarry rights above a spring and obligations to keep debris and runoff from the fields below.
-**Participants:** character_niyam_raja, character_dharani_penu
-
-## A Village Preserves Two Seasonal Reckonings
-_Draft history for editorial review._
-**Epoch:** Civilization Dawn (Lothal Era)
-**Summary:** During irregular rains, a village assembly preserved both the shadow and tide methods of reckoning, avoiding a single planting date based on disputed observations.
-**Participants:** character_donyi, character_polo
-
 ## Yadu Foundation of North Dwarka
 _Draft history for editorial review._
 **Epoch:** Civilization Dawn (Lothal Era)
@@ -291,6 +237,12 @@ _Draft history for editorial review._
 **Epoch:** The Age of Machinery
 **Summary:** The Vedda apothecary guilds and cultists associated with the Devourer disputed control of the Garudasaur blood supply.
 
+## Delta Embankment Repair and Relief Settlement
+_Draft history for editorial review._
+**Epoch:** The Age of Machinery
+**Summary:** An embankment failure forces the delta crown, household representatives and Kia water councils to coordinate repair and relief. Their agreement makes the claims of displaced households part of the public settlement.
+**Participants:** character_sanamahi, character_pakhangba, character_leimarel_sidabi
+
 ## The Delta Outrigger Skirmishes
 **Epoch:** The Age of Machinery
 **Summary:** Vanga steam-gunboats against the migrant outrigger fleets of the Sea-Drifters in the eastern marshes: blockades and burnt harbour towns.
@@ -301,10 +253,22 @@ _Draft history for editorial review._
 **Summary:** Mining at the submerged Dwarka Gate was suspended at midnight after localised spatial tremors, when steam drills struck a high-pressure geothermal Lingam bed and blue auroras rose from the basalt arches. The Narmada Geological Corps warned that further drilling risked permanent crustal destabilisation. Whether it helped bring on the Great Shattering is not settled; canon records what was reported, not why the world broke.
 **Participants:** faction_vayu_dwarkadhish_coral_monarchies, faction_narmada_academic_republic
 
+## Eastern Seed Reserve Negotiations
+_Draft history for editorial review._
+**Epoch:** The Age of Machinery
+**Summary:** During a shortage, the consolidating eastern crown and organized cultivators negotiate access to flood-safe land and planting grain. The reserve gives inland producers a stake in dealings with harbour authorities.
+**Participants:** character_tatara_rabuga, character_saljong
+
 ## The Frontier Marrow Wars
 **Epoch:** The Age of Machinery
 **Summary:** Harappan timber cartels and Hyrkanian mining syndicates fight the Sun-Iron kingdoms in guerrilla wars over Garudasaur fossil-marrow beds and ironwood.
 **Participants:** faction_harappan_lothal_union, faction_hyrkanian_tushara_rail_khanates
+
+## Compact of the Furnace Houses
+_Draft history for editorial review._
+**Epoch:** The Age of Machinery
+**Summary:** Plateau furnace districts negotiate shared access to industrial facilities and common measures. The debate brings confederation building, cultural recognition and workers’ protections into the compact.
+**Participants:** character_bada_deo, character_kupar_lingo, character_jangubai
 
 ## The Great Coal & Dolmen War
 **Epoch:** The Age of Machinery
@@ -320,6 +284,18 @@ _Draft history for editorial review._
 **Epoch:** The Age of Machinery
 **Summary:** What the survivors called D-Day: silent purple auroras, the canal gone into geothermal fissures overnight, freighters on their sides in the mud, and a second shock that shattered the Lothal customs domes before the sea drew back and rose in a glowing wave. Kael, Ananya and Devraj dragged the archive cart aboard the Kelpfang-II and drifted out of a drowning city. This is the Shattering as three people lived it; why it came is not written.
 **Participants:** character_kael, character_ananya, character_devraj
+
+## Grove and Hill Obligations Enter a Legal Roll
+_Draft history for editorial review._
+**Epoch:** The Age of Machinery
+**Summary:** As timber, quarry and passage claims converge, a legal roll assembles separate woodland and hill positions on governing shared land. It records the claims of contemporary movements without requiring their leaders to have sat in a single council.
+**Participants:** character_singbonga, character_marang_buru, character_jaher_era
+
+## Hill Assembly Affirms Common Spring Access
+_Draft history for editorial review._
+**Epoch:** The Age of Machinery
+**Summary:** During negotiations with the valley crown, a hill assembly affirms shared access to a spring as a matter of local jurisdiction. The settlement gives constitutional force to the distinction between common access and ownership.
+**Participants:** character_u_blei_nongthaw
 
 ## The Mappa Mundi Colonial Insurgencies
 **Epoch:** The Age of Machinery
@@ -383,20 +359,50 @@ _Draft history for editorial review._
 **Epoch:** The Age of Machinery
 **Summary:** The proposed wars followed competition over coal railways, traditional tolls and rival engineering concerns. A shared track and telegraph council emerged alongside separate dynastic courts.
 
+## Highland Hearing at the Landslip
+_Draft history for editorial review._
+**Epoch:** The Age of Machinery
+**Summary:** A landslip tests the autonomy of a highland assembly as state road plans advance. Highland forces secure the route while affected households are heard before old access markers can be moved.
+**Participants:** character_u_ryngkew
+
 ## The Saraswati Canal Drains
 **Epoch:** The Age of Machinery
 **Summary:** The Inland Waterway Board's red alert: the main Saraswati trade canal dropped three feet overnight, and more than forty iron freighters of coal and grain went aground between Dwarka and Lothal. Engineers blamed tectonic fracturing along the central basalt fault. Whether it helped bring on the Great Shattering is not settled; canon records what was reported, not why the world broke.
 **Participants:** faction_harappan_lothal_union
+
+## Highland Winter Passage Agreement
+_Draft history for editorial review._
+**Epoch:** The Age of Machinery
+**Summary:** Highland assemblies and merchants negotiate protected winter passage while keeping access to springs and grazing under local jurisdiction. The agreement becomes a practical basis for cooperation among districts.
+**Participants:** character_shenrab
 
 ## Tide-Lock Three Opens
 **Epoch:** The Age of Machinery
 **Summary:** The Harappan Guild of Engineers' new iron sluice gates raise four grain barges at dawn, cutting six hours from the passage out of the Saraswati marshes. The same issue of the Lothal Gazette carries the Tuli pearl-divers' protest against steam dredgers tearing up the black-oyster reefs, and news of the synapsid debate at Narmada University.
 **Participants:** faction_harappan_lothal_union
 
+## Nilgiri Shared Pasture Agreement
+_Draft history for editorial review._
+**Epoch:** The Age of Machinery
+**Summary:** Freight and clearance plans threaten a seasonal buffalo crossing. Pastoral representatives negotiate protected crossings and shared watering access as conditions of their councils’ participation in the emerging southern polity.
+**Participants:** character_tokisy
+
 ## The Undersea Lava River and the Red Fog
 **Epoch:** The Age of Machinery
 **Summary:** Deep-earth magnetic anomalies over the Vengi marshes, a rust-red fog that hid the sun and stilled the sea breeze, and the smell of ozone and sulphur, attributed to a lava river under the sea. Whether it helped bring on the Great Shattering is not settled; canon records what was reported, not why the world broke.
 **Participants:** faction_vanga_maritime_federation
+
+## Upland Watershed Quarry Pact
+_Draft history for editorial review._
+**Epoch:** The Age of Machinery
+**Summary:** The highland crown and organized cultivators negotiate limits on industrial extraction above a spring. Residents seek enforceable control over runoff and review of future concessions.
+**Participants:** character_niyam_raja, character_dharani_penu
+
+## Debate over a Shared Seasonal Reckoning
+_Draft history for editorial review._
+**Epoch:** The Age of Machinery
+**Summary:** A debate over common civic and planting dates brings nationalist arguments and astronomical observations into the same public forum. The proposed standard accommodates local flood and tide records.
+**Participants:** character_donyi, character_polo
 
 ## The Golden Season on the Wetlands
 **Epoch:** Post-Cataclysmic Era (The Great Shattering)
@@ -445,12 +451,7 @@ _Draft history for editorial review._
 ## Formation of the Furnace Confederacy
 _Draft history for editorial review._
 **Epoch:** unknown
-**Summary:** The proposed confederacy coordinated ore weights and security for routes between furnaces. The relationship between the confederacy and earlier local furnace testimony remains open.
-
-## Grove and Hill Obligations Enter a Legal Roll
-_Draft history for editorial review._
-**Epoch:** unknown
-**Summary:** A later compiler assembled separate woodland and hill testimonies when timber, quarry and passage claims converged. The witnesses’ names survived together in the roll.
+**Summary:** The proposed confederacy coordinated ore weights and security for routes between furnaces. The formation belongs to the early industrial transformation of the plateau.
 
 ## Jharwa Passage into the Yaksha South
 _Draft history for editorial review._
@@ -471,7 +472,7 @@ _Draft history for editorial review._
 ## Nine-Pass Peace
 _Draft history for editorial review._
 **Epoch:** unknown
-**Summary:** The proposed highland peace distinguished rights to cross a pass, to graze and to govern. Its relationship to the winter-route testimony remains uncertain.
+**Summary:** The proposed highland peace distinguished rights to cross a pass, to graze and to govern. Its relationship to the winter passage agreement remains uncertain.
 
 ## Plateau Charter Crisis
 _Draft history for editorial review._
@@ -486,7 +487,7 @@ _Draft history for editorial review._
 ## Pragjyotisha Adopts the Twin Reckoning
 _Draft history for editorial review._
 **Epoch:** unknown
-**Summary:** The proposed valley standard combined rival seasonal reckonings while preserving local timekeeping. The attribution to two early observers or their offices is uncertain.
+**Summary:** The proposed valley standard combined rival seasonal reckonings while preserving local timekeeping. Its constitutional adoption followed debate over the statewide role of the calendar.
 
 ## Expansion of Sky-Island Survey and Mineral Transport
 _Draft history for editorial review._
@@ -496,7 +497,7 @@ _Draft history for editorial review._
 ## Vanga Seed Fleet
 _Draft history for editorial review._
 **Epoch:** unknown
-**Summary:** Coastal testimony proposes a fleet carrying planting seed during scarcity. The connection between these voyages and earlier hillside seed exchange remains uncertain.
+**Summary:** Coastal testimony proposes a fleet carrying planting seed during scarcity. The precise connection between these voyages and eastern seed reserve negotiations remains open.
 
 ## Vijayan High Pasture Treaty
 _Draft history for editorial review._

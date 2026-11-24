@@ -4,14 +4,15 @@
   "name": "Sanamahi",
   "culture": null,
   "species": "human",
-  "status": "unknown",
-  "epoch": "epoch_civilization_dawn",
+  "status": "alive",
+  "epoch": "epoch_current",
   "roles": [
-    "keeper of fire and stores"
+    "Constitutional reformer"
   ],
-  "notes": "In the University’s fictional reconstruction, a later delta household book remembers this custodian counting grain across homes during the embankment emergency.",
+  "notes": "Early Age of Machinery, around or shortly after Year 2,200. Sanamahi works to give delta households and water councils a voice in Lothal’s changing government. The proposed reforms turn obligations over flood relief, inventories and communal repairs into matters of public law.",
   "canon": "draft",
   "sources": [
-    "docs/books/narmada-university/nine-traditions/02-sanamahi-house-and-serpent.md"
+    "docs/books/narmada-university/nine-traditions/02-sanamahi-house-and-serpent.md",
+    "Author’s revised Early Age of Machinery placement and political roles, 2026-11-24."
   ]
 }

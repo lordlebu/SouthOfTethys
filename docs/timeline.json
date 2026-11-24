@@ -722,43 +722,6 @@
     ]
   },
   {
-    "id": "event_delta_custodians_embankment_repair",
-    "type": "event",
-    "title": "The Three Custodians\u2019 Embankment Repair",
-    "epoch": "epoch_civilization_dawn",
-    "location": "region_saraswati_delta",
-    "participants": [
-      "character_sanamahi",
-      "character_pakhangba",
-      "character_leimarel_sidabi"
-    ],
-    "predecessors": [],
-    "successors": [],
-    "summary": "A failed embankment threatened mixed delta households. Three custodians counted available grain, heard displaced families and enlisted Kia water-guides in a shared repair.",
-    "canon": "draft",
-    "sources": [
-      "docs/books/narmada-university/nine-traditions/02-sanamahi-house-and-serpent.md"
-    ]
-  },
-  {
-    "id": "event_eastern_hill_seed_exchange",
-    "type": "event",
-    "title": "Eastern Hillside Seed Exchange",
-    "epoch": "epoch_civilization_dawn",
-    "location": null,
-    "participants": [
-      "character_tatara_rabuga",
-      "character_saljong"
-    ],
-    "predecessors": [],
-    "successors": [],
-    "summary": "A poor harvest prompted debate over flood-safe plots and the distribution of seed recorded as due after the next planting. A later Tuli merchant carried an abridged account to coastal traders.",
-    "canon": "draft",
-    "sources": [
-      "docs/books/narmada-university/nine-traditions/07-songsarek-harvest.md"
-    ]
-  },
-  {
     "id": "event_final_voyage_of_the_kelpfang",
     "type": "event",
     "title": "The Final Voyage of the Kelpfang",
@@ -788,25 +751,6 @@
     "canon": "primary",
     "sources": [
       "Resonant Hearts: Intimate Chronicles Aboard the Kelpfang"
-    ]
-  },
-  {
-    "id": "event_furnace_houses_forge_compact",
-    "type": "event",
-    "title": "Compact of the Furnace Houses",
-    "epoch": "epoch_civilization_dawn",
-    "location": null,
-    "participants": [
-      "character_bada_deo",
-      "character_kupar_lingo",
-      "character_jangubai"
-    ],
-    "predecessors": [],
-    "successors": [],
-    "summary": "Rival furnace houses faced shortages of shared equipment and fuel. Testimonies remember shared furnace days, common measures and shelter for apprentices exposed to debt labour.",
-    "canon": "draft",
-    "sources": [
-      "docs/books/narmada-university/nine-traditions/05-gondi-forge-compact.md"
     ]
   },
   {
@@ -871,61 +815,6 @@
     "sources": [
       "Oral Traditions of the Blind Bards",
       "Narmada Historical Surveys"
-    ]
-  },
-  {
-    "id": "event_hill_assembly_marks_spring_access",
-    "type": "event",
-    "title": "Common Spring Access Marked in Stone",
-    "epoch": "epoch_civilization_dawn",
-    "location": null,
-    "participants": [
-      "character_u_blei_nongthaw"
-    ],
-    "predecessors": [],
-    "successors": [
-      "event_ridge_path_landslip_hearing"
-    ],
-    "summary": "Ridge testimony recalls that a marker line protected shared access to a spring. Some accounts credit successive assemblies for the work.",
-    "canon": "draft",
-    "sources": [
-      "docs/books/narmada-university/nine-traditions/06-niam-khasi-stones.md"
-    ]
-  },
-  {
-    "id": "event_ridge_path_landslip_hearing",
-    "type": "event",
-    "title": "Hearing at the Landslip",
-    "epoch": "epoch_civilization_dawn",
-    "location": null,
-    "participants": [
-      "character_u_ryngkew"
-    ],
-    "predecessors": [
-      "event_hill_assembly_marks_spring_access"
-    ],
-    "successors": [],
-    "summary": "After a landslip, the guardian called witnesses and withheld permission to move the oldest marker until affected households had been heard.",
-    "canon": "draft",
-    "sources": [
-      "docs/books/narmada-university/nine-traditions/06-niam-khasi-stones.md"
-    ]
-  },
-  {
-    "id": "event_shenrab_winter_passage_agreement",
-    "type": "event",
-    "title": "Winter Passage Agreement",
-    "epoch": "epoch_civilization_dawn",
-    "location": null,
-    "participants": [
-      "character_shenrab"
-    ],
-    "predecessors": [],
-    "successors": [],
-    "summary": "The highland guide negotiated safe passage for camp households and animals before sharing knowledge of sheltered springs. Accounts disagree over whose interests the agreement primarily served.",
-    "canon": "draft",
-    "sources": [
-      "docs/books/narmada-university/nine-traditions/01-bon-mountain-witness.md"
     ]
   },
   {
@@ -1228,59 +1117,6 @@
     ]
   },
   {
-    "id": "event_tokisy_shared_pasture_agreement",
-    "type": "event",
-    "title": "Nilgiri Shared Pasture Agreement",
-    "epoch": "epoch_civilization_dawn",
-    "location": "place_nilgiri",
-    "participants": [
-      "character_tokisy"
-    ],
-    "predecessors": [],
-    "successors": [],
-    "summary": "After forest clearance blocked a seasonal crossing, a herdswoman negotiated rotating grazing times and a shared watering point.",
-    "canon": "draft",
-    "sources": [
-      "docs/books/narmada-university/nine-traditions/08-toda-high-pastures.md"
-    ]
-  },
-  {
-    "id": "event_upland_watershed_quarry_pact",
-    "type": "event",
-    "title": "Upland Watershed Quarry Pact",
-    "epoch": "epoch_civilization_dawn",
-    "location": null,
-    "participants": [
-      "character_niyam_raja",
-      "character_dharani_penu"
-    ],
-    "predecessors": [],
-    "successors": [],
-    "summary": "Hill residents and lowland traders witnessed limited quarry rights above a spring and obligations to keep debris and runoff from the fields below.",
-    "canon": "draft",
-    "sources": [
-      "docs/books/narmada-university/nine-traditions/09-kondh-earth-witness.md"
-    ]
-  },
-  {
-    "id": "event_village_keeps_two_seasonal_reckonings",
-    "type": "event",
-    "title": "A Village Preserves Two Seasonal Reckonings",
-    "epoch": "epoch_civilization_dawn",
-    "location": null,
-    "participants": [
-      "character_donyi",
-      "character_polo"
-    ],
-    "predecessors": [],
-    "successors": [],
-    "summary": "During irregular rains, a village assembly preserved both the shadow and tide methods of reckoning, avoiding a single planting date based on disputed observations.",
-    "canon": "draft",
-    "sources": [
-      "docs/books/narmada-university/nine-traditions/03-donyi-polo-sky-record.md"
-    ]
-  },
-  {
     "id": "event_yadu_foundation_north_dwarka",
     "type": "event",
     "title": "Yadu Foundation of North Dwarka",
@@ -1394,6 +1230,27 @@
     ]
   },
   {
+    "id": "event_delta_custodians_embankment_repair",
+    "type": "event",
+    "title": "Delta Embankment Repair and Relief Settlement",
+    "epoch": "epoch_current",
+    "location": "region_saraswati_delta",
+    "participants": [
+      "character_sanamahi",
+      "character_pakhangba",
+      "character_leimarel_sidabi"
+    ],
+    "predecessors": [],
+    "successors": [],
+    "summary": "An embankment failure forces the delta crown, household representatives and Kia water councils to coordinate repair and relief. Their agreement makes the claims of displaced households part of the public settlement.",
+    "canon": "draft",
+    "sources": [
+      "docs/books/narmada-university/nine-traditions/02-sanamahi-house-and-serpent.md",
+      "Author\u2019s revised Early Age of Machinery placement and political roles, 2026-11-24."
+    ],
+    "date_approx": "Early Age of Machinery, around or shortly after Year 2,200"
+  },
+  {
     "id": "event_delta_outrigger_skirmishes",
     "type": "event",
     "title": "The Delta Outrigger Skirmishes",
@@ -1428,6 +1285,26 @@
     ]
   },
   {
+    "id": "event_eastern_hill_seed_exchange",
+    "type": "event",
+    "title": "Eastern Seed Reserve Negotiations",
+    "epoch": "epoch_current",
+    "location": null,
+    "participants": [
+      "character_tatara_rabuga",
+      "character_saljong"
+    ],
+    "predecessors": [],
+    "successors": [],
+    "summary": "During a shortage, the consolidating eastern crown and organized cultivators negotiate access to flood-safe land and planting grain. The reserve gives inland producers a stake in dealings with harbour authorities.",
+    "canon": "draft",
+    "sources": [
+      "docs/books/narmada-university/nine-traditions/07-songsarek-harvest.md",
+      "Author\u2019s revised Early Age of Machinery placement and political roles, 2026-11-24."
+    ],
+    "date_approx": "Early Age of Machinery, around or shortly after Year 2,200"
+  },
+  {
     "id": "event_frontier_marrow_wars",
     "type": "event",
     "title": "The Frontier Marrow Wars",
@@ -1443,6 +1320,27 @@
       "SouthOfTethys.txt"
     ],
     "location": "place_mappa_mundi"
+  },
+  {
+    "id": "event_furnace_houses_forge_compact",
+    "type": "event",
+    "title": "Compact of the Furnace Houses",
+    "epoch": "epoch_current",
+    "location": null,
+    "participants": [
+      "character_bada_deo",
+      "character_kupar_lingo",
+      "character_jangubai"
+    ],
+    "predecessors": [],
+    "successors": [],
+    "summary": "Plateau furnace districts negotiate shared access to industrial facilities and common measures. The debate brings confederation building, cultural recognition and workers\u2019 protections into the compact.",
+    "canon": "draft",
+    "sources": [
+      "docs/books/narmada-university/nine-traditions/05-gondi-forge-compact.md",
+      "Author\u2019s revised Early Age of Machinery placement and political roles, 2026-11-24."
+    ],
+    "date_approx": "Early Age of Machinery, around or shortly after Year 2,200"
   },
   {
     "id": "event_great_coal_and_dolmen_war",
@@ -1503,6 +1401,48 @@
     "successors": [
       "event_golden_season_on_the_wetlands"
     ]
+  },
+  {
+    "id": "event_grove_obligations_enter_legal_roll",
+    "type": "event",
+    "title": "Grove and Hill Obligations Enter a Legal Roll",
+    "epoch": "epoch_current",
+    "location": null,
+    "participants": [
+      "character_singbonga",
+      "character_marang_buru",
+      "character_jaher_era"
+    ],
+    "predecessors": [],
+    "successors": [],
+    "summary": "As timber, quarry and passage claims converge, a legal roll assembles separate woodland and hill positions on governing shared land. It records the claims of contemporary movements without requiring their leaders to have sat in a single council.",
+    "canon": "draft",
+    "sources": [
+      "docs/books/narmada-university/nine-traditions/04-sarna-grove-testimonies.md",
+      "Author\u2019s revised Early Age of Machinery placement and political roles, 2026-11-24."
+    ],
+    "date_approx": "Early Age of Machinery, around or shortly after Year 2,200"
+  },
+  {
+    "id": "event_hill_assembly_marks_spring_access",
+    "type": "event",
+    "title": "Hill Assembly Affirms Common Spring Access",
+    "epoch": "epoch_current",
+    "location": null,
+    "participants": [
+      "character_u_blei_nongthaw"
+    ],
+    "predecessors": [],
+    "successors": [
+      "event_ridge_path_landslip_hearing"
+    ],
+    "summary": "During negotiations with the valley crown, a hill assembly affirms shared access to a spring as a matter of local jurisdiction. The settlement gives constitutional force to the distinction between common access and ownership.",
+    "canon": "draft",
+    "sources": [
+      "docs/books/narmada-university/nine-traditions/06-niam-khasi-stones.md",
+      "Author\u2019s revised Early Age of Machinery placement and political roles, 2026-11-24."
+    ],
+    "date_approx": "Early Age of Machinery, around or shortly after Year 2,200"
   },
   {
     "id": "event_mappa_mundi_colonial_insurgencies",
@@ -1751,6 +1691,27 @@
     ]
   },
   {
+    "id": "event_ridge_path_landslip_hearing",
+    "type": "event",
+    "title": "Highland Hearing at the Landslip",
+    "epoch": "epoch_current",
+    "location": null,
+    "participants": [
+      "character_u_ryngkew"
+    ],
+    "predecessors": [
+      "event_hill_assembly_marks_spring_access"
+    ],
+    "successors": [],
+    "summary": "A landslip tests the autonomy of a highland assembly as state road plans advance. Highland forces secure the route while affected households are heard before old access markers can be moved.",
+    "canon": "draft",
+    "sources": [
+      "docs/books/narmada-university/nine-traditions/06-niam-khasi-stones.md",
+      "Author\u2019s revised Early Age of Machinery placement and political roles, 2026-11-24."
+    ],
+    "date_approx": "Early Age of Machinery, around or shortly after Year 2,200"
+  },
+  {
     "id": "event_saraswati_canal_drain",
     "type": "event",
     "title": "The Saraswati Canal Drains",
@@ -1766,6 +1727,25 @@
       "docs/lore/world_pre_shattering_2026-09-30.json",
       "SouthOfTethys.txt"
     ]
+  },
+  {
+    "id": "event_shenrab_winter_passage_agreement",
+    "type": "event",
+    "title": "Highland Winter Passage Agreement",
+    "epoch": "epoch_current",
+    "location": null,
+    "participants": [
+      "character_shenrab"
+    ],
+    "predecessors": [],
+    "successors": [],
+    "summary": "Highland assemblies and merchants negotiate protected winter passage while keeping access to springs and grazing under local jurisdiction. The agreement becomes a practical basis for cooperation among districts.",
+    "canon": "draft",
+    "sources": [
+      "docs/books/narmada-university/nine-traditions/01-bon-mountain-witness.md",
+      "Author\u2019s revised Early Age of Machinery placement and political roles, 2026-11-24."
+    ],
+    "date_approx": "Early Age of Machinery, around or shortly after Year 2,200"
   },
   {
     "id": "event_tide_lock_three_opened",
@@ -1784,6 +1764,25 @@
     "location": "place_tide_lock_three"
   },
   {
+    "id": "event_tokisy_shared_pasture_agreement",
+    "type": "event",
+    "title": "Nilgiri Shared Pasture Agreement",
+    "epoch": "epoch_current",
+    "location": "place_nilgiri",
+    "participants": [
+      "character_tokisy"
+    ],
+    "predecessors": [],
+    "successors": [],
+    "summary": "Freight and clearance plans threaten a seasonal buffalo crossing. Pastoral representatives negotiate protected crossings and shared watering access as conditions of their councils\u2019 participation in the emerging southern polity.",
+    "canon": "draft",
+    "sources": [
+      "docs/books/narmada-university/nine-traditions/08-toda-high-pastures.md",
+      "Author\u2019s revised Early Age of Machinery placement and political roles, 2026-11-24."
+    ],
+    "date_approx": "Early Age of Machinery, around or shortly after Year 2,200"
+  },
+  {
     "id": "event_undersea_lava_river",
     "type": "event",
     "title": "The Undersea Lava River and the Red Fog",
@@ -1799,6 +1798,46 @@
       "docs/lore/world_pre_shattering_2026-09-30.json",
       "SouthOfTethys.txt"
     ]
+  },
+  {
+    "id": "event_upland_watershed_quarry_pact",
+    "type": "event",
+    "title": "Upland Watershed Quarry Pact",
+    "epoch": "epoch_current",
+    "location": null,
+    "participants": [
+      "character_niyam_raja",
+      "character_dharani_penu"
+    ],
+    "predecessors": [],
+    "successors": [],
+    "summary": "The highland crown and organized cultivators negotiate limits on industrial extraction above a spring. Residents seek enforceable control over runoff and review of future concessions.",
+    "canon": "draft",
+    "sources": [
+      "docs/books/narmada-university/nine-traditions/09-kondh-earth-witness.md",
+      "Author\u2019s revised Early Age of Machinery placement and political roles, 2026-11-24."
+    ],
+    "date_approx": "Early Age of Machinery, around or shortly after Year 2,200"
+  },
+  {
+    "id": "event_village_keeps_two_seasonal_reckonings",
+    "type": "event",
+    "title": "Debate over a Shared Seasonal Reckoning",
+    "epoch": "epoch_current",
+    "location": null,
+    "participants": [
+      "character_donyi",
+      "character_polo"
+    ],
+    "predecessors": [],
+    "successors": [],
+    "summary": "A debate over common civic and planting dates brings nationalist arguments and astronomical observations into the same public forum. The proposed standard accommodates local flood and tide records.",
+    "canon": "draft",
+    "sources": [
+      "docs/books/narmada-university/nine-traditions/03-donyi-polo-sky-record.md",
+      "Author\u2019s revised Early Age of Machinery placement and political roles, 2026-11-24."
+    ],
+    "date_approx": "Early Age of Machinery, around or shortly after Year 2,200"
   },
   {
     "id": "event_golden_season_on_the_wetlands",
@@ -1995,25 +2034,11 @@
     "participants": [],
     "predecessors": [],
     "successors": [],
-    "summary": "The proposed confederacy coordinated ore weights and security for routes between furnaces. The relationship between the confederacy and earlier local furnace testimony remains open.",
+    "summary": "The proposed confederacy coordinated ore weights and security for routes between furnaces. The formation belongs to the early industrial transformation of the plateau.",
     "canon": "draft",
     "sources": [
-      "docs/books/narmada-university/nine-traditions/states/02-narmada.md"
-    ]
-  },
-  {
-    "id": "event_grove_obligations_enter_legal_roll",
-    "type": "event",
-    "title": "Grove and Hill Obligations Enter a Legal Roll",
-    "epoch": null,
-    "location": null,
-    "participants": [],
-    "predecessors": [],
-    "successors": [],
-    "summary": "A later compiler assembled separate woodland and hill testimonies when timber, quarry and passage claims converged. The witnesses\u2019 names survived together in the roll.",
-    "canon": "draft",
-    "sources": [
-      "docs/books/narmada-university/nine-traditions/04-sarna-grove-testimonies.md"
+      "docs/books/narmada-university/nine-traditions/states/02-narmada.md",
+      "Author\u2019s revised Early Age of Machinery placement and political roles, 2026-11-24."
     ]
   },
   {
@@ -2076,10 +2101,11 @@
     "participants": [],
     "predecessors": [],
     "successors": [],
-    "summary": "The proposed highland peace distinguished rights to cross a pass, to graze and to govern. Its relationship to the winter-route testimony remains uncertain.",
+    "summary": "The proposed highland peace distinguished rights to cross a pass, to graze and to govern. Its relationship to the winter passage agreement remains uncertain.",
     "canon": "draft",
     "sources": [
-      "docs/books/narmada-university/nine-traditions/states/05-rail-khanates.md"
+      "docs/books/narmada-university/nine-traditions/states/05-rail-khanates.md",
+      "Author\u2019s revised Early Age of Machinery placement and political roles, 2026-11-24."
     ]
   },
   {
@@ -2121,10 +2147,11 @@
     "participants": [],
     "predecessors": [],
     "successors": [],
-    "summary": "The proposed valley standard combined rival seasonal reckonings while preserving local timekeeping. The attribution to two early observers or their offices is uncertain.",
+    "summary": "The proposed valley standard combined rival seasonal reckonings while preserving local timekeeping. Its constitutional adoption followed debate over the statewide role of the calendar.",
     "canon": "draft",
     "sources": [
-      "docs/books/narmada-university/nine-traditions/states/07-pragjyotisha.md"
+      "docs/books/narmada-university/nine-traditions/states/07-pragjyotisha.md",
+      "Author\u2019s revised Early Age of Machinery placement and political roles, 2026-11-24."
     ]
   },
   {
@@ -2151,10 +2178,11 @@
     "participants": [],
     "predecessors": [],
     "successors": [],
-    "summary": "Coastal testimony proposes a fleet carrying planting seed during scarcity. The connection between these voyages and earlier hillside seed exchange remains uncertain.",
+    "summary": "Coastal testimony proposes a fleet carrying planting seed during scarcity. The precise connection between these voyages and eastern seed reserve negotiations remains open.",
     "canon": "draft",
     "sources": [
-      "docs/books/narmada-university/nine-traditions/states/03-vanga.md"
+      "docs/books/narmada-university/nine-traditions/states/03-vanga.md",
+      "Author\u2019s revised Early Age of Machinery placement and political roles, 2026-11-24."
     ]
   },
   {

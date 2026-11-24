@@ -4,14 +4,15 @@
   "name": "Donyi",
   "culture": null,
   "species": "human",
-  "status": "unknown",
-  "epoch": "epoch_civilization_dawn",
+  "status": "alive",
+  "epoch": "epoch_current",
   "roles": [
-    "seasonal observer"
+    "Nationalist intellectual"
   ],
-  "notes": "In the University’s fictional reconstruction, a proposed mortal observer who used shadows to record the sowing season. The name could have been a title.",
+  "notes": "Early Age of Machinery, around or shortly after Year 2,200. Donyi argues for a shared political identity among Pragjyotisha’s valley and hill communities. A public calendar gives the new polity common civic dates while leaving room for local seasonal reckoning.",
   "canon": "draft",
   "sources": [
-    "docs/books/narmada-university/nine-traditions/03-donyi-polo-sky-record.md"
+    "docs/books/narmada-university/nine-traditions/03-donyi-polo-sky-record.md",
+    "Author’s revised Early Age of Machinery placement and political roles, 2026-11-24."
   ]
 }

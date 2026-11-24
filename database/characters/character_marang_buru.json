@@ -4,14 +4,15 @@
   "name": "Marang Buru",
   "culture": null,
   "species": "human",
-  "status": "unknown",
-  "epoch": "epoch_civilization_dawn",
+  "status": "alive",
+  "epoch": "epoch_current",
   "roles": [
-    "hill negotiator"
+    "Highland resistance leader"
   ],
-  "notes": "In the University’s fictional reconstruction, a hill account remembers a negotiator over access to stone and timber. Their name entered a later compilation of related obligations.",
+  "notes": "Early Age of Machinery, around or shortly after Year 2,200. Marang Buru organizes highland resistance to outside timber and quarry concessions. The movement contests the authority of surveyors and charter holders to decide the use of upland resources.",
   "canon": "draft",
   "sources": [
-    "docs/books/narmada-university/nine-traditions/04-sarna-grove-testimonies.md"
+    "docs/books/narmada-university/nine-traditions/04-sarna-grove-testimonies.md",
+    "Author’s revised Early Age of Machinery placement and political roles, 2026-11-24."
   ]
 }

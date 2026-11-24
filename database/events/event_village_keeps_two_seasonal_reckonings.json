@@ -1,8 +1,8 @@
 {
   "id": "event_village_keeps_two_seasonal_reckonings",
   "type": "event",
-  "title": "A Village Preserves Two Seasonal Reckonings",
-  "epoch": "epoch_civilization_dawn",
+  "title": "Debate over a Shared Seasonal Reckoning",
+  "epoch": "epoch_current",
   "location": null,
   "participants": [
     "character_donyi",
@@ -10,9 +10,11 @@
   ],
   "predecessors": [],
   "successors": [],
-  "summary": "During irregular rains, a village assembly preserved both the shadow and tide methods of reckoning, avoiding a single planting date based on disputed observations.",
+  "summary": "A debate over common civic and planting dates brings nationalist arguments and astronomical observations into the same public forum. The proposed standard accommodates local flood and tide records.",
   "canon": "draft",
   "sources": [
-    "docs/books/narmada-university/nine-traditions/03-donyi-polo-sky-record.md"
-  ]
+    "docs/books/narmada-university/nine-traditions/03-donyi-polo-sky-record.md",
+    "Author’s revised Early Age of Machinery placement and political roles, 2026-11-24."
+  ],
+  "date_approx": "Early Age of Machinery, around or shortly after Year 2,200"
 }

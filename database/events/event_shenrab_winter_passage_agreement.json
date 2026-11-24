@@ -1,17 +1,19 @@
 {
   "id": "event_shenrab_winter_passage_agreement",
   "type": "event",
-  "title": "Winter Passage Agreement",
-  "epoch": "epoch_civilization_dawn",
+  "title": "Highland Winter Passage Agreement",
+  "epoch": "epoch_current",
   "location": null,
   "participants": [
     "character_shenrab"
   ],
   "predecessors": [],
   "successors": [],
-  "summary": "The highland guide negotiated safe passage for camp households and animals before sharing knowledge of sheltered springs. Accounts disagree over whose interests the agreement primarily served.",
+  "summary": "Highland assemblies and merchants negotiate protected winter passage while keeping access to springs and grazing under local jurisdiction. The agreement becomes a practical basis for cooperation among districts.",
   "canon": "draft",
   "sources": [
-    "docs/books/narmada-university/nine-traditions/01-bon-mountain-witness.md"
-  ]
+    "docs/books/narmada-university/nine-traditions/01-bon-mountain-witness.md",
+    "Author’s revised Early Age of Machinery placement and political roles, 2026-11-24."
+  ],
+  "date_approx": "Early Age of Machinery, around or shortly after Year 2,200"
 }

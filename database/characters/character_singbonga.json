@@ -4,14 +4,15 @@
   "name": "Singbonga",
   "culture": null,
   "species": "human",
-  "status": "unknown",
-  "epoch": "epoch_civilization_dawn",
+  "status": "alive",
+  "epoch": "epoch_current",
   "roles": [
-    "boundary witness"
+    "Ethnic unification leader"
   ],
-  "notes": "In the University’s fictional reconstruction, separate woodland testimony remembers a witness who required grazing routes to be walked before an oath. The later legal roll supplies no shared meeting with the other witnesses.",
+  "notes": "Early Age of Machinery, around or shortly after Year 2,200. Singbonga brings separate woodland constituencies together around shared political claims and public recognition. Agreements over grazing and access give the movement concrete obligations while member communities retain their own leadership.",
   "canon": "draft",
   "sources": [
-    "docs/books/narmada-university/nine-traditions/04-sarna-grove-testimonies.md"
+    "docs/books/narmada-university/nine-traditions/04-sarna-grove-testimonies.md",
+    "Author’s revised Early Age of Machinery placement and political roles, 2026-11-24."
   ]
 }

@@ -4,14 +4,15 @@
   "name": "Kupar Lingo",
   "culture": null,
   "species": "human",
-  "status": "unknown",
-  "epoch": "epoch_civilization_dawn",
+  "status": "alive",
+  "epoch": "epoch_current",
   "roles": [
-    "craft teacher"
+    "Ethnic nationalist and cultural reformer"
   ],
-  "notes": "In the University’s fictional reconstruction, forge testimony remembers a travelling teacher who devised a repeatable measure for ore and charcoal.",
+  "notes": "Early Age of Machinery, around or shortly after Year 2,200. Kupar Lingo builds a programme of collective recognition through public craft teaching and cultural reform. Apprenticeship and shared technical standards give communities a way to act together as industrial patronage expands.",
   "canon": "draft",
   "sources": [
-    "docs/books/narmada-university/nine-traditions/05-gondi-forge-compact.md"
+    "docs/books/narmada-university/nine-traditions/05-gondi-forge-compact.md",
+    "Author’s revised Early Age of Machinery placement and political roles, 2026-11-24."
   ]
 }

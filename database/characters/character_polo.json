@@ -4,14 +4,15 @@
   "name": "Polo",
   "culture": null,
   "species": "human",
-  "status": "unknown",
-  "epoch": "epoch_civilization_dawn",
+  "status": "alive",
+  "epoch": "epoch_current",
   "roles": [
-    "seasonal observer"
+    "Astronomer and scientific reformer"
   ],
-  "notes": "In the University’s fictional reconstruction, a proposed mortal observer who compared night tides with river crossing times. The relationship to Donyi remains uncertain.",
+  "notes": "Early Age of Machinery, around or shortly after Year 2,200. Polo compares inherited tide and seasonal observations with newer instruments. The reform programme makes common standards useful to navigation and agriculture while preserving observations specific to each place.",
   "canon": "draft",
   "sources": [
-    "docs/books/narmada-university/nine-traditions/03-donyi-polo-sky-record.md"
+    "docs/books/narmada-university/nine-traditions/03-donyi-polo-sky-record.md",
+    "Author’s revised Early Age of Machinery placement and political roles, 2026-11-24."
   ]
 }

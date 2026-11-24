@@ -1,8 +1,8 @@
 {
   "id": "event_ridge_path_landslip_hearing",
   "type": "event",
-  "title": "Hearing at the Landslip",
-  "epoch": "epoch_civilization_dawn",
+  "title": "Highland Hearing at the Landslip",
+  "epoch": "epoch_current",
   "location": null,
   "participants": [
     "character_u_ryngkew"
@@ -11,9 +11,11 @@
     "event_hill_assembly_marks_spring_access"
   ],
   "successors": [],
-  "summary": "After a landslip, the guardian called witnesses and withheld permission to move the oldest marker until affected households had been heard.",
+  "summary": "A landslip tests the autonomy of a highland assembly as state road plans advance. Highland forces secure the route while affected households are heard before old access markers can be moved.",
   "canon": "draft",
   "sources": [
-    "docs/books/narmada-university/nine-traditions/06-niam-khasi-stones.md"
-  ]
+    "docs/books/narmada-university/nine-traditions/06-niam-khasi-stones.md",
+    "Author’s revised Early Age of Machinery placement and political roles, 2026-11-24."
+  ],
+  "date_approx": "Early Age of Machinery, around or shortly after Year 2,200"
 }

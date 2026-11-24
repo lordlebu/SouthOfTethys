@@ -19,7 +19,7 @@ Each era below is canon as it stood then. An entity that names no epoch is prese
 | settlements |  | 1 |
 | characters | 9 | 7 |
 | factions |  | 6 |
-| events | 8 | 19 |
+| events | 8 | 18 |
 | artifacts |  | 6 |
 | mythology |  | 11 |
 | fauna |  | 267 |
@@ -64,7 +64,7 @@ graph TD
 | settlements |  | 1 |
 | characters | 8 | 7 |
 | factions |  | 6 |
-| events | 5 | 19 |
+| events | 5 | 18 |
 | artifacts |  | 6 |
 | mythology |  | 11 |
 | fauna |  | 267 |
@@ -103,7 +103,7 @@ graph TD
 | points of interest | 1 |  |
 | characters | 27 | 7 |
 | factions |  | 6 |
-| events | 13 | 19 |
+| events | 13 | 18 |
 | artifacts |  | 6 |
 | mythology |  | 11 |
 | fauna |  | 267 |
@@ -151,9 +151,9 @@ graph TD
 | places | 29 | 26 |
 | settlements | 1 | 1 |
 | points of interest | 1 |  |
-| characters | 47 | 7 |
+| characters | 28 | 7 |
 | factions |  | 6 |
-| events | 23 | 19 |
+| events | 14 | 18 |
 | artifacts |  | 6 |
 | mythology |  | 11 |
 | fauna |  | 267 |
@@ -165,42 +165,32 @@ graph TD
 ```mermaid
 graph TD
     E0["Bharata Settlement at Hastinapura (draft)"]
-    E1["The Three Custodians’ Embankment Repair (draft)"]
-    E2["Eastern Hillside Seed Exchange (draft)"]
-    E3["The Final Voyage of the Kelpfang"]
-    E4["Compact of the Furnace Houses (draft)"]
-    E5["The Storm-Bone Khan's Warning at Lothal"]
-    E6["The Wandering of the Narmada Seed-Mind"]
-    E7["Common Spring Access Marked in Stone (draft)"]
-    E8["Hearing at the Landslip (draft)"]
-    E9["Winter Passage Agreement (draft)"]
-    E10["Silvershore War"]
-    E11["Founding of Lothal"]
-    E12["Black Lotus Siege"]
-    E13["The Stone Pact"]
-    E14["Tendua Crisis and Assassination of Kavik"]
-    E15["Retrieval of the Mask of Harappa"]
-    E16["Exile of Shaashak and Khadi"]
-    E17["The Awakening of the Mask of Vaṛkesh"]
-    E18["Birth of Sarita Silversong"]
-    E19["Nilgiri Shared Pasture Agreement (draft)"]
-    E20["Upland Watershed Quarry Pact (draft)"]
-    E21["A Village Preserves Two Seasonal Reckonings (draft)"]
-    E22["Yadu Foundation of North Dwarka (draft)"]
-    E5 --> E14
+    E1["The Final Voyage of the Kelpfang"]
+    E2["The Storm-Bone Khan's Warning at Lothal"]
+    E3["The Wandering of the Narmada Seed-Mind"]
+    E4["Silvershore War"]
+    E5["Founding of Lothal"]
+    E6["Black Lotus Siege"]
+    E7["The Stone Pact"]
+    E8["Tendua Crisis and Assassination of Kavik"]
+    E9["Retrieval of the Mask of Harappa"]
+    E10["Exile of Shaashak and Khadi"]
+    E11["The Awakening of the Mask of Vaṛkesh"]
+    E12["Birth of Sarita Silversong"]
+    E13["Yadu Foundation of North Dwarka (draft)"]
+    E2 --> E8
+    E2 --> E3
+    E4 --> E6
+    E4 --> E5
+    E5 --> E7
     E5 --> E6
+    E6 --> E7
     E7 --> E8
-    E10 --> E12
+    E8 --> E9
+    E8 --> E10
+    E9 --> E10
     E10 --> E11
-    E11 --> E13
-    E11 --> E12
-    E12 --> E13
-    E13 --> E14
-    E14 --> E15
-    E14 --> E16
-    E15 --> E16
-    E16 --> E17
-    E16 --> E18
+    E10 --> E12
 ```
 
 ### Map
@@ -225,9 +215,9 @@ The id stays `epoch_current` deliberately. Fifty-five entities reference it and 
 | places | 82 | 26 |
 | settlements | 1 | 1 |
 | points of interest | 1 |  |
-| characters | 11 | 7 |
+| characters | 30 | 7 |
 | factions | 9 | 6 |
-| events | 27 | 19 |
+| events | 37 | 18 |
 | artifacts |  | 6 |
 | mythology |  | 11 |
 | fauna |  | 267 |
@@ -243,31 +233,42 @@ graph TD
     E2["Lothal’s Factory Drainage Dispute (draft)"]
     E3["The Cartographic & Mercantile Accord"]
     E4["Chandraketugarh Garudasaur Blood Feud"]
-    E5["The Delta Outrigger Skirmishes"]
-    E6["Drilling Halted at the Dwarka Gate"]
-    E7["The Frontier Marrow Wars"]
-    E8["The Great Coal & Dolmen War"]
-    E9["The Great Marrow & Coal War"]
-    E10["The Day the Ground Broke at the Great Junction"]
-    E11["The Mappa Mundi Colonial Insurgencies"]
-    E12["The Mappa Mundi Telegraph Sabotage"]
-    E13["The Moriah Spore-Blight"]
-    E14["Narmada Archives Rival Grove Concession Copies (draft)"]
-    E15["Narmada Compares Shadow Tables with Telegraph Time (draft)"]
-    E16["The Narmada Upriver Expedition"]
-    E17["The Gondwana Spacetime Teleportation"]
-    E18["The Battered Ekranoplan's Ice Wall Voyage"]
-    E19["Nilgiri Freight Route Hearing (draft)"]
-    E20["The Paratethyan Lock Blockades"]
-    E21["Polar Voyagers Arrive at Tamralinga"]
-    E22["Dispute over Patent Claims on Charcoal Measures (draft)"]
-    E23["Rail Succession Wars (draft)"]
-    E24["The Saraswati Canal Drains"]
-    E25["Tide-Lock Three Opens"]
-    E26["The Undersea Lava River and the Red Fog"]
-    E8 --> E9
-    E16 --> E17
-    E17 --> E18
+    E5["Delta Embankment Repair and Relief Settlement (draft)"]
+    E6["The Delta Outrigger Skirmishes"]
+    E7["Drilling Halted at the Dwarka Gate"]
+    E8["Eastern Seed Reserve Negotiations (draft)"]
+    E9["The Frontier Marrow Wars"]
+    E10["Compact of the Furnace Houses (draft)"]
+    E11["The Great Coal & Dolmen War"]
+    E12["The Great Marrow & Coal War"]
+    E13["The Day the Ground Broke at the Great Junction"]
+    E14["Grove and Hill Obligations Enter a Legal Roll (draft)"]
+    E15["Hill Assembly Affirms Common Spring Access (draft)"]
+    E16["The Mappa Mundi Colonial Insurgencies"]
+    E17["The Mappa Mundi Telegraph Sabotage"]
+    E18["The Moriah Spore-Blight"]
+    E19["Narmada Archives Rival Grove Concession Copies (draft)"]
+    E20["Narmada Compares Shadow Tables with Telegraph Time (draft)"]
+    E21["The Narmada Upriver Expedition"]
+    E22["The Gondwana Spacetime Teleportation"]
+    E23["The Battered Ekranoplan's Ice Wall Voyage"]
+    E24["Nilgiri Freight Route Hearing (draft)"]
+    E25["The Paratethyan Lock Blockades"]
+    E26["Polar Voyagers Arrive at Tamralinga"]
+    E27["Dispute over Patent Claims on Charcoal Measures (draft)"]
+    E28["Rail Succession Wars (draft)"]
+    E29["Highland Hearing at the Landslip (draft)"]
+    E30["The Saraswati Canal Drains"]
+    E31["Highland Winter Passage Agreement (draft)"]
+    E32["Tide-Lock Three Opens"]
+    E33["Nilgiri Shared Pasture Agreement (draft)"]
+    E34["The Undersea Lava River and the Red Fog"]
+    E35["Upland Watershed Quarry Pact (draft)"]
+    E36["Debate over a Shared Seasonal Reckoning (draft)"]
+    E11 --> E12
+    E15 --> E29
+    E21 --> E22
+    E22 --> E23
 ```
 
 ### Map
@@ -293,7 +294,7 @@ Drawn from the era's own chart: 66 place(s) and 38 people(s), before the Shatter
 | npcs | 41 |  |
 | happenings | 36 |  |
 | factions | 4 | 6 |
-| events | 5 | 19 |
+| events | 5 | 18 |
 | artifacts |  | 6 |
 | mythology |  | 11 |
 | discoveries | 55 |  |

@@ -2,7 +2,7 @@
   "id": "event_upland_watershed_quarry_pact",
   "type": "event",
   "title": "Upland Watershed Quarry Pact",
-  "epoch": "epoch_civilization_dawn",
+  "epoch": "epoch_current",
   "location": null,
   "participants": [
     "character_niyam_raja",
@@ -10,9 +10,11 @@
   ],
   "predecessors": [],
   "successors": [],
-  "summary": "Hill residents and lowland traders witnessed limited quarry rights above a spring and obligations to keep debris and runoff from the fields below.",
+  "summary": "The highland crown and organized cultivators negotiate limits on industrial extraction above a spring. Residents seek enforceable control over runoff and review of future concessions.",
   "canon": "draft",
   "sources": [
-    "docs/books/narmada-university/nine-traditions/09-kondh-earth-witness.md"
-  ]
+    "docs/books/narmada-university/nine-traditions/09-kondh-earth-witness.md",
+    "Author’s revised Early Age of Machinery placement and political roles, 2026-11-24."
+  ],
+  "date_approx": "Early Age of Machinery, around or shortly after Year 2,200"
 }
