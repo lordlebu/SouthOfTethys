@@ -1,0 +1,16 @@
+{
+  "id": "character_vusajc_karthakur",
+  "type": "character",
+  "name": "Vusajc Karthakur",
+  "culture": null,
+  "status": "unknown",
+  "epoch": null,
+  "roles": [
+    "named companion"
+  ],
+  "notes": "Known through the Daitya dossier as a friend of Kalyani. Species and political affiliation remain unknown.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/06-kalyani-daitya-accounts.md"
+  ]
+}

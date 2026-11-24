@@ -1,0 +1,15 @@
+{
+  "id": "event_vijayan_high_pasture_treaty",
+  "type": "event",
+  "title": "Vijayan High Pasture Treaty",
+  "epoch": null,
+  "location": "place_nilgiri",
+  "participants": [],
+  "predecessors": [],
+  "successors": [],
+  "summary": "The proposed treaty preserved seasonal buffalo routes and council jurisdiction in exchange for trade duties and defensive obligations. The identity of any early negotiator remains open.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/nine-traditions/states/08-vijaya.md"
+  ]
+}

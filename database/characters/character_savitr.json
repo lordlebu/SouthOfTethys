@@ -1,0 +1,16 @@
+{
+  "id": "character_savitr",
+  "type": "character",
+  "name": "Savitṛ",
+  "culture": null,
+  "status": "unknown",
+  "epoch": "epoch_migrations",
+  "roles": [
+    "organizer of departures"
+  ],
+  "notes": "The passage dossiers remember an organizer of departure and labour cycles. The original route and earliest witnesses remain unknown.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/ancestral-transmissions/passage-savitr.md"
+  ]
+}

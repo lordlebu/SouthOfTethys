@@ -1,0 +1,16 @@
+{
+  "id": "event_bharata_settlement_hastinapura",
+  "type": "event",
+  "title": "Bharata Settlement at Hastinapura",
+  "epoch": "epoch_civilization_dawn",
+  "location": "place_hastinapura",
+  "participants": [],
+  "predecessors": [],
+  "successors": [],
+  "summary": "The chronicle places the first Bharata Naga settlement at the opening of Civilization Dawn. It identifies neither a founder nor a direct connection to the ruler of the coalition war.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/harappan-convergence/18-bharata-naga-hastinapura.md",
+    "docs/books/narmada-university/harappan-convergence/22-lore-linked-tribal-concordance.md"
+  ]
+}

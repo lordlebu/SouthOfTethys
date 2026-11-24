@@ -1,0 +1,21 @@
+{
+  "id": "event_dispute_over_inherited_household_obligations",
+  "type": "event",
+  "title": "Dispute over Inherited Household Obligations",
+  "epoch": "epoch_migrations",
+  "location": null,
+  "participants": [
+    "character_ila",
+    "character_vivasvan",
+    "character_vac"
+  ],
+  "predecessors": [],
+  "successors": [],
+  "summary": "The household dossier recalls a dispute over who could enter inherited obligations, with a witness preserving the terms. Its later forms associate the dispute with rules of sanctuary and adoption.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/ancestral-transmissions/founders-ila.md",
+    "docs/books/narmada-university/ancestral-transmissions/founders-vivasvan.md",
+    "docs/books/narmada-university/ancestral-transmissions/founders-vac.md"
+  ]
+}

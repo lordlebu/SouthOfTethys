@@ -1,0 +1,17 @@
+{
+  "id": "event_visvamitra_lays_down_his_seat",
+  "type": "event",
+  "title": "Viśvāmitra Lays Down His Seat",
+  "epoch": "epoch_migrations",
+  "location": null,
+  "participants": [
+    "character_visvamitra"
+  ],
+  "predecessors": [],
+  "successors": [],
+  "summary": "Regional biography says a disputed levy and failed hearing led the ruler to relinquish his seat. The successor is unnamed. The former ruler’s authority came to depend on preserving testimony.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/harappan-convergence/04-visvamitra-from-raja-to-rsi.md"
+  ]
+}

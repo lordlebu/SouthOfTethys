@@ -48,9 +48,13 @@ def label(text: str) -> str:
 
 
 def titled(entity: dict) -> str:
-    """An entity's title, saying so when it is a fixture rather than canon."""
+    """An entity's title with its draft or fixture label, if any."""
     text = entity.get("title") or entity.get("name") or entity["id"]
-    return f"{text} (sample)" if entity.get("sample") else text
+    if entity.get("sample"):
+        return f"{text} (sample)"
+    if entity.get("canon") == "draft":
+        return f"{text} (draft)"
+    return text
 
 
 def period(text: str) -> str:

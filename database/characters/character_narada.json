@@ -1,0 +1,17 @@
+{
+  "id": "character_narada",
+  "type": "character",
+  "name": "Nārada",
+  "culture": null,
+  "species": "human",
+  "status": "unknown",
+  "epoch": null,
+  "roles": [
+    "travelling witness"
+  ],
+  "notes": "A proposed travelling reciter of the Kāṇva milieu, remembered in hymn attributions. Journeys, specific meetings and placement between late migrations and the early cities remain unconfirmed.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/harappan-convergence/07-narada-and-the-witnesses.md"
+  ]
+}

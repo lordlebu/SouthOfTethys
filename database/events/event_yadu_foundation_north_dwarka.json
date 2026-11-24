@@ -1,0 +1,16 @@
+{
+  "id": "event_yadu_foundation_north_dwarka",
+  "type": "event",
+  "title": "Yadu Foundation of North Dwarka",
+  "epoch": "epoch_civilization_dawn",
+  "location": "settlement_dwarka",
+  "participants": [],
+  "predecessors": [],
+  "successors": [],
+  "summary": "The chronicle credits the Yadus, a community formed through Vedda, Naga and Harappan connections, with founding the northern harbour. Its regional influence preceded Lothal’s rise. The founding generation and the end of Yadu rule remain open.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/harappan-convergence/17-yadu-and-the-mask-family.md",
+    "docs/books/narmada-university/harappan-convergence/22-lore-linked-tribal-concordance.md"
+  ]
+}

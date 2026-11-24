@@ -1,0 +1,18 @@
+{
+  "id": "character_pakhangba",
+  "type": "character",
+  "name": "Pakhangba",
+  "culture": null,
+  "species": "human",
+  "status": "alive",
+  "epoch": "epoch_current",
+  "roles": [
+    "Monarch and territorial unifier"
+  ],
+  "notes": "Early Age of Machinery, around or shortly after Year 2,200. Pakhangba seeks to unify the delta’s canal districts under a crown capable of coordinating waterworks and defence. Incorporation requires bargaining with Kia water councils whose authority rests on their own institutions.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/nine-traditions/02-sanamahi-house-and-serpent.md",
+    "Author’s revised Early Age of Machinery placement and political roles, 2026-11-24."
+  ]
+}

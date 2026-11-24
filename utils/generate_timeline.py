@@ -45,6 +45,8 @@ def write_summary(events, path: Path):
         # which is the only reason it is kept.
         if ev.get("sample"):
             lines.append("_Sample fixture — kept to exercise the tooling, not part of the story._")
+        elif ev.get("canon") == "draft":
+            lines.append("_Draft history for editorial review._")
         lines.append(f"**Epoch:** {epoch}")
         if ev.get("summary"):
             lines.append(f"**Summary:** {ev['summary']}")

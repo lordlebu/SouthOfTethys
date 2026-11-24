@@ -1,0 +1,20 @@
+{
+  "id": "event_last_attendance_of_manjalaya",
+  "type": "event",
+  "title": "The Last Attendance of Manjalaya",
+  "epoch": null,
+  "location": null,
+  "participants": [
+    "character_manjalaya",
+    "character_sarishne",
+    "character_gagdji"
+  ],
+  "predecessors": [],
+  "successors": [],
+  "summary": "A provisional account remembers a peaceful death witnessed by a wilderness guardian and her partner. Dating and placement of this account remain open.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/05-manjalaya-royal-traditions.md",
+    "docs/books/narmada-university/07-sarishne-witness-of-the-shadow-pact.md"
+  ]
+}

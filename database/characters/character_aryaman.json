@@ -1,0 +1,16 @@
+{
+  "id": "character_aryaman",
+  "type": "character",
+  "name": "Aryaman",
+  "culture": null,
+  "status": "unknown",
+  "epoch": "epoch_migrations",
+  "roles": [
+    "hospitality negotiator"
+  ],
+  "notes": "Passage traditions remember a convener who gathered witnesses and consent. One account pairs him with Wiznu in an appeal to Indr with no confirmed response.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/ancestral-transmissions/passage-aryaman.md"
+  ]
+}

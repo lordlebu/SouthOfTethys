@@ -1,0 +1,15 @@
+{
+  "id": "event_rail_succession_wars",
+  "type": "event",
+  "title": "Rail Succession Wars",
+  "epoch": "epoch_current",
+  "location": null,
+  "participants": [],
+  "predecessors": [],
+  "successors": [],
+  "summary": "The proposed wars followed competition over coal railways, traditional tolls and rival engineering concerns. A shared track and telegraph council emerged alongside separate dynastic courts.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/nine-traditions/states/05-rail-khanates.md"
+  ]
+}

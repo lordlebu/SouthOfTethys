@@ -75,10 +75,22 @@ _Sample fixture — kept to exercise the tooling, not part of the story._
 **Summary:** Sira uses a corrupting mask to manipulate Vedda brothers Ranu and Bela into massacring a Jharwa village. Meera survives and is forced into marriage. Vara-Ma and Orek later help her and hide dangerous masks with Thren in the Aravali sanctuary.
 **Participants:** character_sira, character_ranu, character_bela, character_meera, character_vara_ma, character_orek, character_thren
 
+## Battle of Ten Kings
+_Draft history for editorial review._
+**Epoch:** Era of Human Migrations
+**Summary:** The victorious court’s account describes a battle at a river and the defeat of a coalition that included a Bhṛgu contingent. The local battlefield, the full roster and whether divine appeals were answered remain unsettled.
+**Participants:** character_sudas
+
 ## The Botai Cattle Raid
 **Epoch:** Era of Human Migrations
 **Summary:** A Botai raid on the Tushara herds strips Guyuk Mongke of her royal standing and leaves her with nothing. Nirigili Mahashay takes her into his caravan.
 **Participants:** character_guyuk, character_nirigili
+
+## Dispute over Inherited Household Obligations
+_Draft history for editorial review._
+**Epoch:** Era of Human Migrations
+**Summary:** The household dossier recalls a dispute over who could enter inherited obligations, with a witness preserving the terms. Its later forms associate the dispute with rules of sanctuary and adoption.
+**Participants:** character_ila, character_vivasvan, character_vac
 
 ## The Jharwa First-Wave & The Shell Pact
 **Epoch:** Era of Human Migrations
@@ -99,6 +111,41 @@ _Sample fixture — kept to exercise the tooling, not part of the story._
 **Epoch:** Era of Human Migrations
 **Summary:** As the horse-taming Vedda clans clear the central forests for pasture, the ancient avian guardian Owlman retreats deep into the Western Ghats. A reclusive group of Jharwa-Vanara outliers construct the first hidden tree-temples to protect his fading presence.
 **Participants:** character_owlman
+
+## Sarishne Encounters Manjalaya at a Gate Disturbance
+_Draft history for editorial review._
+**Epoch:** Era of Human Migrations
+**Summary:** University testimony places the meeting at a later Dwarka Gate disturbance. The physical identity of the gate remains unsettled.
+**Participants:** character_sarishne, character_manjalaya
+
+## River Passage of the Bharata Force
+_Draft history for editorial review._
+**Epoch:** Era of Human Migrations
+**Summary:** In the river dialogue a Bharata force sought passage, and a speaker petitioned two rivers. The local crossing and its relationship to the coalition war remain unresolved.
+**Participants:** character_sudas, character_visvamitra
+
+## Victory Recitals at the Bharata Court
+_Draft history for editorial review._
+**Epoch:** Era of Human Migrations
+**Summary:** The court’s singer preserved the ruler’s claim to victory in praise songs. Later performances made the account available for new claims about obligations, without preserving an independent inventory of the defeated.
+**Participants:** character_vasistha, character_sudas
+
+## Viśvāmitra Lays Down His Seat
+_Draft history for editorial review._
+**Epoch:** Era of Human Migrations
+**Summary:** Regional biography says a disputed levy and failed hearing led the ruler to relinquish his seat. The successor is unnamed. The former ruler’s authority came to depend on preserving testimony.
+**Participants:** character_visvamitra
+
+## Wiznu and Aryaman Appeal to the Thunder-Bearer
+_Draft history for editorial review._
+**Epoch:** Era of Human Migrations
+**Summary:** The passage traditions describe an attempted invocation during an investigation of disturbances. They leave the response and the precise location unverified.
+**Participants:** character_wiznu, character_aryaman
+
+## Bharata Settlement at Hastinapura
+_Draft history for editorial review._
+**Epoch:** Civilization Dawn (Lothal Era)
+**Summary:** The chronicle places the first Bharata Naga settlement at the opening of Civilization Dawn. It identifies neither a founder nor a direct connection to the ruler of the coalition war.
 
 ## The Final Voyage of the Kelpfang
 **Epoch:** Civilization Dawn (Lothal Era)
@@ -160,15 +207,41 @@ _Sample fixture — kept to exercise the tooling, not part of the story._
 **Summary:** In exile, Shaashak gives birth to Sarita. The child’s first cry echoes her mother’s lullaby. Represents future reconciliation of the two bloodlines.
 **Participants:** character_shaashak, character_khadi, character_sarita
 
+## Yadu Foundation of North Dwarka
+_Draft history for editorial review._
+**Epoch:** Civilization Dawn (Lothal Era)
+**Summary:** The chronicle credits the Yadus, a community formed through Vedda, Naga and Harappan connections, with founding the northern harbour. Its regional influence preceded Lothal’s rise. The founding generation and the end of Yadu rule remain open.
+
+## Agasthya’s Southern Exchange with the Yakshas
+_Draft history for editorial review._
+**Epoch:** The Age of Machinery
+**Summary:** A Kia teacher travelled south and exchanged practices of water management, teaching, civic mediation and recordkeeping. Yaksha custodians chose which practices to adapt and retained their sovereignty.
+**Participants:** character_agasthya
+
 ## The Antarctic Ice Wall Expedition
 **Epoch:** The Age of Machinery
 **Summary:** Bound to mortal bodies, Captain Varuna and his companion Mitra lead a whale-bone trawler into the freezing southern waters of the Tethys. Trapped in a glacial maze, Varuna's drive to ram through the ice wall clashes with the Ammonite Man's drive to preserve it as a memory archive, resolved only when Mitra mediates a silent, drifting passage.
 **Participants:** character_varuna, character_mitra, character_ammonite_man
 
+## Lothal’s Factory Drainage Dispute
+_Draft history for editorial review._
+**Epoch:** The Age of Machinery
+**Summary:** Disputes over factory tenements and steam-pumped flood channels revived a rule that displaced households should be counted. Civic lawyers and Kia families disagree over its attribution.
+
 ## The Cartographic & Mercantile Accord
 **Epoch:** The Age of Machinery
 **Summary:** Ratified in Lothal: joint administration of the Trans-Himalayan railway corridor, and exclusive rights for Narmada scholars to catalogue finds along the Saraswati Basin. The Narmada Chronicle dates it 1884 in the reckoning of its day.
 **Participants:** faction_narmada_academic_republic, faction_hyrkanian_tushara_rail_khanates
+
+## Chandraketugarh Garudasaur Blood Feud
+**Epoch:** The Age of Machinery
+**Summary:** The Vedda apothecary guilds and cultists associated with the Devourer disputed control of the Garudasaur blood supply.
+
+## Delta Embankment Repair and Relief Settlement
+_Draft history for editorial review._
+**Epoch:** The Age of Machinery
+**Summary:** An embankment failure forces the delta crown, household representatives and Kia water councils to coordinate repair and relief. Their agreement makes the claims of displaced households part of the public settlement.
+**Participants:** character_sanamahi, character_pakhangba, character_leimarel_sidabi
 
 ## The Delta Outrigger Skirmishes
 **Epoch:** The Age of Machinery
@@ -180,10 +253,22 @@ _Sample fixture — kept to exercise the tooling, not part of the story._
 **Summary:** Mining at the submerged Dwarka Gate was suspended at midnight after localised spatial tremors, when steam drills struck a high-pressure geothermal Lingam bed and blue auroras rose from the basalt arches. The Narmada Geological Corps warned that further drilling risked permanent crustal destabilisation. Whether it helped bring on the Great Shattering is not settled; canon records what was reported, not why the world broke.
 **Participants:** faction_vayu_dwarkadhish_coral_monarchies, faction_narmada_academic_republic
 
+## Eastern Seed Reserve Negotiations
+_Draft history for editorial review._
+**Epoch:** The Age of Machinery
+**Summary:** During a shortage, the consolidating eastern crown and organized cultivators negotiate access to flood-safe land and planting grain. The reserve gives inland producers a stake in dealings with harbour authorities.
+**Participants:** character_tatara_rabuga, character_saljong
+
 ## The Frontier Marrow Wars
 **Epoch:** The Age of Machinery
 **Summary:** Harappan timber cartels and Hyrkanian mining syndicates fight the Sun-Iron kingdoms in guerrilla wars over Garudasaur fossil-marrow beds and ironwood.
 **Participants:** faction_harappan_lothal_union, faction_hyrkanian_tushara_rail_khanates
+
+## Compact of the Furnace Houses
+_Draft history for editorial review._
+**Epoch:** The Age of Machinery
+**Summary:** Plateau furnace districts negotiate shared access to industrial facilities and common measures. The debate brings confederation building, cultural recognition and workers’ protections into the compact.
+**Participants:** character_bada_deo, character_kupar_lingo, character_jangubai
 
 ## The Great Coal & Dolmen War
 **Epoch:** The Age of Machinery
@@ -200,6 +285,18 @@ _Sample fixture — kept to exercise the tooling, not part of the story._
 **Summary:** What the survivors called D-Day: silent purple auroras, the canal gone into geothermal fissures overnight, freighters on their sides in the mud, and a second shock that shattered the Lothal customs domes before the sea drew back and rose in a glowing wave. Kael, Ananya and Devraj dragged the archive cart aboard the Kelpfang-II and drifted out of a drowning city. This is the Shattering as three people lived it; why it came is not written.
 **Participants:** character_kael, character_ananya, character_devraj
 
+## Grove and Hill Obligations Enter a Legal Roll
+_Draft history for editorial review._
+**Epoch:** The Age of Machinery
+**Summary:** As timber, quarry and passage claims converge, a legal roll assembles separate woodland and hill positions on governing shared land. It records the claims of contemporary movements without requiring their leaders to have sat in a single council.
+**Participants:** character_singbonga, character_marang_buru, character_jaher_era
+
+## Hill Assembly Affirms Common Spring Access
+_Draft history for editorial review._
+**Epoch:** The Age of Machinery
+**Summary:** During negotiations with the valley crown, a hill assembly affirms shared access to a spring as a matter of local jurisdiction. The settlement gives constitutional force to the distinction between common access and ownership.
+**Participants:** character_u_blei_nongthaw
+
 ## The Mappa Mundi Colonial Insurgencies
 **Epoch:** The Age of Machinery
 **Summary:** Tribes allied with Sylvians and Vajraptors ambush the Aquilonian logging camps and cut the island cables.
@@ -215,6 +312,16 @@ _Sample fixture — kept to exercise the tooling, not part of the story._
 **Summary:** An airborne fungal blight traced to dredging in the sunken Lemurian trenches, carried on coal freighters into the factory wards. It calcifies the lungs -- 'Fossil-Lung' -- and put every factory ward in Lothal and the Hyrkanian foundries under a 21-day quarantine; citizens burned sulphur-and-copper candles in doorways and wore damp felt masks. Whether it helped bring on the Great Shattering is not settled; canon records what was reported, not why the world broke.
 **Participants:** faction_harappan_lothal_union, faction_hyrkanian_tushara_rail_khanates
 
+## Narmada Archives Rival Grove Concession Copies
+_Draft history for editorial review._
+**Epoch:** The Age of Machinery
+**Summary:** Industrial fuel and rail interests cited a concession copy that omitted protections. Local residents submitted a rival copy preserving protected springs and graves.
+
+## Narmada Compares Shadow Tables with Telegraph Time
+_Draft history for editorial review._
+**Epoch:** The Age of Machinery
+**Summary:** Observatory technicians compared inherited seasonal observations with telegraph signals and dock reports. An engineer found local flood markers more pertinent than a distant standard clock.
+
 ## The Narmada Upriver Expedition
 **Epoch:** The Age of Machinery
 **Summary:** To investigate sightings of the elusive Asura planet, field historian Digha Jani and the skeptical Professor Onko travel up the Narmada River. Awaiting supplies, they stay with isolated tribes, teaching children to harvest golden spice sand and logging the region's unique cliffside honey-gatherer pacts and tea plantations.
@@ -229,6 +336,11 @@ _Sample fixture — kept to exercise the tooling, not part of the story._
 **Epoch:** The Age of Machinery
 **Summary:** At high speeds, a rusted, wobbly ground-effect ekranoplan departs the port of Vanga near the Vengi marshes, carrying a nameless crew and a stowaway langur monkey who causes absolute chaos on their journey to the Antarctic Ice Wall.
 
+## Nilgiri Freight Route Hearing
+_Draft history for editorial review._
+**Epoch:** The Age of Machinery
+**Summary:** Cooperative planners backed a freight line for its effect on winter supply. Herding households argued that the proposed route would sever a seasonal crossing needed for grazing.
+
 ## The Paratethyan Lock Blockades
 **Epoch:** The Age of Machinery
 **Summary:** Zingaran privateers and Stygian ironclads clash over the tolls at the narrow sea gates of the inland basins.
@@ -237,20 +349,60 @@ _Sample fixture — kept to exercise the tooling, not part of the story._
 **Epoch:** The Age of Machinery
 **Summary:** A whale-bone ice-runner of frost-skinned voyagers from the Southern Ice Wall docks at Tamralinga's outer pier and trades fossil ivory, blubber-resins and strange acoustic records for iron axes and salt; Narmada linguists are sent to learn their click-dialect.
 
+## Dispute over Patent Claims on Charcoal Measures
+_Draft history for editorial review._
+**Epoch:** The Age of Machinery
+**Summary:** A foundry syndicate sought to patent a sequence resembling inherited measures. A legal historian questioned whether a method passed down through public teaching could become private property.
+
+## Rail Succession Wars
+_Draft history for editorial review._
+**Epoch:** The Age of Machinery
+**Summary:** The proposed wars followed competition over coal railways, traditional tolls and rival engineering concerns. A shared track and telegraph council emerged alongside separate dynastic courts.
+
+## Highland Hearing at the Landslip
+_Draft history for editorial review._
+**Epoch:** The Age of Machinery
+**Summary:** A landslip tests the autonomy of a highland assembly as state road plans advance. Highland forces secure the route while affected households are heard before old access markers can be moved.
+**Participants:** character_u_ryngkew
+
 ## The Saraswati Canal Drains
 **Epoch:** The Age of Machinery
 **Summary:** The Inland Waterway Board's red alert: the main Saraswati trade canal dropped three feet overnight, and more than forty iron freighters of coal and grain went aground between Dwarka and Lothal. Engineers blamed tectonic fracturing along the central basalt fault. Whether it helped bring on the Great Shattering is not settled; canon records what was reported, not why the world broke.
 **Participants:** faction_harappan_lothal_union
+
+## Highland Winter Passage Agreement
+_Draft history for editorial review._
+**Epoch:** The Age of Machinery
+**Summary:** Highland assemblies and merchants negotiate protected winter passage while keeping access to springs and grazing under local jurisdiction. The agreement becomes a practical basis for cooperation among districts.
+**Participants:** character_shenrab
 
 ## Tide-Lock Three Opens
 **Epoch:** The Age of Machinery
 **Summary:** The Harappan Guild of Engineers' new iron sluice gates raise four grain barges at dawn, cutting six hours from the passage out of the Saraswati marshes. The same issue of the Lothal Gazette carries the Tuli pearl-divers' protest against steam dredgers tearing up the black-oyster reefs, and news of the synapsid debate at Narmada University.
 **Participants:** faction_harappan_lothal_union
 
+## Nilgiri Shared Pasture Agreement
+_Draft history for editorial review._
+**Epoch:** The Age of Machinery
+**Summary:** Freight and clearance plans threaten a seasonal buffalo crossing. Pastoral representatives negotiate protected crossings and shared watering access as conditions of their councils’ participation in the emerging southern polity.
+**Participants:** character_tokisy
+
 ## The Undersea Lava River and the Red Fog
 **Epoch:** The Age of Machinery
 **Summary:** Deep-earth magnetic anomalies over the Vengi marshes, a rust-red fog that hid the sun and stilled the sea breeze, and the smell of ozone and sulphur, attributed to a lava river under the sea. Whether it helped bring on the Great Shattering is not settled; canon records what was reported, not why the world broke.
 **Participants:** faction_vanga_maritime_federation
+
+## Upland Watershed Quarry Pact
+_Draft history for editorial review._
+**Epoch:** The Age of Machinery
+**Summary:** The highland crown and organized cultivators negotiate limits on industrial extraction above a spring. Residents seek enforceable control over runoff and review of future concessions.
+**Participants:** character_niyam_raja, character_dharani_penu
+
+## Debate over a Shared Seasonal Reckoning
+_Draft history for editorial review._
+**Epoch:** The Age of Machinery
+**Summary:** A debate over common civic and planting dates brings nationalist arguments and astronomical observations into the same public forum. The proposed standard accommodates local flood and tide records.
+**Participants:** character_donyi, character_polo
 
 ## The Golden Season on the Wetlands
 **Epoch:** Post-Cataclysmic Era (The Great Shattering)
@@ -275,3 +427,94 @@ _Sample fixture — kept to exercise the tooling, not part of the story._
 ## The Last Puja
 **Epoch:** Post-Cataclysmic Era (The Great Shattering)
 **Summary:** The temple raised over the Jharwa dead is abandoned. Nothing sacks it and nothing burns it: the crossing goes quiet, the alms stop, the purohits leave, and there is no one left to pay for repairs. The dome goes first. The plinth, and the names along it, outlast the building that was the offering.
+
+## Argenthal Settlement
+_Draft history for editorial review._
+**Epoch:** unknown
+**Summary:** The proposed settlement assigned navigation law and treasury audit to towns and creditors after provincial princes became insolvent. The senior dynasty retained ceremonial duties.
+
+## Eastern Bhṛgu Teaching Reaches the Vedda Guilds
+_Draft history for editorial review._
+**Epoch:** unknown
+**Summary:** Later inheritors of the eastern Bhṛgu line brought techniques for handling and conserving Garudasaur blood to existing Vedda healing guilds. The University manuscript reports “Garudasura moss” as a Chandraketugarh guild term for that material. The intermediate places and dates remain open.
+
+## Dual Coral Crown Treaties
+_Draft history for editorial review._
+**Epoch:** unknown
+**Summary:** Proposed treaties arising from repeated dynastic marriages shared maritime responsibilities while retaining separate treasuries and succession laws.
+
+## Federal Harbour Charter
+_Draft history for editorial review._
+**Epoch:** unknown
+**Summary:** After unrest over concentrated warehouse ownership and access to emergency grain, the proposed charter divided responsibility for the fleet, customs and grain reserves.
+
+## Formation of the Furnace Confederacy
+_Draft history for editorial review._
+**Epoch:** unknown
+**Summary:** The proposed confederacy coordinated ore weights and security for routes between furnaces. The formation belongs to the early industrial transformation of the plateau.
+
+## Jharwa Passage into the Yaksha South
+_Draft history for editorial review._
+**Epoch:** unknown
+**Summary:** Jharwa travellers reached the southern lands under Yaksha sovereignty before the later Kia journey. The itinerary and generation are unrecorded.
+
+## The Last Attendance of Manjalaya
+_Draft history for editorial review._
+**Epoch:** unknown
+**Summary:** A provisional account remembers a peaceful death witnessed by a wilderness guardian and her partner. Dating and placement of this account remain open.
+**Participants:** character_manjalaya, character_sarishne, character_gagdji
+
+## Lothal Canal Compact
+_Draft history for editorial review._
+**Epoch:** unknown
+**Summary:** The proposed compact negotiated overlapping Mask Crown and Kia jurisdiction over channels and fisheries.
+
+## Nine-Pass Peace
+_Draft history for editorial review._
+**Epoch:** unknown
+**Summary:** The proposed highland peace distinguished rights to cross a pass, to graze and to govern. Its relationship to the winter passage agreement remains uncertain.
+
+## Plateau Charter Crisis
+_Draft history for editorial review._
+**Epoch:** unknown
+**Summary:** The proposed crisis followed a royal attempt to monopolize mineral rights and withdraw scholarly exemptions. The reconstruction leaves the monarch’s fate open and places a constitutional republic after the crisis.
+
+## Pragjyotisha Hill Autonomy Charter
+_Draft history for editorial review._
+**Epoch:** unknown
+**Summary:** The proposed royal charter gave hill assemblies legislative standing after disputes over roads, levies and recruitment. Defence and diplomacy remained with the crown.
+
+## Pragjyotisha Adopts the Twin Reckoning
+_Draft history for editorial review._
+**Epoch:** unknown
+**Summary:** The proposed valley standard combined rival seasonal reckonings while preserving local timekeeping. Its constitutional adoption followed debate over the statewide role of the calendar.
+
+## Expansion of Sky-Island Survey and Mineral Transport
+_Draft history for editorial review._
+**Epoch:** unknown
+**Summary:** The University proposes a long expansion from existing whale-blimp routes toward systematic surveys, extraction and industrial transport. The dates and individual firsts remain open.
+
+## Vanga Seed Fleet
+_Draft history for editorial review._
+**Epoch:** unknown
+**Summary:** Coastal testimony proposes a fleet carrying planting seed during scarcity. The precise connection between these voyages and eastern seed reserve negotiations remains open.
+
+## Vijayan High Pasture Treaty
+_Draft history for editorial review._
+**Epoch:** unknown
+**Summary:** The proposed treaty preserved seasonal buffalo routes and council jurisdiction in exchange for trade duties and defensive obligations. The identity of any early negotiator remains open.
+
+## Vijayan Watershed Compact
+_Draft history for editorial review._
+**Epoch:** unknown
+**Summary:** After upland opposition to mining concessions that threatened springs, the proposed compact granted local review of new extraction rights.
+
+## War of the Three Estuaries
+_Draft history for editorial review._
+**Epoch:** unknown
+**Summary:** In the proposed war over port tolls, the crown relied on shipbuilding credit and marsh pilots. The financial guarantees strengthened hereditary guild chambers.
+
+## Lothal Guild Settlement
+_Draft history for editorial review._
+**Epoch:** unknown
+**Summary:** A succession dispute impaired payment of war debts. The proposed settlement divided jurisdiction among civic, guild and Kia water representatives.

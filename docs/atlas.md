@@ -17,9 +17,9 @@ Each era below is canon as it stood then. An entity that names no epoch is prese
 | regions |  | 8 |
 | places | 20 | 26 |
 | settlements |  | 1 |
-| characters | 9 |  |
+| characters | 9 | 7 |
 | factions |  | 6 |
-| events | 8 |  |
+| events | 8 | 18 |
 | artifacts |  | 6 |
 | mythology |  | 11 |
 | fauna |  | 267 |
@@ -62,9 +62,9 @@ graph TD
 | regions |  | 8 |
 | places | 21 | 26 |
 | settlements |  | 1 |
-| characters | 7 |  |
+| characters | 8 | 7 |
 | factions |  | 6 |
-| events | 5 |  |
+| events | 5 | 18 |
 | artifacts |  | 6 |
 | mythology |  | 11 |
 | fauna |  | 267 |
@@ -101,9 +101,9 @@ graph TD
 | places | 26 | 26 |
 | settlements |  | 1 |
 | points of interest | 1 |  |
-| characters | 12 |  |
+| characters | 27 | 7 |
 | factions |  | 6 |
-| events | 6 |  |
+| events | 13 | 18 |
 | artifacts |  | 6 |
 | mythology |  | 11 |
 | fauna |  | 267 |
@@ -115,14 +115,22 @@ graph TD
 ```mermaid
 graph TD
     E0["Aravali Massacre & Sanctuary"]
-    E1["The Botai Cattle Raid"]
-    E2["The Jharwa First-Wave & The Shell Pact"]
-    E3["Opening of the Naraka Lok Portal"]
-    E4["The Narmada Apothecary Herb Quest"]
-    E5["The Retreat of Owlman"]
-    E1 --> E3
+    E1["Battle of Ten Kings (draft)"]
+    E2["The Botai Cattle Raid"]
+    E3["Dispute over Inherited Household Obligations (draft)"]
+    E4["The Jharwa First-Wave & The Shell Pact"]
+    E5["Opening of the Naraka Lok Portal"]
+    E6["The Narmada Apothecary Herb Quest"]
+    E7["The Retreat of Owlman"]
+    E8["Sarishne Encounters Manjalaya at a Gate Disturbance (draft)"]
+    E9["River Passage of the Bharata Force (draft)"]
+    E10["Victory Recitals at the Bharata Court (draft)"]
+    E11["Viśvāmitra Lays Down His Seat (draft)"]
+    E12["Wiznu and Aryaman Appeal to the Thunder-Bearer (draft)"]
+    E1 --> E10
     E2 --> E5
-    E3 --> E4
+    E4 --> E7
+    E5 --> E6
 ```
 
 ### Map
@@ -143,9 +151,9 @@ graph TD
 | places | 29 | 26 |
 | settlements | 1 | 1 |
 | points of interest | 1 |  |
-| characters | 27 |  |
+| characters | 28 | 7 |
 | factions |  | 6 |
-| events | 12 |  |
+| events | 14 | 18 |
 | artifacts |  | 6 |
 | mythology |  | 11 |
 | fauna |  | 267 |
@@ -156,31 +164,33 @@ graph TD
 
 ```mermaid
 graph TD
-    E0["The Final Voyage of the Kelpfang"]
-    E1["The Storm-Bone Khan's Warning at Lothal"]
-    E2["The Wandering of the Narmada Seed-Mind"]
-    E3["Silvershore War"]
-    E4["Founding of Lothal"]
-    E5["Black Lotus Siege"]
-    E6["The Stone Pact"]
-    E7["Tendua Crisis and Assassination of Kavik"]
-    E8["Retrieval of the Mask of Harappa"]
-    E9["Exile of Shaashak and Khadi"]
-    E10["The Awakening of the Mask of Vaṛkesh"]
-    E11["Birth of Sarita Silversong"]
-    E1 --> E7
-    E1 --> E2
-    E3 --> E5
-    E3 --> E4
+    E0["Bharata Settlement at Hastinapura (draft)"]
+    E1["The Final Voyage of the Kelpfang"]
+    E2["The Storm-Bone Khan's Warning at Lothal"]
+    E3["The Wandering of the Narmada Seed-Mind"]
+    E4["Silvershore War"]
+    E5["Founding of Lothal"]
+    E6["Black Lotus Siege"]
+    E7["The Stone Pact"]
+    E8["Tendua Crisis and Assassination of Kavik"]
+    E9["Retrieval of the Mask of Harappa"]
+    E10["Exile of Shaashak and Khadi"]
+    E11["The Awakening of the Mask of Vaṛkesh"]
+    E12["Birth of Sarita Silversong"]
+    E13["Yadu Foundation of North Dwarka (draft)"]
+    E2 --> E8
+    E2 --> E3
     E4 --> E6
     E4 --> E5
+    E5 --> E7
     E5 --> E6
     E6 --> E7
     E7 --> E8
-    E7 --> E9
     E8 --> E9
+    E8 --> E10
     E9 --> E10
-    E9 --> E11
+    E10 --> E11
+    E10 --> E12
 ```
 
 ### Map
@@ -205,9 +215,9 @@ The id stays `epoch_current` deliberately. Fifty-five entities reference it and 
 | places | 82 | 26 |
 | settlements | 1 | 1 |
 | points of interest | 1 |  |
-| characters | 10 |  |
+| characters | 30 | 7 |
 | factions | 9 | 6 |
-| events | 19 |  |
+| events | 37 | 18 |
 | artifacts |  | 6 |
 | mythology |  | 11 |
 | fauna |  | 267 |
@@ -218,28 +228,47 @@ The id stays `epoch_current` deliberately. Fifty-five entities reference it and 
 
 ```mermaid
 graph TD
-    E0["The Antarctic Ice Wall Expedition"]
-    E1["The Cartographic & Mercantile Accord"]
-    E2["The Delta Outrigger Skirmishes"]
-    E3["Drilling Halted at the Dwarka Gate"]
-    E4["The Frontier Marrow Wars"]
-    E5["The Great Coal & Dolmen War"]
-    E6["The Great Marrow & Coal War"]
-    E7["The Day the Ground Broke at the Great Junction"]
-    E8["The Mappa Mundi Colonial Insurgencies"]
-    E9["The Mappa Mundi Telegraph Sabotage"]
-    E10["The Moriah Spore-Blight"]
-    E11["The Narmada Upriver Expedition"]
-    E12["The Gondwana Spacetime Teleportation"]
-    E13["The Battered Ekranoplan's Ice Wall Voyage"]
-    E14["The Paratethyan Lock Blockades"]
-    E15["Polar Voyagers Arrive at Tamralinga"]
-    E16["The Saraswati Canal Drains"]
-    E17["Tide-Lock Three Opens"]
-    E18["The Undersea Lava River and the Red Fog"]
-    E5 --> E6
+    E0["Agasthya’s Southern Exchange with the Yakshas (draft)"]
+    E1["The Antarctic Ice Wall Expedition"]
+    E2["Lothal’s Factory Drainage Dispute (draft)"]
+    E3["The Cartographic & Mercantile Accord"]
+    E4["Chandraketugarh Garudasaur Blood Feud"]
+    E5["Delta Embankment Repair and Relief Settlement (draft)"]
+    E6["The Delta Outrigger Skirmishes"]
+    E7["Drilling Halted at the Dwarka Gate"]
+    E8["Eastern Seed Reserve Negotiations (draft)"]
+    E9["The Frontier Marrow Wars"]
+    E10["Compact of the Furnace Houses (draft)"]
+    E11["The Great Coal & Dolmen War"]
+    E12["The Great Marrow & Coal War"]
+    E13["The Day the Ground Broke at the Great Junction"]
+    E14["Grove and Hill Obligations Enter a Legal Roll (draft)"]
+    E15["Hill Assembly Affirms Common Spring Access (draft)"]
+    E16["The Mappa Mundi Colonial Insurgencies"]
+    E17["The Mappa Mundi Telegraph Sabotage"]
+    E18["The Moriah Spore-Blight"]
+    E19["Narmada Archives Rival Grove Concession Copies (draft)"]
+    E20["Narmada Compares Shadow Tables with Telegraph Time (draft)"]
+    E21["The Narmada Upriver Expedition"]
+    E22["The Gondwana Spacetime Teleportation"]
+    E23["The Battered Ekranoplan's Ice Wall Voyage"]
+    E24["Nilgiri Freight Route Hearing (draft)"]
+    E25["The Paratethyan Lock Blockades"]
+    E26["Polar Voyagers Arrive at Tamralinga"]
+    E27["Dispute over Patent Claims on Charcoal Measures (draft)"]
+    E28["Rail Succession Wars (draft)"]
+    E29["Highland Hearing at the Landslip (draft)"]
+    E30["The Saraswati Canal Drains"]
+    E31["Highland Winter Passage Agreement (draft)"]
+    E32["Tide-Lock Three Opens"]
+    E33["Nilgiri Shared Pasture Agreement (draft)"]
+    E34["The Undersea Lava River and the Red Fog"]
+    E35["Upland Watershed Quarry Pact (draft)"]
+    E36["Debate over a Shared Seasonal Reckoning (draft)"]
     E11 --> E12
-    E12 --> E13
+    E15 --> E29
+    E21 --> E22
+    E22 --> E23
 ```
 
 ### Map
@@ -260,22 +289,22 @@ Drawn from the era's own chart: 66 place(s) and 38 people(s), before the Shatter
 | places | 30 | 26 |
 | settlements | 1 | 1 |
 | field maps | 5 |  |
-| points of interest | 52 |  |
-| characters | 4 |  |
-| npcs | 36 |  |
-| happenings | 34 |  |
-| factions | 3 | 6 |
-| events | 5 |  |
+| points of interest | 53 |  |
+| characters | 7 | 7 |
+| npcs | 41 |  |
+| happenings | 36 |  |
+| factions | 4 | 6 |
+| events | 5 | 18 |
 | artifacts |  | 6 |
 | mythology |  | 11 |
-| discoveries | 54 |  |
+| discoveries | 55 |  |
 | field questions | 10 |  |
 | vocabulary | 10 |  |
 | fauna |  | 267 |
 | flora |  | 120 |
 | foodways | 1 | 19 |
 | sayings | 33 |  |
-| storylines | 2 |  |
+| storylines | 3 |  |
 
 ### Events
 

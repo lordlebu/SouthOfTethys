@@ -1,0 +1,21 @@
+{
+  "id": "event_hill_assembly_marks_spring_access",
+  "type": "event",
+  "title": "Hill Assembly Affirms Common Spring Access",
+  "epoch": "epoch_current",
+  "location": null,
+  "participants": [
+    "character_u_blei_nongthaw"
+  ],
+  "predecessors": [],
+  "successors": [
+    "event_ridge_path_landslip_hearing"
+  ],
+  "summary": "During negotiations with the valley crown, a hill assembly affirms shared access to a spring as a matter of local jurisdiction. The settlement gives constitutional force to the distinction between common access and ownership.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/nine-traditions/06-niam-khasi-stones.md",
+    "Author’s revised Early Age of Machinery placement and political roles, 2026-11-24."
+  ],
+  "date_approx": "Early Age of Machinery, around or shortly after Year 2,200"
+}

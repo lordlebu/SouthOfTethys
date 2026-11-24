@@ -1,0 +1,17 @@
+{
+  "id": "character_agasthya",
+  "type": "character",
+  "name": "Agasthya",
+  "culture": "kia",
+  "species": "human",
+  "status": "unknown",
+  "epoch": "epoch_current",
+  "roles": [
+    "Kia ṛṣi"
+  ],
+  "notes": "Travelled south during the Age of Machinery and helped Yaksha custodians adapt human civic practices while they retained their sovereignty and identity.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/harappan-convergence/20-agasthya-the-kia-southward-road.md"
+  ]
+}

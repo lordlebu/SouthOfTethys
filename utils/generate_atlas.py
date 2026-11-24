@@ -123,6 +123,8 @@ def event_graph(events: list[dict], epoch_id: str) -> str | None:
         title = e.get("title") or e["id"]
         if e.get("sample"):
             title += " (sample)"
+        elif e.get("canon") == "draft":
+            title += " (draft)"
         lines.append(f'    {node[e["id"]]}["{label(title)}"]')
     for e in here:
         for succ in e.get("successors") or []:

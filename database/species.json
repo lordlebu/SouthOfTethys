@@ -10,8 +10,8 @@
     },
     {
       "id": "asura",
-      "count": 3,
-      "note": "Sentient and person-like rather than beast -- metal humans who behave as people do. The culture of the same name is `maya_born` in cultures.json; the creature sense is a base_species pairing in fauna. Three senses, three homes."
+      "count": 7,
+      "note": "Broad character species covering Asuras and the named Rakshasa, Oni and Daitya lineages. The Maya-born culture is tracked separately as `maya_born`. Fauna also uses Asura in a creature sense."
     },
     {
       "id": "deity_in_mortal_shell",

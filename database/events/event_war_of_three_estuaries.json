@@ -1,0 +1,17 @@
+{
+  "id": "event_war_of_three_estuaries",
+  "type": "event",
+  "title": "War of the Three Estuaries",
+  "epoch": null,
+  "location": null,
+  "participants": [],
+  "predecessors": [],
+  "successors": [
+    "event_lothal_guild_settlement"
+  ],
+  "summary": "In the proposed war over port tolls, the crown relied on shipbuilding credit and marsh pilots. The financial guarantees strengthened hereditary guild chambers.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/nine-traditions/states/01-harappan-lothal.md"
+  ]
+}

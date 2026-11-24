@@ -1,0 +1,18 @@
+{
+  "id": "character_leimarel_sidabi",
+  "type": "character",
+  "name": "Leimarel Sidabi",
+  "culture": null,
+  "species": "human",
+  "status": "alive",
+  "epoch": "epoch_current",
+  "roles": [
+    "Queen and political administrator"
+  ],
+  "notes": "Early Age of Machinery, around or shortly after Year 2,200. She administers land and water obligations in the consolidating delta polity. Her hearings for displaced households make residence, cultivation and compensation questions of public administration.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/nine-traditions/02-sanamahi-house-and-serpent.md",
+    "Author’s revised Early Age of Machinery placement and political roles, 2026-11-24."
+  ]
+}

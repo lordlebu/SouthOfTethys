@@ -1,0 +1,21 @@
+{
+  "id": "event_battle_of_ten_kings",
+  "type": "event",
+  "title": "Battle of Ten Kings",
+  "epoch": "epoch_migrations",
+  "location": null,
+  "participants": [
+    "character_sudas"
+  ],
+  "predecessors": [],
+  "successors": [
+    "event_vasistha_court_recitals"
+  ],
+  "summary": "The victorious court’s account describes a battle at a river and the defeat of a coalition that included a Bhṛgu contingent. The local battlefield, the full roster and whether divine appeals were answered remain unsettled.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/harappan-convergence/05-sudas-and-the-ten-kings.md",
+    "docs/books/narmada-university/harappan-convergence/06-bhrgus-and-the-fire-houses.md",
+    "docs/books/narmada-university/harappan-convergence/13-coalition-and-aftermath-register.md"
+  ]
+}

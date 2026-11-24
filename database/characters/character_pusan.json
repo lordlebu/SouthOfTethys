@@ -1,0 +1,16 @@
+{
+  "id": "character_pusan",
+  "type": "character",
+  "name": "Pūṣan",
+  "culture": null,
+  "status": "unknown",
+  "epoch": "epoch_migrations",
+  "roles": [
+    "route guide"
+  ],
+  "notes": "Guide traditions associate this name with pastoral passage and route knowledge. Their later presence among frontier peoples leaves their origin open.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/ancestral-transmissions/passage-pusan.md"
+  ]
+}

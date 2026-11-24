@@ -1,0 +1,20 @@
+{
+  "id": "event_eastern_hill_seed_exchange",
+  "type": "event",
+  "title": "Eastern Seed Reserve Negotiations",
+  "epoch": "epoch_current",
+  "location": null,
+  "participants": [
+    "character_tatara_rabuga",
+    "character_saljong"
+  ],
+  "predecessors": [],
+  "successors": [],
+  "summary": "During a shortage, the consolidating eastern crown and organized cultivators negotiate access to flood-safe land and planting grain. The reserve gives inland producers a stake in dealings with harbour authorities.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/nine-traditions/07-songsarek-harvest.md",
+    "Author’s revised Early Age of Machinery placement and political roles, 2026-11-24."
+  ],
+  "date_approx": "Early Age of Machinery, around or shortly after Year 2,200"
+}

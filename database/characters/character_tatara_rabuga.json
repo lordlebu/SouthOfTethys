@@ -1,0 +1,18 @@
+{
+  "id": "character_tatara_rabuga",
+  "type": "character",
+  "name": "Tatara-Rabuga",
+  "culture": null,
+  "species": "human",
+  "status": "alive",
+  "epoch": "epoch_current",
+  "roles": [
+    "Monarch and territorial consolidator"
+  ],
+  "notes": "Early Age of Machinery, around or shortly after Year 2,200. Tatara-Rabuga consolidates eastern territories through agreements with agricultural districts and harbour authorities. Control of reserves and flood-safe land tests the limits of royal authority.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/nine-traditions/07-songsarek-harvest.md",
+    "Author’s revised Early Age of Machinery placement and political roles, 2026-11-24."
+  ]
+}

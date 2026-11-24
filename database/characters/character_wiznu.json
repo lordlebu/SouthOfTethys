@@ -1,0 +1,16 @@
+{
+  "id": "character_wiznu",
+  "type": "character",
+  "name": "Wiznu the Strider",
+  "culture": null,
+  "status": "unknown",
+  "epoch": "epoch_migrations",
+  "roles": [
+    "anomaly investigator"
+  ],
+  "notes": "Crossing testimony remembers a bearer of this name investigating disturbances. The title may have been transmitted. The evidence for an earlier building at the Alms Step is unresolved.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/ancestral-transmissions/passage-wiznu.md"
+  ]
+}

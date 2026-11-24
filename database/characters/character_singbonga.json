@@ -1,0 +1,18 @@
+{
+  "id": "character_singbonga",
+  "type": "character",
+  "name": "Singbonga",
+  "culture": null,
+  "species": "human",
+  "status": "alive",
+  "epoch": "epoch_current",
+  "roles": [
+    "Ethnic unification leader"
+  ],
+  "notes": "Early Age of Machinery, around or shortly after Year 2,200. Singbonga brings separate woodland constituencies together around shared political claims and public recognition. Agreements over grazing and access give the movement concrete obligations while member communities retain their own leadership.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/nine-traditions/04-sarna-grove-testimonies.md",
+    "Author’s revised Early Age of Machinery placement and political roles, 2026-11-24."
+  ]
+}

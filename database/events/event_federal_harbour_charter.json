@@ -1,0 +1,15 @@
+{
+  "id": "event_federal_harbour_charter",
+  "type": "event",
+  "title": "Federal Harbour Charter",
+  "epoch": null,
+  "location": "place_vanga",
+  "participants": [],
+  "predecessors": [],
+  "successors": [],
+  "summary": "After unrest over concentrated warehouse ownership and access to emergency grain, the proposed charter divided responsibility for the fleet, customs and grain reserves.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/nine-traditions/states/03-vanga.md"
+  ]
+}

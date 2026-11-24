@@ -1,0 +1,20 @@
+{
+  "id": "event_wiznu_aryaman_appeal_to_indr",
+  "type": "event",
+  "title": "Wiznu and Aryaman Appeal to the Thunder-Bearer",
+  "epoch": "epoch_migrations",
+  "location": null,
+  "participants": [
+    "character_wiznu",
+    "character_aryaman"
+  ],
+  "predecessors": [],
+  "successors": [],
+  "summary": "The passage traditions describe an attempted invocation during an investigation of disturbances. They leave the response and the precise location unverified.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/ancestral-transmissions/passage-wiznu.md",
+    "docs/books/narmada-university/ancestral-transmissions/passage-aryaman.md",
+    "docs/books/narmada-university/ancestral-transmissions/celestial-indr.md"
+  ]
+}

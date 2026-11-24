@@ -1,0 +1,21 @@
+{
+  "id": "event_furnace_houses_forge_compact",
+  "type": "event",
+  "title": "Compact of the Furnace Houses",
+  "epoch": "epoch_current",
+  "location": null,
+  "participants": [
+    "character_bada_deo",
+    "character_kupar_lingo",
+    "character_jangubai"
+  ],
+  "predecessors": [],
+  "successors": [],
+  "summary": "Plateau furnace districts negotiate shared access to industrial facilities and common measures. The debate brings confederation building, cultural recognition and workers’ protections into the compact.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/nine-traditions/05-gondi-forge-compact.md",
+    "Author’s revised Early Age of Machinery placement and political roles, 2026-11-24."
+  ],
+  "date_approx": "Early Age of Machinery, around or shortly after Year 2,200"
+}

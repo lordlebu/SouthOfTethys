@@ -1,0 +1,17 @@
+{
+  "id": "character_urva",
+  "type": "character",
+  "name": "Urva",
+  "culture": null,
+  "species": "human",
+  "status": "unknown",
+  "epoch": null,
+  "roles": [
+    "eastern Bhṛgu ṛṣi"
+  ],
+  "notes": "Remembered separately from Aurva in a succession of teaching on heat, vessels and preservation. The sources leave their exact kinship and dates open.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/harappan-convergence/19-aurva-urva-and-the-eastern-fire-houses.md"
+  ]
+}

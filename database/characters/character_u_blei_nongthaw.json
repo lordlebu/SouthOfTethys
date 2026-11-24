@@ -1,0 +1,18 @@
+{
+  "id": "character_u_blei_nongthaw",
+  "type": "character",
+  "name": "U Blei Nongthaw",
+  "culture": null,
+  "species": "human",
+  "status": "alive",
+  "epoch": "epoch_current",
+  "roles": [
+    "Constitutional statesman"
+  ],
+  "notes": "Early Age of Machinery, around or shortly after Year 2,200. U Blei Nongthaw negotiates constitutional standing for hill assemblies in their dealings with the valley crown. Common access to springs and roads tests whether the new state will recognize assembly jurisdiction.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/nine-traditions/06-niam-khasi-stones.md",
+    "Author’s revised Early Age of Machinery placement and political roles, 2026-11-24."
+  ]
+}

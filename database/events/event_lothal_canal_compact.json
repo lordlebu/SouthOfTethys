@@ -1,0 +1,15 @@
+{
+  "id": "event_lothal_canal_compact",
+  "type": "event",
+  "title": "Lothal Canal Compact",
+  "epoch": null,
+  "location": "settlement_lothal",
+  "participants": [],
+  "predecessors": [],
+  "successors": [],
+  "summary": "The proposed compact negotiated overlapping Mask Crown and Kia jurisdiction over channels and fisheries.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/nine-traditions/states/01-harappan-lothal.md"
+  ]
+}

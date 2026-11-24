@@ -1,0 +1,18 @@
+{
+  "id": "character_shenrab",
+  "type": "character",
+  "name": "Tonpa Shenrab",
+  "culture": null,
+  "species": "human",
+  "status": "alive",
+  "epoch": "epoch_current",
+  "roles": [
+    "Highland confederation statesman"
+  ],
+  "notes": "Early Age of Machinery, around or shortly after Year 2,200. He negotiates among highland assemblies, caravan towns and the emerging rail authorities. His confederation programme distinguishes the right to cross a pass from grazing rights and political jurisdiction.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/nine-traditions/01-bon-mountain-witness.md",
+    "Author’s revised Early Age of Machinery placement and political roles, 2026-11-24."
+  ]
+}

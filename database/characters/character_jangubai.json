@@ -1,0 +1,18 @@
+{
+  "id": "character_jangubai",
+  "type": "character",
+  "name": "Jangubai",
+  "culture": null,
+  "species": "human",
+  "status": "alive",
+  "epoch": "epoch_current",
+  "roles": [
+    "Labour movement leader"
+  ],
+  "notes": "Early Age of Machinery, around or shortly after Year 2,200. Jangubai organizes apprentices and workers against debt bondage. Her movement presses industrial authorities for independent lodging, enforceable contracts and relief after injury.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/nine-traditions/05-gondi-forge-compact.md",
+    "Author’s revised Early Age of Machinery placement and political roles, 2026-11-24."
+  ]
+}
