@@ -98,3 +98,7 @@ For every proposed event in the nation dossiers—Canal Compact, War of the Thre
 - Consult the established Silvershore, Rathak, Vijaya, Mask Family, Kia and aerial-route records for each future fixed event.
 
 *Related reading:* [From Houses to Nations](10-formation-of-nations.md), [Age of Machinery Gazetteer](12-age-of-machinery-gazetteer.md), [Chronicle of Convergence](../harappan-convergence/00-chronicle-of-convergence.md), and the repository-wide `AI_CONTEXT.md` for blimps, floating-island physics and era terminology.
+
+
+## Character epoch correction
+All nineteen individuals in the Nine Houses register are mortal political actors of the **Early Age of Machinery**, active around or after the proposed Year 2,200 threshold. They personally participate in industrial nation-building, constitutional settlements and ethnic or labour movements. Earlier institutions and customs belong to unnamed predecessors, not these individuals. Any named movement or settlement involving them belongs to Early Machinery; earlier phases describe its institutional antecedents only. See [the character register](00-chronicle-of-nine-houses.md). Exact lifetimes remain unassigned; the proposed elapsed chronology and existing Dawn characters are unchanged.

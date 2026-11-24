@@ -29,3 +29,7 @@ Draft university manuscripts for editorial review. The original approved charact
 
 ### Proposed elapsed chronology and sky-flight continuity
 [The Two Thousand and Two Hundred Years](nine-traditions/13-two-thousand-two-hundred-years.md) sets a **provisional** 2,000–2,400-year Civilization Dawn → early Machinery interval (working anchor: 2,200 years), with no general Bronze Age collapse. It preserves Rathak's **already-operating whale blimps in Civilization Dawn** and instead traces the later scale-up of sky-island surveys, rare minerals, airship logistics, engines and industrial states. The 1920s-like Current Era may postdate the threshold of Machinery. This is not an amendment to canonical era dates.
+
+
+## Character epoch correction
+All nineteen individuals in the Nine Houses register are mortal political actors of the **Early Age of Machinery**, active around or after the proposed Year 2,200 threshold. They personally participate in industrial nation-building, constitutional settlements and ethnic or labour movements. Earlier institutions and customs belong to unnamed predecessors, not these individuals. Any named movement or settlement involving them belongs to Early Machinery; earlier phases describe its institutional antecedents only. See [the character register](nine-traditions/00-chronicle-of-nine-houses.md). Exact lifetimes remain unassigned; the proposed elapsed chronology and existing Dawn characters are unchanged.

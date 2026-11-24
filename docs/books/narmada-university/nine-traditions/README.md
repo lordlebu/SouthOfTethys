@@ -23,7 +23,7 @@ The direct precedents are [The Chronicle of Convergence](../harappan-convergence
 7. [Kingdom of Pragjyotisha](states/07-pragjyotisha.md)
 8. [Realm of Prince Vijaya](states/08-vijaya.md)
 
-## Earlier nine source dossiers (supporting material only)
+## Early Machinery character dossiers
 These are *provisional local testimonies*, not the narrative organisation or a complete chronology of nation building.
 
 - [Chronicle of the Nine Houses](00-chronicle-of-nine-houses.md)
@@ -40,6 +40,10 @@ These are *provisional local testimonies*, not the narrative organisation or a c
 ## Claim categories
 **Established setting:** names of existing nations and known actors/events explicitly present in earlier manuscripts. **Proposed reconstruction:** intervening kingdoms, named treaties, charter crises, parties, rail wars, dynastic transformations and nation-building pathways. **Unverified:** the proposed 2,200-year interval, dates, specific borders, genealogical continuity, positions of missing towns and precise ethnic homelands.
 
-Names originating in real Bön, Meitei, Tani, Sarna, Gondi, Khasi, Garo, Toda and Kondh traditions are used as **superficial inspiration for explicitly fictional mortal figures, titles or contested memories**. The books do **not** claim real sacred beings were human historical rulers, nor assign all members of a living ethnolinguistic group to an invented nation.
+Names originating in real Bön, Meitei, Tani, Sarna, Gondi, Khasi, Garo, Toda and Kondh traditions are used as **superficial inspiration for explicitly fictional mortal individuals**. The books do **not** claim real sacred beings were human historical rulers, nor assign all members of a living ethnolinguistic group to an invented nation.
 
 **Review status:** manuscript proposal under editorial review. No structured game database, character biographies, approved geography or canonical timeline has been modified.
+
+
+## Character epoch correction
+All nineteen individuals in the Nine Houses register are mortal political actors of the **Early Age of Machinery**, active around or after the proposed Year 2,200 threshold. They personally participate in industrial nation-building, constitutional settlements and ethnic or labour movements. Earlier institutions and customs belong to unnamed predecessors, not these individuals. Any named movement or settlement involving them belongs to Early Machinery; earlier phases describe its institutional antecedents only. See [the character register](00-chronicle-of-nine-houses.md). Exact lifetimes remain unassigned; the proposed elapsed chronology and existing Dawn characters are unchanged.

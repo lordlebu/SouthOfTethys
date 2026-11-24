@@ -4,7 +4,7 @@
 **Attested anchor.** Northern pastoral and steppe polities precede the Age of Machinery's Hyrkanian and Tushara Rail-Khanates, connected to mineral resources and overland transport.
 
 ### I. Pasture, pass and caravan
-Seasonal clan assemblies govern grazing; caravan towns levy duties at narrow passes. The fictional highland lawgiver **Shenrab** mediates a proposed **Nine-Pass Peace** that separates permission to cross, right to graze and right to govern. The Bön inspiration is superficial, not a statement that a real founder was a mundane khan.
+Seasonal clan assemblies govern grazing; caravan towns levy duties at narrow passes. Earlier unnamed councils establish customary passage rights.
 
 ### II. The khan's dilemma
 A conquering khan can muster mounted forces but depends on charter towns for supplies and accounting. The successor khanates inherit a dual constitution: dynastic or clan authority in pasture regions, mercantile self-government along transport corridors.
@@ -14,5 +14,8 @@ Coal and locomotive networks threaten traditional toll revenues. Khanly heirs ba
 
 ### IV. Machine-age sovereignty
 The Rail-Khanates are federated infrastructure powers, not one monolithic ethnic state. The Nine-Pass League insists that rail rights-of-way do not extinguish herding routes. Engineers, clan elders, bonded mining workers and caravan citizens compete over taxes and representation.
+
+### Early Machinery political actors (around or after Year 2,200)
+Tonpa Shenrab personally negotiates the Nine-Pass Peace during Early Machinery, protecting grazing and transit rights in the rail settlement. These are mortal individuals, not ancient namesakes; earlier institutions predate them.
 
 **Tests:** the boundaries of named khanates, established steppe characters, mine sites and the exact passage from pastoral campaigns to industrial transport.
