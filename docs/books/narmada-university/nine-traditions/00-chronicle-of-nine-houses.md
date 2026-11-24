@@ -20,3 +20,7 @@ The preceding 2,200 years belong to their communities, institutions and unnamed 
 The following registers describe proposed contemporary political actions, not ancient legends revived by later people. Mature Machinery institutions may inherit their settlements. No fixed genealogy or absolute birth date is asserted.
 
 The names are superficial inspirations from living religious traditions; these fictional humans are not claims about real sacred figures. No structured canon is changed.
+
+
+## Database concordance
+The [Register of Persons and Public Acts](14-character-event-register.md) distinguishes ten recorded draft events involving the nineteen living Early Machinery actors from proposed associations with existing events whose participant lists are empty. The database uses `epoch_current` for these people; null event epochs remain unassigned. Named political settlements in this manuscript are interpretive proposals unless the register explicitly records participation. Earlier institutions are not personal biographies.

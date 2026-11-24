@@ -19,3 +19,7 @@ Steam pumping centralises drainage, and patent registration shifts bargaining fr
 Pakhangba, Sanamahi and Leimarel Sidabi are contemporary Early Machinery monarch, constitutional reformer and queen-administrator respectively. They renegotiate older canal rights during the Guild Settlement and industrial drainage crisis. These are mortal individuals, not ancient namesakes; earlier institutions predate them.
 
 **Evidence needed:** a dated succession sequence, location and sequence of estuary rivals, charter text, relationship to canonical Mask and Kia events. All italicised or named intermediary conflicts above remain proposed.
+
+
+### Database concordance
+The embankment repair records all three delta actors; their involvement in the drainage dispute and Guild Settlement is proposed, not recorded. The Canal Compact remains an antecedent. See [Register of Persons and Public Acts](../14-character-event-register.md).

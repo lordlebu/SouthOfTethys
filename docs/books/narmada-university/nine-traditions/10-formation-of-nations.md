@@ -49,3 +49,7 @@ The ancient Lothal, Kia, Vedda, Naga and Harappan evidence follows [The Chronicl
 
 ## Character epoch correction
 All nineteen individuals in the Nine Houses register are mortal political actors of the **Early Age of Machinery**, active around or after the proposed Year 2,200 threshold. They personally participate in industrial nation-building, constitutional settlements and ethnic or labour movements. Earlier institutions and customs belong to unnamed predecessors, not these individuals. Any named movement or settlement involving them belongs to Early Machinery; earlier phases describe its institutional antecedents only. See [the character register](00-chronicle-of-nine-houses.md). Exact lifetimes remain unassigned; the proposed elapsed chronology and existing Dawn characters are unchanged.
+
+
+## Database concordance
+The [Register of Persons and Public Acts](14-character-event-register.md) distinguishes ten recorded draft events involving the nineteen living Early Machinery actors from proposed associations with existing events whose participant lists are empty. The database uses `epoch_current` for these people; null event epochs remain unassigned. Named political settlements in this manuscript are interpretive proposals unless the register explicitly records participation. Earlier institutions are not personal biographies.

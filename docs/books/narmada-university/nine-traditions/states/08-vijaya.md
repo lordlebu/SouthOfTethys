@@ -22,3 +22,7 @@ Rail corridors and mines require standardized rights-of-way, yet old treaties fo
 Tökisy personally leads pastoral autonomy negotiations in Early Machinery; Niyam Raja is a contemporary highland monarch and Dharani Penu a contemporary agrarian rights leader. Their High Pasture Treaty and Watershed Compact address industrial rail and mining concessions. These are mortal individuals, not ancient namesakes; earlier institutions predate them.
 
 **Tests:** dynasty genealogy, existing Tamralinga and Vijaya canon, actual highland geography and whether the negotiated polities coincide with any established nations.
+
+
+### Database concordance
+The Shared Pasture Agreement records Tökisy; the Quarry Pact records Niyam Raja and Dharani Penu. The High Pasture Treaty and Watershed Compact have empty participant lists; their involvement remains proposed. See [Register of Persons and Public Acts](../14-character-event-register.md).

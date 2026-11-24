@@ -19,3 +19,7 @@ The Rail-Khanates are federated infrastructure powers, not one monolithic ethnic
 Tonpa Shenrab personally negotiates the Nine-Pass Peace during Early Machinery, protecting grazing and transit rights in the rail settlement. These are mortal individuals, not ancient namesakes; earlier institutions predate them.
 
 **Tests:** the boundaries of named khanates, established steppe characters, mine sites and the exact passage from pastoral campaigns to industrial transport.
+
+
+### Database concordance
+The Winter Passage Agreement records Shenrab. Nine-Pass Peace is a proposed further association; no personal participation in Rail Succession Wars is established. See [Register of Persons and Public Acts](../14-character-event-register.md).
