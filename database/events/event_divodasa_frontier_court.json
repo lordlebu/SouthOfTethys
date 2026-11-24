@@ -1,0 +1,18 @@
+{
+  "type": "event",
+  "id": "event_divodasa_frontier_court",
+  "title": "Divodāsa and the Frontier Court",
+  "epoch": "epoch_migrations",
+  "participants": [
+    "character_divodasa"
+  ],
+  "location": null,
+  "predecessors": [],
+  "successors": [],
+  "summary": "The earlier royal figure is remembered in praise traditions. The University reconstructs his court as a mobile centre of passage obligations and arbitration; specific laws and victories are unconfirmed.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/harappan-convergence/03-divodasa-and-the-frontier.md",
+    "docs/books/narmada-university/harappan-convergence/24-historical-event-and-witness-register.md"
+  ]
+}

@@ -11,9 +11,11 @@
     "Master Breeder of the Underworld",
     "Keeper of Forbidden Records"
   ],
-  "notes": "An ancient Asura vanguard commander who led the first crossing through the Dwarka Gate. He engineered the Asuran Agricultural Revolution, selectively breeding Permian synapsids to serve as war mounts and draft animals. The same Vaishura also held the Danava title Keeper of Forbidden Records; this is one individual with multiple historical offices, not a second character. The order and dates of these offices remain unresolved, as does how the Danava designation relates to the repository's existing Asura species classification. Preserve the Fang Vanguard history and deceased status.",
+  "notes": "An ancient Asura vanguard commander who led the first crossing through a Dwarka Gate according to tradition. He engineered the Asuran Agricultural Revolution, selectively breeding Permian synapsids as war mounts and draft animals. Commander of the Fang Vanguard, Master Breeder and Keeper of Forbidden Records are offices of the same individual. The Danava Keeper title survives in some catalogues. The order and dates of the offices remain unresolved. The earliest crossing is attributed to a Dwarka Gate tradition whose site has yet to be identified. The event register names him in the synapsid domestication. The surrounding Fang and Scale Wars and Gondwana intervention supply historical context.",
   "canon": "primary",
   "sources": [
-    "Gondwana: The Asura Intervention and the Fang Wars"
+    "Gondwana: The Asura Intervention and the Fang Wars",
+    "docs/books/narmada-university/04-vaishura-forbidden-records.md",
+    "docs/books/narmada-university/character-event-concordance.md"
   ]
 }

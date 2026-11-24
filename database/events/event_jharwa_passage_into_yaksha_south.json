@@ -2,15 +2,16 @@
   "id": "event_jharwa_passage_into_yaksha_south",
   "type": "event",
   "title": "Jharwa Passage into the Yaksha South",
-  "epoch": null,
+  "epoch": "epoch_migrations",
   "location": null,
   "participants": [],
   "predecessors": [],
   "successors": [],
-  "summary": "Jharwa travellers reached the southern lands under Yaksha sovereignty before the later Kia journey. The itinerary and generation are unrecorded.",
+  "summary": "Jharwa travellers reached the southern lands under Yaksha sovereignty before the later Kia journey. The itinerary and generation are unrecorded. The migration-era placement is a working reconstruction.",
   "canon": "draft",
   "sources": [
     "docs/books/narmada-university/harappan-convergence/20-agasthya-the-kia-southward-road.md",
-    "docs/books/narmada-university/harappan-convergence/22-lore-linked-tribal-concordance.md"
+    "docs/books/narmada-university/harappan-convergence/22-lore-linked-tribal-concordance.md",
+    "docs/books/narmada-university/harappan-convergence/24-historical-event-and-witness-register.md"
   ]
 }

@@ -9,9 +9,10 @@
   "roles": [
     "Tendua protector"
   ],
-  "notes": "A Rakshasa guardian, remembered as a concealed witness to the original Shadow Pact and separately in an account of a later gate disturbance. The sources do not establish formal participation in the pact. Gagdji is her partner.",
+  "notes": "A Rakshasa guardian, remembered as a concealed witness to the original Shadow Pact and separately in an account of a later gate disturbance. The sources do not establish formal participation in the pact. Gagdji is her partner. The draft last-attendance account names her and Gagdji as witnesses and leaves the date and place open. Tendua guardianship is an independent part of her testimony.",
   "canon": "draft",
   "sources": [
-    "docs/books/narmada-university/07-sarishne-witness-of-the-shadow-pact.md"
+    "docs/books/narmada-university/07-sarishne-witness-of-the-shadow-pact.md",
+    "docs/books/narmada-university/character-event-concordance.md"
   ]
 }

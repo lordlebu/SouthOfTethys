@@ -5,13 +5,14 @@
   "culture": null,
   "species": "human",
   "status": "unknown",
-  "epoch": null,
+  "epoch": "epoch_civilization_dawn",
   "roles": [
     "eastern Bhṛgu ṛṣi"
   ],
-  "notes": "The eastern teaching line remembers Aurva alongside Urva in the history of obtaining and preserving Garudasaur blood. Later custodians carried the knowledge to the Vedda guilds.",
+  "notes": "An eastern Bhṛgu ṛṣi of a later Civilization Dawn teaching generation than Urva. He developed the tradition of obtaining and preserving Garudasaur blood. Later inheritors carried the practice to existing Vedda guilds. The local record leaves exact dates and kinship open.",
   "canon": "draft",
   "sources": [
-    "docs/books/narmada-university/harappan-convergence/19-aurva-urva-and-the-eastern-fire-houses.md"
+    "docs/books/narmada-university/harappan-convergence/19-aurva-urva-and-the-eastern-fire-houses.md",
+    "docs/books/narmada-university/harappan-convergence/23-character-and-tribal-epoch-register.md"
   ]
 }

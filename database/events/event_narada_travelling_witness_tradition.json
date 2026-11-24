@@ -1,0 +1,18 @@
+{
+  "type": "event",
+  "id": "event_narada_travelling_witness_tradition",
+  "title": "Nārada and the Travelling Witnesses",
+  "epoch": "epoch_migrations",
+  "participants": [
+    "character_narada"
+  ],
+  "location": null,
+  "predecessors": [],
+  "successors": [],
+  "summary": "The adopted late-migration portrait associates Nārada with itinerant testimony and Kāṇva recitation across political boundaries. No specific journey, court meeting or oath is attested.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/harappan-convergence/07-narada-and-the-witnesses.md",
+    "docs/books/narmada-university/harappan-convergence/24-historical-event-and-witness-register.md"
+  ]
+}

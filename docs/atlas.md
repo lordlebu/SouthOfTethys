@@ -17,9 +17,9 @@ Each era below is canon as it stood then. An entity that names no epoch is prese
 | regions |  | 8 |
 | places | 20 | 26 |
 | settlements |  | 1 |
-| characters | 9 | 7 |
+| characters | 9 | 4 |
 | factions |  | 6 |
-| events | 8 | 18 |
+| events | 8 | 17 |
 | artifacts |  | 6 |
 | mythology |  | 11 |
 | fauna |  | 267 |
@@ -62,9 +62,9 @@ graph TD
 | regions |  | 8 |
 | places | 21 | 26 |
 | settlements |  | 1 |
-| characters | 8 | 7 |
+| characters | 8 | 4 |
 | factions |  | 6 |
-| events | 5 | 18 |
+| events | 5 | 17 |
 | artifacts |  | 6 |
 | mythology |  | 11 |
 | fauna |  | 267 |
@@ -101,9 +101,9 @@ graph TD
 | places | 26 | 26 |
 | settlements |  | 1 |
 | points of interest | 1 |  |
-| characters | 27 | 7 |
+| characters | 28 | 4 |
 | factions |  | 6 |
-| events | 13 | 18 |
+| events | 16 | 17 |
 | artifacts |  | 6 |
 | mythology |  | 11 |
 | fauna |  | 267 |
@@ -118,19 +118,22 @@ graph TD
     E1["Battle of Ten Kings (draft)"]
     E2["The Botai Cattle Raid"]
     E3["Dispute over Inherited Household Obligations (draft)"]
-    E4["The Jharwa First-Wave & The Shell Pact"]
-    E5["Opening of the Naraka Lok Portal"]
-    E6["The Narmada Apothecary Herb Quest"]
-    E7["The Retreat of Owlman"]
-    E8["Sarishne Encounters Manjalaya at a Gate Disturbance (draft)"]
-    E9["River Passage of the Bharata Force (draft)"]
-    E10["Victory Recitals at the Bharata Court (draft)"]
-    E11["Viśvāmitra Lays Down His Seat (draft)"]
-    E12["Wiznu and Aryaman Appeal to the Thunder-Bearer (draft)"]
-    E1 --> E10
-    E2 --> E5
-    E4 --> E7
-    E5 --> E6
+    E4["Divodāsa and the Frontier Court (draft)"]
+    E5["The Jharwa First-Wave & The Shell Pact"]
+    E6["Jharwa Passage into the Yaksha South (draft)"]
+    E7["Nārada and the Travelling Witnesses (draft)"]
+    E8["Opening of the Naraka Lok Portal"]
+    E9["The Narmada Apothecary Herb Quest"]
+    E10["The Retreat of Owlman"]
+    E11["Sarishne Encounters Manjalaya at a Gate Disturbance (draft)"]
+    E12["River Passage of the Bharata Force (draft)"]
+    E13["Victory Recitals at the Bharata Court (draft)"]
+    E14["Viśvāmitra Lays Down His Seat (draft)"]
+    E15["Wiznu and Aryaman Appeal to the Thunder-Bearer (draft)"]
+    E1 --> E13
+    E2 --> E8
+    E5 --> E10
+    E8 --> E9
 ```
 
 ### Map
@@ -151,9 +154,9 @@ graph TD
 | places | 29 | 26 |
 | settlements | 1 | 1 |
 | points of interest | 1 |  |
-| characters | 28 | 7 |
+| characters | 30 | 4 |
 | factions |  | 6 |
-| events | 14 | 18 |
+| events | 16 | 17 |
 | artifacts |  | 6 |
 | mythology |  | 11 |
 | fauna |  | 267 |
@@ -177,7 +180,9 @@ graph TD
     E10["Exile of Shaashak and Khadi"]
     E11["The Awakening of the Mask of Vaṛkesh"]
     E12["Birth of Sarita Silversong"]
-    E13["Yadu Foundation of North Dwarka (draft)"]
+    E13["Urva and the Eastern Bhṛgu Teaching Succession (draft)"]
+    E14["Aurva and the Garudasaur Blood Tradition (draft)"]
+    E15["Yadu Foundation of North Dwarka (draft)"]
     E2 --> E8
     E2 --> E3
     E4 --> E6
@@ -191,6 +196,7 @@ graph TD
     E9 --> E10
     E10 --> E11
     E10 --> E12
+    E13 --> E14
 ```
 
 ### Map
@@ -215,9 +221,9 @@ The id stays `epoch_current` deliberately. Fifty-five entities reference it and 
 | places | 82 | 26 |
 | settlements | 1 | 1 |
 | points of interest | 1 |  |
-| characters | 30 | 7 |
+| characters | 30 | 4 |
 | factions | 9 | 6 |
-| events | 37 | 18 |
+| events | 37 | 17 |
 | artifacts |  | 6 |
 | mythology |  | 11 |
 | fauna |  | 267 |
@@ -290,11 +296,11 @@ Drawn from the era's own chart: 66 place(s) and 38 people(s), before the Shatter
 | settlements | 1 | 1 |
 | field maps | 5 |  |
 | points of interest | 53 |  |
-| characters | 7 | 7 |
+| characters | 7 | 4 |
 | npcs | 41 |  |
 | happenings | 36 |  |
 | factions | 4 | 6 |
-| events | 5 | 18 |
+| events | 5 | 17 |
 | artifacts |  | 6 |
 | mythology |  | 11 |
 | discoveries | 55 |  |

@@ -1,0 +1,20 @@
+{
+  "type": "event",
+  "id": "event_aurva_garudasaur_blood_teaching",
+  "title": "Aurva and the Garudasaur Blood Tradition",
+  "epoch": "epoch_civilization_dawn",
+  "participants": [
+    "character_aurva"
+  ],
+  "location": null,
+  "predecessors": [
+    "event_urva_eastern_bhrgu_teaching"
+  ],
+  "successors": [],
+  "summary": "Aurva develops the eastern teaching tradition of obtaining and preserving Garudasaur blood. Later inheritors transmit it to Vedda guilds; no personal visit to Chandraketugarh or exact kinship is established.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/harappan-convergence/19-aurva-urva-and-the-eastern-fire-houses.md",
+    "docs/books/narmada-university/harappan-convergence/24-historical-event-and-witness-register.md"
+  ]
+}

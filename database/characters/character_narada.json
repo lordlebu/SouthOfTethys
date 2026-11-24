@@ -5,13 +5,14 @@
   "culture": null,
   "species": "human",
   "status": "unknown",
-  "epoch": null,
+  "epoch": "epoch_migrations",
   "roles": [
     "travelling witness"
   ],
-  "notes": "A proposed travelling reciter of the Kāṇva milieu, remembered in hymn attributions. Journeys, specific meetings and placement between late migrations and the early cities remain unconfirmed.",
+  "notes": "A late-migration travelling witness associated with Kāṇva hymn attributions and recitation across political boundaries. His precise generation, route, courts and personal encounters remain open.",
   "canon": "draft",
   "sources": [
-    "docs/books/narmada-university/harappan-convergence/07-narada-and-the-witnesses.md"
+    "docs/books/narmada-university/harappan-convergence/07-narada-and-the-witnesses.md",
+    "docs/books/narmada-university/harappan-convergence/23-character-and-tribal-epoch-register.md"
   ]
 }
