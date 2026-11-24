@@ -1,0 +1,17 @@
+{
+  "id": "character_leimarel_sidabi",
+  "type": "character",
+  "name": "Leimarel Sidabi",
+  "culture": null,
+  "species": "human",
+  "status": "unknown",
+  "epoch": "epoch_civilization_dawn",
+  "roles": [
+    "household mediator"
+  ],
+  "notes": "In the University’s fictional reconstruction, the delta account remembers an elder who heard displaced households and recorded their claims to land and water.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/nine-traditions/02-sanamahi-house-and-serpent.md"
+  ]
+}

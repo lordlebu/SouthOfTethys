@@ -1,0 +1,16 @@
+{
+  "id": "character_ila",
+  "type": "character",
+  "name": "Ilā",
+  "culture": null,
+  "status": "unknown",
+  "epoch": "epoch_migrations",
+  "roles": [
+    "household matriarch"
+  ],
+  "notes": "The household tradition remembers Ilā pressing for adoption and sanctuary in a dispute over the obligations of inherited households.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/ancestral-transmissions/founders-ila.md"
+  ]
+}

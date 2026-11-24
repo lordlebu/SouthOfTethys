@@ -16,7 +16,7 @@ During the original late Deep Antiquity Shadow Pact, Sarishne observed events in
 A later migration-era disturbance at a Dwarka Gate brought Sarishne into contact with Manjalaya. The two episodes must not be collapsed into one. Whether the same physical gate was involved remains unresolved.
 
 ## IV. Gagdji of the Oni
-Sarishne's partner Gagdji is Oni, not Rakshasa and not Asura. The record does not establish Gagdji's knowledge of the original Shadow Pact. Their partnership is a personal connection, not evidence of a common supernatural lineage.
+Sarishne's partner Gagdji belongs to the Oni lineage. The chronicles place both lineages under the broader Asura classification and identify no court affiliation for Gagdji. The record does not establish Gagdji's knowledge of the original Shadow Pact. Their partnership is a personal connection, not evidence of a common supernatural lineage.
 
 ## V. The Last Attendance
 A provisional later account places Sarishne and Gagdji at Manjalaya's peaceful death. The date is unsettled and the testimony does not justify changing Manjalaya's established mythic classification.
@@ -25,4 +25,4 @@ A provisional later account places Sarishne and Gagdji at Manjalaya's peaceful d
 Some antiquarians group Sarishne with the Asura histories because she witnessed the pact and later knew Manjalaya. This is a link of **proximity, testimony and shared events**. It is deliberately weak as genealogy—and strong enough to explain why a wilderness guardian appears in a book concerned with the Asuras.
 
 ## Closing Judgment
-Sarishne remains Rakshasa; Gagdji remains Oni. Neither must become Asura by blood to matter profoundly to the history of the Asuras.
+Sarishne remains Rakshasa; Gagdji remains Oni. Their distinct lineages and their own testimony matter to Asura history independently of any court affiliation.

@@ -1,0 +1,15 @@
+{
+  "id": "event_public_charcoal_measure_patent_dispute",
+  "type": "event",
+  "title": "Dispute over Patent Claims on Charcoal Measures",
+  "epoch": "epoch_current",
+  "location": "settlement_lothal",
+  "participants": [],
+  "predecessors": [],
+  "successors": [],
+  "summary": "A foundry syndicate sought to patent a sequence resembling inherited measures. A legal historian questioned whether a method passed down through public teaching could become private property.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/nine-traditions/05-gondi-forge-compact.md"
+  ]
+}

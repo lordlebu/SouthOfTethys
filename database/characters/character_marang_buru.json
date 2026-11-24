@@ -1,0 +1,17 @@
+{
+  "id": "character_marang_buru",
+  "type": "character",
+  "name": "Marang Buru",
+  "culture": null,
+  "species": "human",
+  "status": "unknown",
+  "epoch": "epoch_civilization_dawn",
+  "roles": [
+    "hill negotiator"
+  ],
+  "notes": "In the University’s fictional reconstruction, a hill account remembers a negotiator over access to stone and timber. Their name entered a later compilation of related obligations.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/nine-traditions/04-sarna-grove-testimonies.md"
+  ]
+}

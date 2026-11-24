@@ -414,6 +414,27 @@
     ]
   },
   {
+    "id": "event_battle_of_ten_kings",
+    "type": "event",
+    "title": "Battle of Ten Kings",
+    "epoch": "epoch_migrations",
+    "location": null,
+    "participants": [
+      "character_sudas"
+    ],
+    "predecessors": [],
+    "successors": [
+      "event_vasistha_court_recitals"
+    ],
+    "summary": "The victorious court\u2019s account describes a battle at a river and the defeat of a coalition that included a Bh\u1e5bgu contingent. The local battlefield, the full roster and whether divine appeals were answered remain unsettled.",
+    "canon": "draft",
+    "sources": [
+      "docs/books/narmada-university/harappan-convergence/05-sudas-and-the-ten-kings.md",
+      "docs/books/narmada-university/harappan-convergence/06-bhrgus-and-the-fire-houses.md",
+      "docs/books/narmada-university/harappan-convergence/13-coalition-and-aftermath-register.md"
+    ]
+  },
+  {
     "id": "event_botai_cattle_raid",
     "type": "event",
     "title": "The Botai Cattle Raid",
@@ -443,6 +464,27 @@
     ]
   },
   {
+    "id": "event_dispute_over_inherited_household_obligations",
+    "type": "event",
+    "title": "Dispute over Inherited Household Obligations",
+    "epoch": "epoch_migrations",
+    "location": null,
+    "participants": [
+      "character_ila",
+      "character_vivasvan",
+      "character_vac"
+    ],
+    "predecessors": [],
+    "successors": [],
+    "summary": "The household dossier recalls a dispute over who could enter inherited obligations, with a witness preserving the terms. Its later forms associate the dispute with rules of sanctuary and adoption.",
+    "canon": "draft",
+    "sources": [
+      "docs/books/narmada-university/ancestral-transmissions/founders-ila.md",
+      "docs/books/narmada-university/ancestral-transmissions/founders-vivasvan.md",
+      "docs/books/narmada-university/ancestral-transmissions/founders-vac.md"
+    ]
+  },
+  {
     "id": "event_jharwa_first_wave_shell_pact",
     "type": "event",
     "title": "The Jharwa First-Wave & The Shell Pact",
@@ -463,7 +505,7 @@
       "The rising waters of the Tethys Sea blocking traditional land paths"
     ],
     "outcomes": [
-      "Establishment of the first human settlement in the Saraswati Delta",
+      "Establishment of the first documented Jharwa settlement in the Saraswati Delta",
       "The creation of the spiritual Shell Pact protecting human sailors"
     ],
     "summary": "During the Pleistocene Glaciation, the Jharwa cave-painters cross the Tethys Sea to Jambhudweepa. Landing in the Saraswati Delta, Elder Repa establishes the Shell Pact with the Ammonite Man, trading spiral conches for safe passage through the deep channels.",
@@ -569,6 +611,154 @@
     ]
   },
   {
+    "id": "event_sarishne_manjalaya_gate_disturbance",
+    "type": "event",
+    "title": "Sarishne Encounters Manjalaya at a Gate Disturbance",
+    "epoch": "epoch_migrations",
+    "location": null,
+    "participants": [
+      "character_sarishne",
+      "character_manjalaya"
+    ],
+    "predecessors": [],
+    "successors": [],
+    "summary": "University testimony places the meeting at a later Dwarka Gate disturbance. The physical identity of the gate remains unsettled.",
+    "canon": "draft",
+    "sources": [
+      "docs/books/narmada-university/07-sarishne-witness-of-the-shadow-pact.md",
+      "docs/books/narmada-university/05-manjalaya-royal-traditions.md"
+    ]
+  },
+  {
+    "id": "event_sudas_river_passage",
+    "type": "event",
+    "title": "River Passage of the Bharata Force",
+    "epoch": "epoch_migrations",
+    "location": null,
+    "participants": [
+      "character_sudas",
+      "character_visvamitra"
+    ],
+    "predecessors": [],
+    "successors": [],
+    "summary": "In the river dialogue a Bharata force sought passage, and a speaker petitioned two rivers. The local crossing and its relationship to the coalition war remain unresolved.",
+    "canon": "draft",
+    "sources": [
+      "docs/books/narmada-university/harappan-convergence/04-visvamitra-from-raja-to-rsi.md",
+      "docs/books/narmada-university/harappan-convergence/12-vasistha-and-the-victors-court.md"
+    ]
+  },
+  {
+    "id": "event_vasistha_court_recitals",
+    "type": "event",
+    "title": "Victory Recitals at the Bharata Court",
+    "epoch": "epoch_migrations",
+    "location": null,
+    "participants": [
+      "character_vasistha",
+      "character_sudas"
+    ],
+    "predecessors": [
+      "event_battle_of_ten_kings"
+    ],
+    "successors": [],
+    "summary": "The court\u2019s singer preserved the ruler\u2019s claim to victory in praise songs. Later performances made the account available for new claims about obligations, without preserving an independent inventory of the defeated.",
+    "canon": "draft",
+    "sources": [
+      "docs/books/narmada-university/harappan-convergence/12-vasistha-and-the-victors-court.md"
+    ]
+  },
+  {
+    "id": "event_visvamitra_lays_down_his_seat",
+    "type": "event",
+    "title": "Vi\u015bv\u0101mitra Lays Down His Seat",
+    "epoch": "epoch_migrations",
+    "location": null,
+    "participants": [
+      "character_visvamitra"
+    ],
+    "predecessors": [],
+    "successors": [],
+    "summary": "Regional biography says a disputed levy and failed hearing led the ruler to relinquish his seat. The successor is unnamed. The former ruler\u2019s authority came to depend on preserving testimony.",
+    "canon": "draft",
+    "sources": [
+      "docs/books/narmada-university/harappan-convergence/04-visvamitra-from-raja-to-rsi.md"
+    ]
+  },
+  {
+    "id": "event_wiznu_aryaman_appeal_to_indr",
+    "type": "event",
+    "title": "Wiznu and Aryaman Appeal to the Thunder-Bearer",
+    "epoch": "epoch_migrations",
+    "location": null,
+    "participants": [
+      "character_wiznu",
+      "character_aryaman"
+    ],
+    "predecessors": [],
+    "successors": [],
+    "summary": "The passage traditions describe an attempted invocation during an investigation of disturbances. They leave the response and the precise location unverified.",
+    "canon": "draft",
+    "sources": [
+      "docs/books/narmada-university/ancestral-transmissions/passage-wiznu.md",
+      "docs/books/narmada-university/ancestral-transmissions/passage-aryaman.md",
+      "docs/books/narmada-university/ancestral-transmissions/celestial-indr.md"
+    ]
+  },
+  {
+    "id": "event_bharata_settlement_hastinapura",
+    "type": "event",
+    "title": "Bharata Settlement at Hastinapura",
+    "epoch": "epoch_civilization_dawn",
+    "location": "place_hastinapura",
+    "participants": [],
+    "predecessors": [],
+    "successors": [],
+    "summary": "The chronicle places the first Bharata Naga settlement at the opening of Civilization Dawn. It identifies neither a founder nor a direct connection to the ruler of the coalition war.",
+    "canon": "draft",
+    "sources": [
+      "docs/books/narmada-university/harappan-convergence/18-bharata-naga-hastinapura.md",
+      "docs/books/narmada-university/harappan-convergence/22-lore-linked-tribal-concordance.md"
+    ]
+  },
+  {
+    "id": "event_delta_custodians_embankment_repair",
+    "type": "event",
+    "title": "The Three Custodians\u2019 Embankment Repair",
+    "epoch": "epoch_civilization_dawn",
+    "location": "region_saraswati_delta",
+    "participants": [
+      "character_sanamahi",
+      "character_pakhangba",
+      "character_leimarel_sidabi"
+    ],
+    "predecessors": [],
+    "successors": [],
+    "summary": "A failed embankment threatened mixed delta households. Three custodians counted available grain, heard displaced families and enlisted Kia water-guides in a shared repair.",
+    "canon": "draft",
+    "sources": [
+      "docs/books/narmada-university/nine-traditions/02-sanamahi-house-and-serpent.md"
+    ]
+  },
+  {
+    "id": "event_eastern_hill_seed_exchange",
+    "type": "event",
+    "title": "Eastern Hillside Seed Exchange",
+    "epoch": "epoch_civilization_dawn",
+    "location": null,
+    "participants": [
+      "character_tatara_rabuga",
+      "character_saljong"
+    ],
+    "predecessors": [],
+    "successors": [],
+    "summary": "A poor harvest prompted debate over flood-safe plots and the distribution of seed recorded as due after the next planting. A later Tuli merchant carried an abridged account to coastal traders.",
+    "canon": "draft",
+    "sources": [
+      "docs/books/narmada-university/nine-traditions/07-songsarek-harvest.md"
+    ]
+  },
+  {
     "id": "event_final_voyage_of_the_kelpfang",
     "type": "event",
     "title": "The Final Voyage of the Kelpfang",
@@ -598,6 +788,25 @@
     "canon": "primary",
     "sources": [
       "Resonant Hearts: Intimate Chronicles Aboard the Kelpfang"
+    ]
+  },
+  {
+    "id": "event_furnace_houses_forge_compact",
+    "type": "event",
+    "title": "Compact of the Furnace Houses",
+    "epoch": "epoch_civilization_dawn",
+    "location": null,
+    "participants": [
+      "character_bada_deo",
+      "character_kupar_lingo",
+      "character_jangubai"
+    ],
+    "predecessors": [],
+    "successors": [],
+    "summary": "Rival furnace houses faced shortages of shared equipment and fuel. Testimonies remember shared furnace days, common measures and shelter for apprentices exposed to debt labour.",
+    "canon": "draft",
+    "sources": [
+      "docs/books/narmada-university/nine-traditions/05-gondi-forge-compact.md"
     ]
   },
   {
@@ -662,6 +871,61 @@
     "sources": [
       "Oral Traditions of the Blind Bards",
       "Narmada Historical Surveys"
+    ]
+  },
+  {
+    "id": "event_hill_assembly_marks_spring_access",
+    "type": "event",
+    "title": "Common Spring Access Marked in Stone",
+    "epoch": "epoch_civilization_dawn",
+    "location": null,
+    "participants": [
+      "character_u_blei_nongthaw"
+    ],
+    "predecessors": [],
+    "successors": [
+      "event_ridge_path_landslip_hearing"
+    ],
+    "summary": "Ridge testimony recalls that a marker line protected shared access to a spring. Some accounts credit successive assemblies for the work.",
+    "canon": "draft",
+    "sources": [
+      "docs/books/narmada-university/nine-traditions/06-niam-khasi-stones.md"
+    ]
+  },
+  {
+    "id": "event_ridge_path_landslip_hearing",
+    "type": "event",
+    "title": "Hearing at the Landslip",
+    "epoch": "epoch_civilization_dawn",
+    "location": null,
+    "participants": [
+      "character_u_ryngkew"
+    ],
+    "predecessors": [
+      "event_hill_assembly_marks_spring_access"
+    ],
+    "successors": [],
+    "summary": "After a landslip, the guardian called witnesses and withheld permission to move the oldest marker until affected households had been heard.",
+    "canon": "draft",
+    "sources": [
+      "docs/books/narmada-university/nine-traditions/06-niam-khasi-stones.md"
+    ]
+  },
+  {
+    "id": "event_shenrab_winter_passage_agreement",
+    "type": "event",
+    "title": "Winter Passage Agreement",
+    "epoch": "epoch_civilization_dawn",
+    "location": null,
+    "participants": [
+      "character_shenrab"
+    ],
+    "predecessors": [],
+    "successors": [],
+    "summary": "The highland guide negotiated safe passage for camp households and animals before sharing knowledge of sheltered springs. Accounts disagree over whose interests the agreement primarily served.",
+    "canon": "draft",
+    "sources": [
+      "docs/books/narmada-university/nine-traditions/01-bon-mountain-witness.md"
     ]
   },
   {
@@ -964,6 +1228,93 @@
     ]
   },
   {
+    "id": "event_tokisy_shared_pasture_agreement",
+    "type": "event",
+    "title": "Nilgiri Shared Pasture Agreement",
+    "epoch": "epoch_civilization_dawn",
+    "location": "place_nilgiri",
+    "participants": [
+      "character_tokisy"
+    ],
+    "predecessors": [],
+    "successors": [],
+    "summary": "After forest clearance blocked a seasonal crossing, a herdswoman negotiated rotating grazing times and a shared watering point.",
+    "canon": "draft",
+    "sources": [
+      "docs/books/narmada-university/nine-traditions/08-toda-high-pastures.md"
+    ]
+  },
+  {
+    "id": "event_upland_watershed_quarry_pact",
+    "type": "event",
+    "title": "Upland Watershed Quarry Pact",
+    "epoch": "epoch_civilization_dawn",
+    "location": null,
+    "participants": [
+      "character_niyam_raja",
+      "character_dharani_penu"
+    ],
+    "predecessors": [],
+    "successors": [],
+    "summary": "Hill residents and lowland traders witnessed limited quarry rights above a spring and obligations to keep debris and runoff from the fields below.",
+    "canon": "draft",
+    "sources": [
+      "docs/books/narmada-university/nine-traditions/09-kondh-earth-witness.md"
+    ]
+  },
+  {
+    "id": "event_village_keeps_two_seasonal_reckonings",
+    "type": "event",
+    "title": "A Village Preserves Two Seasonal Reckonings",
+    "epoch": "epoch_civilization_dawn",
+    "location": null,
+    "participants": [
+      "character_donyi",
+      "character_polo"
+    ],
+    "predecessors": [],
+    "successors": [],
+    "summary": "During irregular rains, a village assembly preserved both the shadow and tide methods of reckoning, avoiding a single planting date based on disputed observations.",
+    "canon": "draft",
+    "sources": [
+      "docs/books/narmada-university/nine-traditions/03-donyi-polo-sky-record.md"
+    ]
+  },
+  {
+    "id": "event_yadu_foundation_north_dwarka",
+    "type": "event",
+    "title": "Yadu Foundation of North Dwarka",
+    "epoch": "epoch_civilization_dawn",
+    "location": "settlement_dwarka",
+    "participants": [],
+    "predecessors": [],
+    "successors": [],
+    "summary": "The chronicle credits the Yadus, a community formed through Vedda, Naga and Harappan connections, with founding the northern harbour. Its regional influence preceded Lothal\u2019s rise. The founding generation and the end of Yadu rule remain open.",
+    "canon": "draft",
+    "sources": [
+      "docs/books/narmada-university/harappan-convergence/17-yadu-and-the-mask-family.md",
+      "docs/books/narmada-university/harappan-convergence/22-lore-linked-tribal-concordance.md"
+    ]
+  },
+  {
+    "id": "event_agasthya_yaksha_southern_exchange",
+    "type": "event",
+    "title": "Agasthya\u2019s Southern Exchange with the Yakshas",
+    "epoch": "epoch_current",
+    "location": null,
+    "participants": [
+      "character_agasthya"
+    ],
+    "predecessors": [],
+    "successors": [],
+    "summary": "A Kia teacher travelled south and exchanged practices of water management, teaching, civic mediation and recordkeeping. Yaksha custodians chose which practices to adapt and retained their sovereignty.",
+    "canon": "draft",
+    "sources": [
+      "docs/books/narmada-university/harappan-convergence/20-agasthya-the-kia-southward-road.md",
+      "docs/books/narmada-university/harappan-convergence/22-lore-linked-tribal-concordance.md"
+    ]
+  },
+  {
     "id": "event_antarctic_ice_wall_expedition",
     "type": "event",
     "title": "The Antarctic Ice Wall Expedition",
@@ -994,6 +1345,21 @@
     ]
   },
   {
+    "id": "event_canal_drainage_displacement_dispute",
+    "type": "event",
+    "title": "Lothal\u2019s Factory Drainage Dispute",
+    "epoch": "epoch_current",
+    "location": "settlement_lothal",
+    "participants": [],
+    "predecessors": [],
+    "successors": [],
+    "summary": "Disputes over factory tenements and steam-pumped flood channels revived a rule that displaced households should be counted. Civic lawyers and Kia families disagree over its attribution.",
+    "canon": "draft",
+    "sources": [
+      "docs/books/narmada-university/nine-traditions/02-sanamahi-house-and-serpent.md"
+    ]
+  },
+  {
     "id": "event_cartographic_mercantile_accord",
     "type": "event",
     "title": "The Cartographic & Mercantile Accord",
@@ -1009,6 +1375,23 @@
       "SouthOfTethys.txt"
     ],
     "location": "settlement_lothal"
+  },
+  {
+    "id": "event_chandraketugarh_garudasaur_blood_feud",
+    "type": "event",
+    "title": "Chandraketugarh Garudasaur Blood Feud",
+    "epoch": "epoch_current",
+    "location": "place_chandraketugarh",
+    "participants": [],
+    "predecessors": [],
+    "successors": [],
+    "summary": "The Vedda apothecary guilds and cultists associated with the Devourer disputed control of the Garudasaur blood supply.",
+    "canon": "secondary",
+    "sources": [
+      "docs/books/narmada-university/harappan-convergence/19-aurva-urva-and-the-eastern-fire-houses.md",
+      "docs/books/narmada-university/03-daedrasura-inheritance.md",
+      "database/places/place_chandraketugarh.json"
+    ]
   },
   {
     "id": "event_delta_outrigger_skirmishes",
@@ -1174,6 +1557,36 @@
     ]
   },
   {
+    "id": "event_narmada_archives_grove_concession_copies",
+    "type": "event",
+    "title": "Narmada Archives Rival Grove Concession Copies",
+    "epoch": "epoch_current",
+    "location": null,
+    "participants": [],
+    "predecessors": [],
+    "successors": [],
+    "summary": "Industrial fuel and rail interests cited a concession copy that omitted protections. Local residents submitted a rival copy preserving protected springs and graves.",
+    "canon": "draft",
+    "sources": [
+      "docs/books/narmada-university/nine-traditions/04-sarna-grove-testimonies.md"
+    ]
+  },
+  {
+    "id": "event_narmada_shadow_tables_telegraph_comparison",
+    "type": "event",
+    "title": "Narmada Compares Shadow Tables with Telegraph Time",
+    "epoch": "epoch_current",
+    "location": null,
+    "participants": [],
+    "predecessors": [],
+    "successors": [],
+    "summary": "Observatory technicians compared inherited seasonal observations with telegraph signals and dock reports. An engineer found local flood markers more pertinent than a distant standard clock.",
+    "canon": "draft",
+    "sources": [
+      "docs/books/narmada-university/nine-traditions/03-donyi-polo-sky-record.md"
+    ]
+  },
+  {
     "id": "event_narmada_upriver_expedition",
     "type": "event",
     "title": "The Narmada Upriver Expedition",
@@ -1265,6 +1678,21 @@
     ]
   },
   {
+    "id": "event_nilgiri_freight_route_hearing",
+    "type": "event",
+    "title": "Nilgiri Freight Route Hearing",
+    "epoch": "epoch_current",
+    "location": "place_nilgiri",
+    "participants": [],
+    "predecessors": [],
+    "successors": [],
+    "summary": "Cooperative planners backed a freight line for its effect on winter supply. Herding households argued that the proposed route would sever a seasonal crossing needed for grazing.",
+    "canon": "draft",
+    "sources": [
+      "docs/books/narmada-university/nine-traditions/08-toda-high-pastures.md"
+    ]
+  },
+  {
     "id": "event_paratethyan_lock_blockades",
     "type": "event",
     "title": "The Paratethyan Lock Blockades",
@@ -1291,6 +1719,36 @@
       "SouthOfTethys.txt"
     ],
     "location": "place_tamralinga"
+  },
+  {
+    "id": "event_public_charcoal_measure_patent_dispute",
+    "type": "event",
+    "title": "Dispute over Patent Claims on Charcoal Measures",
+    "epoch": "epoch_current",
+    "location": "settlement_lothal",
+    "participants": [],
+    "predecessors": [],
+    "successors": [],
+    "summary": "A foundry syndicate sought to patent a sequence resembling inherited measures. A legal historian questioned whether a method passed down through public teaching could become private property.",
+    "canon": "draft",
+    "sources": [
+      "docs/books/narmada-university/nine-traditions/05-gondi-forge-compact.md"
+    ]
+  },
+  {
+    "id": "event_rail_succession_wars",
+    "type": "event",
+    "title": "Rail Succession Wars",
+    "epoch": "epoch_current",
+    "location": null,
+    "participants": [],
+    "predecessors": [],
+    "successors": [],
+    "summary": "The proposed wars followed competition over coal railways, traditional tolls and rival engineering concerns. A shared track and telegraph council emerged alongside separate dynastic courts.",
+    "canon": "draft",
+    "sources": [
+      "docs/books/narmada-university/nine-traditions/states/05-rail-khanates.md"
+    ]
   },
   {
     "id": "event_saraswati_canal_drain",
@@ -1466,6 +1924,301 @@
     "canon": "primary",
     "sources": [
       "owner backstory, 2026-09-11"
+    ]
+  },
+  {
+    "id": "event_argenthal_settlement",
+    "type": "event",
+    "title": "Argenthal Settlement",
+    "epoch": null,
+    "location": null,
+    "participants": [],
+    "predecessors": [],
+    "successors": [],
+    "summary": "The proposed settlement assigned navigation law and treasury audit to towns and creditors after provincial princes became insolvent. The senior dynasty retained ceremonial duties.",
+    "canon": "draft",
+    "sources": [
+      "docs/books/narmada-university/nine-traditions/states/04-shwetavahana.md"
+    ]
+  },
+  {
+    "id": "event_bhrgu_teaching_enters_vedda_guilds",
+    "type": "event",
+    "title": "Eastern Bh\u1e5bgu Teaching Reaches the Vedda Guilds",
+    "epoch": null,
+    "location": "place_chandraketugarh",
+    "participants": [],
+    "predecessors": [],
+    "successors": [],
+    "summary": "Later inheritors of the eastern Bh\u1e5bgu line brought techniques for handling and conserving Garudasaur blood to existing Vedda healing guilds. The University manuscript reports \u201cGarudasura moss\u201d as a Chandraketugarh guild term for that material. The intermediate places and dates remain open.",
+    "canon": "draft",
+    "sources": [
+      "docs/books/narmada-university/harappan-convergence/19-aurva-urva-and-the-eastern-fire-houses.md"
+    ]
+  },
+  {
+    "id": "event_dual_coral_crown_treaties",
+    "type": "event",
+    "title": "Dual Coral Crown Treaties",
+    "epoch": null,
+    "location": null,
+    "participants": [],
+    "predecessors": [],
+    "successors": [],
+    "summary": "Proposed treaties arising from repeated dynastic marriages shared maritime responsibilities while retaining separate treasuries and succession laws.",
+    "canon": "draft",
+    "sources": [
+      "docs/books/narmada-university/nine-traditions/states/06-coral-monarchies.md"
+    ]
+  },
+  {
+    "id": "event_federal_harbour_charter",
+    "type": "event",
+    "title": "Federal Harbour Charter",
+    "epoch": null,
+    "location": "place_vanga",
+    "participants": [],
+    "predecessors": [],
+    "successors": [],
+    "summary": "After unrest over concentrated warehouse ownership and access to emergency grain, the proposed charter divided responsibility for the fleet, customs and grain reserves.",
+    "canon": "draft",
+    "sources": [
+      "docs/books/narmada-university/nine-traditions/states/03-vanga.md"
+    ]
+  },
+  {
+    "id": "event_formation_of_furnace_confederacy",
+    "type": "event",
+    "title": "Formation of the Furnace Confederacy",
+    "epoch": null,
+    "location": "region_narmada_plateau",
+    "participants": [],
+    "predecessors": [],
+    "successors": [],
+    "summary": "The proposed confederacy coordinated ore weights and security for routes between furnaces. The relationship between the confederacy and earlier local furnace testimony remains open.",
+    "canon": "draft",
+    "sources": [
+      "docs/books/narmada-university/nine-traditions/states/02-narmada.md"
+    ]
+  },
+  {
+    "id": "event_grove_obligations_enter_legal_roll",
+    "type": "event",
+    "title": "Grove and Hill Obligations Enter a Legal Roll",
+    "epoch": null,
+    "location": null,
+    "participants": [],
+    "predecessors": [],
+    "successors": [],
+    "summary": "A later compiler assembled separate woodland and hill testimonies when timber, quarry and passage claims converged. The witnesses\u2019 names survived together in the roll.",
+    "canon": "draft",
+    "sources": [
+      "docs/books/narmada-university/nine-traditions/04-sarna-grove-testimonies.md"
+    ]
+  },
+  {
+    "id": "event_jharwa_passage_into_yaksha_south",
+    "type": "event",
+    "title": "Jharwa Passage into the Yaksha South",
+    "epoch": null,
+    "location": null,
+    "participants": [],
+    "predecessors": [],
+    "successors": [],
+    "summary": "Jharwa travellers reached the southern lands under Yaksha sovereignty before the later Kia journey. The itinerary and generation are unrecorded.",
+    "canon": "draft",
+    "sources": [
+      "docs/books/narmada-university/harappan-convergence/20-agasthya-the-kia-southward-road.md",
+      "docs/books/narmada-university/harappan-convergence/22-lore-linked-tribal-concordance.md"
+    ]
+  },
+  {
+    "id": "event_last_attendance_of_manjalaya",
+    "type": "event",
+    "title": "The Last Attendance of Manjalaya",
+    "epoch": null,
+    "location": null,
+    "participants": [
+      "character_manjalaya",
+      "character_sarishne",
+      "character_gagdji"
+    ],
+    "predecessors": [],
+    "successors": [],
+    "summary": "A provisional account remembers a peaceful death witnessed by a wilderness guardian and her partner. Dating and placement of this account remain open.",
+    "canon": "draft",
+    "sources": [
+      "docs/books/narmada-university/05-manjalaya-royal-traditions.md",
+      "docs/books/narmada-university/07-sarishne-witness-of-the-shadow-pact.md"
+    ]
+  },
+  {
+    "id": "event_lothal_canal_compact",
+    "type": "event",
+    "title": "Lothal Canal Compact",
+    "epoch": null,
+    "location": "settlement_lothal",
+    "participants": [],
+    "predecessors": [],
+    "successors": [],
+    "summary": "The proposed compact negotiated overlapping Mask Crown and Kia jurisdiction over channels and fisheries.",
+    "canon": "draft",
+    "sources": [
+      "docs/books/narmada-university/nine-traditions/states/01-harappan-lothal.md"
+    ]
+  },
+  {
+    "id": "event_nine_pass_peace",
+    "type": "event",
+    "title": "Nine-Pass Peace",
+    "epoch": null,
+    "location": null,
+    "participants": [],
+    "predecessors": [],
+    "successors": [],
+    "summary": "The proposed highland peace distinguished rights to cross a pass, to graze and to govern. Its relationship to the winter-route testimony remains uncertain.",
+    "canon": "draft",
+    "sources": [
+      "docs/books/narmada-university/nine-traditions/states/05-rail-khanates.md"
+    ]
+  },
+  {
+    "id": "event_plateau_charter_crisis",
+    "type": "event",
+    "title": "Plateau Charter Crisis",
+    "epoch": null,
+    "location": "region_narmada_plateau",
+    "participants": [],
+    "predecessors": [],
+    "successors": [],
+    "summary": "The proposed crisis followed a royal attempt to monopolize mineral rights and withdraw scholarly exemptions. The reconstruction leaves the monarch\u2019s fate open and places a constitutional republic after the crisis.",
+    "canon": "draft",
+    "sources": [
+      "docs/books/narmada-university/nine-traditions/states/02-narmada.md"
+    ]
+  },
+  {
+    "id": "event_pragjyotisha_hill_autonomy_charter",
+    "type": "event",
+    "title": "Pragjyotisha Hill Autonomy Charter",
+    "epoch": null,
+    "location": "place_pragjyotisha",
+    "participants": [],
+    "predecessors": [],
+    "successors": [],
+    "summary": "The proposed royal charter gave hill assemblies legislative standing after disputes over roads, levies and recruitment. Defence and diplomacy remained with the crown.",
+    "canon": "draft",
+    "sources": [
+      "docs/books/narmada-university/nine-traditions/states/07-pragjyotisha.md"
+    ]
+  },
+  {
+    "id": "event_pragjyotisha_twin_reckoning",
+    "type": "event",
+    "title": "Pragjyotisha Adopts the Twin Reckoning",
+    "epoch": null,
+    "location": "place_pragjyotisha",
+    "participants": [],
+    "predecessors": [],
+    "successors": [],
+    "summary": "The proposed valley standard combined rival seasonal reckonings while preserving local timekeeping. The attribution to two early observers or their offices is uncertain.",
+    "canon": "draft",
+    "sources": [
+      "docs/books/narmada-university/nine-traditions/states/07-pragjyotisha.md"
+    ]
+  },
+  {
+    "id": "event_sky_island_survey_expansion",
+    "type": "event",
+    "title": "Expansion of Sky-Island Survey and Mineral Transport",
+    "epoch": null,
+    "location": null,
+    "participants": [],
+    "predecessors": [],
+    "successors": [],
+    "summary": "The University proposes a long expansion from existing whale-blimp routes toward systematic surveys, extraction and industrial transport. The dates and individual firsts remain open.",
+    "canon": "draft",
+    "sources": [
+      "docs/books/narmada-university/nine-traditions/13-two-thousand-two-hundred-years.md"
+    ]
+  },
+  {
+    "id": "event_vanga_seed_fleet",
+    "type": "event",
+    "title": "Vanga Seed Fleet",
+    "epoch": null,
+    "location": "place_vanga",
+    "participants": [],
+    "predecessors": [],
+    "successors": [],
+    "summary": "Coastal testimony proposes a fleet carrying planting seed during scarcity. The connection between these voyages and earlier hillside seed exchange remains uncertain.",
+    "canon": "draft",
+    "sources": [
+      "docs/books/narmada-university/nine-traditions/states/03-vanga.md"
+    ]
+  },
+  {
+    "id": "event_vijayan_high_pasture_treaty",
+    "type": "event",
+    "title": "Vijayan High Pasture Treaty",
+    "epoch": null,
+    "location": "place_nilgiri",
+    "participants": [],
+    "predecessors": [],
+    "successors": [],
+    "summary": "The proposed treaty preserved seasonal buffalo routes and council jurisdiction in exchange for trade duties and defensive obligations. The identity of any early negotiator remains open.",
+    "canon": "draft",
+    "sources": [
+      "docs/books/narmada-university/nine-traditions/states/08-vijaya.md"
+    ]
+  },
+  {
+    "id": "event_vijayan_watershed_compact",
+    "type": "event",
+    "title": "Vijayan Watershed Compact",
+    "epoch": null,
+    "location": null,
+    "participants": [],
+    "predecessors": [],
+    "successors": [],
+    "summary": "After upland opposition to mining concessions that threatened springs, the proposed compact granted local review of new extraction rights.",
+    "canon": "draft",
+    "sources": [
+      "docs/books/narmada-university/nine-traditions/states/08-vijaya.md"
+    ]
+  },
+  {
+    "id": "event_war_of_three_estuaries",
+    "type": "event",
+    "title": "War of the Three Estuaries",
+    "epoch": null,
+    "location": null,
+    "participants": [],
+    "predecessors": [],
+    "successors": [
+      "event_lothal_guild_settlement"
+    ],
+    "summary": "In the proposed war over port tolls, the crown relied on shipbuilding credit and marsh pilots. The financial guarantees strengthened hereditary guild chambers.",
+    "canon": "draft",
+    "sources": [
+      "docs/books/narmada-university/nine-traditions/states/01-harappan-lothal.md"
+    ]
+  },
+  {
+    "id": "event_lothal_guild_settlement",
+    "type": "event",
+    "title": "Lothal Guild Settlement",
+    "epoch": null,
+    "location": "settlement_lothal",
+    "participants": [],
+    "predecessors": [
+      "event_war_of_three_estuaries"
+    ],
+    "successors": [],
+    "summary": "A succession dispute impaired payment of war debts. The proposed settlement divided jurisdiction among civic, guild and Kia water representatives.",
+    "canon": "draft",
+    "sources": [
+      "docs/books/narmada-university/nine-traditions/states/01-harappan-lothal.md"
     ]
   }
 ]

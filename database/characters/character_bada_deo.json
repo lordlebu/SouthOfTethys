@@ -1,0 +1,17 @@
+{
+  "id": "character_bada_deo",
+  "type": "character",
+  "name": "Bada Deo",
+  "culture": null,
+  "species": "human",
+  "status": "unknown",
+  "epoch": "epoch_civilization_dawn",
+  "roles": [
+    "ore-access elder"
+  ],
+  "notes": "In the University’s fictional reconstruction, furnace testimony remembers an elder who proposed sharing furnace days among competing houses.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/nine-traditions/05-gondi-forge-compact.md"
+  ]
+}

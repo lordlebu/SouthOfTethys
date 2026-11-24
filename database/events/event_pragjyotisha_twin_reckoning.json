@@ -1,0 +1,15 @@
+{
+  "id": "event_pragjyotisha_twin_reckoning",
+  "type": "event",
+  "title": "Pragjyotisha Adopts the Twin Reckoning",
+  "epoch": null,
+  "location": "place_pragjyotisha",
+  "participants": [],
+  "predecessors": [],
+  "successors": [],
+  "summary": "The proposed valley standard combined rival seasonal reckonings while preserving local timekeeping. The attribution to two early observers or their offices is uncertain.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/nine-traditions/states/07-pragjyotisha.md"
+  ]
+}

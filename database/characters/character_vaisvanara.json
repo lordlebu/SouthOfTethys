@@ -1,0 +1,16 @@
+{
+  "id": "character_vaisvanara",
+  "type": "character",
+  "name": "Vaiśvānara",
+  "culture": null,
+  "status": "unknown",
+  "epoch": "epoch_migrations",
+  "roles": [
+    "custodian of the common fire"
+  ],
+  "notes": "Wiznu’s followers attribute protective fire observances to this figure. The name may be a succession title and the sources leave any connection to Agun unresolved.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/ancestral-transmissions/founders-vaisvanara.md"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "character_tatara_rabuga",
+  "type": "character",
+  "name": "Tatara-Rabuga",
+  "culture": null,
+  "species": "human",
+  "status": "unknown",
+  "epoch": "epoch_civilization_dawn",
+  "roles": [
+    "field allocation organizer"
+  ],
+  "notes": "In the University’s fictional reconstruction, eastern hillside testimony remembers an organizer opposing monopolization of flood-safe plots during scarcity.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/nine-traditions/07-songsarek-harvest.md"
+  ]
+}

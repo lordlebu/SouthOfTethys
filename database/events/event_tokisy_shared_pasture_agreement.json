@@ -1,0 +1,17 @@
+{
+  "id": "event_tokisy_shared_pasture_agreement",
+  "type": "event",
+  "title": "Nilgiri Shared Pasture Agreement",
+  "epoch": "epoch_civilization_dawn",
+  "location": "place_nilgiri",
+  "participants": [
+    "character_tokisy"
+  ],
+  "predecessors": [],
+  "successors": [],
+  "summary": "After forest clearance blocked a seasonal crossing, a herdswoman negotiated rotating grazing times and a shared watering point.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/nine-traditions/08-toda-high-pastures.md"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "event_narmada_archives_grove_concession_copies",
+  "type": "event",
+  "title": "Narmada Archives Rival Grove Concession Copies",
+  "epoch": "epoch_current",
+  "location": null,
+  "participants": [],
+  "predecessors": [],
+  "successors": [],
+  "summary": "Industrial fuel and rail interests cited a concession copy that omitted protections. Local residents submitted a rival copy preserving protected springs and graves.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/nine-traditions/04-sarna-grove-testimonies.md"
+  ]
+}

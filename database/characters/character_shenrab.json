@@ -1,0 +1,17 @@
+{
+  "id": "character_shenrab",
+  "type": "character",
+  "name": "Tonpa Shenrab",
+  "culture": null,
+  "species": "human",
+  "status": "unknown",
+  "epoch": "epoch_civilization_dawn",
+  "roles": [
+    "high-pass guide"
+  ],
+  "notes": "In the University’s fictional reconstruction, a mortal guide in the winter-route testimony. Later bearers of the title may be different people.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/nine-traditions/01-bon-mountain-witness.md"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "character_pakhangba",
+  "type": "character",
+  "name": "Pakhangba",
+  "culture": null,
+  "species": "human",
+  "status": "unknown",
+  "epoch": "epoch_civilization_dawn",
+  "roles": [
+    "canal negotiator"
+  ],
+  "notes": "In the University’s fictional reconstruction, delta testimony remembers a negotiator with a serpent-marked seal who enlisted Kia water-guides for a shared repair.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/nine-traditions/02-sanamahi-house-and-serpent.md"
+  ]
+}

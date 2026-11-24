@@ -1,0 +1,15 @@
+{
+  "id": "event_dual_coral_crown_treaties",
+  "type": "event",
+  "title": "Dual Coral Crown Treaties",
+  "epoch": null,
+  "location": null,
+  "participants": [],
+  "predecessors": [],
+  "successors": [],
+  "summary": "Proposed treaties arising from repeated dynastic marriages shared maritime responsibilities while retaining separate treasuries and succession laws.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/nine-traditions/states/06-coral-monarchies.md"
+  ]
+}

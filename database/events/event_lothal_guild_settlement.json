@@ -1,0 +1,17 @@
+{
+  "id": "event_lothal_guild_settlement",
+  "type": "event",
+  "title": "Lothal Guild Settlement",
+  "epoch": null,
+  "location": "settlement_lothal",
+  "participants": [],
+  "predecessors": [
+    "event_war_of_three_estuaries"
+  ],
+  "successors": [],
+  "summary": "A succession dispute impaired payment of war debts. The proposed settlement divided jurisdiction among civic, guild and Kia water representatives.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/nine-traditions/states/01-harappan-lothal.md"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "character_vata",
+  "type": "character",
+  "name": "Vāta",
+  "culture": null,
+  "status": "unknown",
+  "epoch": "epoch_migrations",
+  "roles": [
+    "weather reader"
+  ],
+  "notes": "Weather observers remember this name in accounts of travel and storm judgment. The records leave open whether it was a traveller’s name or a guild title.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/ancestral-transmissions/passage-vata.md"
+  ]
+}

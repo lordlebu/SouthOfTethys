@@ -1,0 +1,17 @@
+{
+  "id": "event_chandraketugarh_garudasaur_blood_feud",
+  "type": "event",
+  "title": "Chandraketugarh Garudasaur Blood Feud",
+  "epoch": "epoch_current",
+  "location": "place_chandraketugarh",
+  "participants": [],
+  "predecessors": [],
+  "successors": [],
+  "summary": "The Vedda apothecary guilds and cultists associated with the Devourer disputed control of the Garudasaur blood supply.",
+  "canon": "secondary",
+  "sources": [
+    "docs/books/narmada-university/harappan-convergence/19-aurva-urva-and-the-eastern-fire-houses.md",
+    "docs/books/narmada-university/03-daedrasura-inheritance.md",
+    "database/places/place_chandraketugarh.json"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "character_vivasvan",
+  "type": "character",
+  "name": "Vivasvān",
+  "culture": null,
+  "status": "unknown",
+  "epoch": "epoch_migrations",
+  "roles": [
+    "migrant confederation elder"
+  ],
+  "notes": "Accounts of inherited obligations name Vivasvān in a dispute with Ilā. The name may also have passed between elders.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/ancestral-transmissions/founders-vivasvan.md"
+  ]
+}

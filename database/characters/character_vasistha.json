@@ -1,0 +1,17 @@
+{
+  "id": "character_vasistha",
+  "type": "character",
+  "name": "Vasiṣṭha",
+  "culture": null,
+  "species": "human",
+  "status": "unknown",
+  "epoch": "epoch_migrations",
+  "roles": [
+    "royal singer"
+  ],
+  "notes": "Remembered as the singer associated with Sudās’s victory. Later use of the name may refer to a teaching house or successors.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/harappan-convergence/12-vasistha-and-the-victors-court.md"
+  ]
+}

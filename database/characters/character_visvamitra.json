@@ -1,0 +1,17 @@
+{
+  "id": "character_visvamitra",
+  "type": "character",
+  "name": "Viśvāmitra",
+  "culture": null,
+  "species": "human",
+  "status": "unknown",
+  "epoch": "epoch_migrations",
+  "roles": [
+    "rājā and ṛṣi"
+  ],
+  "notes": "Regional biography remembers a ruler who relinquished his seat and became a travelling witness. The river dialogue is a distinct source and the sequence of patronage changes remains unknown.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/harappan-convergence/04-visvamitra-from-raja-to-rsi.md"
+  ]
+}

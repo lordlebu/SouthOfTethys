@@ -1,0 +1,17 @@
+{
+  "id": "character_saljong",
+  "type": "character",
+  "name": "Saljong",
+  "culture": null,
+  "species": "human",
+  "status": "unknown",
+  "epoch": "epoch_civilization_dawn",
+  "roles": [
+    "seed-grain custodian"
+  ],
+  "notes": "In the University’s fictional reconstruction, the eastern grain account remembers a custodian who distributed measured seed and recorded what was due after planting.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/nine-traditions/07-songsarek-harvest.md"
+  ]
+}

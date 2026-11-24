@@ -1,0 +1,19 @@
+{
+  "id": "event_sudas_river_passage",
+  "type": "event",
+  "title": "River Passage of the Bharata Force",
+  "epoch": "epoch_migrations",
+  "location": null,
+  "participants": [
+    "character_sudas",
+    "character_visvamitra"
+  ],
+  "predecessors": [],
+  "successors": [],
+  "summary": "In the river dialogue a Bharata force sought passage, and a speaker petitioned two rivers. The local crossing and its relationship to the coalition war remain unresolved.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/harappan-convergence/04-visvamitra-from-raja-to-rsi.md",
+    "docs/books/narmada-university/harappan-convergence/12-vasistha-and-the-victors-court.md"
+  ]
+}

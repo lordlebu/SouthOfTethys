@@ -1,0 +1,15 @@
+{
+  "id": "event_pragjyotisha_hill_autonomy_charter",
+  "type": "event",
+  "title": "Pragjyotisha Hill Autonomy Charter",
+  "epoch": null,
+  "location": "place_pragjyotisha",
+  "participants": [],
+  "predecessors": [],
+  "successors": [],
+  "summary": "The proposed royal charter gave hill assemblies legislative standing after disputes over roads, levies and recruitment. Defence and diplomacy remained with the crown.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/nine-traditions/states/07-pragjyotisha.md"
+  ]
+}

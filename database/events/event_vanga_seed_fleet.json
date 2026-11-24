@@ -1,0 +1,15 @@
+{
+  "id": "event_vanga_seed_fleet",
+  "type": "event",
+  "title": "Vanga Seed Fleet",
+  "epoch": null,
+  "location": "place_vanga",
+  "participants": [],
+  "predecessors": [],
+  "successors": [],
+  "summary": "Coastal testimony proposes a fleet carrying planting seed during scarcity. The connection between these voyages and earlier hillside seed exchange remains uncertain.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/nine-traditions/states/03-vanga.md"
+  ]
+}

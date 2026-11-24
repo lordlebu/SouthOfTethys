@@ -1,0 +1,17 @@
+{
+  "id": "character_u_blei_nongthaw",
+  "type": "character",
+  "name": "U Blei Nongthaw",
+  "culture": null,
+  "species": "human",
+  "status": "unknown",
+  "epoch": "epoch_civilization_dawn",
+  "roles": [
+    "builder or patron"
+  ],
+  "notes": "In the University’s fictional reconstruction, ridge testimony credits this name with marking common access to a spring. Some accounts credit successive assemblies instead of a single founder.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/nine-traditions/06-niam-khasi-stones.md"
+  ]
+}

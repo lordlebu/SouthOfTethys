@@ -1,0 +1,15 @@
+{
+  "id": "event_grove_obligations_enter_legal_roll",
+  "type": "event",
+  "title": "Grove and Hill Obligations Enter a Legal Roll",
+  "epoch": null,
+  "location": null,
+  "participants": [],
+  "predecessors": [],
+  "successors": [],
+  "summary": "A later compiler assembled separate woodland and hill testimonies when timber, quarry and passage claims converged. The witnesses’ names survived together in the roll.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/nine-traditions/04-sarna-grove-testimonies.md"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "character_jaher_era",
+  "type": "character",
+  "name": "Jaher Era",
+  "culture": null,
+  "species": "human",
+  "status": "unknown",
+  "epoch": "epoch_civilization_dawn",
+  "roles": [
+    "grove custodian"
+  ],
+  "notes": "In the University’s fictional reconstruction, remembered as the custodian of a grove used for shelter during floods and for burials. A later concession copy omitted protections for graves and spring water.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/nine-traditions/04-sarna-grove-testimonies.md"
+  ]
+}

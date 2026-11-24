@@ -1,0 +1,17 @@
+{
+  "id": "character_niyam_raja",
+  "type": "character",
+  "name": "Niyam Raja",
+  "culture": null,
+  "species": "human",
+  "status": "unknown",
+  "epoch": "epoch_civilization_dawn",
+  "roles": [
+    "upland negotiator"
+  ],
+  "notes": "In the University’s fictional reconstruction, quarry testimony names a negotiator who limited working above a spring. The name may be a political title.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/nine-traditions/09-kondh-earth-witness.md"
+  ]
+}

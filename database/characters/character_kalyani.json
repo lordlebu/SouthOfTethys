@@ -1,0 +1,17 @@
+{
+  "id": "character_kalyani",
+  "type": "character",
+  "name": "Kalyani",
+  "culture": null,
+  "species": "asura",
+  "status": "unknown",
+  "epoch": null,
+  "roles": [
+    "Daitya figure"
+  ],
+  "notes": "The Daitya dossier identifies her as a friend of Vusajc Karthakur. Her era, mortality and political affiliation are unrecorded.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/06-kalyani-daitya-accounts.md"
+  ]
+}

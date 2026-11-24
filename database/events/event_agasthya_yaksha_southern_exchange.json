@@ -1,0 +1,18 @@
+{
+  "id": "event_agasthya_yaksha_southern_exchange",
+  "type": "event",
+  "title": "Agasthya’s Southern Exchange with the Yakshas",
+  "epoch": "epoch_current",
+  "location": null,
+  "participants": [
+    "character_agasthya"
+  ],
+  "predecessors": [],
+  "successors": [],
+  "summary": "A Kia teacher travelled south and exchanged practices of water management, teaching, civic mediation and recordkeeping. Yaksha custodians chose which practices to adapt and retained their sovereignty.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/harappan-convergence/20-agasthya-the-kia-southward-road.md",
+    "docs/books/narmada-university/harappan-convergence/22-lore-linked-tribal-concordance.md"
+  ]
+}

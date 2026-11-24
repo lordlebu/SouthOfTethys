@@ -1,0 +1,15 @@
+{
+  "id": "event_nilgiri_freight_route_hearing",
+  "type": "event",
+  "title": "Nilgiri Freight Route Hearing",
+  "epoch": "epoch_current",
+  "location": "place_nilgiri",
+  "participants": [],
+  "predecessors": [],
+  "successors": [],
+  "summary": "Cooperative planners backed a freight line for its effect on winter supply. Herding households argued that the proposed route would sever a seasonal crossing needed for grazing.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/nine-traditions/08-toda-high-pastures.md"
+  ]
+}

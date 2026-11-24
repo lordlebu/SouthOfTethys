@@ -1,0 +1,18 @@
+{
+  "id": "event_eastern_hill_seed_exchange",
+  "type": "event",
+  "title": "Eastern Hillside Seed Exchange",
+  "epoch": "epoch_civilization_dawn",
+  "location": null,
+  "participants": [
+    "character_tatara_rabuga",
+    "character_saljong"
+  ],
+  "predecessors": [],
+  "successors": [],
+  "summary": "A poor harvest prompted debate over flood-safe plots and the distribution of seed recorded as due after the next planting. A later Tuli merchant carried an abridged account to coastal traders.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/nine-traditions/07-songsarek-harvest.md"
+  ]
+}

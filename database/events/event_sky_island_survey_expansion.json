@@ -1,0 +1,15 @@
+{
+  "id": "event_sky_island_survey_expansion",
+  "type": "event",
+  "title": "Expansion of Sky-Island Survey and Mineral Transport",
+  "epoch": null,
+  "location": null,
+  "participants": [],
+  "predecessors": [],
+  "successors": [],
+  "summary": "The University proposes a long expansion from existing whale-blimp routes toward systematic surveys, extraction and industrial transport. The dates and individual firsts remain open.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/nine-traditions/13-two-thousand-two-hundred-years.md"
+  ]
+}

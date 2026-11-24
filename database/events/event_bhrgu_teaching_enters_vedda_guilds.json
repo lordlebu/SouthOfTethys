@@ -1,0 +1,15 @@
+{
+  "id": "event_bhrgu_teaching_enters_vedda_guilds",
+  "type": "event",
+  "title": "Eastern Bhṛgu Teaching Reaches the Vedda Guilds",
+  "epoch": null,
+  "location": "place_chandraketugarh",
+  "participants": [],
+  "predecessors": [],
+  "successors": [],
+  "summary": "Later inheritors of the eastern Bhṛgu line brought techniques for handling and conserving Garudasaur blood to existing Vedda healing guilds. The University manuscript reports “Garudasura moss” as a Chandraketugarh guild term for that material. The intermediate places and dates remain open.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/harappan-convergence/19-aurva-urva-and-the-eastern-fire-houses.md"
+  ]
+}

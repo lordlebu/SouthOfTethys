@@ -1,0 +1,19 @@
+{
+  "id": "event_furnace_houses_forge_compact",
+  "type": "event",
+  "title": "Compact of the Furnace Houses",
+  "epoch": "epoch_civilization_dawn",
+  "location": null,
+  "participants": [
+    "character_bada_deo",
+    "character_kupar_lingo",
+    "character_jangubai"
+  ],
+  "predecessors": [],
+  "successors": [],
+  "summary": "Rival furnace houses faced shortages of shared equipment and fuel. Testimonies remember shared furnace days, common measures and shelter for apprentices exposed to debt labour.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/nine-traditions/05-gondi-forge-compact.md"
+  ]
+}

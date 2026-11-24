@@ -1,0 +1,17 @@
+{
+  "id": "character_gagdji",
+  "type": "character",
+  "name": "Gagdji",
+  "culture": null,
+  "species": "asura",
+  "status": "unknown",
+  "epoch": null,
+  "roles": [
+    "partner of Sarishne"
+  ],
+  "notes": "An Oni named as the partner of Sarishne. A provisional death account names them both as witnesses. Gagdji’s knowledge of the original Shadow Pact is unestablished.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/07-sarishne-witness-of-the-shadow-pact.md"
+  ]
+}

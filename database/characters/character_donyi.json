@@ -1,0 +1,17 @@
+{
+  "id": "character_donyi",
+  "type": "character",
+  "name": "Donyi",
+  "culture": null,
+  "species": "human",
+  "status": "unknown",
+  "epoch": "epoch_civilization_dawn",
+  "roles": [
+    "seasonal observer"
+  ],
+  "notes": "In the University’s fictional reconstruction, a proposed mortal observer who used shadows to record the sowing season. The name could have been a title.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/nine-traditions/03-donyi-polo-sky-record.md"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "character_tvastr",
+  "type": "character",
+  "name": "Tvaṣṭṛ",
+  "culture": null,
+  "status": "unknown",
+  "epoch": "epoch_migrations",
+  "roles": [
+    "craft teacher"
+  ],
+  "notes": "Artisan testimony associates this name with passing on techniques and resisting monopoly. It may identify a craft office as well as a remembered maker.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/ancestral-transmissions/founders-tvastr.md"
+  ]
+}

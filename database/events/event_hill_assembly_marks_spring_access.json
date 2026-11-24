@@ -1,0 +1,19 @@
+{
+  "id": "event_hill_assembly_marks_spring_access",
+  "type": "event",
+  "title": "Common Spring Access Marked in Stone",
+  "epoch": "epoch_civilization_dawn",
+  "location": null,
+  "participants": [
+    "character_u_blei_nongthaw"
+  ],
+  "predecessors": [],
+  "successors": [
+    "event_ridge_path_landslip_hearing"
+  ],
+  "summary": "Ridge testimony recalls that a marker line protected shared access to a spring. Some accounts credit successive assemblies for the work.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/nine-traditions/06-niam-khasi-stones.md"
+  ]
+}

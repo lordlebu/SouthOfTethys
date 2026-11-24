@@ -1,0 +1,17 @@
+{
+  "id": "character_vairochana",
+  "type": "character",
+  "name": "Vairochana",
+  "culture": null,
+  "species": "asura",
+  "status": "unknown",
+  "epoch": null,
+  "roles": [
+    "Elder Asura"
+  ],
+  "notes": "Narmada University places him among the Elder Asuras. His rank, dates and any connection to later houses remain uncertain.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/01-elder-asuras.md"
+  ]
+}

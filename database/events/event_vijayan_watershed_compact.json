@@ -1,0 +1,15 @@
+{
+  "id": "event_vijayan_watershed_compact",
+  "type": "event",
+  "title": "Vijayan Watershed Compact",
+  "epoch": null,
+  "location": null,
+  "participants": [],
+  "predecessors": [],
+  "successors": [],
+  "summary": "After upland opposition to mining concessions that threatened springs, the proposed compact granted local review of new extraction rights.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/nine-traditions/states/08-vijaya.md"
+  ]
+}

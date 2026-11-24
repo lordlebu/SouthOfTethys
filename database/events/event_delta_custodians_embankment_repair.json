@@ -1,0 +1,19 @@
+{
+  "id": "event_delta_custodians_embankment_repair",
+  "type": "event",
+  "title": "The Three Custodians’ Embankment Repair",
+  "epoch": "epoch_civilization_dawn",
+  "location": "region_saraswati_delta",
+  "participants": [
+    "character_sanamahi",
+    "character_pakhangba",
+    "character_leimarel_sidabi"
+  ],
+  "predecessors": [],
+  "successors": [],
+  "summary": "A failed embankment threatened mixed delta households. Three custodians counted available grain, heard displaced families and enlisted Kia water-guides in a shared repair.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/nine-traditions/02-sanamahi-house-and-serpent.md"
+  ]
+}

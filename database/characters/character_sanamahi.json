@@ -1,0 +1,17 @@
+{
+  "id": "character_sanamahi",
+  "type": "character",
+  "name": "Sanamahi",
+  "culture": null,
+  "species": "human",
+  "status": "unknown",
+  "epoch": "epoch_civilization_dawn",
+  "roles": [
+    "keeper of fire and stores"
+  ],
+  "notes": "In the University’s fictional reconstruction, a later delta household book remembers this custodian counting grain across homes during the embankment emergency.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/nine-traditions/02-sanamahi-house-and-serpent.md"
+  ]
+}

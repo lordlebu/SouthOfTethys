@@ -1,0 +1,16 @@
+{
+  "id": "character_bhaga",
+  "type": "character",
+  "name": "Bhaga",
+  "culture": null,
+  "status": "unknown",
+  "epoch": "epoch_migrations",
+  "roles": [
+    "custodian of provisions"
+  ],
+  "notes": "Allocation traditions associate the name with oversight of shares and provisions. Later institutional custody remains a matter of inquiry.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/ancestral-transmissions/passage-bhaga.md"
+  ]
+}

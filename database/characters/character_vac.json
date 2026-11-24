@@ -1,0 +1,16 @@
+{
+  "id": "character_vac",
+  "type": "character",
+  "name": "Vāc",
+  "culture": null,
+  "status": "unknown",
+  "epoch": "epoch_migrations",
+  "roles": [
+    "oral witness"
+  ],
+  "notes": "Witnesses invoke Vāc when describing the recitation of agreements. The name could identify an individual bearer or a transmitted office.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/ancestral-transmissions/founders-vac.md"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "character_u_ryngkew",
+  "type": "character",
+  "name": "U Ryngkew",
+  "culture": null,
+  "species": "human",
+  "status": "unknown",
+  "epoch": "epoch_civilization_dawn",
+  "roles": [
+    "guardian of the ridge path"
+  ],
+  "notes": "In the University’s fictional reconstruction, the ridge chronicle remembers a later guardian who convened witnesses after a landslip and protected a common-access marker.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/nine-traditions/06-niam-khasi-stones.md"
+  ]
+}

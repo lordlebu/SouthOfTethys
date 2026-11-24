@@ -1,0 +1,17 @@
+{
+  "id": "character_singbonga",
+  "type": "character",
+  "name": "Singbonga",
+  "culture": null,
+  "species": "human",
+  "status": "unknown",
+  "epoch": "epoch_civilization_dawn",
+  "roles": [
+    "boundary witness"
+  ],
+  "notes": "In the University’s fictional reconstruction, separate woodland testimony remembers a witness who required grazing routes to be walked before an oath. The later legal roll supplies no shared meeting with the other witnesses.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/nine-traditions/04-sarna-grove-testimonies.md"
+  ]
+}

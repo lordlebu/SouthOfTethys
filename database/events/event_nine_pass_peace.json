@@ -1,0 +1,15 @@
+{
+  "id": "event_nine_pass_peace",
+  "type": "event",
+  "title": "Nine-Pass Peace",
+  "epoch": null,
+  "location": null,
+  "participants": [],
+  "predecessors": [],
+  "successors": [],
+  "summary": "The proposed highland peace distinguished rights to cross a pass, to graze and to govern. Its relationship to the winter-route testimony remains uncertain.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/nine-traditions/states/05-rail-khanates.md"
+  ]
+}

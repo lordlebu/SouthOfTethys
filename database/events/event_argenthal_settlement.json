@@ -1,0 +1,15 @@
+{
+  "id": "event_argenthal_settlement",
+  "type": "event",
+  "title": "Argenthal Settlement",
+  "epoch": null,
+  "location": null,
+  "participants": [],
+  "predecessors": [],
+  "successors": [],
+  "summary": "The proposed settlement assigned navigation law and treasury audit to towns and creditors after provincial princes became insolvent. The senior dynasty retained ceremonial duties.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/nine-traditions/states/04-shwetavahana.md"
+  ]
+}

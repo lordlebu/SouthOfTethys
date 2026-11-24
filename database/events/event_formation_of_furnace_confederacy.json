@@ -1,0 +1,15 @@
+{
+  "id": "event_formation_of_furnace_confederacy",
+  "type": "event",
+  "title": "Formation of the Furnace Confederacy",
+  "epoch": null,
+  "location": "region_narmada_plateau",
+  "participants": [],
+  "predecessors": [],
+  "successors": [],
+  "summary": "The proposed confederacy coordinated ore weights and security for routes between furnaces. The relationship between the confederacy and earlier local furnace testimony remains open.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/nine-traditions/states/02-narmada.md"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "event_sarishne_manjalaya_gate_disturbance",
+  "type": "event",
+  "title": "Sarishne Encounters Manjalaya at a Gate Disturbance",
+  "epoch": "epoch_migrations",
+  "location": null,
+  "participants": [
+    "character_sarishne",
+    "character_manjalaya"
+  ],
+  "predecessors": [],
+  "successors": [],
+  "summary": "University testimony places the meeting at a later Dwarka Gate disturbance. The physical identity of the gate remains unsettled.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/07-sarishne-witness-of-the-shadow-pact.md",
+    "docs/books/narmada-university/05-manjalaya-royal-traditions.md"
+  ]
+}

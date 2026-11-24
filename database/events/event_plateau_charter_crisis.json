@@ -1,0 +1,15 @@
+{
+  "id": "event_plateau_charter_crisis",
+  "type": "event",
+  "title": "Plateau Charter Crisis",
+  "epoch": null,
+  "location": "region_narmada_plateau",
+  "participants": [],
+  "predecessors": [],
+  "successors": [],
+  "summary": "The proposed crisis followed a royal attempt to monopolize mineral rights and withdraw scholarly exemptions. The reconstruction leaves the monarch’s fate open and places a constitutional republic after the crisis.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/nine-traditions/states/02-narmada.md"
+  ]
+}

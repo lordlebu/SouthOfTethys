@@ -1,0 +1,15 @@
+{
+  "id": "event_narmada_shadow_tables_telegraph_comparison",
+  "type": "event",
+  "title": "Narmada Compares Shadow Tables with Telegraph Time",
+  "epoch": "epoch_current",
+  "location": null,
+  "participants": [],
+  "predecessors": [],
+  "successors": [],
+  "summary": "Observatory technicians compared inherited seasonal observations with telegraph signals and dock reports. An engineer found local flood markers more pertinent than a distant standard clock.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/nine-traditions/03-donyi-polo-sky-record.md"
+  ]
+}

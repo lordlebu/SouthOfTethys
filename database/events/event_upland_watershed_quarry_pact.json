@@ -1,0 +1,18 @@
+{
+  "id": "event_upland_watershed_quarry_pact",
+  "type": "event",
+  "title": "Upland Watershed Quarry Pact",
+  "epoch": "epoch_civilization_dawn",
+  "location": null,
+  "participants": [
+    "character_niyam_raja",
+    "character_dharani_penu"
+  ],
+  "predecessors": [],
+  "successors": [],
+  "summary": "Hill residents and lowland traders witnessed limited quarry rights above a spring and obligations to keep debris and runoff from the fields below.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/nine-traditions/09-kondh-earth-witness.md"
+  ]
+}

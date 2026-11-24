@@ -1,0 +1,17 @@
+{
+  "id": "character_aurva",
+  "type": "character",
+  "name": "Aurva",
+  "culture": null,
+  "species": "human",
+  "status": "unknown",
+  "epoch": null,
+  "roles": [
+    "eastern Bhṛgu ṛṣi"
+  ],
+  "notes": "The eastern teaching line remembers Aurva alongside Urva in the history of obtaining and preserving Garudasaur blood. Later custodians carried the knowledge to the Vedda guilds.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/harappan-convergence/19-aurva-urva-and-the-eastern-fire-houses.md"
+  ]
+}

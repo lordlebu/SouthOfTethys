@@ -1,0 +1,18 @@
+{
+  "id": "event_village_keeps_two_seasonal_reckonings",
+  "type": "event",
+  "title": "A Village Preserves Two Seasonal Reckonings",
+  "epoch": "epoch_civilization_dawn",
+  "location": null,
+  "participants": [
+    "character_donyi",
+    "character_polo"
+  ],
+  "predecessors": [],
+  "successors": [],
+  "summary": "During irregular rains, a village assembly preserved both the shadow and tide methods of reckoning, avoiding a single planting date based on disputed observations.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/nine-traditions/03-donyi-polo-sky-record.md"
+  ]
+}

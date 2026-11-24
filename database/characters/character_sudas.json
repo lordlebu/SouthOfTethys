@@ -1,0 +1,17 @@
+{
+  "id": "character_sudas",
+  "type": "character",
+  "name": "Sudās",
+  "culture": null,
+  "species": "human",
+  "status": "unknown",
+  "epoch": "epoch_migrations",
+  "roles": [
+    "ruler"
+  ],
+  "notes": "Remembered as a ruler in the Bharata and Tṛtsu political world and as the victor in the coalition war. His court’s songs are the principal testimony for that victory. His relationship to the founders of Hastinapura remains open.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/harappan-convergence/05-sudas-and-the-ten-kings.md"
+  ]
+}

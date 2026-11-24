@@ -1,0 +1,20 @@
+{
+  "id": "event_vasistha_court_recitals",
+  "type": "event",
+  "title": "Victory Recitals at the Bharata Court",
+  "epoch": "epoch_migrations",
+  "location": null,
+  "participants": [
+    "character_vasistha",
+    "character_sudas"
+  ],
+  "predecessors": [
+    "event_battle_of_ten_kings"
+  ],
+  "successors": [],
+  "summary": "The court’s singer preserved the ruler’s claim to victory in praise songs. Later performances made the account available for new claims about obligations, without preserving an independent inventory of the defeated.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/harappan-convergence/12-vasistha-and-the-victors-court.md"
+  ]
+}

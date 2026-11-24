@@ -1,0 +1,17 @@
+{
+  "id": "character_jangubai",
+  "type": "character",
+  "name": "Jangubai",
+  "culture": null,
+  "species": "human",
+  "status": "unknown",
+  "epoch": "epoch_civilization_dawn",
+  "roles": [
+    "protector of apprentices"
+  ],
+  "notes": "In the University’s fictional reconstruction, forge testimony remembers her sheltering apprentices threatened with debt labour. Later worker organisations invoked her memory.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/nine-traditions/05-gondi-forge-compact.md"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "character_divodasa",
+  "type": "character",
+  "name": "Divodāsa",
+  "culture": null,
+  "species": "human",
+  "status": "unknown",
+  "epoch": "epoch_migrations",
+  "roles": [
+    "frontier ruler"
+  ],
+  "notes": "Praise traditions remember an earlier royal figure. A comparative verse calls him father of Sudās, while the local succession and the extent of his rule are unresolved.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/harappan-convergence/03-divodasa-and-the-frontier.md"
+  ]
+}

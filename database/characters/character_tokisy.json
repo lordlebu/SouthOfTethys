@@ -1,0 +1,17 @@
+{
+  "id": "character_tokisy",
+  "type": "character",
+  "name": "Tökisy",
+  "culture": null,
+  "species": "human",
+  "status": "unknown",
+  "epoch": "epoch_civilization_dawn",
+  "roles": [
+    "pastoral negotiator"
+  ],
+  "notes": "In the University’s fictional reconstruction, nilgiri pastoral testimony remembers a herdswoman negotiating shared watering and seasonal crossings. The name may be a founding honorific.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/nine-traditions/08-toda-high-pastures.md"
+  ]
+}

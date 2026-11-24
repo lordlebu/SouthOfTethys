@@ -1,0 +1,19 @@
+{
+  "id": "event_ridge_path_landslip_hearing",
+  "type": "event",
+  "title": "Hearing at the Landslip",
+  "epoch": "epoch_civilization_dawn",
+  "location": null,
+  "participants": [
+    "character_u_ryngkew"
+  ],
+  "predecessors": [
+    "event_hill_assembly_marks_spring_access"
+  ],
+  "successors": [],
+  "summary": "After a landslip, the guardian called witnesses and withheld permission to move the oldest marker until affected households had been heard.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/nine-traditions/06-niam-khasi-stones.md"
+  ]
+}

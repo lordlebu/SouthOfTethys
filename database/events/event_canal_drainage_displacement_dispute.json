@@ -1,0 +1,15 @@
+{
+  "id": "event_canal_drainage_displacement_dispute",
+  "type": "event",
+  "title": "Lothal’s Factory Drainage Dispute",
+  "epoch": "epoch_current",
+  "location": "settlement_lothal",
+  "participants": [],
+  "predecessors": [],
+  "successors": [],
+  "summary": "Disputes over factory tenements and steam-pumped flood channels revived a rule that displaced households should be counted. Civic lawyers and Kia families disagree over its attribution.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/nine-traditions/02-sanamahi-house-and-serpent.md"
+  ]
+}

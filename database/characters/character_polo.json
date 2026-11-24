@@ -1,0 +1,17 @@
+{
+  "id": "character_polo",
+  "type": "character",
+  "name": "Polo",
+  "culture": null,
+  "species": "human",
+  "status": "unknown",
+  "epoch": "epoch_civilization_dawn",
+  "roles": [
+    "seasonal observer"
+  ],
+  "notes": "In the University’s fictional reconstruction, a proposed mortal observer who compared night tides with river crossing times. The relationship to Donyi remains uncertain.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/nine-traditions/03-donyi-polo-sky-record.md"
+  ]
+}

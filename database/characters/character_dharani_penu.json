@@ -1,0 +1,17 @@
+{
+  "id": "character_dharani_penu",
+  "type": "character",
+  "name": "Dharani Penu",
+  "culture": null,
+  "species": "human",
+  "status": "unknown",
+  "epoch": "epoch_civilization_dawn",
+  "roles": [
+    "land steward"
+  ],
+  "notes": "In the University’s fictional reconstruction, the upland quarry account credits this steward with requiring debris to be returned to the worked slope to protect fields downstream.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/nine-traditions/09-kondh-earth-witness.md"
+  ]
+}
