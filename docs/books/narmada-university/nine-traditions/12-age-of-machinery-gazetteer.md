@@ -20,3 +20,7 @@ For every proposed cartographic polygon, require a dated source era, controlling
 
 ## Names to reconcile in the sources
 The possible terms **Industrial Directorate** and **Industrial Union** should not be silently treated as independent contemporary states: one possible reconciliation is that Directorate describes a limited authoritarian interval or an internal office of the Union. Likewise **Vanga Maritime Thalassocracy** can describe maritime dominance while **Federation** denotes constitutional form. These reconciliations remain proposals, subject to verification against canonical records.
+
+
+## Character epoch correction
+All nineteen individuals in the Nine Houses register are mortal political actors of the **Early Age of Machinery**, active around or after the proposed Year 2,200 threshold. They personally participate in industrial nation-building, constitutional settlements and ethnic or labour movements. Earlier institutions and customs belong to unnamed predecessors, not these individuals. Any named movement or settlement involving them belongs to Early Machinery; earlier phases describe its institutional antecedents only. See [the character register](00-chronicle-of-nine-houses.md). Exact lifetimes remain unassigned; the proposed elapsed chronology and existing Dawn characters are unchanged.
