@@ -19,3 +19,7 @@ Rail engineers and census clerks urge a common language and uniform survey. Hill
 Donyi and Polo personally develop the Twin Reckoning in Early Machinery; U Blei Nongthaw and U Ryngkew lead constitutional and military negotiations for hill autonomy. Singbonga, Marang Buru and Jaher Era are contemporary leaders of distinct communities. These are mortal individuals, not ancient namesakes; earlier institutions predate them.
 
 **Tests:** any existing mythology attached to Pragjyotisha, its geographical limits, the legal status of named hills and documented royal succession.
+
+
+### Database concordance
+The seasonal debate records Donyi and Polo; spring access and landslip records name Nongthaw and Ryngkew respectively. The grove legal roll records three separate movement leaders. Twin Reckoning and Hill Autonomy Charter participation remain proposed. See [Register of Persons and Public Acts](../14-character-event-register.md).
