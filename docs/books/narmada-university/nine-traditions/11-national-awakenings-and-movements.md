@@ -27,3 +27,7 @@ National integration can arise through a universal tax court, common protection 
 
 ## External methodological analogies
 For scholarly comparison rather than imported events: Charles Tilly's account of coercion, taxation and capital; research on Asian state formation by emulation and kinship; and scholarship on territorial autonomy and multi-layered ethnicity. These are models of causation, **not** evidence that Jambhudweepa experienced a real-world colonial chronology or a particular modern nationalist movement.
+
+
+## Character epoch correction
+All nineteen individuals in the Nine Houses register are mortal political actors of the **Early Age of Machinery**, active around or after the proposed Year 2,200 threshold. They personally participate in industrial nation-building, constitutional settlements and ethnic or labour movements. Earlier institutions and customs belong to unnamed predecessors, not these individuals. Any named movement or settlement involving them belongs to Early Machinery; earlier phases describe its institutional antecedents only. See [the character register](00-chronicle-of-nine-houses.md). Exact lifetimes remain unassigned; the proposed elapsed chronology and existing Dawn characters are unchanged.
