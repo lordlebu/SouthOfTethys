@@ -3,6 +3,8 @@
 *Studies in Ancient Testimony, Volume X*  
 *Narmada University — Department of Wilderness Histories*
 
+**Epoch of study:** Deep Antiquity (`epoch_deep_antiquity`), proposed principal placement. **Background:** Prehistory (`epoch_prehistoric`). **Later testimony:** Migrations (`epoch_migrations`).
+
 ## Preface
 Owlman is remembered as a biological-spiritual guardian of the forest, counterpart to the sea-bound Ammonite Man. His later retreat into the Western Ghats is recorded. The following reconstruction concerns his proposed earlier part in the two wars of reclamation.
 
@@ -38,3 +40,10 @@ The later event gives the reconstructed earlier history its bitter conclusion: t
 
 ## Closing Judgment
 The Watcher belongs neither exclusively to the victors nor exclusively to the defeated. His proposed history explains why the liberation of a country and the protection of its living inhabitants were not always the same undertaking.
+
+## Editorial extraction register (out of universe)
+
+- Existing character: `character_owlman`.
+- Proposed event references: `event_broken_forest_paths`, `event_covenant_of_three_domains`, `event_fall_of_the_fang_vanguard`, `event_war_against_the_asuran_courts`, `event_closing_of_the_wounded_lands`, `event_broken_accord`, `event_war_of_the_feathered_crowns`, `event_withdrawal_of_the_feathered_kingdoms`.
+- Full event payloads and character update instructions: [Reclamation authoring register](12-reclamation-of-jambhudweepa.md#editorial-extraction-register-out-of-universe).
+- Preserve existing first-appearance epoch, species, culture and status; proposed roles are not yet canon.
