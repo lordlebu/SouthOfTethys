@@ -1,6 +1,6 @@
 # Narmada University — Studies in Ancient Testimony
 
-Eight in-universe historical manuscripts. These books are fictional scholarship, not a replacement for structured game canon.
+Twelve in-universe historical manuscripts (including four proposed reclamation volumes). These books are fictional scholarship, not a replacement for structured game canon.
 
 1. [The Elder Asuras](01-elder-asuras.md)
 2. [The Forgotten Houses](02-forgotten-houses.md)
@@ -10,6 +10,13 @@ Eight in-universe historical manuscripts. These books are fictional scholarship,
 6. [Kalyani and the Daitya Accounts](06-kalyani-daitya-accounts.md)
 7. [Sarishne: Witness Beyond the Court](07-sarishne-witness-of-the-shadow-pact.md)
 8. [The Waning of the Asuras and the Living Planets](08-waning-asuras-living-planets.md)
+
+9. [Lionman: The Road of the Sun and the Vanaran Ascendancy](09-lionman-road-of-the-sun.md)
+10. [Owlman: The Forest Watcher and the Divided Canopy](10-owlman-divided-forest.md)
+11. [Ammonite Man: The Memory of Tethys](11-ammonite-man-memory-of-tethys.md)
+12. [The Reclamation of Jambhudweepa: The Two Wars of the Elders](12-reclamation-of-jambhudweepa.md)
+
+Volumes IX–XII are proposed historical reconstructions, extending the prehistoric and Deep Antiquity narrative without altering the established Asura dossiers or structured canon. The Asura defeat precedes the defeat of avian political supremacy; Daedrasura’s early manifestation and precise chronology remain unresolved.
 
 **Continuity reference:** [Asura Character–Event Concordance](character-event-concordance.md) links the characters to recorded events, identifies conflicting first-appearance epochs and unresolved locations, and distinguishes hidden witnesses from event participants.
 
