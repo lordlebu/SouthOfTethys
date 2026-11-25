@@ -3,6 +3,8 @@
 *Studies in Ancient Testimony, Volume IX*  
 *Narmada University — Collegium of Prehistoric Studies*
 
+**Epoch of study:** Deep Antiquity (`epoch_deep_antiquity`), proposed principal placement. **Background:** Prehistory (`epoch_prehistoric`). **Later testimony:** Migrations (`epoch_migrations`).
+
 ## Preface
 The Nilgiri canopy records remember Lionman as Sun-Spirit, Guardian of the Savanna and Guide of the Devolved. A proposed reconstruction of older testimony places his struggle for the Vanaran world before the calamity in which his guidance is most securely remembered. The dates of these earlier acts are not established.
 
@@ -36,3 +38,10 @@ The last act of the solar guardian thus resembles the first: the preservation of
 
 ## Closing Judgment
 The proposed history of Lionman is not a tale of uninterrupted conquest. It is the history of a protector who acquired authority through survival, won a country for the Vanarans, and later guided them through its decline.
+
+## Editorial extraction register (out of universe)
+
+- Existing character: `character_lionman`.
+- Proposed event references: `event_gathering_under_the_sun`, `event_covenant_of_three_domains`, `event_fall_of_the_fang_vanguard`, `event_war_against_the_asuran_courts`, `event_closing_of_the_wounded_lands`, `event_war_of_the_feathered_crowns`.
+- Full event payloads and character update instructions: [Reclamation authoring register](12-reclamation-of-jambhudweepa.md#editorial-extraction-register-out-of-universe).
+- Preserve existing first-appearance epoch, species, culture and status; proposed roles are not yet canon.
