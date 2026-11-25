@@ -3,6 +3,8 @@
 *Studies in Ancient Testimony, Volume XI*  
 *Narmada University — Collegium of Maritime Antiquities*
 
+**Epoch of study:** Deep Antiquity (`epoch_deep_antiquity`), proposed principal placement. **Background:** Prehistory (`epoch_prehistoric`). **Later testimony:** Migrations (`epoch_migrations`).
+
 ## Preface
 The Oracle of the Deep Tethys, First of the Invertebrate Dominion, is remembered as a primordial sentient nautiloid and biological-spiritual being. His recorded participation in ancient interventions and later negotiation with humans distinguishes him from a merely allegorical figure. The detailed reclamation narrative below remains a proposed reconstruction.
 
@@ -38,3 +40,10 @@ The Oracle's role at this later crossing supplies a historical conclusion to the
 
 ## Closing Judgment
 Ammonite Man's distinction lies not in the possession of a terrestrial kingdom but in the preservation of memory across successive dominions. The proposed history makes that memory an active instrument of liberation rather than a passive record of vanished ages.
+
+## Editorial extraction register (out of universe)
+
+- Existing character: `character_ammonite_man`.
+- Proposed event references: `event_first_warning_from_the_deep`, `event_broken_forest_paths`, `event_covenant_of_three_domains`, `event_fall_of_the_fang_vanguard`, `event_war_against_the_asuran_courts`, `event_closing_of_the_wounded_lands`, `event_broken_accord`, `event_war_of_the_feathered_crowns`, `event_withdrawal_of_the_feathered_kingdoms`.
+- Full event payloads and character update instructions: [Reclamation authoring register](12-reclamation-of-jambhudweepa.md#editorial-extraction-register-out-of-universe).
+- Preserve existing first-appearance epoch, species, culture and status; proposed roles are not yet canon.
