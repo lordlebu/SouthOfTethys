@@ -1,0 +1,26 @@
+{
+  "id": "event_dispute_of_the_reclaimed_forests",
+  "type": "event",
+  "title": "Dispute of the Reclaimed Forests",
+  "epoch": "epoch_deep_antiquity",
+  "date_approx": null,
+  "participants": [],
+  "location": null,
+  "predecessors": [
+    "event_closing_of_the_wounded_lands"
+  ],
+  "successors": [
+    "event_broken_accord"
+  ],
+  "causes": [
+    "Avian and Vanaran communities assert competing territorial claims"
+  ],
+  "outcomes": [
+    "A sovereignty dispute emerges"
+  ],
+  "summary": "Avian and Vanaran communities assert competing territorial claims. A sovereignty dispute emerges.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/12-reclamation-of-jambhudweepa.md"
+  ]
+}

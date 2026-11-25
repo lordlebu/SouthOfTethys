@@ -1,0 +1,29 @@
+{
+  "id": "event_broken_forest_paths",
+  "type": "event",
+  "title": "Broken Forest Paths",
+  "epoch": "epoch_deep_antiquity",
+  "date_approx": null,
+  "participants": [
+    "character_owlman",
+    "character_ammonite_man"
+  ],
+  "location": null,
+  "predecessors": [
+    "event_first_warning_from_the_deep"
+  ],
+  "successors": [
+    "event_gathering_under_the_sun"
+  ],
+  "causes": [
+    "Anomalies disrupt safe canopy passages"
+  ],
+  "outcomes": [
+    "Safe crossings are identified and shared"
+  ],
+  "summary": "Anomalies disrupt safe canopy passages. Safe crossings are identified and shared.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/12-reclamation-of-jambhudweepa.md"
+  ]
+}

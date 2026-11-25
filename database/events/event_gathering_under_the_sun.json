@@ -1,0 +1,28 @@
+{
+  "id": "event_gathering_under_the_sun",
+  "type": "event",
+  "title": "Gathering under the Sun",
+  "epoch": "epoch_deep_antiquity",
+  "date_approx": null,
+  "participants": [
+    "character_lionman"
+  ],
+  "location": null,
+  "predecessors": [
+    "event_broken_forest_paths"
+  ],
+  "successors": [
+    "event_covenant_of_three_domains"
+  ],
+  "causes": [
+    "Displaced Vanaran households need viable refuges"
+  ],
+  "outcomes": [
+    "A network of protected settlements emerges"
+  ],
+  "summary": "Displaced Vanaran households need viable refuges. A network of protected settlements emerges.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/12-reclamation-of-jambhudweepa.md"
+  ]
+}

@@ -12,12 +12,15 @@
   "epoch": "epoch_prehistoric",
   "roles": [
     "oracle",
-    "negotiator"
+    "negotiator",
+    "Keeper of pre-intervention ecological memory",
+    "Reclamation mediator"
   ],
-  "notes": "First spiritual entity of the Invertebrate Dominion. GM analogue for deep-time memory. Colossal sentient nautiloid of the deep Tethys. Primordial, with the Narmada Man and Owlman. Filed as mythology until he was noticed doing things only a person does -- negotiating with early humans, standing at four events across four eras.",
+  "notes": "First spiritual entity of the Invertebrate Dominion. GM analogue for deep-time memory. Colossal sentient nautiloid of the deep Tethys. Primordial, with the Narmada Man and Owlman. Filed as mythology until he was noticed doing things only a person does -- negotiating with early humans, standing at four events across four eras. In the University’s draft reconstruction, he warned of anomalies, supported ecological recovery, and mediated between avian and Vanaran communities.",
   "canon": "primary",
   "sources": [
     "AI_CONTEXT.md",
-    "docs/decisions.md"
+    "docs/decisions.md",
+    "docs/books/narmada-university/11-ammonite-man-memory-of-tethys.md"
   ]
 }

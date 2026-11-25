@@ -90,6 +90,7 @@ graph LR
     character_sarishne("Sarishne (draft)")
   end
   subgraph grp_primordial["primordial (culture)"]
+    character_ammonite_man("Ammonite Man")
     character_narmada_man("Narmada Man")
     character_owlman("Owlman")
   end
@@ -97,21 +98,54 @@ graph LR
     character_lionman("Lionman")
   end
   event_battle_of_mohenjodaro["The Battle of Mohenjodaro"]
+  event_broken_accord["Broken Accord (draft)"]
+  event_broken_forest_paths["Broken Forest Paths (draft)"]
+  event_closing_of_the_wounded_lands["Closing of the Wounded Lands (draft)"]
+  event_covenant_of_three_domains["Covenant of Three Domains (draft)"]
+  event_fall_of_the_fang_vanguard["Fall of the Fang Vanguard (draft)"]
+  event_first_warning_from_the_deep["First Warning from the Deep (draft)"]
+  event_gathering_under_the_sun["Gathering under the Sun (draft)"]
   event_great_devolvement_vanaras["The Great Devolvement"]
   event_shadow_pact["Shadow Pact of Saraswati"]
   event_union_narmada_man_apsara["The Primordial Union under the Asura Planet"]
+  event_war_against_the_asuran_courts["War against the Asuran Courts (draft)"]
+  event_war_of_the_feathered_crowns["War of the Feathered Crowns (draft)"]
+  event_withdrawal_of_the_feathered_kingdoms["Withdrawal of the Feathered Kingdoms (draft)"]
+  character_ammonite_man --> event_broken_accord
+  character_ammonite_man --> event_broken_forest_paths
+  character_ammonite_man --> event_closing_of_the_wounded_lands
+  character_ammonite_man --> event_covenant_of_three_domains
+  character_ammonite_man --> event_fall_of_the_fang_vanguard
+  character_ammonite_man --> event_first_warning_from_the_deep
+  character_ammonite_man --> event_war_against_the_asuran_courts
+  character_ammonite_man --> event_war_of_the_feathered_crowns
+  character_ammonite_man --> event_withdrawal_of_the_feathered_kingdoms
   character_asura_tainted_princess --> event_shadow_pact
+  character_lionman --> event_closing_of_the_wounded_lands
+  character_lionman --> event_covenant_of_three_domains
+  character_lionman --> event_fall_of_the_fang_vanguard
+  character_lionman --> event_gathering_under_the_sun
   character_lionman --> event_great_devolvement_vanaras
+  character_lionman --> event_war_against_the_asuran_courts
+  character_lionman --> event_war_of_the_feathered_crowns
   character_manjalaya --> event_shadow_pact
   character_masked_chief_mohenjodaro --> event_battle_of_mohenjodaro
   character_meditating_apsara --> event_union_narmada_man_apsara
   character_narmada_man --> event_union_narmada_man_apsara
+  character_owlman --> event_broken_accord
+  character_owlman --> event_broken_forest_paths
+  character_owlman --> event_closing_of_the_wounded_lands
+  character_owlman --> event_covenant_of_three_domains
+  character_owlman --> event_fall_of_the_fang_vanguard
+  character_owlman --> event_war_against_the_asuran_courts
+  character_owlman --> event_war_of_the_feathered_crowns
+  character_owlman --> event_withdrawal_of_the_feathered_kingdoms
   character_varunesh --> event_shadow_pact
 ```
 
-9 character(s), 4 event(s) they appear in, 8 group(s).
+10 character(s), 14 event(s) they appear in, 8 group(s).
 
-**Present in no event of this era:** Owlman, Sarishne.
+**Present in no event of this era:** Sarishne.
 
 ## Era of Human Migrations
 

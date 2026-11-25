@@ -1,0 +1,24 @@
+{
+  "id": "event_first_covenant_of_beast_and_human",
+  "type": "event",
+  "title": "First Covenant of Beast and Human",
+  "epoch": "epoch_deep_antiquity",
+  "date_approx": null,
+  "participants": [],
+  "location": null,
+  "predecessors": [
+    "event_great_devolvement_vanaras"
+  ],
+  "successors": [],
+  "causes": [
+    "Intelligent Vanaran survivors encounter pre-Jharwa humans"
+  ],
+  "outcomes": [
+    "Nature-bound practices pass to human communities"
+  ],
+  "summary": "Intelligent Vanaran survivors encounter pre-Jharwa humans. Nature-bound practices pass to human communities.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/12-reclamation-of-jambhudweepa.md"
+  ]
+}

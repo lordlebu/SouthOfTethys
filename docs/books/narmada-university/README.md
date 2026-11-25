@@ -1,6 +1,6 @@
 # Narmada University — Studies in Ancient Testimony
 
-Eight in-universe historical manuscripts. These books are fictional scholarship, not a replacement for structured game canon.
+Twelve in-universe historical manuscripts (including four proposed reclamation volumes). These books are fictional scholarship, not a replacement for structured game canon.
 
 1. [The Elder Asuras](01-elder-asuras.md)
 2. [The Forgotten Houses](02-forgotten-houses.md)
@@ -10,6 +10,13 @@ Eight in-universe historical manuscripts. These books are fictional scholarship,
 6. [Kalyani and the Daitya Accounts](06-kalyani-daitya-accounts.md)
 7. [Sarishne: Witness Beyond the Court](07-sarishne-witness-of-the-shadow-pact.md)
 8. [The Waning of the Asuras and the Living Planets](08-waning-asuras-living-planets.md)
+
+9. [Lionman: The Road of the Sun and the Vanaran Ascendancy](09-lionman-road-of-the-sun.md)
+10. [Owlman: The Forest Watcher and the Divided Canopy](10-owlman-divided-forest.md)
+11. [Ammonite Man: The Memory of Tethys](11-ammonite-man-memory-of-tethys.md)
+12. [The Reclamation of Jambhudweepa: The Two Wars of the Elders](12-reclamation-of-jambhudweepa.md)
+
+Volumes IX–XII are proposed historical reconstructions, extending the prehistoric and Deep Antiquity narrative without altering the established Asura dossiers or structured canon. The Asura defeat precedes the defeat of avian political supremacy; Daedrasura’s early manifestation and precise chronology remain unresolved.
 
 **Continuity reference:** [Asura Character–Event Concordance](character-event-concordance.md) links the characters to recorded events, identifies conflicting first-appearance epochs and unresolved locations, and distinguishes hidden witnesses from event participants.
 
@@ -35,3 +42,6 @@ Draft university manuscripts for editorial review. The original approved charact
 
 ## Character epoch correction
 All nineteen individuals in the Nine Houses register are mortal political actors of the **Early Age of Machinery**, active around or after the proposed Year 2,200 threshold. They personally participate in industrial nation-building, constitutional settlements and ethnic or labour movements. Earlier institutions and customs belong to unnamed predecessors, not these individuals. Any named movement or settlement involving them belongs to Early Machinery; earlier phases describe its institutional antecedents only. See [the character register](nine-traditions/00-chronicle-of-nine-houses.md). Exact lifetimes remain unassigned; the proposed elapsed chronology and existing Dawn characters are unchanged.
+
+## Reclamation authoring register
+Volumes IX–XII explicitly identify their principal epoch as proposed Deep Antiquity. [Volume XII's editorial extraction register](12-reclamation-of-jambhudweepa.md#editorial-extraction-register-out-of-universe) holds fourteen draft event JSON blocks, reciprocal-edge instructions for existing events and manual character update proposals following [AUTHORING.md](../../../database/AUTHORING.md). Run the ingestion utility in read-only mode before any future approved database changes. No database files are modified by these manuscripts.

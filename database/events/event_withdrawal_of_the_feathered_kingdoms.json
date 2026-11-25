@@ -1,0 +1,29 @@
+{
+  "id": "event_withdrawal_of_the_feathered_kingdoms",
+  "type": "event",
+  "title": "Withdrawal of the Feathered Kingdoms",
+  "epoch": "epoch_deep_antiquity",
+  "date_approx": null,
+  "participants": [
+    "character_owlman",
+    "character_ammonite_man"
+  ],
+  "location": null,
+  "predecessors": [
+    "event_war_of_the_feathered_crowns"
+  ],
+  "successors": [
+    "event_vanaran_ascendancy"
+  ],
+  "causes": [
+    "Avian rulers lose the war"
+  ],
+  "outcomes": [
+    "Surviving avian communities retain refuges"
+  ],
+  "summary": "Avian rulers lose the war. Surviving avian communities retain refuges.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/12-reclamation-of-jambhudweepa.md"
+  ]
+}

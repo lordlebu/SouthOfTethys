@@ -13,7 +13,8 @@
     "event_asura_synapsid_domestication"
   ],
   "successors": [
-    "event_great_devolvement_vanaras"
+    "event_great_devolvement_vanaras",
+    "event_first_warning_from_the_deep"
   ],
   "causes": [
     "primordial_rift_opens",

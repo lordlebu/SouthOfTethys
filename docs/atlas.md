@@ -64,7 +64,7 @@ graph TD
 | settlements |  | 1 |
 | characters | 8 | 4 |
 | factions |  | 6 |
-| events | 5 | 17 |
+| events | 19 | 17 |
 | artifacts |  | 6 |
 | mythology |  | 11 |
 | fauna |  | 267 |
@@ -77,10 +77,38 @@ graph TD
 graph TD
     E0["The Battle of Mohenjodaro"]
     E1["Forging of the Dragon’s Spine (sample)"]
-    E2["The Great Devolvement"]
-    E3["Shadow Pact of Saraswati"]
-    E4["The Primordial Union under the Asura Planet"]
-    E0 --> E3
+    E2["First Warning from the Deep (draft)"]
+    E3["Broken Forest Paths (draft)"]
+    E4["Gathering under the Sun (draft)"]
+    E5["Covenant of Three Domains (draft)"]
+    E6["Fall of the Fang Vanguard (draft)"]
+    E7["Shadow Pact of Saraswati"]
+    E8["The Primordial Union under the Asura Planet"]
+    E9["War against the Asuran Courts (draft)"]
+    E10["Closing of the Wounded Lands (draft)"]
+    E11["Dispute of the Reclaimed Forests (draft)"]
+    E12["Broken Accord (draft)"]
+    E13["War of the Feathered Crowns (draft)"]
+    E14["Withdrawal of the Feathered Kingdoms (draft)"]
+    E15["Vanaran Ascendancy (draft)"]
+    E16["Keepers of the Living Memory (draft)"]
+    E17["The Great Devolvement"]
+    E18["First Covenant of Beast and Human (draft)"]
+    E0 --> E7
+    E2 --> E3
+    E3 --> E4
+    E4 --> E5
+    E5 --> E6
+    E6 --> E9
+    E9 --> E10
+    E10 --> E11
+    E11 --> E12
+    E12 --> E13
+    E13 --> E14
+    E14 --> E15
+    E15 --> E16
+    E16 --> E17
+    E17 --> E18
 ```
 
 ### Map

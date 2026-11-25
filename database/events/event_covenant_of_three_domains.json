@@ -1,0 +1,30 @@
+{
+  "id": "event_covenant_of_three_domains",
+  "type": "event",
+  "title": "Covenant of Three Domains",
+  "epoch": "epoch_deep_antiquity",
+  "date_approx": null,
+  "participants": [
+    "character_lionman",
+    "character_owlman",
+    "character_ammonite_man"
+  ],
+  "location": null,
+  "predecessors": [
+    "event_gathering_under_the_sun"
+  ],
+  "successors": [
+    "event_fall_of_the_fang_vanguard"
+  ],
+  "causes": [
+    "Isolated resistance cannot reclaim the island"
+  ],
+  "outcomes": [
+    "The Elders coordinate terrestrial, forest and maritime knowledge"
+  ],
+  "summary": "Isolated resistance cannot reclaim the island. The Elders coordinate terrestrial, forest and maritime knowledge.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/12-reclamation-of-jambhudweepa.md"
+  ]
+}

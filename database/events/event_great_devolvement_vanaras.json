@@ -8,10 +8,12 @@
   ],
   "location": "place_nilgiri_canopy",
   "predecessors": [
-    "event_asura_gondwana_intervention"
+    "event_asura_gondwana_intervention",
+    "event_keepers_of_the_living_memory"
   ],
   "successors": [
-    "event_jharwa_first_wave_shell_pact"
+    "event_jharwa_first_wave_shell_pact",
+    "event_first_covenant_of_beast_and_human"
   ],
   "causes": [
     "Severe climate cooling fracturing the ancient deciduous canopy of southern Jambhudweepa",

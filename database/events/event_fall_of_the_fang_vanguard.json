@@ -1,0 +1,30 @@
+{
+  "id": "event_fall_of_the_fang_vanguard",
+  "type": "event",
+  "title": "Fall of the Fang Vanguard",
+  "epoch": "epoch_deep_antiquity",
+  "date_approx": null,
+  "participants": [
+    "character_lionman",
+    "character_owlman",
+    "character_ammonite_man"
+  ],
+  "location": null,
+  "predecessors": [
+    "event_covenant_of_three_domains"
+  ],
+  "successors": [
+    "event_war_against_the_asuran_courts"
+  ],
+  "causes": [
+    "Asuran military institutions control native territory"
+  ],
+  "outcomes": [
+    "The Vanguard loses territorial authority"
+  ],
+  "summary": "Asuran military institutions control native territory. The Vanguard loses territorial authority.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/12-reclamation-of-jambhudweepa.md"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "event_keepers_of_the_living_memory",
+  "type": "event",
+  "title": "Keepers of the Living Memory",
+  "epoch": "epoch_deep_antiquity",
+  "date_approx": null,
+  "participants": [],
+  "location": null,
+  "predecessors": [
+    "event_vanaran_ascendancy"
+  ],
+  "successors": [
+    "event_great_devolvement_vanaras"
+  ],
+  "causes": [
+    "Recovered communities preserve ecological knowledge"
+  ],
+  "outcomes": [
+    "Knowledge survives for later transmission"
+  ],
+  "summary": "Recovered communities preserve ecological knowledge. Knowledge survives for later transmission.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/12-reclamation-of-jambhudweepa.md"
+  ]
+}
