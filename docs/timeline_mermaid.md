@@ -12,7 +12,7 @@ timeline
     section Prehistoric Foundations & Age of Vanaras
         500 MYA – 5 MYA : The Curse of the Hollow Trees : The Turning of Kunti Against the Seedbearer : The Planting of the Moon-Seed : The Establishment of the Womb Rites : The First Move of the Chess of Fate : The Fang vs. Scale Wars : The Domestication of the Fang Vanguard : The Asura Gondwana Intervention
     section Deep Antiquity
-        before the migrations : The Battle of Mohenjodaro : Forging of the Dragon’s Spine (sample) : The Great Devolvement : Shadow Pact of Saraswati : The Primordial Union under the Asura Planet
+        before the migrations : The Battle of Mohenjodaro : Forging of the Dragon’s Spine (sample) : First Warning from the Deep (draft) : Broken Forest Paths (draft) : Gathering under the Sun (draft) : Covenant of Three Domains (draft) : Fall of the Fang Vanguard (draft) : Shadow Pact of Saraswati : The Primordial Union under the Asura Planet : War against the Asuran Courts (draft) : Closing of the Wounded Lands (draft) : Dispute of the Reclaimed Forests (draft) : Broken Accord (draft) : War of the Feathered Crowns (draft) : Withdrawal of the Feathered Kingdoms (draft) : Vanaran Ascendancy (draft) : Keepers of the Living Memory (draft) : The Great Devolvement : First Covenant of Beast and Human (draft)
     section Era of Human Migrations
         50K – 5K years ago : Aravali Massacre & Sanctuary : Battle of Ten Kings (draft) : The Botai Cattle Raid : Dispute over Inherited Household Obligations (draft) : Divodāsa and the Frontier Court (draft) : The Jharwa First-Wave & The Shell Pact : Jharwa Passage into the Yaksha South (draft) : Nārada and the Travelling Witnesses (draft) : Opening of the Naraka Lok Portal : The Narmada Apothecary Herb Quest : The Retreat of Owlman : Sarishne Encounters Manjalaya at a Gate Disturbance (draft) : River Passage of the Bharata Force (draft) : Victory Recitals at the Bharata Court (draft) : Viśvāmitra Lays Down His Seat (draft) : Wiznu and Aryaman Appeal to the Thunder-Bearer (draft)
     section Civilization Dawn (Lothal Era)
@@ -42,109 +42,123 @@ graph TD
     subgraph epoch_deep_antiquity["Deep Antiquity"]
         E8["The Battle of Mohenjodaro"]
         E9["Forging of the Dragon’s Spine (sample)"]
-        E10["The Great Devolvement"]
-        E11["Shadow Pact of Saraswati"]
-        E12["The Primordial Union under the Asura Planet"]
+        E10["First Warning from the Deep (draft)"]
+        E11["Broken Forest Paths (draft)"]
+        E12["Gathering under the Sun (draft)"]
+        E13["Covenant of Three Domains (draft)"]
+        E14["Fall of the Fang Vanguard (draft)"]
+        E15["Shadow Pact of Saraswati"]
+        E16["The Primordial Union under the Asura Planet"]
+        E17["War against the Asuran Courts (draft)"]
+        E18["Closing of the Wounded Lands (draft)"]
+        E19["Dispute of the Reclaimed Forests (draft)"]
+        E20["Broken Accord (draft)"]
+        E21["War of the Feathered Crowns (draft)"]
+        E22["Withdrawal of the Feathered Kingdoms (draft)"]
+        E23["Vanaran Ascendancy (draft)"]
+        E24["Keepers of the Living Memory (draft)"]
+        E25["The Great Devolvement"]
+        E26["First Covenant of Beast and Human (draft)"]
     end
     subgraph epoch_migrations["Era of Human Migrations"]
-        E13["Aravali Massacre & Sanctuary"]
-        E14["Battle of Ten Kings (draft)"]
-        E15["The Botai Cattle Raid"]
-        E16["Dispute over Inherited Household Obligations (draft)"]
-        E17["Divodāsa and the Frontier Court (draft)"]
-        E18["The Jharwa First-Wave & The Shell Pact"]
-        E19["Jharwa Passage into the Yaksha South (draft)"]
-        E20["Nārada and the Travelling Witnesses (draft)"]
-        E21["Opening of the Naraka Lok Portal"]
-        E22["The Narmada Apothecary Herb Quest"]
-        E23["The Retreat of Owlman"]
-        E24["Sarishne Encounters Manjalaya at a Gate Disturbance (draft)"]
-        E25["River Passage of the Bharata Force (draft)"]
-        E26["Victory Recitals at the Bharata Court (draft)"]
-        E27["Viśvāmitra Lays Down His Seat (draft)"]
-        E28["Wiznu and Aryaman Appeal to the Thunder-Bearer (draft)"]
+        E27["Aravali Massacre & Sanctuary"]
+        E28["Battle of Ten Kings (draft)"]
+        E29["The Botai Cattle Raid"]
+        E30["Dispute over Inherited Household Obligations (draft)"]
+        E31["Divodāsa and the Frontier Court (draft)"]
+        E32["The Jharwa First-Wave & The Shell Pact"]
+        E33["Jharwa Passage into the Yaksha South (draft)"]
+        E34["Nārada and the Travelling Witnesses (draft)"]
+        E35["Opening of the Naraka Lok Portal"]
+        E36["The Narmada Apothecary Herb Quest"]
+        E37["The Retreat of Owlman"]
+        E38["Sarishne Encounters Manjalaya at a Gate Disturbance (draft)"]
+        E39["River Passage of the Bharata Force (draft)"]
+        E40["Victory Recitals at the Bharata Court (draft)"]
+        E41["Viśvāmitra Lays Down His Seat (draft)"]
+        E42["Wiznu and Aryaman Appeal to the Thunder-Bearer (draft)"]
     end
     subgraph epoch_civilization_dawn["Civilization Dawn (Lothal Era)"]
-        E29["Bharata Settlement at Hastinapura (draft)"]
-        E30["The Final Voyage of the Kelpfang"]
-        E31["The Storm-Bone Khan's Warning at Lothal"]
-        E32["The Wandering of the Narmada Seed-Mind"]
-        E33["Silvershore War"]
-        E34["Founding of Lothal"]
-        E35["Black Lotus Siege"]
-        E36["The Stone Pact"]
-        E37["Tendua Crisis and Assassination of Kavik"]
-        E38["Retrieval of the Mask of Harappa"]
-        E39["Exile of Shaashak and Khadi"]
-        E40["The Awakening of the Mask of Vaṛkesh"]
-        E41["Birth of Sarita Silversong"]
-        E42["Urva and the Eastern Bhṛgu Teaching Succession (draft)"]
-        E43["Aurva and the Garudasaur Blood Tradition (draft)"]
-        E44["Yadu Foundation of North Dwarka (draft)"]
+        E43["Bharata Settlement at Hastinapura (draft)"]
+        E44["The Final Voyage of the Kelpfang"]
+        E45["The Storm-Bone Khan's Warning at Lothal"]
+        E46["The Wandering of the Narmada Seed-Mind"]
+        E47["Silvershore War"]
+        E48["Founding of Lothal"]
+        E49["Black Lotus Siege"]
+        E50["The Stone Pact"]
+        E51["Tendua Crisis and Assassination of Kavik"]
+        E52["Retrieval of the Mask of Harappa"]
+        E53["Exile of Shaashak and Khadi"]
+        E54["The Awakening of the Mask of Vaṛkesh"]
+        E55["Birth of Sarita Silversong"]
+        E56["Urva and the Eastern Bhṛgu Teaching Succession (draft)"]
+        E57["Aurva and the Garudasaur Blood Tradition (draft)"]
+        E58["Yadu Foundation of North Dwarka (draft)"]
     end
     subgraph epoch_current["The Age of Machinery"]
-        E45["Agasthya’s Southern Exchange with the Yakshas (draft)"]
-        E46["The Antarctic Ice Wall Expedition"]
-        E47["Lothal’s Factory Drainage Dispute (draft)"]
-        E48["The Cartographic & Mercantile Accord"]
-        E49["Chandraketugarh Garudasaur Blood Feud"]
-        E50["Delta Embankment Repair and Relief Settlement (draft)"]
-        E51["The Delta Outrigger Skirmishes"]
-        E52["Drilling Halted at the Dwarka Gate"]
-        E53["Eastern Seed Reserve Negotiations (draft)"]
-        E54["The Frontier Marrow Wars"]
-        E55["Compact of the Furnace Houses (draft)"]
-        E56["The Great Coal & Dolmen War"]
-        E57["The Great Marrow & Coal War"]
-        E58["The Day the Ground Broke at the Great Junction"]
-        E59["Grove and Hill Obligations Enter a Legal Roll (draft)"]
-        E60["Hill Assembly Affirms Common Spring Access (draft)"]
-        E61["The Mappa Mundi Colonial Insurgencies"]
-        E62["The Mappa Mundi Telegraph Sabotage"]
-        E63["The Moriah Spore-Blight"]
-        E64["Narmada Archives Rival Grove Concession Copies (draft)"]
-        E65["Narmada Compares Shadow Tables with Telegraph Time (draft)"]
-        E66["The Narmada Upriver Expedition"]
-        E67["The Gondwana Spacetime Teleportation"]
-        E68["The Battered Ekranoplan's Ice Wall Voyage"]
-        E69["Nilgiri Freight Route Hearing (draft)"]
-        E70["The Paratethyan Lock Blockades"]
-        E71["Polar Voyagers Arrive at Tamralinga"]
-        E72["Dispute over Patent Claims on Charcoal Measures (draft)"]
-        E73["Rail Succession Wars (draft)"]
-        E74["Highland Hearing at the Landslip (draft)"]
-        E75["The Saraswati Canal Drains"]
-        E76["Highland Winter Passage Agreement (draft)"]
-        E77["Tide-Lock Three Opens"]
-        E78["Nilgiri Shared Pasture Agreement (draft)"]
-        E79["The Undersea Lava River and the Red Fog"]
-        E80["Upland Watershed Quarry Pact (draft)"]
-        E81["Debate over a Shared Seasonal Reckoning (draft)"]
+        E59["Agasthya’s Southern Exchange with the Yakshas (draft)"]
+        E60["The Antarctic Ice Wall Expedition"]
+        E61["Lothal’s Factory Drainage Dispute (draft)"]
+        E62["The Cartographic & Mercantile Accord"]
+        E63["Chandraketugarh Garudasaur Blood Feud"]
+        E64["Delta Embankment Repair and Relief Settlement (draft)"]
+        E65["The Delta Outrigger Skirmishes"]
+        E66["Drilling Halted at the Dwarka Gate"]
+        E67["Eastern Seed Reserve Negotiations (draft)"]
+        E68["The Frontier Marrow Wars"]
+        E69["Compact of the Furnace Houses (draft)"]
+        E70["The Great Coal & Dolmen War"]
+        E71["The Great Marrow & Coal War"]
+        E72["The Day the Ground Broke at the Great Junction"]
+        E73["Grove and Hill Obligations Enter a Legal Roll (draft)"]
+        E74["Hill Assembly Affirms Common Spring Access (draft)"]
+        E75["The Mappa Mundi Colonial Insurgencies"]
+        E76["The Mappa Mundi Telegraph Sabotage"]
+        E77["The Moriah Spore-Blight"]
+        E78["Narmada Archives Rival Grove Concession Copies (draft)"]
+        E79["Narmada Compares Shadow Tables with Telegraph Time (draft)"]
+        E80["The Narmada Upriver Expedition"]
+        E81["The Gondwana Spacetime Teleportation"]
+        E82["The Battered Ekranoplan's Ice Wall Voyage"]
+        E83["Nilgiri Freight Route Hearing (draft)"]
+        E84["The Paratethyan Lock Blockades"]
+        E85["Polar Voyagers Arrive at Tamralinga"]
+        E86["Dispute over Patent Claims on Charcoal Measures (draft)"]
+        E87["Rail Succession Wars (draft)"]
+        E88["Highland Hearing at the Landslip (draft)"]
+        E89["The Saraswati Canal Drains"]
+        E90["Highland Winter Passage Agreement (draft)"]
+        E91["Tide-Lock Three Opens"]
+        E92["Nilgiri Shared Pasture Agreement (draft)"]
+        E93["The Undersea Lava River and the Red Fog"]
+        E94["Upland Watershed Quarry Pact (draft)"]
+        E95["Debate over a Shared Seasonal Reckoning (draft)"]
     end
     subgraph epoch_post_cataclysm["Post-Cataclysmic Era (The Great Shattering)"]
-        E82["The Golden Season on the Wetlands"]
-        E83["The Night of Red Teeth"]
-        E84["The Ark Meets Ananya"]
-        E85["The Solarpunk Odyssey of the Ark"]
-        E86["The Last Puja"]
+        E96["The Golden Season on the Wetlands"]
+        E97["The Night of Red Teeth"]
+        E98["The Ark Meets Ananya"]
+        E99["The Solarpunk Odyssey of the Ark"]
+        E100["The Last Puja"]
     end
-    E87["Argenthal Settlement (draft)"]
-    E88["Eastern Bhṛgu Teaching Reaches the Vedda Guilds (draft)"]
-    E89["Dual Coral Crown Treaties (draft)"]
-    E90["Federal Harbour Charter (draft)"]
-    E91["Formation of the Furnace Confederacy (draft)"]
-    E92["The Last Attendance of Manjalaya (draft)"]
-    E93["Lothal Canal Compact (draft)"]
-    E94["Nine-Pass Peace (draft)"]
-    E95["Plateau Charter Crisis (draft)"]
-    E96["Pragjyotisha Hill Autonomy Charter (draft)"]
-    E97["Pragjyotisha Adopts the Twin Reckoning (draft)"]
-    E98["Expansion of Sky-Island Survey and Mineral Transport (draft)"]
-    E99["Vanga Seed Fleet (draft)"]
-    E100["Vijayan High Pasture Treaty (draft)"]
-    E101["Vijayan Watershed Compact (draft)"]
-    E102["War of the Three Estuaries (draft)"]
-    E103["Lothal Guild Settlement (draft)"]
+    E101["Argenthal Settlement (draft)"]
+    E102["Eastern Bhṛgu Teaching Reaches the Vedda Guilds (draft)"]
+    E103["Dual Coral Crown Treaties (draft)"]
+    E104["Federal Harbour Charter (draft)"]
+    E105["Formation of the Furnace Confederacy (draft)"]
+    E106["The Last Attendance of Manjalaya (draft)"]
+    E107["Lothal Canal Compact (draft)"]
+    E108["Nine-Pass Peace (draft)"]
+    E109["Plateau Charter Crisis (draft)"]
+    E110["Pragjyotisha Hill Autonomy Charter (draft)"]
+    E111["Pragjyotisha Adopts the Twin Reckoning (draft)"]
+    E112["Expansion of Sky-Island Survey and Mineral Transport (draft)"]
+    E113["Vanga Seed Fleet (draft)"]
+    E114["Vijayan High Pasture Treaty (draft)"]
+    E115["Vijayan Watershed Compact (draft)"]
+    E116["War of the Three Estuaries (draft)"]
+    E117["Lothal Guild Settlement (draft)"]
     E0 --> E2
     E1 --> E2
     E2 --> E3
@@ -152,38 +166,53 @@ graph TD
     E5 --> E7
     E5 --> E6
     E6 --> E7
+    E7 --> E25
     E7 --> E10
-    E8 --> E11
-    E10 --> E18
-    E13 --> E86
-    E14 --> E26
-    E15 --> E21
-    E18 --> E23
-    E21 --> E31
+    E8 --> E15
+    E10 --> E11
+    E11 --> E12
+    E12 --> E13
+    E13 --> E14
+    E14 --> E17
+    E17 --> E18
+    E18 --> E19
+    E19 --> E20
+    E20 --> E21
     E21 --> E22
-    E22 --> E31
-    E31 --> E37
-    E31 --> E32
-    E33 --> E35
-    E33 --> E34
-    E34 --> E36
-    E34 --> E35
+    E22 --> E23
+    E23 --> E24
+    E24 --> E25
+    E25 --> E32
+    E25 --> E26
+    E27 --> E100
+    E28 --> E40
+    E29 --> E35
+    E32 --> E37
+    E35 --> E45
     E35 --> E36
-    E36 --> E37
-    E37 --> E38
-    E37 --> E39
-    E38 --> E39
-    E39 --> E40
-    E39 --> E41
-    E42 --> E43
-    E46 --> E85
+    E36 --> E45
+    E45 --> E51
+    E45 --> E46
+    E47 --> E49
+    E47 --> E48
+    E48 --> E50
+    E48 --> E49
+    E49 --> E50
+    E50 --> E51
+    E51 --> E52
+    E51 --> E53
+    E52 --> E53
+    E53 --> E54
+    E53 --> E55
     E56 --> E57
-    E58 --> E82
-    E60 --> E74
-    E66 --> E67
-    E67 --> E68
-    E68 --> E85
-    E82 --> E83
-    E83 --> E84
-    E102 --> E103
+    E60 --> E99
+    E70 --> E71
+    E72 --> E96
+    E74 --> E88
+    E80 --> E81
+    E81 --> E82
+    E82 --> E99
+    E96 --> E97
+    E97 --> E98
+    E116 --> E117
 ```

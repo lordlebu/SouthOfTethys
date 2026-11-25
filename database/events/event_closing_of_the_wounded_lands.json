@@ -1,0 +1,30 @@
+{
+  "id": "event_closing_of_the_wounded_lands",
+  "type": "event",
+  "title": "Closing of the Wounded Lands",
+  "epoch": "epoch_deep_antiquity",
+  "date_approx": null,
+  "participants": [
+    "character_lionman",
+    "character_owlman",
+    "character_ammonite_man"
+  ],
+  "location": null,
+  "predecessors": [
+    "event_war_against_the_asuran_courts"
+  ],
+  "successors": [
+    "event_dispute_of_the_reclaimed_forests"
+  ],
+  "causes": [
+    "Anomalies persist after military victory"
+  ],
+  "outcomes": [
+    "Viable habitats recover while some anomalies remain"
+  ],
+  "summary": "Anomalies persist after military victory. Viable habitats recover while some anomalies remain.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/12-reclamation-of-jambhudweepa.md"
+  ]
+}

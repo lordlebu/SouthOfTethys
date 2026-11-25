@@ -11,11 +11,14 @@
   "epoch": "epoch_deep_antiquity",
   "roles": [
     "forest_domain",
-    "watcher"
+    "watcher",
+    "Guardian of forest passages",
+    "Mediator of the Elders"
   ],
-  "notes": "Biological-spiritual hybrid of the forest domain. Counterpart to sea-bound Ammonite Man. Appears in highland and canopy lore as a silent adjudicator of boundary crossings.",
+  "notes": "Biological-spiritual hybrid of the forest domain. Counterpart to sea-bound Ammonite Man. Appears in highland and canopy lore as a silent adjudicator of boundary crossings. In the University’s draft reconstruction, he restored forest crossings, opposed Asuran dominion, and protected avian refuges during the Vanaran ascendancy. The primary Gondwana Intervention credits him in Prehistory, earlier than this dossier’s registered first appearance.",
   "canon": "primary",
   "sources": [
-    "AI_CONTEXT.md"
+    "AI_CONTEXT.md",
+    "docs/books/narmada-university/10-owlman-divided-forest.md"
   ]
 }

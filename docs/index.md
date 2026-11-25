@@ -55,10 +55,35 @@ _Sample fixture — kept to exercise the tooling, not part of the story._
 **Summary:** Honan battles the deep-time dragon Gorvaxx. The beast is petrified rather than slain, forming the treacherous mountain pass known as the Dragon’s Spine.
 **Participants:** character_honan
 
-## The Great Devolvement
+## First Warning from the Deep
+_Draft history for editorial review._
 **Epoch:** Deep Antiquity
-**Summary:** As global climate shifts fracture the southern tree-cities of the Nilgiri Canopy, the hyper-intelligent Vanara civilization begins to collapse and devolve. The sun-spirit Lionman manifests to guide the scattered, regressed tribes safely across the savanna.
+**Summary:** Alterations following the Gondwana Intervention. Warnings reach terrestrial guardians.
+**Participants:** character_ammonite_man
+
+## Broken Forest Paths
+_Draft history for editorial review._
+**Epoch:** Deep Antiquity
+**Summary:** Anomalies disrupt safe canopy passages. Safe crossings are identified and shared.
+**Participants:** character_owlman, character_ammonite_man
+
+## Gathering under the Sun
+_Draft history for editorial review._
+**Epoch:** Deep Antiquity
+**Summary:** Displaced Vanaran households need viable refuges. A network of protected settlements emerges.
 **Participants:** character_lionman
+
+## Covenant of Three Domains
+_Draft history for editorial review._
+**Epoch:** Deep Antiquity
+**Summary:** Isolated resistance cannot reclaim the island. The Elders coordinate terrestrial, forest and maritime knowledge.
+**Participants:** character_lionman, character_owlman, character_ammonite_man
+
+## Fall of the Fang Vanguard
+_Draft history for editorial review._
+**Epoch:** Deep Antiquity
+**Summary:** Asuran military institutions control native territory. The Vanguard loses territorial authority.
+**Participants:** character_lionman, character_owlman, character_ammonite_man
 
 ## Shadow Pact of Saraswati
 **Epoch:** Deep Antiquity
@@ -69,6 +94,61 @@ _Sample fixture — kept to exercise the tooling, not part of the story._
 **Epoch:** Deep Antiquity
 **Summary:** During a cataclysmic flood beneath the glow of an approaching Asura planet, the primeval King Narmada Man encounters and unites with a meditating celestial Apsara. Their union grants him the power to conquer the valley but ends in tragedy when she ascends to the moon, leaving behind an Asura-tainted egg.
 **Participants:** character_narmada_man, character_meditating_apsara
+
+## War against the Asuran Courts
+_Draft history for editorial review._
+**Epoch:** Deep Antiquity
+**Summary:** Embodied Asuran authorities retain claims after the Vanguard falls. Local Asuran dominion is defeated.
+**Participants:** character_lionman, character_owlman, character_ammonite_man
+
+## Closing of the Wounded Lands
+_Draft history for editorial review._
+**Epoch:** Deep Antiquity
+**Summary:** Anomalies persist after military victory. Viable habitats recover while some anomalies remain.
+**Participants:** character_lionman, character_owlman, character_ammonite_man
+
+## Dispute of the Reclaimed Forests
+_Draft history for editorial review._
+**Epoch:** Deep Antiquity
+**Summary:** Avian and Vanaran communities assert competing territorial claims. A sovereignty dispute emerges.
+
+## Broken Accord
+_Draft history for editorial review._
+**Epoch:** Deep Antiquity
+**Summary:** Mediation fails to reconcile exclusive territorial claims. The dispute becomes open conflict.
+**Participants:** character_owlman, character_ammonite_man
+
+## War of the Feathered Crowns
+_Draft history for editorial review._
+**Epoch:** Deep Antiquity
+**Summary:** The accord fails. Avian political supremacy is defeated.
+**Participants:** character_lionman, character_owlman, character_ammonite_man
+
+## Withdrawal of the Feathered Kingdoms
+_Draft history for editorial review._
+**Epoch:** Deep Antiquity
+**Summary:** Avian rulers lose the war. Surviving avian communities retain refuges.
+**Participants:** character_owlman, character_ammonite_man
+
+## Vanaran Ascendancy
+_Draft history for editorial review._
+**Epoch:** Deep Antiquity
+**Summary:** Asuran and avian supremacy have ended. Intelligent Vanaran settlements and learning flourish.
+
+## Keepers of the Living Memory
+_Draft history for editorial review._
+**Epoch:** Deep Antiquity
+**Summary:** Recovered communities preserve ecological knowledge. Knowledge survives for later transmission.
+
+## The Great Devolvement
+**Epoch:** Deep Antiquity
+**Summary:** As global climate shifts fracture the southern tree-cities of the Nilgiri Canopy, the hyper-intelligent Vanara civilization begins to collapse and devolve. The sun-spirit Lionman manifests to guide the scattered, regressed tribes safely across the savanna.
+**Participants:** character_lionman
+
+## First Covenant of Beast and Human
+_Draft history for editorial review._
+**Epoch:** Deep Antiquity
+**Summary:** Intelligent Vanaran survivors encounter pre-Jharwa humans. Nature-bound practices pass to human communities.
 
 ## Aravali Massacre & Sanctuary
 **Epoch:** Era of Human Migrations

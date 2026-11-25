@@ -9,11 +9,14 @@
   "roles": [
     "Sun-Spirit",
     "Guardian of the Savanna",
-    "Guide of the Devolved"
+    "Guide of the Devolved",
+    "Organizer of Vanaran resistance",
+    "Leader of the Feathered Crowns coalition"
   ],
-  "notes": "A maned solar deity with obsidian claws who manifested as a protective guide for the Vanara tribes during the Great Devolvement.",
+  "notes": "A maned solar deity with obsidian claws who manifested as a protective guide for the Vanara tribes during the Great Devolvement. In the University’s draft reconstruction, he established refuges, helped defeat Asuran dominion, and led the coalition against avian supremacy before guiding the Devolved.",
   "canon": "primary",
   "sources": [
-    "Nilgiri Canopy Cave Records"
+    "Nilgiri Canopy Cave Records",
+    "docs/books/narmada-university/09-lionman-road-of-the-sun.md"
   ]
 }

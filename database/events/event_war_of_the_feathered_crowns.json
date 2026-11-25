@@ -1,0 +1,30 @@
+{
+  "id": "event_war_of_the_feathered_crowns",
+  "type": "event",
+  "title": "War of the Feathered Crowns",
+  "epoch": "epoch_deep_antiquity",
+  "date_approx": null,
+  "participants": [
+    "character_lionman",
+    "character_owlman",
+    "character_ammonite_man"
+  ],
+  "location": null,
+  "predecessors": [
+    "event_broken_accord"
+  ],
+  "successors": [
+    "event_withdrawal_of_the_feathered_kingdoms"
+  ],
+  "causes": [
+    "The accord fails"
+  ],
+  "outcomes": [
+    "Avian political supremacy is defeated"
+  ],
+  "summary": "The accord fails. Avian political supremacy is defeated.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/12-reclamation-of-jambhudweepa.md"
+  ]
+}

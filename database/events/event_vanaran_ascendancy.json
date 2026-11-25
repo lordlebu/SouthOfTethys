@@ -1,0 +1,26 @@
+{
+  "id": "event_vanaran_ascendancy",
+  "type": "event",
+  "title": "Vanaran Ascendancy",
+  "epoch": "epoch_deep_antiquity",
+  "date_approx": null,
+  "participants": [],
+  "location": null,
+  "predecessors": [
+    "event_withdrawal_of_the_feathered_kingdoms"
+  ],
+  "successors": [
+    "event_keepers_of_the_living_memory"
+  ],
+  "causes": [
+    "Asuran and avian supremacy have ended"
+  ],
+  "outcomes": [
+    "Intelligent Vanaran settlements and learning flourish"
+  ],
+  "summary": "Asuran and avian supremacy have ended. Intelligent Vanaran settlements and learning flourish.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/12-reclamation-of-jambhudweepa.md"
+  ]
+}

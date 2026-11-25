@@ -1,0 +1,28 @@
+{
+  "id": "event_first_warning_from_the_deep",
+  "type": "event",
+  "title": "First Warning from the Deep",
+  "epoch": "epoch_deep_antiquity",
+  "date_approx": null,
+  "participants": [
+    "character_ammonite_man"
+  ],
+  "location": null,
+  "predecessors": [
+    "event_asura_gondwana_intervention"
+  ],
+  "successors": [
+    "event_broken_forest_paths"
+  ],
+  "causes": [
+    "Alterations following the Gondwana Intervention"
+  ],
+  "outcomes": [
+    "Warnings reach terrestrial guardians"
+  ],
+  "summary": "Alterations following the Gondwana Intervention. Warnings reach terrestrial guardians.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/12-reclamation-of-jambhudweepa.md"
+  ]
+}

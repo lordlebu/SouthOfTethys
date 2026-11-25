@@ -420,6 +420,8 @@ All three run in CI and all three must pass. Then regenerate what reads canon:
 python utils/generate_timeline.py
 python utils/generate_timeline_mermaid.py
 python utils/generate_atlas.py
+python utils/generate_memory_map.py
+python utils/generate_books.py
 ```
 
 `docs/` is tracked, so commit what those write. It is the published book, and tracking it is

@@ -1,25 +1,8 @@
-"""Draw who canon remembers: the people, what they were present at, and who claims them.
+"""Draw the characters, their recorded event attendance and their affiliations.
 
-The fourth generated view, and the last one the book was missing. The timeline says *when*,
-the atlas says *where*, and this says *who* -- 51 characters joined to the 28 events they
-appear in, grouped by the factions and cultures that hold them.
-
-**One graph per epoch, mirroring the atlas.** Not because Mermaid cannot hold the whole thing
--- 82 nodes today against a ceiling near a hundred, so it very nearly can -- but because a
-picture of everyone who ever lived is not a picture of anything. Sliced, the largest era is 37
-nodes and the smallest is 6, and each one is a cast list you can actually read. The whole-graph
-version would also fall over on the next chapter, and it would do it silently, by laying out
-into an unreadable mat rather than by failing.
-
-Grouping is by faction where a character has one and by culture otherwise, because Mermaid
-subgraphs cannot overlap and a person has both. Three factions claim 13 of 51 characters; the
-remaining 38 group by culture, of which there are 25. That asymmetry is real and worth seeing:
-canon has many peoples and very few organisations.
-
-**A character with no events still draws.** Eleven of the 51 appear in nothing yet, and they
-render as unconnected nodes inside their group rather than being dropped. That is the same
-call the timeline made for its four edgeless events: the gap is the authoring backlog made
-visible, and hiding it would make a tidier diagram and a less true one.
+Each epoch gets a graph. Undated records appear in an unassigned section, and a
+dated event can place someone in an epoch beyond the one on their dossier.
+Characters without event credits remain visible in their faction or culture.
 """
 
 from __future__ import annotations
@@ -33,7 +16,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from book_nav import nav
-from canon_epochs import in_era, load_epochs
+from canon_epochs import load_epochs
 
 # Windows consoles default to cp1252, which cannot encode the status glyphs below.
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -102,6 +85,8 @@ def main() -> int:
         if not epochs:
             print(f"No such epoch: {args.era}")
             return 1
+    else:
+        epochs.append({"id": None, "name": "Epoch Unassigned"})
 
     doc: list[str] = [
         "# The Memory Map",
@@ -117,6 +102,7 @@ def main() -> int:
         "Grouping is by faction where someone has one and by culture otherwise, because a person",
         "has both and the boxes cannot overlap. A character who appears in no event yet still",
         "draws, unconnected, rather than being left out.",
+        "The unassigned section lists undated people and events. Links show recorded attendance.",
         "",
     ]
 
@@ -128,23 +114,23 @@ def main() -> int:
         # -- Varuna, Mitra and Guyuk -- are dated to the Current era and the Migrations, because
         # `epoch` says when someone first appears rather than the only era they may act in.
         # Varuna walking into the era after the Shattering is the game's whole premise.
-        acts_here = {who for eid, event in events.items()
+        acts_here = {who for event in events.values()
                      if event.get("epoch") == epoch["id"]
                      for field in PRESENT_AT for who in (event.get(field) or [])
                      if who in characters}
         here = [c for c in characters.values()
-                if in_era(c, epoch["id"]) or c["id"] in acts_here]
+                if c.get("epoch") == epoch["id"] or c["id"] in acts_here]
         # This era's events only, and only the ones somebody here attended. Drawing every event
         # a person was ever present at was the first version: the Post-Cataclysm graph then
         # carried the Botai Cattle Raid, which happens two eras earlier, because Guyuk is in
         # both. It also drew the same event into several graphs. The causal chain across eras
         # is the timeline's job; this page answers who was here and what happened here.
         era_events = sorted({e for c in here for e in appears.get(c["id"], ())
-                             if in_era(events[e], epoch["id"])})
+                             if events[e].get("epoch") == epoch["id"]})
 
         doc += [f"## {epoch['name']}", ""]
         if not here:
-            doc += ["Canon records nobody in this era yet.", ""]
+            doc += ["Canon records nobody in this section yet.", ""]
             continue
 
         # Faction first, then culture, so a claimed character lands in exactly one box.
@@ -161,10 +147,14 @@ def main() -> int:
             tag = name if kind == "faction" else f"{name} ({kind})"
             lines.append(f'  subgraph grp_{node_id(name.lower().replace(" ", "_"))}["{label(tag)}"]')
             for c in members:
-                lines.append(f'    {node_id(c["id"])}("{label(c["name"])}")')
+                title = c["name"] + (" (draft)" if c.get("canon") == "draft" else "")
+                lines.append(f'    {node_id(c["id"])}("{label(title)}")')
             lines.append("  end")
         for eid in era_events:
-            title = events[eid].get("title") or eid
+            event = events[eid]
+            title = event.get("title") or eid
+            if event.get("canon") == "draft":
+                title += " (draft)"
             lines.append(f'  {node_id(eid)}["{label(title)}"]')
         for c in sorted(here, key=lambda c: c["id"]):
             for eid in sorted(appears.get(c["id"], ())):
@@ -188,7 +178,7 @@ def main() -> int:
     OUT_MD.write_text("\n".join(doc), encoding="utf-8")
     print(f"✅ Memory map → {OUT_MD.relative_to(BASE)}")
     print(f"   {len(characters)} characters, {len(events)} events, {len(factions)} factions, "
-          f"{drawn} era(s) drawn")
+          f"{drawn} section(s) drawn")
     return 0
 
 

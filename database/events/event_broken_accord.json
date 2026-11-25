@@ -1,0 +1,29 @@
+{
+  "id": "event_broken_accord",
+  "type": "event",
+  "title": "Broken Accord",
+  "epoch": "epoch_deep_antiquity",
+  "date_approx": null,
+  "participants": [
+    "character_owlman",
+    "character_ammonite_man"
+  ],
+  "location": null,
+  "predecessors": [
+    "event_dispute_of_the_reclaimed_forests"
+  ],
+  "successors": [
+    "event_war_of_the_feathered_crowns"
+  ],
+  "causes": [
+    "Mediation fails to reconcile exclusive territorial claims"
+  ],
+  "outcomes": [
+    "The dispute becomes open conflict"
+  ],
+  "summary": "Mediation fails to reconcile exclusive territorial claims. The dispute becomes open conflict.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/12-reclamation-of-jambhudweepa.md"
+  ]
+}

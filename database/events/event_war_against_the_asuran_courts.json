@@ -1,0 +1,30 @@
+{
+  "id": "event_war_against_the_asuran_courts",
+  "type": "event",
+  "title": "War against the Asuran Courts",
+  "epoch": "epoch_deep_antiquity",
+  "date_approx": null,
+  "participants": [
+    "character_lionman",
+    "character_owlman",
+    "character_ammonite_man"
+  ],
+  "location": null,
+  "predecessors": [
+    "event_fall_of_the_fang_vanguard"
+  ],
+  "successors": [
+    "event_closing_of_the_wounded_lands"
+  ],
+  "causes": [
+    "Embodied Asuran authorities retain claims after the Vanguard falls"
+  ],
+  "outcomes": [
+    "Local Asuran dominion is defeated"
+  ],
+  "summary": "Embodied Asuran authorities retain claims after the Vanguard falls. Local Asuran dominion is defeated.",
+  "canon": "draft",
+  "sources": [
+    "docs/books/narmada-university/12-reclamation-of-jambhudweepa.md"
+  ]
+}

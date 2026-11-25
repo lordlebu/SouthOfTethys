@@ -222,7 +222,8 @@
       "event_asura_synapsid_domestication"
     ],
     "successors": [
-      "event_great_devolvement_vanaras"
+      "event_great_devolvement_vanaras",
+      "event_first_warning_from_the_deep"
     ],
     "causes": [
       "primordial_rift_opens",
@@ -292,33 +293,148 @@
     ]
   },
   {
-    "id": "event_great_devolvement_vanaras",
+    "id": "event_first_warning_from_the_deep",
     "type": "event",
-    "title": "The Great Devolvement",
+    "title": "First Warning from the Deep",
     "epoch": "epoch_deep_antiquity",
+    "date_approx": null,
     "participants": [
-      "character_lionman"
+      "character_ammonite_man"
     ],
-    "location": "place_nilgiri_canopy",
+    "location": null,
     "predecessors": [
       "event_asura_gondwana_intervention"
     ],
     "successors": [
-      "event_jharwa_first_wave_shell_pact"
+      "event_broken_forest_paths"
     ],
     "causes": [
-      "Severe climate cooling fracturing the ancient deciduous canopy of southern Jambhudweepa",
-      "The drying of the Nilgiri canopy forcing the Vanaras onto the open savanna"
+      "Alterations following the Gondwana Intervention"
     ],
     "outcomes": [
-      "Loss of higher fire-mastery and tool use in the majority of the Vanara populations",
-      "Survival of regressed Vanara descendants as modern monkeys and reclusive outliers",
-      "The migration of the solar-guided tribes to the central plains under Lionman's pathfinding"
+      "Warnings reach terrestrial guardians"
     ],
-    "summary": "As global climate shifts fracture the southern tree-cities of the Nilgiri Canopy, the hyper-intelligent Vanara civilization begins to collapse and devolve. The sun-spirit Lionman manifests to guide the scattered, regressed tribes safely across the savanna.",
-    "canon": "primary",
+    "summary": "Alterations following the Gondwana Intervention. Warnings reach terrestrial guardians.",
+    "canon": "draft",
     "sources": [
-      "Ancient Palm-Leaf Manuscripts of Narmada University"
+      "docs/books/narmada-university/12-reclamation-of-jambhudweepa.md"
+    ]
+  },
+  {
+    "id": "event_broken_forest_paths",
+    "type": "event",
+    "title": "Broken Forest Paths",
+    "epoch": "epoch_deep_antiquity",
+    "date_approx": null,
+    "participants": [
+      "character_owlman",
+      "character_ammonite_man"
+    ],
+    "location": null,
+    "predecessors": [
+      "event_first_warning_from_the_deep"
+    ],
+    "successors": [
+      "event_gathering_under_the_sun"
+    ],
+    "causes": [
+      "Anomalies disrupt safe canopy passages"
+    ],
+    "outcomes": [
+      "Safe crossings are identified and shared"
+    ],
+    "summary": "Anomalies disrupt safe canopy passages. Safe crossings are identified and shared.",
+    "canon": "draft",
+    "sources": [
+      "docs/books/narmada-university/12-reclamation-of-jambhudweepa.md"
+    ]
+  },
+  {
+    "id": "event_gathering_under_the_sun",
+    "type": "event",
+    "title": "Gathering under the Sun",
+    "epoch": "epoch_deep_antiquity",
+    "date_approx": null,
+    "participants": [
+      "character_lionman"
+    ],
+    "location": null,
+    "predecessors": [
+      "event_broken_forest_paths"
+    ],
+    "successors": [
+      "event_covenant_of_three_domains"
+    ],
+    "causes": [
+      "Displaced Vanaran households need viable refuges"
+    ],
+    "outcomes": [
+      "A network of protected settlements emerges"
+    ],
+    "summary": "Displaced Vanaran households need viable refuges. A network of protected settlements emerges.",
+    "canon": "draft",
+    "sources": [
+      "docs/books/narmada-university/12-reclamation-of-jambhudweepa.md"
+    ]
+  },
+  {
+    "id": "event_covenant_of_three_domains",
+    "type": "event",
+    "title": "Covenant of Three Domains",
+    "epoch": "epoch_deep_antiquity",
+    "date_approx": null,
+    "participants": [
+      "character_lionman",
+      "character_owlman",
+      "character_ammonite_man"
+    ],
+    "location": null,
+    "predecessors": [
+      "event_gathering_under_the_sun"
+    ],
+    "successors": [
+      "event_fall_of_the_fang_vanguard"
+    ],
+    "causes": [
+      "Isolated resistance cannot reclaim the island"
+    ],
+    "outcomes": [
+      "The Elders coordinate terrestrial, forest and maritime knowledge"
+    ],
+    "summary": "Isolated resistance cannot reclaim the island. The Elders coordinate terrestrial, forest and maritime knowledge.",
+    "canon": "draft",
+    "sources": [
+      "docs/books/narmada-university/12-reclamation-of-jambhudweepa.md"
+    ]
+  },
+  {
+    "id": "event_fall_of_the_fang_vanguard",
+    "type": "event",
+    "title": "Fall of the Fang Vanguard",
+    "epoch": "epoch_deep_antiquity",
+    "date_approx": null,
+    "participants": [
+      "character_lionman",
+      "character_owlman",
+      "character_ammonite_man"
+    ],
+    "location": null,
+    "predecessors": [
+      "event_covenant_of_three_domains"
+    ],
+    "successors": [
+      "event_war_against_the_asuran_courts"
+    ],
+    "causes": [
+      "Asuran military institutions control native territory"
+    ],
+    "outcomes": [
+      "The Vanguard loses territorial authority"
+    ],
+    "summary": "Asuran military institutions control native territory. The Vanguard loses territorial authority.",
+    "canon": "draft",
+    "sources": [
+      "docs/books/narmada-university/12-reclamation-of-jambhudweepa.md"
     ]
   },
   {
@@ -379,6 +495,288 @@
     "sources": [
       "The Narmada Man: Primordial King of the Riverbones",
       "Narmada Valley: The Primordial Gateway of Jambhudweepa"
+    ]
+  },
+  {
+    "id": "event_war_against_the_asuran_courts",
+    "type": "event",
+    "title": "War against the Asuran Courts",
+    "epoch": "epoch_deep_antiquity",
+    "date_approx": null,
+    "participants": [
+      "character_lionman",
+      "character_owlman",
+      "character_ammonite_man"
+    ],
+    "location": null,
+    "predecessors": [
+      "event_fall_of_the_fang_vanguard"
+    ],
+    "successors": [
+      "event_closing_of_the_wounded_lands"
+    ],
+    "causes": [
+      "Embodied Asuran authorities retain claims after the Vanguard falls"
+    ],
+    "outcomes": [
+      "Local Asuran dominion is defeated"
+    ],
+    "summary": "Embodied Asuran authorities retain claims after the Vanguard falls. Local Asuran dominion is defeated.",
+    "canon": "draft",
+    "sources": [
+      "docs/books/narmada-university/12-reclamation-of-jambhudweepa.md"
+    ]
+  },
+  {
+    "id": "event_closing_of_the_wounded_lands",
+    "type": "event",
+    "title": "Closing of the Wounded Lands",
+    "epoch": "epoch_deep_antiquity",
+    "date_approx": null,
+    "participants": [
+      "character_lionman",
+      "character_owlman",
+      "character_ammonite_man"
+    ],
+    "location": null,
+    "predecessors": [
+      "event_war_against_the_asuran_courts"
+    ],
+    "successors": [
+      "event_dispute_of_the_reclaimed_forests"
+    ],
+    "causes": [
+      "Anomalies persist after military victory"
+    ],
+    "outcomes": [
+      "Viable habitats recover while some anomalies remain"
+    ],
+    "summary": "Anomalies persist after military victory. Viable habitats recover while some anomalies remain.",
+    "canon": "draft",
+    "sources": [
+      "docs/books/narmada-university/12-reclamation-of-jambhudweepa.md"
+    ]
+  },
+  {
+    "id": "event_dispute_of_the_reclaimed_forests",
+    "type": "event",
+    "title": "Dispute of the Reclaimed Forests",
+    "epoch": "epoch_deep_antiquity",
+    "date_approx": null,
+    "participants": [],
+    "location": null,
+    "predecessors": [
+      "event_closing_of_the_wounded_lands"
+    ],
+    "successors": [
+      "event_broken_accord"
+    ],
+    "causes": [
+      "Avian and Vanaran communities assert competing territorial claims"
+    ],
+    "outcomes": [
+      "A sovereignty dispute emerges"
+    ],
+    "summary": "Avian and Vanaran communities assert competing territorial claims. A sovereignty dispute emerges.",
+    "canon": "draft",
+    "sources": [
+      "docs/books/narmada-university/12-reclamation-of-jambhudweepa.md"
+    ]
+  },
+  {
+    "id": "event_broken_accord",
+    "type": "event",
+    "title": "Broken Accord",
+    "epoch": "epoch_deep_antiquity",
+    "date_approx": null,
+    "participants": [
+      "character_owlman",
+      "character_ammonite_man"
+    ],
+    "location": null,
+    "predecessors": [
+      "event_dispute_of_the_reclaimed_forests"
+    ],
+    "successors": [
+      "event_war_of_the_feathered_crowns"
+    ],
+    "causes": [
+      "Mediation fails to reconcile exclusive territorial claims"
+    ],
+    "outcomes": [
+      "The dispute becomes open conflict"
+    ],
+    "summary": "Mediation fails to reconcile exclusive territorial claims. The dispute becomes open conflict.",
+    "canon": "draft",
+    "sources": [
+      "docs/books/narmada-university/12-reclamation-of-jambhudweepa.md"
+    ]
+  },
+  {
+    "id": "event_war_of_the_feathered_crowns",
+    "type": "event",
+    "title": "War of the Feathered Crowns",
+    "epoch": "epoch_deep_antiquity",
+    "date_approx": null,
+    "participants": [
+      "character_lionman",
+      "character_owlman",
+      "character_ammonite_man"
+    ],
+    "location": null,
+    "predecessors": [
+      "event_broken_accord"
+    ],
+    "successors": [
+      "event_withdrawal_of_the_feathered_kingdoms"
+    ],
+    "causes": [
+      "The accord fails"
+    ],
+    "outcomes": [
+      "Avian political supremacy is defeated"
+    ],
+    "summary": "The accord fails. Avian political supremacy is defeated.",
+    "canon": "draft",
+    "sources": [
+      "docs/books/narmada-university/12-reclamation-of-jambhudweepa.md"
+    ]
+  },
+  {
+    "id": "event_withdrawal_of_the_feathered_kingdoms",
+    "type": "event",
+    "title": "Withdrawal of the Feathered Kingdoms",
+    "epoch": "epoch_deep_antiquity",
+    "date_approx": null,
+    "participants": [
+      "character_owlman",
+      "character_ammonite_man"
+    ],
+    "location": null,
+    "predecessors": [
+      "event_war_of_the_feathered_crowns"
+    ],
+    "successors": [
+      "event_vanaran_ascendancy"
+    ],
+    "causes": [
+      "Avian rulers lose the war"
+    ],
+    "outcomes": [
+      "Surviving avian communities retain refuges"
+    ],
+    "summary": "Avian rulers lose the war. Surviving avian communities retain refuges.",
+    "canon": "draft",
+    "sources": [
+      "docs/books/narmada-university/12-reclamation-of-jambhudweepa.md"
+    ]
+  },
+  {
+    "id": "event_vanaran_ascendancy",
+    "type": "event",
+    "title": "Vanaran Ascendancy",
+    "epoch": "epoch_deep_antiquity",
+    "date_approx": null,
+    "participants": [],
+    "location": null,
+    "predecessors": [
+      "event_withdrawal_of_the_feathered_kingdoms"
+    ],
+    "successors": [
+      "event_keepers_of_the_living_memory"
+    ],
+    "causes": [
+      "Asuran and avian supremacy have ended"
+    ],
+    "outcomes": [
+      "Intelligent Vanaran settlements and learning flourish"
+    ],
+    "summary": "Asuran and avian supremacy have ended. Intelligent Vanaran settlements and learning flourish.",
+    "canon": "draft",
+    "sources": [
+      "docs/books/narmada-university/12-reclamation-of-jambhudweepa.md"
+    ]
+  },
+  {
+    "id": "event_keepers_of_the_living_memory",
+    "type": "event",
+    "title": "Keepers of the Living Memory",
+    "epoch": "epoch_deep_antiquity",
+    "date_approx": null,
+    "participants": [],
+    "location": null,
+    "predecessors": [
+      "event_vanaran_ascendancy"
+    ],
+    "successors": [
+      "event_great_devolvement_vanaras"
+    ],
+    "causes": [
+      "Recovered communities preserve ecological knowledge"
+    ],
+    "outcomes": [
+      "Knowledge survives for later transmission"
+    ],
+    "summary": "Recovered communities preserve ecological knowledge. Knowledge survives for later transmission.",
+    "canon": "draft",
+    "sources": [
+      "docs/books/narmada-university/12-reclamation-of-jambhudweepa.md"
+    ]
+  },
+  {
+    "id": "event_great_devolvement_vanaras",
+    "type": "event",
+    "title": "The Great Devolvement",
+    "epoch": "epoch_deep_antiquity",
+    "participants": [
+      "character_lionman"
+    ],
+    "location": "place_nilgiri_canopy",
+    "predecessors": [
+      "event_asura_gondwana_intervention",
+      "event_keepers_of_the_living_memory"
+    ],
+    "successors": [
+      "event_jharwa_first_wave_shell_pact",
+      "event_first_covenant_of_beast_and_human"
+    ],
+    "causes": [
+      "Severe climate cooling fracturing the ancient deciduous canopy of southern Jambhudweepa",
+      "The drying of the Nilgiri canopy forcing the Vanaras onto the open savanna"
+    ],
+    "outcomes": [
+      "Loss of higher fire-mastery and tool use in the majority of the Vanara populations",
+      "Survival of regressed Vanara descendants as modern monkeys and reclusive outliers",
+      "The migration of the solar-guided tribes to the central plains under Lionman's pathfinding"
+    ],
+    "summary": "As global climate shifts fracture the southern tree-cities of the Nilgiri Canopy, the hyper-intelligent Vanara civilization begins to collapse and devolve. The sun-spirit Lionman manifests to guide the scattered, regressed tribes safely across the savanna.",
+    "canon": "primary",
+    "sources": [
+      "Ancient Palm-Leaf Manuscripts of Narmada University"
+    ]
+  },
+  {
+    "id": "event_first_covenant_of_beast_and_human",
+    "type": "event",
+    "title": "First Covenant of Beast and Human",
+    "epoch": "epoch_deep_antiquity",
+    "date_approx": null,
+    "participants": [],
+    "location": null,
+    "predecessors": [
+      "event_great_devolvement_vanaras"
+    ],
+    "successors": [],
+    "causes": [
+      "Intelligent Vanaran survivors encounter pre-Jharwa humans"
+    ],
+    "outcomes": [
+      "Nature-bound practices pass to human communities"
+    ],
+    "summary": "Intelligent Vanaran survivors encounter pre-Jharwa humans. Nature-bound practices pass to human communities.",
+    "canon": "draft",
+    "sources": [
+      "docs/books/narmada-university/12-reclamation-of-jambhudweepa.md"
     ]
   },
   {
